@@ -181,7 +181,15 @@
     carePromise = Promise.all([bootPromise, extra]).then(function () {
       if (!Pack.dur) throw new Error('dur');
       return window.KeepingCare.load('data/care/', Pack.dur);
-    }).then(function (engine) { ui.care = { status: 'ready', engine: engine, notice: false }; }, fail).then(fin);
+    }).then(function (engine) {
+      ui.care = { status: 'ready', engine: engine, notice: false, latest: null, count: engine.stats().entries };
+      /* 설정 화면에 쓸 설명서 데이터 확인일: care-pack 항목의 fetchedAt 가운데 가장 늦은 날 (같은 파일이라 브라우저 캐시에서 읽는다) */
+      return fetch('data/care/care-pack.json').then(function (r) { return r.json(); }).then(function (pk) {
+        var latest = null;
+        Object.keys((pk && pk.entries) || {}).forEach(function (k) { var d = String(pk.entries[k].fetchedAt || '').slice(0, 10); if (d && (!latest || d > latest)) latest = d; });
+        ui.care.latest = latest;
+      }).catch(function () {});
+    }, fail).then(fin);
     return carePromise;
   }
   function careStatHtml() {
@@ -671,17 +679,18 @@
 
   VIEWS.settings = function () {
     var inPack = Pack.drugs.filter(function (d) { return !d.partial; }).length;
-    var dur = Pack.dur, st = dur && dur.stats();
-    var labelCount = Object.keys(Pack.labels || {}).length;
-    var scopeCount = Pack.supplementKeyList.filter(function (k) { return k.scope; }).length;
+    var dur = Pack.dur, st = dur && dur.stats(), care = ui.care;
     function fmt(n) { return n.toLocaleString('ko-KR'); }
     var range = dur
       ? metaRow('약 검색 범위', fmt(st.products) + '개 제품 · 병용금기 ' + fmt(st.pairs) + '쌍')
       : metaRow('근거를 확인하는 약', inPack + '개 (데모 범위)');
+    var careReady = care.status === 'ready';
+    var careDate = careReady && care.latest ? care.latest : '확인하지 못했어요';
     var sources = '';
     if (dur) {
       var ps = dur.source('pair'), ls = dur.source('list');
       sources = '<p class="lbl">출처</p>' +
+        '<div class="card soft"><h4>설명서(허가사항)</h4><p>' + (careReady ? '의약품 허가사항 (식품의약품안전처 · 공공데이터포털 허가정보 API)<br>설명서 데이터 확인일 ' + esc(careDate) + ' · 성분 ' + fmt(care.count) + '개<br>설명서 문장은 규칙으로 골라낸 원문이에요. 틀릴 수 있어서 원문 링크를 함께 보여드려요.' : '설명서 기반 안내를 불러오지 못했어요.') + '</p></div>' +
         '<div class="card soft"><h4>병용금기</h4><p><a class="lnk" href="' + esc(ps.url) + '" target="_blank" rel="noopener">' + esc(ps.label) + '</a><br>병용금기 목록 기준일 ' + esc(ps.checkedAt) + '</p></div>' +
         '<div class="card soft"><h4>약 목록</h4><p>' + esc(ls.label) + '<br>약 목록 적용일 ' + esc(ls.checkedAt || '확인하지 못했어요') + '</p></div>' +
         '<div class="card soft"><h4>이용 조건</h4><p>' + esc(dur.license()) + '</p><p class="muted">' + esc(LIST_LICENSE_NOTE) + '</p></div>';
@@ -690,13 +699,17 @@
     }
     var scope = '<p class="lbl">이 서비스가 확인하는 범위</p>' +
       metaRow('병용금기 목록', dur ? '확인함 (제품 목록 기준)' : '데이터 팩의 약 ' + inPack + '개만 확인함') +
-      metaRow('설명서 상호작용', '일부 약만 (' + labelCount + '개)') +
-      metaRow('영양제', '식약처 병용섭취정보 원료 ' + scopeCount + '종에 해당하는지만') +
-      metaRow('음식 · 용량 · 건강 상태', '확인하지 않음');
+      metaRow('설명서 안내', careReady ? '성분 ' + fmt(care.count) + '개의 허가사항에서 찾은 문장만' : '불러오지 못했어요') +
+      metaRow('영양제', '등록한 영양제의 성분 키로만 맞춰 봐요') +
+      metaRow('음식 · 용량 · 건강 상태', '음식은 설명서에 적힌 것만 · 용량은 확인하지 않음 · 임신·고령자는 고른 경우만');
     return '<main class="screen has-nav"><div class="hdr"><h1 class="h" data-focus>설정</h1></div>' +
       '<div class="card soft"><h4>이 기기에만 저장돼요</h4><p>등록한 약, 영양제, 복용 시간은 이 기기 안에만 있어요. 키핑 서버로 보내지 않아요. 기기를 바꾸거나 브라우저 데이터를 지우면 사라져요.</p></div>' +
       '<div class="stack"><button type="button" class="cta ghost" data-act="to" data-view="onb-drugs">처음부터 다시 설정하기</button><button type="button" class="cta ghost" data-act="exportData">내보내기 (파일로 저장)</button><label class="cta ghost filebtn" for="imp">가져오기 (파일 선택)</label><input id="imp" class="sr" type="file" accept="application/json,.json" data-input="import"><button type="button" class="cta ghost danger" data-act="resetAll">모든 정보 지우기</button></div>' +
-      '<p class="lbl">정보</p><div class="meta"><b>설명서·영양제 자료 확인일</b><span>' + esc(Pack.checkedAt) + '</span></div>' + range +
+      '<p class="lbl">정보</p><div class="meta"><b>설명서 데이터 확인일</b><span>' + esc(careDate) + '</span></div>' +
+      '<div class="meta"><b>병용금기 목록 기준일</b><span>' + esc(dur ? dur.source('pair').checkedAt : '확인하지 못했어요') + '</span></div>' +
+      '<div class="meta"><b>약 목록 적용일</b><span>' + esc(dur ? (dur.source('list').checkedAt || '확인하지 못했어요') : '확인하지 못했어요') + '</span></div>' +
+      '<div class="meta"><b>영양제 자료 확인일</b><span>' + esc(Pack.checkedAt) + '</span></div>' + range +
+      '<div class="meta"><b>시연인 기능</b><span>약봉투 글자 인식(연습용 샘플만) · 새 처방 알림 연동은 시연이에요</span></div>' +
       '<div class="meta off"><b>계정 연결</b><span>2차 예정</span></div>' +
       scope + sources +
       '<p class="fine">키핑은 의료 조언이 아니에요. 약과 영양제를 함께 복용해도 되는지는 약사나 의사에게 확인해 주세요. 출처: 식약처 의약품 제품 허가정보, DUR, 의약품안전나라, 식품안전나라.</p></main>' + nav('settings');

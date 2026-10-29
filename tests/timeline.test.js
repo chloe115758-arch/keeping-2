@@ -106,6 +106,14 @@ const BANNED = /안전해요|괜찮|문제없|문제 없|먹어도|안전합니�
   A.go('onb-drugs');
   check('온보딩 O2에도 같은 "약봉투로 추가 (연습용)" 버튼', !!q('[data-act="to"][data-view="envelope"][data-mode="onb"]'));
 
+  console.log('6) 설정: 출처와 날짜');
+  A.go('settings');
+  const carePk = JSON.parse(fs.readFileSync(path.join(dir, 'data/care/care-pack.json'), 'utf8')).entries;
+  const latestDay = Object.values(carePk).map((e) => String(e.fetchedAt || '').slice(0, 10)).sort().pop();
+  check('설정: 설명서 데이터 확인일 = care-pack fetchedAt 가운데 가장 늦은 날', T().includes('설명서 데이터 확인일 ' + latestDay) && qa('.meta').some((m) => m.textContent.includes('설명서 데이터 확인일') && m.textContent.includes(latestDay)), latestDay);
+  check('설정: 병용금기 기준일 2026-07-31 · 약 목록 적용일 2026-11-01', T().includes('병용금기 목록 기준일') && T().includes('2026-07-31') && T().includes('약 목록 적용일') && T().includes('2026-11-01'));
+  check('설정: 설명서(허가사항) 출처 · 성분 개수 · 시연인 기능 표기', T().includes('의약품 허가사항 (식품의약품안전처') && /성분 \d+개/.test(T()) && T().includes('약봉투 글자 인식(연습용 샘플만)'));
+
   console.log('5) 상태(임신 중 / 만 65세 이상) · 판정 문구');
   st.items = [levo]; st.states = []; A.go('home');
   const noState = A.careModel().slots[0].items[0].flags.filter((f) => f.kind === 'state').length;
