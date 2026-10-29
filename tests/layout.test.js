@@ -98,14 +98,14 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       await page.evaluate(() => KeepingApp.go('welcome')); await page.click('[data-act="demo"]'); await page.waitForSelector('.nav');
       let r = await R();
       check(`${w}: 홈 — 하단 탭이 열 안`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
-      const home = await page.evaluate(() => { const rc = (e) => { const r = e.getBoundingClientRect(); return { x: r.left, r: r.right, w: r.width, h: r.height, y: r.top }; }; return { card: rc(document.querySelector('.home-card')), bar: rc(document.querySelector('.home-bar')), cards: [...document.querySelectorAll('.rcard')].map(rc), chks: [...document.querySelectorAll('.chk')].map(rc), tabs: [...document.querySelectorAll('.nav button')].map(rc) }; });
+      const home = await page.evaluate(() => { const rc = (e) => { const r = e.getBoundingClientRect(); return { x: r.left, r: r.right, w: r.width, h: r.height, y: r.top }; }; return { card: rc(document.querySelector('.home-card')), bar: rc(document.querySelector('.home-bar')), cards: [...document.querySelectorAll('.slot')].map(rc), chks: [...document.querySelectorAll('.slot-head')].map(rc), tabs: [...document.querySelectorAll('.nav button')].map(rc) }; });
       check(`${w}: 홈 — 민트 상단바·상단 카드가 열 폭 전체`, Math.abs(home.card.w - r.app.w) <= 1 && Math.abs(home.bar.w - r.app.w) <= 1);
-      check(`${w}: 홈 — 복용 카드가 열 안 좌우 16px(폭 ${'열 폭 − 32'})`, home.cards.length >= 3 && home.cards.every((c) => Math.abs(c.x - (r.app.x + 16)) <= 1 && Math.abs(r.app.r - 16 - c.r) <= 1));
-      check(`${w}: 홈 — 체크 버튼 터치 영역 44px 이상`, home.chks.length >= 3 && home.chks.every((c) => c.w >= 44 && c.h >= 44));
-      check(`${w}: 홈 — 하단 탭 4개가 열 폭을 나눠 가짐(터치 영역 44px 이상)`, home.tabs.length === 4 && home.tabs.every((t) => t.w >= 44 && t.h >= 44) && Math.abs(home.tabs[0].x - r.app.x) <= 1 && Math.abs(home.tabs[3].r - r.app.r) <= 1);
-      await page.click('[data-act="demoRx"]'); await page.click('[data-act="demoConfirm"]'); await page.waitForSelector('.row.flag');
+      check(`${w}: 홈 — 시간대 행이 열 안 좌우 16px(폭 ${'열 폭 − 32'})`, home.cards.length >= 2 && home.cards.every((c) => Math.abs(c.x - (r.app.x + 16)) <= 1 && Math.abs(r.app.r - 16 - c.r) <= 1));
+      check(`${w}: 홈 — 시간대 행(펼침 버튼) 터치 영역 44px 이상`, home.chks.length >= 2 && home.chks.every((c) => c.w >= 44 && c.h >= 44));
+      check(`${w}: 홈 — 하단 탭 3개가 열 폭을 나눠 가짐(터치 영역 44px 이상)`, home.tabs.length === 3 && home.tabs.every((t) => t.w >= 44 && t.h >= 44) && Math.abs(home.tabs[0].x - r.app.x) <= 1 && Math.abs(home.tabs[2].r - r.app.r) <= 1);
+      await page.click('[data-act="demoRx"]'); await page.click('[data-act="demoConfirm"]'); await page.waitForSelector('.titem.new');
       r = await R();
-      check(`${w}: 결과 — 하단 탭이 열 안, 가로 넘침 없음`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
+      check(`${w}: 새 처방 반영 홈 — 하단 탭이 열 안, 가로 넘침 없음`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
       check(`${w}: 오류 없음`, errs.length === 0, errs.join(' | '));
       await ctx.close();
     }

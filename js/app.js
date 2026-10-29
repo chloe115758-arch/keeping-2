@@ -13,7 +13,7 @@
     tab: 'domestic', q: '', oq: '', results: null, remote: null, overseas: null,
     chips: [], manualName: '', searchToken: 0,
     dur: { status: 'loading' },
-    care: { status: 'loading', engine: null, notice: true }
+    care: { status: 'loading', engine: null, notice: true }, open: {}
   };
   var searchTimer = null;
 
@@ -88,30 +88,10 @@
     function b(v, label, ic, scope) {
       return '<button type="button" data-act="nav" data-view="' + v + '"' + (scope ? ' data-scope="' + scope + '"' : '') + (cur === v ? ' aria-current="page" class="on"' : '') + '>' + icon(ic, 28) + '<span>' + label + '</span></button>';
     }
-    return '<nav class="nav" aria-label="주 메뉴">' + b('home', '홈', 'home') + b('result', '확인', 'checkc', 'all') + b('list', '내 약', 'list') + b('settings', '마이', 'user') + '</nav>';
+    return '<nav class="nav" aria-label="주 메뉴">' + b('home', '홈', 'home') + b('list', '내 약', 'list') + b('settings', '마이', 'user') + '</nav>';
   }
   /* 제품코드로 등록한 약은 전체 약 목록(DUR)이 와야 확인할 수 있다. 오는 중에는 "확인 범위 밖"이 아니라 "불러오는 중". */
   function durPending(it) { return !!(it && it.kind === 'drug' && it.productCode && !Pack.dur && ui.dur.status === 'loading'); }
-  function statusPill(a) {
-    if (durPending(a.item)) return '<span class="pill soft">불러오는 중</span>';
-    if (a.status === 'attention') return '<span class="pill flag"><i class="dot"></i>확인 필요</span>';
-    if (a.status === 'unchecked') return '<span class="pill dashed">확인 못 함</span>';
-    if (a.status === 'scope') return '<span class="pill soft">공식 정보 있음</span>';
-    return '';
-  }
-  function counterpartLine(a) {
-    var names = [];
-    a.findings.forEach(function (f) { if (names.indexOf(f.withName) < 0) names.push(f.withName); });
-    if (!names.length) return '';
-    var s = E.josa(names[0], '과', '와') + ' 확인';
-    if (names.length > 1) s = names[0] + ' 외 ' + (names.length - 1) + '개와 확인';
-    return '<span class="sub2">' + esc(s) + '</span>';
-  }
-  function rowHtml(a) {
-    var flag = a.status === 'attention';
-    return '<button type="button" class="row' + (flag ? ' flag' : '') + '" data-act="detail" data-id="' + a.item.id + '"><span class="row-main"><b>' + esc(nm(a.item)) + '</b>' + (flag ? counterpartLine(a) : '') + '</span>' + statusPill(a) + icon('chev') + '</button>';
-  }
-
   /* ---------- 검색 ---------- */
   function currentKind() { return ui.view === 'onb-supps' ? 'supp' : 'drug'; }
   function batchOf() { return ui.view === 'add' ? (ui.params.batch || null) : null; }
@@ -168,7 +148,7 @@
     }).then(function () {
       var el = document.getElementById('durstat'); if (el) el.innerHTML = durHtml();
       if (needsSearch() && currentKind() === 'drug' && ui.q.trim()) runSearch(); // 로딩 중에 입력한 검색을 이어서 실행
-      if (['home', 'list', 'result', 'detail', 'settings'].indexOf(ui.view) > -1) render(false); // 확인 결과가 달라질 수 있는 화면만 다시 그린다
+      if (['home', 'list', 'detail', 'sheet', 'settings'].indexOf(ui.view) > -1) render(false); // 확인 결과가 달라질 수 있는 화면만 다시 그린다
     });
     return bootPromise;
   }
@@ -178,7 +158,8 @@
   function emptyCare() {
     return window.KeepingCare ? window.KeepingCare.create({ pack: { entries: {} }, dur: Pack.dur, groups: {} }) : null;
   }
-  function careEngine() { return ui.care.engine || emptyCare(); }
+  /* 설명서 데이터를 못 읽었거나 읽는 중이면 병용금기(DUR)만 보는 엔진. 약 목록이 늦게 와도 그때의 Pack.dur로 다시 만든다. */
+  function careEngine() { return ui.care.status === 'ready' && ui.care.engine ? ui.care.engine : emptyCare(); }
   var carePromise = Promise.resolve();
   function mergeExtraKeys(extra) {
     ((extra && extra.keys) || []).forEach(function (k) {
@@ -192,7 +173,7 @@
     function fin() {
       if (['home', 'list', 'detail', 'sheet', 'settings', 'onb-supps', 'times'].indexOf(ui.view) > -1) render(false);
     }
-    function fail() { ui.care = { status: 'error', engine: emptyCare(), notice: true }; }
+    function fail() { ui.care = { status: 'error', engine: null, notice: true }; }
     if (typeof fetch !== 'function' || !window.KeepingCare) { fail(); carePromise = Promise.resolve(); return carePromise; }
     var extra = fetch('data/care/supplement-keys-extra.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(mergeExtraKeys).catch(function () {});
     carePromise = Promise.all([bootPromise, extra]).then(function () {
@@ -376,79 +357,94 @@
       actionBar('<button type="button" class="cta" data-act="timesDone">' + nextLabel + '</button>');
   };
 
-  /* ---------- 홈: 오늘 복용 (오전/오후 카드) ---------- */
-  function pad2(n) { return (n < 10 ? '0' : '') + n; }
-  function todayKey() { var d = new Date(); return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
-  /* 복용 체크는 이 기기 안에만, 오늘 날짜 기준으로 저장한다. 날짜가 바뀌면 새로 시작한다. */
-  function todayChecks() { var k = todayKey(); if (!state.today || state.today.date !== k) state.today = { date: k, done: {} }; return state.today; }
+  /* ---------- 홈: 하루 복약 타임라인 (docs/plan-v2.md 3-2) ----------
+     케어 엔진(care.analyze)의 결과만 읽는다. 깊이 0 = 시간대 행, 깊이 1 = 약별 한 줄, 깊이 2 = 근거 시트. */
   function fmtTime(t) { var m = /^(\d{1,2}):(\d{2})$/.exec(t); return m ? (+m[1]) + ':' + m[2] : t; }
-  function circDiff(a, b) { var d = Math.abs(a - b); return Math.min(d, 24 - d); }
-  /* 두 약의 시간 중 가장 가까운 한 쌍(엔진이 준 gapHours와 같은 값을 만드는 쌍) */
-  function closestTimes(ia, ib) {
-    var best = null;
-    activeTimes(ia).forEach(function (ta) { activeTimes(ib).forEach(function (tb) { var g = circDiff(E.toHours(ta), E.toHours(tb)); if (best === null || g < best.g) best = { ta: ta, tb: tb, g: g }; }); });
-    return best;
+  var GRADE = { official: ['공식 지정', 'official'], label: ['설명서 근거', 'label'], reference: ['참고', 'ref'] };
+  function badge(g) { var x = GRADE[g] || ['확인 못 함', 'none']; return '<span class="badge ' + x[1] + '">' + x[0] + '</span>'; }
+  function safeUrl(u) { return /^https?:\/\//i.test(String(u || '')) ? String(u) : null; }
+  function loadingNow() { return ui.dur.status === 'loading' || ui.care.status === 'loading'; }
+  function nonFood(flags) { return (flags || []).filter(function (f) { return f.kind !== 'food'; }); }
+  function indexModel(m) {
+    var ix = { rows: {}, unc: {}, unsched: {} };
+    m.slots.forEach(function (s) { s.items.forEach(function (r) { (ix.rows[r.itemId] = ix.rows[r.itemId] || []).push(r); }); });
+    m.uncovered.forEach(function (u) { ix.unc[u.itemId] = u.reason; });
+    m.unscheduled.forEach(function (id) { ix.unsched[id] = true; });
+    return ix;
   }
-  function counterText(a) {
-    var names = [];
-    a.findings.forEach(function (f) { if (names.indexOf(f.withName) < 0) names.push(f.withName); });
-    if (!names.length) return '';
-    return names.length > 1 ? names[0] + ' 외 ' + (names.length - 1) + '개와' : E.josa(names[0], '과', '와');
+  /* 근거를 찾지 못한 약: 이유별 문구 */
+  function uncoveredText(item, reason) {
+    if (loadingNow()) return '약 목록과 설명서 기반 안내를 준비하는 중이에요';
+    if (reason === 'no_rules') return '설명서에서 복용 시점·상호작용 안내를 찾지 못했어요. 안전하다는 뜻은 아니에요';
+    if (reason === 'route_mismatch') return '이 제품과 투여 방식이 다른 약의 설명서라 안내를 붙이지 않았어요';
+    var code = item.productCode || (item.itemSeq && Pack.dur && Pack.dur.codeOf && Pack.dur.codeOf(item.itemSeq));
+    if (!item.productCode && !item.itemSeq) return '키핑이 확인한 범위 밖이에요. 등록은 됐고, 약사에게 확인해 주세요';
+    if (!Pack.dur) return '전체 약 목록을 불러오지 못해서 확인하지 못했어요';
+    if (!code) return '키핑이 확인한 범위 밖이에요. 등록은 됐고, 약사에게 확인해 주세요';   // 예전 저장 데이터 중 제품코드로 이어지지 않는 약
+    return '설명서 기반 안내를 아직 준비하지 못했어요(병용금기는 확인했어요)';
   }
-  function rcard(d, lines, firstOfItem) {
-    var done = !!todayChecks().done[d.it.id + '|' + d.t], nameT = nm(d.it) + ' ' + fmtTime(d.t);
-    return '<li class="rcard' + (done ? ' done' : '') + '"><button type="button" class="chk" role="checkbox" aria-checked="' + done + '" data-act="check" data-id="' + d.it.id + '" data-t="' + d.t + '" aria-label="' + esc(nameT) + ' 복용 체크"><span class="circle">' + icon('check', 12) + '</span></button>' +
-      '<button type="button" class="rmain" data-act="detail" data-id="' + d.it.id + '"><span class="rhead"><b>' + esc(nm(d.it)) + '</b><time>' + esc(fmtTime(d.t)) + '</time></span>' +
-      lines.map(function (l) { return '<span class="rline ' + l.kind + '">' + icon(l.kind === 'red' ? 'tri' : 'info', 16) + '<span>' + esc(l.text) + '</span></span>'; }).join('') + '</button></li>';
+  function tline(kind, ic, text, act, data) {
+    return '<button type="button" class="tline ' + kind + '" data-act="' + act + '" ' + data + '>' + icon(ic, 16) + '<span>' + esc(text) + '</span></button>';
+  }
+  /* 깊이 1: 약별 한 줄 */
+  function timelineRow(r, m, ix, shown) {
+    var it = findItem(r.itemId); if (!it) return '';
+    var lines = '', nf = nonFood(r.flags);
+    if (r.mealRelation && m.evidence[r.mealRelation.ruleId]) {
+      lines += '<button type="button" class="tline meal" data-act="sheet" data-id="' + esc(r.mealRelation.ruleId) + '" data-item="' + r.itemId + '" aria-label="식사 관계 ' + esc(r.mealRelation.label) + ' 근거 보기">' + badge('label') + '<span>' + esc(r.mealRelation.label) + '</span></button>';
+    }
+    if (nf.length) {
+      lines += '<div class="tline-row">' + tline('red', 'tri', nf[0].short, 'sheet', 'data-id="' + esc(nf[0].id) + '" data-item="' + r.itemId + '"') +
+        (nf.length > 1 ? '<button type="button" class="tmore" data-act="detail" data-id="' + r.itemId + '">외 ' + (nf.length - 1) + '건</button>' : '') + '</div>';
+    }
+    if (r.foods && r.foods.length) {
+      lines += tline('info', 'info', '음식: ' + r.foods.map(function (f) { return f.ko; }).join('·') + ' 주의', 'sheet', 'data-id="' + esc(r.foods[0].flagId) + '" data-item="' + r.itemId + '"');
+    }
+    m.suggestions.forEach(function (sg) {
+      var key = sg.ruleId + '|' + sg.itemId;
+      if (sg.itemId !== r.itemId || shown[key]) return;
+      shown[key] = 1;
+      lines += '<button type="button" class="sugg" data-act="applySugg" data-id="' + r.itemId + '" data-t="' + esc(sg.suggestTime) + '">' + icon('clock', 16) + '<span>' + esc(sg.message) + '</span>' + badge('label') + '</button>';
+    });
+    if (ix.unc[r.itemId] && !shown['u' + r.itemId]) { shown['u' + r.itemId] = 1; lines += '<p class="tline info plain">' + icon('info', 16) + '<span>' + esc(uncoveredText(it, ix.unc[r.itemId])) + '</span></p>'; }
+    return '<li class="titem' + (ui.params.fresh && it.batch === ui.params.fresh ? ' new' : '') + '"><div class="thead"><b>' + esc(nm(it)) + (it.kind === 'supp' ? '<small>영양제</small>' : '') + '</b><time>' + esc(r.time) + '</time></div>' + lines + '</li>';
+  }
+  /* 깊이 0: 시간대 행 */
+  function slotHtml(s, m, ix, shown) {
+    var fresh = ui.params.fresh, open = !!ui.open[s.id] || !!(fresh && s.items.some(function (r) { var x = findItem(r.itemId); return x && x.batch === fresh; }));
+    var title = s.label + ' · ' + s.time + ' · 약 ' + s.summary.itemCount + '개' + (s.summary.cautionCount ? ' · 주의 ' + s.summary.cautionCount : '');
+    return '<li class="slot' + (open ? ' open' : '') + '"><button type="button" class="slot-head" data-act="toggleSlot" data-id="' + s.id + '" aria-expanded="' + open + '" aria-controls="slot-' + s.id + '"><span class="slot-title"><b>' + esc(title) + '</b>' + (s.meal ? '<small>' + esc(s.meal.label + ' ' + s.meal.time) + '</small>' : '') + '</span>' +
+      '<svg class="ic chev-dn" width="24" height="24" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></button>' +
+      '<ul class="tbody" id="slot-' + s.id + '"' + (open ? '' : ' hidden') + '>' + s.items.map(function (r) { return timelineRow(r, m, ix, shown); }).join('') + '</ul></li>';
   }
   VIEWS.home = function () {
-    var analysis = E.analyze(state.items, Pack), byId = {};
-    analysis.forEach(function (a) { byId[a.item.id] = a; });
-    var close = E.intervalChecks(state.items, Pack).filter(function (c) { return c.close; });
-    var doses = [], untimed = [];
-    state.items.forEach(function (it) {
-      var ts = activeTimes(it);
-      if (!ts.length) untimed.push(it);
-      ts.forEach(function (t) { doses.push({ it: it, t: t, h: E.toHours(t) }); });
-    });
-    doses.sort(function (a, b) { return a.h - b.h || nm(a.it).localeCompare(nm(b.it), 'ko'); });
-    // 카드 아래 보조 줄: 빨강(겹침·간격 주의, 삼각형 아이콘) · 파랑(안내)
-    function linesFor(d, first) {
-      var out = [];
-      close.forEach(function (c) {
-        var owner = findItem(c.ownerId), other = findItem(c.otherId); if (!owner || !other) return;
-        var cp = closestTimes(owner, other); if (!cp) return;
-        var mine = (d.it.id === owner.id && d.t === cp.ta) ? other : ((d.it.id === other.id && d.t === cp.tb) ? owner : null);
-        if (mine) out.push({ kind: 'red', text: E.josa(nm(mine), '과', '와') + ' ' + fmtGap(c.gapHours) + '시간 차 · 설명서 안내 간격(' + c.minH + '~' + c.maxH + '시간)보다 가까워요' });
-      });
-      var a = byId[d.it.id];
-      if (a && a.status === 'attention' && first) out.push({ kind: 'red', text: counterText(a) + ' 확인이 필요해요' });
-      if (durPending(d.it)) out.push({ kind: 'info', text: '약 목록을 불러오는 중이에요' });
-      else if (a && a.status === 'unchecked') out.push({ kind: 'info', text: '키핑이 확인한 범위 밖이에요. 약사에게 확인해 주세요' });
-      return out;
-    }
-    var seen = {}, cards = doses.map(function (d) { var first = !seen[d.it.id]; seen[d.it.id] = 1; return { d: d, html: rcard(d, linesFor(d, first)) }; });
-    function section(label, list) { return list.length ? '<section class="rsec"><h2>' + label + '</h2><ul class="rlist">' + list.map(function (c) { return c.html; }).join('') + '</ul></section>' : ''; }
-    var am = cards.filter(function (c) { return c.d.h < 12; }), pm = cards.filter(function (c) { return c.d.h >= 12; });
-    var untimedHtml = untimed.length ? '<section class="rsec"><h2>시간을 정하지 않았어요</h2><ul class="rlist">' + untimed.map(function (it) {
-      var a = byId[it.id], lines = [];
-      if (a && a.status === 'attention') lines.push('<span class="rline red">' + icon('tri', 16) + '<span>' + esc(counterText(a) + ' 확인이 필요해요') + '</span></span>');
-      return '<li class="rcard"><button type="button" class="rmain" data-act="to" data-view="times" data-all="1" style="padding-left:14px"><span class="rhead"><b>' + esc(nm(it)) + '</b></span><span class="rline info">' + icon('info', 16) + '<span>복용 시간을 입력하면 오늘 복용 목록에 나와요</span></span>' + lines.join('') + '</button></li>';
-    }).join('') + '</ul></section>' : '';
-    var total = doses.length, done = doses.filter(function (d) { return todayChecks().done[d.it.id + '|' + d.t]; }).length;
-    var att = analysis.filter(function (a) { return a.status === 'attention'; });
+    var m = careModel(), ix = m ? indexModel(m) : null;
     var d0 = new Date().toLocaleDateString('ko-KR', { month: 'long', day: 'numeric', weekday: 'long' });
-    var prog = total
-      ? '<div class="prog"><div class="prog-row"><b>오늘 복용</b><span class="prog-count" aria-label="' + total + '개 중 ' + done + '개 체크">' + done + '<small>/' + total + '</small></span></div>' +
-        '<div class="prog-bar" role="progressbar" aria-valuemin="0" aria-valuemax="' + total + '" aria-valuenow="' + done + '" aria-label="오늘 복용 체크"><i style="width:' + Math.round(done * 100 / total) + '%"></i></div>' +
-        '<p class="prog-msg">' + (done === 0 ? '아직 시작 전이에요' : (done === total ? '오늘 복용을 모두 체크했어요' : (total - done) + '개 남았어요')) + '</p></div>'
-      : '<p class="prog-msg">' + (state.items.length ? '복용 시간을 입력하면 오늘 복용을 체크할 수 있어요' : '먹는 약과 영양제를 등록하면 겹치는 것만 알려드려요') + '</p>';
+    var sum;
+    if (!state.items.length) sum = '<p class="prog-msg">먹는 약과 영양제를 등록하면 하루 복약 시간표를 만들어 드려요</p>';
+    else if (loadingNow()) sum = '<p class="sumline" aria-live="polite"><b>오늘 주의 확인 중…</b></p>';
+    else sum = '<p class="sumline"><b>오늘 주의 ' + (m ? m.summary.cautionCount : 0) + '개</b></p>';
+    var body = '';
+    if (m && state.items.length) {
+      var shown = {};
+      body += m.slots.length ? '<ol class="tl">' + m.slots.map(function (s) { return slotHtml(s, m, ix, shown); }).join('') + '</ol>' : '';
+      if (m.unscheduled.length) {
+        body += '<section class="rsec"><h2>복용 시간을 정해 주세요</h2><ul class="rlist">' + m.unscheduled.map(function (id) {
+          var it = findItem(id); if (!it) return '';
+          var u = ix.unc[id];
+          return '<li class="rcard' + (ui.params.fresh && it.batch === ui.params.fresh ? ' new' : '') + '"><button type="button" class="rmain" data-act="to" data-view="times" data-all="1" style="padding-left:14px"><span class="rhead"><b>' + esc(nm(it)) + '</b></span><span class="rline info">' + icon('clock', 16) + '<span>복용 시간을 정해 주세요</span></span>' +
+            (u ? '<span class="rline info">' + icon('info', 16) + '<span>' + esc(uncoveredText(it, u)) + '</span></span>' : '') + '</button></li>';
+        }).join('') + '</ul></section>';
+      }
+      body += '<p class="fine">병용금기(공식 지정)와 설명서에서 찾은 안내만 보여드려요. 찾지 못했다고 안전하다는 뜻은 아니에요. 키핑은 의료 조언이 아니에요.</p>';
+    } else if (state.items.length) {
+      body += '<p class="note">설명서 기반 안내를 쓸 수 없어요. 등록한 약과 영양제는 내 약에서 볼 수 있어요.</p>';
+    }
     return '<main class="screen home"><div class="home-bar">키핑</div>' +
-      '<div class="home-card"><div><h1 data-focus>안녕하세요</h1><p class="home-date">' + esc(d0) + '</p></div>' + prog + '</div>' +
+      '<div class="home-card"><div><h1 data-focus>안녕하세요</h1><p class="home-date">' + esc(d0) + '</p></div>' + sum + '</div>' +
       '<div class="home-body">' + careStatHtml() +
       (state.example ? '<p class="banner">예시 사용자예요. 복용 이력은 가정이고, 약 정보는 실제 공식 자료예요.</p>' : '') +
-      (att.length ? '<button type="button" class="row flag" data-act="nav" data-view="result" data-scope="all"><span class="row-main"><b>확인이 필요한 것 ' + att.length + '개</b><span class="sub2">눌러서 이유를 볼 수 있어요</span></span>' + icon('chev') + '</button>' : '') +
-      section('오전', am) + section('오후', pm) + untimedHtml +
+      body +
       '<div class="home-actions">' +
       (!state.items.length ? '<button type="button" class="cta" data-act="to" data-view="onb-drugs">처음 설정 시작하기</button>' : '') +
       '<button type="button" class="cta ' + (state.example ? 'ghost' : '') + '" data-act="newRx">새 약 추가하기</button>' +
@@ -472,7 +468,7 @@
         '<button type="button" class="row" data-act="to" data-view="onb-drugs" data-mode="edit"><span class="row-main"><b>지금 먹는 약</b><span class="sub2">약 더하기 · 빼기</span></span>' + icon('chev') + '</button>' +
         '<button type="button" class="row" data-act="to" data-view="onb-supps" data-mode="more"><span class="row-main"><b>영양제</b><span class="sub2">국내 · 해외 · 직접 입력</span></span>' + icon('chev') + '</button>' +
         '<button type="button" class="row" data-act="to" data-view="times" data-all="1"><span class="row-main"><b>복용 시간 · 음식</b><span class="sub2">시간표에 반영돼요</span></span>' + icon('chev') + '</button>' +
-      '</div><div class="stack pad-top"><button type="button" class="cta" data-act="newRx">새 약 추가하기</button><button type="button" class="cta ghost" data-act="to" data-view="onb-drugs">처음부터 다시 설정하기</button></div></main>' + nav('list');
+      '</div><div class="stack pad-top"><button type="button" class="cta" data-act="newRx">새 약 추가하기</button><button type="button" class="cta ghost" data-act="nav" data-view="questions">약사에게 물어볼 질문 보기</button><button type="button" class="cta ghost" data-act="to" data-view="onb-drugs">처음부터 다시 설정하기</button></div></main>' + nav('list');
   };
 
   VIEWS.add = function () {
@@ -489,117 +485,54 @@
       '<button type="button" class="cta ghost light" data-act="back">돌아가기</button></main>';
   };
 
-  VIEWS.result = function () {
-    var all = E.analyze(state.items, Pack);
-    var scopeAll = ui.params.scope === 'all';
-    var batch = ui.params.batch || state.lastBatch || null;
-    var rows = all.filter(function (a) { return a.item.kind === 'drug' && (scopeAll || (a.item.batch || null) === batch); });
-    if (!rows.length) rows = all.filter(function (a) { return a.item.kind === 'drug'; });
-    var supps = all.filter(function (a) { return a.item.kind === 'supp'; });
-    var flagged = rows.filter(function (a) { return a.status === 'attention'; }).length;
-    var suppFlag = supps.filter(function (a) { return a.status === 'attention'; }).length;
-    var total = flagged + suppFlag;
-    var title = scopeAll ? '내가 먹는 약' : '이번에 받은 약 ' + rows.length + '개';
-    var pendingAny = rows.concat(supps).some(function (a) { return durPending(a.item); });
-    var sub = pendingAny ? '약 목록을 불러오는 중이에요. 끝나면 겹치는 내용을 확인해서 보여드려요.' : total
-      ? '<b class="red">' + (flagged + suppFlag) + '개</b>는 확인이 필요해요. 눌러서 이유를 볼 수 있어요.'
-      : '확인한 자료에서 겹치는 내용을 찾지 못했어요.';
-    var needTimes = rows.some(function (a) { return !activeTimes(a.item).length; });
-    return '<main class="screen has-nav"><div class="hdr"><p class="tag">겹침 확인</p><h1 class="h" data-focus>' + esc(title) + '</h1><p class="sub">' + sub + '</p>' +
-      '<p class="basis">등록한 ' + state.items.length + '개 기준이에요 ' + tip('basis', '등록하신 약과 영양제 사이에서만 찾은 결과예요. 찾지 못했다고 안전하다는 뜻은 아니에요. 등록하지 않은 약은 확인할 수 없어요.') + '</p></div>' +
-      '<div class="list">' + rows.map(rowHtml).join('') + '</div>' +
-      (supps.length ? '<p class="lbl">내가 먹는 영양제 ' + supps.length + '</p><div class="list">' + supps.map(rowHtml).join('') + '</div>' : '') +
-      (rows.concat(supps).some(function (a) { return a.status === 'unchecked' && !durPending(a.item); }) ? '<p class="note">"확인 못 함"은 키핑이 확인한 범위 밖이라는 뜻이에요. 등록은 됐고, 다른 것과 겹치는지는 약사에게 확인해 주세요.</p>' : '') +
-      (needTimes && !state.example ? '<button type="button" class="row" data-act="to" data-view="times" data-batch="' + esc(batch || '') + '"><span class="row-main"><b>복용 시간 입력하기</b><span class="sub2">입력하면 복용 간격도 볼 수 있어요</span></span>' + icon('chev') + '</button>' : '') +
-      '<button type="button" class="row ghostrow" data-act="newRx" data-batch="' + esc(batch || '') + '"><span class="row-main"><b>빠진 약이 있나요?</b><span class="sub2">등록하지 않은 약은 확인할 수 없어요</span></span>' + icon('plus') + '</button>' +
-      '<div class="stack pad-top"><button type="button" class="cta" data-act="nav" data-view="questions">약사에게 물어볼 질문 보기</button></div></main>' + nav('result');
-  };
-
-  /* 병용금기 근거: 사유·고시일·조건(비고)을 원문 그대로. 요약하지 않는다. 비고는 있으면 반드시 보인다. */
-  function pairFacts(f) {
-    function r(k, v, cls) { return '<div class="' + (cls || '') + '"><dt>' + k + '</dt><dd>' + esc(v) + '</dd></div>'; }
-    return '<dl class="pairfacts">' + r('사유', f.reason) + (f.notified ? r('고시일', f.notified) : '') + (f.note ? r('조건', f.note, 'cond') : '') + '</dl>';
-  }
+  /* ---------- 깊이 2: 근거 시트 / 약 상세 ---------- */
   function metaRow(label, value, tipHtml) {
     return '<div class="meta"><b>' + esc(label) + '</b><span>' + value + '</span>' + (tipHtml || '') + '</div>';
   }
+  function dateOf(x) { return x ? String(x).slice(0, 10) : null; }
+  /* 근거 카드: 등급 배지 · 헤드라인 · 조건/항목 · 원문 그대로 · 위치 · 출처 · 확인일. 요약하지 않는다. */
+  function evidenceCard(ev) {
+    var url = safeUrl(ev.source && ev.source.url), chk = dateOf(ev.source && ev.source.checkedAt);
+    return '<article class="evcard">' + badge(ev.grade) + '<h2 class="evh">' + esc(ev.headline) + '</h2>' +
+      (ev.detail ? '<p class="evd"><b>' + (ev.grade === 'official' ? '조건' : '항목') + '</b> ' + esc(ev.detail) + '</p>' : '') +
+      (ev.excerpt ? '<blockquote class="evq"><small>원문' + (ev.where ? ' · ' + esc(ev.where) : '') + '</small><p>' + esc(ev.excerpt) + '</p></blockquote>' : '') +
+      '<p class="src"><span>' + esc((ev.source && ev.source.label) || '') + '</span>' + (url ? ' <a href="' + esc(url) + '" target="_blank" rel="noopener">원문 보기</a>' : '') + '<small>확인일 ' + esc(chk || '확인하지 못했어요') + '</small></p></article>';
+  }
+  var HELP_FOOT = '<p class="evfoot">이상 증상이 있으면 약사·의사에게 물어보세요.</p>';
+  VIEWS.sheet = function () {
+    var m = careModel(), ev = m && m.evidence[ui.params.id];
+    if (!ev) return VIEWS.home();
+    var flag = null;
+    m.slots.forEach(function (s) { s.items.forEach(function (r) { r.flags.forEach(function (f) { if (f.id === ui.params.id && !flag) flag = f; }); }); });
+    var owner = findItem(ui.params.item);
+    var withNames = flag ? flag.withItemIds.map(function (id) { var x = findItem(id); return x ? nm(x) : ''; }).filter(Boolean) : [];
+    return '<main class="screen sheet">' + topbar('근거') +
+      (owner ? '<p class="evwho">' + esc(nm(owner)) + (withNames.length ? ' · 함께 등록한 것: ' + esc(withNames.join(', ')) : '') + '</p>' : '') +
+      evidenceCard(ev).replace('<h2 class="evh">', '<h1 class="evh" data-focus>').replace('</h2>', '</h1>') + HELP_FOOT + '</main>';
+  };
   VIEWS.detail = function () {
     var item = findItem(ui.params.id);
     if (!item) return VIEWS.home();
-    var a = E.analyzeItem(item, state.items, Pack);
-    var r = E.record(item, Pack);
-    var html = '<main class="screen">' + topbar() + '<h1 class="h" data-focus>' + esc(nm(item)) + '</h1><p class="sub">' + esc(kindLabel(item)) + '</p>';
-
-    if (a.findings.length) {
-      html += '<p class="lbl red"><i class="dot"></i>확인이 필요한 내용</p>';
-      a.findings.forEach(function (f, i) {
-        var kindText = { pair: '병용금기 목록에 있어요', name: '설명서에 성분 이름이 있어요', 'class': '설명서의 종류 표현 · 약사 확인 권장', supp: '설명서의 종류 표현 · 약사 확인 권장' }[f.kind];
-        html += '<article class="fcard"><div class="fhead"><b>' + esc(f.withName) + '</b><span class="conf ' + f.confidence + '">' + kindText + '</span>' +
-          (f.confidence === 'low' ? tip('c' + i, '설명서가 약의 종류로 적은 표현이에요. 이 약이 해당하는지는 설명서만으로 알 수 없어서, 약사에게 확인해 주세요.') : '') + '</div>' +
-          '<p class="ftitle">' + esc(f.title) + '</p>' + (f.kind === 'pair' ? pairFacts(f) : (f.summary ? '<p class="muted">' + esc(f.summary) + '</p>' : '')) +
-          (f.excerpt ? '<blockquote><small>' + esc(f.sectionTitle || '') + '</small><p>' + esc(f.excerpt) + '</p></blockquote>' : '') +
-          '<p class="src"><a href="' + esc(f.source.url) + '" target="_blank" rel="noopener">' + esc(f.source.label) + ' 보기</a><small>확인일 ' + esc(f.source.checkedAt) + '</small></p></article>';
-      });
-    } else if (durPending(item)) {
-      html += '<div class="card"><h4>약 목록을 불러오는 중이에요</h4><p>불러오면 겹치는 내용을 확인해서 여기에 보여드려요.</p></div>';
-    } else if (item.kind === 'drug' && item.productCode && !a.coverage.inPack) {
-      html += '<div class="card"><h4>확인하지 못했어요</h4><p>전체 약 목록을 불러오지 못해서 겹치는 내용을 확인하지 못했어요. 등록은 됐어요. 인터넷에 연결한 뒤 다시 열어 보거나, 약사에게 확인해 주세요.</p></div>';
-    } else if (item.kind === 'drug' && !a.coverage.inPack) {
-      html += '<div class="card"><h4>확인 범위 밖이에요</h4><p>이 약은 키핑이 근거를 확인하는 범위 밖이에요. 등록은 됐고, 다른 약과 겹치는지는 약사에게 확인해 주세요.</p></div>';
-    } else if (item.kind === 'supp' && a.status === 'unchecked') {
-      html += '<div class="card"><h4>확인할 자료가 없어요</h4><p>이 영양제는 약과의 병용 정보를 확인할 공식 자료를 찾지 못했어요. 등록은 됐고, 약사에게 확인해 주세요.</p></div>';
-    } else if (a.status === 'none' && a.coverage.product && !a.coverage.label) {
-      html += '<div class="card"><h4>병용금기 목록에서 겹치는 쌍을 찾지 못했어요</h4><p>등록하신 ' + state.items.length + '개와 병용금기 목록 안에서 찾지 못했다는 뜻이에요. 안전하다는 뜻은 아니에요. 설명서는 확인하지 못했어요.</p></div>';
-    } else if (a.status === 'none') {
-      html += '<div class="card"><h4>겹치는 내용을 찾지 못했어요</h4><p>등록하신 ' + state.items.length + '개와 확인한 자료 안에서 찾지 못했다는 뜻이에요. 안전하다는 뜻은 아니에요.</p></div>';
-    }
-
-    html += '<p class="lbl">확인한 것</p>';
-    if (item.kind === 'drug') {
-      var cv = a.coverage, d = r && r.dur, dp = cv.product && Pack.dur ? Pack.dur.hasPairs(cv.product.code) : false;
-      var basis = r && r.ingrCode ? (Pack.pairs || []).filter(function (x) { return x.a === r.ingrCode || x.b === r.ingrCode; })[0] : null;
-      var tabooText, tabooTip = '';
-      if (durPending(item)) tabooText = '약 목록을 불러오는 중이에요';
-      else if (cv.product && Pack.dur) {     // 병용금기 파일로 확인되는 약: 건수 없이 목록에 있는지만
-        tabooText = dp ? '이 성분은 병용금기 목록에 있어요' : '이 성분은 목록에 나오지 않아요';
-        tabooTip = tip('t1', dp ? '등록하신 것과 겹치는 것만 위에 보여드려요.' : '목록에 없다는 뜻이에요. 안전하다는 뜻은 아니에요.');
-      } else if (d && !Pack.dur) {             // 전체 약 목록이 없을 때(데이터 팩 모드)만 예전 건수
-        tabooText = d.usjntTaboo === 0 ? '공식 목록에 등록 없음' : d.usjntTaboo + '건 등록 (제품 기준)';
-        tabooTip = d.usjntTaboo === 0 ? tip('t1', '공식 목록에 등록된 것이 없다는 뜻이에요. 안전하다는 뜻은 아니에요.') : tip('t1', '이 중 등록하신 것과 겹치는 것만 위에 보여드려요.');
-      } else if (r && !cv.product && !d && basis) {   // 이 약의 목록은 조회한 적이 없고, 다른 약(시바스정) 조회에서 나온 쌍만 있다 (예: 수출용 코니트라캡슐)
-        tabooText = '일부만 확인했어요 · 다른 약 조회에서 나온 쌍만 보여드려요 (식약처 DUR, ' + basis.checkedAt + ')';
-        tabooTip = tip('t1', '이 약의 병용금기 목록은 직접 조회하지 않았어요. 시바스정을 조회할 때 나온 쌍만 보여드려요. 다른 약과의 병용금기는 약사에게 확인해 주세요.');
-      } else tabooText = '확인하지 못했어요';
-      html += metaRow('병용금기', tabooText, tabooTip);
-      var efText = !d ? '확인하지 않았어요' : (d.efcyDplct === 0 ? '등록 없음' : (d.efcyDplct == null ? '확인하지 않았어요' : (r.series ? r.series + ' 계열 ' + d.efcyDplct + '건' : d.efcyDplct + '건')));
-      html += metaRow('효능군중복', efText, (d && d.efcyDplct === 0) ? tip('t2', '같은 계열의 약이 겹쳐 등록돼 있지 않다는 뜻이에요. 안전하다는 뜻은 아니에요.') : '');
-      html += metaRow('설명서', cv.label ? '확인했어요' : '확인하지 못했어요', cv.label ? '' : tip('t3', '이 약의 설명서는 키핑이 아직 읽어 두지 않았어요. 설명서는 의약품안전나라에서 볼 수 있어요.'));
-      if (cv.product) {
-        html += metaRow('구분', esc(cv.product.category || '급여목록 밖 (구분 정보 없음)'));
-        if (cv.product.ingrName) html += metaRow('성분', esc(cv.product.ingrName));
+    var m = careModel(), ix = m ? indexModel(m) : null, r = ix && ix.rows[item.id] ? ix.rows[item.id][0] : null;
+    var t = activeTimes(item);
+    var html = '<main class="screen">' + topbar() + '<h1 class="h" data-focus>' + esc(nm(item)) + '</h1><p class="sub">' + esc(kindLabel(item)) + ' · ' + esc(t.length ? t.join(' · ') : '시간 미정') + '</p>';
+    if (loadingNow()) {
+      html += '<div class="card"><h4>준비 중이에요</h4><p>약 목록과 설명서 기반 안내를 불러오면 여기에 보여드려요.</p></div>';
+    } else if (!m) {
+      html += '<div class="card"><h4>설명서 기반 안내를 쓸 수 없어요</h4><p>등록은 됐어요. 약사에게 확인해 주세요.</p></div>';
+    } else {
+      var any = false;
+      if (r && r.mealRelation && m.evidence[r.mealRelation.ruleId]) { any = true; html += '<p class="lbl">복용 시점</p>' + evidenceCard(m.evidence[r.mealRelation.ruleId]); }
+      if (r) {
+        var seen = {};
+        nonFood(r.flags).forEach(function (f) { if (m.evidence[f.id] && !seen[f.id]) { seen[f.id] = 1; if (!any) html += ''; any = true; html += '<p class="lbl"><span class="red">' + icon('tri', 16) + '</span> ' + esc(f.short) + '</p>' + evidenceCard(m.evidence[f.id]); } });
+        (r.foods || []).forEach(function (f) { if (m.evidence[f.flagId] && !seen[f.flagId]) { seen[f.flagId] = 1; any = true; html += '<p class="lbl">음식: ' + esc(f.ko) + '</p>' + evidenceCard(m.evidence[f.flagId]); } });
       }
-      if (r && r.note) html += '<p class="note">' + esc(r.note) + '</p>';
-    } else if (item.kind === 'supp') {
-      var names = (item.ingredientKeys || []).map(function (k) { var o = Pack.supplementKeyList.filter(function (x) { return x.id === k; })[0]; return o ? o.ko : k; });
-      html += metaRow('성분', names.length ? esc(names.join(', ')) : '선택하지 않았어요');
-      html += metaRow('식약처 병용섭취정보', a.coverage.scope ? '있는 원료예요' : '이 성분은 목록에 없어요', a.coverage.scope ? tip('t4', '식약처가 약과의 병용 정보를 제공하는 원료예요. 내용은 식약처 화면에서 확인해 주세요.') : tip('t4', '식약처가 병용 정보를 제공하는 원료 33종 중에 없다는 뜻이에요. 안전하다는 뜻은 아니에요.'));
-      if (a.coverage.scope) html += '<p class="src"><a href="' + esc(Pack.sources.hid) + '" target="_blank" rel="noopener">식약처 건강기능식품 종합정보 서비스 보기</a></p>';
-      var ps = Pack.supplements.filter(function (s) { return s.reportNo === item.reportNo; })[0];
-      if (ps) {
-        html += metaRow('섭취 방법', esc(ps.intake));
-        html += '<div class="card soft"><h4>제품 주의사항</h4><p>' + esc(ps.cautions) + '</p><small class="muted">식품안전나라 품목제조신고 · 신고번호 ' + esc(ps.reportNo) + ' · 보고일 ' + esc(ps.reportedAt) + '</small></div>';
-      }
+      if (!r && ix.unsched[item.id]) html += '<button type="button" class="row" data-act="to" data-view="times" data-all="1"><span class="row-main"><b>복용 시간을 정해 주세요</b><span class="sub2">시간을 정하면 간격과 식사 관계를 볼 수 있어요</span></span>' + icon('chev') + '</button>';
+      if (ix.unc[item.id]) html += '<div class="card"><h4>' + (item.kind === 'drug' ? '설명서 기반 안내' : '확인 결과') + '</h4><p>' + esc(uncoveredText(item, ix.unc[item.id])) + '</p></div>';
+      else if (!any && r) html += '<div class="card"><h4>찾은 안내가 없어요</h4><p>등록한 것들 사이에서 병용금기·설명서 안내를 찾지 못했어요. 안전하다는 뜻은 아니에요.</p></div>';
     }
-
-    var qs = E.questionsFor(a, state.items, Pack);
-    if (!qs.length && state.items.length > 1) qs = ['지금 먹는 것들과 ' + nm(item) + ', 같이 먹어도 되나요?'];
-    if (qs.length) {
-      html += '<p class="lbl">약사에게 물어볼 질문</p><div class="qbox">' + qs.map(function (q) {
-        var saved = state.questions.some(function (s) { return s.text === q; });
-        return '<div class="qrow"><p>' + esc(q) + '</p><button type="button" class="mini txt' + (saved ? ' on' : '') + '" data-act="saveQ" data-q="' + esc(q) + '"' + (saved ? ' aria-pressed="true"' : ' aria-pressed="false"') + '>' + (saved ? '저장됨' : '저장') + '</button></div>';
-      }).join('') + '</div>';
-    }
-    return html + '<p class="fine">키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드려요.</p></main>';
+    return html + HELP_FOOT + '</main>';
   };
 
   function allQuestions() {
@@ -648,7 +581,7 @@
       '<p class="lbl">정보</p><div class="meta"><b>설명서·영양제 자료 확인일</b><span>' + esc(Pack.checkedAt) + '</span></div>' + range +
       '<div class="meta off"><b>계정 연결</b><span>2차 예정</span></div>' +
       scope + sources +
-      '<p class="fine">키핑은 의료 조언이 아니에요. 약과 영양제를 같이 먹어도 되는지는 약사나 의사에게 확인해 주세요. 출처: 식약처 의약품 제품 허가정보, DUR, 의약품안전나라, 식품안전나라.</p></main>' + nav('settings');
+      '<p class="fine">키핑은 의료 조언이 아니에요. 약과 영양제를 함께 복용해도 되는지는 약사나 의사에게 확인해 주세요. 출처: 식약처 의약품 제품 허가정보, DUR, 의약품안전나라, 식품안전나라.</p></main>' + nav('settings');
   };
 
   /* ---------- 흐름 ---------- */
@@ -715,11 +648,23 @@
     },
     agreeNext: function () { if (!ui.agree) return; state.agreedAt = new Date().toISOString(); save(); go('onb-drugs'); },
     skip: function (t) { Acts.to(t); },
-    check: function (t) {
-      var c = todayChecks(), k = t.dataset.id + '|' + t.dataset.t;
-      if (c.done[k]) delete c.done[k]; else c.done[k] = true;
-      save(); render(false);
-      var again = root.querySelector('[data-act="check"][data-id="' + t.dataset.id + '"][data-t="' + t.dataset.t + '"]'); if (again) again.focus({ preventScroll: true });
+    toggleSlot: function (t) {
+      var id = t.dataset.id; ui.open[id] = !ui.open[id];
+      t.setAttribute('aria-expanded', String(!!ui.open[id]));
+      var b = document.getElementById('slot-' + id);
+      if (b) { if (ui.open[id]) b.removeAttribute('hidden'); else b.setAttribute('hidden', ''); }
+      var li = t.closest('.slot'); if (li) li.classList.toggle('open', !!ui.open[id]);
+    },
+    sheet: function (t) { go('sheet', { id: t.dataset.id, item: t.dataset.item }); },
+    /* 시간 제안: 그 항목의 시간 가운데 제안 시간과 가장 가까운 것을 바꾼다 */
+    applySugg: function (t) {
+      var it = findItem(t.dataset.id), sg = t.dataset.t, C = window.KeepingCare; if (!it || !C) return;
+      var want = C.toMin(sg), ts = (it.times || []).slice(), best = -1, bd = 1e9;
+      ts.forEach(function (x, i) { var mi = C.toMin(x); if (mi == null) return; var d = Math.abs(mi - want); d = Math.min(d, 1440 - d); if (d < bd) { bd = d; best = i; } });
+      if (best < 0) return;
+      ts[best] = sg; it.times = ts; it.updatedAt = new Date().toISOString(); save();
+      toast(nm(it) + ' 시간을 ' + sg + '으로 옮겼어요');
+      render(false);
     },
     demo: function () {
       function run() { loadExample(); go('home'); }
@@ -739,11 +684,11 @@
     detail: function (t) { go('detail', { id: t.dataset.id }); },
     newRx: function (t) { go('add', { batch: t.dataset.batch || newBatchId() }); },
     demoRx: function () { go('notify'); },
-    demoConfirm: function () { var b = addDemoBatch(); go('result', { batch: b }); },
+    demoConfirm: function () { var b = addDemoBatch(); go('home', { fresh: b }); },
     confirmAdd: function () {
       if (!selectedItems('drug').length) { toast('추가한 약이 없어요'); return; }
       state.lastBatch = ui.params.batch; save();
-      go('result', { batch: ui.params.batch });
+      go('home', { fresh: ui.params.batch });
     },
     pick: function (t) {
       var x = ui.results && ui.results[+t.dataset.i]; if (!x) return;
@@ -803,7 +748,7 @@
       var p = ui.params;
       if (p.mode === 'onb') go('home');
       else if (p.all) go('home');
-      else go('result', { batch: p.batch || state.lastBatch });
+      else go('home', { fresh: p.batch || state.lastBatch });
     },
     toggleState: function (t) {
       var k = t.dataset.k, cur = statesOf(), i = cur.indexOf(k);
