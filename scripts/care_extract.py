@@ -18,10 +18,12 @@ import hashlib, json, re, sys
 
 # ---- 키워드 표: key는 앱의 영양제 키(datapack supplementKeyList)와 같은 이름을 쓴다 ----
 SUPP_KEYS = {
-    'calcium':     ('칼슘제제',      [r'칼슘\s*제제', r'탄산칼슘', r'칼슘\s*보충제', r'칼슘(?![\s]*(?:채널|길항|이온|통로))(?!\w*염화)', ]),
-    'iron':        ('철분제제',      [r'철분', r'철\s*제제', r'철분제제', r'철\(Fe\)염', r'황산제일철', r'푸마르산제일철']),
-    'magnesium':   ('마그네슘',      [r'(?<!스테아르산)(?<!스테아린산)마그네슘(?!\s*스테아)']),
-    'zinc':        ('아연',          [r'아연']),
+    # 맨 이름만 나온 문장("비타민 B12 또는 칼슘의 섭취·흡수가 부족한 환자…")은 영양제와의 상호작용이 아니다.
+    # 그래서 칼슘·철·마그네슘·아연은 제제·보충제·함유 같은 복용 형태가 함께 적힌 경우만 잡는다.
+    'calcium':     ('칼슘제제',      [r'칼슘\s*제제', r'탄산칼슘', r'칼슘\s*보충제', r'칼슘\s*함유']),
+    'iron':        ('철분제제',      [r'철분\s*제', r'철\s*제제', r'철분\s*보충', r'철\(Fe\)염', r'황산제일철', r'푸마르산제일철']),
+    'magnesium':   ('마그네슘제제',  [r'마그네슘\s*(?:제제|함유|보충제)', r'산화마그네슘', r'수산화마그네슘']),
+    'zinc':        ('아연제제',      [r'아연\s*(?:제제|보충제|함유)']),
     'vitaminK':    ('비타민 K',      [r'비타민\s*K(?!\s*의존)']),   # '비타민K의존성 응고인자'는 영양제가 아니다
     'vitaminD':    ('비타민 D',      [r'비타민\s*D']),
     'vitaminC':    ('비타민 C',      [r'비타민\s*C']),
@@ -33,7 +35,7 @@ SUPP_KEYS = {
 }
 FOOD_KEYS = {
     'grapefruit': ('자몽',            [r'자몽']),
-    'alcohol':    ('알코올·음주',     [r'알코올', r'알콜', r'음주', r'술(?![가-힣])']),
+    'alcohol':    ('알코올·음주',     [r'알코올', r'알콜', r'음주']),   # 낱글자 '술'은 '수술'에도 걸려서 쓰지 않는다
     'caffeine':   ('카페인·커피',     [r'카페인', r'커피']),
     'dairy':      ('우유·유제품',     [r'우유', r'유제품']),
 }
@@ -45,6 +47,8 @@ DRUG_GROUPS = {
 ALL_KEYS = {**{k: ('supplement',) + v for k, v in SUPP_KEYS.items()},
             **{k: ('food',) + v for k, v in FOOD_KEYS.items()},
             **{k: ('drug_group',) + v for k, v in DRUG_GROUPS.items()}}
+
+NOTE_KEYS = {'biotin', 'alcohol', 'grapefruit', 'caffeine', 'vitaminK', 'stJohnsWort', 'ginseng', 'ginkgo'}   # 일반적 주의·경고에서는 이 키만 규칙으로 만든다
 
 INTERVAL_RE = re.compile(r'(최소|적어도|약)?\s*(\d+(?:\.\d+)?)\s*(?:~|-|–)?\s*(\d+(?:\.\d+)?)?\s*시간\s*(이상|이내)?\s*(?:의\s*)?간격')
 MEAL_RE = re.compile(r'(식사\s*(?:하기)?\s*(?:적어도\s*)?(?:\d+\s*(?:시간|분)\s*)?(?:전|후|중|직전|직후)|식전|식후|식간|공복|취침\s*전|식사와\s*함께|식사\s*중)')
@@ -88,6 +92,10 @@ def _interval(text):
     lo = float(m.group(2)); hi = float(m.group(3)) if m.group(3) else None
     return {'minHours': lo, 'maxHours': hi, 'qualifier': m.group(1) or '', 'text': _clean(m.group(0))}
 
+def _is_heading(p):
+    """소제목 한 줄: 짧고 문장으로 끝나지 않는다(예: '임부에 대한 투여', '시타글립틴')."""
+    return len(p) < 25 and not re.search(r'(다|요)\.?\s*$', p)
+
 def _short(text, n=220):
     return text if len(text) <= n else text[:n].rstrip() + '…'
 
@@ -109,31 +117,37 @@ def extract_rules(nb_xml, ud_xml=None, item_seq=''):
         sec = _section(title)
         if not sec:
             continue
+        subject = ''
         for p in paras:
+            if _is_heading(p):
+                subject = p            # 복합제는 성분별 소제목이 있다. 뒤따르는 문장의 subject로 남긴다
+                continue
             no_m = ITEM_NO.match(p)
             no = no_m.group(0).strip() if no_m else ''
             body = ITEM_NO.sub('', p)
             where = (title + (' ' + no if no else '')).strip()
             if sec in ('interaction', 'general', 'warning'):
                 hits = _keys_in(body)
+                if sec != 'interaction':
+                    hits = [h for h in hits if h['key'] in NOTE_KEYS]
                 if not hits:
                     continue
                 rules.append({
                     'id': _rid(item_seq, where, body[:40]), 'kind': 'interaction' if sec == 'interaction' else 'note',
-                    'section': sec, 'where': where, 'matched': hits, 'interval': _interval(body),
-                    'tone': 'avoid' if TONE_AVOID.search(body) else 'caution', 'excerpt': _short(body), 'extractor': 'kw-v0'})
+                    'section': sec, 'where': where, 'subject': subject, 'matched': hits, 'interval': _interval(body),
+                    'tone': 'avoid' if TONE_AVOID.search(body) else 'caution', 'excerpt': _short(body), 'extractor': 'kw-v1'})
             elif sec in ('pregnancy', 'elderly'):
                 rules.append({
                     'id': _rid(item_seq, where, body[:40]), 'kind': 'state_' + sec, 'section': sec, 'where': where,
-                    'matched': [], 'interval': None,
-                    'tone': 'avoid' if TONE_AVOID.search(body) else 'info', 'excerpt': _short(body), 'extractor': 'kw-v0'})
+                    'subject': subject, 'matched': [], 'interval': None,
+                    'tone': 'avoid' if TONE_AVOID.search(body) else 'info', 'excerpt': _short(body), 'extractor': 'kw-v1'})
     for title, paras in parse_doc(ud_xml or ''):
         for p in paras:
             if MEAL_RE.search(p):
                 rules.append({
                     'id': _rid(item_seq, 'UD', p[:40]), 'kind': 'timing', 'section': 'usage', 'where': '용법·용량',
                     'matched': [], 'interval': None, 'tone': 'info', 'excerpt': _short(_clean(p)),
-                    'meal': MEAL_RE.search(p).group(0), 'extractor': 'kw-v0'})
+                    'meal': MEAL_RE.search(p).group(0), 'extractor': 'kw-v1'})
     return rules
 
 def main(argv):
