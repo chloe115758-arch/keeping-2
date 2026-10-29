@@ -76,9 +76,25 @@
     return k || null;
   }
 
+  /* DUR 모듈(js/dur.js)이 연결돼 있으면 pack.dur로 받습니다. 없으면 기존 데이터 팩만 씁니다. */
+  function productOf(item, pack) {
+    var dur = pack && pack.dur;
+    if (!dur || !item || item.kind !== 'drug') return null;
+    var code = item.productCode || (item.itemSeq && dur.codeOf(item.itemSeq));
+    return code ? dur.get(code) : null;
+  }
   function record(item, pack) {
-    if (!item || item.kind !== 'drug' || !item.itemSeq) return null;
-    return index(pack).bySeq[item.itemSeq] || null;
+    if (!item || item.kind !== 'drug') return null;
+    if (item.itemSeq) {
+      var r = index(pack).bySeq[item.itemSeq];
+      if (r) return r;
+    }
+    var dur = pack && pack.dur;
+    if (dur && item.productCode) {
+      var seq = dur.seqOf(item.productCode);
+      if (seq) return index(pack).bySeq[seq] || null;
+    }
+    return null;
   }
   function labelOf(item, pack) {
     var r = record(item, pack);
@@ -151,6 +167,16 @@
 
   function pairEvidence(a, b, pack) {
     if (a.kind !== 'drug' || b.kind !== 'drug') return [];
+    var pa = productOf(a, pack), pb = productOf(b, pack);
+    if (pa && pb) {          // 병용금기 파일(성분 기준)로 확인
+      return pack.dur.evidence(pa.code, pb.code).map(function (e) {
+        return {
+          kind: 'pair', confidence: 'high', ownerId: a.id, otherId: b.id,
+          reason: e.reason, note: e.note, notified: e.date,
+          source: pack.dur.source('pair')
+        };
+      });
+    }
     var ra = record(a, pack), rb = record(b, pack);
     if (!ra || !rb || !ra.ingrCode || !rb.ingrCode) return [];
     return (pack.pairs || []).filter(function (p) {
@@ -170,7 +196,7 @@
     var ownerName = owner ? nameOf(owner, pack) : '';
     if (f.kind === 'pair') {
       f.title = josa(o, '과', '와') + ' 병용금기로 등록돼 있어요';
-      f.summary = '사유: ' + f.reason + ' · 고시 ' + f.notified;
+      f.summary = '사유: ' + f.reason + (f.notified ? ' · 고시 ' + f.notified : '') + (f.note ? ' · 조건: ' + f.note : '');
     } else if (f.kind === 'name') {
       f.title = ownerName + ' 설명서에 ' + josa(f.mentioned, '이', '가') + ' 함께 쓸 때 주의할 약으로 나와 있어요';
       f.summary = (owner && owner.id === subject.id ? o : s) + '의 성분이에요.';
@@ -205,12 +231,14 @@
   function coverageOf(item, pack) {
     if (item.kind === 'drug') {
       var r = record(item, pack);
-      if (!r) return { inPack: false };
+      var p = productOf(item, pack);
+      if (!r && !p) return { inPack: false };
       return {
         inPack: true,
-        dur: !!r.dur,
-        label: !!(pack.labels && pack.labels[r.itemSeq]),
-        partial: !!r.partial
+        dur: r ? !!r.dur : true,          // 제품 목록에 있으면 병용금기 파일로 확인한 것
+        label: !!(r && pack.labels && pack.labels[r.itemSeq]),
+        partial: r ? !!r.partial : false,
+        product: p ? { code: p.code, category: p.category, ingrName: p.ingrName } : null
       };
     }
     var idx = index(pack);

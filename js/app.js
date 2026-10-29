@@ -11,7 +11,8 @@
   var ui = {
     view: 'welcome', params: {}, prev: null,
     tab: 'domestic', q: '', oq: '', results: null, remote: null, overseas: null,
-    chips: [], manualName: '', searchToken: 0, photo: null, photoToken: 0
+    chips: [], manualName: '', searchToken: 0, photo: null, photoToken: 0,
+    dur: { status: 'loading' }
   };
   var searchTimer = null;
 
@@ -126,8 +127,28 @@
   }
   function searchBlock(kind) {
     var ph = kind === 'drug' ? '약 이름 (예: 시바스정)' : '제품 이름 (예: 메가도스)';
-    return '<div class="search"><label class="sr" for="q">' + (kind === 'drug' ? '약 이름 검색' : '영양제 이름 검색') + '</label><div class="inp">' + icon('search', 18) + '<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="' + ph + '" value="' + esc(ui.q) + '" data-input="search"></div>' + photoBlock() + '<div id="results" aria-live="polite">' + resultsHtml(kind) + '</div></div>';
+    return '<div class="search"><label class="sr" for="q">' + (kind === 'drug' ? '약 이름 검색' : '영양제 이름 검색') + '</label><div class="inp">' + icon('search', 18) + '<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="' + ph + '" value="' + esc(ui.q) + '" data-input="search"></div>' + photoBlock() + (kind === 'drug' ? '<div id="durstat" aria-live="polite">' + durHtml() + '</div>' : '') + '<div id="results" aria-live="polite">' + resultsHtml(kind) + '</div></div>';
   }
+  /* ---------- 전체 약 목록(DUR) 불러오기 ----------
+     실패해도 기존 데이터 팩 모드로 계속 동작한다. 약 4MB, 처음 한 번만 걸린다. */
+  function durHtml() {
+    if (ui.dur.status === 'loading') return '<p class="muted pad">약 목록을 불러오는 중…</p>';
+    if (ui.dur.status === 'error') return '<p class="note">전체 약 검색을 쓸 수 없어요. 키핑이 근거를 확인하는 약 안에서만 검색돼요. 목록에 없는 약은 이름 그대로 등록할 수 있어요.</p>';
+    return '';
+  }
+  function bootDur() {
+    ui.dur = { status: 'loading' };
+    if (!window.KeepingDur || typeof fetch !== 'function') { ui.dur = { status: 'error' }; return Promise.resolve(); }
+    return window.KeepingDur.load('data/dur/').then(function (dur) {
+      Pack.dur = dur; ui.dur = { status: 'ready' };
+    }).catch(function () {
+      delete Pack.dur; ui.dur = { status: 'error' };
+    }).then(function () {
+      var el = document.getElementById('durstat'); if (el) el.innerHTML = durHtml();
+      if (['home', 'list', 'result', 'detail', 'settings'].indexOf(ui.view) > -1) render(false); // 확인 결과가 달라질 수 있는 화면만 다시 그린다
+    });
+  }
+
   /* ---------- 사진으로 찾기 (기기 안 글자 인식) ----------
      사진은 이 기기 안에서만 읽고 저장하지 않는다. 읽은 글자는 검색창을 채울 뿐, 등록은 사용자가 고른다. */
   var OCR_SRC = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
@@ -756,6 +777,7 @@
   });
 
   ui.view = state.items.length ? 'home' : 'welcome';
+  var durReady = bootDur();
   render(true);
-  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, applyOcrText: function (text) { return applyOcrText(text, ui.photoToken); } };
+  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, applyOcrText: function (text) { return applyOcrText(text, ui.photoToken); } };
 })();
