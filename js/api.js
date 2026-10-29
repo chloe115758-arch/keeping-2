@@ -24,7 +24,24 @@
   }
 
   /* ---------- 약 ---------- */
+  var DUR_LIMIT = 20;
+  /* 전체 약 목록(DUR)이 연결돼 있으면 거기서 찾는다. 21개를 달라고 해서 "더 있는지"만 알아낸다. */
+  function searchDrugsDur(dur, q) {
+    var rows = dur.search(q, { limit: DUR_LIMIT + 1 });
+    var more = rows.length > DUR_LIMIT;
+    return Promise.resolve({
+      results: rows.slice(0, DUR_LIMIT).map(function (r) {
+        return {
+          key: 'd-' + r.code, source: 'dur', code: r.code, name: r.display,
+          sub: [r.company, r.category === '전문의약품' ? '전문' : (r.category === '일반의약품' ? '일반' : '')].filter(Boolean).join(' · '),
+          outside: r.kind === 'outside'
+        };
+      }),
+      more: more, remote: { status: 'off' }
+    });
+  }
   function searchDrugs(q) {
+    if (Pack.dur && q) return searchDrugsDur(Pack.dur, q);
     var out = [];
     Pack.drugs.forEach(function (d) {
       if (!q || has(d.nameFull + d.name + (d.ingredientKo || ''), q)) {

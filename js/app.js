@@ -49,6 +49,7 @@
   function fmtGap(h) { return String(Math.round(h * 10) / 10).replace(/\.0$/, ''); }
   function kindLabel(it) {
     if (it.kind === 'supp') return it.company || '직접 입력';
+    if (it.productCode) return [it.company, it.category].filter(Boolean).join(' · ') || '업체 정보 없음';
     var r = E.record(it, Pack);
     return r ? [r.category, r.type].filter(Boolean).join(' · ') : '확인 범위 밖';
   }
@@ -101,13 +102,14 @@
   function isAdded(kind, x) {
     return state.items.some(function (it) {
       if ((it.batch || null) !== batchOf()) return false;
-      if (kind === 'drug') return it.kind === 'drug' && it.itemSeq && it.itemSeq === x.itemSeq;
+      if (kind === 'drug') return it.kind === 'drug' && ((it.itemSeq && it.itemSeq === x.itemSeq) || (it.productCode && it.productCode === x.code));
       return it.kind === 'supp' && it.reportNo && x.supp && it.reportNo === x.supp.reportNo;
     });
   }
   function resultsHtml(kind) {
     var r = ui.results;
     if (!ui.q.trim()) return '';
+    if (kind === 'drug' && ui.dur.status === 'loading') return ''; // 안내는 #durstat에 있고, 로딩이 끝나면 자동으로 다시 찾는다
     if (r === null) return '<p class="muted pad">불러오는 중…</p>';
     var html = '';
     if (ui.remote && ui.remote.status === 'error') html += '<p class="note">서버 검색에 연결하지 못했어요. 확인 범위 안의 결과만 보여드려요.</p>';
@@ -121,8 +123,9 @@
     }
     html += r.map(function (x, i) {
       var added = isAdded(kind, x);
-      return '<button type="button" class="res' + (added ? ' done' : '') + '" data-act="pick" data-i="' + i + '"' + (added ? ' disabled' : '') + '><span class="res-main"><b>' + esc(x.name) + '</b><span class="muted">' + esc(x.sub) + '</span></span><span class="res-act">' + (added ? '추가됨' : icon('plus') + '추가') + '</span></button>';
+      return '<button type="button" class="res' + (added ? ' done' : '') + '" data-act="pick" data-i="' + i + '"' + (added ? ' disabled' : '') + '><span class="res-main"><b>' + esc(x.name) + '</b><span class="muted">' + esc(x.sub) + (x.outside ? ' <span class="pill soft">목록 밖</span>' : '') + '</span></span><span class="res-act">' + (added ? '추가됨' : icon('plus') + '추가') + '</span></button>';
     }).join('');
+    if (kind === 'drug' && ui.more) html += '<p class="note">결과가 ' + 20 + '개를 넘어요. 더 좁혀 입력해 주세요.</p>';
     return html;
   }
   function searchBlock(kind) {
@@ -138,6 +141,7 @@
   }
   function bootDur() {
     ui.dur = { status: 'loading' };
+    var st = document.getElementById('durstat'); if (st) st.innerHTML = durHtml();
     if (!window.KeepingDur || typeof fetch !== 'function') { ui.dur = { status: 'error' }; return Promise.resolve(); }
     return window.KeepingDur.load('data/dur/').then(function (dur) {
       Pack.dur = dur; ui.dur = { status: 'ready' };
@@ -145,6 +149,7 @@
       delete Pack.dur; ui.dur = { status: 'error' };
     }).then(function () {
       var el = document.getElementById('durstat'); if (el) el.innerHTML = durHtml();
+      if (needsSearch() && currentKind() === 'drug' && ui.q.trim()) runSearch(); // 로딩 중에 입력한 검색을 이어서 실행
       if (['home', 'list', 'result', 'detail', 'settings'].indexOf(ui.view) > -1) render(false); // 확인 결과가 달라질 수 있는 화면만 다시 그린다
     });
   }
@@ -276,10 +281,11 @@
     var kind = currentKind();
     var token = ++ui.searchToken;
     var q = ui.q.trim();
-    if (!q) { ui.results = []; ui.remote = null; refreshLists(); return; }
+    if (!q) { ui.results = []; ui.remote = null; ui.more = false; refreshLists(); return; }
+    if (kind === 'drug' && ui.dur.status === 'loading') return;
     (kind === 'drug' ? Api.searchDrugs(q) : Api.searchSupplements(q)).then(function (res) {
       if (token !== ui.searchToken) return;
-      ui.results = res.results; ui.remote = res.remote;
+      ui.results = res.results; ui.remote = res.remote; ui.more = !!res.more;
       refreshLists();
     });
   }
@@ -581,7 +587,7 @@
   function go(view, params, keepScroll) {
     ui.prev = { view: ui.view, params: ui.params };
     ui.view = view; ui.params = params || {};
-    resetPhoto();
+    resetPhoto(); ui.more = false;
     ui.q = ''; ui.oq = ''; ui.results = null; ui.remote = null; ui.overseas = null; ui.chips = []; ui.manualName = '';
     if (view !== 'onb-supps') ui.tab = 'domestic';
     render(!keepScroll);
@@ -634,7 +640,9 @@
     pick: function (t) {
       var x = ui.results && ui.results[+t.dataset.i]; if (!x) return;
       var b = batchOf();
-      if (currentKind() === 'drug') {
+      if (currentKind() === 'drug' && x.source === 'dur') {
+        state.items.push(newItem(Object.assign(Pack.dur.toItem(x.code), { batch: b })));
+      } else if (currentKind() === 'drug') {
         state.items.push(newItem({ kind: 'drug', source: x.source, itemSeq: x.itemSeq, name: x.name, ingredientKo: x.ingredientKo || null, type: x.type || null, batch: b }));
       } else {
         var s = x.supp;
