@@ -44,7 +44,7 @@ const snap = () => seenTexts.push(T());
 
   console.log('2) 새 처방 알림 시연 → 타임라인');
   click('[data-act="demoRx"]'); snap();
-  check('알림 화면(시연이라고 밝힘)', T().includes('이번에 받은 약 4개를 확인해 볼까요') && T().includes('시연 화면이에요'));
+  check('N1 알림 화면(시연이라고 밝힘)', T().includes('새 처방약이 등록됐어요') && T().includes('시연 화면이에요'));
   click('[data-act="demoConfirm"]'); snap();
   check('홈으로 돌아가고 새 처방 약이 하이라이트됨', !!q('.home-card') && qa('.titem.new').length >= 3, String(qa('.titem.new').length));
   check('시간대 행 개수: 아침·점심·저녁/자기 전 (7개 항목)', qa('.slot').length >= 3 && w.KeepingApp.careModel().summary.itemCount === 7);
@@ -116,6 +116,8 @@ const snap = () => seenTexts.push(T());
   console.log('6) 새 약 추가 흐름(실제 사용자)');
   click('[data-act="back"]'); click('.nav [data-view="home"]');
   click('[data-act="newRx"]'); snap();
+  check('추가 방법 선택(N2): 약봉투로 추가(연습용) / 직접 검색', T().includes('약봉투로 추가 (연습용)') && T().includes('직접 검색') && T().includes('시연이에요'));
+  click('[data-act="to"][data-view="add"]'); snap();
   check('새 약 추가 화면', T().includes('새로 받은 약을 추가해요'));
   check('확인 버튼은 추가 전 비활성', q('#nextbtn').disabled === true);
   await wait(60);

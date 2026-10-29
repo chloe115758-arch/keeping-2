@@ -13,7 +13,9 @@
     tab: 'domestic', q: '', oq: '', results: null, remote: null, overseas: null,
     chips: [], manualName: '', searchToken: 0,
     dur: { status: 'loading' },
-    care: { status: 'loading', engine: null, notice: true }, open: {}
+    care: { status: 'loading', engine: null, notice: true }, open: {},
+    env: null, ocr: null, ocrState: 'idle',
+    envDelay: (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) ? 0 : 700
   };
   var searchTimer = null;
 
@@ -283,7 +285,7 @@
     var edit = ui.params.mode === 'edit', n = selectedItems('drug').length;
     return '<main class="screen has-bar">' + (edit ? topbar() : obHead(1) + stepChip(1)) +
       '<h1 class="h' + (edit ? '' : ' ob') + '" data-focus>' + (edit ? '지금 먹는 약' : '복용 중인 약을 검색해서 추가해 주세요') + '</h1><p class="sub' + (edit ? '' : ' ob') + '">' + (edit ? '먹는 약을 더하거나 뺄 수 있어요.' : '약 이름이나 성분명으로 찾을 수 있어요.') + '</p>' +
-      searchBlock('drug') +
+      searchBlock('drug') + (edit ? '' : '<button type="button" class="row ghostrow" data-act="to" data-view="envelope" data-mode="onb"><span class="row-main"><b>약봉투로 추가 (연습용)</b><span class="sub2">연습용 샘플 약봉투만 인식해요. 시연이에요</span></span>' + icon('chev') + '</button>') +
       '<p class="lbl">고른 약 <span class="count" id="selcount">' + n + '</span></p><div id="selected">' + selectedHtml('drug') + '</div></main>' +
       actionBar(edit
         ? '<button type="button" class="cta" data-act="nav" data-view="list">완료</button>'
@@ -444,12 +446,128 @@
       '<div class="home-card"><div><h1 data-focus>안녕하세요</h1><p class="home-date">' + esc(d0) + '</p></div>' + sum + '</div>' +
       '<div class="home-body">' + careStatHtml() +
       (state.example ? '<p class="banner">예시 사용자예요. 복용 이력은 가정이고, 약 정보는 실제 공식 자료예요.</p>' : '') +
+      (m ? newBoxHtml(m, ix) : '') +
       body +
       '<div class="home-actions">' +
       (!state.items.length ? '<button type="button" class="cta" data-act="to" data-view="onb-drugs">처음 설정 시작하기</button>' : '') +
       '<button type="button" class="cta ' + (state.example ? 'ghost' : '') + '" data-act="newRx">새 약 추가하기</button>' +
       (state.example ? '<button type="button" class="cta" data-act="demoRx">새 처방 알림 시연 보기</button>' : '') + '</div></div></main>' + nav('home');
   };
+
+  /* ---------- 새 처방 흐름: 추가 방법(N2) · 약봉투로 추가(연습용 시연) · 새로 생긴 주의(N5) ----------
+     약봉투 인식은 시연이다(docs/plan-v2.md 4장). 연습용 샘플 이미지만 "인식"하고, 그 뒤의 약 검색·등록·타임라인 반영은 실제다. */
+  var ENV_NOTE = '연습용 샘플만 인식해요. 실제 사진 인식은 아직 지원하지 않아요.';
+  /* 봉투의 횟수·용법 → 기본 복용 시간(사용자가 고칠 수 있다) */
+  function defaultTimes(dose) {
+    var d = dose || {}, n = +((/(\d+)\s*회/.exec(d.daily || '') || [])[1]), how = d.how || '';
+    if (n === 1 && /취침|저녁/.test(how)) return ['21:00'];
+    return { 1: ['08:00'], 2: ['08:00', '20:00'], 3: ['08:00', '13:00', '19:00'] }[n] || [];
+  }
+  function doseText(d) { return d ? [d.once, d.daily, d.days, d.how].filter(Boolean).join(' · ') : ''; }
+  function loadOcr() {
+    if (ui.ocr || ui.ocrState === 'loading' || ui.ocrState === 'error') return;
+    if (!window.KeepingOcrDemo || typeof fetch !== 'function') { ui.ocrState = 'error'; return; }
+    ui.ocrState = 'loading';
+    fetch('data/ocr-demo/manifest.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (m) { ui.ocr = window.KeepingOcrDemo.create(m); ui.ocrState = 'ready'; })
+      .catch(function () { ui.ocrState = 'error'; })
+      .then(function () { if (ui.view === 'envelope') render(false); });
+  }
+  function envImg(s, step) {
+    return '<div class="envimg"><img src="' + esc(s.file) + '" alt="' + esc(s.title) + '" width="900" height="1260">' + s.items.map(function (it, i) {
+      if (i >= step) return '';
+      var b = it.box.map(function (x) { return (x * 100).toFixed(2); });
+      return '<span class="hl" style="left:' + b[0] + '%;top:' + b[1] + '%;width:' + b[2] + '%;height:' + b[3] + '%"></span>';
+    }).join('') + '</div>';
+  }
+  function envRow(r, i) {
+    var e = ui.env, on = e.on[i];
+    var cands = r.candidates.length
+      ? '<div class="cands" role="radiogroup" aria-label="' + esc(r.ocrText) + ' 후보">' + r.candidates.map(function (c, j) {
+        return '<button type="button" class="cand' + (e.pick[i] === j ? ' on' : '') + '" role="radio" aria-checked="' + (e.pick[i] === j) + '" data-act="envPick" data-i="' + i + '" data-j="' + j + '"><b>' + esc(c.display) + '</b><small>' + esc([c.company, c.category].filter(Boolean).join(' · ')) + (c.kind === 'outside' ? ' · 목록 밖' : '') + '</small></button>';
+      }).join('') + '</div>'
+      : '<p class="tline info plain">' + icon('info', 16) + '<span>약 목록에서 찾지 못했어요. 등록하지 않고, 직접 검색으로 추가해 주세요</span></p>';
+    var times = on && r.candidates.length ? '<div class="tin">' + icon('clock', 20) + (e.times[i].length ? e.times[i] : ['']).map(function (t, k) {
+      return '<input type="time" class="time" aria-label="' + esc(r.ocrText) + ' 복용 시간 ' + (k + 1) + '" data-input="envtime" data-i="' + i + '" data-k="' + k + '" value="' + esc(t) + '">';
+    }).join('') + '</div>' : '';
+    return '<li class="envrow' + (on ? '' : ' off') + '"><div class="envhd"><span><b>' + esc(r.ocrText) + '</b><small>봉투에 적힌 이름' + (r.dose ? ' · ' + esc(doseText(r.dose)) : '') + '</small></span>' +
+      (r.candidates.length ? '<button type="button" class="mini txt" data-act="envToggle" data-i="' + i + '" aria-pressed="' + (!on) + '">' + (on ? '이 약 빼기' : '다시 넣기') + '</button>' : '') + '</div>' + (on ? cands + times : '') + '</li>';
+  }
+  function envBodyHtml() {
+    var e = ui.env;
+    if (!e) return '';
+    if (e.status === 'reading') return '<p class="muted" aria-live="polite">읽는 중…</p>';
+    if (e.status === 'no') return '<div class="card" role="status"><h4>인식하지 못했어요</h4><p>연습용 샘플 이미지만 인식해요. 실제 사진 인식은 아직 지원하지 않아요.</p><button type="button" class="cta ghost small" data-act="showSamples">샘플 보기</button></div>';
+    if (e.status === 'nodur') return '<div class="card" role="status"><h4>약 목록을 쓸 수 없어요</h4><p>' + (ui.dur.status === 'loading' ? '약 목록을 불러오는 중이에요. 끝나면 다시 올려 주세요.' : '약 목록을 불러오지 못해서 연습용 약봉투를 쓸 수 없어요. 직접 검색으로 추가해 주세요.') + '</p></div>';
+    var n = e.rows.length;
+    if (e.status === 'scan') return envImg(e.sample, e.step) + '<p class="muted" aria-live="polite">약 이름을 찾는 중… ' + e.step + '/' + n + '</p>';
+    var cnt = e.rows.filter(function (r, i) { return e.on[i] && r.candidates.length; }).length;
+    return envImg(e.sample, n) + '<h2 class="envh" aria-live="polite">약 ' + n + '개를 찾았어요</h2><p class="sub small">약 목록에서 찾은 후보예요. 맞는 약을 고르고, 시간을 확인해 주세요. 복용량은 의사·약사가 정한 대로예요.</p><ul class="envrows">' + e.rows.map(envRow).join('') + '</ul>' +
+      '<button type="button" id="envreg" class="cta" data-act="envRegister"' + (cnt ? '' : ' disabled') + '>' + (cnt ? cnt + '개 등록하기' : '등록할 약이 없어요') + '</button>';
+  }
+  VIEWS.addmode = function () {
+    var b = ui.params.batch || '';
+    return '<main class="screen">' + topbar() + '<h1 class="h" data-focus>새로 받은 약을 어떻게 추가할까요?</h1><p class="sub">추가하면 하루 시간표에 반영하고, 새로 생긴 주의를 알려드려요.</p><div class="list">' +
+      '<button type="button" class="row" data-act="to" data-view="envelope" data-batch="' + esc(b) + '"><span class="row-main"><b>약봉투로 추가 (연습용)</b><span class="sub2">연습용 샘플 약봉투만 인식해요. 시연이에요</span></span>' + icon('chev') + '</button>' +
+      '<button type="button" class="row" data-act="to" data-view="add" data-batch="' + esc(b) + '"><span class="row-main"><b>직접 검색</b><span class="sub2">약 이름이나 성분명으로 찾아요</span></span>' + icon('chev') + '</button></div></main>';
+  };
+  VIEWS.envelope = function () {
+    loadOcr();
+    var samples = ui.ocr ? ui.ocr.samples() : [];
+    var gallery = ui.ocr
+      ? '<ul class="envlist" id="envsamples">' + samples.map(function (s, i) {
+        return '<li class="envsample"><img src="' + esc(s.file) + '" alt="' + esc(s.title) + ' 이미지" width="72" height="101"><span><b>' + esc(s.title) + '</b><small>약 ' + s.itemCount + '개</small></span><span class="envlinks"><a href="' + esc(s.file) + '" target="_blank" rel="noopener">크게 보기</a><a href="' + esc(s.file) + '" download="' + esc(s.fileName) + '">내려받기</a></span></li>';
+      }).join('') + '</ul>'
+      : '<p class="muted">' + (ui.ocrState === 'error' ? '연습용 약봉투를 불러오지 못했어요. 직접 검색으로 추가해 주세요.' : '연습용 약봉투를 준비하는 중이에요…') + '</p>';
+    return '<main class="screen">' + topbar() + '<h1 class="h" data-focus>약봉투로 추가 (연습용)</h1>' +
+      '<p class="sub">① 연습용 약봉투를 내려받고 ② 그 이미지 파일을 올려 보세요. 카메라는 열지 않아요.</p>' + gallery +
+      '<label class="cta ghost filebtn" for="envfile">이미지 파일 올리기</label><input id="envfile" class="sr" type="file" accept="image/png" data-input="envfile"' + (ui.ocr ? '' : ' disabled') + '>' +
+      '<div id="envbody" aria-live="polite">' + envBodyHtml() + '</div>' +
+      '<p class="fine envnote">' + ENV_NOTE + ' 글자 인식(OCR)은 시연이고, 이후의 약 검색·등록·시간표 반영은 실제예요. 올린 파일은 이 기기 밖으로 나가지 않아요. 약봉투 속 환자·약국은 가상이에요.</p></main>';
+  };
+  var envGen = 0;
+  function envFile(file) {
+    if (!ui.ocr) { toast('연습용 약봉투를 준비하는 중이에요'); return Promise.resolve(); }
+    ui.env = { status: 'reading' }; render(false);
+    return ui.ocr.identify(file).then(function (r) {
+      if (!r.recognized) { ui.env = { status: 'no' }; render(false); return; }
+      if (!Pack.dur) { ui.env = { status: 'nodur' }; render(false); return; }
+      var rows = ui.ocr.resolve(r.sample, Pack.dur);
+      var gen = ++envGen;
+      ui.env = { status: 'scan', gen: gen, sample: r.sample, rows: rows, step: 0, pick: rows.map(function () { return 0; }), on: rows.map(function () { return true; }), times: rows.map(function (x) { return defaultTimes(x.dose); }) };
+      render(false); envStep(gen);
+    }, function () { ui.env = { status: 'no' }; render(false); });
+  }
+  function envStep(gen) {
+    setTimeout(function () {
+      var e = ui.env; if (!e || e.gen !== gen || ui.view !== 'envelope') return;
+      e.step++;
+      if (e.step >= e.rows.length) e.status = 'found';
+      render(false);
+      if (e.status !== 'found') envStep(gen);
+    }, ui.envDelay);
+  }
+  /* 새로 생긴 주의(N5): 새로 추가한 약과 관련된 근거(그 약의 주의 + 그 약을 상대로 하는 다른 약의 주의) */
+  function newBoxHtml(m, ix) {
+    var fresh = ui.params.fresh; if (!fresh || !m || loadingNow()) return '';
+    var added = state.items.filter(function (i) { return i.batch === fresh; });
+    if (!added.length) return '';
+    var ids = {}; added.forEach(function (i) { ids[i.id] = 1; });
+    var seen = {}, lines = [];
+    m.slots.forEach(function (s) { s.items.forEach(function (r) {
+      nonFood(r.flags).forEach(function (f) {
+        if (seen[f.id]) return;
+        if (!(ids[r.itemId] || f.withItemIds.some(function (x) { return ids[x]; }))) return;
+        seen[f.id] = 1; var o = findItem(r.itemId);
+        lines.push(tline('red', 'tri', (o ? nm(o) + ': ' : '') + f.short, 'sheet', 'data-id="' + esc(f.id) + '" data-item="' + r.itemId + '"'));
+      });
+    }); });
+    var notes = added.filter(function (i) { return ix.unc[i.id]; }).map(function (i) { return '<p class="tline info plain">' + icon('info', 16) + '<span>' + esc(nm(i) + ': ' + uncoveredText(i, ix.unc[i.id])) + '</span></p>'; });
+    var noTime = added.filter(function (i) { return ix.unsched[i.id]; });
+    return '<section class="newbox" aria-label="새로 생긴 주의"><h2>새로 추가한 약 ' + added.length + '개 · 새로 생긴 주의 ' + lines.length + '개</h2>' + lines.join('') +
+      (!lines.length ? '<p class="evd">새로 추가한 약과 관련해 찾은 주의가 없어요. 안전하다는 뜻은 아니에요.</p>' : '') + notes.join('') +
+      (noTime.length ? '<p class="tline info plain">' + icon('clock', 16) + '<span>복용 시간을 정하지 않은 약 ' + noTime.length + '개는 시간 간격 주의를 계산하지 못했어요</span></p>' : '') + '</section>';
+  }
 
   VIEWS.list = function () {
     function group(label, items) {
@@ -480,8 +598,8 @@
 
   VIEWS.notify = function () {
     return '<main class="screen lockscreen"><p class="clock-date">' + esc(new Date().toLocaleDateString('ko-KR', { month: 'long', day: 'numeric', weekday: 'long' })) + '</p>' +
-      '<button type="button" class="push" data-act="demoConfirm"><span class="app"><i></i>키핑 · 지금</span><span class="ptxt">처방약을 받으셨네요.<br>이번에 받은 약 4개를 확인해 볼까요?</span></button>' +
-      '<p class="hint">알림을 눌러 보세요</p><p class="fine light">시연 화면이에요. 실제 처방 정보 연동은 준비 중이에요.</p>' +
+      '<button type="button" class="push" data-act="demoConfirm"><span class="app"><i></i>키핑 · 지금</span><span class="ptxt">새 처방약이 등록됐어요.<br>이번에 받은 약 4개를 시간표에 넣어 볼까요?</span></button>' +
+      '<p class="hint">알림을 눌러 보세요</p><p class="fine light">시연 화면이에요. 실제 처방 정보 연동은 구현하지 않았어요.</p>' +
       '<button type="button" class="cta ghost light" data-act="back">돌아가기</button></main>';
   };
 
@@ -603,6 +721,7 @@
     ui.prev = { view: ui.view, params: ui.params };
     ui.view = view; ui.params = params || {};
     ui.more = false;
+    if (view !== 'envelope') ui.env = null;
     ui.q = ''; ui.oq = ''; ui.results = null; ui.remote = null; ui.overseas = null; ui.chips = []; ui.manualName = '';
     if (view !== 'onb-supps') ui.tab = 'domestic';
     render(!keepScroll);
@@ -682,7 +801,24 @@
     nav: function (t) { var p = {}; if (t.dataset.scope) p.scope = t.dataset.scope; go(t.dataset.view, p); },
     back: function () { var p = ui.prev; if (!p || p.view === ui.view) go(state.items.length ? 'home' : 'welcome'); else go(p.view, p.params); },
     detail: function (t) { go('detail', { id: t.dataset.id }); },
-    newRx: function (t) { go('add', { batch: t.dataset.batch || newBatchId() }); },
+    newRx: function (t) { go('addmode', { batch: t.dataset.batch || newBatchId() }); },
+    showSamples: function () { var el = document.getElementById('envsamples'); if (el) { el.scrollIntoView({ block: 'center' }); var a = el.querySelector('a'); if (a) a.focus({ preventScroll: true }); } },
+    envPick: function (t) { if (!ui.env) return; ui.env.pick[+t.dataset.i] = +t.dataset.j; render(false); },
+    envToggle: function (t) { if (!ui.env) return; var i = +t.dataset.i; ui.env.on[i] = !ui.env.on[i]; render(false); },
+    envRegister: function () {
+      var e = ui.env; if (!e || e.status !== 'found' || !Pack.dur) return;
+      var b = ui.params.mode === 'onb' ? null : (ui.params.batch || newBatchId()), added = [], skipped = [];
+      e.rows.forEach(function (r, i) {
+        var c = e.on[i] && r.candidates[e.pick[i]]; if (!c) return;
+        if (state.items.some(function (x) { return x.productCode === c.code; })) { skipped.push(c.display); return; }
+        var di = Pack.dur.toItem(c.code); if (!di) return;
+        state.items.push(newItem(Object.assign(di, { times: e.times[i].filter(function (t) { return /^\d{1,2}:\d{2}$/.test(t); }), batch: b }))); added.push(c.display);
+      });
+      if (!added.length) { toast(skipped.length ? '이미 등록한 약이에요' : '등록할 약이 없어요'); return; }
+      if (b) state.lastBatch = b;
+      save(); toast(added.length + '개 등록했어요' + (skipped.length ? ' (이미 등록한 약 ' + skipped.length + '개는 건너뛰었어요)' : ''));
+      if (ui.params.mode === 'onb') go('onb-drugs'); else go('home', { fresh: b });
+    },
     demoRx: function () { go('notify'); },
     demoConfirm: function () { var b = addDemoBatch(); go('home', { fresh: b }); },
     confirmAdd: function () {
@@ -823,6 +959,10 @@
       var it = findItem(t.dataset.id); if (!it) return;
       var i = +t.dataset.i; it.times = it.times && it.times.length ? it.times.slice() : [''];
       it.times[i] = t.value; it.updatedAt = new Date().toISOString(); save();
+    } else if (k === 'envfile') {
+      var f = t.files && t.files[0]; t.value = ''; if (f) envFile(f);
+    } else if (k === 'envtime') {
+      if (!ui.env) return; ui.env.times[+t.dataset.i][+t.dataset.k] = t.value;
     } else if (k === 'meal') {
       state.meals = Object.assign({}, state.meals || {}); state.meals[t.dataset.k] = t.value; save();
     } else if (k === 'import') {
@@ -854,5 +994,5 @@
   if (document.fonts && document.fonts.load) {
     Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + ' 16px SUIT'); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
   } else boot();
-  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, careModel: careModel, careItems: careItems };
+  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, careModel: careModel, careItems: careItems, envFile: envFile };
 })();
