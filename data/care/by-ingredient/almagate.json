@@ -1,0 +1,15 @@
+{
+  "ingredient": "almagate",
+  "productSeq": "202003633",
+  "itemName": "알마인정(알마게이트)",
+  "atc": "A02AD03",
+  "etcOtc": "일반의약품",
+  "changeDate": "20231115",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003633/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003633/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003633/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:06:09"
+}

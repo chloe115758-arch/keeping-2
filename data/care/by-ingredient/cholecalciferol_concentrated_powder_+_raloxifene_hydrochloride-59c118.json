@@ -1,0 +1,232 @@
+{
+  "ingredient": "cholecalciferol concentrated powder + raloxifene hydrochloride",
+  "productSeq": "202601381",
+  "itemName": "랄시펜엠플러스정(라록시펜, 콜레칼시페롤)",
+  "atc": "G03XC",
+  "etcOtc": "전문의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601381/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601381/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601381/NB"
+  },
+  "rules": [
+    {
+      "id": "9353e226a4",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 (6)",
+      "subject": "○ 라록시펜",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "음주"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "흡연 및 음주 등의 습관이 있는 경우는 체중조절 운동과 함께 습관을 고치도록 권한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d79a24120d",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 (1)",
+      "subject": "2) 환자에게 제공되어야 할 정보",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "음주"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "환자가 칼슘 섭취가 불충분할 경우 보충제를 복용해야 한다. 비타민 D 결핍 위험이 큰 환자 (예. 70세 초과 환자, 요양소에 있는 환자, 만성 질환자)는 추가로 비타민 D 보충제를 복용해야 한다. 위장관 흡수장애 증후군이 있는 환자에게는 추가적으로 비타민 D 보충제가 필요할 수 있음을 알려주어야 한다. 체중부하 운동은 흡연 및/또는 지나친 음주와 같은 특정 습관 요인의 변화와 더불어 고려되…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "96dc1e9f7e",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (1)",
+      "subject": "○ 라록시펜",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "탄산칼슘"
+        },
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘제제",
+          "surface": "산화마그네슘"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "탄산칼슘 또는 수산화알루미늄, 수산화마그네슘을 포함하고 있는 제산제와 동시투여는 라록시펜의 전신적 노출에 영향을 주지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "43de1b6acb",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (8)",
+      "subject": "○ 라록시펜",
+      "matched": [
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "콜레스티라민(또는 기타 음이온 교환수지)은 라록시펜의 흡수와 장간순환을 유의하게 감소시키므로 병용투여해서는 안된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "04db6cb4fa",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "○ 콜레칼시페롤",
+      "matched": [
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민 D"
+        },
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "얼레스트라(Olestra), 광물성 기름, 오르리스타트(orlistat), 담즙산 제거약(예. 콜레스티라민, 콜레스티폴)은 비타민 D의 흡수를 저해할 수 있다. 비타민 D의 추가적인 보충을 고려하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0233115717",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "○ 콜레칼시페롤",
+      "matched": [
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민 D"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "항경련제, 시메티딘, 치아자이드는 비타민 D의 이화작용을 증진시킬 수 있다. 비타민 D의 추가적인 보충을 고려하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "37126b688e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (1)",
+      "subject": "○ 라록시펜",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 폐경기 여성에게만 사용한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8603174364",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (2)",
+      "subject": "○ 라록시펜",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "가임여성은 이 약을 복용해서는 안 된다. 라록시펜은 임부에게 투여시 태아에 손상을 줄 수 있다. 만약 임신 중 이 약을 잘못 투여하였거나 약물투여 기간에 임신한 경우에는 태아에 미칠 수 있는 잠재적인 위해를 환자에게 알려야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "132058b3ba",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (3)",
+      "subject": "○ 라록시펜",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "라록시펜이 모유로 이행되는지 확인되지 않았다. 따라서 수유부에 대한 사용은 권장하지 않는다. 이 약은 수유아의 발달에 영향을 줄 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "485c8fb6fc",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (1)",
+      "subject": "○ 콜레칼시페롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "콜레칼시페롤(비타민 D3)에 대한 자료는 없다. 에르고칼시페롤(비타민 D2)을 임신한 토끼에 고용량으로(이틀에 한번 10,000 IU 이상) 투여한 결과, 유산율과 태자의 대동맥 협착증 발생률이 증가하였다. 비타민 D2를 임신한 랫트에 일일 40,000 IU를 투여한 결과 신생자 사망, 태자 체중 감소, 출생 후 장골의 골형성 손상이 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "dda40f7cb8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (2)",
+      "subject": "○ 콜레칼시페롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "콜레칼시페롤과 이 활성대사체는 모유로 이행된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4b16680ae0",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "○ 라록시펜",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "7,705명의 폐경 후 여성에 대하여 실시한 골다공증 치료 임상에서, 4,621명의 여성이 고령자(65세 이상)로 간주되었다. 이 중 845명의 여성이 75세 이상이었다. 골다공증 치료 임상시험에서 고령 또는 폐경 후 여성에서의 안전성 및 유효성이 동등하였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "24920528ef",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "○ 콜레칼시페롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에서 비타민 D3 섭취요구량이 증가된다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:15:23"
+}

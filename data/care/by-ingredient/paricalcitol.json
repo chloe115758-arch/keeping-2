@@ -1,0 +1,177 @@
+{
+  "ingredient": "paricalcitol",
+  "productSeq": "200108806",
+  "itemName": "젬플라주(파리칼시톨)",
+  "atc": "H05BX02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20221103",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108806/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108806/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108806/NB"
+  },
+  "rules": [
+    {
+      "id": "f5e09d5146",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 5)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약은 알코올 20 %를 함유하고 있으므로 알코올중독자에게는 위험하다. 임부, 수유부 및 간질환 또는 뇌전증이 있는 환자와 같은 고위험 그룹도 주의해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0d68b5e262",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 3)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민D"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "고칼슘혈증과 칼슘과 인의 곱(Ca×P)의 상승의 위험이 있으므로 이 약과 인산염 또는 비타민D 관련 화합물을 병용투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "01adfdeefc",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 5)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민D"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알루미늄 함유제제(예, 제산제, 인산염-결합물)는 비타민D 제제와 장기 병용투여시 혈중 알루미늄 수치 및 알루미늄 골독성이 발생하므로 병용투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9313935311",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 6)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "칼슘함유"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "고용량의 칼슘함유제제 또는 티아지드 이뇨제는 고칼슘혈증의 위험을 증가시킨다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c78f625659",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘제제",
+          "surface": "마그네슘 함유"
+        },
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민D"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "마그네슘 함유제제(예, 제산제)는 비타민D 제제와 병용투여시 고마그네슘혈증을 유발하므로 병용투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "98c448ab40",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 : 이 약의 인체 투여용량인 0.24 μg/kg의 0.5배(체표면적 기준, μg/m2)를 토끼에게, 2배(혈장 노출 농도 기준)를 랫트에게 매일 투여시 경미한 태자 육성 감소(5 %)가 나타났다. 랫트에 20 μg/kg씩 매주 3회 투여(체표면적 기준(mg/m2) 인체 투여용량 14 μg(0.24 μg/kg)의 13배)한 최고용량시험에서 모태에 독성(고칼슘혈증)이 있는 용량에서 랫트 신…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a3d5c89016",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중 만성 신장질환은 모성 고혈압, 자간전증, 유산, 조산, 양수과다증, 사산, 저체중출생아가 발생할 위험을 증가시킨다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4ba44276d9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부 : 랫트에 대한 연구에서 이 약이 유즙 중에 존재했다. 모유 중 이 약의 존재 여부, 모유수유한 영아에 대한 이 약의 영향 및 모유 생산에 대한 이 약의 영향에 대한 정보는 없다. 모유를 통해 이 약에 노출된 영아에 대해서는 발작, 구토, 변비 및 체중감소를 포함하여 고칼슘혈증의 징후와 증상들에 대해 모니터링 해야 한다. 영아에서의 혈청 칼슘농도 모니터링을 고려해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "31fbbad866",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "만성신부전 환자에 대한 3개의 위약-대조군 3상 시험에서 이 약을 투여 받은 40명 중 10명의 환자가 65세 이상이었고 65세 이상과 이하의 환자간에 안전성과 유효성에 대한 전반적인 차이는 관찰되지 않았다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:17:34"
+}

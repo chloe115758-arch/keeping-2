@@ -1,0 +1,28 @@
+{
+  "ingredient": "trimebutine maleate",
+  "productSeq": "201603531",
+  "itemName": "뉴트레부틴서방정(트리메부틴말레산염)",
+  "atc": "A03AA05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260327",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603531/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603531/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603531/NB"
+  },
+  "rules": [
+    {
+      "id": "f5a1ea098a",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "성인 : 1일2회, 1회1정 공복시 복용",
+      "meal": "공복",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:06:46"
+}

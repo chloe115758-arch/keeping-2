@@ -1,0 +1,131 @@
+{
+  "ingredient": "diclofenac sodium",
+  "productSeq": "198000058",
+  "itemName": "디페인정(디클로페낙나트륨)",
+  "atc": "M01AB05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260220",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198000058/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198000058/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198000058/NB"
+  },
+  "rules": [
+    {
+      "id": "cae2708a1f",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적주의 11)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알콜"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "위장관계 이상반응 : 이 약을 위장관계 질환의 증후를 나타내거나 위장관 출혈 또는 위장관 궤양의 병력이 있는 환자, 궤양성 대장염 등 궤양성 질환, 크론씨병 환자, 간기능 부전환자에게 처방시 극심한 주의를 기울이는 등 세밀한 의학적 관찰이 수행되어야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여시 위…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "fc1cfb9e07",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 임부에게 투여한 임상자료는 없다. 임신 말기에 이 약을 투여시 자궁무력(이 약은 자궁수축을 억제할 수 있다.), 태아의 동맥관의 조기 폐쇄, 태아순환지속증(PFC) 등이 일어날 수 있으므로 이 약은 임부(특히 임신 말기)에게 투여를 피해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a8f461b8ab",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 약 20주 이후 이 약을 포함한 비스테로이드성 소염제(NSAIDs)의 사용은 태아 신기능 이상을 일으켜 양수 과소증을 유발할 수 있으며 경우에 따라서는 신생아 신장애를 일으킬 수 있다. 비스테로이드성 소염제(NSAIDs) 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되었지만 이러한 부작용은 평균적으로 투여 후 수일에서 수주 사이에 나타난다. 양수 과소증은 보통 투여 중단 시…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b0e4c49235",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 말기의 랫트에 투여한 실험에서 태자의 동맥관 수축이 보고되어 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e5e6b2b4af",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트에 대한 실험에서 비스테로이드성 소염진통제는 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 난산의 발생 빈도를 증가시키고, 분만을 지연시키며 새끼의 생존율을 감소시켰다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bbce05c81c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 5)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우 최저유효량으로만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "fc777aac0c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 6)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "비스테로이드성 소염진통제는 프로스타글란딘 매개 작용기전으로 인해 난포파열을 방해하거나 지연시킬 수 있으며, 이는 일부 여성에게 가역적 불임을 일으킬 수 있다. 따라서 임신이 어렵거나 불임검사를 받고 있는 여성의 경우 이 약을 포함한 비스테로이드성 소염진통제 계열 약물의 사용중단을 고려해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0ed3bdd395",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "모유중으로의 이행이 보고되어 있으며, 이로 인해 영아에서 심각한 이상반응의 발생이 우려되므로, 수유부에 대한 약물 투여의 중요성을 고려하여 수유를 중단하거나 약물 투여를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "02e0f031c6",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에 투여하는 경우에는 이상반응이 나타나기 쉬우므로 이상반응의 발현에 특히 주의하고, 원칙적으로 성인 용량의 최소량부터 투약을 개시하여 관찰을 충분히 하면서 신중히 투여량을 결정한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:08:49"
+}

@@ -1,0 +1,189 @@
+{
+  "ingredient": "pantoprazole sodium",
+  "productSeq": "202002803",
+  "itemName": "판포졸정40밀리그램(판토프라졸나트륨세스키히드레이트)",
+  "atc": "A02BC02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230724",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002803/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002803/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002803/NB"
+  },
+  "rules": [
+    {
+      "id": "f72437fd90",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "4. 상호작용 1)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "위산의 pH가 생체내이용율의 중요한 결정 요인이 되는 약물인 경우에는 이 약에 의한 위산분비억제작용 때문에 약물의 흡수가 저해될 수 있다. 다른 산 분비 억제제나 제산제와 마찬가지로 이 약 투여 중에는 케토코나졸, 암피실린에스테르, 아타자나비르, 철염, 엘로티닙 및 미코페놀레이트모페틸의 흡수가 감소될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "440e3ac40a",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "4. 상호작용 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "caffeine",
+          "kind": "food",
+          "ko": "카페인·커피",
+          "surface": "카페인"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약물은 CYP-450 효소계를 통해 간에서 대사되므로, 간에서 CYP-450 효소계를 거쳐 대사하는 다른 약물과의 상호작용에 주의하여야 한다. 그러나 다음과 같은 약물과의 유의할 만한 임상적 상호작용은 없었다. : 디아제팜, 와르파린, 테오필린, 페니토인, 디곡신, 안티피린, 니페디핀, 페노프로쿠몬, 디클로페낙, 카르바마제핀, 카페인, 에탄올, 글리벤클라미드, 메토프롤롤, 경구용 피임제,…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "792bf66e99",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "4. 상호작용 4)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "건강한 지원자에게 오메프라졸(40 mg 1일 1회 투여)과 아타자나비르 300 mg/리토나비르 100 mg을 병용투여 했을 때 아타자나비르의 노출이 감소했으며(AUC, Cmax, Cmin이 약 75 % 감소), 혹은 란소프라졸(60 mg, 일회용량)과 아타자나비르 400 mg을 병용투여 했을 때 아타자나비르의 생체이용율이 상당량 감소했다. 아타자나비르의 흡수는 pH에 의하여 변한다. 그러므로…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "06c03629f1",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "4. 상호작용 6)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "프로톤펌프억제제(Proton Pump Inhibitor)를 투여중인 환자에서 tetrahydrocannabinol(THC)에 대한 소변선별검사에서 위양성판정이 있었다. 양성결과를 증명하기 위한 확실한 대체 방법이 고려되어야 할 것이다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ccb9a66790",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "4. 상호작용 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이상반응 사례 보고, 집단약동학 연구(population pharmacokinetic studies) 및 후향적 연구 등에서 메토트렉세이트(주로 고용량을 사용하는 경우, 메토트렉세이트의 사용상의 주의사항 참조)와 프로톤펌프억제제를 병용하는 경우 메토트렉세이트 그리고/또는 그 대사체인 히드록시메토트렉세이트의 혈청 농도가 상승 및 유지되어 메토트렉세이트의 독성이 나타날 수 있다고 보고되었다. 그…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ea5a6c3a5d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에의 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 랫트 암컷을 이용한 수태능 및 일반생식독성 시험의 고용량(450 mg/kg/day)에서 분만지연 및 출생자의 사망율 증가와 성장지연이 나타났으며 주산, 수유기 시험의 10 mg/kg/day이상 투여군에서 출생자의 출생후 체중감소가 나타났으므로 임신초기 3개월간은 투여하지 않으며 그 외 기간에도 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "17bc98d93b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에의 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물 생식연구에서는 5 mg/kg이상의 용량에서 약한 태자독성의 증상이 관찰되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2edd3c26e9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에의 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 동물실험에서 유즙으로 분비되었으며 사람에게서 모유로 이행된다고 보고되었다. 따라서 수유중인 여성에게 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "66c7846e5c",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "- 통상, 성인은 다음 항생제와 병용하여 판토프라졸로서 1회 40 mg을 1일 2회(아침 및 저녁식전) 씹거나 부수지 말고 1주간 투여한다.",
+      "meal": "식전",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "053ad9d71b",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "- 통상, 성인 판토프라졸로서 1일 1회 40 mg을 아침식전 씹거나 부수지 말고 물과 함께 복용한다.",
+      "meal": "식전",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e3b7abe548",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "- 통상 성인 판토프라졸로서 1일 1회 40 mg을 아침식전 씹거나 부수지 말고 물과 함께 복용한다.",
+      "meal": "식전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:07:08"
+}

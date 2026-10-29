@@ -1,0 +1,186 @@
+{
+  "ingredient": "gabapentin",
+  "productSeq": "201902083",
+  "itemName": "가바투캡슐100밀리그램(가바펜틴)",
+  "atc": "N03AX12",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240626",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902083/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902083/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902083/NB"
+  },
+  "rules": [
+    {
+      "id": "ac40873564",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 5)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알루미늄·마그네슘 복합 제산제와 이 약의 병용투여는 가바펜틴의 생체이용율을 약 20% 정도 감소시킨다. 이 약은 제산제 투여 후 최소 2시간 경과 후에 복용하는 것이 권장된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b5c09eb722",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 8)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 또는 중추신경계작용 약물의 남용으로 이 약의 중추신경계 이상반응을 악화시킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8cdb10abc3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 첫 삼분기(임신 초기 3개월 이내)에 가바펜틴을 사용할 경우 태아에게 중대한 선천적 결함이 발생할 수 있다. 임부에 대한 유익성이 태아에 대한 잠재적 위험성을 명확하게 상회하지 않는 한, 가바펜틴은 임신 중 사용하지 않는다. 임신 가능성이 있는 여성은 가바펜틴 치료 중 효과적인 피임법을 사용해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "81f8fd2182",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 사람의 태반을 통과한다. 항뇌전증약을 투여받은 여성의 자녀에서, 선천성 기형의 위험은 2-3배 증가한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c4bfb24a3c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "덴마크, 핀란드, 노르웨이, 스웨덴의 행정 및 의료 레지스트리에서 일상적으로 수집된 자료를 기반으로 가바펜틴에 노출된 1700건 이상의 임신 사례를 포함한 관찰연구를 진행하였다. 본 연구 결과는 임신 중 가바펜틴에 노출된 경우, 주요 선천성 기형, 이상 출생 결과, 또는 비정상적 출생 후 신경발달 결과의 위험성이 유의하게 증가하는 것을 시사하지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a5dda7c3cd",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "주요 선천성 기형의 경우, 임신 첫 삼분기(임신 초기 3개월 이내)에 가바펜틴에 노출된 군과 항뇌전증약에 노출되지 않은 군에 대한 표준 메타 분석에서 보정된 유병률비 (adjusted prevalence ratio, aPRs) 및 95% 신뢰구간(confidence interval, CI)은 0.99 (0.80-1.23)이었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "47e24f6ef4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "전반적으로 사산, 임신 주수보다 작은 영아(SGA: small for gestational age), 낮은 아프가 점수(Apgar score), 그리고 소두증에 대하여 통계적으로 유의한 발견은 없었다. 저체중 출생아 및 조산에 대한 aPR은 1.21 (1.02-1.44) 및 1.16 (1.00-1.35)였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8b199f9d31",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "본 연구는 자궁 내 노출된 소아 집단에서 주의력결핍과다활동장애(ADHD), 자폐 스펙트럼 장애(ASD) 및 지적장애와 같은 신경발달 결과의 위험성이 증가한다는 증거를 보여주지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5a5c7e3d97",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "자궁 내에서 가바펜틴에 노출된 신생아에서 신생아금단증후군(neonatal withdrawal syndrome)이 보고되었다. 임신 중 가바펜틴과 마약류에 동시 노출될 경우 신생아금단증후군의 위험성이 증가할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6dd6931975",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물시험에서 생식독성이 나타냈다. (13. 기타-전임상 자료: 기형발생 참조). 사람에 대한 잠재적 위험성은 알려지지 않았다. 이 약은 임부에 대한 유익성이 태아에 대한 잠재적 위험성을 상회한다고 판단되는 경우에만 투여해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ceb0efaf07",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "가바펜틴은 모유 중으로 분비된다. 수유 중인 유아에 대한 효과는 알려져 있지 않으므로, 이 약을 수유부에 투여할 때는 특히 주의해야 한다. 이 약은 수유부에게 사용 시 유익성이 위험성을 상회할 경우에만 투여해야 하며, 이 약 투여 시 수유하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "228640bee4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물시험에서 생식능에 미치는 영향은 없었다(13. 기타-전임상 자료 참조: 생식능력이상).",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f6c7089898",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "시판 전 임상시험에서 이 약을 복용한 65세 이상 59명의 환자들에서 보고된 이상반응의 종류는 젊은 환자층에서 보고된 것과 다르지 않았다. 고령의 환자의 경우 졸음, 말초 부종 및 무기력증이 더 자주 나타날 수 있다. 이 약은 신기능을 고려하여 용량이 조절되어야 한다(용법용량 참조).",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:03:32"
+}

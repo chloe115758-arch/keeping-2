@@ -1,0 +1,71 @@
+{
+  "ingredient": "flumazenil",
+  "productSeq": "200201484",
+  "itemName": "플루닐주사(플루마제닐)",
+  "atc": "V03AB25",
+  "etcOtc": "전문의약품",
+  "changeDate": "20141024",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201484/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201484/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201484/NB"
+  },
+  "rules": [
+    {
+      "id": "14edcfcc32",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 4)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약과 알코올과의 상호작용은 알려진 바 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7ba9f24645",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신중의 투여에 관하여 안전성이 확립되어있지 않으므로 임부 및 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b50d7c3b5a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 모유로 분비된다는 보고가 있으므로 투여 중에 수유를 피하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3e480bf202",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "투여 전에 환자의 상태를 충분히 관찰하여 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:08"
+}

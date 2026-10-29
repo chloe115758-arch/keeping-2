@@ -1,0 +1,100 @@
+{
+  "ingredient": "ampicillin sodium + sulbactam sodium",
+  "productSeq": "199902728",
+  "itemName": "유박탐주사750밀리그램(설박탐나트륨ㆍ암피실린나트륨)",
+  "atc": "J01CR01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260818",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199902728/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199902728/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199902728/NB"
+  },
+  "rules": [
+    {
+      "id": "c69538728d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "설박탐은 태반을 통과한다. 임부에 대한 이 약 투여의 안전성은 확립되지 않았다. 따라서, 임부 및 임신하고 있을 가능성이 있는 여성에게는 잠재적 유익성이 잠재적 위험성을 상회한다고 판단되는 경우에만 이 약을 투여해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5f5ecd1eb9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 소량이 모유로 이행되므로 수유부에게 이 약을 투여 시, 젖먹이에서 설사와 같은 이상반응이 나타날 수 있다. 따라서, 수유 중에는 투여하지 않는 것을 권고하고, 부득이하게 투여할 경우에는 수유를 중지한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f019b27e49",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트를 대상으로 한 동물실험에서 암피실린 대량투여 (3000 mg/Kg/day) 시에 기형발생이 보고되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2cec44f144",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "기니아피그를 대상으로 한 동물실험에서 암피실린 정맥투여는 자궁강도(uterine tone), 수축빈도, 수축높이, 수축기간을 감소시킨다는 것이 보고되었다. 그러나 분만 시의 인체적용인 경우에 태아에 대해 즉시 또는 느린 이상반응 발현, 분만시간의 연장, 겸자분만 또는 기타의 분만관련사항이 발생할 가능성이 있는지, 또는 신생아소생술이 필요한지는 확실하지 않다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "966a32af20",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에게 투여 시에는 다음과 같은 점을 주의하면서 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중하게 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "df738f4693",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 생리기능이 저하되어 있으므로 이상반응이 많이 발생하기 쉽다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2c902520d0",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "비타민 K 결핍에 의한 출혈경향이 나타날 수 있다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:11:36"
+}

@@ -1,0 +1,64 @@
+{
+  "ingredient": "polaprezinc",
+  "productSeq": "202001268",
+  "itemName": "폴라징크정(폴라프레징크)",
+  "atc": "A02BX",
+  "etcOtc": "전문의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001268/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001268/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001268/NB"
+  },
+  "rules": [
+    {
+      "id": "4df9d9392a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "3. 임부ㆍ수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신중의 투여에 관한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ee48725126",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "3. 임부ㆍ수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 모유중으로 이행하는 것이 보고되어 있으므로 수유부에게 투여하는 경우에는 수유를 피한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "78d001a250",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "5. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 소화기 기능이 저하되어 있으므로, 감량(1일 100mg)하는 등 환자의 상태를 관찰하면서 투여하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ec263e37e8",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "보통 성인은 폴라프레징크로서 1회 75mg (1정)을 1일 2회 아침식사후 및 취침전에 경구투여한다.",
+      "meal": "식사후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:16:36"
+}

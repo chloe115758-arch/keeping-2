@@ -1,0 +1,88 @@
+{
+  "ingredient": "fenofibrate(micronized)",
+  "productSeq": "201607398",
+  "itemName": "리필펜캡슐160밀리그램(미세화페노피브레이트)",
+  "atc": "C10AB05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20190511",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607398/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607398/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607398/NB"
+  },
+  "rules": [
+    {
+      "id": "7c5c3186b1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신중(특히 임신 3개월 이후)에 투여시 태아에 축적되어 태아독성을 유발할 위험성이 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "216fe56148",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "모유중으로의 이행이 알려진 바 없으므로 수유중에는 투여를 피한다(랫트에서 유즙으로 이행되었다는 보고가 있다.).",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a76f741627",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 간·신기능이 저하되어 있는 경우가 많고, 체중이 적은 경향이 있는 등 이상반응 발현이 쉬우므로 투여 시 주의하여 투여한다. 특히 신기능에 대해서는 투여 중 혈청크레아티닌치를 정기적으로 확인해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "87f3c41875",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에서 설포닐요소계 혈당강하제(글리벤클라미드 등)와의 병용에 의해 저혈당증(식은땀, 강한 공복감, 심계항진 등)이 나타났다는 보고가 있으므로 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "84df3c48b1",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "○ 성인 : 페노피브레이트로서 1일 1회 160 mg을 식후 즉시 경구투여한다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "07bcda7133",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "페노피브레이트는 반드시 식이요법과 병행하여 투여한다. 이 약은 빈속에서는 흡수가 덜 될 수 있으므로 식후 즉시 투여한다(145 mg 제제 제외).",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:06"
+}

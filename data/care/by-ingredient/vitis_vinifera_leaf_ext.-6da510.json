@@ -1,0 +1,28 @@
+{
+  "ingredient": "vitis vinifera leaf ext.",
+  "productSeq": "200704324",
+  "itemName": "비스비캡슐(포도엽건조엑스)",
+  "atc": "C05CX",
+  "etcOtc": "일반의약품",
+  "changeDate": "20250416",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704324/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704324/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704324/NB"
+  },
+  "rules": [
+    {
+      "id": "0f8648a603",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "성인 : 포도엽건조엑스로서 1일 1회 360 mg을 아침 식전에 물과 함께 복용한다.",
+      "meal": "식전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:03"
+}

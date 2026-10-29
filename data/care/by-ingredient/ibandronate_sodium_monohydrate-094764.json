@@ -1,0 +1,102 @@
+{
+  "ingredient": "ibandronate sodium monohydrate",
+  "productSeq": "201403255",
+  "itemName": "보네조아정(이반드론산나트륨일수화물)",
+  "atc": "M05BA06",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250930",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403255/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403255/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403255/NB"
+  },
+  "rules": [
+    {
+      "id": "96f527f86b",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 1)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "dairy",
+          "kind": "food",
+          "ko": "우유·유제품",
+          "surface": "우유"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "우유, 음식물, 칼슘, 다가 양이온(예, 알루미늄, 마그네슘, 철)들을 포함한 제품들은 이 약의 흡수를 저해할 수 있다. 따라서 이 약 경구투여 후 적어도 1시간 동안은 음식물이나 이러한 제품들을 섭취하지 말아야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b5acd65219",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "칼슘보조제, 제산제, 다가 양이온(알루미늄, 마그네슘, 철)을 포함한 경구투여 약물은 이 약의 흡수를 저해할 수 있다. 따라서 이 약 경구투여 후 적어도 1시간 동안은 다른 약물을 섭취하지 말아야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cac2f4e88d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 사용경험이 없으며 사람에 대한 잠재적인 위험성은 알려져 있지 않으므로 이 약을 사용하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9bceb7c7d3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임산부 : 쥐에 대한 동물실험결과 생식독성이 관찰되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f7cdfb9813",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부 : 쥐에 대한 동물실험결과 이 약을 정맥투여 시 소량이 모유 중으로 이행되었다. 이 약이 사람의 모유 중으로 이행되는 지는 알려져 있지 않다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "79df902894",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "용량조절이 필요치 않다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:08:35"
+}

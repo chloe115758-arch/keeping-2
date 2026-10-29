@@ -16,6 +16,7 @@
       "kind": "note",
       "section": "general",
       "where": "5. 일반적 주의",
+      "subject": "1) 유산산증",
       "matched": [
         {
           "key": "alcohol",
@@ -27,13 +28,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "덧붙여 메트포르민은 저산소증, 탈수, 패혈증과 관계된 증상이 나타날 경우 즉각 투여를 중지해야 한다. 간기능이 손상된 경우 젖산 배설능력이 유의적으로 저하될 수 있으므로, 일반적으로 간질환의 임상적 또는 실험실적 소견이 있는 환자의 경우 메트포르민을 투여하지 않는다. 알코올은 메트포르민이 젖산대사에 영향을 미치게 할 가능성이 있으므로, 메트포르민을 투여 받는 동안 급ㆍ만성적인 알코올의 과량섭…",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "d04526b096",
       "kind": "note",
       "section": "general",
       "where": "5. 일반적 주의",
+      "subject": "2) 케톤산증",
       "matched": [
         {
           "key": "alcohol",
@@ -45,13 +47,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "케톤산증의 증상과 징후는 탈수 및 중증의 대사성 산증과 일치하고 오심, 구토, 식욕감소, 복통, 권태, 호흡곤란 등을 포함한다. 일부 보고에서 케톤산증을 일으키기 쉬운 요인으로 인슐린 용량 감소, 급성 열성질환, 질병 또는 수술로 인한 칼로리 섭취 제한, 인슐린 결핍을 일으키는 췌장장애(예: 제1형 당뇨병, 췌장염 또는 췌장 수술 병력), 그리고 알코올 남용이 확인되었다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "633b0976ad",
       "kind": "note",
       "section": "general",
       "where": "5. 일반적 주의",
+      "subject": "2) 케톤산증",
       "matched": [
         {
           "key": "alcohol",
@@ -63,85 +66,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "이 약의 투여를 시작하기 전 인슐린 분비 감소, 칼로리 제한, 알코올 남용을 포함한 케톤산증을 일으키기 쉬운 요인이 있는지 고려해야 한다.",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "827998aef1",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "술"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약으로 치료받는 환자에서 케톤산증이 발생하는지 모니터링하고, 케톤산증을 일으키기 쉬운 임상적 상황(예: 급성 질환 또는 중대한 수술 또는 시술로 인한 장기적인 단식)이 발생할 경우 가능한 최소 3일전에 이 약의 투여를 일시적으로 중단 해야 한다. 케톤산증을 일으키기 쉬운 임상적 상황에서는, 이 약의 치료를 일시적으로 중단한 경우에도 케톤에 대한 모니터링을 고려한다. 환자가 임상적으로 안정…",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "6d5b8d598f",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 6)",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "술"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "수술",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "f01abffb43",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "술"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "메트포르민을 함유하고 있으므로 이 약은 일반, 척추 또는 경막외 마취가 필요한 계획된 수술 시 중단되어야 한다. 수술 종료 또는 경구 영양공급 재개로부터 48시간 경과 후 정상 신기능이 회복된 것으로 평가된 경우에 이 약의 투여를 재개할 수 있다.",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "fa68177313",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 10)",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올 섭취",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "b42282a7d9",
       "kind": "note",
       "section": "general",
       "where": "5. 일반적 주의",
+      "subject": "10) 알코올 섭취",
       "matched": [
         {
           "key": "alcohol",
@@ -153,13 +85,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "알코올은 젖산 대사에 대해 메트포르민이 미치는 영향을 증대시킨다고 알려져 있다. 따라서 환자는 이 약을 복용하는 동안 급성 또는 만성적인 알코올의 과량 섭취를 하지 않도록 한다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "207fb0cc90",
       "kind": "note",
       "section": "general",
       "where": "5. 일반적 주의",
+      "subject": "13) 저혈당 유발 약물의 사용",
       "matched": [
         {
           "key": "alcohol",
@@ -171,31 +104,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "저혈당은 통상적 사용 환경하에서는 메트포르민 단독 투여 환자에서는 발생하지 않으나, 열량 섭취가 부족하거나, 격렬한 운동 후 열량 보충을 하지 않은 경우 및 다른 혈당저하제(설포닐우레아 및 인슐린 등) 또는 알코올과 병용하는 동안 발생할 수 있다. 고령자, 쇠약자, 또는 영양 부족 환자 및 부신 또는 뇌하수체 부전, 알코올 중독이 있는 환자는 저혈당이 나타나기 쉽다. 저혈당은 고령자 및 β-…",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "2a189192ba",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "술"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "SGLT2 저해제를 복용한 환자에서 드물기는 하나 신속한 수술적 중재를 필요로 하고, 생명을 위협하는 심각한 회음부 괴저가 보고되었다. 회음부 괴저는 남성과 여성 모두에서 보고되었으며 이로 인한 입원, 여러 차례의 수술 및 사망이 보고되었다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "e2985cc747",
       "kind": "interaction",
       "section": "interaction",
       "where": "6. 상호작용 (2)",
+      "subject": "- 혈당강하 작용을 감약시키는 약제",
       "matched": [
         {
           "key": "alcohol",
@@ -207,13 +123,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "4532f17cc5",
       "kind": "interaction",
       "section": "interaction",
       "where": "6. 상호작용",
+      "subject": "- 간장애",
       "matched": [
         {
           "key": "alcohol",
@@ -225,117 +142,91 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "c52ad68a33",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "f64d5ff7ca",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "임부에서의 이 약 및 이 약의 개별 주성분의 사용에 대한 자료는 제한적이나, 임부 또는 임신 하고 있을 가능성이 있는 여성에게는 투여하지 않는다. (메트포르민은 동물실험에서 기형형성 작용에 대한 보고가 있으며 임부에게는 유산산증이 일어나기 쉽다.) 엠파글리플로진 단독투여에 대한 비임상시험에서 초기배 발생과 관련하여 직간접적으로 유해한 영향은 보이지 않았으나, 동물시험에서 출생 후 발달에 대한…",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "2e87128d56",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "6f1e74dd12",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "메트포르민은 사람 모유를 통해 분비된다. 모유 수유중인 신생아/유아에서의 이상반응은 관찰되지 않았다. 엠파글리플로진이 사람 모유로 분비되는지에 대한 자료는 없다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "1bf80d7935",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "동물시험에서 엠파글리플로진과 메트포르민은 모유를 통해 분비되었다. 신생아/유아에 대한 위험성을 배제할 수 없다. 따라서 이 약으로 치료하는 동안에는 수유를 중단한다.",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "149cb3ecc1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "생식능",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "44932b907d",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "3) 생식능",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "이 약 및 이 약의 개별 주성분의 인간의 생식능에 대한 영향은 연구된 바 없다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "549d0e210d",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "3) 생식능",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "개별 주성분의 동물시험에서 수태능과 관련하여 직간접적으로 유해한 영향은 보이지 않았다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "38e3f966ac",
       "kind": "state_elderly",
       "section": "elderly",
       "where": "9. 고령자에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "뇨 중 포도당 배설에 대한 엠파글리플로진의 영향은 체내 수분 상태에 영향을 줄 수 있는 삼투압성 이뇨와 연관되어 있다. 75세 이상 환자는 체액량 손실의 위험이 더 높을 수 있으므로 이 약을 처방 시 주의하여야 한다(4. 이상반응 항 참조).",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "1845ceb851",
       "kind": "state_elderly",
       "section": "elderly",
       "where": "9. 고령자에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "메트포르민은 신장을 통해 배설되고 고령 환자는 신기능이 저하되는 경향이 있으므로 환자의 신기능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 한다. 고령자는 정기적으로 신기능을 모니터링 해야 하고, 일반적으로 고령자에게는 최대용량을 투여하지 않는다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "3a0b271f55",
@@ -347,7 +238,7 @@
       "tone": "info",
       "excerpt": "항당뇨요법에 있어서 이 약은 엠파글리플로진 25mg과 메트포르민염산염(서방성) 1000 mg을 투여하는 환자에게 식사와 함께 1일 1회 1정을 투여할 수 있다.",
       "meal": "식사와 함께",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "e4bab071b0",
@@ -359,8 +250,8 @@
       "tone": "info",
       "excerpt": "이 약은 메트포르민으로 인한 위장관계 이상반응을 줄이기 위해서 식사와 함께 1일 1회 저녁 시간에 복용해야 한다.",
       "meal": "식사와 함께",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     }
   ],
-  "fetchedAt": "2026-10-29T18:30:49"
+  "fetchedAt": "2026-10-29T19:00:56"
 }

@@ -1,0 +1,107 @@
+{
+  "ingredient": "hydroxychloroquine sulfate",
+  "productSeq": "198902277",
+  "itemName": "옥시크로린정100밀리그램(히드록시클로로퀸황산염)",
+  "atc": "P01BA02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250917",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198902277/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198902277/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198902277/NB"
+  },
+  "rules": [
+    {
+      "id": "8ed9dafb6e",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 5)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": {
+        "minHours": 4.0,
+        "maxHours": null,
+        "qualifier": "",
+        "text": "4시간 간격"
+      },
+      "tone": "caution",
+      "excerpt": "제산제와 동시 복용시 제산제의 생체이용율이 감소되므로 제산제 와의 복용은 4시간 간격을 둔다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f47b54ab1e",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 11)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약과 강력한 CYP2C8 및 CYP3A4 유도제(예: 리팜피신, 세인트존스워트, 카르바마제핀, 페노바르비탈)를 병용 투여 시 이 약의 효과 감소가 보고되었다. 강력한 CYP2C8 및 CYP3A4 유도제를 병용투여 시 이 약의 효과를 관찰하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "dab358e92e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 태반을 통과한다. 이 약에 대한 정확한 자료는 없으나, 이 약과 유사화합물인 인산클로로퀸의 임신중 고용량 섭취는 태아의 와우각 손상을 야기하였고, 4-아미노퀴놀린 화합물은 치료용량에서 이독성(청각, 전정독성, 선천성 귀머거리)을 포함한 중추신경계 손상, 망막출혈과 비정상적 망막색소와 관련이 있으므로 임신 중 투여를 금한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9d50bae5dd",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약과 유사화합물인 클로로퀸은 유전자 변이 및 염색체/DNA 손상을 유발 할 수 있는 약한 유전독성물질로 보고되었다. 매커니즘은 DNA 삽입(intercalation) 또는 산화스트레스 유발이 될 수 있다. 박테리아를 이용한 in vitro 역유전자변이 실험(Ames test)과 설치류를 이용한 in vivo 연구(마우스 골수세포 자매염색분체교환, 마우스 골수세포염색체 이상 및 복강내 투여…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6ecf00a149",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약과 유사화합물인 클로로퀸 5mg/day를 수컷 랫트에게 30일간 경구 투여시 테스토스테론 수치와 고환, 부고환, 정낭 및 전립선 무게의 감소를 보였다. 치료 받지 않은 암컷 랫트와 14일 동안 10mg/kg 클로로퀸의 복강 내 주사를 받은 수컷 랫트를 교배 한 후 태아의 수가 감소되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3602a30a8a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 사람의 모유로 소량 이행되며 영아는 4-아미노퀴놀린 화합물의 독성에 매우 민감하다고 알려져 있으므로 치료 중에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:36"
+}

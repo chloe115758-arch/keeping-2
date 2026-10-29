@@ -16,100 +16,109 @@
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "임부: 임부를 대상으로 프레가발린을 투여한 적절한 자료는 제한적이다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "4cc2b30787",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "임신 중 프레가발린 노출에 대한 2,700건 이상을 포함하는 관찰연구자료(덴마크, 핀란드, 노르웨이 및 스웨덴에서 행정 및 의료기록부의 정기적인 수집 데이터)에서 프레가발린 노출에 따른 주요 선천성기형, 부정적인 출생결과 및 출생 후 비정상적인 신경발달 결과의 위험성을 추정하였다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "c622220729",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "· 주요 선천성기형: 첫 삼분기(임신 초기 3개월 이내)에 항뇌전증약물 비노출군 대비 프레가발린 노출군에 대한 표준 메타분석에서, 보정된 유병률(aPRs) 및 95% 신뢰구간(CI)은 1.13(0.97-1.33)으로 통계적으로 유의한 증가는 관찰되지 않았다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "a0c8576074",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "· 출생 결과 : 항뇌전증약물 비노출군 대비 프레가발린 노출군에 대한 표준 메타분석에서, 사산 (aPRs=1.72, 95 % CI 1.02-2.91) 및 임신기간보다 작은 영아(SGA, aPRs=1.21, 95 % CI 1.01-1.44) 항목을 제외하고는 저체중 출생, 조산, 낮은 아프가(Apgar)점수 및 소두증의 위험성은 통계적으로 유의한 증가를 나타내지 않았다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "5fd93908fd",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "· 출생 후 신경발달 결과 : 항뇌전증약물 비노출군 대비 프레가발린 노출군에 대한 표준 메타분석에서, 주의력 결핍 과잉행동장애(ADHD), 자폐스펙트럼 장애(ASD) 및 지적장애(ID)의 보정된 위험비(aHR)와 95% 신뢰구간(CI)은 각각 1.32(1.04-1.67), 1.00(0.68-1.47), 1.03(0.80-1.32)이었다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "3f53688022",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "일부 유의하게 나타난 결과(사산, SGA, ADHD)는 충분하지 않은 예수와 교란인자 등을 고려하여 신중하게 해석해야 한다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "7679b6840a",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "동물을 대상으로 한 시험에서 생식독성이 나타났다. 이 약은 산모에 대한 유익성이 태아에 대한 위험성을 상회하는 경우를 제외하고는 임부에 투여하지 않는다. 가임여성에 투여 시 효과적인 피임법을 실시해야 한다(3. 다음 환자에는 신중히 투여할 것 참조).",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "693ea1c122",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "수유부: 프레가발린은 수유부의 모유 중으로 이행된다. 영아에 대한 프레가발린의 안전성은 밝혀진바 없으므로 프레가발린을 투여하는 동안 수유는 권장되지 않는다. 영아에 대한 모유수유의 유익성과 산모에 대한 치료의 유익성을 고려하여 모유수유를 중단할지 또는 프레가발린 투여를 중단할지 결정해야 한다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "ebb23f46f4",
       "kind": "state_elderly",
       "section": "elderly",
       "where": "8. 고령자에 대한 투여 (만 65세 이상)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "고령자에서 연령 증가에 따라 프레가발린의 클리어런스는 감소하는 경향이 있다. 프레가발린의 경구 클리어런스의 감소는 고령에 따른 크레아티닌 클리어런스의 감소와 연관된다. 연령 증가에 따라 신기능이 저하된 환자에서 이 약의 용량조정이 필요할 수 있다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     }
   ],
-  "fetchedAt": "2026-10-29T18:30:24"
+  "fetchedAt": "2026-10-29T19:00:56"
 }

@@ -1,0 +1,138 @@
+{
+  "ingredient": "donepezil hydrochloride + memantine hydrochloride",
+  "productSeq": "202600658",
+  "itemName": "도메틴엠정10/20밀리그램(도네페질염산염수화물, 메만틴염산염)",
+  "atc": "N06DA52",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260810",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600658/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600658/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600658/NB"
+  },
+  "rules": [
+    {
+      "id": "781fa91e2b",
+      "kind": "note",
+      "section": "general",
+      "where": "4. 일반적 주의 (6)",
+      "subject": "○ 도네페질염산염",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "간기능 장애 : 10명의 안정적 알코올성 간경화 환자 연구에서 이 약의 청소율은 성별 및 연령을 감안한 10명의 건강한 대상자에 비해 20%가 감소하였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8aa02ee47c",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 (2)",
+      "subject": "○ 도네페질염산염",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "CYP3A4 및 CYP2D6 유도제(예 : 리팜피신, 페니토인, 카르바마제핀, 덱사메타손, 페노바르비탈, 알코올)는 이 약의 대사를 증가하고 약효를 감소시킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "959acaf419",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약으로 임부 및 수유부에 대한 연구는 수행되지 않았다. 이 약은 도네페질염산염과 메만틴염산염 각 단일제 임부 및 수유부에 대한 투여항을 참고한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "95865c6008",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "○ 도네페질염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 : 임신한 여성에 대한 이 약의 임상 자료가 없으므로 꼭 필요한 경우가 아니라면 임신중 이 약을 사용해서는 안된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e8a351fbe4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "○ 도네페질염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 기형발생을 일으키지 않았지만 어린 새끼의 생존율과 사산율에 영향을 주었다. 임부에 대한 잠재적인 위험은 알려지지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3e035a47b3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "○ 도네페질염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부 : 이 약은 랫트의 모유에 이행되었다. 이 약의 모유로의 이행여부는 알려져 있지 않다. 수유기 여성에 대한 연구 결과는 없으므로 수유부에게 이 약을 사용해서는 안되며, 반드시 투여되어야 할 경우에는 수유를 치료기동안 중단하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "babd6dfc83",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부를 대상으로 한 연구가 없으므로 임상 자료는 없으나 동물실험에서 태자의 성장을 감소하는 위험 가능성이 나타났다. 따라서 임부 또는 임신 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "35346fe9ea",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 모유로의 이행 여부는 밝혀지지 않았으나 이 약의 지용성을 고려하면 가능성이 있다. 따라서 이 약을 투여하는 경우, 수유를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a3d1f15a63",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "도네페질염산염 10mg과 메만틴염산염 20mg을 병용으로 투여하여야 하는 환자에서 복용의 편리함을 위하여 이 약(개개의 주성분 함량이 동일한 복합제)으로 전환하여, 1일 1회 1정을 취침 전 매일 동일한 시간에 투여한다.",
+      "meal": "취침 전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:10"
+}

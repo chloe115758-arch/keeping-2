@@ -1,0 +1,71 @@
+{
+  "ingredient": "polystyrene sulfonate calcium",
+  "productSeq": "201706859",
+  "itemName": "카리메트현탁액(폴리스티렌설폰산칼슘)",
+  "atc": "V03AE01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20241025",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706859/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706859/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706859/NB"
+  },
+  "rules": [
+    {
+      "id": "8394a92647",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "탄산칼슘"
+        },
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘제제",
+          "surface": "산화마그네슘"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알루미늄, 마그네슘 또는 칼슘 등을 함유하는 제산제 또는 완하제 (예: 건조 수산화 알루미늄 겔, 수산화마그네슘, 침강 탄산칼슘 등) : 이 약은 양이온 공여 물질과 비가역적으로 반응하여, 이 약의 칼륨 결합능이 저하될 수 있다. 또한, 장관 내에 분비된 탄산수소염의 중화를 방해하여 전신성 알칼리증(Alkalosis)이 나타날 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "dbca18dd7f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 및 수유부에 대한 안전성·유효성은 확립되어 있지 않다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "734131873c",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:49"
+}

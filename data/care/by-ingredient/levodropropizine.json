@@ -1,0 +1,47 @@
+{
+  "ingredient": "levodropropizine",
+  "productSeq": "201600080",
+  "itemName": "레트로진정(레보드로프로피진)",
+  "atc": "R05DB27",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240508",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600080/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600080/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600080/NB"
+  },
+  "rules": [
+    {
+      "id": "150bb3f8f0",
+      "kind": "note",
+      "section": "general",
+      "where": "4. 일반적 주의",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "드물게 반수상태가 초래되므로 운전이나 기계 조작 시 주의하며, 특히 알코올과 병용 시 작용이 증대될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ad6df78f7a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성, 수유부에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:03:47"
+}

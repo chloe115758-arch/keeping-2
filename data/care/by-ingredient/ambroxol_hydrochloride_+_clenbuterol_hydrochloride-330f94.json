@@ -1,0 +1,52 @@
+{
+  "ingredient": "ambroxol hydrochloride + clenbuterol hydrochloride",
+  "productSeq": "198800155",
+  "itemName": "카벤시럽",
+  "atc": "R03CC63",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250826",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800155/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800155/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800155/NB"
+  },
+  "rules": [
+    {
+      "id": "f97adb4fb5",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험(랫트)에서 임신후기에 투여한 결과 자궁근수축을 억제하여 분만지연을 일으키고 태반통과 및 모유로의 이행이 보고되어 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a8fa3ac6a1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다. 특히 임신초기 3개월 이내에는 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4e5c96ea4b",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:16:51"
+}

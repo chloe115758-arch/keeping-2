@@ -1,0 +1,183 @@
+{
+  "ingredient": "levothyroxine sodium",
+  "productSeq": "197400278",
+  "itemName": "씬지로이드정0.1밀리그램(레보티록신나트륨수화물)",
+  "atc": "H03AA01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250703",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197400278/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197400278/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197400278/NB"
+  },
+  "rules": [
+    {
+      "id": "6cf52116ba",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적주의 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "biotin",
+          "kind": "supplement",
+          "ko": "비오틴",
+          "surface": "비오틴"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "비오틴은 갑상선 면역분석검사에 간섭을 유발하여 검사 결과가 실제보다 낮게 또는 높게 측정될 수 있다. 갑상선 기능검사가 요구될 때 비오틴 성분제제를 복용 중인 환자는 그 사실을 검사원에게 알려야 하며 가능한 검체 채취 전 최소 2일 동안 비오틴 성분제제 복용을 피하는 것이 좋다. 가능한 경우, 비오틴 간섭에 영향을 받지 않는 대체 검사를 실시해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0c5b27fce5",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 5)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "iron",
+          "kind": "supplement",
+          "ko": "철분제제",
+          "surface": "철분제"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        },
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "콜레스티라민, 철분제제, 알루미늄 함유 제산제와 병용투여시 이 약의 흡수가 지연 또는 감소될 수 있으므로 투여간격에 주의하며 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b324e6569d",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 12)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "칼슘제제"
+        }
+      ],
+      "interval": {
+        "minHours": 4.0,
+        "maxHours": null,
+        "qualifier": "최소",
+        "text": "최소 4시간 간격"
+      },
+      "tone": "caution",
+      "excerpt": "칼슘제제, 세벨라머, 란타늄 등의 인산염과 결합하는 약물을 병용투여시 이 약의 흡수가 지연 또는 감소될 수 있으므로 투여간격에 주의하여 신중히 투여한다.(최소 4시간 간격)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7cbe4d48a5",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 14)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "biotin",
+          "kind": "supplement",
+          "ko": "비오틴",
+          "surface": "비오틴"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "비오틴은 비오틴/스트렙타비딘 상호작용을 기반으로 하는 갑상선 면역분석법을 방해하여 검사 결과가 감소하거나 증가할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1d951e426f",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 15)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "세인트존스워트가 포함된 제품과 같은 효소 유도 약물은 레보티록신의 간 청소율을 증가시켜 갑상선 호르몬의 혈청 농도를 감소시킬 수 있다. 갑상선 대체 요법을 받는 환자는 이러한 제품을 동시 투여 시 갑상선 호르몬 용량을 늘려야 할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a38e993dad",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 16)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤 펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "프로톤 펌프 억제제(PPI)와의 병용투여는 갑상선 호르몬의 흡수를 감소시킬 수 있다. 병용 치료 동안 갑상선 기능의 정기적 모니터링 및 임상 모니터링이 권장되며, 갑상선 호르몬의 용량을 늘려야 할 수도 있다. PPI 치료가 끝날 때도 주의를 기울여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1bfea85c22",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "갑상선 호르몬은 태반 관문을 쉽게 통과하지 않는다. 현재까지의 임상 경험 결과 임부에 갑상선 호르몬을 투여했을 때 태아에 대한 부작용이 나타나지 않았으므로 임신 중에도 치료를 중단하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "426c568a7d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "갑상선 호르몬은 소량 유즙으로 분비된다. 갑상선호르몬은 심각한 부작용과 관련이 없으며 종양을 발생시키지 않으나 이 약을 수유부에 투여시 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f46bb483d0",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에 이 약을 투여시 기초대사항진으로 심부하가 증대되어 협심증 등의 증상이 나타날 수 있고 일반적으s로 고령자는 생리기능이 저하되어 있으므로 투여 개시량을 소량으로 하고 보통보다 장기간에 걸쳐 증량하며 유지량은 최소 필요량으로 한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:11:43"
+}

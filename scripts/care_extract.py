@@ -41,7 +41,8 @@ FOOD_KEYS = {
 }
 DRUG_GROUPS = {
     'ppi':            ('프로톤 펌프 억제제', [r'프로톤\s*펌프', r'\bPPI\b']),
-    'antacid':        ('제산제',            [r'제산제']),
+    'aluminumAntacid': ('알루미늄 함유 제산제', [r'알루미늄\s*함유\s*제산제', r'수산화알루미늄']),
+    'antacid':        ('제산제',            [r'(?<!알루미늄 함유 )(?<!알루미늄함유)제산제']),   # '알루미늄 함유 제산제'는 위 키로만 잡는다
     'cholestyramine': ('콜레스티라민',      [r'콜레스티라민']),
 }
 ALL_KEYS = {**{k: ('supplement',) + v for k, v in SUPP_KEYS.items()},
@@ -74,14 +75,19 @@ def parse_doc(xml):
         out.append(('', [p for p in paras if p]))
     return out
 
+COMPARE_RE = re.compile(r'^\s*(?:와|과|이?나|및|,|\s)*(?:와|과)?\s*마찬가지')   # "…제산제와 마찬가지로": 같은 부류와 비교하는 말이지 병용 안내가 아니다
+
 def _keys_in(text):
     hits = []
     for key, spec in ALL_KEYS.items():
         kind, ko, pats = spec
         for pat in pats:
-            m = re.search(pat, text)
-            if m:
+            for m in re.finditer(pat, text):
+                if COMPARE_RE.match(text[m.end():m.end() + 14]):
+                    continue
                 hits.append({'key': key, 'kind': kind, 'ko': ko, 'surface': m.group(0)})
+                break
+            if hits and hits[-1]['key'] == key:
                 break
     return hits
 
@@ -135,19 +141,19 @@ def extract_rules(nb_xml, ud_xml=None, item_seq=''):
                 rules.append({
                     'id': _rid(item_seq, where, body[:40]), 'kind': 'interaction' if sec == 'interaction' else 'note',
                     'section': sec, 'where': where, 'subject': subject, 'matched': hits, 'interval': _interval(body),
-                    'tone': 'avoid' if TONE_AVOID.search(body) else 'caution', 'excerpt': _short(body), 'extractor': 'kw-v1'})
+                    'tone': 'avoid' if TONE_AVOID.search(body) else 'caution', 'excerpt': _short(body), 'extractor': 'kw-v2'})
             elif sec in ('pregnancy', 'elderly'):
                 rules.append({
                     'id': _rid(item_seq, where, body[:40]), 'kind': 'state_' + sec, 'section': sec, 'where': where,
                     'subject': subject, 'matched': [], 'interval': None,
-                    'tone': 'avoid' if TONE_AVOID.search(body) else 'info', 'excerpt': _short(body), 'extractor': 'kw-v1'})
+                    'tone': 'avoid' if TONE_AVOID.search(body) else 'info', 'excerpt': _short(body), 'extractor': 'kw-v2'})
     for title, paras in parse_doc(ud_xml or ''):
         for p in paras:
             if MEAL_RE.search(p):
                 rules.append({
                     'id': _rid(item_seq, 'UD', p[:40]), 'kind': 'timing', 'section': 'usage', 'where': '용법·용량',
                     'matched': [], 'interval': None, 'tone': 'info', 'excerpt': _short(_clean(p)),
-                    'meal': MEAL_RE.search(p).group(0), 'extractor': 'kw-v1'})
+                    'meal': MEAL_RE.search(p).group(0), 'extractor': 'kw-v2'})
     return rules
 
 def main(argv):

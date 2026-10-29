@@ -1,0 +1,181 @@
+{
+  "ingredient": "sertraline hydrochloride",
+  "productSeq": "200511068",
+  "itemName": "졸로푸트정50밀리그람(설트랄린염산염)",
+  "atc": "N06AB06",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240426",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511068/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511068/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511068/NB"
+  },
+  "rules": [
+    {
+      "id": "19d6f01373",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "subject": "1) 자살성향 및 항우울제",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "세로토닌-노르에피네프린재흡수억제제(SNRIs) 및 이 약을 포함하여 세로토닌 선택적 재흡수억제제(SSRIs)를 투여했을 때 생명을 위협할 수 있는 세로토닌증후군(SS) 또는 신경이완제악성증후군(NMS)이 보고되었다. 세로토닌 선택적 재흡수 억제제(SSRI) 투여시 세로토닌증후군(SS) 또는 신경이완제악성증후군(NMS)의 위험도는 다른 세로토닌 작동성 약물들[암페타민류, 트립탄계열약물, 아편유…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c1d09b8182",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "subject": "4) 다른 세로토닌성 약물",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "암페타민류, 트립탄 계열 약물들, 삼환계 항우울제, 펜타닐, 리튬, 트라마돌, 부스피론, 트립토판, 펜플루라민, 5-HT 작용제 또는 생약제제인 세인트존스워트(St. John's Wort (Hypericum perforatum))와 같이 세로토닌성 신경전달의 영향을 증강시키는 약물들과 설트랄린을 병용투여하는 것은 주의해야 하고, 약력학적 상호작용의 가능성이 있는 경우에는 금기해야 한다. 환자…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2621727d2c",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 3)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "중추신경계 억제제 및 알코올: 건강한 성인에게 1일 200 mg의 용량으로 이 약을 병용 투여했을 때, 알코올, 카르바마제핀, 할로페리돌, 페니토인이 인지능과 정신운동 수행능력에 미치는 영향이 이러한 병용 투여로 인해 상승되지 않았다. 그러나 우울증 환자에 대한 이 약과 알코올의 병용은 피하는 것이 바람직하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e97a80cf27",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "생식발생독성시험에서 랫드와 토끼에 인체 mg/kg 1일 최대용량의 약20배 및 10배 정도까지 투여한 결과 어떤 용량군에서도 최기형성은 나타나지 않았으나, 인체 mg/kg 1일 최대용량의 2.5-10배 용량군에서는 태자에서 골화진행의 지연이 동반되었는데, 이는 모체가 받은 영향에 의한 부차적인 것으로 보인다. 랫드에 인체 1일 최대용량의 20배를 투여한 경우 수태능력의 감소가 관찰되었고 5-…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9bcfdca6b8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다. 또한 임신 가능한 환자에 이 약을 투여하는 경우에는 적당한 피임법을 사용한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "be8af01cef",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "관찰연구 데이터에서 출산 전 한달 이내에 SSRIs 또는 SNRIs 노출에 따른 산후출혈의 위험성 증가(2배 미만)가 보고되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e6dd6528e1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "외국에서의 시판 후 조사에서, 임신 후기 제 3분기에 이 약 또는 다른 선택적 세로토닌 재흡수 억제제(SSRI), 세로토닌 노르에피네프린 재흡수 억제제(SNRI)에 노출된 신생아에서 입원 연장, 호흡 보조요법, 경관 사용 수유 등이 필요한 합병증 발생이 보고된 바 있다. 이 증상은 출산 후 즉시 나타날 수 있다. 보고된 임상 증상에는 호흡 곤란증후군, 청색증, 무호흡, 발작, 체온 불안정,…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ebe632b91d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 후기에 SSRI에 노출된 유아에서 신생아 지속성 폐동맥고혈압(Persistent pulmonary hypertension of the newborn, PPHN) 위험이 증가할 수 있다. PPHN는 일반적으로는 1,000명 당 1-2명에서 발생하며, 신생아의 주요 이환율 및 사망률과 관련되어 있는 질환이다. PPHN이 발병한 유아를 출산한 377명의 여성과 건강한 유아를 출산한 836명의…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b64cf13c2f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "스웨덴에서 1997-2005년에 태어난 831,324명의 영아에 대한 시험에서 산모가 \"임신 초기\"에 SSRI를 복용한 경우 PPHN의 위험율은 2.4 (95% CI 1.2-4.3)이고, 산모가 \"임신 초기\"에 SSRI를 복용하고 \"임신 후기\"에 출산 전 SSRI 를 처방 받은 경우에 PPHN 위험율은 3.6 (95% CI 1.2-8.3)로 관찰되었다, 이 약을 임신 제 3기에 사용하는 경우…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "421cf1e91e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "소수의 수유부와 그들의 유아를 대상으로 한 연구에서 비록 모유 중의 농도가 수유부의 혈중 농도보다 더 높았으나 유아에서의 혈중 농도는 검출되지 않거나 무시할 만한 수준이었다. 수유부에 대한 이 약의 투여는 의사가 그 유익성이 위험성을 상회한다고 판단하지 않는 한 권장되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f315da01de",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 임신 중 혹은 수유 중에 사용될 경우, 의사는 이 약을 비롯한 SSRI계열의 항우울제를 복용했었던 여성으로부터 태어난 신생아 중 일부에게서 그 약물을 중단했을 때 나타나는 증상들이 시판 후에 보고된 적이 있음을 인지하고 있어야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5ed8689266",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "4) 수태능",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물 시험에서 이 약은 생식능력에 관한 파라미터에 영향을 미치지 않은 것으로 나타났다. 일부 SSRIs와 연관된 사람 대상 사례 보고에서 정자의 질에 대한 영향은 가역적인 것으로 나타났다. 사람의 가임 능력에 미치는 영향은 아직 관찰되지 않았다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:25"
+}

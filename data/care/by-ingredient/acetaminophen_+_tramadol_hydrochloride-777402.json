@@ -16,6 +16,7 @@
       "kind": "note",
       "section": "warning",
       "where": "1. 경고",
+      "subject": "- 발작 역치를 낮출 수 있는 약물",
       "matched": [
         {
           "key": "alcohol",
@@ -27,13 +28,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "뇌전증 환자, 발작 병력자 또는 발작에 대한 위험인자 (머리 상해, 대사장애, 알코올 또는 약물 금단 환자, 중추신경계 감염)가 있는 환자에서 경련 발생의 위험이 증가될 수 있다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "a2f9561317",
       "kind": "note",
       "section": "warning",
       "where": "1. 경고 6)",
+      "subject": "- 발작 역치를 낮출 수 있는 약물",
       "matched": [
         {
           "key": "alcohol",
@@ -45,31 +47,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "트라마돌과 알코올 또는 벤조디아제핀계 약물을 포함하는 중추신경계억제제의 병용투여는 깊은 진정, 호흡억제, 혼수 및 사망을 초래할 수 있다. 이러한 위험성 때문에, 이 약과 중추신경억제제의 병용투여는 적절한 대체 치료방법이 없는 환자의 경우에 한하여 처방하도록 한다. 이 약과 중추신경억제제의 병용투여가 결정되면 최저유효용량으로 최단기간 처방하도록 하고 호흡억제 및 진정의 징후와 증상에 대해 환…",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "e7cf954b62",
-      "kind": "note",
-      "section": "warning",
-      "where": "1. 경고 11)",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "술"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "트라마돌의 초고속 대사 및 소아에서 생명에 치명적인 호흡 억제에 대한 또 다른 위험인자 : 생명에 치명적인 호흡 억제 및 사망이 트라마돌을 투여한 소아에서 발생하였다. 일부 보고된 사례들은 소아가 편도절제술 및/또는 아데노이드절제술을 받은 후에 발생하였으며, CYP2D6 다형성으로 인한 트라마돌의 초고속 대사자인 것으로 입증되었다. 이 약은 12세 미만 소아 및 편도절제술 및/또는 아데노이드…",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "1cb2ad541b",
       "kind": "note",
       "section": "general",
       "where": "5. 일반적 주의 2)",
+      "subject": "",
       "matched": [
         {
           "key": "alcohol",
@@ -81,13 +66,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "이 약은 트라마돌을 주성분으로 함유한다. 이 약의 진통 효과의 일부는 이 약의 주성분인 트라마돌의 mu-아편계 수용체 결합으로 인해 작용한다. 마약성 진통제를 반복 투여시 권장 용량에서도, 내약성, 신체적 의존성 및 심리적 의존성이 나타날 수 있다. 이 약을 처방하기 전에, 환자의 마약성 진통제에 대한 의존성 및 남용 위험을 평가해야 하며, 이러한 행동이 나타나는지 이 약을 투여 받는 모든…",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "3bcbd00e50",
       "kind": "note",
       "section": "general",
       "where": "5. 일반적 주의 6)",
+      "subject": "",
       "matched": [
         {
           "key": "alcohol",
@@ -99,67 +85,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "만성 알코올 중독자에게 과다한 아세트아미노펜 투여로 간독성이 증가될 수 있다. 간장애 환자에게 이 약의 투여를 권장하지 않는다.",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "2798e2eafd",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 12)",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "술"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "생명에 치명적인 호흡 억제 및 사망이 트라마돌을 투여한 소아에서 발생하였다. 트라마돌 및 코데인은 활성 대사체의 노출을 증가시킬 수 있는 CYP2D6 유전자형을 기반으로 대사 가변성에 영향을 받는다. 트라마돌 또는 코데인에 대한 시판 후 보고에 따르면 12세 미만 소아는 트라마돌의 호흡 억제 효과에 영향을 받기 쉬운 것으로 보인다. 특히 편도절제술 및/또는 아데노이드절제술 후 통증에 대하여…",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "7b335fac0c",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 (2)",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "술"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약은 편도절제술 및/또는 아데노이드절제술을 받은 18세 미만 소아에게 수술 후 관리 목적으로 투여하지 않는다.",
-      "extractor": "kw-v0"
-    },
-    {
-      "id": "44a4bd766e",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 (3)",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "술"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "유익성이 위험성을 상회한다고 판단되는 경우를 제외하고는 트라마돌의 호흡 억제 효과에 대한 민감성을 증가시키는 또 다른 위험인자를 갖고 있는 12세 ~ 18세 청소년의 경우 이 약의 투여를 피한다. 위험인자는 수술 후 상태, 폐쇄성 수면무호흡증, 비만, 중대한 폐질환, 신경근질환 및 호흡 억제를 유발하는 다른 약물과의 병용투여와 같은 호흡저하와 관련 있는 조건들을 포함한다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "26fff2cc07",
       "kind": "interaction",
       "section": "interaction",
       "where": "6. 약물상호작용 6)",
+      "subject": "",
       "matched": [
         {
           "key": "alcohol",
@@ -171,13 +104,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "벤조디아제핀 및 알코올, 가바펜티노이드 계열 제제(가바펜틴 및 프레가발린) 등의 중추신경억제제 (예:벤조디아제핀 및 다른 진정/수면제, 정신안정제, 근육이완제, 전신마취제, 다른 오피오이드, 알코올)",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "e5882182fc",
       "kind": "interaction",
       "section": "interaction",
       "where": "6. 약물상호작용",
+      "subject": "",
       "matched": [
         {
           "key": "alcohol",
@@ -189,13 +123,14 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "&#x2022; 임상적 영향: 벤조디아제핀 및 알코올, 가바펜티노이드 계열 제제(가바펜틴 및 프레가발린) 등의 중추신경억제제와 트라마돌을 병용투여 하면 깊은 진정, 호흡 억제 등의 추가적인 중추신경억제작용이 유발될 수 있다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "53c9e7e2a9",
       "kind": "interaction",
       "section": "interaction",
       "where": "6. 약물상호작용",
+      "subject": "9) 기타",
       "matched": [
         {
           "key": "cholestyramine",
@@ -207,74 +142,80 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "&#x2022; 아세트아미노펜의 흡수 속도는 메토크로프라마이드 또는 돔페리돈으로 증가될 수 있으며 콜레스티라민으로 흡수가 감소될 수 있다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "03d1134c62",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "8. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "트라마돌은 태반을 통과하는 것으로 나타났다. 임부에 대한 적절한 임상시험은 실시된 바 없으며, 태아에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우 투여한다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "7d88a29f06",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "8. 임부 및 수유부에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "출산 중 마약성 진통제를 사용하는 경우, 신생아의 호흡 억제를 일으킬 수 있다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "f7b3bd788c",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "8. 임부 및 수유부에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "임신 중 이 약 또는 다른 마약성 진통제를 장기적으로 사용한 경우, 신생아 금단 증후군이 발생할 수 있으며, 특히 임신 후기(28-40주)에서 위험이 증가한다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "281f7961b2",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "8. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "이 약은 수유부에게 투여하지 않는다. 트라마돌 100mg을 정맥으로 단일 투여한 이후 16시간 내에 모유로 축적된 농도는 트라마돌 100mcg(수유부 복용량의 0.1%), M1 27mcg이었다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "38b360fd9a",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "8. 임부 및 수유부에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "트라마돌 및 그 활성대사체(M1)는 모유에 존재한다. 이 약물이 수유 유아 또는 모유 생산에 미치는 영향에 대한 데이터는 없다. M1은 트라마돌 보다 더 강력하게 뮤-오피오이드 수용체에 결합한다. 발표된 연구에서 출산 후 초기에 수유부의 트라마돌 투여와 초유에 있는 트라마돌 및 M1이 보고되었다. 트라마돌의 초고속 대사자인 여성은 예상보다 더 높은 혈청 M1 수치를 초래할 수 있으며 모유 속…",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "f6a9950483",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "8. 임부 및 수유부에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "모유를 통해 이 약이 수유 유아에게 노출된 경우 과다 진정 및 호흡 억제 발생에 대하여 관찰해야 한다. 수유부가 오피오이드 진통제 투여를 중단하거나 수유를 중단하는 경우 수유 유아에서 금단 증상이 발생할 수 있다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     }
   ],
-  "fetchedAt": "2026-10-29T18:30:26"
+  "fetchedAt": "2026-10-29T19:00:56"
 }

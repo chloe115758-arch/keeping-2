@@ -1,0 +1,15 @@
+{
+  "ingredient": "water for injection",
+  "productSeq": "199101325",
+  "itemName": "이노엔주사용수",
+  "atc": "V07AB",
+  "etcOtc": "전문의약품",
+  "changeDate": "20200327",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101325/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101325/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101325/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:16:47"
+}

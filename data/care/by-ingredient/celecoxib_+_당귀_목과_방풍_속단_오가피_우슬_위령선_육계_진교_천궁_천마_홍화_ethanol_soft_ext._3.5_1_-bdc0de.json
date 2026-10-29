@@ -1,0 +1,210 @@
+{
+  "ingredient": "celecoxib + 당귀·목과·방풍·속단·오가피·우슬·위령선·육계·진교·천궁·천마·홍화 ethanol soft ext.(3.5→1)",
+  "productSeq": "202302406",
+  "itemName": "셀레이나정",
+  "atc": "M01AH",
+  "etcOtc": "전문의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302406/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302406/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302406/NB"
+  },
+  "rules": [
+    {
+      "id": "c75bfb39ec",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알콜"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "위장관계 영향 : 세레콕시브를 포함한 비스테로이드성 소염진통제를 궤양성 질환이나 위장관 출혈의 병력이 있는 환자에게 처방 시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여 시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "95169aa6e9",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 14)",
+      "subject": "가. 세레콕시브",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "세레콕시브를 알루미늄이나 마그네슘을 함유한 제산제와 병용투여한 경우 최고혈중 농도의 37 % 감소와 함께 총 흡수도의 10 % 감소가 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "79fad6347e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약 또는 각 주성분을 임부에게 투여한 임상자료는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9f9c4ecac3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트에 대한 실험에서 세레콕시브는 분만을 지연시키지 않는 것으로 보고되어 있다. 그러나 세레콕시브가 임부의 분만 및 출산에 미치는 영향은 알려져있지 않다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ec8c3cfd9a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "토끼의 배ㆍ태자 발달시험에서 세레콕시브를 150 mg/kg/day 이상(사람에게 200 mg씩 1일 2회 투여 시 AUC0-24의 약 2배에 해당하는 용량) 경구투여 시 태자의 늑골융합, 흉골분절융합 등의 태아 이상과 심실중격결손의 발현율이 드물게 증가하였다. 랫트의 배ㆍ태자 발달시험에서는 두 시험 중 하나에서 세레콕시브 30 mg/kg/day 이상(사람에게 200 mg씩 1일 2회 투여 시…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b67d1e4b35",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험(토끼 및 랫트)에서 세레콕시브의 투여로 기형발생을 포함한 생식독성이 나타났으나, 사람의 임신에 있어서의 잠재적인 위험은 알려져있지 않다. 또한 세레콕시브는 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 임신 말기에 투여 시 자궁 무력증을 일으키거나 태아의 동맥관을 조기 폐쇄시킬 수 있으므로 세레콕시브는 임부 또는 임신할 가능성이 있는 여성에게는 투여하지 않는다. 세레콕시브를…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2828c8e9cb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 5)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "세레콕시브를 포함한 비스테로이드성 소염진통제 계열 약물의 사용은 그 작용기전으로 인해 난포파열을 방해하거나 지연시킬 수 있으며, 이는 일부 여성에게 가역적 불임을 일으킬 수 있다. 따라서 임신이 어렵거나 불임검사를 받고있는 여성의 경우 세레콕시브를 포함한 비스테로이드성 소염진통제 계열 약물의 사용중단을 고려해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1bb69e8cfb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 6)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "프로스타글란딘 합성 억제 작용은 임신에 불리한 영향을 끼칠 수 있다. 역학조사에서 임신초기 프로스타글란딘 합성을 억제하는 약물을 복용한 후 자연유산의 위험이 증가하는 것으로 나타났다. 동물시험에서는 프로스타글란딘 합성을 억제하는 약물을 투여할 경우 착상 실패가 증가하는 것으로 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "668b2e671b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 7)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 2기 또는 3기에 비스테로이드성 소염진통제 계열 약물투여 시 태아 신장 기능 이상을 일으킬 수 있고 이로 인해 심한 경우 양수의 양 감소 또는 양수과소증을 유발할 수 있다. 이러한 영향은 약물투여 시작 후 바로 나타날 수 있으며 일반적으로 가역적이다. 세레콕시브를 투여 중인 임부에서 양수의 양을 면밀히 모니터링해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1faf9dc500",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 8)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "세레콕시브는 혈장과 유사한 농도로 랫트의 모유로 배설된다. 1명의 피험자에 대한 제한적인 자료에 의하면, 사람의 모유로도 이행되는 것으로 판단된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6c6da1ec2b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "‘당귀·모과·방풍·속단·오가피·우슬·위령선·육계·진교·천궁·천마·홍화25%에탄올연조엑스(3.5→1)’를 수유부에게 투여한 임상 자료는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d4de66ef34",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "많은 약물들이 모유 중으로 이행될 뿐만 아니라 이행될 경우 영아에서 심각한 이상반응의 발생이 우려되므로, 수유부에 대한 약물 투여의 중요성을 고려하여 수유를 중단하거나 약물투여를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b9196c5c1c",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자는 신기능, 간기능 및 특히 심기능이 저하되어 있을 가능성이 높으므로 고령자에게 이 약을 투여하는 경우 적절한 관찰이 요구된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e89d6f1f12",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "세레콕시브의 임상시험에 의하면, 고령자와 젊은 피험자 간의 효과는 유의한 차이가 나타나지 않았다. 신장기능(GFR, BUN, 크레아티닌) 및 혈소판 기능(출혈 시간, 혈소판 응집 정도)을 비교한 임상시험에서도, 고령자와 젊은 피험자 사이에는 차이가 없었다. 그러나, 선택적인 COX-2 억제제를 포함한 다른 비스테로이드성 소염진통제와 마찬가지로, 치명적인 위장관 이상반응과 급성 신기능 부전에…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "47386380ce",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자에 대한 용량 조절은 요구되지 않으나 체중이 50 kg 이하인 경우에는 최소량에서 투여를 시작한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:31"
+}

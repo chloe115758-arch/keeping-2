@@ -1,0 +1,167 @@
+{
+  "ingredient": "losartan potassium",
+  "productSeq": "201906380",
+  "itemName": "로사텍정(로사르탄칼륨)",
+  "atc": "C09CA01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260306",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906380/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906380/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906380/NB"
+  },
+  "rules": [
+    {
+      "id": "378f37da51",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽주스는 CYP450을 저해하는 성분을 함유하고 있어 이 약의 활성 대사산물 농도를 낮춰 치료효과를 저하시킬 수 있다. 따라서 이 약 복용 시 자몽주스를 섭취하지 않도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c975493718",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "레닌-안지오텐신-알도스테론계에 직접적으로 작용하는 약물군은 발달 중인 태아의 손상 및 사망까지도 초래할 수 있다. 로사르탄은 임신 중에 사용해서는 안되며, 임신이 확인되면 가능한 빨리 투약을 중지한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7d35ae875c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "사람의 경우, 태아의 신장 관류는 레닌-안지오텐신계의 발육에 따라 임신 2기에 시작되므로, 이 약을 임신 2~3기에 복용하였을 때 태아의 위험성이 커진다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "83ccbcc227",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 2, 3기 사이에 레닌-안지오텐신-알도스테론계에 직접 작용하는 약물군을 투여한 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골형성저하증, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아 손상과 연관성이 있었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c95356602e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "태아 신기능 감소 때문인 것으로 추측된 양수과소증도 보고 되었고, 양수과소증은 태아 사지구축, 두개안면 기형 및 폐형성 저하증과 연관성이 있었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "af3a3cc26e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "또한 이 약에 의한 것인지 명확하진 않지만 미숙, 자궁내 발육지연, 동맥관 열림증이 나타났다는 보고가 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f74f8cdf53",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "역학자료에서 임신 1기에 ACE 저해제에 노출된 경우 최기형성 위험에 대한 증거는 명확하지 않으나, 어느정도의 위험성 증가를 배제할 수 없다. 안지오텐신수용체차단제의 위험성에 대한 통제된 역학자료는 없으나, 이 계열 약물들에도 유사한 정도의 위험성이 나타날 수 있다. 임신 기간동안 임부의 고혈압을 적절히 관리하는 것은 임부와 태아 모두에게 최적화된 결과를 주는데 중요하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9ca33752a4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "드물지만 레닌안지오텐신 계에 영향을 미치는 약물에 대한 적절한 대체약물이 없는 경우(대체로 천명의 임부 중 한명 꼴 이하로 발현) 임부에게 태아에 대한 잠재적 위험을 인지시켜야 하며, 양막 내 환경을 확인하기 위해 일련의 초음파 검사를 실시하여야 한다. 양수과소증이 관찰될 경우, 임부의 생명을 구하기 위한 경우를 제외하고는 이 약의 투여를 중단해야 한다. 임신 주수에 따라서 수축스트레스검사(…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "13a99934fc",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "자궁 내에서 안지오텐신 II 수용체 차단제에 노출된 적이 있는 신생아, 영·유아의 경우에는 저혈압, 소변감소증 및 고칼륨혈증이 있는지 면밀하게 관찰하여야 한다. 만약 소변감소증이나 저혈압이 나타난다면, 혈압 및 신장관류에 대한 직접적인 관리를 해야 한다. 저혈압을 회복시키고 저하된 신기능을 대신하기 위해 교환수혈이나 투석을 할 수도 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1d9ab4b845",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 랫트의 태자 및 새끼에서 체중 감소, 육체/행동 발달 지연, 사망률 및 신장독성을 포함한 이상반응을 유발시켰다. 신생자에서의 체중증가율 감소(10 mg/kg/day의 낮은 투여용량에서 영향 받은 것임)를 제외하고는, 이러한 이상반응들이 발현된 것은 25 mg/kg/day을 초과한 투여용량에서였다(mg/m2에 근거하여 사람의 최대 권장용량인 100 mg의 약 3배에 해당됨). 이러한…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "297948ee23",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 모유 중에 분비되는 지의 여부는 밝혀지지 않았으나 랫트에 대한 실험에서 유즙 중에 이 약의 분비가 확인되었으므로 수유부가 이 약을 사용하는 것은 바람직하지 않다. 수유중인 여성에게 이 약의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "98c28a9907",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고혈압에 대한 대조 임상시험에서 이 약을 투여 받은 환자들 중에서 391명의 환자(19 %)가 65세 이상이었으며, 그 중 37명(2 %)은 75세 이상이었다. 단백뇨가 있는 제 2형 당뇨병 환자의 신장 보호에 관한 대조 임상시험에서 248명(33 %)의 환자가 65세 이상이었다. 좌심실 비대가 있는 고혈압 환자에 대해 심혈관 사망, 뇌졸중, 심근경색의 복합 위험도 감소를 확인하기 위한 대조…",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:05:15"
+}

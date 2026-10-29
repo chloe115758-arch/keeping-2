@@ -1,0 +1,119 @@
+{
+  "ingredient": "olmesartan medoxomil",
+  "productSeq": "202002275",
+  "itemName": "올메건정40밀리그램(올메사르탄메독소밀)",
+  "atc": "C09CA08",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260212",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002275/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002275/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002275/NB"
+  },
+  "rules": [
+    {
+      "id": "4c1358b335",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 약물상호작용",
+      "subject": "6) 기타",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약을 건강한 지원자에게 디곡신 또는 와파린과 병용투여 했을 때 심각한 약물 상호작용은 보고되지 않았다. 이 약의 생체내 이용률은 제산제[AI(OH)3/Mg(OH)2]와 병용 투여시 크게 변 화하지 않았다. 이 약은 cytochrome P450 시스템에 의해 대사되지 않으며 P450 효소에도 영향을 주지 않는다. 따라서 이 효소에 의해 억제되거나, 유도 또는 대사되는 약물들과의 상호작용은…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a60c75c621",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "태아/신생아 이환율 및 사망률 : 임부에게 레닌&#x2010;안지오텐신 시스템에 직접적으로 작용하는 약물을 투여하면 태아나 신생아의 손상 및 사망이 발생할 수 있으며, 이러한 사례는 안지오텐신 전환 효소(ACE: angiotensin converting enzyme) 저해제를 복용한 환자에서도 세계적으로 수십 례가 보고된 바 있다. 따라서 임신한 사실을 알게 되면, 본제의 복용을 되도록 빨리…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a4e6817beb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 2, 3기 동안 레닌&#x2010;안지오텐신 시스템에 직접 작용하는 약물을 복용하면, 저혈압, 신생아 두개골 발육부진, 무뇨증, 가역적 혹은 비가역적 신부전 및 사망 등의 태아 및 신생아 손상이 일어날 수 있다. 또한 태아의 신기능 저하로 인해 발생한다고 알려진 양수과소증도 보고된 바 있다. 양수과소증은 사지연축, 두개안면 기형, 폐 발육부진등과 관련이 있다. 또한 약물과의 관련성은 명…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "98e5128b92",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "양수과소증이 나타나면, 임부의 생명을 구하기 위한 경우를 제외하고는 본제의 복용을 중단하여야 한다. 임신 주수에 따라서 수축스트레스검사(Contraction Stress Testing), 비부하검사(Non&#x2010;stress Test) 혹은 생물이학적 프로파일(Biophysical Profiling) 등의 검사를 적절하게 수행할 수 있다. 하지만 태아에게 이미 비가역적 장애가 발생한 이…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f3d63596ea",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "자궁 내에서 안지오텐신 II 수용체 길항약에 노출된 적이 있는 유아의 경우에는 저혈압, 요량감소 및 고칼륨혈증이 있는지 면밀하게 관찰하여야 한다. 만약 요량감소 현상이 있다면 혈압과 신장관류액의 유지에 신경을 써야 한다. 저혈압을 회복시키고, 저하된 신기능을 대신하기 위해 교환수혈이나 투석을 할 수도 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4118bf4d09",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 임산부에게 투여한 임상 경험은 없다. 이 약을 1000 mg/kg/day (평방미터 당 밀리그램의 기준으로 볼 때 사람 최대 투여 권장량 (MRHD : maximum recommended human dose)의 240배)까지 임신한 랫트에게 경구로 투여한 경우와 임신한 토끼에게 1 mg/kg/day(사람 최대 투여 권장량의 절반; 더 높은 용량은 토끼에서는 치사량이므로 태아발육에 대…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d2aabe6998",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "사람에서 모유로 이행되는지 여부가 알려져 있지 않으나, 랫트의 경우 낮은 농도로 이행되었다. 영아에게 이상반응이 나타날 가능성이 있으므로 수유부에게 이 약의 중요성을 고려하면서 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4a5ba3f7fe",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고혈압 환자 중 젊은 환자에 비해 65세 이상의 고령 환자에서 항정상태(steady state)에서 AUC가 33% 증가하였고, 75세 이상의 고령 환자에서 44%가 증가하였다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:05:35"
+}

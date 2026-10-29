@@ -1,0 +1,270 @@
+{
+  "ingredient": "amlodipine besylate + atorvastatin calcium + valsartan",
+  "productSeq": "202005383",
+  "itemName": "엑스원에이정5/80/20밀리그램",
+  "atc": "C10BX",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260303",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202005383/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202005383/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202005383/NB"
+  },
+  "rules": [
+    {
+      "id": "0b03875d95",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 (3)",
+      "subject": "4) 아토르바스타틴",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알콜"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "간부전 : 아토르바스타틴의 혈장농도는 만성 알콜성간질환(Child-Pugh Class B) 환자의 경우 현저하게(Cmax가 약 16배, AUC가 약11배) 증가하였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a6ab86ff00",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "4) 아토르바스타틴",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "아토르바스타틴은 알코올남용자(과다복용자) 또는 간질환의 병력이 있는 사람의 경우 신중하게 투여하여야 한다. 활동성 간질환 환자 또는 설명되지 않는 혈청트랜스 아미나제치의 상승이 지속되는 환자에는 아토르바스타틴을 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "70248504f3",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 ③",
+      "subject": "1) 암로디핀",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스 워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "CYP3A4 유도제: CYP3A4 유도제(예, 리팜피신, 세인트존스 워트)와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0fcb17b441",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 ④",
+      "subject": "1) 암로디핀",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "기타 : 암로디핀 단독투여시, 티아지드계 이뇨제, 알파-차단제, 베타-차단제, 안지오텐신 전환 효소 저해제 (Angiotensin converting enzyme inhibitor), 작용시간이 긴 질산염제제, 니트로글리세린 설하정, 디곡신, 와파린, 아토로바스타틴, 실데나필, 알루미늄/마그네슘(제산제), 시메티딘, 비스테로이드성 소염제, 항생제, 경구 혈당강하제, 에탄올(알코올), 사이클로…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8aeea4f0e0",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 ⑤",
+      "subject": "1) 암로디핀",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽주스: 자몽주스와 병용투여 시 CYP3A4 저해로 인해 암로디핀의 노출이 증가할 수 있다. 그러나, 20명의 건강한 지원자에 240 mL의 자몽주스와 암로디핀 10mg의 단회 경구투여 시 암로디핀의 약동학에 유의적인 영향이 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5669ca8c1c",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 ⑨",
+      "subject": "3) 아토르바스타틴",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "제산제 : 아토르바스타틴과 마그네슘 그리고 수산화알루미늄을 함유하는 경구용 제산제(antacid) 현탁액과 병용투여시 아토르바스타틴의 AUC가 감소하였다(AUC 비율: 0.66). 그러나, LDL-콜레스테롤의 감소에는 영향이 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "330b4a91c1",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "3) 아토르바스타틴",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "&#x2470; 자몽주스 : 자몽주스는 하나이상의 CYP3A4를 억제하는 성분을 함유하고 있으며, 이는 자몽쥬스 섭취량이 지나칠 경우(하루 1.2 L이상) 아토르바스타틴의 혈중 농도를 증가시킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1ff816085d",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "3) 아토르바스타틴",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "병용약물이 아토르바스타틴의 약동학에 미치는 영향 병용약물 및 투여용량 아토르바스타틴 용량 (mg) AUC 비율& Cmax 비율& #시클로스포린 5.2 mg/kg/day, 안정적인 용량 10 mg 1일 1회를 28일간 투여 8.7 10.7 #티프라나비르 500 mg 1일 2회/리토나비르 200 mg 1일 2회, 7일간 투여 10 mg 단회투여 9.4 8.6 #글레카프레비르 400 mg 1일 1…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "61ca4a614d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 및 수유부에 대한 이 약의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "944edfa23f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "① 암로디핀/발사르탄 복합제",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "안지오텐신 II 길항제의 작용기전 때문에 태아에 대한 위험을 배제 할 수 없다. 임신 2∼3기 사이에 ACE억제제(레닌-안지오텐신-알도스테론계에 작용하는 특정 약물군)에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적인 신부전, 자궁내 성장지체 및 사망을 포함하여 태아 및 신생아 손상과 연관성이 있었다. 태아…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "57a3e9e475",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "② 아토르바스타틴",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "아토르바스타틴의 임신 중 사용은 금기이다. 가임여성은 적절한 피임방법을 강구하여야 한다. 아토르바스타틴은 임신할 가능성이 없는 경우 및 태아에 대한 잠재적 위험성을 알려준 후에만 가임 연령의 여성에게 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ee5c1d3195",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "① 암로디핀/발사르탄 복합제",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "사람에 대한 투여 경험에서 암로디핀이 모유 중으로 이행된다고 보고된 바 있다. 발사르탄은 사람에서의 유즙 분비 여부는 알려지지 않았으나, 랫드에서는 유즙으로 분비되었다. 따라서 수유중인 여성이 이 약을 사용하는 것은 권장하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "06b34b885a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "② 아토르바스타틴",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "아토르바스타틴의 수유 중 사용은 금기이다. 아토르바스타틴이 모유 중으로 분비되는지에 대해서는 알려져 있지 않다. 수유중인 유아에 이상반응이 나타날 수 있으므로, 아토르바스타틴을 복용중인 여성은 수유를 해서는 안 된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3d58ca5c9f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "3) 생식 가능성이 있는 남성 및 여성",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "다른 레닌-안지오텐신-알도스테론계에 직접 작용하는 이 약도 임신을 계획하고 있는 여성에서 사용해서는 안된다. 레닌-안지오텐신-알도스테론계에 작용하는 약물을 임신할 가능성이 있는 여성에게 처방하는 경우, 의사는 임신 중 이 약의 잠재적 위험에 대하여 알려주어야 한다. 이 약 및 각각의 단일제에서 생식능에 대한 임상연구는 없었다. 이 약에 대한 생식능에 대한 비임상자료는 없지만, 발사르탄 및 암…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9ff26c78dc",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 고령자에 투여시 용량 조절이 필요하지 않으나, 일부 고령자에서 보다 민감한 반응이 나타날 수 있음을 배제할 수 없으므로 주의하여 투여한다. 75세 이상의 고령자의 경우, 암로디핀의 청소율이 감소되어 있으므로, 낮은 용량으로 치료를 시작하며, 용량을 서서히 증량한다. 75세 이상의 고령자의 경우, 암로디핀의 청소율이 감소되어 있으므로, 낮은 용량으로 치료를 시작하며, 용량을 서서히 증…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2acf0bca3f",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자인 경우에는 일반적으로 과도한 혈압강하는 뇌경색 등이 일어날 우려가 있어 바람직하지 않다고 보기 때문에, 저용량으로부터 투여를 시작하는 등, 환자 상태를 관찰하면서 신중하게 투여해야 한다. 고령자에 대한 약물동태 시험에서 발사르탄의 혈중농도가 비고령자에 비해 높은 것으로 나타났다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:02"
+}

@@ -1,0 +1,205 @@
+{
+  "ingredient": "docetaxel",
+  "productSeq": "201210747",
+  "itemName": "나녹셀엠주20밀리그램(도세탁셀무수물)",
+  "atc": "L01CD02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260128",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201210747/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201210747/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201210747/NB"
+  },
+  "rules": [
+    {
+      "id": "b93f7f73d7",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 (1)",
+      "subject": "10) 독성으로 인한 사망",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 중독증인 환자의 경우 해로울 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4dccd52b19",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 (4)",
+      "subject": "10) 독성으로 인한 사망",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약에 포함된 알코올의 양은 다른 약물의 효과를 변화시킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b661382ba1",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 (5)",
+      "subject": "10) 독성으로 인한 사망",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약에 포함된 알코올의 양은 운전 또는 기계 조작 능력을 저하시킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "dce5975f83",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부 및 임신할 가능성이 있는 환자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 임부에게 투여한 정보는 없지만 토끼, 랫트에게 임신 기간 중 투여했을 때 배자 및 태자에 독성(배·태자 치사 작용, 태아 및 출생자의 발육·발달 지연, 기형발생을 시사하는 소견이 확인되었다.)을 나타냈고, 랫트에서 수태력을 감소시켰다. 이 약은 임부가 복용하였을 때 태아독성을 유발할 수 있으므로, 전문의의 판단에 따라 반드시 필요한 경우가 아니면 임신 중에 투여하지 않는다. 임신 가…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "99527b13be",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부 및 임신할 가능성이 있는 환자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신할 가능성이 있는 환자(남성 및 여성)에 투여시 치료 중 효과적인 피임법을 사용하여야 한다. 비임상 시험결과, 이 약은 유전독성 및 수컷 수태력에 영향을 줄 수 있었으므로, 이 약으로 치료받는 남성은 치료 중 및 치료가 끝난 후 6개월 까지는 피임을 하도록 하며, 치료전 정자 저장의 여부에 대해 고려해보도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "eea2b8e867",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부 및 임신할 가능성이 있는 환자에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 지용성 물질이지만 모유 중으로의 이행여부가 밝혀지지 않았다. 따라서 수유기의 영아에게 이상반응이 나타날 가능성이 있으므로 이 약 투여 중에는 수유를 중단해야 한다(동물실험(랫트)에서 유즙 중으로의 분비가 보고되었다.).",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f95845cf00",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이전에 화학요법을 받지 않은 비소세포폐암을 대상으로 한 임상시험(TAX 326)에서, 이 약과 시스플라틴을 투여한 환자군 중 148명(36 %)이 65세 이상이었다. 이 약과 시스플라틴 투여군에서 65세 미만 환자와 비교하여 65세 이상의 환자에서 설사(55 % vs 43 %), 감염(42 % vs 31 %), 말초부종(39 % vs 31 %)과 구내염(28 % vs 21 %)이 더 많이 관…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ae7cda1c13",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이전에 화학요법을 받지 않은 진행성 비소세포폐암 환자 치료로 이 약과 카보플라틴과 병용하였을 때 65세 이상의 환자에서 이 약과 시스플라틴으로 치료받은 유사한 환자에서 보다 더 자주 감염이 발생하였다. 그리고 설사, 감염과 말초부종이 비노렐빈과 시스플타린 병용 투여된 고령 환자에서 보다 더 자주 발생하였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6fb83af9ff",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약과 카페시타빈을 병용한 60세 이상 환자의 안전성 자료를 분석한 결과, 60세 이하 환자에 비하여 약물관련 3 ～ 4도 이상반응(Grade 3 ～ 4) 및 약물관련 중증 이상반응의 발현, 약물관련 조기 투여중단의 빈도가 증가하였다. 카페시타빈과 병용하는 고령자의 경우, 카페시타빈의 감량을 위해서는 카페시타빈의 제품설명서를 참고하여 카페시타빈의 초기용량을 75 %로 감량하여 투여하는 것을…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d4de0a4cb4",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "전립샘암 환자를 대상으로 한 임상시험(TAX 327)에서, 이 약을 3주마다 투여 받은 333명의 환자 중 209명이 65세 이상이었으며, 75세 이상은 68명이었다. 젊은 성인과 비교하여 65세 이상의 고령자에서 10 % 이상 증가한 약물과 관련된 이상반응으로 빈혈(71 % vs 56 %), 감염(37 % vs 24 %), 손발톱변화(34 % vs 23 %), 식욕부진(21 % vs 10…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c504388472",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 5)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 시스플라틴 및 플루오로우라실과 병용하여 221명의 위암환자에게 투여한 임상시험에서, 65세 이상은 54명, 70세 이상은 2명이었다. 이 시험에서 65세 이상의 환자 수는 젊은 성인과의 반응에 대한 차이를 확인하는데 충분치 않았다. 그러나 중대한 이상반응 발생은 젊은 성인에 비하여 고령자에서 보다 높았다. 졸음증, 구내염, 설사, 열성 호중구감소증/호중구감소성 감염의 발생은 젊은 성…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e3f62ae078",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 6)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 시스플라틴 및 플루오로우라실과 병용하여 174명 및 251명의 두경부암 환자에게 유도화학요법으로 투여한 임상시험(TAX323 및 TAX324)에서, 각각 18명(10 %) 및 32명(13 %)의 환자만이 65세 이상이었다. 이 임상시험에서 고령 환자의 수는 젊은 성인과의 차이를 판단하기에 불충분하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a56b9502c5",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 7)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "70세 이상의 고령 환자에게 이 약을 독소루비신, 시클로포스파미드와 병용투여한 자료는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7597d9f34a",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "4) 카페시타빈과 병용하여 안트라사이클린계 약물을 포함한 화학요법에 실패한 국소적으로 진행된 유방암 또는 전이성 유방암에서는 3주마다 이 약 75 mg/m2 투여하면서 카페시타빈을 2주간 1일 2회, 1회 1,250 mg/m2 투여하고(식후 30분 이내) 1주간 휴약하는 것(3주를 주기로 함.)이 권장된다. 카페시타빈 용량은 카페시타빈의 제품설명서를 참조하여 체표면적에 따라 결정한다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:11:10"
+}

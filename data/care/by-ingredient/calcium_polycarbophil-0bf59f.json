@@ -1,0 +1,103 @@
+{
+  "ingredient": "calcium polycarbophil",
+  "productSeq": "201502840",
+  "itemName": "폴리콜정(폴리카르보필칼슘)",
+  "atc": "A06AC08",
+  "etcOtc": "전문의약품",
+  "changeDate": "20160403",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502840/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502840/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502840/NB"
+  },
+  "rules": [
+    {
+      "id": "4a2edf1843",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 3)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민D"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "활성형 비타민D제제(알파칼시돌, 칼시트리올 등)와 병용투여시 장관에서 칼슘 흡수를 촉진시켜 고칼슘혈증이 나타날 수 있으므로 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f24149832c",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "- 프로톤펌프 억제제(오메프라졸, 란소프라졸 등)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "efd96a9e37",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "",
+      "matched": [
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘제제",
+          "surface": "산화마그네슘"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "- 제산제(수산화알루미늄ㆍ수산화마그네슘겔, 건조수산화알루미늄겔 등)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "efc79d6882",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 투여한다(임신 중 투여에 대한 안전성은 확립되지 않았다.).",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "07299c088e",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 신기능이 저하되어 있는 경우가 많고 고칼슘혈증이 나타나기 쉬우므로 감량하는 등 용량에 유의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:27"
+}

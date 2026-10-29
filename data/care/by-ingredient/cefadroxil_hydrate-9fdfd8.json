@@ -1,0 +1,76 @@
+{
+  "ingredient": "cefadroxil hydrate",
+  "productSeq": "199701347",
+  "itemName": "일양세파드록실캡슐500밀리그램(수출명 : ORETAN, OCETAN)",
+  "atc": "J01DB05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240527",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701347/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701347/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701347/NB"
+  },
+  "rules": [
+    {
+      "id": "9399cb4e92",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f0363eeb44",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부에 투여할 경우에는 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "01d0386d89",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에게는 다음과 같은 점에 유의하여 용량과 투여간격에 유의하는 등 환자의 상태를 관찰해서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f3b5b26667",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "생리기능이 저하되어 있는 경우가 많으므로 이상반응이 발현되기 쉽다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9538fe4541",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "비타민 K 결핍으로 출혈경향이 나타나기 쉽다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:44"
+}

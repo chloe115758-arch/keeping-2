@@ -93,6 +93,13 @@ t('cleanIngr: 함량을 떼고 복합제는 " + "로 잇는다', () => {
   assert.strictEqual(D.cleanIngr('5-fluorouracil').display, '5-fluorouracil');
   assert.strictEqual(D.cleanIngr('').display, '');
 });
+t('cleanIngr: 단위 찌꺼기(/mL, ㎎ 등)를 지우고 슬래시 성분명은 유지한다', () => {
+  assert.strictEqual(D.cleanIngr('sodium hyaluronate (10mg/mL)').display, 'sodium hyaluronate');
+  assert.strictEqual(D.cleanIngr('sodium hyaluronate 10㎎/㎖').display, 'sodium hyaluronate');
+  assert.strictEqual(D.cleanIngr('levothyroxine sodium 50㎍').display, 'levothyroxine sodium');
+  assert.strictEqual(D.cleanIngr('amoxicillin/clavulanate potassium').display, 'amoxicillin/clavulanate potassium');
+  assert.strictEqual(D.cleanIngr('5-fluorouracil').display, '5-fluorouracil');
+});
 t('toItem: 앱에 저장할 항목 모양', () => {
   const it = dur.toItem('670601380', { id: 'x1', times: ['21:00'] });
   assert.strictEqual(it.kind, 'drug'); assert.strictEqual(it.productCode, '670601380');

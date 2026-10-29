@@ -1,0 +1,95 @@
+{
+  "ingredient": "terbinafine hydrochloride",
+  "productSeq": "201501740",
+  "itemName": "라미나핀정(테르비나핀염산염)",
+  "atc": "D01BA02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20200901",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501740/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501740/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501740/NB"
+  },
+  "rules": [
+    {
+      "id": "04d451f46f",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 4)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "caffeine",
+          "kind": "food",
+          "ko": "카페인·커피",
+          "surface": "카페인"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약은 정맥투여한 카페인의 혈장 청소율을 21% 감소시켰다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "65ccffc1f2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 가임여성, 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약과 경구용 피임약을 병용하는 환자에서 월경이상이 보고되었으며, 발생율은 경구피임약을 단독으로 복용한 환자에서 나타나는 범위 이내였다. 가임기 여성에 대해 특별한 권고를 할 만한 자료는 없다",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b4e843c585",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 가임여성, 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물에 대한 태자 독성시험에서 이상반응이 나타나지는 않았으나, 임신 중 투여에 대한 안전성은 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8fbd7d0bab",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 가임여성, 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모유 중으로 이행되므로 이 약을 투여받는 수유부는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a98d1ef56e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 가임여성, 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "인체 투여 경험에 대한 관련 자료는 없으나 랫트의 수태능 시험에서 수태능 또는 생식기능에 이상반응이 나타나지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7eda9755cf",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 주로 간장에서 대사되어 담즙이나 요중으로 배출된다. 고령자는 일반적으로 간ㆍ신기능이 저하된 경우가 많아 높은 혈중농도가 지속될 위험이 있고 이상반응이 발현하기 쉬우므로, 환자의 상태를 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:05:06"
+}

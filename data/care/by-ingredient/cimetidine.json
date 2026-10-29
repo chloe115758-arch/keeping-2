@@ -1,0 +1,76 @@
+{
+  "ingredient": "cimetidine",
+  "productSeq": "201403734",
+  "itemName": "휴메틴정(시메티딘)",
+  "atc": "A02BA01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20191004",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403734/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403734/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403734/NB"
+  },
+  "rules": [
+    {
+      "id": "52c5eef581",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "89bb400744",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "시메티딘은 임신중 태반벽을 통과한다. 그러나 동물 생식독성연구는 태아에 대한 해로운 영향의 증거를 보이지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "53d2f48959",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모유중으로 이행하므로 수유부에 투여할 경우에는 수유하지 않도록 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7850fbcb70",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "주로 신장으로 배설되지만, 고령자에는 신기능이 저하되어 있는 경우가 많아 혈중 농도가 유지될 수 있으므로 감량하여 투여 간격을 연장하는 등 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "385e7911f6",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "1회 400 mg 1일 4회(식후, 취침시)(총 1.6 g)까지 증량할 수 있다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:12"
+}

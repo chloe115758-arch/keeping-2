@@ -1,0 +1,185 @@
+{
+  "ingredient": "calcium carbonate(precipitated) + lansoprazole",
+  "productSeq": "202300167",
+  "itemName": "란소앤정30/600밀리그램",
+  "atc": "A02BC53",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250605",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300167/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300167/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300167/NB"
+  },
+  "rules": [
+    {
+      "id": "9ee306c012",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "1) pH-의존성 흡수 약동학을 보이는 약물",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "다른 산 분비 억제제나 제산제와 마찬가지로 이 약 투여 중에는 케토코나졸, 이트라코나졸, 암피실린에스테르, 아타자나비어, 철염, 엘로티닙, 게피티니브 및 미코페놀레이트 모페틸의 흡수가 감소될 수 있다. 반면에 디곡신과 같은 약물의 흡수는 증가될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6e6e8a7466",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 5)",
+      "subject": "1) pH-의존성 흡수 약동학을 보이는 약물",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "란소프라졸을 포함한 프로톤펌프억제제와 와르파린을 동시에 투여받은 환자에게서 INR(International Normalized Ratio)과 프로트롬빈 시간이 증가했다는 보고가 있다. INR과 프로트롬빈시간의 증가는 비정상적인 출혈뿐만 아니라 사망까지도 야기할 수 있으므로 프로톤 펌프 억제제와 와르파린을 동시에 투여받는 환자는 INR과 프로트롬빈시간 증가에 대한 모니터링이 필요할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7cd98e6d03",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 6)",
+      "subject": "1) pH-의존성 흡수 약동학을 보이는 약물",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "리팜피신과 세인트존스워트와 같이 CYP2C19와 CYP3A4를 유도하는 약물은 란소프라졸의 혈청 농도를 감소시킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f909b8a225",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 9)",
+      "subject": "1) pH-의존성 흡수 약동학을 보이는 약물",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이상반응 사례 보고, 집단약동학 연구(population pharmacokinetic studies) 및 후향적 연구 등에서 메토트렉세이트(주로 고용량을 사용하는 경우, 메토트렉세이트의 사용상의 주의사항 참조)와 프로톤펌프억제제를 병용하는 경우 메토트렉세이트 그리고/또는 그 대사체인 히드록시메토트렉세이트의 혈청 농도가 상승 및 유지되어 메토트렉세이트의 독성이 나타날 수 있다고 보고되었다. 그…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a249e282e2",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 1)",
+      "subject": "침강탄산칼슘",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "탄산칼슘"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "침강탄산칼슘의 흡착작용 또는 소화관내·체액의 pH상승에 의해 병용약물의 흡수·배설에 영향을 줄 수 있으므로 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "af2785debe",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 2)",
+      "subject": "침강탄산칼슘",
+      "matched": [
+        {
+          "key": "dairy",
+          "kind": "food",
+          "ko": "우유·유제품",
+          "surface": "우유"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "다량의 우유와 병용시 우유 알카리 증후군(고칼슘혈증, 고질소혈증, 알카리증 등)이 나타날 수 있으므로 충분히 관찰하고 이러한 증상이 나타나는 경우에는 투여를 중지한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "175117abd7",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 4)",
+      "subject": "침강탄산칼슘",
+      "matched": [
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민D"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "비타민D, 치아짓계 이뇨계와 병용투여시 고칼슘혈증이 나타나기 쉬우므로 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8547985234",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신중 란소프라졸의 노출에 관한 임상 자료는 없다. 랫트에 있어서 태자의 혈장중 농도는 모동물의 혈장농도보다 높다고 인정되었다. 또한, 토끼(경구 30 mg/kg)에서 태자사망율의 증가가 인정된다. 그러므로 안전상 이유로 임신 중 란소프라졸의 사용을 금한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bf564c509b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 유즙으로의 분비가 보고되어 있으므로 수유중인 여성에는 란소프라졸의 투여를 피하고 부득이 투여하는 경우에는 수유를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6ec146588c",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자에서는 위산분비기능이 저하되어 있으며 기타 다른 생리기능이 저하되어 있으므로 저용량으로 투여를 시작하는 등 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:14:16"
+}

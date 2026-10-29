@@ -1,0 +1,15 @@
+{
+  "ingredient": "diosmin",
+  "productSeq": "202001036",
+  "itemName": "마더스민캡슐(디오스민)",
+  "atc": "C05CA03",
+  "etcOtc": "일반의약품",
+  "changeDate": "20241211",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001036/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001036/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001036/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:13:30"
+}

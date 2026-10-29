@@ -1,0 +1,212 @@
+{
+  "ingredient": "paroxetine hydrochloride",
+  "productSeq": "200806022",
+  "itemName": "에이자트씨알정25밀리그램(파록세틴염산염수화물)",
+  "atc": "N06AB05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230206",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200806022/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200806022/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200806022/NB"
+  },
+  "rules": [
+    {
+      "id": "aab3b9c5fb",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 7)",
+      "subject": "표 1.",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "세로토닌 증후군 : 동 제제를 포함한 세로토닌-노르에피네프린재흡수억제제(SNRIs) 및 세로토닌선택적재흡수억제제(SSRIs)를 단독으로 투여했을 뿐만 아니라 특히 다른 세로토닌 작동성 약물들(트립탄계열약물, 삼환계 항우울제, 펜타닐, 리튬, 트라마돌, 트립토판, 부스피론, 세인트존스워트(St. John's Wort) 포함) 및 세로토닌대사를 저해하는 약물들(특히 둘 다 정신질환 치료를 위한…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4a681ec65d",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "표 1.",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "예를 들어 트립탄 계열 약물들, 삼환계 항우울제, 펜타닐, 리튬, 트라마돌, 부스피론, 트립토판 및 세인트존스워트(St. John's Wort)와 같은 다른 세로토닌 작동성 약물들과 동 제제를 병용투여하는 것이 임상적으로 유익성이 있다면 환자들은, 특히 치료개시 중 및 용량을 증가할 때, 잠재적으로 증가된 세로토닌 증후군 위험성에 대하여 인식해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "87802ad064",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 : 비록 이 약이 알코올에 의한 정신 및 운동 기능 손상을 증가시키지 않는다 할지라도, 이 약과 알코올의 병용은 바람직하지 않다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "718debde7d",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 12)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "음식/제산제/디곡신/프로프라놀롤 : 음식물, 제산제, 디곡신 및 프로프라놀롤은 이 약의 흡수와 약동학에 영향을 미치지 않거나 (투여 용량 계획에서의 변화를 초래하지 않는 정도로) 미약한 영향을 미치는 것으로 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a31ead67c5",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (1)",
+      "subject": "1) 임부 :",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 초기 3개월 이내에 항우울제에 노출된 임부 3,581명에 대한 역학조사에서 다른 항우울제에 비하여 이 약의 복용과 관련된 선천성 기형발생의 위험성이 2.2배 높게 나타났다. 이 약에 의한 심혈관계 기형발생 위험성(심실 및 심방중격결손 등)은 다른 항우울제에 비해 2.08배 높았으며, 심혈관계 기형을 일으킨 신생아 14명 중 10명은 심실 중격 결손을 나타냈다. 이러한 자료는 전체 인구에…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6b89c83782",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (2)",
+      "subject": "1) 임부 :",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "역학조사에서 임신 중에, 특히 임신 후기에 임부에게 이 약을 포함한 SSRIs의 투여는 신생아폐동맥고혈압존속증의 위험성 증가와 관련 있는 것으로 나타났다. 임신 후기에 SSRIs를 복용한 임부에서 태어난 영아에서의 위험성 증가가 전체 인구에서 관찰된 것보다 4～5배 더 큰 것으로 보고되었다(임부 1,000명당 1～2명의 비율).",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "de7144e93a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (3)",
+      "subject": "1) 임부 :",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "약물요법과의 인과적 관계성은 확립되지 않았으나 이 약 또는 다른 SSRIs에 노출된 임부에서 조산이 보고되었다. 의사는 임부 또는 임신할 계획이 있는 여성에 대해서는 대체 치료를 고려할 필요가 있으며, 기대되는 유익성이 잠재적 위험성을 상회하지 않는다면 이 약을 투여해서는 안된다. 임부에게 이 약을 투여중지하는 경우 의사는 사용상의 주의사항에 기재된 성인에서 이 약의 투여중지시 나타나는 증상…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a9c7637c9b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (4)",
+      "subject": "1) 임부 :",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "관찰연구 데이터에서 출산 전 한달 이내에 선택적 세로토닌 재흡수 저해제(SSRIs) 또는 세로토닌-노르에피네프린 재흡수 저해제(SNRIs)는 노출에 따른 산후출혈의 위험성 증가(2배 미만)가 보고되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6f2691b382",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (5)",
+      "subject": "1) 임부 :",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 마지막 3개월의 말기에 이 약 또는 다른 SSRIs에 노출된 신생아에서 합병증이 보고된 바 있으므로, 임신 후기에 임부에게 이 약을 계속 투여하는 경우에는 신생아를 주의깊게 관찰해야 한다. 보고된 임상소견은 다음과 같다. : 호흡곤란, 청색증, 무호흡, 발작, 체온불안정, 식이 곤란, 구토, 저혈당, 과다근육긴장증, 근육긴장저하, 과다반사, 진전, 신경과민, 과민성, 졸음증, 지속적인…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "33227bcd49",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부 :",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 중 일부 사례에서 보고된 증상들은 신생아의 금단 증상으로 기술되었다. 이러한 증상은 세로토닌 효과 또는 금단증상에 기인할 수 있다. 대부분의 경우 합병증은 출생 즉시 또는 곧(< 24시간) 발생하였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3b0b752ae2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (6)",
+      "subject": "1) 임부 :",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서는 기형발생이나 선택적 태자독성이 나타나지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d7b52cddd3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (1)",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 소량이 모유로 분비된다. 따라서 모체에 대하여 기대되는 유익성이 신생아에 대한 잠재적인 위험성을 정당화하지 않는다면 수유기간 동안 이 약을 투여해서는 안된다. 이 약의 투여가 필요한 경우에는 수유 중지를 고려한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "28555369e6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (2)",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임상시험에서 수유한 신생아에서의 이 약의 혈청 농도는 검출한계 미만(<2 ng/mL) 또는 매우 낮은 정도였다(<4 ng/mL). 이러한 신생아에서 약물 효과의 징후는 관찰되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "95d8a40c02",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수태능 : 일부 임상시험에서 이 약을 포함한 SSRIs가 정자의 질에 영향을 미칠 수 있는 것으로 나타났다. 이러한 영향은 치료 중단 이후 회복됨을 보인다. 정자 질의 변화는 일부 남성에서 수태능에 영향을 미칠 수 있다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:09:09"
+}

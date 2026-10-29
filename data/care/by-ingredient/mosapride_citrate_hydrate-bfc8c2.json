@@ -16,33 +16,36 @@
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "5. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "임부 또는 임신할 가능성이 있는 부인에는 치료의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.(임신중의 투여에 관한 안전성이 확립되어있지 않다.)",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "a9e0315e9a",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "5. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "수유중에는 투여를 피하고, 부득이한 경우에는 수유를 중단한다.(실험동물에서 모유중으로의 이행이 보고되어 있다.)",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "39cf40c69e",
       "kind": "state_elderly",
       "section": "elderly",
       "where": "7. 고령자에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "일반적으로 고령자에서는 신기능, 간기능 등의 생리기능이 저하되어 있으므로 환자의 상태를 관찰하면서 신중히 투여하고 이상반응이 발현된 경우에는 감량(예, 1일 7.5mg)하는 등 적절한 처치를 한다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "efd0fb767e",
@@ -54,8 +57,8 @@
       "tone": "info",
       "excerpt": "성인: 모사프리드시트르산염무수물로서 1일 15mg을 3회로 나누어 식전 또는 식후에 경구투여한다.",
       "meal": "식전",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     }
   ],
-  "fetchedAt": "2026-10-29T18:30:52"
+  "fetchedAt": "2026-10-29T19:00:56"
 }

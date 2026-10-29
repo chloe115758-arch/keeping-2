@@ -1,0 +1,195 @@
+{
+  "ingredient": "hydrochlorothiazide + olmesartan medoxomil",
+  "productSeq": "201403866",
+  "itemName": "올메린플러스정",
+  "atc": "C09DA08",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260219",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403866/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403866/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403866/NB"
+  },
+  "rules": [
+    {
+      "id": "983690f3d6",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 약물상호작용 6)",
+      "subject": "○ 올메사탄 메독소밀과 관련된 약물상호작용",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "기타 : 이 약을 건강한 지원자에게 디곡신 또는 와파린과 병용투여 했을 때 심각한 약물 상호작용은 보고되지 않았다. 이 약의 생체내 이용률은 제산제[AI(OH)3/Mg(OH)2]와 병용 투여시 크게 변화하지 않았다. 이 약은 cytochrome P450 시스템에 의해 대사되지 않으며 P450 효소에도 영향을 주지 않는다. 따라서 이 효소에 의해 억제되거나, 유도 또는 대사되는 약물들과의 상호…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "806691c9e7",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 약물상호작용 3)",
+      "subject": "○ 히드로클로로티아지드과 관련된 약물상호작용",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "음주"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "바르비탈계 약물, 아편 알칼로이드계 마약과의 병용 또는 음주에 의해 기립성 저혈압이 증가되었다는 보고가 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1a57761964",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 약물상호작용 4)",
+      "subject": "○ 히드로클로로티아지드과 관련된 약물상호작용",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "티아지드계 이뇨제는 다른 항고혈압약물(예, 구아네티딘, 메틸도파, 베타-차단제, 혈관이완제, 칼슘통로차단제, ACE차단제, 안지오텐신수용체차단제(ARB) 및 직접적 레닌 차단제(DRI), 다른 이뇨제, 마취제, 알코올)의 항고혈압 작용을 증강시킨다. 또한 ACE 저해제와 병용투여하는 경우에는 혈압강하작용을 증가시킬 수 있으므로 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "203b08cead",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 약물상호작용 9)",
+      "subject": "○ 히드로클로로티아지드과 관련된 약물상호작용",
+      "matched": [
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "히드로클로로티아지드를 포함한 티아지드계 이뇨제의 흡수는 콜레스티라민 및 콜레스티폴로 인해 감소된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d9ef73a58b",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 약물상호작용 25)",
+      "subject": "○ 히드로클로로티아지드과 관련된 약물상호작용",
+      "matched": [
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민 D"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "티아지드계 이뇨제를 비타민 D 또는 칼슘염과 병용시 혈청 칼슘 수치를 증가시킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3d5420da86",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "태아/신생아 이환율 및 사망률 : 임부에게 레닌­안지오텐신 시스템에 직접적으로 작용하는 약물을 투여하면 태아나 신생아의 손상 및 사망이 발생할 수 있으며, 이러한 사례는 안지오텐신 전환 효소(ACE: angiotensin converting enzyme) 저해제를 복용한 환자에서도 세계적으로 수십 례가 보고된 바 있다. 따라서 임신한 사실을 알게 되면, 본제의 복용을 되도록 빨리 중지하여야…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6be4c0c374",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "자궁 내에서 안지오텐신 II 수용체 길항약에 노출된 적이 있는 유아의 경우에는 저혈압, 요량감소 및 고칼륨혈증이 있는지 면밀하게 관찰하여야 한다. 만약 요량감소 현상이 있다면 혈압과 신장관류액의 유지에 신경을 써야 한다. 저혈압을 회복시키고, 저하된 신기능을 대신하기 위해 교환수혈이나 투석을 할 수도 있다.이 약을 임산부에게 투여한 임상 경험은 없다. 이 약을 1000 mg/kg/day (평…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "70ec1381db",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "티아지드계 이뇨제는 신생아 또는 영아에서 고빌리루빈혈증, 혈소판감소 등을 일으킬 수 있다. 또한, 이뇨효과에 의해 혈장량 감소, 혈액농축, 자궁·태반혈류량 감소가 나타날 수 있으므로 임신 후기에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "76669c02a5",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "올메사탄 메독소밀의 경우 사람에서는 모유로 이행되는지의 여부가 알려져 있지 않으나, 랫트의 경우 낮은 농도로 이행되었다. 영아에게 이상반응이 나타날 가능성이 있으므로 수유부에게 이 약의 중요성을 고려하면서 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c1eda5d37d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "티아지드계 이뇨제는 모유 생성을 억제하고 모유중으로의 이행이 보고되어 있으며, 영아에게 이상반응이 나타날 가능성이 있으므로 수유중에는 이 약의 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0b367f8d5e",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약에 대한 임상시험에는 65세 이상의 피험자에 대해서 젊은 피험자와 다른 반응을 보일지를 결정한 만큼의 충분한 숫자가 충분히 포함되지 않았다. 다른 보고된 임상 경험에서는 고령자와 젊은 피험자간의 반응차가 나타나지 않았다. 일반적으로, 고령자에 대한 용량 선택은 조심스러워야 하며, 보통 투여용량범위의 가장 저용량에서 시작을 하고, 고령자에게 빈발하는 간, 신장 및 심장의 기능저하와 동반질…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d7661823b2",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "전반적으로, 최대혈중농도는 젊은 층과 고령층에서 비슷하였고 반복투여했을 때 65세 이상의 고령 환자에서 정상상태(steady state)에서 AUC가 33% 증가하였으며, 이는 신장클리언스에서 약 30% 감소를 보인 것과 일치한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:08:51"
+}

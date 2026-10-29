@@ -1,0 +1,95 @@
+{
+  "ingredient": "roxatidine acetate hydrochloride",
+  "productSeq": "200503334",
+  "itemName": "가스트릭캡슐(록사티딘아세테이트염산염)",
+  "atc": "A02BA06",
+  "etcOtc": "전문의약품",
+  "changeDate": "20231114",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200503334/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200503334/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200503334/NB"
+  },
+  "rules": [
+    {
+      "id": "7f166047d3",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 3)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약은 음식물이나 제산제와의 병용투여로 흡수가 저해되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4e5f1b70be",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ea6296b4f1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험을 통해 이 약이 유즙중으로 이행하는 것이 확인되었으므로, 투약 중에는 수유하지 않도록 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "eed09f4cd9",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 주로 신장에서 배설된다. 고령자는 신기능이 저하되어 있는 경우가 많아 이 약의 혈중농도가 높은 상태로 지속될 우려가 있으므로, 고령자에게 이 약을 투여하는 경우 감량하거나 투여간격을 연장시키는 등 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "53b517a397",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "1) 위.십이지장궤양, 역류성식도염, 졸링거엘리슨 증후군 : 염산록사티딘아세테이트로서 1회 75mg 1일 2회 아침, 저녁 식후에 경구투여한다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bcdd7bc6bd",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "2) 급성위염, 만성위염의 급성악화기 : 1회 75mg 1일 1회 저녁식후 또는 취침시투여한다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:14:54"
+}

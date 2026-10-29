@@ -1,0 +1,153 @@
+{
+  "ingredient": "esomeprazole magnesium + sodium bicarbonate",
+  "productSeq": "202104753",
+  "itemName": "안국뉴팜에스오플러스정20/800밀리그램",
+  "atc": "A02BC",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240327",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104753/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104753/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104753/NB"
+  },
+  "rules": [
+    {
+      "id": "f84f3b0dc0",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 (1)",
+      "subject": "1) 에스오메프라졸",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약 투여 중 위내 산도 감소로 인해 위 산도에 의해 흡수 기전이 영향을 받는 약물의 흡수가 증가 또는 감소될 수 있다. 다른 산 분비 억제제나 제산제와 마찬가지로 이 약 투여 중에는 케토코나졸과 이트라코나졸 및 엘로티닙의 흡수가 감소될 수 있고 디곡신의 흡수가 증가할수 있다. 건강한 지원자들에서 오메프라졸(하루에 20 mg)과 디곡신의 동시투여는 디곡신의 생체이용률을 10 %정도 증가시켰…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7b922e8d2b",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 (4)",
+      "subject": "1) 에스오메프라졸",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "CYP2C19나 CYP3A4 혹은 두가지 모두를(예, 리팜피신과 세인트존스워트) 유도한다고 알려진 약물들은 에스오메프라졸 대사를 증가시킴으로써 에스오메프라졸 혈청 농도를 감소시킬 수도 있다. 이 약과 리팜피신 또는 세인트존스워트의 병용투여를 피한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "64ad14598a",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 (6)",
+      "subject": "1) 에스오메프라졸",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "건강한 지원자에게 오메프라졸(40 mg 1일 1회 투여)과 아타자나비르 300 mg/리토나비르 100 mg을 병용투여했을때 아타자나비르의 노출이 감소했다(AUC, Cmax, Cmin이 약 75 % 감소). 아타자나비르 400 mg 1일 4회 투여는 오메프라졸의 아타자나비르 노출에 대한 영향을 상쇄시킬 수 없다. 이 약을 포함한 프로톤펌프억제제들은 아타자나비르와 병용투여할 수 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7e32ca9d95",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 (12)",
+      "subject": "1) 에스오메프라졸",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이상반응 사례 보고, 집단약동학 연구(population pharmacokinetic studies) 및 후향적 연구 등에서 메토트렉세이트(주로 고용량을 사용하는 경우, 메토트렉세이트의 사용상의 주의사항 참조)와 프로톤펌프억제제를 병용하는 경우 메토트렉세이트 그리고/또는 그 대사체인 히드록시메토트렉세이트의 혈청 농도가 상승 및 유지되어 메토트렉세이트의 독성이 나타날 수 있다고 보고되었다. 그…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c350898a3f",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 (2)",
+      "subject": "2) 탄산수소나트륨",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "칼슘제제"
+        },
+        {
+          "key": "dairy",
+          "kind": "food",
+          "ko": "우유·유제품",
+          "surface": "우유"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "다량의 우유, 칼슘제제와 병용시 우유 알칼리 증후군(고칼슘혈증, 고질소혈증, 알카리증 등)이 나타날 수 있으므로 충분히 관찰하고 이러한 증상이 나타나는 경우에는 투여를 중지한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "11176cb30e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "에스오메프라졸의 임신 중 노출에 대한 데이터는 제한되어 있다. 동물실험 결과 배/태자 발달과 관련하여 직ㆍ간접의 유해작용은 나타나지 않았다. 라세미체 혼합물의 동물실험 결과 임신, 분만 또는 분만후 발달에 대한 직ㆍ간접의 유해작용도 나타나지 않았다. 그러나 이 약을 임부에 처방시 주의해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8761c99729",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "에스오메프라졸이 사람의 모유 중으로 이행하는지 여부는 알려져 있지 않다. 수유부를 대상으로 한 시험은 실시되지 않았으므로, 이 약을 수유 중 투여해서는 안된다",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "21bf53c4b0",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 식사하기 적어도 1시간 전 공복에 복용한다.",
+      "meal": "식사하기 적어도 1시간 전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:08:13"
+}

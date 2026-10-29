@@ -1,0 +1,119 @@
+{
+  "ingredient": "ezetimibe",
+  "productSeq": "200410337",
+  "itemName": "이지트롤정(에제티미브)",
+  "atc": "C10AX09",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240703",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200410337/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200410337/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200410337/NB"
+  },
+  "rules": [
+    {
+      "id": "4ffbe1848d",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 1)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "콜레스티라민: 이 약과 콜레스티라민을 병용투여시 총 에제티미브의 평균 AUC가 약 55% 감소하였다. 이러한 상호작용에 의하여 콜레스티라민과 이 약의 병용투여로 기대되는 LDL-C 저하에 대한 병합작용이 감소될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "903b74173d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 임부에게 투여한 임상 자료는 없다. 이 약은 이 약으로 인한 잠재적 유익성이 유아에 대한 잠재적 위험성을 상회할 때에 한하여 임부에 사용해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0e687a3a78",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 한 경구 배ㆍ태자 발생시험의 시험 용량(250, 500, 1000mg/kg/day)에서 배자치사 효과가 관찰되지 않았다. 이 약 1000mg/kg/day(총 에제티미브의 AUC0-24hr에 근거하였을 때 1일 10 mg으로 투여시 사람에 대한 노출의 10배)를 투여한 랫트에서 일반적인 태자 골격이상(늑골 추가형성, 경추 중심부 골화부전, 늑골 축소) 발현…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "33965be15a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "모든 HMG-CoA 환원효소 억제제 및 페노피브레이트는 임부 및 수유부에 대한 투여가 금지되어 있다. 이 약을 출산 가능성이 있는 여성에게 HMG-CoA 환원효소 억제제 또는 페노피브레이트와 함께 투여할 때에는, 해당 HMG-CoA 환원효소 억제제 또는 페노피브레이트의 제품설명서를 참조한다. (1. 다음 환자에는 투여하지 말 것 참조)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "548aad9b1a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 에제티미브와 HMG-CoA 환원효소 억제제(스타틴계 약물)를 병용투여한 반복투여시험에서는 에제티미브 및 HMG-CoA 환원효소 억제제에 대한 노출 정도가 높았다. 단독투여에 비해 병용투여시 보다 낮은 용량에서 생식능 이상이 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9d87b5a447",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험(랫트)에서 이 약은 유즙으로 분비되었다. 랫트를 대상으로 한 실험에서 수유 중인 새끼의 총 에제티미브에 대한 노출은 모체 혈장에서 관찰되는 값의 절반에 이르렀다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f61072b285",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 사람의 모유로 분비되는지 여부는 알려지지 않았다. 따라서 이 약으로 인한 잠재적 유익성이 유아에 대한 잠재적 위험성을 상회하지 않는 한 이 약을 수유부에게 투여해서는 안 된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f460754be5",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임상시험에서 이 약을 투여받은 환자 중 65세 이상의 고령자는 948명(75세 이상의 고령자 206명 포함)이었다. 이 약의 유효성과 안전성은 고령 환자와 젊은 환자간에 유사하였으나, 일부 고령자에서 보다 민감한 반응이 나타날 수 있음을 배제할 수 없다. (3. 이상반응 참조)",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:11:40"
+}

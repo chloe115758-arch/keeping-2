@@ -1,0 +1,109 @@
+{
+  "ingredient": "pravastatin sodium",
+  "productSeq": "199300175",
+  "itemName": "메바로친정10밀리그램(프라바스타틴나트륨)",
+  "atc": "C10AA03",
+  "etcOtc": "전문의약품",
+  "changeDate": "20241205",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300175/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300175/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300175/NB"
+  },
+  "rules": [
+    {
+      "id": "777e881727",
+      "kind": "note",
+      "section": "general",
+      "where": "4. 일반적 주의 10)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "간 기능 장애 : 이 약을 복용함으로써 혈청 아미노 전이 효소 수치 증가가 보고된 바 있다. 대부분의 경우, 시작 직후에 나타났고 증상을 동반하지 않았으며 치료를 계속하거나 잠시 중단한 이후 개선되었다.이 약을 포함하여 스타틴 계열 약물을 복용한 환자에서 치명적 및 비치명적 간부전 관련 시판후 사례들이 드물게 보고되었다. 알코올을 상당량 소비하는 환자 및/또는 간질환 병력이 있는 환자의 경우…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2e87e80e11",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약은 콜레스티라민 투여 1시간 전 또는 4시간 후에 투여하는 것이 바람직하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a4a5d9e108",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 5)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약의 생체내 이용율은 이 약 투여 1시간 전에 투여된 제산제나 시메티딘에 의해 영향을 받지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6ca9fe8aae",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약과 같은 HMG-CoA 환원효소저해제는 태아발육에 필수적인 콜레스테롤의 생합성을 감소시켜 태아에게 심각한 영향을 미칠 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다. 또한 이 약 투여중 임신이 되었을 경우에는 즉시 투여를 중지하고 태아에 대한 총체적 위험을 고려한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7461d19412",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험(랫트)에서 모유중으로의 이행이 보고되어 있으므로 수유중에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d1c2c7f354",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:20:11"
+}

@@ -1,0 +1,52 @@
+{
+  "ingredient": "carboplatin",
+  "productSeq": "199101108",
+  "itemName": "네오플라틴주(카르보플라틴)",
+  "atc": "L01XA02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240327",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101108/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101108/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101108/NB"
+  },
+  "rules": [
+    {
+      "id": "1547118983",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 임신기간 동안의 안전한 사용은 정립되어 있지 않다. 몇몇의 실험체계에서 이 약은 태아독성과 변이원성이 있다고 보고되어 왔다. 랫트에 있어서 기형유발작용, 태자 치사작용이 보고되어 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "10c8f10471",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험(랫트)에 있어서 유즙 중으로 이행이 보고되어 있으므로 수유부에게 투여하는 경우에는 수유를 중지한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "40c2148b8a",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자는 일반적으로 생리기능(골수기능, 간기능, 신기능 등)이 저하되어 있으므로 초기 용량 조절이 필요할 수 있으며, 또는 그 후에 따르는 용량의 조절이 환자의 상태에 따라 필요할 수 있다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:16:14"
+}

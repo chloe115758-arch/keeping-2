@@ -1,0 +1,102 @@
+{
+  "ingredient": "naltrexone hydrochloride",
+  "productSeq": "200606297",
+  "itemName": "날트렉신정(날트렉손염산염)",
+  "atc": "N07BB04",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230118",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606297/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606297/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606297/NB"
+  },
+  "rules": [
+    {
+      "id": "f8317822a8",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약에 의한 잠재적인 간독성 발생의 증거는 아편류 수용체 차단을 위해서 권장되는 용량의 약 5배(1일 300 mg)로 투여 받은 과비만인 환자들을 대상으로 한 위약 대조시험결과에서 나타났다. 이 연구에서 이 약으로 치료받은 환자 26명중 5명이 치료 시작 후 3 ～ 8주 사이에 혈장 아미노전달효소 값 즉, ALT 값이 최저 121에서 최고 532로 처음 값보다 3 ～ 19배나 증가하였다.…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8257b76378",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 4)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "의사는 환자에게 환자 자신이 알코올중독이나 약물의존성 때문에 포괄적인 치료 프로그램의 일부로서 이 약물을 투약 받고 있다는 사실을 알려주고, 이 약을 복용하고 있다는 사실을 의료진들에게 알릴 수 있도록 환자가 표시카드를 소지해야 한다는 것을 알려 주어야 한다. 또한 다른 약물투여를 필요로 할 경우에도 반드시 환자가 담당의사에게 지금 이 약으로 치료중임을 알려야 한다고 지도해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "358d212964",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 사람 치료 용량의 약 140배로 랫트나 토끼에 투여하면 배아치사효과가 있음이 알려져 있다. 이 결과는 임신 전과 임신기간 내내 이 약 100 mg/kg으로 투여 받은 흰쥐와 기관발생시에 60 mg/kg으로 투여 받은 토끼에서 증명되었다. 임신한 여성을 대상으로 한 적절하고 잘 통제된 시험이 없다. 또한 이 약이 진통과 분만에 영향을 미치는 지는 알려지지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b1180d5e26",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에게 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bca3a3865a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 모유로 이행하는지 알려져있지 않으므로 수유부에게 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cc3d790152",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 고령자에 투여하지 않는다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:19:09"
+}

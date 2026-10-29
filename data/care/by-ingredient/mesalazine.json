@@ -1,0 +1,52 @@
+{
+  "ingredient": "mesalazine",
+  "productSeq": "200400465",
+  "itemName": "아사콜디알정400밀리그람(메살라진)",
+  "atc": "A07EC02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260701",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400465/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400465/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400465/NB"
+  },
+  "rules": [
+    {
+      "id": "83a0c05089",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 : 이 약은 태반을 통과하며, 탯줄(제대) 혈장농도는 모체혈장에서의 농도보다 낮다고 알려져 있다. 그리고 대사체인 아세틸메살라진은 탯줄(제대)과 모체혈장에서 같은 농도이다. 동물에서 실시한 생식발생 독성시험에서 랫트에 1일 1,000mg/kg까지 투여하거나, 토끼에게 1일 800mg/kg까지 투여한 결과에서 기형유발 작용이나 태자에게 유해한 작용을 나타낸다는 증거는 없었다. 그러나 임부…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "358091015a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부 : 메살라진은 유즙으로 분비된다. 메살라진의 대사체인 아세틸메살라진의 유즙중 농도는 모체의 혈중 농도와 비슷하거나 더 높았지만, 메살라진의 유즙중 농도는 모체의 혈중 농도보다 낮았다. 수유아에서 설사와 같은 과민반응이 배제될수 없으며 잠재적인 이익이 가능한 위험성을 상회하는 경우에만 수유 중에 투여 되어야 한다. 영아가 설사를 하면 수유는 중단되어야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a655cd1fbe",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자는 신기능이 저하되어 있는 경우가 많으므로 이 약의 치료기간 동안 혈구수를 모니터링하는 등 주의하여 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:15:39"
+}

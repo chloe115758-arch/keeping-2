@@ -1,0 +1,128 @@
+{
+  "ingredient": "amlodipine besylate + losartan potassium",
+  "productSeq": "202002053",
+  "itemName": "로사베실정5/50밀리그램(암로디핀, 로사르탄칼륨)",
+  "atc": "C09DB06",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260212",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002053/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002053/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002053/NB"
+  },
+  "rules": [
+    {
+      "id": "44b3efb7f5",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (3)",
+      "subject": "① 암로디핀",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽쥬스: 암로디핀은 자몽이나 자몽쥬스와 병용시 일부 환자에서 생체이용률 증가로 인한 혈압강하효과의 증가가 나타날 수 있으므로, 병용투여를 권장하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3ed479d1bd",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "① 암로디핀",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "&#x25e6; 알루미늄/마그네슘(제산제): 알루미늄/마그네슘 제산제와 단회용량의 암로디핀과 병용투여 시 암로디핀의 약동학에 유의적인 영향이 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "89867828c0",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "① 암로디핀",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트 존스 워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "&#x25e6; CYP3A4 유도제: CYP3A4 유도제(예, 리팜피신, 세인트 존스 워트(hypericum perforatum))와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "53ecbfe092",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "① 암로디핀",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "&#x25e6; 에탄올(알코올) : 10 mg 암로디핀의 단회 및 반복투여시 에탄올의 약동학에 유의적인 변화가 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d8aad6c5d5",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "암로디핀의 임부에 대한 안전성은 확립되지 않았다. 인체에 대한 최대 권장용량의 50배에 해당하는 용량의 암로디핀을 투여한 랫드에서 분만지연 및 연장이 나타났다. 로사르탄의 안지오텐신 II 길항제의 작용기전 때문에 태아에 대한 위험을 배제 할 수 없다. 로사르탄의 경우 동물 실험에서 태자와 신생자에게 손상과 사망이 나타났다. 이는 레닌-안지오텐신-알도스테론 시스템에 대한 영향에 기인한 것으로…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "11a091c82d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "사람에서 암로디핀 및/또는 로사르탄의 유즙 분비 여부는 알려지지 않았으나, 동물시험에서 암로디핀 및 로사르탄의 활성대사물의 모유 중으로의 이행이 보고되었으므로 수유 중에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ddbb4ac8d4",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "75세 이상의 고령자에 대해 로사르탄의 초회용량으로 1일 1회 25밀리그램이 권장되나, 이 약으로는 로사르탄 25밀리그램 투여가 가능하지 않으므로, 초기 치료시 이 약(복합제)을 투여하는 것은 권장되지 않는다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:06:57"
+}

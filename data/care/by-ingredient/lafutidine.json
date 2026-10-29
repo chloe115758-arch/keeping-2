@@ -1,0 +1,100 @@
+{
+  "ingredient": "lafutidine",
+  "productSeq": "201908447",
+  "itemName": "로푸틴정10밀리그램(라푸티딘)",
+  "atc": "A02BA08",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230428",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908447/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908447/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908447/NB"
+  },
+  "rules": [
+    {
+      "id": "a32523a602",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "5. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 용량에 따른 투여간격에 주의하고, 환자의 상태를 관찰하여 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "037227b7fa",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임산부, 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임산부 또는 임신하고 있을 가능성이 있는 부인에게는 의사의 판단 하에 치료상의 유익성이 위험성을 상회한다고 판단될 경우에 한하여 투약한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "48b56b5b7b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임산부, 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "동물실험 결과 이 약이 유즙으로 분비되는 것이 관찰되었으므로 수유 중인 여성의 경우에는 투여하지 말 것",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ea066e2eec",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "1. 위궤양의 단기치료: 통상 라푸티딘으로 1회 10mg을 1일 2회 오전 및 취침전에 경구 투여한다. 최대 8주간 투여한 임상시험 결과 대부분 8주 이내에 치유되나 간혹 환자에 따라 치유기간이 달라질 수 있다.",
+      "meal": "취침전",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1a1f11084b",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "2. 십이지장궤양의 단기치료: 통상 라푸티딘으로 1회 10mg을 1일 2회 오전 및 취침전에 경구 투여한다. 최대 6주간 투여한 임상시험 결과 대부분 6주 이내에 치유되나 간혹 환자에 따라 치유기간이 달라질 수 있다.",
+      "meal": "취침전",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bf8b4bac4a",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "3. 급성위염 및 만성위염의 위점막 병변의 개선: 통상 라푸티딘으로 1일 1회 10mg을 취침전 경구 투여한다. 최대 2주간 투여한 임상시험 결과 대부분 2주 이내에 치유되나 간혹 환자에 따라 치유기간이 달라질 수 있다.",
+      "meal": "취침전",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4b79d01203",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "5. 마취전투약: 통상 라푸티딘으로서 1회 10mg을 2회(수술전날 취침전, 수술당일 마취투여 2시간전) 경구투여한다.",
+      "meal": "취침전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:06:30"
+}

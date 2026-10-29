@@ -1,0 +1,107 @@
+{
+  "ingredient": "rivastigmine for 24h",
+  "productSeq": "201401461",
+  "itemName": "스타그민패취10(리바스티그민)",
+  "atc": "N06DA03",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230802",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201401461/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201401461/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201401461/NB"
+  },
+  "rules": [
+    {
+      "id": "28fecf6c54",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "일반적인 병용 투여 약물과의 상호작용",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "건강한 지원자들에 대한 연구에서 경구용 리바스티그민과 디곡신, 와파린, 디아제팜, 플루옥세틴 사이에서 약동학적 상호작용은 관찰되지 않았다. 리바스티그민은 와파린으로 유도된 프로트롬빈 시간 증가에 영향을 주지 않는다. 리바스티그민과 디곡신 병용투여 후 심전도에 대한 부적절한 효과는 관찰되지 않았다. 이 약과 흔하게 병용 처방되는 약물들(예 : 제산제, 진토제, 혈당강하제, 중추작용성 혈압강하제…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1cbb5d5459",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "가임기 여성 : 임신할 가능성이 있는 여성에 대한 이 약의 효과는 알려진 바가 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "041fb28f29",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부: 수태한 동물에서 리바스티그민 그리고/또는 대사체가 태반을 통과했으나, 사람에서는 알려지지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "917da5c5b0",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "리바스티그민은 동물실험에서 기형발생이 없었으나, 임부에 대한 이 약의 안전성이 충분히 확립되어 있지 않으므로 이 약 치료의 유익성이 태아에 대한 잠재적 위험성을 상회하는 경우에만 임부에 투여하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c52ba629ab",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부: 리바스티그민을 랫드에 경구투여하였을 때 리바스티그민과 그 대사체의 농도가 혈장에 비해 모유에서 약 2배 더 높았다. 리바스티그민이 사람 모유로 이행되는지의 여부가 밝혀지지 않았으므로 리바스티그민 투여 중에 수유를 하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b9df8b9c8e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "생식력 : 암수 랫드에서 친세대 및 그 다음 세대의 생식력이나 번식 능력에 대한 이 약의 이상반응은 관찰되지 않았다. 사람에서의 생식능력에 대한 이 약의 효과는 알려진 바가 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "63f8ee4f58",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "알츠하이머병 치매환자에 이 약 패취를 투여한 연구에서 리바스티그민의 노출에 대해 나이의 영향은 없었다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:08:58"
+}

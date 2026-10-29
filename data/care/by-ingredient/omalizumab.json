@@ -1,0 +1,112 @@
+{
+  "ingredient": "omalizumab",
+  "productSeq": "202401521",
+  "itemName": "옴리클로프리필드시린지주(오말리주맙)",
+  "atc": "R03DX05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260811",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401521/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401521/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401521/NB"
+  },
+  "rules": [
+    {
+      "id": "74e69c8d10",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 가임기 여성 및 남성에 대한 투여 및 수태능",
+      "subject": "임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "오말리주맙의 임부에 대한 투여에 있어서 통제된 대조 임상 연구는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8d032ef1d3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 가임기 여성 및 남성에 대한 투여 및 수태능",
+      "subject": "임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중 오말리주맙의 노출에 대한 등록 연구(EXPECT)에서 오말리주맙에 노출된 250명의 천식을 겪는 임부들은 주요 선천성 결함이나 유산의 비율 증가를 보여주지 않았다. 그러나, 출생 시 평균 임신 연령에도 불구하고 다른 코호트의 유아에 비해 저체중 비율이 증가했다. 하지만 임신 중 오말리주맙을 투여 받은 여성은 중증의 천식을 앓고 있었기 때문에 영유아 저체중의 원인이 오말리주맙 때문인지…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "956590a68c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 가임기 여성 및 남성에 대한 투여 및 수태능",
+      "subject": "임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "사람의 IgG 항체는 태반 장벽을 넘는 것으로 알려져 있다. 따라서 오말리주맙은 산모에서 발달 중인 태아로 이동할 수 있다. 사이노몰거스 원숭이로 수행한 생식독성시험에서 기관 형성 기간 동안 최대 권장 용량의 약 5배에 달하는 용량(모체 피하투여 용량 기준, 최대 75mg/kg/week) 피하 투여했을 때 임부독성, 태아독성 또는 기형성 증거는 없었다. 오말리주맙은 임신, 분만, 수유 기간…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "391c5b4dad",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 가임기 여성 및 남성에 대한 투여 및 수태능",
+      "subject": "수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "모유에 오말리주맙이 존재하는지 여부 또는 모유 생산에 미치는 영향에 관한 정보는 없다. 단, 오말리주맙은 인간 단일 클론 항체(IgG1 kappa)이며, 면역글로불린(IgG)은 소량 사람 모유에 존재한다. 임신 노출 등록 연구(EXPECT)에서 대다수의 유아는 모유 수유를 받았다. \"감염 및 기생충 감염\"으로 되는 이상 반응은 모유 수유를 통해 오말리주맙에 노출된 유아에서 통계적으로 의미있게…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1b2044544d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 가임기 여성 및 남성에 대한 투여 및 수태능",
+      "subject": "모유 수유로 인한 발달 및 건강",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "유익성은 산모에서 오말리주맙의 임상적 필요성 및 오말리주맙 또는 모체의 기저 상태가 모유 수유 아동에 대한 잠재적 부작용과 함께 고려되어야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c5fbfa007b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 가임기 여성 및 남성에 대한 투여 및 수태능",
+      "subject": "가임기 여성 및 남성",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "가임기 여성은 오말리주맙 치료 중 피임해야 한다. 임신을 계획 중인 여성은 오말리주맙의 사용을 특별히 권장하지는 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9d231c8e0b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 가임기 여성 및 남성에 대한 투여 및 수태능",
+      "subject": "수태능",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "오말리주맙을 가지고 실시한 사람의 수태능에 대한 자료는 없다. 교배연구를 포함하여, 성체 사이노몰거스 원숭이를 가지고 실시한 특별히 디자인된 비임상 수태능 연구에서 75mg/kg의 용량까지 오말리주맙을 반복적으로 투여했을 때 수컷 혹은 암컷의 수태능의 손상은 관찰되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5979b43938",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "65세 이상 환자를 대상으로 오말리주맙을 투여한 자료는 제한적이나 연령대가 더 낮은 성인 환자와 다른 용량을 투여하여야 한다는 근거는 없다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:20:04"
+}

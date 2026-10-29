@@ -1,0 +1,88 @@
+{
+  "ingredient": "rocuronium bromide",
+  "productSeq": "201206488",
+  "itemName": "로크니움주(로쿠로늄브롬화물)",
+  "atc": "M03AC09",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230427",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201206488/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201206488/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201206488/NB"
+  },
+  "rules": [
+    {
+      "id": "918a769ad4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약에 노출된 임신에 대한 임상적 데이터는 없다. 동물 연구에서 이 약은 임신, 배자/태자 발달, 분만 혹은 이후 태아 발달에 관해 직·간접적으로 유해한 효과를 나타내지 않았다. 담당의사의 판단으로 투여의 유익성이 위험성을 상회할 경우에만 이 약을 투여하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2802f23ca3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "제왕절개술을 시행 받는 환자의 경우, 삽관의 어려움이 없다고 판단되고 충분한 용량의 마취제가 투여된 후 또는 숙사메토늄으로 삽관을 촉진한 경우 이 약을 빠른연속마취유도 과정에 사용할 수 있다. 이 약은 제왕절개 분만 시 0.6 mg/kg을 투여할 경우 안전성이 확립되어 있다. 이 약은 아프가 수치(Apgar score), 태아의 근육 긴장도나 심폐 기능에 영향을 미치지 않는다. 제대혈 검사…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f4a9c7eef0",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "주의 1: 마취 중 빠른연속마취유도를 위해 1.0 mg/kg 용량이 조사되어 있으나 제왕절개 환자군에서는 조사되지 않았다. 그러므로 제왕절개술을 시행 받는 환자군에게는 0.6 mg/kg이 권장된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "89943482e5",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "주의 2: 마그네슘염은 신경근 차단에 대해 상승 작용을 일으키므로 임신 중독증으로 마그네슘염을 투여 받는 환자의 경우에는 신경근 차단제 투여 후 신경근 회복이 억제되거나 불완전할 수 있다. 그러므로 이들의 환자들에서 이 약의 투여량은 줄여야 하고, 연축반응에 따라 투여량을 조절해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cc7e77b3dd",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 사람에서 모유를 통해 이행되는지 여부는 확실히 알려져 있지 않다. 동물 연구에 의하면 동물의 유즙에서는 이 약이 의미 없는 정도로 관찰되었다. 동물 연구에서 임신, 배자/태자 발달, 분만 혹은 이후 태자 발달에 관해 직·간접적 유해한 효과를 나타내지 않았다. 수유중인 여성에게 투여하는 것은 바람직하지 않다. 다만 부득이한 경우에는 수유를 중단한다.(동물실험에서 이 약의 성분이 유즙으…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "820ef61890",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "환자의 상태를 관찰하면서 삽관용량을 이 약을 체중 kg당 0.6 mg으로 신중하게 투여한다. 또한 수술중 추가투여하는 경우에는 삽관용량으로 작용시간을 고려하고 용량을 결정한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:14:51"
+}

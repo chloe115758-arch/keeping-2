@@ -1,0 +1,133 @@
+{
+  "ingredient": "raloxifene hydrochloride",
+  "productSeq": "202000332",
+  "itemName": "라록수펜정(라록시펜염산염)",
+  "atc": "G03XC01",
+  "etcOtc": "전문의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000332/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000332/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000332/NB"
+  },
+  "rules": [
+    {
+      "id": "0a3ed6575c",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "음주"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "흡연 및 음주 등의 습관이 있는 경우는 체중조절 운동과 함께 습관을 고치도록 권한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f07a1be3ff",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 1)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "탄산칼슘"
+        },
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘제제",
+          "surface": "산화마그네슘"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "탄산칼슘 또는 수산화알루미늄, 수산화마그네슘을 포함하고 있는 제산제와 동시투여는 이 약의 전신적 노출에 영향을 주지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6b40b8d1d4",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 8)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "콜레스티라민(또는 기타 음이온 교환수지)은 이 약의 흡수와 장간순환을 유의하게 감소시키므로 병용투여해서는 안된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7266cda3fe",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 폐경기 여성에게만 사용한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "45a63461f8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "가임여성은 이 약을 복용해서는 안 된다. 이 약은 임부에게 투여시 태아에 손상을 줄 수 있다. 만약 임신 중 이 약을 잘못 투여하였거나 약물투여 기간에 임신한 경우에는 태아에 미칠 수 있는 잠재적인 위해를 환자에게 알려야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "aa3e831fd2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 모유로 이행되는지 확인되지 않았다. 따라서 수유부에 대한 사용은 권장하지 않는다. 이 약은 수유아의 발달에 영향을 줄 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5d6846b0c7",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "7,705명의 폐경 후 여성에 대하여 실시한 골다공증 치료 임상에서, 4,621명의 여성이 고령자(65세 이상)로 간주되었다. 이 중 845명의 여성이 75세 이상이었다. 골다공증 치료 임상시험에서 고령 또는 폐경 후 여성에서의 안전성 및 유효성이 동등하였다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:15:49"
+}

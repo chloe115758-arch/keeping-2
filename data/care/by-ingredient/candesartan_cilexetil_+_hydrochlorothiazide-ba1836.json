@@ -1,0 +1,115 @@
+{
+  "ingredient": "candesartan cilexetil + hydrochlorothiazide",
+  "productSeq": "200109104",
+  "itemName": "아타칸플러스정16/12.5mg",
+  "atc": "C09DA06",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260212",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109104/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109104/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109104/NB"
+  },
+  "rules": [
+    {
+      "id": "dc334826af",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 13)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "히드로클로로티아지드의 흡수는 콜레스티폴이나 콜레스티라민에 의해 감소된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "be81b44465",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 15)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "칼슘 보충제"
+        },
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민 D"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "티아지드계 이뇨제는 칼슘의 배설을 감소시키므로 혈중 칼슘 농도를 증가 시킬 수 있다. 만일 칼슘 보충제나 비타민 D를 처방 해야만 하는 경우에는 혈중 칼슘농도를 모니터링하고 용량을 적절하게 조절해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b574fd9d82",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 21)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "기립성 저혈압은 알코올, 바르비탈계 약물, 마취제 또는 아편 알칼로이드계 마약과의 병용으로 악화될 수도 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "47f24ac9cf",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 임신 중에는 투여해서는 안 된다. 이 약을 복용하는 환자는 임신 가능성을 고려하기 전에 이러한 점을 인지하고 적절한 선택을 할 수 있도록 의사와 상의한다. 임신이 확인되면 이 약 치료는 즉시 중단되어야 하며, 적절한 경우 다른 치료법을 시작해야 한다. 레닌-안지오텐신계에 직접적으로 작용하는 약물을 임신 중 투여 시 태아 및 신생아의 손상 및 사망을 야기할 수 있다. 안지오텐신Ⅱ수용체…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1b8901f2fe",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "칸데사르탄이 모유 중에 이행되는 지의 여부는 밝혀지지 않았으나 랫트에 대한 실험에서 유즙 중에 칸데사르탄의 분비가 확인되었다. 히드로클로로티아지드는 모유를 통해 분비된다. 모유를 먹는 유아에게 이상반응을 일으킬 가능성이 있으므로 이 약의 투여가 필수적일 때에는 수유를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f064208796",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자에게 과도한 혈압강하는 바람직하지 않다(심근경색, 뇌졸중 또는 신기능 손상의 악화 등이 일어날 우려가 있다.). 따라서 고령자에게 투여시 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:09:22"
+}

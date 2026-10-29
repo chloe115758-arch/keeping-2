@@ -1,0 +1,52 @@
+{
+  "ingredient": "teneligliptin hydrochloride hydrate",
+  "productSeq": "202007625",
+  "itemName": "테네글리틴정20밀리그램(테네리글립틴염산염수화물)",
+  "atc": "A10BH08",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230614",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007625/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007625/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007625/NB"
+  },
+  "rules": [
+    {
+      "id": "ffbd5988a1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부를 대상으로 한 적절한 임상시험 결과는 없으므로 임부에서의 사용은 권장되지 않는다. 이 약은 비임상시험(랫드)에서 태아로 이행하는 것이 관찰되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d337ab3b2a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 사람 모유로 분비되는지 알려지지 않았으며, 비임상시험(랫드)에서 유즙으로 분비되는 것으로 보고되었다. 수유의 중지 여부는 이 약 투여와 수유의 유익성에 대한 신중한 고려 후 판단되어야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d3765ee68a",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있는 경우가 많으므로 환자상태를 관찰하면서 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:09:00"
+}

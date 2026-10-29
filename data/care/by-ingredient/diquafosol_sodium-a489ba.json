@@ -1,0 +1,28 @@
+{
+  "ingredient": "diquafosol sodium",
+  "productSeq": "202003620",
+  "itemName": "디쿠아엠점안액(디쿠아포솔나트륨)(1회용)",
+  "atc": "S01XA33",
+  "etcOtc": "전문의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003620/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003620/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003620/NB"
+  },
+  "rules": [
+    {
+      "id": "94929a95b6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "3. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 및 수유부에 대한 안전성ㆍ유효성은 확립되지 않았다(사용경험이 없다.).",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:07:41"
+}

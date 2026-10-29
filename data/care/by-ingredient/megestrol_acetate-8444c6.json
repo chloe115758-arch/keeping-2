@@ -1,0 +1,40 @@
+{
+  "ingredient": "megestrol acetate",
+  "productSeq": "201102775",
+  "itemName": "메게이스내복현탁액(메게스트롤아세테이트)",
+  "atc": "L02AB01",
+  "etcOtc": "전문의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201102775/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201102775/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201102775/NB"
+  },
+  "rules": [
+    {
+      "id": "d264ca0da7",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 태아에게 치명적인 영향을 미칠 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게 투여하지 않는다. 가임여성의 경우, 이 약으로 치료하는 동안에는 피임하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7e123bc345",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모유로 이행되어 영아에게 치명적인 이상반응을 일으킬 수 있으므로 수유부에게 투여할 경우에는 수유를 중지시킨다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:40"
+}

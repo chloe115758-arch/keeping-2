@@ -1,0 +1,107 @@
+{
+  "ingredient": "naproxen sodium",
+  "productSeq": "201701248",
+  "itemName": "나프록소정(나프록센나트륨)",
+  "atc": "M01AE02",
+  "etcOtc": "일반의약품",
+  "changeDate": "20241212",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201701248/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201701248/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201701248/NB"
+  },
+  "rules": [
+    {
+      "id": "5bd734411d",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알콜"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "위장관계 이상반응 : 이 약을 포함한 비스테로이드성 소염진통제를 궤양성 질환 또는 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "112280ba99",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 임부에게 투여한 임상자료가 없다. 동물실험에서 주산기(출산전후기)에 투여하여 분만지연, 난산의 발생 빈도 증가 및 새끼의 생존율 감소가 보고되어 있으므로 임신말기에는 이 약을 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a8c8426a8e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신말기의 랫트에 투여한 실험에서 태자의 동맥관수축이 보고된 바 있다. 다른 비스테로이드성 소염진통제와 마찬가지로 임신 말기에 이 약을 투여 시 태아의 동맥관을 조기 폐쇄시킬 수 있으므로 이 약은 임부에게 투여를 피해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "451345a705",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 약 20주 이후 이 약을 포함한 비스테로이드성 소염제(NSAIDs)의 사용은 태아 신기능 이상을 일으켜 양수 과소증을 유발할 수 있으며 경우에 따라서는 신생아 신장애를 일으킬 수 있다. 비스테로이드성 소염제(NSAIDs) 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되었지만 이러한 부작용은 평균적으로 투여 후 수일에서 수주 사이에 나타난다. 양수 과소증은 보통 투여 중단 시…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a31b90e116",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 안전성은 확립되어 있지 않으므로 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "fb21d6608c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모유로의 이행이 일어나 신생아에서 프로스타글란딘 합성을 억제하는 이상반응을 일으키므로 수유부에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "89692fdd53",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자(노인)에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자(노인)는 소염진통제에 의한 소화관의 궤양, 출혈 등의 발현(드러냄)이 높으므로 소량부터 투여를 시작하여 필요한 최소량으로 투여하고 이상반응의 발현(드러냄)에 특히 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:42"
+}

@@ -1,0 +1,250 @@
+{
+  "ingredient": "metformin hydrochloride + pioglitazone hydrochloride",
+  "productSeq": "202000339",
+  "itemName": "하이메트정15/850밀리그램",
+  "atc": "A10BD05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20231122",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000339/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000339/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000339/NB"
+  },
+  "rules": [
+    {
+      "id": "59bca9de86",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "subject": "1) 유산산증",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "덧붙여 이 약은 저산소증, 탈수, 패혈증과 관계된 증상이 나타날 경우 즉각 투여를 중지해야 한다. 간기능이 손상된 경우 젖산 배설능력이 유의적으로 저하될 수 있으므로, 일반적으로 간질환의 임상적 또는 실험실적 소견이 있는 환자의 경우 메트포르민을 투여하지 않는다. 알코올은 메트포르민이 젖산대사에 영향을 미치게 할 가능성이 있으므로, 이 약을 투여 받는 동안 급ㆍ만성적인 알코올의 과량섭취는 피…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "07fc32fbb2",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적주의 15)",
+      "subject": "10) 골절",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 섭취 : 알코올은 젖산 대사에 대해 메트포르민이 미치는 영향을 증대시키는 것으로 알려져 있다. 따라서 이 약을 투여하는 동안 급성 또는 만성적인 알코올의 과량섭취는 피해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d522eb303d",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적주의 19)",
+      "subject": "10) 골절",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "저혈당 : 저혈당은 일반적인 사용 환경 하에서 메트포르민을 단독 투여한 환자에서는 나타나지 않으나, 열량 섭취가 불충분한 경우, 격렬한 운동이 열량 섭취로 보충되지 못한 경우나 다른 혈당강하제 (설폰요소제, 인슐린 등) 또는 알코올을 병용 투여하는 경우에 발생한다. 특히, 고령자, 쇠약하거나 영양 불균형인 환자, 부신이나 뇌하수체 부전 환자 또는 알코올 중독자인 경우 저혈당이 나타나기 쉽다.…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c12acd79ae",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적주의",
+      "subject": "10) 골절",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "환자에게 이 약을 투여하는 동안 급성이든 만성이든 과다한 알코올 섭취의 위험에 대해 조언해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f8a1a497fd",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 2)",
+      "subject": "- 혈당강하 작용을 감약시키는 약제",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7936621ad7",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "- 간장애",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f1132b5b5e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "현재의 정보에 따르면 임신 중 비정상적인 혈당치가 신생아 유병률 및 사망률의 증가뿐만 아니라, 선천성 기형의 높은 발생빈도와 관련이 있다고 강력히 제기되기 때문에, 대부분의 전문가들이 임신중에 혈당치를 가능한 한 정상에 가깝게 유지하기 위하여 인슐린을 사용할 것을 권장한다. 이 약은 임신기간동안 투여해서는 안된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d684e12955",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부를 대상으로 이 약 또는 이 약의 성분에 대한 적절한 대조연구가 없었다. 이 약에 대하여 수행된 동물실험은 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7b9896670c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약으로 수행된 시험은 없다. 피오글리타존과 메트포르민은 각각의 성분으로 시행된 연구에서 수유 랫드에서 유즙으로 분비된다. 피오글리타존 및/또는 메트포르민이 사람의 유즙으로 분비되는 지 여부는 알려져 있지 않다. 많은 약물들이 사람의 유즙으로 배설되므로, 이 약을 수유부에는 투여하지 않는다. 만약 이 약 중단 했으나 식이 요법만으로는 혈당이 적절히 조절되지 않는 경우에는 인슐린 요법을 고려…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f715fa2595",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자는 신기능이 감소되어 있을 가능성이 있기 때문에 이 약의 초기 용량 및 유지용량은 신중히 선택해야 한다. 또한 메트포르민과 관련된 유산산증을 예방하기 위하여 신기능에 대한 모니터링이 필요하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "aefc292c9b",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "피오글리타존 염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "16-26주 이중 눈가림, 위약대조, 단독요법 임상시험 3건을 통합하였을 때, 피오글리타존을 투여 받은 환자 총 92명(15.2%)이 65세 이상이었고, 2명(0.3%)이 75세 이상이었다. 설포닐우레아에 병용 투여한 16-24주 임상시험 2건을 통합하였을 때, 피오글리타존을 투여 받은 201명(18.7%)의 환자가 65세 이상이었고, 19명(1.8%)이 75세 이상이었다. 메트포르민에 병용…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a8ff8492ba",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "피오글리타존 염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "PROactive 임상시험에서는 피오글리타존을 투여 받은 1068명(41.0%)의 환자가 65세 이상이었고, 42명(1.6%)이 75세 이상이었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "893274bead",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "피오글리타존 염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "피오글리타존에 대한 약동학 시험에서 노인 환자와 젊은 환자 간에 약동학 변수 면에서 유의한 차이는 관찰되지 않았다. 75세 이상 환자에 대한 표본 수가 작아 결론이 제한되긴 하지만, 이러한 임상 경험에서 노인 환자(65세 이상)와 젊은 환자 간에 안전성과 유효성 면에서의 차이는 확인되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "39d47270a7",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "메트포르민 염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자와 성인 환자 간에 반응의 차이가 없다는 임상보고가 있으나, 메트포르민의 대조 임상 시험은 성인과 다른 반응을 나타내는지 결정하기 위한 충분한 수의 고령 환자를 확보하지 못하였다. 메트포르민은 대부분 신장으로 배설된다고 알려져 있으며, 부적절한 신기능을 갖는 환자에서는 심각한 약물 부작용의 위험이 있기 때문에, 정상적인 신기능을 가진 환자에게만 사용하도록 한다. 고령화는 신기능 감소와…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8c2202e20e",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 일반적으로 식사와 함께 나누어 투여해야 하며, 이렇게 함으로서 메트포르민으로 인한 위장관계 이상반응을 줄일 수 있다.",
+      "meal": "식사와 함께",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ce1471b0d0",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "치료 반응의 적절성을 평가하기 위해서 충분한 시간이 필요하다. 가장 이상적인 방법으로 치료에 대한 반응을 당화혈색소(HbA1C)를 이용하여 평가해야 하며, 이는 공복시 혈당치 (FPG)보다 장기 혈당 조절의 더 우수한 지표이다. HbA1c는 과거 2 - 3개월에 동안의 혈당치를 반영한다. 이 약의 임상적 사용에서 FPG로 측정된 혈당 조절이 악화되지 않는다면, HbA1C의 변화를 평가하기에…",
+      "meal": "공복",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:11:45"
+}

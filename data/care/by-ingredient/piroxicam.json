@@ -1,0 +1,102 @@
+{
+  "ingredient": "piroxicam",
+  "productSeq": "200003825",
+  "itemName": "지엘피록시캄캡슐10밀리그램",
+  "atc": "M01AC01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240522",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200003825/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200003825/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200003825/NB"
+  },
+  "rules": [
+    {
+      "id": "33cd3c9c2d",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알콜"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "위장관계 이상반응 : 이 약을 포함한 비스테로이드 소염제를 궤양성 질환 또는 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드 소염제 투여시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용 코르티코스테…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "759970bad8",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 10)",
+      "subject": "9) 쿠마린계 항응고제(와파린 등)",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "제산제, 디곡신 또는 디기톡신과 병용투여 이 약의 혈장농도에 대한 영향은 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3542d929a5",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "다른 비스테로이드 소염제와 마찬가지로 임신 말기에 이 약을 투여 시 태아의 동맥관을 조기 폐쇄시킬 수 있다. 이 약을 임부에게 투여한 임상자료가 없어, 임부에 대한 안전성이 확립되어 있지 않으므로 임부에게 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "dcadc8aa8b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트에 대한 실험에서 비스테로이드 소염제는 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 난산의 발생 빈도를 증가시키고, 분만을 지연시키며 새끼의 생존율을 감소시켰다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5a000d353b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모체 혈청 농도의 1∼3 %의 농도로 모유로 이행됨이 보고되었다. 수유부에 대한 안전성이 확립되어 있지 않으므로 수유부에게는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "20d7f800da",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "중증의 위장관계 이상반응을 일으킬 위험은 연령에 따라 증가한다. 70세 이상의 고령자에서는 이상반응 위험이 높다. 따라서 고령자에 있어서 필요한 최소량으로 신중히 투여하고 이상반응의 발현에 특히 유의한다. 80세 이상의 고령 환자에게 이 약을 투여하지 않는다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:56"
+}

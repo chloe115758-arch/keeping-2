@@ -1,0 +1,128 @@
+{
+  "ingredient": "amlodipine besylate",
+  "productSeq": "201804866",
+  "itemName": "로바스크정(암로디핀베실산염)",
+  "atc": "C08CA01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20261007",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804866/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804866/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804866/NB"
+  },
+  "rules": [
+    {
+      "id": "037e1a6e28",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 3)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽쥬스: 20명의 건강한 지원자에서 240 mL의 자몽쥬스와 암로디핀 10 mg의 단회병용투여는 암로디핀의 약동학에 유의한 영향을 미치지 않았다. 이 시험에서 암로디핀의 주 대사경로인 CYP3A4에서의 유전적 다형성 (genetic polymorphism) 에 대한 영향평가는 이루어지지 않았다. 따라서, 암로디핀은 자몽이나 자몽쥬스와 병용시 일부 환자에서 생체이용률 증가로 인한 혈압강하 효…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a6ddec0536",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 (2)",
+      "subject": "7) 다른 약물들이 암로디핀에 미치는 영향",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알루미늄/마그네슘 (제산제): 알루미늄/마그네슘 제산제와 단회용량의 암로디핀과 병용투여 시 암로디핀의 약동학에 유의적인 영향이 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b7ca155729",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 (5)",
+      "subject": "7) 다른 약물들이 암로디핀에 미치는 영향",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트 존스 워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "CYP3A4 유도제: CYP3A4 유도제 (예, 리팜피신, 세인트 존스 워트 (hypericum perforatum))와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b3c00ecf2a",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 (3)",
+      "subject": "8) 암로디핀이 다른 약물들에 미치는 영향",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "에탄올 (알코올): 10 mg 암로디핀의 단회 및 반복투여시 에탄올의 약동학에 유의적인 변화가 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "08fed205de",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 임부에 대한 안전성은 확립되지 않았다. 인체에 대한 최대 권장 용량의 50배에 해당하는 용량의 암로디핀을 투여한 랫드에서 분만지연 및 연장이 나타난 것외에 동물에 있어서 생식독성은 증명되지 않았으나, 다른 디히드로피리딘계 약물에서는 동물실험에서 기형발생이 보고된 바 있다. 따라서, 임부에 대한 투여는 다른 안전한 대체약물이 없는 경우 및 질환 자체가 모체 및 태아에 큰 위험을 줄 경…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4e2631b5ba",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 수유부에 대한 안전성은 확립되지 않았다. 따라서, 이 약을 투여하는 동안에는 수유를 중단하는 것이 권장된다. 사람에 대한 투여 경험에서 암로디핀이 사람 모유 중으로 이행된다고 보고된 바 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "10ecf4d69b",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적인 용량을 투여하는 것이 권장된다. 암로디핀을 고령자 및 젊은 연령의 환자에게 비슷한 용량으로 투여 시, 내약성이 동일하게 양호하다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:04:05"
+}

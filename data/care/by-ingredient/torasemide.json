@@ -1,0 +1,138 @@
+{
+  "ingredient": "torasemide",
+  "productSeq": "200401256",
+  "itemName": "보령토르세미드정10밀리그람(수출명:DUREMID 10mg Tablet)",
+  "atc": "C03CA04",
+  "etcOtc": "전문의약품",
+  "changeDate": "20210304",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401256/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401256/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401256/NB"
+  },
+  "rules": [
+    {
+      "id": "2bfedeea29",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 11)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "콜레스티라민과 병용 투여하면 경구 토르세미드의 흡수가 감소하여 그 효과가 감소될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6ddd694b9f",
+      "kind": "note",
+      "section": "general",
+      "where": "6. 일반적 주의 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "지시한 대로 약물을 복용한 경우에도 이 약 투여로 환자의 운전, 기계 작용이나 다른 업무 수행 능력이 저하되는 경우도 있다. 특히 치료를 시작하거나 다른 약물에서 전환하는 경우 또는 이 약을 복용하면서 알코올을 섭취한 경우에 나타날 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "78acba394b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 사람에 대한 자료가 없고, 약물이 수유를 억제하는 작용을 일으킬 수도 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성 및 수유부에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9c0dfd0df0",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 생후에는 소실하는 일과성의 골격이상, 태자의 뼈형성 지연 및 출생자의 체중증가 억제가, 또, 토끼에서 모체독성이 확인되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2158e4fa31",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 동물실험에서 유즙중으로 분비되는 것이 보고되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5e187a4379",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에게는 다음 사항에 주의하고, 소량부터 시작하여 환자의 상태를 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c4040ad639",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에서 급격한 이뇨는 혈장량의 감소를 초래하고, 탈수, 저혈압 등에 의한 기립시 어지럼, 실신 등을 일으킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9c9704af70",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "특히 심질환 등에서 부종이 있는 고령자에서는 급격한 이뇨는 급속한 혈장량의 감소와 혈액 농축을 초래하고, 뇌경색 등의 혈전 색전증을 유발할 우려가 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "77aa65d6f5",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에서 저나트륨혈증, 저칼륨혈증이 나타나기 쉽다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:58"
+}

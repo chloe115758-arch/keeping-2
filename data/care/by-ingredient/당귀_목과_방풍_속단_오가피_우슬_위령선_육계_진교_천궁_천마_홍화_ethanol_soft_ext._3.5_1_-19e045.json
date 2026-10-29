@@ -1,0 +1,52 @@
+{
+  "ingredient": "당귀·목과·방풍·속단·오가피·우슬·위령선·육계·진교·천궁·천마·홍화 ethanol soft ext.(3.5→1)",
+  "productSeq": "201906964",
+  "itemName": "오스케어정",
+  "atc": "M01AX",
+  "etcOtc": "전문의약품",
+  "changeDate": "20191230",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906964/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906964/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906964/NB"
+  },
+  "rules": [
+    {
+      "id": "8a51216523",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 임부 및 피임을 하지 않은 가임여성에게 투여한 임상자료는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c5133d4752",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 수유부에게 투여한 임상 자료는 없으나, 많은 약물들이 모유로 이행될 수 있으므로 투여 중에는 수유를 중단하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "945bba03f7",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자에 투여하는 경우에는 이상반응이 나타나기 쉬우므로 이상반응의 발현에 특히 주의하는 등 환자의 상태를 관찰하면서 신중하게 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:05"
+}

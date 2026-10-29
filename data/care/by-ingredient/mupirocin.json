@@ -1,0 +1,40 @@
+{
+  "ingredient": "mupirocin",
+  "productSeq": "202500412",
+  "itemName": "알파로반연고(무피로신)",
+  "atc": "D06AX09",
+  "etcOtc": "일반의약품",
+  "changeDate": "20260304",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500412/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500412/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500412/NB"
+  },
+  "rules": [
+    {
+      "id": "78c07a15ff",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에서의 이 약의 사용과 관련된 적절한 자료가 없다. 동물실험에서 최기형성은 나타나지 않았으나, 동물실험 결과로 인체내에서의 반응을 예측할 수는 없으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 이 약을 사용하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ce94b7c181",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유 중인 사람과 동물에서의 이 약의 사용과 관련된 적절한 자료가 없다. 유즙으로의 이행여부는 알려져 있지 않으므로 이 약의 투여 중에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:54"
+}

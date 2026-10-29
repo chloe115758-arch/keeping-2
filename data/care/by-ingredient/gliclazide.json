@@ -1,0 +1,83 @@
+{
+  "ingredient": "gliclazide",
+  "productSeq": "199300120",
+  "itemName": "디아민정(글리클라짓)(수출명:Bee-DiaminTablet,Meracron 80mg Tab)",
+  "atc": "A10BB09",
+  "etcOtc": "전문의약품",
+  "changeDate": "20131117",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300120/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300120/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300120/NB"
+  },
+  "rules": [
+    {
+      "id": "882395c6d1",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "2) 병용 투여가 권장되지 않는 약물",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "피라졸론계 소염제(페닐부타존 등)(전신경로): 설포닐우레아계 약물의 혈당강하효과를 증가시킨다(설포닐우레아계 약물의 혈장 단백과의 결합 제거 그리고/또는 배설 감소). 다른 소염제의 사용이 권장되거나, 또는 환자에게 주의를 주고 자가 모니터링의 중요성을 강조한다. 필요할 경우, 소염제 치료 도중과 이후에 용량을 조절한다. 알코올: 혈당강하 작용을 증가시켜(보상 반응을 억제함으로써) 저혈당 혼수…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c49d4961f9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부: 사람에서 임신 기간 동안 이 약의 사용에 대한 경험은 없으나, 설폰요소계 약물은 태반을 통과한다는 보고가 있고 신생아의 저혈당, 또는 거대아가 확인되고 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cdc4c7573b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물시험에서 이 약은 최기형성이 없다. 조절되지 않는 당뇨와 관련된 선천성 기형의 위험을 감소시키기 위해 임신 이전에 당뇨가 조절되도록 하여야 한다. 임신 기간 동안 당뇨 치료를 위해서는, 경구용 혈당강하제는 적절하지 않고, 인슐린 사용이 권장된다. 임신이 시도되기 전, 또는 임신이 진단되자마자 경구용 혈당강하제를 인슐린으로 변경할 것이 권장된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bb602369cc",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부: 이 약 또는 이 약의 대사체가 모유로 분비되는지는 알려지지 않았다. 신생아의 저혈당증의 위험이 있으므로, 수유부에게는 투여하면 안 된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "81412d5b5f",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있는 경우가 많아 저혈당이 나타날 수 있으므로 정기적으로 검사를 실시하는 등 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:19:46"
+}

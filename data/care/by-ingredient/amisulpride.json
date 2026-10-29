@@ -1,0 +1,114 @@
+{
+  "ingredient": "amisulpride",
+  "productSeq": "200702164",
+  "itemName": "폴라리스정400밀리그램(아미설프리드)",
+  "atc": "N05AL05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20251230",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200702164/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200702164/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200702164/NB"
+  },
+  "rules": [
+    {
+      "id": "e304f63d64",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 8)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "권장용량으로 사용한다 해도 이 약은 운전능력, 기계조작, 위험한 업무수행에 영향을 미칠 수 있으므로 주의하여야 한다. 이 점은 특히 알코올과 병용하는 경우 발생한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "588ae0f5bd",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (4)",
+      "subject": "1) 병용금기",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 : 알코올은 신경이완제의 진정효과를 강화시킨다. 주의력이 떨어져 운전 또는 기계조작에 위험성이 더 증가될 수 있다. 알코올 및 알코올을 함유한 약물을 섭취하지 않도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ce3039fa1a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 어떠한 기형발생 효과도 나타나지 않았다. 프로락틴과 관련된 이 약의 약물학적 요인으로 생식능력 감소가 관찰되었다. 이 약으로 인한 최기형은 보고된 바 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a8f5ba1210",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중 이 약의 사용에 대한 임상 경험은 매우 제한적으로 임신 중 이 약에 대한 안전성은 확립되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7845c8d8d8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신3기에 이 약을 포함한 항정신병 약물에 노출된 태아에서 추체외로 증후군, 금단증상을 포함한 이상반응의 위험이 있으며, 증상의 중증도와 분만 이후의 지속 기간은 다양할 수 있다. 초조, 근육긴장항진, 근육긴장저하, 떨림, 졸림, 호흡곤란, 음식물섭취장애가 보고된 바 있다. 따라서 신생아를 주의깊게 모니터링 하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "20473f3a10",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "모유로 이행되는 지에 대한 자료가 없으므로 이 약을 투여 받는 환자는 수유를 중지하거나 약물 투여를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "05cf48dc0e",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "65세 이상의 고령자를 치료하는 것은 권장되지 않는다. 이러한 환자군에서 이 약의 사용은 다른 신경이완제와 같이 저혈압이나 진정의 위험을 야기할 수 있다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:16:02"
+}

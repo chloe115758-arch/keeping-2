@@ -1,0 +1,52 @@
+{
+  "ingredient": "epinephrine bitartrate ) + lidocaine hydrochloride",
+  "productSeq": "202501805",
+  "itemName": "오스템리도카인·에피네프린주(1:100,000)",
+  "atc": "N01BB52",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260309",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501805/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501805/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501805/NB"
+  },
+  "rules": [
+    {
+      "id": "86abddc820",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3794df47c5",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자는 이 약에 함유된 에피네프린의 작용에 대한 감수성이 클 수 있으므로 환자의 상태를 관찰하고 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4f62e02c9c",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "경막외마취를 하는 경우, 고령자에는 일반적으로 마취 범위가 넓어지기 쉬우므로 나이 및 신체 상태에 따라 투여 용량을 감량할 필요가 있다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:18:41"
+}

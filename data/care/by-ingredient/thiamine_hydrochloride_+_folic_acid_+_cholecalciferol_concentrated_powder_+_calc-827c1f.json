@@ -1,0 +1,15 @@
+{
+  "ingredient": "thiamine hydrochloride + folic acid + cholecalciferol concentrated powder + calcium citrate",
+  "productSeq": "202500554",
+  "itemName": "비타리본정",
+  "atc": "A12AX",
+  "etcOtc": "일반의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500554/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500554/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500554/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:10:59"
+}

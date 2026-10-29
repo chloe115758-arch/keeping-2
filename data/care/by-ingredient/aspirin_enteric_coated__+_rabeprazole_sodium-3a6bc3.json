@@ -1,0 +1,256 @@
+{
+  "ingredient": "aspirin(enteric coated) + rabeprazole sodium",
+  "productSeq": "202402464",
+  "itemName": "라베트릭스캡슐100/5밀리그램(아스피린,라베프라졸)",
+  "atc": "B01AC56",
+  "etcOtc": "전문의약품",
+  "changeDate": "20251226",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202402464/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202402464/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202402464/NB"
+  },
+  "rules": [
+    {
+      "id": "3f35e2adf1",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 12)",
+      "subject": "○ 아스피린",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 : 아스피린과 병용 투여시 위장관 점막 손상이 증가하고, 살리실산과 알코올의 상승효과로 인해 출혈시간이 연장된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9fac529368",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 1)",
+      "subject": "○ 라베프라졸",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "다른 프로톤펌프억제제 계열 약물과 마찬가지로, 라베프라졸은 간대사계인 CYP-450계를 통해 대사된다. 건강한 성인을 대상으로 실시한 시험에서 라베프라졸은 아목시실린 또는 CYP-450계에 의해 대사되는 와르파린, 페니토인, 테오필린, 디아제팜 등과 같은 약물과 임상적으로 유의한 상호작용을 나타내지 않았다(다른 PPI 계열 약물인 오메프라졸의 경우에는 페니토인의 대사, 배설을 지연시켰다는 보…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7fda16ed36",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "○ 라베프라졸",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "라베프라졸을 포함한 프로톤펌프억제제와 와르파린을 병용투여한 환자들에게서 INR과 프로트롬빈 시간이 증가하였다는 보고가 있었다. INR과 프로트롬빈 시간의 증가는 비정상적출혈과 심지어 사망까지 초래할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "307232e390",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 3)",
+      "subject": "○ 라베프라졸",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "아타자나비르 - 건강한 자원자에 아타자나비르 300 mg/리토나비르 100 mg과 오메프라졸(40 mg 1일 1회) 또는 아타자나비르 400 mg과 란소프라졸(60 mg 1일 1회)의 병용투여시 아타자나비르 노출도가 실질적으로 감소하였다. 아타자나비르 흡수는 pH 의존적이다. 라베프라졸과의 병용투여는 연구되지 않았으나 기타 프로톤펌프억제제에서와 유사한 결과가 예상된다. 따라서 라베프라졸을 포…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "61d5e88b78",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 5)",
+      "subject": "○ 라베프라졸",
+      "matched": [
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘제제",
+          "surface": "마그네슘 함유"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "임상시험에서 제산제와 라베프라졸 병용시 제산제와의 상호작용을 확인하기 위해 실시된 시험에서 액제형 제산제와 상호작용이 관찰되지 않았다. 수산화알루미늄겔, 수산화마그네슘 함유 제산제와 라베프라졸을 동시에 병용 투여한 경우와 제산제 투여 1시 간 후에 복용한 경우 평균 혈중농도곡선하면적이 각각 8 %, 6 % 저하되었다는 보고가 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c6446ef640",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 8)",
+      "subject": "○ 라베프라졸",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이상반응 사례 보고, 집단약동학 연구(population pharmacokinetic studies) 및 후향적 연구 등에서 메토트렉세이트(주로 고용량을 사용하는 경우, 메토트렉세이트의 사용상의 주의사항 참조)와 프로톤펌프 억제제를 병용하는 경우 메토트렉세이트 그리고/또는 그 대사체인 히드록시메토트렉세이트의 혈청 농도가 상승 및 유지되어 메토트렉세이트의 독성이 나타날 수 있다고 보고되었다.…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "604331785b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 임부 및 수유부에게 투여해서는 안 된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "960aa6a535",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "○ 아스피린",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "프로스타글란딘 합성 저해는 임신 또는 태아의 발달에 불리한 영향을 줄 수 있다. 역학 연구결과, 임신초기에 프로스타글란딘 합성 저해제 사용으로 인하여 유산 및 기관 결손에 대한 위험성이 증가될 수 있다는 우려가 제기되었다. 이러한 위험성은 투여 용량 및 투여기간에 따라 증가할 것으로 예상된다. 유산 위험성과 살리실산제제 복용간의 연관성을 입증할 유효한 자료는 없다. 살리실산의 기관 결손에 대…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1962ecaabf",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "○ 아스피린",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물시험에서 생식독성이 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f1f63ef214",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "○ 아스피린",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 3기 동안 모든 프로스타글란딘 합성 저해제들은 태아의 심폐기관 독성(동맥관의 조기 폐쇄 및 폐고혈압), 신기능 저하(이는 양수과소증(oligohydroamnisis)을 유발할 수 있다. 또한 임신말기에는 산모와 아이에서 출혈시간을 연장시키고, 저용량에서도 항응고작용이 나타날 수 있으며, 자궁 수축이 억제되어 분만시간이 연장 또는 지연될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b5a9c509ec",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "○ 아스피린",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 말기의 랫트에 투여한 시험에서 태자의 동맥관 수축이 보고되어 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "310530db6b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "○ 아스피린",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "아스피린은 유즙으로의 이행이 일어나므로 수유부에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8e6c710db3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "○ 라베프라졸",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "사람의 임신에서 라베프라졸의 안전성에 대한 데이터는 없다. 라베프라졸은 임신중에 금기이다(동물실험에서 임신 랫트의 기관형성기에 경구투여시(400 mg/kg/day) 태자의 골화지연, 분만시 착상수, 생존자수와 분만율의 감소, 출생자의 체중증가량 저하와 open-field test에서 시행횟수와 구획이행수의 감소가 관찰되었으며, 분만전&#x2022;후에 정맥투여시(30 mg/kg/day) 출생…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3468f308e8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "○ 라베프라졸",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "라베프라졸이 사람의 모유로 이행되는지는 알려져 있지 않다. 수유부에서 어떠한 연구도 행해지지 않았다. 따라서 라베프라졸을 수유중에 사용해서는 안 된다(동물실험에서 유즙중으로 분비되는 것이 보고되었고, 랫트의 분만전·후에 정맥투여(30 mg/kg/day) 출생자의 체중저하가 관찰되었다.).",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1a228661e7",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "라베프라졸은 주로 간장에서 대사되지만 고령자는 간기능이 저하되어 있는 경우가 많고 고령자에서는 이상반응이 나타나기 쉬우므로 소화기증상등의 이상반응(이상반응항 참조)이 나타난 경우에는 휴약하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b45e0b7d06",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "아스피린을 함유하는 제제는 위장관 출혈의 이상반응으로 인하여 공복에 투여하지 않는 것이 일반적이나, 이 제제는 장용성캡슐이므로 충분한 물과 함께 식전에 복용할 수 있다.",
+      "meal": "공복",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:18:06"
+}

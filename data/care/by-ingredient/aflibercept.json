@@ -1,0 +1,64 @@
+{
+  "ingredient": "aflibercept",
+  "productSeq": "202400392",
+  "itemName": "아필리부주40밀리그램/밀리리터(애플리버셉트)",
+  "atc": "S01LA05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20251229",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400392/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400392/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400392/NB"
+  },
+  "rules": [
+    {
+      "id": "baf158cfeb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "애플리버셉트를 임부에게 사용한 자료는 없다. 동물 시험에서 전신 투여 후 생식 독성이 나타났다. 잠재적 유익성이 태아에 대한 잠재적 위험성을 상회하는 경우가 아니라면 임신 동안 애플리버셉트를 투여하여서는 안 된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2db37213f2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 가능성이 있는 여성은 치료 기간 및 애플리버셉트를 마지막으로 주사한 뒤 최소 3개월 동안 효과적인 피임법을 사용해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2738bcb69b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "애플리버셉트가 모유로 분비되는지 여부는 알려지지 않았다. 모유수유 아동에 대한 위험성을 배제할 수 없다. 수유하는 동안 애플리버셉트는 권고되지 않는다. 애플리버셉트의 치료를 중지할 것인지 또는 모유수유를 중단할 것인지 결정해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "683dfa78da",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "6. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에서 애플리버셉트의 특별한 주의는 필요하지 않다. 75세를 초과하는 당뇨병성 황반부종 환자에 대한 투여 경험은 제한적이다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:14:00"
+}

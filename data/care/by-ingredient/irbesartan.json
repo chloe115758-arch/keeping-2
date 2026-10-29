@@ -1,0 +1,76 @@
+{
+  "ingredient": "irbesartan",
+  "productSeq": "200808562",
+  "itemName": "이노엔아벨탄정150밀리그램(이르베사르탄)",
+  "atc": "C09CA04",
+  "etcOtc": "전문의약품",
+  "changeDate": "20251226",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200808562/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200808562/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200808562/NB"
+  },
+  "rules": [
+    {
+      "id": "1a8f8ef747",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "임부 : 임부에 대해서 이 약은 투여금기이다. 이 약으로 치료받는 중에 임신한 경우에는 될 수 있는 대로 빨리 투여를 중지하도록 한다. 이 약을 임부에게 투여한 경험은 없으나, 임신 2기 또는 3기의 여성에게 ACE억제제를 투여시 자궁막을 통과하여 태아에게 해를 주고 태아 사망의 원인이 되었다는 보고가 있다. 그러므로 레닌-안지오텐신-알도스테론계에 영향을 주는 이 약은 임부에게 투여되어서는…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "71d7780543",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 1기 : 사람을 대상으로 하여 실시한 대조 연구는 존재하지 않지만 이 약을 이용해 쥐와 같은 동물을 대상으로 하여 실시한 연구 결과 쥐의 태자에 독성(신우 확대, 물요관증 또는 피하 부종)을 나타내었고, 이 같은 작용은 가역적인 것이며 출산 후 사라졌다. 임신 기간 중 첫 번째 3 개월에 있어서 ACE억제제에 노출될 경우 기형 유발 위험에 관한 역학적 증거는 결정적인 것으로 볼 수는 없…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1db0eae5c3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 2기 및 3기 : 안지오텐신Ⅱ수용체 길항제의 작용기전 때문에 태아에 대한 위험을 무시할 수 없다. 임신 2 ∼ 3기 사이에 ACE억제제(레닌-안지오텐신-알도스테론 계에 작용하는 특정 약물군)에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적인 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "fe856c10cf",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부 : 이 약이 모유 중에 이행되는 지의 여부는 밝혀지지 않았으나 랫트에 대한 실험에서 유즙 중에 이 약의 분비가 확인되었으므로 수유부가 이 약을 사용하는 것은 바람직하지 않다. 수유중인 여성에게 이 약의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "17a0abcb1f",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에서 일반적으로 과도한 혈압강하는 뇌경색 등을 일으킬 우려가 있어 바람직하지 않으므로, 저용량에서 치료를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:13"
+}

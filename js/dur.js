@@ -41,7 +41,10 @@
   function cleanIngr(name) {
     var parts = String(name || '')
       .replace(/\(\s*as\s[^)]*\)/gi, '')
-      .replace(/\s*\d+(?:[.,]\d+)?\s*(?:mg|g|mcg|µg|μg|ug|ml|iu|u|%|meq|mmol)(?![a-z])/gi, '')
+      .replace(/\s*\d+(?:[.,]\d+)?\s*(?:mg|g|mcg|µg|μg|ug|ml|iu|u|%|meq|mmol|㎍|㎎|㎏|㎖)(?![a-z])/gi, '')
+      .replace(/\s*\/\s*(?:㎖|㎏|㎎|㎍|ml|mg|g|kg|l)(?![a-z])/gi, '')
+      .replace(/\(\s*\/\s*[a-zA-Z㎖]+\s*\)/g, '')
+      .replace(/\(\s*\)/g, '')
       .split(/[+,]/)
       .map(function (x) { return x.replace(/\s+/g, ' ').trim(); })
       .filter(Boolean);

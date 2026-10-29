@@ -1,0 +1,76 @@
+{
+  "ingredient": "cefotaxime sodium",
+  "productSeq": "199302837",
+  "itemName": "중헌세포탁심나트륨주1그램(수출명:세파탐주1그램,포스락주1그램)",
+  "atc": "J01DD01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240911",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302837/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302837/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302837/NB"
+  },
+  "rules": [
+    {
+      "id": "b36c3e6032",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "426e3403c9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "모유로의 소량이행이 보고되어 있으므로 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ea929f1ef7",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에서는 다음 점에 주의하여 용량 및 투여간격을 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "be34b71854",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "생리기능이 저하되는 수가 많으므로 이상반응이 나타나기 쉽다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c634f8ce21",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "비타민 K 결핍으로 출혈 경향이 나타날 수 있다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:08:20"
+}

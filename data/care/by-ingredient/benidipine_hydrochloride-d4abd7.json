@@ -1,0 +1,95 @@
+{
+  "ingredient": "benidipine hydrochloride",
+  "productSeq": "199300958",
+  "itemName": "코디핀정2밀리그램(베니디핀염산염)",
+  "atc": "C08CA15",
+  "etcOtc": "전문의약품",
+  "changeDate": "20241219",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300958/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300958/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300958/NB"
+  },
+  "rules": [
+    {
+      "id": "f8c6a5dd0c",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 5)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽주스 : 자몽주스와 병용시 혈압의 과도한 저하가 나타날 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a7f01c9012",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험결과(랫트, 토끼) 태자독성이, 또한 임신말기에 투여하면 임신기간 및 분만시간이 연장되는 것이 보고되어 있기 때문에 임신 또는 임신하고 있을 가능성이 있는 여성에게는 투여를 피한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6ce2a038d9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험결과 유즙중으로 분비되는 것이 보고되어 있기 때문에 수유중의 여성에게의 투여는 피하는 것이 요망되지만, 부득이하게 투여할 경우 수유를 피한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "23e81297f1",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자에서의 과도한 혈압강하는 바람직하지 않다고 되어 있기 때문에 고혈압증의 고령자에 사용하는 경우는 저용량으로부터 투여를 시작하고, 경과를 충분히 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "64874d5cba",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고혈압 : 베니디핀염산염으로서 1일 1회 2 ～ 4 mg을 아침식사후 경구투여한다. 효과가 불충분할 경우에는 1일 1회 8 mg까지 증량할 수 있다. 단, 중증고혈압증에는 1일 1회 4 ～ 8 mg을 아침식사후 경구투여한다.",
+      "meal": "식사후",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8e1300cdb8",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "협심증 : 이 약으로서 1회 4 mg을 1일 2회 아침, 저녁 식사후 경구투여한다.",
+      "meal": "식사후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:16:55"
+}

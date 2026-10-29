@@ -16,45 +16,49 @@
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "몬테루카스트를 랫트에게 400 mg/kg/day 용량(성인의 최대 1일 경구 투여량 AUC의 100배 노출에 해당)까지 경구투여할 때, 토끼에게 300 mg/kg/day 용량(성인의 최대 1일 경구 투여량 AUC의 110배 노출에 해당)까지 경구투여 할 때, 기형발생을 관찰할 수 없었다. 이 약은 랫트 및 토끼에서 경구투여후 태반을 통과하는 것으로 보고되었다. 그러나 임부를 대상으로 한 대조…",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "686aa423b0",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "전 세계에서 실시된 시판 후 조사에서 임신기간 동안 이 약을 복용한 여성의 자녀에서 선천적인 사지결손이 드물게 보고되었다. 이 여성의 대부분은 임신기간 동안 다른 천식치료제를 복용하였으며, 이 이상반응과 이 약과의 인과관계는 확립되지 않았다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "5b0644a0b6",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "랫트에서 이 약은 유즙으로 이행되는 것으로 관찰되었다. 이 약이 사람의 모유로 분비되는지는 알려져 있지 않으나, 많은 약이 모유중으로 이행되므로 이 약을 수유부에게 투여할 때에는 주의를 기울여야 한다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "90b6b8a901",
       "kind": "state_elderly",
       "section": "elderly",
       "where": "8. 고령자에 대한 투여",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "이 약의 전체 임상시험 대상자중 65세 이상의 노인은 3.5%였으며 75세 이상의 노인은 0.4%였다. 고령자군과 젊은 환자군간에 안전성 또는 유효성의 전체적인 차이는 관찰되지 않았으며 다른 임상적 차이도 보고되지 않았다. 그러나 고령자에서 이약에 대한 반응성이 증가될 가능성은 배제할 수 없다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     }
   ],
-  "fetchedAt": "2026-10-29T18:30:41"
+  "fetchedAt": "2026-10-29T19:00:56"
 }

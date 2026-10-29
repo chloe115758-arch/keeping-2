@@ -1,0 +1,140 @@
+{
+  "ingredient": "sirolimus",
+  "productSeq": "201803186",
+  "itemName": "라파로벨정2밀리그램(시롤리무스)",
+  "atc": "L04AH01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20190825",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803186/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803186/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803186/NB"
+  },
+  "rules": [
+    {
+      "id": "90f581a4b9",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "-기타: 브로모크립틴, 시메티딘, 사이클로스포린, 다나졸, HIV- 또는 C형 간염- 프로테아제 억제제 (예: 리토나비어, 인디나비어, 보세프레비어, 텔라프레비어), 자몽주스",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "84e5888eb0",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "-항생제: 리파부틴, 리팜피신, 리파펜틴",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "St. John"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "-생약제제: St. John‘s Wort(Hypericum perforatum, hypericin)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "82bb3acfc9",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "9) 생약제제",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "St. John"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "St. John's Wort(Hypericum perforatum)는 CYP3A4와 P-gp를 유도한다. 이 약은 약물대사효소 CYP3A4 및 P-gp 모두의 기질이므로, 이 약을 투여받고 있는 환자에 대한 St. John's Wort의 투여는 이 약의 농도 감소를 초래할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "81d7c8f23b",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "11) 음식",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽주스는 CYP3A4를 매개로 한 이 약의 대사를 감소시키며, 소장의 장세포에서 P-gp를 매개로 한 약물의 역이동을 강화시키므로 자몽주스와 함께 사용하거나 이 약을 희석하는데 사용하지 않도록 한다. 이 약의 혈중농도 변화를 최소화하기 위해 이 약을 투여할 때는 일관되게 음식과 같이 복용하거나 또는 음식과 같이 복용하지 않아야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "885abc87f8",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 임상시험에는 젊은 환자들과 비교시 고령자에게서 유효성과 안전성 차이가 있는지를 평가할 만한 충분한 수의 65세 이상 환자들이 포함되지 않았다. 이 약의 최저 농도 관련 자료를 볼 때 고령의 신장 환자들에 있어서 나이를 근거로 한 용량조절은 필요하지 않다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a0960baadf",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "Pregnancy Category C: 이 약은 0.1 mg/kg 이상(체표면적에 따른 임상용량의 0.2-0.5배)의 용량에서 랫드에게 배태자 독성을 나타냈다. 배태자 독성은 사망 및 태아 체중감소(골격의 골화 지연과 관련)였다. 그러나, 최기형성은 명백하지 않았다. 이 약의 단독투여와 비교할 때, 사이클로스포린과의 병용 투여 시 랫드에서의 배태자의 사망률이 증가되었다. 모체 독성 용량인 0…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f88c88746b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 수유 랫드의 모유에 미량 배설되었다. 이 약의 인체 모유로의 배설 여부는 알려지지 않았다. 유아에서의 이 약의 약동학과 안전성 프로파일에 대한 자료는 없다. 많은 약물들이 인체 모유로 배설되고, 이 약이 유아에게서 이상반응을 일으킬 가능성이 있으므로 모체에 대한 약물의 중요성을 고려하여 수유를 중단하거나, 약물 투여를 중단하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7cfef2530b",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 1일 1회 경구 투여한다. 이 약에 대한 노출 편차를 최소화하기 위해, 이 약은 일관되게 식사와 함께 투여하거나 또는 공복에 투여하도록 한다. 이 약은 부수거나 씹거나 잘라서 복용하지 않도록 한다.",
+      "meal": "식사와 함께",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:20:15"
+}

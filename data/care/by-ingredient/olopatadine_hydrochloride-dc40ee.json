@@ -1,0 +1,76 @@
+{
+  "ingredient": "olopatadine hydrochloride",
+  "productSeq": "201501269",
+  "itemName": "올레타딘정(올로파타딘염산염)",
+  "atc": "R06AX",
+  "etcOtc": "전문의약품",
+  "changeDate": "20170413",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501269/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501269/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501269/NB"
+  },
+  "rules": [
+    {
+      "id": "9397c26e6c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 또는 임신하고 있을 가능성이 있는 부인은, 치료상 유익성이 위험성을 상회한다고 판단되는 경우에만 투여할 것. (임신 중의 투여에 관한 안전성이 확립되어 있지 않음.)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5c1a22e2ba",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유중인 부인에게 투여는 피하고, 부득이 투여할 경우에는 수유를 중지할 것. (동물실험(랫트)에서 유즙 중으로의 이행 및 출생자의 체중증가억제가 보고되어 있음.)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "91566a0119",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자는 생리기능이 저하되어 있는 경우가 많고, 이상반응이 발현하기 쉬우므로, 저용량부터 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여할 것.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "034c188dbb",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": ": 보통 성인에게는 1회 올로파타딘 염산염으로서 5mg을 1일 2회(아침 및 취침전) 경구 투여한다.",
+      "meal": "취침전",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "58ec693bb0",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": ": 1회 올로파타딘 염산염으로서 5mg 1 일 2 회(아침 및 취침전) 경구 투여한다.",
+      "meal": "취침전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:45"
+}

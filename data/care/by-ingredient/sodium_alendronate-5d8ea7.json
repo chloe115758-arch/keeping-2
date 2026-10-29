@@ -1,0 +1,170 @@
+{
+  "ingredient": "sodium alendronate",
+  "productSeq": "200009061",
+  "itemName": "포사맥스70밀리그램정(알렌드론산나트륨수화물)",
+  "atc": "M05BA04",
+  "etcOtc": "전문의약품",
+  "changeDate": "20251029",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200009061/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200009061/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200009061/NB"
+  },
+  "rules": [
+    {
+      "id": "a3079c0b5e",
+      "kind": "note",
+      "section": "general",
+      "where": "4. 일반적 주의 (7)",
+      "subject": "1) 일반사항",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "장기간(일반적으로 3년 이상) 비스포스포네이트를 투여한 환자 중 일부에서 전자하(subtrochanteric), 근위 대퇴골체(proximal femoral shaft) 및 기타 뼈의 저강도 골절(low-energy fracture)이 보고되었다. 일부는 뚜렷한 외상 없이 혹은 약한 외력으로 유도되어 발생한 긴장성 골절((stress fracture); 이 중 일부는 불충분 골절(insuff…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b0ae554869",
+      "kind": "note",
+      "section": "general",
+      "where": "4. 일반적 주의 (1)",
+      "subject": "2) 환자에게 제공되어야 할 정보",
+      "matched": [
+        {
+          "key": "caffeine",
+          "kind": "food",
+          "ko": "카페인·커피",
+          "surface": "커피"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "환자에게 반드시 아침에 기상하여 섭취하게 되는 최초 음식물, 음료 또는 약물을 먹기 최소 30분 전에 물과 함께 이 약을 복용해야 기대 효과를 얻을 수 있음을 지시해야 한다. 오렌지 주스나 커피와 함께 복용했을 경우에도 이 약의 흡수가 현저히 감소됨이 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "213162081a",
+      "kind": "note",
+      "section": "general",
+      "where": "4. 일반적 주의 (4)",
+      "subject": "2) 환자에게 제공되어야 할 정보",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "음주"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "환자가 음식물로부터의 칼슘 및 비타민D 섭취가 불충분할 경우 보충제를 복용해야 한다. 체중부하 운동은 과도한 흡연, 음주와 같은 특정 습관 요인의 변화와 더불어 고려되어져야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a20e5d442b",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "2) 칼슘보충제/제산제",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "칼슘보충제"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "칼슘보충제나 제산제 및 일부 경구용 약물들은 이 약의 흡수를 방해하는 것으로 알려져 있다. 그러므로 이 약 복용 후 적어도 30분의 간격을 두고 다른 약물을 복용해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a1d3819cf9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 (1)",
+      "subject": "1) 임부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트에서의 생식실험 결과, 2 mg/kg/day의 용량에서 착상후 생존율이 감소되었고, 1 mg/kg/day 용량에서 신생자의 체중증가가 감소하였다. 랫트에 이 약 10 mg/kg/day 이상을 투여시 태자의 척추(경추, 흉추 및 요추), 두개골 및 흉골분절에서 불완전 골화된 부분이 통계적으로 유의하게 증가하였다. 이 용량은 체표면적당 용량(mg/m2)으로 환산시 인체 투여용량(10mg)의…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "aab95fe123",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 (2)",
+      "subject": "1) 임부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신한 랫트에 15 mg/kg/day(체표면적당 용량으로 환산시 인체 투여용량인 10mg의 13배)를 투여시 총칼슘 및 이온화된 칼슘의 농도가 감소하여 분만지연과 분만실패가 초래되었다. 랫트에 교미 전부터 임신할때까지 계속해서 0.5 mg/kg/day(인체 투여량의 0.5배)를 투여시에는 모체의 저칼슘혈증으로 분만이 지연되었다. 15 mg/kg/day로 치료받은 암컷 랫트에서 모체독성(임신후…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "43afa605ca",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 (3)",
+      "subject": "1) 임부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 시험은 행해지지 않았으므로 임신한 여성에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ac600d483b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 모유 중으로 이행되는지는 알려지지 않았다. 많은 약물들이 모유중으로 이행되므로 수유부에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "16f5a9980f",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "골절 임상시험에서 이 약을 복용한 환자의 71 %(2,302명)가 65세 이상이었고, 17 %(550명)가 75세 이상의 고령자였다. 미국 및 여러나라에서 실시한 여성 골다공증 임상시험 및 남성 골다공증 임상시험에서 이 약을 복용한 환자의 각각 45 %, 54 %가 65세 이상의 고령자였다. 이 약의 안전성 및 유효성은 이들 고령환자와 젊은환자 사이에 차이를 보이지 않았으나 일부 고령환자에서…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0d24a1885e",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "○ 광천수, 보리차를 포함한 다른 음료나 음식, 약물은 이 약의 흡수를 저하시킬 수 있다(상호작용항 참고). 이 약을 복용한 후 30분 이내 혹은 동시에 음식물을 섭취하면 약물의 체내흡수가 저하되어 효과가 감소할 수 있다. 이 약은 아침에 일어나자마자 복용하여야 하며 약물을 위로 신속히 도달시켜 식도자극 가능성을 감소시키기 위해 충분한 양의 물(170 ∼ 230 mL)로 삼켜야 한다. 복용…",
+      "meal": "취침 전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:57"
+}

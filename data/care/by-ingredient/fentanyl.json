@@ -1,0 +1,145 @@
+{
+  "ingredient": "fentanyl",
+  "productSeq": "201305187",
+  "itemName": "펜타덤패취25μg/h(펜타닐)",
+  "atc": "N02AB03",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260428",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201305187/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201305187/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201305187/NB"
+  },
+  "rules": [
+    {
+      "id": "4afa958c35",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "마약류와 벤조디아제핀계 약물 또는 알코올을 포함하는 중추신경계억제제의 병용투여는 깊은 진정, 호흡억제, 혼수 및 사망을 초래할 수 있다. 이러한 위험성 때문에, 마약류와 벤조디아제핀계 약물의 병용투여는 적절한 대체 치료방법이 없는 환자의 경우에 한하여 처방하도록 한다. 이 약과 마약류의 병용투여가 결정되면 최저유효용량으로 최단기간 처방하도록 하고 호흡억제 및 진정의 징후와 증상에 대해 환자를…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d09c6d9512",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 18)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약의 반복적인 사용은 아편유사제 사용 장애(Opioid Use Disorder, OUD)를 일으킬 수 있다. 이 약의 남용이나 의도적인 오용은 과량투여나 사망을 일으킬 수 있다. 아편유사제 사용 장애 발병 위험은 약물 사용 장애(알코올 사용 장애 포함)의 개인 또는 가족력이 있는 환자, 흡연 또는 기타 정신 건강 장애의 병력이 있는 환자(예: 주요 우울증, 불안, 인격 장애)에서 증가한다…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cffe4d9b75",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 1)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약과 벤조디아제핀계 약물, 다른 마약성 진통제, 전신마취제, 페노티아진계 약물, 신경안정제, 수면제, 삼환계 항우울제, 신경근육차단제, 가바펜티노이드계 약물(예, 가바펜틴, 프레가발린), 또는 알코올을 포함한 다른 중추신경억제제를 병용투여하면 추가적인 중추신경억제작용이 유발되고, 호흡억제, 저혈압, 깊은 진정, 또는 혼수, 사망과 같은 중추신경억제작용이 증가될 수 있다. 따라서 이러한 약…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "aa4876e94e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 ①",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫드를 이용한 동물실험에서 펜타닐 주사제를 정맥주사한 경우 배자독성과 평균분만시간의 증가가 나타났으나, 기형발생은 나타나지 않았다. 임신 6일부터 수유 3주까지 랫드에게 정맥주사한 실험에서는 새끼의 상당한 체중감소 및 생존율 저하가 나타났다. 또한, 체표면적당 사람 용량의 약 0.4배, 1.6배에 이르는 용량에서 동물의 신체발달지표의 변화 및 일시적인 행동발달의 변화가 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1412c65556",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "뉴질랜드 토끼에게 펜타닐을 정맥주사한 실험에서는 태자의 체중감소가 나타났는데, 이는 모체독성에 의한 것으로 보이며, 배&#x2022;태자 발달에 대한 독성은 나타나지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "aadf72dcc2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 ②",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에서의 이 약의 사용에 대한 충분한 결과는 없다. 그러나 동물 시험 결과, 생식독성이 관찰되었다. 마취제로 펜타닐을 정맥투여하였을 때, 임신 중에 펜타닐이 태반을 통과한다고 보고되었으나, 사람에 대한 잠재적인 위험성은 알려져 있지 않다. 임신 중 이 약의 장기투여 시 신생아의 일시적인 호흡억제, 행동변화, 신생아금단증후군(neonatal withdrawal syndrome)이 나타날 수…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4ae2106513",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 ③",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다. 이 약은 급성 또는 수술 후 통증 조절 목적으로 사용할 수 없으므로, 출산, 분만 중에는 투여하지 않는다. 게다가, 펜타닐은 태반을 통과하므로, 출산 중 이 약의 투여는 신생아 호흡억제를 유발할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "126df714ab",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모유 중으로 이행되고 수유 중인 신생아에게 진정/호흡 억제를 일으킬 수 있으므로 수유부에게 이 약을 투여할 경우에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b732c3374a",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "펜타닐 주사제를 고령자에게 정맥주사한 약동학 예비시험결과에 따르면 60세 이상의 환자에서는 펜타닐의 청소율이 현저히 감소하며 반감기가 연장되고 젊은 사람에 비해 약물에 민감하게 반응하나, 경피투여 시에는 이러한 상관성이 아직 밝혀져 있지 않다. 고령자, 악액질 환자, 쇠약한 환자들은 몸에 저장된 지방이 적고 근육소모가 많으며 청소율의 변화로 인해 정상인과 다른 약동학적 성질을 나타낼 수 있으…",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:15:30"
+}

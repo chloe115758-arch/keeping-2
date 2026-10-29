@@ -1,0 +1,83 @@
+{
+  "ingredient": "bepotastine salicylate",
+  "productSeq": "201803123",
+  "itemName": "베포큐서방정(베포타스틴살리실산염)",
+  "atc": "R06AX",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230712",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803123/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803123/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803123/NB"
+  },
+  "rules": [
+    {
+      "id": "7563eb6b8e",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "다른 항히스타민제와 마찬가지로 과량의 알코올과 병용 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ecbfe933be",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신중 투여에 관한 안전성은 확립되어 있지 않으며, 또한 동물실험에서 태아로 이행됨이 발견되고 있으므로, 임부 또는 임신 가능성이 있는 부인에게는 투여하지 않는 것이 바람직하지만, 투여하지 않을 수 없는 경우에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5b359a737d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험(랫트)에서 모유 중으로 이행된다는 보고가 있으므로, 수유중인 부인에게는 투여하지 않는 것이 바람직하지만, 부득이하게 이 약을 투여할 경우에는 수유를 피하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "56cd19d567",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 주로 신장으로 배설되며, 일반적으로 고령자는 생리기능이 저하되어 있으므로 높은 혈중농도가 지속될 위험이 있어 이 약을 고령자에게 사용할 경우 주의하여 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8913dfae00",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "성인 1일 1회 1정을 식후에 복용",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:18:10"
+}

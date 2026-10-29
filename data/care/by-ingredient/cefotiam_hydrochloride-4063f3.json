@@ -1,0 +1,28 @@
+{
+  "ingredient": "cefotiam hydrochloride",
+  "productSeq": "198200044",
+  "itemName": "세라도란정주1그램(세포티암염산염)",
+  "atc": "J01DC07",
+  "etcOtc": "전문의약품",
+  "changeDate": "20191226",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198200044/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198200044/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198200044/NB"
+  },
+  "rules": [
+    {
+      "id": "80ea8aa9f9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:14:18"
+}

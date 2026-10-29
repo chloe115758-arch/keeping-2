@@ -1,0 +1,148 @@
+{
+  "ingredient": "entecavir",
+  "productSeq": "201207404",
+  "itemName": "엔테원정0.5밀리그램(엔테카비르)",
+  "atc": "J05AF10",
+  "etcOtc": "전문의약품",
+  "changeDate": "20200524",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201207404/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201207404/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201207404/NB"
+  },
+  "rules": [
+    {
+      "id": "82c86043f7",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부, 소아 및 청년, 노인환자 등에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부(Pregnancy Category C)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "66b75a45af",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부, 소아 및 청년, 노인환자 등에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신부에 대한 적절하게 잘 진행된 연구는 없었다. 이 약은 임신 중에는 유익성이 태아에 대한 위험성을 상회하는 경우에만 사용해야 한다. 임신부에 대한 연구와 모체로부터 유아에게 HBV의 전염에 대한 이 약의 영향에 대한 데이터는 없다. 따라서, 신생아의 HBV 감염을 방지하기 위해 적절하게 조정해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "401c32b7ec",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부, 소아 및 청년, 노인환자 등에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 사람의 유즙으로 분비되는지는 알려져 있지 않다. 하지만, 이 약의 주성분은 랫트의 유즙으로 분비된다. 많은 의약품들이 사람의 유즙으로 분비가 되고 수유 중인 유아에서 이 약의 잠재적인 심각한 부작용 때문에, 수유부의 B형간염 치료 중단과 수유의 이익 등의 중요성을 고려하여 수유를 중단하거나 이 약의 투약을 중단하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "81f7f4d213",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부, 소아 및 청년, 노인환자 등에 대한 투여",
+      "subject": "3) 소아",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 HBeAg-양성의 만성 HBV에 감염되고 보상성 간 질환을 가진 2세 이상의 소아 피험자를 대상으로 한 두 개의 임상시험에서 연구되었다. 뉴클레오시드 저해제 치료 경험 없고 라미부딘 치료받은 적 있는 HBeAg-양성의 만성 HBV 감염되고 보상성 간 질환을 가진 2세 이상의 소아 피험자에서 0.015 mg/kg(최대 0.5 mg 1일 1회) 또는 0.03 mg/kg(최대 1 mg 1…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "67515be8ff",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부, 소아 및 청년, 노인환자 등에 대한 투여",
+      "subject": "3) 소아",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 유효성과 안전성은 2세 미만의 환자에서는 확립되지 않았다. 이 연령 그룹에서는 HBV의 치료가 거의 요구되지 않으므로 이 연령 그룹에서 이 약의 사용은 연구되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3cde1df0a6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부, 소아 및 청년, 노인환자 등에 대한 투여",
+      "subject": "3) 소아",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "소아 내성 분석은 두 개의 진행 중인 임상시험(AI463028과 AI463189)에서 HBeAg 양성인 만성 B형간염 바이러스에 감염된 뉴클레오시드 치료를 받은 적이 없는 소아 환자로부터 얻은 자료를 기반으로 한다. 두 임상시험은 1년 시점에서 치료받고 관찰된 183명의 환자와 2년 시점에서 치료받고 관찰된 180명의 환자에서의 내성 자료를 제공한다. 96주 동안 바이러스 돌파현상(virol…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "663328263d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부, 소아 및 청년, 노인환자 등에 대한 투여",
+      "subject": "4) 고령자",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "건강한 청년 및 노인 지원자에게 1mg을 단회 경구투여한 후 이 약의 약동학적 특성에 대한 영향을 평가하였다. 청년 피험자에 비해 노인 피험자에서 이 약의 AUC가 29.3% 더 컸다. 청년과 노인 피험자 간에 노출량의 차이는 거의 신기능의 차이로 인한 것으로 보였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "933d8970c3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부, 소아 및 청년, 노인환자 등에 대한 투여",
+      "subject": "4) 고령자",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 임상연구에는 충분한 수의 65세 이상 피험자가 참여하지 않아서, 청년 피험자와 다르게 반응하는지 확인할 수 없다. 이 약은 상당량이 신장으로 배설되므로, 이 약에 대한 유독한 반응의 위험성이 신기능 손상환자에서 더 클 수 있다. 고령 환자의신기능은 더 감소될 것이기 때문에, 용량 선정에 주의를 기울여야 하며, 신기능을 관찰하는 것이 유용하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9e45c52328",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부, 소아 및 청년, 노인환자 등에 대한 투여 5)",
+      "subject": "4) 고령자",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "기타 : 이 약의 약동학적 특성은 성별 및 인종에 따라 유의하게 차이가 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f2a00d5a1e",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "· 이 약은 공복 시 (식사 2시간 후 또는 최소 2시간 전) 경구투여한다.",
+      "meal": "공복",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f0ec9f480a",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "라미부딘 저항성 환자, 즉, 라미부딘 치료에도 불구하고 B형 간염바이러스의 지속적 증식을 경험하였거나, 라미부딘 저항성 변이가 있는 16세 이상의 환자 : 1일1회 공복시 엔테카비르로서 1mg",
+      "meal": "공복",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:06:36"
+}

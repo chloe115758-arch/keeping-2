@@ -1,0 +1,112 @@
+{
+  "ingredient": "dorzolamide hydrochloride ) + timolol maleate )",
+  "productSeq": "201007282",
+  "itemName": "도티몰점안액(도르졸라미드염산염,티몰롤말레산염)(1회용),도티몰점안액(도르졸라미드염산염,티몰롤말레산염)",
+  "atc": "S01ED51",
+  "etcOtc": "전문의약품",
+  "changeDate": "20241014",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201007282/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201007282/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201007282/NB"
+  },
+  "rules": [
+    {
+      "id": "9a160c4159",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 적절하고 잘 통제된 시험은 수행되지 않았다. 이 약은 임신 중에 사용하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "56c6f8b373",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 ①",
+      "subject": "도르졸라미드",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "발육 독성 실험을 위해 2.5 mg/kg/일(사람 권장 점안용량의 31배) 이상의 용량으로 도르졸라미드염산염을 토끼에게 투여하였을 때, 척추기형이 관찰되었다. 이러한 기형은 대사 산증을 일으키는 용량에서 어미와 태자의 체중감소와 함께 일어났다. 1.0 mg/kg/일의 용량에서는 (사람 권장 점안용량의 13배에 해당하는 용량) 아무런 치료 관련된 변화가 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f361684d64",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 ①",
+      "subject": "티몰롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "역학적 연구에서 이 약의 기형에 대한 영향은 밝혀져 있지 않지만, 베타차단제를 경구 투여할 경우 자궁 내 발육지연의 위험성이 있다. 또한, 베타차단제를 출산할 때까지 투여하였을 때 신생아에서 서맥, 저혈압, 호흡곤란, 저혈당과 같은 베타차단의 증상이 관찰되었다. 만약 이 약을 출산할 때까지 투여받은 경우, 갓 태어난 신생아는 주의깊게 모니터링 되어야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "636e4b5968",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 ②",
+      "subject": "티몰롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "마우스, 랫트, 토끼를 대상으로 최대 50 mg/kg/일 (최대 사람 권장 점안용량을 전신 노출시의 7,000배)까지 경구 투여한 최기형성 연구에서는 태자기형의 증거가 없음을 증명하였다. 비록 이 용량에서 랫트 태자의 골화가 지연되는 것이 관찰되었으나 출산 후 발육에 어떠한 유해한 효과도 나타나지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d57f20a460",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 ③",
+      "subject": "티몰롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "1,000 mg/kg/일 (최대 사람 권장 점안용량을 전신 노출시의 142,000배) 의 용량은 마우스에서 모체 독성이 나타났고 유산이 증가했다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "eb1b2c3692",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 ④",
+      "subject": "티몰롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "토끼에서도 최대 사람 권장 점안용량을 전신 노출시의 14,000배에 해당하는 용량을 투여한 경우, 명확한 모체독성 없이 유산이 증가했다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "afddb6fb9c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "티몰롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "도르졸라미드가 모유중으로 이행되는지 여부는 알려져 있지 않다. 도르졸라미드를 투여받고 있던 수유 랫트에서 차산자의 체중증가 감소가 관찰되었다. 티몰롤은 모유중으로 이행된다. 수유중인 영아에 대한 이 약의 심각한 유해사례의 잠재성 때문에, 수유부에게 이 약의 중요성을 고려하여 수유를 중단할지 이 약물의 투여를 중단할지를 결정해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f319e6f1ac",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자는 생리기능이 저하되어 있으므로 주의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:11:12"
+}

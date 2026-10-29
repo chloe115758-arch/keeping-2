@@ -1,0 +1,145 @@
+{
+  "ingredient": "erlotinib hydrochloride",
+  "productSeq": "201309177",
+  "itemName": "타쎄원정100밀리그램(엘로티닙염산염)",
+  "atc": "L01EB02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240423",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309177/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309177/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309177/NB"
+  },
+  "rules": [
+    {
+      "id": "775d183069",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 1)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "강력한 CYP3A4 저해제인 케토코나졸과 병용투여시 이 약의 AUC가 2/3정도 증가되었다. 따라서 케토코나졸, 아타자나비어, 클래리스로마이신, 인디나비어, 이트라코나졸, 네파조돈, 넬피나비어, 리토나비어, 사퀴나비어, 텔리스로마이신, 트로레안도마이신(TAO), 보리코나졸 또는 자몽주스 등과 같은 기타 강력한 CYP3A4 저해제등과 함께 이 약을 복용할 경우 주의를 기울여야 한다(용법ㆍ용량…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "78eb36e279",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "St. John"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약 투여전에 CYP3A4 유도제인 리팜피신의 투여는 이 약의 AUC를 약 2/3 정도 감소시켰다. CYP3A4 유도 효과가 없는 대체 약물을 고려하여야 한다. 만약 대체 약물이 없다면 비소세포폐암의 경우 150mg 이상, 췌장암의 경우 100mg 이상 투여를 고려하여야 한다. 만약 이 약 투여량을 증가시켰다면, 리팜피신 또는 기타 유도제의 중단 시에는 그 용량을 감소시켜야 한다. 기타 C…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "73ac6ae0f2",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 6)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "엘로티닙의 용해도는 pH에 의존적이다. 즉 pH가 증가함에 따라 엘로티닙의 용해도는 감소한다. 따라서 상부 위장관의 pH를 변화시키는 약물은 엘로티닙의 용해도를 변화시키고 이로 인해 이의 생체이용율도 변화시킬 수 있다. 이 약과 프로톤펌프저해제(Proton Pump Inhibitor)인 오메프라졸의 동시 투여시 엘로티닙 노출(AUC) 및 Cmax가 각각 46% 및 61% 정도 감소되었다. T…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3327b9e69d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임산부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임산부를 대상으로 적절하고 잘-통제된 임상시험은 없다. 임신할 가능성이 있는 여성은 이 약 복용 중에는 임신을 피하여야 한다. 치료 중 및 이 약 투여 후 최소 2주 동안은 적절한 피임을 실시하여야 한다. 태아에 대한 위험성이 모체에 대한 유익성을 상회할 경우에만 임산부에 투여를 계속할 수 있다. 만약 이 약을 임신 중에 사용한다면, 임산부에 유산의 위험과 태아에서 발생할 수 있는 위험성에…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c864565030",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임산부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 사람 혈장 농도(1일 1회 150mg 투여시 AUC)의 약 3배 정도의 혈장 농도를 초래하는 용량으로 토끼에 투여시 유산 및 배/태자 사망등의 모체 독성이 나타났다. 기관 형성 기간 중에 AUC를 근거로 사람 혈장 농도와 유사한 혈장 농도가 되도록 토끼나 랫트에 투여시 배/태자 치사율 및 유산 발생율은 증가되지 않았다. 그러나, 교배 이전부터 임신 첫주까지 이 약 30mg/m2/da…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8492917789",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임산부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 사람 모유로 분비되는지는 알려져 있지 않다. 그러나 많은 약물들이 모유로 분비되고 유아에 대한 이 약의 영향도 연구된 바 없기 때문에 이 약 투여 중에는 수유를 피하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ac99580bd8",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "2/3차 요법으로서의 비소세포폐암 무작위 임상시험에 참가한 환자의 총 62%가 65세 미만이였으며 38%가 65세 이상이었다. 두 연령별 그룹 모두에서 생존이점이 유지되었다. 췌장암 임상시험에서는 환자의 53%가 65세 미만이었으며 47%는 65세 이상이었다. 젊은 환자와 고령 환자 간 안전성 및 약물동태에 어떠한 유의한 차이도 관찰되지 않았다. 따라서, 고령환자에서 어떠한 용량조절도 권장되…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f70895bd9a",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 1일 1회 150mg을 식전 최소 1시간이나 식후 최소 2시간에 복용한다. 질병의 진행이나 허용할 수 없는 독성이 발생할 때까지 이 약을 계속 투여할 수 있다. 질병진행 후 투여 시 유익성에 대한 자료는 없다.",
+      "meal": "식전",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a42c3a8fd8",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "젬시타빈과 병용하여 이 약은 1일 1회 100mg을 식전 최소 1시간이나 식후 최소 2시간에 복용한다. 질병진행이나 허용할 수 없는 독성이 발생할 때까지 이 약을 계속 투여할 수 있다.",
+      "meal": "식전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:18:43"
+}

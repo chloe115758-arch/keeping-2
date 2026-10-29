@@ -1,0 +1,76 @@
+{
+  "ingredient": "ioversol",
+  "productSeq": "200109921",
+  "itemName": "옵티레이350주사(이오버솔)",
+  "atc": "V08AB07",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260123",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109921/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109921/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109921/NB"
+  },
+  "rules": [
+    {
+      "id": "7658db5ceb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물에게 이 약을 투여했을 때 기형발생은 관찰되지 않았다. 이 약이 태반을 경유하여 태아조직에 도달하는지는 아직 알려져 있지 않으나, 많은 주사용 조영제는 사람의 태반을 경유해서 태아조직으로 들어가는 것으로 보인다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e1d2032463",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 이 약의 안전성이 확립되어 있지 않고, 이 약을 투여한 후에 X선을 조사하게 되므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 진단상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "32a8e02858",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 요오드를 함유하고 있어 14주 이상의 무월경 후에 검사를 받을 경우 태아 갑상선기능저하증을 유발할 수 있다. 임신 중에 산모에게 요오드화 조영제를 투여한 경우 신생아의 갑상선 기능을 생후 첫 주 동안 면밀히 모니터링해야 한다. 2주째에 갑상선 기능을 재검사하는 것이 권장된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7d78db5e30",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트를 이용한 정맥내 투여 동물실험에서 모유 중으로의 이행이 보고되어 있으므로 수유부에게 투여할 경우에는 일시적으로 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "33e067c4bf",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있는 경우가 많으므로 이 약을 투여할 때는 환자의 상태를 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:17:28"
+}

@@ -1,0 +1,52 @@
+{
+  "ingredient": "latanoprost",
+  "productSeq": "200500407",
+  "itemName": "라노탄점안액(라타노프로스트)",
+  "atc": "S01EE01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230420",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200500407/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200500407/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200500407/NB"
+  },
+  "rules": [
+    {
+      "id": "f0bf1b85f4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "토끼를 이용한 기형발생 시험의 고용량(5.0 ㎍/kg/day, 정맥투여)에서 유산, 체중증가량 및 사료섭취량의 현저한 감소, 후기 흡수율의 증가와 태자무게 감소가 유의적으로 나타났다. 랫트 및 토끼에 대하여 생식독성 시험이 실시되었고 토끼에 대하여 사람의 최대 용량의 80배 투여 시 모체 16마리 중 4마리에서는 생존 가능한 태자가 없었으며, 배자 비사망의 최대 용량은 사람에서 권장 용량의…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "35e2121b37",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유중 이 약의 투여에 대한 임상시험 데이터는 아직 없으나 이 약과 그 대사체는 모유로 이행될 수 있으므로 수유부에게 사용해서는 안되고 부득이하게 투여할 경우에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "edea8f91e5",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 주의하여 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:11:20"
+}

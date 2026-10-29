@@ -1,0 +1,15 @@
+{
+  "ingredient": "amorolfine hydrochloride )",
+  "productSeq": "201600934",
+  "itemName": "퓨어릴네일라카(아모롤핀염산염)",
+  "atc": "D01AE16",
+  "etcOtc": "일반의약품",
+  "changeDate": "20210316",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600934/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600934/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600934/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:10:27"
+}

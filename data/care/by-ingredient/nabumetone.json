@@ -1,0 +1,119 @@
+{
+  "ingredient": "nabumetone",
+  "productSeq": "200611329",
+  "itemName": "나메린정(나부메톤)",
+  "atc": "M01AX01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20231130",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200611329/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200611329/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200611329/NB"
+  },
+  "rules": [
+    {
+      "id": "4aa622e81d",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "위장관계 이상반응 : 이 약을 포함한 비스테로이드성 소염진통제를 궤양성 질환 또는 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "abfa63d9a6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 임부에게 투여한 임상자료는 없다. 랫트에 대한 실험에서 비스테로이드성 소염진통제는 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 난산의 발생 빈도를 증가시키고, 분만을 지연시키며 태자의 생존율을 감소시켰다. 따라서 임신 중에는 이 약을 투여해서는 안된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "652d0aad2c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 임신 말기에 투여한 실험에서 태자의 동맥관 수축이 보고되었다. 다른 비스테로이드성 소염진통제와 마찬가지로 임신 말기에 이 약을 투여 시 태아의 동맥관을 조기 폐쇄시킬 수 있으므로 이 약은 임부에게 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "28b5cbc437",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "실험동물을 대상으로 한 연구에서는 기형발생이 관찰되지 않았다. 다른 화합물과 마찬가지로 동물의 모체에 독성을 나타낼 만큼의 고용량(토끼의 경우 300 mg/kg의 용량)을 투여했을 때 태자 독성의 징후가 관찰되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "fc9ca5e768",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중의 투여에 관한 안전성은 확립되어 있지 않으므로 임부 또는 임신 가능성이 있는 여성에게는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b2653e67db",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 5)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 사람의 모유로 이행되는지는 알려져 있지 않았으나, 수유중인 동물의 유즙에서 나부메톤의 주요 활성 대사체인 6MNA을 발견했다. 이 약이 모유 중으로 이행될 경우 영아에서 심각한 이상반응이 발생할 수 있으므로 수유 중에는 이 약을 투여해서는 안된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f2b99e2159",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에게 이 약을 투여하는 경우 위장관 출혈, 천공의 이상반응의 발현의 위험이 높으니 주의하고, 필요시 최소량을 투여하고 처음 4주 동안 위장관 출혈을 모니터링 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3986e98016",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": ": 나부메톤으로서 1일 1회 1 g을 취침 전에 경구투여 한다. 증상이 심하거나 지속적일 경우 또는 급속히 악화되는 경우에는 이 약으로서 500 mg∼1 g을 추가로 아침에 경구투여한다.",
+      "meal": "취침 전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:15:41"
+}

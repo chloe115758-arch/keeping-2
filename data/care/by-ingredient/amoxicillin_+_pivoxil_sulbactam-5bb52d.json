@@ -1,0 +1,40 @@
+{
+  "ingredient": "amoxicillin + pivoxil sulbactam",
+  "productSeq": "201403559",
+  "itemName": "타목실린정500밀리그램(아목시실린·설박탐피복실)",
+  "atc": "J01CR02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20241205",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403559/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403559/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403559/NB"
+  },
+  "rules": [
+    {
+      "id": "9bcc2278d9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "아목시실린과 설박탐은 모유로 분비된다. 아직까지 유의적인 문제는 발생하지 않았지만 수유부에 페니실린의 투여는 소아의 감작, 설사, 칸디다증, 피부발진을 일으킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "554b5fd7bb",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자인 경우에는 일반적으로 생리기능이 저하되어 있어 많은 이상반응이 발현하기 쉽고, 고령자에서서 비타민 K 결핍으로 출혈경향이 나타날 수 있다는 점에 주의하여 용량 및 투여간격에 주의하는 등 환자의 상태를 관찰하고 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:11:01"
+}

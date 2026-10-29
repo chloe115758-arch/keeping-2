@@ -1,0 +1,15 @@
+{
+  "ingredient": "ursodeoxycholic acid",
+  "productSeq": "198900463",
+  "itemName": "우루사정200밀리그램(우르소데옥시콜산)",
+  "atc": "A05AA02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230109",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900463/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900463/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900463/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:16:45"
+}

@@ -1,0 +1,90 @@
+{
+  "ingredient": "paclitaxel",
+  "productSeq": "199803971",
+  "itemName": "제넥솔주(파클리탁셀)",
+  "atc": "L01CD01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20220922",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199803971/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199803971/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199803971/NB"
+  },
+  "rules": [
+    {
+      "id": "42886c35ab",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 6)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "신경계 : 말초신경병증이 자주 유발되기는 하나 중증으로의 진행은 드물며, 중등도 내지 중증의 경우 이 약의 모든 다음 치료주기에서는 20% 감량하여 투여해야 한다. 증상은 일반적으로 투여개시 후 약 ３～５일 후에 나타나며 장기간 사용하게 되면 발현빈도가 높아지는 경향이 있으므로 신중히 투여해야 한다. 이 약은 탈수 알코올 396mg/ml를 함유한다. 따라서, 알코올에 의해 발생할 수 있는 중…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "81311b9312",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 14)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약은 에탄올을 함유하므로 전 처치로 투여된 디펜히드라민염산염정과 알코올의 상호작용에 의한 중추신경 억제작용이 증강될 가능성이 있다. 알코올 등의 영향이 의심되는 경우에는 자동차 운전 등 위험을 수반하는 기계조작에 종사하지 않도록 주의하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a0fc5de9a6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 : 이 약은 임부에게 투여시 태아에 위해를 끼칠 수 있다. 토끼의 경우 이 약은 배자독성 및 태자독성을 나타냈으며, 또한 랫트의 경우 수태율이 감소되었다. 임부에 대한 임상연구는 없다. 가임 여성의 경우, 이 약으로 치료하는 동안에는 임신을 피하도록 해야 한다.만약 이 약을 임신 중이나 이 약을 복용하던 중에 임신이 되었다면 환자에게 태아에 대한 잠재적 위험성을 알려야만 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5244398c4d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부 : 이 약이 모유로 분비되는지는 알려져 있지 않다. 이 약을 수유부에게 투여 하지 않거나 투여할 경우에는 수유를 중지한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d927b04f8e",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에서는 일반적으로 생리기능이 저하되어 있는 경우가 많고 골수억제 등이 나타나기 쉬우므로 용량 및 투여간격에 유의하고, 임상검사 (혈액검사, 간기능검사, 신기능 검사 등)를 자주 하는 등 주의하여야 한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:11:47"
+}

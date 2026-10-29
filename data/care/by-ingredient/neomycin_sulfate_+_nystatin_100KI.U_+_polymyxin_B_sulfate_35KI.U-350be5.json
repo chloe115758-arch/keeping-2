@@ -1,0 +1,40 @@
+{
+  "ingredient": "neomycin sulfate + nystatin 100KI.U + polymyxin B sulfate 35KI.U",
+  "productSeq": "201901293",
+  "itemName": "지노센스질연질캡슐",
+  "atc": "G01AA51",
+  "etcOtc": "전문의약품",
+  "changeDate": "20190516",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901293/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901293/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901293/NB"
+  },
+  "rules": [
+    {
+      "id": "0aaeae0b65",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물 실험에서 이 약의 최기형성에 대한 증거는 확인되지 않았다. 임상적으로 특정한 기형 혹은 태아독성에 대한 데이터는 확인되지 않았지만, 임부 또는 임신할 가능성이 있는 여성에 대한 실험은 충분치 않으므로 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "dd6c46a0d8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부에서 약물 이행에 대한 데이터가 없으므로 수유부는 이 약을 사용하지 않는다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:20:01"
+}

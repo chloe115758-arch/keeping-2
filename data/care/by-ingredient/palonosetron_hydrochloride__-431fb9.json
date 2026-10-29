@@ -1,0 +1,64 @@
+{
+  "ingredient": "palonosetron hydrochloride )",
+  "productSeq": "201700895",
+  "itemName": "팔제론주(팔로노세트론염산염)",
+  "atc": "A04AA05",
+  "etcOtc": "전문의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201700895/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201700895/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201700895/NB"
+  },
+  "rules": [
+    {
+      "id": "50ec83e059",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "1) 최기형성 : 카테고리 B",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트에 60 mg/kg/day(체표면적 기준으로 사람에서의 임상권장 정맥 투여 용량의 1894배)까지 경구투여하고, 토끼에 60 mg/kg/day (체표면적 기준으로 사람에서의 임상권장 정맥 투여 용량의 3789배)까지 경구투여한 최기형성시험 결과, 이 약으로 인한 수태능 장애 또는 태자에 대한 유해영향은 관찰되지 않았다. 그러나 임산부를 대상으로 한 적절하고 잘 조절된 임상시험이 실시된 바…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cacf6e1836",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "1) 최기형성 : 카테고리 B",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "출산 중의 환자에 투여된 바 없으므로, 산모나 신생아에의 영향은 알려져 있지 않다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8108dc9c12",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "1) 최기형성 : 카테고리 B",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "팔로노세트론의 유즙으로의 이행 여부는 알 수 없다. 많은 약물들이 유즙으로 이행되고, 유아에게 심각한 이상반응의 가능성이 있고, 랫드에 대한 발암성 시험에서 팔로노세트론으로 인한 종양유발 가능성을 보였으므로 수유부인 경우 약물의 중요성을 판단하여 수유 중단 또는 투약 중단 여부를 결정해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "84f89e1d70",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "인구모집단에 대한 약동학 분석에 따르면 65세 이상의 고령자와 18세에서 64세까지의 환자 간에 팔로노세트론의 약물동태 차이는 없었다. 항암요법제에 의해 유발되는 구역 및 구토 임상시험에 참가한 성인 암 환자 1374명 중, 316명(23%)이 65세 이상이었고, 71명(5%)이 75세 이상이었다. 이들 환자군에서 안전성 또는 유효성의 차이가 관찰되지 않았으나, 매우 민감한 반응을 보이는 고…",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:22"
+}

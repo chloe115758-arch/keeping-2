@@ -1,0 +1,76 @@
+{
+  "ingredient": "iohexol",
+  "productSeq": "201507430",
+  "itemName": "아이맥스이오헥솔300주",
+  "atc": "V08AB02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20241129",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507430/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507430/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507430/NB"
+  },
+  "rules": [
+    {
+      "id": "cd5da8a5f9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트와 토끼를 이용한 동물실험에서 사람치료용량의 100배에 이르는 용량에서도 생식능이나 태자독성의 증거는 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "93bba8aa54",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 이 약의 안전성이 확립되어 있지 않고, 이 약을 투여한 후에 X선을 조사하게 되므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 진단상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2966d50a25",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "자궁난관조영술은 자궁 내 시술로 태아에게 잠재적인 위험이 있으므로 임부에게 금기이다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d7605fcb90",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트를 이용한 정맥내 투여 동물실험에서 모유 중으로의 이행이 보고되어 있으므로 수유부에게 투여할 경우에는 일시적으로 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f1505e3e24",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어있는 경우가 많으므로, 투여 시 환자의 상태를 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:03:34"
+}

@@ -1,0 +1,15 @@
+{
+  "ingredient": "choline alfoscerate",
+  "productSeq": "201804343",
+  "itemName": "콜린맥스연질캡슐400밀리그램(콜린알포세레이트)",
+  "atc": "N07AX02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20210728",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804343/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804343/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804343/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:04:14"
+}

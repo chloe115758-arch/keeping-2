@@ -1,0 +1,52 @@
+{
+  "ingredient": "mirabegron",
+  "productSeq": "202101454",
+  "itemName": "베타믹서방정50밀리그램(미라베그론)",
+  "atc": "G04BD12",
+  "etcOtc": "전문의약품",
+  "changeDate": "20231201",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101454/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101454/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101454/NB"
+  },
+  "rules": [
+    {
+      "id": "ae7a0337d0",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부, 소아에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에게 이 약을 사용한 자료는 제한적이다. 동물시험에서는 생식 독성이 나타났다(9. 기타 2)항 참고). 따라서 이 약은 임신 중 또는 피임을 하지 않는 잠재적 임신 가능한 여성에게는 투여가 권장되지 않는다",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c64d8eea90",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부, 소아에 대한 투여",
+      "subject": "2) 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 사람 모유에 분비되는지 알려지지 않았다. 이 약은 랫트에서 유즙으로 분비되는 것으로 보고되었으므로 수유부에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7a443d6db2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부, 소아에 대한 투여",
+      "subject": "3) 소아에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "19세 미만의 소아에서 이 약의 안전성 및 유효성은 아직 확립되지 않았다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:08:56"
+}

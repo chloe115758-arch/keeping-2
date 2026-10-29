@@ -1,0 +1,140 @@
+{
+  "ingredient": "fimasartan potassium trihydrate + S-amlodipine besylate",
+  "productSeq": "202300091",
+  "itemName": "건카브정60/5밀리그램",
+  "atc": "C09DB09",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260212",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300091/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300091/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300091/NB"
+  },
+  "rules": [
+    {
+      "id": "fff298405d",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (3)",
+      "subject": "② 암로디핀",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽쥬스: 암로디핀은 자몽이나 자몽쥬스와 병용시 일부 환자에서 생체이용률 증가로 인한 혈압강하효과의 증가가 나타날 수 있으므로, 병용투여를 권장하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "44877c288b",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "② 암로디핀",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "&#x2218; 알루미늄/마그네슘(제산제): 알루미늄/마그네슘 제산제와 단회용량의 암로디핀과 병용투여 시 암로디핀의 약동학에 유의적인 영향이 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a12ace0567",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "② 암로디핀",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트 존스 워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "&#x2218; CYP3A4 유도제: CYP3A4 유도제(예, 리팜피신, 세인트 존스 워트(hypericum perforatum))와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6442ffb615",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "② 암로디핀",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "&#x2218; 에탄올(알코올) : 10 mg 암로디핀의 단회 및 반복투여시 에탄올의 약동학에 유의적인 변화가 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "871543f2cf",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "① 피마사르탄",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "레닌-안지오텐신계에 직접적으로 작용하는 약물을 임부에 투여시 태아 또는 신생아에게 병적 상태 및 사망을 일으킬 수 있다. 특히 임신 2, 3기에 레닌-안지오텐신계에 직접 작용하는 약물 투여시, 태아 및 신생아에 저혈압, 신생아 두개골 형성저하증, 무뇨증, 가역적 또는 비가역적 신부전을 포함한 손상 및 사망까지도 유발되었다. 태아의 신기능의 저하가 원인일 것으로 추정되는 양수과소증이 보고된 바…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "43fdc60467",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "② 암로디핀",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 안전성은 확립되지 않았다. 인체에 대한 최대 권장 용량의 50배에 해당하는 용량의 암로디핀을 투여한 랫드에서 분만지연 및 연장이 나타난 것 외에 동물에 있어서 생식독성은 증명되지 않았다. 따라서, 임부에 대한 투여는 다른 안전한 대체 약물이 없는 경우 및 질환 자체가 모체 및 태아에 큰 위험을 줄 경우에만 투여가 권장된다. 암로디핀을 투여한 랫드에서 수태능에 대한 영향은 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e28f4304be",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "피마사르탄 및/또는 암로디핀이 사람의 모유로 이행되는지 여부는 알려져 있지 않으나, 동물시험에서 모유 중에 피마사르탄의 분비가 확인되었으므로, 수유부에게 이 약을 투여하는 것은 바람직하지 않다. 따라서 수유부에 대한 이 약의 필요성을 고려하여 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "566a189e26",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "70세 이하인 고령자에 대하여 용량 조절이 필요하지 않다고 사료되나, 일부 고령자에서 보다 민감한 반응이 나타날 수 있음을 배제할 수 없다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:05:44"
+}

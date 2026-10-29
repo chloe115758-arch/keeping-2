@@ -1,0 +1,88 @@
+{
+  "ingredient": "clobetasol propionate",
+  "productSeq": "201905648",
+  "itemName": "듀오피엔액(클로베타솔프로피오네이트)",
+  "atc": "D07AD01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20220129",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201905648/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201905648/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201905648/NB"
+  },
+  "rules": [
+    {
+      "id": "adf6d09db9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 비교적 적은 용량의 코르티코이드를 전신적으로 투여한 경우, 좀 더 강력한 코르티코이드 피부도포로 인해 기형발생이 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6c8253fa4b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "비임상 생식독성시험에서 임신한 랫드에게 기관형성기 동안 클로베타솔 프로피오네이트 12.5 μg/kg/일을 초과하여 피하 투여했을 때 기형(배꼽헤르니아) 발생률이 증가하였다. 비임상 시험에서의 클로베타솔 프로피오네이트 전신 노출량과 이 약을 사람에게 국소 사용한 후 예상되는 전신 노출량을 유의하게 비교 측정하는 것은 가능하지 않다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "eabed8cb1d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부의 이 약 사용과 관련하여 주요 출생 결함, 유산, 모체 또는 태아의 부정적 결과에 대한 약물 관련 위험성을 확인할 수 있는 이용 가능한 자료는 없다. 관찰연구에서 임부의 국소 코르티코스테로이드 제제 사용으로 인한 주요 출생 결함, 조산, 태아 사망에 대한 약물 관련 위험성은 확인되지 않았다. 그러나 임부가 효능이 강하거나 또는 매우 강한 국소 코르티코스테로이드 제제를 임신 전기간 동안…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "18e2bd59ad",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 모유로 이행되는지 여부 및 수유아 또는 모유 생성에 미치는 영향에 대한 자료는 없다. 이 약을 국소 투여했을 때 모유에서 검출될 만큼 충분히 전신 흡수되는지 여부는 알려져 있지 않으나 전신적으로 투여된 코르티코이드는 모유 중으로 이행되므로 수유부에 투여 시 주의한다. 발달 및 건강에 대한 수유의 유익성은 이 약에 대한 모체의 임상적 필요 및 이 약 또는 모체의 기저상태가 수유아에 미…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bfd158ba53",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유아가 모유를 통해 이 약에 잠재적으로 노출되는 것을 최소화하기 위해 수유하는 동안 이 약을 최단 기간 동안 피부의 최소면적에 사용해야 한다. 수유아가 이 약에 직접 노출되는 것을 피하기 위해 수유부에게 유두 및 유방륜에 이 약을 직접 사용하지 말 것을 권장해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b043fe9495",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자에서는 부작용이 나타나기 쉬우므로 대량, 장기간, 광범위하게(특히 밀봉붕대법) 사용할 경우 충분히 관찰하는 등 주의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:35"
+}

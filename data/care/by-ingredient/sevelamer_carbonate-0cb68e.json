@@ -1,0 +1,155 @@
+{
+  "ingredient": "sevelamer carbonate",
+  "productSeq": "202301687",
+  "itemName": "세벨머정(세벨라머탄산염)",
+  "atc": "V03AE02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240903",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301687/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301687/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301687/NB"
+  },
+  "rules": [
+    {
+      "id": "817c88c494",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 10)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤 펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "시판 후 경험에서, 이 약과 프로톤 펌프 저해제(PPI)를 병용투여한 환자에서 매우 드물게 인 수치 증가가 보고되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a5934a6c83",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 ①",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약과 유사한 동일한 활성성분을 가진 세벨라머 염산염은 임신한 랫트에 있어서 지용성 비타민 D의 흡수 감소로 인해 기관형성기의 태아의 골형성을 감소시켰으며, 기관형성기의 임신한 토끼에 있어서 사람의 최고용량의 두 배의 용량에서 초기 흡수의 발생을 증가시켰다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2c79e07a61",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 ②",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신한 여성을 대상으로 한 적절한 연구가 없으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 태아에 대한 위험성을 상회한다고 판단되는 경우에만 투여해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "800c95d333",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 ③",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신에 있어서 비타민 및 다른 영양소의 요구가 증가한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "46a63a07cb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 ④",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 있어서 비타민 및 다른 영양소에 대한 이 약의 효과는 연구되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8f998560f5",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "세벨라머가 사람의 유즙으로 분비되는지 알려진 바 없다. 세벨라머의 비흡수성은 세벨라머가 유즙으로 배설될 가능성이 거의 없을 것으로 사료된다. 수유의 지속/중단과 이 약 치료에 대한 지속/중단에 대한 판단은 수유가 필요한 유아와 이 약 치료를 받는 여성에 대한 이익을 고려한 후 결정되어야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "528b391780",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에게 투여할 때 특별한 고려를 해야 한다는 증거는 없으나 고령자를 대상으로 충분한 수의 임상시험이 수행되지 않았으므로 고령자를 대상으로 용량을 결정할 때는 일반적으로 낮은 용량범위에서 시작하며 주의해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "458d876ccb",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 1일 3회 식사와 함께 복용하여야 한다.",
+      "meal": "식사와 함께",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "75bc61cd17",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 권장초기용량은 0.8g 내지 1.6g 이며, 이 약 1~2정을 다음과 같이 혈청 인 수치에 따라 매 식사와 함께 복용한다. 아래 표1은 인산결합제를 복용하고 있지 않은 환자에게 권장되는 이 약의 초기 용량을 보여주고 있다.",
+      "meal": "식사와 함께",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "baef81d73f",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "혈청인 이 약 투여용량 5.5 - 7.5 ㎎/dL 1회 1정, 1일 3회 식사와 함께 복용 7.5 ㎎/dL 이상 1회 2정, 1일 3회 식사와 함께 복용",
+      "meal": "식사와 함께",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4d4fd90444",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "목표한 혈청 인 수치로 조절될 때까지 필요한 경우 2주간의 간격을 두고 1일 3회 식사와 함께 이 약의 용량을 0.8g씩 증량 또는 감량한다.",
+      "meal": "식사와 함께",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:14:56"
+}

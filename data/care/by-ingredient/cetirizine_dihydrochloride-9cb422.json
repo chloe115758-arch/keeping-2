@@ -1,0 +1,15 @@
+{
+  "ingredient": "cetirizine dihydrochloride",
+  "productSeq": "200905403",
+  "itemName": "알세진정10밀리그램(세티리진염산염)",
+  "atc": "R06AE07",
+  "etcOtc": "일반의약품",
+  "changeDate": "20250729",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905403/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905403/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905403/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:09:04"
+}

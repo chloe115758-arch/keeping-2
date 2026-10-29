@@ -1,0 +1,15 @@
+{
+  "ingredient": "acetaminophen",
+  "productSeq": "202105771",
+  "itemName": "신비아시럽(아세트아미노펜)",
+  "atc": "N02BE01",
+  "etcOtc": "일반의약품",
+  "changeDate": "20251110",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202105771/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202105771/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202105771/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:15:59"
+}

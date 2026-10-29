@@ -1,0 +1,174 @@
+{
+  "ingredient": "methotrexate",
+  "productSeq": "197900145",
+  "itemName": "유한메토트렉세이트정",
+  "atc": "L04AX03",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260422",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900145/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900145/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900145/NB"
+  },
+  "rules": [
+    {
+      "id": "7ff45e7c3a",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 6)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "임상적으로 필요하다고 고려될 경우를 제외하고(이런 경우 환자는 계속 모니터링 하여야 한다.) 잠재적 신독성, 간독성(알코올을 포함)을 갖는 다른 약물과 이 약의 병용은 피해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7c71c61546",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "알코올 음료와 acitretin(경구 retinoid effective)을 병용 섭취한 경우 acitretin으로부터 etretinate(경구 retinoid)가 형성된다고 추정되는 자료가 있다. 그러나 알코올과 병용 섭취 없이도 etretinate가 형성되는 것을 배제할 수 없다. 이 약의 혈청 수치는 acitretin 대사체인 etretinate에 의해 증가될 수 있고 병용 투여 후 중증…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "50ec6d9235",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "특히 임신 1기에 이 약을 투여 받은 임부에서 유산, 태아사망 및/또는 선천기형이 나타났다. 임부의 건선 또는 류마티스관절염의 관리에서 이 약의 사용은 금기이다. 동물 실험에서 기형유발 작용이 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "fa93416435",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "메토트렉세이트는 강력한 기형유발 물질로 유산, 태내 성장 억제, 선천성 기형 위험을 증가시킨다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "12b0a384ff",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "&#x2022;자연유산 발생율은 저농도(30mg/주)에 노출된 임부 42.5%에서 보고되어 다른 약을 투여한 동일 질병 환자에서 22.5%로 보고된 것보다 높았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4fcb318756",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "&#x2022;주요 기형 발생율은 저농도(30mg/주)에 노출된 임부 6.6%에서 보고되어 다른 약을 투여한 동일 질병 환자에서 4%로 보고된 것보다 높았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7ee2593671",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중 30mg/주 이상의 농도에 노출된 정보는 부족하나 자연유산과 선천성 기형에 대한 위험은 더 높을 것으로 추정된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f4957305fa",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 투여 받은 환자에게서 난자형성 또는 정자발생이상, 일시적 정자부족증, 월경기능장애, 불임증이 나타났다는 보고가 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c855e03db3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "여성 환자들은 메토트렉세이트 치료기간 동안 임신하지 않도록 한다. 치료기간 및 치료 후 6개월 이내 임신한 여성의 경우 메토트렉세이트 치료와 관련하여 태아의 부작용 위험성에 관한 의학자문을 구해야한다. 그리고 태아의 정상적인 발달을 확인하기 위해 초음파 검사가 시행되어야 한다. 치료 시작 전, 가임여성에게 메토트렉세이트가 유발하는 기형 위험성에 대해 알려야 하며 임신 가능성은 임신 테스트 같…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7106cbbf3a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "남성 : 정자에 메토트렉세이트가 존재하는지 알려지지 않았다. 이 약은 동물실험에서 유전독성을 보이지 않았지만 정자에 대한 유전독성은 제외할 수 없다. 제한적인 임상 결과에서 저농도(30mg/주 이하)투여는 기형 또는 유산 위험을 증가시키지 않았다. 이 보다 높은 농도에서 기형과 유산에 대한 충분한 자료가 없다. 예방조치로 남성환자는 투약 중 그리고 투약 중지 후 6개월까지 피임해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ef2640380f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모유 중으로 분비되므로 수유부에게는 투여하지 않는다. 부득이하게 투여하는 경우에는 수유를 중지한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "923f564742",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에 대한 임상 약리는 연구되지 않았으며 이들은 엽산 저장량이 적고 간 및 신기능이 저하되어 있으므로 비교적 저용량을 투여하고 독성의 초기 표시에 대하여 자세히 모니터링 한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:12"
+}

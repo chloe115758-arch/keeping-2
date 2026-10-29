@@ -1,0 +1,64 @@
+{
+  "ingredient": "eperisone hydrochloride",
+  "productSeq": "201603481",
+  "itemName": "로페리손정(에페리손염산염)",
+  "atc": "M03BX09",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230925",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603481/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603481/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603481/NB"
+  },
+  "rules": [
+    {
+      "id": "fbe3e85a42",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "88863227d2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부에는 투여를 피하는 것이 바람직하나 부득이하게 투여할 경우에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "630517acbd",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자에서는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5755ab60f8",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "성인 : 에페리손염산염으로서 1회 50㎎ 1일 3회 식후에 경구투여한다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:03:27"
+}

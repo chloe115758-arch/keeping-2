@@ -1,0 +1,138 @@
+{
+  "ingredient": "imatinib mesylate",
+  "productSeq": "201306412",
+  "itemName": "케어벡정400밀리그램(이매티닙메실산염)",
+  "atc": "L01EA01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260723",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201306412/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201306412/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201306412/NB"
+  },
+  "rules": [
+    {
+      "id": "4562b20661",
+      "kind": "note",
+      "section": "general",
+      "where": "4. 일반적 주의 4)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "St. John"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약은 다른 약과 같이 복용할 때 약물 상호작용의 가능성이 있다(5. 상호작용 항 참조). 이 약과 CYP3A4의 활성을 유도하는 약물(예; 덱사메타손, 페니토인, 카르바마제핀, 리팜피신, 페노바르비탈 또는 St. John's wort로 알려져 있는 hypericum perforatum) 과 병용하는 경우, 이 약에 대한 노출을 유의하게 감소시킬 수 있어 치료실패의 위험성을 증가시킬 가능성…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cead860b3e",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 ②",
+      "subject": "",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "St. John"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이매티닙의 혈장농도를 감소시킬 수 있는 약물: CYP3A4의 활성을 유도하는 약물은 이매티닙의 대사를 증가시켜 혈장농도를 감소시킬 수 있다. CYP3A4의 활성을 유도하는 약물(예: 덱사메타손, 페니토인, 카르바마제핀, 리팜피신, 페노바르비탈 또는 St. John's wort로 알려져 있는 hypericum perforatum)과 병용하는 경우, 이 약에 대한 노출을 유의하게 감소시킬 수 있…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c18e5ec7ff",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 ①",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 생식독성이 나타났다. 임부에 대한 이 약의 사용에 관한 임상시험은 없다. 이 약을 투여 받은 여성에서 자연유산 및 선천적 유아 기형의 시판 후 보고가 있었다. 이 약은 유익성이 태아에 대한 잠재 위험을 상회하지 않는 한, 임신 중에 투여되어서는 안 된다. 만약 임신 중에 투여된다면 환자에게 태아에 대한 잠재적 위험성을 알려줘야 한다. 가임기 여성은 치료 중 효과적인 피임법을 이용…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "571c586a6e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 ②",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫드의 기관형성기에 이매티닙 100 mg/kg 이상용량(체표면적을 기준으로 하면 이매티닙 800mg/day 임상사용량과 거의 동일)을 투여했을 때 최기형성을 나타냈다. 뇌탈출, 뇌헤르니아, 전두골 감소나 무전두골 및 무측두골 등이 나타났다. 또한, 이매티닙 45mg/kg이상 용량(체표면적을 기준으로 하면 인간최대용량인 이매티닙 800mg의 1/2)을 투여한 암컷 랫드에서 유의성 있는 착상 후…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "fb6260b56f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 ③",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "암컷에 임신 후 6일부터 이유기까지 이매티닙 45mg/kg(체표면적을 기준으로 하면 최대 인간 용량인 이매티닙 800mg의 1/2)을 노출시킨 후에 출생한 암컷 및 수컷 랫드에 거의 2개월 동안 이매티닙을 노출시키지 않았다. 이들은 출생 후부터 부검하기 전까지 체중이 감소하였다. 비록 이 동물들을 교배시킬 때 수태능에는 영향이 없었으나 태아 소실이 관찰되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a983db00c8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이매티닙과 그 활성 대사체는 모두 사람의 모유 중으로 분포될 수 있다. 모유와 혈장 중의 비율은 이매티닙에서 0.5, 그 대사체에서 0.9로서, 이는 대사체가 모유 중에 더 많이 분포한다는 점을 시사한다. 이매티닙과 그 대사체가 합쳐진 농도 및 영유아의 일일 최대 모유 섭취량을 고려할 때, 전체 노출은 낮을 것으로 예측된다(치료 용량의 ∼10%). 그러나 영유아가 이매티닙 저용량에 노출되었을…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c01ac0e9bb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "3) 수태능",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 투여받는 남자환자에서 수태능 및 정자형성에 미치는 영향에 대한 연구는 수행되지 않았다. 이 약 치료를 받는 환자 중 불임에 대해 우려가 있는 남성환자는 의사와 상담해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8afb110b09",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "만성골수성백혈병 임상시험에서 약 40%의 환자가 60세 이상이었고 10%는 70세 이상이었다. 새로이 진단받은 만성골수성백혈병 임상시험에서 22% 환자가 60세 이상이었다. 65세 미만의 환자와 비교하여 65세 이상의 환자의 안전성 양상에서 부종의 높은 빈도만을 제외하고 다른 차이점은 발견되지 않았으며 이 약에 대한 유효성은 유사하였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "279c86d6e7",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "절제불가능하거나/또는 전이성 악성 위장관기질종양(GIST)에서 29%의 환자가 60세 이상이었고 10%는 70세 이상이었다. 65세 이상의 환자와 65세 미만 환자간에 안전성과 유효성에 분명한 차이는 보고되지 않았다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:15:32"
+}

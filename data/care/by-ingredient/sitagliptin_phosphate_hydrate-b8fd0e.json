@@ -1,0 +1,76 @@
+{
+  "ingredient": "sitagliptin phosphate hydrate",
+  "productSeq": "202100007",
+  "itemName": "자누스정100밀리그램(시타글립틴인산염수화물)",
+  "atc": "A10BH01",
+  "etcOtc": "전문의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100007/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100007/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100007/NB"
+  },
+  "rules": [
+    {
+      "id": "8af5b4d2cb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 소아 및 고령자에 대한 투여",
+      "subject": "1) 임부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부를 대상으로 한 대조시험 결과는 없으므로 임부에서의 사용은 권장되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d92582c521",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 소아 및 고령자에 대한 투여",
+      "subject": "2) 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 랫드에서 유즙과 혈장에 4:1의 비율로 분비되는 것으로 보고되었으므로 수유부에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c5258eed85",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 소아 및 고령자에 대한 투여",
+      "subject": "3) 소아에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "18세 미만의 소아 및 청소년에서의 안전성 및 유효성은 확립되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "92eda0e23e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 소아 및 고령자에 대한 투여",
+      "subject": "4) 고령자에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "허가 전 임상시험에서 총 피험자(3884명) 중 65세 이상이 725명, 75세 이상이 61명이었다. 65세 이상 고령자에서의 안전성과 유효성은 젊은 환자에서와 유사하였다. 이 환자군과 젊은 환자군 사이에 반응성에 차이는 없었으나 일부 고령자에서 감수성이 증가할 수 있음을 배제할 수는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ed19307690",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부, 소아 및 고령자에 대한 투여",
+      "subject": "4) 고령자에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 대체로 신장으로 배설되는 것으로 알려져 있다. 고령자는 신장기능이 감소되기 쉬우므로 고령자에서의 용량 선정시 주의해야 하며, 이 약 투여 전 및 투여 후 주기적으로 신장기능을 평가하는 것이 권장된다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:09:58"
+}

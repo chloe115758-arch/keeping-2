@@ -1,0 +1,64 @@
+{
+  "ingredient": "mometasone furoate",
+  "productSeq": "202003159",
+  "itemName": "모멘타연고(모메타손푸로에이트)",
+  "atc": "D07AC13",
+  "etcOtc": "전문의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003159/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003159/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003159/NB"
+  },
+  "rules": [
+    {
+      "id": "38bc799ef4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 비교적 적은 용량의 코르티코이드를 전신적으로 투여한 경우, 좀 더 강력한 코르티코이드 피부도포로 인해 기형발생이 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "25ac63ed7f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에 대해서는 대량 또는 장기간에 걸친 광범위한 사용을 피하고 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6c75d039d5",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "국소적으로 투여한 코르티코이드가 모유로 이행되는지 여부는 알려져 있지 않으나 전신적으로 투여된 코르티코이드가 모유 중으로 이행하므로 수유부에 투여시 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c74092fd15",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자에서는 부작용이 나타나기 쉬우므로 대량, 장기간, 광범위하게(특히 밀봉붕대법) 사용할 경우 충분히 관찰하는 등 주의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:07:33"
+}

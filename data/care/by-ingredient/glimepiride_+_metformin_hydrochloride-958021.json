@@ -1,0 +1,178 @@
+{
+  "ingredient": "glimepiride + metformin hydrochloride",
+  "productSeq": "201908349",
+  "itemName": "케이릴엠정2/500밀리그램",
+  "atc": "A10BD02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250310",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908349/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908349/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908349/NB"
+  },
+  "rules": [
+    {
+      "id": "be702c1e7f",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "급성 신장애를 일으킬 수 있는 의약품 (항고혈압제, 이뇨제, 비스테로이 드성 소염제)은 메트포르민을 투여하고 있는 환자에서는 주의하여 투여 하여야 한다. 유산산증을 일으킬 수 있는 의약품과의 병용 뿐만 아니라 유산산증과 관련 있는 다른 위험 요인은 과도한 알코올 섭취, 간부전, 적절하게 조절되지 않은 당뇨, 케톤혈증, 장기간의 단식, 그리고 저산소 증과 관련 있는 모든 상황 등이 있다. (2…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ac4cfd7cb7",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "덧붙여 이 약은 저산소증이나 탈수, 패혈증과 관계된 증상이 나타날 경우 즉시 중지해야 한다. 손상된 간기능은 유산 배설능력을 유의적으로 제한시킬 수 있으므로 일반적으로 간질환의 임상적 혹은 실험실적 증가가 있는 환자의 경우 이 약을 피해야 한다. 알코올은 이 약이 유산대사에 영향을 미치게 할 가능성이 있으므로, 이 약을 투여받는 동안 급성 혹은 만성적인 알코올의 과량섭취는 조심해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6e733b770b",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 15)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 섭취: 알코올은 유산 대사에 대해 이 약이 영향을 미치게 한다고 알려져 있다. 따라서 이 약을 투여하는 동안 급성 혹은 만성적인 알코올의 과량섭취는 경고해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5ed90ad64d",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 20)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "환자를 위한 정보 : 환자들에게 이 약의 안전성과 유효성 및 대체요법에 대해서도 알려야 한다. 환자는 규칙적인 식사와 함께 지시된 식이요법을 준수하고, 규칙적으로 운동하며, 혈당, 당화 혈색소, 신기능, 혈액학적 수치 등 임상실험실적 검사를 정기적으로 실시해야 한다. 또한 비만환자는 저열량 식이를 계속해야 한다. 의사는 이 약의 치료와 관련된 유산산증의 위험, 그 증상, 발생 조건을 경고 및…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a2098da919",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 7)",
+      "subject": "글리메피리드",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "급성 또는 만성 알코올 섭취는 이 약의 혈당강하작용을 예상할 수 없는 방향으로 증가 또는 감소시킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f0238b08c5",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "메트포르민",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "- 알코올 : 알코올 중독은 유산산증 위험 증가와 연관이 있으며, 특히 단식, 영양실조 또는 간부전의 경우 더욱 그렇다. 알코올 및 알코올 함유 약물의 사용을 피해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0ee528334a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 기형형성 작용에 대한 보고가 있어 태아에게 위해를 끼칠 수 있고 임부에게는 유산산증이 일어나기 쉬우므로 임산부에게는 이 약을 투여하지 않도록 한다. 임산부 또는 임신할 계획이 있는 환자는 혈당치 이상과 관련된 태아 기형의 위험을 낮출 수 있도록 의사에게 알리고 인슐린 요법으로 전환하여 혈당이 가능한 정상 수준으로 유지되도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ab78a4abdd",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유중인 랫트에서 글리메피리드 및 메트포르민은 유즙으로 분비되는 것으로 보고되었으므로 수유부에는 투여하지 않도록 한다. 필요한 경우에는 인슐린요법으로 전환하거나 수유를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d15e2db981",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자의 신기능감소와 관련하여 메트포르민염산염의 용량은 환자의 신기능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 하고, 정기적인 신기능 모니터링이 필요하다. 일반적으로 고령자에 게는 최대용량을 투여하지 않는다. 메트포르민염산염 및 글리메피리드는 대부분 신장으로 배설된다고 알려져 있으며, 글리메피리드는 신장을 통해 상당한 양이 배설되므로, 부적절한 신기능을 갖는 환자에서는 심…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5ea4ae1b45",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 식사직전 또는 식사와 함께 1일 1~2회 투여한다.",
+      "meal": "식사직전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:05:24"
+}

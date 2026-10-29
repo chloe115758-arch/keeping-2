@@ -1,0 +1,143 @@
+{
+  "ingredient": "bortezomib(PS-341)",
+  "productSeq": "201600453",
+  "itemName": "보테벨주3.5밀리그램(보르테조밉삼합체)",
+  "atc": "L01XG01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20210316",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600453/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600453/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600453/NB"
+  },
+  "rules": [
+    {
+      "id": "de1b51260e",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 약물상호작용 4)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "St. John"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "CYP3A4의 강력한 유도제인 리팜피신이 이 약의 약동학에 미치는 영향을 평가하기 위한 약물-약물 상호작용 연구에서, 6명의 환자로부터 얻은 데이터에 기초할 때, 보르테조밉의 평균 AUC가 45% 감소하였다. 따라서, 이 약과 CYP3A4의 강력한 유도제의 병용 투여는 효능이 감소될 수 있기 때문에 권장되지 않는다. CYP3A4 유도제의 예로는 리팜피신, 카바마제핀, 페니토인, 페노바비탈,…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f7ee99eefc",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "9. 임부 및 수유부에 대한 투여 ①",
+      "subject": "1) 임부:",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 가능성이 있는 여성 및 남성은 이 약으로 치료를 받는 동안, 그리고 치료를 완료한 후 3개월 동안 피임하도록 한다. 이 약 투여 중에는 임신을 막기 위해 효과적인 피임법을 사용하고, 수유하지 않도록 권고해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c22d472f0b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "9. 임부 및 수유부에 대한 투여 ②",
+      "subject": "1) 임부:",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트와 토끼에 대한 발생독성시험에서, 보르테조밉을 기관형성기에 투여하였을때 시험한 최고 용량(랫트 0.075mg/kg ; 0.5mg/m2,토끼 0.05mg/kg ; 0.6mg/m2)에서 기형을 유발하지 않았다. 이 용량은 체표면적에 기초한 임상용량인 1.3mg/m2의 약 0.5배 용량이다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f57ac449b3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "9. 임부 및 수유부에 대한 투여 ③",
+      "subject": "1) 임부:",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "기관형성기동안, 임신한 토끼에게 보르테조밉 0.05mg/kg(0.6mg/m2)을 투여시 유의성 있는 착상후 태자손실 및 생존태자 감소가 나타났으며, 생존태자의 체중이 유의하게 낮았다. 이 용량은 체표면적에 기초한 임상용량(1.3mg/m2)의 약 0.5배 용량이다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "06471ddbc7",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "9. 임부 및 수유부에 대한 투여 ④",
+      "subject": "1) 임부:",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "보르테조밉이 태반을 통과하는지에 대한 연구는 수행된 바 없으며, 임신한 여성을 대상으로 한 적절한 대조임상 시험은 수행되지 않았다. 이 약이 임신 중 사용되었거나, 이 약 투여 중 임신이 된 경우, 태아에 대한 위험 가능성을 고려해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "54f87a0dbd",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "9. 임부 및 수유부에 대한 투여 ⑤",
+      "subject": "1) 임부:",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "탈리도마이드는 생명을 위협하는 심각한 선천성 기형을 유발하는 사람 기형발생 활성물질로 알려져 있다. 따라서 탈리도마이드는 모든 임신 방지 프로그램 환경이 충족되지 않는 한, 임부 및 가임여성에 금기이다. 이 약과 탈리도마이드를 병용요법으로 투여 받는 환자는 탈리도마이드의 임신 방지 프로그램을 따라야 한다. 자세한 내용은 탈리도마이드 허가사항을 참조한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8dffd1ad87",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "9. 임부 및 수유부에 대한 투여 2)",
+      "subject": "1) 임부:",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부 : 보르테조밉이 사람 모유 중으로 배설되는지는 알려지지 않았다. 많은 약물이 모유 중으로 배설되고, 수유받은 신생아에 대한 이 약의 중대한 이상반응 발생 가능성 때문에, 이 약 치료 중에는 수유하지 않도록 권고해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "914614a3cd",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "11. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "3상 다발골수종 시험에 등록된 669명의 환자 중, 245명(37%)이 65세 이상이었다 : 125명(38%)은 이 약 투여군이고 120명(36%)은 덱사메타손군이었다. 65세 이상 환자에서 질병 진행까지의 시간(중간값)과 반응의 지속시간(중간값)은 이 약 투여군이 덱사메타손군에 비해 더 길었다[5.5개월 대 4.3개월, 8.0개월 대 4.9개월]. 이 약 투여군에서 65세 이상의 평가 가능…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0c04b9e3a5",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "11. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "재발된 다발골수종 환자 202명을 대상으로 한 2상 임상시험에서, 35% 는 65세 이상이었고, Grade 3 이상의 이상반응 발현율은 50세 이하, 51-65세, 65세 초과 환자에서 각각 74%, 80%, 85% 이었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "eb6d064c44",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "11. 고령자에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 투여 중인 65세 이상 환자와 그보다 젊은 환자 사이에서 안전성 또는 유효성의 전반적 차이는 관찰되지 않았다 : 그러나 몇몇 고령자의 민감성이 더 큰 것을 배제할 수는 없다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:19:29"
+}

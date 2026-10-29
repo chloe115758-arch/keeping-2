@@ -1,0 +1,40 @@
+{
+  "ingredient": "solifenacin succinate",
+  "productSeq": "201603499",
+  "itemName": "인페나신정5mg(솔리페나신숙신산염)",
+  "atc": "G04BD08",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240828",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603499/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603499/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603499/NB"
+  },
+  "rules": [
+    {
+      "id": "7ebbae2907",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 치료에 대한 임상 경험은 없다. 동물실험 결과 생식능력, 배자/태자 생성, 분만에 직접적인 영향은 없었다. 그러나 임신한 여성에 대한 위험성은 알려지지 않았으므로 임부에게 이 약을 투여할 경우 주의가 요구된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "465cefdd2c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "모유로의 이행에 대한 자료는 없다. 마우스에서 이 약과 그 대사체는 유즙으로 분비되었고 농도 의존적으로 신생자의 사망을 일으켰다. 따라서 수유중 이 약의 사용은 피해야 한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:04:21"
+}

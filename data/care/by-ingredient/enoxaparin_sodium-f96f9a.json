@@ -1,0 +1,124 @@
+{
+  "ingredient": "enoxaparin sodium",
+  "productSeq": "200700538",
+  "itemName": "크녹산주(에녹사파린나트륨)",
+  "atc": "B01AB05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250214",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200700538/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200700538/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200700538/NB"
+  },
+  "rules": [
+    {
+      "id": "44175fd957",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (1)",
+      "subject": "1) 임부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험 결과, 기형발생 및 태아독성의 증거는 없었다. 임신한 랫트에서 이 약은 소량만이 태반을 통과하였다. 사람에서 이 약이 임신2기 때 태반을 통과한다는 증거는 없다. 또한 임신1기와 3기 때에 대한 정보는 없다. 임부에 대한 적절한 시험이 없고 동물실험 결과가 사람에서 항상 일치되지는 않으므로, 임신 중에는 의사가 확실하게 필요하다고 인정하는 경우에만 이 약을 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ea3398531e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (2)",
+      "subject": "1) 임부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "인공 심장 판막을 부착한 임부에게 혈전 예방을 목적으로 이 약을 사용하는 것에 대하여 적절하게 연구된 바 없다. 임상시험에서 혈전색전증의 위험을 감소시키기 위해 이 약(체중 kg 당 1 mg, 1일 2회)을 투여한 경우, 인공 심장 판막을 부착한 임부 8명 중 2명에서 혈전이 생성되어 판막을 막았고, 결국 태아와 임부가 사망하였다. 시판 후 조사에서 혈전 예방을 위해 이 약을 투여한 인공 심…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9f831c4eff",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (3)",
+      "subject": "1) 임부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중 이 약을 투여 받은 여성이 출산한 유아에서 뇌 이상, 사지 이상, 요도밑 열림증, 말초혈관 기형, 섬유형성 이상, 심장기형의 선천적 기형의 보고가 있었다. 약과의 인과관계가 확립되지 않았고, 그 발생률도 일반 환자군에서보다 높지는 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2fd8429896",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트의 경우, 유즙에 함유된 이 약 또는 이 약 대사물의 농도는 매우 낮았다. 그러나 이 약의 투여 중에는 수유를 하지 않는 것이 바람직하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "610e6147ca",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에게 투여하는 경우 이 약의 예방용량은 출혈경향을 증가시키지 않는다. 그러나 특히 80세 이상의 고령자의 경우에는, 이 약의 치료용량이 출혈과 관련된 합병증의 위험을 증가시킬 수 있으므로 주의깊은 임상 모니터링이 요구된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "95528001da",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "75세 이상의 환자에서 저분자량 헤파린 처치 시작 전에 신기능 측정이 필수적이다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "066ccc833d",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "크레아티닌청소율 = (140-나이)× 체중/(0.814× 혈중 크레아티닌)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d8410dc0de",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "여자의 경우 0.814-->0.85",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "심한 신장애 환자에서는 이 약의 4000 anti-Xa IU/0.4 mL 용량 사용이 권장되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "57805fd4bf",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 3)",
+      "subject": "여자의 경우 0.814-->0.85",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "40 kg 이하의 80세 이상의 노인에 대한 동용량의 안전성 및 유효성이 확립되어 있지 않으므로, 이러한 환자에게는 가급적 투여하지 않는다(크레아티닌청소율 < 30 mL/min).",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:17:20"
+}

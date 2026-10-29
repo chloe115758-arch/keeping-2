@@ -1,0 +1,120 @@
+{
+  "ingredient": "dasatinib",
+  "productSeq": "202600609",
+  "itemName": "다사킨정100밀리그램(다사티닙)",
+  "atc": "L01EA02",
+  "etcOtc": "전문의약품",
+  "changeDate": null,
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600609/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600609/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600609/NB"
+  },
+  "rules": [
+    {
+      "id": "1c8f27fade",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 ②",
+      "subject": "",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "제산제: 비임상 자료들은 다사티닙의 용해도가 pH 의존적이라는 것을 보여주고 있다. 24명의 건강한 시험대상자를 대상으로 수행한 시험에서 30mL aluminum hydroxide/magnesium hydroxide를 이 약 50mg 단회투여 2시간 전에 투여한 경우, 다사티닙의 AUC는 의미있는 변화가 없었다. 하지만 다사티닙의 Cmax는 26% 증가 하였다. 30mL aluminum hy…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cc1073ac95",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 ③",
+      "subject": "",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "히스타민2 수용체(H2) 길항제와 수소이온펌프(프로톤펌프) 저해제: H2 길항제 또는 수소이온펌프 저해제(예. 파모티딘이나 오메프라졸)에 의한 장기간 위산분비 억제는 다사티닙 노출을 감소시킬 가능성이 있다. 24명의 건강한 시험대상자를 대상으로 수행한 시험에서 파모티딘 투여 10시간 후 이 약 50mg의 단회투여는 다사티닙의 AUC와 Cmax를 각각 61%, 63%까지 감소시켰다. 14명의…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f6c76b09ef",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부 또는 가임여성 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부: 임신 중 이 약을 복용한 여성으로부터 자연 유산, 태아 및 유아 이상의 시판 후 보고가 있었다. 이 약은 임신한 여성에게 투여되었을 때 치명적인 위해를 야기할 수 있다. 임신한 여성에서 이 약으로 수행한 적절하고 통제된 연구는 없다. 이 약으로 치료를 받고 있는 동안 임신가능성이 있는 여성에게 태아에 대한 잠재적 위험성과 임신을 피해야 함을 알려야 한다. 만일 이 약이 임신 중에 사용…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e31e741df2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부 또는 가임여성",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 복용하는 남성 환자에서의 정자에 대한 영향은 알려져 있지 않으므로 이 약을 복용하는 임신 가능성이 있는 남성 또는 여성 환자는 적절한 피임법을 사용하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "80a175eced",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부 또는 가임여성",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "비임상 연구에서 다사티닙의 치료용량을 투여 받은 사람에서 관찰된 것보다 낮은 혈장농도에서 배태자에 대한 독성들이 랫드와 토끼에서 관찰되었다. 태자 사망이 랫드에서 발견되었다. 랫드와 토끼 모두에서 시험된 다사티닙의 최저 용량(랫드: 2.5 mg/kg/일 [15 mg/m2/일], 토끼: 0.5 mg/kg/일 [6 mg/m2/일])이 배태자 독성을 야기하였다. 이 용량은 랫드에서는 105 ng·…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a30b773eca",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부 또는 가임여성 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부: 이 약이 모유로 분비되는지는 알려져 있지 않다. 많은 약물들이 모유로 분비가 되고 수유받은 영아에서의 이 약으로부터 중대한 이상약물반응에 대한 잠재성 때문에, 수유부에서 약의 중요성을 고려하여 수유를 중단하거나 이 약을 중단할 것인지 결정되어야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b4c071b840",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약에 대한 임상연구 2712명 중에서, 617명(23%)은 65세 이상이었고 123명(5%)은 75세 이상이었다. 고령자와 고령자가 아닌 환자군 간의 약물의 효과 차이는 관찰되지 않았다. 안전성 프로파일은 두 군에서 유사하였지만, 고령자에서 피로, 흉막 삼출, 호흡곤란, 기침, 하부위장관 출혈, 식욕장애가 매우 흔하게 보고되었으며, 복부 팽만, 현기증, 심낭 삼출, 울혈성 심부전, 체중감…",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:17:13"
+}

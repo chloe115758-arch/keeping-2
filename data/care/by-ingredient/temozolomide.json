@@ -1,0 +1,64 @@
+{
+  "ingredient": "temozolomide",
+  "productSeq": "201503273",
+  "itemName": "테모람캡슐20밀리그램(테모졸로미드)",
+  "atc": "L01AX03",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240304",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201503273/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201503273/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201503273/NB"
+  },
+  "rules": [
+    {
+      "id": "5142d93eae",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부: 임부에 대한 임상시험은 없으나, 랫트 및 토끼에게 150 mg/m2을 투여한 전임상시험에서 기형발생 또는 태아독성이 나타났다. 따라서 이 약을 임부에 투여해서는 안되며, 만일 임신 중에 사용이 요구되는 경우에는 환자에게 태아에 미칠 위험에 대해 알려준다. 가임여성은 이 약을 투여 받는 동안 임신을 피하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "58f76bb858",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "남성 생식: 이 약은 유전독성이 있으므로 이 약으로 치료받고 있는 남성은 치료 종료 6개월 후까지 부인이 임신을 해서는 안 되며, 이 약으로의 치료와 관련된 비가역적 불임의 가능성 때문에 치료 전 정자의 냉동보존에 대한 조언을 받아야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d562c97e9b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부: 이 약이 유즙으로 이행하는지는 알려지지 않았으므로 이 약을 투여받는 동안 수유를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e7ce5f60d0",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 연령에 따른 약동학적 성질의 차이는 없으나 70세가 넘는 고령자의 경우 호중구감소증 및 혈소판감소증의 위험이 증가할 수 있으므로 주의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:17:46"
+}

@@ -1,0 +1,88 @@
+{
+  "ingredient": "vancomycin hydrochloride",
+  "productSeq": "199801540",
+  "itemName": "반코진캡슐250밀리그램(반코마이신염산염)",
+  "atc": "A07AA09",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250507",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801540/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801540/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801540/NB"
+  },
+  "rules": [
+    {
+      "id": "b2779404c3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약에 대해서 동물 생식독성실험은 실시되지 않았다. 이 약이 생식능력에 영향을 미치는 지의 여부는 알려지지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c83fb1f9e8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "대조 임상시험을 통하여 중증 포도구균 감염증을 가진 임부에게 이 약을 투여한 후 유아에 대한 잠재적 청각 독성 및 신독성을 평가했을 경우 태중 혈액에서 이 약이 검출되었으며 이 약에 의한 감각 신경성 청각상실 또는 신독성은 인지되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2dcd91f365",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신말기 3개월에 이 약을 투여한 모체에서 태어난 한 명의 유아에게서 전도성 청각상실이 나타났으나 이 연구는 제한된 작용 환자수와 임신중기 및 말기에 이 약이 투여되었으므로 태아에 해를 미칠 지의 여부는 확실하지 않다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9f47a13e08",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e219480dfa",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 5)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모유 중으로 이행되므로 수유 시 반드시 주의해야 하고 잠재적 이상반응의 가능성이 있으므로 모체에 대한 이 약의 중요성을 고려하여 약물투여의 중단여부를 결정해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f9c6e95cd1",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자에서는 생리기능이 저하되므로 특히 신장애가 중증(혈액투석중 등)이고 위막성대장염등의 중증 장관병변 환자에서는 흡수되어 배설이 지연되고 축적이 나타날 수 있으므로 신기능 등에 주의하여 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:09:45"
+}

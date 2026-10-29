@@ -1,0 +1,325 @@
+{
+  "ingredient": "atorvastatin calcium + metformin hydrochloride",
+  "productSeq": "201801995",
+  "itemName": "아토메트서방정20/500밀리그램",
+  "atc": "A10BD",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260303",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801995/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801995/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801995/NB"
+  },
+  "rules": [
+    {
+      "id": "92182ff772",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 (6)",
+      "subject": "○ 메트포르민염산염",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 섭취 : 알코올은 젖산 대사에 대해 이 약이 미치는 영향을 증대시킨다고 알려져 있다. 따라서 이 약을 투여하는 동안 급성 또는 만성적인 알코올의 과량섭취는 피해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "50d2f1fdbf",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 (9)",
+      "subject": "○ 메트포르민염산염",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "저혈당 : 저혈당은 일반적인 사용 환경 하에서 메트포르민염산염을 단독 투여한 환자에서는 나타나지 않으나, 열량 섭취가 불충분한 경우, 격렬한 운동이 열량 섭취로 보충되지 못한 경우나 다른 혈당강하제(설포닐우레아, 인슐린, 메글리티나이드계 등) 또는 알코올을 병용 투여하는 경우에 발생한다. 특히 고령자, 쇠약하거나 영양 불균형인 환자, 부신이나 뇌하수체 부전 환자 또는 알코올 중독자인 경우 저…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "891665a9f7",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "○ 메트포르민염산염",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "환자에게 메트포르민염산염을 투여하는 동안 급성이든 만성이든 과다한 알코올 섭취의 위험에 대해 조언해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "840d1fbb79",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 (3)",
+      "subject": "○ 아토르바스타틴칼슘수화물",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알콜"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "간부전 : 아토르바스타틴의 혈장농도는 만성 알콜성간질환(Child-Pugh Class B) 환자의 경우 현저하게(Cmax가 약 16배, AUC가 약11배) 증가하였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a2c3365004",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "○ 아토르바스타틴칼슘수화물",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "아토르바스타틴은 알코올남용자(과다복용자) 또는 간질환의 병력이 있는 사람의 경우 신중하게 투여하여야 한다. 활동성 간질환 환자 또는 설명되지 않는 혈청트랜스 아미나제치의 상승이 지속되는 환자에는 아토르바스타틴을 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "acf9614b31",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (2)",
+      "subject": "- 혈당강하 작용을 감약시키는 약제",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "93c1bca80e",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "- 간장애",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "49efaa6b00",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (11)",
+      "subject": "○ 아토르바스타틴칼슘수화물",
+      "matched": [
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘제제",
+          "surface": "산화마그네슘"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "제산제 : 이 약과 수산화마그네슘 그리고 수산화알루미늄을 함유하는 경구용 제산제(antacid) 현탁액과 병용투여시 아토르바스타틴 혈장농도가 약 35 % 정도 감소하였다. 그러나 LDL-콜레스테롤의 감소에는 영향이 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "49066c8373",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (19)",
+      "subject": "○ 아토르바스타틴칼슘수화물",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽주스 : 자몽주스는 하나이상의 CYP3A4를 억제하는 성분을 함유하고 있으며, 이는 자몽쥬스 섭취량이 지나칠 경우(하루 1.2 L이상) 아토르바스타틴의 혈중 농도를 증가시킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "70b1f88c72",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "이 약의 임신 중 사용은 금기이다. 이 약에 대해 임부를 대상으로 한 임상시험은 수행되지 않았다. 개별 성분에 대한 정보는 아래와 같다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8b36797292",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "○ 메트포르민염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 전후기(periconceptional phase)와 임신 중 조절되지 않은 고혈당은 선천성 이상, 유산, 임신으로 인한 고혈압, 자간전증 및 주산기 사망률 증가의 위험과 관련이 있다. 임신 중 고혈당과 관련된 위험을 줄이기 위해 임신 기간 동안 혈당 수치를 가능한 한 정상에 가깝게 유지하는 것이 중요하다. 메트포르민은 태반을 통과하며 태반 통과 수준은 모체에서의 농도만큼 높을 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e390f56f8e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "○ 메트포르민염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신전후기(periconceptional phase) 및 임신 중 메트포르민 사용에 대한 다양한 연구(임상연구, 레지스터 기반 코호트 연구, 메타 분석 등)로부터 확인된 데이터(1000건 이상의 노출 결과)에 따르면, 임신 전후기(periconceptional phase) 및/또는임신 중 메트포르민 노출로 인한 선천성 이상 및/또는 태아/신생아 독성 위험 증가는 확인되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2164b42b3d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "○ 메트포르민염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "자궁 내 메트포르민에 노출된 출생아는 재태 연령에 비해 작을 수 있다. 출생아의 장기적 체중 결과에 및 대사합병증에 미치는 메트포르민의 영향에 대한 증거는 제한적이다. 최대 4세까지의 운동-사회성 발달에는 영향을 미치지 않는 것으로 보이나, 4세 이후에 대한 결과는 제한적이다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "aa6ebf1649",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "○ 아토르바스타틴칼슘수화물",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "이 약의 임신 중 사용은 금기이다. 가임여성은 적절한 피임방법을 강구하여야 한다. 이 약은 임신할 가능성이 없는 경우 및 태아에 대한 잠재적 위험성을 알려준 후에만 가임 연령의 여성에게 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "52f0e92a19",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "이 약의 수유 중 사용은 금기이다. 이 약 또는 각 성분에 대해 수유부를 대상으로 한 임상시험은 수행되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d3ad9515d2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "○ 메트포르민염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모유로 분비되며 이 약에 대한 신생아/유아에서의 이상반응은 보고되지 않았다. 그러나 보고된 연구결과가 제한적이므로, 이 약으로 치료 중 수유는 권장되지 않는다. 수유의 유익성, 수유부에 대한 약물의 중요성 및 유아에서의 이상반응의 잠재적 위험성을 고려하여, 수유를 중단할 것인지 약물 치료를 중단할 것인지 결정하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "76f8e00c1e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "○ 아토르바스타틴칼슘수화물",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 모유 중으로 분비되는지에 대해서는 알려져 있지 않다. 수유 중인 유아에 이상반응이 나타날 수 있으므로, 아토르바스타틴을 복용 중인 여성은 수유를 해서는 안 된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e99648c72a",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "○ 메트포르민염산염",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에 있어 노화는 신기능 저하와 관련이 있기 때문에 환자의 신기 능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 한다. 고령자는 정기적으로 신기능을 모니터링 해야 하고, 일반적으로 고령자에게는 이 약의 최대 용량을 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d0eafd1e0e",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "○ 아토르바스타틴칼슘수화물",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "65세 이상의 건강한 노인의 경우 아토르바스타틴의 혈장농도는 젊은 성인군에 비해 더 높게 나타났으나(Cmax 40 %증가, AUC 30 %증가), LDL-콜레스테롤 저하효과는 젊은 성인군과 유사하였다. 고령자는 심근병증에 취약하므로, 이 약은 고령자에게 주의하여 처방해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "327d3f9c95",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 성인에 한하여 1일 1회, 저녁식사와 함께 투여한다. 메트포르민염산염과 아토르바스타틴칼슘수화물 단일제를 병용으로 복용하고 있는 환자에게 복용의 편리함을 위하여 이 약(개개의 주성분 함량이 동일한 복합제)으로 전환하여 투여한다. 이 약의 안전성·유효성은 메트포르민염산염 1500mg과 아토르바스타틴 40mg 용량에서 확인되었다.",
+      "meal": "식사와 함께",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:16:53"
+}

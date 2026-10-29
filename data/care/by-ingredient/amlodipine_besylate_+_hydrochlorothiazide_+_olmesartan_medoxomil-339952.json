@@ -1,0 +1,303 @@
+{
+  "ingredient": "amlodipine besylate + hydrochlorothiazide + olmesartan medoxomil",
+  "productSeq": "201902989",
+  "itemName": "세비엠에이치씨티정5/40/12.5밀리그램",
+  "atc": "C09DX03",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260219",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902989/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902989/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902989/NB"
+  },
+  "rules": [
+    {
+      "id": "56e7e85a0d",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 ③",
+      "subject": "(3) 주의해야 할 병용 투여",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올, 바르비탈염, 마약류, 또는 항우울제: 기립성 저혈압이 발생할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "48d3ce153a",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 ②",
+      "subject": "○ 암로디핀 (단일제 허가사항 참조)",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽쥬스: 20명의 건강한 지원자에서 240 mL의 자몽쥬스와 암로디핀 10 mg의 단회 병용투여는 암로디핀의 약동학에 유의한 영향을 미치지 않았다. 이 시험에서 암로디핀의 주 대사경로인 CYP3A4에서의 유전적 다형성(genetic polymorphism)에 대한 영향평가는 이루어지지 않았다. 따라서, 암로디핀은 자몽이나 자몽쥬스와 병용 시 일부 환자에서 생체이용률 증가로 인한 혈압강하효과…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8fcc3b308c",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 ④",
+      "subject": "○ 암로디핀 (단일제 허가사항 참조)",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트 존스 워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "CYP3A4 유도제: CYP3A4 유도제(예, 리팜피신, 세인트 존스 워트(hypericum perforatum))와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "861423c3e6",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 ③",
+      "subject": "○ 암로디핀 (단일제 허가사항 참조)",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "티아지드계 이뇨제는 다른 항고혈압약물(예, 구아네티딘, 메틸도파, 베타-차단제, 혈관이완제, 칼슘통로차단제, ACE차단제, 안지오텐신수용체차단제(ARB) 및 직접적 레닌 차단제(DRI), 다른 이뇨제, 마취제, 알코올)의 항고혈압 작용을 증강시킨다. 또한 ACE 저해제와 병용투여하는 경우에는 혈압강하작용을 증가시킬 수 있으므로 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a9987b6c6c",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 ⑬",
+      "subject": "○ 암로디핀 (단일제 허가사항 참조)",
+      "matched": [
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민 D"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "티아지드계 이뇨제를 비타민 D 또는 칼슘염과 병용시 혈청 칼슘 수치를 증가시킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7ac1aa914c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "암로디핀/올메사르탄메독소밀/히드로클로로티아지드",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2436a02cd8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "임신 2기와 3기에 이 약의 사용은 금기이다. 이 복합제의 개별 성분이 임신에 미치는 영향을 고려하여, 임신 1기에 이 약의 사용이 권장되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "22a50a7437",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "개별 성분에 대한 정보는 다음과 같다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c0bf6a5f47",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "○ 암로디핀",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신부에 대한 적절하고 잘 통제된 임상시험은 없었다. 임신기간의 경우 암로디핀의 잠재적인 이익이 태아에 대한 잠재적인 위험을 상회하는 경우에만 사용해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4d6d60740c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "○ 올메사르탄메독소밀",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에게 레닌­안지오텐신 시스템에 직접적으로 작용하는 약물을 투여하면 태아나 신생아의 손상 및 사망이 발생할 수 있으며, 이러한 사례는 안지오텐신 전환 효소(ACE: angiotensin converting enzyme) 저해제를 복용한 환자에서도 세계적으로 수십 례가 보고된 바 있다. 따라서 임신한 사실을 알게 되면, 본제의 복용을 되도록 빨리 중지하여야 한다. 임신 2, 3기 동안 레닌­…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9470e7fcd7",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "○ 히드로클로로티아지드",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "티아지드계 이뇨제는 신생아 또는 영아에서 고빌리루빈혈증, 혈소판감소 등을 일으킬 수 있다. 또한, 이뇨효과에 의해 혈장량 감소, 혈액농축, 자궁·태반혈류량 감소가 나타날 수 있으므로 임신 후기에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5a31f6accb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "암로디핀/올메사르탄메독소밀/히드로클로로티아지드",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "37c592ea3a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유 중 이 약의 사용에 대한 정보가 없으므로, 이 약의 사용이 권장되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "de33431e48",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "개별 성분에 대한 정보는 다음과 같다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f7c2eba882",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여",
+      "subject": "○ 암로디핀",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부에 대한 제한된 자료에 따르면 암로디핀은 사람의 모유로 이행된다고 보고되었다. 영아에게 이상반응이 나타날 가능성이 있으므로, 수유부는 이 약의 중요성을 고려하여서 수유를 중지하거나 이 약 투여를 중지하여야 한다. 유사한 칼슘 채널 차단제인 디히드로피리딘계열의 약물은 모유로 분비된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "254f5dbfe9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여",
+      "subject": "○ 올메사르탄메독소밀",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "올메사르탄메독소밀의 경우 사람에서는 모유로 이행되는지의 여부가 알려져 있지 않으나, 랫트의 경우 낮은 농도로 이행되었다. 영아에게 이상반응이 나타날 가능성이 있으므로 수유부에게 이 약의 중요성을 고려하면서 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "928ed4d534",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여",
+      "subject": "○ 히드로클로로티아지드",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "티아지드계 이뇨제는 모유 생성을 억제하고 모유로의 이행이 보고되어 있으며, 영아에게 이상반응이 나타날 가능성이 있으므로 수유중에는 이 약의 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9280cef925",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 임상시험에서 65세 이상 고령자와 젊은 환자 간에 관찰된 안전성 및 유효성에 대한 차이는 없었다. 그러나 일부 고령자에서 보다 민감한 반응이 나타날 수 있음을 배제할 수 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1c2f3c223f",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "암로디핀을 경구 투여 시, 최고 혈장 농도가 나타나기까지의 시간은 젊은 환자와 노인 환자에서 유사하였다. 노인 환자에서 암로디핀의 클리어런스가 감소하는 경향이 나타나며, 이로 인해 AUC와 제거 반감기가 증가하였다. 울혈성 심부전 환자에서 AUC 및 소실 반감기의 증가는 이 시험에 속한 환자 연령군에 비추어 예상된 것이었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "08060b2b6d",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고혈압 환자에서 항정 상태에서의 올메사르탄 AUC는 젊은 환자에 비해 노인환자 (65 &#x2011; 75 세) 에서 약 35% 증가했으며, 75세 이상에서 약 44% 증가했다. 이는 해당 환자군에서 신기능이 평균적으로 감소한 것과 일부 관련될 수 있다. 일반적으로, 고령자에 대한 용량 선택은 조심스러워야 하며, 보통 투여용량범위의 가장 저용량에서 시작을 하고, 고령자에게 빈발하는 간, 신장…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9d91dab770",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "제한된 자료에 의하면, 히드로클로로티아지드의 전신 클리어런스가 고령자인 경우 젊은 환자에 비해 감소하는 것이 알려졌다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:04:45"
+}

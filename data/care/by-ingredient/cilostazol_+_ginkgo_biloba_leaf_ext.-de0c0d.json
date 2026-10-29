@@ -1,0 +1,52 @@
+{
+  "ingredient": "cilostazol + ginkgo biloba leaf ext.",
+  "productSeq": "201904536",
+  "itemName": "실로스코정",
+  "atc": "B01AC",
+  "etcOtc": "전문의약품",
+  "changeDate": "20211213",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904536/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904536/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904536/NB"
+  },
+  "rules": [
+    {
+      "id": "5b5fbfe4eb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험(랫트)에서 실로스타졸의 이상태자 증가 및 출생시 저체중, 사망 증가가 보고되었으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "439c91e18b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험(랫트)에서 실로스타졸이 유즙 중으로 이행됨이 보고되었으므로 투여 중에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6905d91604",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:33"
+}

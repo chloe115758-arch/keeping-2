@@ -1,0 +1,194 @@
+{
+  "ingredient": "bazedoxifene acetate + cholecalciferol concentrated powder",
+  "productSeq": "201804005",
+  "itemName": "바비본정",
+  "atc": "G03XC",
+  "etcOtc": "전문의약품",
+  "changeDate": "20181013",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804005/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804005/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804005/NB"
+  },
+  "rules": [
+    {
+      "id": "2609e44335",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "음주"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "환자가 칼슘 섭취가 불충분할 경우 보충제를 복용해야 한다. 비타민 D 결핍 위험이 큰 환자 (예. 70세 초과 환자, 요양소에 있는 환자, 만성 질환자)는 추가로 비타민 D 보충제를 복용해야 한다. 위장관 흡수장애 증후군이 있는 환자에게는 추가적으로 비타민 D 보충제가 필요할 수 있음을 알려주어야 한다. 체중부하 운동은 흡연 및/또는 지나친 음주와 같은 특정 습관 요인의 변화와 더불어 고려되…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a549a5a265",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (3)",
+      "subject": "○ 바제독시펜",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "바제독시펜과 다음의 약물과는 유의한 약동학적 상호작용이 관찰되지 않았다; 이부프로펜, 아지트로마이신, 알루미늄과 수산화 마그네슘을 함유한 제산제.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0d3fe0f4a2",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "○ 콜레칼시페롤",
+      "matched": [
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민 D"
+        },
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "얼레스트라(Olestra), 광물성 기름, 오르리스타트(orlistat), 담즙산 제거약(예. 콜레스티라민, 콜레스티폴)은 비타민 D의 흡수를 저해할 수 있다. 비타민 D의 추가적인 보충을 고려하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e775e87617",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "○ 콜레칼시페롤",
+      "matched": [
+        {
+          "key": "vitaminD",
+          "kind": "supplement",
+          "ko": "비타민 D",
+          "surface": "비타민 D"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "항경련제, 시메티딘, 치아자이드는 비타민 D의 이화작용을 증진시킬 수 있다. 비타민 D의 추가적인 보충을 고려하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b9002205a6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "○ 바제독시펜",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 오직 폐경후 여성에만 사용해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4baa514c1d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "○ 바제독시펜",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부: 임부 및 가임기 여성은 이 약을 복용해서는 안 된다. 임신한 여성에서 이 약의 사용에 관한 자료는 없다. 동물을 대상으로 한 시험에서 생식독성이 관찰되었으며, 태아에게 유해한 영향을 미칠 수 있는 것으로 나타났다. 사람에서의 잠재적 위험에 대해서는 알려진 바 없다. 만약 약물투여 기간에 임신한 경우에는 태아에 미칠수 있는 잠재적인 위해를 환자에게 알려야 하며, 이 약의 복용을 즉시 중…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "38b29a40aa",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "○ 바제독시펜",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부: 이 약이 사람의 모유로 배설되는지에 대해서는 알려진 바 없다. 이 약은 수유 중인 여성에게는 사용되어서는 안 된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "20269ff1ca",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "○ 바제독시펜",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수태능: 암컷 랫드에 대한 연구에서는 발정주기와 수태능의 이상반응이 관찰되었다 .",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "42166cdb60",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "○ 콜레칼시페롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "콜레칼시페롤(비타민 D3)에 대한 자료는 없다. 에르고칼시페롤(비타민 D2)을 임신한 토끼에 고용량으로(이틀에 한번 10,000 IU 이상) 투여한 결과, 유산율과 태자의 대동맥 협착증 발생률이 증가하였다. 비타민 D2를 임신한 랫트에 일일 40,000 IU를 투여한 결과 신생자 사망, 태자 체중 감소, 출생 후 장골의 골형성 손상이 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f129dd7c1a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "○ 콜레칼시페롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "콜레칼시페롤과 이 활성대사체는 모유로 이행된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "13b24e6c61",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "○ 바제독시펜",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "연령에 따른 용량 조절은 필요하지 않다. 26명의 건강한 폐경기 여성을 대상으로 한 시험에서, 바제독시펜 20 mg 단회 투여의 약동학을 평가하였다. 평균적으로, 51-64세의 여성(n=8명)에 비해 65-74세 여성(n=8명)에서 AUC가 1.5배 증가하는 것으로 나타났으며, 75세 이상 여성(n=8명)에서는 AUC가 2.3배 증가하였다. 이러한 AUC의 증가는 연령 증가에 따른 간기능의…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0eacc89724",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "○ 콜레칼시페롤",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에서 비타민 D3 섭취요구량이 증가된다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:24"
+}

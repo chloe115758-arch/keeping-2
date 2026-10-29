@@ -1,0 +1,90 @@
+{
+  "ingredient": "lercanidipine hydrochloride",
+  "productSeq": "200805235",
+  "itemName": "레도핀정(레르카니디핀염산염)",
+  "atc": "C08CA13",
+  "etcOtc": "전문의약품",
+  "changeDate": "20131023",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200805235/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200805235/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200805235/NB"
+  },
+  "rules": [
+    {
+      "id": "d6c8842f99",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 5)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "디히드로피리딘계 약물은 자몽(grapefruit)주스와 함께 투여하는 경우에 이 약의 혈중농도가 상승할 수 있으므로 함께 복용하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "acc7a90d3c",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 6)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올은 혈관확장성 혈압강하제의 효과를 증가시키기 때문에 피해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "899e5eb115",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "레르카니디핀은 랫트와 토끼에서 기형발생 효과를 나타내지 않았고, 랫트에 대한 수태능 시험에서 고용량(12 mg/kg)을 투여할 때 태자사망율이 증가하였으며, 랫트에 대한 기형발생 시험에서는 고용량(22 mg/kg)투여에 의해 태자체중감소, 내장이상(신우 및 뇨관 확장) 및 골화지연에 따른 설골의 불완전한 골화증가를 나타냈다. 토끼에 대한 기형발생 시험에서도 고용량(250 mg/kg)에서 태자…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "be8e4e7284",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "약동학 자료와 임상경험에서 1일 용량의 증감이 필요하지 않았으나 고령자에서의 초기투여는 특별한 주의를 요한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6d51fd0e02",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "레르카니디핀염산염으로서 1일 1회 5 ～ 10 mg을 최소 식사 15분전에 경구투여한다. 환자의 증상에 따라 20 mg까지 증량할 수 있다. 용량 조절은 최대 혈압강하 효과가 명확히 나타나는데 2주가 걸리므로 점차적으로 한다. 이 약으로 혈압이 조절되지 않는 환자에게는 베타차단제(아테놀롤 등), 이뇨제(히드로클로로티아지드 등), ACE억제제(캅토프릴, 에날라프릴 등)와 병용치료 할 수 있다.",
+      "meal": "식사 15분전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:40"
+}

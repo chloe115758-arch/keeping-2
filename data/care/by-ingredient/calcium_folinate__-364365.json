@@ -1,0 +1,88 @@
+{
+  "ingredient": "calcium folinate )",
+  "productSeq": "198600880",
+  "itemName": "페르본주사(폴리네이트칼슘)",
+  "atc": "V03AF03",
+  "etcOtc": "전문의약품",
+  "changeDate": "20040511",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600880/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600880/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600880/NB"
+  },
+  "rules": [
+    {
+      "id": "47bbc2e5f9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 사람에 대한 생식연구가 시행된 바 없다. 랫트와 토끼에서 50배의 용량으로 태자독성을 나타내지는 않았으나 동물연구결과로부터 항상 사람에 대해 예측할 수는 없으므로, 임부에게는 유익성이 태아에 대한 위험의 가능성을 상회한다고 판단되는 경우에만 투여한다. 다만 5-FU와 병용시 임부에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "154b105951",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 모유를 통해서 배설되는지는 알려져 있지 않다. 많은 약물이 모유로 배설되므로 수유부에게 투여하는 경우에는 주의한다. 다만 5-FU와 병용시 수유부에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "56ffa3978d",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "대장암 환자의 치료에서 5-FU와 병용투여시 고령의 허약환자는 심각한 위장관독성의 위험이 증가될 수 있으므로 특별히 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a4448ced24",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a19d8b5554",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 사람에 대한 생식연구가 시행된 바 없다. 랫트와 토끼에서 50배의 용량으로 태자독성을 나타내지는 않았으나 동물연구결과로부터 항상 사람에 대해 예측할 수는 없으므로, 임부에게는 유익성이 태아에 대한 위험의 가능성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "757d9efd10",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 모유를 통해서 배설되는지는 알려져 있지 않다. 많은 약물이 모유로 배설되므로 수유부에게 투여하는 경우에는 주의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:16:09"
+}

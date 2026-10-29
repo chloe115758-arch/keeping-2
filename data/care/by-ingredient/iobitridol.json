@@ -1,0 +1,83 @@
+{
+  "ingredient": "iobitridol",
+  "productSeq": "200109268",
+  "itemName": "제네틱스300주사(이오비트리돌)",
+  "atc": "V08AB11",
+  "etcOtc": "전문의약품",
+  "changeDate": "20261028",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109268/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109268/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109268/NB"
+  },
+  "rules": [
+    {
+      "id": "2583ef4874",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "● 알코올중독 환자(급성 또는 만성 알코올중독) 및 기타 약물 중독 피험자에서 동맥 내 경로를 사용하는 경우",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "31cb06e9fe",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험 결과 기형발생은 관찰되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "41521411b3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 이 약의 안전성이 확립되어 있지 않으며 임신 14주 이후 검사를 수행할 경우, 과량의 요오드로 인해 태아의 갑상선기능장애가 발생될 수 있다. 임부 또는 임신하고 있을 가능성이 있는 여성에게는 진단상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d9d062e7bd",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중 요오드화 조영제가 산모에게 투여된 경우 신생아의 갑상선 기능을 면밀히 모니터링해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "66c6279817",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 동물실험에서 모유 중으로 소량(3 %) 이행되므로, 수유부에게 투여할 경우에는 일시적으로 수유를 중단한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:18:55"
+}

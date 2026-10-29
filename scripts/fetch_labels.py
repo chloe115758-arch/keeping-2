@@ -68,7 +68,10 @@ def log(*a):
 # ---- dur.js의 cleanIngr와 같은 규칙 ----
 def clean_ingr(name):
     s = re.sub(r'\(\s*as\s[^)]*\)', '', str(name or ''), flags=re.I)
-    s = re.sub(r'\s*\d+(?:[.,]\d+)?\s*(?:mg|g|mcg|µg|μg|ug|ml|iu|u|%|meq|mmol)(?![a-z])', '', s, flags=re.I)
+    s = re.sub(r'\s*\d+(?:[.,]\d+)?\s*(?:mg|g|mcg|µg|μg|ug|ml|iu|u|%|meq|mmol|㎍|㎎|㎏|㎖)(?![a-z])', '', s, flags=re.I)
+    s = re.sub(r'\s*/\s*(?:㎖|㎏|㎎|㎍|ml|mg|g|kg|l)(?![a-z])', '', s, flags=re.I)
+    s = re.sub(r'\(\s*/\s*[a-zA-Z㎖]+\s*\)', '', s)
+    s = re.sub(r'\(\s*\)', '', s)
     parts = [re.sub(r'\s+', ' ', x).strip() for x in re.split(r'[+,]', s)]
     return ' + '.join(x for x in parts if x)
 
@@ -205,6 +208,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--limit', type=int, default=500)
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--reextract', action='store_true', help='호출 없이 data/care/raw로 규칙만 다시 뽑는다')
     a = ap.parse_args()
 
     groups = group_ingredients()
@@ -214,6 +218,8 @@ def main():
             c, v = pick_representative(groups[n])
             print('%3d  %-40s 제품 %4d  대표 %s %s' % (i, n[:40], len(groups[n]), c, v[0]))
         return
+    if a.reextract:
+        return reextract(order)
     if not load_key():
         raise SystemExit('DATA_GO_KR_KEY가 없어요(.env 또는 환경변수).')
 
@@ -256,12 +262,9 @@ def main():
                 _write(rawp, j)
             err_streak = []
             it = items_of(j)[0]
-            rules = extract_rules(it.get('NB_DOC_DATA'), it.get('UD_DOC_DATA'), it.get('ITEM_SEQ', seq))
-            _write(os.path.join(BYING, safe_name(name) + '.json'), {
-                'ingredient': name, 'productSeq': seq, 'itemName': it.get('ITEM_NAME'),
-                'atc': it.get('ATC_CODE'), 'etcOtc': it.get('ETC_OTC_CODE'), 'changeDate': it.get('CHANGE_DATE'),
-                'docUrls': {'ee': it.get('EE_DOC_ID'), 'ud': it.get('UD_DOC_ID'), 'nb': it.get('NB_DOC_ID')},
-                'rules': rules, 'fetchedAt': datetime.datetime.now().isoformat(timespec='seconds')})
+            rules_rec = build_record(name, seq, it)
+            rules = rules_rec['rules']
+            _write(os.path.join(BYING, safe_name(name) + '.json'), rules_rec)
             rec['status'], rec['reason'] = 'ok', ''
             log('[%d/%d] %s — 규칙 %d개' % (i, len(order), name, len(rules)))
             _write(PROGRESS, dict(prog, _calls={'date': api.today, 'count': api.day_calls}))
@@ -269,6 +272,40 @@ def main():
         log(str(e))
     _write(PROGRESS, dict(prog, _calls={'date': api.today, 'count': api.day_calls}))
     summarize(order, prog, api)
+
+
+def reextract(order):
+    prog = _read(PROGRESS, {})
+    class _NoApi:
+        calls = 0
+        day_calls = prog.get('_calls', {}).get('count', 0)
+        today = prog.get('_calls', {}).get('date', '')
+    groups = group_ingredients()
+    rep = {pick_representative(g)[0]: n for n, g in groups.items()}
+    for name in [n for n in prog if not n.startswith('_') and n not in groups]:   # 성분 이름 정리 규칙이 바뀐 경우
+        new = rep.get(prog[name].get('productCode'))
+        if new and new not in prog:
+            prog[new] = prog.pop(name)
+            oldf = os.path.join(BYING, safe_name(name) + '.json')
+            if os.path.exists(oldf):
+                os.remove(oldf)
+            log('성분 이름 변경: %s → %s' % (name, new))
+    for name, rec in prog.items():
+        if name.startswith('_') or rec.get('status') != 'ok':
+            continue
+        it = items_of(_read(os.path.join(RAW, '%s.json' % rec['itemSeq']), {}))[0]
+        _write(os.path.join(BYING, safe_name(name) + '.json'), build_record(name, rec['itemSeq'], it))
+    _write(PROGRESS, prog)
+    summarize([n for n in prog if not n.startswith('_')], prog, _NoApi)
+
+
+def build_record(name, seq, it):
+    rules = extract_rules(it.get('NB_DOC_DATA'), it.get('UD_DOC_DATA'), it.get('ITEM_SEQ', seq))
+    return {
+        'ingredient': name, 'productSeq': seq, 'itemName': it.get('ITEM_NAME'),
+        'atc': it.get('ATC_CODE'), 'etcOtc': it.get('ETC_OTC_CODE'), 'changeDate': it.get('CHANGE_DATE'),
+        'docUrls': {'ee': it.get('EE_DOC_ID'), 'ud': it.get('UD_DOC_ID'), 'nb': it.get('NB_DOC_ID')},
+        'rules': rules, 'fetchedAt': datetime.datetime.now().isoformat(timespec='seconds')}
 
 
 def summarize(order, prog, api):

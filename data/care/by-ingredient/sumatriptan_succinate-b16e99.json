@@ -1,0 +1,102 @@
+{
+  "ingredient": "sumatriptan succinate",
+  "productSeq": "201900721",
+  "itemName": "마이그란정50밀리그램(수마트립탄숙신산염)",
+  "atc": "N02CC01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260812",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201900721/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201900721/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201900721/NB"
+  },
+  "rules": [
+    {
+      "id": "397f9090a8",
+      "kind": "note",
+      "section": "general",
+      "where": "4. 일반적 주의 13)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "St. John"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "트립탄 계열 약물 및 히페리시(Hypericum perforatum, 일명 St. Johns Wort)를 함유하는 식물성 제제와 병용투여했을 때 이상반응이 더 빈번하였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "92c3c135df",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 1)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약은 프로프라놀롤, 플루나리진, 피조티펜 또는 알코올과 약물 상호작용의 증거는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8d8689c374",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 이 약은 주산기 및 수유기의 발달에 직접적인 기형발생 효과나 유해한 효과는 미치지 않은 것으로 평가되었으나, 토끼 배자의 생활력에는 영향을 준 것으로 보였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "de320d1d6f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 시판후 조사에서 임신 초기 3개월 동안에 이 약을 복용한 임부가 1,000례 이상 보고되었다. 이 조사 결과를 통해서 최종적인 결론을 이끌어내기는 불충분하지만 이 약 투여 시 선천성 이상의 위험성이 증가한다는 증거는 없었다. 임신 2기, 3기 중 이 약 투여와 관련된 경험은 제한되어 있다. 임부에게 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b565974a85",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "피하주사 후 이 약은 모유로 이행되므로, 이 약 투여 후 12시간 동안 수유를 피하면 영아의 노출을 최소화할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8493be4728",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "65세 이상의 노인에게는 임상 자료가 많지 않다. 약물동력학적 측면에서는 보통 성인과 별 차이가 없는 것으로 되어 있으나 보다 많은 임상 자료가 얻어질 때까지는 65세 이상의 환자에게 투여하는 것을 권장하지 않는다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:20:17"
+}

@@ -1,0 +1,83 @@
+{
+  "ingredient": "talniflumate",
+  "productSeq": "201403939",
+  "itemName": "휴리트정(탈니플루메이트)",
+  "atc": "M01AX",
+  "etcOtc": "전문의약품",
+  "changeDate": "20190911",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403939/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403939/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403939/NB"
+  },
+  "rules": [
+    {
+      "id": "e52d0c2fb5",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "위장관계 : 이 약을 포함한 비스테로이드소염진통제를 궤양성 질환 또는 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드소염진통제 투여시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용 코르티코스테로이드…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7c92088616",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 임부에게 투여한 임상자료는 없다. 다른 비스테로이드소염진통제와 마찬가지로 임신 말기에 이 약을 투여 시 태아의 동맥관을 조기 폐쇄시킬 수 있으므로 이 약은 임부(특히 임신 말기) 또는 임신하고 있을 가능성이 있는 여성에게 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8a8a75f6ef",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트에 대한 실험에서 비스테로이드소염진통제는 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 난산의 발생 빈도를 증가시키고, 분만을 지연시키며 새끼의 생존율을 감소시켰다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2495293190",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 수유부에 대하여 안전성이 확립되어 있지 않으며, 이 약이 사람의 모유로 이행되는지는 알려져 있지 않다. 그러나 많은 약물들이 모유 중으로 이행될 뿐만 아니라 이행될 경우 영아에서 심각한 이상반응의 발생이 우려되므로, 수유부에 대한 약물 투여의 중요성을 고려하여 수유를 중단하거나 약물 투여를 중단해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3d4fcf1b01",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "10. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에 있어서 필요한 최소량을 신중히 투여하고 이상반응의 발현에 특히 유의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:10:00"
+}

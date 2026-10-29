@@ -1,0 +1,40 @@
+{
+  "ingredient": "memantine hydrochloride",
+  "productSeq": "202500713",
+  "itemName": "뉴메만틴정20밀리그램(메만틴염산염)",
+  "atc": "N06DX01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20251104",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500713/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500713/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500713/NB"
+  },
+  "rules": [
+    {
+      "id": "52e7bac009",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부를 대상으로 한 연구가 없으므로 임상 자료는 없으나 동물실험에서 태자의 성장을 감소하는 위험 가능성이 나타났다. 따라서 임부 또는 임신 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "15f0ed2b6f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 모유로의 이행 여부는 밝혀지지 않았으나 이 약의 지용성을 고려하면 가능성이 있다. 따라서 이 약을 투여하는 경우, 수유를 중단해야 한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:03:52"
+}

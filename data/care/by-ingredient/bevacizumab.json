@@ -1,0 +1,76 @@
+{
+  "ingredient": "bevacizumab",
+  "productSeq": "202102237",
+  "itemName": "온베브지주(베바시주맙)",
+  "atc": "L01FG01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260414",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202102237/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202102237/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202102237/NB"
+  },
+  "rules": [
+    {
+      "id": "557b094078",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임산부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임산부 : 임산부에 베바시주맙을 투여한 자료는 없다. 동물실험에서 기형을 포함한 생식독성이 나타났다. IgG는 태반을 통과하므로 베바시주맙도 태아의 혈관신생을 저해할 것으로 기대된다. 따라서 임신 중에 투여 시 심각한 선천성 결손을 유발할 수 있다. 시판 후 조사에서 베바시주맙 단독 또는 배아독성이 있다고 알려진 화학요법을 병용 투여한 여성에서 태아 기형 사례가 관찰되었다. 임신 중에 베바시…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1de01cabaa",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임산부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물을 대상으로 반복투여한 안전성 시험에서 암컷 생식능에 대한 이상반응이 나타날 수 있음을 보여주었다. 폐경 전 여성 295명을 대상으로 한 소그룹 임상시험에서 베바시주맙 투여군이 대조군 보다 난소부전의 사례가 더 많이 발생하였다. 베바시주맙 투여를 중단 하였을 때 대부분의 환자가 난소의 기능을 회복하였다. 베바시주맙 투여가 생식능에 미치는 장기적 영향은 알려지지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "db4fa9d8eb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임산부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부 : 베바시주맙이 모유로 분비되는지에 대해서는 알려져 있지 않다. 모체 IgG가 모유로 분비되고 베바시주맙이 유아 성장 및 발달에 유해할 수 있으므로 베바시주맙 투여 중에는 수유를 중단하여야 하며 베바시주맙 마지막 투여후 최소 6 개월간은 모유수유를 하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d97fa8f7d1",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "무작위 임상시험에서 65세보다 높은 연령은 뇌혈관사고(CVA), 일과성 허혈성 발작(TIAs) 및 심근경색등의 동맥 혈전색전성 이상반응의 발생위험 증가와 연관이 있었다. 65세 이하보다 이 환자군에서 더 높은 발생률을 보인 기타 이상반응으로는 3-4등급 백혈구감소증 및 혈소판감소증, 모든 등급 호중구감소증, 설사, 구역, 두통 및 피로가 있었다. 한 임상시험에서 65세보다 높은 연령의 환자는…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f0fba0d601",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "전이성 직결장암 환자에 대한 임상시험(연구 AVF2107)에서 위장관계 천공, 상처치유 합병증, 울혈성 심부전 및 기타 이상반응의 경우, 65세 이하 환자에 비해 65세 보다 높은 연령의 환자에서 그 발생률이 증가되지 않았다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:18:15"
+}

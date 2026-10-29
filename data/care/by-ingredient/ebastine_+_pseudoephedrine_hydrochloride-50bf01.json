@@ -1,0 +1,59 @@
+{
+  "ingredient": "ebastine + pseudoephedrine hydrochloride",
+  "productSeq": "202001225",
+  "itemName": "에바슈도서방캡슐",
+  "atc": "R01BA52",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250730",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001225/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001225/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001225/NB"
+  },
+  "rules": [
+    {
+      "id": "b3c6733cb3",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 5)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약의 성분은 알코올의 효과를 증대시키지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a9868dbb92",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 및 임신하고 있을 가능성이 있는 부인에 대한 안전성이 확립되어 있지 않으므로 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e6f054385d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험(랫트)에서 이 약이 유즙으로 이행된다는 보고가 있으므로 이 약을 투여중에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:31"
+}

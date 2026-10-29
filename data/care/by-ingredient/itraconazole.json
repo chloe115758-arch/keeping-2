@@ -1,0 +1,107 @@
+{
+  "ingredient": "itraconazole",
+  "productSeq": "202002095",
+  "itemName": "이트코나졸캡슐(이트라코나졸)",
+  "atc": "J02AC02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260408",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002095/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002095/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002095/NB"
+  },
+  "rules": [
+    {
+      "id": "698ca2e3ea",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "* 중등도 또는 강력한 CYP3A4 억제제",
+      "matched": [
+        {
+          "key": "ppi",
+          "kind": "drug_group",
+          "ko": "프로톤 펌프 억제제",
+          "surface": "프로톤펌프"
+        }
+      ],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "약물분류 성분명 임상적 의견 α-차단제 알푸조신, 탐스로신 이트라코나졸 투여 중 및 종료 후 2주 간 권장하지 않음. 알푸조신/실로도신/탐스로신 관련 약물이상반응 발생 위험이 증가함. 실로도신 이트라코나졸 투여 중 및 종료 후 2주 간 금기. 진통제 알펜타닐, 부프레노르핀, 옥시코돈, 수펜타닐 주의하여 사용. 진통제 관련 약물이상반응을 모니터링하고, 알펜타닐/부프레노르핀/옥시코돈/수펜타닐의…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "de682219f1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 이 약의 고용량 투여 시(랫트 : 1일 40 mg/kg 이상, 마우스 : 1일 80 mg/kg 이상) 태자 기형 발생률의 증가가 나타났으며 배자독성이 유발되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d94605d568",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중 이 약의 사용에 대해서는 제한된 정보만 있다. 시판후 사용조사에서 염색체이상, 복합기형, 골격, 비뇨생식기, 심혈관계, 눈의 기형과 같은 선천성기형의 사례가 보고되었으나, 이 약과의 상관관계는 확립되지 않았다. 역학조사에서 임신 초기 3개월(1st trimester)에 이 약에 노출된 경우(대부분 칸디다성 질염으로 단기간 투여함), 다른 기형유발물질에 노출되지 않은 대조군과 비교 시…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "549c6b5667",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않으며, 임신할 가능성이 있는 여성에게 이 약을 투여할 시 투여종료 후 다음 생리기간까지 매우 효과적인 방법으로 피임한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "30ada8a725",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모유 중으로 이행되므로 이 약 투여 중에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "40ef1e46a8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 5)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 랫트 모델에서 태반을 통과하는 것으로 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3fc875ab52",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에 대한 이 약 사용의 임상적 자료는 제한적이므로, 잠재적인 유익성이 위험성을 상회한다고 판단되는 경우에만 이약을 투여한다. 일반적으로 고령자에 대한 용량설정은 간장, 신장 또는 심장기능 저하 및 동반질환이나 다른 약물치료의 빈도가 높음을 반영하여 고려하는 것을 권장한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:05:04"
+}

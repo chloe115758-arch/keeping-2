@@ -1,0 +1,15 @@
+{
+  "ingredient": "L-ornithine-L-aspartate",
+  "productSeq": "198800027",
+  "itemName": "리브락인퓨전주(L-아스파르트산-L-오르니틴)",
+  "atc": "A05BA06",
+  "etcOtc": "전문의약품",
+  "changeDate": "20220331",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800027/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800027/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800027/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:17:56"
+}

@@ -1,0 +1,205 @@
+{
+  "ingredient": "tacrolimus hydrate",
+  "productSeq": "202007584",
+  "itemName": "뉴로미스캡슐1밀리그램(타크로리무스수화물)",
+  "atc": "L04AD02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260928",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007584/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007584/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007584/NB"
+  },
+  "rules": [
+    {
+      "id": "62ce04019b",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (5)",
+      "subject": "1) 병용금지",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽주스 : 자몽주스 섭취시 이 약의 혈중농도가 상승하여 신장애 등의 이상반응이 발현될 가능성이 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4b590ff019",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (5)",
+      "subject": "2) 병용 주의",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "세인트존스워트: 간약물대사효소 CYP3A4가 유도되어 이 약의 대사가 촉진되어 이 약의 혈중농도가 저하할 가능성이 있으므로 이 약을 투여시에는 세인트존스워트 함유 식품 또는 의약품을 섭취하지 않도록 주의해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8133aeaa61",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (8)",
+      "subject": "(5) 아미오다론",
+      "matched": [
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘제제",
+          "surface": "산화마그네슘"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "기타: 브로모크립틴, 시메티딘, 시클로스포린, 다나졸, 에티닐에스트라디올, 메틸프레드니솔론, 메토클로프라마이드, 클로람페니콜, 네파조돈, 수산화마그네슘-알루미늄, 오메프라졸, 란소프라졸, 레테르모비르, 칸나비디올 등",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c72d89802f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "타크로리무스는 태반을 통과할 수 있고 자궁 내에서 타크로리무스에 노출되었던 영아는 조숙, 선천성 기형, 저체중출산, 태아가사(fetal distress)를 겪을 위험이 있다. 임신 중 타크로리무스 사용시 조기분만, 신생아 고칼륨혈증 및 신기능장애 등이 유발될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "33e3ac5ff3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "타크로리무스는 당뇨(임신성 당뇨 포함)가 있는 임부의 고혈당상태를 증가시킬 수 있다. 주기적으로 혈당 상태를 모니터링 해야 한다. 또한 타크로리무스는 임부의 고혈압을 더 악화시킬 수 있고, 전자간증(pre-eclampsia)을 증가시킬 수 있다. 모니터링과 혈압 관리가 필요하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "859bc020f6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "생식능력이 있는 여성 및 남성이 타크로리무스로 치료를 시작할 때에는 치료 시작 전 적절한 피임 수단을 고려해야한다. 임부에게 타크로리무스의 치료는 다른 안전한 대체 치료가 없거나 태아에게 미치는 잠재적 위험성보다 임부가 얻는 유익성이 더 클 때에만 투여가 고려될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "577ca48ca1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫드와 토끼를 사용한 시험에서 타크로리무스는 모체독성을 나타내는 용량에서 배태자 독성을 나타내었다(기타 항 참조).",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "eb88ca7cf3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 5)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "타크로리무스는 모유로 이행되므로 태아에서의 악영향을 배제할 수 없다. 이 약을 투여하는 동안 모유수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "864f34e77d",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자는 일반적으로 생리기능(신기능, 간기능, 면역기능 등)이 저하되어 있으므로 환자의 상태를 관찰하면서 신중하게 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8196f83b59",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "골수이식: 골수이식후에 따르는 조직이식 거부반응과 이식편대숙주질환(graft versus-host disease) 방지",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "de20bb7085",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "통상 성인에게 타크로리무스로서 3mg을 1일 1회 저녁식사 후에 경구투여한다. 이상반응이 발현한 환자의 경우에는 정기적인 모니터링이 요구된다.",
+      "meal": "식사 후",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a025e0384f",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에게는 통상 1.5mg을 1일 1회 저녁식사 후에 경구투여하며, 증상에 따라 3mg까지 증량할 수 있다.",
+      "meal": "식사 후",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "de20bb7085",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "통상 성인에게 타크로리무스로서 3mg을 1일 1회 저녁식사 후에 경구투여한다.",
+      "meal": "식사 후",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0354276098",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "성인을 대상으로 1일 1회 식후에 타크로리무스로서 3mg을 경구투여 한다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:08:05"
+}

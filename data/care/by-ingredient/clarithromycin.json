@@ -16,6 +16,7 @@
       "kind": "interaction",
       "section": "interaction",
       "where": "5. 상호작용 ③",
+      "subject": "",
       "matched": [
         {
           "key": "stJohnsWort",
@@ -27,52 +28,56 @@
       "interval": null,
       "tone": "caution",
       "excerpt": "CYP3A의 유도제가 되는 약물들(예, 리팜피신, 페니토인, 카르바마제핀, 페노바르비탈, St. John's wort)이 이 약의 대사를 유도할 수도 있다. 이는 이 약의 치료농도범위아래 농도(sub-therapeutic level)로 이어져 약효감소가 일어날 수 있다. 또한, 이 약의 CYP3A 억제작용에 기인하여 CYP3A 유도제의 혈장농도가 증가될 수 있으므로 이를 모니터링하는 것이 필…",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "dad5d270d0",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "d5a714ec96",
       "kind": "state_pregnancy",
       "section": "pregnancy",
       "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "이 약은 모유 중으로 분비되므로 수유부에는 투여하지 않으며 부득이 투여하는 경우에는 수유를 중지한다. 영아가 시사프리드로 치료 중이고 수유를 하고 있다면 약물상호작용이 있을 수 있으므로 수유부에게 이 약을 투여하지 않는다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "46f83a44ca",
       "kind": "state_elderly",
       "section": "elderly",
       "where": "8. 고령자에 대한 투여 1)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "일반적으로 고령자는 생리기능이 저하되어 높은 혈중 농도가 지속될 수 있으므로 신중하게 투여한다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     },
     {
       "id": "6d2ecb1018",
       "kind": "state_elderly",
       "section": "elderly",
       "where": "8. 고령자에 대한 투여 2)",
+      "subject": "",
       "matched": [],
       "interval": null,
       "tone": "info",
       "excerpt": "중증 신기능 부전을 가진 고령자에 대해서는 용량조절을 해야만 한다.",
-      "extractor": "kw-v0"
+      "extractor": "kw-v1"
     }
   ],
-  "fetchedAt": "2026-10-29T18:30:45"
+  "fetchedAt": "2026-10-29T19:00:56"
 }

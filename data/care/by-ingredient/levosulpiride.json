@@ -1,0 +1,83 @@
+{
+  "ingredient": "levosulpiride",
+  "productSeq": "200303320",
+  "itemName": "레보리드정(레보설피리드)",
+  "atc": "A03FA",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250723",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200303320/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200303320/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200303320/NB"
+  },
+  "rules": [
+    {
+      "id": "ed676d994f",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 4)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "정신약리학적 약물과의 병용투여 시 상호작용에 기인한 예기치 않은 이상반응이 나타날 수 있으므로 특별히 주의하여야 하며 알코올과 동시투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f72f9b311a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 태자에 대한 기형발생의 위험이 있는 것으로 보고되어 있으며, 임신중 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a03f16a27f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "신생아에 대한 안전성이 확립되어 있지 않으므로 수유중인 여성에게는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "270a6b8648",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "주로 신장으로 배설되나 고령자는 신기능이 저하되어 있는 경우가 많아 높은 혈장농도가 지속될 우려가 있으므로 이상반응(추체외로 증상 등)의 발현에 주의하고 용량 및 투여간격에 유의하는 등 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0d74be638d",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "성인 : 레보설피리드로서 1회 25 mg을 1일 3회 식전에 경구투여한다.",
+      "meal": "식전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:04:37"
+}

@@ -1,0 +1,52 @@
+{
+  "ingredient": "desmopressin acetate",
+  "productSeq": "201401523",
+  "itemName": "엔유린오디프스산0.1밀리그램(데스모프레신아세트산염)",
+  "atc": "H01BA02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20251226",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201401523/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201401523/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201401523/NB"
+  },
+  "rules": [
+    {
+      "id": "95593cf893",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대하여는 드물게 자궁수축효과가 나타날 수 있으므로 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "abf6b5dc72",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물의 생식시험에서 태자에 대한 유해작용은 없었다. 임부의 요붕증 치료에서도 태아에 대한 유해작용은 보고되지 않았으나 사용경험이 충분치 않으므로 임부 및 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8b8f9c99ec",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 과량투여시(300㎍ 비강투여시) 많은 양이 유즙으로 이행되고 수유중 투여의 안전성이 확립되지 않았으므로 수유부에게 투여하는 경우 수유를 중단하는 것이 바람직하다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:06:34"
+}

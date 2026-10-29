@@ -1,0 +1,15 @@
+{
+  "ingredient": "L-carbocysteine",
+  "productSeq": "197600722",
+  "itemName": "리나치올시럽(카르보시스테인)(수출명:HyundiolSyrup)",
+  "atc": "R05CB03",
+  "etcOtc": "일반의약품",
+  "changeDate": "20210226",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197600722/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197600722/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197600722/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:19:18"
+}

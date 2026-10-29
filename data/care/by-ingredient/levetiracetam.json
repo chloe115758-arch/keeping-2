@@ -1,0 +1,149 @@
+{
+  "ingredient": "levetiracetam",
+  "productSeq": "201207479",
+  "itemName": "스타레탐정500밀리그램(레비티라세탐)",
+  "atc": "N03AX14",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240809",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201207479/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201207479/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201207479/NB"
+  },
+  "rules": [
+    {
+      "id": "a95651f156",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "8) 기타",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약물의 흡수에 대한 제산제의 영향에 대한 자료는 없으며, 음식물에 의해 흡수 정도에 영향을 받지 않으나, 흡수율은 약간 감소한다. 알코올과의 상호작용에 대한 자료는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6a758253c9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 가임기 여성",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "가임기 여성에게는 의료전문가의 조언이 필요하고 환자가 임신 계획이 있다면 레비티라세탐치료는 재검토되어야 한다. 모든 뇌전증치료제와 마찬가지로, 레비티라세탐의 갑작스런 중단은 해당 여성 및 태아에 심각한 영향이 있는 발작을 일으킬 수 있으므로 피하여야 한다. 뇌전증치료제들의 병용 투여는 병용되는 뇌전증치료제에 따라 단독요법보다 더 높은 선천성 기형의 위험성과 연관될 수 있으므로 가능하다면 항상…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0cbb5f1617",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "레비티라세탐으로 임부에서 수행한 적절한 임상시험은 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6f629a4742",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "레비티라세탐 단독요법에 노출된 임부(약 1800 건이며 이 중 1500 건 이상은 임신 첫 3개월 동안 노출됨)에 대한 임신 관련 등록 연구의 시판 후 자료에서 중대한 선천성 기형에 대한 위험성 증가는 제시되지 않았으나, 최기형성 위험을 완전히 배제할 수는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5e1e4be1de",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "자궁 내에서 레비티라세탐 단독요법에 노출되었던 소아들의 신경발달에 대한 증거는 제한적이지만 현재 일부 역학 연구(약 100명의 자궁내 노출된 소아)에서 신경발달 장애 또는 지연에 대한 위험성 증가는 제시되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9945a5005a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 생식독성이 나타났다(‘12. 기타’항 참조). 따라서 임신 중 이 약 사용에 대해서는 신중하게 평가되어야 하며, 이 약의 투여에 의한 유익성이 태아의 발달에 끼칠 수 있는 잠재적 위험성을 상회할 경우에만 사용해야 하며 가능한 최저 유효 용량으로 투여하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a600b6ce08",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중의 생리적 변화는 레비티라세탐 농도에 영향을 미칠 수 있다. 임신 중 감소된 레비티라세탐 농도에 대한 보고가 있었다. 농도의 감소는 마지막 3개월 동안 더 뚜렷하게 나타난다(임신 전 농도의 60%).",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d3e0751b63",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "3) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 모유를 통해 배설되며 수유 중에 유아의 중대한 이상반응에 대한 잠재성 때문에 모유 수유는 권장되지 않는다. 따라서 수유부에 있어 이 약의 중요성을 고려하여 수유를 중단할 지, 이 약 투여를 중단할지를 결정해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5bd2264a45",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임상시험에 참여한 65세 이상 환자는 347명이다. 고령자와 젊은이들 사이에서 안전성은 전체적으로 차이가 없었다. 고령자들에 대한 이 약의 효과는 충분히 평가되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cd1e63bbc5",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "16명의 고령자(61-88세)에 10일 동안 1일 2회 단회 및 반복 경구투여 했을 때 연령과 관련한 약동학적 차이를 보이지 않았다. 이 약은 신장을 통해 배출되는 것으로 알려졌고, 이 약에 대한 이상반응의 위험은 신장애 환자에서 더 높을 수 있다. 고령자는 신기능이 감소되었기 때문에 신중하게 용량을 선택해야 한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:05:28"
+}

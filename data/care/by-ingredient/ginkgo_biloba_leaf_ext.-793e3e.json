@@ -1,0 +1,15 @@
+{
+  "ingredient": "ginkgo biloba leaf ext.",
+  "productSeq": "201906075",
+  "itemName": "진코에이정40밀리그램(은행엽건조엑스)",
+  "atc": "N06DX02",
+  "etcOtc": "일반의약품",
+  "changeDate": "20230203",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906075/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906075/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906075/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:05:12"
+}

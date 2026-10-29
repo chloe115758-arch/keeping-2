@@ -1,0 +1,59 @@
+{
+  "ingredient": "ondansetron hydrochloride dihydrate",
+  "productSeq": "200200963",
+  "itemName": "온세트론정(온단세트론염산염수화물)",
+  "atc": "A04AA01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20161110",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200200963/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200200963/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200200963/NB"
+  },
+  "rules": [
+    {
+      "id": "389e3cb084",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 1)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약과 함께 주로 처방되는 다른 약물의 대사를 증가시키거나 감소시킨다는 증거는 없다. 이 약은 알코올, 테마제팜, 푸로세미드, 알펜타닐, 모르핀, 리도카인, 치오펜탈, 프로포폴 혹은 트라마돌과 약물동태학적 상호작용을 일으키지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3ab8e408f1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 이 약의 안전성은 확립되지 않았다. 동물실험에서 이 약은 배 또는 태자의 발생, 임신기간 그리고 출생 전ㆍ후 발육에는 직ㆍ간접적인 영향을 나타내지는 않으나, 동물 실험으로 항상 사람에서의 반응을 예측할 수 있는 것은 아니므로 다른 약물과 마찬가지로 임부에는 권장되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9c9780a9d1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 유즙으로의 이행이 보고되어 있으므로 이 약을 투여 받은 수유부는 수유를 중단해야 한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:09:55"
+}

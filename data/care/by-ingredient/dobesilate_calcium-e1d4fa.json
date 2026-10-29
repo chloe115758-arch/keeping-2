@@ -1,0 +1,76 @@
+{
+  "ingredient": "dobesilate calcium",
+  "productSeq": "201708434",
+  "itemName": "도브라정250밀리그램(도베실산칼슘수화물)",
+  "atc": "C05BX01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20220713",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201708434/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201708434/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201708434/NB"
+  },
+  "rules": [
+    {
+      "id": "93194b79b7",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에서의 도베실레이트칼슘의 사용 경험은 제한적이다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "90f99fb5df",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물 연구에서는 생식 독성에 대한 영향을 나타내지 않았다. 임신 중 도베실레이트칼슘의 사용은 피하는 것이 바람직하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d775b15558",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "도베실레이트칼슘은 매우 적은 양 (3 × 500mg을 섭취 시, 0.4 μg/㎖)이 모유로 분비된다. 모유 수유 중에 도베실레이트칼슘의 복용은 바람직하지 않다. 치료를 중지하거나 모유수유를 중지하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ab6ab3bf70",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "65세 이상의 고령자에서 다른 환자에 비하여 안전성에 있어 특별히 주의할 사항은 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1a3d740b91",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "식후에 충분한 음료와 함께 투여한다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:06:59"
+}

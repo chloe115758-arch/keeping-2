@@ -1,0 +1,15 @@
+{
+  "ingredient": "calcium carbonate + cholecalciferol 1KI.U",
+  "productSeq": "201703064",
+  "itemName": "디카본100정",
+  "atc": "A12AX",
+  "etcOtc": "일반의약품",
+  "changeDate": "20250602",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201703064/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201703064/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201703064/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:07:19"
+}

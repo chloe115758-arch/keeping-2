@@ -1,0 +1,83 @@
+{
+  "ingredient": "ketotifen fumarate",
+  "productSeq": "199000820",
+  "itemName": "나잘렌정(푸마르산케토티펜)",
+  "atc": "R06AX17",
+  "etcOtc": "전문의약품",
+  "changeDate": "20200406",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199000820/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199000820/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199000820/NB"
+  },
+  "rules": [
+    {
+      "id": "efc10a8bfd",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "진정제, 수면제 등의 중추신경억제제, 항히스타민제 및 알코올과 병용투여시 서로의 작용을 증강시킬 수 있으므로 이러한 경우에는 감량하는 등 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cbd9a79299",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신의 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1ac84ca348",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부에 대한 임상 자료는 없지만, 동물실험(랫트)에서 유즙으로의 분비가 보고되었으므로 수유 중인 여성에는 투여하지 않는 것이 바람직하며 부득이한 경우에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "631b7f9e7e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 사람의 생식능에 미치는 영향에 대한 자료는 없다. 랫트 및 토끼를 대상으로 한 생식독성실험에서 배자독성이나 기형발생은 나타나지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c2ec4a17bf",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에 대한 투여 시 용량을 조절해야 한다는 근거는 없다. 그러나 일반적으로 고령자는 생리기능이 저하되어 있으므로 투여 시 주의한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:19:49"
+}

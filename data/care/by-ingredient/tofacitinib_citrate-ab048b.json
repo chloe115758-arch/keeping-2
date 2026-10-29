@@ -1,0 +1,112 @@
+{
+  "ingredient": "tofacitinib citrate",
+  "productSeq": "202501539",
+  "itemName": "젤토파정10밀리그램(토파시티닙시트르산염)",
+  "atc": "L04AF01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250812",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501539/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501539/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501539/NB"
+  },
+  "rules": [
+    {
+      "id": "7af268f6f7",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (1)",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신한 여성을 대상으로 적절하게 잘 진행된 시험은 없다. 이 약은 임부 또는 임신가능성이 있는 여성에게 투여해서는 안 된다. 가임여성에게 이 약 투여 중 및 마지막 용량투여 후 최소 4주동안은 효과적인 피임법을 사용하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0fa0dda813",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (2)",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "토파시티닙은 랫드와 토끼를 대상으로 한 실험에서 최대권장용량 10 mg 1일 2회의 각각 73배 및 6.3배 노출 했을 때 태자손실, 최기형성을 보였다. 랫드의 배·태자 발달시험에서 토파시티닙은 권장 용량 5 mg 1일 2회의 146배 노출 및 최대권장용량 10 mg 1일 2회의 73배 노출(랫드에서 경구 용량 100 mg/kg/day으로 AUC에 근거함)에서 최기형성을 보였다. 최기형성은…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9b78c8ffd0",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "토끼의 배·태자 발달시험에서 토파시티닙은 권장용량 5 mg 1일 2회의 약 13배 노출 및 최대권장용량 10 mg 1일 2회의 약 6.3배 노출농도 (토끼에서 경구 용량 30 mg/kg/day으로 AUC에 근거함)에서 모체독성의 징후 없이 최기형성이 나타났다. 최기형성은 흉복벽파열증, 배꼽내장탈장, 막성심실중격결손, 두개/골격 기형 (소구증, 소안구증), 정중선 및 꼬리 결손 등으로 나타났다…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0e6c98a5ed",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 (3)",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "주산기 및 출생 후의 랫드 시험에서, 권장용량 5 mg 1일 2회의 약 73배 노출 및 최대권장용량 10 mg 1일 2회의 약 36배 노출농도 (랫드에서 경구 용량 50 mg/kg/day으로 AUC에 근거함)에서 생존한 새끼의 크기, 출생 후 생존 및 새끼 체중이 감소하였다. 랫드에서 권장용량 5 mg 1일 2회의 약 17배 노출 및 최대권장용량 10 mg 1일 2회의 약 8.3배 노출농도(…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7a48534da1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "공개된 자료에 따르면, 토파시티닙은 모유로 이행된다. 공개문헌 및 시판후 자료에서 토파시티닙이 모유 수유 중인 영아에게 미치는 영향에 대한 정보는 인과관계가 없는 소수의 이상사례로 국한된다. 모유 생성에 미치는 영향에 대한 자료는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e7de112afe",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "많은 약물들이 모유를 통해 배출되고, 모유를 먹는 영아에게 토파시티닙에 의한 중대한 이상 반응 잠재성이 있기 때문에, 수유부에 대한 약물의 중요성을 고려하여, 수유 중단 또는 약물 투여 중단을 결정해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "18d9f992a2",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "류마티스 관절염 임상시험I-VI에 참여한4,271명의 환자 중 65세 이상 고령자는 총 608명이었고, 이 중 85명은 75세 이상이었다. 중대한 감염은 이 약을 투여한 피험자 중 65세 이상에서 65세 미만인 환자보다 빈번하게 나타났다. 일반적으로 고령자에서 감염 사례가 높기 때문에 이 약 투여 시 주의가 요구된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "04a24d6fcf",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "궤양성 대장염 임상시험에서 이 약을 투여받은 1156명의 환자 중, 총 77명(7%)이 65세 이상 이었다. 이 환자수는 젊은 환자 군에서의 반응과 다른지 비교하기에 충분치 않았다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:09:43"
+}

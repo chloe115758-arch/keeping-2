@@ -1,0 +1,164 @@
+{
+  "ingredient": "fluoxetine hydrochloride",
+  "productSeq": "201906904",
+  "itemName": "플루옥캡슐20밀리그램(플루옥세틴염산염)",
+  "atc": "N06AB03",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240327",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906904/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906904/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906904/NB"
+  },
+  "rules": [
+    {
+      "id": "eee809311d",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 3)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "병용약물 또는 알코올의 복용: 환자들은 알코올 또는 생약을 포함한 일반약이나 전문약을 복용하고 있거나 또는 복용계획이 있다면 담당의사의 조언을 구해야 한다. 또한 푸로작을 복용하는 중에 어떠한 약물이라도 중단할 계획이 있을 경우에도 의사의 조언을 구해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f096b0f882",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 17)",
+      "subject": "표 1.",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "세로토닌 증후군 : 동 제제를 포함한 세로토닌-노르에피네프린재흡수억제제(SNRIs) 및 세로토닌선택적재흡수억제제(SSRIs)를 단독으로 투여했을 뿐만 아니라 특히 다른 세로토닌 작동성 약물들(트립탄계열약물, 삼환계 항우울제, 펜타닐, 리튬, 트라마돌, 트립토판, 부스피론, 세인트존스워트(St. John's Wort) 포함) 및 세로토닌대사를 저해하는 약물들(특히 둘 다 정신질환 치료를 위한…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "95a780395e",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "표 1.",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "예를 들어 트립탄 계열 약물들, 삼환계 항우울제, 펜타닐, 리튬, 트라마돌, 부스피론, 트립토판 및 세인트존스워트(St. John's Wort)와 같은 다른 세로토닌 작동성 약물들과 동 제제를 병용투여하는 것이 임상적으로 유익성이 있다면 환자들은, 특히 치료개시 중 및 용량을 증가할 때, 잠재적으로 증가된 세로토닌 증후군 위험성에 대하여 인식해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "41a01225e4",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 10)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 : 정형시험에서 이 약은 혈중 알코올 농도를 증가시키거나 알코올 작용을 증강시키지 않았다. 그러나 이 약 투여 시 알코올의 섭취는 권고되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "555ab5fb99",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중에는 이 약의 잠재적 유익성이 태아에 대한 잠재적 위험성을 상회하는 경우에만 사용되어야 한다. 모든 임신은 약물노출에 관계없이 태아결함, 유산 또는 기타 유해한 결과의 배경위험이 있다. 임신한 여성에 대한 적절하게 조절된 임상시험은 없었다. 임신 초기 3개월에 이 약의 노출 위험을 평가한 많은 역학적 연구결과는 일관되지 않았고 선천적 기형위험 증가에 대한 결정적 증거를 제공하지 않았다…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "04501af1a2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "특히 임신 후기 혹은 진통 시작 바로 전에 이 약의 사용은 신생아에게 다음의 사례가 보고되고 있으므로 주의를 기울여야 한다.:과민성, 떨림, 근육긴장저하, 지속적인 울음, 젖을 빨거나 잠을 자는데 어려움. 이러한 증상은 세로토닌 작용이거나 금단 증상을 나타내는 것일 수 있다. 발생 시간과 증상 지속 기간은 플루옥세틴(4~6일)과 이것의 활성성분인 노르플루옥세틴(4~16일)의 긴 반감기와 관련…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "be934bd9d7",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "관찰연구 데이터는 출산 전 한달 이내에 SSRI 또는 SNRI 노출에 따른 산후출혈의 위험성 증가(2배 미만)에 대한 근거를 제시하였다. 이 약의 치료와 산후출혈 간의 연관성을 조사한 연구는 없지만, 이 약의 작용기전을 고려할 때 위험성을 배제할 수 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "176f1a7e79",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유: 플루옥세틴과 이것의 활성성분인 노르플루옥세틴은 사람의 모유로 분비되는 것으로 알려져 있다. 유해사례는 모유 수유아에서 보고되고 있다. 이 약의 치료가 필요하다고 여겨지는 경우 수유의 중단이 고려되어야 한다. 그러나 수유가 지속될 경우 이 약의 최소 유효량이 처방되어야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ce042650d3",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물 시험에서 이 약이 정자의 질에 영향을 미칠 수 있는 것으로 나타났다. 일부 SSRI와 연관된 사례보고에서 사람의 정자 질에 미치는 작용은 가역적임이 나타났다. 사람의 가임력에 미치는 영향은 아직까지 관찰되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "17e65521f1",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자의 사용에 대해서는 충분히 평가되지 않았지만 연령과 관련된 이상반응은 발견되지 않았다. 그러나 병발질환이 있거나 다른 약물을 병용 투여하는 고령자에서 연령과 관련된 이상반응은 배제할 수 없다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:06:03"
+}

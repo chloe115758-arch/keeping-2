@@ -1,0 +1,40 @@
+{
+  "ingredient": "naftopidil",
+  "productSeq": "201903446",
+  "itemName": "나포피딜정75밀리그램(나프토피딜)",
+  "atc": "G04CA",
+  "etcOtc": "전문의약품",
+  "changeDate": "20211229",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903446/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903446/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903446/NB"
+  },
+  "rules": [
+    {
+      "id": "54dd158863",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "6. 고령자에의 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자 중에는 간기능이 저하된 환자가 있으므로 이러한 경우에는 환자 상태를 관찰하면서 신중하게 투여한다. 임상시험에서는, 75세 이상의 고령자 80례에서 사용되었지만, 2례에서 현기증, 2례에서 부종, 1례에서 저혈압, 1례에서 오한, 또, 1례에서 호산구의 증다. 1례에서 AST(GOT), ALT(GPT)의 상승, 1례에서 ALP의 상승, 1례에서 요산의 상승, 1례에서 혈청칼륨의 상승이…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bc22aae145",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "성인에게 나프토피딜로서 1일 1회 25mg부터 투여를 시작하고, 효과가 불충분한 경우는 1～2주간의 간격을 두고 50～75mg로 점증하여, 1일 1회 식후 경구투여한다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:14"
+}

@@ -1,0 +1,295 @@
+{
+  "ingredient": "zolpidem tartrate",
+  "productSeq": "200606262",
+  "itemName": "졸피움정(졸피뎀타르타르산염)",
+  "atc": "N05CF02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230315",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606262/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606262/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606262/NB"
+  },
+  "rules": [
+    {
+      "id": "3485481c1b",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고 1)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약의 첫 복용 혹은 재복용 후에 수면보행, 수면운전 그리고 완전히 깨지 않은 상태에서의 다른 행위를 포함한 복합 수면 행동이 나타날 수 있다. 환자는 복합 수면 행동 중에 심각한 부상을 입거나 다른 사람에게 부상을 입힐 수 있다. 이러한 부상은 치명적인 결과를 초래할 수 있다. 다른 복합 수면 행동(예. 음식 준비 및 먹기, 전화하기, 성관계)이 보고되었다. 환자들은 이러한 사건을 대체로…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "16834af446",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고 4)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "다양한 비정상적인 사고 및 행동 변화들이 진정제/수면제 사용과 관련하여 발생하는 것이 보고되었다. 이러한 변화들 중 몇몇은 억제 감소(예, 비정상적인 공격성 및 외향성)로 특징지워질 수 있으며 알코올 및 기타 중추신경계 억제제에 의한 효과와 유사하다. 그 외 보고된 행동 변화들에는 괴기한 행동, 초조, 환각, 이인증(depersonalization)이 있었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "45f5327426",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고 9)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약은 알코올과 함께 복용할 때 상가적인 효과를 나타내므로 함께 복용하지 않도록 한다. 또한, 다른 중추신경계 억제 약물과의 복합 효과 가능성에 대하여 주의한다. 이 약과 이런 약물들과 병용할 때 상가적인 효과의 가능성으로 인하여 용량 조절이 필요할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "77eab8b652",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "5) 의존성",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약의 사용은 남용 그리고/또는 신체적·정신적 의존성을 야기할 수 있다. 이 약을 권장 용법, 용량으로 사용할 때 의존성의 위험을 최소화할 수 있으며, 이러한 위험도는 용량 및 치료 기간에 따라 증가한다. 이 약으로 4주 보다 긴 기간 동안 치료받은 환자들에서 의존성 사례가 더 자주 보고되었다. 남용과 의존성의 위험은 정신병 병력이 있는 환자, 알코올 또는 약물 남용의 경험이 있는 환자들에…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d2d2ee221f",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "9) 정신운동부전",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "손상된 운전 능력을 포함하여 정신운동 부전의 위험이 증가되는 경우는 다음과 같다: 각성상태의 정신을 필요로 하는 작업을 수행하기 전 7-8시간 안으로 투여한 경우, 권장량보다 높은 용량을 투여한 경우, 다른 중추신경계 억제제, 알코올, 혈중 졸피뎀 농도를 높이는 다른 약물과 함께 투여한 경우",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a9499b5e88",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "subject": "13) 기계 조작 및 운전에 대한 영향",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "또한, 알코올 및 다른 중추 신경계 억제제와 졸피뎀의 병용투여는 이러한 영향의 위험을 증가시킨다. 환자는 이 약을 투여 시 알코올 또는 다른 정신 활성 물질을 복용하지 않아야 함을 주지하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b80cde57db",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "1) 중추신경계 작용 약물",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올과 졸피뎀타르타르산염과의 정신운동 실행에 대한 상가적인 효과는 입증되었다. 알코올과의 병용에 의해 이 약의 진정작용이 증가할 수 있으므로 병용하지 않는다. 이것은 운전 및 기계조작 능력에 영향을 미친다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "fc349f119b",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "1) 중추신경계 작용 약물",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "리팜피신 및 세인트존스워트(St John’s Wort)와 같은 CYP3A4 유도인자와 병용투여 할 경우, 이 약의 약력학적 효과가 감소할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2b16ed0c17",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "1) 중추신경계 작용 약물",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "세인트존스워트는 이 약과 약동학적 상호작용을 보였다. 이 약을 세인트존스워트와 병용투여 시, 이 약의 평균 Cmax 및 AUC가 단독투여 시 보다 각각 33.7%, 30.0% 감소하였다. 세인트존스워트와 병용투여 시 이 약의 혈중 농도가 감소할 수 있으므로, 병용투여는 권장되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2cf63c0fad",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "비록 동물실험에서 어떠한 최기형성 또는 태아 독성 효과도 관찰되지 않았으나 임부에 대한 안전성이 확립된 것은 아니다. 다른 약물들과 마찬가지로 이 약은 임신 중, 특히 임신 초 3개월간은 투여를 피하도록 해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7162ed01e4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "가임여성이 임신을 하고자 하거나 임신이 의심되는 경우, 이 약물 사용 중단을 위해 의사와 상의해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9059ae4468",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 태반을 통과한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "000cec1e3c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "코호트 연구로부터 수집된 많은 양의 자료에서 임신 초기(first trimester)동안 벤조디아제핀계 약물 또는 이 약에 노출에 따른 기형 발생의 증가는 입증되지 않았다. 그러나 환자-대조군 역학연구에서 벤조디아제핀계 약물 노출에 따른 구순열 및 구개열 발생의 증가가 관찰되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "74a6c4b444",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중기(second trimester) 및/또는 말기(third trimester) 동안 벤조디아제핀계 약물 또는 이 약을 투여한 후에 태아 움직임 감소 및 태아 심박수 변동성이 보고되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ac492aecfd",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 말기동안이나 출산 동안의 이 약 투여는, 이 약물의 약리학적 작용으로, 저체온증, 근육긴장저하, 잘 빨지 못하는 수유장애, 중등도의 호흡저하와 같은 신생아에 대한 영향이 나타날 수 있다. 임신 말기에 이 약을 다른 중추신경계 억제제와 함께 투여한 사례에서 중증의 신생아 호흡 저하가 보고되었고, 이 약 단독으로 투여한 사례에서도 보고되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "d4a0a2831c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "벤조디아제핀계 약물 및 벤조디아제핀 유사 작용 약물들을 임신 후반기 동안에 만성적으로 복용한 임부로부터 태어난 신생아의 경우, 신체적 의존성을 나타낼 수도 있으며, 출생 후에 금단 증상을 일으킬 수 있는 위험성도 있다. 출생 후에 신생아의 적절한 모니터링이 권장된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ddae1661dc",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부에게서 이 약 소량이 모유에서 발견되었다. 그러므로 수유부에게는 이 약을 사용하지 않도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "27e69b4544",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "60세 이상의 노인에 대하여 이 약의 임상시험이 실시되었다 (미국: 154명, 미국 외 국가: 897명). 미국에서 10mg 이하의 용량으로 이 약 또는 위약을 투여한 시험에서 발현율이 위약군에 비해 2배 이상이고, 3% 이상인 이상반응은 현기증(3%), 졸음(5%), 설사(3%)였다. 미국 외 국가에서 실시된 임상에서 총 1959명의 환자를 대상으로 실시한 임상시험에서 30명(1.5%)의…",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:00"
+}

@@ -1,0 +1,114 @@
+{
+  "ingredient": "nebivolol hydrochloride",
+  "productSeq": "201208083",
+  "itemName": "네비스톨정5밀리그램(네비보롤염산염)",
+  "atc": "C07AB12",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260821",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201208083/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201208083/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201208083/NB"
+  },
+  "rules": [
+    {
+      "id": "3587947114",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 14)",
+      "subject": "약동학적 상호작용",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "시메티딘과의 병용투여시 이약의 혈중농도는 상승하지만 임상효과에는 변함이 없다. 라니티딘과의 병용투여는 이 약의 약동학에 영향을 주지 않는다. 이 약은 음식과 함께 복용하는 경우나 식사간에 제산제를 복용할 때 같이 투여될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ee651fd21c",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 16)",
+      "subject": "약동학적 상호작용",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올, 퓨로세미드 또는 히드로클로로치아짓과의 병용투여는 이 약의 약동학에 영향을 미치지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1b61600f40",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신중의 투여에 대한 안전성은 확립되어 있지 않았다. 베타차단제는 태반환류를 감소시키는데 이것은 자궁내의 태아사망과 미숙 및 조숙 분만을 초래할 수 있다. 또한 부작용(저혈당, 서맥)이 태아와 신생아에서 나타날 수 있다. 출생후 기간에서 신생아의 심장 및 폐합병증의 위험성이 증가된다. 따라서 이 약은 임부 또는 임신하고 있을 가능성이 있는 부인에게 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b218b0b392",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "대부분의 베타차단제 특히 네비보롤과 그 활성대사물과 같은 지방친화성화합물은 유즙을 통과한다. 이 약이 인체 모유로 이행되는지는 알려져 있지 않으나, 동물시험에서 모유중으로의 이행이 보고되어 있으므로 수유중에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e53413a53b",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에는 다음 사항에 주의하여 저용량에서 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bd57dd2736",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자에서의 과도한 혈압강하는 바람직하지 않다 (뇌경색등이 나타날 수 있다.).",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4fa666b0e5",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "휴약이 필요할 경우에는 천천히 감량한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:16"
+}

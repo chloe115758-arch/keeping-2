@@ -1,0 +1,238 @@
+{
+  "ingredient": "venlafaxine hydrochloride",
+  "productSeq": "200308353",
+  "itemName": "이팩사엑스알서방캡슐75밀리그램",
+  "atc": "N06AX16",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230914",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308353/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308353/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308353/NB"
+  },
+  "rules": [
+    {
+      "id": "1f09878f69",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "subject": "1) 과량투여",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올의 중추신경계 작용과 정신 질환의 임상적 악화 가능성, 그리고 중추신경계 억제 효과를 포함한 이 약과의 부정적인 상호작용 가능성을 고려하여 이 약으로 치료받는 환자에게 알코올을 섭취하지 않도록 권고해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "55f1114159",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "subject": "1) 과량투여",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 및/또는 다른 약물들과 병용시, 치명적인 결과를 동반한 건을 포함하여 이 약의 과량투여가 두드러지게 보고되었다. (’10. 과량투여시의 처치’항 참조)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2bf1c931d9",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "subject": "3) 지속적 고혈압",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트 존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "동 제제를 포함한 세로토닌-노르에피네프린재흡수억제제(SNRIs) 및 세로토닌 선택적재흡수 억제제(SSRIs)를 단독으로 투여했을 뿐만 아니라 특히 다른 세로토닌 작동성 약물들 (트립탄계열약물, 삼환계 항우울제, 시부트라민, 아편유사제(opioids)(펜타닐, 덱스트로메토르판, 타펜타돌, 메페리딘, 메타돈, 펜타조신 등), 트라마돌, 리튬, 트립토판, 부스피론, 암페타민류, 세인트 존스워트(S…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6fb3b1168c",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "subject": "3) 지속적 고혈압",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "세인트존스워트"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "예를 들어 트립탄 계열 약물들, 삼환계 항우울제, 아편유사제 (opioids) (펜타닐 등), 리튬, 트라마돌, 부스피론, 암페타민류, 트립토판 및 세인트존스워트(St. John's Wort)와 같은 다른 세로토닌 작동성 약물들과 동 제제를 병용 투여하는 것이 임상적으로 유익성이 있다면 환자들은, 특히 치료개시 중 및 용량을 증가할 때, 잠재적으로 증가된 세로토닌 증후군 위험성에 대하여 인식…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f92f764f09",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "5) 알코올",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올의 중추신경계 작용과 정신 질환의 임상적 악화 가능성, 그리고 중추신경계 억제 효과를 포함한 이 약과의 부정적인 상호작용 가능성을 고려하여 이 약으로 치료받는 환자에게 알코올을 섭취하지 않도록 권고해야 한다",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "699e6c21d5",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용",
+      "subject": "(3) CYP1A2",
+      "matched": [
+        {
+          "key": "caffeine",
+          "kind": "food",
+          "ko": "카페인·커피",
+          "surface": "카페인"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "시험관내 시험시 벤라팍신은 CYP1A2를 저해하지 않는다. 이러한 사실은 생체내 시험시 벤라팍신이 CYP1A2 기질인 카페인 대사를 저해하지 않았던 임상적 약물 상호작용 연구에 의해 확인되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bcca8d5c33",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 안전성은 확립되어 있지 않다. 따라서, 임부의 경우 유익성이 위험성을 상회할 경우에만 이 약을 투여해야 한다. 출산 직전에 또는 출산할 때까지 이 약을 복용한 경우, 신생아에 대한 금단 증상을 고려해야만 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "461d8e0e18",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 시작 시점에 기분이 정상 상태였던 주요 우울증 이력을 가진 201명의 여성에 대한 전향적인 종적 연구 결과, 임신 중 항우울제를 중단한 여성이 항우울제를 계속 복용한 여성보다 주요 우울증의 재발을 더 많이 경험한 것으로 나타났다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0863b62981",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 중기-후기에 SNRI의 노출은 자간전증의 위험을 높일 수 있으며, 분만 직전의 SNRI의 노출은 분만후 출혈의 위험을 증가시킬 수 있다. 관찰연구 데이터에서 출산 전 한달 이내에 SSRI 또는 SNRI 노출에 따른 산후 출혈의 위험성 증가(2배미만)가 보고되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8a9e6cb404",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 마지막 3개월에 벤라팍신에 노출된 신생아의 일부가 경관식이법, 호흡보조 및 장기 입원을 요하는 합병증을 나타냈다. 이러한 합병증은 출산 즉시 나타날 수 있다. 보고된 임상연구결과로는 호흡곤란, 청색증, 무호흡증, 발작, 체온 불안정, 수유곤란, 구토, 저혈당증, 근긴장저하증, 근긴장과다증, 반사항진, 진전, 사지떨림, 흥분, 계속 울기 등이 있다. 이들 특징은 SSRI와 SNRI의 직접…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "aea2f30ae4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 5)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "사람에 있어서 산통 및 분만에 대한 이 약의 영향은 알려지지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b71980fc75",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 6)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "역학조사에서 임신 중, 특히 임신 후기에 SSRIs의 투여는 신생아의 지속성 폐동맥 고혈압 (PPHN) 의 위험성 증가와 관련이 있는 것으로 나타났다. 비록 SNRI 투여와 PPHN의 관련성에 대한 연구가 조사된 바는 없으나, 벤라팍신의 작용기전 (세로토닌 재흡수 억제)를 고려할 때, 이러한 위험 가능성이 제외될 수는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f849deaf18",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부, 수유부에 대한 투여 7)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "벤라팍신과 O-데스메칠벤라팍신의 모유로의 이행이 보고되었다. 이 약이 영아에게 심각한 이상반응을 일으킬 수도 있으므로, 수유부에 대한 이 약의 중요성을 고려하여 수유를 중지하거나, 이 약의 복용을 중지하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c226e1ebec",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "시판전에 실시된 우울증과 범불안장애, 사회공포증, 공황장애에 대한 위약 대조 시험에서 이 약을 복용한 환자 중 각각 4%(14/357)와 6%(77/1381), 1%(10/819), 2%(16/1001)가 65세 이상의 고령자였다. 벤라팍신정에 대한 시판 전 우울증 시험에 참여한 피험자 2,897명 중 12%(357명)가 65세 이상이었다. 고령자와 보통 성인에게서 유효성과 안전성에 대한 차…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c1a505b951",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에게서 벤라팍신과 O-데스메칠벤라팍신의 약동학이 변하지 않았다. 연령만을 기준으로 할 경우에는 용량증감이 필요없지만 고령자에서 좀 더 흔한 신장애나 간장애와 같은 다른 질환이 있을 경우에는 용량감소가 고려되어야 한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:23"
+}

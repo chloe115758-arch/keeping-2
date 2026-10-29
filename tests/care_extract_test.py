@@ -25,7 +25,7 @@ t('&nbsp;·태그가 정리된다', all('&nbsp;' not in p for _, ps in arts for 
 print('정답지: 레보티록신')
 cal = [r for r in find('calcium') if r['interval']]
 t('칼슘 + 최소 4시간 간격(상호작용 (12))', len(cal) == 1 and cal[0]['interval']['minHours'] == 4 and cal[0]['interval']['qualifier'] == '최소' and '(12)' in cal[0]['where'], cal)
-t('철분·알루미늄 제산제·콜레스티라민(5)): 간격 숫자는 없음', any({'iron', 'antacid', 'cholestyramine'} <= keys(r) and r['interval'] is None and '(5)' in r['where'] for r in R))
+t('철분·알루미늄 제산제·콜레스티라민(5)): 간격 숫자는 없음', any({'iron', 'aluminumAntacid', 'cholestyramine'} <= keys(r) and r['interval'] is None and '(5)' in r['where'] for r in R))
 t('PPI((16))', any('ppi' in keys(r) and '(16)' in r['where'] for r in R))
 t('세인트존스워트((15))', any('stJohnsWort' in keys(r) and '(15)' in r['where'] for r in R))
 t('비오틴: 일반적 주의 7)과 상호작용 14)', {'5. 일반적주의 (7)', '6. 상호작용 (14)'} <= {r['where'] for r in find('biotin')}, [r['where'] for r in find('biotin')])
@@ -41,7 +41,7 @@ bad = '1) 칼슘채널차단제와 병용투여시 혈압이 떨어질 수 있�
 nb = '<ARTICLE title="6. 상호작용"><PARAGRAPH><![CDATA[%s]]></PARAGRAPH></ARTICLE>' % bad
 t('칼슘채널차단제는 칼슘으로, 스테아르산마그네슘은 마그네슘으로 매칭하지 않는다', C.extract_rules(nb) == [], C.extract_rules(nb))
 t('"비타민K의존성 응고인자"를 비타민 K 영양제로 매칭하지 않는다(오탐 방지)', not any('vitaminK' in keys(r) for r in R), [r['where'] for r in find('vitaminK')])
-t('걸린 키워드가 정답지와 같다(과다·누락 없음)', sorted({k for r in R for k in keys(r)}) == ['antacid', 'biotin', 'calcium', 'cholestyramine', 'iron', 'ppi', 'stJohnsWort'], sorted({k for r in R for k in keys(r)}))
+t('걸린 키워드가 정답지와 같다(과다·누락 없음)', sorted({k for r in R for k in keys(r)}) == ['aluminumAntacid', 'biotin', 'calcium', 'cholestyramine', 'iron', 'ppi', 'stJohnsWort'], sorted({k for r in R for k in keys(r)}))
 t('식사 관계: 실제 허가사항 문장("식사하기 적어도 1시간 전 공복에 복용한다")', any(r['kind'] == 'timing' for r in C.extract_rules('', '<ARTICLE title=""><PARAGRAPH><![CDATA[이 약은 식사하기 적어도 1시간 전 공복에 복용한다.]]></PARAGRAPH></ARTICLE>')))
 t('간격 숫자 읽기: "2~3시간 간격", "4시간 이상 간격"', C._interval('2~3시간 간격')['minHours'] == 2 and C._interval('4시간 이상 간격')['minHours'] == 4)
 
@@ -63,4 +63,8 @@ t('일반적 주의에서도 비오틴은 잡고 철분제제는 잡지 않는�
 r6 = rules_for('7. 임부 및 수유부에 대한 투여', '시타글립틴', '(1) 임신 중에는 투여하지 않는다.', '메트포르민염산염', '(1) 임부에 대한 안전성은 확립되지 않았으므로 투여하지 않는다.')
 t('소제목 한 줄을 규칙으로 만들지 않고 subject로 남긴다', len(r6) == 2 and [r['subject'] for r in r6] == ['시타글립틴', '메트포르민염산염'], r6)
 t('짧아도 문장으로 끝나면 소제목이 아니다', not C._is_heading('이 약을 투여하지 않는다.') and C._is_heading('임부에 대한 투여'))
+r7 = rules_for('6. 상호작용', '(1) 다른 산 분비 억제제나 제산제와 마찬가지로 이 약 투여 중에는 케토코나졸의 흡수가 감소될 수 있다.')
+t('"…제산제와 마찬가지로"는 같은 부류와의 비교라서 제산제 병용으로 잡지 않는다', 'antacid' not in {m['key'] for r in r7 for m in r['matched']}, r7)
+r8 = rules_for('6. 상호작용', '(1) 제산제와 병용투여시 이 약의 흡수가 감소될 수 있다.', '(2) 알루미늄 함유 제산제와 병용투여시 흡수가 지연될 수 있다.')
+t('일반 "제산제"와 "알루미늄 함유 제산제"를 구분해서 잡는다', [[m['key'] for m in r['matched']] for r in r8] == [['antacid'], ['aluminumAntacid']], r8)
 print('\n%d개 통과' % n)

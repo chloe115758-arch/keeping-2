@@ -1,0 +1,15 @@
+{
+  "ingredient": "acetaminophen(encapsulated)",
+  "productSeq": "202006755",
+  "itemName": "엘앤씨메가펜정(아세트아미노펜제피세립)",
+  "atc": "N02BE01",
+  "etcOtc": "일반의약품",
+  "changeDate": "20251110",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006755/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006755/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006755/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:07:52"
+}

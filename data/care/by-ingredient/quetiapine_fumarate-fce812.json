@@ -1,0 +1,164 @@
+{
+  "ingredient": "quetiapine fumarate",
+  "productSeq": "202001785",
+  "itemName": "에큐민정25밀리그램(쿠에티아핀푸마르산염) ",
+  "atc": "N05AH04",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250212",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001785/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001785/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001785/NB"
+  },
+  "rules": [
+    {
+      "id": "6fd73ad4f3",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "음주"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "췌장염: 임상시험 및 시판 후 경험에서 췌장염이 보고되었다. 시판 후 보고 중 모든 췌장염 사례가 위험인자를 가진 것은 아니었으나, 다수의 환자는 증가된 중성지방 (‘5. 일반적주의 13) 지질’ 항 참조), 담석 및 음주와 같이 췌장염과 관련된 것으로 알려진 위험인자들을 가지고 있었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ca73c78c38",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 20)",
+      "subject": "12) 수면 무호흡 증후군",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "오용 및 남용: 오용 및 남용 사례는 보고되었다. 이 약 처방 시 알코올 또는 약물남용 병력에 대하여 주의 깊게 평가하여야 하고, 오용 또는 남용의 징후(예, 내성발현, 용량증가, 약물추구행동)에 대하여 면밀히 관찰하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4f2ed45547",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "쿠에티아핀의 중추신경계작용을 고려할 때 이 약은 다른 중추신경계작용약물이나 알코올과 병용 시 주의하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "46269e0588",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 9)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "쿠에티아핀(복용량 25mg)의 약물동태를 평가하기 위해 건강한 지원자를 대상으로 한 시험에서, 케토코나졸과의 병용투여 시 쿠에티아핀의 84%의 경구 소실률 감소, 평균 Cmax와 AUC가 각각, 235%, 522% 증가를 야기하였다. 쿠에티아핀의 반감기는 2.6시간에서 6.8시간으로 증가하였다. 임상적용 시 유사한 정도의 상호작용 가능성을 고려하였을 때, 쿠에티아핀과 아졸계 항진균제, 마크로…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "980c3aee8a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부를 대상으로 한 적절한 시험자료는 없다. 이 약이 임부에게 투여 시 태아에게 해로운 결과를 끼칠지 또는 생식능력에 영향을 미칠지에 대해 알려진 바 없다. 쿠에티아핀을 투여 받은 일부 임부에서 이후, 신생아의 금단 증상이 보고되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "fd45c5df84",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 3기에 항정신병약을 복용한 임부로부터 출생한 신생아는 추체외로장애 및/또는 금단 증상이 나타날 위험성이 있다. 이러한 신생아에게 초조, 근육긴장항진, 근육긴장저하, 진전, 졸음, 호흡곤란, 섭식장애가 보고되었으며, 이러한 증상은 그 중증도에 있어서 다양했다. 일부 경우 이러한 증상들은 스스로 조절되었으나 다른 경우의 신생아들은 장기 입원 및 중환자실에서의 치료를 요하였다. 그러므로 임부…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2460601c77",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "쿠에티아핀이 인간의 모유로 이행되는 정도는 알려져 있지 않다. 따라서 수유중인 여성은 이 약을 투여하는 동안에는 수유를 피하도록 권고되어야 한다(동물실험(랫드)에서 이 약이 유즙으로 이행된다고 보고되었다.).",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5abad653f3",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자의 쿠에티아핀의 경구 소실률은 비고령자보다 30~50% 더 낮았으며 AUC가 1.5배 더 높았고 상대적으로 높은 혈장 농도를 유지하였다. 외국 임상 시험에 의하면, 비고령자에 비해 기립저혈압의 발현빈도가 증가하는 경향이 인정되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4cf2e7bcda",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약을 고령자에게 투여 시 저용량으로 시작하여야 하며, 환자의 상태를 주의 깊게 모니터링하면서 점진적으로 증량하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "48a0a4981b",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "- 성인 : 이 약은 식사와 관계없이 1일 1회 취침 전 복용한다. 처음 4일간의 1일 총 용량은 1일째 50 mg, 2일째 100 mg, 3일째 200 mg, 4일째에 300 mg에 도달하도록 한다. 이 약의 치료적 확증 임상시험에서는 1일째 50 mg, 2일째 100 mg, 3일째 200 mg, 4일째 300 mg, 5일째 400 mg, 8일째 600 mg까지 투여하였다. 1일 권장용량은…",
+      "meal": "취침 전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:03:40"
+}

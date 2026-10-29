@@ -1,0 +1,83 @@
+{
+  "ingredient": "pirfenidone",
+  "productSeq": "201703971",
+  "itemName": "파이브로정200밀리그램(피르페니돈)",
+  "atc": "L04AX05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20241025",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201703971/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201703971/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201703971/NB"
+  },
+  "rules": [
+    {
+      "id": "d86978fccf",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 6)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽주스 : 자몽주스는 CYP1A2를 저해하므로 이 약을 투여하는 동안 자몽주스 섭취를 제한하여야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2256b4462c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부를 대상으로 이 약을 투여한 임상시험자료는 없다. 임부 또는 임신하고 있을 가능성이 있는 여성에 대한 투여는 권장되지 않는다. 고용량 (≥1000mg/kg/day)이 노출된 랫트에서 임신기간 연장, 출생률 저하가 나타났고, 토끼에서 유산 또는 조산이 나타났다. 동물시험에서 피르페니돈 및 그 대사체는 태반을 통과하는 것으로 나타났다. 랫트와 토끼에서 최기형성은 확인되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8b7641aef6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "피르페니돈 또는 대사체가 모유로 이행되는지 여부는 알려져 있지 않으므로, 수유부는 이 약을 투여시 수유를 피해야 한다. 랫드에서 피르페니돈과 그 대사체가 모유로 이행되었고, 수유중기 이후에 출생아의 체중증가가 억제되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "60c8690690",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리 기능이 저하되어 있을 가능성이 높으므로, 환자의 상태를 관찰하면서 신중하게 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e3f5fa097e",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "&#8728; 성인 : 이 약은 초기용량으로 1일 3회, 1회 1정(피르페니돈으로서 200mg)을 식후에 경구투여한다. 환자의 반응과 내약성에 따라 2주 간격으로 1회 1정(200mg)씩 증량하여 1일 3회, 1회 3정(1회 600mg, 1일 1800mg)까지 증량할 수 있다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:17:37"
+}

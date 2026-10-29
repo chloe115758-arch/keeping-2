@@ -1,0 +1,83 @@
+{
+  "ingredient": "ammonium chloride + chlorpheniramine maleate + dihydrocodeine tartrate + DL-methylephedrine hydrochloride",
+  "productSeq": "201505485",
+  "itemName": "코프원시럽",
+  "atc": "R05FA02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240709",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505485/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505485/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505485/NB"
+  },
+  "rules": [
+    {
+      "id": "c7a3a6876e",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올, 중추신경억제제 병용시 졸음을 유발할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6b200a0b84",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 및 임신하고 있을 가능성이 있는 여성에 대한 안전성이 확립되어 있지 않으므로 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cdd8fa0330",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 유즙 분비를 억제하고 모유로 이행될 수 있으므로 수유부에게 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "68f73f55e4",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 환자의 상태를 관찰하여 신중히 투여해야한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "efdb96a244",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "다음 용량을 1일 3 &#x301c; 4회 식후 및 취침 시 경구투여한다.",
+      "meal": "식후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:22"
+}

@@ -1,0 +1,212 @@
+{
+  "ingredient": "meloxicam",
+  "productSeq": "201707312",
+  "itemName": "아멜록스캡슐7.5밀리그램(멜록시캄)",
+  "atc": "M01AC06",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240913",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707312/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707312/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707312/NB"
+  },
+  "rules": [
+    {
+      "id": "29a5766da1",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적주의 6)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "위장관계 이상반응 : 이 약을 포함한 비스테로이드성 소염진통제를 궤양성 질환 또는 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9fdf561c54",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 10)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "콜레스티라민과의 병용 투여시 위장관내에서 이 약과 흡착하여 제거율을 증가시키므로 이 약의 작용이 감소할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2d4b6aeda2",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 12)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "제산제, 시메티딘, 디곡신과 병용투여 시 이 약의 약물동력학적 상호작용에 대한 영향은 없었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "08503654ca",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 19)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올 : 특히 위장관이나 중추신경계의 이상반응이 증강될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bce337aff0",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 임신중에는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "da854e24fd",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "프로스타글란딘 합성 저해는 임신과/또는 배태자 형성에 부정적인 영향을 줄 수 있다. 역학조사에서 임신 초기에 프로스타글란딘 합성 억제제를 사용한 후 유산이나 심장기형 및 배벽갈림증 의 위험이 증가한 것으로 나타났다. 심혈관 기형의 절대 위험률은 1%미만에서 거의 1.5%까지 증가했다. 이 위험은 용량 및 치료기간에 따라 증가하는 것으로 보인다. 동물실험 결과, 프로스타글란딘 합성 억제제의 복…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "09055a32c4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 말기 3개월 동안 모든 프로스타글란딘 합성 억제제는 태아에게 다음과 같은 증상을 일으킬 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "225fa9a040",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "- 심폐독성(동맥관의 조기 폐쇄와 폐고혈압을 동반한)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0bcffa31e9",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "- 모체, 신생아, 임신 말기의 임부에 신기능장애를 일으킬 수 있으며, 신기능 장애는 올리고-하이드로앰니아시스를 동반하는 신부전으로 진행할 가능성이 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7fef3a5235",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "- 출혈 시간의 연장 가능성, 매우 낮은 용량에서도 항응집 효과가 나타날 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c80909e34a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "- 자궁수축의 억제 결과로 분만의 지연 또는 연장",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3f2da0c6da",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 사람의 모유로 분비되는지 여부는 알려져 있지 않지만 동물실험에서 이약은 유즙으로 분비되는 것이 확인되었으며 많은 비스테로이드성 소염진통제가 인간의 모유로 이행된다고 알려져 있으므로 수유부에는 투여해서는 안된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5c2aa7032c",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자는 신기능, 간기능, 심장기능이 약하기 때문에 필요한 최소량으로 신중히 투여하고 이상반응의 발현에 특히 유의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ff284b235d",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 1일 15 mg을 초과하여 투여해서는 안되며, 식사 중 물 또는 다른 음료와 복용해야 한다.",
+      "meal": "식사 중",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:04:19"
+}

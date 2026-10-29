@@ -1,0 +1,64 @@
+{
+  "ingredient": "galantamine hydrobromide",
+  "productSeq": "202104932",
+  "itemName": "레미닐피알서방캡슐16밀리그램(갈란타민브롬화수소산염)",
+  "atc": "N06DA04",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230728",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104932/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104932/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104932/NB"
+  },
+  "rules": [
+    {
+      "id": "f0b0133057",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신한 여성에게 이 약을 투여하는 임상시험은 실시되지 않았다. 임신 중에는 이 약의 유익성이 태아에 대한 위험성을 상회할 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7c1e0b2e94",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신한 랫트에 갈란타민 16mg/kg(인체 치료용량의 약 25배), 임신한 토끼에 갈란타민 40mg/kg (인체 치료용량의 약 63배)까지 투여하여 실시한 생식 독성 시험에서 기형을 유발한다는 증거는 관찰되지 않았다. 16mg/kg을 투여한 랫트에서 경미한 골격 이상 빈도는 증가하였으나, 유의하지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8b3f949d7a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 모유로의 이행 여부는 밝혀지지 않았고, 수유부를 대상으로 실시된 임상시험이 없으므로, 수유부에게는 이 약을 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c4bcaf58a1",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "1일 1 회 아침에 투여하도록 한다. 아침식사 직후 투여가 좋다. 이 약은 씹거나 분쇄하지 말고 적당량의 물과 함께 그대로 삼켜서 복용한다. 이 약을 투여하는 동안 적절한 수분 섭취를 하도록 한다.",
+      "meal": "식사 직후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:14:32"
+}

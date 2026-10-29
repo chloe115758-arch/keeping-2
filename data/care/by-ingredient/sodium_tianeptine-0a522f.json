@@ -1,0 +1,133 @@
+{
+  "ingredient": "sodium tianeptine",
+  "productSeq": "201403125",
+  "itemName": "하이넵틴정(티아넵틴나트륨)",
+  "atc": "N06AX14",
+  "etcOtc": "전문의약품",
+  "changeDate": "20200207",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403125/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403125/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403125/NB"
+  },
+  "rules": [
+    {
+      "id": "b8c7f4bfc4",
+      "kind": "note",
+      "section": "general",
+      "where": "4. 일반적 주의 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "항정신성 약물 복용시에는 이 약과 알코올성 음료 또는 알코올을 포함하는 약물과는 같이 복용하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a2ba298779",
+      "kind": "note",
+      "section": "general",
+      "where": "4. 일반적 주의 5)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "약물이나 알코올 의존병력이 있는 환자의 경우 약물 과다사용을 피하기 위해 주의 깊게 관찰되어야한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e533bd21c3",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 3)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올과 병용투여는 바람직하지 않다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "bd4d25e578",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물시험에서 생식기능에 대한 어떤 영향도 확인되지 않았다. 태반이행은 매우 경미한 것으로 나타났고, 태자내 축적도 확인되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "520a797b80",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 투여 임상자료가 없어 위험성을 알 수 없으므로 임신 중 이 약의 사용을 피하는 것이 바람직하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "5bb4d03e9b",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "삼환계 항우울약은 모유로 분비되므로 치료기간 중에는 수유를 피하는 것이 바람직하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8be2f1965b",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "70세 이상의 고령자를 장기간 치료하면서 약물동태학 연구를 실시한 결과 이 약의 반감기가 1시간 연장되는 것으로 나타났으므로 이 연령의 환자군에서는 1일 2회로 제한한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "3d56b44383",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "○ 성인 : 티아넵틴나트륨으로서 1회 12.5 mg을 1일 3회 식전에 경구투여한다.",
+      "meal": "식전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:53"
+}

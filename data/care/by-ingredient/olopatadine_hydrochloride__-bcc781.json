@@ -1,0 +1,100 @@
+{
+  "ingredient": "olopatadine hydrochloride )",
+  "productSeq": "201702564",
+  "itemName": "올파데이점안액(올로파타딘염산염)",
+  "atc": "S01GX09",
+  "etcOtc": "전문의약품",
+  "changeDate": "20190118",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702564/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702564/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702564/NB"
+  },
+  "rules": [
+    {
+      "id": "527b3a29e6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "랫트와 토끼에서 최기형성의 부작용이 나타나지는 않았다. 이 약을 전신적으로 투여한 동물연구에서 생식독성이 나타났다. 랫트에게 600mg/kg/day 혹은 사람의 안구에 대한 최대권장량의 150,000배, 토끼에게 400mg/kg/mL 혹은 사람의 안구에 대한 최대권장량의 100,000배를 투여한 경우 기관형성기동안 생존태자수가 감소하였다. 또한 기관형성기에 랫트에게 600mg/kg/day의…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "066c02e787",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "그러나 임부에게 적절하고 잘 관리된 실험은 행해지지 않았다. 동물시험으로 항상 사람의 반응을 예측할 수 있는 것은 아니므로, 임부의 유효성이 태아의 위험성보다 상회한다고 판단되는 경우에 한하여 이 약을 사용한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0981d2048e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물에서 입수된 약력학/독성학 자료에서, 고용량 올로파타딘을 전신으로 투여한 후에 올로파타딘/대사체가 모유 중으로 배출되는 것으로 나타났다. 14C-올로파타딘 1 mg/kg을 경구 투여한 후에, 수유 중인 랫트의 유즙에서 혈장 농도 (수유 중인 랫트 혈장에서 1,184 ng*hr/mL AUC0-24)의 0.33 - 4.28배의 농도로 방사능이 확인되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a910d95eb0",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "외용 안과적 투여 후에 인체 혈장에 존재하는 올로파타딘의 낮은 수준에 기반할 때, 모유 중에 잠재적으로 존재하는 올로파타딘의 농도는 무시할 만할 것으로 예상된다. 그러나 외용 안과적 투여 후에 모유 중에서 올로파타딘/대사체의 농도에 대해 입수된 자료가 없기 때문에, 젖먹이 아기에 대한 위험을 배제할 수 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "1db2a3d676",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "환자에게 항히스타민제가 수유모의 모유 생산에 영향을 줄 수도 있음을 알려야 한다. 의사는 수유모에게 올로파타딘을 처방하기 전에, 산모에 대한 투여의 이익과 젖먹이 아기에 대한 위험을 신중히 고려해야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "4cb0f6fbfc",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "5. 임부 및 수유부에 대한 투여",
+      "subject": "3) 수태능",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약 점안 투여 후 수태능에 미치는 영향을 평가하기 위한 임상 연구는 수행된 바 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "84291ba12c",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령 환자 혹은 청년 환자에 대해서 안전성과 유효성은 크게 다르지 않았다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:03:54"
+}

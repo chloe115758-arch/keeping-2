@@ -1,0 +1,52 @@
+{
+  "ingredient": "ascorbic acid + polyethylene glycol 3350 + potassium chloride + sodium ascorbate + sodium chloride + sodium sulfate anhydrous",
+  "productSeq": "201405413",
+  "itemName": "레디프리산",
+  "atc": "A06AD65",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230809",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201405413/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201405413/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201405413/NB"
+  },
+  "rules": [
+    {
+      "id": "a1ca810d52",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약에 대한 동물 생식독성시험은 수행되지 않았으며, 임부에 대한 이 약의 안전성이 확립되어 있지 않으므로 이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에게는 진단상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "99af41e373",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "많은 약물이 사람의 유즙으로 분비되므로 이 약을 수유부에 투여 시 진단상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "06d7622801",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에 투여 시 약에 대한 민감도가 높아질 수 있으므로 주의하여야 한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:13:25"
+}

@@ -1,0 +1,52 @@
+{
+  "ingredient": "acetylcysteine",
+  "productSeq": "200102075",
+  "itemName": "뮤테란주사(수출명: Ateran)(아세틸시스테인)",
+  "atc": "R05CB01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20251124",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200102075/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200102075/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200102075/NB"
+  },
+  "rules": [
+    {
+      "id": "11ba24e77e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 적절한 연구가 없으므로 반드시 필요한 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "73e33fdc47",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "8. 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약이 모유로 이행되는 지 알려져 있지 않으나 많은 약들이 모유로 이행되므로 수유부에 투여할 때는 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a153e854ee",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 환자의 상태를 관찰하는 등 신중히 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:04:57"
+}

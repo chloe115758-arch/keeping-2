@@ -1,0 +1,107 @@
+{
+  "ingredient": "levofloxacin hydrate",
+  "productSeq": "201902167",
+  "itemName": "레보에이블정500밀리그램(레보플록사신수화물)",
+  "atc": "J01MA12",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260423",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902167/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902167/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902167/NB"
+  },
+  "rules": [
+    {
+      "id": "56c99754bc",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 2)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "칼슘 함유"
+        },
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘제제",
+          "surface": "마그네슘 함유"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알루미늄 또는 마그네슘 함유 제산제, 수크랄페이트, 철분 함유 제제, 칼슘 함유 제제, 아연 또는 철분이 함유된 종합비타민제제와의 병용에 의해 흡수가 저하되어 효과가 저하되는 경우가 있으므로 이 약 투여 전후 2시간 이내에는 병용하지 않는 것이 바람직하다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "a33fe18f45",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물의 생식독성 연구에서는 특별한 문제가 없었다. 그러나 사람에 대한 연구자료가 부족하고, 퀴놀론계 항균제가 성장 중인 생명체의 체중을 지탱하는 연골을 손상시키는 실험적인 위험성 때문에, 이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7c759b965d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약과 구조적으로 유사한 오플록사신에서 모유 중으로 이행되는 것이 알려져 있으므로, 이 약 투여 중에는 수유를 중단한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "66629af095",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약은 주로 신장으로 배설되는데, 고령자는 신기능이 저하된 경우가 많아 높은 혈중 농도가 지속될 위험이 있고 이상반응이 발현하기 쉬우므로, 용량 및 투여간격에 유의 하여 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7798e8f404",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "시판후 조사에서 중증의/때로는 치명적인 간독성이 65세 이상의 노인환자에게서 보고되었다. 만약, 간염의 증상이나 증후가 나타난 환자에게는 즉시 이 약의 투여를 중지 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "50fd1d04d2",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "역학연구에 따르면 플루오로퀴놀론계 항균제 사용 후 2개월 이내에, 특히 고령자에서 대동맥류 또는 대동맥 박리 발생률이 증가하였다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:04:41"
+}

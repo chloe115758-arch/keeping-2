@@ -173,6 +173,12 @@
 - `grade`: `official`(DUR 지정) / `label`(허가사항) / `reference`(참고). `severity`: `caution`만 쓴다(위험·안전 신호등을 쓰지 않는다).
 - 시간 간격 계산은 자정을 넘기는 경우(원형 거리)를 고려한다(기존 `engine.js` 방식).
 
+### 5-3b. 구현된 것 (10/29)
+- `scripts/fetch_labels.py`(클로드코드) → `data/care/by-ingredient/*.json` → `scripts/build_care_pack.py` → **`data/care/care-pack.json`**(앱이 읽는 한 파일, 키는 성분 이름 소문자).
+- **`js/care.js`**: `KeepingCare.create({pack, dur, groups}).analyze(items, {meals, states})` → 위 출력 형식. 시험 `tests/care.test.js`(14개).
+- 항목 형식: 약 `{id, kind:'drug', productCode, name, display, times:['07:00']}`, 영양제 `{id, kind:'supp', ingredientKeys:['calcium'], times:[…]}`. 영양제 키는 `datapack.js`의 `supplementKeyList` + **`data/care/supplement-keys-extra.json`**(비오틴·비타민 K·세인트존스워트·은행잎)을 합쳐서 쓴다.
+- 엔진은 ① 병용금기(DUR) ② 허가사항 규칙(간격·음식·약 분류·임신/고령자 상태·복용 시점)을 계산한다. 근거가 없는 약은 `uncovered`로 알린다.
+
 ### 5-4. 이번에 쓰는 DUR 추가 데이터 (사용자가 내려받아야 한다)
 한국의약품안전관리원이 공공데이터포털에 파일로 개방한 **임부금기약물, 노인주의약물, 효능군중복주의약물**(병용금기약물과 같은 기관). 공공데이터포털에서 파일 이름으로 검색하거나, 병용금기 파일 페이지의 "한국의약품안전관리원" 링크에서 같은 기관의 파일을 모아 본다. **항목과 이용 조건은 아직 확인하지 못했다.** 받으면 `scripts/build_packs.py`와 같은 방식으로 변환한다. 우선순위: **임부금기 → 효능군중복 → 노인주의**.
 

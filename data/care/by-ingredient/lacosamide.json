@@ -1,0 +1,95 @@
+{
+  "ingredient": "lacosamide",
+  "productSeq": "201700399",
+  "itemName": "라코팻정50밀리그램(라코사미드)",
+  "atc": "N03AX18",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260520",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201700399/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201700399/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201700399/NB"
+  },
+  "rules": [
+    {
+      "id": "cc67d2d42f",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 9)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "라코사미드와 알코올과의 상호작용에 대한 유용한 자료는 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "03dbf76400",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에서 용량 감소는 필요하지 않다. 뇌전증이 있는 고령자에서의 라코사미드의 사용경험은 제한적이다. 신청소율 감소 및 AUC 수치 증가는 나이와 관련이 있으므로 고령자에서 고려되어야 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "6e44fb8ba6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "9. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "항뇌전증약과 관련된 위험은 뇌전증 치료받은 여성의 자녀에서 기형 유병율이 일반 집단(약 3%)에 비해 2~3배 더 높은 것으로 나타났다. 치료집단에서 기형 증가는 다중약물요법에 주목하였으나, 치료 및/또는 병의 원인이 되는 범위가 밝혀지지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "25c89e783a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "9. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "더욱이 병의 악화는 모체와 태아 모두에게 유해하므로 유효한 항뇌전증치료를 중단해서는 안된다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "12a020eacf",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "9. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에서 라코사미드 사용에 대한 적절한 자료는 없다. 동물시험에서 랫드 또는 토끼에 대한 기형유발작용은 나타나지 않았으나, 모체 독성량에서 랫드와 토끼에 대한 배아독성이 관찰되었다. 사람에 대한 위험 가능성은 알려져 있지 않다. 라코사미드가 명백하게 필요한 경우(임부에 대한 유익성이 태아에 대한 위험 가능성을 상회하는 경우)가 아니라면 임신 중에 사용해서는 안된다. 만약 여성이 임신을 하고자…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "304ef0a1dc",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "9. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "라코사미드는 사람의 모유로 분비된다. 신생아/유아에 대한 위해성을 배제할 수 없다. 라코사미드의 치료기간 동안 모유수유의 중단을 권고한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:15"
+}

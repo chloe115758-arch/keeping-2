@@ -1,0 +1,15 @@
+{
+  "ingredient": "loratadine",
+  "productSeq": "200001184",
+  "itemName": "로다인정(로라타딘)",
+  "atc": "R06AX13",
+  "etcOtc": "일반의약품",
+  "changeDate": "20231030",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001184/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001184/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001184/NB"
+  },
+  "rules": [],
+  "fetchedAt": "2026-10-29T19:13:43"
+}

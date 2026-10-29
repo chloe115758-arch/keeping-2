@@ -1,0 +1,136 @@
+{
+  "ingredient": "ustekinumab",
+  "productSeq": "202400827",
+  "itemName": "에피즈텍프리필드주(우스테키누맙)",
+  "atc": "L04AC05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20251013",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400827/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400827/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400827/NB"
+  },
+  "rules": [
+    {
+      "id": "dcbeb1e6f8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부 및 수태능",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물 연구에서는 90 mg 피하 주사 4주 후의 Cmax와 비교하여 약 150배 또는 6 mg/kg 정맥 투여 1시간 후 혈청 농도와 비교하여 최대 21배 수준의 노출에서도 최기형성이나 출생 기형, 발달 지연의 증거가 없었다. 그러나 동물에 대한 생식 및 발달 연구로부터 언제나 사람에 대한 반응을 예측할 수 있는 것은 아니다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9d1e8a4dc4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부 및 수태능",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 초기 3 개월에 노출된 450 건의 임신을 포함하여, 우스테키누맙에 노출 이후 알려진 출생의 결과를 포함하여 전향적으로 수집된 임신 데이터에서 나타난 선천성 기형과 선천성 결손의 유병율은 6%, 2.5% (주요 선천성 기형)로서 추정되는 전세계 배경 추정치와 유사하였다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "dc3f351504",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부 및 수태능",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 22 주 이후의 정보를 수집한 관찰, 노출 기반, 코호트 연구인 북유럽 임신 등록 연구에서는 주요 비생물학적제제 전신요법(6,147 건의 임신)과 비교하였을 때 우스테키누맙(33 건의 임신)으로 인한 선천성 기형의 위험이 증가하지 않았다. (비보정 교차 비(odds ratio): 1.38 [95% CI 0.16-5.5]). 작은 표본크기, 무작위 배정이 아닌 시험설계, 병용 약제 및 질…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "38e906fec2",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부 및 수태능",
+      "subject": "1) 임부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "전반적으로 관찰 연구, 약물 안전성 감시, 발표된 증례 및 코호트 연구로부터의 데이터에 따르면 주요 선천성 결손, 중대하거나 경미한 선천성 기형의 양상, 유산 또는 유아에게 유해한 결과와 관련된 위험이 증가하지 않는 것으로 나타났다. 우스테키누맙은 이익이 위험을 명백히 상회하는 경우에만 임신한 여성에게 투여할 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "de70391dcb",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부 및 수태능",
+      "subject": "2) 수유부",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "출판된 문헌의 제한된 자료에 따르면, 우스테키누맙은 인간의 모유에서 매우 적은 양으로 분비된다. 우스테키누맙은 큰 분자로 위장관에서 분해되기 때문에 모유 수유 영아에 대한 전신 노출은 낮을 것으로 예상되지만, 우스테키누맙을 섭취했을 때 전신으로 흡수되는가에 대해서는 알려지지 않았다. 수유 중인 영아에서 우스테키누맙으로 인한 이상사례의 가능성이 있으므로, 수유 중단이나 약물 중단 중 하나를 결…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "83b3c6b11e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부 및 수태능",
+      "subject": "3) 수태능",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "우스테키누맙이 사람의 수태능에 미치는 영향에 대한 연구는 수행된 바 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "b963914e46",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부 및 수태능",
+      "subject": "3) 수태능",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "사이노몰구스 원숭이를 대상으로 세 건의 발달 독성 시험이 수행되었다. 우스테키누맙의 주성분을 정맥이나 피하로 최대 45 mg/kg의 용량을 주 1회 또는 주 2회 투여하였을 때, 우스테키누맙의 주성분과 관련된 모체 독성, 유산, 사산, 배독성, 발달 지연, 기형, 출생 기형 등은 관찰되지 않았다. 우스테키누맙의 주성분을 투여한 임신 중 원숭이로부터 태어난 갓난 동물에서는 성장이나 기능 발달에…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "66eedb01b6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부, 수유부 및 수태능",
+      "subject": "3) 수태능",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "마우스에서의 암컷 수태능 독성시험이 마우스의 IL-12와 IL-23에 결합하여 그 활성을 억제하는 유사 항체를 이용하여 수행되었다. 항-마우스 IL-12/23 항체의 주 2회 피하 투여는 최대 50 mg/kg의 용량에서 내약성이 양호하였으며 암컷의 수태능 파라미터에 대한 악영향은 관찰되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e9abd7e914",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 소아, 고령자에 대한 투여",
+      "subject": "1) 소아",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "6세 미만의 소아환자에서 우스테키누맙에 대한 연구는 수행된 바 없다. 소아 건선성 관절염, 소아 크론병 혹은 소아 궤양성 대장염 환자에서 우스테키누맙에 대한 연구는 수행된 바 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cb4c3ec7e3",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 소아, 고령자에 대한 투여",
+      "subject": "2) 고령자",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임상시험에서는 청소율이나 분포용적 측면에서 나이와 관련된 주요한 차이가 관찰되지 않았다. 허가된 적응증의 임상시험에서 고령자와 젊은 환자 사이에 전반적인 안전성 또는 유효성의 차이가 관찰되지 않았지만, 65세 이상 환자와 젊은 환자가 다르게 반응하는지 여부를 판단하기에는 환자수가 충분하지 않았다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:15:55"
+}

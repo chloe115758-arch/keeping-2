@@ -1,0 +1,95 @@
+{
+  "ingredient": "rivastigmine tartrate",
+  "productSeq": "201606832",
+  "itemName": "리스티캡슐3.0밀리그램(리바스티그민타르타르산염)",
+  "atc": "N06DA03",
+  "etcOtc": "전문의약품",
+  "changeDate": "20230802",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201606832/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201606832/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201606832/NB"
+  },
+  "rules": [
+    {
+      "id": "d4b93345a8",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "일반적인 병용 투여 약물과의 상호작용",
+      "matched": [
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "이 약과 흔하게 병용 처방되는 약물들(예 : 제산제, 진토제, 혈당강하제, 중추작용성 혈압강하제, 칼슘채널 차단제, 수축 작용제(inotropic drug), 협심증치료제, NSAIDs, 에스트로겐, 진통제, 벤조디아제핀 및 항히스타민제)과의 병용투여는 이 약의 약동학적 변화나 임상적 관련이 있는 이상반응의 위험이 증가되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "dfd5d84c7c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "가임기여성 : 임신할 가능성이 있는 여성에 대한 이 약의 효과는 알려진 바가 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "09636a0318",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부: 수태한 동물에서 리바스티그민 그리고/또는 대사체가 태반을 통과했으나, 사람에서는 알려지지 않았다. 리바스티그민은 동물실험에서 기형발생이 없었으나, 임부에 대한 이 약의 안전성이 충분히 확립되어 있지 않으므로 이 약 치료의 유익성이 태아에 대한 잠재적 위험성을 상회하는 경우에만 임부에 투여하도록 한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7e04615c3e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부: 리바스티그민을 랫드에 경구투여하였을 때 리바스티그민과 그 대사체의 농도가 혈장에 비해 모유에서 약 2배 더 높았다. 리바스티그민이 사람 모유로 이행되는지의 여부가 밝혀지지 않았으므로 리바스티그민 투여 중에 수유를 하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "995bc8e932",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 4)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "생식력 : 암수 랫드에서, 친세대 및 그 다음 세대의 생식력이나 번식 능력에 대한 이 약의 이상반응은 관찰되지 않았다. 사람에서의 생식능력에 대한 이 약의 효과는 알려진 바가 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "8e6cb53962",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "복용방법: 리바스티그민은 1일 2회 아침, 저녁 식사와 함께 경구투여 한다.",
+      "meal": "식사와 함께",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:07:17"
+}

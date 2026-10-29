@@ -1,0 +1,83 @@
+{
+  "ingredient": "ropinirole hydrochloride",
+  "productSeq": "200803810",
+  "itemName": "뉴큅정2밀리그램(로피니롤염산염)",
+  "atc": "N04BC04",
+  "etcOtc": "전문의약품",
+  "changeDate": "20221202",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200803810/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200803810/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200803810/NB"
+  },
+  "rules": [
+    {
+      "id": "bfcdb4bfce",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용 7)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "알코올과의 상호작용 가능성에 대한 유용한 정보는 없다. 중추에 작용하는 다른 약물과 마찬가지로 환자들은 알코올과 로피니롤을 함께 복용하는데 주의한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ce2636490f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에게 투여해서는 안된다. 로피니롤의 임부에 대한 적절하고 잘 통제된 연구는 없으며, 동물 연구에서 배·태자 독성을 보였다. 랫드를 사용한 동물시험에서 본 약물의 약리학적 작용 기전(프로락틴 분비 억제)에 의해 투여 시기에 따라 불임, 유산, 유즙 분비억제를 일으킨다. 동물시험에서 임신 랫드에 모체독성 용량으로 투여시 40mg/kg의 용량에서 유산, 60㎎/㎏(인체에서의 최대용량 AUC의…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "462722492f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "유즙 분비를 억제할 수 있으므로 수유부에게 투여해서는 안된다. 로피니롤이 사람의 모유 중으로 분비되는지에 대한 자료는 없으며, 동물시험에서 수유한 랫드의 유즙에서 로피니롤이 분비되는 것으로 나타났고, 신생자의 체중증가율의 감소, 신체발육 및 반사기능 발달의 지연이 관찰되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "7980710cce",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "로피니롤이 사람의 수태능에 미치는 영향에 대한 자료는 없다. 암컷 랫드를 이용한 시험에서 로피니롤 노출 시 20mg/kg이상에서 착상에 영향(불임)을 미치는 것으로 관찰되었다. 수컷 랫드를 이용한 시험에서 수태능에 미치는 영향은 관찰되지 않았다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "cd24a30f60",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "로피니롤은 1일 1회 취침 전 복용하여야 하며 취침1~3시간 전에 복용한다.",
+      "meal": "취침 전",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:09:18"
+}

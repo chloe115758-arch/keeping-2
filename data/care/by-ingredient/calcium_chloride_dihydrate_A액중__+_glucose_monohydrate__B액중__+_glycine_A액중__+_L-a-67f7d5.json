@@ -1,0 +1,66 @@
+{
+  "ingredient": "calcium chloride dihydrate(A액중) + glucose monohydrate (B액중) + glycine(A액중) + L-alanine(A액중) + L-arginine(A액중) + L-histidine(A액중) + L-isoleucine(A액중) + L-leucine(A액중) + L-lysine acetate(A액중) + L-methionine(A액중) + L-phenylalanine(A액중) + L-proline(A액중) + L-serine(A액중) + L-threonine(A액중) + L-tryptophan(A액중) + L-tyrosine(A액중) + L-valine(A액중) + magnesium sulfate heptahydrate(A액중) + medium-chain triglycerides(C액중) + potassium chloride(A액중) + purified fish oil(C액중) + purified olive oil(C액중) + purified soybean oil(C액중) + sodium acetate trihydrate(A액중) + sodium glycerophosphate(A액중) + taurine(A액중) + zinc sulfate heptahydrate(A액중)",
+  "productSeq": "201500951",
+  "itemName": "오마프원페리주",
+  "atc": "B05BA10",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260310",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201500951/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201500951/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201500951/NB"
+  },
+  "rules": [
+    {
+      "id": "d703e18332",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 3)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "vitaminK",
+          "kind": "supplement",
+          "ko": "비타민 K",
+          "surface": "비타민 K"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "대두유는 비타민 K1를 포함하고 있지만 이 약에 함유된 양은 극히 적으므로, 쿠마린 유도체를 투여 받는 환자들의 혈액응고기전에 유의한 영향을 줄 것으로 기대되지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ee7028a9e6",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 4)",
+      "subject": "",
+      "matched": [
+        {
+          "key": "calcium",
+          "kind": "supplement",
+          "ko": "칼슘제제",
+          "surface": "칼슘 함유"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "신생아(≤28일)에서는 다른 칼슘 함유 제품과 마찬가지로 별도의 주입선을 사용하는 경우라도, 세프트리악손과 이 약을 병용하여 사용하지 말 것 (신생아의 혈액에 치명적인 세프트리악손 칼슘 염의 침전 위험)",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "c12f7f4f8d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부 및 수유부에서의 이 약 사용에 대한 데이터는 없다. 동물의 생식독성 시험은 이루어지지 않았다. 임신 중과 수유 중의 투여는 안전성이 확립되어 있지 않으므로 이 약의 투여는 치료 상의 유익성이 위험성을 상회하는 경우에만 투여한다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:12:00"
+}

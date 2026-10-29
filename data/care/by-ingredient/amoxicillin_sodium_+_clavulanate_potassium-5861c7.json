@@ -1,0 +1,88 @@
+{
+  "ingredient": "amoxicillin sodium + clavulanate potassium",
+  "productSeq": "199500098",
+  "itemName": "크목실린주0.6g",
+  "atc": "J01CR02",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240626",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500098/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500098/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500098/NB"
+  },
+  "rules": [
+    {
+      "id": "4dc6403467",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 기형발생작용은 없으나 임신 중 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여하며 특히 임신 초기 3개월 동안은 투여하지 않는다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "11acec9887",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유 중 미량의 페니실린(암피실린 포함)이 모유로 이행될 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "e8282ed572",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 3)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "수유부에 대한 투여로 인해 영아에게 설사, 점막의 진균서식, 과민반응 발현(피부발진 등) 등의 위험이 나타날 수 있으므로 이상반응이 나타나는 경우에는 투여를 중지한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "2382c9658a",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자에는 다음과 같은 점에 주의하고 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ae3c1e9eb6",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여 1)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "생리기능이 저하되어 있는 경우가 많기 때문에 이상반응이 나타나기 쉽다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "9d8bf54cea",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "7. 고령자에 대한 투여 2)",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "비타민 K 결핍에 의한 출혈경향이 나타날 수 있다.",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:18:04"
+}

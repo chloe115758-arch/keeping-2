@@ -1,0 +1,59 @@
+{
+  "ingredient": "tibolone",
+  "productSeq": "201802998",
+  "itemName": "리브온정2.5밀리그램(티볼론)",
+  "atc": "G03CX01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20251010",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802998/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802998/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802998/NB"
+  },
+  "rules": [
+    {
+      "id": "15d66641e6",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "",
+      "matched": [
+        {
+          "key": "stJohnsWort",
+          "kind": "supplement",
+          "ko": "세인트존스워트",
+          "surface": "St. John"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "하이페리쿰 퍼프라툼(St. John's wort, Hypericum Perforatum)을 함유하는 약용 식물은 CYP3A4를 통한 에스트로겐과 프로게스토겐의 대사를 유도할 수 있다. 임상적으로, 에스트로겐과 프로게스토겐의 대사 증가는 효과의 감소 및 자궁 출혈 양상의 변화를 가져올 수 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "0b951f0321",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "이 약은 임신기간 동안에는 투여해서는 안 된다.(1. 다음 환자에게는 투여하지 말 것 참조)이 약의 복용 중 임신하였다면 치료를 즉시 중단하여야 한다. 임신기간 동안 이 약에 노출되었을 경우에 대한 임상 데이터는 나와 있지 않다. 동물 대상 연구에서 생식기 독성이 보고되었다 (10. 기타 항 참조). 인간에 대한 잠재적 위험은 알려진 바 없다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f923ca62ef",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "이 약은 수유기간 동안에는 투여하지 않는다.(1. 다음 환자에게는 투여하지 말 것 참조)",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:16:42"
+}

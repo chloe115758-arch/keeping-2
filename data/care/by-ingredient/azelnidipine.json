@@ -1,0 +1,83 @@
+{
+  "ingredient": "azelnidipine",
+  "productSeq": "202106543",
+  "itemName": "아젤블럭정8밀리그램(아젤니디핀)",
+  "atc": "C08CA",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260716",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106543/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106543/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106543/NB"
+  },
+  "rules": [
+    {
+      "id": "dc2db05742",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "subject": "2) 병용 주의 (병용에 주의할 것)",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "약제명 등 임상 증상 &#x30fb; 조치 방법 기전 &#x30fb; 위험 인자 타 강압제 과도한 강압을 일으킬 우려가 있다. 필요에 따라 다른 강압제 또는 아젤니디핀을 감량한다. 작용기전이 다른 강압제를 병용함으로써 약리 작용이 증강된다. 디곡신 디곡신의 Cmax가 1.5배, AUC가 1.3배 상승되는 것으로 보고된다. 필요에 따라 디곡신을 감량한다. 디곡신의 신배설 (요세관 분비) 및 신…",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "ee35e5afdf",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "1) 임산부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임산부 또는 임신 가능성이 있는 여성에게는 투여해서는 안 된다. 동물 실험 (랫트)에서 임신 전~ 초기 투여시 착상 전 및 착상 후 배아 사망률 증가, 출산자의 체중저하, 임신 기간 및 분만 시간 연장이 확인되었다. 임신 말기 투여에서는 임신 기간 및 분만 시간 연장이 확인되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "f078ee4eb6",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "subject": "2) 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "치료 상 유익성 및 모유 수유의 유익성을 고려하여 수유를 계속하거나 중단할지 결정한다. 동물 실험 (랫트)에서 유즙으로 이행되는 것이 보고되었다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "abdf74970a",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "subject": "",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "8mg 부터 투여를 시작하여 신중하게 투여한다. 일반적으로 과도한 강압은 바람직하지 않다고 본다. 뇌경색 등이 일어날 우려가 있다.",
+      "extractor": "kw-v1"
+    },
+    {
+      "id": "39868aa520",
+      "kind": "timing",
+      "section": "usage",
+      "where": "용법·용량",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "성인 : 아젤니디핀 8mg 또는 16mg을 1일 1회 아침식사 후 경구 투여한다. 1회 8mg으로 투여를 시작하고 증상에 따라 적절히 증감한다. 1일 최대 16mg을 복용한다.",
+      "meal": "식사 후",
+      "extractor": "kw-v1"
+    }
+  ],
+  "fetchedAt": "2026-10-29T19:16:06"
+}
