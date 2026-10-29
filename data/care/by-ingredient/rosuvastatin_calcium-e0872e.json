@@ -1,0 +1,80 @@
+{
+  "ingredient": "rosuvastatin calcium",
+  "productSeq": "201603595",
+  "itemName": "로슈바정10mg(로수바스타틴칼슘)",
+  "atc": "C10AA07",
+  "etcOtc": "전문의약품",
+  "changeDate": "20250818",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603595/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603595/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603595/NB"
+  },
+  "rules": [
+    {
+      "id": "7a79d0724d",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "matched": [
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘",
+          "surface": "마그네슘"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "- 제산제 : 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 이 약을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 이 약 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "6f97f54515",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "5. 상호작용",
+      "matched": [
+        {
+          "key": "vitaminK",
+          "kind": "supplement",
+          "ko": "비타민 K",
+          "surface": "비타민K"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "- 와파린 : 이 약과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 HMG-CoA 환원효소 저해제와 마찬가지로, 이 약과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 이 약의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "5318a0b1e8",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 및 수유부에 대한 이 약의 안전성은 확립되지 않았으므로 임신 또는 수유 중에 사용하면 안 된다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "f50652e7ee",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증거가 있다. 이 약을 사용하는 동안 임신을 할 경우 즉시 복용을 중단해야 한다. 로수바스타틴은 랫드의 모유로 이행된다.…",
+      "extractor": "kw-v0"
+    }
+  ],
+  "fetchedAt": "2026-10-29T18:30:15"
+}

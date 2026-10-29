@@ -1,0 +1,49 @@
+{
+  "ingredient": "sodium hyaluronate(/mL)",
+  "productSeq": "201701718",
+  "itemName": "트리알주(프리필드)(히알루론산나트륨)",
+  "atc": "M09AX01",
+  "etcOtc": "전문의약품",
+  "changeDate": "20200416",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201701718/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201701718/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201701718/NB"
+  },
+  "rules": [
+    {
+      "id": "d809d97adf",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 1)",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서는 기형발생을 인정하지 않았으나, 임부에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 신중히 투여한다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "d50dc60c29",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "6. 임부 및 수유부에 대한 투여 2)",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험에서 모유 중으로 이행하는 것이 인정되었으므로 이 약 투여 중에는 수유를 피한다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "b29cbaf0a7",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "8. 고령자에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 주의한다.",
+      "extractor": "kw-v0"
+    }
+  ],
+  "fetchedAt": "2026-10-29T18:30:21"
+}

@@ -1,0 +1,266 @@
+{
+  "ingredient": "ezetimibe + rosuvastatin calcium",
+  "productSeq": "202204606",
+  "itemName": "로우로제정10/2.5밀리그램(에제티미브, 로수바스타틴칼슘)",
+  "atc": "C10BA06",
+  "etcOtc": "전문의약품",
+  "changeDate": "20240423",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204606/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204606/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204606/NB"
+  },
+  "rules": [
+    {
+      "id": "4e5c7b1599",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "술"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "로수바스타틴 및 동일 계열의 다른 약물에서 미오글로빈뇨에 의한 이차적인 급성 신부전을 동반하는 횡문근융해가 드물게 보고되었다. 따라서 급성의 심각한 근육병증을 나타내는 환자 또는 횡문근융해에 의해 이차적으로 신부전이 발생될 수 있는 위험요소(예, 중증 급성 감염, 저혈압, 주요 외과수술, 외상, 중증의 대사, 내분비 및 전해질 장애, 조절되지 않는 발작)를 가진 환자는 이 약의 치료를 일시적…",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "9b42196787",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "이 약을 알코올 과다 복용 환자 그리고/또는 간질환의 병력이 있는 환자에게 투여 시 주의해야 한다. 활성 간질환 또는 원인이 밝혀지지 않는 혈청 트랜스아미나제의 지속적 상승이 있는 환자에게는 이 약을 투여하지 않는다. (‘2. 다음 환자에는 투여하지 말 것’항 참조)",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "60dc8b74f9",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (1)",
+      "matched": [
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘",
+          "surface": "마그네슘"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "제산제 : 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 로수바스타틴을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 로수바스타틴 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "38d347d630",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 (1)",
+      "matched": [
+        {
+          "key": "vitaminK",
+          "kind": "supplement",
+          "ko": "비타민 K",
+          "surface": "비타민K"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "와파린 : 로수바스타틴과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 스타틴계 약물과 마찬가지로, 로수바스타틴과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 로수바스타틴의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "3c242404d2",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 1)",
+      "matched": [
+        {
+          "key": "cholestyramine",
+          "kind": "drug_group",
+          "ko": "콜레스티라민",
+          "surface": "콜레스티라민"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "콜레스티라민: 에제티미브와 콜레스티라민 병용투여 시 총 에제티미브의 평균 AUC가 약 55% 감소하였다. 이러한 상호작용에 의하여 콜레스티라민과 에제티미브 병용투여로 기대되는 LDL-C 저하에 대한 병합작용이 감소할 수 있다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "521b9ec83d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동맥경화증은 만성질환이며, 임신 중 지질저하제 투여를 중지해도 원발성 고콜레스테롤혈증의 장기 치료 결과에 영향을 주지 않는다. 또한 콜레스테롤과 콜레스테롤 생합성경로의 다른 생성물은 스테로이드, 세포막 합성 등의 태아발달에 필수적인 성분이다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "6d552d8e27",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "로수바스타틴을 포함한 HMG-CoA 환원효소저해제가 콜레스테롤 합성 및 콜레스테롤 생합성경로의 다른 생성물을 감소시킬 우려가 있으므로 임부 또는 수유부에게 이 약을 투여해서는 안된다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "cfc4d95189",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임부에 대한 이 약의 안전성은 확립되어 있지 않기 때문에 임신이 확인되면 즉시 투여를 중지하고 환자에게 태아에 대한 잠재적 위험성을 알려야 한다. 가임 여성에게는 임신 가능성이 거의 없는 경우, 태아에 미칠 수 있는 잠재적 위험성 및 임신 중 투여를 지속하여도 임상적 유익성이 없다는 점을 알려준 후에만 투여한다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "cfc581e399",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "이 약의 구성성분이 모유로 분비되는지 여부는 확인되지 않았으므로, 이 약으로 인한 잠재적 유익성이 유아에 대한 잠재적 위험성을 상회하지 않는 한 이 약을 수유부에게 투여해서는 안된다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "9053c72e9f",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "○ 로수바스타틴",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "feae79a06a",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 및 수유부에 대한 로수바스타틴의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "57a3714947",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증거가 있다. 로수바스타틴을 사용하는 동안 임신을 할 경우 즉시 복용을 중단해야 한다. 로수바스타틴은 랫드의 모유로 이행…",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "c6507f694d",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "○에제티미브",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "5d5bfda14e",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "에제티미브를 임부에게 투여한 임상 자료는 없다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "8b944c54a4",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 한 경구 배ㆍ태자 발생시험의 시험 용량(250, 500, 1000mg/kg/day)에서 배자치사 효과가 관찰되지 않았다. 에제티미브 1000mg/kg/day(총 에제티미브의 AUC0-24hr에 근거하였을 때 1일 10 mg으로 투여 시 사람에 대한 노출의 10배)를 투여한 랫트에서 일반적인 태자 골격이상(늑골 추가형성, 경추 중심부 골화부전, 늑골 축소)…",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "74d1653caf",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 3)",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "모든 HMG-CoA 환원효소 억제제 및 페노피브레이트는 임부 및 수유부에 대한 투여가 금지되어 있다. 에제티미브를 출산 가능성이 있는 여성에게 HMG-CoA 환원효소 억제제 또는 페노피브레이트와 함께 투여할 때에는, 해당 HMG-CoA 환원효소 억제제 또는 페노피브레이트의 제품설명서를 참조한다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "4ae53be982",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 4)",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 에제티미브와 HMG-CoA 환원효소 억제제(스타틴계 약물)를 병용투여한 반복투여시험에서는 에제티미브 및 HMG-CoA 환원효소 억제제에 대한 노출 정도가 높았다. 단독투여에 비해 병용투여시 보다 낮은 용량에서 생식능 이상이 나타났다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "1725c03ba1",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 5)",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "동물실험(랫트)에서 에제티미브는 유즙으로 분비되었다. 랫트를 대상으로 한 실험에서 수유 중인 새끼의 총 에제티미브에 대한 노출은 모체 혈장에서 관찰되는 값의 절반에 이르렀다. 에제티미브가 사람의 모유로 분비되는지 여부는 알려지지 않았다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "8f1317decc",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령(만 65세 이상)은 근육병증에 걸리기 쉬운 요인 중 하나이므로 이 약을 고령자에게 투여 시 주의를 기울여야 한다. 고령자에서 이 약의 용량 조절은 필요하지 않다.",
+      "extractor": "kw-v0"
+    }
+  ],
+  "fetchedAt": "2026-10-29T18:30:54"
+}

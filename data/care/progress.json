@@ -1,0 +1,144 @@
+{
+  "rosuvastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052400150",
+    "productName": "로슈바정10mg(로수바스타틴칼슘)",
+    "itemSeq": "201603595"
+  },
+  "donepezil hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "051700071",
+    "productName": "도네팩토오디프스산5밀리그램(도네페질염산염수화물)",
+    "itemSeq": "202501294"
+  },
+  "atorvastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052401750",
+    "productName": "아이리토정10밀리그램(아토르바스타틴칼슘삼수화물)",
+    "itemSeq": "202003394"
+  },
+  "sodium hyaluronate(/mL)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "053300131",
+    "productName": "트리알주(프리필드)(히알루론산나트륨)",
+    "itemSeq": "201701718"
+  },
+  "pregabalin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052402190",
+    "productName": "아이리카캡슐150밀리그램(프레가발린)",
+    "itemSeq": "201903450"
+  },
+  "acetaminophen + tramadol hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052700180",
+    "productName": "티오셋정",
+    "itemSeq": "200805849"
+  },
+  "metformin hydrochloride + sitagliptin hydrochloride hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "059001150",
+    "productName": "다누메트엑스알서방정50/500밀리그램",
+    "itemSeq": "202300587"
+  },
+  "amlodipine besylate + telmisartan": {
+    "status": "unresolved",
+    "reason": "미해결: 목록(아이스타정40/5mg→0건)에 EDI_CODE 052400460 없음",
+    "productCode": "052400460",
+    "productName": "아이스타정40/5mg"
+  },
+  "atorvastatin calcium + ezetimibe": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052402030",
+    "productName": "인토젯정10/20밀리그램",
+    "itemSeq": "202101490"
+  },
+  "esomeprazole magnesium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "053300430",
+    "productName": "넥사브이정40밀리그램(에스오메프라졸마그네슘삼수화물)",
+    "itemSeq": "201507741"
+  },
+  "amlodipine besylate + valsartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052701160",
+    "productName": "에이바스타정10/160밀리그램",
+    "itemSeq": "201706190"
+  },
+  "rabeprazole sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052400200",
+    "productName": "벨프란정10mg(라베프라졸나트륨)",
+    "itemSeq": "201603764"
+  },
+  "montelukast sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052701120",
+    "productName": "몬테스탈정10밀리그램(몬테루카스트나트륨)",
+    "itemSeq": "201702073"
+  },
+  "amoxicillin + clavulanate potassium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "053500060",
+    "productName": "아목시클라정375mg(아목시실린-클라불란산칼륨(2:1))",
+    "itemSeq": "201703164"
+  },
+  "clarithromycin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "055102280",
+    "productName": "클로시드정250밀리그램(클래리트로마이신)",
+    "itemSeq": "201805354"
+  },
+  "celecoxib": {
+    "status": "unresolved",
+    "reason": "미해결: 목록(메디브렉스캡슐100mg(세레콕시브)→0건, 메디브렉스캡슐100mg→0건)에 EDI_CODE 052400960 없음",
+    "productCode": "052400960",
+    "productName": "메디브렉스캡슐100mg(세레콕시브)"
+  },
+  "empagliflozin + metformin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641908690",
+    "productName": "트루엠파엠서방정25/1000밀리그램(엠파글리플로진,메트포르민)",
+    "itemSeq": "202501234"
+  },
+  "mosapride citrate hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052700110",
+    "productName": "에이드정(모사프리드시트르산염이수화물)",
+    "itemSeq": "200702313"
+  },
+  "ezetimibe + rosuvastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "076800010",
+    "productName": "로우로제정10/2.5밀리그램(에제티미브, 로수바스타틴칼슘)",
+    "itemSeq": "202204606"
+  },
+  "tamsulosin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052402070",
+    "productName": "에이블탐스로신서방정0.2밀리그램(탐스로신염산염)",
+    "itemSeq": "201904787"
+  },
+  "_calls": {
+    "date": "2026-10-29",
+    "count": 39
+  }
+}

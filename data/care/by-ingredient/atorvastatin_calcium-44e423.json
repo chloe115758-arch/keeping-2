@@ -1,0 +1,156 @@
+{
+  "ingredient": "atorvastatin calcium",
+  "productSeq": "202003394",
+  "itemName": "아이리토정10밀리그램(아토르바스타틴칼슘삼수화물)",
+  "atc": "C10AA05",
+  "etcOtc": "전문의약품",
+  "changeDate": "20260303",
+  "docUrls": {
+    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003394/EE",
+    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003394/UD",
+    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003394/NB"
+  },
+  "rules": [
+    {
+      "id": "4c91e99d68",
+      "kind": "note",
+      "section": "warning",
+      "where": "1. 경고",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "술"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "현저한 크레아틴키나아제(CK) 레벨 상승이 나타나거나 근육병증으로 진단되거나 의심되는 경우 아토르바스타틴 치료를 중단해야 한다. 또한 급성 및 심각하게 여겨지는 근육병증 또는 횡문근융해에서 이차적으로 신부전으로 발전할 수 있는 위험요소(예, 중증 급성감염, 저혈압, 주요 외과수술, 외상, 중증 대사, 내분비, 전해질 장애 및 제어되지 않는 간질)를 갖는 환자는 아토르바스타틴 치료를 일시적으로…",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "12d5626357",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의 3)",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알콜"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "간부전 : 아토르바스타틴의 혈장농도는 만성 알콜성간질환(Child-Pugh Class B) 환자의 경우 현저하게(Cmax가 약 16배, AUC가 약11배) 증가하였다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "53ed2d0231",
+      "kind": "note",
+      "section": "general",
+      "where": "5. 일반적 주의",
+      "matched": [
+        {
+          "key": "alcohol",
+          "kind": "food",
+          "ko": "알코올·음주",
+          "surface": "알코올"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "아토르바스타틴은 알코올남용자(과다복용자) 또는 간질환의 병력이 있는 사람의 경우 신중하게 투여하여야 한다. 활동성 간질환 환자 또는 설명되지 않는 혈청트랜스 아미나제치의 상승이 지속되는 환자에는 아토르바스타틴을 투여하지 않는다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "4906c79375",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 11)",
+      "matched": [
+        {
+          "key": "magnesium",
+          "kind": "supplement",
+          "ko": "마그네슘",
+          "surface": "마그네슘"
+        },
+        {
+          "key": "antacid",
+          "kind": "drug_group",
+          "ko": "제산제",
+          "surface": "제산제"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "제산제 : 이 약과 수산화마그네슘 그리고 수산화알루미늄을 함유하는 경구용 제산제(antacid) 현탁액과 병용투여시 아토르바스타틴 혈장농도가 약 35 % 정도 감소하였다. 그러나 LDL-콜레스테롤의 감소에는 영향이 없었다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "d3dbf6afe3",
+      "kind": "interaction",
+      "section": "interaction",
+      "where": "6. 상호작용 19)",
+      "matched": [
+        {
+          "key": "grapefruit",
+          "kind": "food",
+          "ko": "자몽",
+          "surface": "자몽"
+        }
+      ],
+      "interval": null,
+      "tone": "caution",
+      "excerpt": "자몽주스 : 자몽주스는 하나이상의 CYP3A4를 억제하는 성분을 함유하고 있으며, 이는 자몽쥬스 섭취량이 지나칠 경우(하루 1.2 L이상) 아토르바스타틴의 혈중 농도를 증가시킬 수 있다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "94f284478c",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 1)",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "이 약의 임신 중 사용은 금기이다. 가임여성은 적절한 피임방법을 강구하여야 한다. 임신 확인 시 이 약 사용을 중단해야 한다. 대신 환자 개별에 대한 치료 필요성을 고려해야 한다. 이 약은 임신할 가능성이 없는 경우 및 태아에 대한 잠재적 위험성을 알려준 후에만 가임 연령의 여성에게 투여한다. 또한, 고지질혈증 치료는 일반적으로 임신 중 필요하지 않다. 죽상동맥경화증은 만성적 과정이며, 임신…",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "6b3bc9fe34",
+      "kind": "state_pregnancy",
+      "section": "pregnancy",
+      "where": "7. 임부 및 수유부에 대한 투여 2)",
+      "matched": [],
+      "interval": null,
+      "tone": "avoid",
+      "excerpt": "이 약의 수유 중 사용은 금기이다. 랫트 대상 연구에서 아토르바스타틴 및/또는 대사 산물은 수유 중인 랫트의 유즙에 존재한다. 동물 유즙에 약물이 존재하는 경우 약물이 사람 모유에도 존재할 가능성이 높다. 이 약을 비롯한 스타틴 약물은 콜레스테롤 합성을 감소시키며, 기타 콜레스테롤 파생 생물학적 활성 물질의 합성 또한 감소시킬 가능성이 있으며, 수유중인 유아에 이상반응이 나타날 수 있으므로,…",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "4b05326f4d",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "65세 이상의 건강한 노인의 경우 아토르바스타틴의 혈장농도는 젊은 성인군에 비해 더 높게 나타났으나(Cmax 40 %증가, AUC 30 %증가), LDL-콜레스테롤 저하효과는 젊은 성인군과 유사하였다.",
+      "extractor": "kw-v0"
+    },
+    {
+      "id": "f0d2c0a372",
+      "kind": "state_elderly",
+      "section": "elderly",
+      "where": "9. 고령자에 대한 투여",
+      "matched": [],
+      "interval": null,
+      "tone": "info",
+      "excerpt": "고령자는 이 약 관련 근육병 및 횡문근 융해의 위험 인자이다. 고령 환자 대상 용량 선택 시 간, 신장, 심장 기능 저하 빈도가 더 높으며, 기저 질환 또는 기타 약물 치료의 빈도가 높으며, 근병증 위험성이 더 높다는 사실을 인지하여 신중해야 한다. 약을 투여 중인 고령 환자를 대상으로 근병증 위험성 증가를 관찰해야 한다.",
+      "extractor": "kw-v0"
+    }
+  ],
+  "fetchedAt": "2026-10-29T18:30:19"
+}
