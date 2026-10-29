@@ -32,6 +32,10 @@
     info: '<circle cx="10" cy="10" r="8"/><path d="M10 9v5"/><path d="M10 6.3h.01"/>',
     clock: '<circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/>',
     list: '<path d="M3 4h10M3 8h10M3 12h10"/>',
+    home: '<path d="M2.5 7.5L8 2.5l5.5 5V13a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z"/><path d="M6.5 13.5V9.5h3v4"/>',
+    user: '<circle cx="8" cy="5.5" r="2.7"/><path d="M2.8 13.5c.6-2.6 2.6-3.8 5.2-3.8s4.6 1.2 5.2 3.8"/>',
+    tri: '<path d="M8 2.5l6 10.5H2z"/><path d="M8 6.5v3"/><path d="M8 11.2h.01"/>',
+    checkc: '<circle cx="8" cy="8" r="6"/><path d="M5.3 8.2l1.9 1.9 3.5-3.7"/>',
     gear: '<circle cx="8" cy="8" r="2.2"/><path d="M8 1.8v2M8 12.2v2M1.8 8h2M12.2 8h2M3.6 3.6l1.4 1.4M11 11l1.4 1.4M12.4 3.6L11 5M5 11l-1.4 1.4"/>'
   };
   function icon(n, size) {
@@ -80,10 +84,10 @@
     return '<button type="button" class="cta outline skipbtn" data-act="skip" data-view="' + view + '"><span>건너뛰기</span><small>언제든 수정할 수 있어요</small></button>';
   }
   function nav(cur) {
-    function b(v, label, ic) {
-      return '<button type="button" data-act="nav" data-view="' + v + '"' + (cur === v ? ' aria-current="page" class="on"' : '') + '>' + icon(ic, 22) + '<span>' + label + '</span></button>';
+    function b(v, label, ic, scope) {
+      return '<button type="button" data-act="nav" data-view="' + v + '"' + (scope ? ' data-scope="' + scope + '"' : '') + (cur === v ? ' aria-current="page" class="on"' : '') + '>' + icon(ic, 28) + '<span>' + label + '</span></button>';
     }
-    return '<nav class="nav" aria-label="주 메뉴">' + b('home', '내 하루', 'clock') + b('list', '내 목록', 'list') + b('settings', '설정', 'gear') + '</nav>';
+    return '<nav class="nav" aria-label="주 메뉴">' + b('home', '홈', 'home') + b('result', '확인', 'checkc', 'all') + b('list', '내 약', 'list') + b('settings', '마이', 'user') + '</nav>';
   }
   /* 제품코드로 등록한 약은 전체 약 목록(DUR)이 와야 확인할 수 있다. 오는 중에는 "확인 범위 밖"이 아니라 "불러오는 중". */
   function durPending(it) { return !!(it && it.kind === 'drug' && it.productCode && !Pack.dur && ui.dur.status === 'loading'); }
@@ -304,71 +308,90 @@
         state.foods.map(function (f) { return '<span class="chip food">' + esc(f.name) + '<button type="button" data-act="rmFood" data-id="' + f.id + '" aria-label="' + esc(f.name) + ' 삭제">' + icon('x', 12) + '</button></span>'; }).join('') +
         '</div><p class="note">음식과 약의 상호작용 확인은 준비 중이에요. 지금은 기록만 해요.</p>';
     }
-    var nextLabel = onb ? '끝내고 내 하루 보기' : (p.all ? '저장하고 돌아가기' : '저장하고 결과 보기');
+    var nextLabel = onb ? '끝내고 홈으로 가기' : (p.all ? '저장하고 돌아가기' : '저장하고 결과 보기');
     return '<main class="screen has-bar">' + (onb ? obHead(3) + stepChip(3) : topbar()) +
       '<h1 class="h' + (onb ? ' ob' : '') + '" data-focus>언제 드시나요?</h1><p class="sub' + (onb ? ' ob' : '') + '">시간을 입력하면 하루 시간표가 만들어지고, 설명서에 복용 간격이 적힌 약은 간격도 볼 수 있어요. 나중에 입력해도 돼요.</p>' +
       (list.length ? '<ul class="tlist pcards">' + list.map(timeRow).join('') + '</ul>' : '<p class="muted">등록한 것이 없어요.</p>') + foods + '</main>' +
       actionBar('<button type="button" class="cta" data-act="timesDone">' + nextLabel + '</button>');
   };
 
-  function timelineHtml() {
-    var T = 44, entries = [];
-    state.items.forEach(function (it) { activeTimes(it).forEach(function (t) { entries.push({ it: it, t: t, h: E.toHours(t) }); }); });
-    if (!entries.length) return '';
-    var hs = entries.map(function (e) { return e.h; });
-    var H0 = Math.min(6, Math.floor(Math.min.apply(null, hs))), H1 = Math.max(22, Math.ceil(Math.max.apply(null, hs)) + 1);
-    var checks = E.intervalChecks(state.items, Pack), flag = {}, wins = '', seen = {};
-    checks.forEach(function (c) {
-      if (c.close) { flag[c.ownerId] = 1; flag[c.otherId] = 1; }
-      var owner = findItem(c.ownerId);
-      activeTimes(owner).forEach(function (t) {
-        var k = c.ownerId + t; if (seen[k]) return; seen[k] = 1;
-        wins += '<div class="win" style="top:' + ((E.toHours(t) - H0) * T) + 'px;height:' + (c.maxH * T) + 'px"><span>설명서 안내 간격 ' + c.minH + '~' + c.maxH + '시간</span></div>';
-      });
-    });
-    entries.sort(function (a, b) { return a.h - b.h; });
-    var lanes = [];
-    entries.forEach(function (e) {
-      var li = 0;
-      while (li < lanes.length && lanes[li] > e.h) li++;
-      lanes[li] = e.h + 0.9; e.lane = li;
-    });
-    var nl = Math.max(1, lanes.length);
-    var evs = entries.map(function (e) {
-      var cls = 'ev ' + (e.it.kind === 'drug' ? 'drug' : 'supp') + (flag[e.it.id] ? ' flag' : '');
-      return '<button type="button" class="' + cls + '" data-act="detail" data-id="' + e.it.id + '" style="top:' + ((e.h - H0) * T) + 'px;left:' + (e.lane * 100 / nl) + '%;width:' + (100 / nl) + '%">' + (flag[e.it.id] ? icon('alert', 14) : '') + '<span class="ev-name">' + esc(nm(e.it)) + '</span><em>' + esc(e.t) + '</em></button>';
-    }).join('');
-    var hrs = '';
-    for (var h = H0; h <= H1; h += 2) hrs += '<div class="hr" style="top:' + ((h - H0) * T) + 'px">' + String(h).padStart(2, '0') + '시</div>';
-    return '<div class="tl" style="height:' + ((H1 - H0) * T) + 'px">' + hrs + wins + '<div class="evs">' + evs + '</div></div>';
+  /* ---------- 홈: 오늘 복용 (오전/오후 카드) ---------- */
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function todayKey() { var d = new Date(); return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
+  /* 복용 체크는 이 기기 안에만, 오늘 날짜 기준으로 저장한다. 날짜가 바뀌면 새로 시작한다. */
+  function todayChecks() { var k = todayKey(); if (!state.today || state.today.date !== k) state.today = { date: k, done: {} }; return state.today; }
+  function fmtTime(t) { var m = /^(\d{1,2}):(\d{2})$/.exec(t); return m ? (+m[1]) + ':' + m[2] : t; }
+  function circDiff(a, b) { var d = Math.abs(a - b); return Math.min(d, 24 - d); }
+  /* 두 약의 시간 중 가장 가까운 한 쌍(엔진이 준 gapHours와 같은 값을 만드는 쌍) */
+  function closestTimes(ia, ib) {
+    var best = null;
+    activeTimes(ia).forEach(function (ta) { activeTimes(ib).forEach(function (tb) { var g = circDiff(E.toHours(ta), E.toHours(tb)); if (best === null || g < best.g) best = { ta: ta, tb: tb, g: g }; }); });
+    return best;
   }
-
+  function counterText(a) {
+    var names = [];
+    a.findings.forEach(function (f) { if (names.indexOf(f.withName) < 0) names.push(f.withName); });
+    if (!names.length) return '';
+    return names.length > 1 ? names[0] + ' 외 ' + (names.length - 1) + '개와' : E.josa(names[0], '과', '와');
+  }
+  function rcard(d, lines, firstOfItem) {
+    var done = !!todayChecks().done[d.it.id + '|' + d.t], nameT = nm(d.it) + ' ' + fmtTime(d.t);
+    return '<li class="rcard' + (done ? ' done' : '') + '"><button type="button" class="chk" role="checkbox" aria-checked="' + done + '" data-act="check" data-id="' + d.it.id + '" data-t="' + d.t + '" aria-label="' + esc(nameT) + ' 복용 체크"><span class="circle">' + icon('check', 12) + '</span></button>' +
+      '<button type="button" class="rmain" data-act="detail" data-id="' + d.it.id + '"><span class="rhead"><b>' + esc(nm(d.it)) + '</b><time>' + esc(fmtTime(d.t)) + '</time></span>' +
+      lines.map(function (l) { return '<span class="rline ' + l.kind + '">' + icon(l.kind === 'red' ? 'tri' : 'info', 16) + '<span>' + esc(l.text) + '</span></span>'; }).join('') + '</button></li>';
+  }
   VIEWS.home = function () {
-    var checks = E.intervalChecks(state.items, Pack).filter(function (c) { return c.close; })
-      .sort(function (a, b) { return a.gapHours - b.gapHours; }); // 가장 가까운 간격을 먼저
-    var att = E.analyze(state.items, Pack).filter(function (a) { return a.status === 'attention'; });
-    var tl = timelineHtml();
-    var head, sub;
-    if (checks.length) {
-      var c = checks[0], o = nm(findItem(c.ownerId)), x = nm(findItem(c.otherId));
-      head = E.josa(o, '과', '와') + ' ' + E.josa(x, '이', '가') + ' ' + fmtGap(c.gapHours) + '시간 차예요';
-      sub = '설명서가 안내한 복용 간격(' + c.minH + '~' + c.maxH + '시간)보다 가까워요. 약사에게 확인해 보세요.' + (checks.length > 1 ? ' (외 ' + (checks.length - 1) + '건)' : '');
-    } else if (tl) {
-      head = '오늘의 복용 시간표';
-      sub = '설명서에 적힌 복용 간격과 가까운 시간은 찾지 못했어요. 안전하다는 뜻은 아니에요.';
-    } else {
-      head = state.items.length ? '복용 시간을 입력해 보세요' : '아직 등록한 것이 없어요';
-      sub = state.items.length ? '시간을 입력하면 하루 시간표가 만들어져요.' : '먹는 약과 영양제를 등록하면 겹치는 것만 알려드려요.';
+    var analysis = E.analyze(state.items, Pack), byId = {};
+    analysis.forEach(function (a) { byId[a.item.id] = a; });
+    var close = E.intervalChecks(state.items, Pack).filter(function (c) { return c.close; });
+    var doses = [], untimed = [];
+    state.items.forEach(function (it) {
+      var ts = activeTimes(it);
+      if (!ts.length) untimed.push(it);
+      ts.forEach(function (t) { doses.push({ it: it, t: t, h: E.toHours(t) }); });
+    });
+    doses.sort(function (a, b) { return a.h - b.h || nm(a.it).localeCompare(nm(b.it), 'ko'); });
+    // 카드 아래 보조 줄: 빨강(겹침·간격 주의, 삼각형 아이콘) · 파랑(안내)
+    function linesFor(d, first) {
+      var out = [];
+      close.forEach(function (c) {
+        var owner = findItem(c.ownerId), other = findItem(c.otherId); if (!owner || !other) return;
+        var cp = closestTimes(owner, other); if (!cp) return;
+        var mine = (d.it.id === owner.id && d.t === cp.ta) ? other : ((d.it.id === other.id && d.t === cp.tb) ? owner : null);
+        if (mine) out.push({ kind: 'red', text: E.josa(nm(mine), '과', '와') + ' ' + fmtGap(c.gapHours) + '시간 차 · 설명서 안내 간격(' + c.minH + '~' + c.maxH + '시간)보다 가까워요' });
+      });
+      var a = byId[d.it.id];
+      if (a && a.status === 'attention' && first) out.push({ kind: 'red', text: counterText(a) + ' 확인이 필요해요' });
+      if (durPending(d.it)) out.push({ kind: 'info', text: '약 목록을 불러오는 중이에요' });
+      else if (a && a.status === 'unchecked') out.push({ kind: 'info', text: '키핑이 확인한 범위 밖이에요. 약사에게 확인해 주세요' });
+      return out;
     }
-    var d = new Date().toLocaleDateString('ko-KR', { month: 'long', day: 'numeric', weekday: 'long' });
-    return '<main class="screen has-nav"><div class="hdr"><p class="tag">' + esc(d) + '</p><h1 class="h" data-focus>' + esc(head) + '</h1><p class="sub">' + esc(sub) + '</p></div>' +
+    var seen = {}, cards = doses.map(function (d) { var first = !seen[d.it.id]; seen[d.it.id] = 1; return { d: d, html: rcard(d, linesFor(d, first)) }; });
+    function section(label, list) { return list.length ? '<section class="rsec"><h2>' + label + '</h2><ul class="rlist">' + list.map(function (c) { return c.html; }).join('') + '</ul></section>' : ''; }
+    var am = cards.filter(function (c) { return c.d.h < 12; }), pm = cards.filter(function (c) { return c.d.h >= 12; });
+    var untimedHtml = untimed.length ? '<section class="rsec"><h2>시간을 정하지 않았어요</h2><ul class="rlist">' + untimed.map(function (it) {
+      var a = byId[it.id], lines = [];
+      if (a && a.status === 'attention') lines.push('<span class="rline red">' + icon('tri', 16) + '<span>' + esc(counterText(a) + ' 확인이 필요해요') + '</span></span>');
+      return '<li class="rcard"><button type="button" class="rmain" data-act="to" data-view="times" data-all="1" style="padding-left:14px"><span class="rhead"><b>' + esc(nm(it)) + '</b></span><span class="rline info">' + icon('info', 16) + '<span>복용 시간을 입력하면 오늘 복용 목록에 나와요</span></span>' + lines.join('') + '</button></li>';
+    }).join('') + '</ul></section>' : '';
+    var total = doses.length, done = doses.filter(function (d) { return todayChecks().done[d.it.id + '|' + d.t]; }).length;
+    var att = analysis.filter(function (a) { return a.status === 'attention'; });
+    var d0 = new Date().toLocaleDateString('ko-KR', { month: 'long', day: 'numeric', weekday: 'long' });
+    var prog = total
+      ? '<div class="prog"><div class="prog-row"><b>오늘 복용</b><span class="prog-count" aria-label="' + total + '개 중 ' + done + '개 체크">' + done + '<small>/' + total + '</small></span></div>' +
+        '<div class="prog-bar" role="progressbar" aria-valuemin="0" aria-valuemax="' + total + '" aria-valuenow="' + done + '" aria-label="오늘 복용 체크"><i style="width:' + Math.round(done * 100 / total) + '%"></i></div>' +
+        '<p class="prog-msg">' + (done === 0 ? '아직 시작 전이에요' : (done === total ? '오늘 복용을 모두 체크했어요' : (total - done) + '개 남았어요')) + '</p></div>'
+      : '<p class="prog-msg">' + (state.items.length ? '복용 시간을 입력하면 오늘 복용을 체크할 수 있어요' : '먹는 약과 영양제를 등록하면 겹치는 것만 알려드려요') + '</p>';
+    return '<main class="screen home"><div class="home-bar">키핑</div>' +
+      '<div class="home-card"><div><h1 data-focus>안녕하세요</h1><p class="home-date">' + esc(d0) + '</p></div>' + prog + '</div>' +
+      '<div class="home-body">' +
       (state.example ? '<p class="banner">예시 사용자예요. 복용 이력은 가정이고, 약 정보는 실제 공식 자료예요.</p>' : '') +
       (att.length ? '<button type="button" class="row flag" data-act="nav" data-view="result" data-scope="all"><span class="row-main"><b>확인이 필요한 것 ' + att.length + '개</b><span class="sub2">눌러서 이유를 볼 수 있어요</span></span>' + icon('chev') + '</button>' : '') +
-      tl +
+      section('오전', am) + section('오후', pm) + untimedHtml +
+      '<div class="home-actions">' +
       (!state.items.length ? '<button type="button" class="cta" data-act="to" data-view="onb-drugs">처음 설정 시작하기</button>' : '') +
-      (!tl && state.items.length ? '<button type="button" class="cta" data-act="to" data-view="times" data-all="1">복용 시간 입력하기</button>' : '') +
-      '<div class="stack pad-top"><button type="button" class="cta ' + (state.example ? 'ghost' : '') + '" data-act="newRx">새 약 추가하기</button>' +
-      (state.example ? '<button type="button" class="cta" data-act="demoRx">새 처방 알림 시연 보기</button>' : '') + '</div></main>' + nav('home');
+      '<button type="button" class="cta ' + (state.example ? 'ghost' : '') + '" data-act="newRx">새 약 추가하기</button>' +
+      (state.example ? '<button type="button" class="cta" data-act="demoRx">새 처방 알림 시연 보기</button>' : '') + '</div></div></main>' + nav('home');
   };
 
   VIEWS.list = function () {
@@ -428,7 +451,7 @@
       (rows.concat(supps).some(function (a) { return a.status === 'unchecked' && !durPending(a.item); }) ? '<p class="note">"확인 못 함"은 키핑이 확인한 범위 밖이라는 뜻이에요. 등록은 됐고, 다른 것과 겹치는지는 약사에게 확인해 주세요.</p>' : '') +
       (needTimes && !state.example ? '<button type="button" class="row" data-act="to" data-view="times" data-batch="' + esc(batch || '') + '"><span class="row-main"><b>복용 시간 입력하기</b><span class="sub2">입력하면 복용 간격도 볼 수 있어요</span></span>' + icon('chev') + '</button>' : '') +
       '<button type="button" class="row ghostrow" data-act="newRx" data-batch="' + esc(batch || '') + '"><span class="row-main"><b>빠진 약이 있나요?</b><span class="sub2">등록하지 않은 약은 확인할 수 없어요</span></span>' + icon('plus') + '</button>' +
-      '<div class="stack pad-top"><button type="button" class="cta" data-act="nav" data-view="questions">약사에게 물어볼 질문 보기</button></div></main>' + nav('');
+      '<div class="stack pad-top"><button type="button" class="cta" data-act="nav" data-view="questions">약사에게 물어볼 질문 보기</button></div></main>' + nav('result');
   };
 
   /* 병용금기 근거: 사유·고시일·조건(비고)을 원문 그대로. 요약하지 않는다. 비고는 있으면 반드시 보인다. */
@@ -631,6 +654,12 @@
     },
     agreeNext: function () { if (!ui.agree) return; state.agreedAt = new Date().toISOString(); save(); go('onb-drugs'); },
     skip: function (t) { Acts.to(t); },
+    check: function (t) {
+      var c = todayChecks(), k = t.dataset.id + '|' + t.dataset.t;
+      if (c.done[k]) delete c.done[k]; else c.done[k] = true;
+      save(); render(false);
+      var again = root.querySelector('[data-act="check"][data-id="' + t.dataset.id + '"][data-t="' + t.dataset.t + '"]'); if (again) again.focus({ preventScroll: true });
+    },
     demo: function () {
       function run() { loadExample(); go('home'); }
       if (ui.dur.status !== 'loading') return run();

@@ -33,9 +33,13 @@ python3 -m http.server 8080
 ## 테스트
 
 ```bash
-npm install          # jsdom (화면 점검용)
-node tests/engine.test.js   # 판정 로직 23개
-node tests/smoke.test.js    # 화면 흐름·문구 점검 61개
+npm install          # jsdom (화면 점검용), playwright-core (레이아웃 점검용)
+node tests/engine.test.js      # 판정 로직
+node tests/dur-pack.test.js    # 병용금기 데이터
+node tests/dur.test.js         # 약 검색·병용금기 모듈
+node tests/engine-dur.test.js  # 엔진 + 병용금기 연결
+node tests/smoke.test.js       # 화면 흐름·문구 점검
+node tests/layout.test.js      # 실제 브라우저로 6개 화면 폭의 레이아웃 점검(크롬 필요. 없으면 건너뜀. KEEPING_CHROME으로 경로 지정)
 ```
 
 ## 폴더 구조
@@ -50,7 +54,7 @@ js/api.js           데이터 조회 (데이터 팩 + 선택적 서버 중계)
 js/app.js           화면과 흐름
 data/datapack.js    확인한 실제 데이터 (출처·확인일 포함)
 api/                서버 중계 초안 (⚠ 미검증)
-tests/              엔진 테스트, 화면 흐름 테스트
+tests/              엔진·데이터·화면 흐름·레이아웃 테스트
 CLAUDE.md           AI 작업 규칙
 ```
 

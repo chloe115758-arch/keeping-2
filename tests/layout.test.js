@@ -98,6 +98,11 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       await page.evaluate(() => KeepingApp.go('welcome')); await page.click('[data-act="demo"]'); await page.waitForSelector('.nav');
       let r = await R();
       check(`${w}: 홈 — 하단 탭이 열 안`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
+      const home = await page.evaluate(() => { const rc = (e) => { const r = e.getBoundingClientRect(); return { x: r.left, r: r.right, w: r.width, h: r.height, y: r.top }; }; return { card: rc(document.querySelector('.home-card')), bar: rc(document.querySelector('.home-bar')), cards: [...document.querySelectorAll('.rcard')].map(rc), chks: [...document.querySelectorAll('.chk')].map(rc), tabs: [...document.querySelectorAll('.nav button')].map(rc) }; });
+      check(`${w}: 홈 — 민트 상단바·상단 카드가 열 폭 전체`, Math.abs(home.card.w - r.app.w) <= 1 && Math.abs(home.bar.w - r.app.w) <= 1);
+      check(`${w}: 홈 — 복용 카드가 열 안 좌우 16px(폭 ${'열 폭 − 32'})`, home.cards.length >= 3 && home.cards.every((c) => Math.abs(c.x - (r.app.x + 16)) <= 1 && Math.abs(r.app.r - 16 - c.r) <= 1));
+      check(`${w}: 홈 — 체크 버튼 터치 영역 44px 이상`, home.chks.length >= 3 && home.chks.every((c) => c.w >= 44 && c.h >= 44));
+      check(`${w}: 홈 — 하단 탭 4개가 열 폭을 나눠 가짐(터치 영역 44px 이상)`, home.tabs.length === 4 && home.tabs.every((t) => t.w >= 44 && t.h >= 44) && Math.abs(home.tabs[0].x - r.app.x) <= 1 && Math.abs(home.tabs[3].r - r.app.r) <= 1);
       await page.click('[data-act="demoRx"]'); await page.click('[data-act="demoConfirm"]'); await page.waitForSelector('.row.flag');
       r = await R();
       check(`${w}: 결과 — 하단 탭이 열 안, 가로 넘침 없음`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
@@ -132,6 +137,29 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
     check('환영 화면: 첫 화면이 보이는 순간과 글꼴이 다 도착한 뒤의 문단 높이가 같음', early === late, early + ' → ' + late);
     check('글꼴(SUIT)이 첫 화면 전에 로드됨', await p2.evaluate(() => document.fonts.check('600 16px SUIT')));
     await ctx2.close();
+
+    // ── 사파리(iPhone) 대비 점검 (실제 기기가 아니라 코드·계산값 기준)
+    console.log('\n사파리 대비 (코드 기준, 393×852)');
+    const css = fs.readFileSync(path.join(root, 'css', 'style.css'), 'utf8'), html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+    check('100vh마다 100dvh 대체값이 있음(주소창이 접혀도 높이가 맞게)', (css.match(/100vh/g) || []).length > 0 && (css.match(/100dvh/g) || []).length >= (css.match(/100vh/g) || []).length);
+    check('viewport-fit=cover + 하단 영역·탭에 env(safe-area-inset-bottom)', /viewport-fit=cover/.test(html) && /\.actionbar\{[^}]*safe-area-inset-bottom/.test(css) && /\.nav\{[^}]*safe-area-inset-bottom/.test(css));
+    check('위쪽 안전 영역(env(safe-area-inset-top))을 화면과 토스트가 씀', /\.screen\{[^}]*safe-area-inset-top/.test(css) && /\.toast\{[^}]*safe-area-inset-top/.test(css));
+    check('overflow:clip을 지원하지 않는 브라우저 대체 규칙이 있음(하단 영역 sticky 유지)', /@supports not \(overflow:clip\)/.test(css));
+    const ctx3 = await browser.newContext({ viewport: { width: 393, height: 852 } });
+    const p3 = await ctx3.newPage();
+    await p3.goto(base); await p3.waitForFunction(() => KeepingApp.ui.dur.status === 'ready' || KeepingApp.ui.dur.status === 'error');
+    const inputs = [], fixedEls = [];
+    const grab = async (name) => { await p3.waitForTimeout(120); const r = await p3.evaluate(() => ({ i: [...document.querySelectorAll('#app input, #app textarea, #app select')].filter((e) => !['file', 'checkbox', 'radio'].includes(e.type)).map((e) => ({ id: e.id || e.type, fs: parseFloat(getComputedStyle(e).fontSize) })), f: [...document.querySelectorAll('body *')].filter((e) => getComputedStyle(e).position === 'fixed').map((e) => e.className || e.tagName) })); r.i.forEach((x) => inputs.push({ name, ...x })); r.f.forEach((x) => fixedEls.push({ name, x })); };
+    await p3.click('.splash'); await p3.click('[data-act="start"]'); await p3.click('[data-act="agree"]'); await p3.click('#agreenext'); await p3.waitForSelector('#q'); await grab('약 검색');
+    await p3.click('.skipbtn'); await p3.waitForSelector('[data-tab]'); await grab('영양제 국내'); await p3.click('[data-tab="overseas"]'); await grab('영양제 해외'); await p3.click('[data-tab="manual"]'); await grab('영양제 직접');
+    await p3.evaluate(() => { KeepingApp.state().items.push({ id: 'zz', kind: 'drug', source: 'manual', name: 'x', times: [''] }); KeepingApp.go('times', { all: true }); }); await grab('복용 시간');
+    await p3.evaluate(() => KeepingApp.go('questions')); await grab('질문');
+    check('입력 칸(' + inputs.length + '개)의 글자가 모두 16px 이상(사파리 자동 확대 방지)', inputs.length >= 6 && inputs.every((i) => i.fs >= 16), JSON.stringify(inputs.filter((i) => i.fs < 16)));
+    check('화면 아래에 고정(fixed)된 요소가 없음(키보드에 가려지지 않음). 토스트만 위쪽 고정', fixedEls.every((f) => !/actionbar|nav/.test(String(f.x))));
+    await p3.evaluate(() => KeepingApp.go('welcome')); await p3.click('[data-act="demo"]'); await p3.waitForSelector('.nav');
+    const toastTop = await p3.evaluate(() => { const d = document.createElement('div'); d.className = 'toast'; d.textContent = 't'; document.body.appendChild(d); const r = d.getBoundingClientRect(); d.remove(); return r.top; });
+    check('토스트가 화면 위쪽에 뜸(키보드가 열려도 보임)', toastTop < 100, 'top=' + toastTop);
+    await ctx3.close();
   } finally { await browser.close(); server.close(); }
   console.log('\n통과 ' + ok + ' / 실패 ' + bad);
   process.exit(bad ? 1 : 0);
