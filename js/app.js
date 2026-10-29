@@ -142,11 +142,12 @@
     if (ui.dur.status === 'error') return '<p class="note">전체 약 검색을 쓸 수 없어요. 키핑이 근거를 확인하는 약 안에서만 검색돼요. 목록에 없는 약은 이름 그대로 등록할 수 있어요.</p>';
     return '';
   }
+  var bootPromise = Promise.resolve();
   function bootDur() {
     ui.dur = { status: 'loading' };
     var st = document.getElementById('durstat'); if (st) st.innerHTML = durHtml();
-    if (!window.KeepingDur || typeof fetch !== 'function') { ui.dur = { status: 'error' }; return Promise.resolve(); }
-    return window.KeepingDur.load('data/dur/').then(function (dur) {
+    if (!window.KeepingDur || typeof fetch !== 'function') { ui.dur = { status: 'error' }; bootPromise = Promise.resolve(); return bootPromise; }
+    bootPromise = window.KeepingDur.load('data/dur/').then(function (dur) {
       Pack.dur = dur; ui.dur = { status: 'ready' };
     }).catch(function () {
       delete Pack.dur; ui.dur = { status: 'error' };
@@ -155,6 +156,7 @@
       if (needsSearch() && currentKind() === 'drug' && ui.q.trim()) runSearch(); // 로딩 중에 입력한 검색을 이어서 실행
       if (['home', 'list', 'result', 'detail', 'settings'].indexOf(ui.view) > -1) render(false); // 확인 결과가 달라질 수 있는 화면만 다시 그린다
     });
+    return bootPromise;
   }
 
   /* ---------- 사진으로 찾기 (기기 안 글자 인식) ----------
@@ -489,6 +491,11 @@
       '<div class="stack pad-top"><button type="button" class="cta" data-act="nav" data-view="questions">약사에게 물어볼 질문 보기</button></div></main>' + nav('');
   };
 
+  /* 병용금기 근거: 사유·고시일·조건(비고)을 원문 그대로. 요약하지 않는다. 비고는 있으면 반드시 보인다. */
+  function pairFacts(f) {
+    function r(k, v, cls) { return '<div class="' + (cls || '') + '"><dt>' + k + '</dt><dd>' + esc(v) + '</dd></div>'; }
+    return '<dl class="pairfacts">' + r('사유', f.reason) + (f.notified ? r('고시일', f.notified) : '') + (f.note ? r('조건', f.note, 'cond') : '') + '</dl>';
+  }
   function metaRow(label, value, tipHtml) {
     return '<div class="meta"><b>' + esc(label) + '</b><span>' + value + '</span>' + (tipHtml || '') + '</div>';
   }
@@ -505,7 +512,7 @@
         var kindText = { pair: '병용금기 목록에 있어요', name: '설명서에 성분 이름이 있어요', 'class': '설명서의 종류 표현 · 약사 확인 권장', supp: '설명서의 종류 표현 · 약사 확인 권장' }[f.kind];
         html += '<article class="fcard"><div class="fhead"><b>' + esc(f.withName) + '</b><span class="conf ' + f.confidence + '">' + kindText + '</span>' +
           (f.confidence === 'low' ? tip('c' + i, '설명서가 약의 종류로 적은 표현이에요. 이 약이 해당하는지는 설명서만으로 알 수 없어서, 약사에게 확인해 주세요.') : '') + '</div>' +
-          '<p class="ftitle">' + esc(f.title) + '</p>' + (f.summary ? '<p class="muted">' + esc(f.summary) + '</p>' : '') +
+          '<p class="ftitle">' + esc(f.title) + '</p>' + (f.kind === 'pair' ? pairFacts(f) : (f.summary ? '<p class="muted">' + esc(f.summary) + '</p>' : '')) +
           (f.excerpt ? '<blockquote><small>' + esc(f.sectionTitle || '') + '</small><p>' + esc(f.excerpt) + '</p></blockquote>' : '') +
           '<p class="src"><a href="' + esc(f.source.url) + '" target="_blank" rel="noopener">' + esc(f.source.label) + ' 보기</a><small>확인일 ' + esc(f.source.checkedAt) + '</small></p></article>';
       });
@@ -526,14 +533,18 @@
     html += '<p class="lbl">확인한 것</p>';
     if (item.kind === 'drug') {
       var cv = a.coverage, d = r && r.dur, dp = cv.product && Pack.dur ? Pack.dur.hasPairs(cv.product.code) : false;
+      var basis = r && r.ingrCode ? (Pack.pairs || []).filter(function (x) { return x.a === r.ingrCode || x.b === r.ingrCode; })[0] : null;
       var tabooText, tabooTip = '';
       if (durPending(item)) tabooText = '약 목록을 불러오는 중이에요';
-      else if (d) {
+      else if (cv.product && Pack.dur) {     // 병용금기 파일로 확인되는 약: 건수 없이 목록에 있는지만
+        tabooText = dp ? '이 성분은 병용금기 목록에 있어요' : '이 성분은 목록에 나오지 않아요';
+        tabooTip = tip('t1', dp ? '등록하신 것과 겹치는 것만 위에 보여드려요.' : '목록에 없다는 뜻이에요. 안전하다는 뜻은 아니에요.');
+      } else if (d && !Pack.dur) {             // 전체 약 목록이 없을 때(데이터 팩 모드)만 예전 건수
         tabooText = d.usjntTaboo === 0 ? '공식 목록에 등록 없음' : d.usjntTaboo + '건 등록 (제품 기준)';
         tabooTip = d.usjntTaboo === 0 ? tip('t1', '공식 목록에 등록된 것이 없다는 뜻이에요. 안전하다는 뜻은 아니에요.') : tip('t1', '이 중 등록하신 것과 겹치는 것만 위에 보여드려요.');
-      } else if (cv.dur) {
-        tabooText = dp ? '병용금기 목록으로 확인했어요' : '확인했어요 · 이 성분은 목록에 나오지 않아요';
-        tabooTip = tip('t1', dp ? '병용금기 목록에 이 성분이 있어요. 이 중 등록하신 것과 겹치는 것만 위에 보여드려요.' : '병용금기 목록에 이 성분이 나오지 않는다는 뜻이에요. 안전하다는 뜻은 아니에요.');
+      } else if (r && !cv.product && (d || basis)) {   // 데이터 팩에 직접 조회한 기록이 있고 보험코드 연결은 없는 약(예: 수출용 코니트라캡슐)
+        tabooText = '확인했어요 · 식약처 DUR 조회 (' + ((basis && basis.checkedAt) || Pack.checkedAt) + ')';
+        tabooTip = tip('t1', '이 약은 급여목록에 없어서 이전에 직접 조회한 결과를 보여드려요. 최신 목록과 다를 수 있어요.');
       } else tabooText = '확인하지 못했어요';
       html += metaRow('병용금기', tabooText, tabooTip);
       var efText = !d ? '확인하지 않았어요' : (d.efcyDplct === 0 ? '등록 없음' : (d.efcyDplct == null ? '확인하지 않았어요' : (r.series ? r.series + ' 계열 ' + d.efcyDplct + '건' : d.efcyDplct + '건')));
@@ -616,9 +627,16 @@
   }
   function newBatchId() { return 'rx-' + Date.now().toString(36); }
 
+  /* 시연용 약 하나를 만든다. 전체 약 목록이 있으면 dur.search로 찾은 제품코드 항목, 없으면 데이터 팩(itemSeq) 항목. */
+  function demoDrug(query, seq, time, extra) {
+    var hit = Pack.dur && Pack.dur.search(query, { limit: 1 })[0];
+    if (hit) return newItem(Object.assign(Pack.dur.toItem(hit.code), { times: [time] }, extra || {}));
+    var r = Pack.drugs.filter(function (d) { return d.itemSeq === seq; })[0];
+    return newItem(Object.assign({ kind: 'drug', source: 'pack', itemSeq: seq, name: r.display || r.name, times: [time] }, extra || {}));
+  }
   function loadExample() {
     state = Store.fresh(); state.example = true;
-    var itra = newItem({ kind: 'drug', source: 'pack', itemSeq: '200000913', name: '코니트라캡슐', times: ['08:30'] });
+    var itra = demoDrug('이트코나졸캡슐', '200000913', '08:30');   // 수출용 코니트라캡슐 대신 급여목록 제품(전체 약 목록이 없을 때만 코니트라캡슐)
     var s = Pack.supplements[0];
     var vitc = newItem({ kind: 'supp', source: 'domestic', name: s.name, reportNo: s.reportNo, company: s.company, ingredientRaw: s.ingredientRaw, ingredientKeys: s.ingredientKeys.slice(), times: ['13:30'] });
     var iron = newItem({ kind: 'supp', source: 'manual', name: '철분제 (예시)', ingredientKeys: ['iron'], times: ['09:30'] });
@@ -629,9 +647,8 @@
   function addDemoBatch() {
     var b = 'rx-demo';
     state.items = state.items.filter(function (i) { return i.batch !== b; });
-    [['200403126', '21:00'], ['200402420', '09:00'], ['199000541', '08:00'], ['198801649', '12:30']].forEach(function (p) {
-      var r = Pack.drugs.filter(function (d) { return d.itemSeq === p[0]; })[0];
-      state.items.push(newItem({ kind: 'drug', source: 'pack', itemSeq: p[0], name: r.display || r.name, times: [p[1]], batch: b }));
+    [['시바스', '200403126', '21:00'], ['이텍스시메티딘', '200402420', '09:00'], ['알마겔에프', '199000541', '08:00'], ['후로스판', '198801649', '12:30']].forEach(function (p) {
+      state.items.push(demoDrug(p[0], p[1], p[2], { batch: b }));
     });
     state.lastBatch = b; save();
     return b;
@@ -639,7 +656,12 @@
 
   var Acts = {
     start: function () { go('onb-drugs'); },
-    demo: function () { loadExample(); go('home'); },
+    demo: function () {
+      function run() { loadExample(); go('home'); }
+      if (ui.dur.status !== 'loading') return run();
+      toast('약 목록을 불러오는 중이에요. 끝나면 바로 시작할게요');
+      bootPromise.then(run);
+    },
     to: function (t) {
       var v = t.dataset.view, p = {};
       if (t.dataset.mode) p.mode = t.dataset.mode;

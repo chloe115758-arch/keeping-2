@@ -208,6 +208,13 @@ button{background:none;border:0;cursor:pointer}
 .fcard blockquote{margin:10px 0 6px;padding:10px 12px;border-radius:var(--r-sm);background:rgba(255,255,255,.7)}
 .fcard blockquote small{display:block;font:var(--caption);font-weight:400;color:var(--ink-2);margin-bottom:2px}
 .fcard blockquote p{font:var(--body3);font-size:14.5px;color:var(--ink-strong)}
+.pairfacts{display:grid;gap:6px;margin:8px 0 4px}
+.pairfacts div{display:grid;grid-template-columns:56px 1fr;gap:8px;align-items:baseline}
+.pairfacts dt{font:var(--caption);font-weight:700;color:var(--ink-2)}
+.pairfacts dd{font:var(--body3);font-size:14.5px;color:var(--ink-strong)}
+.pairfacts .cond{padding:8px 10px;border-radius:var(--r-sm);background:var(--white);box-shadow:0 0 0 1.5px var(--error) inset}
+.pairfacts .cond dt{color:var(--error-ink)}
+.pairfacts .cond dd{font-weight:700}
 .src{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-top:6px;font:var(--body3)}
 .src a{display:inline-flex;align-items:center;min-height:var(--tap);font-weight:700;color:var(--primary-800)}
 .src small{color:var(--ink-2)}
