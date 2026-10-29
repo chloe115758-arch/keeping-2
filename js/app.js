@@ -12,7 +12,8 @@
     view: 'welcome', params: {}, prev: null,
     tab: 'domestic', q: '', oq: '', results: null, remote: null, overseas: null,
     chips: [], manualName: '', searchToken: 0,
-    dur: { status: 'loading' }
+    dur: { status: 'loading' },
+    care: { status: 'loading', engine: null, notice: true }
   };
   var searchTimer = null;
 
@@ -172,6 +173,58 @@
     return bootPromise;
   }
 
+  /* ---------- 설명서 기반 안내 데이터(care-pack) 불러오기 ----------
+     약 목록(DUR)이 온 뒤에 읽는다(엔진이 제품 → 성분을 DUR로 찾는다). 실패하면 병용금기만으로 동작한다. */
+  function emptyCare() {
+    return window.KeepingCare ? window.KeepingCare.create({ pack: { entries: {} }, dur: Pack.dur, groups: {} }) : null;
+  }
+  function careEngine() { return ui.care.engine || emptyCare(); }
+  var carePromise = Promise.resolve();
+  function mergeExtraKeys(extra) {
+    ((extra && extra.keys) || []).forEach(function (k) {
+      if (Pack.supplementKeyList.some(function (x) { return x.id === k.id; })) return;
+      Pack.supplementKeyList.push({ id: k.id, ko: k.ko, scope: !!k.scope, aliases: (k.aliases || []).slice() });
+      if (Pack.chipKeys.indexOf(k.id) < 0) Pack.chipKeys.push(k.id);
+    });
+  }
+  function bootCare() {
+    ui.care = { status: 'loading', engine: null, notice: true };
+    function fin() {
+      if (['home', 'list', 'detail', 'sheet', 'settings', 'onb-supps', 'times'].indexOf(ui.view) > -1) render(false);
+    }
+    function fail() { ui.care = { status: 'error', engine: emptyCare(), notice: true }; }
+    if (typeof fetch !== 'function' || !window.KeepingCare) { fail(); carePromise = Promise.resolve(); return carePromise; }
+    var extra = fetch('data/care/supplement-keys-extra.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(mergeExtraKeys).catch(function () {});
+    carePromise = Promise.all([bootPromise, extra]).then(function () {
+      if (!Pack.dur) throw new Error('dur');
+      return window.KeepingCare.load('data/care/', Pack.dur);
+    }).then(function (engine) { ui.care = { status: 'ready', engine: engine, notice: false }; }, fail).then(fin);
+    return carePromise;
+  }
+  function careStatHtml() {
+    var c = ui.care;
+    if (c.status === 'loading') return '<p class="muted carestat" aria-live="polite">설명서 기반 안내를 준비 중이에요…</p>';
+    if (c.status === 'error' && c.notice) return '<div class="note carenote" role="status"><span>설명서 기반 안내를 불러오지 못했어요.' + (Pack.dur ? ' 병용금기만 확인했어요.' : '') + '</span><button type="button" class="mini txt" data-act="closeCareNote">닫기</button></div>';
+    return '';
+  }
+  /* 등록한 약·영양제 → 케어 엔진 입력 (docs/plan-v2.md 5-3b) */
+  function mealsOf() {
+    var m = state.meals || {}, o = {};
+    ['breakfast', 'lunch', 'dinner'].forEach(function (k) { if (/^\d{1,2}:\d{2}$/.test(m[k] || '')) o[k] = m[k]; });
+    return o;
+  }
+  function statesOf() { return (state.states || []).filter(function (x) { return x === 'pregnant' || x === 'elderly'; }); }
+  function careItems() {
+    return state.items.map(function (it) {
+      if (it.kind === 'drug') return { id: it.id, kind: 'drug', productCode: it.productCode || undefined, itemSeq: it.itemSeq || undefined, name: it.name, display: nm(it), times: activeTimes(it) };
+      return { id: it.id, kind: 'supp', ingredientKeys: (it.ingredientKeys || []).slice(), name: it.name, display: nm(it), times: activeTimes(it) };
+    });
+  }
+  function careModel() {
+    var eng = careEngine();
+    return eng ? eng.analyze(careItems(), { meals: mealsOf(), states: statesOf() }) : null;
+  }
+
   function selectedItems(kind) {
     var b = (ui.view === 'add') ? (ui.params.batch || null) : null;
     return state.items.filter(function (it) { return it.kind === kind && (it.batch || null) === b; });
@@ -308,10 +361,18 @@
         state.foods.map(function (f) { return '<span class="chip food">' + esc(f.name) + '<button type="button" data-act="rmFood" data-id="' + f.id + '" aria-label="' + esc(f.name) + ' 삭제">' + icon('x', 12) + '</button></span>'; }).join('') +
         '</div><p class="note">음식과 약의 상호작용 확인은 준비 중이에요. 지금은 기록만 해요.</p>';
     }
+    var mealsHtml = '', stateHtml = '';
+    if (onb || p.all) {
+      var mv = state.meals || {}, sv = statesOf();
+      function mealIn(k, label) { return '<label class="mealin"><span>' + label + '</span><input type="time" class="time" data-input="meal" data-k="' + k + '" value="' + esc(mv[k] || '') + '"></label>'; }
+      mealsHtml = '<p class="lbl">식사 시간 (선택)</p><div class="meals">' + mealIn('breakfast', '아침') + mealIn('lunch', '점심') + mealIn('dinner', '저녁') + '</div><p class="note">식사 시간은 시간표에 식사 위치를 보여주는 데만 써요. 비워도 돼요.</p>';
+      function stChip(k, label) { var on = sv.indexOf(k) > -1; return '<button type="button" class="chip' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-act="toggleState" data-k="' + k + '">' + label + '</button>'; }
+      stateHtml = '<p class="lbl">내 상태 (선택)</p><div class="chips">' + stChip('pregnant', '임신 중') + stChip('elderly', '만 65세 이상') + '</div><p class="note">고르면 설명서의 임부·고령자 항목을 함께 보여드려요. 고르지 않으면 그 안내는 보여드리지 않아요. 이 기기에만 저장돼요.</p>';
+    }
     var nextLabel = onb ? '끝내고 홈으로 가기' : (p.all ? '저장하고 돌아가기' : '저장하고 결과 보기');
     return '<main class="screen has-bar">' + (onb ? obHead(3) + stepChip(3) : topbar()) +
       '<h1 class="h' + (onb ? ' ob' : '') + '" data-focus>언제 드시나요?</h1><p class="sub' + (onb ? ' ob' : '') + '">시간을 입력하면 하루 시간표가 만들어지고, 설명서에 복용 간격이 적힌 약은 간격도 볼 수 있어요. 나중에 입력해도 돼요.</p>' +
-      (list.length ? '<ul class="tlist pcards">' + list.map(timeRow).join('') + '</ul>' : '<p class="muted">등록한 것이 없어요.</p>') + foods + '</main>' +
+      (list.length ? '<ul class="tlist pcards">' + list.map(timeRow).join('') + '</ul>' : '<p class="muted">등록한 것이 없어요.</p>') + mealsHtml + stateHtml + foods + '</main>' +
       actionBar('<button type="button" class="cta" data-act="timesDone">' + nextLabel + '</button>');
   };
 
@@ -384,7 +445,7 @@
       : '<p class="prog-msg">' + (state.items.length ? '복용 시간을 입력하면 오늘 복용을 체크할 수 있어요' : '먹는 약과 영양제를 등록하면 겹치는 것만 알려드려요') + '</p>';
     return '<main class="screen home"><div class="home-bar">키핑</div>' +
       '<div class="home-card"><div><h1 data-focus>안녕하세요</h1><p class="home-date">' + esc(d0) + '</p></div>' + prog + '</div>' +
-      '<div class="home-body">' +
+      '<div class="home-body">' + careStatHtml() +
       (state.example ? '<p class="banner">예시 사용자예요. 복용 이력은 가정이고, 약 정보는 실제 공식 자료예요.</p>' : '') +
       (att.length ? '<button type="button" class="row flag" data-act="nav" data-view="result" data-scope="all"><span class="row-main"><b>확인이 필요한 것 ' + att.length + '개</b><span class="sub2">눌러서 이유를 볼 수 있어요</span></span>' + icon('chev') + '</button>' : '') +
       section('오전', am) + section('오후', pm) + untimedHtml +
@@ -744,6 +805,13 @@
       else if (p.all) go('home');
       else go('result', { batch: p.batch || state.lastBatch });
     },
+    toggleState: function (t) {
+      var k = t.dataset.k, cur = statesOf(), i = cur.indexOf(k);
+      if (i > -1) cur.splice(i, 1); else cur.push(k);
+      state.states = cur; save();
+      t.classList.toggle('on', i < 0); t.setAttribute('aria-pressed', String(i < 0));
+    },
+    closeCareNote: function () { ui.care.notice = false; render(false); },
     addFood: function () {
       var inp = document.getElementById('fq'); var v = inp ? inp.value.trim() : ''; if (!v) return;
       state.foods.push({ id: Store.uid(), name: v }); save(); render(false);
@@ -810,6 +878,8 @@
       var it = findItem(t.dataset.id); if (!it) return;
       var i = +t.dataset.i; it.times = it.times && it.times.length ? it.times.slice() : [''];
       it.times[i] = t.value; it.updatedAt = new Date().toISOString(); save();
+    } else if (k === 'meal') {
+      state.meals = Object.assign({}, state.meals || {}); state.meals[t.dataset.k] = t.value; save();
     } else if (k === 'import') {
       var file = t.files && t.files[0]; if (!file) return;
       var fr = new FileReader();
@@ -832,11 +902,12 @@
 
   ui.view = state.items.length ? 'home' : 'splash';
   var durReady = bootDur();   // 약 목록은 첫 화면과 상관없이 바로 불러오기 시작
+  var careReady = bootCare(); // 설명서 기반 안내 데이터는 약 목록이 온 뒤 읽는다
   /* 첫 화면은 글꼴(SUIT)이 도착한 뒤에 그린다(최대 1.2초). 글꼴이 늦게 와서 문단이 다시 줄바꿈되며 화면이 튀는 것을 막는다. */
   var booted = false;
   function boot() { if (booted) return; booted = true; render(true); }
   if (document.fonts && document.fonts.load) {
     Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + ' 16px SUIT'); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
   } else boot();
-  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur };
+  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, careModel: careModel, careItems: careItems };
 })();
