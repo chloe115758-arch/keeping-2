@@ -1,0 +1,11 @@
+{
+  "name": "keeping",
+  "version": "0.1.0",
+  "private": true,
+  "description": "키핑 — 내가 먹는 약과 영양제, 겹치는 것만 알려주는 서비스",
+  "scripts": {
+    "test": "node tests/engine.test.js && node tests/smoke.test.js",
+    "start": "python3 -m http.server 8080"
+  },
+  "devDependencies": { "jsdom": "^26.0.0" }
+}
