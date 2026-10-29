@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "purpose": "허가사항 문구가 가리키는 '분류 수준' 표현(예: 칼슘제제, 철분제제)을 우리 데이터의 성분·영양제 키에 연결하는 표. 사람이 만든 표이므로 원문 대조와 약사 확인이 필요하다.",
+    "rule": "분류 표현은 이 표에 적힌 구성원과만 연결한다. 이름의 일부가 비슷하다고 추측해 연결하지 않는다(예: '칼슘채널차단제'는 칼슘제제가 아니다).",
+    "verified": false,
+    "note": "ingredientPrefixes는 cleanIngr()로 정리한 영문 성분명이 해당 문자열로 시작하는지로 비교한다. 목록은 아직 우리 products.json과 대조하지 않았다."
+  },
+  "groups": {
+    "calcium": {
+      "ko": "칼슘제제",
+      "supplementKeys": ["calcium"],
+      "ingredientPrefixes": ["calcium carbonate", "calcium gluconate", "calcium lactate", "calcium citrate", "calcium chloride"]
+    },
+    "iron": {
+      "ko": "철분제제",
+      "supplementKeys": ["iron"],
+      "ingredientPrefixes": ["ferrous", "ferric", "iron", "polysaccharide iron"]
+    },
+    "aluminumAntacid": {
+      "ko": "알루미늄 함유 제산제",
+      "supplementKeys": [],
+      "ingredientPrefixes": ["aluminum hydroxide", "aluminium hydroxide", "almagate", "dried aluminum hydroxide", "magaldrate"]
+    },
+    "ppi": {
+      "ko": "프로톤 펌프 억제제(PPI)",
+      "supplementKeys": [],
+      "ingredientPrefixes": ["omeprazole", "esomeprazole", "lansoprazole", "dexlansoprazole", "pantoprazole", "rabeprazole", "ilaprazole"]
+    },
+    "cholestyramine": {
+      "ko": "콜레스티라민",
+      "supplementKeys": [],
+      "ingredientPrefixes": ["cholestyramine", "colestyramine"]
+    },
+    "stJohnsWort": {
+      "ko": "세인트존스워트 제품",
+      "supplementKeys": ["stJohnsWort"],
+      "ingredientPrefixes": ["st. john", "hypericum"]
+    },
+    "biotin": {
+      "ko": "비오틴 성분 제제",
+      "supplementKeys": ["biotin"],
+      "ingredientPrefixes": ["biotin"]
+    }
+  }
+}

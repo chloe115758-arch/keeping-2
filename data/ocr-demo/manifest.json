@@ -1,0 +1,136 @@
+{
+  "_meta": {
+    "purpose": "연습용 약봉투 이미지가 올라오면 인식한 것처럼 보여주는 시연 목록. 실제 글자 인식(OCR)은 하지 않는다.",
+    "match": "파일 이름(keeping-sample-envelope-N)과 PNG 이미지 크기(폭×높이)가 같을 때만 인식한다. 다른 이미지는 인식하지 않는다. (파일 내용 해시는 쓰지 않는다: 내려받는 과정에서 파일에 메타데이터가 덧붙을 수 있다)",
+    "fictional": "환자·약국은 가상이다(홍길동(예시), 예시약국).",
+    "generatedBy": "scripts/make_sample_envelopes.py"
+  },
+  "samples": [
+    {
+      "id": "envelope-1",
+      "title": "연습용 샘플 1 · 평소 먹던 약",
+      "file": "assets/ocr-demo/keeping-sample-envelope-1.png",
+      "fileName": "keeping-sample-envelope-1.png",
+      "items": [
+        {
+          "ocrText": "씬지로이드정0.075밀리그램",
+          "query": "씬지로이드정0.075밀리그램",
+          "box": [
+            0.0556,
+            0.3857,
+            0.4333,
+            0.0762
+          ],
+          "dose": {
+            "once": "1정",
+            "daily": "1일 1회",
+            "days": "30일",
+            "how": "아침 공복"
+          }
+        }
+      ],
+      "width": 900,
+      "height": 1260
+    },
+    {
+      "id": "envelope-2",
+      "title": "연습용 샘플 2 · 새로 받은 처방",
+      "file": "assets/ocr-demo/keeping-sample-envelope-2.png",
+      "fileName": "keeping-sample-envelope-2.png",
+      "items": [
+        {
+          "ocrText": "넥시움정20밀리그람",
+          "query": "넥시움정20밀리그람",
+          "box": [
+            0.0556,
+            0.3857,
+            0.4333,
+            0.0762
+          ],
+          "dose": {
+            "once": "1정",
+            "daily": "1일 1회",
+            "days": "14일",
+            "how": "아침 식전"
+          }
+        },
+        {
+          "ocrText": "알마겔에프현탁액",
+          "query": "알마겔에프현탁액",
+          "box": [
+            0.0556,
+            0.4619,
+            0.4333,
+            0.0762
+          ],
+          "dose": {
+            "once": "1포",
+            "daily": "1일 3회",
+            "days": "7일",
+            "how": "식후"
+          }
+        }
+      ],
+      "width": 900,
+      "height": 1260
+    },
+    {
+      "id": "envelope-3",
+      "title": "연습용 샘플 3 · 약이 여러 개인 처방",
+      "file": "assets/ocr-demo/keeping-sample-envelope-3.png",
+      "fileName": "keeping-sample-envelope-3.png",
+      "items": [
+        {
+          "ocrText": "시바스정",
+          "query": "시바스정",
+          "box": [
+            0.0556,
+            0.3857,
+            0.4333,
+            0.0762
+          ],
+          "dose": {
+            "once": "1정",
+            "daily": "1일 1회",
+            "days": "30일",
+            "how": "저녁"
+          }
+        },
+        {
+          "ocrText": "메토폴정",
+          "query": "메토폴정",
+          "box": [
+            0.0556,
+            0.4619,
+            0.4333,
+            0.0762
+          ],
+          "dose": {
+            "once": "1정",
+            "daily": "1일 2회",
+            "days": "30일",
+            "how": "식후"
+          }
+        },
+        {
+          "ocrText": "무코스타정",
+          "query": "무코스타정",
+          "box": [
+            0.0556,
+            0.5381,
+            0.4333,
+            0.0762
+          ],
+          "dose": {
+            "once": "1정",
+            "daily": "1일 3회",
+            "days": "14일",
+            "how": "식후"
+          }
+        }
+      ],
+      "width": 900,
+      "height": 1260
+    }
+  ]
+}

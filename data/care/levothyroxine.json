@@ -1,0 +1,108 @@
+{
+  "schema": "keeping-care-card/1",
+  "id": "levothyroxine",
+  "name": "레보티록신",
+  "match": {
+    "ingredientPrefixes": [
+      "levothyroxine"
+    ],
+    "note": "씬지로이드·씬지록신 등. 함량 표기('50㎍')가 붙은 성분명도 prefix로 맞춘다. dur.js의 cleanIngr 단위 목록에 ㎍·㎎ 추가 필요."
+  },
+  "source": {
+    "label": "의약품 허가사항 (식품의약품안전처) — 허가정보 API 상세 응답",
+    "operation": "getDrugPrdtPrmsnDtlInq08 (DrugPrdtPrmsnInfoService08), 공공데이터포털 15095677",
+    "productRef": "씬지로이드정0.075밀리그램 (품목기준코드 201605340, 최종 변경 2025-07-03)",
+    "originalDocUrl": "https://nedrug.mfds.go.kr/pbp/cmn/pdfDownload/201605340/NB",
+    "checkedAt": "2026-10-29",
+    "verification": "API 응답 원문(NB_DOC_DATA)과 대조함. 상호작용 (5)(12)(15)(16)와 임부 (1)은 문장이 일치. 비오틴 일반적주의 (7)은 캡처 끝이 잘려 문장 끝부분은 대조하지 못함. 이용허락범위: 제한 없음(포털 표시)."
+  },
+  "timing": {
+    "mealRelation": {
+      "value": "empty_stomach",
+      "label": "아침 공복",
+      "grade": "reference"
+    },
+    "gradeNote": "허가사항 용법·용량에는 공복 표기가 없다(API 응답 UD_DOC_DATA 확인). 아침 공복은 약학정보원 복약안내의 내용이다. 참고 등급, 원문 복제 없음, 링크로만 참조."
+  },
+  "rules": [
+    {
+      "id": "levo-calcium",
+      "type": "interval",
+      "grade": "label",
+      "otherGroup": "calcium",
+      "minGapHours": 4,
+      "headline": "칼슘제제와는 최소 4시간 간격을 두라는 안내가 있어요",
+      "detail": "칼슘제제가 이 약의 흡수를 늦추거나 줄일 수 있다고 설명서에 적혀 있어요.",
+      "excerpt": "…칼슘제제 … 병용투여시 이 약의 흡수가 지연 또는 감소될 수 있으므로 투여간격에 주의하여 신중히 투여한다.(최소 4시간 간격)",
+      "section": "사용상의 주의사항 · 상호작용 12)",
+      "verified": true
+    },
+    {
+      "id": "levo-iron-antacid-cholestyramine",
+      "type": "interval",
+      "grade": "label",
+      "otherGroups": [
+        "iron",
+        "aluminumAntacid",
+        "cholestyramine"
+      ],
+      "minGapHours": null,
+      "headline": "철분제·알루미늄 제산제와는 간격을 두라는 안내가 있어요",
+      "detail": "정확한 시간은 설명서에 적혀 있지 않아요. 약사에게 확인해 주세요.",
+      "excerpt": "콜레스티라민, 철분제제, 알루미늄 함유 제산제와 병용투여시 이 약의 흡수가 지연 또는 감소될 수 있으므로 투여간격에 주의하며 신중히 투여한다.",
+      "section": "사용상의 주의사항 · 상호작용 5)",
+      "verified": true
+    },
+    {
+      "id": "levo-ppi",
+      "type": "absorption_reduced",
+      "grade": "label",
+      "otherGroup": "ppi",
+      "headline": "프로톤 펌프 억제제와 함께 쓰면 흡수가 줄 수 있어요",
+      "detail": "시간을 띄우는 것으로 해결된다고 적혀 있지 않아요. 함께 쓰는 동안 갑상선 기능 검사를 권장한다고 안내돼 있어요. 의사·약사와 상의해 주세요.",
+      "excerpt": "프로톤 펌프 억제제(PPI)와의 병용투여는 갑상선 호르몬의 흡수를 감소시킬 수 있다. 병용 치료 동안 갑상선 기능의 정기적 모니터링 및 임상 모니터링이 권장되며…",
+      "section": "사용상의 주의사항 · 상호작용 16)",
+      "verified": true
+    },
+    {
+      "id": "levo-st-johns-wort",
+      "type": "supplement_effect",
+      "grade": "label",
+      "otherGroup": "stJohnsWort",
+      "headline": "세인트존스워트 제품은 이 약의 혈중 농도를 낮출 수 있어요",
+      "detail": "복용량을 바꿔야 하는지는 의사가 정해요. 임의로 바꾸지 말고 상의해 주세요.",
+      "excerpt": "세인트존스워트가 포함된 제품과 같은 효소 유도 약물은 레보티록신의 간 청소율을 증가시켜 갑상선 호르몬의 혈청 농도를 감소시킬 수 있다…",
+      "section": "사용상의 주의사항 · 상호작용 15)",
+      "verified": true
+    },
+    {
+      "id": "levo-biotin-test",
+      "type": "test_interference",
+      "grade": "label",
+      "otherGroup": "biotin",
+      "headline": "갑상선 검사를 받기 전에는 비오틴 복용 사실을 알려 주세요",
+      "detail": "비오틴이 검사 결과를 실제와 다르게 만들 수 있다고 안내돼 있어요. 검사 전 최소 2일은 피하는 것이 좋다고 적혀 있어요.",
+      "excerpt": "비오틴은 갑상선 면역분석검사에 간섭을 유발하여 검사 결과가 실제보다 낮게 또는 높게 측정될 수 있다…가능한 검체 채취 전 최소 2일 동안 비오틴 성분제제 복용을 피하는 것이 좋다.",
+      "section": "사용상의 주의사항 · 일반적 주의 7)",
+      "verified": false,
+      "verifiedNote": "문장 끝부분 미대조(캡처에서 잘림)"
+    },
+    {
+      "id": "levo-pregnancy",
+      "type": "state_note",
+      "grade": "label",
+      "state": "pregnant",
+      "headline": "임신 중에도 치료를 중단하지 않는다고 안내돼 있어요",
+      "detail": "복용 여부와 용량은 의사가 정해요.",
+      "excerpt": "…임부에 갑상선 호르몬을 투여했을 때 태아에 대한 부작용이 나타나지 않았으므로 임신 중에도 치료를 중단하지 않는다.",
+      "section": "사용상의 주의사항 · 임부 및 수유부에 대한 투여 1)",
+      "verified": true
+    }
+  ],
+  "neverSay": [
+    "복용량을 늘리거나 줄이라는 지시",
+    "복용을 멈추라는 지시",
+    "'안전하다'는 판단"
+  ],
+  "purpose": "자동 추출(scripts/care_extract.py)이 이 약에서 같은 규칙을 찾아내는지 확인하는 정답지. 앱에 직접 쓰는 예시 카드가 아니다."
+}
