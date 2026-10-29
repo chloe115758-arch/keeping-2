@@ -22,6 +22,8 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
+  /* 약제급여목록 이용 조건은 아직 확인하지 못했다. 확인하면 이 문구만 바꾸면 된다. */
+  var LIST_LICENSE_NOTE = '약제급여목록의 이용 조건은 확인하지 못했어요.';
   var ICONS = {
     chev: '<path d="M6 3l5 5-5 5"/>', back: '<path d="M10 3L5 8l5 5"/>',
     check: '<path d="M3 8.5l3.2 3.2L13 4.5"/>', plus: '<path d="M8 3v10M3 8h10"/>',
@@ -607,11 +609,11 @@
       : metaRow('근거를 확인하는 약', inPack + '개 (데모 범위)');
     var sources = '';
     if (dur) {
-      var ps = dur.source('pair');
+      var ps = dur.source('pair'), ls = dur.source('list');
       sources = '<p class="lbl">출처</p>' +
-        '<div class="card soft"><h4>병용금기</h4><p><a class="lnk" href="' + esc(ps.url) + '" target="_blank" rel="noopener">' + esc(ps.label) + '</a><br>기준일 ' + esc(ps.checkedAt) + '</p></div>' +
-        '<div class="card soft"><h4>약 목록</h4><p>약제급여목록 및 급여상한금액표 (2026-11-01 적용, 공개용)</p></div>' +
-        '<div class="card soft"><h4>이용 조건</h4><p>' + esc(dur.license()) + '</p><p class="muted">약제급여목록의 이용 조건은 확인하지 못했어요.</p></div>';
+        '<div class="card soft"><h4>병용금기</h4><p><a class="lnk" href="' + esc(ps.url) + '" target="_blank" rel="noopener">' + esc(ps.label) + '</a><br>병용금기 목록 기준일 ' + esc(ps.checkedAt) + '</p></div>' +
+        '<div class="card soft"><h4>약 목록</h4><p>' + esc(ls.label) + '<br>약 목록 적용일 ' + esc(ls.checkedAt || '확인하지 못했어요') + '</p></div>' +
+        '<div class="card soft"><h4>이용 조건</h4><p>' + esc(dur.license()) + '</p><p class="muted">' + esc(LIST_LICENSE_NOTE) + '</p></div>';
     } else {
       sources = '<p class="lbl">출처</p><div class="card soft"><h4>전체 약 목록을 불러오지 못했어요</h4><p>지금은 키핑이 근거를 확인한 약 ' + inPack + '개 안에서만 찾아요.</p></div>';
     }
@@ -623,7 +625,7 @@
     return '<main class="screen has-nav"><div class="hdr"><h1 class="h" data-focus>설정</h1></div>' +
       '<div class="card soft"><h4>이 기기에만 저장돼요</h4><p>등록한 약, 영양제, 복용 시간은 이 기기 안에만 있어요. 키핑 서버로 보내지 않아요. 기기를 바꾸거나 브라우저 데이터를 지우면 사라져요.</p></div>' +
       '<div class="stack"><button type="button" class="cta ghost" data-act="to" data-view="onb-drugs">처음부터 다시 설정하기</button><button type="button" class="cta ghost" data-act="exportData">내보내기 (파일로 저장)</button><label class="cta ghost filebtn" for="imp">가져오기 (파일 선택)</label><input id="imp" class="sr" type="file" accept="application/json,.json" data-input="import"><button type="button" class="cta ghost danger" data-act="resetAll">모든 정보 지우기</button></div>' +
-      '<p class="lbl">정보</p><div class="meta"><b>데이터 기준일</b><span>' + esc(Pack.checkedAt) + '</span></div>' + range +
+      '<p class="lbl">정보</p><div class="meta"><b>설명서·영양제 자료 확인일</b><span>' + esc(Pack.checkedAt) + '</span></div>' + range +
       '<div class="meta off"><b>계정 연결</b><span>2차 예정</span></div>' +
       scope + sources +
       '<p class="fine">키핑은 의료 조언이 아니에요. 약과 영양제를 같이 먹어도 되는지는 약사나 의사에게 확인해 주세요. 출처: 식약처 의약품 제품 허가정보, DUR, 의약품안전나라, 식품안전나라.</p></main>' + nav('settings');

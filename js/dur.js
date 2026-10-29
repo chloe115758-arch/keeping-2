@@ -177,9 +177,15 @@
       return m ? m[1] + '-' + m[2] + '-' + m[3] : (P.meta && P.meta.generatedAt) || null;
     }
 
+    /* 약 목록 적용일: 시트 이름(없으면 파일 이름)에 적힌 날짜를 읽는다 */
+    function listDate() {
+      var m = /(\d{4})\D+(\d{1,2})\D+(\d{1,2})/.exec(prodMeta.sheet || prodMeta.file || '');
+      return m ? m[1] + '-' + ('0' + m[2]).slice(-2) + '-' + ('0' + m[3]).slice(-2) : null;
+    }
+
     function source(kind) {
-      if (kind === 'product') {
-        return { label: '약제급여목록 및 급여상한금액표', url: null, checkedAt: prodMeta.generatedAt || null };
+      if (kind === 'list' || kind === 'product') {
+        return { label: '약제급여목록 및 급여상한금액표 (공개용)', url: null, checkedAt: listDate() };
       }
       return { label: '병용금기약물 · 한국의약품안전관리원 (공공데이터포털)', url: PAIR_URL, checkedAt: baseDate() };
     }

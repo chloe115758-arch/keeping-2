@@ -108,6 +108,12 @@ t('데이터 팩의 약(itemSeq) ↔ 보험코드 연결', () => {
   assert.strictEqual(dur.seqOf('670601380'), '200403126');
   assert.strictEqual(dur.codeOf('999'), null);
 });
+t("출처: source('list')는 약 목록 적용일, source('pair')는 병용금기 기준일", () => {
+  assert.strictEqual(dur.source('list').checkedAt, '2026-11-01');
+  assert.strictEqual(dur.source('pair').checkedAt, '2026-07-31');
+  assert.ok(/약제급여목록/.test(dur.source('list').label) && dur.source('list').url === null);
+  assert.strictEqual(dur.source('product').checkedAt, dur.source('list').checkedAt);
+});
 t('출처·이용 조건', () => {
   assert.ok(/한국의약품안전관리원/.test(dur.source('pair').label) && /data\.go\.kr/.test(dur.source('pair').url));
   assert.strictEqual(dur.source('pair').checkedAt, '2026-07-31');
