@@ -129,6 +129,7 @@
       return '<button type="button" class="res' + (added ? ' done' : '') + '" data-act="pick" data-i="' + i + '"' + (added ? ' disabled' : '') + '><span class="res-main"><b>' + esc(x.name) + '</b><span class="muted">' + esc(x.sub) + (x.outside ? ' <span class="pill soft">목록 밖</span>' : '') + '</span></span><span class="res-act">' + (added ? '추가됨' : icon('plus') + '추가') + '</span></button>';
     }).join('');
     if (kind === 'drug' && ui.more) html += '<p class="note">결과가 ' + 20 + '개를 넘어요. 더 좁혀 입력해 주세요.</p>';
+    if (kind === 'drug') html += '<button type="button" class="row ghostrow" data-act="manualDrug"><span class="row-main"><b>"' + esc(ui.q.trim()) + '" 이름 그대로 등록</b><span class="sub2">목록에 없는 약이에요? 이름만 등록돼요. 겹침 확인은 되지 않고 "확인 못 함"으로 표시돼요.</span></span>' + icon('plus') + '</button>';
     return html;
   }
   function searchBlock(kind) {
@@ -486,6 +487,7 @@
       '<p class="basis">등록한 ' + state.items.length + '개 기준이에요 ' + tip('basis', '등록하신 약과 영양제 사이에서만 찾은 결과예요. 찾지 못했다고 안전하다는 뜻은 아니에요. 등록하지 않은 약은 확인할 수 없어요.') + '</p></div>' +
       '<div class="list">' + rows.map(rowHtml).join('') + '</div>' +
       (supps.length ? '<p class="lbl">내가 먹는 영양제 ' + supps.length + '</p><div class="list">' + supps.map(rowHtml).join('') + '</div>' : '') +
+      (rows.concat(supps).some(function (a) { return a.status === 'unchecked' && !durPending(a.item); }) ? '<p class="note">"확인 못 함"은 키핑이 확인한 범위 밖이라는 뜻이에요. 등록은 됐고, 다른 것과 겹치는지는 약사에게 확인해 주세요.</p>' : '') +
       (needTimes && !state.example ? '<button type="button" class="row" data-act="to" data-view="times" data-batch="' + esc(batch || '') + '"><span class="row-main"><b>복용 시간 입력하기</b><span class="sub2">입력하면 복용 간격도 볼 수 있어요</span></span>' + icon('chev') + '</button>' : '') +
       '<button type="button" class="row ghostrow" data-act="newRx" data-batch="' + esc(batch || '') + '"><span class="row-main"><b>빠진 약이 있나요?</b><span class="sub2">등록하지 않은 약은 확인할 수 없어요</span></span>' + icon('plus') + '</button>' +
       '<div class="stack pad-top"><button type="button" class="cta" data-act="nav" data-view="questions">약사에게 물어볼 질문 보기</button></div></main>' + nav('');
@@ -542,9 +544,9 @@
       } else if (d && !Pack.dur) {             // 전체 약 목록이 없을 때(데이터 팩 모드)만 예전 건수
         tabooText = d.usjntTaboo === 0 ? '공식 목록에 등록 없음' : d.usjntTaboo + '건 등록 (제품 기준)';
         tabooTip = d.usjntTaboo === 0 ? tip('t1', '공식 목록에 등록된 것이 없다는 뜻이에요. 안전하다는 뜻은 아니에요.') : tip('t1', '이 중 등록하신 것과 겹치는 것만 위에 보여드려요.');
-      } else if (r && !cv.product && (d || basis)) {   // 데이터 팩에 직접 조회한 기록이 있고 보험코드 연결은 없는 약(예: 수출용 코니트라캡슐)
-        tabooText = '확인했어요 · 식약처 DUR 조회 (' + ((basis && basis.checkedAt) || Pack.checkedAt) + ')';
-        tabooTip = tip('t1', '이 약은 급여목록에 없어서 이전에 직접 조회한 결과를 보여드려요. 최신 목록과 다를 수 있어요.');
+      } else if (r && !cv.product && !d && basis) {   // 이 약의 목록은 조회한 적이 없고, 다른 약(시바스정) 조회에서 나온 쌍만 있다 (예: 수출용 코니트라캡슐)
+        tabooText = '일부만 확인했어요 · 다른 약 조회에서 나온 쌍만 보여드려요 (식약처 DUR, ' + basis.checkedAt + ')';
+        tabooTip = tip('t1', '이 약의 병용금기 목록은 직접 조회하지 않았어요. 시바스정을 조회할 때 나온 쌍만 보여드려요. 다른 약과의 병용금기는 약사에게 확인해 주세요.');
       } else tabooText = '확인하지 못했어요';
       html += metaRow('병용금기', tabooText, tabooTip);
       var efText = !d ? '확인하지 않았어요' : (d.efcyDplct === 0 ? '등록 없음' : (d.efcyDplct == null ? '확인하지 않았어요' : (r.series ? r.series + ' 계열 ' + d.efcyDplct + '건' : d.efcyDplct + '건')));
@@ -596,11 +598,34 @@
 
   VIEWS.settings = function () {
     var inPack = Pack.drugs.filter(function (d) { return !d.partial; }).length;
+    var dur = Pack.dur, st = dur && dur.stats();
+    var labelCount = Object.keys(Pack.labels || {}).length;
+    var scopeCount = Pack.supplementKeyList.filter(function (k) { return k.scope; }).length;
+    function fmt(n) { return n.toLocaleString('ko-KR'); }
+    var range = dur
+      ? metaRow('약 검색 범위', fmt(st.products) + '개 제품 · 병용금기 ' + fmt(st.pairs) + '쌍')
+      : metaRow('근거를 확인하는 약', inPack + '개 (데모 범위)');
+    var sources = '';
+    if (dur) {
+      var ps = dur.source('pair');
+      sources = '<p class="lbl">출처</p>' +
+        '<div class="card soft"><h4>병용금기</h4><p><a class="lnk" href="' + esc(ps.url) + '" target="_blank" rel="noopener">' + esc(ps.label) + '</a><br>기준일 ' + esc(ps.checkedAt) + '</p></div>' +
+        '<div class="card soft"><h4>약 목록</h4><p>약제급여목록 및 급여상한금액표 (2026-11-01 적용, 공개용)</p></div>' +
+        '<div class="card soft"><h4>이용 조건</h4><p>' + esc(dur.license()) + '</p><p class="muted">약제급여목록의 이용 조건은 확인하지 못했어요.</p></div>';
+    } else {
+      sources = '<p class="lbl">출처</p><div class="card soft"><h4>전체 약 목록을 불러오지 못했어요</h4><p>지금은 키핑이 근거를 확인한 약 ' + inPack + '개 안에서만 찾아요.</p></div>';
+    }
+    var scope = '<p class="lbl">이 서비스가 확인하는 범위</p>' +
+      metaRow('병용금기 목록', dur ? '확인함 (제품 목록 기준)' : '데이터 팩의 약 ' + inPack + '개만 확인함') +
+      metaRow('설명서 상호작용', '일부 약만 (' + labelCount + '개)') +
+      metaRow('영양제', '식약처 병용섭취정보 원료 ' + scopeCount + '종에 해당하는지만') +
+      metaRow('음식 · 용량 · 건강 상태', '확인하지 않음');
     return '<main class="screen has-nav"><div class="hdr"><h1 class="h" data-focus>설정</h1></div>' +
       '<div class="card soft"><h4>이 기기에만 저장돼요</h4><p>등록한 약, 영양제, 복용 시간은 이 기기 안에만 있어요. 키핑 서버로 보내지 않아요. 기기를 바꾸거나 브라우저 데이터를 지우면 사라져요.</p></div>' +
       '<div class="stack"><button type="button" class="cta ghost" data-act="to" data-view="onb-drugs">처음부터 다시 설정하기</button><button type="button" class="cta ghost" data-act="exportData">내보내기 (파일로 저장)</button><label class="cta ghost filebtn" for="imp">가져오기 (파일 선택)</label><input id="imp" class="sr" type="file" accept="application/json,.json" data-input="import"><button type="button" class="cta ghost danger" data-act="resetAll">모든 정보 지우기</button></div>' +
-      '<p class="lbl">정보</p><div class="meta"><b>데이터 기준일</b><span>' + esc(Pack.checkedAt) + '</span></div><div class="meta"><b>근거를 확인하는 약</b><span>' + inPack + '개 (데모 범위)</span></div>' +
+      '<p class="lbl">정보</p><div class="meta"><b>데이터 기준일</b><span>' + esc(Pack.checkedAt) + '</span></div>' + range +
       '<div class="meta off"><b>계정 연결</b><span>2차 예정</span></div>' +
+      scope + sources +
       '<p class="fine">키핑은 의료 조언이 아니에요. 약과 영양제를 같이 먹어도 되는지는 약사나 의사에게 확인해 주세요. 출처: 식약처 의약품 제품 허가정보, DUR, 의약품안전나라, 식품안전나라.</p></main>' + nav('settings');
   };
 

@@ -228,6 +228,9 @@ button{background:none;border:0;cursor:pointer}
 .qlist{list-style:decimal;padding-left:22px;display:grid;gap:10px;font:700 15.5px/1.6 var(--font);color:var(--ink-strong)}
 .qlist li{padding-left:4px}.qlist .rm{display:inline-grid;vertical-align:middle;margin-left:4px;width:36px;height:36px}
 
+.lnk{font-weight:700;color:var(--primary-800);text-decoration:underline;word-break:keep-all}
+.card.soft p+p{margin-top:6px}
+
 /* 툴팁 */
 .tipwrap{position:relative;display:inline-flex;flex:none}
 .tipbtn{width:var(--tap);height:var(--tap);display:grid;place-items:center;color:var(--ink)}
