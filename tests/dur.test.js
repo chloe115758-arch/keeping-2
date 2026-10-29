@@ -70,6 +70,29 @@ t('checkAgainst: 근거 있는 것만 돌려줌', () => {
   const r = dur.checkAgainst('670601380', ['645602250', c, '698500200', '670601380']);
   assert.strictEqual(r.length, 1); assert.strictEqual(r[0].withCode, c);
 });
+t('정렬: 성분명이 정확히 같은 제품(단일 성분)이 부분 일치보다 먼저', () => {
+  ['simvastatin', 'SIMVASTATIN', 'Simvastatin '].forEach((q) => {
+    const r = dur.search(q, { limit: 21 });
+    assert.ok(r.length > 0, q);
+    assert.strictEqual(r[0].ingrName, 'simvastatin', q + ' 첫 결과: ' + r[0].display + ' / ' + r[0].ingrName);
+    const firstPartial = r.findIndex((x) => x.ingrName !== 'simvastatin');   // 복합제 등 부분 일치
+    const lastExact = r.map((x) => x.ingrName === 'simvastatin').lastIndexOf(true);
+    assert.ok(firstPartial === -1 || lastExact < firstPartial, q + ': 정확 일치 뒤에 부분 일치가 섞임');
+  });
+  // 이름으로 찾는 검색은 그대로
+  assert.strictEqual(dur.search('시바스')[0].code, '670601380');
+  assert.strictEqual(dur.search('이텍스시메티딘')[0].code, '698500200');
+});
+t('정렬: acetaminophen의 첫 결과는 함량·"+" 없는 단일 성분 제품', () => {
+  const r = dur.search('acetaminophen');
+  assert.ok(r.length > 0);
+  assert.strictEqual(r[0].ingrName, 'acetaminophen', r[0].display + ' / ' + r[0].ingrName);
+});
+t('cleanIngr: 함량을 떼고 복합제는 " + "로 잇는다', () => {
+  assert.strictEqual(D.cleanIngr('acetaminophen   0.325g, tramadol hydrochloride   37.5mg').display, 'acetaminophen + tramadol hydrochloride');
+  assert.strictEqual(D.cleanIngr('5-fluorouracil').display, '5-fluorouracil');
+  assert.strictEqual(D.cleanIngr('').display, '');
+});
 t('toItem: 앱에 저장할 항목 모양', () => {
   const it = dur.toItem('670601380', { id: 'x1', times: ['21:00'] });
   assert.strictEqual(it.kind, 'drug'); assert.strictEqual(it.productCode, '670601380');

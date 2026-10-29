@@ -77,7 +77,10 @@
     }
     return '<nav class="nav" aria-label="주 메뉴">' + b('home', '내 하루', 'clock') + b('list', '내 목록', 'list') + b('settings', '설정', 'gear') + '</nav>';
   }
+  /* 제품코드로 등록한 약은 전체 약 목록(DUR)이 와야 확인할 수 있다. 오는 중에는 "확인 범위 밖"이 아니라 "불러오는 중". */
+  function durPending(it) { return !!(it && it.kind === 'drug' && it.productCode && !Pack.dur && ui.dur.status === 'loading'); }
   function statusPill(a) {
+    if (durPending(a.item)) return '<span class="pill soft">불러오는 중</span>';
     if (a.status === 'attention') return '<span class="pill flag"><i class="dot"></i>확인 필요</span>';
     if (a.status === 'unchecked') return '<span class="pill dashed">확인 못 함</span>';
     if (a.status === 'scope') return '<span class="pill soft">공식 정보 있음</span>';
@@ -472,7 +475,8 @@
     var suppFlag = supps.filter(function (a) { return a.status === 'attention'; }).length;
     var total = flagged + suppFlag;
     var title = scopeAll ? '내가 먹는 약' : '이번에 받은 약 ' + rows.length + '개';
-    var sub = total
+    var pendingAny = rows.concat(supps).some(function (a) { return durPending(a.item); });
+    var sub = pendingAny ? '약 목록을 불러오는 중이에요. 끝나면 겹치는 내용을 확인해서 보여드려요.' : total
       ? '<b class="red">' + (flagged + suppFlag) + '개</b>는 확인이 필요해요. 눌러서 이유를 볼 수 있어요.'
       : '확인한 자료에서 겹치는 내용을 찾지 못했어요.';
     var needTimes = rows.some(function (a) { return !activeTimes(a.item).length; });
@@ -505,24 +509,41 @@
           (f.excerpt ? '<blockquote><small>' + esc(f.sectionTitle || '') + '</small><p>' + esc(f.excerpt) + '</p></blockquote>' : '') +
           '<p class="src"><a href="' + esc(f.source.url) + '" target="_blank" rel="noopener">' + esc(f.source.label) + ' 보기</a><small>확인일 ' + esc(f.source.checkedAt) + '</small></p></article>';
       });
+    } else if (durPending(item)) {
+      html += '<div class="card"><h4>약 목록을 불러오는 중이에요</h4><p>불러오면 겹치는 내용을 확인해서 여기에 보여드려요.</p></div>';
+    } else if (item.kind === 'drug' && item.productCode && !a.coverage.inPack) {
+      html += '<div class="card"><h4>확인하지 못했어요</h4><p>전체 약 목록을 불러오지 못해서 겹치는 내용을 확인하지 못했어요. 등록은 됐어요. 인터넷에 연결한 뒤 다시 열어 보거나, 약사에게 확인해 주세요.</p></div>';
     } else if (item.kind === 'drug' && !a.coverage.inPack) {
       html += '<div class="card"><h4>확인 범위 밖이에요</h4><p>이 약은 키핑이 근거를 확인하는 범위 밖이에요. 등록은 됐고, 다른 약과 겹치는지는 약사에게 확인해 주세요.</p></div>';
     } else if (item.kind === 'supp' && a.status === 'unchecked') {
       html += '<div class="card"><h4>확인할 자료가 없어요</h4><p>이 영양제는 약과의 병용 정보를 확인할 공식 자료를 찾지 못했어요. 등록은 됐고, 약사에게 확인해 주세요.</p></div>';
+    } else if (a.status === 'none' && a.coverage.product && !a.coverage.label) {
+      html += '<div class="card"><h4>병용금기 목록에서 겹치는 쌍을 찾지 못했어요</h4><p>등록하신 ' + state.items.length + '개와 병용금기 목록 안에서 찾지 못했다는 뜻이에요. 안전하다는 뜻은 아니에요. 설명서는 확인하지 못했어요.</p></div>';
     } else if (a.status === 'none') {
       html += '<div class="card"><h4>겹치는 내용을 찾지 못했어요</h4><p>등록하신 ' + state.items.length + '개와 확인한 자료 안에서 찾지 못했다는 뜻이에요. 안전하다는 뜻은 아니에요.</p></div>';
     }
 
     html += '<p class="lbl">확인한 것</p>';
-    if (item.kind === 'drug' && r) {
-      var d = r.dur;
-      var tabooText = !d ? '확인하지 않았어요' : (d.usjntTaboo === 0 ? '공식 목록에 등록 없음' : d.usjntTaboo + '건 등록 (제품 기준)');
-      html += metaRow('병용금기', tabooText, (d && d.usjntTaboo === 0) ? tip('t1', '공식 목록에 등록된 것이 없다는 뜻이에요. 안전하다는 뜻은 아니에요.') : (d && d.usjntTaboo > 0 ? tip('t1', '이 중 등록하신 것과 겹치는 것만 위에 보여드려요.') : ''));
+    if (item.kind === 'drug') {
+      var cv = a.coverage, d = r && r.dur, dp = cv.product && Pack.dur ? Pack.dur.hasPairs(cv.product.code) : false;
+      var tabooText, tabooTip = '';
+      if (durPending(item)) tabooText = '약 목록을 불러오는 중이에요';
+      else if (d) {
+        tabooText = d.usjntTaboo === 0 ? '공식 목록에 등록 없음' : d.usjntTaboo + '건 등록 (제품 기준)';
+        tabooTip = d.usjntTaboo === 0 ? tip('t1', '공식 목록에 등록된 것이 없다는 뜻이에요. 안전하다는 뜻은 아니에요.') : tip('t1', '이 중 등록하신 것과 겹치는 것만 위에 보여드려요.');
+      } else if (cv.dur) {
+        tabooText = dp ? '병용금기 목록으로 확인했어요' : '확인했어요 · 이 성분은 목록에 나오지 않아요';
+        tabooTip = tip('t1', dp ? '병용금기 목록에 이 성분이 있어요. 이 중 등록하신 것과 겹치는 것만 위에 보여드려요.' : '병용금기 목록에 이 성분이 나오지 않는다는 뜻이에요. 안전하다는 뜻은 아니에요.');
+      } else tabooText = '확인하지 못했어요';
+      html += metaRow('병용금기', tabooText, tabooTip);
       var efText = !d ? '확인하지 않았어요' : (d.efcyDplct === 0 ? '등록 없음' : (d.efcyDplct == null ? '확인하지 않았어요' : (r.series ? r.series + ' 계열 ' + d.efcyDplct + '건' : d.efcyDplct + '건')));
       html += metaRow('효능군중복', efText, (d && d.efcyDplct === 0) ? tip('t2', '같은 계열의 약이 겹쳐 등록돼 있지 않다는 뜻이에요. 안전하다는 뜻은 아니에요.') : '');
-      var hasLabel = a.coverage.label;
-      html += metaRow('설명서', hasLabel ? '확인했어요' : '확인하지 못했어요', hasLabel ? '' : tip('t3', '이 약의 설명서는 키핑이 아직 읽어 두지 않았어요. 설명서는 의약품안전나라에서 볼 수 있어요.'));
-      if (r.note) html += '<p class="note">' + esc(r.note) + '</p>';
+      html += metaRow('설명서', cv.label ? '확인했어요' : '확인하지 못했어요', cv.label ? '' : tip('t3', '이 약의 설명서는 키핑이 아직 읽어 두지 않았어요. 설명서는 의약품안전나라에서 볼 수 있어요.'));
+      if (cv.product) {
+        html += metaRow('구분', esc(cv.product.category || '급여목록 밖 (구분 정보 없음)'));
+        if (cv.product.ingrName) html += metaRow('성분', esc(cv.product.ingrName));
+      }
+      if (r && r.note) html += '<p class="note">' + esc(r.note) + '</p>';
     } else if (item.kind === 'supp') {
       var names = (item.ingredientKeys || []).map(function (k) { var o = Pack.supplementKeyList.filter(function (x) { return x.id === k; })[0]; return o ? o.ko : k; });
       html += metaRow('성분', names.length ? esc(names.join(', ')) : '선택하지 않았어요');
@@ -641,7 +662,9 @@
       var x = ui.results && ui.results[+t.dataset.i]; if (!x) return;
       var b = batchOf();
       if (currentKind() === 'drug' && x.source === 'dur') {
-        state.items.push(newItem(Object.assign(Pack.dur.toItem(x.code), { batch: b })));
+        var di = Pack.dur && Pack.dur.toItem(x.code);
+        if (!di) { toast('이 약을 불러오지 못했어요'); return; }
+        state.items.push(newItem(Object.assign(di, { batch: b })));
       } else if (currentKind() === 'drug') {
         state.items.push(newItem({ kind: 'drug', source: x.source, itemSeq: x.itemSeq, name: x.name, ingredientKo: x.ingredientKo || null, type: x.type || null, batch: b }));
       } else {

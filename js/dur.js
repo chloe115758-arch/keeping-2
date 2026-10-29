@@ -36,6 +36,18 @@
     return String(s == null ? '' : s).replace(/[\s·\-_()\[\]\/,+]/g, '').toLowerCase();
   }
 
+  /* 급여목록의 성분명에서 함량을 떼어 읽기 좋게 만든다. 예) "acetaminophen   0.325g, tramadol hydrochloride   37.5mg"
+     → display "acetaminophen + tramadol hydrochloride". 검색·표시에만 쓰고, 쌍 조회는 성분코드로 한다. */
+  function cleanIngr(name) {
+    var parts = String(name || '')
+      .replace(/\(\s*as\s[^)]*\)/gi, '')
+      .replace(/\s*\d+(?:[.,]\d+)?\s*(?:mg|g|mcg|µg|μg|ug|ml|iu|u|%|meq|mmol)(?![a-z])/gi, '')
+      .split(/[+,]/)
+      .map(function (x) { return x.replace(/\s+/g, ' ').trim(); })
+      .filter(Boolean);
+    return { display: parts.join(' + '), parts: parts };
+  }
+
   function create(data) {
     var P = data.pairs;
     var table = (data.products && data.products.products) || data.products;
@@ -53,13 +65,23 @@
       });
     });
 
+    /* 성분코드별로 정리한 이름은 한 번만 계산 */
+    var ingrInfo = {};
+    function ingrOf(code) {
+      if (!ingrInfo[code]) {
+        var c = cleanIngr(ingrName[code]);
+        ingrInfo[code] = { display: c.display, norms: c.parts.map(norm), joined: norm(c.display) };
+      }
+      return ingrInfo[code];
+    }
+
     /* 제품 검색 색인 */
     var rows = [];
     Object.keys(table).forEach(function (code) {
       var v = table[code];
       rows.push({
         code: code, kind: v[4],
-        nName: norm(v[0]), nIngr: norm(ingrName[v[3]]), nCo: norm(v[2]), len: v[0].length
+        nName: norm(v[0]), nIngr: ingrOf(v[3]).joined, ingrNorms: ingrOf(v[3]).norms, nCo: norm(v[2]), len: v[0].length
       });
     });
 
@@ -70,7 +92,7 @@
       var v = table[code];
       if (!v) return null;
       return {
-        code: code, name: v[0], spec: v[1], company: v[2], ingr: v[3], ingrName: ingrName[v[3]] || '',
+        code: code, name: v[0], spec: v[1], company: v[2], ingr: v[3], ingrName: ingrOf(v[3]).display,
         kind: v[4] === 2 ? 'outside' : 'listed', category: CATEGORY[v[4]], route: v[5] || null,
         display: v[0] + (v[1] ? ' ' + v[1] : '')
       };
@@ -83,12 +105,14 @@
       var limit = opts.limit || 30;
       var hits = [];
       for (var i = 0; i < rows.length; i++) {
-        var r = rows[i], s = -1;
+        var r = rows[i], s = null;               // null = 일치 없음
         if (r.nName.indexOf(q) === 0) s = 0;
         else if (r.nName.indexOf(q) > 0) s = 1;
-        else if (r.nIngr.indexOf(q) >= 0) s = 2;
-        else if (r.nCo.indexOf(q) >= 0) s = 3;
-        if (s < 0) continue;
+        else if (r.ingrNorms.length === 1 && r.ingrNorms[0] === q) s = 2;   // 성분이 정확히 같은 단일 성분 제품
+        else if (r.ingrNorms.indexOf(q) >= 0) s = 3;                         // 그 성분이 들어 있는 복합제
+        else if (r.nIngr.indexOf(q) >= 0) s = 4;
+        else if (r.nCo.indexOf(q) >= 0) s = 5;
+        if (s === null) continue;
         if (opts.includeOutside === false && r.kind === 2) continue;
         hits.push({ r: r, s: s });
       }
@@ -187,5 +211,5 @@
     });
   }
 
-  return { create: create, load: load, norm: norm };
+  return { create: create, load: load, norm: norm, cleanIngr: cleanIngr };
 });
