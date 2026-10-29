@@ -1,95 +1,105 @@
 {
-  "ingredient": "famciclovir",
-  "productSeq": "201906212",
-  "itemName": "팜신텍스정250밀리그램(팜시클로비르)",
-  "atc": "J05AB09",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250401",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906212/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906212/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906212/NB"
-  },
-  "rules": [
+ "ingredient": "famciclovir",
+ "productSeq": "201906212",
+ "itemName": "팜신텍스정250밀리그램(팜시클로비르)",
+ "atc": "J05AB09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250401",
+ "ediCode": "055800270",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906212/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906212/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906212/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "- 알로푸리놀, 시메티딘, 테오필린, 지도부딘, 프로메타진, 제산제(마그네슘 및 수산화알루미늄) 투여 후, 혹은 엠트리시타빈과 동시에 이 약 500mg을 단회 투여 시 생리활성물질인 펜시클로비르의 약동학에 임상적으로 유의한 변화가 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "b163d33129",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "fbf04fa3ea",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용",
-      "subject": "2) 이 약에 대한 다른 약물의 영향",
-      "matched": [
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "- 알로푸리놀, 시메티딘, 테오필린, 지도부딘, 프로메타진, 제산제(마그네슘 및 수산화알루미늄) 투여 후, 혹은 엠트리시타빈과 동시에 이 약 500mg을 단회 투여 시 생리활성물질인 펜시클로비르의 약동학에 임상적으로 유의한 변화가 나타나지 않았다.",
-      "extractor": "kw-v1"
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
     },
     {
-      "id": "888a4139a9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부 및 가임여성에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 이 약 및 생리활성물질인 펜시클로비르에 의해 태자독성이나 기형발생이 나타나지는 않았다. 동물실험에서는 고환의 병리조직학적 변화가 관찰되었으나, 사람에서는 이 약을 1회 250 mg, 1일 2회 장기간 투여했을 때 남성의 정자수, 정자 형태, 운동능 등에 유의적인 영향을 미치지 않았다. 500 mg/kg을 투여한 수컷 랫드에서 생식능의 감소가 관찰되었으나, 암컷 랫드의 생식능에는…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9f09db5bb4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부 및 가임여성에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중 투여에 대한 안전성은 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "129698d93a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부 및 가임여성에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부: 랫드를 이용한 동물실험에서 이 약의 경구 투여 후 펜시클로비르가 유즙으로 이행되는 것으로 나타났으나, 사람 모유로의 이행에 대한 정보는 알려진 바 없다. 수유부에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "cd9db738a4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부 및 가임여성에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "가임여성: 가임여성에 대한 자료는 없으며 특별한 추천사항은 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "69cbd6fc03",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자에게서 용량 조절은 요구되지 않으나 신장애가 있는 경우 용량 조절이 필요하다.",
-      "extractor": "kw-v1"
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:03:56"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 가임여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 이 약 및 생리활성물질인 펜시클로비르에 의해 태자독성이나 기형발생이 나타나지는 않았다. 동물실험에서는 고환의 병리조직학적 변화가 관찰되었으나, 사람에서는 이 약을 1회 250 mg, 1일 2회 장기간 투여했을 때 남성의 정자수, 정자 형태, 운동능 등에 유의적인 영향을 미치지 않았다. 500 mg/kg을 투여한 수컷 랫드에서 생식능의 감소가 관찰되었으나, 암컷 랫드의 생식능에는…",
+   "extractor": "kw-v4",
+   "id": "ab567631c8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 가임여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대한 안전성은 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "155e8b1dc4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 가임여성에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부: 랫드를 이용한 동물실험에서 이 약의 경구 투여 후 펜시클로비르가 유즙으로 이행되는 것으로 나타났으나, 사람 모유로의 이행에 대한 정보는 알려진 바 없다. 수유부에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "4913c1e180",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 가임여성에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "가임여성: 가임여성에 대한 자료는 없으며 특별한 추천사항은 없다.",
+   "extractor": "kw-v4",
+   "id": "77dc492481",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에게서 용량 조절은 요구되지 않으나 신장애가 있는 경우 용량 조절이 필요하다.",
+   "extractor": "kw-v4",
+   "id": "39b7da05d2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

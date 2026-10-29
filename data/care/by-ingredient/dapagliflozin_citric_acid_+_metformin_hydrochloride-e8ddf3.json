@@ -1,250 +1,316 @@
 {
-  "ingredient": "dapagliflozin citric acid + metformin hydrochloride",
-  "productSeq": "202106854",
-  "itemName": "케이듀오서방정10/1000밀리그램",
-  "atc": "A10BD15",
-  "etcOtc": "전문의약품",
-  "changeDate": "20251107",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106854/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106854/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106854/NB"
-  },
-  "rules": [
+ "ingredient": "dapagliflozin citric acid + metformin hydrochloride",
+ "productSeq": "202106854",
+ "itemName": "케이듀오서방정10/1000밀리그램",
+ "atc": "A10BD15",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251107",
+ "ediCode": "059001070",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106854/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106854/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106854/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에는 투여하지 말 것 11)",
+   "subject": "",
+   "excerpt": "간기능 장애(손상된 간 기능은 유산산증의 몇몇 경우와 관련이 있기 때문에, 일반적으로 임상적 또는 실험실적으로 간 질환의 증거가 있는 환자에게는 이 약의 투여를 피해야 한다.), 호흡기 부전, 급성 심근경색, 쇼크와 같이 조직 저산소증을 유발할 수 있는 급성 또는 만성질환, 과도한 알코올 섭취자, 탈수증, 설사, 구토 등의 위장장애 환자",
+   "extractor": "kw-v4",
+   "id": "2a0e33fd9a",
+   "kind": "note",
+   "matched": [
     {
-      "id": "6f0b186c3b",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의사항",
-      "subject": "1) 유산산증",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "또한 메트포르민은 저산소혈증, 탈수 또는 패혈증과 관련된 어떠한 상태가 있는 경우에 즉시 중단하도록 한다. 간기능 부전은 유산 제거 능력을 유의하게 제한할 수 있으므로, 메트포르민은 간질환의 임상적 또는 실험실적 근거가 있는 환자에게 일반적으로 투여를 피하도록 한다. 알코올이 메트포르민의 유산 대사에 대한 영향을 강화시키므로 메트포르민을 복용 중일 때는 과도한 알코올 섭취를 주의해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9094cfaf16",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의사항",
-      "subject": "7) 케톤산증",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "케톤산증의 증상과 징후는 탈수 및 중증의 대사성 산증과 일치하고 오심, 구토, 식욕감소, 복통, 권태, 호흡곤란 등을 포함한다. 일부 보고에서 케톤산증을 일으키기 쉬운 요인으로 인슐린 용량 감소, 급성 열성질환, 질병 또는 수술로 인한 칼로리 섭취 제한, 케톤 생성 식이요법, 인슐린 결핍을 일으키는 췌장장애(예: 제1형 및 2형 당뇨병, 췌장염 또는 췌장 수술 병력), 그리고 알코올 남용이…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0954557236",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의사항",
-      "subject": "7) 케톤산증",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약의 투여를 시작하기 전 인슐린 분비 감소, 칼로리 제한, 알코올 남용을 포함한 케톤산증을 일으키기 쉬운 요인이 있는지 고려해야 한다. 이 약으로 치료받는 환자에서 케톤산증이 발생하는지 모니터링하고, 케톤산증을 일으키기 쉬운 임상적 상황(예: 급성 질환 또는 수술로 인한 장기적인 단식)이 발생할 경우 이 약의 투여를 일시적으로 중단하는 것을 고려한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4edab43ea8",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의사항",
-      "subject": "11) 알코올 섭취",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "메트포르민염산염: 알코올은 젖산 대사에 대해 메트포르민이 미치는 영향을 증대시킨다고 알려져 있다. 따라서 환자는 이 약을 복용하는 동안 급성 또는 만성적인 알코올의 과량 섭취를 하지 않도록 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c8699a86a6",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의사항",
-      "subject": "13) 저혈당 유발 약물의 사용",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "저혈당은 통상적 사용 환경 하에서는 메트포르민 단독 투여 환자에서는 발생하지 않으나, 열량 섭취가 부족하거나, 격렬한 운동 후 열량 보충을 하지 않은 경우 및 다른 혈당저하제(설포닐우레아 및 인슐린 등) 또는 알코올과 병용하는 동안 발생할 수 있다. 고령자, 쇠약자, 또는 영양 부족 환자 및 부신 또는 뇌하수체 부전, 알코올 중독이 있는 환자는 저혈당이 나타나기 쉽다. 저혈당은 고령자 및 β…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b0374fa05b",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "5) 다른 상호작용",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "흡연, 식이, 천연물 의약품 및 알코올이 다파글리플로진의 약동학에 미치는 영향은 연구되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1232eb451c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 투여: 임신한 여성을 대상으로 적합하고 잘 대조된 임상시험 또는 각 성분에 대한 시험은 없다. 임부에서의 이 약은 사용하지 않는다. 임신이 확인되면, 이 약에 의한 치료는 중단되어야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "33f3487319",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다파글리플로진의 랫트에 대한 연구 결과 사람의 임신 2기와 3기에 해당하는 기간에 신장 발달에 대한 독성을 나타냈다. 따라서 다파글리플로진은 임신 2기 및 3기 동안 사용되어서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8ff207814b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다파글리플로진이 사람의 생식능에 미치는 영향은 연구되지 않았다. 수컷과 암컷 랫트에서 다파글리플로진은 연구된 어떤 용량에서도 생식능에 영향을 나타내지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "954a12b9c7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부에 대한 투여: 이 약은 수유 중 사용해서는 안 된다. 이 약의 복합된 성분으로 수유중인 동물에 대한 연구는 실시되지 않았다. 각 성분으로 실시된 연구에서, 다파글리플로진과 메트포르민 모두 수유중인 랫트의 유즙으로 분비된다. 다파글리플로진의 동물에 대한 약력학 자료에 따르면 수유를 받는 새끼에서 약리학적으로 매개된 영향도 나타났다. 신생아/영아에 대한 위험성을 배제할 수 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "db1860ea05",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다파글리플로진 또는 메트포르민이 사람의 유즙에 분비되는지 여부는 알려져 있지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0051468eaf",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "1) 다파글리플로진",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령 환자는 신장애를 가지고 있거나 안지오텐신 전환 효소 저해제 (ACE&#x2011;I) 및 제 1형 안지오텐신II 수용체 저해제(ARB)와 같은 신기능 변화를 일으킬 수 있는 항고혈압제를 투여하고 있을 가능성이 높다. 모든 환자에서와 마찬가지로 고령 환자에게도 신기능에 대한 동일한 권고가 적용된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9f45bbab55",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "1) 다파글리플로진",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령 환자들은 체액량 감소의 위험이 더 높을 수 있고, 이뇨제를 투여하고 있을 가능성이 더 높다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4112f80761",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "1) 다파글리플로진",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "약동학적 측면에서 70세 이상 환자의 혈중 약물농도 노출에 관한 결론을 내리기에는 자료가 충분하지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "97b2f4623e",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "2) 메트포르민염산염",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "80세 이상 환자는 유산산증이 발생하기 쉽기 때문에, 크레아티닌 클리어런스 측정 결과 신기능의 감소가 없음이 확인되지 않는 한 80세 이상의 환자에게 메트포르민을 투여하지 않도록 한다. 고령자에서 신기능 감소의 가능성 때문에 메트포르민 초기 및 유지 용량은 신중해야 한다. 모든 용량 조절은 신기능의 신중한 평가에 근거해야 한다 (3. 다음 환자에는 신중히 투여할 것, 1) 급성신장손상 및 신…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c133e89237",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 일반적으로 저녁식사와 함께 1일 1회 투여한다.",
-      "meal": "식사와 함께",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:10:14"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의사항",
+   "subject": "",
+   "excerpt": "또한 메트포르민은 저산소혈증, 탈수 또는 패혈증과 관련된 어떠한 상태가 있는 경우에 즉시 중단하도록 한다. 간기능 부전은 유산 제거 능력을 유의하게 제한할 수 있으므로, 메트포르민은 간질환의 임상적 또는 실험실적 근거가 있는 환자에게 일반적으로 투여를 피하도록 한다. 알코올이 메트포르민의 유산 대사에 대한 영향을 강화시키므로 메트포르민을 복용 중일 때는 과도한 알코올 섭취를 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "25e7ab7831",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의사항",
+   "subject": "",
+   "excerpt": "케톤산증의 증상과 징후는 탈수 및 중증의 대사성 산증과 일치하고 오심, 구토, 식욕감소, 복통, 권태, 호흡곤란 등을 포함한다. 일부 보고에서 케톤산증을 일으키기 쉬운 요인으로 인슐린 용량 감소, 급성 열성질환, 질병 또는 수술로 인한 칼로리 섭취 제한, 케톤 생성 식이요법, 인슐린 결핍을 일으키는 췌장장애(예: 제1형 및 2형 당뇨병, 췌장염 또는 췌장 수술 병력), 그리고 알코올 남용이…",
+   "extractor": "kw-v4",
+   "id": "a2579706e3",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의사항",
+   "subject": "",
+   "excerpt": "이 약의 투여를 시작하기 전 인슐린 분비 감소, 칼로리 제한, 알코올 남용을 포함한 케톤산증을 일으키기 쉬운 요인이 있는지 고려해야 한다. 이 약으로 치료받는 환자에서 케톤산증이 발생하는지 모니터링하고, 케톤산증을 일으키기 쉬운 임상적 상황(예: 급성 질환 또는 수술로 인한 장기적인 단식)이 발생할 경우 이 약의 투여를 일시적으로 중단하는 것을 고려한다.",
+   "extractor": "kw-v4",
+   "id": "0d2bfd7ca5",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의사항 11)",
+   "subject": "",
+   "excerpt": "알코올 섭취",
+   "extractor": "kw-v4",
+   "id": "bb6edaa80a",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의사항",
+   "subject": "",
+   "excerpt": "메트포르민염산염: 알코올은 젖산 대사에 대해 메트포르민이 미치는 영향을 증대시킨다고 알려져 있다. 따라서 환자는 이 약을 복용하는 동안 급성 또는 만성적인 알코올의 과량 섭취를 하지 않도록 한다.",
+   "extractor": "kw-v4",
+   "id": "5b7a6ca219",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의사항",
+   "subject": "",
+   "excerpt": "저혈당은 통상적 사용 환경 하에서는 메트포르민 단독 투여 환자에서는 발생하지 않으나, 열량 섭취가 부족하거나, 격렬한 운동 후 열량 보충을 하지 않은 경우 및 다른 혈당저하제(설포닐우레아 및 인슐린 등) 또는 알코올과 병용하는 동안 발생할 수 있다. 고령자, 쇠약자, 또는 영양 부족 환자 및 부신 또는 뇌하수체 부전, 알코올 중독이 있는 환자는 저혈당이 나타나기 쉽다. 저혈당은 고령자 및 β…",
+   "extractor": "kw-v4",
+   "id": "5c1ff78aad",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "다파글리플로진",
+   "excerpt": "흡연, 식이, 천연물 의약품 및 알코올이 다파글리플로진의 약동학에 미치는 영향은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "aedc4621f5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여: 임신한 여성을 대상으로 적합하고 잘 대조된 임상시험 또는 각 성분에 대한 시험은 없다. 임부에서의 이 약은 사용하지 않는다. 임신이 확인되면, 이 약에 의한 치료는 중단되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "b6c8b25fea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다파글리플로진의 랫트에 대한 연구 결과 사람의 임신 2기와 3기에 해당하는 기간에 신장 발달에 대한 독성을 나타냈다. 따라서 다파글리플로진은 임신 2기 및 3기 동안 사용되어서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "e4ad2d4190",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다파글리플로진이 사람의 생식능에 미치는 영향은 연구되지 않았다. 수컷과 암컷 랫트에서 다파글리플로진은 연구된 어떤 용량에서도 생식능에 영향을 나타내지 않았다.",
+   "extractor": "kw-v4",
+   "id": "fa91d75914",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여: 이 약은 수유 중 사용해서는 안 된다. 이 약의 복합된 성분으로 수유중인 동물에 대한 연구는 실시되지 않았다. 각 성분으로 실시된 연구에서, 다파글리플로진과 메트포르민 모두 수유중인 랫트의 유즙으로 분비된다. 다파글리플로진의 동물에 대한 약력학 자료에 따르면 수유를 받는 새끼에서 약리학적으로 매개된 영향도 나타났다. 신생아/영아에 대한 위험성을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "adcad0bb9d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다파글리플로진 또는 메트포르민이 사람의 유즙에 분비되는지 여부는 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "a3789436fb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "다파글리플로진",
+   "extractor": "kw-v4",
+   "id": "4348bc356c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령 환자는 신장애를 가지고 있거나 안지오텐신 전환 효소 저해제 (ACE&#x2011;I) 및 제 1형 안지오텐신II 수용체 저해제(ARB)와 같은 신기능 변화를 일으킬 수 있는 항고혈압제를 투여하고 있을 가능성이 높다. 모든 환자에서와 마찬가지로 고령 환자에게도 신기능에 대한 동일한 권고가 적용된다.",
+   "extractor": "kw-v4",
+   "id": "fdc5fde4c5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령 환자들은 체액량 감소의 위험이 더 높을 수 있고, 이뇨제를 투여하고 있을 가능성이 더 높다.",
+   "extractor": "kw-v4",
+   "id": "fb8020ec04",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "약동학적 측면에서 70세 이상 환자의 혈중 약물농도 노출에 관한 결론을 내리기에는 자료가 충분하지 않다.",
+   "extractor": "kw-v4",
+   "id": "9d05945d65",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "메트포르민염산염",
+   "extractor": "kw-v4",
+   "id": "0ee4c03bc2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "80세 이상 환자는 유산산증이 발생하기 쉽기 때문에, 크레아티닌 클리어런스 측정 결과 신기능의 감소가 없음이 확인되지 않는 한 80세 이상의 환자에게 메트포르민을 투여하지 않도록 한다. 고령자에서 신기능 감소의 가능성 때문에 메트포르민 초기 및 유지 용량은 신중해야 한다. 모든 용량 조절은 신기능의 신중한 평가에 근거해야 한다 (3. 다음 환자에는 신중히 투여할 것, 1) 급성신장손상 및 신…",
+   "extractor": "kw-v4",
+   "id": "437be587a5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "c133e89237",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 일반적으로 저녁식사와 함께 1일 1회 투여한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

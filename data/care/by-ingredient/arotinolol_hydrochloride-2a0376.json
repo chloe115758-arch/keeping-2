@@ -1,0 +1,92 @@
+{
+ "ingredient": "arotinolol hydrochloride",
+ "productSeq": "198901206",
+ "itemName": "알말정5밀리그램(아로티놀롤염산염)",
+ "atc": "C07AG",
+ "etcOtc": "전문의약품",
+ "changeDate": "20130124",
+ "ediCode": "640002860",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198901206/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198901206/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198901206/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "랫트의 기관형성기투여시험에서 임상용량의 250배(100㎎/㎏) 이상에서 신우확대가, 600배(250㎎/㎏) 이상에서 시신경결손의 자연발생빈도 증가가 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "bfd41a0c12",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험에서 모유중으로의 이행이 보고되어 있으므로 수유중에는 투여를 피한다.",
+   "extractor": "kw-v4",
+   "id": "e1a2a7bd78",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에는 다음 사항을 주의하여 저용량에서 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "6d1368b1e4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서의 과도한 혈압강하는 바람직하지 않다(뇌경색 등이 나타날 수 있다.).",
+   "extractor": "kw-v4",
+   "id": "81dec6b5a5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "고령자는 심기능 등이 저하되어 있는 수가 많으므로 과도한 혈압강하 및 서맥 등이 일어나기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "4113ef9d77",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "휴약이 필요할 경우에는 천천히 감량한다.",
+   "extractor": "kw-v4",
+   "id": "dc40c79da2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:36",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

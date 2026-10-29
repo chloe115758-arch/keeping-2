@@ -1,0 +1,88 @@
+{
+ "ingredient": "calcium chloride(A용액중)(2백) + dextrose monohydrate(A용액중)(2백) + magnesium chloride(A용액중)(2백) + sodium chloride(A용액중)(2백) + sodium lactate solution(B용액중)(2백)",
+ "productSeq": "200308012",
+ "itemName": "씨에이피디17밸런스복강투석액(수입명:Balance1.5%glucose,1.25mmolCaclium,Peritonealdialyselosung Solution for peritoneal dialysis)",
+ "atc": "B05DB",
+ "etcOtc": "전문의약품",
+ "changeDate": "20181122",
+ "ediCode": "664300060",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308012/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308012/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308012/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것. 11)",
+   "subject": "",
+   "excerpt": "부갑상샘항진증 환자(혈청 중 칼슘의 농도를 모니터링 하여 필요한 경우 칼슘 공급을 위해 칼슘 함유 인산 결합제 및/또는 비타민 D를 함께 투여하거나 고농도 칼슘을 함유한 복강투석액의 사용이 바람직하다.)",
+   "extractor": "kw-v4",
+   "id": "51a0709057",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘 함유"
+    },
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "칼슘 또는 비타민 D 함유 약물의 병용투여는 고칼슘혈증을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "c806d63de6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성 또는 수유부에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 사용한다.",
+   "extractor": "kw-v4",
+   "id": "023c674780",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 일반적으로 헤르니아의 증가가 나타날 수 있으므로 복막투석전에 미리 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d70d89a1b3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:31:30",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

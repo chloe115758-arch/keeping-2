@@ -1,0 +1,19 @@
+{
+ "ingredient": "lung surfactant",
+ "productSeq": "200809175",
+ "itemName": "인파서프주(칼팍탄트)",
+ "atc": "R07AA",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230315",
+ "ediCode": "644914391",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200809175/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200809175/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200809175/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-30T00:22:31",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,83 +1,100 @@
 {
-  "ingredient": "diacerhein",
-  "productSeq": "201902326",
-  "itemName": "아이세린캡슐(디아세레인)",
-  "atc": "M01AX21",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250923",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902326/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902326/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902326/NB"
+ "ingredient": "diacerhein",
+ "productSeq": "201902326",
+ "itemName": "아이세린캡슐(디아세레인)",
+ "atc": "M01AX21",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250923",
+ "ediCode": "052401320",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902326/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902326/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902326/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것. 3)",
+   "subject": "",
+   "excerpt": "65세 이상의 고령자(용량 감소가 필요하다.)",
+   "extractor": "kw-v4",
+   "id": "d6dfcd7357",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 3)",
+   "subject": "",
+   "excerpt": "간독성: 간손상의 징후는 관찰되어야 하며, 간손상과 관련된 다른 의약품 병용 사용시 주의가 필요하다. 디아세레인 투여시 알코올 섭취 제한이 추천된다. 간효소 증가 또는 의심되는 징후 또는 간손상 증상이 발견될 때 투여를 중단하고 의사의 지시에 따른다.",
+   "extractor": "kw-v4",
+   "id": "08f037b177",
+   "kind": "note",
+   "matched": [
     {
-      "id": "fa11a590de",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의 3)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "간독성: 간손상의 징후는 관찰되어야 하며, 간손상과 관련된 다른 의약품 병용 사용시 주의가 필요하다. 디아세레인 투여시 알코올 섭취 제한이 추천된다. 간효소 증가 또는 의심되는 징후 또는 간손상 증상이 발견될 때 투여를 중단하고 의사의 지시에 따른다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a8b4e338d7",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": {
-        "minHours": 2.0,
-        "maxHours": null,
-        "qualifier": "",
-        "text": "2시간 이상의 간격"
-      },
-      "tone": "caution",
-      "excerpt": "칼슘, 마그네슘, 알루미늄을 함유하는 제산제 및 소금은 이 약의 위장관 흡수를 저해하므로 가능하면 2시간 이상의 간격을 두고 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0543510dd4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 태자의 골형성 지연이 보고 되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "99be04c2a6",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 인체 내에서 태자에 미치는 영향에 대한 자료는 없으나 모유 중으로 안트라퀴논 유도체가 소량 이행되므로 임부 및 수유부에는 투여하지 않는 것이 바람직하다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:08:11"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "칼슘, 마그네슘, 알루미늄을 함유하는 제산제 및 소금은 이 약의 위장관 흡수를 저해하므로 가능하면 2시간 이상의 간격을 두고 투여한다.",
+   "extractor": "kw-v4",
+   "id": "9f0a27723f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": {
+    "minHours": 2.0,
+    "maxHours": null,
+    "qualifier": "",
+    "text": "2시간 이상의 간격",
+    "actionable": true
+   },
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 태자의 골형성 지연이 보고 되었다.",
+   "extractor": "kw-v4",
+   "id": "a2f7134415",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 인체 내에서 태자에 미치는 영향에 대한 자료는 없으나 모유 중으로 안트라퀴논 유도체가 소량 이행되므로 임부 및 수유부에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "a0cb0113a0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

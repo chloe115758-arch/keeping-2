@@ -1,0 +1,147 @@
+{
+ "ingredient": "pitavastatin calcium + valsartan",
+ "productSeq": "201500967",
+ "itemName": "리바로브이정2/80밀리그램",
+ "atc": "C10BX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "644913910",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201500967/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201500967/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201500967/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 5)",
+   "subject": "○ 피타바스타틴칼슘",
+   "excerpt": "콜레스티라민과 병용에 의해 이 약의 흡수가 저해되어 혈중 농도가 저하할 가능성이 있기 때문에 콜레스티라민의 투여 후 충분한 간격을 두고 이 약을 투여하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "652eb2ed2c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "○ 피타바스타틴칼슘",
+   "excerpt": "이 약과 같은 HMG-CoA 환원효소저해제는 태아발육에 필수적인 콜레스테롤의 생합성을 감소시켜 태아에게 심각한 영향을 미칠 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다. 또한 이 약 투여중 임신이 되었을 경우에는 즉시 투여를 중지하고 태아에 대한 총체적 위험을 고려한다.",
+   "extractor": "kw-v4",
+   "id": "81bdc24a6f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○ 피타바스타틴칼슘",
+   "excerpt": "수유중의 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "df699caf43",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "○ 발사르탄",
+   "excerpt": "이 약의 안지오텐신Ⅱ수용체 길항제 작용기전 때문에 태아에 대한 위험을 무시할 수 없다. 임신 2 ∼ 3기 사이에 ACE억제제(레닌-안지오텐신-알도스테론계에 작용하는 특정 약물군)에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적인 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아 손상과 연관성이 있…",
+   "extractor": "kw-v4",
+   "id": "c51d50783b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○ 발사르탄",
+   "excerpt": "이 약이 모유 중에 분비되는 지의 여부는 밝혀지지 않았으나 랫트에 대한 실험에서 유즙 중에 이 약의 분비가 확인되었으므로 수유부가 이 약을 사용하는 것은 바람직하지 않다. 수유 중인 여성에게 이 약의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "08852ee3f9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "○ 발사르탄",
+   "excerpt": "이 약이 사람의 생식능에 대한 영향에 대한 정보는 없다. 랫트에 대한 시험에서 발사르탄의 생식능에 대한 영향은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "d8d66d25b1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자인 경우 일반적으로 과도한 혈압강하는 뇌경색 등이 일어날 우려가 있어 바람직하지 않다고 보기 때문에, 저용량으로부터 투여를 시작하는 등, 환자 상태를 관찰하면서 신중하게 투여해야 한다. 이상반응이 나타난 경우에는 감량하는 등 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "f6756ca6e4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "고령자에 대한 약물동태 시험에서 발사르탄의 혈중농도가 비고령자에 비해 높은 것으로 나타났다. 고령자에서 피타바스타틴칼슘에 의해 횡문근융해증이 나타나기 쉽다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "196621f1ad",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "c3526a6e68",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 성인에 한하여 투여하며, 투여용량은 피타바스타틴칼슘/발사르탄 각 성분의 효과 및 내약성에 근거하여 각 환자에서 개별화되어야 한다. 이 약은 1일 1회 아침 식후 복용하도록 한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "d51e92f922",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "식사 중 물과 함께 복용하거나 식간에 복용한다. 가능하면 매일 같은 시간(예, 아침)에 복용할 것이 권장된다.",
+   "meal": "식사 중",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:01",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

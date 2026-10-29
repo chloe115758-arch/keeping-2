@@ -1,212 +1,240 @@
 {
-  "ingredient": "fentanyl citrate(micronized)",
-  "productSeq": "201707583",
-  "itemName": "나르코설하정100마이크로그램(펜타닐시트르산염)",
-  "atc": "N02AB03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260406",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707583/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707583/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707583/NB"
-  },
-  "rules": [
+ "ingredient": "fentanyl citrate(micronized)",
+ "productSeq": "201707583",
+ "itemName": "나르코설하정100마이크로그램(펜타닐시트르산염)",
+ "atc": "N02AB03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260406",
+ "ediCode": "653103320",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707583/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707583/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707583/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 5)",
+   "subject": "",
+   "excerpt": "마약류와 벤조디아제핀계 약물 또는 알코올을 포함하는 중추신경계억제제의 병용투여는 깊은 진정, 호흡억제, 혼수 및 사망을 초래할 수 있다. 이러한 위험성 때문에, 마약류와 벤조디아제핀계 약물의 병용투여는 적절한 대체 치료방법이 없는 환자의 경우에 한하여 처방하도록 한다. 이 약과 마약류의 병용투여가 결정되면 최저 유효용량으로 최단기간 처방하도록 하고 호흡억제 및 진정의 징후와 증상에 대해 환자…",
+   "extractor": "kw-v4",
+   "id": "9151f2a756",
+   "kind": "note",
+   "matched": [
     {
-      "id": "b2f3d3d3ca",
-      "kind": "note",
-      "section": "warning",
-      "where": "1. 경고 5)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "마약류와 벤조디아제핀계 약물 또는 알코올을 포함하는 중추신경계억제제의 병용투여는 깊은 진정, 호흡억제, 혼수 및 사망을 초래할 수 있다. 이러한 위험성 때문에, 마약류와 벤조디아제핀계 약물의 병용투여는 적절한 대체 치료방법이 없는 환자의 경우에 한하여 처방하도록 한다. 이 약과 마약류의 병용투여가 결정되면 최저 유효용량으로 최단기간 처방하도록 하고 호흡억제 및 진정의 징후와 증상에 대해 환자…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6cef4fdaad",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 3)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약의 반복적인 사용은 아편유사제 사용 장애(Opioid Use Disorder, OUD)를 일으킬 수 있다. 아편 유사제 치료 용량과 치료 기간을 늘리면 아편유사제 사용장애(OUD) 발병 위험이 높아질 수 있다. 이 약의 남용이나 의도적인 오용은 과량투여나 사망을 일으킬 수 있다. 아편유사제 사용 장애 발병 위험은 약물 사용 장애(알코올 사용 장애 포함)의 개인 또는 가족력이 있는 환자,…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4c241a6fda",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 CYP3A4 억제제(예: 인디나비르, 넬피나비르, 리토나비르, 클래리트로마이신, 이트라코나졸, 케토코나졸, 네파조돈, 사퀴나비르, 텔리트로마이신, 아프레피탄트, 딜티아젬, 에리트로마이신, 플루코나졸, 자몽주스, 베라파밀, 시메티딘) 병용은 잠재적으로 위험한 펜타닐 혈중 농도 증가를 일으켜 약물 이상반응을 증가시키거나 연장시키고 잠재적으로 치명적인 호흡 저하를 일으킬 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2e9fbcddb4",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 2)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 벤조디아제핀계 약물, 다른 마약성 진통제, 전신마취제, 페노티아진계 약물, 신경안정제, 수면제, 삼환계 항우울제, 신경근육차단제, 가바펜티노이드계 약물(예, 가바펜틴, 프레가발린), 또는 알코올을 포함한 다른 중추신경억제제를 병용투여하면 추가적인 중추신경억제작용이 유발되고, 호흡억제, 저혈압, 깊은 진정, 또는 혼수, 사망과 같은 중추신경억제작용이 증가될 수 있다. 따라서 이러한 약…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "80f91f2ff6",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 적절하고 적절히 통제된 연구자료는 없다. 이 약은 잠재적 이익이 태아에 대한 위험을 정당화할 경우에만 임신 중에 투여되어야 한다. 이 약을 임신 중에 투여한 여성에서 태어난 신생아에서 선천적 기형이 보고된 역학조사 연구는 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "76dbe16dd1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신기간 중 펜타닐의 모체 만성 투여는 신생아에서 신생아 금단증상의 특징인 일시적인 호흡 저하, 행동 변화, 발작과 관련이 있다. 선천성 호흡 저하나 신경계 저하 증세는 진통 중에 펜타닐을 정맥이나 경막외로 급성 투여를 받은 여성에서 태어난 신생아에 대한 연구에서 예상된 것보다 더 흔하지는 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c99f282a6f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "펜타닐 정맥투여를 받은 임부에서 태어난 신생아에서 일시적인 신생아 근육 강직이 관찰된 바 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b75c417fc0",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 배아독성(embryocidal)은 임신 랫드에 펜타닐 30 mcg/kg 정맥주사나 160 mcg/kg 피하주사시 배아의 흡수 증가에 의해 증명되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0c321753fd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "인간에서 동등한 용량으로 환산시 이는 이 약의 권장 투여량 범위 내에 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b4b7a6e856",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "펜타닐 시트르산염은 임신 동물에 투여시 최기형성을 유발하지 않았다. 발표된 연구들은 임신한 쥐에 21일간의 임신 기간 중 7-21일간 주입된 미세 삼투 소형펌프를 통해 펜타닐 투여시(10, 100, or 500 mcg/kg/day) 최기형성을 유발하지 않았다(고용량은 mg/m2기준으로 인간에서 통증 발생 당 1600 mcg 투여 용량의 약 3배임).",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "52f27f05e7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 6-18일에 걸쳐 임신한 암컷 쥐에 펜타닐 정맥투여(10 or 30 mcg/kg)시 배아나 태아에 독성이 있었고 30 mcg/kg/day 투여 군에서 평균 출산 시간이 약간 증가했으나 최기형성을 유발하지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "22bd57757f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 쉽게 태반을 통과하여 태아에 전달된다. 따라서 진통이나 출산시에 이 약을 진통제로 사용해서는 안된다(제왕절개 포함). 이는 태아나 신생아의 호흡 저하를 일으킬 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "794f93a7ff",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "펜타닐은 모유로 이행되어 신생아의 진정효과나 호흡 저하를 유도할 수 있다. 펜타닐은 수유부에게 투여하여서는 안되며, 펜타닐 투여 후 최소 5일까지는 다시 수유를 시작해서는 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d4f183b960",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "펜타닐을 정맥 주사한 기존의 시험결과에 따르면, 고령의 환자는 청소율이 낮고, 반감기가 지연되며 젊은 환자에 비하여 펜타닐에 대한 감수성이 더 강한 것으로 보였다. 따라서, 노인 또는 노약자는 펜타닐 독성에 대한 징후를 주의하여 관찰하여야 하며, 필요하면 복용량을 줄인다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:19:44"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 3)",
+   "subject": "",
+   "excerpt": "이 약의 반복적인 사용은 아편유사제 사용 장애(Opioid Use Disorder, OUD)를 일으킬 수 있다. 아편 유사제 치료 용량과 치료 기간을 늘리면 아편유사제 사용장애(OUD) 발병 위험이 높아질 수 있다. 이 약의 남용이나 의도적인 오용은 과량투여나 사망을 일으킬 수 있다. 아편유사제 사용 장애 발병 위험은 약물 사용 장애(알코올 사용 장애 포함)의 개인 또는 가족력이 있는 환자,…",
+   "extractor": "kw-v4",
+   "id": "d9c6f28e7c",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "이 약과 CYP3A4 억제제(예: 인디나비르, 넬피나비르, 리토나비르, 클래리트로마이신, 이트라코나졸, 케토코나졸, 네파조돈, 사퀴나비르, 텔리트로마이신, 아프레피탄트, 딜티아젬, 에리트로마이신, 플루코나졸, 자몽주스, 베라파밀, 시메티딘) 병용은 잠재적으로 위험한 펜타닐 혈중 농도 증가를 일으켜 약물 이상반응을 증가시키거나 연장시키고 잠재적으로 치명적인 호흡 저하를 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "cd9da7da26",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "이 약과 벤조디아제핀계 약물, 다른 마약성 진통제, 전신마취제, 페노티아진계 약물, 신경안정제, 수면제, 삼환계 항우울제, 신경근육차단제, 가바펜티노이드계 약물(예, 가바펜틴, 프레가발린), 또는 알코올을 포함한 다른 중추신경억제제를 병용투여하면 추가적인 중추신경억제작용이 유발되고, 호흡억제, 저혈압, 깊은 진정, 또는 혼수, 사망과 같은 중추신경억제작용이 증가될 수 있다. 따라서 이러한 약…",
+   "extractor": "kw-v4",
+   "id": "429d2c8567",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "c1d2541cde",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 적절하고 적절히 통제된 연구자료는 없다. 이 약은 잠재적 이익이 태아에 대한 위험을 정당화할 경우에만 임신 중에 투여되어야 한다. 이 약을 임신 중에 투여한 여성에서 태어난 신생아에서 선천적 기형이 보고된 역학조사 연구는 없다.",
+   "extractor": "kw-v4",
+   "id": "55540dd210",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신기간 중 펜타닐의 모체 만성 투여는 신생아에서 신생아 금단증상의 특징인 일시적인 호흡 저하, 행동 변화, 발작과 관련이 있다. 선천성 호흡 저하나 신경계 저하 증세는 진통 중에 펜타닐을 정맥이나 경막외로 급성 투여를 받은 여성에서 태어난 신생아에 대한 연구에서 예상된 것보다 더 흔하지는 않다.",
+   "extractor": "kw-v4",
+   "id": "56429ee33a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "펜타닐 정맥투여를 받은 임부에서 태어난 신생아에서 일시적인 신생아 근육 강직이 관찰된 바 있다.",
+   "extractor": "kw-v4",
+   "id": "f8cd933c4a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 배아독성(embryocidal)은 임신 랫드에 펜타닐 30 mcg/kg 정맥주사나 160 mcg/kg 피하주사시 배아의 흡수 증가에 의해 증명되었다.",
+   "extractor": "kw-v4",
+   "id": "afd5cbf8c2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "인간에서 동등한 용량으로 환산시 이는 이 약의 권장 투여량 범위 내에 있다.",
+   "extractor": "kw-v4",
+   "id": "c136ff33cb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "펜타닐 시트르산염은 임신 동물에 투여시 최기형성을 유발하지 않았다. 발표된 연구들은 임신한 쥐에 21일간의 임신 기간 중 7-21일간 주입된 미세 삼투 소형펌프를 통해 펜타닐 투여시(10, 100, or 500 mcg/kg/day) 최기형성을 유발하지 않았다(고용량은 mg/m2기준으로 인간에서 통증 발생 당 1600 mcg 투여 용량의 약 3배임).",
+   "extractor": "kw-v4",
+   "id": "265d633cb0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 6-18일에 걸쳐 임신한 암컷 쥐에 펜타닐 정맥투여(10 or 30 mcg/kg)시 배아나 태아에 독성이 있었고 30 mcg/kg/day 투여 군에서 평균 출산 시간이 약간 증가했으나 최기형성을 유발하지 않았다.",
+   "extractor": "kw-v4",
+   "id": "55ba6ad1fc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 쉽게 태반을 통과하여 태아에 전달된다. 따라서 진통이나 출산시에 이 약을 진통제로 사용해서는 안된다(제왕절개 포함). 이는 태아나 신생아의 호흡 저하를 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "4882c608dd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "96172fc74a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "펜타닐은 모유로 이행되어 신생아의 진정효과나 호흡 저하를 유도할 수 있다. 펜타닐은 수유부에게 투여하여서는 안되며, 펜타닐 투여 후 최소 5일까지는 다시 수유를 시작해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "276819b1a6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "펜타닐을 정맥 주사한 기존의 시험결과에 따르면, 고령의 환자는 청소율이 낮고, 반감기가 지연되며 젊은 환자에 비하여 펜타닐에 대한 감수성이 더 강한 것으로 보였다. 따라서, 노인 또는 노약자는 펜타닐 독성에 대한 징후를 주의하여 관찰하여야 하며, 필요하면 복용량을 줄인다.",
+   "extractor": "kw-v4",
+   "id": "91b8c5c965",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

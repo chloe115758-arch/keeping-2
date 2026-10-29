@@ -1,138 +1,142 @@
 {
-  "ingredient": "lorazepam",
-  "productSeq": "197900543",
-  "itemName": "아티반정0.5밀리그람(로라제팜)",
-  "atc": "N05BA06",
-  "etcOtc": "전문의약품",
-  "changeDate": "20220107",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900543/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900543/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900543/NB"
-  },
-  "rules": [
+ "ingredient": "lorazepam",
+ "productSeq": "197900543",
+ "itemName": "아티반정0.5밀리그람(로라제팜)",
+ "atc": "N05BA06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220107",
+ "ediCode": "642901150",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900543/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900543/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900543/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "로라제팜 및 다른 벤조디아제핀계 약물의 오남용 및 중독에 대한 위험이 알려져 있으므로, 로라제팜을 투여 중인 환자를 적절히 모니터링 하여야 한다. 마약류, 기타 벤조디아제핀계 약물 및 알코올과 같은 중추신경계억제제와 함께 이 약이 오남용 되었을 때, 과량투여 관련 사망이 보고되었다. 로라제팜을 처방 또는 조제 시 이러한 위험을 고려하여야 한다. 이러한 위험을 최소화하기 위해 적정 최저용량을…",
+   "extractor": "kw-v4",
+   "id": "0db31f5b33",
+   "kind": "note",
+   "matched": [
     {
-      "id": "04b14b7d8a",
-      "kind": "note",
-      "section": "warning",
-      "where": "1. 경고",
-      "subject": "2) 오남용의 위험성",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "로라제팜 및 다른 벤조디아제핀계 약물의 오남용 및 중독에 대한 위험이 알려져 있으므로, 로라제팜을 투여 중인 환자를 적절히 모니터링 하여야 한다. 마약류, 기타 벤조디아제핀계 약물 및 알코올과 같은 중추신경계억제제와 함께 이 약이 오남용 되었을 때, 과량투여 관련 사망이 보고되었다. 로라제팜을 처방 또는 조제 시 이러한 위험을 고려하여야 한다. 이러한 위험을 최소화하기 위해 적정 최저용량을…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c995f9ede8",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "다음 약물과의 병용 또는 알코올 섭취에 의하여 중추신경억제작용이 증강될 수 있으므로 이러한 경우에는 투여를 중지하는 것이 바람직하나 부득이하게 투여해야하는 경우에는 신중히 투여한다. : 페노티아진계 약물, 바르비탈계 약물, 항우울약, 최면진정제, 마약성 진통제, 마취제, 항히스타민제",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5e5042c020",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신동물(마우스)에 이 약을 대량투여한 실험에서 태자에 구개열 및 안검열이 나타났다는 보고가 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e996f63c15",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "탯줄의 혈액검사로부터 이 약의 태반통과가 추정되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "eff8a211a6",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중에 다른 벤조디아제핀계 약물(디아제팜)의 투여를 받은 환자 중에 기형아 등의 장애아를 출산한 예가 대조군에 비해 유의하게 높다는 역학적 조사보고가 있으므로 임부(3개월 이내) 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ed7b09cff0",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 후기에 다른 벤조디아제핀계 약물(디아제팜, 니트라제팜)을 연용한 환자에서 출생한 신생아에 포유곤란, 구토, 활동 저하, 근긴장저하, 졸음, 호흡 억제·무호흡, 청색증, 진전, 저체온, 빈맥, 황달의 증강 등이 일어났다는 보고가 있으므로 임신후기의 여성에는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fd72a6de9f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 5)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "분만 전에 연용한 경우 출산 후 신생아에서 금단증상(신경과민, 진전, 과긴장 등)이 나타난 경우가 다른 벤조디아제핀계 약물(디아제팜)에서 보고되어 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8bc6e7f6b9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 6)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "모유 중으로 이행하여 신생아에 졸음증(lethargy), 체중감소 등을 일으킨 경우가 다른 벤조디아제핀계 약물(디아제팜)에서 보고되어 있고 또한 황달을 증강할 가능성이 있으므로 수유부에의 투여는 피하는 것이 바람직하지만 부득이하게 투여하는 경우에는 수유를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d938172159",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에서는 운동실조, 과진정 등의 이상반응이 나타나기 쉬우므로 소량부터 투여를 시작하는 등 신중히 투여한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:18:59"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "다음 약물과의 병용 또는 알코올 섭취에 의하여 중추신경억제작용이 증강될 수 있으므로 이러한 경우에는 투여를 중지하는 것이 바람직하나 부득이하게 투여해야하는 경우에는 신중히 투여한다. : 페노티아진계 약물, 바르비탈계 약물, 항우울약, 최면진정제, 마약성 진통제, 마취제, 항히스타민제",
+   "extractor": "kw-v4",
+   "id": "b0367a6a6d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신동물(마우스)에 이 약을 대량투여한 실험에서 태자에 구개열 및 안검열이 나타났다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "a5bffba8b6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "탯줄의 혈액검사로부터 이 약의 태반통과가 추정되었다.",
+   "extractor": "kw-v4",
+   "id": "d9321b831b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신 중에 다른 벤조디아제핀계 약물(디아제팜)의 투여를 받은 환자 중에 기형아 등의 장애아를 출산한 예가 대조군에 비해 유의하게 높다는 역학적 조사보고가 있으므로 임부(3개월 이내) 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "3a8ce3d23b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임신 후기에 다른 벤조디아제핀계 약물(디아제팜, 니트라제팜)을 연용한 환자에서 출생한 신생아에 포유곤란, 구토, 활동 저하, 근긴장저하, 졸음, 호흡 억제·무호흡, 청색증, 진전, 저체온, 빈맥, 황달의 증강 등이 일어났다는 보고가 있으므로 임신후기의 여성에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "8c6927fe2a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "분만 전에 연용한 경우 출산 후 신생아에서 금단증상(신경과민, 진전, 과긴장 등)이 나타난 경우가 다른 벤조디아제핀계 약물(디아제팜)에서 보고되어 있다.",
+   "extractor": "kw-v4",
+   "id": "42b38afdd9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "모유 중으로 이행하여 신생아에 졸음증(lethargy), 체중감소 등을 일으킨 경우가 다른 벤조디아제핀계 약물(디아제팜)에서 보고되어 있고 또한 황달을 증강할 가능성이 있으므로 수유부에의 투여는 피하는 것이 바람직하지만 부득이하게 투여하는 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "92f65f72ff",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 운동실조, 과진정 등의 이상반응이 나타나기 쉬우므로 소량부터 투여를 시작하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c632532ff0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

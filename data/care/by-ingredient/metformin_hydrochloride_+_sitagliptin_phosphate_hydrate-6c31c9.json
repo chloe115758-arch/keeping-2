@@ -1,209 +1,256 @@
 {
-  "ingredient": "metformin hydrochloride + sitagliptin phosphate hydrate",
-  "productSeq": "202201017",
-  "itemName": "자누스듀오정50/1000밀리그램",
-  "atc": "A10BD07",
-  "etcOtc": "전문의약품",
-  "changeDate": "20261002",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202201017/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202201017/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202201017/NB"
-  },
-  "rules": [
+ "ingredient": "metformin hydrochloride + sitagliptin phosphate hydrate",
+ "productSeq": "202201017",
+ "itemName": "자누스듀오정50/1000밀리그램",
+ "atc": "A10BD07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20261002",
+ "ediCode": "625202230",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202201017/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202201017/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202201017/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에게는 투여하지 말 것 9)",
+   "subject": "",
+   "excerpt": "간 기능장애(손상된 간 기능은 유산산증의 몇몇 경우와 관련이 있기 때문에, 일반적으로 임상적 또는 실험실적으로 간 질환의 증거가 있는 환자에게는 이 약의 투여를 피해야 한다.), 폐경색, 중증의 폐기능장애 환자 및 기타 저산소혈증을 수반하기 쉬운 상태, 과도한 알코올 섭취자, 탈수증, 설사, 구토 등의 위장장애 환자",
+   "extractor": "kw-v4",
+   "id": "b7f716f10c",
+   "kind": "note",
+   "matched": [
     {
-      "id": "c488be3e92",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "덧붙여 메트포르민은 저산소증, 탈수, 패혈증과 관계된 증상이 나타날 경우 즉각 투여를 중지해야 한다. 간기능이 손상된 경우 젖산 배설능력이 유의적으로 저하될 수 있으므로, 일반적으로 간질환의 임상적 또는 실험실적 소견이 있는 환자의 경우 이 약을 투여하지 않는다. 알코올은 메트포르민이 젖산대사에 영향을 미치게 할 가능성이 있으므로, 이 약을 투여 받는 동안 급ㆍ만성적인 알코올의 과량섭취는 피…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "01fd0c70a6",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 5)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올 섭취: 알코올은 젖산 대사에 대해 이 약이 미치는 영향을 증대시킨다고 알려져 있다. 따라서 이 약을 투여하는 동안 급성 또는 만성적인 알코올의 과량섭취는 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f1e4c938e1",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "메트포르민염산염",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "저혈당은 일반적인 사용 환경 하에서 메트포르민을 단독 투여한 환자에서는 나타나지 않으나, 열량 섭취가 불충분한 경우, 격렬한 운동이 열량 섭취로 보충되지 못한 경우나 다른 혈당강하제(설폰요소, 인슐린 등) 또는 알코올을 병용 투여하는 경우에 발생한다. 특히 고령자, 쇠약하거나 영양 불균형인 환자, 부신이나 뇌하수체 부전 환자 또는 알코올 중독자인 경우 저혈당이 나타나기 쉽다. 저혈당은 고령자…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fa794ffbf9",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "메트포르민염산염",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "환자에게 이 약을 투여하는 동안 급성이든 만성이든 과다한 알코올 섭취의 위험에 대해 조언해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1fc58dc9df",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "메트포르민염산염",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "보통의 투여 상황에서 저혈당은 메트포르민을 단독으로 투여하는 환자에서는 발생하지 않으나 열량섭취가 불충분할 때, 격렬한 운동 후 열량보충이 되지 않을 때 또는 다른 혈당저하제(설포닐우레아, 인슐린)나 알코올(에탄올)을 병용투여시 발생할 수 있다. 고령의 노약자 또는 영양부족환자와 부신 또는 뇌하수체기능항진증 또는 알코올중독은 특히 저혈당에 민감할 수 있다. 저혈당은 고령자, β-아드레날린 효…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9c661378e1",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 2)",
-      "subject": "- 혈당강하 작용을 감약시키는 약제",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2e778b2fe2",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "- 간장애",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ca365e47f2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부를 대상으로 이 약 또는 이 약의 성분에 대한 적절한 대조연구가 없으므로 이 약의 임부에 대한 안전성은 알려지지 않았다. 따라서 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "79384655f3",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "시타글립틴은 랫드에서 유즙으로 분비되는 것으로 보고되었으므로 수유부에는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "cb40d4f2b5",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "시타글립틴과 메트포르민은 대체로 신장으로 배설되는 것으로 알려져 있다. 고령자는 신장기능이 감소되기 쉬우므로 환자의 신기능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 한다. 고령자는 정기적으로 신기능을 모니터링 해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c35f1dce8d",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "시타글립틴",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "허가 전 임상시험에서 총 피험자(3884명) 중 65세 이상이 725명, 75세 이상이 61명이었다. 65세 이상 고령자에서의 안전성과 유효성은 젊은 환자에서와 유사하였다. 이 환자군과 젊은 환자군 사이에 반응성에 차이는 없었으나 일부 고령자에서 감수성이 증가할 수 있음을 배제할 수는 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3af92a1b5b",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "메트포르민염산염",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자와 성인 환자 간에 반응의 차이가 없다는 임상보고가 있으나, 메트포르민의 대조 임상 시험은 성인과 다른 반응을 나타내는지 결정하기 위한 충분한 수의 고령 환자를 확보하지 못하였다. 고령화는 간·신기능 감소(간기능의 저하 시는 젖산의 대사능이 떨어져 유산산증이 나타날 수 있다)와 관련이 있으므로, 메트포르민은 연령이 증가함에 따라 주의하여 투여해야 한다. 용량 결정에 있어 주의하고, 조심…",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:07:58"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "덧붙여 메트포르민은 저산소증, 탈수, 패혈증과 관계된 증상이 나타날 경우 즉각 투여를 중지해야 한다. 간기능이 손상된 경우 젖산 배설능력이 유의적으로 저하될 수 있으므로, 일반적으로 간질환의 임상적 또는 실험실적 소견이 있는 환자의 경우 이 약을 투여하지 않는다. 알코올은 메트포르민이 젖산대사에 영향을 미치게 할 가능성이 있으므로, 이 약을 투여 받는 동안 급ㆍ만성적인 알코올의 과량섭취는 피…",
+   "extractor": "kw-v4",
+   "id": "6e1081fbc3",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 5)",
+   "subject": "",
+   "excerpt": "알코올 섭취: 알코올은 젖산 대사에 대해 이 약이 미치는 영향을 증대시킨다고 알려져 있다. 따라서 이 약을 투여하는 동안 급성 또는 만성적인 알코올의 과량섭취는 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "84adc9adfa",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "메트포르민염산염",
+   "excerpt": "저혈당은 일반적인 사용 환경 하에서 메트포르민을 단독 투여한 환자에서는 나타나지 않으나, 열량 섭취가 불충분한 경우, 격렬한 운동이 열량 섭취로 보충되지 못한 경우나 다른 혈당강하제(설폰요소, 인슐린 등) 또는 알코올을 병용 투여하는 경우에 발생한다. 특히 고령자, 쇠약하거나 영양 불균형인 환자, 부신이나 뇌하수체 부전 환자 또는 알코올 중독자인 경우 저혈당이 나타나기 쉽다. 저혈당은 고령자…",
+   "extractor": "kw-v4",
+   "id": "f8db970403",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "메트포르민염산염",
+   "excerpt": "환자에게 이 약을 투여하는 동안 급성이든 만성이든 과다한 알코올 섭취의 위험에 대해 조언해야 한다.",
+   "extractor": "kw-v4",
+   "id": "4d6e3f508a",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "메트포르민염산염",
+   "excerpt": "보통의 투여 상황에서 저혈당은 메트포르민을 단독으로 투여하는 환자에서는 발생하지 않으나 열량섭취가 불충분할 때, 격렬한 운동 후 열량보충이 되지 않을 때 또는 다른 혈당저하제(설포닐우레아, 인슐린)나 알코올(에탄올)을 병용투여시 발생할 수 있다. 고령의 노약자 또는 영양부족환자와 부신 또는 뇌하수체기능항진증 또는 알코올중독은 특히 저혈당에 민감할 수 있다. 저혈당은 고령자, β-아드레날린 효…",
+   "extractor": "kw-v4",
+   "id": "c49f0dc196",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "- 혈당강하 작용을 감약시키는 약제",
+   "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
+   "extractor": "kw-v4",
+   "id": "9ed453100d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "- 간장애",
+   "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "5c7692516f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "f129543446",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부를 대상으로 이 약 또는 이 약의 성분에 대한 적절한 대조연구가 없으므로 이 약의 임부에 대한 안전성은 알려지지 않았다. 따라서 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "4ce889dd7a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "1937c8780c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "시타글립틴은 랫드에서 유즙으로 분비되는 것으로 보고되었으므로 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "7efd201119",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "시타글립틴과 메트포르민은 대체로 신장으로 배설되는 것으로 알려져 있다. 고령자는 신장기능이 감소되기 쉬우므로 환자의 신기능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 한다. 고령자는 정기적으로 신기능을 모니터링 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "64c0266101",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "시타글립틴",
+   "excerpt": "허가 전 임상시험에서 총 피험자(3884명) 중 65세 이상이 725명, 75세 이상이 61명이었다. 65세 이상 고령자에서의 안전성과 유효성은 젊은 환자에서와 유사하였다. 이 환자군과 젊은 환자군 사이에 반응성에 차이는 없었으나 일부 고령자에서 감수성이 증가할 수 있음을 배제할 수는 없다.",
+   "extractor": "kw-v4",
+   "id": "f2e5e0def8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "메트포르민염산염",
+   "excerpt": "고령자와 성인 환자 간에 반응의 차이가 없다는 임상보고가 있으나, 메트포르민의 대조 임상 시험은 성인과 다른 반응을 나타내는지 결정하기 위한 충분한 수의 고령 환자를 확보하지 못하였다. 고령화는 간·신기능 감소(간기능의 저하 시는 젖산의 대사능이 떨어져 유산산증이 나타날 수 있다)와 관련이 있으므로, 메트포르민은 연령이 증가함에 따라 주의하여 투여해야 한다. 용량 결정에 있어 주의하고, 조심…",
+   "extractor": "kw-v4",
+   "id": "3ee6bf8422",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

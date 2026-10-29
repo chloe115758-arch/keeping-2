@@ -1,0 +1,56 @@
+{
+ "ingredient": "atropine sulfate",
+ "productSeq": "196900033",
+ "itemName": "대한아트로핀황산염주사액",
+ "atc": "A03BA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20150327",
+ "ediCode": "645101113",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900033/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900033/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900033/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "태아에 빈맥 등이 나타날 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에 는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "6e097c7d13",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "신생아에 빈맥 등이 나타날 수 있으므로 수유중의 부인에는 투여하지 않는 것이 바람 직하다. 또한 유즙분비가 억제될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "582364c18d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에는 항콜린 작용에 의한 녹내장, 기명장애, 구갈, 배뇨곤란, 변비 등이 나타나기 쉬우므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c6b2dcee9f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:47",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

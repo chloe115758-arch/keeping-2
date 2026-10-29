@@ -1,83 +1,87 @@
 {
-  "ingredient": "telmisartan",
-  "productSeq": "201902715",
-  "itemName": "텔로미탄정80밀리그램(텔미사르탄)",
-  "atc": "C09CA07",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260212",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902715/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902715/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902715/NB"
-  },
-  "rules": [
+ "ingredient": "telmisartan",
+ "productSeq": "201902715",
+ "itemName": "텔로미탄정80밀리그램(텔미사르탄)",
+ "atc": "C09CA07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "053300710",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902715/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902715/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902715/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 8)",
+   "subject": "",
+   "excerpt": "바클로펜, 아미포스틴, 알코올, 바르비튜르산염, 마약, 항우울제에 의해 기립저혈압이 심화될 수도 있다.",
+   "extractor": "kw-v4",
+   "id": "77610774e0",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "41078165d4",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 8)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "바클로펜, 아미포스틴, 알코올, 바르비튜르산염, 마약, 항우울제에 의해 기립저혈압이 심화될 수도 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a72c43a669",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "생식능 : 이 약이 사람의 생식능에 미치는 영향은 연구되지 않았다. 암컷 및 수컷 랫트를 이용한 비임상시험에서 수태능에 대한 이 약의 영향은 관찰되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6029e490a0",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 1기 중 안지오텐신Ⅱ수용체 길항제의 사용은 권장되지 않으며 임신기간 중 이 약의 투약을 시작해서는 안 된다. 안지오텐신Ⅱ수용체 길항제의 작용기전 때문에 태아에 대한 위험을 무시할 수 없다. 임신 2 ∼ 3기 사이에 ACE억제제(레닌-안지오텐신-알도스테론계에 작용하는 특정 약물군)에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/또는 무뇨증…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "90fdff288b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 모유로 이행되는지의 여부는 밝혀지지 않았으나 랫트에 대한 실험에서 유즙 중에 이 약의 분비가 확인되었으므로 수유부가 이 약을 사용하는 것은 바람직하지 않다. 수유중인 여성에게 이 약의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3b14d557b3",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에게 일반적으로 과도한 혈압강하는 바람직하지 않다고 되어있다(뇌경색 등이 일어날 우려가 있다.). 고령자에 투여하는 경우에는 환자의 상태를 관찰하면서 신중히 투여한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:03:36"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "생식능 : 이 약이 사람의 생식능에 미치는 영향은 연구되지 않았다. 암컷 및 수컷 랫트를 이용한 비임상시험에서 수태능에 대한 이 약의 영향은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "cf87ee194a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 1기 중 안지오텐신Ⅱ수용체 길항제의 사용은 권장되지 않으며 임신기간 중 이 약의 투약을 시작해서는 안 된다. 안지오텐신Ⅱ수용체 길항제의 작용기전 때문에 태아에 대한 위험을 무시할 수 없다. 임신 2 ∼ 3기 사이에 ACE억제제(레닌-안지오텐신-알도스테론계에 작용하는 특정 약물군)에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/또는 무뇨증…",
+   "extractor": "kw-v4",
+   "id": "be06407562",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약이 모유로 이행되는지의 여부는 밝혀지지 않았으나 랫트에 대한 실험에서 유즙 중에 이 약의 분비가 확인되었으므로 수유부가 이 약을 사용하는 것은 바람직하지 않다. 수유중인 여성에게 이 약의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ad033989e9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에게 일반적으로 과도한 혈압강하는 바람직하지 않다고 되어있다(뇌경색 등이 일어날 우려가 있다.). 고령자에 투여하는 경우에는 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "1e21ef7f3e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

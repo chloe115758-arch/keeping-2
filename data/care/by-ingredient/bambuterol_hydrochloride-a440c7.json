@@ -1,0 +1,68 @@
+{
+ "ingredient": "bambuterol hydrochloride",
+ "productSeq": "199400505",
+ "itemName": "밤벡정10mg(밤부테롤염산염)",
+ "atc": "R03CC12",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240906",
+ "ediCode": "642100580",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199400505/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199400505/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199400505/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물에게 투여 시 기형발생이 발견되지는 않았으나, 임부에 대한 사용경험은 없으므로 임부 또는 임신하고 있는 가능성이 있는 여성에는 투여를 피한다.",
+   "extractor": "kw-v4",
+   "id": "d47cfc1cd1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부의 ß2-효능제 복용은 조산아에서 일시적인 저혈당증을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "6717f18cd9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약이나 중간 대사물질이 모유 중으로 이행되는지 여부는 알려져 있지 않다. 밤부테롤의 주 대사체인 테르부탈린은 모유로 이행되나 테르부탈린은 치료용량에서 도 수유중인 신생아에게 영향이 없다. 이 약은 수유부에게 사용 시 유익성이 위험성을 상회할 경우에만 투여해야 하며, 이 약 투여 시 수유하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "6b0ce88967",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "ß2-효능제는 자궁 수축 억제 작용을 유발할 수 있으므로, 임신 말기에 사용시 주의를 기울여야 한다.",
+   "extractor": "kw-v4",
+   "id": "2806ed0d5f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:06",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

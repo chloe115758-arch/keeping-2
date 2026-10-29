@@ -1,52 +1,56 @@
 {
-  "ingredient": "tamsulosin hydrochloride",
-  "productSeq": "201904787",
-  "itemName": "에이블탐스로신서방정0.2밀리그램(탐스로신염산염)",
-  "atc": "G04CA02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20241029",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904787/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904787/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904787/NB"
+ "ingredient": "tamsulosin hydrochloride",
+ "productSeq": "201904787",
+ "itemName": "에이블탐스로신서방정0.2밀리그램(탐스로신염산염)",
+ "atc": "G04CA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20241029",
+ "ediCode": "052402070",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904787/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904787/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904787/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 적응증은 여성을 대상으로 하지 않는다. 여성에서 이 약의 안전성 및 유효성은 확립되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "372c9a8e7f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "9f08fd86dd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 적응증은 여성을 대상으로 하지 않는다. 여성에서 이 약의 안전성 및 유효성은 확립되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3a483669e3",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "고령자 중에는 신기능이 저하된 환자가 있으므로 이러한 경우에는 0.1 mg부터 투여하여 경과를 충분히 관찰한 후 0.2 mg으로 증량한다. 0.2 mg으로 기대되는 효과를 얻지 못할 경우에는 더 이상 증량하여 투여하지 말고 다른 적절한 처치를 해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f5e4b72095",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "성인 : 탐스로신염산염으로서 1일 1회 0.2 mg을 식후에 경구투여한다.",
-      "meal": "식후",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:00:56"
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자 중에는 신기능이 저하된 환자가 있으므로 이러한 경우에는 0.1 mg부터 투여하여 경과를 충분히 관찰한 후 0.2 mg으로 증량한다. 0.2 mg으로 기대되는 효과를 얻지 못할 경우에는 더 이상 증량하여 투여하지 말고 다른 적절한 처치를 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "51d9326d4f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "id": "f5e4b72095",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 탐스로신염산염으로서 1일 1회 0.2 mg을 식후에 경구투여한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

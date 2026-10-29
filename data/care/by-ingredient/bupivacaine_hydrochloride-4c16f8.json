@@ -1,0 +1,80 @@
+{
+ "ingredient": "bupivacaine hydrochloride",
+ "productSeq": "199502376",
+ "itemName": "명문염산부피바카인주0.25%",
+ "atc": "N01BB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200928",
+ "ediCode": "649801321",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199502376/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199502376/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199502376/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "50f1b9a735",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자는 혈관수축제(에피네프린, 노르에피네프린)의 작용에 대한 감수성이 클 수 있으므로 환자의 상태를 관찰하고 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d40ccf61a9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "경막외마취를 하는 경우, 고령자에는 일반적으로 마취범위가 넓어지기 쉬우므로 용량에 유의하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "4197a4fd2f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "38d0cce2ed",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "04afc99c00",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:16",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

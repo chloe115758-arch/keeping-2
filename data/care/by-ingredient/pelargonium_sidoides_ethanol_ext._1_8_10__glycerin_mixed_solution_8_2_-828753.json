@@ -1,0 +1,44 @@
+{
+ "ingredient": "pelargonium sidoides ethanol ext.(1→8~10)ㆍglycerin mixed solution(8:2)",
+ "productSeq": "201109893",
+ "itemName": "펠라스시럽(펠라고니움시도이데스11%에탄올추출물(1→8~10)ㆍ글리세린혼합액(8:2))",
+ "atc": "R07AX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240521",
+ "ediCode": "640902341",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201109893/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201109893/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201109893/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음 환자에는 투여하지 말 것 1)",
+   "subject": "",
+   "excerpt": "임부 및 수유부",
+   "extractor": "kw-v4",
+   "id": "1b28842bb7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "id": "c17c37ae1e",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "식전 30분에 경구 복용한다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:29:59",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

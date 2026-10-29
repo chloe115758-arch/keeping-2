@@ -1,0 +1,75 @@
+{
+ "ingredient": "dantrolene sodium",
+ "productSeq": "199903365",
+ "itemName": "아노렉스캡슐25밀리그램(단트롤렌나트륨수화물)",
+ "atc": "M03CA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260414",
+ "ediCode": "648200940",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199903365/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199903365/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199903365/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "진정작용이 있는 물질이나 알코올과 함께 이 약을 병용투여 시 진정작용이 증강될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "37e9906312",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게 투여하는 것은 바람직하지 않다.",
+   "extractor": "kw-v4",
+   "id": "43ea77a6e3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유중인 여성에게 투여를 피하는 것이 바람직하다. 부득이하게 투여하는 경우에는 수유를 중단한다(모유중으로 이행한다는 보고가 있다.).",
+   "extractor": "kw-v4",
+   "id": "426f6d18e7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 저용량부터 시작하고 증량에 대해서는 환자의 상태를 관찰하면서 신중히 투여한다(이 약은 주로 간에서 대사되지만 고령자는 간기능이 저하되는 경우가 많기 때문에 혈중 농도가 높게 유지될 수 있다.).",
+   "extractor": "kw-v4",
+   "id": "705dd9c634",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:29",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

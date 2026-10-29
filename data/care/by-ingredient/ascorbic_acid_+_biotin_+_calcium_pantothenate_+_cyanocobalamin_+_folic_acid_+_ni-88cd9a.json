@@ -1,15 +1,32 @@
 {
-  "ingredient": "ascorbic acid + biotin + calcium pantothenate + cyanocobalamin + folic acid + nicotinamide + pyridoxine hydrochloride + riboflavin + thiamine nitrate",
-  "productSeq": "202501353",
-  "itemName": "레날비타정",
-  "atc": "A11EB",
-  "etcOtc": "일반의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501353/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501353/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501353/NB"
-  },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:19:27"
+ "ingredient": "ascorbic acid + biotin + calcium pantothenate + cyanocobalamin + folic acid + nicotinamide + pyridoxine hydrochloride + riboflavin + thiamine nitrate",
+ "productSeq": "202501353",
+ "itemName": "레날비타정",
+ "atc": "A11EB",
+ "etcOtc": "일반의약품",
+ "changeDate": null,
+ "ediCode": "072400610",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501353/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501353/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501353/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음과 같은 사람(경우)은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 3)",
+   "subject": "",
+   "excerpt": "임부 및 임신하고 있을 가능성이 있는 여성, 수유부, 미숙아, 유아",
+   "extractor": "kw-v4",
+   "id": "812442fc90",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

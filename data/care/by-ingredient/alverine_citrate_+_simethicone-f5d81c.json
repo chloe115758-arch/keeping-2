@@ -1,0 +1,80 @@
+{
+ "ingredient": "alverine citrate + simethicone",
+ "productSeq": "200501660",
+ "itemName": "알베릭스연질캡슐",
+ "atc": "A03AX58",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240613",
+ "ediCode": "642201500",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200501660/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200501660/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200501660/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "5d829d1877",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험에서 중대한 태아독성 또는 최기형성을 나타내지는 않았으나, 사람에 대해서는 확인되지 않았으며, 임신기간 중의 약물의 사용은 신중하여야 하기 때문에 임부에게는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "22484b53c3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "a1a42426b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "검토된 바가 없으므로 수유부에게는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "c3bb092f88",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "021f4fbda5",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인: 1회 1캡슐, 1일 2&#x301c;3회 식전에 복용한다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:10",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

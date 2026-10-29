@@ -1,0 +1,44 @@
+{
+ "ingredient": "timolol maleate )(1회/1일)",
+ "productSeq": "200109865",
+ "itemName": "리스몬티지점안액0.25%(티몰롤말레산염)",
+ "atc": "S01ED01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20140304",
+ "ediCode": "643500711",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109865/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109865/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109865/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임신 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 관한 안정성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "2f382d85e3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약의 경구 및 점안 투여시 모유중으로 이행한다. 수유 영아에게 심각한 부작용이 일어날 가능성이 있으므로 수유부는 투여하지 말고 부득이 투여하는 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "7796213a90",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:05",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

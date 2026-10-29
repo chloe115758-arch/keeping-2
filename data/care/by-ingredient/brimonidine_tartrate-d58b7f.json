@@ -1,0 +1,75 @@
+{
+ "ingredient": "brimonidine tartrate",
+ "productSeq": "202601736",
+ "itemName": "알파칸점안액0.15%(브리모니딘타르타르산염)",
+ "atc": "S01EA05",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "622805711",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601736/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601736/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601736/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약이 중추신경억제제(알코올, 바르비탈류, 아편류, 안정제, 마취제)의 효과를 상승시킬 가능성이 있으므로 병용 시 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "73f4785558",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약의 임부에 대한 연구는 없으나 랫트를 대상으로 한 생식독성시험에서 0.66 mgbase/kg을 경구 투여했을 때 이 약에 의한 생식력 손상이나 태자위험의 증거는 나타나지 않았다. 이때 투여된 용량은 사람에게 반복 점안하여 나타나는 혈중 약물농도의 60배에 해당한다. 토끼의 경우, 인체에 대한 치료동안 도달한 것보다 높은 혈장농도에서 이 약은 착상전 실패 또는 생후 성장감소를 일으키는 것…",
+   "extractor": "kw-v4",
+   "id": "cf8480d4ae",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "사람에서 이 약이 모유로 이행되는지의 여부는 아직 밝혀지지 않았으나, 동물실험에서 유즙 중으로 분비된다는 보고가 있으므로, 수유부에 대한 이 약의 중요성을 고려하여 수유중단이나 이 약 투여의 중단을 결정하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "3724e7d421",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "전반적으로 다른 성인환자와 고령자 사이에 관찰된 이 약의 안전성 및 유효성의 차이는 없다.",
+   "extractor": "kw-v4",
+   "id": "0e346ac3ed",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:31:20",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

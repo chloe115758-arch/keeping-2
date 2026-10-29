@@ -1,52 +1,56 @@
 {
-  "ingredient": "norepinephrine bitartrate",
-  "productSeq": "200708895",
-  "itemName": "큐프린주(노르에피네프린타르타르산염수화물)",
-  "atc": "C01CA03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260824",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200708895/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200708895/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200708895/NB"
+ "ingredient": "norepinephrine bitartrate",
+ "productSeq": "200708895",
+ "itemName": "큐프린주(노르에피네프린타르타르산염수화물)",
+ "atc": "C01CA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260824",
+ "ediCode": "653101501",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200708895/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200708895/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200708895/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "자궁혈관의 수축으로 태아가 가사상태가 될 수 있으므로 임부 또는 임신하고 있을 가 능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "84e21cc558",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "c076e6f847",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "자궁혈관의 수축으로 태아가 가사상태가 될 수 있으므로 임부 또는 임신하고 있을 가 능성이 있는 부인에는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1af23ebc35",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 모유로 이행되는지 여부는 알려지지 않았지만 수유 중에는 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "83f53b821a",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "과도한 혈압상승 작용이 나타날 가능성이 있으므로 신중히 투여한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:17:32"
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 모유로 이행되는지 여부는 알려지지 않았지만 수유 중에는 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "1aa9fa0ad5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "과도한 혈압상승 작용이 나타날 가능성이 있으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "24656a4537",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

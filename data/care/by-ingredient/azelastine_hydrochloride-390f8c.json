@@ -1,83 +1,87 @@
 {
-  "ingredient": "azelastine hydrochloride",
-  "productSeq": "201501855",
-  "itemName": "알렙틴정(아젤라스틴염산염)",
-  "atc": "R06AX19",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250509",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501855/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501855/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501855/NB"
-  },
-  "rules": [
+ "ingredient": "azelastine hydrochloride",
+ "productSeq": "201501855",
+ "itemName": "알렙틴정(아젤라스틴염산염)",
+ "atc": "R06AX19",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250509",
+ "ediCode": "057000830",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501855/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501855/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501855/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "알코올의 섭취에 의해 진정 작용이 증강될수 있으며 시메티딘과 병용투여시에도 주의한다.",
+   "extractor": "kw-v4",
+   "id": "82b0904ea4",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "261ab758a7",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올의 섭취에 의해 진정 작용이 증강될수 있으며 시메티딘과 병용투여시에도 주의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "267c4cf3a2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물 실험에서 대량투여(임상 용량의 370배 이상)에 의해 기형발생이 보고되고 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "463a4a37be",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫트)에서 유즙중에 이행하는 것이 보고되어 있으므로 수유중의 부인에는 투여하지 않는 것이 바람직하나 부득이 투여할 경우에는 수유를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3e3dec9f52",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fc69eb81e1",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "염산아젤라스틴으로서 1회 1mg, 기관지 천식인 경우에는 1회 2mg을 1일 2회 아침식사후 및 취침 전에 경구투여한다. 연령, 증상에 따라 적절히 증감한다.",
-      "meal": "식사후",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:06:40"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물 실험에서 대량투여(임상 용량의 370배 이상)에 의해 기형발생이 보고되고 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "43fd523f71",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 유즙중에 이행하는 것이 보고되어 있으므로 수유중의 부인에는 투여하지 않는 것이 바람직하나 부득이 투여할 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "be8f379421",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "af5f32b8ec",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "fc69eb81e1",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "염산아젤라스틴으로서 1회 1mg, 기관지 천식인 경우에는 1회 2mg을 1일 2회 아침식사후 및 취침 전에 경구투여한다. 연령, 증상에 따라 적절히 증감한다.",
+   "meal": "식사후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

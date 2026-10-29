@@ -1,178 +1,237 @@
 {
-  "ingredient": "metformin hydrochloride + vildagliptin",
-  "productSeq": "202107110",
-  "itemName": "빌다틴메트정50/500밀리그램",
-  "atc": "A10BD08",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260401",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107110/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107110/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107110/NB"
-  },
-  "rules": [
+ "ingredient": "metformin hydrochloride + vildagliptin",
+ "productSeq": "202107110",
+ "itemName": "빌다틴메트정50/500밀리그램",
+ "atc": "A10BD08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260401",
+ "ediCode": "053601680",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107110/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107110/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107110/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음환자에게는 투여하지 말 것 9)",
+   "subject": "",
+   "excerpt": "간 기능장애(손상된 간 기능은 유산산증의 몇몇 경우와 관련이 있기 때문에, 일반적으로 임상적 또는 실험실적으로 간 질환의 증거가 있는 환자에게는 이 약의 투여를 피해야 한다.), 폐경색, 중증의 폐기능장애 환자 및 기타 저산소혈증을 수반하기 쉬운 상태, 과도한 알코올 섭취자, 탈수증, 설사, 구토 등의 위장장애 환자",
+   "extractor": "kw-v4",
+   "id": "75fc0c03c2",
+   "kind": "note",
+   "matched": [
     {
-      "id": "c54e70dbbb",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "2) 급성 췌장염 :",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "메트포르민 함유 제품을 투여 받은 환자의 신장 기능을 심각하게 손상 시킬 수 있는 의약품 (항 고혈압제, 이뇨제 및 NSAID)은 조심스럽게 투여해야 한다. 유산산증의 다른 위험 인자는 과도한 알코올 섭취, 간기능 장애, 부적절하게 통제 된 당뇨병, 케톤증, 장기간의 금식 및 저산소증과 관련된 모든 조건뿐만 아니라 유산산증을 유발할 수 있는 의약품의 병용이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7e8a1222a4",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "2) 급성 췌장염 :",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "덧붙여 이 약은 저산소증, 탈수, 패혈증과 관계된 증상이 나타날 경우 즉각 투여를 중지해야 한다. 간기능이 손상된 경우 젖산 배설능력이 유의적으로 저하될 수 있으므로, 일반적으로 간질환의 임상적 또는 실험실적 소견이 있는 환자의 경우 이 약을 투여하지 않는다. 알코올은 이 약이 젖산대사에 영향을 미치게 할 가능성이 있으므로, 이 약을 투여 받는 동안 급ㆍ만성적인 알코올의 과량섭취는 피해야 한…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f86d225441",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 13)",
-      "subject": "2) 급성 췌장염 :",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올 섭취 : 알코올은 젖산 대사에 대해 이 약이 미치는 영향을 증대시키고 유산산증의 위험도를 증가시킨다고 알려져 있다. 따라서 이 약을 투여하는 동안 급성 또는 만성적인 알코올의 과량섭취는 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ec74a69b4f",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 16)",
-      "subject": "2) 급성 췌장염 :",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "저혈당 : 저혈당은 일반적인 사용 환경 하에서 메트포르민을 단독 투여한 환자에서는 나타나지 않으나, 열량 섭취가 불충분한 경우, 격렬한 운동이 열량 섭취로 보충되지 못한 경우나 다른 혈당강하제(설폰요소, 인슐린 등) 또는 알코올을 병용 투여하는 경우에 발생한다. 특히, 고령자, 쇠약하거나 영양 불균형인 환자, 부신이나 뇌하수체 부전 환자 또는 알코올 중독자인 경우 저혈당이 나타나기 쉽다. 저…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "04239f07e6",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6.상호작용 2)",
-      "subject": "- 혈당강하 작용을 감약시키는 약제",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "99c035cf6c",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6.상호작용",
-      "subject": "- 간장애",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "da8a1a6439",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 적절한 연구결과가 없다. 동물시험 결과, 빌다글립틴의 경우 고용량에서 생식독성을 나타내었다. 빌다글립틴과 메트포르민으로 진행한 동물 시험에서 기형발생의 증거를 보이지 않았으나, 모성독성 용량에서 (maternotoxic) 태아독성효과를 보였다. 사람에서의 잠재적 위험은 알려진 바가 없다. 사람에서의 결과가 부족하기 때문에 이 약을 임산부에 사용해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "987b7ac6ea",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물시험에서 메트포르민과 빌다글립틴 모두 유즙으로 분비되는 것으로 나타났다. 빌다글립틴이 사람 모유에 분비되는지는 알려지지 않았으나 메트포르민은 사람 모유에 적은양이지만 분비가 되는 것이 알려졌기 때문에 이 약을 수유부에게 사용해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9c5823878a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "3) 수태능",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 사람의 수태능에 미치는 영향은 연구되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e548e8e4fe",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "메트포르민은 신장으로 배설되고, 고령자에 있어 노화는 신기능 저하와 관련이 있기 때문에 환자의 신기능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 한다. 고령자는 정기적으로 신기능을 모니터링 해야 하고, 일반적으로 고령자에게는 최대용량을 투여하지 않는다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:10:20"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "메트포르민 함유 제품을 투여 받은 환자의 신장 기능을 심각하게 손상 시킬 수 있는 의약품 (항 고혈압제, 이뇨제 및 NSAID)은 조심스럽게 투여해야 한다. 유산산증의 다른 위험 인자는 과도한 알코올 섭취, 간기능 장애, 부적절하게 통제 된 당뇨병, 케톤증, 장기간의 금식 및 저산소증과 관련된 모든 조건뿐만 아니라 유산산증을 유발할 수 있는 의약품의 병용이다.",
+   "extractor": "kw-v4",
+   "id": "d9e56fb242",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "덧붙여 이 약은 저산소증, 탈수, 패혈증과 관계된 증상이 나타날 경우 즉각 투여를 중지해야 한다. 간기능이 손상된 경우 젖산 배설능력이 유의적으로 저하될 수 있으므로, 일반적으로 간질환의 임상적 또는 실험실적 소견이 있는 환자의 경우 이 약을 투여하지 않는다. 알코올은 이 약이 젖산대사에 영향을 미치게 할 가능성이 있으므로, 이 약을 투여 받는 동안 급ㆍ만성적인 알코올의 과량섭취는 피해야 한…",
+   "extractor": "kw-v4",
+   "id": "298fed4e50",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 13)",
+   "subject": "",
+   "excerpt": "알코올 섭취 : 알코올은 젖산 대사에 대해 이 약이 미치는 영향을 증대시키고 유산산증의 위험도를 증가시킨다고 알려져 있다. 따라서 이 약을 투여하는 동안 급성 또는 만성적인 알코올의 과량섭취는 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "723e899f18",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 16)",
+   "subject": "",
+   "excerpt": "저혈당 : 저혈당은 일반적인 사용 환경 하에서 메트포르민을 단독 투여한 환자에서는 나타나지 않으나, 열량 섭취가 불충분한 경우, 격렬한 운동이 열량 섭취로 보충되지 못한 경우나 다른 혈당강하제(설폰요소, 인슐린 등) 또는 알코올을 병용 투여하는 경우에 발생한다. 특히, 고령자, 쇠약하거나 영양 불균형인 환자, 부신이나 뇌하수체 부전 환자 또는 알코올 중독자인 경우 저혈당이 나타나기 쉽다. 저…",
+   "extractor": "kw-v4",
+   "id": "9bdff00110",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6.상호작용 2)",
+   "subject": "- 혈당강하 작용을 감약시키는 약제",
+   "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
+   "extractor": "kw-v4",
+   "id": "3be3a20a3e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6.상호작용",
+   "subject": "- 간장애",
+   "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "90a5062156",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "9860e40807",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 적절한 연구결과가 없다. 동물시험 결과, 빌다글립틴의 경우 고용량에서 생식독성을 나타내었다. 빌다글립틴과 메트포르민으로 진행한 동물 시험에서 기형발생의 증거를 보이지 않았으나, 모성독성 용량에서 (maternotoxic) 태아독성효과를 보였다. 사람에서의 잠재적 위험은 알려진 바가 없다. 사람에서의 결과가 부족하기 때문에 이 약을 임산부에 사용해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "d3f3c437f1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "c7935549d4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험에서 메트포르민과 빌다글립틴 모두 유즙으로 분비되는 것으로 나타났다. 빌다글립틴이 사람 모유에 분비되는지는 알려지지 않았으나 메트포르민은 사람 모유에 적은양이지만 분비가 되는 것이 알려졌기 때문에 이 약을 수유부에게 사용해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "f40388eba0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "2e216a6d10",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람의 수태능에 미치는 영향은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "6ceec0fcf3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "메트포르민은 신장으로 배설되고, 고령자에 있어 노화는 신기능 저하와 관련이 있기 때문에 환자의 신기능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 한다. 고령자는 정기적으로 신기능을 모니터링 해야 하고, 일반적으로 고령자에게는 최대용량을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "b16da1f26c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

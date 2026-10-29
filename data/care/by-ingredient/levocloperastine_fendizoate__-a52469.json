@@ -1,0 +1,32 @@
+{
+ "ingredient": "levocloperastine fendizoate )",
+ "productSeq": "200201397",
+ "itemName": "프리비투스현탁액(레보클로페라스틴펜디조산염)",
+ "atc": "R05DB21",
+ "etcOtc": "일반의약품",
+ "changeDate": "20200204",
+ "ediCode": "671803511",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201397/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201397/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201397/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": ": 일반적으로 임신중에는 사용하지 않는다.(임신중인 동물에 대해 주로 수행된 시험은 최기형성, 태자독성에 초점이 맞추어져 있지 않다. 임신 첫달에는 이 약을 복용하지 않는 것이 바람직하고 임신 후기에는 의사의 지시에 의해 필요시 복용한다.)",
+   "extractor": "kw-v4",
+   "id": "13b20b76f5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:27",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

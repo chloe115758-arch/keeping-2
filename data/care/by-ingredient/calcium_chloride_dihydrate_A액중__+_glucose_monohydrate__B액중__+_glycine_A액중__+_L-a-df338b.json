@@ -1,0 +1,51 @@
+{
+ "ingredient": "calcium chloride dihydrate(A액중) + glucose monohydrate (B액중) + glycine(A액중) + L-alanine(A액중) + L-arginine(A액중) + L-histidine(A액중) + L-isoleucine(A액중) + L-leucine(A액중) + L-lysine hydrochloride(A액중) + L-methionine(A액중) + L-phenylalanine(A액중) + L-proline(A액중) + L-serine(A액중) + L-threonine(A액중) + L-tryptophan(A액중) + L-tyrosine(A액중) + L-valine(A액중) + magnesium sulfate heptahydrate(A액중) + medium-chain triglycerides(C액중) + potassium chloride(A액중) + purified fish oil(C액중) + purified olive oil(C액중) + purified soybean oil(C액중) + sodium acetate trihydrate(A액중) + sodium glycerophosphate(A액중) + taurine(A액중) + zinc sulfate heptahydrate(A액중)",
+ "productSeq": "202302670",
+ "itemName": "오마프플러스원주",
+ "atc": "B05BA10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251024",
+ "ediCode": "640007921",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302670/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302670/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302670/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "대두유는 비타민 K1를 포함하고 있지만 이 약에 함유된 양은 극히 적으므로, 쿠마린 유도체를 투여 받는 환자들의 혈액응고기전에 유의한 영향을 줄 것으로 기대되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "8297c412c8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부에서의 이 약 사용에 대한 데이터는 없다. 동물의 생식독성 시험은 이루어지지 않았다. 임신과 수유 중의 투여는 안전성이 확립되어 있지 않으므로 이 약의 투여는 치료 상의 유익성이 위험성을 상회하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "7ce64598a1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:56",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

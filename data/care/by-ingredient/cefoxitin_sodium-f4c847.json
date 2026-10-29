@@ -1,0 +1,56 @@
+{
+ "ingredient": "cefoxitin sodium",
+ "productSeq": "198000067",
+ "itemName": "파세틴주(세폭시틴나트륨)",
+ "atc": "J01DC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240527",
+ "ediCode": "644904121",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198000067/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198000067/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198000067/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "b47aa13470",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유로의 이행이 보고되어 있으므로 수유부에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "dcfbbd33e0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "감염증의 정도, 원인균에의 감수성, 환자의 임상적 상태, 신기능을 종합적으로 평가하여 용량을 결정한다.",
+   "extractor": "kw-v4",
+   "id": "27967c4e58",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:59",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

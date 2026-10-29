@@ -1,0 +1,111 @@
+{
+ "ingredient": "apremilast/정(A정 4정중) + apremilast/정(B정 4정중) + apremilast/정(C정 19정중)",
+ "productSeq": "202400867",
+ "itemName": "압솔라정(아프레밀라스트)",
+ "atc": "L04AA32",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "641608000",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400867/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400867/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400867/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 3)",
+   "subject": "",
+   "excerpt": "강력한 CYP3A4 효소 유도제(예: 리팜피신, 페노바르비탈, 카르바마제핀, 페니토인, St. John’s Wort)와 이 약의 병용투여 시, 전신 노출이 감소되어 임상적 반응을 감소시킬 수 있다. 여러 용량의 리팜피신과 이 약의 병용 투여 시 이 약의 농도-시간 곡선하 면적(AUC)과 최대 혈청농도(Cmax)가 각각 72%와 43% 감소되었다. 이 약과 강력한 CYP3A4 효소 유도제와의…",
+   "extractor": "kw-v4",
+   "id": "058655c134",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 임신한 여성을 대상으로 한 이 약의 적절하고 잘 통제된 임상시험은 없다. 이 약은 임신한 여성에게 투여해서는 안되며, 임신을 시도 중인 여성에게도 투여해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "4ee4c7eee5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신에 대한 이 약의 영향으로는 현재 인체 사용 최고 권장용량보다 높은 용량 투여 시 마우스 및 원숭이에서 배태자 소실, 마우스에서 태아 체중 감소 및 골화 지연 등이 있다. 동물 실험의 경우 노출이 임상 노출의 1.3배였을 때는 그러한 영향이 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "97a6a62966",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 마우스의 유즙에서 이 약이 검출되었다. 이 약 또는 그 대사체가 사람의 모유로 분비되는지 여부는 알려지지 않았으므로, 수유 중에는 이 약을 투여하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "5a0f4f6bac",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "가임여성: 임신 여성은 투여 시작 전에 배제되어야 하며, 가임기 여성은 투여 중 임신을 방지하기 위해 효과적인 피임법을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "1bca24157b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "생식능력: 인체를 대상으로 한 생식능력에의 영향에 관한 자료는 없다. 마우스의 수컷에서 50mg/kg/day(임상 노출의 3배)까지 경구 투여하였을 때 부정적이 영향이 나타나지 않았다. 암컷에서의 생식능력과 배태자 발달 독성 연구에서, 20mg/kg/day 이상에서 발정주기의 연장과 임신까지의 기간 증가가 관찰되었다. 그러나 모든 마우스가 짝짓기를 하였으며, 임신 성공률에는 영향을 주지 않았…",
+   "extractor": "kw-v4",
+   "id": "c98b263336",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상시험에서 65 세 이상과 65 세 미만 환자에서의 안전성&#x2022;차이가 나타나지 않았다. 고령자에 대한 용량조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "311c562869",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:24",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

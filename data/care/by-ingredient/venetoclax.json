@@ -1,0 +1,238 @@
+{
+ "ingredient": "venetoclax",
+ "productSeq": "201903542",
+ "itemName": "벤클렉스타정100밀리그램(베네토클락스)",
+ "atc": "L01XX52",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210108",
+ "ediCode": "624900330",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903542/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903542/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903542/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "4. 상호작용",
+   "subject": "CYP3A 저해제",
+   "excerpt": "이 약의 치료 기간 동안 자몽 제품, 세비야 오렌지(Seville orange) 및 스타프루트(starfruit)는 CYP3A 저해제가 함유되어 있으므로 피한다.",
+   "extractor": "kw-v4",
+   "id": "9e90d6a583",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "4. 상호작용",
+   "subject": "CYP3A 유도제",
+   "excerpt": "이 약을 강력한 CYP3A 유도제인 리팜핀과 1일 1회 병용 투여 시 이 약의 Cmax 및 AUC∞는 각각 42% 및 71%까지 감소하였다. 이 약과 강력한 CYP3A 유도제(예: 카바마제핀, 페니토인, 리팜핀, 세인트존스워트) 또는 중등도의 CYP3A 유도제(예: 보센탄, 에파비렌즈, 에트라비린, 모다피닐, 나프실린)와의 병용을 피한다. CYP3A 유도가 적은 대안 치료법을 고려한다[약리작…",
+   "extractor": "kw-v4",
+   "id": "2f2d8f8fcf",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "7f79cd9e87",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 임신한 여성에게 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "8d7b27d262",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 여성을 대상으로 한 이 약 투여에 대한 적절하고 잘 통제된 시험 자료는 없다. 동물시험에서 배아-태아 독성이 나타났다. 이 약은 임부에 투여 시 태아에 유해할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "e53f1c03f6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "동물 자료",
+   "excerpt": "배아-태아 발달 시험에서, 착상 및 그 후의 각 기관 형성 기간 동안의 배아-태아 발달의 잠재적 영향을 평가하기 위해, 이 약을 임신한 마우스와 토끼에게 투여하였다. 마우스의 경우, 이 약 150mg/kg/day 투여 시(모체 노출은 사람에서의 400mg 용량에서의 인체 AUC 노출의 약 1.2배) 착상-후 소실 증가 및 태아 체중 감소가 나타났다. 토끼의 경우, 이 약 300mg/kg/da…",
+   "extractor": "kw-v4",
+   "id": "314ec9bc0b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 2)",
+   "subject": "동물 자료",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "2c533b76b0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "동물 자료",
+   "excerpt": "이 약이나 이 약의 대사체가 사람의 모유로 분비되는지 여부는 알려져 있지 않다. 이용가능한 동물시험 자료에서 이 약과 대사체가 수유 중인 랫드의 모유로 이행함이 확인되었다[독성시험 정보 참조].",
+   "extractor": "kw-v4",
+   "id": "65e29e6dec",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "동물 자료",
+   "excerpt": "신생아/영아에 대한 위험을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "65fb69fa76",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "동물 자료",
+   "excerpt": "이 약 치료 동안에는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e9c4028738",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 3)",
+   "subject": "동물 자료",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "8e524ebf11",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "동물 자료",
+   "excerpt": "이 약의 동물시험의 결과에 근거해 볼 때, 이 약 치료가 남성의 생식 능력을 약화시킬 수 있다[독성시험 정보 참조].",
+   "extractor": "kw-v4",
+   "id": "13ac10d338",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 4)",
+   "subject": "동물 자료",
+   "excerpt": "가임여성/피임",
+   "extractor": "kw-v4",
+   "id": "d57c0187fb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "임신 검사",
+   "excerpt": "가임기 여성은 이 약 투여 시작 이전에 임신 검사를 받아야 한다.",
+   "extractor": "kw-v4",
+   "id": "dedfc10b50",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "피임",
+   "excerpt": "가임기 여성은 이 약의 치료 도중 및 최종 투여 이후 최소 30일 이상 효과적인 피임법을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "bab7e04681",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "만성 림프구성 백혈병",
+   "excerpt": "이 약의 단독요법에 대한 3편의 공개 임상시험에서 만성 림프구성 백혈병 환자에서 안전성이 평가된 352명 중 만 65세 이상은 57%(201/352명)가 포함되었으며, 이 약과 리툭시맙과의 병용요법에 대한 만성 림프구성 백혈병 환자 대상 3상 임상시험에서 만 65세 이상은 50%(97/194명)이 포함되었다. 이 약과 오비누투주맙과의 병용요법에 대한 만성 림프구성 백혈병 환자 대상 3상 임상…",
+   "extractor": "kw-v4",
+   "id": "75fbf3a1af",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "급성 골수성 백혈병",
+   "excerpt": "VIALE-A 임상시험에서 이 약과 아자시티딘을 병용한 283명 환자 중, 96%가 만 65세 이상, 60%가 만 75세 이상이었다. M14-358 연구에서 이 약과 데시타빈을 병용한 13명 환자 중, 100%가 만 65세 이상, 62%가 만 75세 이상이었다. AML 환자를 대상으로 한 이 약의 임상 연구에는 만 65세 이상의 환자가 더 젊은 성인과 다르게 반응하는지 여부를 확인하기 위한…",
+   "extractor": "kw-v4",
+   "id": "aca73edcd5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:19",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

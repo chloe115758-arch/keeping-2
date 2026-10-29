@@ -1,293 +1,406 @@
 {
-  "ingredient": "omega-3-acid ethyl esters90 + rosuvastatin calcium",
-  "productSeq": "202008418",
-  "itemName": "로메가연질캡슐",
-  "atc": "C10BA07",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250306",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202008418/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202008418/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202008418/NB"
-  },
-  "rules": [
+ "ingredient": "omega-3-acid ethyl esters90 + rosuvastatin calcium",
+ "productSeq": "202008418",
+ "itemName": "로메가연질캡슐",
+ "atc": "C10BA07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250306",
+ "ediCode": "073000260",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202008418/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202008418/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202008418/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의",
+   "subject": "",
+   "excerpt": "- 고트리글리세라이드 혈증을 촉진하는 질환(갑상선기능 저하증, 당뇨)은 혈청 트리글리세라이드 수치를 개선시키기 위하여 적절히 치료되어야 한다. 약물요법을 고려하기 전에 고트리글리세라이드혈증을 악화시킨다고 알려진 약물치료(베타 차단제, 치아지드계 이뇨제, 에스트로겐 등)는 중단하거나 가능하다면 변경해야 하며, 고트리글리세라이드 혈증의 주요 유발 인자(과체중, 알코올 과다섭취)를 고려하여 적절한…",
+   "extractor": "kw-v4",
+   "id": "0c6acf9a8e",
+   "kind": "note",
+   "matched": [
     {
-      "id": "5414b695ae",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의",
-      "subject": "1) 치료 일반",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "- 고트리글리세라이드 혈증을 촉진하는 질환(갑상선기능 저하증, 당뇨)은 혈청 트리글리세라이드 수치를 개선시키기 위하여 적절히 치료되어야 한다. 약물요법을 고려하기 전에 고트리글리세라이드혈증을 악화시킨다고 알려진 약물치료(베타 차단제, 치아지드계 이뇨제, 에스트로겐 등)는 중단하거나 가능하다면 변경해야 하며, 고트리글리세라이드 혈증의 주요 유발 인자(과체중, 알코올 과다섭취)를 고려하여 적절한…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "db2b52e269",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 약물상호작용",
-      "subject": "",
-      "matched": [
-        {
-          "key": "omega3",
-          "kind": "supplement",
-          "ko": "오메가-3",
-          "surface": "오메가-3"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 다른 약물과의 약물 상호작용에 대한 연구는 실시되지 않았다. 다음은 로수바스타틴 및 오메가-3-산에틸에스테르 개개의 유효성분에 대한 약물 상호작용을 나타낸 것이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "47507a7706",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 약물상호작용",
-      "subject": "&#x2024; 기타 약물의 영향",
-      "matched": [
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "산화마그네슘"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "- 제산제 : 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 로수바스타틴을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 로수바스타틴 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3cfd8de8a2",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 약물상호작용",
-      "subject": "&#x2024; 기타 약물의 영향",
-      "matched": [
-        {
-          "key": "vitaminK",
-          "kind": "supplement",
-          "ko": "비타민 K",
-          "surface": "비타민K"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "- 와파린 : 로수바스타틴과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 HMG-CoA 환원효소 저해제와 마찬가지로, 로수바스타틴과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 로수바스타틴의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fe99942f4b",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 약물상호작용 (1)",
-      "subject": "2) 오메가-3-산에틸에스테르",
-      "matched": [
-        {
-          "key": "omega3",
-          "kind": "supplement",
-          "ko": "오메가-3",
-          "surface": "오메가-3"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "항응고제 : 오메가-3-산에틸에스테르와 항응고제 및 아세틸살리실산을 병용할 경우 출혈시간의 증가가 관찰되었다. 이는 출혈시간에 미치는 부가적인 효과에서 비롯된 결과일 수 있으나, 출혈성 합병증은 기록된 바가 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "36d61cf9cf",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 약물상호작용 ①",
-      "subject": "2) 오메가-3-산에틸에스테르",
-      "matched": [
-        {
-          "key": "omega3",
-          "kind": "supplement",
-          "ko": "오메가-3",
-          "surface": "오메가-3"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "항응고제 : 혈액희석요법(blood-thinning therapy)을 받고 있는 환자가 오메가-3-산에틸에스테르와 항응고제를 병용하는 경우와 오메가-3-산에틸에스테르의 치료를 중단하는 경우에는 환자의 프로트롬빈시간(PT, prothrombin time) 및 국제표준화비율(INR, international normalized ratio) 수치가 반드시 모니터링 되어야 한다",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "370f54f96a",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 약물상호작용 (2)",
-      "subject": "2) 오메가-3-산에틸에스테르",
-      "matched": [
-        {
-          "key": "omega3",
-          "kind": "supplement",
-          "ko": "오메가-3",
-          "surface": "오메가-3"
-        },
-        {
-          "key": "dairy",
-          "kind": "food",
-          "ko": "우유·유제품",
-          "surface": "유제품"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "시토크롬 P450 의존성 모노옥시게나아제 활성 : 오메가-3-산에틸에스테르 함유제품은 랫트에서 간내 시토크롬 P450 농도 및 활성을 증가시킨다. 사람에서의 P450 활성 유도에 대한 오메가-3-산에틸에스테르의 가능성에 대해서는 아직 연구된 바 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9e86cabba4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약에 대하여 임신한 여성에서 실시한 임상시험은 없으므로, 로수바스타틴과 마찬가지로 이 약은 임부에게 투여해서는 안되며 임신 가능성이 있는 여성의 경우에는 적절한 피임법을 사용해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3d3f51ee03",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "(1) 로수바스타틴",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 및 수유부에 대한 로수바스타틴의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bd65ffa60a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "(1) 로수바스타틴",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증거가 있다. 로수바스타틴을 사용하는 동안 임신을 할 경우 즉시 복용을 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e62c6e7682",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "(2) 오메가-3-산에틸에스테르",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신한 여성에서 실시한 임상시험은 없다. 오메가-3-산에틸에스테르가 임신한 여성에게 투여시 태아에 해를 유발하는지 또는 생식능력에 영향을 주는지에 대해서는 알려져 있지 않다. 임신 중에는 치료상의 유익성이 태아에 대한 위험성을 상회하는 경우에만 사용한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fc239cfee3",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부에 대한 이 약의 안전성은 확립되지 않았으므로 수유중에는 사용하지 않는다. 이 약이 사람에서 모유로 이행되는지에 대한 정보는 없으나, 로수바스타틴은 랫드에서 모유로 이행되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3d3f51ee03",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "(1) 로수바스타틴",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 및 수유부에 대한 로수바스타틴의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "afdb47ecdd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "(1) 로수바스타틴",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "로수바스타틴은 랫드의 모유로 이행된다. 사람에서의 모유로의 이행에 대한 데이터는 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "97f8083d16",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "(2) 오메가-3-산에틸에스테르",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "오메가-3-산에틸에스테르가 모유로 이행되는 지는 알려져 있지 않다. 많은 약물들이 모유로 배출되기 때문에 수유중인 여성에게 투여할 때는 주의 하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "db50c8b361",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 임상시험에는 충분한 수의 고령자(65세 이상)가 포함되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e3d6cb8b06",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "(1) 오메가-3-산에틸에스테르",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "65세 이상 환자는 제한된 수만이 임상시험에 포함되었다. 임상시험을 종합하여 분석할 결과 60세 이상 환자(연구집단의 약 25%)에 대한 안전성과 유효성은 60세 미만 환자의 결과와 다르지 않은 것으로 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bddb5935b2",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 성인에 한하여 투여하며, 위장장애를 피하기 위하여 식사와 함께 1일 1회 2~4캡슐(캡슐 당 오메가-3-산에틸에스테르 1,000mg/로수바스타틴 5mg)을 투여한다.",
-      "meal": "식사와 함께",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:13:18"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 약물상호작용",
+   "subject": "",
+   "excerpt": "이 약과 다른 약물과의 약물 상호작용에 대한 연구는 실시되지 않았다. 다음은 로수바스타틴 및 오메가-3-산에틸에스테르 개개의 유효성분에 대한 약물 상호작용을 나타낸 것이다.",
+   "extractor": "kw-v4",
+   "id": "76f0db0793",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "omega3",
+     "kind": "supplement",
+     "ko": "오메가-3",
+     "surface": "오메가-3"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 약물상호작용",
+   "subject": "&#x2024; 기타 약물의 영향",
+   "excerpt": "- 제산제 : 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 로수바스타틴을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 로수바스타틴 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "330a2c3ef2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 약물상호작용",
+   "subject": "&#x2024; 기타 약물의 영향",
+   "excerpt": "- 와파린 : 로수바스타틴과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 HMG-CoA 환원효소 저해제와 마찬가지로, 로수바스타틴과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 로수바스타틴의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "ff07f6aefa",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 약물상호작용 2)",
+   "subject": "&#x2024; 기타 약물의 영향",
+   "excerpt": "오메가-3-산에틸에스테르",
+   "extractor": "kw-v4",
+   "id": "e455543b29",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "omega3",
+     "kind": "supplement",
+     "ko": "오메가-3",
+     "surface": "오메가-3"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 약물상호작용 (1)",
+   "subject": "&#x2024; 기타 약물의 영향",
+   "excerpt": "항응고제 : 오메가-3-산에틸에스테르와 항응고제 및 아세틸살리실산을 병용할 경우 출혈시간의 증가가 관찰되었다. 이는 출혈시간에 미치는 부가적인 효과에서 비롯된 결과일 수 있으나, 출혈성 합병증은 기록된 바가 없다.",
+   "extractor": "kw-v4",
+   "id": "d654bef1f5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "omega3",
+     "kind": "supplement",
+     "ko": "오메가-3",
+     "surface": "오메가-3"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 약물상호작용 ①",
+   "subject": "&#x2024; 기타 약물의 영향",
+   "excerpt": "항응고제 : 혈액희석요법(blood-thinning therapy)을 받고 있는 환자가 오메가-3-산에틸에스테르와 항응고제를 병용하는 경우와 오메가-3-산에틸에스테르의 치료를 중단하는 경우에는 환자의 프로트롬빈시간(PT, prothrombin time) 및 국제표준화비율(INR, international normalized ratio) 수치가 반드시 모니터링 되어야 한다",
+   "extractor": "kw-v4",
+   "id": "c75acc92fc",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "omega3",
+     "kind": "supplement",
+     "ko": "오메가-3",
+     "surface": "오메가-3"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 약물상호작용 (2)",
+   "subject": "&#x2024; 기타 약물의 영향",
+   "excerpt": "시토크롬 P450 의존성 모노옥시게나아제 활성 : 오메가-3-산에틸에스테르 함유제품은 랫트에서 간내 시토크롬 P450 농도 및 활성을 증가시킨다. 사람에서의 P450 활성 유도에 대한 오메가-3-산에틸에스테르의 가능성에 대해서는 아직 연구된 바 없다.",
+   "extractor": "kw-v4",
+   "id": "4ff6337d9b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "omega3",
+     "kind": "supplement",
+     "ko": "오메가-3",
+     "surface": "오메가-3"
+    },
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "유제품"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "1ff0c9fd7f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 대하여 임신한 여성에서 실시한 임상시험은 없으므로, 로수바스타틴과 마찬가지로 이 약은 임부에게 투여해서는 안되며 임신 가능성이 있는 여성의 경우에는 적절한 피임법을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "589c62013e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "로수바스타틴",
+   "extractor": "kw-v4",
+   "id": "b1f84ed286",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 및 수유부에 대한 로수바스타틴의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
+   "extractor": "kw-v4",
+   "id": "88e132856b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증거가 있다. 로수바스타틴을 사용하는 동안 임신을 할 경우 즉시 복용을 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "c1caa1857a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "오메가-3-산에틸에스테르",
+   "extractor": "kw-v4",
+   "id": "3c2594e442",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 여성에서 실시한 임상시험은 없다. 오메가-3-산에틸에스테르가 임신한 여성에게 투여시 태아에 해를 유발하는지 또는 생식능력에 영향을 주는지에 대해서는 알려져 있지 않다. 임신 중에는 치료상의 유익성이 태아에 대한 위험성을 상회하는 경우에만 사용한다.",
+   "extractor": "kw-v4",
+   "id": "c896726579",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "230a68e704",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유부에 대한 이 약의 안전성은 확립되지 않았으므로 수유중에는 사용하지 않는다. 이 약이 사람에서 모유로 이행되는지에 대한 정보는 없으나, 로수바스타틴은 랫드에서 모유로 이행되었다.",
+   "extractor": "kw-v4",
+   "id": "c2ada718dd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "로수바스타틴",
+   "extractor": "kw-v4",
+   "id": "b1f84ed286",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 및 수유부에 대한 로수바스타틴의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
+   "extractor": "kw-v4",
+   "id": "88e132856b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "로수바스타틴은 랫드의 모유로 이행된다. 사람에서의 모유로의 이행에 대한 데이터는 없다.",
+   "extractor": "kw-v4",
+   "id": "b201b38734",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "오메가-3-산에틸에스테르",
+   "extractor": "kw-v4",
+   "id": "3c2594e442",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "오메가-3-산에틸에스테르가 모유로 이행되는 지는 알려져 있지 않다. 많은 약물들이 모유로 배출되기 때문에 수유중인 여성에게 투여할 때는 주의 하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "a8b5dc674b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에는 충분한 수의 고령자(65세 이상)가 포함되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "1886512697",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "오메가-3-산에틸에스테르",
+   "extractor": "kw-v4",
+   "id": "9978d000b3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상 환자는 제한된 수만이 임상시험에 포함되었다. 임상시험을 종합하여 분석할 결과 60세 이상 환자(연구집단의 약 25%)에 대한 안전성과 유효성은 60세 미만 환자의 결과와 다르지 않은 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "102595e9e7",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "bddb5935b2",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 성인에 한하여 투여하며, 위장장애를 피하기 위하여 식사와 함께 1일 1회 2~4캡슐(캡슐 당 오메가-3-산에틸에스테르 1,000mg/로수바스타틴 5mg)을 투여한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

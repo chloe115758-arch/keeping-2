@@ -1,40 +1,44 @@
 {
-  "ingredient": "biphenyl dimethyl dicarboxylate",
-  "productSeq": "201903215",
-  "itemName": "리셀정(비페닐디메틸디카르복실레이트)",
-  "atc": "A05BA",
-  "etcOtc": "전문의약품",
-  "changeDate": "20221004",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903215/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903215/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903215/NB"
+ "ingredient": "biphenyl dimethyl dicarboxylate",
+ "productSeq": "201903215",
+ "itemName": "리셀정(비페닐디메틸디카르복실레이트)",
+ "atc": "A05BA",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221004",
+ "ediCode": "053300850",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903215/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903215/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903215/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성 및 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "6f540ff073",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "4ad4968c89",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성 및 수유부에는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e16c25f8f8",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "6. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 신중히 투여한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:11:03"
+  {
+   "section": "elderly",
+   "where": "6. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "a1a5fbd75a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

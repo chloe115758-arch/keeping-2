@@ -1,0 +1,159 @@
+{
+ "ingredient": "brigatinib",
+ "productSeq": "201804846",
+ "itemName": "알룬브릭정30밀리그램(브리가티닙)",
+ "atc": "L01ED04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230616",
+ "ediCode": "696300520",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804846/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804846/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804846/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "CYP3A 억제제",
+   "excerpt": "자몽 또는 자몽주스도 이 약의 혈장 농도를 증가시킬 수 있으므로 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "269c0f46b9",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "가임기 여성 및 남성",
+   "extractor": "kw-v4",
+   "id": "b78d4263be",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약으로 치료를 받고 있는 가임기 여성에게 임신하지 않도록 권고해야 하며 이 약으로 치료를 받고 있는 남성에게 치료 중 배우자를 임신시키지 않도록 권고해야 한다. 가임기 여성에게 이 약의 투여 중과 마지막 투여 후 최소 4개월 동안은 효과적인 비호르몬 피임방법을 사용하도록 조언해야 한다. 가임기 여성의 남성 파트너에게 이 약의 투여 기간 중 및 마지막 투여 후 최소 3개월 동안은 효과적인…",
+   "extractor": "kw-v4",
+   "id": "68f1113f2e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "036dc9cc4b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임부에게 투여 시 태아 손상을 발생시킬 수 있다. 동물에 대한 시험에서 생식 독성이 확인되었다. 임부에 대해 이 약의 투여와 관련된 임상 자료는 없다. 모체의 임상적 상태로 인해 치료가 요구되는 경우를 제외하고 임신 중 이 약을 투여해서는 안 된다. 임신 중 이 약을 투여하거나 이 약을 투여하는 동안 환자가 임신한 경우, 환자에게 태아에 대한 잠재적인 위험에 대해 알린다.",
+   "extractor": "kw-v4",
+   "id": "e734951d5b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "0b55a18104",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 모유로의 분비 여부는 알려져 있지 않다. 가능한 자료로는 사람의 모유로 분비 가능성을 배제할 수 없다. 수유부에게 이 약의 투여 기간 중 및 마지막 투여 후 1주간 모유수유를 하지 않도록 권고한다.",
+   "extractor": "kw-v4",
+   "id": "da9b7ca0bf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "가임력",
+   "extractor": "kw-v4",
+   "id": "8942b50400",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임력에 대한 이 약의 영향과 관련하여 사용 가능한 사람에서의 데이터는 없다. 수컷 동물에 대한 반복독성시험 결과에 근거하여, 이 약은 남성에서 가임력을 감소시킬 수 있다. 이 결과와 사람의 가임력의 임상적 관련성은 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "9a0bdc00cf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 환자에서 이 약의 안전성과 유효성에 대한 제한적인 자료에 따르면, 고령의 환자에서 용량 조절이 필요하지 않다. 85세 이상의 환자에 대한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "682e4ea524",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "5cb7337271",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 음식과 함께 또는 공복 상태에서 투여가 가능하다. 정제를 부수거나 씹어서는 안 되고, 그대로 삼켜야 한다.",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:26",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,44 @@
+{
+ "ingredient": "spherical adsorptive carbon",
+ "productSeq": "200401539",
+ "itemName": "크레메진세립(구형흡착탄)",
+ "atc": "V03AB",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200327",
+ "ediCode": "640002511",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401539/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401539/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401539/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 또는 임신할 가능성이 있는 부인 및 수유부에 대한 안전성이 확립되어 있지 않으므로, 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여할 것",
+   "extractor": "kw-v4",
+   "id": "e09015f798",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자의 경우 생리기능이 저하되어 이상반응이 나타나기 쉬우므로 주의하여 투여 할 것",
+   "extractor": "kw-v4",
+   "id": "dae60ee54d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:44",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

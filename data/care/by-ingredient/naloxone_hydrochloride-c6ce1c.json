@@ -1,0 +1,68 @@
+{
+ "ingredient": "naloxone hydrochloride",
+ "productSeq": "198200406",
+ "itemName": "삼진날록손염산염주사",
+ "atc": "V03AB15",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260122",
+ "ediCode": "647800961",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198200406/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198200406/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198200406/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약 투여로 인한 발암, 돌연변이는 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "15b0708437",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "사람의 1,000배 용량으로 마우스와 랫트에 실시한 생식실험은 출산율 감소나 기타의 태자독성을 나타내지 않았으나 임부에 대한 안전성은 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "41fcd15757",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "모유에도 분비되는지는 알려지지 않고 있다. 그러나 동물(랫트, 원숭이)에서 모유분비에 관한 프롤락틴 분비를 억제한다는 보고가 있으므로, 수유중인 여성에는 투여를 피하는 것이 바람직하나 부득이 투여할 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "b0d397885c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "428b6d69cf",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:30",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

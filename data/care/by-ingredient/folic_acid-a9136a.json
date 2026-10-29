@@ -1,0 +1,39 @@
+{
+ "ingredient": "folic acid",
+ "productSeq": "200401520",
+ "itemName": "폴다정5밀리그램(폴산)",
+ "atc": "B03BB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231206",
+ "ediCode": "664601030",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401520/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401520/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401520/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 5)",
+   "subject": "",
+   "excerpt": "설파살라진, 콜레스티라민 : 폴산의 위장관 흡수를 저해하여 폴산결핍을 초래할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f8efbb25fd",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:26",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

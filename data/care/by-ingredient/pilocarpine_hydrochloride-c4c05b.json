@@ -1,0 +1,87 @@
+{
+ "ingredient": "pilocarpine hydrochloride",
+ "productSeq": "199806333",
+ "itemName": "살라겐정(필로카르핀염산염)",
+ "atc": "N07AX01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260226",
+ "ediCode": "621100040",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199806333/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199806333/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199806333/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "전형적인 약물상호작용 실험은 수행되지 않았지만, 다음의 약물들이 쇼그렌환자의 효능실험에 최소 10%의 환자에게 병용투여되었다. 아세틸살리실산, 인공누액, 칼슘, 결합형 에스트로겐, 황산 히드록시클로퀸, 이부프로펜, 레보타이록신 나트륨염, 초산 레보타이록신, 초산 메드록시프로게스테론, 메토트렉세이트, 나프록센, 오메프라졸, 파라아세타몰, 프레드니손",
+   "extractor": "kw-v4",
+   "id": "5aa29f45eb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 임신한 암컷 랫트에서 1일 90㎎/㎏(성인 1일 최대량의 26배)을 경구투여하였을 때, 평균 태자 체중의 감소와 골격변화의 증가와 관련이 있었다. 임신기간 및 수유기간동안 1일 36㎎/㎏(성인 1일 최대량의 10배)을 경구투여하였을 때, 사망률이 증가되었고, 18㎎/㎏(성인 1일 최대량의 5배)와 이를 초과한 용량의 투여로 갓난 새끼의 생존 및 새끼의 평균 체중의 감소가 관찰되었다.…",
+   "extractor": "kw-v4",
+   "id": "334718d5f6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 모유에서 분비되는지 여부는 알려지지 않았다. 그러나 많은 약이 모유로 이행, 분비되고 또한 수유중 유아에게 일련의 이상반응을 줄 가능성이 있기 때문에 모체에 대한 이 약의 유익성을 감안하여 수유를 중지하거나 또는 투약중단을 고려하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "7e9c4c73b9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 ①",
+   "subject": "",
+   "excerpt": "두부암 또는 경부암 환자 : 15명의 고령 자원자 시험에서 5명의 여성이 10명의 남성에 비해 높은 최대혈중농도와 곡선하면적(AUC)을 나타냈다",
+   "extractor": "kw-v4",
+   "id": "2c1f991dc9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 ②",
+   "subject": "",
+   "excerpt": "쇼그렌증후군의 고령환자에게 투여시 빈뇨, 설사, 현기증의 증가경향이 보고된 바 있다.",
+   "extractor": "kw-v4",
+   "id": "f84d1af43c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:10",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,124 @@
+{
+ "ingredient": "chlorpromazine hydrochloride",
+ "productSeq": "198500616",
+ "itemName": "명인클로르프로마진염산염정100mg",
+ "atc": "N05AA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20201207",
+ "ediCode": "651900760",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500616/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500616/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500616/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "바르비탈계 약물, 마취제 등의 중추신경억제제, 혈압강하제 또는 항콜린작용을 갖는 약물과의 병용, 유기인살충제와의 접촉, 알코올 섭취에 의해 상호작용이 증강될 수 있으므로 감량하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "514c314023",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 15)",
+   "subject": "",
+   "excerpt": "이 약은 제산제, 카페인에 의해 흡수가 저하되어 치료효과가 감소될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "bd7a5e49e6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어있지 않고, 동물실험에서 태자사망, 유산, 조산 등의 태자독성이 보고되어 있다. 또한 임부에 투여한 경우 신생아에서 진전, 반사저하/반사이상항진, 황달지연, 추체외로증상 등이 나타난 것이 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "f210009f43",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신말기 또는 분만중에 투여한 임부에서 태어난 신생아에 기면, 진전, 과흥분성이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "fddd1af989",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 3기에 항정신병약을 복용한 임부로부터 출생한 신생아는 추체외로장애 및/또는 금단 증상이 나타날 위험성이 있다. 이러한 신생아에게 초조, 근육긴장항진, 근육긴장저하, 진전, 졸음, 호흡곤란, 섭식장애가 보고되었으며, 이러한 증상은 그 중증도에 있어서 다양했다. 일부 경우 이러한 증상들은 스스로 조절되었으나 다른 경우의 신생아들은 장기 입원 및 중환자실에서의 치료를 요하였다.",
+   "extractor": "kw-v4",
+   "id": "d02a58870a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약은 모유중으로 이행하므로 수유중인 부인에게 투여하는 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "6a1ac93530",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 기립성 저혈압, 추체외로증상, 무력감, 운동실조, 배설장애 등이 나타나기 쉬우므로 감량하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "bf4766b1a4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:19",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

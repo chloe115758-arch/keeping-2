@@ -1,0 +1,93 @@
+{
+ "ingredient": "theophylline",
+ "productSeq": "199800979",
+ "itemName": "테올란비서방캡슐100밀리그램(테오필린)",
+ "atc": "R03DA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200110",
+ "ediCode": "652601360",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199800979/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199800979/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199800979/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "바르비탈계, 리팜피신, 란소프라졸, 아미노글루테티미드, 이소프레날린, 모라시진, 페니토인, 카바마제핀, 설핀피라존, 세인트존스풀 제제(hypericum perforatum) 등과 병용투여시 이 약의 청소율을 증가시킬 수 있으므로 치료효과를 발현하기 위하여 증량이 필요할 수 있다. 세인트존스풀 제제와 병용투여시 이 약의 혈중농도가 저하될 수 있다. 흡연 및 알코올 섭취도 이 약의 청소율을 증가…",
+   "extractor": "kw-v4",
+   "id": "81e0ad0136",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "란소프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험(마우스)에서 기형발생이 보고되었고 또한 사람에서는 태반을 통과하여 신생아에서 구토, 신경과민 등을 일으킬 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 의사가 필요하다고 판단하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "2e4225a58a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유중으로 이행되어 영아에 신경과민을 일으킬 수 있으므로 수유부에는 치료상의 유의성이 영아에 대한 위험성을 상회하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "f9f4def8ae",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 주로 간에서 대사되므로 일반적으로 고령자는 간기능이 저하되어 있는 경우가 많아 이 약의 혈중농도가 상승될 수 있으므로 신중히 투여한다. 고령환자에서는 감량이 필요할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "21f61cc359",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "60세 이상의 환자에게 이 약 투여시 울혈성 심부전 또는 다른 심혈관계 부작용이 발생했다는 보고가 있으므로 신중히 투여하고 정기적으로 혈중농도를 모니터한다.",
+   "extractor": "kw-v4",
+   "id": "1d2da4c8f0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:59",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

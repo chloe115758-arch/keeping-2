@@ -1,0 +1,87 @@
+{
+ "ingredient": "lithium carbonate",
+ "productSeq": "197300172",
+ "itemName": "리단정(탄산리튬)",
+ "atc": "N05AN01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260309",
+ "ediCode": "642200390",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197300172/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197300172/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197300172/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 5)",
+   "subject": "",
+   "excerpt": "리튬은 잠재적으로 생명을 위협할 수 있는 세로토닌 증후군이 발생할 수 있다. 플루옥세틴과 병용투여시 리튬농도의 증가 및 감소에 대한 보고가 있으므로 이러한 약물들과 병용투여하는 경우에는 혈청 리튬농도를 관찰한다. 이 약을 선택적인 세로토닌 재흡수 저해제(SSRI)(예: 플루복사민, 플루옥세틴), 세로토닌-노르에피네프린 재흡수 저해제(SNRI), 세로토닌 효현제(트립탄류), 삼환계 항우울제,…",
+   "extractor": "kw-v4",
+   "id": "9704c75648",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험(랫트, 마우스)에서 기형발생, 사람에서 심장기형의 발현빈도증가가 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "aeb23b78b8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "분만직전에 혈청 리튬농도의 비정상적인 상승을 일으킬 수 있으므로 임신말기의 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "8f9ba4d9c2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "리튬은 모유중으로 이행되므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "bd8090ff14",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 신기능 등의 생리기능이 저하되어 있어서 혈청 리튬농도가 높게 나타날 수 있으므로 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d14a541058",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:01",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

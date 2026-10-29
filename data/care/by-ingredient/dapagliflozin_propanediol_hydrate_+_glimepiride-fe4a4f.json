@@ -1,0 +1,259 @@
+{
+ "ingredient": "dapagliflozin propanediol hydrate + glimepiride",
+ "productSeq": "202300716",
+ "itemName": "직더블엠정10/4밀리그램(다파글리플로진, 글리메피리드)",
+ "atc": "A10BD32",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250829",
+ "ediCode": "622805020",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300716/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300716/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300716/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것 (5)",
+   "subject": "",
+   "excerpt": "알코올섭취자, 특히 식사를 거른 환자의 경우",
+   "extractor": "kw-v4",
+   "id": "9e2f7f71ee",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "4. 일반적 주의",
+   "subject": "",
+   "excerpt": "케톤산증의 증상과 징후는 탈수 및 중증의 대사성 산증과 일치하고 오심, 구토, 식욕감소, 복통, 권태, 호흡곤란 등을 포함한다. 일부 보고에서 케톤산증을 일으키기 쉬운 요인으로 인슐린 용량 감소, 급성 열성질환, 질병 또는 수술로 인한 칼로리 섭취 제한, 케톤 생성 식이요법, 인슐린 결핍을 일으키는 췌장장애(예: 제1형 및 2형 당뇨병, 췌장염 또는 췌장 수술 병력), 그리고 알코올 남용이…",
+   "extractor": "kw-v4",
+   "id": "bf00d4784b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "4. 일반적 주의",
+   "subject": "",
+   "excerpt": "다파글리플로진의 투여를 시작하기 전 인슐린 분비 감소, 칼로리 제한, 알코올 남용을 포함한 케톤산증을 일으키기 쉬운 요인이 있는지 고려해야 한다. 이 약으로 치료받는 환자에서 케톤산증이 발생하는지 모니터링하고, 케톤산증을 일으키기 쉬운 임상적 상황(예: 급성 질환 또는 수술로 인한 장기적인 단식)이 발생할 경우 다파글리플로진의 투여를 일시적으로 중단하는 것을 고려한다.",
+   "extractor": "kw-v4",
+   "id": "1dd9aed322",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "흡연, 식이, 천연물 의약품 및 알코올이 다파글리플로진의 약동학에 미치는 영향은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "5f8fb263d4",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (7)",
+   "subject": "",
+   "excerpt": "급성 또는 만성 알코올 섭취는 글리메피리드의 혈당강하작용을 예상할 수 없는 방향으로 증가 또는 감소시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "6fd171dcb1",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "다파글리플로진",
+   "extractor": "kw-v4",
+   "id": "9a8398d737",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "162c9a441e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 여성을 대상으로 다파글리플로진을 투여한 자료는 없다. 랫트에 대한 연구 결과 사람의 임신 2기와 3기에 해당하는 기간에 신장 발달에 대한 독성을 나타내었다. 임부에서의 다파글리플로진의 사용은 권장되지 않는다. 임신이 확인되면, 다파글리플로진의 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "7364ec54e4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다파글리플로진이 사람의 생식능에 미치는 영향은 연구되지 않았다. 수컷과 암컷 랫트에서 다파글리플로진은 연구된 어떤 용량에서도 생식능에 영향을 나타내지 않았다.",
+   "extractor": "kw-v4",
+   "id": "a51c056922",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "b7a3cb636f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다파글리플로진 및 그 대사체가 인체 유즙으로 이행되는지 여부는 알려져 있지 않다. 동물에 대한 약력학/독성학 자료에 따르면 유즙으로 다파글리플로진/대사체가 분비되며, 수유를 받는 새끼에서 약리학적으로 매개된 영향도 나타났다. 신생아/영아에 대한 위험성을 배제할 수 없다. 다파글리플로진은 수유 중 사용해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "c6a996bf08",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "글리메피리드",
+   "extractor": "kw-v4",
+   "id": "b07f6b98b8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "태아에게 위해를 끼칠 수 있으므로 임부에게는 글리메피리드를 투여하지 않도록 한다. 임부 또는 임신할 계획이 있는 환자는 의사에게 알리고 인슐린 요법으로 전환하는 것이 좋다.",
+   "extractor": "kw-v4",
+   "id": "1603ffc86f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "랫트에 대한 생식시험에서 모체의 혈청 및 유즙과 자손의 혈청에서 유의한 농도의 글리메피리드가 관찰되었다. 설포닐우레아는 사람의 유즙으로 분비되므로 신생아가 모유를 통해 글리메피리드를 섭취하는 것을 방지하기 위하여 수유중의 여성에는 투여하지 않도록 한다. 필요한 경우에는 인슐린요법으로 전환하거나 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d2931d8d19",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "랫트에 대한 일부 시험에서 임신기간 및 수유기간 동안 고용량의 글리메피리드에 노출된 랫트의 자손이 상완골의 단축, 비후, 굴곡의 골격기형이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "62d663535b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 유효 성분인 글리메피리드는 신장을 통해 상당한 약이 배설되므로 신장기능이 감소된 고령자에 투여하는 경우 용량선택에 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "13a04b8c6f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "add21e1167",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 글리메피리드 4 mg과 다파글리플로진 10 mg을 투여하는 환자에게 아침 식사 직전 또는 첫 번째 식사 직전에 1일 1회 1정(다파글리플로진/글리메피리드로서 10mg/4mg)을 투여할 수 있다. 이 약 복용 후에 식사를 거르지 않는 것이 매우 중요하다. 글리메피리드의 감량이 필요한 환자는 개별성분의 제제들을 복용하도록 한다.",
+   "meal": "식사 직전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:37",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

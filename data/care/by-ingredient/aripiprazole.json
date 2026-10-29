@@ -1,212 +1,273 @@
 {
-  "ingredient": "aripiprazole",
-  "productSeq": "201003710",
-  "itemName": "아빌라핀정10밀리그램(아리피프라졸(미분화))",
-  "atc": "N05AX12",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230309",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201003710/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201003710/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201003710/NB"
-  },
-  "rules": [
+ "ingredient": "aripiprazole",
+ "productSeq": "201003710",
+ "itemName": "아빌라핀정10밀리그램(아리피프라졸(미분화))",
+ "atc": "N05AX12",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230309",
+ "ediCode": "642002700",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201003710/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201003710/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201003710/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적주의 5)",
+   "subject": "",
+   "excerpt": "알코올",
+   "extractor": "kw-v4",
+   "id": "b949d337e0",
+   "kind": "note",
+   "matched": [
     {
-      "id": "ae705a90ef",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적주의",
-      "subject": "5) 알코올",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약 복용 중에는 알코올을 금하도록 조언합니다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "caad487fe2",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약은 주로 중추신경계에 작용하므로, 이 약을 다른 중추작용 약물이나 알코올과 병용 시에는 주의를 기울여야 합니다. 이 약의 alpha-아드레날린 수용체 길항작용으로 인해, 이 약은 특정 항고혈압약제의 효과를 증강시킬 가능성이 있습니다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "75f06d0c98",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "1) 다른 약물이 이 약에 미치는 영향",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "케토코나졸 및 다른 CYP3A4 저해제 : CYP3A4의 강력한 저해제인 케토코나졸(1일 200 mg씩 14일간)을 15mg 단회 용량의 아리피프라졸과 병용투여시, 아리피프라졸과 대사체의 AUC 는 각각 63%, 77% 증가했습니다. 고용량의 케토코나졸(1일 400mg) 투여는 연구되지 않았습니다. 따라서 케토코나졸과 이 약의 병용투여시 이 약의 용량을 반으로 줄여야 하며 다른 CYP3A4…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d4e865c39d",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "2) 이 약이 다른 약물에 미치는 영향",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올 : 건강한 피험자에서, 아리피프라졸과 에탄올 병용투여군과 위약과 에탄올 병용투여군 간에 운동 능력 또는 자극반응에 있어서 유의한 차이가 없었습니다. 다른 대부분의 정신작용 약물에서와 같이 이 약 복용 중에는 알코올을 금하도록 합니다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b2cb644d3f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물시험에서, 아리피프라졸은 랫드와 토끼에서 최기형성의 가능성을 포함하는 발생학적 독성이 증명되었습니다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7d136302c2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신상태의 랫드에 3, 10, 30 mg/kg[mg/m2 기준으로 사람 최대권장량(MRHD : maximum recommended human dose)의 1, 3, 10배 용량] 의 아리피프라졸을 기관형성기에 경구투여 하였습니다. 30mg/kg/day에서 임신기간이 약간 연장되었습니다. 태자체중감소(30mg/kg/day), 잠복고환(30mg/kg/day), 골격의 골화지연(10, 30mg/k…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ced656cdfb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임산상태의 토끼에서 10, 30 및 100 mg/kg/day(AUC 기준으로 MRHD의 2, 3 및 11배, mg/m2 기준으로 6, 19, 65배 용량)으로 기관형성기에 경구투여 하였습니다. 100 mg/kg/day 투여 대상에서 모체의 사료섭취량이 감소하고, 유산률이 증가하였습니다. 태자 사망률 증가(100 mg/kg/day), 태자 체중 감소(30, 100 mg/kg/day)와 비정상적…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1751176ca2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "3, 10, 30mg/kg/day(mg/m2 기준으로 MRHD의 1, 3, 10배 용량)의 아리피프라졸을 분만 전후(임신 전 17일부터 분만 후 21일 까지) 랫드에 경구투여 했을 때 30mg/kg/day에서 경미한 모체독성과 임신기간의 연장이 관찰되었습니다. 그리고 사산의 증가, 태자 체중감소(성체가 될 때까지 지속)와 생존률 감소 등이 나타났습니다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ef85b1bb1e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신한 여성(human)에서 실시한 임상시험은 없습니다. 아리피프라졸이 임신한 여성에 투여시 태아에 해를 유발하는지 또는 생식능력에 영향을 주는지에 대해서는 알려져 있지 않습니다. 임신 후기에 항정신병약물에 노출된 신생아는 분만 후 추체외로 증상 및/또는 금단 증상의 위험이 있습니다. 이러한 신생아에서 초조, 근육긴장항진, 근육긴장저하, 떨림, 졸림, 호흡곤란, 섭식장애가 보고되었습니다. 임…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "131a7e069e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "9. 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "아리피프라졸은 사람에서 수유 중에 유즙으로 분비되었습니다. 수유 중인 영아에게 아리피프라졸에 의한 중대한 이상반응의 가능성이 있으므로, 산모에게 약의 중요성을 고려하여 수유를 중지하거나 약물 복용을 중단할 것을 결정해야 합니다",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "141b047dd6",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "11. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "단회 투여 약물동태 시험(아리피프라졸 15mg 단회투여)에서, 고령 피험자(65세 이상)의 아리피프라졸의 청소율은 젊은 성인 피험자(18-64세)에 비해 20% 낮았습니다. 그러나 조현병 환자에 있어서 집단 약동학(Population PK) 약물동태 분석 결과, 나이에 의한 영향은 없었습니다. 또한 고령 환자에 아리피프라졸 반복투여 후의 약물동태는 젊은 건강한 피험자에서 나타난 것과 유사한…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "03d9f2c54f",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "11. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임상시험에서 아리피프라졸을 투여한 13,543명의 환자 중, 1,073명(8%)이 65세 이상이었고 799명(6%)이 75세 이상이었습니다. 1,073명의 환자 대부분(81%)이 알츠하이머 형태의 치매로 진단되었습니다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d31c4d2a6e",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "11. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "아리피프라졸의 조현병이나 양극성 장애 또는 주요우울장애에 대한 위약대조 임상시험에서는 젊은 피험자에 비해 65세 이상의 고령자가 다르게 반응하는지에 대해 판단할 수 있는 충분한 피험자는 아니었습니다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c0161815eb",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "11. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "알츠하이머를 동반한 정신병을 지닌 고령 환자에 대한 연구에서 내성 정도가 젊은 환자들과 차이가 있을 수 있다는 점을 시사합니다. 이들 환자와 젊은 환자간에 전반적인 안전성상의 차이는 관찰되지 않았지만, 의사가 이러한 환자들에게 이 약을 처방하고자 한다면 주의가 요구됩니다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:05:57"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적주의",
+   "subject": "",
+   "excerpt": "이 약 복용 중에는 알코올을 금하도록 조언합니다.",
+   "extractor": "kw-v4",
+   "id": "2fc29c07ca",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "이 약은 주로 중추신경계에 작용하므로, 이 약을 다른 중추작용 약물이나 알코올과 병용 시에는 주의를 기울여야 합니다. 이 약의 alpha-아드레날린 수용체 길항작용으로 인해, 이 약은 특정 항고혈압약제의 효과를 증강시킬 가능성이 있습니다.",
+   "extractor": "kw-v4",
+   "id": "b61113109e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "케토코나졸 및 다른 CYP3A4 저해제 : CYP3A4의 강력한 저해제인 케토코나졸(1일 200 mg씩 14일간)을 15mg 단회 용량의 아리피프라졸과 병용투여시, 아리피프라졸과 대사체의 AUC 는 각각 63%, 77% 증가했습니다. 고용량의 케토코나졸(1일 400mg) 투여는 연구되지 않았습니다. 따라서 케토코나졸과 이 약의 병용투여시 이 약의 용량을 반으로 줄여야 하며 다른 CYP3A4…",
+   "extractor": "kw-v4",
+   "id": "b0ac90d542",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "이 약은 cytochrome P450 효소에 의해 대사되는 약물과 임상적으로 중요한 약물 동태적 상호작용을 유발할 가능성이 없습니다. In-vivo 연구에서, 1일 10-30mg 용량의 아리피프라졸을 투여시 CYP2D6(덱스트로메토판), CYP2C9 (와파린), CYP2C19(오메프라졸, 와파린) 및 CYP3A4(덱스트로메토판)의 기질에 의한 대사에 유의한 영향이 나타나지 않았습니다. 게다가…",
+   "extractor": "kw-v4",
+   "id": "18e7b8b27d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "알코올 : 건강한 피험자에서, 아리피프라졸과 에탄올 병용투여군과 위약과 에탄올 병용투여군 간에 운동 능력 또는 자극반응에 있어서 유의한 차이가 없었습니다. 다른 대부분의 정신작용 약물에서와 같이 이 약 복용 중에는 알코올을 금하도록 합니다.",
+   "extractor": "kw-v4",
+   "id": "e14098d5d9",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "오메프라졸 : 건강한 피험자에게 15일간 매일 10mg씩 투여된 아리피프라졸은 CYP2C19의 기질인 오메프라졸을 20mg 단회 투여시 그 약물동태에 영향을 미치지 않았습니다. 이 약과 병용투여시 오메프라졸의 용량 조절은 필요하지 않습니다.",
+   "extractor": "kw-v4",
+   "id": "9beffaa0b8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험에서, 아리피프라졸은 랫드와 토끼에서 최기형성의 가능성을 포함하는 발생학적 독성이 증명되었습니다.",
+   "extractor": "kw-v4",
+   "id": "edfed8691d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신상태의 랫드에 3, 10, 30 mg/kg[mg/m2 기준으로 사람 최대권장량(MRHD : maximum recommended human dose)의 1, 3, 10배 용량] 의 아리피프라졸을 기관형성기에 경구투여 하였습니다. 30mg/kg/day에서 임신기간이 약간 연장되었습니다. 태자체중감소(30mg/kg/day), 잠복고환(30mg/kg/day), 골격의 골화지연(10, 30mg/k…",
+   "extractor": "kw-v4",
+   "id": "afbebbbed8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임산상태의 토끼에서 10, 30 및 100 mg/kg/day(AUC 기준으로 MRHD의 2, 3 및 11배, mg/m2 기준으로 6, 19, 65배 용량)으로 기관형성기에 경구투여 하였습니다. 100 mg/kg/day 투여 대상에서 모체의 사료섭취량이 감소하고, 유산률이 증가하였습니다. 태자 사망률 증가(100 mg/kg/day), 태자 체중 감소(30, 100 mg/kg/day)와 비정상적…",
+   "extractor": "kw-v4",
+   "id": "24ffd0ed95",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "3, 10, 30mg/kg/day(mg/m2 기준으로 MRHD의 1, 3, 10배 용량)의 아리피프라졸을 분만 전후(임신 전 17일부터 분만 후 21일 까지) 랫드에 경구투여 했을 때 30mg/kg/day에서 경미한 모체독성과 임신기간의 연장이 관찰되었습니다. 그리고 사산의 증가, 태자 체중감소(성체가 될 때까지 지속)와 생존률 감소 등이 나타났습니다.",
+   "extractor": "kw-v4",
+   "id": "081c799178",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 여성(human)에서 실시한 임상시험은 없습니다. 아리피프라졸이 임신한 여성에 투여시 태아에 해를 유발하는지 또는 생식능력에 영향을 주는지에 대해서는 알려져 있지 않습니다. 임신 후기에 항정신병약물에 노출된 신생아는 분만 후 추체외로 증상 및/또는 금단 증상의 위험이 있습니다. 이러한 신생아에서 초조, 근육긴장항진, 근육긴장저하, 떨림, 졸림, 호흡곤란, 섭식장애가 보고되었습니다. 임…",
+   "extractor": "kw-v4",
+   "id": "6c7471d4fa",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "9. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "아리피프라졸은 사람에서 수유 중에 유즙으로 분비되었습니다. 수유 중인 영아에게 아리피프라졸에 의한 중대한 이상반응의 가능성이 있으므로, 산모에게 약의 중요성을 고려하여 수유를 중지하거나 약물 복용을 중단할 것을 결정해야 합니다",
+   "extractor": "kw-v4",
+   "id": "16176aa4e4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "11. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "단회 투여 약물동태 시험(아리피프라졸 15mg 단회투여)에서, 고령 피험자(65세 이상)의 아리피프라졸의 청소율은 젊은 성인 피험자(18-64세)에 비해 20% 낮았습니다. 그러나 조현병 환자에 있어서 집단 약동학(Population PK) 약물동태 분석 결과, 나이에 의한 영향은 없었습니다. 또한 고령 환자에 아리피프라졸 반복투여 후의 약물동태는 젊은 건강한 피험자에서 나타난 것과 유사한…",
+   "extractor": "kw-v4",
+   "id": "2fe00a4a2d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "11. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상시험에서 아리피프라졸을 투여한 13,543명의 환자 중, 1,073명(8%)이 65세 이상이었고 799명(6%)이 75세 이상이었습니다. 1,073명의 환자 대부분(81%)이 알츠하이머 형태의 치매로 진단되었습니다.",
+   "extractor": "kw-v4",
+   "id": "43a1205d61",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "11. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "아리피프라졸의 조현병이나 양극성 장애 또는 주요우울장애에 대한 위약대조 임상시험에서는 젊은 피험자에 비해 65세 이상의 고령자가 다르게 반응하는지에 대해 판단할 수 있는 충분한 피험자는 아니었습니다.",
+   "extractor": "kw-v4",
+   "id": "d716ccc4c3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "11. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "알츠하이머를 동반한 정신병을 지닌 고령 환자에 대한 연구에서 내성 정도가 젊은 환자들과 차이가 있을 수 있다는 점을 시사합니다. 이들 환자와 젊은 환자간에 전반적인 안전성상의 차이는 관찰되지 않았지만, 의사가 이러한 환자들에게 이 약을 처방하고자 한다면 주의가 요구됩니다.",
+   "extractor": "kw-v4",
+   "id": "9b6b8fd213",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

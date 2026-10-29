@@ -1,0 +1,118 @@
+{
+ "ingredient": "desonide((mL))",
+ "productSeq": "200711531",
+ "itemName": "케어덤로션0.05%(데소니드)",
+ "atc": "D07AB08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230330",
+ "ediCode": "073200671",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711531/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711531/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711531/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 9)",
+   "subject": "",
+   "excerpt": "이 약은 프로필렌글리콜(‘2. 다음 환자에는 신중히 투여할 것’ 참조) 외에 스테아릴알코올, 세탄올, 파라옥시벤조산메틸, 파라옥시벤조산프로필, 라우릴황산나트륨을 함유하고 있으며, 세부 정보는 다음과 같다.",
+   "extractor": "kw-v4",
+   "id": "f949e81019",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 (1)",
+   "subject": "",
+   "excerpt": "스테아릴알코올 및 세탄올은 국소 피부 반응을 일으킬 수 있다. (예: 접촉성 피부염)",
+   "extractor": "kw-v4",
+   "id": "74e3f28402",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험결과 코르티코스테로이드제를 전신투여하면 비교적 적은 용량에서도 기형발생을 나타냈다. 이 약은 동물실험에서 사람의 권장용량과 비슷한 양을 피부에 적용했을 때 기형발생을 나타냈다.",
+   "extractor": "kw-v4",
+   "id": "ad2489d17e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 생식력에 미치는 영향에 관한 동물실험은 실시되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "eb421bf3dd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약을 임부에게 투여했을 때 태아에 유해한지 여부 및 생식력에 영향을 미치는지의 여부도 알려져 있지 않다. 따라서 이 약은 유익성이 위험성을 상회할 경우에만 임부에게 사용해야 한다. 임부에는 많은 양을 쓰거나 지속적으로 또는 광범위하게 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "23fd7b4967",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "전신적으로 투여된 코르티코스테로이드제는 모유로 이행될 수 있고 성장을 억제하고 코르티코스테로이드의 체내 생성을 방해할 수 있으며 다른 이상반응을 유발할 수 있다. 반면 국소 코르티코스테로이드제를 사용했을 때 전신적으로 흡수되어 모유로 이행되는지의 여부는 밝혀져 있지 않다. 다만 많은 약물이 모유로 이행되므로 이 약을 수유부에게 투여할 때는 가슴 부위 도포를 피하고 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b0394c6ef3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 이상반응이 나타나기 쉬우므로 대량, 장기간, 광범위하게 사용할 경우 충분히 관찰하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "a12d3fc4fa",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:30:55",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

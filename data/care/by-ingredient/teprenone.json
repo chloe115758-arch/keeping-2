@@ -1,0 +1,44 @@
+{
+ "ingredient": "teprenone",
+ "productSeq": "198800119",
+ "itemName": "셀벡스캡슐(테프레논)",
+ "atc": "A02BX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20180227",
+ "ediCode": "642204150",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800119/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800119/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800119/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "19db981f02",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "d62f94b74e",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 테프레논으로서 1일 150mg을 3회 분할 식후에 경구투여한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:52",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,44 @@
+{
+ "ingredient": "ketamine hydrochloride )",
+ "productSeq": "202500061",
+ "itemName": "대웅케타민주(케타민염산염)",
+ "atc": "N01AX03",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "641608231",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500061/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500061/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500061/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "99f8a2588e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에는 생리기능이 저하되어 있으므로 감량하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "5bc658d339",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:12",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

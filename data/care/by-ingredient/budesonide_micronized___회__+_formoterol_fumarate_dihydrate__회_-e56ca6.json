@@ -1,0 +1,159 @@
+{
+ "ingredient": "budesonide(micronized)(/회) + formoterol fumarate dihydrate(/회)",
+ "productSeq": "201601545",
+ "itemName": "듀오레스피스피로맥스320/9마이크로그램(부데소니드, 포르모테롤푸마르산염수화물)",
+ "atc": "R03AK07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231130",
+ "ediCode": "626900701",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201601545/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201601545/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201601545/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 7)",
+   "subject": "",
+   "excerpt": "L-도파, L-티록신, 옥시토신, 알코올은 β2-교감신경흥분제에 대한 심장 내성을 손상시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "fa9e43508a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "c32f80d357",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 ①",
+   "subject": "",
+   "excerpt": "이 약이나 부데소니드와 포르모테롤의 병용요법의 임신부에 대한 임상자료는 없다. 부데소니드와 포르모테롤 복합제제의 랫트에 대한 배·태자 발생독성 시험 결과, 복합제로 인한 추가적인 반응은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "756d59b3fc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 ②",
+   "subject": "",
+   "excerpt": "임신중인 여성의 포르모테롤 사용에 대한 적절한 자료는 없다. 동물에서의 생식독성실험 결과 아주 고용량으로 포르모테롤에 전신노출되었을 때 이상반응이 발생하였다.",
+   "extractor": "kw-v4",
+   "id": "f74ffa702b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 ③",
+   "subject": "",
+   "excerpt": "임신시 사용한 약 2000례의 자료에서는 흡입 부데소니드의 사용과 관련하여 기형발생의 위험이 증가하지 않았다. 동물실험에서 코르티코스테로이드는 기형을 발생시킨 바 있으나 인체에서는 추천용량에서 관련없는 것으로 생각된다.",
+   "extractor": "kw-v4",
+   "id": "25016bca3f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 ④",
+   "subject": "",
+   "excerpt": "동물실험에 의하면, 최기형성 용량 범위 아래 투여시, 과량의 출산 전의 글루코코르티코이드가 자궁내 성장 지연, 성인의 심혈관계 질환, 글루코코르티코이드 수용체 밀도의 영구적 손상, 신경전달물질의 교체 변화, 행동 변화의 위험을 증가시키는 것에 관여되어 있었다.",
+   "extractor": "kw-v4",
+   "id": "01aeb8aa85",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 ⑤",
+   "subject": "",
+   "excerpt": "이 약의 임신 중 사용은 사용상의 이익이 위험성을 상회할 경우에만 사용되어야 한다. 적절한 천식조절을 유지하는데 필요한 최소한의 유효용량의 부데소니드를 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "7468dc4a14",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "bb52042204",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 ①",
+   "subject": "",
+   "excerpt": "임상약리 시험결과 흡입 부데소니드가 유즙으로 분비되는 것이 확인되었다. 그러나 수유 받은 영아의 혈중에서는 부데소니드가 검출되지 않았다. 따라서 이 약의 치료용량을 투여 받은 모체의 수유 영아에는 부데소니드에 기인한 영향이 없을 것으로 보인다.",
+   "extractor": "kw-v4",
+   "id": "6471b6d38b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 ②",
+   "subject": "",
+   "excerpt": "포르모테롤이 인체 유즙을 통해 분비되는 지는 알려진 바 없다. 랫트에서 소량의 포르모테롤이 모체의 유즙에서 검출되었다.",
+   "extractor": "kw-v4",
+   "id": "cc0e3ea19d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 ③",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여는 모체에 대해 기대되는 유익이 유아에 미칠 위험성을 상회하는 경우에만 고려되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "7ceb44f86a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:32:08",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

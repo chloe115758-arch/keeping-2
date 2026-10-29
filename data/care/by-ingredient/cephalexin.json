@@ -1,0 +1,80 @@
+{
+ "ingredient": "cephalexin",
+ "productSeq": "198800426",
+ "itemName": "케파신캡슐500밀리그램(세팔렉신수화물)",
+ "atc": "J01DB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210728",
+ "ediCode": "642102260",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800426/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800426/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800426/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d0df953e82",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약을 500 mg 투여한 후 4시간까지 모유 내 이 약의 분비량이 점차 증가하고 최대 수준인 4 mg/mL까지 약물 농도가 증가하였으며 그 후 점차 감소하여 투여 후 8시간 만에 사라졌다. 수유부에게 투여할 때에는 특히 주의한다.",
+   "extractor": "kw-v4",
+   "id": "57ab8d2878",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에게는 다음 사항에 주의하여 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "65a7c99a39",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "생리기능이 저하되는 일이 많아 이상반응이 발현하기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "4df0ec53cf",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K 결핍에 의한 출혈경향이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "a89314918a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:26",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

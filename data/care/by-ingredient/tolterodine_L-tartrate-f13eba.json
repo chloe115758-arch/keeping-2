@@ -1,0 +1,56 @@
+{
+ "ingredient": "tolterodine L-tartrate",
+ "productSeq": "200108384",
+ "itemName": "디트루시톨SR캡슐2밀리그람(톨터로딘-L-타르타르산염)",
+ "atc": "G04BD07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250916",
+ "ediCode": "073400070",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108384/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108384/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108384/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 치료에 대한 임상경험은 없다. 임신한 마우스에서의 시험은 고용량이 태자 체중 감소, 배자치사(embryolethality) 및 태자의 기형 발생율 증가를 일으킨 것으로 나타난 바 있다. 더 많은 정보가 유용할 때까지 임부에게 이 약을 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "16e7f778b3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임 여성은 적절한 피임을 실시하는 경우에만 투여를 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f4f0617b30",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "마우스의 경우 이 약이 유즙으로 분비된다. 사람에서 모유로의 이행에 대한 자료가 없으므로 수유중 이 약을 사용해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "adc7eedd70",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:59",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

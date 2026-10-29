@@ -1,0 +1,215 @@
+{
+ "ingredient": "caffeine anhydrous + citric acid + sodium citrate",
+ "productSeq": "201003573",
+ "itemName": "네오카프액(카페인시트르산염)",
+ "atc": "R07AB",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200304",
+ "ediCode": "659900450",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201003573/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201003573/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201003573/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "이중맹검, 위약대조 임상시험에서, 85명의 신생아 중 6명에서 괴사성 장결장염이 발생하였고, 3명이 사망하였다. 6명 중 5명이 카페인시트르산염을 투여받았다. 메틸잔틴 계열의 약물과 괴사성 장결장염사이의 관계는 정립되지 않았다. 이 약을 투여하는 모든 신생아는 괴사성 장결장염의 발현을 모니터링 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "24bb06d818",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 1)",
+   "subject": "",
+   "excerpt": "테오필린을 투여한 경험이 있는 신생아와 카페인을 섭취한 산모에서 태어난 신생아는 이 약을 투여하기 전 혈중카페인 농도를 측정해야하고, 이 약의 투여기간 동안에도 주기적으로 모니터링해야한다. (50mg/L 초과된 혈중카페인 농도에서 심각한 독성이 보고되었다.)",
+   "extractor": "kw-v4",
+   "id": "a2c67fd56a",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 4)",
+   "subject": "",
+   "excerpt": "이 약은 중추신경계 촉진제로 카페인 과량투여 시 발작이 관찰된 적이 있다. 발작성 장애가 있는 신생아는 주의해서 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "bacf93ade6",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 7)",
+   "subject": "",
+   "excerpt": "간장애와 신장애 신생아에서는 이 약을 투여시 혈중 카페인 농도를 모니터링해야 한다.",
+   "extractor": "kw-v4",
+   "id": "0266251323",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "카페인은 CYP1A2에 의해 주로 대사되므로, CYP1A2 효소와 관련된 약물의 영향을 받을 수 있다.",
+   "extractor": "kw-v4",
+   "id": "9a31c55a08",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "시메티딘, 케토코나졸 : 성인에서 카페인의 배설을 감소시키므로, 이 약물과 병용 투여시 카페인을 감량하여 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "bc909a105c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "페노바르비탈, 페니토인 : 성인에서 카페인의 배설을 증가시키므로, 이 약물과 병용 투여시 카페인을 증량하여 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "001f42d81e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "테오필린과 카페인의 상호전환이 미숙아에서 보고되었다. 그러므로 동시적인 약물사용은 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "8151c63183",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 5)",
+   "subject": "",
+   "excerpt": "케토프로펜과 카페인을 동시에 복용한 4명의 건강한 성인에게서 뇨량이 감소되었으나, 미숙아에서는 이러한 작용의 임상적 유의성이 밝혀지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "6674f03e60",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "카페인의 최기형성은 신생아에게 투여시와 관련이 없었다. 서방성 펠렛으로 임신한 마우스에 50mg/kg(체표면적에 기초한 신생아 정맥내 투여 최대용량보다 적은 용량임)을 기관 형성기 동안 투여한 결과 구개열 및 태아뇌증(exencephaly) 발생비율은 낮았다.",
+   "extractor": "kw-v4",
+   "id": "7202bf282c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대한 적절한 연구는 없다.",
+   "extractor": "kw-v4",
+   "id": "32c3e9f7e6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

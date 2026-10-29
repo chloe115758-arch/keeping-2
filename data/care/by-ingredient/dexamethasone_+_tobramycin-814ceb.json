@@ -1,0 +1,32 @@
+{
+ "ingredient": "dexamethasone + tobramycin",
+ "productSeq": "200300491",
+ "itemName": "토베손점안액(토브라마이신,덱사메타손)",
+ "atc": "S01CA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250729",
+ "ediCode": "649602381",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200300491/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200300491/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200300491/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대한 안전성이 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 부인에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "bc9b5b64f3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:42",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,101 +1,105 @@
 {
-  "ingredient": "blonanserin",
-  "productSeq": "200906540",
-  "itemName": "로나센정2밀리그램(블로난세린)/ 로나센정4밀리그램(블로난세린)",
-  "atc": "N05AX",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260727",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200906540/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200906540/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200906540/NB"
-  },
-  "rules": [
+ "ingredient": "blonanserin",
+ "productSeq": "200906540",
+ "itemName": "로나센정2밀리그램(블로난세린)/ 로나센정4밀리그램(블로난세린)",
+ "atc": "N05AX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260727",
+ "ediCode": "642203000",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200906540/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200906540/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200906540/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 약물 상호작용",
+   "subject": "",
+   "excerpt": "약물명 징후, 증상, 치료 기전과 위험 요인 아드레날린 함유 치과용 마취제 -아드레날린/리도카인 복합제 심각한 혈압강하를 일으킬 수 있다. 아드레날린은 아드레날린작용의 α-와 β-수용체 자극제이며, 이 약에 의한 α-수용체 차단 때문에, 혈압강하효과를 잠재적으로 증가시키는 β-수용체 자극 효과가 우세할 수 있다. 중추신경억제제 -알코올 두 약물의 작용이 모두 증대될 수도 있기 때문에, 병용약…",
+   "extractor": "kw-v4",
+   "id": "d5ebb1a1b6",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "cd37352a20",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 약물 상호작용",
-      "subject": "(2) 병용투여시 주의",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        },
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "약물명 징후, 증상, 치료 기전과 위험 요인 아드레날린 함유 치과용 마취제 -아드레날린/리도카인 복합제 심각한 혈압강하를 일으킬 수 있다. 아드레날린은 아드레날린작용의 α-와 β-수용체 자극제이며, 이 약에 의한 α-수용체 차단 때문에, 혈압강하효과를 잠재적으로 증가시키는 β-수용체 자극 효과가 우세할 수 있다. 중추신경억제제 -알코올 두 약물의 작용이 모두 증대될 수도 있기 때문에, 병용약…",
-      "extractor": "kw-v1"
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
     },
     {
-      "id": "a97990046a",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "추체외로 증상과 같은 이상반응이 나타나기 쉽고 대체로 신체 기능이 저하되어 있으므로 신중히 투여하고 주의깊게 모니터링한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d0e5e2770c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부 및 수유부에 대한 투여 (1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 3기에 항정신병약을 복용한 임부로부터 출생한 신생아는 추체외로장애 및/또는 금단 증상이 나타날 위험성이 있다. 이러한 신생아에게 초조, 근육긴장항진, 근육긴장저하, 떨림, 졸음, 호흡곤란, 섭식장애가 보고되었으며, 이러한 증상은 그 중증도에 있어서 다양했다. 일부 경우 이러한 증상들은 스스로 조절되었으나 다른 경우의 신생아들은 장기 입원 및 중환자실에서의 치료를 요하였다. 그러므로 임부…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "98df429dbb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부 및 수유부에 대한 투여 (2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약을 투여하는 동안 수유는 중단해야 한다.[랫드를 이용한 동물시험에서 이 약이 유즙으로 분비되는 것이 밝혀졌다.]",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fa5d9d1a08",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "성인 : 1회 4mg, 1일 2회 식후에 경구투여하며 천천히 증량한다. 유지용량으로서 1일8~16mg을 1일 2회, 식후 분할투여 한다.",
-      "meal": "식후",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b4c66847b8",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 흡수는 식사의 영향을 받기 쉬우므로 반드시 식후에 복용하도록 한다.",
-      "meal": "식후",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:16:58"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "추체외로 증상과 같은 이상반응이 나타나기 쉽고 대체로 신체 기능이 저하되어 있으므로 신중히 투여하고 주의깊게 모니터링한다.",
+   "extractor": "kw-v4",
+   "id": "538ede1a15",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "임신 3기에 항정신병약을 복용한 임부로부터 출생한 신생아는 추체외로장애 및/또는 금단 증상이 나타날 위험성이 있다. 이러한 신생아에게 초조, 근육긴장항진, 근육긴장저하, 떨림, 졸음, 호흡곤란, 섭식장애가 보고되었으며, 이러한 증상은 그 중증도에 있어서 다양했다. 일부 경우 이러한 증상들은 스스로 조절되었으나 다른 경우의 신생아들은 장기 입원 및 중환자실에서의 치료를 요하였다. 그러므로 임부…",
+   "extractor": "kw-v4",
+   "id": "8ead6dab90",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "이 약을 투여하는 동안 수유는 중단해야 한다.[랫드를 이용한 동물시험에서 이 약이 유즙으로 분비되는 것이 밝혀졌다.]",
+   "extractor": "kw-v4",
+   "id": "ab95581bb6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "fa5d9d1a08",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 1회 4mg, 1일 2회 식후에 경구투여하며 천천히 증량한다. 유지용량으로서 1일8~16mg을 1일 2회, 식후 분할투여 한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "b4c66847b8",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약의 흡수는 식사의 영향을 받기 쉬우므로 반드시 식후에 복용하도록 한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

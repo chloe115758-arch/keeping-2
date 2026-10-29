@@ -1,0 +1,80 @@
+{
+ "ingredient": "zastaprazan citrate",
+ "productSeq": "202400969",
+ "itemName": "온캡정20밀리그램(자스타프라잔시트르산염)",
+ "atc": "A02BC12",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251128",
+ "ediCode": "054301330",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400969/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400969/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400969/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "bf6d69cdd2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부를 대상으로 한 이 약의 임상시험자료는 없다. 랫드와 토끼의 배태자 발생시험 결과, 모체의 체중 및 사료 섭취량이 감소하였으나 배태자의 발생에 미치는 영향은 없었다. 랫드에서 고용량에서 미미한 정도의 뼈의 수 증가가 확인되었고, 토끼에서는 고용량에서 태자의 과잉늑골 및 요추수 증가 등이 확인되었다. 안전상 이유로 임신 중 이 약의 사용을 금한다.",
+   "extractor": "kw-v4",
+   "id": "116a2e3131",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "08fc519a43",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 수유 중인 여성을 대상으로 모유로 이행되는지 밝혀지지 않았으므로 이 약을 복용하는 경우에는 수유를 중단해야 한다. 동물시험(랫드)시 이 약이 모유 중으로 이행하는 것이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "326e9af811",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 간기능 또는 신기능과 같은 생리기능이 저하되므로 신중하게 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "8058f191c8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:14",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

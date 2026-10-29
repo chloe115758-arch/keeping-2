@@ -1,0 +1,142 @@
+{
+ "ingredient": "cefditoren pivoxil",
+ "productSeq": "199801215",
+ "itemName": "보령메이액트세립(세프디토렌피복실)",
+ "atc": "J01DD16",
+ "etcOtc": "전문의약품",
+ "changeDate": "20161221",
+ "ediCode": "641901212",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801215/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801215/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801215/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에게는 투여하지 말 것. 3)",
+   "subject": "",
+   "excerpt": "우유에 과민하거나 알레르기 병력이 있는 환자(이 약은 우유단백질을 함유한다)",
+   "extractor": "kw-v4",
+   "id": "322b0fd74d",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약을 제산제나 위산을 감소시키는 다른 약물과 동시에 복용하는 것은 권장되지 않는다(이 약의 흡수가 감소되었다.).",
+   "extractor": "kw-v4",
+   "id": "410c4d6e4b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 관한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험서을 상회한다고 판단되는 경우에만 투여한다. (피복실기를 함유한 항생제를 투여받은 임신 3기의 임산부와 그 신생아에게 혈청 카르니틴저하가 보고되었다.)",
+   "extractor": "kw-v4",
+   "id": "fb0b9fec17",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 수유중인 쥐의 유즙에서 분비되었으므로, 이 약을 수유부에 투여할 때에는 주의를 요한다.",
+   "extractor": "kw-v4",
+   "id": "ac8af3542c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자와 그 이외의 성인에서는 부작용의 차가 보이지 않았으나 일반적으로 고령자에서는 생리기능이 저하되어 있으므로 다음의 사항에 주의하여 투여간격을 변경하여 투여한다.",
+   "extractor": "kw-v4",
+   "id": "5680d8236c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 신기능저하 환자에서 배설지연이 인정되어 있으므로 고령자에서는 혈중농도가 높아질 가능성이 있다.",
+   "extractor": "kw-v4",
+   "id": "9963001afe",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "유사 약물에서 고령자에서는 비타민K 결핍증에 의한 출혈경향이 있다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "85b3e45efb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "8a3ea37c0b",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "소아 : 세프디토렌피복실로서 1 회 3 mg (역가) / kg을 1 일 3 회 식후에 경구 투여하며, 필요시 1 회 6 mg (역가) / kg까지 투여 가능하다. 연령 및 증상에 따라 적절히 증감하지만, 1 회 200mg (역가) 1 일 3 회 (1 일 600mg(역가))를 초과하지 않도록 한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "87b8eeff44",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "소아 : 세프디토렌피복실으로서 1 회 3 mg (역가) / kg을 1 일 3 회 식후에 경구 투여한다. 연령 및 증상에 따라 적절히 증감하지만, 1 회 200mg (역가) 1 일 3 회 (1 일 600mg(역가))를 초과하지 않도록 한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

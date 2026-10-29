@@ -1,0 +1,19 @@
+{
+ "ingredient": "carboxymethyl cellulose sodium",
+ "productSeq": "202302284",
+ "itemName": "카보아이점안액1%(카르복시메틸셀룰로오스나트륨)(1회용)",
+ "atc": "S01XA20",
+ "etcOtc": "일반의약품",
+ "changeDate": null,
+ "ediCode": "052402241",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302284/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302284/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302284/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-29T21:29:43",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

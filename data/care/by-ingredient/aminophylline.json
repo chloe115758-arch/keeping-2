@@ -1,0 +1,106 @@
+{
+ "ingredient": "aminophylline",
+ "productSeq": "197500144",
+ "itemName": "제일아미노필린주사액",
+ "atc": "R03DA05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190925",
+ "ediCode": "650500411",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197500144/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197500144/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197500144/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에는 투여하지 말 것. 5)",
+   "subject": "",
+   "excerpt": "카페인 또는 테오브로민에 과민반응 환자(주사제에 한함)",
+   "extractor": "kw-v4",
+   "id": "7275b9bd91",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "바르비탈계, 리팜피신, 란소프라졸, 아미노글루테티미드, 이소프레날린, 모라시진, 페니토인, 카르바마제핀, 설핀피라존, 프리미돈, 리토라비어, 펜토시필린, 세인트존스워트제제(hypericum perforatum) 등과 병용투여시 이 약의 청소율을 증가시킬 수 있으므로 치료효과를 발현하기 위하여 증량이 필요할 수 있다. 세인트존스워트제제(hypericum perforatum)와 병용투여시 이 약…",
+   "extractor": "kw-v4",
+   "id": "aa324adee4",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    },
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "란소프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험(마우스)에서 기형발생이 보고되었고(테오필린), 또한 사람에서는 태반을 통과하여 태아로 이행하며 신생아에서 구토, 신경과민 등의 증상을 일으킬 수 있으므로(테오필린) 임부 또는 임신하고 있을 가능성이 있는 여성에게는 의사가 필요하다고 판단하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "f2216fb870",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유중으로 이행되어 영아에 신경과민을 일으킬 수 있으므로 수유부에는 치료상의 유익성이 영아에 대한 위험성을 상회하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "25f60e66f9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "테오필린은 주로 간에서 대사되므로 일반적으로 고령자는 간기능이 저하되어 있는 경우가 많아 테오필린의 혈중농도가 상승될 수 있으므로 신중히 투여한다. 고령 환자에서는 감량이 필요할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "cc881a7d14",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:18",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

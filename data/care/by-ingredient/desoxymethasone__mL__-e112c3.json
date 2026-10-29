@@ -1,0 +1,68 @@
+{
+ "ingredient": "desoxymethasone((mL))",
+ "productSeq": "199203512",
+ "itemName": "데타손로션0.25%(데속시메타손)",
+ "atc": "D07AC03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230908",
+ "ediCode": "643200091",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203512/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203512/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203512/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 비교적 적은 용량의 코르티코이드를 전신적으로 투여한 경우, 좀 더 강력한 코르티코이드 피부도포로 인해 기형발생이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "ca84ff337a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 대량 또는 장기간에 걸친 광범위한 사용을 피하고 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "0a7cd08060",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약이 모유 중으로 이행한다는 보고는 없으나 수유 중에는 이 약 사용을 피한다.",
+   "extractor": "kw-v4",
+   "id": "867475d0cf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 부작용이 나타나기 쉬우므로 대량, 장기간, 광범위하게(특히 밀봉붕대법) 사용할 경우에는 충분히 관찰하는 등 특히 주의한다.",
+   "extractor": "kw-v4",
+   "id": "c2500e17ba",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:02",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

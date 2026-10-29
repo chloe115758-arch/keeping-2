@@ -1,76 +1,80 @@
 {
-  "ingredient": "cefaclor hydrate",
-  "productSeq": "201603867",
-  "itemName": "세파크로캡슐250mg(세파클러수화물)",
-  "atc": "J01DC04",
-  "etcOtc": "전문의약품",
-  "changeDate": "20240308",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603867/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603867/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603867/NB"
+ "ingredient": "cefaclor hydrate",
+ "productSeq": "201603867",
+ "itemName": "세파크로캡슐250mg(세파클러수화물)",
+ "atc": "J01DC04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240308",
+ "ediCode": "052400290",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603867/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603867/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603867/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "5f6e0a2840",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "8bd3b21a36",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "686b63b7a4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "모유로의 소량 이행이 보고되어 있으므로 수유부에는 신중히 투여한다. 500mg 단일 용량 투여 후 세파클러의 소량이 모유에서 발견되었다. 혈중 평균 농도는 2, 3, 5시간 후 각각 0.18, 0.20, 0.16mg/L이었으며 1시간 후에는 극미량이 되었다. 수유에 대한 이 약물의 영향은 알려지지 않았으므로 수유부는 주의하여 이 약을 사용해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "97a27a1b9d",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에 투여할 때는 다음과 같은 점에 유의하고, 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "21b4422333",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "생리기능이 저하되어 있는 경우가 많고 이상반응이 발현하기 쉽다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "58a6f0faab",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "비타민 K 결핍에 의한 출혈을 일으키기도 한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:03:18"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유로의 소량 이행이 보고되어 있으므로 수유부에는 신중히 투여한다. 500mg 단일 용량 투여 후 세파클러의 소량이 모유에서 발견되었다. 혈중 평균 농도는 2, 3, 5시간 후 각각 0.18, 0.20, 0.16mg/L이었으며 1시간 후에는 극미량이 되었다. 수유에 대한 이 약물의 영향은 알려지지 않았으므로 수유부는 주의하여 이 약을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "4a6e37775f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 투여할 때는 다음과 같은 점에 유의하고, 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "14faaaec7d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "생리기능이 저하되어 있는 경우가 많고 이상반응이 발현하기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "b65be91af9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K 결핍에 의한 출혈을 일으키기도 한다.",
+   "extractor": "kw-v4",
+   "id": "720b9e424a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

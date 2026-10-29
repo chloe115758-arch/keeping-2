@@ -1,0 +1,159 @@
+{
+ "ingredient": "azilsartan medoxomil potassium",
+ "productSeq": "202303419",
+ "itemName": "이달비정40밀리그램(아질사르탄메독소밀칼륨)",
+ "atc": "C09CA09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260518",
+ "ediCode": "693903710",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303419/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303419/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303419/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것",
+   "subject": "",
+   "excerpt": "레닌-안지오텐신-알도스테론계에 영향을 미치는 다른 약물들의 사용경험에 근거할 때, 이 약과 칼륨보존성이뇨제, 칼륨보충제, 칼륨을 함유한 염분 대용제(salt substitutes) 또는 혈청 칼륨수치를 증가시킬 수 있는 약물(예: 헤파린) 등과 병용투여 시 혈청 칼륨수치가 증가할 수 있다. 고령자, 신기능이 손상된 환자, 당뇨병환자 및/또는 다른 질환을 동반하는 환자에서 고칼륨혈증의 위험(치…",
+   "extractor": "kw-v4",
+   "id": "1ea206465a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "아질사르탄메독소밀 또는 아질사르탄과 암로디핀, 제산제, 클로르탈리돈, 디곡신, 플루코나졸, 글리부리드, 케토코나졸, 메트포르민, 피오글리타존 및 와파린의 병용투여에 관한 연구에서 임상적으로 유의한 상호작용은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "e0df8ca2de",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약을 임부에게 투여해서는 안 된다. 만약 임신이 확인되었다면, 가능한 빨리 이 약의 투여를 중단해야 한다. 임신 2, 3기 동안, 레닌­안지오텐신계에 직접적으로 작용하는 약물을 투여하면 태아나 신생아의 손상 및 사망이 발생할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "766342de79",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약을 임부에게 투여한 임상 경험은 없다. 동물 연구에서 생식독성이 확인되었다.",
+   "extractor": "kw-v4",
+   "id": "580d83c93e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신 1기 동안 안지오텐신 전환효소 저해제에 노출된 후 최기형성의 위험에 대한 역학적 증거는 명확하지 않다. 그러나 작은 위험 증가도 배제할 수 없다. 안지오텐신 II 수용체 길항제의 위험성에 대한 대조-역학자료는 없지만 유사한 위험성이 이 약물 계열에서도 존재할 수 있다. 만약 안지오텐신 II 수용체 길항제의 투여를 중단할 수 없는 경우에는 임신을 계획하고 있는 환자는 임부에의 사용에 대한…",
+   "extractor": "kw-v4",
+   "id": "11f6b805e0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 2, 3기 동안 안지오텐신 II 수용체 길항제에 노출은 사람에서 태아독성(신기능의 감소, 양수과소증, 두개골 골화 지연) 및 신생아 독성(신부전, 저혈압, 고칼륨혈증)을 유발한다고 알려져 있다.",
+   "extractor": "kw-v4",
+   "id": "b03cffe314",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 2기부터 안지오텐신 II 수용체 길항제에 노출되었다면 초음파검사로 신기능 및 두개골 검사가 권장된다.",
+   "extractor": "kw-v4",
+   "id": "c70e42bbaf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "안지오텐신 II 수용체 길항제를 투여한 임부에서 태어난 유아는 저혈압이 있는지 면밀하게 관찰하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "74c0aac3db",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수유하는 동안 이 약 사용에 대해 이용할 수 있는 자료는 없으므로 이 약 사용은 권고되지 않는다. 특히 신생아 또는 조산아에게는 모유 수유 시 안전성 프로파일이 확립되어 있는 대체 치료를 하는 것이 좋다.",
+   "extractor": "kw-v4",
+   "id": "66ae2c7b73",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람에서 모유로 이행되는지는 알려져 있지 않으나, 랫드 유즙 중에 아질사르탄이 낮은 농도로 분비되었다. 수유중인 영아에게 부정적인 영향이 나타날 가능성이 있으므로 수유부에 대한 이 약의 중요성을 고려하여 수유를 중단하거나 이 약 투여를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "281d91bbed",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "사람 생식능에 대한 영향에 대한 자료는 없다. 랫드를 이용한 비임상시험에서, 아질사르탄은 수컷 내지 암컷의 수태능에 대한 영향이 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "27899bdfc1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:02",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

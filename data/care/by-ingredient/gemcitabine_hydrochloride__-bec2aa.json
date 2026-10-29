@@ -1,95 +1,99 @@
 {
-  "ingredient": "gemcitabine hydrochloride )",
-  "productSeq": "202203819",
-  "itemName": "젬시팜주(젬시타빈염산염)",
-  "atc": "L01BC05",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260526",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203819/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203819/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203819/NB"
-  },
-  "rules": [
+ "ingredient": "gemcitabine hydrochloride )",
+ "productSeq": "202203819",
+ "itemName": "젬시팜주(젬시타빈염산염)",
+ "atc": "L01BC05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260526",
+ "ediCode": "622701241",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203819/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203819/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203819/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5.일반적 주의 7)",
+   "subject": "",
+   "excerpt": "경증의 간기능부전 환자나 경증 ～ 중등도의 신기능 환자에 대한 이 약의 명확한 용량의 임상시험 증거가 아직 불충분하므로 이러한 환자에게는 신중하게 투여한다. 간으로의 전이가 나타나거나 간염, 알코올 중독, 간경변 등의 병력이 있는 환자는 이 약의 사용으로 간 기능 저하가 더욱 악화될 수 있다. 경도 ～ 중등도의신기능부전증(GFR30 ～ 80 mL/분)은이 약약동학에 일관되게 유의성있는 영향을…",
+   "extractor": "kw-v4",
+   "id": "c4820c3b00",
+   "kind": "note",
+   "matched": [
     {
-      "id": "fefd743513",
-      "kind": "note",
-      "section": "general",
-      "where": "5.일반적 주의 7)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "경증의 간기능부전 환자나 경증 ～ 중등도의 신기능 환자에 대한 이 약의 명확한 용량의 임상시험 증거가 아직 불충분하므로 이러한 환자에게는 신중하게 투여한다. 간으로의 전이가 나타나거나 간염, 알코올 중독, 간경변 등의 병력이 있는 환자는 이 약의 사용으로 간 기능 저하가 더욱 악화될 수 있다. 경도 ～ 중등도의신기능부전증(GFR30 ～ 80 mL/분)은이 약약동학에 일관되게 유의성있는 영향을…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "90e4fb882b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 안전성이 입증되지 않았으며 이 약 또는 이 약의 대사물이 모유를 통해 이행되는지는 알려지지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8ade14cd72",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "그러나 이 약은 동물실험에서 수정란, 태자에 독성이 있으며 기형유발, 태자생존율저하, 발달지연 등을 초래한다는 것이 증명되었으므로, 임신과 수유 중에는 태아나 영아에 대한 위험성 때문에 사용하지 않아야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "dd2507f807",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약 투여 중 그리고 마지막 투여 후 적어도 1주일까지 수유하지 않도록 해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0e6bcc357c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "가임여성에게 사용하기 전에 임신 상태인지를 확인해야한다. 가임여성에게 이 약 투여 중 그리고 최종 투여 후 6개월까지 효과적인 피임법을 사용하도록 해야 한다. 가임여성을 배우자로 둔 남성에게 이 약 투여 중 그리고 최종 투여 후 3개월까지 효과적인 피임법을 사용하도록 해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "40080f6936",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "65세 이상의 환자들도 이 약에 잘 견딘다. 나이가 이 약의 청소율과 반감기에 영향을 미치지만 고령 환자에 대하여 용량을 조정해야 한다는 증거는 없다. 일반적으로 이 약의 단독요법 임상시험에서 나타난 이상반응률은 남성과 여성에서 유사하였으나, 특히 고령의 여성이 이 약 투여 후 3, 4등급의 호중구성 백혈구감소증과 혈소판감소증이 발생하여 다음 주기의 치료를 시행하지 못하게 될 가능성이 더 컸…",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:09:06"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 입증되지 않았으며 이 약 또는 이 약의 대사물이 모유를 통해 이행되는지는 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "1234a6832a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "그러나 이 약은 동물실험에서 수정란, 태자에 독성이 있으며 기형유발, 태자생존율저하, 발달지연 등을 초래한다는 것이 증명되었으므로, 임신과 수유 중에는 태아나 영아에 대한 위험성 때문에 사용하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "64149d7a0a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 투여 중 그리고 마지막 투여 후 적어도 1주일까지 수유하지 않도록 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "a657a6f955",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임여성에게 사용하기 전에 임신 상태인지를 확인해야한다. 가임여성에게 이 약 투여 중 그리고 최종 투여 후 6개월까지 효과적인 피임법을 사용하도록 해야 한다. 가임여성을 배우자로 둔 남성에게 이 약 투여 중 그리고 최종 투여 후 3개월까지 효과적인 피임법을 사용하도록 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "a144797dac",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 환자들도 이 약에 잘 견딘다. 나이가 이 약의 청소율과 반감기에 영향을 미치지만 고령 환자에 대하여 용량을 조정해야 한다는 증거는 없다. 일반적으로 이 약의 단독요법 임상시험에서 나타난 이상반응률은 남성과 여성에서 유사하였으나, 특히 고령의 여성이 이 약 투여 후 3, 4등급의 호중구성 백혈구감소증과 혈소판감소증이 발생하여 다음 주기의 치료를 시행하지 못하게 될 가능성이 더 컸…",
+   "extractor": "kw-v4",
+   "id": "2ac87d0a63",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,128 @@
+{
+ "ingredient": "perindopril tertbutylamine",
+ "productSeq": "200400322",
+ "itemName": "아서프릴정4밀리그램(페린도프릴-t-부틸아민)",
+ "atc": "C09AA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220623",
+ "ediCode": "642901130",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400322/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400322/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400322/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것. 3)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "153ad0e847",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "ec00dffbd6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임신 중에 투여해서는 안 된다(‘2. 다음환자에는 투여하지 말 것’ 및 ‘5. 일반적 주의’ 항 참조)",
+   "extractor": "kw-v4",
+   "id": "1dbe82502b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 초기에 ACE 억제제에 노출되었을 때 기형유발 가능성에 대한 역학자료는 확실한 것이 없으나, 위험을 배제할 수 없다. 임신을 계획하는 환자는 임신 중 안전성이 확립된 다른 항고혈압제로 대체하여야 한다. 임신이 진단된 경우, 이 약의 투여를 즉시 중단하고, 필요한 경우 다른 약제를 투여하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "13d1bc9e28",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 2기 및 3기에 ACE 억제제에 노출되었을 때 사람에서 태아독성 (신기능감소, 양수과소증, 두개형성부전) 및 신생아독성(신부전, 저혈압, 고칼륨혈증)이 유발되는 것으로 알려져 있다. 임신 2기 이후 이 약에 노출되면, 신기능 및 두개골 초음파 확인이 권장된다. ACE 억제제를 복용한 후 태어난 신생아는 저혈압에 대해 주의 깊게 관찰하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "9e5b4d247e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "b8d6b5a74a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유 중 이 약의 투여에 대한 자료가 없으므로, 수유부(특히 신생아 또는 조산아에게 수유 중인 경우)에게는 이 약이 권장되지 않으며, 수유 중 안전성이 확립된 다른 약물로 대체할 것이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "c0f29b52e1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "생식능",
+   "extractor": "kw-v4",
+   "id": "898c0c25f8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "암컷 및 수컷 랫트를 이용한 비임상시험에서 수태능에 대한 이 약의 영향은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "a7bfcc02ca",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:05",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

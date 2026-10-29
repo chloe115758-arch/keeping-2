@@ -1,0 +1,63 @@
+{
+ "ingredient": "calcium chloride dihydrate(A액중) + dextrose monohydrate (A액중) + magnesium chloride hexahydrate(A액중) + sodium bicarbonate(B액중) + sodium chloride(A액중)",
+ "productSeq": "201902588",
+ "itemName": "비카베라포도당1.5% 칼슘1.75mmol/L 복막투석액",
+ "atc": "B05DB",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240223",
+ "ediCode": "664300631",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902588/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902588/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902588/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "칼슘 또는 비타민 D 함유 약물과 병용투여 시 고칼슘혈증을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "09a222d9f3",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에서의 이 약에 사용에 대한 자료는 충분하지 않다. 동물을 이용한 생식시험은 수행되지 않았다. 임부 또는 수유부에게 이 약을 사용할 때에는 주의를 기울여야 한다.",
+   "extractor": "kw-v4",
+   "id": "8f6283977e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "탈장이 나타날 가능성이 증가하므로 복막투석 전에 미리 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "8325ce42cc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

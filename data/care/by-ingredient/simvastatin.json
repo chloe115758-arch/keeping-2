@@ -1,150 +1,178 @@
 {
-  "ingredient": "simvastatin",
-  "productSeq": "200807527",
-  "itemName": "조코정20밀리그램(심바스타틴)",
-  "atc": "C10AA01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20231114",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807527/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807527/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807527/NB"
-  },
-  "rules": [
+ "ingredient": "simvastatin",
+ "productSeq": "200807527",
+ "itemName": "조코정20밀리그램(심바스타틴)",
+ "atc": "C10AA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231114",
+ "ediCode": "073100240",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807527/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807527/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807527/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "칼슘채널차단제",
+   "excerpt": "임상시험 결과 이 약을 투여한 환자의 1 %에서 혈청 아미노전달효소 수치의 지속적 상승(정상상한치의 3배 이상)이 보고된 바 있다. 약물 투여를 일시적 또는 완전히 중지하였을 때 투여 전의 수치로 서서히 감소하였다. 또한 황달이나 다른 임상증후, 증세를 수반하지 않았고 과민반응은 보이지 않았다. 이 중 일부 환자들의 경우, 심바스타틴 치료 이전에 간기능 검사치가 비정상이었고/또는 상당한 양의…",
+   "extractor": "kw-v4",
+   "id": "69de5c05df",
+   "kind": "note",
+   "matched": [
     {
-      "id": "45a7188f6f",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "3) 간기능 이상 환자",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "임상시험 결과 이 약을 투여한 환자의 1 %에서 혈청 아미노전달효소 수치의 지속적 상승(정상상한치의 3배 이상)이 보고된 바 있다. 약물 투여를 일시적 또는 완전히 중지하였을 때 투여 전의 수치로 서서히 감소하였다. 또한 황달이나 다른 임상증후, 증세를 수반하지 않았고 과민반응은 보이지 않았다. 이 중 일부 환자들의 경우, 심바스타틴 치료 이전에 간기능 검사치가 비정상이었고/또는 상당한 양의…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e884df68ab",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 16)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "자몽주스 : 자몽주스는 CYP3A4를 저해하는 1개 또는 그 이상의 성분을 함유하고 있어 CYP3A4에 의해 대사되는 약물의 혈장 농도를 증가시킬 수 있다. 일반적인 섭취량(1일 1컵, 250 mL)의 영향은 미미하며(AUC로 평가한 혈장 HMG-CoA 환원효소 억제 작용 13% 증가), 임상적으로 유의하지 않다. 그러나 이 약과 다량(1일 1L 이상)의 자몽주스를 병용할 경우, 혈장 HMG…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0175bb44bc",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (1)",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중 이 약의 투여는 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d6436b7c89",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 안전성은 확립되어 있지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "84aeb9ec50",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트 실험에서 25 mg/kg/일, 또는 토끼 시험에서 10 mg/kg/일까지 이 약을 투여한 결과 기형발생을 나타내지 않았다. 이 용량은 체표면적 m2당 mg으로 환산할 때 랫트와 토끼에서 각각 인체 투여량의 3배에 해당되는 용량이다. 그러나 다른 유사구조의 HMG-CoA 환원효소 억제제를 랫트 및 마우스에 투여한 시험에서, 골격기형이 관찰된 바 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a4d8822875",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약에 대하여 임부를 대상으로 수행된 대조 임상시험은 없었다. 임신 중에 이 약 또는 이 약과 구조가 유사한 다른 HMG-CoA 환원효소 억제제에 노출된 임부 약 100명을 대상으로 전향적 조사를 실시한 결과 선천성 기형, 자연유산 및 태아의 사망/사산의 발생률은 전체 인구에 대한 발생률에 비해 증가되지 않았다. 선천성 기형의 발생률이 자연발생률보다 3 ～ 4배 높은 경우는 이 조사에서 조…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "56f5ef8ec7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (2)",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동맥경화증은 만성질환이며, 임신 중 지질저하제 투여를 중지해도 원발성 고콜레스테롤혈증의 장기치료 결과에 영향을 주지 않는다. 또한, 콜레스테롤과 콜레스테롤 생합성경로의 다른 생성물은 스테로이드, 세포막 합성 등의 태아발달에 필수적인 성분이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3a54d035b3",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약을 포함한 HMG-CoA 환원효소 억제제가 콜레스테롤 합성 및 콜레스테롤 생합성경로의 다른 생성물을 감소시킬 우려가 있으므로 임부 또는 수유부에게 이 약을 투여해서는 안 된다. 이 약을 가임 여성에게 투여할 때에는, 임신하지 않았을 가능성이 매우 높을 경우에만 투여해야 한다. 이 약 투여중 임신이 확인되면 즉시 투여를 중지하고 환자에게 태아에 대한 잠재적 위험성을 알려야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "663693737e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 모유로의 이행은 알려진 바 없으나 다른 종류의 약에서 소량 모유 중으로의 이행이 보고되어 있고 모유로 이행시 유아에게 심각한 이상반응을 유발할 수 있으므로 이 약을 투여하는 경우 수유를 중지한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "693c73d13d",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 약동학시험 결과, 70 ～ 78세 고령자 환자의 평균 혈장 HMG-CoA 환원효소 억제 활성은 18 ～ 30세 연령의 환자와 비교시 약 45 % 더 높았다. 4S(Scandinavian Simvastatin Survival Study) 임상시험에 참여한 4,444명의 환자 중 1,021명의 환자(23 %)가 65세 이상이었다. 4S 임상시험에서, 고령자 환자에서의 지질저하 효능은 보…",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:06:23"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 16)",
+   "subject": "",
+   "excerpt": "자몽주스 : 자몽주스는 CYP3A4를 저해하는 1개 또는 그 이상의 성분을 함유하고 있어 CYP3A4에 의해 대사되는 약물의 혈장 농도를 증가시킬 수 있다. 일반적인 섭취량(1일 1컵, 250 mL)의 영향은 미미하며(AUC로 평가한 혈장 HMG-CoA 환원효소 억제 작용 13% 증가), 임상적으로 유의하지 않다. 그러나 이 약과 다량(1일 1L 이상)의 자몽주스를 병용할 경우, 혈장 HMG…",
+   "extractor": "kw-v4",
+   "id": "17127a0adf",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "652550b2f5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "임신 중 이 약의 투여는 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d247c93cf3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성은 확립되어 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "44875978fb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "랫트 실험에서 25 mg/kg/일, 또는 토끼 시험에서 10 mg/kg/일까지 이 약을 투여한 결과 기형발생을 나타내지 않았다. 이 용량은 체표면적 m2당 mg으로 환산할 때 랫트와 토끼에서 각각 인체 투여량의 3배에 해당되는 용량이다. 그러나 다른 유사구조의 HMG-CoA 환원효소 억제제를 랫트 및 마우스에 투여한 시험에서, 골격기형이 관찰된 바 있다.",
+   "extractor": "kw-v4",
+   "id": "23db4905e6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 대하여 임부를 대상으로 수행된 대조 임상시험은 없었다. 임신 중에 이 약 또는 이 약과 구조가 유사한 다른 HMG-CoA 환원효소 억제제에 노출된 임부 약 100명을 대상으로 전향적 조사를 실시한 결과 선천성 기형, 자연유산 및 태아의 사망/사산의 발생률은 전체 인구에 대한 발생률에 비해 증가되지 않았다. 선천성 기형의 발생률이 자연발생률보다 3 ～ 4배 높은 경우는 이 조사에서 조…",
+   "extractor": "kw-v4",
+   "id": "9c938be458",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "동맥경화증은 만성질환이며, 임신 중 지질저하제 투여를 중지해도 원발성 고콜레스테롤혈증의 장기치료 결과에 영향을 주지 않는다. 또한, 콜레스테롤과 콜레스테롤 생합성경로의 다른 생성물은 스테로이드, 세포막 합성 등의 태아발달에 필수적인 성분이다.",
+   "extractor": "kw-v4",
+   "id": "a52c8a47cf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 포함한 HMG-CoA 환원효소 억제제가 콜레스테롤 합성 및 콜레스테롤 생합성경로의 다른 생성물을 감소시킬 우려가 있으므로 임부 또는 수유부에게 이 약을 투여해서는 안 된다. 이 약을 가임 여성에게 투여할 때에는, 임신하지 않았을 가능성이 매우 높을 경우에만 투여해야 한다. 이 약 투여중 임신이 확인되면 즉시 투여를 중지하고 환자에게 태아에 대한 잠재적 위험성을 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "0b68e86d1e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "e8e3210229",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 모유로의 이행은 알려진 바 없으나 다른 종류의 약에서 소량 모유 중으로의 이행이 보고되어 있고 모유로 이행시 유아에게 심각한 이상반응을 유발할 수 있으므로 이 약을 투여하는 경우 수유를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "a6460e28fc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 약동학시험 결과, 70 ～ 78세 고령자 환자의 평균 혈장 HMG-CoA 환원효소 억제 활성은 18 ～ 30세 연령의 환자와 비교시 약 45 % 더 높았다. 4S(Scandinavian Simvastatin Survival Study) 임상시험에 참여한 4,444명의 환자 중 1,021명의 환자(23 %)가 65세 이상이었다. 4S 임상시험에서, 고령자 환자에서의 지질저하 효능은 보…",
+   "extractor": "kw-v4",
+   "id": "eb7fa0f23a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

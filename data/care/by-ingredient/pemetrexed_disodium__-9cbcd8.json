@@ -1,52 +1,56 @@
 {
-  "ingredient": "pemetrexed disodium )",
-  "productSeq": "201502968",
-  "itemName": "페메드에스주(페메트렉시드이나트륨염2.5수화물)",
-  "atc": "L01BA04",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230101",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502968/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502968/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502968/NB"
+ "ingredient": "pemetrexed disodium )",
+ "productSeq": "201502968",
+ "itemName": "페메드에스주(페메트렉시드이나트륨염2.5수화물)",
+ "atc": "L01BA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230101",
+ "ediCode": "622700711",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502968/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502968/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502968/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신부에게 이 약을 사용한 자료는 없지만, 다른 항 대사체와 마찬가지로 임신 기간 중 투여했을 때 심각한 선천성 결함을 유발할 수 있다. 동물 시험에서 생식 독성이 나타났다. 이 약은 모체의 요구와 태아에 미칠 위험을 주의 깊게 고려한 후 명확히 필요하다고 판단되지 않는 이상, 임신 중 사용할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "99184b422d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "204d112e4f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신부에게 이 약을 사용한 자료는 없지만, 다른 항 대사체와 마찬가지로 임신 기간 중 투여했을 때 심각한 선천성 결함을 유발할 수 있다. 동물 시험에서 생식 독성이 나타났다. 이 약은 모체의 요구와 태아에 미칠 위험을 주의 깊게 고려한 후 명확히 필요하다고 판단되지 않는 이상, 임신 중 사용할 수 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7f8d6b7310",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "가임 여성은 이 약 치료 기간과 치료 종료 후 6개월 까지의 기간 동안 효과적으로 피임해야 한다. 이 약은 유전적 손상을 입힐 수 있다. 성적으로 성숙한 남성은 치료 기간과 치료 후 6개월까지 아이를 만들지 않도록 권장된다. 피임 조치 혹은 절제가 권장된다. 이 약의 치료는 비가역적 불임을 유발할 수 있으므로 남성은 치료를 시작하기 전 정자 저장에 대한 상담을 구하도록 권장된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a2a3e70cc5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 모유로 분비되는지는 알려져 있지 않으며, 모유를 먹는 아기에 대한 이상 반응을 배제할 수 없다. 이 약 치료 기간에는 모유 수유를 중단해야 한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:12:49"
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "가임 여성은 이 약 치료 기간과 치료 종료 후 6개월 까지의 기간 동안 효과적으로 피임해야 한다. 이 약은 유전적 손상을 입힐 수 있다. 성적으로 성숙한 남성은 치료 기간과 치료 후 6개월까지 아이를 만들지 않도록 권장된다. 피임 조치 혹은 절제가 권장된다. 이 약의 치료는 비가역적 불임을 유발할 수 있으므로 남성은 치료를 시작하기 전 정자 저장에 대한 상담을 구하도록 권장된다.",
+   "extractor": "kw-v4",
+   "id": "7df0c18b5c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약이 모유로 분비되는지는 알려져 있지 않으며, 모유를 먹는 아기에 대한 이상 반응을 배제할 수 없다. 이 약 치료 기간에는 모유 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e65563a2d8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

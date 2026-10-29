@@ -1,71 +1,75 @@
 {
-  "ingredient": "pitavastatin calcium",
-  "productSeq": "202002753",
-  "itemName": "리바스타정2밀리그램(피타바스타틴칼슘수화물)",
-  "atc": "C10AA08",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250715",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002753/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002753/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002753/NB"
-  },
-  "rules": [
+ "ingredient": "pitavastatin calcium",
+ "productSeq": "202002753",
+ "itemName": "리바스타정2밀리그램(피타바스타틴칼슘수화물)",
+ "atc": "C10AA08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250715",
+ "ediCode": "059000670",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002753/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002753/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002753/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (5)",
+   "subject": "",
+   "excerpt": "콜레스티라민과 병용에 의해 이 약의 흡수가 저해되어 혈중 농도가 저하할 가능성이 있기 때문에 콜레스티라민의 투여 후 충분한 간격을 두고 이 약을 투여하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "be413cfc48",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "bb466cbad9",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 (5)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "콜레스티라민과 병용에 의해 이 약의 흡수가 저해되어 혈중 농도가 저하할 가능성이 있기 때문에 콜레스티라민의 투여 후 충분한 간격을 두고 이 약을 투여하는 것이 바람직하다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d4d41b7a3d",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "6. 고령자에의 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자에서는 생리기능이 저하되어 있기 때문에, 이상반응이 나타난 경우에는 감량하는 등 주의하여야 한다. (횡문근융해증이 나타나기 쉽다는 보고가 있다.)",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2c0ce9c29f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임산부, 수유부 등에의 투여 (1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약과 같은 HMG-CoA 환원효소저해제는 태아발육에 필수적인 콜레스테롤의 생합성을 감소시켜 태아에게 심각한 영향을 미칠 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다. 또한 이 약 투여중 임신이 되었을 경우에는 즉시 투여를 중지하고 태아에 대한 총체적 위험을 고려한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2ec30e70e8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임산부, 수유부 등에의 투여 (2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유중의 부인에는 투여하지 않는다.",
-      "extractor": "kw-v1"
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:04:55"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "elderly",
+   "where": "6. 고령자에의 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 생리기능이 저하되어 있기 때문에, 이상반응이 나타난 경우에는 감량하는 등 주의하여야 한다. (횡문근융해증이 나타나기 쉽다는 보고가 있다.)",
+   "extractor": "kw-v4",
+   "id": "ece01b8397",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임산부, 수유부 등에의 투여 (1)",
+   "subject": "",
+   "excerpt": "이 약과 같은 HMG-CoA 환원효소저해제는 태아발육에 필수적인 콜레스테롤의 생합성을 감소시켜 태아에게 심각한 영향을 미칠 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다. 또한 이 약 투여중 임신이 되었을 경우에는 즉시 투여를 중지하고 태아에 대한 총체적 위험을 고려한다.",
+   "extractor": "kw-v4",
+   "id": "cc005ad560",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임산부, 수유부 등에의 투여 (2)",
+   "subject": "",
+   "excerpt": "수유중의 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "15619ece80",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

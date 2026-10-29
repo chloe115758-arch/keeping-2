@@ -1,143 +1,166 @@
 {
-  "ingredient": "aspirin(enteric coated)",
-  "productSeq": "201307928",
-  "itemName": "에이스린장용정(아스피린)",
-  "atc": "B01AC06",
-  "etcOtc": "일반의약품",
-  "changeDate": "20250415",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307928/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307928/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307928/NB"
-  },
-  "rules": [
+ "ingredient": "aspirin(enteric coated)",
+ "productSeq": "201307928",
+ "itemName": "에이스린장용정(아스피린)",
+ "atc": "B01AC06",
+ "etcOtc": "일반의약품",
+ "changeDate": "20250415",
+ "ediCode": "621802380",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307928/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307928/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307928/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "매일 세잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 위장출혈이 유발될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "60f6c98423",
+   "kind": "note",
+   "matched": [
     {
-      "id": "4b417b060a",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 12)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올 : 이 약과 병용 투여시 위장관 점막 손상이 증가하고, 살리실산과 알코올의 상승효과로 인해 출혈시간이 연장된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3538b87c24",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "프로스타글란딘 합성 저해는 임신 또는 태아의 발달에 불리한 영향을 줄 수 있다. 역학 연구결과, 임신초기에 프로스타글란딘 합성 저해제 사용으로 인하여 유산 및 기관 결손에 대한 위험성이 증가될 수 있다는 우려가 제기되었다. 이러한 위험성은 투여 용량 및 투여기간에 따라 증가할 것으로 예상된다. 유산 위험성과 살리실산제제 복용간의 연관성을 입증할 유효한 자료는 없다. 살리실산의 기관 결손에 대…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1960739e8f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 생식독성이 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c488d766cb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 1기와 2기에는 반드시 필요한 경우가 아니라면 살리실산 함유 제제를 투여해서는 안 된다. 살리실산 함유제제를 임신하고자 하는 여성 혹은 임신 1기 및 2기에 투여할 경우, 저용량을 유지해야 하며 가능한 한 최소한의 기간동안만 복용한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d28bd9dd21",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 3기 동안 모든 프로스타글란딘 합성 저해제들은 태아의 심폐기관 독성(동맥관의 조기 폐쇄 및 폐고혈압), 신기능 저하(이는 양수과소증(oligohydroamnisis)을 유발할 수 있다. 또한 임신말기에는 산모와 아이에서 출혈시간을 연장시키고, 저용량에서도 항응고작용이 나타날 수 있으며, 자궁 수축이 억제되어 분만시간이 연장 또는 지연될 수 있다. 따라서 임신 3기에 아스피린을 투여해서는…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1890467ce8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 말기의 랫트에 투여한 실험에서 태자의 동맥관 수축이 보고되어 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4fcf4390b6",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 유즙으로의 이행이 일어나므로 수유부에는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3f82c96cdc",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에는 이상반응이 나타나기 쉬우므로 소량부터 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d4e5859b0d",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "아스피린을 함유하는 제제는 위장관 출혈의 이상반응으로 인하여 공복에 투여하지 않는 것이 일반적이나, 이 제제는 장용정이므로 충분한 물과 함께 식전에 복용할 수 있다.",
-      "meal": "공복",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d4e5859b0d",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "아스피린을 함유하는 제제는 위장관 출혈의 이상반응으로 인하여 공복에 투여하지 않는 것이 일반적이나, 이 제제는 장용정이므로 충분한 물과 함께 식전에 복용할 수 있다.",
-      "meal": "공복",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:06:50"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 12)",
+   "subject": "",
+   "excerpt": "알코올 : 이 약과 병용 투여시 위장관 점막 손상이 증가하고, 살리실산과 알코올의 상승효과로 인해 출혈시간이 연장된다.",
+   "extractor": "kw-v4",
+   "id": "3aa3b3a863",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "프로스타글란딘 합성 저해는 임신 또는 태아의 발달에 불리한 영향을 줄 수 있다. 역학 연구결과, 임신초기에 프로스타글란딘 합성 저해제 사용으로 인하여 유산 및 기관 결손에 대한 위험성이 증가될 수 있다는 우려가 제기되었다. 이러한 위험성은 투여 용량 및 투여기간에 따라 증가할 것으로 예상된다. 유산 위험성과 살리실산제제 복용간의 연관성을 입증할 유효한 자료는 없다. 살리실산의 기관 결손에 대…",
+   "extractor": "kw-v4",
+   "id": "e985198c6a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험에서 생식독성이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "506a88687e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 1기와 2기에는 반드시 필요한 경우가 아니라면 살리실산 함유 제제를 투여해서는 안 된다. 살리실산 함유제제를 임신하고자 하는 여성 혹은 임신 1기 및 2기에 투여할 경우, 저용량을 유지해야 하며 가능한 한 최소한의 기간동안만 복용한다.",
+   "extractor": "kw-v4",
+   "id": "83304416a7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 3기 동안 모든 프로스타글란딘 합성 저해제들은 태아의 심폐기관 독성(동맥관의 조기 폐쇄 및 폐고혈압), 신기능 저하(이는 양수과소증(oligohydroamnisis)을 유발할 수 있다. 또한 임신말기에는 산모와 아이에서 출혈시간을 연장시키고, 저용량에서도 항응고작용이 나타날 수 있으며, 자궁 수축이 억제되어 분만시간이 연장 또는 지연될 수 있다. 따라서 임신 3기에 아스피린을 투여해서는…",
+   "extractor": "kw-v4",
+   "id": "7b0084fc4c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 말기의 랫트에 투여한 실험에서 태자의 동맥관 수축이 보고되어 있다.",
+   "extractor": "kw-v4",
+   "id": "53434ec271",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약은 유즙으로의 이행이 일어나므로 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "2e9335ee17",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에는 이상반응이 나타나기 쉬우므로 소량부터 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "9331fa05c1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "d4e5859b0d",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "아스피린을 함유하는 제제는 위장관 출혈의 이상반응으로 인하여 공복에 투여하지 않는 것이 일반적이나, 이 제제는 장용정이므로 충분한 물과 함께 식전에 복용할 수 있다.",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "d4e5859b0d",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "아스피린을 함유하는 제제는 위장관 출혈의 이상반응으로 인하여 공복에 투여하지 않는 것이 일반적이나, 이 제제는 장용정이므로 충분한 물과 함께 식전에 복용할 수 있다.",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

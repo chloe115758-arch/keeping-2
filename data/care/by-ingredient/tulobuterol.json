@@ -1,52 +1,56 @@
 {
-  "ingredient": "tulobuterol",
-  "productSeq": "201306411",
-  "itemName": "아스날린패취1밀리그램(툴로부테롤)",
-  "atc": "R03CC11",
-  "etcOtc": "전문의약품",
-  "changeDate": "20190411",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201306411/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201306411/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201306411/NB"
+ "ingredient": "tulobuterol",
+ "productSeq": "201306411",
+ "itemName": "아스날린패취1밀리그램(툴로부테롤)",
+ "atc": "R03CC11",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190411",
+ "ediCode": "642403510",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201306411/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201306411/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201306411/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약의 임신중 사용에 대한 안전성은 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 여성에는 이 약 투여로 인한 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "9e82de06a3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "ef4ff27ff4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 임신중 사용에 대한 안전성은 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 여성에는 이 약 투여로 인한 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7c9478a460",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫트)에서 이 약이 모유 중으로 이행됨이 보고되었으므로 수유부의 경우 이 약의 투여를 피한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "301c8c7cd2",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 저용량부터 투여를 시작하는 등 신중히 투여해야 한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:07:50"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 이 약이 모유 중으로 이행됨이 보고되었으므로 수유부의 경우 이 약의 투여를 피한다.",
+   "extractor": "kw-v4",
+   "id": "1f9ec83e5c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 저용량부터 투여를 시작하는 등 신중히 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "1bda46637e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

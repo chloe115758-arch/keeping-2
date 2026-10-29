@@ -1,100 +1,104 @@
 {
-  "ingredient": "adalimumab",
-  "productSeq": "202300028",
-  "itemName": "아달로체펜주40mg/0.4mL(아달리무맙,유전자재조합)",
-  "atc": "L04AB04",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260519",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300028/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300028/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300028/NB"
+ "ingredient": "adalimumab",
+ "productSeq": "202300028",
+ "itemName": "아달로체펜주40mg/0.4mL(아달리무맙,유전자재조합)",
+ "atc": "L04AB04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260519",
+ "ediCode": "051500101",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300028/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300028/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300028/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "원숭이에 대한 발생독성시험에서 모체 독성, 배아 독성 또는 최기형성이 나타나지 않았다. 출생 후 독성과 수태능에 미치는 영향에 대한 비임상시험 자료는 없다. TNF 알파 저해 작용으로 인해 임신기간 중 아달리무맙 투여는 신생아의 정상 면역반응에 영향을 줄 수 있다. 임신기간 동안 아달리무맙은 태아에 대한 잠재적 유익성이 잠재적 위험성을 상회하는 경우에만 임부에게 투여해야한다. 임신할 가능성이…",
+   "extractor": "kw-v4",
+   "id": "e4911d6436",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "e5418ec9e4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "원숭이에 대한 발생독성시험에서 모체 독성, 배아 독성 또는 최기형성이 나타나지 않았다. 출생 후 독성과 수태능에 미치는 영향에 대한 비임상시험 자료는 없다. TNF 알파 저해 작용으로 인해 임신기간 중 아달리무맙 투여는 신생아의 정상 면역반응에 영향을 줄 수 있다. 임신기간 동안 아달리무맙은 태아에 대한 잠재적 유익성이 잠재적 위험성을 상회하는 경우에만 임부에게 투여해야한다. 임신할 가능성이…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7cfc3fb2a7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일차 평가변수는 주요 출생결함의 발생률이었다. 주요 출생결함이 있는 한 명 이상의 생존 신생아 출산으로 종료 된 임신율은 아달리무맙을 투여받은 여성에서 6/69(8.7%), 치료를 받지 않은 류마티스 관절염 여성에서 5/74 (6.8%) (보정하지 않은 odd ratio 1.31, 95% 신뢰구간 0.38-4.52)이었고, 아달리무맙을 투여받은 크론병 16/152 (10.5%), 치료를 받지…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d84d3d7220",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이차 평가변수인 경미한 출생결함, 조기분만, 저체중, 심각한 또는 기회 감염에서 유의한 차이가 관찰되지 않았다 (보정한 odd ratio 0.84, 95% 신뢰구간 0.34, 2.05). 사산이나 악성 종양은 보고되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0ad2aa9122",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 등록연구는 적은 표본 크기와 무작위연구 설계가 아니라는 방법론적인 한계로 데이터 해석에 영향을 줄 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3f2c63b8c1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "아달리무맙은 임신 중 아달리무맙으로 치료받은 여성에서 태반을 통과하여 태아의 혈청으로 들어간다. 결과적으로 이 유아들은 감염의 위험이 증가될 수 있다. 자궁에서 아달리무맙에 노출된 유아의 경우, 임신 중 아달리무맙의 마지막 투여 후 5개월 동안 생백신 투여는 권장되지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a847089765",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "출판된 문헌의 제한된 정보에서 모유로 분비되는 아달리무맙의 농도는 매우 낮으며, 인간의 모유 내 아달리무맙 농도는 모체 혈청 수치의 0.1%에서 1% 정도이다. 경구로 섭취한 면역글로불린 G 단백질은 장내에서 단백질 분해되고 생체이용률이 낮으므로, 모유수유하는 소아에 대한 아달리무맙의 전신 영향 가능성은 거의 없을 것이다. 모유수유의 발달 및 건강상 이익은 아달리무맙에 대한 수유부의 임상적…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "15567f4da9",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "아달리무맙의 용량 조절이 요구되지 않는다. 아달리무맙의 임상시험에 참가한 환자 중 만 65세 이상이 9.4%이고 만 75세 이상이 약 2.0%였으며 이들 환자군과 더 젊은 환자군 사이에 전반적인 유효성의 차이는 관찰되지 않았다. 이 환자군에서 용량조절은 필요하지 않다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:15:14"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "일차 평가변수는 주요 출생결함의 발생률이었다. 주요 출생결함이 있는 한 명 이상의 생존 신생아 출산으로 종료 된 임신율은 아달리무맙을 투여받은 여성에서 6/69(8.7%), 치료를 받지 않은 류마티스 관절염 여성에서 5/74 (6.8%) (보정하지 않은 odd ratio 1.31, 95% 신뢰구간 0.38-4.52)이었고, 아달리무맙을 투여받은 크론병 16/152 (10.5%), 치료를 받지…",
+   "extractor": "kw-v4",
+   "id": "b33ecfd1b9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이차 평가변수인 경미한 출생결함, 조기분만, 저체중, 심각한 또는 기회 감염에서 유의한 차이가 관찰되지 않았다 (보정한 odd ratio 0.84, 95% 신뢰구간 0.34, 2.05). 사산이나 악성 종양은 보고되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "82703dea82",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 등록연구는 적은 표본 크기와 무작위연구 설계가 아니라는 방법론적인 한계로 데이터 해석에 영향을 줄 수 있다.",
+   "extractor": "kw-v4",
+   "id": "d6acb18626",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "아달리무맙은 임신 중 아달리무맙으로 치료받은 여성에서 태반을 통과하여 태아의 혈청으로 들어간다. 결과적으로 이 유아들은 감염의 위험이 증가될 수 있다. 자궁에서 아달리무맙에 노출된 유아의 경우, 임신 중 아달리무맙의 마지막 투여 후 5개월 동안 생백신 투여는 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "17649e0733",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "출판된 문헌의 제한된 정보에서 모유로 분비되는 아달리무맙의 농도는 매우 낮으며, 인간의 모유 내 아달리무맙 농도는 모체 혈청 수치의 0.1%에서 1% 정도이다. 경구로 섭취한 면역글로불린 G 단백질은 장내에서 단백질 분해되고 생체이용률이 낮으므로, 모유수유하는 소아에 대한 아달리무맙의 전신 영향 가능성은 거의 없을 것이다. 모유수유의 발달 및 건강상 이익은 아달리무맙에 대한 수유부의 임상적…",
+   "extractor": "kw-v4",
+   "id": "0bc922a568",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "아달리무맙의 용량 조절이 요구되지 않는다. 아달리무맙의 임상시험에 참가한 환자 중 만 65세 이상이 9.4%이고 만 75세 이상이 약 2.0%였으며 이들 환자군과 더 젊은 환자군 사이에 전반적인 유효성의 차이는 관찰되지 않았다. 이 환자군에서 용량조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "9fa92b5c9c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

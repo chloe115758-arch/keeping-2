@@ -1,0 +1,99 @@
+{
+ "ingredient": "cefazolin sodium",
+ "productSeq": "198300066",
+ "itemName": "종근당세파졸린주1그램(세파졸린나트륨)(수출명:씨졸주1그램,라세나졸린주1그램,오리안트주1그램)",
+ "atc": "J01DB04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240814",
+ "ediCode": "643302781",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198300066/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198300066/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198300066/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 6)",
+   "subject": "",
+   "excerpt": "프로트롬빈 활성 저하는 신장 또는 간 장애가 있거나 영양 상태가 좋지 않은 환자, 장기간 항균제 치료를 받는 환자 및 이전에 항응고제 치료로 안정화된 환자에게서 발생할 수 있다. 이러한 환자의 경우 프로트롬빈 시간을 모니터링하고 필요에 따라 외인성 비타민K를 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "2acfb9aba2",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "436ca6bb68",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유로의 이행이 보고되어 있으므로 수유부에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "cc5b1583a8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자의 경우 다음과 같은 점을 주의하여 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "43d12d6da2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "생리기능이 저하되어 있으므로 이상반응 발현이 나타나기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "9aad85fde2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K 결핍으로 인하여 출혈경향이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "43723b61b2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:19",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

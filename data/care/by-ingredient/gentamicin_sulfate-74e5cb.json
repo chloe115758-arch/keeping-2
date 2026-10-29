@@ -1,0 +1,99 @@
+{
+ "ingredient": "gentamicin sulfate",
+ "productSeq": "198600034",
+ "itemName": "신풍겐타마이신주80밀리그램",
+ "atc": "J01GB03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240809",
+ "ediCode": "648501841",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600034/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600034/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600034/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "쿠라레유사작용(신경근 접합부 차단작용)에 의한 호흡억제가 나타날 수 있으므로 마취제, 근이완제(투보쿠라린, 브롬화판크로늄, 브롬화베크로늄, 톨페리손, A형 보툴리누스 독소, 석시닐콜린, 에테르, 할로탄, 데카메토늄)와 병용할 경우에는 신중히 투여한다. 호흡억제가 나타났을 경우에는 칼슘제제의 정맥주사, 콜린에스테라제 저해제 등을 투여한다.",
+   "extractor": "kw-v4",
+   "id": "6527e1df4e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘제제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 의해 신생아에 제8뇌신경장애(특히 비가역적 선천성 난청)를 일으킬 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "df01056699",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유로 이행하므로 수유 시에는 투여를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "c265b89ebf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에게는 다음 사항에 주의하고 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "5a61478e7f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 주로 신장으로 배설되므로 신기능이 저하되어 있는 고령자에서 높은 혈중농도가 장기간 지속될 위험이 있으며, 제8뇌신경장애, 신장애 등의 이상반응이 나타나기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "745835f1a0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K 결핍증상에 의한 출혈경향이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "db3e4e6c1c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:41",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

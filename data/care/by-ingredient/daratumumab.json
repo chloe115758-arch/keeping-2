@@ -1,0 +1,80 @@
+{
+ "ingredient": "daratumumab",
+ "productSeq": "201707719",
+ "itemName": "다잘렉스주(다라투무맙)",
+ "atc": "L01XC24",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260708",
+ "ediCode": "646902211",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707719/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707719/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707719/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "○ 임부 : 임신 기간 중에 이 약의 사용으로 인한 위험성에 대한 사람 또는 동물실험데이터는 없다. 임신 초기에 IgG1 단클론 항체가 태반을 통과하는 것으로 알려져 있다. 그러므로 이 약은 임부에 대한 치료의 유익성이 태아에 대한 잠재적 위험을 상회한다고 판단되는 경우를 제외하고 임신 중에 투여해서는 안 된다. 만약 환자가 이 약을 투여하는 동안 임신하게 되면 환자에게 태아에 대한 잠재적…",
+   "extractor": "kw-v4",
+   "id": "b8b2dfd22d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "태아에 대한 노출을 막기 위해 임신할 가능성이 있는 여성은 약물 투여 기간과 마지막 투여 후 3개월 동안에는 효과적인 피임을 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "2f269b56fa",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "○ 수유부 : 이 약이 모유 중으로 분비되는지의 여부는 알려져 있지 않다. 사람 면역글로불린 G는 모유 중으로 분비되며 신생아에 대한 위해, 흡수가능성이 알려져 있지 않기 때문에 유아에 대한 수유의 유익성과 환자에 대한 치료의 유익성을 고려하여 수유를 중단할지 치료를 중단할지 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "213d527e8b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "만 65세 이상의 환자군에서 용량 조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "b8df270fe8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "중대한 이상반응의 발생률은 젊은층보다 노년층에서 높았다. 재발/불응성 다발골수종 환자(n=1213) 중 만 65세 이상 고령자에서 더 빈번하게 발생한 가장 흔한 중대한 이상반응은 폐렴과 패혈증이었다. 새롭게 진단된 조혈모세포이식이 적합하지 않은 다발골수종 환자(n=710) 중 만 75세 이상 고령자에서 더 빈번하게 발생한 가장 흔한 중대한 이상반응은 폐렴이었다.",
+   "extractor": "kw-v4",
+   "id": "10d7580ddb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:34",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

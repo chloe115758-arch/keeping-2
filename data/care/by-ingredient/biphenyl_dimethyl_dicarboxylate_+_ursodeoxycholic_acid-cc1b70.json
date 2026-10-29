@@ -1,28 +1,32 @@
 {
-  "ingredient": "biphenyl dimethyl dicarboxylate + ursodeoxycholic acid",
-  "productSeq": "200908819",
-  "itemName": "유비펜캡슐",
-  "atc": "A05AA",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260907",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200908819/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200908819/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200908819/NB"
-  },
-  "rules": [
-    {
-      "id": "bc6f26f979",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "보통 성인 1회 1캡슐, 1일 3회 식후 경구 투여한다.",
-      "meal": "식후",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:05:50"
+ "ingredient": "biphenyl dimethyl dicarboxylate + ursodeoxycholic acid",
+ "productSeq": "200908819",
+ "itemName": "유비펜캡슐",
+ "atc": "A05AA",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260907",
+ "ediCode": "052700630",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200908819/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200908819/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200908819/NB"
+ },
+ "rules": [
+  {
+   "id": "bc6f26f979",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "보통 성인 1회 1캡슐, 1일 3회 식후 경구 투여한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

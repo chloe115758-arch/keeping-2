@@ -1,0 +1,250 @@
+{
+ "ingredient": "diphenylhydantoin sodium",
+ "productSeq": "197000104",
+ "itemName": "부광페니토인캡슐100밀리그램",
+ "atc": "N03AB02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230223",
+ "ediCode": "642201070",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197000104/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197000104/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197000104/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "다음 약물에 의해 이 약의 작용이 증강될 수 있으므로 이러한 경우에는 감량하는 등 신중히 투여한다. : 쿠마린계 항응고제, 디설피람, 페닐부타존, 파라아미노살리실산, 이소니아지드, 설티암, 메틸페니데이트, 에토석시미드, 테가푸르, 플루코나졸, 미코나졸, 조니사마이드, 급성 알코올 섭취, 아미오다론, 클로람페니콜, 디아제팜. 디쿠마롤, 설폰아미드, 할로탄, 이소니아지드, 에스트로겐",
+   "extractor": "kw-v4",
+   "id": "6871fa324f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "다음 약물에 의해 페니토인의 농도가 감소할 수 있으므로 주의한다 : 만성 알코올 남용자, 레세르핀, 카르바마제핀, 수크랄페이트, 칼슘함유 제산제",
+   "extractor": "kw-v4",
+   "id": "af39d9fd2a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘함유"
+    },
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신",
+   "extractor": "kw-v4",
+   "id": "6286150848",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 사람의 태반을 통과한다.",
+   "extractor": "kw-v4",
+   "id": "5a794ae002",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여",
+   "subject": "",
+   "excerpt": "출생전 이 약에 노출되면 선천성 기형 및 여타 발달 이상의 위험을 증가시킬 수 있다. 사람의 경우 임신 중 이 약의 노출은 2~3% 빈도를 갖는 일반 인구 보다 2~3배 높은 주요 기형 빈도와 관련이 있다. 뇌전증이 있는 산모에서 태어난 어린아이에서 구강안면파열, 심장 결손, 두개안면 결함, 손발톱 및 손가락, 발가락 저형성증, 성장 이상(소두증과 출생전 성장 부진 등)의 기형이 개별적으로…",
+   "extractor": "kw-v4",
+   "id": "f6fc7538fe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 이 약을 단독으로 또는 여타 항뇌전증제와 함께 복용한 뇌전증이 있는 산모에서 태어난 어린아이에게 신경발달 장애가 보고되었다. 임신 중 이 약에 노출된 어린아이의 신경발달 위험과 관련된 연구는 모순되며, 위험성을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "32b1c81176",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여",
+   "subject": "",
+   "excerpt": "적합한 대체 치료 방안에 대한 신중한 고려 후 유익성이 위험성을 상회한다고 판단되는 경우가 아니라면 임신한 여성에게 이 약을 사용해서는 안된다. 여성은 임신 중 이 약 복용의 위험에 대해 충분히 알고 이해해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b698bdd18f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여",
+   "subject": "",
+   "excerpt": "유익성과 위험성에 대한 신중한 평가에 기반하여 적절한 대체 치료 방안이 없다고 판단하여 이 약의 치료를 지속할 경우, 최소용량을 복용해야 한다. 임신을 계획하고 있는 경우 피임요법 중단 및 임신하기 전에 다른 치료 요법으로 전환할 수 있도록 모든 노력을 기울여야 한다. 이 약 복용 중 임신한 경우, 이 약 치료를 재평가하고 대체치료 방안을 고려하기 위해 처방의에게 상담하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "d1fdbf644d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여",
+   "subject": "가임기여성",
+   "excerpt": "적합한 대체 치료 방안에 대한 신중한 고려 후 유익성이 위험성을 상회한다고 판단되는 경우가 아니라면 가임기여성에게 이 약을 사용해서는 안된다. 가임기여성은 임신 중 이 약을 복용할 경우 태아에 대한 잠재적인 위험성을 충분히 알고 이해해야 하므로 임신 계획의 중요성을 알아야 한다. 이 약 치료 시작 전에 가임기여성에 대한 임신 검사를 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b698bdd18f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여",
+   "subject": "가임기여성",
+   "excerpt": "가임여성은 치료 중, 그리고 치료 중단 후 1개월 동안 효과적인 피임법을 사용해야 한다. 효소 유도로 인해 이 약은 호르몬 피임제의 효과를 저하시킬 수 있으므로 가임기여성은 다른 효과적인 피임법의 사용에 대한 조언을 받도록 해야한다.",
+   "extractor": "kw-v4",
+   "id": "a5098a7902",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여",
+   "subject": "가임기여성",
+   "excerpt": "적어도 하나의 효과적인 피임법(예: 자궁 내 장치) 또는 차단피임법을 포함한 두 가지 보완적 형태의 피임법을 사용해야 한다. 피임법을 선택할 때에는 환자의 개별적인 상황을 평가하고 환자와 함께 논의한다.",
+   "extractor": "kw-v4",
+   "id": "726fde3b85",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여 2)",
+   "subject": "가임기여성",
+   "excerpt": "임신중에 다른 항경련제(특히 프리미돈)와 병용투여한 군에서 기형아를 출산한 예가 이 약 단독 투여했을 때보다 많았다는 역학조사보고가 있으므로 부득이하게 이 약을 투여할 경우에라도 가능한 한 단독 투여하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "34b3805e6d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여 3)",
+   "subject": "가임기여성",
+   "excerpt": "임신중의 투여에 의해 태아에 종창(신경아세포증 등)이 나타났다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "401be94b1b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여 4)",
+   "subject": "가임기여성",
+   "excerpt": "임신중의 투여에 의해 신생아에서 출혈 경향이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "29b9db6c0c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 가임기여성에 대한 투여 5)",
+   "subject": "가임기여성",
+   "excerpt": "임신중의 투여에 의해 엽산 저하가 생긴다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "b35a131bc3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 저용량에서 투여를 시작하는 등 용량에 주의한다. 또한 투여를 중지하는 경우에는 천천히 감량하는 등 신중히 투여한다(경구제에 한함.).",
+   "extractor": "kw-v4",
+   "id": "ce3c900766",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 심정지, 호흡정지 등이 일어날 수 있으므로 환자의 상태를 관찰하고 신중히 투여하여야 하며 투여 중지시 천천히 하는 등 주의한다(주사제에 한함.).",
+   "extractor": "kw-v4",
+   "id": "e06a11b312",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:51",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

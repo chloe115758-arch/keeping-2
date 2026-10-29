@@ -1,0 +1,159 @@
+{
+ "ingredient": "fluticasone propionate(/회)",
+ "productSeq": "199604660",
+ "itemName": "후릭소타이드디스커스100마이크로그램(플루티카손프로피오네이트(미분화))",
+ "atc": "R03BA05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210305",
+ "ediCode": "650001671",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199604660/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199604660/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199604660/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음 환자에는 투여하지 말 것. 1)",
+   "subject": "",
+   "excerpt": "중증의 우유 단백질 알레르기가 있거나 이 약의 구성성분에 과민반응의 병력이 있는 환자",
+   "extractor": "kw-v4",
+   "id": "d819848dd5",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "8278e35d79",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람의 수태능에 관한 자료는 없다. 동물실험에서 수컷과 암컷의 수태능에 미치는 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "cc922028ba",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "93c3fe8b21",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "설치류 시험에서 코르티코스테로이드는 태자독성 및 기형발생을 증가시키는 것으로 알려져 있다. 그러나 임부에게 이들 약물을 투여했을 때 동일한 영향이 보고된 바는 없다. 마우스와 랫트에 대한 기형발생 시험에서 100∼150 μg/kg/day 또는 그 이상 용량을 피하투여 했을 때 예상되었던 태자독성 및 기형발생 효과가 나타났다. 랫트에 대한 흡입 기형발생 시험에서 최대 68.7 μg/kg/day…",
+   "extractor": "kw-v4",
+   "id": "d6d6b05974",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "수태 동물에게 코르티코스테로이드를 투여했을 때 구개파열, 자궁 내 성장 지연 등 태자 발달에 이상을 유발할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "872a056714",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "임부에 대한 자료는 제한적이다. 임부에 대한 이 약의 투여는 치료상의 유익성이 태아에 대한 위험성을 상회한다고 판단되는 경우에 한하여 투여한다. 후향적 자료에 의하면, 다른 흡입 코르티코스테로이드와 비교하여 이 약에 노출된 뒤 임신 초기에 주요 선천성 기형의 위험성이 증가하지 않았다.",
+   "extractor": "kw-v4",
+   "id": "5d1ce83511",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "수태동물에 대한 시험에서 추천 흡입용량을 초과하여 전신투여 했을 때 글루코코르티코스테로이드의 특징적인 효과가 나타난 바 있다.",
+   "extractor": "kw-v4",
+   "id": "79e434b92c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (5)",
+   "subject": "",
+   "excerpt": "흡입제 투여 후, 플루티카손프로피오네이트가 분만 후 신생아의 제대혈에서 확인되었다.",
+   "extractor": "kw-v4",
+   "id": "41672a9e80",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "92121f0b87",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유부에서 이 약이 모유 중으로 이행되는 지에 대한 연구가 실시된 바 없다. 수유 랫트에게 이 약의 [³H]플루티카손프로피오네이트를 피하 투여 후 1∼8시간에 혈장 및 유즙에서 모두 방사능 활성을 측정할 수 있었으나(유즙에서의 농도가 혈장에서의 농도의 3∼7배로 나타남.), 이 약의 모체 혈중 농도가 매우 낮기 때문에 신생아가 흡수하는 양은 매우 적을 것으로 예상된다. 그러므로 수유부에 투여…",
+   "extractor": "kw-v4",
+   "id": "c90ee767cc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:25",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

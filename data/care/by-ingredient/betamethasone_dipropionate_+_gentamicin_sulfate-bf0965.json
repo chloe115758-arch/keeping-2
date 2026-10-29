@@ -1,0 +1,80 @@
+{
+ "ingredient": "betamethasone dipropionate + gentamicin sulfate",
+ "productSeq": "197700163",
+ "itemName": "스테로신지크림",
+ "atc": "D07CC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251224",
+ "ediCode": "645203932",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197700163/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197700163/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197700163/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에 대해서는 대량 또는 장기간에 걸친 사용을 피한다.",
+   "extractor": "kw-v4",
+   "id": "03a2587241",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "관찰연구는 임신 중 강하거나(potent) 매우 강한(very potent) 국소용 코르티코스테로이드를 300g 이상 사용 시 저체중아 출산 위험성이 증가함을 제시하였다. 임부에게 이 약으로 인해 저체중아 출산의 위험성이 증가할 수 있고, 가능한 피부의 작은 부위에 짧은 기간 동안 이 약을 사용하도록 조언한다.",
+   "extractor": "kw-v4",
+   "id": "be4e3bae88",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "피부에 장기간, 광범위하게 사용시에는 수유를 하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "493f82841b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "다량의 베타메타손디프로피오네이트를 국소적으로 투여하는 경우 모유에 검출 가능할 만큼 충분한 전신 흡수가 초래될 수 있다. 모유수유의 발달상 및 건강상의 이점과 이 약에 대한 모체의 임상적 필요를 고려해야 하며, 이 약이 수유 영아에 미치는 잠재적인 부작용과 모체의 건강 상태가 수유 영아에 미치는 잠재적인 부작용을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "6dbf3e2640",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에 투여시 이상반응이 나타날 수 있으므로 대량 또는 장기간 광범위한 부위에 밀봉법을 사용하는 경우 특히 주의한다.",
+   "extractor": "kw-v4",
+   "id": "20bf67e3a8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:12",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

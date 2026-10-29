@@ -1,0 +1,80 @@
+{
+ "ingredient": "beraprost sodium",
+ "productSeq": "200302216",
+ "itemName": "베라스트정(베라프로스트나트륨)",
+ "atc": "B01AC19",
+ "etcOtc": "전문의약품",
+ "changeDate": "20180205",
+ "ediCode": "643601080",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302216/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302216/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302216/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 관한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 투여하지 말 것",
+   "extractor": "kw-v4",
+   "id": "2b51182d29",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물(랫트)에서 유즙 중으로 이행했다는 보고가 있으므로 수유부에게는 투여하는 것을 피하고 부득이 투여할 경우에는 수유를 중지시킬 것",
+   "extractor": "kw-v4",
+   "id": "8388693c6c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 일반적으로 생리기능이 저하되어 있으므로 용량에 유의하여 투여할 것",
+   "extractor": "kw-v4",
+   "id": "40c88eb4ef",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "32347a5baf",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "만성동맥폐색증(버거씨병, 폐색성 동맥경화증, 당뇨병성 말초혈관병증 등)에 동반한 궤양, 동통 및 냉감의 개선 : 보통 성인은 베라프로스트나트륨으로서 1일 0.12mg(6정)을 3회 분할해서(1회 2정씩 복용) 식후에 경구투여한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "8b1ce1bec1",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "1) 보통 성인은 베라프로스트나트륨으로서 1일 0.06mg(3정)을 3회 분할해서(1회 1정씩 복용) 식후에 경구투여하기 시작하여 증상(이상반응)을 충분히 관찰하면서 점차 증량한다, 증량할 경우에는 투여회수를 1일 3-4회, 최고용량을 1일 0.18mg(9정)으로 한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:38",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

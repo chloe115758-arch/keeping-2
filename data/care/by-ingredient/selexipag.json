@@ -1,0 +1,92 @@
+{
+ "ingredient": "selexipag",
+ "productSeq": "201602600",
+ "itemName": "업트라비정200마이크로그램(셀렉시팍)",
+ "atc": "B01AC27",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240730",
+ "ediCode": "646902410",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201602600/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201602600/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201602600/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "4301252b45",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험에서 생식독성에 관해 직간접적 유해한 영향이 확인되지 않았으나, 임부에서 이 약의 투여에 관한 자료가 제한적이므로 명백하게 필요하지 않는 한, 임신 동안 이 약을 사용하지 않는 것이 좋다.",
+   "extractor": "kw-v4",
+   "id": "993bcdd459",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "b4dc7deccf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람에서 셀렉시팍 또는 그 대사체가 모유로 이행 되는지는 알려지지 않았으나, 랫드에서 셀렉시팍 또는 그 대사체는 모유로 이행되었다. 많은 약들이 모유로 이행되고 수유중인 유아에게 중대한 이상반응을 일으킬 가능성이 있으므로, 이 약 투여기간 동안 수유는 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "42c40923c3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 임상시험에 참여한 1368명 중 65세 이상은 248명이었고, 75세 이상은 19명이었다. 전반적으로 고령자와 젊은 시험 대상자 간 차이는 관찰되지 않았고, 임상 반응에 대한 차이는 확인되지 않았으나, 고령자에서 보다 민감할 수 있음을 배제할 수 없다. 75세 이상의 고령자에 대한 임상 경험이 제한적이므로 이러한 환자에서 이 약의 투여시 주의한다.",
+   "extractor": "kw-v4",
+   "id": "dd1025ef94",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "3035ce0f95",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 식사와 관계없이 복용할 수 있다. 식사와 함께 복용 시 내약성이 개선될 수 있다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:21",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,161 @@
+{
+ "ingredient": "buprenorphine",
+ "productSeq": "200410877",
+ "itemName": "노스판패취5㎍/h(부프레노르핀)",
+ "atc": "N02AE01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260428",
+ "ediCode": "678000010",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200410877/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200410877/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200410877/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 3)",
+   "subject": "",
+   "excerpt": "마약류와 벤조디아제핀계 약물 및 벤조디아제핀 유사 약물 등과 같은 진정제 또는 알코올을 포함하는 중추신경억제제의 병용투여는 깊은 진정, 호흡억제, 혼수 및 사망을 초래할 수 있다. 이러한 위험성 때문에, 마약류와 이러한 진정제의 병용투여는 적절한 대체 치료방법이 없는 환자의 경우에 한하여 처방하도록 한다. 이 약과 마약류의 병용투여가 결정되면 최저 유효용량으로 최단기간 처방하도록 하고 호흡억…",
+   "extractor": "kw-v4",
+   "id": "60d56f59c8",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 3)",
+   "subject": "",
+   "excerpt": "부프레노르핀을 포함한 마약성 진통제에 정신적 의존성(중독)이 발생할 가능성이 있다. 부프레노르핀은 다른 마약성 진통제와 비슷한 남용 프로파일을 가진다. 부프레노르핀은 잠재적이거나 명백한 중독장애가 있는 환자들에게 남용될 수 있다. 이 약은 알코올 오용을 포함한 약물 남용 장애(알코올 남용 포함) 또는 정신 건강 장애가 있는 환자에게는 특히 주의하여 사용하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "e723ba8251",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약과 벤조디아제핀계 및 벤조디아제핀 유사약물과 같은 진정제, 다른 마약성 진통제, 전신마취제, 페노티아진계 약물, 가바펜티노이드계 약물, 신경안정제, 수면제, 삼환계 항우울제, 신경근육차단제, 또는 알코올을 포함한 다른 중추신경억제제를 병용투여하면 추가적인 중추신경억제작용이 유발되고, 호흡억제, 저혈압, 깊은 진정, 또는 혼수, 사망과 같은 중추신경억제작용이 증가될 수 있다. 따라서 이러…",
+   "extractor": "kw-v4",
+   "id": "f1e57eb670",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "0bba9b274d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "부프레노르핀에 대한 제한적인 생식시험이 실시되었다. 이 약에 대한 임부에서의 시험은 실시되지 않았다. 고용량의 임상시험에서, 임부의 중독치료를 위하여 부프레노르핀 설하투여시 신생아의 금단증후군, 자궁 내 성장저해 및 소두증이 발견되었다. 임신 중에 부프레노르핀을 장기간 사용하면 신생아 금단증후군이 나타날 수 있다. 이 약은 가능한 이익이 가능한 위험을 상회하지 않는 한 임신 중 사용하지 않아…",
+   "extractor": "kw-v4",
+   "id": "18bddde829",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "랫드나 토끼에서 배·태자 발달독성에 대한 영향이 관찰되지 않았다. 이 약으로 랫드의 산전후 발달 독성 연구에서 임상 증후와 음식 섭취 감소를 나타나게 하는 모체 용량에서 새끼의 생존률 저하와 체중 감소가 있었다.",
+   "extractor": "kw-v4",
+   "id": "b23dd8d67b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "48bfa8c541",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "부프레노르핀은 모유 중 분비되고 모유량을 감소시켜 수유부에게 투여시 유아의 체중증가를 감소시킬 수 있다. 그러므로 부프레노르핀은 수유부의 통증완화를 위해 사용되지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "b5e42f0c64",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "8107d14d57",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "부프레노르핀이 생식능에 미치는 영향에 대한 임상데이터는 없다. 동물 실험에서 이 약이 생식능에 미치는 영향은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "3fd4082b72",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:30",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

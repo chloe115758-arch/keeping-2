@@ -1,15 +1,32 @@
 {
-  "ingredient": "ginkgo biloba leaf ext.",
-  "productSeq": "201906075",
-  "itemName": "진코에이정40밀리그램(은행엽건조엑스)",
-  "atc": "N06DX02",
-  "etcOtc": "일반의약품",
-  "changeDate": "20230203",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906075/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906075/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906075/NB"
-  },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:05:12"
+ "ingredient": "ginkgo biloba leaf ext.",
+ "productSeq": "201906075",
+ "itemName": "진코에이정40밀리그램(은행엽건조엑스)",
+ "atc": "N06DX02",
+ "etcOtc": "일반의약품",
+ "changeDate": "20230203",
+ "ediCode": "054801410",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906075/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906075/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906075/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것 2)",
+   "subject": "",
+   "excerpt": "수유부(모유로 이행여부가 알려지지 않음)",
+   "extractor": "kw-v4",
+   "id": "d43254810f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

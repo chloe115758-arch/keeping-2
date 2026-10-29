@@ -1,0 +1,87 @@
+{
+ "ingredient": "prucalopride succinate",
+ "productSeq": "201900673",
+ "itemName": "루칼로정1밀리그램(프루칼로프라이드숙신산염)",
+ "atc": "A06AX05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190928",
+ "ediCode": "648204180",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201900673/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201900673/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201900673/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 3)",
+   "subject": "",
+   "excerpt": "건강한 피험자를 대상으로 수행된 연구에서 이 약은 와파린, 디곡신, 알코올 및 파록세틴 또는 경구용 피임약의 약동학에 임상적으로 유의한 영향을 끼치지 않는다는 것을 보여주었다. 프루칼로프라이드와 병용치료시 에리스로마이신의 혈중농도가 30% 증가하였다. 이 상호작용에 대한 메커니즘은 완전히 알려져 있지 않지만, 이것은 이 약의 직접적인 영향이라기보다 역동학적으로 에리스로마이신이 높은 내인적 다…",
+   "extractor": "kw-v4",
+   "id": "4f94b54c70",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "d023aa4832",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에서 이 약 사용에 대한 경험은 제한적이다. 임상시험 중 자연유산 사례가 관찰되었으나 다른 위험요소들이 있었기 때문에 이 약과의 인과관계는 알려지지 않았다. 동물시험에서는 임신, 배태자 발달, 분만 혹은 출생 후 발달과 관련된 직접적 또는 간접적인 유해영향을 보이지는 않았다. 이 약을 임신 중에 사용하는 것은 권장되지 않는다. 가임기 여성은 이 약으로 치료받는 동안 효과적인 피임법을 사용…",
+   "extractor": "kw-v4",
+   "id": "88c89dc90a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "903dd62e15",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 유즙으로 분비된다. 그러나 이 약의 치료용량에서 모유를 먹는 신생아 및 영아에 영향을 미치지 않을 것으로 예상된다. 사람을 대상으로 한 자료가 없으므로 이 약을 수유기간에 사용하는 것은 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "86aea9caea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:08",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

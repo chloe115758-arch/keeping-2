@@ -1,52 +1,56 @@
 {
-  "ingredient": "granisetron hydrochloride",
-  "productSeq": "200108800",
-  "itemName": "카이트릴정1밀리그램(그라니세트론염산염)",
-  "atc": "A04AA02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20240809",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108800/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108800/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108800/NB"
+ "ingredient": "granisetron hydrochloride",
+ "productSeq": "200108800",
+ "itemName": "카이트릴정1밀리그램(그라니세트론염산염)",
+ "atc": "A04AA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240809",
+ "ediCode": "057200070",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108800/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108800/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108800/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서는 기형발생효과는 나타나지 않았으나 임신한 사람에게 투여한 경험이 없으므로 불가피한 임상적 이유가 있는 경우가 아니면 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "7565066195",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "ff9e1d144f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서는 기형발생효과는 나타나지 않았으나 임신한 사람에게 투여한 경험이 없으므로 불가피한 임상적 이유가 있는 경우가 아니면 사용하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a09b5ee055",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 모유로 이행하는지에 대한 자료는 없다. 따라서 치료기간 중에는 수유를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a5748f0db2",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자에는 이상반응의 발현에 주의하고 신중히 투여한다. 일본에서 실시된 II상 및 III상 임상시험에서 65세 이상의 고령자에서 이상반응 발현은 112명 중 3명(발열 1례, 두통 2례)이었다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:14:35"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 모유로 이행하는지에 대한 자료는 없다. 따라서 치료기간 중에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "b435e5d8e8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에는 이상반응의 발현에 주의하고 신중히 투여한다. 일본에서 실시된 II상 및 III상 임상시험에서 65세 이상의 고령자에서 이상반응 발현은 112명 중 3명(발열 1례, 두통 2례)이었다.",
+   "extractor": "kw-v4",
+   "id": "5049d97f15",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

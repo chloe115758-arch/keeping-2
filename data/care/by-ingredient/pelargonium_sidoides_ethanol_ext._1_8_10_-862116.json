@@ -1,0 +1,32 @@
+{
+ "ingredient": "pelargonium sidoides ethanol ext.(1→8~10)",
+ "productSeq": "201907156",
+ "itemName": "브론벤트정(펠라고니움시도이데스11%에탄올건조엑스(5.5~6.6→1))",
+ "atc": "R07AX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20191230",
+ "ediCode": "059000360",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907156/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907156/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907156/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부ㆍ수유부에 대한 안전성이 확립되어 있지 않기 때문에 임부ㆍ수유부에는 투여하지 않는 것이 바람직하다",
+   "extractor": "kw-v4",
+   "id": "72528f0b99",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:29:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

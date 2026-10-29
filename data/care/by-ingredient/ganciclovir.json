@@ -1,0 +1,128 @@
+{
+ "ingredient": "ganciclovir",
+ "productSeq": "201505029",
+ "itemName": "가비르정주500밀리그램(간시클로버)",
+ "atc": "J05AB06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240403",
+ "ediCode": "052900011",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505029/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505029/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505029/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 간시클로버 정맥투여 후 토끼 및 마우스에서 배자독성이, 또한 토끼에서 최기형성이 나타났다. 간시클로버 60mg/kg/일 및 108mg/kg/일(AUC에 의한 비교시 인체 노출량의 2배)를 각각 투여한 토끼 및 마우스의 최소 85%에서 태자흡수가 나타났다. 토끼에서 관찰된 효과에는 태자 발육지연, 배자치사, 최기형성 및/또는 모체 독성 등도 포함되어 있으며, 형성부전기관(신장 및 췌장…",
+   "extractor": "kw-v4",
+   "id": "a7da592957",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "짝짓기 전, 임신중 및 수유기중의 암컷 마우스에 매일 간시클로버 90mg/kg/을 정맥투여시 월령 수컷 새끼에서 위 비선부에서의 병리학적 변화는 물론 고환 및 정낭 발육부전이 나타났다. AUC에 의해 평가한 마우스에서의 약물노출량은 사람 AUC의 약1.7배였다.",
+   "extractor": "kw-v4",
+   "id": "53ac1758ea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "간시클로버는 사람 권장용량에서 기형유발 또는 배자 독성을 나타낼 수도 있다.",
+   "extractor": "kw-v4",
+   "id": "b3bdf187e0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물 시험에서 간시클로버는 생식독성 및 기형유발과 관련성이 있었다. 임신여성에서 이 약 사용에 대한 안전성은 확립되지 않았다. 그러나 간시클로버는 태반을 통해 쉽게 확산되므로 모체에 대한 이점이 태아에 대한 위험성을 상회할 경우에만 투여토록 한다.",
+   "extractor": "kw-v4",
+   "id": "f29101cebf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임 여성은 약물투여 중 및 투여 후 최소 30일간 효과적인 피임을 하도록 한다. 남성의 경우, 여성 파트너가 임신의 위험이 없다는 확신이 없다면 이 약 투여 중 및 투여 후 최소 90일간 피임을 하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "4fe10bcd1a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 출생전후 발달에 대한 간시클로버의 영향은 연구되지 않았다. 그러나 간시클로버가 모유로 분비되어 수유중인 영아에서 중대한 이상반응을 유발할 가능성을 배제할 수 없다. 수유부를 대상으로 한 임상시험 자료는 없으나 동물시험에서 간시클로버가 수유 중인 랫트의 모유로 이행되는 것이 확인되었다. 그러므로 수유부에 이 약 투여시 가능한 이점을 고려하여 약물 투여 중단이나 수유중단을 결정해야 한…",
+   "extractor": "kw-v4",
+   "id": "19523cfeb9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "생식력 장애 : 암컷 마우스에 간시클로버 90mg/kg/일(AUC에 의한 비교시 5mg/kg투여후의 인체 노출량의 약 1.7배) 투여에 의해 짝짓기 형태의 감소, 수정률 감소 및 배자 치사율 증가를 야기시켰다. 간시클로버를 0.2~10mg/kg 경구 또는 정맥투여시 수컷 마우스에서 번식력의 감소가 또한 마우스 및 개에서 정자 생성 감소가 나타났다. 각 동물 종에서 독성을 나타내는 최저용량에서…",
+   "extractor": "kw-v4",
+   "id": "73b1d4bbba",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임상시험에서 신장 이식 환자의 CMV 예방을 위해 200일까지 1일 1회 발간시클로버 900mg을 투여 받은 환자군과 투여 받지 않은 대조군을 비교하였다. 정자생성은 발간시클로버 투여 기간 동안 억제되었다. 치료 중단 약 6개월 후 추적조사에서 환자군의 평균 정자수는 대조군과 비슷하였다.",
+   "extractor": "kw-v4",
+   "id": "ac3b169d61",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 이 약의 안전성 및 유효성은 확립되어 있지 않다. 65세 이상의 고령자에서의 연구는 진행되지 않았다. 연령이 증가함에 따라 신청소율이 감소되므로 고령자에서는 신기능을 고려하여 투여되어야 한다. 이 약 투여 전 또는 투여 중에 신기능을 평가하는 등 특별한 주의가 필요하다.",
+   "extractor": "kw-v4",
+   "id": "93c4a888e2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:36",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

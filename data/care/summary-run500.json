@@ -1,0 +1,28 @@
+{
+  "processed": 500,
+  "ok": 450,
+  "unresolved": 18,
+  "error": 32,
+  "withRules": 426,
+  "matchedKeyCounts": {
+    "alcohol": 361,
+    "antacid": 114,
+    "stJohnsWort": 69,
+    "grapefruit": 55,
+    "ppi": 40,
+    "magnesium": 38,
+    "cholestyramine": 35,
+    "vitaminK": 26,
+    "calcium": 24,
+    "vitaminD": 22,
+    "caffeine": 16,
+    "dairy": 12,
+    "omega3": 5,
+    "iron": 4,
+    "biotin": 2,
+    "vitaminC": 2
+  },
+  "apiCallsThisRun": 942,
+  "apiCallsToday": 981,
+  "generatedAt": "2026-10-29T19:20:17"
+}

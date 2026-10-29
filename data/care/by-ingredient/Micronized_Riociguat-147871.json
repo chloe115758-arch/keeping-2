@@ -1,0 +1,197 @@
+{
+ "ingredient": "Micronized Riociguat",
+ "productSeq": "201402613",
+ "itemName": "아뎀파스정2밀리그램(리오시구앗)",
+ "atc": "C02KX05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240110",
+ "ediCode": "641105840",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402613/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402613/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402613/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 6)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "e4da923ccf",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것",
+   "subject": "",
+   "excerpt": "만 65세 이상의 고령자에서 이 약의 노출이 증가했으므로 개인별 용량 적정 시 특별한 주의가 필요하다.",
+   "extractor": "kw-v4",
+   "id": "c908c411cb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ①",
+   "subject": "",
+   "excerpt": "제산제",
+   "extractor": "kw-v4",
+   "id": "e4097e2bc6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "이 약은 산성 용액에 비해 중성 pH에서 낮은 용해도를 보인다. 상부 위장관의 pH를 증가시키는 약물과의 병용 투여로 경구 생체 이용률이 감소할 수 있다. 제산제인 수산화알루미늄/수산화마그네슘과의 병용 투여로 이 약의 평균 AUC를 34%까지, Cmax을 56%까지 감소시켰다. 제산제는 이 약 투여 후 최소 1시간 이후에 복용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "97e1e4a24e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "폐동맥고혈압 환자들이 중등도의 CYP3A4 유도제로 알려진 보센탄을 병용 투여했을 때 효과를 저해하지 않으면서 이 약의 항정상태 혈중농도를 27% 감소시켰다. 이 약과 강력한 CYP3A4 유도제(예: 페니토인, 카바마제핀, 페노바르비톤 또는 St. John's Wort)의 병용 투여로, 이 약의 혈장 농도가 감소될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "dfb727dbee",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "12c2903614",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 임부에게 투여한 적절한 자료는 없다. 동물 시험에서 생식 독성이 나타났다. 따라서, 이 약은 임신 중에는 금기이다. 만약 이 약을 복용하는 동안 임신이 되었다면 태아에게 잠재적 위험이 있음을 환자에게 알려야 한다. 가임 여성은 이 약을 투여하는 동안 효과적인 피임법을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e6ca2455ca",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 랫드를 이용한 배·태자발생시험에서 사람노출의 약8배 용량에서 심장기형(심실중격결손)이 유발되었고, 약2배 용량에서 배자독성(착상후소실증가)이 관찰되었다. 토끼를 이용한 배·태자발생시험에서는 사람노출의 4배용량에서 자연유산이 관찰되었고, 13배용량에서 흡수증가가 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "54d8e0ef0c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "6ba2d4978a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "모유 수유 중인 여성에서 이 약을 투여한 자료는 없다. 동물 시험에서 이 약은 모유로 분비되는 것으로 확인되었다. 모유 수유를 받는 영아에 대한 중대한 이상 반응의 가능성이 있기 때문에 이 약은 수유 중에는 금기이다. 수유부에 대한 약물의 중요성을 고려하여 모유 수유 중단 또는 약물 치료를 중단/회피 여부에 대한 결정이 필요하다.",
+   "extractor": "kw-v4",
+   "id": "67c6785418",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "생식능",
+   "extractor": "kw-v4",
+   "id": "61560cb63f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 사람에서 수태능에 대한 영향을 평가한 자료는 없다. 랫드를 이용한 생식독성시험결과, 암수 모두에서 수태능에 대한 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "acdea34bb2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:14",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,116 @@
+{
+ "ingredient": "articaine hydrochloride + epinephrine bitartrate )",
+ "productSeq": "200308019",
+ "itemName": "셉타네스트주1/100,000",
+ "atc": "N01BB58",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220331",
+ "ediCode": "658300020",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308019/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308019/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308019/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 8)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "6a776853c1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것",
+   "subject": "",
+   "excerpt": "고령자에서의 임상적 데이터가 부족하므로 이 약을 사용 시 최소 투여량으로 주의하여 사용해야 한다. 반복 투여 후 혈장 농도가 증가할 수 있으므로 환자의 상태를엄격하게 모니터링해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f99daeaf8b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "badbd042be",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험에서 최기형성의 증거는 나타내지 않았다.",
+   "extractor": "kw-v4",
+   "id": "46db789dcd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임상에서 출산 중을 제외하고는 임신부에게 아티카인 사용 경험이 없었다. 에피네프린과 아티카인은 태반 장벽을 통과하며, 신생아에서 측정된 아티카인의 혈청 농도는 모체 수준의 약 30 % 였다. 산모에게 의도하지 않은 혈관 내 투여의 경우, 에피네프린은 자궁 관류를 감소시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "8e5ef0a1f2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중에는 이 약의 유익성이 위험성을 상회하는 경우에만 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "301e6041cf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "e05281ea1b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다른 국소마취제와 같이 매우 소량 모유중에 분비될 수 있으므로, 수유 시에는 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "619cda3014",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:58",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

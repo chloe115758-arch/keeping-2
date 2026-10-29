@@ -1,0 +1,99 @@
+{
+ "ingredient": "ticagrelor",
+ "productSeq": "201104578",
+ "itemName": "브릴린타정90밀리그램(티카그렐러)",
+ "atc": "B01AC24",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260806",
+ "ediCode": "650700790",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201104578/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201104578/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201104578/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "- PLATO 연구에서, 이 약은 동반 질환에 따라 필요시 아스피린, 헤파린, 저분자량 헤파린, 정맥용 당단백 IIb/IIIa 저해제, 프로톤 펌프 저해제, 스타틴, 베타-저해제, 안지오텐신전환 효소 저해제 및 안지오텐신 수용체 저해제와 흔하게 병용투여되었다. 이러한 약물들간의 임상적으로 유의한 이상 상호작용은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "4f802d418e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤 펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "가임 여성: 가임 여성은 이 약 투여기간 동안에 임신을 피하도록 적절한 피임을 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "97751823b2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부: 티카그렐러를 임부에 사용한 자료는 없거나 제한적이다. 동물 연구에서 생식 독성을 나타내었다. 이 약은 임신 기간 동안에 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "a7d65d7dfe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부: 현재 동물에서의 약력학/독성학 자료에 따르면 티카그렐러 및 그 활성 대사체는 유즙으로 분비된다. 신생아/영아에 대한 위험을 배제할 수 없다. 수유의 이점과 이 약 투여의 이점에 대해 고려하여 수유를 중단하거나 이 약 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d3d1edf41e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "생식력: 이 약은 남성 또는 여성의 생식력에 영향이 없다.",
+   "extractor": "kw-v4",
+   "id": "d32d3e079b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "75세 이상에서 티카그렐러와 활성대사체에 대한 노출 (티카그렐러의 Cmax 및 AUC는 약 25% 증가)이 젊은 사람보다 증가하고 있으나 임상적으로 유의한 것으로 고려되지 않으므로 고령자에서의 용량 조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "8ab0f9b872",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:07",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

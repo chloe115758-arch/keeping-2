@@ -1,0 +1,44 @@
+{
+ "ingredient": "alprostadil",
+ "productSeq": "199802243",
+ "itemName": "에글란딘주(알프로스타딜)",
+ "atc": "C01EA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20170330",
+ "ediCode": "653300331",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199802243/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199802243/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199802243/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험(랫트, in vitro)에서 자궁수축작용이 보고되었고, 사람에서 임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "6b73301412",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량 등의 주의를 한다",
+   "extractor": "kw-v4",
+   "id": "3840bcbf87",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:18",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

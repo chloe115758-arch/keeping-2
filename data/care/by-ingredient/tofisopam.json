@@ -1,0 +1,99 @@
+{
+ "ingredient": "tofisopam",
+ "productSeq": "199701917",
+ "itemName": "토스팜정(토피소팜)",
+ "atc": "N05BA23",
+ "etcOtc": "전문의약품",
+ "changeDate": "20120128",
+ "ediCode": "642801470",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701917/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701917/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701917/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "바르비탈계 유도체와 페노티아진 유도체 등의 중추신경억제제 또는 알코올과의 병용에 의해 작용이 증강될 가능성이 있으므로 이런 경우에는 병용에 주의한다.",
+   "extractor": "kw-v4",
+   "id": "ec38f6e0ba",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대해서는 안전성이 확립되어 있지 않으므로 임부(3개월 이내) 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "e96cc76f0f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "신생아에 포유곤란, 근긴장저하, 졸음증, 황달의 악화 등의 증상을 일으킨다는 것이 다른 벤조디아제핀계화합물(디아제팜, 니트라제팜)에서 보고되고 있으므로, 임신후기의 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "f339f32ad4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "분만전에 계속 사용할 경우, 출산 후 신생아에 금단증상(신경과민, 진전, 과긴장)등이 나타나는 것이 다른 벤조디아제핀계 화합물(디아제팜)에서 보고되어 있다.",
+   "extractor": "kw-v4",
+   "id": "47cdb46e02",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "동물실험에서 유즙 중에 이행하는 것이 인정되어 있으므로 수유중의 여성에게는 투여하지 않는 것이 바람직하지만, 부득이 투여할 때는 수유를 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "fea2386ca3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량 하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "8d216ce0da",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:48",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

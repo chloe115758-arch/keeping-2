@@ -1,0 +1,195 @@
+{
+ "ingredient": "fluticasone propionate(/회) + formoterol fumarate dihydrate(/회)",
+ "productSeq": "201309961",
+ "itemName": "플루티폼흡입제125μg/5μg",
+ "atc": "R03AK11",
+ "etcOtc": "전문의약품",
+ "changeDate": "20201126",
+ "ediCode": "678000291",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309961/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309961/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309961/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 5)",
+   "subject": "",
+   "excerpt": "L-도파, L-티록신, 옥시토신, 알코올은 β2-교감신경흥분제에 대한 심장 내성을 손상시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "6fefbcf0ac",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "2f36c29720",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "플루티카손프로피오네이트 및 포르모테롤푸마르산 단독투여 또는 병용투여에 대한 정보는 제한적이나 각각의 흡입제 또는 이 약과 같은 고정용량 복합제를 임부에게 투여한 사례가 있다. 동물실험 시 생식독성을 나타냈다.",
+   "extractor": "kw-v4",
+   "id": "e00aa4c6b2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "이 약의 임신 중 사용은 사용상의 이익이 위험성을 상회할 경우에만 사용되어야 한다. 적절한 천식조절을 유지하는데 필요한 최소한의 유효용량을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "9758160dd9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "β-효능제가 자궁수축을 방해할 가능성이 있으므로 분만 중 천식 조절을 위해 이 약의 투여를 제한하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "472424671b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "플루티카손프로피오네이트 흡입제 투여 후, 플루티카손프로피오네이트가 분만 후 신생아의 제대혈에서 확인되었다.",
+   "extractor": "kw-v4",
+   "id": "7fff986fa3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "448c3a01c2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "플루티카손프로피오네이트 또는 포르모테롤푸마르산이 인체 유즙을 통해 분비되는 지는 알려진 바 없다. 수유부에 대한 투여는 모체에 대해 기대되는 유익이 유아에 미칠 위험성을 상회하는 경우에만 고려되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "ca4b68118f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "5e93273c06",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 투여가 생식능에 영향을 끼치는 지에 대한 자료는 없다. 동물 실험에서 각각의 주성분을 임상적으로 관련된 용량을 투여했을 때 수태능에 대한 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "2b88874324",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "소아",
+   "extractor": "kw-v4",
+   "id": "58cc262b2f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "4세 미만의 소아에서 임상적 경험이 없다. 4-5세의 소아에서 이 약의 사용 경험은 제한적이므로 이 약은 5세 미만에서 사용해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "b550335791",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "흡입 코르티코스테로이드를 지속적으로 치료받는 소아의 신장을 정기적으로 모니터링 한다. 성장이 지연되면, 천식을 효과적으로 조절이 유지되는 최소용량으로 용량을 낮추는 방향으로 치료를 해야 한다. 이 약의 구성성분에서 보고된 소아 및 청소년의 전신영향은 쿠싱증후군, 쿠싱증후군양상, 부신억제 및 성장지연이다. 또한 불안, 수면장애 및 정신과다활동 및 과민성을 포함한 행동변화가 있을 수 있다.",
+   "extractor": "kw-v4",
+   "id": "189340b058",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "5-11세 소아에서 플루티카손 단일제와의 비교 연구 및 4-12세 소아에서 플루티카손/살메테롤 복합제와의 비교연구에서 유사한 안전성과 내약성 결과를 보였다. 6개월간의 장기치료 결과 성장 지연이나 부신억제가 나타나지 않았다. 소아에서 수행된 약력학 연구에서 2주 동안의 플루티카손 단일제와 비교하여 knemometry 측정시 하부 다리 성장률에서 유사한 영향을 보였다.",
+   "extractor": "kw-v4",
+   "id": "76babbc710",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:27",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,52 +1,56 @@
 {
-  "ingredient": "cefprozil",
-  "productSeq": "200400918",
-  "itemName": "세로파질건조시럽(세프프로질수화물125mg(역가)/5mL)",
-  "atc": "J01DC10",
-  "etcOtc": "전문의약품",
-  "changeDate": "20240527",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400918/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400918/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400918/NB"
+ "ingredient": "cefprozil",
+ "productSeq": "200400918",
+ "itemName": "세로파질건조시럽(세프프로질수화물125mg(역가)/5mL)",
+ "atc": "J01DC10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240527",
+ "ediCode": "642400431",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400918/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400918/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400918/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : mg/m2 을 기준으로 인체의 1일 최대 용량(1000mg)의 14배, 7배 및 0.7배의 용량으로 마우스, 랫트 및 토끼를 대상으로 한 생식기능 시험결과 이 약이 태자에 대한 위험성 증가의 증거는 없었다. 그러나 임부를 대상으로 한 적절한 연구는 실시된 바 없으며 생식기능에 대한 동물실험결과가 인체에 그대로 적용될 수 없기 때문에 임부에는 꼭 필요한 경우에만 이 약을 사용한다.",
+   "extractor": "kw-v4",
+   "id": "aa3c17c39d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "74fc0909a2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 : mg/m2 을 기준으로 인체의 1일 최대 용량(1000mg)의 14배, 7배 및 0.7배의 용량으로 마우스, 랫트 및 토끼를 대상으로 한 생식기능 시험결과 이 약이 태자에 대한 위험성 증가의 증거는 없었다. 그러나 임부를 대상으로 한 적절한 연구는 실시된 바 없으며 생식기능에 대한 동물실험결과가 인체에 그대로 적용될 수 없기 때문에 임부에는 꼭 필요한 경우에만 이 약을 사용한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3635ce70eb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "진통 및 분만 : 진통 및 분만 중의 이 약 사용에 대한 연구는 실시된 바 없으므로 꼭 필요한 경우에만 사용한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a322536209",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부 : 소량이 모유에서 발견되었고, 이 약이 수유기 영아에게 어떤 영향을 미칠지 알 수 없어 이 약을 수유부에게 투여할 때에는 특히 주의하여야 한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:15:21"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "진통 및 분만 : 진통 및 분만 중의 이 약 사용에 대한 연구는 실시된 바 없으므로 꼭 필요한 경우에만 사용한다.",
+   "extractor": "kw-v4",
+   "id": "b005724095",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부 : 소량이 모유에서 발견되었고, 이 약이 수유기 영아에게 어떤 영향을 미칠지 알 수 없어 이 약을 수유부에게 투여할 때에는 특히 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "b124064bb2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

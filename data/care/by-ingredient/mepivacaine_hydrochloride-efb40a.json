@@ -1,0 +1,56 @@
+{
+ "ingredient": "mepivacaine hydrochloride",
+ "productSeq": "199702399",
+ "itemName": "하나염산메피바카인주2%",
+ "atc": "N01BB03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200907",
+ "ediCode": "657802631",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199702399/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199702399/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199702399/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d751c4c88a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자는 혈관수축제(에피네프린, 노르에피네프린)의 작용에 대한 감수성이 클 수 있으므로 환자의 상태를 관찰하고 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "01c9600ed3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "경막외마취를 하는 경우, 고령자에는 일반적으로 마취범위가 넓어지기 쉬우므로 용량에 유의하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c2a37ef6b8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:41",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

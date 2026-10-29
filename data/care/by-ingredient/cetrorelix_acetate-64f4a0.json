@@ -1,0 +1,44 @@
+{
+ "ingredient": "cetrorelix acetate",
+ "productSeq": "201505122",
+ "itemName": "유레릭스주0.25밀리그램(세트로렐릭스아세트산염)\r\n",
+ "atc": "H01CC02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190419",
+ "ediCode": "626200031",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505122/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505122/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505122/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임부·수유부에게 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "a3fdb46927",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험에서 세트로렐릭스는 생식력, 수태능 및 임신에 용량 반응적으로 영향을 주었다. 임신 민감기에 이 약을 투여하였을 경우 최기형성은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "158b88cf8e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:28",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

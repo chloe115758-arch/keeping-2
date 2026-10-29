@@ -1,0 +1,142 @@
+{
+ "ingredient": "brimonidine tartrate + timolol maleate )",
+ "productSeq": "200700952",
+ "itemName": "콤비간점안액",
+ "atc": "S01ED51",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260108",
+ "ediCode": "624900501",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200700952/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200700952/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200700952/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 5)",
+   "subject": "",
+   "excerpt": "중추신경계 억제제 : 이 약과 특이적 약물 상호작용 연구가 시행되지 않았지만, 중추신경계 억제제(알코올, 수면제, 아편류, 진정제, 마취제)의 효과를 상승시킬 가능성이 있으므로 병용 시 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "007c55a65c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 12)",
+   "subject": "",
+   "excerpt": "시메티딘, 히드랄라진 및 알코올과 병용투여 시 티몰롤의 혈중농도를 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "73d9fd8c4a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물에서 이 약에 대한 기형 발생 연구는 실시되지 않았으나, 각 성분에 대한 기형 발생 연구는 실시되었다.",
+   "extractor": "kw-v4",
+   "id": "167b626ce9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "브리모니딘타르타르산염은 랫트에서 임신 6일에서 15일 사이와 토끼에서 임신 6일에서18일 사이에 경구로 투여했을 때 기형 발생이 나타나지 않았다. 랫트와 토끼에게 각각 브리모니딘타르타르산염 고용량 (1.65mg/kg/day,3.3mg/kg/day) 투여 시 AUC는 이 약을 사람에게 1일 2회 양안에 1적씩 점안 시 측정되는 수치보다 각각 580배와 37배 높았다.",
+   "extractor": "kw-v4",
+   "id": "dd96c9de67",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "마우스와 랫트, 토끼에서 티몰롤 50mg/kg/day(사람에게 투여되는 양의 4,200배) 경구투여에 대한 기형발생연구에서 태아의 기형은 없었다. 비록 이 농도에서 랫트는 연기된 태아의 골화가 관찰되었지만 출생 후에는 어떠한 부작용도 없었다. 마우스에 1000mg/kg/day(사람에게 매일 투여하는 양보다 83,000배) 투여 시 모체 독성이 나타났고, 태아로의 재흡수 증가를 유발했다. 토끼…",
+   "extractor": "kw-v4",
+   "id": "f741e64567",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임부에 대한 충분하고 잘 조절된 연구는 없지만, 동물 연구에서 브리모니딘은 한정된 양이 태반을 거쳐 태자 순환계로 들어갔다. 동물 생식 연구가 항상 사람에서의 반응을 예상할 수 있는 것은 아니므로 이 약은 임부에 대한 유익성이 태아에 대한 위험성을 상회한다고 판단될 때만 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e7bf93dc5c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "티몰롤은 경구투여 및 점안 시 모유로 이행되었다. 브리모니딘타르타르산염은 사람에서 모유로 이행되는지의 여부는 밝혀지지 않았지만 동물 연구에서는 모유로 배설되는 것이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "cf24a168ed",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유영아에게 심각한 이상반응이 일어날 가능성이 있으므로 수유부는 투여하지 말고 부득이 투여하는 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "9a66307f10",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반 성인과 고령자 사이에서 전반적인 차이점이 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "09824836bc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:28",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

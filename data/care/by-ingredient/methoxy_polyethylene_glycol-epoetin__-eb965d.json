@@ -1,52 +1,56 @@
 {
-  "ingredient": "methoxy polyethylene glycol-epoetin β",
-  "productSeq": "200809099",
-  "itemName": "미쎄라프리필드주100μg/0.3mL(메톡시폴리에칠렌 글리콜-에포에틴 베타)",
-  "atc": "B03XA03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250624",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200809099/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200809099/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200809099/NB"
+ "ingredient": "methoxy polyethylene glycol-epoetin β",
+ "productSeq": "200809099",
+ "itemName": "미쎄라프리필드주100μg/0.3mL(메톡시폴리에칠렌 글리콜-에포에틴 베타)",
+ "atc": "B03XA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250624",
+ "ediCode": "645000751",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200809099/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200809099/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200809099/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 이 약을 투여한 데이터는 충분하지 않다. 동물시험결과 수태능, 배태자발생, 출생전후발생에 대한 이 약의 직&#8901;간접적인 유해한 효과는 나타나지 않았다. 임부에 투여시 주의를 기울여야 한다.",
+   "extractor": "kw-v4",
+   "id": "6f57662684",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "14a7d7e07f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 이 약을 투여한 데이터는 충분하지 않다. 동물시험결과 수태능, 배태자발생, 출생전후발생에 대한 이 약의 직&#8901;간접적인 유해한 효과는 나타나지 않았다. 임부에 투여시 주의를 기울여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "51b39ec60c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 사람 모유로 분비되는지는 알려져 있지 않다. 동물시험에서 이 약이 모유로 분비됨이 관찰되었다. 이 약 투여시 수유 중단 여부는 수유부에 대한 치료의 유익성과 유아에 대한 수유시의 유익성을 고려하여 결정한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "774d9e125c",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "10. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임상시험에서 이 약을 투여받은 환자의 24%가 65세∼74세이었으며 75세이상은 20%이었다. 65세 이상의 환자에서 용량 조절은 필요치 않다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:19:03"
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람 모유로 분비되는지는 알려져 있지 않다. 동물시험에서 이 약이 모유로 분비됨이 관찰되었다. 이 약 투여시 수유 중단 여부는 수유부에 대한 치료의 유익성과 유아에 대한 수유시의 유익성을 고려하여 결정한다.",
+   "extractor": "kw-v4",
+   "id": "fef7902683",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상시험에서 이 약을 투여받은 환자의 24%가 65세∼74세이었으며 75세이상은 20%이었다. 65세 이상의 환자에서 용량 조절은 필요치 않다.",
+   "extractor": "kw-v4",
+   "id": "b662e4608f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,123 @@
+{
+ "ingredient": "clindamycin phosphate",
+ "productSeq": "199401120",
+ "itemName": "훌그램600밀리그램주사(클린다마이신포스페이트)",
+ "atc": "J01FF01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210629",
+ "ediCode": "647802731",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199401120/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199401120/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199401120/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 5)",
+   "subject": "",
+   "excerpt": "벤질알코올은 조숙아에게서 치명적인 가쁜 호흡증상과 연관이 있는 것으로 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "dad938ca6f",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "ce278314bb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유 중에는 경구용량 150mg 내지 정맥용량 600mg 투여에서 클린다마이신 0.7～3.8㎍/mL의 농도로 모유로 이행된다는 보고가 있으므로 신생아에 대한 클린다마이신의 이상반응 가능성 때문에 수유하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "c44ad1766a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 신중하게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "97afada383",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "클린다마이신을 경구 또는 정맥 투여한 약동학 시험에서 신기능(나이를 보정) 및 간기능이 정상적인 경우 젊은 피험자와 고령자 간에 임상적으로 중요한 차이는 관찰되지 않았다. 그러므로 신기능(나이를 보정)과 간기능이 정상적인 고령자에서는 용량 조절이 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "6685271778",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 사용 1)",
+   "subject": "",
+   "excerpt": "랫트와 마우스를 대상으로 한 생식시험에서[피하 및 경구용량 : 1일 체중 Kg당 100～600mg(역가)] 클린다마이신으로 인한 수태율 손상이나 태아에 대한 해가 없다.",
+   "extractor": "kw-v4",
+   "id": "fc87253785",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 사용",
+   "subject": "",
+   "excerpt": "그러나 임부를 대상으로 적절히 시행된 임상자료가 없고 동물생식시험 결과로 인체 내 반응을 언제나 예견할 수 있는 것은 아니므로 임신기간 중에 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "ff93cceff3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 사용 2)",
+   "subject": "",
+   "excerpt": "이 약 사용 후 클린다마이신이 모유로 분비되는 지의 여부는 밝혀진 바 없으나 경구 및 비경구적으로 투여된 클린다마이신이 모유를 통해 분비된다는 보고가 있다. 일반적으로 많은 약물들이 모유를 통해 분비되므로 이 약 사용 중에는 수유하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "830abb0f85",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:16",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

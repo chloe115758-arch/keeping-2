@@ -1,0 +1,285 @@
+{
+ "ingredient": "glibenclamide + metformin hydrochloride",
+ "productSeq": "200307866",
+ "itemName": "글루리아드정500/2.5밀리그람",
+ "atc": "A10BD02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20261002",
+ "ediCode": "641600190",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200307866/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200307866/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200307866/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에게는 투여하지 말 것 9)",
+   "subject": "",
+   "excerpt": "간 기능장애(손상된 간 기능은 유산산증의 몇몇 경우와 관련이 있기 때문에, 일반적으로 임상적 또는 실험실적으로 간 질환의 증거가 있는 환자에게는 이 약의 투여를 피해야 한다.), 폐경색, 중증의 폐기능장애 환자 및 기타 저산소혈증을 수반하기 쉬운 상태, 과도한 알코올 섭취자, 탈수증, 설사, 구토 등의 위장장애 환자",
+   "extractor": "kw-v4",
+   "id": "276bcf2091",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음환자에는 신중히 투여할 것 5)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "0c919ab46c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 1)",
+   "subject": "",
+   "excerpt": "저혈당증 - 이 약은 저혈당증 또는 저혈당 증상을 일으킬 가능성이 있으므로, 저혈당 에피소드를 막기 위해 적절한 환자 선택, 투약 및 교육이 중요하다. 치료 시작 후 점진적인 용량 적정을 통해 저혈당증을 막을 수 있다. 이 약은 환자가 적절한 식사(아침식사포함)를 하는 경우에만 처방될 수 있다. 이 약을 복용하는 동안 환자가 저혈당증의 증상을 경험하는지 여부를 신중하게 관찰해야 한다. 이상…",
+   "extractor": "kw-v4",
+   "id": "d69bcd77b3",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "덧붙여 이 약은 저산소증, 탈수, 패혈증과 관계된 증상이 나타날 경우 즉각 투여를 중지해야 한다. 간기능이 손상된 경우 젖산 배설능력이 유의적으로 저하될 수 있으므로, 일반적으로 간질환의 임상적 또는 실험실적 소견이 있는 환자의 경우 이 약을 투여하지 않는다. 알코올은 이 약이 젖산대사에 영향을 미치게 할 가능성이 있으므로, 이 약을 투여 받는 동안 급ㆍ만성적인 알코올의 과량섭취는 피해야 한…",
+   "extractor": "kw-v4",
+   "id": "6d520bd6fc",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 8)",
+   "subject": "",
+   "excerpt": "알코올 섭취 : 알코올은 젖산 대사에 대해 이 약이 미치는 영향을 증대시키고 유산산증의 위험도를 증가시킨다고 알려져 있다. 따라서 이 약을 투여하는 동안 급성 또는 만성적인 알코올의 과량섭취는 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "57ca71911a",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (3)",
+   "subject": "",
+   "excerpt": "알코올 : 설포닐우레아계, 특히 클로르프로파미드, 글리벤클라미드, 글리피지드, 톨부타미드에서 디설피람 효과가 나타난다.",
+   "extractor": "kw-v4",
+   "id": "186fb22e07",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (2)",
+   "subject": "- 혈당강하 작용을 감약시키는 약제",
+   "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
+   "extractor": "kw-v4",
+   "id": "9b12e74dce",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "- 간장애",
+   "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "fbfaa04a59",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부,소아, 노인에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "660f12efde",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부,소아, 노인에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 성분 중 글리벤클라미드는 설포닐우레아계 약물로, 설포닐우레아계 약물은 태반을 통과한다는 보고가 있으며 신생아의 저혈당 또는 거대아가 확인되고 있다. 또한, 동물실험에서 기형발생 작용이 보고되고 있으므로 임부 또는 임신할 가능성이 있는 여성에게는 투여하지 않는다",
+   "extractor": "kw-v4",
+   "id": "d4369b3b9a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부,소아, 노인에 대한 투여",
+   "subject": "",
+   "excerpt": "근래의 연구는 임신 기간 동안 비정상적인 혈당 농도는 선천성 기형의 높은 발현과 관련있다는 정보가 있으므로, 가능한 한 정상에 가까운 혈당을 유지하기 위해 임신기간 동안 인슐린을 사용하는 것이 전문가들 사이의 공통된 견해이다.",
+   "extractor": "kw-v4",
+   "id": "6f1226863e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부,소아, 노인에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "0c86a7ac7e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부,소아, 노인에 대한 투여",
+   "subject": "",
+   "excerpt": "수유중인 랫드에 대한 연구로 이 약이 유즙으로 분비되어 혈장과 비교할 만한 농도에 이른다는 것을 보여준다. 비슷한 연구가 수유부에 대해 행해지지 않았지만, 이러한 환자에게는 신생아의 저혈당증의 위험성을 고려할 때 수유 중 본제의 사용은 금기이며, 수유부에 대한 약물의 중요성을 고려하여, 수유를 중지할 것인지 약물을 중지할 것인지 결정해야 한다. 만일 이 약을 중단한 경우, 식이요법만으로 혈당…",
+   "extractor": "kw-v4",
+   "id": "9a9d2d6522",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부,소아, 노인에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "소아에 투여",
+   "extractor": "kw-v4",
+   "id": "8b22840f1d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부,소아, 노인에 대한 투여",
+   "subject": "",
+   "excerpt": "소아에 대한 안전성 및 유효성은 확립된 바 없다.",
+   "extractor": "kw-v4",
+   "id": "6f779f032a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부,소아, 노인에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "고령자에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "2730841ba0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부,소아, 노인에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있는 경우가 많아 저혈당이 나타날 수 있으므로 소량부터 투여를 시작하며, 정기적으로 검사를 실시하는 등 신중히 투여한다. 이 약의 성분 중 메트포르민은 대부분 신장으로 배설된다고 알려져 있으며, 부적절한 신기능을 갖는 환자에서는 심각한 약물 부작용의 위험이 있기 때문에, 정상적인 신기능을 가진 환자에게만 사용하도록 한다. 고령화는 간ㆍ신기능 감소(간기능…",
+   "extractor": "kw-v4",
+   "id": "2347ea5f6b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "568454a245",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "메트포르민염산염과 글리벤클라미드 병용투여 환자에서는 1일 2정을 식사와 함께 투여한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:45",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

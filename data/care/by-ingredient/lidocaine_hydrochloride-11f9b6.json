@@ -1,0 +1,44 @@
+{
+ "ingredient": "lidocaine hydrochloride",
+ "productSeq": "201702423",
+ "itemName": "리도카글액2%(리도카인염산염수화물)",
+ "atc": "R02AD02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260115",
+ "ediCode": "053500031",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702423/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702423/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702423/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "2d412fe01a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약의 모유중으로의 이행 여부에 대하여 알려져 있지 않으나, 수유부에 투여하는 경우에는 주의한다.",
+   "extractor": "kw-v4",
+   "id": "200722a16a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:30:45",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

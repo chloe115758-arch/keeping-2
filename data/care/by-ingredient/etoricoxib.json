@@ -1,0 +1,197 @@
+{
+ "ingredient": "etoricoxib",
+ "productSeq": "201406032",
+ "itemName": "알콕시아정30밀리그램(에토리콕시브)",
+ "atc": "M01AH05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231106",
+ "ediCode": "073100310",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201406032/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201406032/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201406032/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 1)",
+   "subject": "",
+   "excerpt": "매일 세잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 위장출혈이 유발될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "59e763a220",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 3)",
+   "subject": "",
+   "excerpt": "위장관계 이상반응: 이 약을 포함한 비스테로이드성 소염진통제를 궤양성 질환이나 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용 코르…",
+   "extractor": "kw-v4",
+   "id": "85bf4e63ae",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ⑤",
+   "subject": "",
+   "excerpt": "제산제 : 이 약 120mg을 제산제(탄산칼슘 또는 수산화마그네슘/알루미늄)와 병용투여시 임상적으로 유의한 약동학적 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "ef16e051fd",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "탄산칼슘"
+    },
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "랫드에 대한 시험에서 15 mg/kg/day(전신노출에 근거하여 사람에게 30mg 투여시의 약 5 배)까지의 용량증가에서 발달이상은 나타나지 않았다. 토끼에 대한 시험에서 30mg/kg/day(전신노출에 근거하여 사람에게 30mg 투여시의 약 6배) 또는 그 보다 높은 용량에서 착상후 손실(>18%)이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "70f7bff75a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "전신노출에 근거하여 사람에게 30mg 투여시의 약 6배에 해당하는 용량에서 낮은 발생률의 심혈관계 기형 및 착상 후 손실 증가가 관찰되었다. 사람의 일일 용량 90 mg과 대략 동등하거나 그 이하 농도의 전신 노출에서 발달에의 영향은 발견되지 않았다. 그러나, 동물 생식시험들이 항상 사람에서의 반응을 예측하는 것은 아니다.",
+   "extractor": "kw-v4",
+   "id": "410e75cad6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약을 임부에게 투여한 임상자료는 없다. 동물실험에서 이 약의 투여로 기형발생을 포함한 생식독성이 나타났으나, 사람의 임신에 있어서의 잠재적인 위험은 알려져 있지 않다. 또한 이 약은 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 임신 말기에 투여 시 자궁 무력증을 일으키거나 태아의 동맥관을 조기 폐쇄시킬 수 있으므로 이 약은 임부 또는 임신할 가능성이 있는 여성에게는 투여하지 않는…",
+   "extractor": "kw-v4",
+   "id": "86ccedf0a4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "비스테로이드성 소염진통제 계열 약물의 사용은 그 작용기전으로 인해 난포파열을 방해하거나 지연시킬 수 있으며, 이는 일부 여성에게 가역적 불임을 일으킬 수 있다. 따라서 임신이 어렵거나 불임검사를 받고 있는 여성의 경우 이 약을 포함한 비스테로이드성 소염진통제 계열 약물의 사용중단을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "4d6276a149",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "프로스타글란딘 합성 억제 작용은 임신에 불리한 영향을 끼칠 수 있다. 역학조사에서 임신초기 프로스타글란딘 합성을 억제하는 약물을 복용한 후 자연유산의 위험이 증가하는 것으로 나타났다. 동물시험에서는 프로스타글란딘 합성을 억제하는 약물을 투여할 경우 착상실패가 증가하는 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "0d6b1e32a3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "임신 20 주 이후 비스테로이드성 소염진통제의 사용은 태아의 신기능 이상을 유발하여 양수 과소증 및 경우에 따라 신생아 신장애를 일으킬 수 있다. 이러한 영향은 약물투여 시작 후 바로 나타날 수 있으며 일반적으로 가역적이다.",
+   "extractor": "kw-v4",
+   "id": "c40c0a5a8e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 7)",
+   "subject": "",
+   "excerpt": "이 약은 랫드의 모유 중으로 분비된다. 이 약이 사람의 모유 중으로 분비되는지는 알려진 바 없다. 많은 약물들이 모유 중으로 이행될 뿐만 아니라 이행될 경우 영아에서 심각한 이상반응의 발생이 우려되므로, 수유부에 대한 약물 투여의 중요성을 고려하여 수유를 중단하거나 약물 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "dafbe03ed2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자는 신기능, 간기능 및 특히 심기능이 저하되어 있을 가능성이 높으므로 고령자에게 이 약을 투여하는 경우 적절한 관찰이 요구된다.",
+   "extractor": "kw-v4",
+   "id": "6696c28cbf",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임상 시험 결과, 고령자에서의 약동학은 젊은 피험자에서와 유사하였으나, 고령자에서 젊은 피험자와 비교보다 이상반응 발현율이 높게 나타났다. 일부 고령 환자에서의 높은 감수성을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "ec5d54bb1b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:25",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,76 +1,80 @@
 {
-  "ingredient": "ramosetron hydrochloride",
-  "productSeq": "202401365",
-  "itemName": "이리콜정5마이크로그램(라모세트론염산염)",
-  "atc": "A03AE",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250526",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401365/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401365/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401365/NB"
+ "ingredient": "ramosetron hydrochloride",
+ "productSeq": "202401365",
+ "itemName": "이리콜정5마이크로그램(라모세트론염산염)",
+ "atc": "A03AE",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250526",
+ "ediCode": "641608090",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401365/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401365/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401365/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 임신 중의 투여에 대해서는 안전성이 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "fc3aca9413",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "2f59023fda",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부: 임신 중의 투여에 대해서는 안전성이 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회하는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7d464e67ac",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부: 랫트에서 유즙으로의 이행이 보고되어 있으므로, 수유부에 투여하는 경우에는 수유를 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fb0a175b6e",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 고령자에게 투여할 경우 환",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a416cae16e",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "자의 상태를 주의하여 관찰하고 신중히 투여해야 하며 이상반응이 발현되는",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "238ac1af1d",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "경우에는 투여를 중지하는 등 적절한 처치를 한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:08:29"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 랫트에서 유즙으로의 이행이 보고되어 있으므로, 수유부에 투여하는 경우에는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ea0f675f36",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 고령자에게 투여할 경우 환",
+   "extractor": "kw-v4",
+   "id": "022095458b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "자의 상태를 주의하여 관찰하고 신중히 투여해야 하며 이상반응이 발현되는",
+   "extractor": "kw-v4",
+   "id": "38f5e3be76",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "경우에는 투여를 중지하는 등 적절한 처치를 한다.",
+   "extractor": "kw-v4",
+   "id": "0d21364f2c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

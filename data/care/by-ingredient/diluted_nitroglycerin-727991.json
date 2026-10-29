@@ -1,0 +1,185 @@
+{
+ "ingredient": "diluted nitroglycerin",
+ "productSeq": "198601406",
+ "itemName": "명문니트로글리세린0.6밀리그램설하정",
+ "atc": "C01DA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20180630",
+ "ediCode": "649800850",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198601406/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198601406/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198601406/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "다른 질산염제제, 혈압강하제, β-차단제, 페노치아진계 약물 및 알코올과의 병용투여로 혈압강하작용이 증강될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "689a76b735",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단된는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "025e9bec44",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유중으로의 이행이 알려진 바 없으므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "861cfa65e1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 간기능이 저하되어 있는 경우가 많아, 높은 혈중농도가 지속될 수 있으므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "99b6cee41c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "이뇨제, 다른 혈관확장제, 혈압강하제, 삼환계 항우울제, 신경안정제, 디히드로에르고타민 및 알코올과의 병용에 의해 혈압강하작용이 증강될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f212c434e2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 관한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "da5df27d32",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유중으로의 이행이 알려진 바 없으므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "861cfa65e1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 간기능이 저하되어 있는 경우가 많아, 높은 혈중농도가 지속될 수 있으므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "99b6cee41c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "다른 혈관확장제, 칼슘길항제, 삼환계 항우울제 및 알코올과의 병용에 의해 혈압강하작용이 증강될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "c69f65c916",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "097ce3abc2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유중으로의 이행이 알려진 바 없으므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "861cfa65e1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 간기능이 저하되어 있는 경우가 많아 높은 혈중농도가 지속될 수 있으므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "00bc1bbb56",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:46",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

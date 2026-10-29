@@ -1,0 +1,92 @@
+{
+ "ingredient": "alogliptin benzoate",
+ "productSeq": "202303030",
+ "itemName": "네시나정12.5밀리그램(알로글립틴벤조산염)",
+ "atc": "A10BH04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20241218",
+ "ediCode": "693903780",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303030/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303030/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303030/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "26e6c1c2e8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부를 대상으로 한 적절한 임상시험 결과는 없으므로 임부에서의 사용은 권장되지 않는다. 이약을 임신한 랫드에 경구투여시 태반을 통과하여 태자로 이행하는 것이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "0b6d386490",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "66b6be25b6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이약은 사람 모유에 분비되는지 알려지지 않았다. 이 약은 랫드에서 유즙과 혈장에 2:1의 비율로 분비되는 것으로 보고되었으므로 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "e31f5b47d7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에 참여한 총 환자(N=8507) 중 65세 이상은 2064명(24.3%)이었고, 75세 이상은 341명(4%)이었다. 고령자와 젊은 환자군 사이에 반응성에 차이는 없었으나 일부 고령자에서 감수성이 증가할 수 있음을 배제할 수는 없다.",
+   "extractor": "kw-v4",
+   "id": "0f245acde9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적인 고령자는 신기능이 저하되어 있는 경우가 많으므로 신기능에 주의하여 신장해의 정도에 따라 적절히 용량을 조정한다.",
+   "extractor": "kw-v4",
+   "id": "e3705cf930",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:05",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

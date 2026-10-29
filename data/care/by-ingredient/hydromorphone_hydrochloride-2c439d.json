@@ -1,0 +1,137 @@
+{
+ "ingredient": "hydromorphone hydrochloride",
+ "productSeq": "200210689",
+ "itemName": "딜리드정2밀리그램(히드로모르폰염산염)",
+ "atc": "N02AA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260428",
+ "ediCode": "657800360",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200210689/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200210689/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200210689/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "마약류와 벤조디아제핀계 약물 또는 알코올을 포함하는 중추신경계억제제의 병용투여는 깊은 진정, 호흡억제, 혼수 및 사망을 초래할 수 있다. 이러한 위험성 때문에, 마약류와 벤조디아제핀계 약물의 병용투여는 적절한 대체 치료방법이 없는 환자의 경우에 한하여 처방하도록 한다. 이 약과 마약류의 병용투여가 결정되면 최저 유효용량으로 최단기간 처방하도록하고 호흡억제 및 진정의 징후와 증상에 대해 환자를…",
+   "extractor": "kw-v4",
+   "id": "9cc1b412c8",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 3)",
+   "subject": "",
+   "excerpt": "이 약의 반복적인 사용은 아편유사제 사용 장애(Opioid Use Disorder, OUD)를 일으킬 수 있다. 이 약의 남용이나 의도적인 오용은 과량투여나 사망을 일으킬 수 있다. 아편유사제 사용 장애 발병 위험은 약물 사용 장애(알코올 사용 장애 포함)의 개인 또는 가족력이 있는 환자, 흡연 또는 기타 정신 건강 장애의 병력이 있는 환자(예: 주요 우울증, 불안, 인격 장애)에서 증가한다…",
+   "extractor": "kw-v4",
+   "id": "05e144566c",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "이 약과 벤조디아제핀계 약물, 다른 마약성 진통제, 전신마취제, 페노티아진계 약물, 신경안정제, 수면제, 삼환계 항우울제, 신경근육차단제 또는 알코올을 포함한 다른 중추신경억제제를 병용투여하면 추가적인 중추신경억제작용이 유발되고, 호흡억제, 저혈압, 깊은 진정, 혼수, 사망과 같은 중추신경억제작용이 증가될 수 있다. 따라서 이러한 약물과 병용투여하는 경우에는 2가지 약물 중 하나, 또는 둘…",
+   "extractor": "kw-v4",
+   "id": "889404518c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "랫트와 토끼를 이용한 동물실험에서 이 약은 배자독성과 기형발생을 나타내지 않았다. 그러나 햄스터에게 이 약 20 mg/kg(사람 용량의 약 600배)을 투여했을 때에는 기형발생이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "f22dc04951",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다. 또한 신생아 호흡억제의 위험성 때문에 출산, 분만 중에도 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "8104e7bbf5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "출산 전 마약제를 규칙적으로 복용하던 임부에서 태어난 신생아는 육체적인 마약의존성이 나타날 수 있다. 출산 후 신생아에게 신경과민, 과도한 움직임, 울음, 불면, 떨림, 발열 등의 마약 금단증상이 나타날 수 있는데, 이러한 증상의 강도는 임부의 마약제 사용량에 꼭 비례하는 것은 아니다. 이러한 신생아 마약 금단증상에 대해 정해진 치료방법은 없으며, 대증요법과 함께 필요 시 진정제나 페노바르비…",
+   "extractor": "kw-v4",
+   "id": "c260861121",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "이 약은 모유로 소량 이행되므로, 수유부에게 이 약을 투여할 때는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "79d894e3bc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있고, 특히 호흡억제가 일어나기 쉬우므로 투여 시 환자의 상태를 관찰하면서 저용량부터 시작하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "1ba2216b0c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

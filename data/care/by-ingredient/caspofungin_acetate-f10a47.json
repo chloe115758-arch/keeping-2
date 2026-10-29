@@ -1,0 +1,92 @@
+{
+ "ingredient": "caspofungin acetate",
+ "productSeq": "202001388",
+ "itemName": "카스펀주70밀리그램(카스포펀진아세테이트)",
+ "atc": "J02AX04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200424",
+ "ediCode": "651205401",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001388/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001388/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001388/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "cf7a8f4c63",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 랫트와 토끼에게 투여시 두개골 및 몸통의 골화부전과 경늑 발생빈도 증가 등의 태자독성을 나타내었다.",
+   "extractor": "kw-v4",
+   "id": "4778451395",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "토끼에서는 거골/종골의 골화부전의 빈도가 증가하였으며, 랫트와 토끼의 골재흡수를 증가시켰고 랫트의 착상을 감소시켰다. 이러한 결과는 인체에 70 mg 용량으로 투여했을 때와 비슷한 노출 용량에서 얻어진 결과이다. 이 약은 랫트와 토끼에서 태반을 통과하여 임신한 동물에게 투여시 태자의 혈장에서 이 약이 검출되었다. 임신한 여성에게 이 약을 투여한 연구는 수행되지 않았다. 이 약은 임부에 대한…",
+   "extractor": "kw-v4",
+   "id": "2ba3673485",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "7bd9705b4f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 랫트에서 유즙으로 분비된다. 사람의 모유로 이행하는지는 알려져 있지 않으나, 많은 약물이 모유로 이행되므로 이 약을 투여받는 수유부는 수유를 피한다.",
+   "extractor": "kw-v4",
+   "id": "111477f9b1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에는 충분한 수의 65세 이상 고령자가 포함되지 않아 고령자가 이 약에 대해 다르게 반응하는지는 알 수 없다. 임상시험에 참여한 고령자수가 통계적 분석을 실시하기에는 충분하지 않으나, 이 약의 안전성 및 유효성은 이들 고령 환자와 젊은 환자 사이에 차이를 보이지 않았다. 건강한 노인 남성과 여성(65세 이상)의 카스포펀진 혈장농도가 젊고 건강한 남성에 비해 약간 상승하였다(A…",
+   "extractor": "kw-v4",
+   "id": "9047b984da",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:09",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

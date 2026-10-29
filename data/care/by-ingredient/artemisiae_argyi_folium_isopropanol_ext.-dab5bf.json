@@ -1,0 +1,68 @@
+{
+ "ingredient": "artemisiae argyi folium isopropanol ext.",
+ "productSeq": "201504315",
+ "itemName": "유파시딘R정[애엽이소프로판올연조엑스(20→1)]",
+ "atc": "A02X",
+ "etcOtc": "전문의약품",
+ "changeDate": "20170610",
+ "ediCode": "643307100",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504315/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504315/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504315/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 환자에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "eed9455280",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 유즙으로 이행되는 지에 대해서는 알려진 바가 없으므로 수유부의 경우 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "672a7a3b95",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "75세 이상의 고령자에게 투여한 임상자료는 없으나, 일반적으로 고령자에 투여하는 경우에는 이상반응이 나타나기 쉬우므로 이상반응의 발현에 특히 주의하는 등 환자의 상태를 관찰하면서 신중하게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "b6c2236ecb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "393d7644d0",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "1회 1정, 1일 2회 식후 복용",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:26",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

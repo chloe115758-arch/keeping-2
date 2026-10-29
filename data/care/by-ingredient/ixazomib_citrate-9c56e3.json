@@ -1,0 +1,183 @@
+{
+ "ingredient": "ixazomib citrate",
+ "productSeq": "201706267",
+ "itemName": "닌라로캡슐2.3밀리그램(익사조밉시트레이트)",
+ "atc": "L01XG03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250901",
+ "ediCode": "696300450",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706267/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706267/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706267/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "4. 상호작용",
+   "subject": "",
+   "excerpt": "이 약은 강력한 CYP3A4유도제(리팜핀, 페니토인, 카바마제핀, St. John’s Wort)와의 병용투여를 피한다.",
+   "extractor": "kw-v4",
+   "id": "0f4cfc7a59",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "8faea8129b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "여성들의 경우, 이 약을 투여하는 동안 피임을 실시해야한다.",
+   "extractor": "kw-v4",
+   "id": "afad228558",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "위해성 요약",
+   "excerpt": "이 약은 작용 기전 및 동물시험에서의 결과에 근거할 때, 임신한 여성에게 투여하였을 때 태아에게 유해할 수 있다. 이 약을 사용한 임신한 여성에 대한 적절한 대조 임상 시험은 없다. 이 약은 임신한 랫트 및 토끼에게 권장 용량을 투여한 환자에게서 관찰되는 노출보다 약간 더 높은 용량으로 투여하였을 때 배태자 독성을 일으켰다.",
+   "extractor": "kw-v4",
+   "id": "9d1020c389",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "위해성 요약",
+   "excerpt": "이 약을 임신 중에 투여하였거나 투여 중에 임신이 되는 경우, 태아에 대한 잠재적 위험에 대해 환자에게 통지해야한다.",
+   "extractor": "kw-v4",
+   "id": "6cff00b651",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "동물시험 결과",
+   "excerpt": "임신한 토끼에 대한 배태자 발달 시험에서, 모체에도 독성을 나타내는 용량에서 (≥ 0.3 mg/kg) 태자 골격 변화 및 비정상(꼬리 척추뼈 융합, 요추 개수, 완전한 과잉 늑골)이 증가하였다. 0.3 mg/kg에 해당하는 토끼에서의 노출은 권장 용량인 4mg에서의 임상적 시간 평균 노출의 1.9배였다. 랫트 용량 범위 결정 배태자 발달 시험에서, 모체 독성을 나타내는 용량에서 태자 체중이…",
+   "extractor": "kw-v4",
+   "id": "7bace98a35",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "동물시험 결과",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "7d730505c5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "동물시험 결과",
+   "excerpt": "이 약 또는 이 약의 대사체가 모유로의 이행여부는 알려져 있지 않다. 많은 약물들이 유즙으로 이행하므로, 결과적으로 수유를 받는 영아에서 이상반응의 가능성이 있을 수 있다. 이 약을 투여하는 동안 여성들에게 수유를 중단하도록 지도해야한다.",
+   "extractor": "kw-v4",
+   "id": "d6a8d9e625",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 3)",
+   "subject": "동물시험 결과",
+   "excerpt": "가임 여성 및 남성",
+   "extractor": "kw-v4",
+   "id": "2cd4b498ff",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "동물시험 결과",
+   "excerpt": "피임: 임신 가능성이 있는 남성 및 여성 환자들은 치료 기간 및 치료 후 90일 간은 반드시 효과적인 피임법을 실시해야 한다. 덱사메타손은 CYP3A4 및 다른 효소와 수송체의 약한 또는 중등도 유도제로 알려져 있다. 이 약과 덱사메타손을 함께 투여하는 경우, 피임효과가 감소할 수 있는 위험을 고려해야 한다. 호르몬 피임법을 사용하는 여성은 차단 피입법도 사용하도록 권고해야한다.",
+   "extractor": "kw-v4",
+   "id": "730c241def",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "동물시험 결과",
+   "excerpt": "불임: 이 약으로 수태능 시험은 실시되지 않았다. 그러나 랫트와 개에 대한 비임상시험에서 수컷 또는 암컷의 생식기관에 대한 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "cc4e78421d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상 시험에 포함된 총 환자들 중, 55%는 65세 이상이었고, 17%는 75세 이상이었다. 이들 고령의 시험대상자와 연령이 낮은 시험 대상자 간에 안전성 또는 유효성에서 전반적인 차이는 관찰되지 않았으며, 기타 보고된 임상 경험은 고령자와 연령이 낮은 환자 간에 반응의 차이를 확인하지 못하였으나, 일부 고령자에서 더 큰 민감성을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "22ef75d5a8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "d925992454",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 4주 주기의 처음 3주간 주 1회로 같은 요일에 거의 동일한 시간에 투여해야한다. 적어도 식사 1시간 전 또는 식사 2시간 후에 투여해야 한다. 캡슐을 부수거나, 열어서는 안 된다. 씹지 않고 물과 함께 통째로 삼킨다.",
+   "meal": "식사 1시간 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:09",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

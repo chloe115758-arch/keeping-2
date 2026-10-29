@@ -1,0 +1,68 @@
+{
+ "ingredient": "epinephrine + lidocaine hydrochloride",
+ "productSeq": "200108939",
+ "itemName": "자이레스테신에이주",
+ "atc": "N01BB52",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260309",
+ "ediCode": "641000080",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108939/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108939/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200108939/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "6861fa6226",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "리도카인과 그 대사산물이 소량으로 모유에 존재하며, 경구 생체이용률이 낮다. 리도카인이 모유 수유 중인 유아에게 미치는 영향이나 모유 생산에 미치는 영향에 대해서는 알려져 있지 않다. 모유수유의 건강상의 이점은 이 약에 대한 산모의 임상적 필요성과 이 약 또는 산모의 기저 질환으로 인해 수유 중인 아이에게 발생할 수 있는 이상 반응과 함께 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "2b6a459f29",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자는 이 약에 함유된 에피네프린의 작용에 대한 감수성이 클 수 있으므로 환자의 상태를 관찰하고 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "849e446563",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "경막외마취를 하는 경우, 고령자에는 일반적으로 마취 범위가 넒어지기 쉬우므로 나이 및 신체 상태에 따라 투여 용량을 감량할 필요가 있다.",
+   "extractor": "kw-v4",
+   "id": "c0ecd963d9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:57",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

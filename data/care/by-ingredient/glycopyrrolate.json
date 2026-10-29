@@ -1,0 +1,68 @@
+{
+ "ingredient": "glycopyrrolate",
+ "productSeq": "198601958",
+ "itemName": "명문글리코피롤레이트정",
+ "atc": "A03AB02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20201203",
+ "ediCode": "649800810",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198601958/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198601958/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198601958/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음 환자에는 투여하지 말 것. 4)",
+   "subject": "",
+   "excerpt": "기질적 유문협착 또는 마비성 장폐색증 환자, 위장관폐색증(유문협착, 무이완증) 환자, 장관이완증 환자(고령자나 허약한 환자의)",
+   "extractor": "kw-v4",
+   "id": "93efcaf37c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것. 6)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "f5db2ba791",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "fd916e92ea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 모유로 이행되는지 알려지지 않았으므로 수유부에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "ed219ca944",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:11",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,244 @@
+{
+ "ingredient": "mycophenolate mofetil",
+ "productSeq": "200803703",
+ "itemName": "이뮤셉트캡슐(미코페놀레이트모페틸)",
+ "atc": "L04AA06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260904",
+ "ediCode": "641803830",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200803703/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200803703/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200803703/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "제산제 및 프로톤펌프억제제(PPIs) : 제산제(수산화 마그네슘, 수산화 알루미늄 등) 및 프로톤펌프억제제(란소프라졸, 판토프라졸 포함)와 병용투여 시 미코페놀산의 노출이 감소되었다. 이식 환자에서 프로톤펌프억제제 병용 투여가 이식거부에 미치는 영향은 확립되지 않았으므로 이식 환자에게 병용투여시 주의하여 투여한다.",
+   "extractor": "kw-v4",
+   "id": "fedfde96cb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "콜레스티라민 : 콜레스티라민 4 g을 1일 3회씩 4일간 투여한 건강한 자에게 이 약 1.5 g을 투여한 경우 MPA AUC가 40% 감소하였다. 이 약 또는 장간순환을 저해하는 약제와 병용투여시 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "bd2175e7fd",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 다른 면역억제제와 함께 이 약에 노출된 환자의 경우 자녀에서 다중 기형을 포함한 선천성 기형이 시판 후 보고되었다. 다음과 같은 기형이 가장 흔하게 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "d7271f1336",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "구순열, 구개열, 소하악증, 양안격리증과 같은 얼굴 기형",
+   "extractor": "kw-v4",
+   "id": "2e14ddeac5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "귀 이상(예. 외이/중이의 비정상적인 형성 또는 결여) 및 눈 이상(예. 안검홍채맥락막의 선천적 결손, 소안구증)",
+   "extractor": "kw-v4",
+   "id": "c3c493571b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "손가락 기형(예. 다지증, 합지증, 단지증)",
+   "extractor": "kw-v4",
+   "id": "7e874b3f01",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "심방 및 심실 중격결손과 같은 심장이상",
+   "extractor": "kw-v4",
+   "id": "314f7556fd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (5)",
+   "subject": "",
+   "excerpt": "식도 기형(예. 식도폐쇄증)",
+   "extractor": "kw-v4",
+   "id": "0a9bebe029",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (6)",
+   "subject": "",
+   "excerpt": "신경계 기형(예. 척추갈림증)",
+   "extractor": "kw-v4",
+   "id": "f4b7e9ed57",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "의학 논문에 따르면 임신 중 이 약에 노출된 경우 정상 출산 중 23~27% 에서 기형이 보고되었다. 이와 비교하여 전체 인구에서 정상 출산 중 약 2% 에서 기형 위험이 예측되며, 이 약 이외에 다른 면역억제제를 복용하는 고형 장기 이식 환자에서 약 4~5% 에서 기형 위험이 예측된다.",
+   "extractor": "kw-v4",
+   "id": "66eadff5e3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 노출된 환자들에서 주로 임신 첫 3개월에 자연유산이 보고되었다. 의학 논문에 따르면, 이러한 위험은 이 약 이외에 다른 면역억제제를 복용하는 고형 장기 이식 환자에서 12~33% 로 보고된 것에 비해 이 약에 노출된 경우 45~49% 로 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "61b15108e8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물 생식독성 연구에 따르면, 모체독성이 없이도 태아흡수 및 기형발생 위험이 증가하였다. 이 연구에서는 신장 및 심장 이식환자의 성인 권장 용량을 체표면적으로 환산하여 0.02～0.9배에 해당하는 양을 암컷 랫트 및 토끼에 투여하였다. 랫트에서는 무안구증, 턱결손증, 수두증을 포함하는 기형이 발생하였다. 토끼에서는 심장전위, 신장전위, 횡격막 탈장, 배꼽탈장을 포함하는 기형이 발생하였다.",
+   "extractor": "kw-v4",
+   "id": "126e1384b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약은 임부 또는 매우 효과적인 피임법을 사용하고 있지 않은 임신 가능성이 있는 여성에게 투여해서는 안 된다. 치료 시작 전 생식능력이 있는 여성 및 남성 환자는 유산 및 선천성 기형의 위험성에 대해 인식하고 있어야 하며 임신 예방 및 계획에 대해 상담을 받아야 한다.",
+   "extractor": "kw-v4",
+   "id": "46ddffbaf6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임신가능성이 있는 여성은 치료 시작 전 적어도 25 mIU/mL의 감도를 가진 두 번의 혈청 또는 뇨 임신 진단 검사 시 음성이어야 한다. 두 번째 검사는 첫 번째 검사 8~10일 후 및 치료 시작 직전에 실시한다. 추적 방문 시 임신 진단 검사를 반복하여 실시한다. 모든 임신 진단 검사의 결과는 환자와 상의해야 한다. 임신 발생 시 환자는 즉시 의사와 상의해야한다.",
+   "extractor": "kw-v4",
+   "id": "c919f40dbf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "이 약은 돌연변이 및 기형 발생 가능성이 있기 때문에 가임기 여성(사춘기 여성 및 폐경전후기 여성을 포함)은 금욕을 하지 않는 한 이 약을 투여하기 전, 투여하는 동안, 투여 후 6주까지 적어도 하나의 매우 효과적인 방법을 포함하여 두 가지의 효과적인 피임법을 동시에 사용해야 한다. 성적으로 왕성한 남성은 투여기간 및 투여 후 적어도 90일 동안 콘돔사용이 권장된다. 정관 절제술을 한 남성도…",
+   "extractor": "kw-v4",
+   "id": "bb692dbeb0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "랫트를 이용한 실험에서 이 약물이 유즙을 통해 배설되고 있음이 확인되었다. 제한적인 자료에서 미코페놀산이 사람 모유로 이행될 수 있음이 확인되었다. 이 약물은 잠재적으로 심각한 이상반응을 나타낼 가능성이 있으므로, 수유부에 금기이다.",
+   "extractor": "kw-v4",
+   "id": "c47ea20fc8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 젊은 환자에 비해 감염증(거대세포바이러스[CMV]조직 침습증을 포함)과 위장관 출혈 및 폐부종 발생 위험이 더 증가할 수 있다. 이런 위험은 이 약을 면역억제제 병용요법의 일부분으로 투여할 때 더 심하다(용법용량항 참조). 고령자 신장 이식환자에서 명백히 더 높은 빈도로 발생한 기타 이상반응은 백혈구감소증, 혈청 크레아티닌 상승 및 호흡곤란이 있었다. 그러나 이들의 발생률은 아자티오…",
+   "extractor": "kw-v4",
+   "id": "73abc7651a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:43",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

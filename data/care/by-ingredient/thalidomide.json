@@ -1,0 +1,185 @@
+{
+ "ingredient": "thalidomide",
+ "productSeq": "201504776",
+ "itemName": "탈라이드캡슐100mg(탈리도마이드)",
+ "atc": "L04AX02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260930",
+ "ediCode": "052900060",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504776/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504776/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504776/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 5)",
+   "subject": "4.2) 정맥 및 동맥 혈전색전증",
+   "excerpt": "졸음, 진정, 기면: 이 약은 빈번하게 졸음, 기면 및 진정을 일으킨다. 환자들은 졸음이 문제가 될 수 있는 상황을 피하며, 충분한 의학적 조언 없이 졸음을 유발할 수 있는 다른 약을 복용하지 말아야 한다. 이 약은 알코올에 의한 졸음을 강화시킬 수 있다. 다른 진정제들처럼, 의식 장해의 가능성이 있으므로 음식, 토사물, 구강 분비물을 흡인할 위험이 증가될 수 있다. 환자들은 위험한 업무를…",
+   "extractor": "kw-v4",
+   "id": "70b6fe04c7",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약은 다른 약물의 진정효과를 증가시킬 수 있다. 이 약은 바르비탈산, 알코올, 클로르프로마진, 리세르핀의 진정효과를 강화하는 것으로 보고되었다. 이 약은 모르핀 유도체, 벤조디아제핀, 기타 항불안약, 수면제, 진정성 항불안제, 신경이완제, 진정성 H1 항히스타민제, 중추성 항고혈압약 및 바클로펜의 효과를 증가시킨다.",
+   "extractor": "kw-v4",
+   "id": "d6308dfc15",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용 5)",
+   "subject": "",
+   "excerpt": "이 약의 약물 상호작용은 아니지만 중요한 피임약과 상호작용을 하는 약물 HIV-프로테아제 저해제, 그리세오풀빈, 리팜핀, 리파부틴, 페니토인, 카르바마제핀 또는 St. John's Wort와 같은 생약보조성분과 호르몬성 피임제를 병용하면 피임제의 효과가 감소될 수 있다. 따라서, 이러한 약물 중 하나 이상을 복용해야 하는 임신할 가능성이 있는 여성은 두 가지의 효과적인 피임법을 사용해야 한다…",
+   "extractor": "kw-v4",
+   "id": "e6611805f8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 인간의 최기형성 약물로 알려져 있으며 어떠한 상황에서도 임신 중인 여성 또는 두 가지 효과적인 피임법을 사용하지 않는 임신 가능성이 있는 여성에게 절대 투여해서는 안 된다. 임산부가 1회 용량만 복용해도 선천성기형을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "dc8b825025",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 이 약을 복용하는 남성의 정액에서 발견되기 때문에, 파트너가 임신가능성이 있는 경우, 피임법을 사용해야 한다. 탈리도마이드를 복용한 남성의 정액에 의한 태아에 미치는 위험은 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "75bcbf22da",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "여성 환자 또는 남성 환자의 여성파트너가 월경예정일이 지났거나 출혈에 이상이 있거나, 임신한 것으로 의심되면 임신테스트와 상담을 받아야 한다. 만약 이 약을 복용하는 동안 환자가 임신하면 즉시 약물의 복용을 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "644350adbb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임신한 암컷토끼를 대상으로 출생전후 생식발생 독성시험이 수행되었으며 약물과 관련한 유산의 빈도나 태자독성이 30mg/kg/day(체표면적에 근거한 사람에 대한 최대용량 의 약 1.5배)의 저용량과 고용량에서 증가 하였다. 수유하는 암컷 토끼의 경구용량(≥150mg/kg/day, 체표면적에 근거한 사람에 대한 최대용량 의 약 7.5배)에서 신생아 사망률이 증가하였으며 학습 및 기억능력 등을 포…",
+   "extractor": "kw-v4",
+   "id": "5b8fd10e9d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "수유부에서의 사용 : 이 약이 유즙으로 배설되는 지는 알려져 있지 않다. 이 약을 복용하는 여성은 모유 수유를 해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "567b4b0f7f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자 및 신기능 및 간기능 저하환자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "건강한 지원자를 대상으로 한 약물동태 분석에서 연령과 관련된 변화는 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "ed03da8573",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자 및 신기능 및 간기능 저하환자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "신기능 및 간기능 부전 환자를 위한 특정 용량은 확립되지 않았지만, 신기능부전은 다발성골수종환자에서 흔한 합병증의 하나이고, 성인 추천용량은 신기능 부전인 환자를 포함한 환자군에서 확립된 것이다. 일반적으로, 신장 또는 간장 질환을 갖고 있는 환자에서 약물의 용량은 내약성 및 독성을 관찰하여 정해져야 하며 내약 용량 중 가장 높은 용량이 선택되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "85981f4981",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "29ef62b183",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "낮 동안 중추신경계에 대한 부작용 (졸리움, 기면, 진정)을 줄이기 위해 보통 저녁에 1회 투여한다. 이 약은 식사 후 적어도 1시간 후에 복용해야 한다.",
+   "meal": "식사 후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "3bc881c956",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "28일을 한 주기로 덱사메타손과 병용 투여한다. 이 약 200mg을 하루에 한 번 취침 전이나 저녁 식사 후 적어도 1시간 후에 물과 함께 복용한다. 덱사메타손은 매 28일동안 1-4일, 9-12일, 17-20일째 하루 40mg씩 경구 복용한다.",
+   "meal": "취침 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:05",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,121 +1,144 @@
 {
-  "ingredient": "ciprofloxacin",
-  "productSeq": "201403180",
-  "itemName": "시프록스주(시프로플록사신)",
-  "atc": "J01MA02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260323",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403180/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403180/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403180/NB"
-  },
-  "rules": [
+ "ingredient": "ciprofloxacin",
+ "productSeq": "201403180",
+ "itemName": "시프록스주(시프로플록사신)",
+ "atc": "J01MA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260323",
+ "ediCode": "629700041",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403180/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403180/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403180/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 6)",
+   "subject": "",
+   "excerpt": "이 약을 포함한 플로오르퀴놀론계 약물은 중추신경계 반응으로 인해 운전 또는 기계조작 능력에 장애를 일으킬 수 있다. 이는 특히 이 약을 알코올과 함께 복용할 때 적용된다.",
+   "extractor": "kw-v4",
+   "id": "2f6dfbd782",
+   "kind": "note",
+   "matched": [
     {
-      "id": "b2fef7b626",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 6)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약을 포함한 플로오르퀴놀론계 약물은 중추신경계 반응으로 인해 운전 또는 기계조작 능력에 장애를 일으킬 수 있다. 이는 특히 이 약을 알코올과 함께 복용할 때 적용된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d85c12afee",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "caffeine",
-          "kind": "food",
-          "ko": "카페인·커피",
-          "surface": "카페인"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약은 시토크롬 P450 1A2 효소의 작용을 억제하므로, 시토크롬 P450으로 대사되는 약물(테오필린, 메틸잔틴, 카페인, 둘록세틴, 로피니롤, 클로자핀, 올란자핀 등)의 혈청농도가 높아져 이들 약물의 독성이 증가할 수 있으므로 병용투여 시 주의해야 한다. 특히 테오필린과 이 약을 병용투여하면 테오필린의 혈중 농도를 증가시켜, 테오필린의 이상반응(심장정지, 신경발작, 간질상태, 호흡기 부…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b019f928f4",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 11)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "caffeine",
-          "kind": "food",
-          "ko": "카페인·커피",
-          "surface": "카페인"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 카페인 및 펜톡시필린을 병용투여 시 카페인 및 펜톡시필린의 대사를 저해하여 카페인 및 펜톡시필린의 혈중 반감기를 연장시킨다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7c0c99387f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험 결과에 의거하여 이 약의 투여로 미성숙 개체에서 관절연골 손상이 유발될 가능성을 완전히 배제할 수는 없었다. 사람에 대한 안전성은 확립되지 않았으므로 이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에게는 권장되지 않는다. 동물시험결과 최기형성의 가능성은 나타나지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a725ac9946",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 모유 중으로 이행되므로 수유기간에는 이 약을 투여하지 않거나, 수유를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "627d0bc870",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 주로 신장으로 배설되는데, 고령자는 신기능이 저하된 경우가 많아 높은 혈중농도가 지속될 위험이 있고 이상반응이 발현하기 쉬우므로, 용량 및 투여간격에 유의하여 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "454f791307",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "역학연구에 따르면 플루오로퀴놀론계 항균제 사용 후 2개월 이내에, 특히 고령자에서 대동맥류 또는 대동맥 박리 발생률이 증가하였다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:07:31"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약은 시토크롬 P450 1A2 효소의 작용을 억제하므로, 시토크롬 P450으로 대사되는 약물(테오필린, 메틸잔틴, 카페인, 둘록세틴, 로피니롤, 클로자핀, 올란자핀 등)의 혈청농도가 높아져 이들 약물의 독성이 증가할 수 있으므로 병용투여 시 주의해야 한다. 특히 테오필린과 이 약을 병용투여하면 테오필린의 혈중 농도를 증가시켜, 테오필린의 이상반응(심장정지, 신경발작, 간질상태, 호흡기 부…",
+   "extractor": "kw-v4",
+   "id": "a44b2c5428",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "이 약과 오메프라졸을 병용투여하면 이 약의 Cmax와 AUC가 약간 감소한다.",
+   "extractor": "kw-v4",
+   "id": "3268efa54c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 11)",
+   "subject": "",
+   "excerpt": "이 약과 카페인 및 펜톡시필린을 병용투여 시 카페인 및 펜톡시필린의 대사를 저해하여 카페인 및 펜톡시필린의 혈중 반감기를 연장시킨다.",
+   "extractor": "kw-v4",
+   "id": "b577eee30c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험 결과에 의거하여 이 약의 투여로 미성숙 개체에서 관절연골 손상이 유발될 가능성을 완전히 배제할 수는 없었다. 사람에 대한 안전성은 확립되지 않았으므로 이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에게는 권장되지 않는다. 동물시험결과 최기형성의 가능성은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "cd9e29602e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유 중으로 이행되므로 수유기간에는 이 약을 투여하지 않거나, 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "86b0d69aa7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 주로 신장으로 배설되는데, 고령자는 신기능이 저하된 경우가 많아 높은 혈중농도가 지속될 위험이 있고 이상반응이 발현하기 쉬우므로, 용량 및 투여간격에 유의하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c13118baa4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "역학연구에 따르면 플루오로퀴놀론계 항균제 사용 후 2개월 이내에, 특히 고령자에서 대동맥류 또는 대동맥 박리 발생률이 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "8dbd85d167",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

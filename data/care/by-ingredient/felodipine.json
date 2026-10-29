@@ -1,119 +1,123 @@
 {
-  "ingredient": "felodipine",
-  "productSeq": "201308906",
-  "itemName": "펠로딥정(펠로디핀)",
-  "atc": "C08CA02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20200622",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308906/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308906/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308906/NB"
-  },
-  "rules": [
+ "ingredient": "felodipine",
+ "productSeq": "201308906",
+ "itemName": "펠로딥정(펠로디핀)",
+ "atc": "C08CA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200622",
+ "ediCode": "640902630",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308906/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308906/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308906/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 9)",
+   "subject": "",
+   "excerpt": "이 약과 자몽(grapefruit)주스와 함께 투여하는 경우에는 이 약과 쥬스의 플라보노이드 성분과의 상호작용에 의해 Cmax와 AUC가 두 배 증가했다. 따라서 이 약과 자몽 주스를 함께 복용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "6c85b357f9",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "7470a97cf7",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 9)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 자몽(grapefruit)주스와 함께 투여하는 경우에는 이 약과 쥬스의 플라보노이드 성분과의 상호작용에 의해 Cmax와 AUC가 두 배 증가했다. 따라서 이 약과 자몽 주스를 함께 복용하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ae2f733638",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험의 생식과정에서 태자손상이나 기타 유해작용의 발생을 증가시켰다는 보고가 있으나 사람에 관한 유의성은 명확하지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7f2efd0c54",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(토끼)에서 이 약의 투여용량과 관련하여 암컷 토끼의 유선(mammary gland)을 가역적으로 확장시키고 태자발육의 초기단계에서 태자의 말단지절(distalphalanges)에 비정상적인 결과가 나타났다는 보고가 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "48566fb178",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트에 대한 수태 및 생식시험에서 투여용량과 연관하여 분만과정을 악화시켜 분만지연, 태자 및 신생자의 사망률 증가가 나타났다는 보고가 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "df02732c96",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 안전성이 아직 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3f49cb6971",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 5)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 모유중으로의 이행이 보고되어 있으므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a7895327d5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 6)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "칼슘길항제는 자궁의 조기 수축을 저해할 수 있다. 분만이 지연된다는 증거는 없다. 산모 저혈압 및 말초혈관확장으로 인한 혈류의 재배치로 인해 자궁 관류가 감소된 경우 태아저산소증이 나타날 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "00a36948ba",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자에서의 과도한 혈압강하는 바람직하지 않으므로(뇌경색등이 나타날 수 있다.) 저용량(1일 1회 2.5㎎)에서 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
-      "extractor": "kw-v1"
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:12:35"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험의 생식과정에서 태자손상이나 기타 유해작용의 발생을 증가시켰다는 보고가 있으나 사람에 관한 유의성은 명확하지 않다.",
+   "extractor": "kw-v4",
+   "id": "99ec667977",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(토끼)에서 이 약의 투여용량과 관련하여 암컷 토끼의 유선(mammary gland)을 가역적으로 확장시키고 태자발육의 초기단계에서 태자의 말단지절(distalphalanges)에 비정상적인 결과가 나타났다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "e5b5501142",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "랫트에 대한 수태 및 생식시험에서 투여용량과 연관하여 분만과정을 악화시켜 분만지연, 태자 및 신생자의 사망률 증가가 나타났다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "11840c802e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 아직 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "f57cee1930",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "동물실험에서 모유중으로의 이행이 보고되어 있으므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "8ec6c9fed2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "칼슘길항제는 자궁의 조기 수축을 저해할 수 있다. 분만이 지연된다는 증거는 없다. 산모 저혈압 및 말초혈관확장으로 인한 혈류의 재배치로 인해 자궁 관류가 감소된 경우 태아저산소증이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "35107f6c2b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서의 과도한 혈압강하는 바람직하지 않으므로(뇌경색등이 나타날 수 있다.) 저용량(1일 1회 2.5㎎)에서 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "81910481de",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

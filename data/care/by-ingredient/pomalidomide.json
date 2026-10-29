@@ -1,100 +1,104 @@
 {
-  "ingredient": "pomalidomide",
-  "productSeq": "202401934",
-  "itemName": "포말리킨캡슐3밀리그램(포말리도마이드)",
-  "atc": "L04AX06",
-  "etcOtc": "전문의약품",
-  "changeDate": "20251002",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401934/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401934/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401934/NB"
+ "ingredient": "pomalidomide",
+ "productSeq": "202401934",
+ "itemName": "포말리킨캡슐3밀리그램(포말리도마이드)",
+ "atc": "L04AX06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251002",
+ "ediCode": "641908470",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401934/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401934/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401934/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 : 인간에 대한 이 약의 기형 유발이 예상된다. 피임을 위한 모든 조건들이 부합된 경우를 제외하고, 이 약은 임신 중과 임신 가능성이 있는 여성에게 사용되어서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "d44faf01d9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "f8c0c2a75f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 : 인간에 대한 이 약의 기형 유발이 예상된다. 피임을 위한 모든 조건들이 부합된 경우를 제외하고, 이 약은 임신 중과 임신 가능성이 있는 여성에게 사용되어서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e78857839f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "남성 : 이 약은 인간의 정액에 존재하므로 이 약을 복용 중인 남성 환자의 경우, 배우자가 임신 중 또는 임신 가능성이 있고 피임을 하지 않는 경우, 피임법을 사용해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ed188f55a7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유 : 이 약이 유즙으로 배설되는지의 여부는 알려져 있지 않다. 쥐의 모체에 투여 후 수유중인 쥐의 유즙에서 이 약이 검출되었다. 이 약에 의한 수유 중인 영아에서의 이상반응 가능성이 있으므로 모체에 대한 약의 중요도에 따라 수유 또는 의약품의 중단 여부에 대한 결정이 이루어져야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d2b08e1351",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 동물에서 생식능력에 부정적인 영향을 미치며 발생독성을 유발하는 것으로 밝혀졌다. 이 약이 임신한 토끼에게 투여된 후 태반을 통과하며 태자의 혈액에서 검출되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "14fa9329c6",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 고령자에 대한 용량 조정은 필요하지 않다. 단, 75세 초과 환자의 경우 덱사메타손의 시작 용량은 다음과 같다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f1d5d7d712",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이전에 레날리도마이드를 포함한 한 가지 이상의 치료를 받은 다발골수종 환자의 치료에 보르테조밉 및 덱사메타손과의 병용요법: 1에서 8주기까지 각 21일 치료주기의 제 1일, 2일, 4일, 5일, 8일, 9일, 11일 및 12일에 10mg을 1일 1회 투여한다. 9주기 이상부터 각 21일 치료주기의 제 1일, 2일, 8일 및 9일에 10mg을 1일 1회 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b61dc27c2c",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이전에 레날리도마이드와 보르테조밉을 포함한 최소 두 가지 치료를 받고, 재발 또는 불응한 다발골수종 환자의 치료에 덱사메타손과 병용요법: 각 28일 치료주기의 제 1일, 8일, 15일 및 22일에 20mg을 1일 1회 투여한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:19:11"
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "남성 : 이 약은 인간의 정액에 존재하므로 이 약을 복용 중인 남성 환자의 경우, 배우자가 임신 중 또는 임신 가능성이 있고 피임을 하지 않는 경우, 피임법을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "83577aee49",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유 : 이 약이 유즙으로 배설되는지의 여부는 알려져 있지 않다. 쥐의 모체에 투여 후 수유중인 쥐의 유즙에서 이 약이 검출되었다. 이 약에 의한 수유 중인 영아에서의 이상반응 가능성이 있으므로 모체에 대한 약의 중요도에 따라 수유 또는 의약품의 중단 여부에 대한 결정이 이루어져야 한다.",
+   "extractor": "kw-v4",
+   "id": "c4b5612f5c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "이 약은 동물에서 생식능력에 부정적인 영향을 미치며 발생독성을 유발하는 것으로 밝혀졌다. 이 약이 임신한 토끼에게 투여된 후 태반을 통과하며 태자의 혈액에서 검출되었다.",
+   "extractor": "kw-v4",
+   "id": "e97c63b103",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 고령자에 대한 용량 조정은 필요하지 않다. 단, 75세 초과 환자의 경우 덱사메타손의 시작 용량은 다음과 같다.",
+   "extractor": "kw-v4",
+   "id": "915895677c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이전에 레날리도마이드를 포함한 한 가지 이상의 치료를 받은 다발골수종 환자의 치료에 보르테조밉 및 덱사메타손과의 병용요법: 1에서 8주기까지 각 21일 치료주기의 제 1일, 2일, 4일, 5일, 8일, 9일, 11일 및 12일에 10mg을 1일 1회 투여한다. 9주기 이상부터 각 21일 치료주기의 제 1일, 2일, 8일 및 9일에 10mg을 1일 1회 투여한다.",
+   "extractor": "kw-v4",
+   "id": "8193bcab8b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이전에 레날리도마이드와 보르테조밉을 포함한 최소 두 가지 치료를 받고, 재발 또는 불응한 다발골수종 환자의 치료에 덱사메타손과 병용요법: 각 28일 치료주기의 제 1일, 8일, 15일 및 22일에 20mg을 1일 1회 투여한다.",
+   "extractor": "kw-v4",
+   "id": "e311f1e8fc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

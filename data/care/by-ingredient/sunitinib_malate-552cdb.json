@@ -1,0 +1,154 @@
+{
+ "ingredient": "sunitinib malate",
+ "productSeq": "200606180",
+ "itemName": "수텐캡슐12.5밀리그램(수니티닙말산염)",
+ "atc": "L01EX01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20241025",
+ "ediCode": "648900470",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606180/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606180/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606180/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 약물 상호작용 (2)",
+   "subject": "",
+   "excerpt": "이 약과 강력한 CYP3A4 저해제(케토코나졸, 이트라코나졸, 에리트로마이신, 클래리트로마이신, 자몽주스, 아타자나비르, 인디나비르, 네파조돈, 넬피나비르, 리토나비르, 사퀴나비르, 텔리트로마이신, 보리코나졸 등)의 병용투여는 수니티닙의 혈중농도를 증가시킬 수 있다. 따라서 저해제와의 병용 투여를 피하거나, 또는 CYP3A4의 저해 가능성이 없거나 최소인 다른 병용 약물의 선택을 고려해야 한…",
+   "extractor": "kw-v4",
+   "id": "2acda8e84c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 약물 상호작용 (2)",
+   "subject": "",
+   "excerpt": "이 약과 강력한 CYP3A4 유도제(덱사메타손, 페니토인, 카바마제핀, 리팜핀, 리파부틴, 리파펜틴, 페노바르비탈, 세인트 존스워트로도 알려져 있는 Hypericum perforatum 등)의 병용투여는 수니티닙의 혈중농도를 예측 불가능한 범위로 감소시킬 수 있다. 따라서 유도제와의 병용 투여를 피하거나, 또는 CYP3A4의 유도 가능성이 없거나 최소인 다른 병용 약물의 선택을 고려해야 한다…",
+   "extractor": "kw-v4",
+   "id": "79098a34b8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "e82ea035aa",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 사용하는 임부를 대상으로 한 충분하고 적절하게 평가된 임상시험은 이루어지지 않았다. 동물 시험에서는 태아 기형을 포함하는 생식 독성이 관찰되었다. 이 약은 임신기간 동안 또는 적절한 피임을 하고 있지 않은 가임 여성에게는 치료상의 유익성이 태아에 대한 위험성을 상회한다고 판단되는 경우가 아니면 투여해서는 안 된다. 이 약을 임신 중 투여하거나, 이 약을 투여하는 동안 임신이 된 환자…",
+   "extractor": "kw-v4",
+   "id": "c944a193cd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "7a03d30383",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수니티닙과 그 대사체는 랫드의 유즙으로 이행되었다. 수니티닙 15 mg/kg을 수유 랫드에 투여한 결과 수니티닙 및 그 대사체는 혈장보다 12배까지 높은 농도로 광범위하게 유즙으로 분비되었다. 수니티닙과 활성대사체가 사람에서도 유즙으로 이행되는 여부는 알려지지 않았다. 이 약의 모유 이행 가능성과 수유아에 대한 중대한 이상반응 가능성으로 인해 이 약을 투여하는 동안에는 수유를 중단하여야 한다…",
+   "extractor": "kw-v4",
+   "id": "21aa01ae8d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "df3346b039",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "비임상 결과에 근거할 때, 이 약의 투여 시 남성 및 여성의 수태능이 저하될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "2135f58e19",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상시험에서 수니티닙을 투여받은 위장관 기저종양 및 전이성 신세포암 환자 825명중 277명(34%), 췌장내분비종양 환자 22명(27%)이 65세 이상이었다. 젊은이와 고령자간에 안전성이나 유효성의 유의한 차이는 없었다.",
+   "extractor": "kw-v4",
+   "id": "5b0e1c242d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "신세포암 수술후 보조요법으로 수니티닙 또는 위약을 투여받은 65세 이상의 환자들에서, 3-4등급의 이상반응이 위약투여군 15명(5%)에서 나타난 것에 비해, 수니티닙 투여군에서는 50명(16%)에서 나타났다.",
+   "extractor": "kw-v4",
+   "id": "0ffc901dd6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:48",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

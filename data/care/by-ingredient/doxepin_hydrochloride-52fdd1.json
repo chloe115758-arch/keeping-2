@@ -1,0 +1,185 @@
+{
+ "ingredient": "doxepin hydrochloride",
+ "productSeq": "201310842",
+ "itemName": "사일레노정3밀리그램(독세핀염산염)",
+ "atc": "N05CM",
+ "etcOtc": "전문의약품",
+ "changeDate": "20201225",
+ "ediCode": "640006660",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310842/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310842/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310842/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "수면제 투여 시, 수면운전(수면제 투여 후 완전히 깨지 않은 상태에서 운전하며 환자는 이를 기억하지 못함)과 같은 복합적 행동이 보고된 바 있다. 이러한 사례는 수면제를 투여받던 사람 뿐만 아니라 수면제를 처음 복용한 사람에서도 나타날 수 있다. 수면제를 치료용량으로 단독투여 시에도 수면운전과 같은 행동이 나타날 수 있지만, 알콜이나 다른 중추신경억제제와 수면제를 함께 투여하는 경우는 수면제…",
+   "extractor": "kw-v4",
+   "id": "5fa4d4e236",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "이 약을 투여했을 때 알코올, 항히스타민제 및 다른 중추신경 억제제의 진정효과가 상승할 수 있으므로, 이 약과 알코올을 함께 섭취하면 안 되고 항히스타민제 또는 다른 중추신경 억제제와 이 약을 병용할 경우 나타날 수 있는 상가 효과에 대해 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "7da688ff9b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "4. 상호작용 3)",
+   "subject": "",
+   "excerpt": "알코올 : 이 약은 알코올의 진정효과를 상승시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "cdff62e273",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "bcef5e0492",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 이 약의 적절하고 잘 통제된 임상시험이 없다. 임신 기간동안은 유익성이 태아에 대한 위험성을 상회한다고 판단되는 경우에만 이 약을 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "5e11dfda64",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 동물에 독세핀을 투여했을 때 사람에서 최대 권장용량인 6mg/day보다 높은 용량에서 태자 발생에 대한 이상반응이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "4e18eec2b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 랫드의 기관형성기간 중에 독세핀 30, 100, 150mg/kg/day를 경구투여 했을 때 100mg/kg/day 이상 투여군에서 발생 독성(태자의 구조적 이상 발생 증가, 태자의 체중 감소)이 나타났다. 랫드의 배태자 발생독성에 대한 무해용량인 30mg/kg/day에서 독세핀 및 대사체(nordoxepin)의 혈장 AUC는 사람에서 최대 권장용량에서의 혈장 AUC보다 각각 6배 및…",
+   "extractor": "kw-v4",
+   "id": "dfba8984b9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "1dc8bc1573",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 경구투여 후 모유 중으로 이행되므로 이 약을 수유부에게 투여할 경우에는 주의가 필요하다. 또한 우울증을 치료하기 위해 사용되는 것보다 고용량으로 이 약을 투여하는 중에 수유한 유아에서 기면 및 무호흡이 나타났다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "3eb701f7d0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상시험에서 65세 이상 고령자는 362명 그리고 75세 이상은 86명이 이 약을 투여받았다. 이들과 젊은 성인의 안전성유효성에서 전체적으로 차이가 관찰되지 않았다. 보다 민감한 고령자들을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "9bac21c500",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "수면 개선 약물들은 고령자에서 혼돈 및 진정과다을 유발할 수 있다. 고령자에서의 권장 시작용량은 3mg이고, 용량 증가를 고려하기 전 평가가 권장된다.",
+   "extractor": "kw-v4",
+   "id": "fabca3ad74",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "f5279a6d81",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 취침 전 30분 이내에 복용해야 하며 다음날에 미치는 영향을 최소화하기 위해 식사 후 3시간 이내에는 복용하지 않아야 한다.",
+   "meal": "취침 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:09",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

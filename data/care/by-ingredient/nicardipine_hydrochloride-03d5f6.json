@@ -1,0 +1,68 @@
+{
+ "ingredient": "nicardipine hydrochloride",
+ "productSeq": "199500184",
+ "itemName": "동아페르디핀주사액(니카르디핀염산염)",
+ "atc": "C08CA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20211230",
+ "ediCode": "642501301",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500184/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500184/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500184/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 등에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 등 : 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다(동물실험에서 임신말기에 투여하면 고용량에서는 태자 사망의 증가, 분만 장애, 출생자의 체중감소 및 출생 후 체중증가의 억제가 보고되어 있다). 임부 투여시 급성 폐부종이 보고된 바 있다(3. 신중투여항 참조).",
+   "extractor": "kw-v4",
+   "id": "2d8ce8fcb8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 등에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 수유 중인 부인에는 투여하지 않는 것이 바람직하나 부득이하게 투여하는 경우에는 수유하지 않도록 한다(동물실험에서 모유 중으로 이행하는 것이 보고되어 있다).",
+   "extractor": "kw-v4",
+   "id": "635840cbae",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 등에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신중 고혈압에 투여시 태아에게 해가 되거나 자칫 태아 사망까지도 유발할 수 있기 때문에 반드시 점진적으로 혈압을 강하시키되, 수시로 상태를 체크해야 한다.",
+   "extractor": "kw-v4",
+   "id": "1720130514",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 사용할 때는 저용량(예를 들면 0.5㎍/㎏/분으로 점적정주)부터 투여를 시작하고 경과를 충분히 관찰하면서 신중히 투여한다(고령자에서는 생리기능(간기능, 신기능 등)이 저하되어 있을 가능성이 높다).",
+   "extractor": "kw-v4",
+   "id": "1742f67bbb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:33",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,147 @@
+{
+ "ingredient": "cabergoline",
+ "productSeq": "201309603",
+ "itemName": "카버락틴정(카베르골린)",
+ "atc": "G02CB03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200106",
+ "ediCode": "657306140",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309603/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309603/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309603/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 15)",
+   "subject": "",
+   "excerpt": "이 약의 내약성에 대한 알코올의 효과는 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "26a97627a1",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임여성 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 및 가임여성에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "03c449c082",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임여성 및 수유부에 대한 투여 ①",
+   "subject": "",
+   "excerpt": "카베르골린 치료를 받은 256명의 임산부에 대한 12년간의 추적관찰 결과, 17명(6.6%)에서 선천적 기형이 발생하거나 임신중절을 하였다. 신생아 23/258명에서 총 27건의 주요하고 경미한 기형이 나타났다. 근골격계 기형이 가장 흔한 기형발생건(10)이며, 그 다음이 심폐기형(5) 이다. 자궁 내에서 카베르골린에 노출된 태아의 출산 전후 장애 또는 장기적인 발육 장애에 관한 정보는 알려…",
+   "extractor": "kw-v4",
+   "id": "4cab8d4540",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임여성 및 수유부에 대한 투여 ②",
+   "subject": "",
+   "excerpt": "이 약을 복용하기 전, 임산부는 복용대상에서 제외시킨다. 이 약을 복용한 지 최소 1개월 이내에는 임신하지 않도록 한다. 고프로락틴혈증 환자에서 이 약 의 반감기는 79~115 시간이었으며, 임신을 희망하는 여성의 경우 정상적인 배란주기가 시작되면 계획된 임신 예정일로부터 1개월 전에는 이 약의 복용을 중단한다. 이는 이 약에 태아가 노출될 가능성을 최대한 방지하기 위함이다.",
+   "extractor": "kw-v4",
+   "id": "7303730319",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임여성 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 복용하는 중에 임신할 경우 신속히 복용을 중단하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "f7b009d69c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임여성 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "fb47def37b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임여성 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "렛트에서 이 약 또는 이 약의 대사체가 유즙으로 이행되었으나, 사람에서 모유로의 이행에 관한 정보는 확인되지 않았다. 그러나 이 약에 의한 유즙분비 억제가 실패한 경우에는 모유 슈유를 중단하도록 권장한다.",
+   "extractor": "kw-v4",
+   "id": "387e09f23f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임여성 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 유즙분비를 억제하므로, 수유를 희망하는 고프로락틴혈증 질환을 가진 산모는 복용하지 말아야 한다.",
+   "extractor": "kw-v4",
+   "id": "7d072408f9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 고령자에 대한 경험은 매우 제한적이다. 가용한 자료는 특별한 위험을 나타내지 않는다.",
+   "extractor": "kw-v4",
+   "id": "1d046573a6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "1801e008f6",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약과 같은 도파민 작용제는 음식과 함께 복용할 때 내약성이 향상되므로, 이 약은 모든 적응증에 식사 직후 복용하도록 한다.",
+   "meal": "식사 직후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:19",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

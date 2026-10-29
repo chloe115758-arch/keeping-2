@@ -1,0 +1,56 @@
+{
+ "ingredient": "linezolid",
+ "productSeq": "201402365",
+ "itemName": "리네졸린정600밀리그램(리네졸리드)",
+ "atc": "J01XX08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240611",
+ "ediCode": "642403870",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402365/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402365/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402365/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임신한 여성을 대상으로 한 적절한 연구가 없으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 잠재적인 유익성이 태아에 대한 위험성을 상회한다고 판단되는 경우에만 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "553bdd537f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 및 그 대사산물이 유즙 중으로 분비되었다는 동물 데이터가 있으므로 이 약을 투여하기 전과 투여 중에 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "a7099745d1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "3상 약물대조 임상시험에서 이 약을 투여 받은 2,046명의 환자 중 589명(29 %)이 65세 이상이었으며 253명(12 %)은 75세 이상이었다. 고령 환자와 젊은 환자 사이에 전반적인 안전성 또는 유효성의 차이는 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "c3769b3ae0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:29",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

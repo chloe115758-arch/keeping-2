@@ -42,10 +42,12 @@
     "itemSeq": "202300587"
   },
   "amlodipine besylate + telmisartan": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(아이스타정40/5mg→0건)에 EDI_CODE 052400460 없음",
-    "productCode": "052400460",
-    "productName": "아이스타정40/5mg"
+    "status": "ok",
+    "reason": "",
+    "productCode": "052701050",
+    "productName": "에이티스타정40/5밀리그램",
+    "method": "후보2 · 전체 이름",
+    "itemSeq": "201700618"
   },
   "atorvastatin calcium + ezetimibe": {
     "status": "ok",
@@ -97,10 +99,12 @@
     "itemSeq": "201805354"
   },
   "celecoxib": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(메디브렉스캡슐100mg(세레콕시브)→0건, 메디브렉스캡슐100mg→0건)에 EDI_CODE 052400960 없음",
+    "status": "ok",
+    "reason": "",
     "productCode": "052400960",
-    "productName": "메디브렉스캡슐100mg(세레콕시브)"
+    "productName": "메디브렉스캡슐100mg(세레콕시브)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201901049"
   },
   "empagliflozin + metformin hydrochloride": {
     "status": "ok",
@@ -131,8 +135,8 @@
     "itemSeq": "201904787"
   },
   "_calls": {
-    "date": "2026-10-29",
-    "count": 981
+    "date": "2026-10-30",
+    "count": 1093
   },
   "sodium hyaluronate": {
     "status": "ok",
@@ -247,10 +251,12 @@
     "itemSeq": "201600080"
   },
   "levofloxacin": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "052400571",
-    "productName": "레보아점안액0.5%(레보플록사신)"
+    "productName": "레보아점안액0.5%(레보플록사신)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201708129"
   },
   "linagliptin + metformin hydrochloride": {
     "status": "ok",
@@ -505,10 +511,12 @@
     "itemSeq": "201907931"
   },
   "dexibuprofen": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(덱스론정400mg(덱시부프로펜)→0건, 덱스론정400mg→0건)에 EDI_CODE 628900160 없음",
+    "status": "ok",
+    "reason": "",
     "productCode": "628900160",
-    "productName": "덱스론정400mg(덱시부프로펜)"
+    "productName": "덱스론정400mg(덱시부프로펜)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201404202"
   },
   "ginkgo biloba leaf ext.": {
     "status": "ok",
@@ -574,10 +582,12 @@
     "itemSeq": "201803547"
   },
   "artemisiae argyi folium ethanol ext.(20→1)": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "059001290",
-    "productName": "가스토렌정(애엽95%에탄올연조엑스(20→1))"
+    "productName": "가스토렌정(애엽95%에탄올연조엑스(20→1))",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "201904478"
   },
   "methylprednisolone": {
     "status": "ok",
@@ -630,7 +640,7 @@
   },
   "edoxaban tosylate hydrate": {
     "status": "unresolved",
-    "reason": "미해결: 목록(릭시엔정60밀리그램(에독사반토실산염수화물)→1건, 릭시엔정60밀리그램→1건)에 EDI_CODE 640008130 없음",
+    "reason": "미해결: 후보1 전체 이름「릭시엔정60밀리그램(에독사반토실산염수」→1건 / 후보1 괄호 앞까지「릭시엔정60밀리그램」→1건 / 후보1 앞 6글자「릭시엔정60」→1건 / 후보1 앞 4글자「릭시엔정」→3건 / 후보2 전체 이름「릭시엔정30밀리그램(에독사반토실산염수」→1건 / 후보2 괄호 앞까지「릭시엔정30밀리그램」→1건 / 후보2 앞 6글자「릭시엔정30」→1건 / 후보2 앞 4글자「릭시엔정」→3건 / 후보3 전체 이름「릭시엔정15밀리그램(에독사반토실산염수」→1건 / 후보3 괄호 앞까지「릭시엔정15밀리그램」→1건 / 후보3 앞 6글자「릭시엔정15」→1건 / 후보3 앞 4글자「릭시엔정」→3건",
     "productCode": "640008130",
     "productName": "릭시엔정60밀리그램(에독사반토실산염수화물)"
   },
@@ -719,10 +729,12 @@
     "itemSeq": "201906988"
   },
   "sodium chloride": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "640001051",
-    "productName": "이노엔0.45%생리식염주사액"
+    "productName": "이노엔0.45%생리식염주사액",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "199101337"
   },
   "ezetimibe + simvastatin": {
     "status": "ok",
@@ -802,16 +814,20 @@
     "itemSeq": "201501855"
   },
   "dextrose": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "640001121",
-    "productName": "이노엔10%포도당주사액"
+    "productName": "이노엔10%포도당주사액",
+    "method": "후보1 · 앞 4글자",
+    "itemSeq": "199101312"
   },
   "fluorometholone": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "052400551",
-    "productName": "플루아이점안액0.1%(플루오로메톨론)"
+    "productName": "플루아이점안액0.1%(플루오로메톨론)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201707502"
   },
   "terazosin hydrochloride": {
     "status": "ok",
@@ -891,10 +907,12 @@
     "itemSeq": "202107115"
   },
   "carboxymethyl cellulose sodium": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "052402241",
-    "productName": "카보아이점안액1%(카르복시메틸셀룰로오스나트륨)(1회용)"
+    "productName": "카보아이점안액1%(카르복시메틸셀룰로오스나트륨)(1회용)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "202302284"
   },
   "pantoprazole sodium": {
     "status": "ok",
@@ -960,10 +978,12 @@
     "itemSeq": "201404258"
   },
   "amino acids": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "640001151",
-    "productName": "이노엔10%후라바솔주"
+    "productName": "이노엔10%후라바솔주",
+    "method": "후보1 · 앞 4글자",
+    "itemSeq": "199201368"
   },
   "apixaban": {
     "status": "ok",
@@ -987,10 +1007,12 @@
     "itemSeq": "202003159"
   },
   "prednicarbate": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "057000661",
-    "productName": "프레디원로션0.25%(프레드니카르베이트)"
+    "productName": "프레디원로션0.25%(프레드니카르베이트)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201507376"
   },
   "cefuroxime axetil": {
     "status": "ok",
@@ -1196,10 +1218,12 @@
     "itemSeq": "201706587"
   },
   "pelargonium sidoides ethanol ext.(1→8~10)": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "059000360",
-    "productName": "브론벤트정(펠라고니움시도이데스11%에탄올건조엑스(5.5~6.6→1))"
+    "productName": "브론벤트정(펠라고니움시도이데스11%에탄올건조엑스(5.5~6.6→1))",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "201907156"
   },
   "sodium alginate": {
     "status": "ok",
@@ -1293,10 +1317,12 @@
     "itemSeq": "202203819"
   },
   "hydrocortisone((mL))": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "057000231",
-    "productName": "순앤로션2.5%(히드로코르티손)"
+    "productName": "순앤로션2.5%(히드로코르티손)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201507379"
   },
   "paroxetine hydrochloride": {
     "status": "ok",
@@ -1376,10 +1402,12 @@
     "itemSeq": "202401573"
   },
   "pelargonium sidoides ethanol ext.(1→8~10)ㆍglycerin mixed solution(8:2)": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "640902341",
-    "productName": "펠라스시럽(펠라고니움시도이데스11%에탄올추출물(1→8~10)ㆍ글리세린혼합액(8:2))"
+    "productName": "펠라스시럽(펠라고니움시도이데스11%에탄올추출물(1→8~10)ㆍ글리세린혼합액(8:2))",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "201109893"
   },
   "tramadol hydrochloride": {
     "status": "ok",
@@ -1424,10 +1452,12 @@
     "itemSeq": "199801540"
   },
   "cyclosporin": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "622804011",
-    "productName": "사이프리엠점안액0.05%(사이클로스포린)(1회용)"
+    "productName": "사이프리엠점안액0.05%(사이클로스포린)(1회용)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201906144"
   },
   "fluorometholone + tetrahydrozoline hydrochloride": {
     "status": "ok",
@@ -1458,10 +1488,12 @@
     "itemSeq": "200200963"
   },
   "propofol": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "650901841",
-    "productName": "프레조폴엠시티2%주(프로포폴)(바이알)"
+    "productName": "프레조폴엠시티2%주(프로포폴)(바이알)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201100954"
   },
   "sitagliptin phosphate hydrate": {
     "status": "ok",
@@ -1520,10 +1552,12 @@
     "itemSeq": "202106854"
   },
   "dextrose + sodium chloride": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "640001340",
-    "productName": "이노엔5%포도당생리식염주사액"
+    "productName": "이노엔5%포도당생리식염주사액",
+    "method": "후보1 · 앞 4글자",
+    "itemSeq": "199101315"
   },
   "empagliflozin L-proline + metformin hydrochloride": {
     "status": "ok",
@@ -1561,10 +1595,12 @@
     "itemSeq": "201600934"
   },
   "atomoxetine hydrochloride": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(아토세틴정40밀리그램(아토목세틴염산염)→1건, 아토세틴정40밀리그램→1건)에 EDI_CODE 642405380 없음",
-    "productCode": "642405380",
-    "productName": "아토세틴정40밀리그램(아토목세틴염산염)"
+    "status": "ok",
+    "reason": "",
+    "productCode": "651903860",
+    "productName": "아토목신캡슐40밀리그램(아토목세틴염산염)",
+    "method": "후보3 · 전체 이름",
+    "itemSeq": "201307635"
   },
   "celecoxib + 당귀·목과·방풍·속단·오가피·우슬·위령선·육계·진교·천궁·천마·홍화 ethanol soft ext.(3.5→1)": {
     "status": "ok",
@@ -1588,10 +1624,12 @@
     "itemSeq": "201905648"
   },
   "ivy leaf ethanol dried ext.(5~7.5→1)": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "073001571",
-    "productName": "헤데릴시럽(아이비엽30%에탄올건조엑스(5∼7.5→1))"
+    "productName": "헤데릴시럽(아이비엽30%에탄올건조엑스(5∼7.5→1))",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "202302178"
   },
   "leflunomide": {
     "status": "ok",
@@ -1629,10 +1667,12 @@
     "itemSeq": "200400510"
   },
   "ivy leaf ethanol fluid ext.": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "622803041",
-    "productName": "아이브로시럽(아이비엽70%에탄올유동엑스)"
+    "productName": "아이브로시럽(아이비엽70%에탄올유동엑스)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "201707591"
   },
   "polystyrene sulfonate calcium": {
     "status": "ok",
@@ -1733,10 +1773,12 @@
     "itemSeq": "200500407"
   },
   "linagliptin besylate + metformin hydrochloride": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(트립엠듀오정2.5/1000밀리그램(리나글립틴,메트포르민)→1건, 트립엠듀오정2.5/1000밀리그램→1건)에 EDI_CODE 622805260 없음",
-    "productCode": "622805260",
-    "productName": "트립엠듀오정2.5/1000밀리그램(리나글립틴,메트포르민)"
+    "status": "ok",
+    "reason": "",
+    "productCode": "622805280",
+    "productName": "트립엠듀오정2.5/500밀리그램(리나글립틴,메트포르민)",
+    "method": "후보3 · 전체 이름",
+    "itemSeq": "202401055"
   },
   "mometasone furoate((mL))": {
     "status": "ok",
@@ -1746,10 +1788,12 @@
     "itemSeq": "201906472"
   },
   "morphine sulfate": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(엠에스알서방정10밀리그람(황산모르핀)→0건, 엠에스알서방정10밀리그람→0건)에 EDI_CODE 657801450 없음",
+    "status": "ok",
+    "reason": "",
     "productCode": "657801450",
-    "productName": "엠에스알서방정10밀리그람(황산모르핀)"
+    "productName": "엠에스알서방정10밀리그람(황산모르핀)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "199704618"
   },
   "perampanel": {
     "status": "ok",
@@ -1815,10 +1859,12 @@
     "itemSeq": "201308657"
   },
   "2-deoxy-2-fluoro-D-glucose (18F) injection 0.037GBq(1mCi)": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(카이바이오텍에프디지주사액(2-데옥시-2-플루오로-D-글루코스(18F)액)→0건, 카이바이오텍에프디지주사액액)→0건)에 EDI_CODE 051800010 없음",
+    "status": "ok",
+    "reason": "",
     "productCode": "051800010",
-    "productName": "카이바이오텍에프디지주사액(2-데옥시-2-플루오로-D-글루코스(18F)액)"
+    "productName": "카이바이오텍에프디지주사액(2-데옥시-2-플루오로-D-글루코스(18F)액)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "201507666"
   },
   "alfuzosin hydrochloride": {
     "status": "ok",
@@ -1975,10 +2021,12 @@
     "itemSeq": "200805235"
   },
   "lidocaine hydrochloride": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "053500031",
-    "productName": "리도카글액2%(리도카인염산염수화물)"
+    "productName": "리도카글액2%(리도카인염산염수화물)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201702423"
   },
   "naproxen sodium": {
     "status": "ok",
@@ -2128,10 +2176,12 @@
     "itemSeq": "201502840"
   },
   "d-mannitol": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "640001181",
-    "productName": "이노엔15%만니톨주사액"
+    "productName": "이노엔15%만니톨주사액",
+    "method": "후보1 · 앞 4글자",
+    "itemSeq": "199101335"
   },
   "diosmin": {
     "status": "ok",
@@ -2288,10 +2338,12 @@
     "itemSeq": "202300167"
   },
   "calcium chloride dihydrate(A용액중)(2백) + dextrose monohydrate(A용액중)(2백) + magnesium chloride hexahydrate(A용액중)(2백) + sodium bicarbonate(B용액중)(2백) + sodium chloride(B용액중)(2백) + sodium lactate(B용액중)(2백)": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "646601200",
-    "productName": "피지오닐액1.5%"
+    "productName": "피지오닐액1.5%",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200209857"
   },
   "cefotiam hydrochloride": {
     "status": "ok",
@@ -2315,20 +2367,24 @@
     "itemSeq": "202300145"
   },
   "desonide((mL))": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "073200671",
-    "productName": "케어덤로션0.05%(데소니드)"
+    "productName": "케어덤로션0.05%(데소니드)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200711531"
   },
   "dextrose + potassium chloride + sodium chloride": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "640001290",
-    "productName": "이노엔5%포도당나트륨칼륨주1"
+    "productName": "이노엔5%포도당나트륨칼륨주1",
+    "method": "후보1 · 앞 4글자",
+    "itemSeq": "199101327"
   },
   "edoxaban besylate hydrate": {
     "status": "unresolved",
-    "reason": "미해결: 목록(유한에독사반정30밀리그램(에독사반베실산염수화물)→1건, 유한에독사반정30밀리그램→1건)에 EDI_CODE 642106530 없음",
+    "reason": "미해결: 후보1 전체 이름「유한에독사반정30밀리그램(에독사반베실」→1건 / 후보1 괄호 앞까지「유한에독사반정30밀리그램」→1건 / 후보1 앞 6글자「유한에독사반」→3건 / 후보1 앞 4글자「유한에독」→3건 / 후보2 전체 이름「유한에독사반정60밀리그램(에독사반베실」→1건 / 후보2 괄호 앞까지「유한에독사반정60밀리그램」→1건 / 후보2 앞 6글자「유한에독사반」→3건 / 후보2 앞 4글자「유한에독」→3건 / 후보3 전체 이름「유한에독사반정15밀리그램(에독사반베실」→1건 / 후보3 괄호 앞까지「유한에독사반정15밀리그램」→1건 / 후보3 앞 6글자「유한에독사반」→3건 / 후보3 앞 4글자「유한에독」→3건",
     "productCode": "642106530",
     "productName": "유한에독사반정30밀리그램(에독사반베실산염수화물)"
   },
@@ -2361,10 +2417,12 @@
     "itemSeq": "200108800"
   },
   "haloperidol": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(명인할로페리돌정1.5밀리그람→0건)에 EDI_CODE 651900970 없음",
+    "status": "ok",
+    "reason": "",
     "productCode": "651900970",
-    "productName": "명인할로페리돌정1.5밀리그람"
+    "productName": "명인할로페리돌정1.5밀리그람",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "198500618"
   },
   "iodixanol": {
     "status": "ok",
@@ -2388,10 +2446,12 @@
     "itemSeq": "202203629"
   },
   "netilmicin sulfate": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(동광네틸마이신주100mg→0건)에 EDI_CODE 645900251 없음",
+    "status": "ok",
+    "reason": "",
     "productCode": "645900251",
-    "productName": "동광네틸마이신주100mg"
+    "productName": "동광네틸마이신주100mg",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "199500158"
   },
   "olmesartan medoxomil + rosuvastatin calcium": {
     "status": "ok",
@@ -2478,10 +2538,12 @@
     "itemSeq": "201111149"
   },
   "brimonidine tartrate": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "622805711",
-    "productName": "알파칸점안액0.15%(브리모니딘타르타르산염)"
+    "productName": "알파칸점안액0.15%(브리모니딘타르타르산염)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "202601736"
   },
   "cefprozil": {
     "status": "ok",
@@ -2568,10 +2630,12 @@
     "itemSeq": "201004688"
   },
   "prednicarbate((mL))": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "057000441",
-    "productName": "프레베이액0.25%(프레드니카르베이트)"
+    "productName": "프레베이액0.25%(프레드니카르베이트)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201908134"
   },
   "raloxifene hydrochloride": {
     "status": "ok",
@@ -2581,10 +2645,12 @@
     "itemSeq": "202000332"
   },
   "ropivacaine hydrochloride": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(로피바주사2밀리그람/밀리리터(로피바카인염산염수화물)→0건, 로피바주사2밀리그람/밀리리터→0건)에 EDI_CODE 645303181 없음",
+    "status": "ok",
+    "reason": "",
     "productCode": "645303181",
-    "productName": "로피바주사2밀리그람/밀리리터(로피바카인염산염수화물)"
+    "productName": "로피바주사2밀리그람/밀리리터(로피바카인염산염수화물)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200802489"
   },
   "teneligliptin ditosylate dihydrate": {
     "status": "ok",
@@ -2636,10 +2702,12 @@
     "itemSeq": "202106543"
   },
   "calcium chloride(A용액중)(2백) + dextrose monohydrate(A용액중)(2백) + magnesium chloride(A용액중)(2백) + sodium chloride(A용액중)(2백) + sodium lactate solution(B용액중)(2백)": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "664300060",
-    "productName": "씨에이피디17밸런스복강투석액(수입명:Balance1.5%glucose,1.25mmolCaclium,Peritonealdialyselosung Solution for peritoneal dialysis)"
+    "productName": "씨에이피디17밸런스복강투석액(수입명:Balance1.5%glucose,1.25mmolCaclium,Peritonealdialyselosung Solution for peritoneal dialysis)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "200308012"
   },
   "calcium folinate )": {
     "status": "ok",
@@ -2677,10 +2745,12 @@
     "itemSeq": "202200488"
   },
   "darbepoetin α": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(네스프프리필드시린지주60(다베포에틴알파)→0건, 네스프프리필드시린지주60→0건)에 EDI_CODE 055500221 없음",
-    "productCode": "055500221",
-    "productName": "네스프프리필드시린지주60(다베포에틴알파)"
+    "status": "ok",
+    "reason": "",
+    "productCode": "055500241",
+    "productName": "네스프 프리필드시린지주 120(다베포에틴알파)",
+    "method": "후보3 · 전체 이름",
+    "itemSeq": "201404129"
   },
   "denosumab": {
     "status": "ok",
@@ -2704,10 +2774,12 @@
     "itemSeq": "198600058"
   },
   "gadobutrol": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(가도비스트주사바이알(가도부트롤)→0건, 가도비스트주사바이알→0건)에 EDI_CODE 641100381 없음",
+    "status": "ok",
+    "reason": "",
     "productCode": "641100381",
-    "productName": "가도비스트주사바이알(가도부트롤)"
+    "productName": "가도비스트주사바이알(가도부트롤)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200800904"
   },
   "leuprolide acetate": {
     "status": "ok",
@@ -2878,16 +2950,20 @@
     "itemSeq": "200209632"
   },
   "human immunoglobulin G": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "050800401",
-    "productName": "리브감마에스앤주10%(글리신첨가사람면역글로불린(pH4.9))"
+    "productName": "리브감마에스앤주10%(글리신첨가사람면역글로불린(pH4.9))",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "202203340"
   },
   "human immunoglobulin G(폴리에칠렌글리콜처리)": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "050800011",
-    "productName": "리브감마에스앤주5%[말토즈첨가사람면역글로불린(pH4.25)]"
+    "productName": "리브감마에스앤주5%[말토즈첨가사람면역글로불린(pH4.25)]",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201102738"
   },
   "iopromide": {
     "status": "ok",
@@ -2953,10 +3029,12 @@
     "itemSeq": "201502782"
   },
   "tacrolimus hydrate )": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "626700111",
-    "productName": "프로토픽연고0.1%(타크로리무스수화물)"
+    "productName": "프로토픽연고0.1%(타크로리무스수화물)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200511279"
   },
   "temozolomide": {
     "status": "ok",
@@ -3002,7 +3080,7 @@
   },
   "amlodipine besylate + atorvastatin calcium + ezetimibe": {
     "status": "unresolved",
-    "reason": "미해결: 목록(아토바미브에이정10/10/5밀리그램(에제티미브,아토르바스타틴,암로디핀)→1건, 아토바미브에이정10/10/5밀리그램→1건)에 EDI_CODE 642106100 없음",
+    "reason": "미해결: 후보1 전체 이름「아토바미브에이정10/10/5밀리그램(」→1건 / 후보1 괄호 앞까지「아토바미브에이정10/10/5밀리그램」→1건 / 후보1 앞 6글자「아토바미브에」→5건 / 후보1 앞 4글자「아토바미」→9건 / 후보2 전체 이름「아토바미브에이정10/10/10밀리그램」→1건 / 후보2 괄호 앞까지「아토바미브에이정10/10/10밀리그램」→1건 / 후보2 앞 6글자「아토바미브에」→5건 / 후보2 앞 4글자「아토바미」→9건 / 후보3 전체 이름「아토바미브에이정10/20/5밀리그램(」→1건 / 후보3 괄호 앞까지「아토바미브에이정10/20/5밀리그램」→1건 / 후보3 앞 6글자「아토바미브에」→5건 / 후보3 앞 4글자「아토바미」→9건",
     "productCode": "642106100",
     "productName": "아토바미브에이정10/10/5밀리그램(에제티미브,아토르바스타틴,암로디핀)"
   },
@@ -3056,10 +3134,12 @@
     "itemSeq": "202102237"
   },
   "budesonide(micronized)(/회) + formoterol fumarate dihydrate(/회)": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(듀오레스피 스피로맥스 320/9마이크로그램→0건)에 EDI_CODE 626900701 없음",
+    "status": "ok",
+    "reason": "",
     "productCode": "626900701",
-    "productName": "듀오레스피 스피로맥스 320/9마이크로그램"
+    "productName": "듀오레스피 스피로맥스 320/9마이크로그램",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201601545"
   },
   "calcium carbonate(precipitated) + rabeprazole sodium": {
     "status": "ok",
@@ -3077,7 +3157,7 @@
   },
   "dapagliflozin propanediol hydrate + linagliptin": {
     "status": "unresolved",
-    "reason": "미해결: 목록(다파엔젠타정10/5밀리그램(다파글리플로진,리나글립틴)→1건, 다파엔젠타정10/5밀리그램→1건)에 EDI_CODE 640007990 없음",
+    "reason": "미해결: 후보1 전체 이름「다파엔젠타정10/5밀리그램(다파글리플」→1건 / 후보1 괄호 앞까지「다파엔젠타정10/5밀리그램」→1건 / 후보1 앞 6글자「다파엔젠타정」→1건 / 후보1 앞 4글자「다파엔젠」→1건 / 후보2 전체 이름「포시젠타정(다파글리플로진프로판디올수화」→1건 / 후보2 괄호 앞까지「포시젠타정」→1건 / 후보2 앞 4글자「포시젠타」→1건 / 후보3 전체 이름「트루다파엘정10/5밀리그램(다파글리플」→1건 / 후보3 괄호 앞까지「트루다파엘정10/5밀리그램」→1건 / 후보3 앞 6글자「트루다파엘정」→1건 / 후보3 앞 4글자「트루다파」→5건",
     "productCode": "640007990",
     "productName": "다파엔젠타정10/5밀리그램(다파글리플로진,리나글립틴)"
   },
@@ -3117,10 +3197,12 @@
     "itemSeq": "200700501"
   },
   "doxorubicin hydrochloride": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "626900131",
-    "productName": "독소루빈주사0.2%(독소루비신염산염)"
+    "productName": "독소루빈주사0.2%(독소루비신염산염)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "199203366"
   },
   "doxycycline hydrate": {
     "status": "ok",
@@ -3291,10 +3373,12 @@
     "itemSeq": "201600453"
   },
   "chlorhexidine gluconate solution(6μL)": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "053500191",
-    "productName": "오스템클로르헥시딘액0.12%(클로르헥시딘글루콘산염액)"
+    "productName": "오스템클로르헥시딘액0.12%(클로르헥시딘글루콘산염액)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "202003209"
   },
   "cytarabine": {
     "status": "ok",
@@ -3311,10 +3395,12 @@
     "itemSeq": "202003737"
   },
   "desoxymethasone": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "057000711",
-    "productName": "데속시원겔0.05%(데속시메타손)"
+    "productName": "데속시원겔0.05%(데속시메타손)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201405417"
   },
   "diflorasone diacetate": {
     "status": "ok",
@@ -3352,10 +3438,12 @@
     "itemSeq": "199300120"
   },
   "human serum albumin": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "050800151",
-    "productName": "에스케이알부민5%주(사람혈청알부민)(수출명:Solbumin5%,Albumin5%,SKAlbumin5%inj)"
+    "productName": "에스케이알부민5%주(사람혈청알부민)(수출명:Solbumin5%,Albumin5%,SKAlbumin5%inj)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "197000114"
   },
   "ketotifen fumarate": {
     "status": "ok",
@@ -3386,10 +3474,12 @@
     "itemSeq": "201302424"
   },
   "magnesium sulfate": {
-    "status": "error",
-    "reason": "목록 호출 실패 — resultCode 01: System Error!!",
+    "status": "ok",
+    "reason": "",
     "productCode": "645101091",
-    "productName": "대한황산마그네슘주사액10%"
+    "productName": "대한황산마그네슘주사액10%",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200100339"
   },
   "nebivolol hydrochloride + rosuvastatin calcium": {
     "status": "ok",
@@ -3420,10 +3510,12 @@
     "itemSeq": "201704783"
   },
   "oxcarbazepine": {
-    "status": "unresolved",
-    "reason": "미해결: 목록(옥사제핀정300mg(옥스카르바제핀)→0건, 옥사제핀정300mg→0건)에 EDI_CODE 651903880 없음",
+    "status": "ok",
+    "reason": "",
     "productCode": "651903880",
-    "productName": "옥사제핀정300mg(옥스카르바제핀)"
+    "productName": "옥사제핀정300mg(옥스카르바제핀)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201309501"
   },
   "pravastatin sodium": {
     "status": "ok",
@@ -3452,5 +3544,3993 @@
     "productCode": "644502620",
     "productName": "마이그란정50밀리그램(수마트립탄숙신산염)",
     "itemSeq": "201900721"
+  },
+  "tamoxifen citrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "626900280",
+    "productName": "타모프렉스정10밀리그램(타목시펜시트르산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199203344"
+  },
+  "trazodone hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643702350",
+    "productName": "트리티코서방정75밀리그람(트라조돈염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199200407"
+  },
+  "L-carnitine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642901391",
+    "productName": "엘칸주사1그램(엘-카르니틴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198300145"
+  },
+  "S-amlodipine besylate + telmisartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643306520",
+    "productName": "텔미누보정40/2.5밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201302981"
+  },
+  "S-amlodipine besylate + valsartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "053601190",
+    "productName": "레보발사정5/160밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201903022"
+  },
+  "aceclofenac + eperisone hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "622804890",
+    "productName": "아세리손정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202203691"
+  },
+  "acetic acid + calcium chloride dihydrate + dextrose anhydrous + magnesium chloride hexahydrate + potassium chloride + sodium chloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641906811",
+    "productName": "보령헤모시스에이지엘액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201801441"
+  },
+  "alogliptin benzoate + metformin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "693903830",
+    "productName": "네시나메트정12.5/1000밀리그램(알로글립틴벤조산염,메트포르민염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202303457"
+  },
+  "amlodipine besylate + hydrochlorothiazide + telmisartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642905830",
+    "productName": "투탑스플러스정80/5/12.5밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201706182"
+  },
+  "amlodipine camsylate + losartan potassium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "073100010",
+    "productName": "코자엑스큐정5/100밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200908186"
+  },
+  "amlodipine camsylate + losartan potassium + rosuvastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643507820",
+    "productName": "아모잘탄큐정5/100/20밀리그램(암로디핀,로사르탄,로수바스타틴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201705686"
+  },
+  "amlodipine mesylate monohydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641702980",
+    "productName": "암비피정5밀리그램(암로디핀메실산염일수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200700603"
+  },
+  "atorvastatin calcium + fimasartan potassium trihydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641907620",
+    "productName": "아카브정60/10밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202003218"
+  },
+  "atosiban": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645305191",
+    "productName": "트랙시반주(아토시반아세트산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201506826"
+  },
+  "azacitidine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "658700710",
+    "productName": "오뉴렉정300밀리그램(아자시티딘)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202201162"
+  },
+  "bethanechol chloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "629701790",
+    "productName": "오스네콜정(베타네콜염화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201903597"
+  },
+  "bupivacaine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649801321",
+    "productName": "명문염산부피바카인주0.25%",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "199502376"
+  },
+  "cabergoline": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "657306140",
+    "productName": "카버락틴정(카베르골린)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201309603"
+  },
+  "calcitriol": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643502430",
+    "productName": "칼시오연질캡슐0.25마이크로그램(칼시트리올)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199602290"
+  },
+  "calcium carbonate(precipitated) + esomeprazole magnesium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642105670",
+    "productName": "에소피드정20/600밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202101154"
+  },
+  "calcium chloride + dextrose + potassium chloride + sodium chloride + sodium lactate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640002640",
+    "productName": "이노엔하트만-디액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199201366"
+  },
+  "calcium chloride + magnesium chloride + potassium chloride + sodium acetate + sodium chloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641906672",
+    "productName": "보령헤모시스에이엔액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201702679"
+  },
+  "calcium chloride + potassium chloride + sodium chloride + sodium lactate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640002670",
+    "productName": "이노엔하트만액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199201370"
+  },
+  "calcium citrate + cholecalciferol (vitamin D3 400I.U)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "623006830",
+    "productName": "칼슈머정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202200727"
+  },
+  "calcium citrate + cholecalciferol concentrated powder": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "054801650",
+    "productName": "칼앤디세미정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202503023"
+  },
+  "cefoperazone sodium + sulbactam sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643702430",
+    "productName": "페라탐주(설박탐나트륨ㆍ세포페라존나트륨)(수출명:오큐팔주,비센세프주)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199700538"
+  },
+  "cenobamate": {
+    "status": "unresolved",
+    "reason": "미해결: 후보1 전체 이름「엑스코프리정(세노바메이트)」→1건 / 후보1 괄호 앞까지「엑스코프리정」→1건 / 후보1 앞 4글자「엑스코프」→5건 / 후보2 전체 이름「엑스코프리정(세노바메이트)」→1건 / 후보2 괄호 앞까지「엑스코프리정」→1건 / 후보2 앞 4글자「엑스코프」→5건 / 후보3 전체 이름「엑스코프리정(세노바메이트)」→1건 / 후보3 괄호 앞까지「엑스코프리정」→1건 / 후보3 앞 4글자「엑스코프」→5건",
+    "productCode": "642507920",
+    "productName": "엑스코프리정(세노바메이트)"
+  },
+  "chlorpheniramine maleate + dihydrocodeine tartrate + DL-methylephedrine hydrochloride + guaifenesin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643303510",
+    "productName": "코데닝정",
+    "method": "후보2 · 전체 이름",
+    "itemSeq": "199103287"
+  },
+  "cilastatin sodium + imipenem hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "059400031",
+    "productName": "이펨큐주500밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202007456"
+  },
+  "clotrimazole + hydrocortisone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "057001002",
+    "productName": "카네스졸플러스크림",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202002443"
+  },
+  "clozapine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642706230",
+    "productName": "클자핀정100밀리그램(클로자핀)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201309789"
+  },
+  "desonide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "057000221",
+    "productName": "마일드원크림0.05%(데소나이드)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201405794"
+  },
+  "desoxymethasone((mL))": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643200091",
+    "productName": "데타손로션0.25%(데속시메타손)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "199203512"
+  },
+  "desvenlafaxine succinate monohydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642005350",
+    "productName": "데스프리서방정50밀리그램(데스벤라팍신숙신산염일수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202500081"
+  },
+  "doxazosin mesylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "073400060",
+    "productName": "카두라엑스엘서방정4mg(독사조신메실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200612573"
+  },
+  "doxepin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640006660",
+    "productName": "사일레노정3밀리그램(독세핀염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201310842"
+  },
+  "doxylamine succinate + pyridoxine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642003810",
+    "productName": "디클렉틴장용정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201508016"
+  },
+  "ebastine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641901521",
+    "productName": "보령에바스텔내복액(에바스틴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199601085"
+  },
+  "erythropoietin 2KI.U(4KI.U)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "055900031",
+    "productName": "팬포틴프리필드시린지주2000IU(에포에틴알파)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201908142"
+  },
+  "erythropoietin 4KI.U(10KI.U)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "055900041",
+    "productName": "팬포틴프리필드시린지주4000IU(에포에틴알파)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201908143"
+  },
+  "esomeprazole magnesium + naproxen": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "622805460",
+    "productName": "비모엠정500/20밀리그램(나프록센, 에스오메프라졸)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202500515"
+  },
+  "eszopiclone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651904900",
+    "productName": "조스정1밀리그램(에스조피클론)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202002178"
+  },
+  "etoricoxib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "073100310",
+    "productName": "알콕시아정30밀리그램(에토리콕시브)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201406032"
+  },
+  "ezetimibe + rosuvastatin calcium + S-amlodipine besylate + telmisartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643309080",
+    "productName": "누보로젯정40/2.5/5/10밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202203009"
+  },
+  "fluticasone propionate + salmeterol xinafoate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643506771",
+    "productName": "플루테롤흡입용캡슐500/50",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201400305"
+  },
+  "isosorbide mononitrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "620500450",
+    "productName": "엘탄서방정60밀리그램(묽은이소소르비드일질산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202301088"
+  },
+  "moxifloxacin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640006650",
+    "productName": "모벨록신정400밀리그램(목시플록사신염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201310000"
+  },
+  "naratriptan hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "628902450",
+    "productName": "나라탄구강붕해정2.5밀리그램(나라트립탄염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202402970"
+  },
+  "olmesartan medoxomil + S-amlodipine besylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650204240",
+    "productName": "레보모스정 2.5/40밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201405840"
+  },
+  "palbociclib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648902920",
+    "productName": "입랜스캡슐100mg(팔보시클립)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201605163"
+  },
+  "paliperidone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "646902290",
+    "productName": "인베가서방정3밀리그램(팔리페리돈)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202000410"
+  },
+  "pethidine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649801381",
+    "productName": "명문염산페치딘주사",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199203470"
+  },
+  "phloroglucinol hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640902610",
+    "productName": "로스판정(플로로글루시놀수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201309139"
+  },
+  "pitavastatin calcium hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "624200110",
+    "productName": "피타엘구강붕해정4밀리그램(피타바스타틴칼슘수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202602165"
+  },
+  "potassium chloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645905140",
+    "productName": "케이콘틴서방정(염화칼륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200001783"
+  },
+  "ranibizumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "051500091",
+    "productName": "아멜리부주10밀리그램/밀리리터(라니비주맙,유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202202008"
+  },
+  "sodium pertechnetate(Tc-99m) 0.037GBq(1mCi)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "629900010",
+    "productName": "엔바이로과테크네튬산나트륨(99mTc)주사액제너레이터",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201404658"
+  },
+  "tolterodine L-tartrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "073400070",
+    "productName": "디트루시톨SR캡슐2밀리그람(톨터로딘-L-타르타르산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200108384"
+  },
+  "trastuzumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "051500031",
+    "productName": "삼페넷주150밀리그램(트라스투주맙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201707851"
+  },
+  "triamcinolone acetonide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642306741",
+    "productName": "삼성트리암시놀론주40mg(트리암시놀론아세토니드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201602393"
+  },
+  "triflusal": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "647802640",
+    "productName": "플루런트캡슐(트리플루살)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199901534"
+  },
+  "valsartan + pitavastatin calcium + amlodipine besylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644915430",
+    "productName": "리바로하이정4/160/10밀리그램(피타바스타틴칼슘수화물,발사르탄,암로디핀베실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202502532"
+  },
+  "verapamil hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "655401550",
+    "productName": "일성이솦틴서방정180밀리그람(베라파밀염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199501060"
+  },
+  "4:1 w/w mixed hydrogel of sodium hyaluronate gel crosslinked by divinyl sulfone and sodium hyaluronate )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641807001",
+    "productName": "히알식스주(디비닐설폰으로 가교결합된 히알루론산나트륨겔과 히알루론산나트륨액의 4:1 w/w 혼합겔)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202007475"
+  },
+  "Micronized Riociguat": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641105840",
+    "productName": "아뎀파스정2밀리그램(리오시구앗)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201402613"
+  },
+  "amitriptyline hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642702510",
+    "productName": "에트라빌10밀리그램정(아미트리프틸린염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197500186"
+  },
+  "amlodipine besylate + atorvastatin calcium + candesartan cilexetil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643308890",
+    "productName": "칸타벨에이정8/5/10밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202200398"
+  },
+  "anagrelide hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642104860",
+    "productName": "아나그레캡슐0.5밀리그램(아나그렐리드염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201602615"
+  },
+  "apremilast": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641608000",
+    "productName": "압솔라정(아프레밀라스트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202400867"
+  },
+  "apremilast/정(A정 4정중) + apremilast/정(B정 4정중) + apremilast/정(C정 19정중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641608010",
+    "productName": "압솔라정(아프레밀라스트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202400867"
+  },
+  "artemisiae argyi folium isopropanol ext.": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643307100",
+    "productName": "유파시딘R정[애엽이소프로판올연조엑스(20→1)]",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201504315"
+  },
+  "artemisiae argyi folium isopropanol soft ext.(20→1)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643306390",
+    "productName": "유파시딘에스정[애엽이소프로판올연조엑스(20→1)]",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201206160"
+  },
+  "asfotase α": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650701321",
+    "productName": "스트렌식주100mg/mL(아스포타제알파)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201600827"
+  },
+  "atorvastatin calcium + omega-3-acid ethyl esters90": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644309630",
+    "productName": "아트맥콤비젤연질캡슐10/1000밀리그램(아토르바스타틴,오메가-3-산에틸에스테르90)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202100664"
+  },
+  "bazedoxifene acetate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648104460",
+    "productName": "바제탑정20밀리그램(바제독시펜아세테이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202002843"
+  },
+  "beraprost sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643601080",
+    "productName": "베라스트정(베라프로스트나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200302216"
+  },
+  "butenafine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642400731",
+    "productName": "영진멘탁스크림(부테나핀염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199400709"
+  },
+  "calcium carbonate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "628902050",
+    "productName": "이탄칼정(침강탄산칼슘)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202107520"
+  },
+  "calcium carbonate + cholecalciferol 400I.U": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "051600350",
+    "productName": "칼트레이트디400",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201101004"
+  },
+  "camostat mesilate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641605440",
+    "productName": "호이스타정(카모스타트메실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201201837"
+  },
+  "capecitabine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641908100",
+    "productName": "젤로다정150밀리그램(카페시타빈)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200008796"
+  },
+  "cefotetan disodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643304561",
+    "productName": "종근당세포테탄주1그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200800664"
+  },
+  "chlorphenesin carbamate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "621801820",
+    "productName": "카민산250밀리그램정(클로르페네신카르바메이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199302402"
+  },
+  "clostridium botulinum toxin type A": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "054600012",
+    "productName": "리즈톡스주100단위(클로스트리디움보툴리눔독소A형)(수출명:휴톡스주100단위)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201605990"
+  },
+  "codeine phosphate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649801470",
+    "productName": "명문인산코데인정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199403297"
+  },
+  "emicizumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644914641",
+    "productName": "헴리브라피하주사(에미시주맙, 유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201900224"
+  },
+  "erythropoietin 3KI.U(10KI.U)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640003001",
+    "productName": "에포카인프리필드주10000유니트/밀리리터(재조합인에리스로포이에틴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200702454"
+  },
+  "erythropoietin 6KI.U(10KI.U)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640003041",
+    "productName": "에포카인프리필드주10000유니트/밀리리터(재조합인에리스로포이에틴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200702454"
+  },
+  "ezetimibe + fenofibrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642004870",
+    "productName": "에제페노정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202106924"
+  },
+  "fulvestrant": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641907852",
+    "productName": "풀베트주(풀베스트란트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202200522"
+  },
+  "glycopyrrolate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649800810",
+    "productName": "명문글리코피롤레이트정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198601958"
+  },
+  "golimumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "646901861",
+    "productName": "심퍼니프리필드시린지주(골리무맙, 유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201206473"
+  },
+  "infliximab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "051500021",
+    "productName": "레마로체주100밀리그램(인플릭시맵)(단클론항체,유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201508122"
+  },
+  "inosiplex": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643304081",
+    "productName": "푸리노신시럽(이노시플렉스)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198600073"
+  },
+  "insulin glargine )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643605551",
+    "productName": "글라지아프리필드펜(인슐린글라진,유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201801065"
+  },
+  "interferon β-1a": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "621100191",
+    "productName": "아보넥스펜주(인터페론베타-1a, 유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201203016"
+  },
+  "iron hydoxide sucrose complex )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "622801641",
+    "productName": "훼렉스주(수크로오스수산화제이철착염)(수출명:Ferex-Inj.)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200710508"
+  },
+  "lincomycin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644500190",
+    "productName": "린코신캡슐(린코마이신염산염수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200300167"
+  },
+  "linezolid": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642403870",
+    "productName": "리네졸린정600밀리그램(리네졸리드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201402365"
+  },
+  "lurasidone hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642204770",
+    "productName": "라투다정120밀리그램(루라시돈염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202303204"
+  },
+  "magnesium oxide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645604820",
+    "productName": "대화산화마그네슘정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201606577"
+  },
+  "methylprednisolone aceponate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "626700161",
+    "productName": "아드반탄크림(메틸프레드니솔론아세포네이트)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "200608045"
+  },
+  "methylprednisolone sodium succinate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652600741",
+    "productName": "메치솔주125밀리그램(메틸프레드니솔론숙시네이트나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198500517"
+  },
+  "moxifloxacin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640006311",
+    "productName": "모벨록신주400밀리그램(목시플록사신)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201206595"
+  },
+  "mycophenolate mofetil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641803830",
+    "productName": "이뮤셉트캡슐(미코페놀레이트모페틸)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200803703"
+  },
+  "naloxone hydrochloride + oxycodone hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "678000180",
+    "productName": "타진서방정 10/5mg",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200904275"
+  },
+  "octreotide acetate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653600491",
+    "productName": "산도스타틴라르주사10밀리그램(옥트레오티드아세트산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200512232"
+  },
+  "oxygen gas 10L": {
+    "status": "unresolved",
+    "reason": "미해결: 후보1 전체 이름「산소 93」→0건 / 후보1 앞 4글자「산소 9」→0건 / 후보2 전체 이름「산소 93(MOSS-550KBS)」→0건 / 후보2 괄호 앞까지「산소 93」→0건 / 후보2 앞 4글자「산소 9」→0건 / 후보3 전체 이름「산소 93」→0건 / 후보3 앞 4글자「산소 9」→0건",
+    "productCode": "069400010",
+    "productName": "산소 93"
+  },
+  "pegvisomant(/병)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648903521",
+    "productName": "소마버트주10밀리그램(페그비소만트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202006403"
+  },
+  "propafenone hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644206320",
+    "productName": "리트모놈SR서방캡슐225밀리그램(프로파페논염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201400278"
+  },
+  "pseudoephedrine hydrochloride + triprolidine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643502466",
+    "productName": "코스펜에이시럽",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200003107"
+  },
+  "repaglinide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "654400040",
+    "productName": "노보넘정1.0밀리그람(레파글리니드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199907081"
+  },
+  "thalidomide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052900060",
+    "productName": "탈라이드캡슐100mg(탈리도마이드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201504776"
+  },
+  "ticagrelor": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650700790",
+    "productName": "브릴린타정90밀리그램(티카그렐러)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201104578"
+  },
+  "trimetazidine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641903680",
+    "productName": "트리진정(트리메타지딘염산염)(수출명: VASZIDINETAB)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199701304"
+  },
+  "urea": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643503743",
+    "productName": "한미유리아크림200밀리그램(우레아)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198501225"
+  },
+  "zastaprazan citrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "054301330",
+    "productName": "온캡정20밀리그램(자스타프라잔시트르산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202400969"
+  },
+  "S-amlodipine nicotinate + telmisartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645306540",
+    "productName": "로디엔티정40/2.5밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202104295"
+  },
+  "alprostadil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653300331",
+    "productName": "에글란딘주(알프로스타딜)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199802243"
+  },
+  "amlodipine besylate + fimasartan potassium trihydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641906470",
+    "productName": "듀카브정60/10밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201603072"
+  },
+  "amlodipine besylate + fimasartan potassium trihydrate + hydrochlorothiazide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641907910",
+    "productName": "듀카브플러스정60/10/12.5밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202201263"
+  },
+  "amlodipine besylate + fimasartan potassium trihydrate + rosuvastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641907350",
+    "productName": "듀카로정60/5/5밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201907893"
+  },
+  "amlodipine besylate + olmesartan medoxomil + rosuvastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641606750",
+    "productName": "올로맥스정20/5/5밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201901263"
+  },
+  "anastrozole": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "626900220",
+    "productName": "테바아나스트로졸정1밀리그램 ",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200806188"
+  },
+  "aprepitant": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052500030",
+    "productName": "아탄트캡슐80밀리그램(아프레피탄트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202200037"
+  },
+  "armodafinil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "626900850",
+    "productName": "누비질정150밀리그램(아모다피닐)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201702284"
+  },
+  "arotinolol hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640002860",
+    "productName": "알말정5밀리그램(아로티놀롤염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198901206"
+  },
+  "atorvastatin calcium + ezetimibe + fimasartan potassium trihydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641908820",
+    "productName": "카나브젯정60/20/10밀리그램(피마사르탄칼륨,아토르바스타틴,에제티미브)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202600605"
+  },
+  "atorvastatin calcium + irbesartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643506670",
+    "productName": "로벨리토정150/20밀리그램(이르베사르탄,아토르바스타틴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201309480"
+  },
+  "beclomethasone dipropionate(/회) + formoterol fumarate dihydrate(/회)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "670302181",
+    "productName": "포스터100/6 에이치에프에이",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200808088"
+  },
+  "bendamustine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "622701141",
+    "productName": "벤다리드주100밀리그램(벤다무스틴염산염수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202009132"
+  },
+  "benztropine mesylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651900600",
+    "productName": "명인벤즈트로핀메실산염정1밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198600614"
+  },
+  "benzydamine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645700791",
+    "productName": "삼아탄툼액(벤지다민염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198300389"
+  },
+  "betahistine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651904560",
+    "productName": "유턴정24mg(베타히스틴염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201705499"
+  },
+  "calcium chloride + magnesium chloride + potassium chloride + sodium acetate + sodium chloride + sodium citrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645101492",
+    "productName": "벨론에이액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198900313"
+  },
+  "calcium chloride dihydrate(A액중) + glucose monohydrate (B액중) + glycine(A액중) + L-alanine(A액중) + L-arginine(A액중) + L-histidine(A액중) + L-isoleucine(A액중) + L-leucine(A액중) + L-lysine hydrochloride(A액중) + L-methionine(A액중) + L-phenylalanine(A액중) + L-proline(A액중) + L-serine(A액중) + L-threonine(A액중) + L-tryptophan(A액중) + L-tyrosine(A액중) + L-valine(A액중) + magnesium sulfate heptahydrate(A액중) + medium-chain triglycerides(C액중) + potassium chloride(A액중) + purified fish oil(C액중) + purified olive oil(C액중) + purified soybean oil(C액중) + sodium acetate trihydrate(A액중) + sodium glycerophosphate(A액중) + taurine(A액중) + zinc sulfate heptahydrate(A액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640007921",
+    "productName": "오마프플러스원주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202302670"
+  },
+  "calcium chloride dihydrate(B액중) + glucose monohydrate (A액중) + glycine(B액중) + L-alanine(B액중) + L-arginine(B액중) + L-histidine(B액중) + L-isoleucine(B액중) + L-leucine (B액중) + L-lysine HCL(B액중) + L-methionine(B액중) + L-phenylalanine(B액중) + L-proline(B액중) + L-serine(B액중) + L-threonine(B액중) + L-tryptophan(B액중) + L-tyrosine(B액중) + L-valine(B액중) + magnesium sulfate heptahydrate(B액중) + medium-chain triglycerides(C액중) + potassium chloride(B액중) + purified fish oil(C액중) + purified olive oil(C액중) + purified soybean oil(C액중) + sodium acetate trihydrate(B액중) + sodium glycerophosphate(B액중) + zinc sulfate heptahydrate(B액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "678900980",
+    "productName": "위너프주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201309522"
+  },
+  "calcium chloride dihydrate(B액중) + glucose monohydrate (A액중) + glycine(B액중) + L-alanine(B액중) + L-arginine(B액중) + L-histidine(B액중) + L-isoleucine(B액중) + L-leucine (B액중) + L-lysine HCL(B액중) + L-methionine(B액중) + L-phenylalanine(B액중) + L-proline(B액중) + L-serine(B액중) + L-threonine(B액중) + L-tryptophan(B액중) + L-tyrosine(B액중) + L-valine(B액중) + magnesium sulfate heptahydrate(B액중) + medium-chain triglycerides(C액중) + potassium chloride(B액중) + purified fish oil(C액중) + purified olive oil(C액중) + refined soybean oil(C액중) + sodium acetate trihydrate(B액중) + sodium glycerophosphate(B액중) + zinc sulfate heptahydrate(B액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "678901321",
+    "productName": "위너프에이플러스주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202301977"
+  },
+  "calcium chloride dihydrate(C액중) + glucose monohydrate(C액중) + glycine(B액중) + L-alanine(B액중) + L-arginine(B액중) + L-aspartic acid(B액중) + L-glutamic acid(B액중) + L-histidine(B액중) + L-isoleucine(B액중) + L-leucine(B액중) + L-lysine acetate(B액중) + L-methionine(B액중) + L-phenylalanine(B액중) + L-proline(B액중) + L-serine(B액중) + L-threonine(B액중) + L-tryptophan(B액중) + L-tyrosine(B액중) + L-valine(B액중) + magnesium chloride hexahydrate(B액중) + potassium chloride(B액중) + purified olive oil and purified soybean oil(8:2)(A액 중) + sodium acetate trihydrate(B액중) + sodium glycerophosphate hydrate(B액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "078200061",
+    "productName": "올리멜엔9이주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201205378"
+  },
+  "calcium chloride dihydrate(C액중) + glucose monohydrate(C액중) + glycine(B액중) + L-alanine(B액중) + L-arginine(B액중) + L-aspartic acid(B액중) + L-glutamic acid(B액중) + L-histidine(B액중) + L-isoleucine(B액중) + L-leucine(B액중) + L-lysine acetate(B액중) + L-methionine(B액중) + L-phenylalanine(B액중) + L-proline(B액중) + L-serine(B액중) + L-threonine(B액중) + L-tryptophan(B액중) + L-tyrosine(B액중) + L-valine(B액중) + magnesium chloride hexahydrate(B액중) + potassium chloride(B액중) + purified olive oil(A액중) + purified soybean oil(A액중) + sodium acetate trihydrate(B액중) + sodium glycerophosphate hydrate(B액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "078200161",
+    "productName": "올리멜엔12이주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202203154"
+  },
+  "carteolol hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649900100",
+    "productName": "미케란정(카르테올롤염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198902563"
+  },
+  "caspofungin acetate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651205401",
+    "productName": "카스펀주70밀리그램(카스포펀진아세테이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202001388"
+  },
+  "chlorhexidine gluconate solution": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "657400190",
+    "productName": "성광알파헥시딘5%액(글루콘산클로르헥시딘액)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "199600446"
+  },
+  "chlorpheniramine maleate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642102581",
+    "productName": "페니라민주사(클로르페니라민말레산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "196000010"
+  },
+  "chlorpromazine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651900760",
+    "productName": "명인클로르프로마진염산염정100밀리그램(수출명:클로진정100mg)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "198500616"
+  },
+  "choline fenofibrate + pitavastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649808400",
+    "productName": "피타페노콜서방정(피타바스타틴칼슘,페노피브레이트콜린)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202600583"
+  },
+  "cimetropium bromide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642702410",
+    "productName": "알피움정(시메트로퓸브롬화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200500776"
+  },
+  "cisplatin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642502351",
+    "productName": "씨스푸란주10밀리그램(시스플라틴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198400078"
+  },
+  "cyclosporine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643502220",
+    "productName": "임프란타연질캡슐25밀리그램(사이클로스포린)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199202069"
+  },
+  "dapagliflozin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643308560",
+    "productName": "엑시글루정10밀리그램(다파글리플로진)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202003940"
+  },
+  "dapagliflozin + metformin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643309170",
+    "productName": "엑시글루엠서방정10/1000밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202107475"
+  },
+  "dapagliflozin citric acid": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "660704070",
+    "productName": "포시진정5밀리그램(다파글리플로진시트르산)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202600929"
+  },
+  "dapagliflozin propanediol hydrate + glimepiride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "622805020",
+    "productName": "직더블엠정10/4밀리그램(다파글리플로진, 글리메피리드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202300716"
+  },
+  "deflazacort": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645300220",
+    "productName": "데플라정(데프라자코르트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200502873"
+  },
+  "dextrose + dopamine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640001560",
+    "productName": "이노엔도파믹스주200",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200201226"
+  },
+  "diflucortolone valerate + isoconazole nitrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "626700131",
+    "productName": "트라보코트크림",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200608043"
+  },
+  "diluted nitroglycerin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649800850",
+    "productName": "명문니트로글리세린0.6밀리그램설하정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198601406"
+  },
+  "dimethyl fumarate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "621100230",
+    "productName": "텍피데라캡슐240밀리그램(디메틸푸마르산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201600419"
+  },
+  "divalproex sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644200080",
+    "productName": "데파코트서방정250mg(디발프로엑스나트륨)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200511051"
+  },
+  "dobutamine hydrochloride )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644300481",
+    "productName": "도부란주(염산도부타민)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "199101486"
+  },
+  "donepezil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "623800130",
+    "productName": "도네리온패취87.5밀리그램(도네페질)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202107340"
+  },
+  "dopamine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649801421",
+    "productName": "명문이노판주(도파민염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198401120"
+  },
+  "dupilumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652001091",
+    "productName": "듀피젠트프리필드주300밀리그램(두필루맙, 유전자재조합)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "201801406"
+  },
+  "econazole nitrate + triamcinolone acetonide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643501875",
+    "productName": "에코론크림(에코나졸,트리암시놀론아세토니드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198000453"
+  },
+  "empagliflozin + linagliptin besylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "622805480",
+    "productName": "에스글리엠정25/5밀리그램(엠파글리플로진, 리나글립틴베실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202502935"
+  },
+  "erythropoietin 8KI.U(10KI.U)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640003031",
+    "productName": "에포카인프리필드주10000유니트/밀리리터(재조합인에리스로포이에틴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200702454"
+  },
+  "esomeprazole + naproxen": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642802700",
+    "productName": "에소록센정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201403728"
+  },
+  "etodolac": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "646800120",
+    "productName": "건일로딘서방정600밀리그램(미분화에토돌락)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199400448"
+  },
+  "fenofibrate + pitavastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642106410",
+    "productName": "유한피타바노정2/145밀리그램(피타바스타틴칼슘, 페노피브레이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202503295"
+  },
+  "fenofibric acid": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643506410",
+    "productName": "페노시드캡슐(페노피브릭산)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201207406"
+  },
+  "fimasartan potassium trihydrate + hydrochlorothiazide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641905990",
+    "productName": "카나브플러스정60/12.5mg",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201300048"
+  },
+  "fimasartan potassium trihydrate + rosuvastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641906530",
+    "productName": "투베로정60/10밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201605333"
+  },
+  "flunarizine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "646902590",
+    "productName": "씨베리움캡슐(플루나리진염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202106982"
+  },
+  "folic acid": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "664601030",
+    "productName": "폴다정5밀리그램(폴산)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200401520"
+  },
+  "fraction flavonoid purifiee micronise": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "628902510",
+    "productName": "베니플라정(미세정제플라보노이드분획물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202501475"
+  },
+  "furosemide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641702750",
+    "productName": "후릭스정(푸로세미드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197200160"
+  },
+  "gadoteridol": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "621400011",
+    "productName": "프로핸스주프리필드시린지(가도테리돌)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201103761"
+  },
+  "ganciclovir": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052900011",
+    "productName": "가비르정주500밀리그램(간시클로비르)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "201505029"
+  },
+  "gefitinib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643306980",
+    "productName": "이레티닙정250밀리그램(게피티니브)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201503506"
+  },
+  "gemigliptin tartrate sesquihydrate + metformin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "668902910",
+    "productName": "제미메트서방정50/1000밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201405223"
+  },
+  "gimeracil + oteracil potassium + tegafur": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645401930",
+    "productName": "티에스원캡슐20",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200300393"
+  },
+  "glibenclamide + metformin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641600190",
+    "productName": "글루리아드정500/2.5밀리그람",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200307866"
+  },
+  "heparin sodium 25KI.U(5KI.U)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643600851",
+    "productName": "녹십자헤파린나트륨주사액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200302231"
+  },
+  "hydroxyzine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644801160",
+    "productName": "아디팜정(히드록시진염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197800210"
+  },
+  "ketoprofen(f.)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "054300160",
+    "productName": "케펜텍플라스타(케토프로펜)(수출명 : KEFEN)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "199600561"
+  },
+  "lacidipine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650000380",
+    "productName": "박사르정6밀리그램(라시디핀)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200511002"
+  },
+  "letermovir": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "655502030",
+    "productName": "프레비미스정240밀리그램(레테르모비르)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201805300"
+  },
+  "linagliptin besylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "622805240",
+    "productName": "트립엠정5밀리그램(리나글립틴베실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202400696"
+  },
+  "lithium carbonate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642200390",
+    "productName": "리단정(탄산리튬)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197300172"
+  },
+  "lobeglitazone sulfate + metformin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643307460",
+    "productName": "듀비메트서방정0.25/1000밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201604111"
+  },
+  "loperamide hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644800520",
+    "productName": "로파인캡슐(로페라미드염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197800212"
+  },
+  "mavacamten micronized": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "658700780",
+    "productName": "캄지오스캡슐2.5밀리그램(마바캄텐)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202301639"
+  },
+  "mecobalamin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642702600",
+    "productName": "엠코발캡슐(메코발라민)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198300374"
+  },
+  "metformin hydrochloride + rosuvastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642105140",
+    "productName": "로수메트서방정5/500밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201802562"
+  },
+  "methimazole": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642200680",
+    "productName": "부광메티마졸정5밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197800303"
+  },
+  "methylol cephalexin lysinate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645300530",
+    "productName": "메섹신정(메틸올세팔렉신리시네이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198701854"
+  },
+  "misoprostol powder": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648900540",
+    "productName": "싸이토텍정200마이크로그람(미소프로스톨)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200307647"
+  },
+  "morphine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649801294",
+    "productName": "명문모르핀염산염수화물주사",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199304456"
+  },
+  "mycophenolate sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643307600",
+    "productName": "마이렙틱엔장용정180밀리그램(미코페놀레이트나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201606254"
+  },
+  "nafronyl oxalate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642903910",
+    "productName": "나푸롤정(나프로닐옥살산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201004086"
+  },
+  "naloxone hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "647800961",
+    "productName": "삼진날록손염산염주사",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198200406"
+  },
+  "nicardipine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642501301",
+    "productName": "동아페르디핀주사액(니카르디핀염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199500184"
+  },
+  "nicorandil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644301270",
+    "productName": "바딜정(니코란딜)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198901319"
+  },
+  "nifedipine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "620500010",
+    "productName": "니페론씨알서방정40밀리그램(니페디핀)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200400999"
+  },
+  "nimodipine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "647800720",
+    "productName": "삼진니모디핀정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199301653"
+  },
+  "nivolumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "050400011",
+    "productName": "옵디보주100mg(니볼루맙,유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201501485"
+  },
+  "odevixibat sesquihydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "681400150",
+    "productName": "빌베이캡슐200마이크로그램(오데빅시바트1.5수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202402036"
+  },
+  "olmesartan medoxomil + s-amlodipine nicotinate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645305000",
+    "productName": "로디비카정5/40밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201404533"
+  },
+  "omeprazole": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643302040",
+    "productName": "오엠피정20밀리그램(오메프라졸)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199200236"
+  },
+  "omeprazole + sodium bicarbonate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644206410",
+    "productName": "가나플럭스정40/1100밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201504045"
+  },
+  "oseltamivir": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643507450",
+    "productName": "한미플루캡슐30밀리그램(오셀타미비르)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201507979"
+  },
+  "oxycodone hydrochloride )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "657806031",
+    "productName": "오코돈주사10mg/mL(옥시코돈염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201706519"
+  },
+  "pentosan polysulfate sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052900110",
+    "productName": "젤미론캡슐(펜토산폴리설페이트나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201305404"
+  },
+  "phloroglucinol": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645602241",
+    "productName": "후로스판액(플로로글루시놀수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200102089"
+  },
+  "pitavastatin calcium + valsartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644913910",
+    "productName": "리바로브이정2/80밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201500967"
+  },
+  "potassium iodide + sodium iodide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643901511",
+    "productName": "큐아렌점안액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199600635"
+  },
+  "pramoxine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641805621",
+    "productName": "광동프라목신크림(프라목신염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201402679"
+  },
+  "prucalopride succinate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648204180",
+    "productName": "루칼로정1밀리그램(프루칼로프라이드숙신산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201900673"
+  },
+  "pseudoephedrine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643900710",
+    "productName": "슈다페드정(슈도에페드린염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197900575"
+  },
+  "pyridostigmine bromide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642800580",
+    "productName": "메스티논정(피리도스티그민브롬화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199902012"
+  },
+  "rifampicin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643300580",
+    "productName": "리포덱스정300밀리그람(리팜피신)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198000054"
+  },
+  "ruxolitinib phosphate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653602380",
+    "productName": "자카비정20밀리그램(룩소리티닙인산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201301663"
+  },
+  "salbutamol sulfate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645101701",
+    "productName": "살부톨흡입액(살부타몰황산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200607690"
+  },
+  "selexipag": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "646902410",
+    "productName": "업트라비정200마이크로그램(셀렉시팍)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201602600"
+  },
+  "sevoflurane": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "078200051",
+    "productName": "박스터세보플루란흡입액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200704662"
+  },
+  "silver sulfadiazine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642702131",
+    "productName": "실마진1%크림(설파디아진은)(수출명 : Emzin Cream Silver Sulfadiazine 1%)",
+    "method": "후보1 · 앞 4글자",
+    "itemSeq": "197500187"
+  },
+  "sodium cromoglycate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643802331",
+    "productName": "아이크롬점안액(크로몰린나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201403291"
+  },
+  "soybean oil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650900831",
+    "productName": "인트라리피드10%주(정제대두유)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200109873"
+  },
+  "tapentadol hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653103840",
+    "productName": "뉴신타서방정50밀리그램(타펜타돌염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201603373"
+  },
+  "tegoprazan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640007270",
+    "productName": "케이캡정50밀리그램(테고프라잔)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201802815"
+  },
+  "tenofovir alafenamide hemimalate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643903910",
+    "productName": "테노에스정(테노포비르알라페나미드헤미말산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202300928"
+  },
+  "tenofovir disoproxil hemiedisylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641705370",
+    "productName": "텐포버정(테노포비르디소프록실헤미에디실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201707355"
+  },
+  "terlipressin acetate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645301861",
+    "productName": "테리핀주(테를리프레신아세트산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200302307"
+  },
+  "tofacitinib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641706510",
+    "productName": "엘란즈정5밀리그램(토파시티닙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202006209"
+  },
+  "tofisopam": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642801470",
+    "productName": "토스팜정(토피소팜)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199701917"
+  },
+  "tolvaptan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651904970",
+    "productName": "명인톨밥탄정15밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202004774"
+  },
+  "tranexamic acid": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645400120",
+    "productName": "도란사민캅셀(트라넥삼산)(수출명:트라민캅셀)",
+    "method": "후보1 · 앞 4글자",
+    "itemSeq": "197200091"
+  },
+  "triamcinolone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644700300",
+    "productName": "레더코트정(트리암시놀론)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200501789"
+  },
+  "triazolam": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651901770",
+    "productName": "졸민정0.125밀리그람(트리아졸람)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "198902801"
+  },
+  "vinorelbine tartrate )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642200051",
+    "productName": "나벨빈주(비노렐빈타르타르산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199504132"
+  },
+  "voglibose": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640000520",
+    "productName": "베이슨정0.2밀리그램(보글리보스)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199501072"
+  },
+  "vonoprazan tosylate": {
+    "status": "unresolved",
+    "reason": "미해결: 후보1 전체 이름「보노엠정20밀리그램(보노프라잔토실산염」→1건 / 후보1 괄호 앞까지「보노엠정20밀리그램」→1건 / 후보1 앞 6글자「보노엠정20」→1건 / 후보1 앞 4글자「보노엠정」→2건 / 후보2 전체 이름「보노엠정10밀리그램(보노프라잔토실산염」→1건 / 후보2 괄호 앞까지「보노엠정10밀리그램」→1건 / 후보2 앞 6글자「보노엠정10」→1건 / 후보2 앞 4글자「보노엠정」→2건 / 후보3 전체 이름「보노칸정20밀리그램(보노프라잔토실산염」→1건 / 후보3 괄호 앞까지「보노칸정20밀리그램」→1건 / 후보3 앞 6글자「보노칸정20」→1건 / 후보3 앞 4글자「보노칸정」→2건",
+    "productCode": "622805590",
+    "productName": "보노엠정20밀리그램(보노프라잔토실산염)"
+  },
+  "warfarin sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645600390",
+    "productName": "대화와르파린나트륨정2밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198601052"
+  },
+  "ziprasidone hydrochloride monohydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "073400090",
+    "productName": "젤독스캡슐20밀리그램(염산지프라시돈일수화물)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "200708534"
+  },
+  "5-fluorouracil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644902301",
+    "productName": "중외5-에프유주(플루오로우라실)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197600064"
+  },
+  "S-amlodipine nicotinate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645300370",
+    "productName": "로디엔정2.5밀리그람(에스암로디핀니코틴산염)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200608320"
+  },
+  "abemaciclib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "670801140",
+    "productName": "버제니오정50밀리그램(아베마시클립)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201902825"
+  },
+  "abiraterone acetate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052500070",
+    "productName": "아비론정500밀리그램(아비라테론아세테이트(미분화))",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202401566"
+  },
+  "abrocitinib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648903630",
+    "productName": "시빈코정50밀리그램(아브로시티닙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202107593"
+  },
+  "afatinib dimaleate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653501430",
+    "productName": "지오트립정20밀리그램(아파티닙이말레산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201400441"
+  },
+  "alirocumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652000971",
+    "productName": "프랄런트펜주150mg(알리로쿠맙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201700395"
+  },
+  "aminophylline hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645904620",
+    "productName": "소아용아스콘틴서방정(아미노필린수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200001781"
+  },
+  "amlodipine adipate + valsartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640006570",
+    "productName": "엑스원정10/160밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201308287"
+  },
+  "amlodipine besylate + irbesartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652105910",
+    "productName": "아프로바스크정150/5밀리그램(이르베사르탄,암로디핀베실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202303233"
+  },
+  "amlodipine besylate + losartan potassium + rosuvastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "670609640",
+    "productName": "베실살탄큐정5/100/10밀리그램(암로디핀,로사르탄,로수바스타틴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202502493"
+  },
+  "amlodipine camsylate + chlorthalidone + losartan potassium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643507780",
+    "productName": "아모잘탄플러스정5/100/25밀리그램(암로디핀,로사르탄,클로르탈리돈)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201705042"
+  },
+  "amlodipine orotate + olmesartan medoxomil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642507120",
+    "productName": "세비살탄정 5/20밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201405044"
+  },
+  "anagliptin + metformin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644914120",
+    "productName": "가드메트정100/1000밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201600170"
+  },
+  "arsenic trioxide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052900081",
+    "productName": "아시트리주(삼산화비소)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201507055"
+  },
+  "articaine hydrochloride + epinephrine bitartrate )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "658300020",
+    "productName": "셉타네스트주1/100,000",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200308019"
+  },
+  "atorvastatin strontium pentahydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643504570",
+    "productName": "뉴바스트정10밀리그램(아토르바스타틴스트론튬오수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200811250"
+  },
+  "azilsartan medoxomil potassium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "693903710",
+    "productName": "이달비정40밀리그램(아질사르탄메독소밀칼륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202303419"
+  },
+  "bacillus licheniformis + calcium pantothenate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "073001701",
+    "productName": "바실루비산",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202501965"
+  },
+  "bambuterol hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642100580",
+    "productName": "밤벡정10mg(밤부테롤염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199400505"
+  },
+  "barnidipine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645400790",
+    "productName": "올데카캡슐5밀리그람(염산바니디핀)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "199300656"
+  },
+  "betamethasone dipropionate + gentamicin sulfate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645203932",
+    "productName": "스테로신지크림",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197700163"
+  },
+  "betamethasone sodium phosphate )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650500571",
+    "productName": "제일제약베타메타손주사액(베타메타손포스페이트나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199200651"
+  },
+  "biotin + calcium chloride + calcium citrate + calcium pantothenate + casein + cholecalciferol + copper sulfate + cyanocobalamin + ferrous gluconate + folic acid + isolated soybean protein + magnesium chloride + maltodextrine + manganese sulfate + nicotinamide + palm oil + perilla oil + phytonadione + potassium carbonate + potassium chloride + potassium citrate + potassium dihydrogen phosphate + purified sucrose + pyridoxine hydrochloride + riboflavin sodium phosphate + sodium ascorbate + sodium citrate + soybean oil + thiamine hydrochloride + tocopherol acetate + tricaprilin + vitamine A oil + zinc sulfate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644912233",
+    "productName": "엔커버액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200805993"
+  },
+  "bisoprolol fumarate + hydrochlorothiazide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "654001520",
+    "productName": "코비스정10/6.25밀리그람",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200400729"
+  },
+  "bosentan hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "627600230",
+    "productName": "카나보센정62.5밀리그램(보센탄수화물(미분화))",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202003657"
+  },
+  "bosutinib monohydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648903780",
+    "productName": "보술리프정400밀리그램(보수티닙일수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202300245"
+  },
+  "brigatinib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "696300520",
+    "productName": "알룬브릭정30밀리그램(브리가티닙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201804846"
+  },
+  "brimonidine tartrate + timolol maleate )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "624900501",
+    "productName": "콤비간점안액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200700952"
+  },
+  "buprenorphine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "678000010",
+    "productName": "노스판패취5㎍/h(부프레노르핀)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200410877"
+  },
+  "burosumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "666300371",
+    "productName": "크리스비타주사액30밀리그램(부로수맙,유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202006465"
+  },
+  "cabozantinib s-malate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "681400110",
+    "productName": "카보메틱스정60밀리그램(카보잔티닙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201707240"
+  },
+  "caffeine anhydrous ) + citric acid + sodium citrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "659900440",
+    "productName": "네오카프주(카페인시트르산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201003574"
+  },
+  "calcium chloride dihydrate(A액중) + dextrose monohydrate (A액중) + magnesium chloride hexahydrate(A액중) + sodium bicarbonate(B액중) + sodium chloride(A액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "664300631",
+    "productName": "비카베라포도당1.5% 칼슘1.75mmol/L 복막투석액",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "201902588"
+  },
+  "calcium chloride dihydrate(A액중) + glucose monohydrate (B액중) + glycine(A액중) + L-alanine(A액중) + L-arginine(A액중) + L-histidine (A액중) + L-isoleucine(A액중) + L-leucine (A액중) + L-lysine acetate(A액중) + L-methionine (A액중) + L-phenylalanine (A액중) + L-proline(A액중) + L-serine(A액중) + L-threonine(A액중) + L-tryptophan(A액중) + L-tyrosine(A액중) + L-valine(A액중) + magnesium sulfate heptahydrate(A액중) + medium-chain triglycerides(C액중) + potassium chloride(A액중) + purified fish oil(C액중) + purified olive oil(C액중) + purified soybean oil(C액중) + sodium acetate trihydrate(A액중) + sodium glycerophosphate(A액중) + taurine(A액중) + zinc sulfate heptahydrate(A액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640006680",
+    "productName": "오마프원주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201500952"
+  },
+  "calcium chloride dihydrate(A액중) + glucose monohydrate (B액중) + glycine(A액중) + L-alanine(A액중) + L-arginine(A액중) + L-histidine(A액중) + L-isoleucine(A액중) + L-leucine (A액중) + L-lysine acetate(A액중) + L-methionine(A액중) + L-phenylalanine (A액중) + L-proline(A액중) + L-serine(A액중) + L-threonine(A액중) + L-tryptophan(A액중) + L-tyrosine(A액중) + L-valine(A액중) + magnesium sulfate heptahydrate(A액중) + medium-chain triglycerides(C액중) + potassium chloride(A액중) + purified fish oil(C액중) + purified olive oil(C액중) + purified soybean oil(C액중) + sodium acetate trihydrate(A액중) + sodium glycerophosphate(A액중) + taurine(A액중) + zinc sulfate heptahydrate(A액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640006820",
+    "productName": "오마프원주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201500952"
+  },
+  "captopril": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641903500",
+    "productName": "카프릴정12.5밀리그람(캅토프릴)수출명;Captolongtablet12.5mg(captopril)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198600630"
+  },
+  "carbidopa hydrate + levodopa": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651902260",
+    "productName": "퍼킨정25-100mg",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "199201045"
+  },
+  "cefadroxil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641901092",
+    "productName": "보령듀리세프건조시럽125밀리그램/5밀리리터 (세파드록실수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198200301"
+  },
+  "cefcapene pivoxil hydrochloride hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642900792",
+    "productName": "소아용후로목스세립(세프카펜피복실염산염수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200500422"
+  },
+  "cefditoren pivoxil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641901212",
+    "productName": "보령메이액트세립(세프디토렌피복실)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199801215"
+  },
+  "cefmetazole sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648501721",
+    "productName": "셉타신주1g(세프메타졸나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199100044"
+  },
+  "cefoxitin sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644904121",
+    "productName": "파세틴주(세폭시틴나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198000067"
+  },
+  "chlorpheniramine maleate + pseudoephedrine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642405310",
+    "productName": "콜민에스정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202501581"
+  },
+  "chlorthalidone + S-amlodipine besylate + telmisartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643310170",
+    "productName": "텔미누보플러스정80/2.5/25밀리그램(텔미사르탄,에스암로디핀,클로르탈리돈)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202502824"
+  },
+  "chlorthalidone + losartan potassium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643508510",
+    "productName": "클로잘탄정100/12.5밀리그램(로사르탄,클로르탈리돈)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202202296"
+  },
+  "cholecalciferol 30KI.U + risedronate sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643506260",
+    "productName": "리도넬디정(리세드론산,콜레칼시페롤)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201202525"
+  },
+  "cilazapril": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645401360",
+    "productName": "제일실라자프릴정0.5밀리그램(실라자프릴수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199300655"
+  },
+  "citicoline": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649503671",
+    "productName": "참시티콜린주(시티콜린)(수출명: 유시틸주, 참시틸주)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199102966"
+  },
+  "cladribine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "661700730",
+    "productName": "마벤클라드정(클라드리빈)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201904640"
+  },
+  "clindamycin phosphate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "647802731",
+    "productName": "훌그램600밀리그램주사(클린다마이신포스페이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199401120"
+  },
+  "clomipramine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651900060",
+    "productName": "그로민캡슐10mg(클로미프라민염산염)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "198900901"
+  },
+  "coptis rhizome butanol dried ext.(4.5~7→1) + ivy leaf ethanol dried ext.(5~7.5→1)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650203651",
+    "productName": "시네츄라시럽",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201101306"
+  },
+  "coptis rhizome dried ext.(8.93→1) + pelargonium sidoides ethanol ext.(1→8~10)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643508281",
+    "productName": "펠라움에스시럽",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202004765"
+  },
+  "dacomitinib hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648903460",
+    "productName": "비짐프로정15밀리그램(다코미티닙수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202000971"
+  },
+  "dantrolene sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648200940",
+    "productName": "아노렉스캡슐25밀리그램(단트롤렌나트륨수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199903365"
+  },
+  "daptomycin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642404861",
+    "productName": "답토주350밀리그램(답토마이신)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202007028"
+  },
+  "daratumumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "646902211",
+    "productName": "다잘렉스주(다라투무맙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201707719"
+  },
+  "decitabine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "622701061",
+    "productName": "데시리드주40밀리그램(데시타빈)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201803088"
+  },
+  "desvenlafaxine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "657203560",
+    "productName": "데팍신서방정50밀리그램(데스벤라팍신)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202002453"
+  },
+  "dexamethasone + tobramycin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649602381",
+    "productName": "토베손점안액(수출명:필토베손점안액,덱스티어점안액)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "200300491"
+  },
+  "dexamethasone disodium phosphate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642101421",
+    "productName": "유한디나트륨인산덱사메타손주사액(수출명:덱사컴,유한덱사컴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198400277"
+  },
+  "dextrose + magnesium chloride + potassium chloride + sodium acetate + sodium chloride + sodium gluconate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640008071",
+    "productName": "플라스마솔루션디주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202503272"
+  },
+  "digoxin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640000090",
+    "productName": "디고신정(디곡신)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "196300001"
+  },
+  "diphenylhydantoin sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642201070",
+    "productName": "부광페니토인캡슐100밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197000104"
+  },
+  "domperidone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642200630",
+    "productName": "부광돔페리돈정10밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199501299"
+  },
+  "enavogliflozin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641607780",
+    "productName": "엔블로정0.3밀리그램(이나보글리플로진)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202204314"
+  },
+  "epinephrine + lidocaine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641000080",
+    "productName": "자이레스테신에이주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200108939"
+  },
+  "epinephrine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645100741",
+    "productName": "대한에피네프린주사액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "196900031"
+  },
+  "erdafitinib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "646902710",
+    "productName": "발베사정3밀리그램(얼다피티닙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202204247"
+  },
+  "ethyl esters of the iodised fatty acids of poppyseed oil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653404481",
+    "productName": "패티오돌주사(아이오다이즈드오일)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202000798"
+  },
+  "etizolam": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643300300",
+    "productName": "데파스정0.25밀리그램(에티졸람)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200610866"
+  },
+  "evogliptin tartrate + metformin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642507340",
+    "productName": "슈가메트서방정2.5/500밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201508555"
+  },
+  "fenofibric acid + pravastatin sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642707950",
+    "productName": "프라바펜캡슐(프라바스타틴, 페노피브릭산)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202601574"
+  },
+  "ferric hydroxide carboxymaltose complex )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644913131",
+    "productName": "페린젝트주(카르복시말토오스수산화제이철착염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201004013"
+  },
+  "ferric hydroxide polymaltose complex )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641702661",
+    "productName": "헤모콤액(폴리말토오스수산화제이철착염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199901190"
+  },
+  "fluticasone furoate(micronized)(/회)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650001831",
+    "productName": "아바미스나잘스프레이(미분화플루티카손푸로에이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200805432"
+  },
+  "fluticasone propionate(/회)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650001671",
+    "productName": "후릭소타이드디스커스100마이크로그램(플루티카손프로피오네이트(미분화))",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199604660"
+  },
+  "fluticasone propionate(/회) + formoterol fumarate dihydrate(/회)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "678000291",
+    "productName": "플루티폼흡입제125μg/5μg",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201309961"
+  },
+  "follitropin delta": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652500421",
+    "productName": "레코벨프리필드펜(폴리트로핀델타)(유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201908661"
+  },
+  "fosfomycin trometamol )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "622803241",
+    "productName": "마이포신산(포스포마이신트로메탐올)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201803344"
+  },
+  "fructose": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640001261",
+    "productName": "이노엔5%과당주사액",
+    "method": "후보1 · 앞 4글자",
+    "itemSeq": "199101338"
+  },
+  "gelatin sponge": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "697200020",
+    "productName": "큐탄플라스트스폰지(정제된특수처치젤라틴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200706581"
+  },
+  "gemigliptin tartrate sesquihydrate + rosuvastatin calcium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "668903180",
+    "productName": "제미로우정50/10밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201706395"
+  },
+  "gentamicin sulfate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648501841",
+    "productName": "신풍겐타마이신주80밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198600034"
+  },
+  "glucose": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641500011",
+    "productName": "글루오렌지100액(포도당)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200711320"
+  },
+  "guselkumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "646902261",
+    "productName": "트렘피어프리필드시린지주(구셀쿠맙,유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201801604"
+  },
+  "heparin sodium 20KI.U(1KI.U)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644903601",
+    "productName": "중외헤파린나트륨주사액1000아이유",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198500112"
+  },
+  "human insulin 1KI.U(100I.U)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "654400281",
+    "productName": "인슈라타드HM주100단위/밀리리터(휴먼인슐린)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199504265"
+  },
+  "hydrochlorothiazide + olmesartan medoxomil + S-amlodipine besylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653405740",
+    "productName": "올메비카에이치씨티정5/40/12.5밀리그램(에스암로디핀베실산염이수화물,올메사르탄메독소밀,히드로클로로티아지드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202401352"
+  },
+  "hydromorphone hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "657800360",
+    "productName": "딜리드정2밀리그램(히드로모르폰염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200210689"
+  },
+  "hyoscine butylbromide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650500991",
+    "productName": "프리판주(부틸스코폴라민브롬화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200100633"
+  },
+  "imiglucerase": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652001241",
+    "productName": "세레자임주400단위(이미글루세라제)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201210160"
+  },
+  "indacaterol acetate ) + mometasone furoate(/캡슐)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653603330",
+    "productName": "어택트라흡입용캡슐150/160마이크로그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202009235"
+  },
+  "indapamide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642400040",
+    "productName": "나트릭스서방정(인다파미드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199900835"
+  },
+  "insulin lispro 300I.U(100I.U)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "670800384",
+    "productName": "휴마로그퀵펜주100단위/밀리리터(인슐린라이스프로,유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200606924"
+  },
+  "isosorbide dinitrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "620500210",
+    "productName": "이소켓서방캡슐120밀리그램(묽은이소소르비드이질산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200308344"
+  },
+  "ixazomib citrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "696300450",
+    "productName": "닌라로캡슐2.3밀리그램(익사조밉시트레이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201706267"
+  },
+  "ketamine hydrochloride )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641608231",
+    "productName": "대웅케타민주(케타민염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202500061"
+  },
+  "ketoconazole": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644802391",
+    "productName": "태극케토코나졸크림",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199301086"
+  },
+  "ketoprofen(f.) (서방형)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "054300270",
+    "productName": "케펜텍-엘플라스타(케토프로펜)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199800686"
+  },
+  "lanreotide acetate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "681400051",
+    "productName": "소마툴린오토젤120밀리그램주사(프리필드)(란레오티드아세테이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200210139"
+  },
+  "lenograstim": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644902361",
+    "productName": "뉴트로진주250마이크로그램(레노그라스팀)(유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199300331"
+  },
+  "lenvatinib mesylate dimethylsulfoxide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641908570",
+    "productName": "렌바닙캡슐4밀리그램(렌바티닙메실산염디메틸설폭시드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202500247"
+  },
+  "lercanidipine hydrochloride + valsartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "668902550",
+    "productName": "레바캄정10/80밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201308391"
+  },
+  "levocloperastine fendizoate )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "671803511",
+    "productName": "프리비투스현탁액(레보클로페라스틴펜디조산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200201397"
+  },
+  "levomepromazine maleate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651902180",
+    "productName": "티세르신정100밀리그램(레보메프로마진말레산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200001456"
+  },
+  "lung surfactant": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644914391",
+    "productName": "인파서프주(칼팍탄트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200809175"
+  },
+  "magnesium hydroxide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644600220",
+    "productName": "마로겔정500밀리그람(수산화마그네슘)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198802327"
+  },
+  "medium chain triglyceride + purified fish oil + purified olive oil + purified soybean oil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650900340",
+    "productName": "스모프리피드20%주",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200604122"
+  },
+  "medroxyprogesterone acetate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648901090",
+    "productName": "파루탈정(메드록시프로게스테론아세테이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199203279"
+  },
+  "mepivacaine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "657802631",
+    "productName": "하나염산메피바카인주2%",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "199702399"
+  },
+  "metformin hydrochloride + vildagliptin hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643508420",
+    "productName": "빌다글메트정50/500밀리그램(빌다글립틴,메트포르민)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202105309"
+  },
+  "metformin hydrochloride + vildagliptin nitrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "665003130",
+    "productName": "빌다메트정50/500밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202107714"
+  },
+  "metoclopramide hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642701341",
+    "productName": "맥페란주사액2밀리리터(메토클로프라미드염산염수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198800560"
+  },
+  "milnacipran hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642201840",
+    "productName": "익셀캡슐25밀리그램(밀나시프란염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200001931"
+  },
+  "momelotinib hydrochloride hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650003280",
+    "productName": "옴짜라정100밀리그램(모멜로티닙염산염수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202402299"
+  },
+  "naftifine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642901782",
+    "productName": "일동엑소데릴크림(나프티핀염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198800330"
+  },
+  "orphenadrine citrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645601900",
+    "productName": "테리락스엑스엘서방정(오르페나드린시트르산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200501864"
+  },
+  "orphenadrine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648200800",
+    "productName": "스락신정25밀리그램(오르페나드린염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198301052"
+  },
+  "pemigatinib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652105860",
+    "productName": "페마자이레정13.5밀리그램(페미가티닙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202301337"
+  },
+  "pemirolast potassium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642004190",
+    "productName": "페미로살정5밀리그램(페미로라스트칼륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201802179"
+  },
+  "perindopril tertbutylamine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642901130",
+    "productName": "아서프릴정4밀리그램(페린도프릴-t-부틸아민)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200400322"
+  },
+  "peroxyacetic acid": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "056900040",
+    "productName": "페라스텔멀티샷액(과아세트산4%)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "202107876"
+  },
+  "pilocarpine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "621100040",
+    "productName": "살라겐정(필로카르핀염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199806333"
+  },
+  "potassium chloride + sodium chloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644913480",
+    "productName": "엔에이.케이주20",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200100252"
+  },
+  "povidone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643503091",
+    "productName": "티어드롭점안액2%(포비돈)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200301820"
+  },
+  "procyclidine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642403550",
+    "productName": "영프로마정(프로시클리딘염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201206444"
+  },
+  "propranolol hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645902470",
+    "productName": "인데놀정10mg(프로프라놀롤염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197400040"
+  },
+  "purified olive oil and purified soybean oil(8:2)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "078200121",
+    "productName": "클리노레익20%주사(플라스틱백)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200307893"
+  },
+  "ramipril": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652101420",
+    "productName": "트리테이스정2.5밀리그람(라미프릴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199200884"
+  },
+  "riluzole": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644704951",
+    "productName": "테글루틱현탁액(리루졸)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202202295"
+  },
+  "rufinamide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652105310",
+    "productName": "이노베론필름코팅정400mg (루피나미드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200905915"
+  },
+  "sacubitril/valsartan sodium hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653602710",
+    "productName": "엔트레스토필름코팅정100밀리그램(사쿠비트릴·발사르탄나트륨염수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201602112"
+  },
+  "secukinumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653602641",
+    "productName": "코센틱스센소레디펜(세쿠키누맙,유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201506755"
+  },
+  "sertaconazole nitrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642200120",
+    "productName": "더모픽스질정(세르타코나졸질산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199901648"
+  },
+  "sobrerol": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649700660",
+    "productName": "지엘소브레롤캡슐",
+    "method": "후보2 · 전체 이름",
+    "itemSeq": "198701672"
+  },
+  "spherical adsorptive carbon": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640002511",
+    "productName": "크레메진세립(구형흡착탄)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200401539"
+  },
+  "spironolactone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648900610",
+    "productName": "알닥톤필름코팅정25밀리그람(스피로노락톤)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200409929"
+  },
+  "sunitinib malate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648900470",
+    "productName": "수텐캡슐12.5밀리그램(수니티닙말산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200606180"
+  },
+  "telmisartan + S-amlodipine nicotinate + chlorthalidone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645307300",
+    "productName": "로디엔셋정80/2.5/25밀리그램(텔미사르탄, 에스암로디핀니코틴산염, 클로르탈리돈)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202502783"
+  },
+  "teprenone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642204150",
+    "productName": "셀벡스캡슐(테프레논)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198800119"
+  },
+  "teriparatide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "670800291",
+    "productName": "포스테오주(테리파라타이드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200209623"
+  },
+  "tetrakis copper(I)tetrafluoroborate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "055800051",
+    "productName": "셀비온세스타미비주(테트라키스(2-메톡시이소부틸이소니트릴)구리(I)테트라플루오로보레이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200100177"
+  },
+  "theophylline": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652601360",
+    "productName": "테올란비서방캡슐100밀리그램(테오필린)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199800979"
+  },
+  "thiamine nitrate + cyanocobalamin + cholecalciferol concentrated powder + calcium citrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "057001820",
+    "productName": "본에이디에스정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202501022"
+  },
+  "timolol maleate )(1회/1일)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643500711",
+    "productName": "리스몬티지점안액0.25%(티몰롤말레산염)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200109865"
+  },
+  "treprostinil": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "672000031",
+    "productName": "레모둘린주사1mg/mL(트레프로스티닐)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201001269"
+  },
+  "triptorelin acetate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652500021",
+    "productName": "데카펩틸-데포(트립토렐린아세트산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199604919"
+  },
+  "valganciclovir hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052900050",
+    "productName": "비가비르정450밀리그램(발간시클로비르염산염)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "201505740"
+  },
+  "valproate magnesium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651902380",
+    "productName": "프로막정200밀리그람(발프로산마그네슘)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200001458"
+  },
+  "venetoclax": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "624900330",
+    "productName": "벤클렉스타정100밀리그램(베네토클락스)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201903542"
+  },
+  "vericiguat(micronized)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641106150",
+    "productName": "베르쿠보정5밀리그램(베리시구앗(미분화))",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202107707"
+  },
+  "vincristine sulfate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648902981",
+    "productName": "화이자빈크리스틴황산염주1mg/mL",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200109317"
+  },
+  "vortioxetine hydrobromide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "668000110",
+    "productName": "브린텔릭스정10밀리그램(보티옥세틴브롬화수소산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201403836"
+  },
+  "vosoritide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "659701171",
+    "productName": "복스조고주1.2밀리그램(보소리타이드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202403102"
+  },
+  "zotepine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642400240",
+    "productName": "로도핀정25mg(죠테핀)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199701063"
+  },
+  "2-ketoglutaric acid monopotassium salt + calcium chloride + histidine + histidine hydrochloride + magnesium chloride + manitol + potassium chloride + sodium chloride + tryptophan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "660300030",
+    "productName": "쿠스토디올액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200511666"
+  },
+  "S-atenolol": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650200380",
+    "productName": "레보테놀정12.5밀리그람(에스아테놀롤)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200600225"
+  },
+  "S-pantoprazole sodium trihydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650203850",
+    "productName": "레토프라정20밀리그램(에스-판토프라졸나트륨 삼수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201205628"
+  },
+  "abatacept": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "658700481",
+    "productName": "오렌시아주250밀리그램(아바타셉트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201002332"
+  },
+  "abciximab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "668500011",
+    "productName": "클로티냅주(압식시맙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200611394"
+  },
+  "acamprosate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651904740",
+    "productName": "명인아캄프로세이트정333mg(아캄프로세이트칼슘)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201900645"
+  },
+  "acarbose": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652100050",
+    "productName": "글루코바이정50밀리그람(아카보즈)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199900925"
+  },
+  "acetaminophen + hydrocodone bitartrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653102610",
+    "productName": "하이코돈정5.0밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201202411"
+  },
+  "acetylcysteine + chlorpheniramine maleate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652900921",
+    "productName": "세브론에이시럽",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200302278"
+  },
+  "acyclovir + hydrocortisone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "057000691",
+    "productName": "하이클로크림",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202000429"
+  },
+  "adenosine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652000271",
+    "productName": "아데노코주사(아데노신)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200603927"
+  },
+  "agalsidase β(recombinant human α-galactosidase A)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652001321",
+    "productName": "파브라자임주35밀리그램(아갈시다제베타)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201302494"
+  },
+  "alacepril": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642201140",
+    "productName": "세타프릴정25밀리그램(알라세프릴)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199701740"
+  },
+  "allergen ext. 1종": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "656800010",
+    "productName": "다이아그노스틱알러젠익스트렉트",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199403191"
+  },
+  "allopurinol": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643901390",
+    "productName": "자이로릭정(알로푸리놀)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197000050"
+  },
+  "alogliptin benzoate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "693903780",
+    "productName": "네시나정12.5밀리그램(알로글립틴벤조산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202303030"
+  },
+  "alogliptin benzoate + pioglitazone hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "693903820",
+    "productName": "네시나액트정25/15밀리그램(알로글립틴벤조산염,피오글리타존염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202303455"
+  },
+  "alverine citrate + simethicone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642201500",
+    "productName": "알베릭스연질캡슐",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200501660"
+  },
+  "amantadine sulfate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651600780",
+    "productName": "피케이멜즈정(아만타딘황산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198701132"
+  },
+  "ambrisentan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650002310",
+    "productName": "볼리브리스정5밀리그램(암브리센탄)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200902796"
+  },
+  "aminoacetic aicd(A액중) + calcium chloride dihydrate(B액중) + dextrose(B액중) + L-alanine(A액중) + L-arginine(A액중) + L-histidine(A액중) + L-leucine(A액중) + L-lsoleucine(A액중) + L-lysine acetate(A액중) + L-methionine(A액중) + L-phenylalanine(A액중) + L-proline(A액중) + L-serine(A액중) + L-systain monohydrate(A액중) + L-threonine(A액중) + L-tryptophan(A액중) + L-valine(A액중) + magnesium chloride hexahydrate(B액중) + potassium chloride(B액중) + potassium dihydrogen phosphate(A액중) + sodium acetate trihydrate(A액중) + sodium chloride(B액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644903910",
+    "productName": "콤비플렉스페리주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200308580"
+  },
+  "aminophylline": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650500411",
+    "productName": "제일아미노필린주사액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197500144"
+  },
+  "amiodarone hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652101250",
+    "productName": "코다론정(아미오다론염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200701021"
+  },
+  "amlodipine besylate + azilsartan medoxomil potassium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "623800400",
+    "productName": "이달디핀정80/10밀리그램(아질사르탄메독소밀칼륨,암로디핀베실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202502797"
+  },
+  "amlodipine camsylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643501600",
+    "productName": "아모디핀정5밀리그램(암로디핀캄실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200402637"
+  },
+  "amlodipine nicotinate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641601410",
+    "productName": "베아디핀정(암로디핀니코틴산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200711589"
+  },
+  "amlodipine orotate + valsartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642506980",
+    "productName": "오로살탄정5/160밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201308526"
+  },
+  "ammonium chloride + chlorpheniramine maleate + dihydrocodeine tartrate + DL-methylephedrine hydrochloride + pelargonium sidoides ethanol ext.(1→8~10)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "057600771",
+    "productName": "코다나에스시럽",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202005580"
+  },
+  "amorolfine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "655700111",
+    "productName": "로세릴크림(아모롤핀염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200210173"
+  },
+  "amoxicillin sodium + sulbactam sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652601010",
+    "productName": "썰타목스주1500mg(주사용아목시실린나트륨ㆍ설박탐나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200001259"
+  },
+  "amphotericin B(liposomal)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "625900031",
+    "productName": "암비솜주사(주사용리포좀화한암포테리신B)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199704225"
+  },
+  "argatroban": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653301211",
+    "productName": "노바스탄하이주10mg/2mL(아가트로반수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202204620"
+  },
+  "asciminib hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653603510",
+    "productName": "셈블릭스정40밀리그램(애시미닙염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202202386"
+  },
+  "ascorbic acid + biotin + calcium citrate + calcium pantothenate + corn starch + cyanocobalamin powder + ferrous sulfate + folic acid + low lactose protein + magnesium carbonate + maltodextrine + nicotinamide + potassium citrate + pyridoxine hydrochloride + riboflavin + sodium chloride + soya oil + soybean hull dietary fiber powder + thiamine hydrochloride + tocopherol acetate powder + vegetable protein + vitamine A powder + whey protein + white sugar": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "667400852",
+    "productName": "하모닐란액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201007457"
+  },
+  "atropine sulfate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645101113",
+    "productName": "대한아트로핀황산염주사액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "196900033"
+  },
+  "axitinib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648902120",
+    "productName": "인라이타정5밀리그램(엑시티닙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201206553"
+  },
+  "azelastine hydrochloride + mometasone furoate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643506461",
+    "productName": "모테손플러스나잘스프레이",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201208430"
+  },
+  "azilsartan medoxomil potassium + amlodipine besylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "623800380",
+    "productName": "이달디핀정40/10밀리그램(아질사르탄메독소밀칼륨,암로디핀베실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202502799"
+  },
+  "azilsartan medoxomil potassium + chlorthalidone": {
+    "status": "unresolved",
+    "reason": "미해결: 후보1 전체 이름「이달비클로정40/25밀리그램(아질사르」→1건 / 후보1 괄호 앞까지「이달비클로정40/25밀리그램」→2건 / 후보1 앞 6글자「이달비클로정」→4건 / 후보1 앞 4글자「이달비클」→4건 / 후보2 전체 이름「이달비클로정40/12.5밀리그램(아질」→1건 / 후보2 괄호 앞까지「이달비클로정40/12.5밀리그램」→2건 / 후보2 앞 6글자「이달비클로정」→4건 / 후보2 앞 4글자「이달비클」→4건",
+    "productCode": "693903880",
+    "productName": "이달비클로정40/25밀리그램(아질사르탄메독소밀칼륨,클로르탈리돈)"
+  },
+  "azithromycin hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642902831",
+    "productName": "아지탑스주사500밀리그램(아지트로마이신수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200807127"
+  },
+  "bacillus subtilis·streptococcus faecium(streptococcus faecium 9억마리 + bacillus subtilis 1억마리)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643300440",
+    "productName": "락토웰장용캡슐(바실루스서브틸리스균.스트렙토코카스페시움균배양물)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "200400118"
+  },
+  "baricitinib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "670801120",
+    "productName": "올루미언트정2밀리그램(바리시티닙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201708280"
+  },
+  "barium sulfate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "625400012",
+    "productName": "바리탑에치디현탁용분말(황산바륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200607516"
+  },
+  "belimumab": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650002891",
+    "productName": "벤리스타주400밀리그램(벨리무맙)(단클론항체, 유전자재조합)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201307773"
+  },
+  "bemiparin sodium )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "655402981",
+    "productName": "자이버주2500IUAntiXa/0.2mL(베미파린나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200411107"
+  },
+  "benzathine penicillin G 120만unit": {
+    "status": "unresolved",
+    "reason": "미해결: 후보1 전체 이름「몰다민주」→0건 / 후보2 전체 이름「벤제타실주」→0건 / 후보2 앞 4글자「벤제타실」→0건",
+    "productCode": "664000371",
+    "productName": "몰다민주"
+  },
+  "bepotastine nicotinate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642403990",
+    "productName": "타리민정(베포타스틴니코틴산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201503490"
+  },
+  "betaxolol hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642201020",
+    "productName": "부광켈론정(베탁솔롤염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198600903"
+  },
+  "bezafibrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643300910",
+    "productName": "베자립서방정(베자피브레이트)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198900123"
+  },
+  "brinzolamide + timolol maleate )": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643904251",
+    "productName": "엘라프리점안현탁액(브린졸라미드,티몰롤말레산염)(1회용)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202600113"
+  },
+  "bromhexine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642200520",
+    "productName": "뮤코졸정(브롬헥신염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197400277"
+  },
+  "budesonide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645300194",
+    "productName": "데소나비액(부데소니드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199402213"
+  },
+  "busulfan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "627600261",
+    "productName": "부설칸주(부설판)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202301532"
+  },
+  "butorphanol tartrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649801911",
+    "productName": "부토판주사1밀리그람/밀리리터(부토르파놀타르타르산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199604964"
+  },
+  "caffeine anhydrous + chlorpheniramine maleate + dihydrocodeine tartrate + DL-methylephedrine hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641900090",
+    "productName": "네오메디코푸정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197700537"
+  },
+  "caffeine anhydrous + citric acid + sodium citrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "659900450",
+    "productName": "네오카프액(카페인시트르산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201003573"
+  },
+  "calcium acetate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652600510",
+    "productName": "네프로정(아세트산칼슘)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199801011"
+  },
+  "calcium carbonate(precipitated) + calcium gluconate hydrate + calcium lactate hydrate + ergocalciferol": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643301810",
+    "productName": "애드칼정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198900129"
+  },
+  "calcium carbonate(precipitated) + omeprazole": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644705270",
+    "productName": "오메드플러스정20/600mg(오메프라졸,침강탄산칼슘)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202601399"
+  },
+  "calcium chloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "650500243",
+    "productName": "염카루 주 3% (염화칼슘수화물)",
+    "method": "후보2 · 앞 6글자",
+    "itemSeq": "197300090"
+  },
+  "calcium chloride dihydrate(A분획중) + dextrose monohydrate(A분획중) + magnesium chloride hexahydrate(A분획중) + potassium chloride(B분획중) + S-lactic acid(A분획중) + sodium bicarbonate(B분획중) + sodium chloride(B분획중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "646601711",
+    "productName": "프리즈마졸2칼륨액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201702025"
+  },
+  "calcium chloride dihydrate(A액중) + glucose monohydrate (B액중) + glycine(A액중) + L-alanine(A액중) + L-arginine(A액중) + L-histidine (A액중) + L-isoleucine(A액중) + L-leucine(A액중) + L-lysine hydrochloride(A액중) + L-methionine (A액중) + L-phenylalanine(A액중) + L-proline(A액중) + L-serine(A액중) + L-threonine(A액중) + L-tryptophan(A액중) + L-tyrosine(A액중) + L-valine(A액중) + magnesium sulfate heptahydrate(A액중) + medium-chain triglycerides(C액중) + potassium chloride(A액중) + purified fish oil(C액중) + purified olive oil(C액중) + purified soybean oil(C액중) + sodium acetate trihydrate(A액중) + sodium glycerophosphate(A액중) + taurine(A액중) + zinc sulfate heptahydrate(A액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640007932",
+    "productName": "오마프플러스원페리주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202302671"
+  },
+  "calcium chloride dihydrate(A액중) + glucose monohydrate (B액중) + glycine(A액중) + L-alanine(A액중) + L-arginine(A액중) + L-histidine(A액중) + L-isoleucine(A액중) + L-leucine (A액중) + L-lysine acetate(A액중) + L-methionine (A액중) + L-phenylalanine (A액중) + L-proline(A액중) + L-serine(A액중) + L-threonine(A액중) + L-tryptophan(A액중) + L-tyrosine(A액중) + L-valine(A액중) + magnesium sulfate heptahydrate(A액중) + medium-chain triglycerides(C액중) + potassium chloride(A액중) + purified fish oil(C액중) + purified olive oil(C액중) + purified soybean oil(C액중) + sodium acetate trihydrate(A액중) + sodium glycerophosphate(A액중) + taurine(A액중) + zinc sulfate heptahydrate(A액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642105613",
+    "productName": "유한쓰리챔버폼스페리주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201908667"
+  },
+  "calcium chloride dihydrate(A액중) + glucose monohydrate (B액중) + glycine(A액중) + L-alanine(A액중) + L-arginine(A액중) + L-histidine(A액중) + L-isoleucine(A액중) + L-leucine(A액중) + L-lysine acetate (A액중) + L-methionine (A액중) + L-phenylalanine (A액중) + L-proline(A액중) + L-serine(A액중) + L-threonine(A액중) + L-tryptophan(A액중) + L-tyrosine(A액중) + L-valine(A액중) + magnesium sulfate heptahydrate(A액중) + medium-chain triglycerides(C액중) + potassium chloride(A액중) + purified fish oil(C액중) + purified olive oil(C액중) + purified soybean oil(C액중) + sodium acetate trihydrate(A액중) + sodium glycerophosphate(A액중) + taurine(A액중) + zinc sulfate heptahydrate (A액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640006690",
+    "productName": "오마프원주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201500952"
+  },
+  "calcium chloride dihydrate(B액중) + glucose monohydrate(A액중) + glycine(B액중) + L-alanine(B액중) + L-arginine(B액중) + L-histidine(B액중) + L-isoleucine(B액중) + L-leucine (B액중) + L-lysine HCL(B액중) + L-methionine(B액중) + L-phenylalanine(B액중) + L-proline(B액중) + L-serine(B액중) + L-threonine(B액중) + L-tryptophan(B액중) + L-tyrosine(B액중) + L-valine(B액중) + magnesium sulfate heptahydrate(B액중) + medium-chain triglycerides(C액중) + potassium chloride(B액중) + purified fish oil(C액중) + purified olive oil(C액중) + purified soybean oil(C액중) + sodium acetate trihydrate(B액중) + sodium glycerophosphate(B액중) + zinc sulfate heptahydrate(B액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "678900992",
+    "productName": "위너프페리주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201309523"
+  },
+  "calcium chloride dihydrate(C액중) + glucose monohydrate(C액중) + glycine(B액중) + L-alanine(B액중) + L-arginine(B액중) + L-aspartic acid(B액중) + L-glutamic acid(B액중) + L-histidine(B액중) + L-isoleucine(B액중) + L-leucine(B액중) + L-lysine acetate(B액중) + L-methionine(B액중) + L-phenylalanine(B액중) + L-proline(B액중) + L-serine(B액중) + L-threonine(B액중) + L-tryptophan(B액중) + L-tyrosine(B액중) + L-valine(B액중) + magnesium chloride hexahydrate(B액중) + potassium chloride(B액중) + purified olive oil and purified soybean oil(8:2)(A액중) + sodium acetate trihydrate(B액중) + sodium glycerophosphate hydrate(B액중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "078200071",
+    "productName": "올리멜엔9이주",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201205378"
+  },
+  "calcium chloride(A분획중) + dextrose monohydrate(A분획중) + magnesium chloride hexahydrate(A분획중) + potassium chloride(A분획중) + sodium bicarbonate(B분획중) + sodium chloride(B분획중)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "664300581",
+    "productName": "멀티빅2칼륨액5L",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201103797"
+  },
+  "calcium chloride(A용액중)(2백) + dextrose monohydrate(A용액중)(2백) + magnesium chloride hexahydrate(A용액중)(2백) + sodium chloride(A용액중)(2백) + sodium lactate solution(B용액중)(2백)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "664300100",
+    "productName": "씨에이피디18밸런스복강투석액(수입명:Balance4.25%glucose,1.25mmolCalcium,Peritonealdialyselosung Solution for peritoneal dialysis)",
+    "method": "후보1 · 괄호 앞까지",
+    "itemSeq": "200308013"
+  },
+  "calcium citrate + cholecalciferol concentrated powder + cyanocobalamin + folic acid": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "649808160",
+    "productName": "마이칼큐정",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202300936"
+  },
+  "calcium gluconate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644902341",
+    "productName": "제이더블유중외제약글루콘산칼슘주사액",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198400093"
+  },
+  "capsaicin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "664600371",
+    "productName": "다이악센크림(천연캡사이신)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200201189"
+  },
+  "carbimazole": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "664600850",
+    "productName": "카멘정10밀리그람(카르비마졸)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200401526"
+  },
+  "carfilzomib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "052300071",
+    "productName": "키프롤리스주30밀리그램(카르필조밉)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201701541"
+  },
+  "cefazolin sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643302781",
+    "productName": "종근당세파졸린주1그램(세파졸린나트륨)(수출명:씨졸주1그램,라세나졸린주1그램,오리안트주1그램)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198300066"
+  },
+  "cefepime hydrochloride hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641901181",
+    "productName": "보령맥스핌주0.5그램(세페핌염산염수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199701299"
+  },
+  "cefuroxime sodium": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643303001",
+    "productName": "종근당세푸록심나트륨주750밀리그램(세푸록심나트륨)(수출명:푸록심주)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199700175"
+  },
+  "cephalexin": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642102260",
+    "productName": "케파신캡슐500밀리그램(세팔렉신수화물)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198800426"
+  },
+  "cetrorelix acetate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "626200031",
+    "productName": "유레릭스주0.25밀리그램(세트로렐릭스아세트산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201505122"
+  },
+  "chloral hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645302132",
+    "productName": "포크랄시럽(포수클로랄)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198902804"
+  },
+  "chlordiazepoxide hydrochloride": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "657200200",
+    "productName": "리버티정5밀리그램(클로르디아제폭시드염산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199203463"
+  },
+  "chlorhexidine gluconate solution 50μL": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648300150",
+    "productName": "그린클로르헥시딘크림(클로르헥시딘글루콘산염액)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200004840"
+  },
+  "chlorthalidone": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "645302230",
+    "productName": "하이그로톤정25밀리그람(클로르탈리돈)",
+    "method": "후보1 · 앞 6글자",
+    "itemSeq": "200302309"
+  },
+  "chlorthalidone + telmisartan": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642106470",
+    "productName": "미카클로정40/12.5밀리그램(텔미사르탄, 클로르탈리돈)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202600660"
+  },
+  "cholestyramine resin": {
+    "status": "unresolved",
+    "reason": "미해결: 후보1 전체 이름「에픽콜레스티라민현탁용산(라이트)4그램」→0건 / 후보1 괄호 앞까지「에픽콜레스티라민현탁용산」→0건 / 후보1 앞 6글자「에픽콜레스티」→0건 / 후보1 앞 4글자「에픽콜레」→0건 / 후보2 전체 이름「에픽콜레스티라민현탁용산4그램」→0건 / 후보2 앞 6글자「에픽콜레스티」→0건 / 후보2 앞 4글자「에픽콜레」→0건",
+    "productCode": "664001651",
+    "productName": "에픽콜레스티라민현탁용산(라이트)4그램"
+  },
+  "choline fenofibrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653006210",
+    "productName": "페노코린캡슐(페노피브레이트콜린)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201802531"
+  },
+  "ciclesonide(/회)": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644704891",
+    "productName": "알베스코흡입제160(시클레소니드)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200704588"
+  },
+  "ciclopirox": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "652100261",
+    "productName": "로푸록스겔(시클로피록스)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200200774"
+  },
+  "cilnidipine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "641902700",
+    "productName": "시나롱정10밀리그램(실니디핀)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199801203"
+  },
+  "clonazepam": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "643308800",
+    "productName": "리보트릴정(클로나제팜)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "200610884"
+  },
+  "codeine phosphate + ibuprofen + paracetamol": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "657801830",
+    "productName": "코노펜캡슐",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199907257"
+  },
+  "colchicine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644304080",
+    "productName": "콜킨정(콜키신)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198801219"
+  },
+  "colistin sodium methanesulfonate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "651203731",
+    "productName": "콜리스주(콜리스틴메탄설포네이트나트륨)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201200983"
+  },
+  "crizotinib": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "648902070",
+    "productName": "잴코리캡슐250밀리그램(크리조티닙)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201112195"
+  },
+  "cyclophosphamide": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644901400",
+    "productName": "알키록산정(시클로포스파미드정)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "197600065"
+  },
+  "d-penicillamine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "642901240",
+    "productName": "알타민캡슐150밀리그램(디-페니실라민)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "198300146"
+  },
+  "dabigatran etexilate mesylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653501340",
+    "productName": "프라닥사캡슐110밀리그램(다비가트란에텍실레이트메실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201100749"
+  },
+  "dabrafenib mesylate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "653602650",
+    "productName": "라핀나캡슐50밀리그램(다브라페닙메실산염)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "201404384"
+  },
+  "dacarbazine": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "644300661",
+    "productName": "디티아이주(다카르바진)(수출명:DTIC-VHBforinjection100mg)",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "199601509"
+  },
+  "dapagliflozin + sitagliptin phosphate hydrate": {
+    "status": "ok",
+    "reason": "",
+    "productCode": "640007910",
+    "productName": "다파엔시타정10/100밀리그램",
+    "method": "후보1 · 전체 이름",
+    "itemSeq": "202301872"
   }
 }

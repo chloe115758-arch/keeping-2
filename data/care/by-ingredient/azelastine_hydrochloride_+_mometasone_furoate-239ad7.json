@@ -1,0 +1,75 @@
+{
+ "ingredient": "azelastine hydrochloride + mometasone furoate",
+ "productSeq": "201208430",
+ "itemName": "모테손플러스나잘스프레이",
+ "atc": "R01AD59",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220201",
+ "ediCode": "643506461",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201208430/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201208430/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201208430/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "알코올, 중추신경억제제 : 아젤라스틴과 알코올 또는 중추신경억제제와의 병용으로 민첩성이 추가적으로 감소하거나 중추신경 운동능력이 추가적으로 손상될 수 있으므로 아젤라스틴을 포함하는 이 약은 알코올 또는 중추신경억제제와 함께 사용하는 것을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d1ba5fe6ec",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약에 대해 임부 및 수유부에 대한 투여에 관한 자료가 확립되어 있지 않으므로, 임부 및 수유부에게는 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "3c0a669c9e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "아젤라스틴은 발달상 독성을 야기하는 것으로 나타났으며, 실험동물에게 치료량 이상으로 과용량을 투여했을 때 배아-태아 사망, 기형, 골화 과정 지연, 태아 체중 감소, 유산, 모체 독성 등이 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "a84c6d4359",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "모메타손푸로에이트를 임신한 여성에게서의 적절한 연구는 없다. 임상적 최대 권장용량을 비강 내 투여한 후, 모메타손의 혈장 비율은 측정이 불가능하였다. 따라서 태아 노출은 무시할 만 하며, 생식독성의 잠재성은 매우 낮은 것으로 기대되나, 다른 비강용 코르티코스테로이드류에서와 같이, 본제는 모체에 대한 잠재적인 유익성이 모체, 태아 및 갓난아기에 대한 잠재적인 위험성을 상회하는 경우가 아니면 임…",
+   "extractor": "kw-v4",
+   "id": "667596bf43",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:51",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

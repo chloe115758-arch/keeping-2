@@ -1,0 +1,159 @@
+{
+ "ingredient": "tenofovir alafenamide hemimalate",
+ "productSeq": "202300928",
+ "itemName": "테노에스정(테노포비르알라페나미드헤미말산염)",
+ "atc": "J05AF13",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260622",
+ "ediCode": "643903910",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300928/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300928/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300928/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 약물 상호작용",
+   "subject": "",
+   "excerpt": "병용약물 분류: 약물명 농도에의 영향b 임상적 설명 항경련제: 카바마제핀c* 옥스카바제핀* 페노바르비탈* 페니토인* ↓테노포비르 알라페나미드 카바마제핀 병용투여 시, 테노포비르 알라페나미드 용량을 1일 2정으로 증량해야 한다. 이 약과 옥스카바제핀, 페노바르비탈 또는 페니토인의 병용투여는 권장되지 않는다. 항결핵제: 리파부틴* 리팜핀* 리파펜틴* ↓테노포비르 알라페나미드 이 약과 리파부틴,…",
+   "extractor": "kw-v4",
+   "id": "9824ddaac0",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "6af536ab84",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "위험성 요약",
+   "excerpt": "항레트로바이러스 임신 레지스트리(APR)의 이용 가능한 데이터에 따르면, 미국의 메트로폴리탄 애틀랜타 선천성 결손 프로그램(MACDP)에서 미국 기준 모집단의 주요 선천적 결손에 대한 배경 비율 2.7%와 비교하여 테노포비르 알라페나미드(TAF)의 전반적인 선천성 결손 위험에 유의한 차이가 없음을 보여준다[데이터 참조]. 유산율은 APR에 보고되지 않았다. 미국 일반 모집단에서 임상적으로 추…",
+   "extractor": "kw-v4",
+   "id": "e0735409e0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "위험성 요약",
+   "excerpt": "동물시험에서는 기관 형성 시기에 랫트 및 토끼에서 각각 하루 권장용량을 복용한 사람에서의 테노포비르 노출과 유사하거나 51배 높게 노출하였을 때 발달 이상이 나타나지 않았다[데이터 참조]. 유즙을 통해 TDF를 TAF의 하루 권장용량에서의 노출 대비 약 12배로 노출하였을 때 부작용은 확인되지 않았다. 동물 생식발생독성시험을 통해 항상 사람에서의 반응을 예측할 수 있는 것은 아니기 때문에 임…",
+   "extractor": "kw-v4",
+   "id": "903abce707",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "사람에서의 자료",
+   "excerpt": "APR에서 임신 중 TAF 함유 요법에 노출되어 정상 출산으로 이어진 전향적 보고(임신 초기 중 노출 200건 이상, 임신 중기/후기 중 노출 80건 이상 포함)에 따르면, 선천성 결손의 유병률이 임신 초기 TAF 함유 요법에 노출 시 5.2% (95% CI: 2.7 &#x2013; 8.8%) 및 임신 중기/후기 노출 시 1.2% (95% CI: 0 &#x2013; 6.5%)였다. APR의…",
+   "extractor": "kw-v4",
+   "id": "75c2d2f066",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "동물시험 자료",
+   "excerpt": "랫트와 토끼를 대상으로 수행된 배태자 발달 연구에서 수태능 손상 또는 태아에 대한 유해성이 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "19c90b4000",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "동물시험 자료",
+   "excerpt": "테노포비르 알라페나미드는 임신한 랫트에서 25, 100 또는 200 mg/kg/day 용량으로, 토끼에서 10, 30 또는 100 mg/kg/day 용량으로 기관 형성 시기 동안(임신 6 &#x2013; 17일, 7 &#x2013; 20일 각각) 경구 투여되었다. 랫트 및 토끼에서 각각 하루 권장용량을 복용한 사람에서의 테노포비르 노출과 대략 유사하거나 51배 높게 노출하였을 때 태아에 이상…",
+   "extractor": "kw-v4",
+   "id": "b09bfbdbe7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "동물시험 자료",
+   "excerpt": "수유",
+   "extractor": "kw-v4",
+   "id": "fbd776562c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "위험성 요약",
+   "excerpt": "이 약과 대사체가 사람의 유즙을 통해 분비되는지, 유즙 생성에 영향을 미치는지 또는 수유를 받는 신생아에 어떤 영향을 미치는지에 대해서는 알려져 있지 않다. 테노포비르는 랫트 및 레서스원숭이에서 TDF 투여 후 유즙으로 분비됨이 확인되었다. 테노포비르 알라페나미드가 동물에서 유즙을 통해 분비되는지는 알려지지 않았다. 모유 수유를 통한 발달상, 건강상의 이점과 함께 이 약에 대한 산모의 임상적…",
+   "extractor": "kw-v4",
+   "id": "befe485e84",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "동물시험 자료",
+   "excerpt": "랫트와 원숭이 대상 시험에서 테노포비르가 유즙으로 분비됨이 확인되었다. 랫트에서 TDF를 경구 투여 시(최대 600 mg/kg/day까지) 테노포비르가 유즙으로 분비되었다. 가장 높은 용량을 투여받은 동물에서 수유 11일에 혈중 농도 중간값이 최대 약 24%까지 확인되었다. 수유 중인 원숭이에 테노포비르를 단회 피하투여(30 mg/kg) 시 유즙으로 분비된 테노포비르는 혈중 농도의 약 4%,…",
+   "extractor": "kw-v4",
+   "id": "2336a5e905",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 환자에 대해 용량 조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "7100f63667",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

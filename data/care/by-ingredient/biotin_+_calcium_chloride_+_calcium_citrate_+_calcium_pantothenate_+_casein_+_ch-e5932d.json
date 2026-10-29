@@ -1,0 +1,82 @@
+{
+ "ingredient": "biotin + calcium chloride + calcium citrate + calcium pantothenate + casein + cholecalciferol + copper sulfate + cyanocobalamin + ferrous gluconate + folic acid + isolated soybean protein + magnesium chloride + maltodextrine + manganese sulfate + nicotinamide + palm oil + perilla oil + phytonadione + potassium carbonate + potassium chloride + potassium citrate + potassium dihydrogen phosphate + purified sucrose + pyridoxine hydrochloride + riboflavin sodium phosphate + sodium ascorbate + sodium citrate + soybean oil + thiamine hydrochloride + tocopherol acetate + tricaprilin + vitamine A oil + zinc sulfate",
+ "productSeq": "200805993",
+ "itemName": "엔커버액",
+ "atc": "V06DB",
+ "etcOtc": "전문의약품",
+ "changeDate": "20161005",
+ "ediCode": "644912233",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200805993/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200805993/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200805993/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음 환자에는 투여하지 말 것. 2)",
+   "subject": "",
+   "excerpt": "우유에 과민하거나 알레르기 병력이 있는 환자(이 약은 우유 단백질인 카제인을함유하므로, 쇼크 또는 아나필락시스양 반응을 일으킬 수 있다.)",
+   "extractor": "kw-v4",
+   "id": "b48a555b38",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "와파린과 병용투여 시 피토나디온(비타민K1)이 와파린의 작용에 길항하기 때문에 와파린의 작용이 감소할 수 있으므로 병용에 주의한다.(이 약은 피토나디온을 62.5㎍/100mL 함유한다)",
+   "extractor": "kw-v4",
+   "id": "5ff2a3d068",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "elderly",
+   "where": "6. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 생리기능이 저하되어 있으므로, 투여량, 투여농도, 투여속도에 주의하여 투여한다.",
+   "extractor": "kw-v4",
+   "id": "209d35ba81",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "외국에서, 임신 전 3개월로부터 임신 초기 3개월까지 비타민A를 10,000IU/일 이상 섭취한 여성으로부터 태어난 아이에서 능형뇌(菱型腦, hindbrain) 등을 중심으로 하는 기형발현 증가가 추정된다는 역학 조사 결과가 있으므로, 임신 3개월 이내 또는 임신을 희망하는 부인에 투여할 경우는 식품 등으로부터의 섭취량 및 용법ㆍ용량에 유의하고, 이 약에 의한 비타민A의 투여는 5,000IU…",
+   "extractor": "kw-v4",
+   "id": "c038018760",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:17",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

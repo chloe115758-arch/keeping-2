@@ -1,0 +1,137 @@
+{
+ "ingredient": "fimasartan potassium trihydrate + hydrochlorothiazide",
+ "productSeq": "201300048",
+ "itemName": "카나브플러스정60/12.5mg",
+ "atc": "C09DA10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260219",
+ "ediCode": "641905990",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201300048/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201300048/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201300048/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "○ 히드로클로로티아지드와 관련된 상호작용",
+   "excerpt": "바르비탈계 약물, 아편 알칼로이드계 마약과의 병용 또는 음주에 의해 기립성 저혈압이 증가되었다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "b282330bb9",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "○ 히드로클로로티아지드와 관련된 상호작용",
+   "excerpt": "혈압강하제(다른 이뇨제, 마취제, 알코올)등의 작용을 증가 시킬 수 있다. 또한 ACE 저해제와 병용투여하는 경우에는 혈압강하작용을 증가시킬 수 있으므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "d5194113ce",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 9)",
+   "subject": "○ 히드로클로로티아지드와 관련된 상호작용",
+   "excerpt": "콜레스티라민, 콜레스티폴을 병용투여하는 경우에는 티아지드계 이뇨제의 흡수가 저해될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "47b4ecb35f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약과 같이 레닌-안지오텐신계에 직접적으로 작용하는 약물을 임부에 투여 시 태아 또는 신생아에게 병적 상태 및 사망을 일으킬 수 있다. 특히 임신 2, 3기에 레닌-안지오텐신계에 직접 작용하는 약물 투여시, 태아 및 신생아에 저혈압, 신생아 두개골 형성저하증, 무뇨증, 가역적 또는 비가역적 신부전을 포함한 손상 및 사망까지도 유발되었다. 태아의 신기능의 저하가 원인일 것으로 추정되는 양수과…",
+   "extractor": "kw-v4",
+   "id": "90f52b8817",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "티아지드계 이뇨제는 신생아 또는 영아에서 고빌리루빈혈증, 혈소판감소 등을 일으킬 수 있다. 또한, 이뇨효과에 의해 혈장량 감소, 혈액농축, 자궁·태반혈류량 감소가 나타날 수 있으므로 임신 후기에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "5302af58c1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "피마사르탄이 사람의 모유로 이행되는지 여부는 알려져 있지 않으나, 랫드에 대한 시험에서 모유 중에 이 약의 분비가 확인되었으므로, 수유부에게 이 약을 투여하는 것은 바람직하지 않다. 따라서 수유부에 대한 이 약의 필요성을 고려하여 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "12c8b7fe65",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "히드로클로로티아지드는 모유 생성을 억제하고 모유중으로의 이행이 보고되어 있으므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "de072c6d5c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "만 70세 이하의 고령자에 대해 초기 용량 조절이 필요하지 않다. 일반적으로 고령자에서는 가장 낮은 용량으로 투여를 시작하며, 고령자에게 빈발하는 간, 신장 및 심장의 기능저하와 동반질환 또는 병용약물 등을 고려하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "be03ecf50d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:20",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,144 @@
+{
+ "ingredient": "moxifloxacin hydrochloride",
+ "productSeq": "201310000",
+ "itemName": "모벨록신정400밀리그램(목시플록사신염산염)",
+ "atc": "J01MA14",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260323",
+ "ediCode": "640006650",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310000/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310000/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310000/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "임상적으로 음식물이나 유제품과 상호작용이 없다.",
+   "extractor": "kw-v4",
+   "id": "057b57b8f3",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "유제품"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "아테놀롤, 칼슘보충제, 테오필린, 이트라코나졸, 모르핀, 디곡신, 라니티딘, 글리벤클라미드(당뇨병 치료제) 또는 프로베네시드, 경구용 피임제와 상호작용을 나타내지 않으므로 용량조절이 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "92812238ea",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘보충제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 5)",
+   "subject": "",
+   "excerpt": "제산제, 미네랄, 비타민 복합제 : 이 약과 제산제, 미네랄, 비타민 복합제를 병용 투여시 다가 양이온과 함께 킬레이트(chelate) 복합체를 형성하여 이 약의 흡수가 감소될 수 있다. 이로 인하여 이 약의 혈장농도가 예상했던 수치보다 상당히 낮아질 수 있다. 마그네슘 또는 알루미늄, 수크랄페이트 포함하는 제제, 제산제, 항-레트로바이러스제(예, 디다노신), 철 또는 아연을 포함하는 제제는…",
+   "extractor": "kw-v4",
+   "id": "fead85aab2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 9)",
+   "subject": "",
+   "excerpt": "칼슘 보충제 : 고용량의 칼슘 보충제와 함께 투여할 때, 흡수율이 약간 감소한 반면에 흡수 정도는 영향을 받지 않았다. 이 약의 흡수에 대한 고용량 칼슘 보충제의 영향은 임상적으로 관련성이 없는 것으로 보인다.",
+   "extractor": "kw-v4",
+   "id": "f80a6b3e9e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘 보충제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 임부에 대하여 안전성이 확립되어 있지 않으므로 투여하지 않는다(어떤 퀴놀론계 약물은 어린이에게서 가역적인 관절손상을 유발한다고 보고되었다. 하지만 이러한 영향이 약에 노출된 태아에서는 관찰되지 않았다. 동물실험에서 생식독성이 나타났고, 사람에서의 잠재적인 위험성은 알려져 있지 않다.).",
+   "extractor": "kw-v4",
+   "id": "f052d31fa3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "다른 퀴놀론계 약물처럼 이 약은 미성숙 동물에서 체중 지지 연골에 손상을 유발하는 것으로 나타났다. 퀴놀론은 사람의 유즙으로 잘 분포되는 것으로 알려져 있다. 전임상 시험에서 이 약 소량이 사람의 유즙으로 분비될 수 있음을 나타냈다. 따라서 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "4e859b7365",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에서, 고령자에게 나타난 이상반응의 종류 및 발생률은 비고령자와 비슷했다. 그러나 일반적으로 고령자는 생리기능이 저하되어있는 경우가 많기 때문에 환자의 상태에 주의하여 신중하게 투여한다. 특히 체중이 40 kg 미만의 고령자는 혈중/조직 농도가 높아 이상반응이 나타나기 쉬우므로 저용량(200 mg)을 사용하는 등 신중하게 투여한다. 또한 고령자는 QT 간격이 연장되는 경향이…",
+   "extractor": "kw-v4",
+   "id": "f5cc070729",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "역학연구에 따르면 플루오로퀴놀론계 항균제 사용 후 2개월 이내에, 특히 고령자에서 대동맥류 또는 대동맥 박리 발생률이 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "32b5f4d256",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:34",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

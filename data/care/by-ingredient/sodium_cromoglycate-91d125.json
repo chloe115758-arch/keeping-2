@@ -1,0 +1,44 @@
+{
+ "ingredient": "sodium cromoglycate",
+ "productSeq": "201403291",
+ "itemName": "아이크롬점안액(크로몰린나트륨)",
+ "atc": "S01GX01",
+ "etcOtc": "일반의약품",
+ "changeDate": "20141022",
+ "ediCode": "643802331",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403291/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403291/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403291/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험(토끼, 마우스)에서 모체독성이 나타나고 대량 주입시 태자흡수 및 체중감소 등의 태자독성이 나타났다는 보고가 있으므로 임부 및 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회(웃돎)한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "1d754f5e3b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "eb7ccf7988",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "1회 1-2방울 1일 4회(아침, 점심, 저녁, 취침전) 점안(눈에 넣음)한다.",
+   "meal": "취침전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:30",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

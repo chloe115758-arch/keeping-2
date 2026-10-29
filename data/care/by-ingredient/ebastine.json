@@ -1,0 +1,56 @@
+{
+ "ingredient": "ebastine",
+ "productSeq": "199601085",
+ "itemName": "보령에바스텔내복액(에바스틴)",
+ "atc": "R06AX22",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231030",
+ "ediCode": "641901521",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199601085/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199601085/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199601085/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 및 임신하고 있을 가능성이 있는 부인에 대한 안전성이 확립되어 있지 않으므로 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "e7dc2417ad",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 이 약이 유즙으로 이행된다는 보고가 있으므로 이 약을 투여중에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "8724b679a0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "1c83804d98",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "투여는 아침식사전에 하는 것이 바람직하다.",
+   "meal": "식사전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:13",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,56 @@
+{
+ "ingredient": "clotrimazole + hydrocortisone",
+ "productSeq": "202002443",
+ "itemName": "카네스졸플러스크림",
+ "atc": "D01AC20",
+ "etcOtc": "일반의약품",
+ "changeDate": "20200615",
+ "ediCode": "057001002",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002443/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002443/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002443/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 비교적 적은 용량의 코르티코이드를 전신적으로 투여하거나, 좀 더 강력한 코르티코이드를 피부에 도포한 경우 기형발생이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "3a425c01dd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대한 임상시험 결과는 없으나, 역학조사 결과 이 약을 임신기간 동안 투여했을 때 산모 및 태아(소아)에 영향을 미치지 않았다. 하지만 임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 이 약을 투여할 수 있다(다른 약물과 마찬가지로 임신 초기 3개월 내에 이 약을 사용하여야 할 경우 의사…",
+   "extractor": "kw-v4",
+   "id": "a823f09aa4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 모유로 이행한다는 보고는 없으나 전신적으로 흡수된 코르티코이드가 모유 중으로 이행되므로 수유부에는 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "56de5d5f72",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

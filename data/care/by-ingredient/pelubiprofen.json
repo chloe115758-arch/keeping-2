@@ -1,131 +1,154 @@
 {
-  "ingredient": "pelubiprofen",
-  "productSeq": "202104053",
-  "itemName": "펠프스정(펠루비프로펜)",
-  "atc": "M01AE20",
-  "etcOtc": "전문의약품",
-  "changeDate": "20240522",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104053/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104053/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104053/NB"
-  },
-  "rules": [
+ "ingredient": "pelubiprofen",
+ "productSeq": "202104053",
+ "itemName": "펠프스정(펠루비프로펜)",
+ "atc": "M01AE20",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240522",
+ "ediCode": "642404920",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104053/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104053/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202104053/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 (1)",
+   "subject": "",
+   "excerpt": "매일 세잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 위장출혈이 유발될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "878e6b57f2",
+   "kind": "note",
+   "matched": [
     {
-      "id": "b2337d7684",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 (7)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알콜"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "위장관계이상반응 : 이 약을 포함한 비스테로이드성 소염진통제를 궤양성 질환 또는 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용 코…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8bef5d61d3",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 (1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 태자독성(고용량에서 배태자 사망률 증가)이 보고되어 있고 임부에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는부인에는 투여하지 않는 것이 바람직하다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2fea2503df",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 (2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약을 임부에게 투여한 임상자료는 없다. 다른 비스테로이드성 소염진통제와 마찬가지로 임신 말기에 이 약을 투여시 태아의 동맥관을 조기 폐쇄시킬 수 있으므로 이 약은 특히 임신말기에는 투여를 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "42ec7777ab",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 (3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 약 20주 이후 이 약을 포함한 비스테로이드성 소염제(NSAIDs)의 사용은 태아 신기능 이상을 일으켜 양수 과소증을 유발할 수 있으며 경우에 따라서는 신생아 신장애를 일으킬 수 있다. 비스테로이드성 소염제(NSAIDs) 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되었지만 이러한 부작용은 평균적으로 투여 후 수일에서 수주 사이에 나타난다. 양수 과소증은 보통 투여 중단 시…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "97dd9f3bf0",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 (4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다른 해열진통소염제에서 태아순환지속증(PEC)이 일어났다는 보고가 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "545f1f9342",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 (5)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트에 대한 실험에서 이 약은 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 난산의 발생 빈도를 증가시키고, 분만을 지연시키며 새끼의 생존율을 감소시켰다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a119de6d1e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "동물실험(랫트)에서 유즙이행이 보고되었으므로 수유 중에는 이 약을 복용하지 말아야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "261404fd78",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "10. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에서는 이상반응이 나타나기 쉽기 때문에 소량부터 투여를 개시하고 필요한 최소량으로 투여하며, 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중하게 투여한다",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3b55a1d039",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "성인 : 1회 1정(펠루비프로펜으로서 30mg), 1일 3회 식후 경구 투여한다.",
-      "meal": "식후",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:12:47"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 (7)",
+   "subject": "",
+   "excerpt": "위장관계이상반응 : 이 약을 포함한 비스테로이드성 소염진통제를 궤양성 질환 또는 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용 코…",
+   "extractor": "kw-v4",
+   "id": "f27e0e453b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "동물실험에서 태자독성(고용량에서 배태자 사망률 증가)이 보고되어 있고 임부에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는부인에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "0e4125cf7a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "이 약을 임부에게 투여한 임상자료는 없다. 다른 비스테로이드성 소염진통제와 마찬가지로 임신 말기에 이 약을 투여시 태아의 동맥관을 조기 폐쇄시킬 수 있으므로 이 약은 특히 임신말기에는 투여를 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "2eecbf2dea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "임신 약 20주 이후 이 약을 포함한 비스테로이드성 소염제(NSAIDs)의 사용은 태아 신기능 이상을 일으켜 양수 과소증을 유발할 수 있으며 경우에 따라서는 신생아 신장애를 일으킬 수 있다. 비스테로이드성 소염제(NSAIDs) 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되었지만 이러한 부작용은 평균적으로 투여 후 수일에서 수주 사이에 나타난다. 양수 과소증은 보통 투여 중단 시…",
+   "extractor": "kw-v4",
+   "id": "399aa5944f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "다른 해열진통소염제에서 태아순환지속증(PEC)이 일어났다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "5b9e8efc3f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 (5)",
+   "subject": "",
+   "excerpt": "랫트에 대한 실험에서 이 약은 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 난산의 발생 빈도를 증가시키고, 분만을 지연시키며 새끼의 생존율을 감소시켰다.",
+   "extractor": "kw-v4",
+   "id": "34bf196dea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 유즙이행이 보고되었으므로 수유 중에는 이 약을 복용하지 말아야 한다.",
+   "extractor": "kw-v4",
+   "id": "eb6f994ae1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 이상반응이 나타나기 쉽기 때문에 소량부터 투여를 개시하고 필요한 최소량으로 투여하며, 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중하게 투여한다",
+   "extractor": "kw-v4",
+   "id": "2ded7f6c1e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "3b55a1d039",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 1회 1정(펠루비프로펜으로서 30mg), 1일 3회 식후 경구 투여한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

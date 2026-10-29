@@ -1,0 +1,111 @@
+{
+ "ingredient": "ambrisentan",
+ "productSeq": "200902796",
+ "itemName": "볼리브리스정5밀리그램(암브리센탄)",
+ "atc": "C02KX02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221028",
+ "ediCode": "650002310",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200902796/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200902796/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200902796/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "폐동맥 고혈압 환자에 대한 임상시험에서, 오메프라졸(CYP2C19의 억제제)과 병용 투여했을 때, 이 약의 약동학에 유의한 영향을 미치지 않았다.",
+   "extractor": "kw-v4",
+   "id": "5c79318b71",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부 등에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 이 약을 임부에 투여 시 선천성 결함을 야기할 수 있다. 랫드 및 토끼에 대한 동물시험에서 이 약은 최기형성을 유발하였다. 최기형성은 엔도텔린 수용체 길항제들의 특징이다. 임부에게 이 약을 사용한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "aeabb91f54",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부 등에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임부 또는 임신 가능성이 있는 여성에게 투여해서는 안된다. 만약 임신 중에 이 약을 복용하거나 이 약을 복용하는 중에 임신하였다면, 태아에게 잠재적 위험이 있음을 환자에게 알려야 한다. 이 약의 투여시작 전에 반드시 임신은 배제되어야 하며, 두 가지 믿을만한 피임으로 임신을 방지하여야 한다. 이 약의 투여 중에 임신 테스트가 권장된다. 임신 가능성이 있는 여성은 임신이 되었거나, 임…",
+   "extractor": "kw-v4",
+   "id": "c9a9796f5d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부 등에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 이 약의 모유로의 이행 여부에 대해서는 알려진 바 없다. 수유중인 여성에게 투여하는 것을 권장하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "92b3df6e74",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부 등에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "생식능: 비임상시험에서 임신말기부터 이유 때까지 어미 랫드에게 이 약을 투여한 후 신생 랫드의 생존율 감소(중간용량, 고용량)와 신생 랫드의 고환크기 및 수정능력에 영향(고용량)을 줄 수 있음이 나타났다. 그 투여량은 mg/mm2 기준으로, 사람의 최대 경구 투여 용량인 10mg 의 17배(저용량), 51배(중간용량), 170배(고용량) 이었다.",
+   "extractor": "kw-v4",
+   "id": "4355337c2e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부 등에 대한 투여",
+   "subject": "",
+   "excerpt": "수컷 동물에서의 고환의 세관 위축 발생은 이 약을 포함한 엔도텔린 수용체 길항제의 장기 투여와 연관되어 있다. 남성의 생식능에 미치는 영향에 대해서는 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "b83da243af",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 대한 2개의 위약 대조 임상시험에서, 환자의 21%가 65세 이상이었으며 5%는 75세 이상이었다. 65세 이상의 환자는 이 약 투여시 보행거리에서 65세 미만의 환자에 비해서 적은 개선을 보였으나, 이러한 소집단 분석의 결과는 주의해서 해석되어야 한다. 말초부종은 65세 미만 환자보다 65세 이상 환자에서 더 흔하게 나타났다.",
+   "extractor": "kw-v4",
+   "id": "c45bfc4f15",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:14",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

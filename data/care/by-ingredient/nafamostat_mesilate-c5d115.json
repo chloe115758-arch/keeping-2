@@ -1,52 +1,56 @@
 {
-  "ingredient": "nafamostat mesilate",
-  "productSeq": "202203629",
-  "itemName": "나파스타주50밀리그램(나파모스타트메실산염)",
-  "atc": "B01AX",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203629/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203629/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203629/NB"
+ "ingredient": "nafamostat mesilate",
+ "productSeq": "202203629",
+ "itemName": "나파스타주50밀리그램(나파모스타트메실산염)",
+ "atc": "B01AX",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "641908021",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203629/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203629/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203629/NB"
+ },
+ "rules": [
+  {
+   "section": "elderly",
+   "where": "5. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등의 주의를 기울여야 한다.",
+   "extractor": "kw-v4",
+   "id": "dd29fcfe9b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "2104091c33",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "5. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등의 주의를 기울여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "072a2a982e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중 투여에 대해서는 안전성이 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 부인에 대해서는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여해야 한다. 동물실험에서 대량투여시 태아사망률증가(랫트, 토끼) 및 체중증가억제(랫트), 분만율 저하(랫트)가 보고되어 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6b4d3a54ab",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물시험(랫트)에서 모유 중으로 대사물의 이행이 보고되어 있으므로, 투여 중에는 수유를 중지해야 한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:14:42"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대해서는 안전성이 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 부인에 대해서는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여해야 한다. 동물실험에서 대량투여시 태아사망률증가(랫트, 토끼) 및 체중증가억제(랫트), 분만율 저하(랫트)가 보고되어 있다.",
+   "extractor": "kw-v4",
+   "id": "742fbeb61f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물시험(랫트)에서 모유 중으로 대사물의 이행이 보고되어 있으므로, 투여 중에는 수유를 중지해야 한다.",
+   "extractor": "kw-v4",
+   "id": "cb2140b17f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

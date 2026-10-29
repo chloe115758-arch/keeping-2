@@ -1,0 +1,75 @@
+{
+ "ingredient": "bemiparin sodium )",
+ "productSeq": "200411107",
+ "itemName": "자이버주2500IUAntiXa/0.2mL(베미파린나트륨)",
+ "atc": "B01AB12",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230614",
+ "ediCode": "655402981",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200411107/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200411107/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200411107/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "티클로피딘, 클로피도그렐, 아세틸살리실산, 비스테로이드성 소염제, 비타민 K 길항제, 항응고제, 항혈소판제, 덱스트란, 전신성 당질코르티코스테로이드제와 같이 지혈기능에 영향을 미치는 약물과의 병용투여는 출혈의 위험을 증가시킬 수 있으므로 권장되지 않는다. 부득이하게 이러한 약물을 병용투여할 경우 주의깊게 임상적 모니터링을 실시한다.",
+   "extractor": "kw-v4",
+   "id": "21af7eb9c5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물시험 결과 이 약으로 인한 기형발생 또는 태자독성이 보고된 바 없으나, 임부에 대한 임상자료와 태반 통과에 대한 자료가 없으므로 임부에게 투여 시 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b51d0e78ef",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약의 유즙으로의 분비와 신생아 흡수에 대한 자료가 없으므로 수유 중에 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "af6035b144",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 용량 조절이 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "dbcfff8147",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:15",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

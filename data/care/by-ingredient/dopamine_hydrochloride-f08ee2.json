@@ -1,0 +1,56 @@
+{
+ "ingredient": "dopamine hydrochloride",
+ "productSeq": "198401120",
+ "itemName": "명문이노판주(도파민염산염)",
+ "atc": "C01CA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20121101",
+ "ediCode": "649801421",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198401120/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198401120/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198401120/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "06ccea31e7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유중으로의 이행은 알려진 바 없으나 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "0ff4b5595f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에는 생리기능이 저하되어 있는 경우가 많아 부작용이 나타나기 쉬우므로 저용량에서 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "9f4b9d3d15",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:00",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

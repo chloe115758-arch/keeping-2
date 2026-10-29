@@ -1,0 +1,248 @@
+{
+ "ingredient": "atorvastatin calcium + fimasartan potassium trihydrate",
+ "productSeq": "202003218",
+ "itemName": "아카브정60/10밀리그램",
+ "atc": "C10BX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260303",
+ "ediCode": "641907620",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003218/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003218/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003218/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 (5)",
+   "subject": "",
+   "excerpt": "간질환의 병력 또는 상당량의 알코올을 섭취하는 경우",
+   "extractor": "kw-v4",
+   "id": "49ae74018b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 3)",
+   "subject": "○아토르바스타틴",
+   "excerpt": "간부전 : 아토르바스타틴의 혈장농도는 만성 알콜성간질환(Child-Pugh Class B) 환자의 경우 현저하게(Cmax가 약 16배, AUC가 약11배) 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "18f9120e9e",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "○아토르바스타틴",
+   "excerpt": "아토르바스타틴은 알코올남용자(과다복용자) 또는 간질환의 병력이 있는 사람의 경우 신중하게 투여하여야 한다. 활동성 간질환 환자 또는 설명되지 않는 혈청트랜스 아미나제치의 상승이 지속되는 환자에는 아토르바스타틴을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "b5f2c1ecd2",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 9)",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "제산제 : 이 약과 마그네슘 그리고 수산화알루미늄을 함유하는 경구용 제산제(antacid) 현탁액과 병용투여시 아토르바스타틴의 AUC가 감소하였다(AUC 비율: 0.66). 그러나, LDL-콜레스테롤의 감소에는 영향이 없었다.",
+   "extractor": "kw-v4",
+   "id": "20b50d7ba5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 17)",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "자몽주스 : 자몽주스는 하나이상의 CYP3A4를 억제하는 성분을 함유하고 있으며, 이는 자몽주스 섭취량이 지나칠 경우(하루 1.2 L이상) 아토르바스타틴의 혈중 농도를 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "a3f5e4b9eb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "병용약물이 아토르바스타틴의 약동학에 미치는 영향 병용약물 및 투여용량 아토르바스타틴 용량 (mg) AUC 비율& Cmax 비율& #시클로스포린 5.2 mg/kg/day, 안정적인 용량 10 mg 1일 1회를 28일간 투여 8.7 10.7 #티프라나비르 500 mg 1일 2회/리토나비르 200 mg 1일 2회, 7일간 투여 10 mg 단회투여 9.4 8.6 #글레카프레비르 400 mg 1일 1…",
+   "extractor": "kw-v4",
+   "id": "c8787fbba1",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "fba48c5584",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임부에게 투여해서는 안된다. 출산이 가능한 연령의 여성에게 이 약을 투여하는 경우 임신하지 않을 가능성이 높은 경우와 태아에 대한 잠재적인 위험성에 대해 알려주었을 때만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "ed275b2d46",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 피마사르탄",
+   "excerpt": "이 약과 같이 레닌-안지오텐신계에 직접적으로 작용하는 약물을 임부에 투여시 태아 또는 신생아에게 병적 상태 및 사망을 일으킬 수 있다. 특히 임신 2, 3기에 레닌-안지오텐신계에 직접 작용하는 약물 투여시, 태아 및 신생아에 저혈압, 신생아 두개골 형성저하증, 무뇨증, 가역적 또는 비가역적 신부전을 포함한 손상 및 사망까지도 유발되었다. 태아의 신기능의 저하가 원인일 것으로 추정되는 양수과소…",
+   "extractor": "kw-v4",
+   "id": "e2d5877a48",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "이 약의 임신 중 사용은 금기이다. 가임여성은 적절한 피임방법을 강구하여야 한다. 이 약은 임신할 가능성이 없는 경우 및 태아에 대한 잠재적 위험성을 알려준 후에만 가임 연령의 여성에게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "fe96faa913",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "705c44c809",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "피마사르탄과 아토르바스타틴은 사람의 모유로 이행되는지 여부는 알려져 있지 않으나, 피마사르탄의 경우 랫트에 대한 시험에서 모유 중에 이 약의 분비가 확인되었고, 아토르바스타틴은 수유중인 아이에 이상반응이 나타날 수 있으므로, 수유부에게 이 약을 투여하는 것은 바람직하지 않다. 따라서 수유부에 대한 이 약의 필요성을 고려하여 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "20df43fb82",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "○피마사르탄",
+   "excerpt": "이 약은 70세 초과의 고령자에 대한 투여 경험이 없다. 65세 이상의 건강한 고령자를 대상으로 한 이 약의 약동학 평가결과, 이 약에 대한 고령자의 체내 노출(AUC)이 젊은 건강한 성인에 비하여 약 69% 증가하였다. 그러나, 3상 임상시험에서 이 약을 투여 받은 환자 226명 중 21명의 65세 이상인 환자(9.3%)에 대해 유효성 및 안전성을 비교한 결과, 고령자들과 젊은 성인 환자들…",
+   "extractor": "kw-v4",
+   "id": "c76c664dc4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "65세 이상의 건강한 노인의 경우 아토르바스타틴의 혈장농도는 젊은 성인군에 비해 더 높게 나타났으나(Cmax 40 %증가, AUC 30 %증가), LDL-콜레스테롤 저하효과는 젊은 성인군과 유사하였다.",
+   "extractor": "kw-v4",
+   "id": "951742c0ee",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "고령자는 심근병증에 취약하므로, 이 약은 고령자에게 주의하여 처방해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e30b54b7a4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:07",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

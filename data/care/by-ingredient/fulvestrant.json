@@ -1,0 +1,106 @@
+{
+ "ingredient": "fulvestrant",
+ "productSeq": "202200522",
+ "itemName": "풀베트주(풀베스트란트)",
+ "atc": "L02BA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260203",
+ "ediCode": "641907852",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202200522/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202200522/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202200522/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "벤질알코올은 미숙아에서 치명적인 가쁜 호흡증상과 연관이 있는 것으로 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "90e81473f9",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "이 약에는 부형제로서 에탄올(알코올)이 함유되어 있다. 알코올 중독 환자에 유해할 수 있으며, 간 질환 및 뇌전증 환자 등 고위험군에 사용 시 이를 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "6a597dea83",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "본제는 임부에게 금기이다. 본제를 랫트와 토끼에게 단회 근육주사 후에 태반을 통과하는 것으로 나타났다. 동물 실험에서 의하면 태자 비정상 및 사망 빈도 증가를 포함한 생식독성을 나타내었다. 본제를 투여하는 동안 임신한 환자에게는 태아에 대한 위험 및 유산의 위험성을 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "2f0d85ce01",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "본제 투여 중 수유는 중단하도록 한다. 본제는 수유중인 랫드의 유즙으로 분비되었다. 본제가 사람의 유즙으로 분비되는지는 알려져 있지 않다. 모유 수유 중인 영아에게 본제의 중대한 이상반응이 발생할 가능성을 고려할 때, 모유 수유 중의 투여는 금기되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "71a24de9ed",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임여성에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "가임기 여성은 이 약 투여 중 및 마지막 투여 후 2년간 확실한 방법으로 피임해야 한다.",
+   "extractor": "kw-v4",
+   "id": "4cd6626f03",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임여성에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "생식능 : 사람의 생식능에 대한 이 약의 영향은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "55e7eebade",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:09",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

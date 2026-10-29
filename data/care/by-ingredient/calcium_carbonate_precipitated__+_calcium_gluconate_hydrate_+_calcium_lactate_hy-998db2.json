@@ -1,0 +1,63 @@
+{
+ "ingredient": "calcium carbonate(precipitated) + calcium gluconate hydrate + calcium lactate hydrate + ergocalciferol",
+ "productSeq": "198900129",
+ "itemName": "애드칼정",
+ "atc": "A12AX",
+ "etcOtc": "일반의약품",
+ "changeDate": "20211123",
+ "ediCode": "643301810",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900129/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900129/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900129/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "2. 이 약을 복용하는 동안 다음의 약을 복용하지 말 것.",
+   "subject": "",
+   "excerpt": "- 인산염, 칼슘염, 경구용 테트라사이클린계 제제, 제산제",
+   "extractor": "kw-v4",
+   "id": "fbff47b5b2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음과 같은 사람(경우)은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 2)",
+   "subject": "",
+   "excerpt": "임부 및 임신하고 있을 가능성이 있는 여성, 수유부, 미숙아, 유아",
+   "extractor": "kw-v4",
+   "id": "103ad9a559",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "3ee07eed44",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "일반적으로 저녁 식후 바로 2정을 복용하고 부족시에는 아침, 점심 식후 바로 1정씩 복용합니다. 1일 4정을 초과하지 않습니다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:43",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

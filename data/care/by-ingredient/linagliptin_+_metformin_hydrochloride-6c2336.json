@@ -1,119 +1,166 @@
 {
-  "ingredient": "linagliptin + metformin hydrochloride",
-  "productSeq": "202400626",
-  "itemName": "글레린듀오서방정2.5/1000밀리그램(리나글립틴,메트포르민)",
-  "atc": "A10BD11",
-  "etcOtc": "전문의약품",
-  "changeDate": "20261002",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400626/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400626/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400626/NB"
-  },
-  "rules": [
+ "ingredient": "linagliptin + metformin hydrochloride",
+ "productSeq": "202400626",
+ "itemName": "글레린듀오서방정2.5/1000밀리그램(리나글립틴,메트포르민)",
+ "atc": "A10BD11",
+ "etcOtc": "전문의약품",
+ "changeDate": "20261002",
+ "ediCode": "628902350",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400626/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400626/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202400626/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에서는 신중히 투여할 것",
+   "subject": "",
+   "excerpt": "유산산증을 피하기 위해 혈당조절불량, 케톤증, 장시간 공복, 과도한 알코올 섭취, 간기능 부전 및 저산소증과 관련된 여타 상황(비대상성 심장부전, 급성심근경색) 등의 기타 관련된 위험인자를 고려하여야 한다 (2. 다음 환자에는 투여하지 말 것 참조).",
+   "extractor": "kw-v4",
+   "id": "aa0af02a58",
+   "kind": "note",
+   "matched": [
     {
-      "id": "e70570bfcf",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 1)",
-      "subject": "(3) 메트포르민",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약물의 활성성분 중 하나인 메트포르민으로 인해 급성 알코올 중독인 경우(특히 공복, 영양실조 또는 간장애 시에) 유산산증의 위험이 증가되었다. 알코올 및 알코올 함유 약물의 복용을 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "56b4fa43a8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임신, 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신: 이 약물 또는 각 주성분으로 임산부에서 실시한 잘 통제된 적절한 연구는 없다. 임신한 랫드에서 이 약물로 실시한 비임상 생식독성시험에서는 리나글립틴과 메트포르민 혼합투여에 의한 최기형성은 나타나지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3e37aa1050",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임신, 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "예방조치로 이 약물은 임신 중에는 사용을 피하는 것이 좋다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5997bd2323",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임신, 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "환자가 임신 계획이 있거나 임신 중인 경우, 이상혈당수치와 관련된 태아기형의 위험을 낮추기 위해 인슐린을 투여하여 가급적 정상수치와 가까운 정도까지 혈당을 유지하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "931d4f69d4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임신, 수유부에 대한 투여",
-      "subject": "2) 수유",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유동물에서 메트포르민과 리나글립틴을 혼합 투여한 연구는 수행되지 않았다. 동물실험에서 리나글립틴 및 대사체가 모유를 통해 배출되는 것이 관찰되었다. 메트포르민은 사람의 유즙으로 분비되며 리나글립틴이 사람 유즙을 통해 분비되는지는 알려지지 않았다. 따라서 이 약물은 수유 중에는 사용하지 않도록 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "06440ffb5c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임신, 수유부에 대한 투여",
-      "subject": "3) 생식",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약물로 사람의 생식능에 대한 영향을 조사하는 연구는 수행되지 않았으나 사람에서의 투여량의 900배를 넘는 240 mg/kg/day의 최고 투여용량까지 실시한 비임상연구에서 생식능에 대한 리나글립틴의 독성반응은 관찰되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c69ad51cde",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9.&nbsp;고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "메트포르민은 주로 신장을 통해 배설되며, 고령자에 있어 노화는 신기능 저하와 관련이 있기 때문에 환자의 신기능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 한다. 고령자는 정기적으로 신기능을 모니터링 해야 하고, 일반적으로 고령자에게는 최대용량을 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a6fadf3c31",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 식사와 함께 1일 1회 되도록 저녁식사와 함께 복용한다. 메트포르민 사용과 관련한 위장관계 부작용을 줄이기 위해서 메트포르민염산염의 용량 증가는 서서히 진행되어야 한다.",
-      "meal": "식사와 함께",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:03:50"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "약물상호작용의 생체 내 평가",
+   "excerpt": "이 약물의 활성성분 중 하나인 메트포르민으로 인해 급성 알코올 중독인 경우(특히 공복, 영양실조 또는 간장애 시에) 유산산증의 위험이 증가되었다. 알코올 및 알코올 함유 약물의 복용을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "47af017aaf",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신: 이 약물 또는 각 주성분으로 임산부에서 실시한 잘 통제된 적절한 연구는 없다. 임신한 랫드에서 이 약물로 실시한 비임상 생식독성시험에서는 리나글립틴과 메트포르민 혼합투여에 의한 최기형성은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "e454b8a9e3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "예방조치로 이 약물은 임신 중에는 사용을 피하는 것이 좋다.",
+   "extractor": "kw-v4",
+   "id": "4778f77843",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "환자가 임신 계획이 있거나 임신 중인 경우, 이상혈당수치와 관련된 태아기형의 위험을 낮추기 위해 인슐린을 투여하여 가급적 정상수치와 가까운 정도까지 혈당을 유지하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "4467031dc8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유",
+   "extractor": "kw-v4",
+   "id": "9623f3360e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유동물에서 메트포르민과 리나글립틴을 혼합 투여한 연구는 수행되지 않았다. 동물실험에서 리나글립틴 및 대사체가 모유를 통해 배출되는 것이 관찰되었다. 메트포르민은 사람의 유즙으로 분비되며 리나글립틴이 사람 유즙을 통해 분비되는지는 알려지지 않았다. 따라서 이 약물은 수유 중에는 사용하지 않도록 한다.",
+   "extractor": "kw-v4",
+   "id": "18c56fa355",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "생식",
+   "extractor": "kw-v4",
+   "id": "2d5783bde1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약물로 사람의 생식능에 대한 영향을 조사하는 연구는 수행되지 않았으나 사람에서의 투여량의 900배를 넘는 240 mg/kg/day의 최고 투여용량까지 실시한 비임상연구에서 생식능에 대한 리나글립틴의 독성반응은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "f82e842e2e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9.&nbsp;고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "메트포르민은 주로 신장을 통해 배설되며, 고령자에 있어 노화는 신기능 저하와 관련이 있기 때문에 환자의 신기능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 한다. 고령자는 정기적으로 신기능을 모니터링 해야 하고, 일반적으로 고령자에게는 최대용량을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "e109e30baa",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "a6fadf3c31",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 식사와 함께 1일 1회 되도록 저녁식사와 함께 복용한다. 메트포르민 사용과 관련한 위장관계 부작용을 줄이기 위해서 메트포르민염산염의 용량 증가는 서서히 진행되어야 한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

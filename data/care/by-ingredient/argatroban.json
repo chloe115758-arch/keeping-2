@@ -1,0 +1,56 @@
+{
+ "ingredient": "argatroban",
+ "productSeq": "202204620",
+ "itemName": "노바스탄하이주10mg/2mL(아가트로반수화물)",
+ "atc": "B01AE03",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "653301211",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204620/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204620/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204620/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대한 안전성은 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는 것이 바람직하다. 이 약으로 인한 출혈 위험의 증가는 임신중 치료에 위험을 미칠 것으로 예상된다. 이 약을 포함한 항응고제 사용은 임산부, 태아 및 신생아에게 출혈위험을 높일 수 있다. 이 약은 에탄올을 함유한다. 70kg의 제2형 헤파린기인성 혈소판감소증 환자에게 일일 최대…",
+   "extractor": "kw-v4",
+   "id": "0464ed0897",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물 실험(랫트)에서 유즙으로의 분비가 보고되었기 때문에 이 약의 투여 중에는 수유를 피한다.",
+   "extractor": "kw-v4",
+   "id": "2a96ffbf41",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다. 일본에서의 재심사 결과 65세 이상의 고령자에서의 이상반응 발현율은 뇌혈전증 급성기의 사용성적조사에는 7.8%(184/2,357례), 만성동맥폐색증의 사용성적조사에는 3.4 %(117/3,392례)였다.",
+   "extractor": "kw-v4",
+   "id": "837dd8d313",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:41",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,223 @@
+{
+ "ingredient": "dabigatran etexilate mesylate",
+ "productSeq": "201100749",
+ "itemName": "프라닥사캡슐110밀리그램(다비가트란에텍실레이트메실산염)",
+ "atc": "B01AE07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200811",
+ "ediCode": "653501340",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201100749/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201100749/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201100749/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "따라서, 항인지질 증후군을 동반한 환자의 경우 이 약을 복용하기 전에, 모든 치료 요법(비타민 K 길항제와 같은 표준 요법 포함)에 대한 신중한 고려가 권고된다.",
+   "extractor": "kw-v4",
+   "id": "dc45ecf21b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적주의 15)",
+   "subject": "",
+   "excerpt": "항인지질항체증후군(Antiphospholipid syndrome, APS)으로 진단받은 혈전증 병력의 환자에게 이 약을 포함한 DOACs(Direct acting Oral Anticoagulants)의 사용은 권장되지 않는다. 특히 3가지 (루푸스항응고인자, 항카디오리핀 항체 및 항 베타2당단백1형항체) 모두 양성인 환자에게 DOACs의 투여는 비타민 K 길항제와 비교하였을 때 재발성 혈전증…",
+   "extractor": "kw-v4",
+   "id": "e44c3350b5",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "이 약과 다음 약물과의 병용투여는 사용 경험이 없거나 매우 제한적이며 출혈의 위험을 증가시킬 수 있다: 미분획 헤파린 (UFH), 저분자 헤파린 (LMWH), 헤파린 유도체(폰다파리눅스, 데시루딘), 혈전용해제, 비타민 K 길항제, 리바록사반 또는 기타 경구용 항응고제 등의 항응고제 및 GPIIb/IIIa 수용체 길항제, 티클로피딘, 프라수그렐, 티카그렐러, 덱스트란, 설핀피라존 등의 혈소판…",
+   "extractor": "kw-v4",
+   "id": "3157ef11f8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "P-gp 유도제(리팜피신, 세인트 존스 워트, 카르바마제핀 또는 페니토인) 등의 P-gp 유도제와 이 약의 병용투여는 이 약의 농도를 감소시킬 것으로 예상되므로 병용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "c0de18d959",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스 워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "- 판토프라졸: 이 약을 판토프라졸과 병용투여 시, 이 약의 AUC는 약 30% 감소하였다. 임상시험에서 판토프라졸 및 기타 프로톤 펌프 억제제 (PPI)와 이 약을 병용 투여하였으나, 이로 인한 이 약의 유효성 감소는 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "e69c168d71",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤 펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "d0d6a4563e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 가능성이 있는 여성은 이 약 투여 중 임신을 피해야 한다. 임부에서 이 약의 사용에 대한 자료는 제한적이다. 동물시험에서 생식발생독성이 관찰되었으며 사람에서의 잠재적인 위험은 알려지지 않았다. 이 약은 반드시 필요한 경우를 제외하고는 임신 중에 사용되어서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "7695876189",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "4dc0082605",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 유즙으로 분비되는지에 대한 임상자료가 없으므로 이 약 투여 중에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "c23a86c11b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "5ec4cde0d1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람을 대상으로한 임상 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "a773de005b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물의 수태능 시험에서 암컷의 경우 70 mg/kg(환자의 혈장 노출보다 5배 높은 용량) 투여군에서 착상 감소 및 착상 전 손실 증가가 관찰되었고 그 외 다른 영향은 관찰되지 않았다. 수컷에서는 수태능에 대한 영향이 관찰되지 않았다. 배태자 발생시험에서 모체에 독성을 나타내는 용량(환자의 혈장 노출보다 5~10배 높은 용량)에서, 태자 체중감소, 배태자 생존능 감소 및 태자 변이 증가가 설…",
+   "extractor": "kw-v4",
+   "id": "8559fa1994",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자를 대상으로 한 1상 임상시험에서 고령자는 성인에 비해 AUC가 40~60%, Cmax는 25% 증가하였다. 연령과 관련한 신기능 감소가 있는 환자에서 약물노출이 증가하는 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "1d77e3c5cd",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "RE-LY 연구의 전체 시험대상자 중 82%는 65세 이상이었으며 40%는 75세 이상이었다. 모든 치료군에서 출혈의 위험은 고령일수록 증가되었다. 와파린과 비교한 임상시험에서 이 약 150 mg 1일 2회 투여 시의 상대 출혈위험은 75세 이상의 환자에서 증가되는 것으로 관찰되었다. 이 약은 신장을 통해 배설되는 것으로 알려져 있으며 이 약물에 대한 독성반응의 위험은 신기능 손상환자에서 더…",
+   "extractor": "kw-v4",
+   "id": "1a5ac037fa",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:28:13",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

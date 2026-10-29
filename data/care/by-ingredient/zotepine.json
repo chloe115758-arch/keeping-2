@@ -1,0 +1,106 @@
+{
+ "ingredient": "zotepine",
+ "productSeq": "199701063",
+ "itemName": "로도핀정25mg(죠테핀)",
+ "atc": "N05AX11",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190703",
+ "ediCode": "642400240",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701063/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701063/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701063/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 1)",
+   "subject": "",
+   "excerpt": "졸음, 주의력, 집중력, 반사운동 능력 등의 저하가 나타날 수 있으므로 이 약을 투여받고 있는 환자는 자동차 운전 등 위험을 수반하는 기계의 조작에 종사하지 않도록 주의해야 하며, 이는 알코올과의 상호작용에 의해 악화될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "c09a93fd96",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "알코올 또는 중추신경억제제(바르비탈산유도체, 마취제 등), 혈압강하제, 아트로핀형 작용을 가진 약물과 병용투여 시 상호작용을 증강시킬 수 있으므로 감량 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "6b6df5dedc",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 신생자의 사망률 증가가 보고되어 있으므로 임부 및 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "9685557b76",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신3기에 이 약을 포함한 항정신병 약물에 노출된 태아에서 추체외로 증후군, 금단증상을 포함한 이상반응의 위험이 있으며, 증상의 중증도와 분만 이후의 지속 기간은 다양할 수 있다. 초조, 근육긴장항진, 근육긴장저하, 떨림, 경면, 호흡곤란, 음식물섭취장애가 보고된 바 있다. 따라서 신생아를 주의깊게 모니터링 하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "f244f6324d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "모유중으로 이행하므로 이 약을 투여받는 환자는 수유를 중지하거나 약물 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "73c5bfd218",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에게는 추체외로증상 등의 부작용이 나타나기 쉬우므로 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "ea82598e30",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:30",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

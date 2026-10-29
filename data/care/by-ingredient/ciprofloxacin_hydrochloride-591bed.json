@@ -1,183 +1,206 @@
 {
-  "ingredient": "ciprofloxacin hydrochloride",
-  "productSeq": "201908109",
-  "itemName": "씨큐로바이정(시프로플록사신염산염수화물)",
-  "atc": "J01MA02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260323",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908109/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908109/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908109/NB"
-  },
-  "rules": [
+ "ingredient": "ciprofloxacin hydrochloride",
+ "productSeq": "201908109",
+ "itemName": "씨큐로바이정(시프로플록사신염산염수화물)",
+ "atc": "J01MA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260323",
+ "ediCode": "057000410",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908109/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908109/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908109/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 6)",
+   "subject": "",
+   "excerpt": "이 약을 포함한 플로오르퀴놀론계 약물은 중추신경계 반응으로 인해 운전 또는 기계조작 능력에 장애를 일으킬 수 있다. 이는 특히 이 약을 알코올과 함께 복용할 때 적용된다.",
+   "extractor": "kw-v4",
+   "id": "a969bc473d",
+   "kind": "note",
+   "matched": [
     {
-      "id": "45549a929c",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 6)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약을 포함한 플로오르퀴놀론계 약물은 중추신경계 반응으로 인해 운전 또는 기계조작 능력에 장애를 일으킬 수 있다. 이는 특히 이 약을 알코올과 함께 복용할 때 적용된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "55fff983f7",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "caffeine",
-          "kind": "food",
-          "ko": "카페인·커피",
-          "surface": "카페인"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약은 시토크롬 P450 1A2 효소의 작용을 억제하므로, 시토크롬 P450으로 대사되는 약물(테오필린, 메틸잔틴, 카페인, 둘록세틴, 로피니롤, 클로자핀, 올란자핀 등)의 혈청농도가 높아져 이들 약물의 독성이 증가할 수 있으므로 병용투여 시 주의해야 한다. 특히 테오필린과 이 약을 병용투여하면 테오필린의 혈중 농도를 증가시켜, 테오필린의 이상반응(심장정지, 신경발작, 뇌전증상태, 호흡기…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "76171a2bfc",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 3)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "calcium",
-          "kind": "supplement",
-          "ko": "칼슘제제",
-          "surface": "칼슘 함유"
-        },
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "마그네슘 함유"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알루미늄 또는 마그네슘 함유 제산제와 같은 양이온 제제, 철분 함유 제제, 칼슘 함유 제제, 아연 또는 철분이 함유된 종합비타민제제, 포스페이트 결합제(예, 세벨라머, 탄산란탄), 수크랄페이트, 항레트로바이러스제, 디다노신과의 병용에 의해 이 약의 흡수가 저하되어 효과가 저하되는 경우가 있으므로 이 약 투여 전 1 ～ 2시간 및 투여 후 4시간 이내에는 병용하지 않는 것이 바람직하다(이 제한…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bf6577e97e",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 4)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "dairy",
-          "kind": "food",
-          "ko": "우유·유제품",
-          "surface": "우유"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "유제품 또는 무기질 강화음료(예, 우유, 요구르트, 칼슘강화 오렌지주스)와 이 약을 병용투여하는 경우 이 약의 흡수가 감소하기 때문에 병용하지 않는 것이 바람직하다. 그러나 식사의 일부로 섭취하는 식이성 칼슘은 흡수에 유의하게 영향을 주지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e9b6ca2cbc",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 14)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "caffeine",
-          "kind": "food",
-          "ko": "카페인·커피",
-          "surface": "카페인"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 카페인 및 펜톡시필린을 병용투여 시 카페인 및 펜톡시필린의 대사를 저해하여 카페인 및 펜톡시필린의 혈중 반감기를 연장시킨다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7d76ed5ff7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험 결과에 의거하여 이 약의 투여로 미성숙 개체에서 관절연골 손상이 유발될 가능성을 완전히 배제할 수는 없었다. 사람에 대한 안전성은 확립되지 않았으므로 이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에게는 권장되지 않는다. 동물시험결과 최기형성의 가능성은 나타나지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "705f84bca0",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 모유 중으로 이행되므로 수유기간에는 이 약을 투여하지 않거나, 수유를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c7ff3d27a2",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 주로 신장으로 배설되는데, 고령자는 신기능이 저하된 경우가 많아 높은 혈중농도가 지속될 위험이 있고 이상반응이 발현하기 쉬우므로, 용량 및 투여간격에 유의하여 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d494025cb6",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "역학연구에 따르면 플루오로퀴놀론계 항균제 사용 후 2개월 이내에, 특히 고령자에서 대동맥류 또는 대동맥 박리 발생률이 증가하였다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4cab72c993",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "○ 보통 성인 시프로플록사신으로서 1회 250 ~ 500 mg, 1일 2회 식간에 경구 투여한다. 중증 복합감염인 경우에는 이 약으로서 1회 750 mg, 1일 2회로 증량할 수 있다. 급성감염인 경우에는 보통 5 ~ 10일간 치료하며, 증세가 사라진 후에도 최소한 3일간 더 투여한다.",
-      "meal": "식간",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:05:37"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약은 시토크롬 P450 1A2 효소의 작용을 억제하므로, 시토크롬 P450으로 대사되는 약물(테오필린, 메틸잔틴, 카페인, 둘록세틴, 로피니롤, 클로자핀, 올란자핀 등)의 혈청농도가 높아져 이들 약물의 독성이 증가할 수 있으므로 병용투여 시 주의해야 한다. 특히 테오필린과 이 약을 병용투여하면 테오필린의 혈중 농도를 증가시켜, 테오필린의 이상반응(심장정지, 신경발작, 뇌전증상태, 호흡기…",
+   "extractor": "kw-v4",
+   "id": "c9ee8ecf06",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "알루미늄 또는 마그네슘 함유 제산제와 같은 양이온 제제, 철분 함유 제제, 칼슘 함유 제제, 아연 또는 철분이 함유된 종합비타민제제, 포스페이트 결합제(예, 세벨라머, 탄산란탄), 수크랄페이트, 항레트로바이러스제, 디다노신과의 병용에 의해 이 약의 흡수가 저하되어 효과가 저하되는 경우가 있으므로 이 약 투여 전 1 ～ 2시간 및 투여 후 4시간 이내에는 병용하지 않는 것이 바람직하다(이 제한…",
+   "extractor": "kw-v4",
+   "id": "0bfe6fddcc",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘 함유"
+    },
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "마그네슘 함유"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "유제품 또는 무기질 강화음료(예, 우유, 요구르트, 칼슘강화 오렌지주스)와 이 약을 병용투여하는 경우 이 약의 흡수가 감소하기 때문에 병용하지 않는 것이 바람직하다. 그러나 식사의 일부로 섭취하는 식이성 칼슘은 흡수에 유의하게 영향을 주지 않는다.",
+   "extractor": "kw-v4",
+   "id": "aa3ad9feba",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 5)",
+   "subject": "",
+   "excerpt": "이 약과 오메프라졸을 병용투여하면 이 약의 Cmax와 AUC가 약간 감소한다.",
+   "extractor": "kw-v4",
+   "id": "378f751717",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 14)",
+   "subject": "",
+   "excerpt": "이 약과 카페인 및 펜톡시필린을 병용투여 시 카페인 및 펜톡시필린의 대사를 저해하여 카페인 및 펜톡시필린의 혈중 반감기를 연장시킨다.",
+   "extractor": "kw-v4",
+   "id": "e9cad6c3cb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험 결과에 의거하여 이 약의 투여로 미성숙 개체에서 관절연골 손상이 유발될 가능성을 완전히 배제할 수는 없었다. 사람에 대한 안전성은 확립되지 않았으므로 이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에게는 권장되지 않는다. 동물시험결과 최기형성의 가능성은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "bc0b18ae9a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유 중으로 이행되므로 수유기간에는 이 약을 투여하지 않거나, 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "aee50cb174",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 주로 신장으로 배설되는데, 고령자는 신기능이 저하된 경우가 많아 높은 혈중농도가 지속될 위험이 있고 이상반응이 발현하기 쉬우므로, 용량 및 투여간격에 유의하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "18e61f4984",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "역학연구에 따르면 플루오로퀴놀론계 항균제 사용 후 2개월 이내에, 특히 고령자에서 대동맥류 또는 대동맥 박리 발생률이 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "299a53579f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "4cab72c993",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "○ 보통 성인 시프로플록사신으로서 1회 250 ~ 500 mg, 1일 2회 식간에 경구 투여한다. 중증 복합감염인 경우에는 이 약으로서 1회 750 mg, 1일 2회로 증량할 수 있다. 급성감염인 경우에는 보통 5 ~ 10일간 치료하며, 증세가 사라진 후에도 최소한 3일간 더 투여한다.",
+   "meal": "식간",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

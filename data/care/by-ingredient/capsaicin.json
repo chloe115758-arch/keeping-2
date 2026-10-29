@@ -1,0 +1,32 @@
+{
+ "ingredient": "capsaicin",
+ "productSeq": "200201189",
+ "itemName": "다이악센크림(천연캡사이신)",
+ "atc": "M02AB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20121230",
+ "ediCode": "664600371",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201189/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201189/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201189/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람 또는 동물에서 임신중 또는 수유중의 안전성은 확립되어 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "771b948104",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:12",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

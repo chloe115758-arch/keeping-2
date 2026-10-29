@@ -1,0 +1,80 @@
+{
+ "ingredient": "fluticasone furoate(micronized)(/회)",
+ "productSeq": "200805432",
+ "itemName": "아바미스나잘스프레이(미분화플루티카손푸로에이트)",
+ "atc": "R01AD12",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220201",
+ "ediCode": "650001831",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200805432/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200805432/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200805432/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "기형유발 작용 : 동물 실험에서 코르티코스테로이드는 상대적으로 낮은 농도로 전신 투여 시, 기형을 유발하는 것으로 관찰되었다. 랫트와 토끼를 이용한 실험에서 플루티카손푸로에이트 흡입용량을 각각 91, 8㎍/kg/day (㎍/m2 단위로 성인에서의 일일 최대 권장 비강내 투여용량의 약 7배 및 1배)까지 투여했을 때에 기형유발 작용은 없었다. 랫트를 이용한 실험에서 임신 및 수유기간 동안 27…",
+   "extractor": "kw-v4",
+   "id": "bd7ce51179",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "기형유발 이외의 작용: 임신기간 동안 코르티코스테로이드를 투여한 모체로부터 태어난 영아에서 부신기능저하가 나타날 수 있다. 이러한 영아는 주의 깊게 관찰되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "2ac85e761b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약을 사람에서의 최대 권장용량(110㎍/day)으로 비강내 투여했을 때 혈장 플루티카손푸로에이트 농도는 일반적으로 정량화 할 수 없고, 따라서 잠재적인 생식독성은 매우 낮게 예상된다.",
+   "extractor": "kw-v4",
+   "id": "8273df27a6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "플루티카손푸로에이트가 유즙으로 분비되는지 여부는 알려져 있지 않다. 그러나 다른 코르티코스테로이드는 유즙에서 검출되었다. 수유부에서 플루티카손푸로에이트를 투여 시에 대한 대조임상시험 자료는 없으므로 이 약을 수유부에게 투여 시 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "8b7afa15a3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 여러 임상시험은 고령자의 연령에 따른 반응 차이를 평가할 정도로 65세 이상 환자가 충분히 포함되지 않았다. 다른 임상 경험에 의하면, 고령자와 젊은 환자간의 반응의 차이는 확인되지 않았다. 일반적으로 고령자에서의 용량 선택은 간, 신장, 심장 기능의 감소 및 동반 질환 또는 병용 약물 등을 고려하여 주의를 기울여야 하며, 대개 권장 용량의 가장 낮은 용량으로 시작한다.",
+   "extractor": "kw-v4",
+   "id": "0e6b5dcd90",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:22",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,156 @@
+{
+ "ingredient": "oxycodone hydrochloride )",
+ "productSeq": "201706519",
+ "itemName": "오코돈주사10mg/mL(옥시코돈염산염)",
+ "atc": "N02AA05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251111",
+ "ediCode": "657806031",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706519/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706519/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706519/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 (2)",
+   "subject": "",
+   "excerpt": "마약류와 벤조디아제핀계 약물 및 벤조디아제핀 유사 약물 등과 같은 진정제 또는 알코올을 포함하는 중추 신경계억제제의 병용투여는 깊은 진정, 호흡억제, 혼수 및 사망을 초래할 수 있다. 이러한 위험성 때문에, 마약류와 이러한 진정제의 병용투여는 적절한 대체 치료방법이 없는 환자의 경우에 한하여 처방하도록 한다. 이 약과 마약류 또는 이러한 진정제의 병용투여가 결정되면 최저 유효용량으로 최단기간…",
+   "extractor": "kw-v4",
+   "id": "0d12b77d50",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (1)",
+   "subject": "",
+   "excerpt": "이 약과 벤조디아제핀계 약물 및 벤조디아제핀 유사 약물 등과 같은 진정제, 다른 마약성 진통제, 프레가발린과 같은 가바펜티노이드계 약물, 신경안정제, 수면제, 벤조디아제핀계를 포함하는 진정제, 전신마취제, 항정신병약, 항우울제, 페노티아진계 약물, 삼환계 항우울제, 신경근육차단제, 또는 알코올을 포함한 다른 중추신경억제제를 병용투여하면 추가적인 중추신경억제작용이 유발되고, 호흡억제, 저혈압,…",
+   "extractor": "kw-v4",
+   "id": "a82e76d688",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "마크로라이드계 항생제(예. 클래리트로마이신, 에리트로마이신, 텔리트로마이신), 아졸계 항진균제(예. 케토코나졸, 보리코나졸, 이트라코나졸, 포사코나졸), 프로테아제 저해제(예. 보세프레비르, 리토나비르, 인디나비르, 넬피나비르, 사퀴나비르), 시메티딘, 자몽 주스와 같은 CYP3A4 저해제는 옥시코돈의 청소율을 감소시켜 옥시코돈의 혈장 농도 증가를 유발할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f72c592287",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "리팜피신, 카바마제핀, 페니토인 및 세인트존스워트와 같은 CYP3A4 유도제는 옥시코돈의 청소율을 증가시켜 옥시코돈의 혈장 농도 감소를 유발할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "53151383f6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "수컷 및 암컷의 랫트에서 8mg/kg/day까지 수태능에 미치는 영향은 없었다. 랫트와 토끼를 이용한 동물생식실험에서 이 약을 8 mg/kg 및 125 mg/kg(mg/m2용량으로 환산하였을 때 사람에 대한 용량 60 mg/일의 1.3배 및 40배)으로 경구투여하여도 기형발생이나 배ㆍ태자 독성은 발생하지 않았다.",
+   "extractor": "kw-v4",
+   "id": "6f7e981bc2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "임부에 대해 적절히 잘 관리된 임상시험은 실시되지 않았고, 동물실험결과가 항상 인체의 반응을 예측하는 것은 아니므로, 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다. 또한 신생아 호흡억제의 위험성 때문에 출산, 분만 중에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "7b4a3cbdaa",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "출산 전 마약제를 규칙적으로 복용하던 임부에서 태어난 신생아는 육체적인 마약의존성이 나타날 수 있다. 출산 후 신생아에게 신경과민, 과도한 움직임, 울음, 불면, 떨림, 발열 등의 마약 금단증상이 나타날 수 있는데, 이러한 증상의 강도는 임부의 마약제 사용량에 꼭 비례하는 것은 아니다. 이러한 신생아 마약 금단증상에 대해 정해진 치료방법은 없으며, 대증요법과 함께 필요 시 진정제나 페노바르비…",
+   "extractor": "kw-v4",
+   "id": "08559dff96",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "이 약은 모유 중으로 저농도로 이행되어 신생아에게 호흡억제 및 약물투여 중단 시 금단증상이 나타날 수 있으므로 수유부에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "85091c2204",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "노인 환자에게는 주의해서 사용해야 합니다. 통증 조절을 위해 신중히 적정하여 최소 용량을 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "3231cf9c28",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:55",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

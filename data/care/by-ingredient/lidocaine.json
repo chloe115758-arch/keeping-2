@@ -1,52 +1,56 @@
 {
-  "ingredient": "lidocaine",
-  "productSeq": "201801686",
-  "itemName": "리도카겔(리도카인)",
-  "atc": "N01BB02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20190809",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801686/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801686/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801686/NB"
+ "ingredient": "lidocaine",
+ "productSeq": "201801686",
+ "itemName": "리도카겔(리도카인)",
+ "atc": "N01BB02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190809",
+ "ediCode": "053500130",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801686/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801686/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801686/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "3. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으며, 이 약이 유즙으로 이행되는지 여부는 알려",
+   "extractor": "kw-v4",
+   "id": "631b0df090",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "c3a19c70b6",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "3. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으며, 이 약이 유즙으로 이행되는지 여부는 알려",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bbfe94a8aa",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "3. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "져 있지 않으므로, 임부 또는 수유부에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f4ef8fc12b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "3. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "에만 투여한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:19:54"
+  {
+   "section": "pregnancy",
+   "where": "3. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "져 있지 않으므로, 임부 또는 수유부에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우",
+   "extractor": "kw-v4",
+   "id": "c06f5af62e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "3. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "3b41b66261",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

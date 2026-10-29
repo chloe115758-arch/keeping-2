@@ -1,0 +1,123 @@
+{
+ "ingredient": "azithromycin hydrate",
+ "productSeq": "200807127",
+ "itemName": "아지탑스주사500밀리그램(아지트로마이신수화물)",
+ "atc": "J01FA10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230912",
+ "ediCode": "642902831",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807127/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807127/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807127/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "제산제: 이 약과 제산제를 동시에 투여하는 경우 미치는 영향을 알아보기 위한 약동학 시험에서, 전반적인 생체이용율에는 영향을 미치지 않았으나 최고 혈청 농도는 약 24%정도 감소하였다. 이 약과 제산제를 함께 복용하는 환자의 경우, 두 약물을 동시에 복용하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "429fa7a9ac",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 최기형 영향.",
+   "extractor": "kw-v4",
+   "id": "c4cb6d5e93",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "생식능 연구는 마우스 및 랫트를 대상으로 중등도 모체독성용량(1일 kg당 200 mg 경구)으로 수행되었다. 이러한 용량은 mg/㎡ 기준으로 인체 경구용량 500 mg의 2-4배에 해당된다. 이러한 연구에서 아지트로마이신이 태아에 해를 끼친다는 명백한 증거는 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "f985fa6190",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 초기동안 항생제 미사용 또는 다른 항생제 사용과 비교하여, 여러 국가에서 수행된 관찰연구로부터 임신 중 아지트로마이신의 노출에 대한 많은 자료가 있다. 대부분의 연구에서 임신 초기에 아지트로마이신 노출 후 주요 선천성기형 또는 심혈관기형 같은 태아에 유해한 영향과의 연관성이 시사되지는 않고, 유산의 위험이 증가한다는 역학적 증거는 제한적으로 있다.",
+   "extractor": "kw-v4",
+   "id": "882ff0ad74",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "아지트로마이신은 적절한 대안이 없고 치료적 유익성이 잠재적 위험성 증가를 상회한다고 예상되는 경우에만 임신 중에 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b65e769542",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 문헌에 따르면 아지트로마이신이 사람모유에 이행된다. 모유수유의 유익성과 모체에서 치료적 유익성을 고려하여, 수유중단 또는 이 약 투여중단을 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "26115b4af2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능: 랫트에 대해 실시한 수태능시험(fertility study)에서, 아지트로마이신 투여에 따른 임신비율의 감소가 발견되었다. 이러한 발견과 사람과의 연관성은 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "14fe66a0ea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 대해 성인환자와 동일한 용량을 투여한다. 고령의 환자는 젊은 환자들에 비해 torsades de pointes 부정맥 발생에 더욱 민감할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "45800fcead",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:03",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

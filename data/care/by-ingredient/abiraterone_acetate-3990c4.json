@@ -1,0 +1,128 @@
+{
+ "ingredient": "abiraterone acetate",
+ "productSeq": "202401566",
+ "itemName": "아비론정500밀리그램(아비라테론아세테이트(미분화))",
+ "atc": "L02BX03",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "052500070",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401566/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401566/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401566/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 사용",
+   "extractor": "kw-v4",
+   "id": "8289057513",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임신한 여성 또는 임신 가능성이 있는 여성에게 사용되어서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "086196c101",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 이 약의 사용에 관한 사람 자료가 없으며, 이 약은 가임기 여성에게 처방되지 않는다. 모체에서 CYP17 억제제로 인해 호르몬 농도 변화가 나타나 태아 발달에 영향이 있을 수 있다.",
+   "extractor": "kw-v4",
+   "id": "3afd7d01a7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유 중 사용",
+   "extractor": "kw-v4",
+   "id": "6e03257ca9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "여성에 대한 이 약의 안전성 및 유효성은 확립되지 않았다. 모유에 아비라테론이 존재하거나 모유 수유 아동 또는 모유 생산에 미치는 영향에 대한 정보는 없다.",
+   "extractor": "kw-v4",
+   "id": "d9f284fce0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "기타",
+   "extractor": "kw-v4",
+   "id": "b3db6b2ef1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "아비라테론 또는 그 대사물이 정액에 존재하는지 여부는 알려져 있지 않다. 남성 환자가 임신 여성과 성관계를 맺는 경우 콘돔이 필요하다. 남성 환자가 가임기 여성과 성생활을 하는 경우, 다른 효과적인 피임법과 함께 콘돔을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "c4f0592fd3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 대한 3상 임상시험에 참여한 전체 피험자 중 이 약을 투여 받은 환자의 70%가 65세 이상이었고, 27%가 75세 이상이었다. 안전성유효성에서 전반적으로 고령자와 성인에서의 차이가 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "45d631cc7c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "a13944a1f0",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약의 권장량은 1일 1회 1,000mg(500mg 정제 2정)으로, 음식과 함께 복용하면 안된다. 이 약은 반드시 공복에 1일 1회 복용하여야 한다. 이 약은 식사 후 최소 2시간 후에 복용해야 하며, 이 약 복용 후 최소 1시간 동안에는 음식물을 섭취하지 않아야 한다. 정제는 물과 함께 모두 삼켜야 한다.",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:31",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

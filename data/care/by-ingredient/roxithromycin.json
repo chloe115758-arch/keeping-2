@@ -1,112 +1,116 @@
 {
-  "ingredient": "roxithromycin",
-  "productSeq": "201502237",
-  "itemName": "록시템정(록시트로마이신)",
-  "atc": "J01FA06",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230509",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502237/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502237/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502237/NB"
+ "ingredient": "roxithromycin",
+ "productSeq": "201502237",
+ "itemName": "록시템정(록시트로마이신)",
+ "atc": "J01FA06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230509",
+ "ediCode": "057000260",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502237/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502237/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201502237/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 임상용량의 약 80배에서 태자의 외표이상 및 골격이상의 발현빈도가 대조군에 비하여 높다는 보고가 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "08bd31a39a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "2de36e6ed8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫트)에서 임상용량의 약 80배에서 태자의 외표이상 및 골격이상의 발현빈도가 대조군에 비하여 높다는 보고가 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "967dfa0f62",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "모유로 소량 이행되므로 수유부에는 투여하지 않는 것이 바람직하나 부득이 투여하는 경우에는 수유를 중지한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "de6d15c993",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에서는 반감기가 연장된다. 그러나 12시간 간격으로 150mg(역가)을 반복투여한 후에 정상상태에서의 최고혈중농도와 투여간 혈중농도시간곡선하면적(AUC)이 젊은 환자에서의 경우와 동일하므로 고령자에게 투여 시 용량을 조절할 필요가 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "36b30fc5dc",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "성인 : 록시트로마이신으로서 1회 150㎎(역가)을 1일 2회 아침, 저녁식전에 경구투여한다.",
-      "meal": "식전",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0f856aaaa5",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "폐렴의 경우 1일 1회 300mg(역가)을 아침 식전에 투여한다.",
-      "meal": "식전",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9697f4cec2",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "- 보통 체중 6～11Kg의 소아인 경우 : 1회 25mg(역가)씩 1일 2회 식전 복용(소아용 정제, 과립제에 한함.), 1회 2.5mL씩 1일 2회 식전 복용(현탁제에 한함.)",
-      "meal": "식전",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a3d24dcb20",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "- 체중 12～23Kg의 소아인 경우 : 1회 50mg(역가)씩 1일 2회 식전 복용(소아용 정제, 과립제에 한함.), 1회 5mL씩 1일 2회 식전 복용(현탁제에 한함.)",
-      "meal": "식전",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1f3b333863",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "- 체중 24～40Kg의 소아인 경우 : 1회 100mg(역가)씩 1일 2회 식전 복용(소아용 정제, 과립제에 한함.), 1회 10mL씩 1일 2회 식전 복용(현탁제에 한함.)",
-      "meal": "식전",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:06:21"
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유로 소량 이행되므로 수유부에는 투여하지 않는 것이 바람직하나 부득이 투여하는 경우에는 수유를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "455ded1760",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 반감기가 연장된다. 그러나 12시간 간격으로 150mg(역가)을 반복투여한 후에 정상상태에서의 최고혈중농도와 투여간 혈중농도시간곡선하면적(AUC)이 젊은 환자에서의 경우와 동일하므로 고령자에게 투여 시 용량을 조절할 필요가 없다.",
+   "extractor": "kw-v4",
+   "id": "08afcfbd84",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "36b30fc5dc",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 록시트로마이신으로서 1회 150㎎(역가)을 1일 2회 아침, 저녁식전에 경구투여한다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "0f856aaaa5",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "폐렴의 경우 1일 1회 300mg(역가)을 아침 식전에 투여한다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "9697f4cec2",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "- 보통 체중 6～11Kg의 소아인 경우 : 1회 25mg(역가)씩 1일 2회 식전 복용(소아용 정제, 과립제에 한함.), 1회 2.5mL씩 1일 2회 식전 복용(현탁제에 한함.)",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "a3d24dcb20",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "- 체중 12～23Kg의 소아인 경우 : 1회 50mg(역가)씩 1일 2회 식전 복용(소아용 정제, 과립제에 한함.), 1회 5mL씩 1일 2회 식전 복용(현탁제에 한함.)",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "1f3b333863",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "- 체중 24～40Kg의 소아인 경우 : 1회 100mg(역가)씩 1일 2회 식전 복용(소아용 정제, 과립제에 한함.), 1회 10mL씩 1일 2회 식전 복용(현탁제에 한함.)",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

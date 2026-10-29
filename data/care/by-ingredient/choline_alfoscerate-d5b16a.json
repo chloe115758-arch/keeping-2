@@ -1,15 +1,32 @@
 {
-  "ingredient": "choline alfoscerate",
-  "productSeq": "201804343",
-  "itemName": "콜린맥스연질캡슐400밀리그램(콜린알포세레이트)",
-  "atc": "N07AX02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20210728",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804343/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804343/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804343/NB"
-  },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:04:14"
+ "ingredient": "choline alfoscerate",
+ "productSeq": "201804343",
+ "itemName": "콜린맥스연질캡슐400밀리그램(콜린알포세레이트)",
+ "atc": "N07AX02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210728",
+ "ediCode": "055102210",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804343/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804343/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804343/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음 환자에는 투여하지 말 것. 2)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성",
+   "extractor": "kw-v4",
+   "id": "8bb901d9a3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

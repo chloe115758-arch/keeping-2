@@ -1,0 +1,19 @@
+{
+ "ingredient": "calcium chloride + magnesium chloride + potassium chloride + sodium acetate + sodium chloride + sodium citrate",
+ "productSeq": "198900313",
+ "itemName": "벨론에이액",
+ "atc": "S01KX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190807",
+ "ediCode": "645101492",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900313/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900313/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900313/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-30T00:13:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

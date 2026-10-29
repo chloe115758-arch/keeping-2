@@ -1,0 +1,125 @@
+{
+ "ingredient": "nifedipine",
+ "productSeq": "200400999",
+ "itemName": "니페론씨알서방정40밀리그램(니페디핀)",
+ "atc": "C08CA05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250520",
+ "ediCode": "620500010",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400999/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400999/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400999/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 2)",
+   "subject": "",
+   "excerpt": "혈압강하작용에 의해 어지러움이 나타날 수 있으므로 고소작업, 자동차 운전 등 위험이 수반되는 기계를 조작하는 경우에는 주의한다(특히 투여시작시, 투여방법 변경시, 알코올과 병용하여 복용할 때 주의한다.).",
+   "extractor": "kw-v4",
+   "id": "39f39e5b6b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 13)",
+   "subject": "",
+   "excerpt": "자몽쥬스는 사이토크롬 P450 3A4를 억제한다. 따라서, 이 약을 자몽쥬스와 함께 투여하면 초회통과대사가 감소되어 이 약의 혈중 농도가 증가한다. 즉, 혈압강하효과가 증강될 수 있다. 따라서 자몽쥬스를 일상적으로 복용하는 경우 혈압강하효과는 자몽쥬스를 마지막으로 섭취한 후 3일이상 지속될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "0e8d8e80ba",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (1)",
+   "subject": "",
+   "excerpt": "이 약과 아즈말린, 베나제프릴, 데브리소퀸, 독사조신, 이베사르탄, 오메프라졸, 오를리스타트, 판토프라졸, 라니티딘, 로지글리타존, 탈리놀롤, 트리암테렌 하이드로클로로치아자이드를 병용투여하는 경우 이 약의 약물동태에 영향을 주지 않는다.",
+   "extractor": "kw-v4",
+   "id": "0a618227eb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 기형발생 및 배태자 독성이 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "260a429051",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신한 여성에 대해 실시한 대조 임상시험은 없다.",
+   "extractor": "kw-v4",
+   "id": "775f96c648",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "모유중으로의 이행이 보고되었으므로 수유중인 부인에는 투여하지 않는다. 부득이하게 수유부에 투여해야 할 경우 이 약이 영아에게 어떤 영향을 미치는지에 대한 경험이 없으므로 수유부는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "0ec7596f11",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서의 과도한 혈압강하는 바람직하지 않으므로 (뇌경색 등이 일어날 수 있다.) 저용량에서 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "82561ebcf6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:37",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

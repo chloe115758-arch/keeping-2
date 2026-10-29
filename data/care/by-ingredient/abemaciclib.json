@@ -1,0 +1,171 @@
+{
+ "ingredient": "abemaciclib",
+ "productSeq": "201902825",
+ "itemName": "버제니오정50밀리그램(아베마시클립)",
+ "atc": "L01XE50",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260511",
+ "ediCode": "670801140",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902825/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902825/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201902825/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "기타 강력한 CYP3A 억제제",
+   "excerpt": "환자들은 자몽 제품들을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "0072c4e50f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "5c6342ac11",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "위험 요약",
+   "excerpt": "동물 시험으로부터의 결과 및 작용 기전에 근거할 때, 이 약은 임신한 여성에게 투여 시 태아에게 유해할 수 있다. 이 약과 관련된 위험 정보를 제공하는 인체 자료는 없다. 임신한 여성에게 태아에 대한 잠재적 위험을 알린다. 동물 생식 독성 시험에서, 기관 형성 기간에 아베마시클립을 투여한 결과, 인체 최대 권장 용량에서의 AUC에 근거한 인체 임상 노출과 유사한 모체 노출에서 최기 형성 및…",
+   "extractor": "kw-v4",
+   "id": "f8d1bdf580",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "위험 요약",
+   "excerpt": "대상 집단에서 주요 출생 결함 및 유산의 배경 위험은 알려지지 않았다. 하지만 미국 일반인에서 주요 출생 결함의 배경 위험은 2-4%이며, 유산의 배경 위험은 임상적으로 확인된 임신의 15-20%이다.",
+   "extractor": "kw-v4",
+   "id": "f362e1e421",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "동물 자료",
+   "excerpt": "배-태자 발달 시험에서, 임신한 랫드의 기관 형성 기간에 아베마시클립 최대 15mg/kg/day를 경구 투여하였다. 4 mg/kg/day 이상의 용량은 태자 체중을 감소시켰고, 심혈관계 및 골격 기형 및 변화의 발생률을 증가시켰다. 이러한 결과들은 무명동맥 및 대동맥궁의 부재, 변위 된 쇄골하 동맥, 비 골화 된 복장뼈 분절, 흉추 중심의 양측성 골화 및 흔적 상태 또는 결절화 된 늑골을 포…",
+   "extractor": "kw-v4",
+   "id": "f605853db2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "동물 자료",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "3a6f4983e7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "동물 자료",
+   "excerpt": "인체 유즙에서의 아베마시클립 존재 또는 수유를 받는 영아 또는 유즙 생성에 미치는 영향에 대한 자료는 없다. 수유를 받는 영아에서 이 약으로 인한 중대한 이상반응의 가능성이 있으므로, 수유 중인 여성에게 이 약을 투여하는 동안 및 마지막 투여 후 최소 3주간 수유하지 않도록 지도한다.",
+   "extractor": "kw-v4",
+   "id": "6aa624902f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 3)",
+   "subject": "동물 자료",
+   "excerpt": "가임 여성 및 남성",
+   "extractor": "kw-v4",
+   "id": "df1b002fdd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "임신 검사",
+   "excerpt": "동물 시험에 근거할 때 이 약은 임신한 여성에게 투여 시 태아에게 유해할 수 있다. 이 약 투여를 시작하기 전 생식 능력이 있는 여성에 대한 임신 검사가 권장된다.",
+   "extractor": "kw-v4",
+   "id": "2ae82dc86c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "피임",
+   "excerpt": "이 약은 임신한 여성에게 투여 시 태아에게 유해할 수 있다. 생식 능력이 있는 여성에게 이 약 투여하는 동안 및 마지막 투여 후 최소 3주간 효과적인 피임법을 사용하도록 지도한다.",
+   "extractor": "kw-v4",
+   "id": "d65ea999b0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "수태능(남성)",
+   "excerpt": "동물에서의 결과에 근거할 때 이 약은 생식능력이 있는 남성에서 수태력을 손상시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "424c382511",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "MONARCH 1, MONARCH 2 및 MONARCH 3에서 이 약을 투여 받은 900명 중 38%가 65세 이상이었고, 10%가 75세 이상이었다. MONARCH 1, 2, 3에서 65세 이상의 환자들에서 3 또는 4 등급의 가장 흔한 이상반응 (≥5%)은 호중구 감소증, 설사, 피로, 오심, 탈수, 백혈구 감소증, 빈혈, 감염 및 ALT 상승이었다. 이 환자들과 연령이 더 낮은 환자들…",
+   "extractor": "kw-v4",
+   "id": "f73d8c8c50",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:29",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

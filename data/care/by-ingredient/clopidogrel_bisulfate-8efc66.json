@@ -1,95 +1,162 @@
 {
-  "ingredient": "clopidogrel bisulfate",
-  "productSeq": "201800992",
-  "itemName": "클로메디정(클로피도그렐황산수소염)",
-  "atc": "B01AC04",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230420",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201800992/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201800992/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201800992/NB"
-  },
-  "rules": [
+ "ingredient": "clopidogrel bisulfate",
+ "productSeq": "201800992",
+ "itemName": "클로메디정(클로피도그렐황산수소염)",
+ "atc": "B01AC04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230420",
+ "ediCode": "052400630",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201800992/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201800992/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201800992/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "CYP2C19 저해제: 이 약은 부분적으로 CYP2C19를 통해 활성 대사체로 대사되므로, CYP2C19의 활성을 저해하는 약물과 병용 투여할 경우 이 약의 활성 대사체의 약물농도가 낮아질 수 있다. 이러한 상호작용의 임상적 관련성은 확실하지 않다. 이 약을 CYP2C19저해제와 병용하는 것은 권장되지 않는다. (CYP2C19 저해제 예: 오메프라졸, 에스오메프라졸, 플루복사민, 플루옥세틴,…",
+   "extractor": "kw-v4",
+   "id": "123db4f892",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "b882d0ac30",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (4)",
-      "subject": "10) 기타 병용 치료",
-      "matched": [
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 다른 약물들의 병용투여에 의한 약력학적 및 약동학적 상호작용을 조사하기 위해 많은 임상 연구들이 시행되어 왔다. 이 약을 아테놀롤, 니페디핀 각각 또는 아테놀롤 및 니페디핀 둘 다와 동시에 병용투여할 경우, 임상적으로 유의한 약력학적 상호작용은 관찰되지 않았다. 또한 이 약의 약력학은 페노바르비탈 또는 에스트로겐의 병용 투여로 유의하게 영향을 받지는 않았다. 디곡신 또는 테오필린의…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fd7dc45520",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 : 랫트와 토끼에게 이 약을 500 및 300 mg/kg/day 용량까지(각각 인체 치료용량의 65배, 78배) 투여한 생식독성시험에서 수태능 이상 또는 태자 독성은 나타나지 않았다. 임부에 클로피도그렐 사용 관련 문헌 또는 시판 후 사례보고 자료에서 주요 출생결함이나 유산 관련 위험은 확인되지 않았다. 심근경색과 뇌졸중은 응급질환이므로 태아에 대한 잠재적 영향을 고려하여 치료를 유보해…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "85dede0e61",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "분만 중 클로피도그렐의 사용은 임산부의 출혈 위험을 높일 수 있다. 척추혈종의 위험이 있으므로 클로피도그렐 사용 중 신경축 차단을 피해야 한다. 가능할 경우 분만 또는 신경축 차단 5~7일 전에 클로피도그렐의 투여를 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "043fce3f29",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부 : 랫트를 대상으로 한 시험에서 이 약 및/또는 그 대사체는 모두 랫트의 유즙으로 분비되었다. 이 약이 인체의 모유로 분비되는 지에 대해서는 알려진 바 없다. 많은 약물이 인체내 모유로 분비되며 또한, 수유중인 유아에서 중증의 이상반응을 일으킬 수 있기 때문에 수유부에 대한 약물의 중요성을 고려하여 수유를 중단할 것인지 약물 투여를 중단할 것인지 결정하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c2188b4ff7",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "주요 순환 대사체의 혈장 농도는 젊고 건강한 지원자에 비해 고령 환자(≥75세)에서 유의하게 높았지만, 더 높은 혈장 농도로 인하여 혈소판응집 및 출혈 시간에 차이가 나타나지는 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ffbb2a7b68",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자는 조혈기능, 신기능, 간기능 등의 생리기능이 저하 및 체중이 적은 경향이 있어 출혈 등의 이상반응이 나타나기 쉬우므로 감량 등을 고려하고, 환자의 상태를 관찰하면서 신중하게 투여한다.",
-      "extractor": "kw-v1"
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:03:38"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (3)",
+   "subject": "",
+   "excerpt": "오메프라졸 1일 1회 80 mg을 동시 또는 12시간 간격으로 이 약과 투여하였을 때 활성 대사체 45 %(부하용량) 그리고 40 %(유지용량)의 노출이 감소되었다. 이러한 감소는 혈소판 응집 억제의 39 %(부하용량) 및 21 %(유지용량) 감소와 연관되었다. 에스오메프라졸도 이 약과 유사한 상호작용이 있을 것으로 기대된다.",
+   "extractor": "kw-v4",
+   "id": "d63256cf3c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": {
+    "minHours": 12.0,
+    "maxHours": null,
+    "qualifier": "",
+    "text": "12시간 간격",
+    "actionable": false
+   },
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "판토프라졸 또는 란소프라졸에서는 대사체 노출의 감소가 다소 낮게 관찰되었다. 판토프라졸 1일 1회 80 mg과 병용 치료하는 동안 활성 대사체의 혈중 농도가 20 %(부하용량) 그리고 14 %(유지용량) 감소되었다. 이러한 감소는 평균 혈소판 응집 억제의 15 %(부하용량) 및 11 %(유지용량) 감소와 연관되었다.",
+   "extractor": "kw-v4",
+   "id": "601ecfbcd1",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "란소프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (4)",
+   "subject": "",
+   "excerpt": "이 약과 다른 약물들의 병용투여에 의한 약력학적 및 약동학적 상호작용을 조사하기 위해 많은 임상 연구들이 시행되어 왔다. 이 약을 아테놀롤, 니페디핀 각각 또는 아테놀롤 및 니페디핀 둘 다와 동시에 병용투여할 경우, 임상적으로 유의한 약력학적 상호작용은 관찰되지 않았다. 또한 이 약의 약력학은 페노바르비탈 또는 에스트로겐의 병용 투여로 유의하게 영향을 받지는 않았다. 디곡신 또는 테오필린의…",
+   "extractor": "kw-v4",
+   "id": "d1c802001c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 랫트와 토끼에게 이 약을 500 및 300 mg/kg/day 용량까지(각각 인체 치료용량의 65배, 78배) 투여한 생식독성시험에서 수태능 이상 또는 태자 독성은 나타나지 않았다. 임부에 클로피도그렐 사용 관련 문헌 또는 시판 후 사례보고 자료에서 주요 출생결함이나 유산 관련 위험은 확인되지 않았다. 심근경색과 뇌졸중은 응급질환이므로 태아에 대한 잠재적 영향을 고려하여 치료를 유보해…",
+   "extractor": "kw-v4",
+   "id": "85d40bfb0a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "분만 중 클로피도그렐의 사용은 임산부의 출혈 위험을 높일 수 있다. 척추혈종의 위험이 있으므로 클로피도그렐 사용 중 신경축 차단을 피해야 한다. 가능할 경우 분만 또는 신경축 차단 5~7일 전에 클로피도그렐의 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "6b77db5f69",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 랫트를 대상으로 한 시험에서 이 약 및/또는 그 대사체는 모두 랫트의 유즙으로 분비되었다. 이 약이 인체의 모유로 분비되는 지에 대해서는 알려진 바 없다. 많은 약물이 인체내 모유로 분비되며 또한, 수유중인 유아에서 중증의 이상반응을 일으킬 수 있기 때문에 수유부에 대한 약물의 중요성을 고려하여 수유를 중단할 것인지 약물 투여를 중단할 것인지 결정하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "d1664a6cf3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "주요 순환 대사체의 혈장 농도는 젊고 건강한 지원자에 비해 고령 환자(≥75세)에서 유의하게 높았지만, 더 높은 혈장 농도로 인하여 혈소판응집 및 출혈 시간에 차이가 나타나지는 않았다.",
+   "extractor": "kw-v4",
+   "id": "ca702b206c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "고령자는 조혈기능, 신기능, 간기능 등의 생리기능이 저하 및 체중이 적은 경향이 있어 출혈 등의 이상반응이 나타나기 쉬우므로 감량 등을 고려하고, 환자의 상태를 관찰하면서 신중하게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "3acb894286",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

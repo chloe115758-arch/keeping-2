@@ -1,0 +1,32 @@
+{
+ "ingredient": "2-ketoglutaric acid monopotassium salt + calcium chloride + histidine + histidine hydrochloride + magnesium chloride + manitol + potassium chloride + sodium chloride + tryptophan",
+ "productSeq": "200511666",
+ "itemName": "쿠스토디올액",
+ "atc": "B05XA16",
+ "etcOtc": "전문의약품",
+ "changeDate": "20170916",
+ "ediCode": "660300030",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511666/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511666/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511666/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성 및 수유부에게 이 약을 사용한 예는 아직 보고된 바 없다. 임부 또는 수유부에 이 약을 사용할 경우, 위험성과 유용성을 세심하게 평가해야 한다. 임신기간 동안 응급수술로 이 약을 사용해야 할 경우, 심정지액의 안전성을 담보하기 위해서 외과적 중재술 후에 우심실로부터 심정지액을 완전히 배출해야한다.",
+   "extractor": "kw-v4",
+   "id": "f3e9b174e4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:33",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

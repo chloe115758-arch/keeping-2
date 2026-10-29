@@ -1,0 +1,147 @@
+{
+ "ingredient": "iron hydoxide sucrose complex )",
+ "productSeq": "200710508",
+ "itemName": "훼렉스주(수크로오스수산화제이철착염)(수출명:Ferex-Inj.)",
+ "atc": "B03AC",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200313",
+ "ediCode": "622801641",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200710508/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200710508/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200710508/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 6)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "b514335f33",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "경구용 철분제제와 함께 투여하는 경우 흡수가 저해될 수 있으므로 병용투여 하여서는 아니되며, 최종 주사후에는 적어도 5일 경과후에 경구제 요법을 시작하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "1cc9d9e05f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "iron",
+     "kind": "supplement",
+     "ko": "철분제제",
+     "surface": "철분제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신",
+   "extractor": "kw-v4",
+   "id": "ad651782f0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임산부에 대한 이 약의 적절한 임상시험 자료는 없다. 그러므로 이 약을 임신 중에 사용하기 전에 신중한 유익성/위해성 평가가 필요하며, 반드시 필요한 경우에만 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "c8db91dd71",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 초기에 발생하는 철결핍성 빈혈은 대부분의 경우에 경구용 철분제로 치료될 수 있다. 이 약의 치료는 모체와 태아 모두에게 유익성이 잠재적 위해성을 상회한다고 판단되는 경우에 임신2기 및 3기로 제한되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "bb015a2cac",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "비경구적으로 철을 투여한 후 모체에서 보통 일시적인 과민반응의 결과로 태아서맥이 발생할 수 있다. 임부에게 비경구적으로 철을 투여하는 동안 뱃속 아기를 주의 깊게 모니터링 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b7cd1ddebe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유",
+   "extractor": "kw-v4",
+   "id": "2d95eeff1a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다른 철-당류복합체의 미대사체가 모유에서 미량 발견되었으므로 수유부에게는 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "7c0c54bba1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "b75228a051",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "철 수크로오스 정맥점적주사(3.0, 6.5, 15mg/kg/회, 3회/week)의 쥐의 생식 능력, 교미 능력 및 초기 배아 발달에서 철 수크로오스 치료의 영향은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "ebb95b1496",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:25",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

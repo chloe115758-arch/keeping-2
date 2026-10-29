@@ -1,64 +1,68 @@
 {
-  "ingredient": "alfuzosin hydrochloride",
-  "productSeq": "201506355",
-  "itemName": "알푸케어서방정10밀리그램(알푸조신염산염)",
-  "atc": "G04CA01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250414",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506355/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506355/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506355/NB"
+ "ingredient": "alfuzosin hydrochloride",
+ "productSeq": "201506355",
+ "itemName": "알푸케어서방정10밀리그램(알푸조신염산염)",
+ "atc": "G04CA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250414",
+ "ediCode": "057000460",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506355/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506355/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506355/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약물의 적응증은 여성을 대상으로 하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "2ed3b12275",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "dbc1ca2ab5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약물의 적응증은 여성을 대상으로 하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c2ec9d5675",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 임신중의 안전성과 모유로의 이행에 대해서는 알려진 바가 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "915145c6d5",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "권장용량은 1일 1회 10mg으로 저녁식사 직후 복용하며 깨물어먹지 말고 반드시 한번에 삼켜야 한다.",
-      "meal": "식사 직후",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d1d45b1b6f",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "양성 전립선 비대증과 관련된 급성 요폐에서 카테터에 대한 보조 요법으로 투여시, 권장용량은 1일 1회 10mg으로 카테터 삽입 첫날부터 식사 후 복용한다. 카테터를 삽입한 동안 2-3일간 복용하고, 카테터 제거 후 1일에 복용하여, 총 3-4일간 복용한다.",
-      "meal": "식사 후",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:11:53"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임신중의 안전성과 모유로의 이행에 대해서는 알려진 바가 없다.",
+   "extractor": "kw-v4",
+   "id": "b9e3a9c88a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "915145c6d5",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "권장용량은 1일 1회 10mg으로 저녁식사 직후 복용하며 깨물어먹지 말고 반드시 한번에 삼켜야 한다.",
+   "meal": "식사 직후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "d1d45b1b6f",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "양성 전립선 비대증과 관련된 급성 요폐에서 카테터에 대한 보조 요법으로 투여시, 권장용량은 1일 1회 10mg으로 카테터 삽입 첫날부터 식사 후 복용한다. 카테터를 삽입한 동안 2-3일간 복용하고, 카테터 제거 후 1일에 복용하여, 총 3-4일간 복용한다.",
+   "meal": "식사 후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

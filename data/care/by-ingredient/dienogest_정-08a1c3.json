@@ -1,107 +1,123 @@
 {
-  "ingredient": "dienogest/정",
-  "productSeq": "201104470",
-  "itemName": "비잔정(디에노게스트)",
-  "atc": "G03DB08",
-  "etcOtc": "전문의약품",
-  "changeDate": "20211026",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201104470/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201104470/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201104470/NB"
-  },
-  "rules": [
+ "ingredient": "dienogest/정",
+ "productSeq": "201104470",
+ "itemName": "비잔정(디에노게스트)",
+ "atc": "G03DB08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20211026",
+ "ediCode": "641105700",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201104470/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201104470/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201104470/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ②",
+   "subject": "",
+   "excerpt": "성호르몬의 클리어런스를 증가시키는 약물(효소 유도에 의한 효과 감소): 페니토인, 바르비탈, 프리미돈, 카르바마제핀, 리팜피신 그리고 가능성 있는 약물로는 옥스카바제핀, 토피라메이트, 펠바메이트, 그리세오풀빈, St. Johns's wort 함유 약물. 효소 유도는 투여 며칠 후에 나타날 수 있으며 일반적으로 최대 효소 유도는 몇 주 내로 나타난다. 투여 중지 후 효소 유도는 4주 정도 유지…",
+   "extractor": "kw-v4",
+   "id": "96a2ca8b5c",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "7d8ca590be",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 ②",
-      "subject": "1) 이 약에 대한 다른 약물의 영향",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "St. John"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "성호르몬의 클리어런스를 증가시키는 약물(효소 유도에 의한 효과 감소): 페니토인, 바르비탈, 프리미돈, 카르바마제핀, 리팜피신 그리고 가능성 있는 약물로는 옥스카바제핀, 토피라메이트, 펠바메이트, 그리세오풀빈, St. Johns's wort 함유 약물. 효소 유도는 투여 며칠 후에 나타날 수 있으며 일반적으로 최대 효소 유도는 몇 주 내로 나타난다. 투여 중지 후 효소 유도는 4주 정도 유지…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "017f5a90ce",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "디에노게스트를 임신부에게 투여한 자료는 제한적이다. 동물 시험 및 임신 기간 동안 디에노게스트에 노출된 여성으로부터 얻어진 자료에서 임신, 배/태자 발달, 출생 및 출생후 발달에 대한 특별한 위험이 나타나지 않았다. 그러나 임신 중에는 자궁내막증을 치료할 필요가 없으므로 임부에게는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7f17034650",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유 중 이 약의 투여는 권고되지 않는다. 물리화학적 특성 및 동물 시험 결과에 따르면 디에노게스트는 유즙으로 분비된다. 수유와 환자 치료의 유익성을 고려하여 수유 또는 이 약의 복용 중지 여부를 결정한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "17a57f99b8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약을 투여하는 대다수의 환자에서 배란이 억제되는 것이 일부 관찰되었으나, 이 약은 피임 효능에 대해서는 연구되지 않았다. 피임을 할 경우 비호르몬적 방법을 사용해야 한다. 이 약의 투여를 중단한 후 2개월 이내에 월경 주기가 정상으로 되돌아왔다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "02560a7e88",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 소아, 고령자에 대한 투여",
-      "subject": "1) 소아에 대한 투여 :",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 초경 이전의 소아에게는 처방되지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "31a48f81cf",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 소아, 고령자에 대한 투여",
-      "subject": "1) 소아에 대한 투여 :",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "111명의 자궁내막증 12세 이상의 소아를 대상으로 안전성과 유효성에 대한 비중재 임상시험이 실시되었다. (4. 일반적 주의 6) 참조)",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c4bfef6c5f",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 소아, 고령자에 대한 투여 2)",
-      "subject": "1) 소아에 대한 투여 :",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자 : 이 약은 고령자에게는 투여하지 않는다.",
-      "extractor": "kw-v1"
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:16:25"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "디에노게스트를 임신부에게 투여한 자료는 제한적이다. 동물 시험 및 임신 기간 동안 디에노게스트에 노출된 여성으로부터 얻어진 자료에서 임신, 배/태자 발달, 출생 및 출생후 발달에 대한 특별한 위험이 나타나지 않았다. 그러나 임신 중에는 자궁내막증을 치료할 필요가 없으므로 임부에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "84da4c10f5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유 중 이 약의 투여는 권고되지 않는다. 물리화학적 특성 및 동물 시험 결과에 따르면 디에노게스트는 유즙으로 분비된다. 수유와 환자 치료의 유익성을 고려하여 수유 또는 이 약의 복용 중지 여부를 결정한다.",
+   "extractor": "kw-v4",
+   "id": "b7a907628b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약을 투여하는 대다수의 환자에서 배란이 억제되는 것이 일부 관찰되었으나, 이 약은 피임 효능에 대해서는 연구되지 않았다. 피임을 할 경우 비호르몬적 방법을 사용해야 한다. 이 약의 투여를 중단한 후 2개월 이내에 월경 주기가 정상으로 되돌아왔다.",
+   "extractor": "kw-v4",
+   "id": "c0ddf4949c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 소아, 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "소아에 대한 투여 :",
+   "extractor": "kw-v4",
+   "id": "6ee7f0f3e7",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 소아, 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 초경 이전의 소아에게는 처방되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "b2ec291fc8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 소아, 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "111명의 자궁내막증 12세 이상의 소아를 대상으로 안전성과 유효성에 대한 비중재 임상시험이 실시되었다. (4. 일반적 주의 6) 참조)",
+   "extractor": "kw-v4",
+   "id": "32879c5c3f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 소아, 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "고령자 : 이 약은 고령자에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "0ad9ecbbf9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

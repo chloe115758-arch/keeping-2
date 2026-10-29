@@ -1,0 +1,125 @@
+{
+ "ingredient": "lercanidipine hydrochloride + valsartan",
+ "productSeq": "201308391",
+ "itemName": "레바캄정10/80밀리그램",
+ "atc": "C09DB08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "668902550",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308391/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308391/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308391/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 14)",
+   "subject": "",
+   "excerpt": "알코올 섭취 환자(혈압강하제의 혈관확장 기능 증가시킬 가능성이 있다.)",
+   "extractor": "kw-v4",
+   "id": "b3a7af207f",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ⑤",
+   "subject": "",
+   "excerpt": "디히드로피리딘계 약물은 자몽(grapefruit)주스와 함께 투여하는 경우에 이 약의 혈중농도가 상승할 수 있으므로 함께 복용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "19730a0955",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ⑥",
+   "subject": "",
+   "excerpt": "알코올은 혈관확장성 혈압강하제의 효과를 증가시키기 때문에 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "aa2c05aea2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "안지오텐신 II 길항제의 작용기전 때문에 태아에 대한 위험을 배제 할 수 없다. 안지오텐신 전환효소 저해제(레닌-안지오텐신-알로스테론 체계(RAAS)에 작용하는 특수한 약물군)를 임신 2기 및 3기에 복용한 임부에게서 태아 및 신생아에 대한 손상과 사망이 보고된 바 있다. 그리고 임신 1기에 ACE 저해제의 사용은 태아 기형의 잠재적 위험성과 관련이 있다. 발사르탄을 우발적으로 복용한 임부에…",
+   "extractor": "kw-v4",
+   "id": "e795b330df",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "레르카니디핀은 임신과 수유시의 임상 검증이 확인되지 않았고, 다른 디히드로피리딘계 약물의 동물에서의 기형발생 유발, 레르카니디핀의 높은 지방친화성에 의한 모유로의 분포 등을 고려할 때, 유효한 피임을 하지 않을 경우, 임부 또는 임신하고 있을 가능성이 있는 여성, 수유부에게 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "e988702b6c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자인 경우에는 일반적으로 과도한 혈압강하는 뇌경색 등이 일어날 우려가 있어 바람직하지 않다고 보기 때문에, 저용량으로부터 투여를 시작하는 등, 환자 상태를 관찰하면서 신중하게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "38cc87b8ca",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "306e84eed6",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약의 권장용량은 1일 1회, 1회 1정으로, 최소 식사 15분전에 물과 함께 복용한다. 가능하면 매일 같은 시간(예 : 아침)에 복용하는 것이 권장된다.",
+   "meal": "식사 15분전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:24",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

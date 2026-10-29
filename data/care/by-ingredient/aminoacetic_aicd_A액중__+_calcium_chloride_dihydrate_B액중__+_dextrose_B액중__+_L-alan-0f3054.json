@@ -1,0 +1,63 @@
+{
+ "ingredient": "aminoacetic aicd(A액중) + calcium chloride dihydrate(B액중) + dextrose(B액중) + L-alanine(A액중) + L-arginine(A액중) + L-histidine(A액중) + L-leucine(A액중) + L-lsoleucine(A액중) + L-lysine acetate(A액중) + L-methionine(A액중) + L-phenylalanine(A액중) + L-proline(A액중) + L-serine(A액중) + L-systain monohydrate(A액중) + L-threonine(A액중) + L-tryptophan(A액중) + L-valine(A액중) + magnesium chloride hexahydrate(B액중) + potassium chloride(B액중) + potassium dihydrogen phosphate(A액중) + sodium acetate trihydrate(A액중) + sodium chloride(B액중)",
+ "productSeq": "200308580",
+ "itemName": "콤비플렉스페리주",
+ "atc": "B05BA10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190107",
+ "ediCode": "644903910",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308580/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308580/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308580/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 5)",
+   "subject": "",
+   "excerpt": "다른 칼슘 함유 제품과 마찬가지로 세프트리악손과 이 약의 병용투여는 신생아(≤28일)의 혈액에 치명적인 세프트리악손 칼슘 염의 침전 위험이 있다(28일 초과 환자(성인 포함)의 경우 경고 항 참조).",
+   "extractor": "kw-v4",
+   "id": "77fe4e47a1",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘 함유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부와 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부와 수유부에 대한 투여는 안전성이 확립 되어 있지 않으므로 임부에 대한 아미노산 수액제 투여는 치료 상의 유익성이 위험성을 상회하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "882d4dd477",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자의 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 투여속도를 천천히 하며 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "90a39cf94d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:16",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

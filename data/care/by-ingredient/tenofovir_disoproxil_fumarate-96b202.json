@@ -1,88 +1,116 @@
 {
-  "ingredient": "tenofovir disoproxil fumarate",
-  "productSeq": "201004172",
-  "itemName": "비리어드정(테노포비르디소프록실푸마르산염)",
-  "atc": "J05AF07",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250613",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201004172/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201004172/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201004172/NB"
+ "ingredient": "tenofovir disoproxil fumarate",
+ "productSeq": "201004172",
+ "itemName": "비리어드정(테노포비르디소프록실푸마르산염)",
+ "atc": "J05AF07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250613",
+ "ediCode": "625900040",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201004172/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201004172/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201004172/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신",
+   "extractor": "kw-v4",
+   "id": "2ab38a949b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "7755fe56ff",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "1) 임신",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신한 여성에 대한 많은 양의 데이터(1,000 건 이상의 임신 결과)에서 이 약과 연관된 기형 또는 태아/신생아 독성은 나타나지 않았다. 필요 시 임신 중 이 약의 사용이 고려될 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4d58284e40",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "1) 임신",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "문헌에서 임신 후기 산모에 이 약을 투여하고 신생아에 B형 간염 면역 글로불린과 B형 간염 백신을 투여한 군은 산모에 이 약을 투여하지 않고 신생아에 B형 간염 면역 글로불린과 B형 간염 백신만 투여한 군에 비해서 HBV 모자 수직감염이 감소하는 것으로 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5182188f25",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "1) 임신",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "세 건의 대조군 임상 연구에서 총 327명의 임신한 만성 HBV 감염 여성이 임신 28주에서 32주차부터 출산 후 1 내지 2개월에 걸쳐 이 약을 1일 1회 투여 받았다. 산후 12개월까지 산모와 영아를 추적 조사한 결과 이들 데이터에서 안전성 실마리 정보는 나타나지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6a7dd40b8b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "동물 데이터:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물시험에서 생식 독성은 나타나지 않았다. 생식 독성시험은 랫트 및 토끼에서 각각 체표면적 비교 기준 사람에서의 복용량 대비 최대 14배, 19배 용량으로 실시했을 때, 이 약으로 인한 생식 능력 장애나 태아 손상에 대한 증거는 나타나지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "49f39a4019",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "HIV-1 감염된 산모는 유아에게 HIV-1가 전염될 위험을 방지하기 위해 모유를 수유하지 않을 것을 권장한다. 산후 1주일 된 5명의 HIV-1 감염 산모로부터 얻는 유즙 샘플에서 테노포비르가 사람의 유즙으로 분비되는 것이 관찰되었다. 이러한 노출이 모유 수유를 받는 유아에 미치는 영향은 알려지지 않았다. 수유중인 유아에게 HIV-1 전이 및 중증의 이상반응이 생길 수 있으므로 이 약을 투…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5a06507494",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 임상 시험에서는 젊은 대상자와 다르게 반응하는지 판단할 수 있을 만큼 충분한 수의 65세 이상 대상자를 조사하지 못했다. 일반적으로 노인 환자에 대한 복용량 선택은 주의해야 하며 간, 신장 및 심장 기능 저하, 동반질환 또는 기타 약물 치료의 빈도가 더 많아진다는 것을 유념해야 한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:19:15"
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 여성에 대한 많은 양의 데이터(1,000 건 이상의 임신 결과)에서 이 약과 연관된 기형 또는 태아/신생아 독성은 나타나지 않았다. 필요 시 임신 중 이 약의 사용이 고려될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "6aff9113df",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "문헌에서 임신 후기 산모에 이 약을 투여하고 신생아에 B형 간염 면역 글로불린과 B형 간염 백신을 투여한 군은 산모에 이 약을 투여하지 않고 신생아에 B형 간염 면역 글로불린과 B형 간염 백신만 투여한 군에 비해서 HBV 모자 수직감염이 감소하는 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "dfdf2a8bd2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "세 건의 대조군 임상 연구에서 총 327명의 임신한 만성 HBV 감염 여성이 임신 28주에서 32주차부터 출산 후 1 내지 2개월에 걸쳐 이 약을 1일 1회 투여 받았다. 산후 12개월까지 산모와 영아를 추적 조사한 결과 이들 데이터에서 안전성 실마리 정보는 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "bb540567eb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "동물 데이터:",
+   "excerpt": "동물시험에서 생식 독성은 나타나지 않았다. 생식 독성시험은 랫트 및 토끼에서 각각 체표면적 비교 기준 사람에서의 복용량 대비 최대 14배, 19배 용량으로 실시했을 때, 이 약으로 인한 생식 능력 장애나 태아 손상에 대한 증거는 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "6b62b9a5c3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "동물 데이터:",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "54ca5da220",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "동물 데이터:",
+   "excerpt": "HIV-1 감염된 산모는 유아에게 HIV-1가 전염될 위험을 방지하기 위해 모유를 수유하지 않을 것을 권장한다. 산후 1주일 된 5명의 HIV-1 감염 산모로부터 얻는 유즙 샘플에서 테노포비르가 사람의 유즙으로 분비되는 것이 관찰되었다. 이러한 노출이 모유 수유를 받는 유아에 미치는 영향은 알려지지 않았다. 수유중인 유아에게 HIV-1 전이 및 중증의 이상반응이 생길 수 있으므로 이 약을 투…",
+   "extractor": "kw-v4",
+   "id": "137fab696f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상 시험에서는 젊은 대상자와 다르게 반응하는지 판단할 수 있을 만큼 충분한 수의 65세 이상 대상자를 조사하지 못했다. 일반적으로 노인 환자에 대한 복용량 선택은 주의해야 하며 간, 신장 및 심장 기능 저하, 동반질환 또는 기타 약물 치료의 빈도가 더 많아진다는 것을 유념해야 한다.",
+   "extractor": "kw-v4",
+   "id": "574906fe8c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

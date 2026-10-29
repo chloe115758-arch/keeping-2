@@ -1,0 +1,44 @@
+{
+ "ingredient": "chlorpheniramine maleate + pseudoephedrine hydrochloride",
+ "productSeq": "202501581",
+ "itemName": "콜민에스정",
+ "atc": "R01BA52",
+ "etcOtc": "일반의약품",
+ "changeDate": "20250923",
+ "ediCode": "642405310",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501581/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501581/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501581/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의 할 것. 4)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "959254d517",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "bb8043055e",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "만 15세 이상: 1회 1정, 1일 3회 매 식후에 복용하고 복용간격은 4시간 이상으로 한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:01",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

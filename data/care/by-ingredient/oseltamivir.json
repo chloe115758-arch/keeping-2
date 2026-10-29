@@ -1,0 +1,136 @@
+{
+ "ingredient": "oseltamivir",
+ "productSeq": "201507979",
+ "itemName": "한미플루캡슐30밀리그램(오셀타미비르)",
+ "atc": "J05AH02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260320",
+ "ediCode": "643507450",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507979/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507979/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507979/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 5)",
+   "subject": "",
+   "excerpt": "위의 산성도를 바꾸는 것으로 알려진 시메티딘은CYP-450 동종효소에 대한 비특이적인 저해제로서 신세뇨관 분비에서 염기성 또는 양이온성 약물과 경쟁한다. 시메티딘은 이 약 또는 이 약의 활성대사체의 혈장 농도에 영향을 미치지 않는다. 그러므로 위의 산성도를 바꾸는 약물이나(제산제) 위와 같은 대사경로로 배설되는 약물과 임상적으로 중요한 약물상호작용은 예상되지 않으며, 제산제와의 상호작용은 생…",
+   "extractor": "kw-v4",
+   "id": "7932ffa863",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 10)",
+   "subject": "",
+   "excerpt": "인산오셀타미비르와 수산화알루미늄, 수산화마그네슘을 포함한 제산제 또는 탄산칼슘을 포함한 제산제, 아세트아미노펜, 아스피린, 시메티딘, 와르파린, 리만타딘을 병용 투여 후, 인산오셀타미비르 및 활성 대사체의 약물 동태 변수에 유의한 변화가 없었다.",
+   "extractor": "kw-v4",
+   "id": "1e82f585fb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "탄산칼슘"
+    },
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "출생 전·후 발생 및 모체기능시험에서 랫트에1,500 mg/kg/day 투여시 분만시간이 지연되었고, 출생후4일째 출생자수가 감소되었다. 랫트와 토끼에 대한 생식독성실험 결과, 기형발생은 관찰되지 않았다. 랫트에서의 수태능과 생식능 실험결과, 실험했던 모든 용량에서 수태능에 대한 영향은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "81e76d11f3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "랫트와 토끼에서 태자에 대한 약물 노출은 모체의 노출과 비교하여 약15 ∼20 %이었다. 현재, 이 약을 투여한 임부에 대한 자료가 불충분하여 이 약이 태아 기형이나 태아독성을 일으킬 가능성이 있는지는 판단할 수 없다. 그러므로 임부 또는 임신하고 있을 가능성이 있는 여성에 이 약을 사용할 경우에는, 치료상의 유익성이 위험성을 상회하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "701c2e9b12",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임부에서 이 약 사용에 관한 임상연구는 없지만, 시판후 조사 및 관찰연구 보고를 통한 연구가 있다. 시판후 조사 및 관찰연구에서 보고된 오셀타미비르에 노출된 임부에 대한 많은 양의 자료(임신 초기에1000례 이상 포함)를 동물실험과 결합하여 분석한 결과 임신, 배아/태아, 출생후 발달과 관련하여 직접적 또는 간접적인 위해작용이 나타나지 않았다. 그러나 이 연구들은 적절한 샘플 사이즈를 갖고…",
+   "extractor": "kw-v4",
+   "id": "2bfacf551b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수유기 랫트에서, 인산오셀타미비르와 그 활성대사체가 유즙로 분비되었다. 동물실험 자료로부터 인산오셀타미비르는 0.01 mg/day, 활성대사체형은0.3 mg/day정도 분비될 것으로 예측된다. 인산오셀타미비르를 복용한 수유부의 모유를 섭취한 영아, 모유에서 이 약의 검출여부에 관한 정보는 매우 제한적이다. 이 제한된 데이터는 이 약과 그 활성대사체가 모유로 분비된다는 점을 보여주었으나, 그…",
+   "extractor": "kw-v4",
+   "id": "3f3f706d6a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 대한 임상 자료는 제한적이나, 약물노출과 내약성을 고려할 때, 용량조절은 필요하지 않다. 고령자들은 종종 신체적 기능(신기능, 간기능 등)이 감소되고, 여러 지병을 앓기 쉬우므로 이 약 투여시 환자를 주의 깊게 관찰하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "7bb2140517",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

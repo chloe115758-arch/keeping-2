@@ -1,0 +1,19 @@
+{
+ "ingredient": "povidone",
+ "productSeq": "200301820",
+ "itemName": "티어드롭점안액2%(포비돈)",
+ "atc": "S01XA20",
+ "etcOtc": "일반의약품",
+ "changeDate": "20221208",
+ "ediCode": "643503091",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200301820/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200301820/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200301820/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-30T00:23:15",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

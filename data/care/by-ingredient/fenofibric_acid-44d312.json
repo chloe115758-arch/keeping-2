@@ -1,0 +1,44 @@
+{
+ "ingredient": "fenofibric acid",
+ "productSeq": "201207406",
+ "itemName": "페노시드캡슐(페노피브릭산)",
+ "atc": "C10AB05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200714",
+ "ediCode": "643506410",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201207406/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201207406/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201207406/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중(특히 임신 3개월 이후)에 투여시 태아에 축적되어 태아독성을 유발할 위험성이 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "1550113370",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유중으로의 이행이 알려진 바 없으므로 수유중에는 투여를 피한다.",
+   "extractor": "kw-v4",
+   "id": "77468ce0ba",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:17",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

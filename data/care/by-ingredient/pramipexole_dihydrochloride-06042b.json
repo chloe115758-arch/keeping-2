@@ -1,143 +1,147 @@
 {
-  "ingredient": "pramipexole dihydrochloride",
-  "productSeq": "201310242",
-  "itemName": "미라프서방정0.75밀리그램(프라미펙솔염산염일수화물)",
-  "atc": "N04BC05",
-  "etcOtc": "전문의약품",
-  "changeDate": "20180629",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310242/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310242/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310242/NB"
-  },
-  "rules": [
+ "ingredient": "pramipexole dihydrochloride",
+ "productSeq": "201310242",
+ "itemName": "미라프서방정0.75밀리그램(프라미펙솔염산염일수화물)",
+ "atc": "N04BC05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20180629",
+ "ediCode": "642003310",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310242/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310242/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201310242/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "다른 진정제나 알코올을 이 약과 병용투여하면 상가작용이 일어날 가능성이 있으므로 주의해야 하며, 이러한 사실을 환자에게 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "b87ed0f4b0",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "4047406541",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 4)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "다른 진정제나 알코올을 이 약과 병용투여하면 상가작용이 일어날 가능성이 있으므로 주의해야 하며, 이러한 사실을 환자에게 알려야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "18708ba214",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 임상시험은 실시된 바 없으며 안전성이 확립되어 있지 않으므로, 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 신중히 투여해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f27c8f4cc2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 랫트나 토끼에서 기형을 유발하지는 않으나 랫트의 경우 모체독성 용량에서 태아독성이 나타났다",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "59adb7437c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "암컷 랫트의 임신기간 동안 프라미펙솔을 투여한 결과 2.5mg/kg/day 용량(mg/m2로 계산시 최대 임상용량의 5.4배)에서 착상이 억제되었다. 임신한 랫트의 기관형성기(임신 7-16일)에 프라미펙솔 1.5mg/kg/day를 투여한 결과 모든 태자의 흡수가 관찰되었다. 이 용량을 투여받은 랫트의 혈장 AUC는 1.5mg 1일 3회를 투여받은 사람의 AUC보다 4.3배 높다. 랫트의 착상…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a4ebdcea07",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대해 프라미펙솔을 연구한 임상시험은 없다. 동물생식시험이 항상 사람에 대한 반응을 예측하지는 않으므로, 임신 중 프라미펙솔은 태아에 대한 잠재적인 위험보다 유익성이 큰 경우에만 사용되어야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6159fb6a20",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 5)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "사람 생식능의 영향에 대한 시험은 수행되지 않았다. 동물 실험에서 프라미펙솔은 도파민 효능제에서 예상되는 것과 같이 발정주기에 영향을 미치고 암컷 수태능을 감소시켰다. 그러나 수컷 수태능에 대한 직ㆍ간접적인 유해 영향은 나타나지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f04de624db",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 6)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트에서 음경포피분리 및 질개구(preputial separation and vaginal opening) 등의 성적 성숙 지연이 관찰되었으나 사람에서의 관련성은 알려지지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "48a52cbfbb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물시험(랫트)에서 이 약이 유즙 중으로 이행된다는 보고가 있으나, 사람의 모유로 이행 여부는 알려지지 않았다. 랫트에서 약물의 농도는 혈장보다 모유에서 더 높게 나타났다. 이 약은 사람과 랫트에서 프로락틴의 분비를 억제하므로 수유 억제가 예상된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c738f2f2db",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "많은 약물이 모유 중으로 이행될 뿐만 아니라 이행될 경우 영아에서 심각한 이상반응의 발생이 우려되므로, 수유부에 대한 약물 투여의 중요성을 고려하여 수유를 중단하거나 약물 투여를 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0aa775f710",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "10. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "연령 증가에 따른 신기능의 저하로 65세 이하에 비하여 65세 이상 환자에서 프라미펙솔의 신장 청소율이 약 30% 감소되었다. 따라서 소실 반감기는 8.5시간에서 12시간으로 증가되었다. 임상시험에서 환자의 38.7%가 65세 이상이었다. 젊은 환자와 고령자에 나타나는 안전성 및 유효성의 차이는 없었으나 이 약 사용과 관련된 환각의 위험은 고령자에서 증가되었다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:09:11"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 임상시험은 실시된 바 없으며 안전성이 확립되어 있지 않으므로, 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 신중히 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e92bdd7679",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 랫트나 토끼에서 기형을 유발하지는 않으나 랫트의 경우 모체독성 용량에서 태아독성이 나타났다",
+   "extractor": "kw-v4",
+   "id": "be36920463",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "암컷 랫트의 임신기간 동안 프라미펙솔을 투여한 결과 2.5mg/kg/day 용량(mg/m2로 계산시 최대 임상용량의 5.4배)에서 착상이 억제되었다. 임신한 랫트의 기관형성기(임신 7-16일)에 프라미펙솔 1.5mg/kg/day를 투여한 결과 모든 태자의 흡수가 관찰되었다. 이 용량을 투여받은 랫트의 혈장 AUC는 1.5mg 1일 3회를 투여받은 사람의 AUC보다 4.3배 높다. 랫트의 착상…",
+   "extractor": "kw-v4",
+   "id": "78766ab308",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임부에 대해 프라미펙솔을 연구한 임상시험은 없다. 동물생식시험이 항상 사람에 대한 반응을 예측하지는 않으므로, 임신 중 프라미펙솔은 태아에 대한 잠재적인 위험보다 유익성이 큰 경우에만 사용되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "9131d42c0d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "사람 생식능의 영향에 대한 시험은 수행되지 않았다. 동물 실험에서 프라미펙솔은 도파민 효능제에서 예상되는 것과 같이 발정주기에 영향을 미치고 암컷 수태능을 감소시켰다. 그러나 수컷 수태능에 대한 직ㆍ간접적인 유해 영향은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "0161063cd5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "랫트에서 음경포피분리 및 질개구(preputial separation and vaginal opening) 등의 성적 성숙 지연이 관찰되었으나 사람에서의 관련성은 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "45eff3287e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물시험(랫트)에서 이 약이 유즙 중으로 이행된다는 보고가 있으나, 사람의 모유로 이행 여부는 알려지지 않았다. 랫트에서 약물의 농도는 혈장보다 모유에서 더 높게 나타났다. 이 약은 사람과 랫트에서 프로락틴의 분비를 억제하므로 수유 억제가 예상된다.",
+   "extractor": "kw-v4",
+   "id": "03b0bf20f3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "많은 약물이 모유 중으로 이행될 뿐만 아니라 이행될 경우 영아에서 심각한 이상반응의 발생이 우려되므로, 수유부에 대한 약물 투여의 중요성을 고려하여 수유를 중단하거나 약물 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "74b3084a07",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "연령 증가에 따른 신기능의 저하로 65세 이하에 비하여 65세 이상 환자에서 프라미펙솔의 신장 청소율이 약 30% 감소되었다. 따라서 소실 반감기는 8.5시간에서 12시간으로 증가되었다. 임상시험에서 환자의 38.7%가 65세 이상이었다. 젊은 환자와 고령자에 나타나는 안전성 및 유효성의 차이는 없었으나 이 약 사용과 관련된 환각의 위험은 고령자에서 증가되었다.",
+   "extractor": "kw-v4",
+   "id": "aedaf813fa",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

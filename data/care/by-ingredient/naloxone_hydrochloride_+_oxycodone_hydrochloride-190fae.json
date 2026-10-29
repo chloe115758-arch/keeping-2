@@ -1,0 +1,415 @@
+{
+ "ingredient": "naloxone hydrochloride + oxycodone hydrochloride",
+ "productSeq": "200904275",
+ "itemName": "타진서방정 10/5mg",
+ "atc": "N02AA55",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231129",
+ "ediCode": "678000180",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200904275/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200904275/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200904275/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 5)",
+   "subject": "",
+   "excerpt": "마약류와 벤조디아제핀계 약물 및 벤조디아제핀 유사 약물 등과 같은 진정제 또는 알코올을 포함하는 중추 신경계억제제의 병용투여는 깊은 진정, 호흡억제, 혼수 및 사망을 초래할 수 있다. 이러한 위험성 때문에, 마약류와 이러한 진정제의 병용투여는 적절한 대체 치료방법이 없는 환자의 경우에 한하여 처방하도록 한다. 이 약과 마약류의 병용투여가 결정되면 최저 유효용량으로 최단기간 처방하도록 하고 호…",
+   "extractor": "kw-v4",
+   "id": "6ba5e144d6",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 4)",
+   "subject": "",
+   "excerpt": "이 약은 운전 및 기계조작능력을 손상시킬 수 있다. 특히 이 약을 처음 복용할 때나 증량했을 때, 약물을 교체했을 때, 그리고 이 약을 알코올이나 기타 CNS억제제와 병용했을 때 그러한 현상이 두드러진다. 특정 용량에서 안정화된 환자의 경우 운전이나 기계조작을 제한할 필요는 없을 것이다. 따라서 환자는 운전 또는 기계조작이 가능한지를 의사와 상담해야 한다.",
+   "extractor": "kw-v4",
+   "id": "3db84f7f9d",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "프레가발린과 같은 가바펜티노이드계 약물, 전신마취제, 페노티아진계 약물, 신경 안정제, 수면제, 삼환계 항우울제, 신경근육차단제, 항우울제, 알코올을 포함한 다른 중추신경억제제를 병용투여하면 추가적인 중추신경억제작용이 유발되고, 호흡억제, 저혈압, 깊은 진정, 또는 혼수, 사망과 같은 중추신경억제작용이 증가될 수 있다. 따라서 이러한 약물과 병용투여하는 경우에는 2가지 약물 중 하나, 또는…",
+   "extractor": "kw-v4",
+   "id": "31aa04c121",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "마크로라이드계 항생물질 (예. 클래리트로마이신), 아졸계 항진균제 (예. 케토코나졸), 프로테아제 저해제 (예. 리토나비어) 및 자몽 주스와 같은 CYP3A4 저해제는 옥시코돈의 청소율을 감소시켜 옥시코돈의 혈장 농도 증가를 유발할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "187e4142ba",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "리팜핀, 카바마제핀, 페니토인 및 세인트존스워트와 같은 CYP3A4 유도제는 옥시코돈의 대사를 유도하고 약물의 청소율을 증가시켜 옥시코돈의 혈장 농도 감소를 유발할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f519e40f12",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부에는 이 약을 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "f80e5e88bd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "기형발생, 생식독성",
+   "extractor": "kw-v4",
+   "id": "73caa05aea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람의 수태능에 미치는 영향을 연구한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "34d7d4c8f9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "옥시코돈/날록손 복합제를 가지고 생식독성에 대해 연구한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "785772b9ec",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "단일성분을 가지고 한 연구에서는 옥시코돈을 수컷 및 암컷 랫트에 8mg/kg까지 투여했을 때 생식능력이나 초기배아발생에 영향이 없고, 랫트에 8mg/kg, 토끼에 125mg/kg까지 투여했을 때 기형을 유발하지 않는다는 것을 보여주었다. 그러나 토끼에서 각각의 태아를 통계적 평가에 사용했을 때 용량과 관련된 발생학적 변이의 증가가 관찰되었다 (27 전천골의 발생 증가). 태아를 이용하여 이들…",
+   "extractor": "kw-v4",
+   "id": "f449ee0a4d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "날록손을 가지고 실시한 표준 경구생식독성 시험은 고용량의 날록손을 경구 투여할 때 변이원성이나 배아/태아독성이 없으며 출생시와 출생 후 발생에 영향을 주지 않음을 보여주었다. 매우 높은 농도(800mg/kg/day)에서 날록손은 모체 랫트에 유의한 독성을 보이며(예, 체중감소, 경련) 출산 직후에 새끼 사망률을 증가시켰다. 그러나 생존한 새끼에 대해선 발생이나 행동에 영향을 주지 않는 것으로…",
+   "extractor": "kw-v4",
+   "id": "ed7612afe1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "옥시코돈 및 날록손은 단일체로서 in vitro 분석에서 염색체이상을 일으킬 가능성을 보였지만, in vivo 조건에서는 독성용량에서도 이와 같은 효과는 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "a6d3d7c974",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "그러나 임부에게 적절하고도 잘 관리된 임상실험을 시행한 적은 없다. 동물에 대한 시험결과로 항상 인체의 반응을 예측할 수는 없으므로, 이 약은 임상적으로 꼭 필요할 때에만 임부에게 사용할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "caf681bb15",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "182eee1963",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 분만 중 여성을 대상으로 이 약을 사용한 자료는 없다. 옥시코돈 및 날록손은 모두 태반을 통과한다.",
+   "extractor": "kw-v4",
+   "id": "0d2babf493",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 옥시코돈을 장기간 투여하면 신생아에게 금단증상을 초래할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "5979f34bde",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "출산에 미치는 영향",
+   "extractor": "kw-v4",
+   "id": "db0b699231",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "마약성 약물은 신생아에게 호흡저하를 유발할 수 있으므로 출산직전이나 분만 중에 사용하는 것을 권장하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "a94e2f25aa",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "분만 중에 옥시코돈을 투여할 경우 신생아에게 호흡억제를 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "aeb73488c5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "a27f5938bd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "옥시코돈은 모유로 이행된다. 모유-혈장 농도비는 3.4:1로 측정되었으며, 따라서 옥시코돈이 유아에 영향을 줄 수 있다. 날록손도 모유 중으로 이행되는지 여부는 알려진 바 없지만, 이 약의 복용 후 날록손의 전신농도는 매우 낮다.",
+   "extractor": "kw-v4",
+   "id": "ea8589a7b3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "옥시코돈은 모유에서 저농도로 발견되었다. 모체에 대한 약물투여를 중단하였을 때 수유를 받는 영아에게서 금단증상이 나타날 수 있다. 옥시코돈은 영아에게 진정과 호흡억제 작용을 일으킬 수 있으므로 이 약물을 복용하고 있을 때는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "dba8da7af1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "발암성",
+   "extractor": "kw-v4",
+   "id": "f16666fe29",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "옥시코돈/날록손 복합제를 이용한 장기간의 발암성연구는 진행된 바 없다.",
+   "extractor": "kw-v4",
+   "id": "574b03c821",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "발암성은 랫트를 대상으로 경구 위관 영양 시험으로 2년간 평가되었다. 옥시코돈은 6mg/kg/day까지의 용량에서 수컷 및 암컷 랫트의 종양발생률을 증가시키지 않았다. 용량은 옥시코돈의 마약성 진통제와 연관된 약리학적 효과에 의해 제한되었다.",
+   "extractor": "kw-v4",
+   "id": "1c7837fa0b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "날록손의 경우 랫트에게 최대 100mg/kg/day를 경구투여 한 24개월간의 발암성연구가 실시되었으며, 그 결과는 날록손이 이러한 조건에서 발암성이 없다는 것을 나타냈다.",
+   "extractor": "kw-v4",
+   "id": "f6569386be",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "또한, Tg.rasH2마우스를 대상으로 최대 200mg/kg/day의 용량으로 6개월간의 발암성 시험이 진행되었으며, 발암성에 대한 잠재적인 증거를 확인하지 못했다.",
+   "extractor": "kw-v4",
+   "id": "d789b9264a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자(65세 이상)에 대한 약동학 연구에서, 옥시코돈의 청소율는 약간 감소한 것으로 나타났다. 젊은 피험자에 비하여 옥시코돈의 혈장 농도는 약 15% 정도 증가하였다. 서방형 옥시코돈의 임상시험에서 총피험자(445명)중 148명(33.3%)은 65세 이상(75세 이상 포함)이고 40명(9.0%)은 75세 이상이었다.",
+   "extractor": "kw-v4",
+   "id": "9c373797bc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "적절한 초회투여량 및 용량적정화를 시행한 임상연구에서 이 약을 투여받은 고령의 환자들은 이상반응 상승이나 예측하지 못한 이상반응이 발생하지 않았으므로, 사용량 및 투여간격이 고령자 환자에게 적당하였다. 다른 마약성 약물과 마찬가지로 병약자나 내성이 없는 환자에게는 초회투여량을 1/3~1/2로 감소시켜야 한다.",
+   "extractor": "kw-v4",
+   "id": "d5f82a5da8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "호흡억제는 노약자에게 주된 위험이다. 내성이 없는 환자에게 과량의 초기용량을 투여했을 때, 또는 호흡억제를 일으키는 다른 약물과 병용투여했을 때 호흡억제 위험이 증가한다.",
+   "extractor": "kw-v4",
+   "id": "bb5c85e976",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:45",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

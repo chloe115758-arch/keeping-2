@@ -1,0 +1,80 @@
+{
+ "ingredient": "L-carnitine",
+ "productSeq": "198300145",
+ "itemName": "엘칸주사1그램(엘-카르니틴)",
+ "atc": "A16AA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240529",
+ "ediCode": "642901391",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198300145/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198300145/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198300145/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "43a50c0b73",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부를 대상으로 L-카르니틴을 투여한 적절한 자료가 없으므로, 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "2d50afb04a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "랫드와 토끼에서 수행된 생식독성시험에서 체표면적 기준으로 사람에게 투여하는 용량의 3.8배까지 생식능이나 태자에게 미치는 영향은 없었으나, 인체에서의 잠재적 위험성은 확인되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "4ee7c0684e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "5288d6ec88",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유부에서 L-카르니틴이 모유를 통해 배출되는지는 확인되지 않았으므로, 유익성&#x2219;위해성을 고려하여 수유 또는 L-카르니틴의 투여를 중단하는 것을 고려할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "7aa6011d26",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:08:43",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

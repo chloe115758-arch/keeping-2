@@ -1,28 +1,44 @@
 {
-  "ingredient": "trimebutine maleate",
-  "productSeq": "201603531",
-  "itemName": "뉴트레부틴서방정(트리메부틴말레산염)",
-  "atc": "A03AA05",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260327",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603531/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603531/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603531/NB"
+ "ingredient": "trimebutine maleate",
+ "productSeq": "201603531",
+ "itemName": "뉴트레부틴서방정(트리메부틴말레산염)",
+ "atc": "A03AA05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260327",
+ "ediCode": "053600240",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603531/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603531/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603531/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "1. 다음 경우에는 신중히 투여할 것. 1)",
+   "subject": "",
+   "excerpt": "동물시험에서 최기형성은 없었으나 임신 중 사용에 대한 안전성은 확립되어 있지 않으므로 임신 후 첫 3개월 동안 및 수유기 때의 투여는 피하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "5d174dde37",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "f5a1ea098a",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "성인 : 1일2회, 1회1정 공복시 복용",
-      "meal": "공복",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:06:46"
+  {
+   "id": "f5a1ea098a",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 1일2회, 1회1정 공복시 복용",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

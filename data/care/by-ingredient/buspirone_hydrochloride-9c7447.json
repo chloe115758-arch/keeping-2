@@ -1,59 +1,63 @@
 {
-  "ingredient": "buspirone hydrochloride",
-  "productSeq": "202000385",
-  "itemName": "부포닌정5밀리그램(부스피론염산염)",
-  "atc": "N05BE01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20240423",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000385/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000385/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000385/NB"
-  },
-  "rules": [
+ "ingredient": "buspirone hydrochloride",
+ "productSeq": "202000385",
+ "itemName": "부포닌정5밀리그램(부스피론염산염)",
+ "atc": "N05BE01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240423",
+ "ediCode": "628901480",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000385/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000385/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000385/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "4. 상호작용 2)",
+   "subject": "",
+   "excerpt": "이 약과 알코올과의 상호작용 연구결과, 이 약은 알코올이 유발시킨 운동 및 정신 기능장애를 증가시키지 않는다고 보고되어 있으나 이 약과 알코올은 병용투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "1c7dfc2096",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "871ac2d71c",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "4. 상호작용 2)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 알코올과의 상호작용 연구결과, 이 약은 알코올이 유발시킨 운동 및 정신 기능장애를 증가시키지 않는다고 보고되어 있으나 이 약과 알코올은 병용투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "12a9c65ee5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에 만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fcecb176a9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫트)에서 이 약 및 그 대사물의 모유중으로의 이행이 보고되어 있으므 로 투여중에는 수유를 피한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:09:02"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에 만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c1f8120ef8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 이 약 및 그 대사물의 모유중으로의 이행이 보고되어 있으므 로 투여중에는 수유를 피한다.",
+   "extractor": "kw-v4",
+   "id": "ce15ed0728",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

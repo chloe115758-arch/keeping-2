@@ -1,0 +1,142 @@
+{
+ "ingredient": "axitinib",
+ "productSeq": "201206553",
+ "itemName": "인라이타정5밀리그램(엑시티닙)",
+ "atc": "L01EK01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251217",
+ "ediCode": "648902120",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201206553/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201206553/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201206553/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "건강한 피험자에게 이 약(5mg 단회 경구투여)과 강력한 CYP3A4/5 저해제인 케토코나졸(1일 400mg 씩 7일간)을 병용투여 시, 엑시티닙의 혈장 노출이 증가되었다(AUC 약 2배, Cmax 약 1.5배). 강력한 CYP3A4/5 저해제와 이 약의 병용투여는 피해야 한다. 자몽 또는 자몽주스도 엑시티닙의 혈장 농도를 증가시킬 수 있으므로 피해야 한다. CYP3A4/5 저해 가능성이 없…",
+   "extractor": "kw-v4",
+   "id": "5ed0eb0c2a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "건강한 피험자에게 이 약과 강력한 CYP3A4/5 유도제인 리팜핀을 병용투여 시, 엑시티닙의 혈장노출이 감소되었다(AUC 약 0.2배, Cmax 약 0.3배). 강력한 CYP3A4/5 유도제 (예, 리팜핀, 덱사메타손, 페니토인, 카르바마제핀, 리파부틴, 리파펜틴, 페노바르비탈 및 세인트 존스워트)와 이 약의 병용투여는 피해야 한다. CYP3A4/5 유도 가능성이 없거나, 최소화된 대체 병용…",
+   "extractor": "kw-v4",
+   "id": "982e3a45d6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "726032eebb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부를 대상으로 엑시티닙을 적절하게 평가한 임상시험은 없다. 이 약은 작용 기전 상, 임부에 투여 시 태아 손상을 일으킬 수 있다. 엑시티닙은 임상 권장용량 투여시의 사람에서의 노출수준보다 낮게 마우스에 노출되었을 때 최기형성, 배자독성, 태자독성을 나타냈다. 만약 임신 중에 이 약물이 사용되었거나, 이 약을 투여하는 동안 환자가 임신하게 된 경우, 환자에게 태아에 잠재적인 위험이 있음을 알…",
+   "extractor": "kw-v4",
+   "id": "9b20514515",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "4ee2d57c11",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "엑시티닙이 모유로 분비되는지 여부는 알려지지 않았다. 많은 약물이 흔하게 모유로 분비되고, 모유를 수유받은 유아에서 이 약으로 인한 중대한 이상반응이 나타날 가능성이 있으므로, 모체에 대한 이 약 투여의 중요성을 고려하여 수유를 중단할지 또는 이 약 투여를 중단할지를 결정해야 한다. 이 약과 펨브롤리주맙을 병용투여 시, 수유부관련 사항은 펨브롤리주맙 허가사항을 참조한다.",
+   "extractor": "kw-v4",
+   "id": "53291e3eea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "신세포암 환자를 대상으로 한 엑시티닙 단독요법 임상시험에서, 엑시티닙 치료군 중 만 65세 이상 환자는 123/359 명 (34%)이었다. 비록, 일부 고령 환자에서 더 높은 민감도를 배제할 수 없으나, 만 65세 이상 고령 환자군과 젊은 환자군 간에 전반적인 안전성이나 유효성의 차이는 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "8951d84bd3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 5 mg 1일 2회와 펨브롤리주맙 200 mg을 병용투여한 KEYNOTE-426 임상시험에서, 무작위배정된 432명의 환자 중 40%가 만 65세 이상이었다. 고령자 및 젊은 환자간 안전성 및 유효성의 전반적인 차이는 보고되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "890c90a9e9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령 환자에 대한 용량 조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "e58f2772e9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:49",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

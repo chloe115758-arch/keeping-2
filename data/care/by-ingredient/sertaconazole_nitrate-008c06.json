@@ -1,0 +1,19 @@
+{
+ "ingredient": "sertaconazole nitrate",
+ "productSeq": "199901648",
+ "itemName": "더모픽스질정(세르타코나졸질산염)",
+ "atc": "G01AF19",
+ "etcOtc": "전문의약품",
+ "changeDate": "20211005",
+ "ediCode": "642200120",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199901648/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199901648/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199901648/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-30T00:23:36",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,44 @@
+{
+ "ingredient": "amoxicillin sodium + sulbactam sodium",
+ "productSeq": "200001259",
+ "itemName": "썰타목스주1500mg(주사용아목시실린나트륨ㆍ설박탐나트륨)",
+ "atc": "J01CR02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20241205",
+ "ediCode": "652601010",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001259/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001259/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001259/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "아목시실린과 설박탐은 모유로 분비된다. 아직까지 유의적인 문제는 발생하지 않았지만 수유부에 페니실린의 투여는 소아의 감작, 설사, 칸디다증, 피부발진을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "e905d71024",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자인 경우에는 일반적으로 생리기능이 저하되어 있어 많은 이상반응이 발현하기 쉽고, 고령자에서서 비타민 K 결핍으로 출혈경향이 나타날 수 있다는 점에 주의하여 용량 및 투여간격에 주의하는 등 환자의 상태를 관찰하고 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "a98d440912",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:36",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

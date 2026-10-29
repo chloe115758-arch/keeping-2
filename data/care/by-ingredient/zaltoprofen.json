@@ -1,107 +1,142 @@
 {
-  "ingredient": "zaltoprofen",
-  "productSeq": "199701525",
-  "itemName": "솔레톤정(잘토프로펜)",
-  "atc": "M01AE",
-  "etcOtc": "전문의약품",
-  "changeDate": "20240522",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701525/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701525/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701525/NB"
-  },
-  "rules": [
+ "ingredient": "zaltoprofen",
+ "productSeq": "199701525",
+ "itemName": "솔레톤정(잘토프로펜)",
+ "atc": "M01AE",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240522",
+ "ediCode": "640000920",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701525/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701525/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701525/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 1)",
+   "subject": "",
+   "excerpt": "매일 세 잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 위장출혈이 유발될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "c2e678764c",
+   "kind": "note",
+   "matched": [
     {
-      "id": "be3edd3e7c",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 7)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "위장관계 이상반응 : 이 약을 포함한 비스테로이드성 소염진통제를 궤양성 질환 또는 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여 시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4acf57e5f4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신말기의 랫트를 이용한 동물실험에서 태자의 동맥관수축이 보고되었다. 다른 비스테로이드성 소염진통제와 마찬가지로 임신 말기에 이 약을 투여 시 태아의 동맥관을 조기 폐쇄시킬 수 있으므로 이 약은 임신 말기의 임부에게 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "97ddaabec7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 약 20주 이후 이 약을 포함한 비스테로이드성 소염제(NSAIDs)의 사용은 태아 신기능 이상을 일으켜 양수 과소증을 유발할 수 있으며 경우에 따라서는 신생아 신장애를 일으킬 수 있다. 비스테로이드성 소염제(NSAIDs) 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되었지만 이러한 부작용은 평균적으로 투여 후 수일에서 수주 사이에 나타난다. 양수 과소증은 보통 투여 중단 시…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "14d5aa2bc7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트를 이용한 동물실험에서 비스테로이드성 소염진통제는 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 난산의 발생 빈도를 증가시키고, 분만을 지연시키며 태자의 생존율을 감소시켰다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1463b8b3ed",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신중의 투여에 관한 안전성이 확립하어 있지 않으므로 임신 초기, 중기의 임부 및 임신하고 있을 가능성이 있는 여성에 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a04aa4d57b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "5) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트를 이용한 동물실험에서 이 약의 성분이 모유로 이행한다고 보고되었으므로 수유부에게는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ba148b19ca",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 혈장단백결합율이 높고, 주로 신장에서 배설된다. 고령자는 혈장알부민이 감소하거나 신기능이 저하되어 높은 혈중농도가 유지될 우려가 있으므로, 소화기능상태, 환자의 상태를 관찰하면서 투여횟수의 감소(잘토프로펜으로서 1회 80 mg, 1일 2회), 휴약하는 등 신중히 투여한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:15:02"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 7)",
+   "subject": "",
+   "excerpt": "위장관계 이상반응 : 이 약을 포함한 비스테로이드성 소염진통제를 궤양성 질환 또는 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여 시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용…",
+   "extractor": "kw-v4",
+   "id": "8f41d6ba25",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신말기의 랫트를 이용한 동물실험에서 태자의 동맥관수축이 보고되었다. 다른 비스테로이드성 소염진통제와 마찬가지로 임신 말기에 이 약을 투여 시 태아의 동맥관을 조기 폐쇄시킬 수 있으므로 이 약은 임신 말기의 임부에게 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "79ed140780",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 약 20주 이후 이 약을 포함한 비스테로이드성 소염제(NSAIDs)의 사용은 태아 신기능 이상을 일으켜 양수 과소증을 유발할 수 있으며 경우에 따라서는 신생아 신장애를 일으킬 수 있다. 비스테로이드성 소염제(NSAIDs) 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되었지만 이러한 부작용은 평균적으로 투여 후 수일에서 수주 사이에 나타난다. 양수 과소증은 보통 투여 중단 시…",
+   "extractor": "kw-v4",
+   "id": "4fd25025ea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "랫트를 이용한 동물실험에서 비스테로이드성 소염진통제는 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 난산의 발생 빈도를 증가시키고, 분만을 지연시키며 태자의 생존율을 감소시켰다.",
+   "extractor": "kw-v4",
+   "id": "c73623443e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 관한 안전성이 확립하어 있지 않으므로 임신 초기, 중기의 임부 및 임신하고 있을 가능성이 있는 여성에 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "66f2898dc3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "3131c695d5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "랫트를 이용한 동물실험에서 이 약의 성분이 모유로 이행한다고 보고되었으므로 수유부에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "f64b45e300",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 혈장단백결합율이 높고, 주로 신장에서 배설된다. 고령자는 혈장알부민이 감소하거나 신기능이 저하되어 높은 혈중농도가 유지될 우려가 있으므로, 소화기능상태, 환자의 상태를 관찰하면서 투여횟수의 감소(잘토프로펜으로서 1회 80 mg, 1일 2회), 휴약하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "a38039fbf1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

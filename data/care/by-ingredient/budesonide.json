@@ -1,0 +1,44 @@
+{
+ "ingredient": "budesonide",
+ "productSeq": "199402213",
+ "itemName": "데소나비액(부데소니드)",
+ "atc": "R01AD05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200604",
+ "ediCode": "645300194",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199402213/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199402213/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199402213/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 치료상의 유익성이 태아에게 미치는 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "fa94ff05b6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 유즙으로 이행된다는 보고는 없으나 다른 글루코코르티코스테로이드제들이 유즙으로 배설되므로 수유중 이 약의 투여에 특히 주의한다.",
+   "extractor": "kw-v4",
+   "id": "fe7a47958f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:30",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

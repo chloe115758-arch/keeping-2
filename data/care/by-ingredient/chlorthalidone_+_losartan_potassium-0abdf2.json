@@ -1,0 +1,341 @@
+{
+ "ingredient": "chlorthalidone + losartan potassium",
+ "productSeq": "202202296",
+ "itemName": "클로잘탄정100/12.5밀리그램(로사르탄,클로르탈리돈)",
+ "atc": "C09DA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "643508510",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202202296/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202202296/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202202296/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 7)",
+   "subject": "○ 클로르탈리돈",
+   "excerpt": "비이온성교환수지(콜레스티라민 등) : 티아지드계 이뇨제의 흡수를 제한하여 약물학적 효과를 감소시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "37ab4e5053",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 9)",
+   "subject": "○ 클로르탈리돈",
+   "excerpt": "칼슘염 및 비타민D : 티아지드계 이뇨제와 병용시 임상수치가 유의성 있게 증가한다. 결과적으로 나타나는 고칼슘혈증은 통상적으로 일시적이만, 부갑상샘항진증 환자에 있어 지속되거나 증상(쇠약, 피로, 식욕감퇴)을 수반할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "787c8d133a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 12)",
+   "subject": "○ 클로르탈리돈",
+   "excerpt": "알코올 : 기립저혈압이 증강될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "99f1243f21",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부에게 이 약을 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "e9b8fe6f71",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "9f9aa0ad6f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "레닌-안지오텐신-알도스테론계에 직접적으로 작용하는 약물군은 발달 중인 태아의 손상 및 사망까지도 초래할 수 있다. 로사르탄칼륨은 임신 중에 사용해서는 안되며, 임신이 확인되면 가능한 빨리 투약을 중지한다.",
+   "extractor": "kw-v4",
+   "id": "d337cf30da",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "사람의 경우, 태아의 신장 관류는 레닌-안지오텐신계의 발육에 따라 임신 2기에 시작되므로, 로사르탄칼륨을 임신 2~3기에 복용하였을 때 태아의 위험성이 커진다.",
+   "extractor": "kw-v4",
+   "id": "3e825662f4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "임신 2, 3기 사이에 레닌-안지오텐신-알도스테론계에 직접 작용하는 약물군을 투여한 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골형성저하증, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아 손상과 연관성이 있었다.",
+   "extractor": "kw-v4",
+   "id": "cc25135298",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "태아 신기능 감소 때문인 것으로 추측된 양수과소증도 보고 되었고, 양수과소증은 태아 사지구축, 두개안면 기형 및 폐형성 저하증과 연관성이 있었다.",
+   "extractor": "kw-v4",
+   "id": "d179b1760f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "또한 로사르탄칼륨에 의한 것인지 명확하진 않지만 미숙, 자궁내 발육지연, 동맥관 열림증이 나타났다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "78822f7ae1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "역학자료에서 임신 1기에 ACE 저해제에 노출된 경우 최기형성 위험에 대한 증거는 명확하지 않으나, 어느 정도의 위험성 증가를 배제할 수 없다. 안지오텐신수용체차단제의 위험성에 대한 통제된 역학자료는 없으나, 이 계열 약물들에도 유사한 정도의 위험성이 나타날 수 있다. 임신 기간동안 임부의 고혈압을 적절히 관리하는 것은 임부와 태아 모두에게 최적화된 결과를 주는데 중요하다.",
+   "extractor": "kw-v4",
+   "id": "869219e87b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "드물지만 레닌안지오텐신 계에 영향을 미치는 약물에 대한 적절한 대체약물이 없는 경우(대체로 천명의 임부 중 한명 꼴 이하로 발현) 임부에게 태아에 대한 잠재적 위험을 인지시켜야 하며, 양막 내 환경을 확인하기 위해 일련의 초음파 검사를 실시하여야 한다. 양수과소증이 관찰될 경우, 임부의 생명을 구하기 위한 경우를 제외하고는 로사르탄칼륨의 투여를 중단해야 한다. 임신 주수에 따라서 수축스트레스…",
+   "extractor": "kw-v4",
+   "id": "576c16020e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "자궁 내에서 안지오텐신 II 수용체 차단제에 노출된 적이 있는 신생아, 영·유아의 경우에는 저혈압, 소변감소증 및 고칼륨혈증이 있는지 면밀하게 관찰하여야 한다. 만약 소변감소증이나 저혈압이 나타난다면, 혈압 및 신장관류에 대한 직접적인 관리를 해야 한다. 저혈압을 회복시키고 저하된 신기능을 대신하기 위해 교환수혈이나 투석을 할 수도 있다.",
+   "extractor": "kw-v4",
+   "id": "f1cf11fdf0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "로사르탄칼륨은 랫트의 태자 및 새끼에서 체중 감소, 육체/행동 발달 지연, 사망률 및 신장독성을 포함한 이상반응을 유발시켰다. 신생자에서의 체중증가율 감소(10 mg/kg/day의 낮은 투여용량에서 영향 받은 것임)를 제외하고는, 이러한 이상반응들이 발현된 것은 25 mg/kg/day을 초과한 투여용량에서였다(mg/m2에 근거하여 사람의 최대 권장용량인 100 mg의 약 3배에 해당됨). 이…",
+   "extractor": "kw-v4",
+   "id": "1b00eee1a4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "34d56fdf79",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "로사르탄칼륨이 모유 중에 분비되는 지의 여부는 밝혀지지 않았으나 랫트에 대한 실험에서 유즙 중에 로사르탄칼륨의 분비가 확인되었다. 수유중인 여성에게 로사르탄칼륨의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "1c6d8ec17b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "○클로르탈리돈",
+   "excerpt": "임부의 고혈압이나 부종의 치료에 있어서 이뇨제를 사용하는 것은 저혈량증이나 혈액점도증가, 태반환류를 감소시킬 수 있으므로 사용을 금하여야 한다. 티아지드계 이뇨제의 사용이 태아의 골수억제와 혈소판감소증 및 태아 및 신생아의 황달과 관련되어 있음이 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "fac31a17c6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○클로르탈리돈",
+   "excerpt": "클로르탈리돈은 모유중으로 이행되므로 클로르탈리돈을 복용중인 수유부는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "33360b2c45",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "75세 이상의 고령자에 대해 로사르탄칼륨의 초회용량으로 1일 1회 25밀리그램이 권장되나, 이 약으로는 로사르탄칼륨 25밀리그램 투여가 가능하지 않으므로, 초기 치료시 이 약을 투여하는 것은 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "0c285233d3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "○ 로사르탄칼륨",
+   "excerpt": "고혈압에 대한 대조 임상시험에서 로사르탄을 투여 받은 환자들 중에서 391명의 환자(19 %)가 65세 이상이었으며, 그 중 37명(2 %)은 75세 이상이었다. 단백뇨가 있는 제 2형 당뇨병 환자의 신장 보호에 관한 대조 임상시험에서 248명(33 %)의 환자가 65세 이상이었다. 좌심실 비대를 가진 고혈압 환자에 대해 심혈관 사망, 뇌졸중, 심근경색의 복합 위험도 감소를 확인하기 위한 대…",
+   "extractor": "kw-v4",
+   "id": "36f6fd7c75",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "○ 클로르탈리돈",
+   "excerpt": "고령자에게는 다음 사항에 주의하고, 소량부터 시작하여 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "59b4a9e69e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "○ 클로르탈리돈",
+   "excerpt": "고령자에서 급격한 이뇨는 혈장량의 감소를 초래하고, 탈수, 저혈압 등에 의한 기립시 어지럼, 실신 등을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "92d028b326",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "○ 클로르탈리돈",
+   "excerpt": "특히 심질환 등에서 부종이 있는 고령자에서는 급격한 이뇨는 급속한 혈장량의 감소와 혈액 농축을 초래하고, 뇌경색 등의 혈전색전증을 유발할 우려가 있다.",
+   "extractor": "kw-v4",
+   "id": "9613d0c177",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 3)",
+   "subject": "○ 클로르탈리돈",
+   "excerpt": "고령자에서 보통 과도한 혈압저하는 바람직하지 않다(뇌경색 등이 일어날 우려가 있다.).",
+   "extractor": "kw-v4",
+   "id": "64f3524af1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 4)",
+   "subject": "○ 클로르탈리돈",
+   "excerpt": "고령자에서 저나트륨혈증, 저칼륨혈증이 나타나기 쉽다",
+   "extractor": "kw-v4",
+   "id": "4519614ffb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:05",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,152 +1,156 @@
 {
-  "ingredient": "amlodipine besylate + candesartan cilexetil",
-  "productSeq": "201603937",
-  "itemName": "마하칸정16/5밀리그램",
-  "atc": "C09DB07",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260212",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603937/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603937/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603937/NB"
-  },
-  "rules": [
+ "ingredient": "amlodipine besylate + candesartan cilexetil",
+ "productSeq": "201603937",
+ "itemName": "마하칸정16/5밀리그램",
+ "atc": "C09DB07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "640007020",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603937/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603937/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603937/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ③",
+   "subject": "",
+   "excerpt": "자몽쥬스 : 암로디핀은 자몽이나 자몽쥬스와 병용시 일부 환자에서 생체이용률 증 가로 인한 혈압강하효과의 증가가 나타날 수 있으므로, 병용투여를 권장하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "751fee592b",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "c67b675fb2",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ③",
-      "subject": "3)암로디핀의 약물 상호 작용",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "자몽쥬스 : 암로디핀은 자몽이나 자몽쥬스와 병용시 일부 환자에서 생체이용률 증 가로 인한 혈압강하효과의 증가가 나타날 수 있으므로, 병용투여를 권장하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "570d04b9ec",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ④",
-      "subject": "3)암로디핀의 약물 상호 작용",
-      "matched": [
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "시메티딘, 알루미늄/마그네슘(제산제), 실데나필: 암로디핀의 약동학에 대한 유의한 영향은 없었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d031523575",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ⑥",
-      "subject": "3)암로디핀의 약물 상호 작용",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "세인트 존스 워트"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "CYP3A4 유도제: 암로디핀에 대한 CYP3A4 유도제(예, 리팜피신, 세인트 존스 워트) 의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c1e266080e",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ⑦",
-      "subject": "3)암로디핀의 약물 상호 작용",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "아토르바스타틴, 디곡신, 에탄올(알코올), 와파린, 사이클로스포린: 암로디핀에 의 한 약동학적 및 약력학적으로 유의한 영향은 없었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "cbea37dc75",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 임부 및 수유부에 대한 안전성은 확립되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "00cb96e5fc",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부: 안지오텐신Ⅱ수용체 길항제의 작용기전을 고려할 때, 태아에 대한 위험을 무시할 수 없다. 임신 2 ∼ 3기 사이에 레닌-안지오텐신-알도스테론계에 작용하는 특정 약물군에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적인 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아 손상과 연관성이 있었다.…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "db1f81829a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "암로디핀의 경우, 임부에 대한 안전성은 확립되지 않았다. 인체에 대한 최대 권장 용량의 50배에 해당하는 용량의 암로디핀을 투여한 랫드에서 분만지연 및 연장이 나타난 것외에 동물에 있어서 생식독성은 증명되지 않았다. 따라서, 임부에 대한 투여는 다른 안전한 대체약물이 없는 경우 및 질환 자체가 모체 및 태아에 큰 위험을 줄 경우에만 투여가 권장된다. 이 약을 투여한 랫드에서 수태능에 대한 영…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3bb4c0aea5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부: 사람에서 칸데사르탄실렉세틸 및/또는 암로디핀의 유즙 분비 여부는 알려지지 않았으나, 랫드에 대한 실험에서 칸데사르탄실렉세틸의 유즙으로의 분비가 확인되었다. 따라서 수유중인 여성이 이 약을 사용하는 것은 권장하지 않는다. 수유중인 여성에게 이 약의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8b650f03b0",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자에게 과도한 혈압강하는 뇌경색 등이 일어날 우려가 있어 바람직하 지 않으므로 고령자에게 투여시 신중히 투여한다.",
-      "extractor": "kw-v1"
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:14:03"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ④",
+   "subject": "",
+   "excerpt": "시메티딘, 알루미늄/마그네슘(제산제), 실데나필: 암로디핀의 약동학에 대한 유의한 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "9beb66617d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ⑥",
+   "subject": "",
+   "excerpt": "CYP3A4 유도제: 암로디핀에 대한 CYP3A4 유도제(예, 리팜피신, 세인트 존스 워트) 의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "1000eebd7c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스 워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ⑦",
+   "subject": "",
+   "excerpt": "아토르바스타틴, 디곡신, 에탄올(알코올), 와파린, 사이클로스포린: 암로디핀에 의 한 약동학적 및 약력학적으로 유의한 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "a46d95455b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임부 및 수유부에 대한 안전성은 확립되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "1b9210641a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 안지오텐신Ⅱ수용체 길항제의 작용기전을 고려할 때, 태아에 대한 위험을 무시할 수 없다. 임신 2 ∼ 3기 사이에 레닌-안지오텐신-알도스테론계에 작용하는 특정 약물군에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적인 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아 손상과 연관성이 있었다.…",
+   "extractor": "kw-v4",
+   "id": "be7a1822b7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "암로디핀의 경우, 임부에 대한 안전성은 확립되지 않았다. 인체에 대한 최대 권장 용량의 50배에 해당하는 용량의 암로디핀을 투여한 랫드에서 분만지연 및 연장이 나타난 것외에 동물에 있어서 생식독성은 증명되지 않았다. 따라서, 임부에 대한 투여는 다른 안전한 대체약물이 없는 경우 및 질환 자체가 모체 및 태아에 큰 위험을 줄 경우에만 투여가 권장된다. 이 약을 투여한 랫드에서 수태능에 대한 영…",
+   "extractor": "kw-v4",
+   "id": "d1570914ad",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 사람에서 칸데사르탄실렉세틸 및/또는 암로디핀의 유즙 분비 여부는 알려지지 않았으나, 랫드에 대한 실험에서 칸데사르탄실렉세틸의 유즙으로의 분비가 확인되었다. 따라서 수유중인 여성이 이 약을 사용하는 것은 권장하지 않는다. 수유중인 여성에게 이 약의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "fd9b4889cb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에게 과도한 혈압강하는 뇌경색 등이 일어날 우려가 있어 바람직하 지 않으므로 고령자에게 투여시 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "b806ad41ca",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

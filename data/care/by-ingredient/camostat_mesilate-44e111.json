@@ -1,0 +1,44 @@
+{
+ "ingredient": "camostat mesilate",
+ "productSeq": "201201837",
+ "itemName": "호이스타정(카모스타트메실산염)",
+ "atc": "B02AB04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20120413",
+ "ediCode": "641605440",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201201837/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201201837/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201201837/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "인체 투여량의 40배(400mg/Kg/1일) 이상을 투여한 동물실험에서 태자 체중의 억제가 보고되었으므로 임부 및 임신하고 있을 가능성이 있는 여성에는 대량투여를 피한다.",
+   "extractor": "kw-v4",
+   "id": "f04a76bfee",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 이 약을 투여하면 성인에 비해 이상반응이 더 심하게 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "45a744c4ac",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:47",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

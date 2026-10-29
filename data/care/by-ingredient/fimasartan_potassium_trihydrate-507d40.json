@@ -1,52 +1,80 @@
 {
-  "ingredient": "fimasartan potassium trihydrate",
-  "productSeq": "201005501",
-  "itemName": "카나브정60밀리그램(피마사르탄칼륨삼수화물)",
-  "atc": "C09CA10",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260212",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005501/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005501/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005501/NB"
+ "ingredient": "fimasartan potassium trihydrate",
+ "productSeq": "201005501",
+ "itemName": "카나브정60밀리그램(피마사르탄칼륨삼수화물)",
+ "atc": "C09CA10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "641905450",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005501/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005501/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005501/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "50cdf19713",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "690b6de039",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약과 같이 레닌-안지오텐신계에 직접적으로 작용하는 약물을 임부에 투여시 태아 또는 신생아에게 병적 상태 및 사망을 일으킬 수 있다. 특히 임신 2, 3기에 레닌-안지오텐신계에 직접 작용하는 약물 투여시, 태아 및 신생아에 저혈압, 신생아 두개골 형성저하증, 무뇨증, 가역적 또는 비가역적 신부전을 포함한 손상 및 사망까지도 유발되었다. 태아의 신기능의 저하가 원인일 것으로 추정되는 양수과소…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a502687dd9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "피마사르탄이 사람의 모유로 이행되는지 여부는 알려져 있지 않으나, 랫드에 대한 시험에서 모유 중에 이 약의 분비가 확인되었으므로, 수유부에게 이 약을 투여하는 것은 바람직하지 않다. 따라서 수유부에 대한 이 약의 필요성을 고려하여 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "61f37be6d8",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "65세 이상의 건강한 고령자를 대상으로 한 이 약의 약동학 평가결과, 이 약에 대한 고령자의 체내 노출(AUC)이 젊은 건강한 성인에 비하여 약 69% 증가하였다. 그러나, 3상 임상시험에서 이 약을 투여 받은 환자 226명 중 21명의 65세 이상인 환자(9.3%)에 대해 유효성 및 안전성을 비교한 결과, 고령자들과 젊은 성인 환자들 사이에 전반적인 차이는 없었다. 따라서, 70세 이하인…",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:13:32"
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약과 같이 레닌-안지오텐신계에 직접적으로 작용하는 약물을 임부에 투여시 태아 또는 신생아에게 병적 상태 및 사망을 일으킬 수 있다. 특히 임신 2, 3기에 레닌-안지오텐신계에 직접 작용하는 약물 투여시, 태아 및 신생아에 저혈압, 신생아 두개골 형성저하증, 무뇨증, 가역적 또는 비가역적 신부전을 포함한 손상 및 사망까지도 유발되었다. 태아의 신기능의 저하가 원인일 것으로 추정되는 양수과소…",
+   "extractor": "kw-v4",
+   "id": "88b0aaa931",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "7f798b16c1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "피마사르탄이 사람의 모유로 이행되는지 여부는 알려져 있지 않으나, 랫드에 대한 시험에서 모유 중에 이 약의 분비가 확인되었으므로, 수유부에게 이 약을 투여하는 것은 바람직하지 않다. 따라서 수유부에 대한 이 약의 필요성을 고려하여 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "6aa89064e3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 건강한 고령자를 대상으로 한 이 약의 약동학 평가결과, 이 약에 대한 고령자의 체내 노출(AUC)이 젊은 건강한 성인에 비하여 약 69% 증가하였다. 그러나, 3상 임상시험에서 이 약을 투여 받은 환자 226명 중 21명의 65세 이상인 환자(9.3%)에 대해 유효성 및 안전성을 비교한 결과, 고령자들과 젊은 성인 환자들 사이에 전반적인 차이는 없었다. 따라서, 70세 이하인…",
+   "extractor": "kw-v4",
+   "id": "25d6c77fea",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

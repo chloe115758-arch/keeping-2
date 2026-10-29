@@ -1,0 +1,68 @@
+{
+ "ingredient": "misoprostol powder",
+ "productSeq": "200307647",
+ "itemName": "싸이토텍정200마이크로그램(미소프로스톨100배산) ",
+ "atc": "A02BB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220915",
+ "ediCode": "648900540",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200307647/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200307647/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200307647/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (&quot;1. 경고 항&quot; 참조) 1)",
+   "subject": "",
+   "excerpt": "자궁수축작용이 있고 임부에게 완전 또는 불완전 유산 및 자궁출혈이 나타났다는 보고가 있으며 또한 동물실험에서 출생아의 체중증가억제, 착상수의 감소, 생존태아수의 감소가 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다. 임신 첫 삼분기에 미소프로스톨에 노출되면 기형 위험이 대조군에서 2% 확률로 발생한 것에 비해 약 3배 증가한다. 특히, 이 약에 태아가 노출…",
+   "extractor": "kw-v4",
+   "id": "6357010555",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (&quot;1. 경고 항&quot; 참조) 2)",
+   "subject": "",
+   "excerpt": "미소프로스톨은 수유부의 체내에서 생물학적으로 활성을 가지는 미소프로스톨 산으로 신속히 대사되어 모유로 분비된다. 미소프로스톨산은 모유를 섭취하는 유아에게 설사와 같은 바람직하지 않은 영향을 미칠 수 있으므로 수유부에게 투여해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "85b6f15fda",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 설사 등의 소화기계 증상이 나타날 경우에는 감량 또는 휴약 등의 적절한 처치를 하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "42ab8e1fdb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "65세 이상의 궤양 환자 약 500명에 대하여 젊은 환자와 안전성을 비교하였을 때 유의한 차이는 없었다.",
+   "extractor": "kw-v4",
+   "id": "9e926c54e2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:22",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

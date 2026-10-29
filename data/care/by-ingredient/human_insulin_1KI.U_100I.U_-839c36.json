@@ -1,0 +1,118 @@
+{
+ "ingredient": "human insulin 1KI.U(100I.U)",
+ "productSeq": "199504265",
+ "itemName": "인슈라타드HM주100단위/밀리리터(휴먼인슐린)",
+ "atc": "A10AC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260116",
+ "ediCode": "654400281",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199504265/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199504265/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199504265/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음의 환자에는 신중히 투여할 것 (5)",
+   "subject": "",
+   "excerpt": "과도한 알코올 섭취 환자",
+   "extractor": "kw-v4",
+   "id": "d1e3851a1a",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 5)",
+   "subject": "",
+   "excerpt": "알코올은 인슐린의 혈당 강하 효과를 강화하거나 감소시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "e620d4c46a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 인슐린 치료를 받는 환자에서 혈당 조절은 필수적이다. 당뇨 관리가 잘 이루어지지 않거나 적절한 치료를 하지 못했을 때 발생할 수 있는 저혈당증 및 고혈당증은 기형의 위험을 증가시킨다. 인슐린의 요구량은 보통 임신 1기 동안에는 감소하고 임신 2 ∼ 3기 동안에는 증가한다. 당뇨 환자는 임신을 하였거나 임신을 계획하고 있음을 담당 의사에게 알려야 한다. 출산 후 인슐린 요구량은 빠르게…",
+   "extractor": "kw-v4",
+   "id": "9cc4c8c7dd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 중, 주산기, 수유기에는 인슐린의 수요량이 변하기 쉬워 인슐린 양과 식사 조절이 필요하므로 정기적으로 검사를 실시하여 투여량을 조절하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "abae3dc587",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능: 사람 인슐린에 대한 동물 대상 생식시험에서 수태능에 대한 어떠한 이상반응도 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "bc5a7dc3e7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리 기능이 저하되어 있어서 저혈당증이 일어나기 쉬우므로 용량에 유의하여 정기적으로 검사를 실시하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "71556b48ed",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "59fbe32ce7",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "보통 1일 2회 총 4 ~ 20 단위를 아침, 저녁 식사 전 (1회로도 가능하며 이때는 아침 식사 전) 30분 이내에 피하주사 하고, 이후 증상 및 검사 소견에 따라 투여량을 증감하고 유지량은 보통 1일 4 ~ 80 단위로 한다. 필요에 따라 앞서 기술한 용량을 초과할 수도 있다. 인슐린 주사액, 중성 인슐린 주사액과 혼합 주사가 가능하다.",
+   "meal": "식사 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:50",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

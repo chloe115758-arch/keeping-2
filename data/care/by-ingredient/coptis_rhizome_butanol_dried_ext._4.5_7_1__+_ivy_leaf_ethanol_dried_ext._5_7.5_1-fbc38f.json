@@ -1,0 +1,44 @@
+{
+ "ingredient": "coptis rhizome butanol dried ext.(4.5~7→1) + ivy leaf ethanol dried ext.(5~7.5→1)",
+ "productSeq": "201101306",
+ "itemName": "시네츄라시럽",
+ "atc": "R05CA",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210429",
+ "ediCode": "650203651",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201101306/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201101306/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201101306/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성, 신생아에 대한 투여",
+   "subject": "",
+   "excerpt": "임부, 수유부, 가임여성, 신생아에 대한 임상적 사용경험이 거의 없으므로, 의사가 필요하다고 판단하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "a4096dc9d7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "만 75세 초과의 고령자에 대한 임상적 사용경험이 거의 없으므로, 의사가 필요하다고 판단하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "13e246a826",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:23",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

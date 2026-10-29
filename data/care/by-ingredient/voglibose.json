@@ -1,0 +1,68 @@
+{
+ "ingredient": "voglibose",
+ "productSeq": "199501072",
+ "itemName": "베이슨정0.2밀리그램(보글리보스)",
+ "atc": "A10BF03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20120813",
+ "ediCode": "640000520",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199501072/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199501072/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199501072/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 관한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "839a678c71",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 모체동물의 당질흡수억제에 기인한 유즙생산의 억제에 의한 것으로 생각할 수 있는 출생아의 체중 증가 억제가 확인되어 있으므로 수유중의 여성에의 투여는 피하는 것이 바람직하지만 부득이한 이유로 투여하는 경우는 수유를 피한다.",
+   "extractor": "kw-v4",
+   "id": "2ed14923a8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 저용량(예를 들어 1회량 0.1mg)부터 투여를 시작하면서 혈당치 및 소화기 증상의 발현에 유의하는 등 경과를 충분히 관찰하면서 신중히 투여하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "6d49cff364",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "3d3ec642d7",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "통상 성인은 보글리보스로서 1회 0.2mg을 1일 3회 매 식전에 경구투여 한다. 또 효과가 불충분한 경우에는 경과를 충분히 관찰하면서 1회량을 0.3mg까지 증량할 수 있다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:05",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

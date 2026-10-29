@@ -1,0 +1,87 @@
+{
+ "ingredient": "cilnidipine",
+ "productSeq": "199801203",
+ "itemName": "시나롱정10밀리그램(실니디핀)(수출명 : Todula Tablet 10mg)",
+ "atc": "C08CA14",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190822",
+ "ediCode": "641902700",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801203/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801203/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801203/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 5)",
+   "subject": "",
+   "excerpt": "자몽쥬스(Grape Fruit Juice) : 다른 칼슘채널차단제(니페디핀 등)에서 병용에 의해, 칼슘채널차단제의 혈중농도가 상승되었다.",
+   "extractor": "kw-v4",
+   "id": "e748434e75",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "실험동물에서 태아독성(100 또는 200 mg/kg 투여 시 골화지연이 일어남)이 보고된 바 있으며, 임신중기에 투여시 임신기간이 연장되거나 임신말기에 투여시 분만시간이 연장되는 등의 예가 보고된 바 있으므로 임부 또는 임신할 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "f3cfba30fe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험에서 유즙으로 분비가 보고된 바 있으므로 수유중의 여성에게는 투여를 중지하는 것이 바람직하고, 부득이 투여할 경우에는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "9eedb272a7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에게는 과도한 강압이 좋지 않으므로 고령자에게 사용하는 경우에는 저용량(예, 5 mg)부터 투여를 시작하고 경과를 충분히 관찰한 후 신중히 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "38e8cc4bea",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "564cf471ca",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 실니디핀으로서 1일 1회 5 ～ 10 mg을 아침식사 후 경구투여 한다. 효과가 충분하지 않을 경우에는 1일 1회 20 mg까지 증량하며 증상에 따라 적절히 증감한다. 다만 중증 고혈압 환자에서는 1일 1회 10 ～ 20 mg을 아침식사 후 경구투여 한다.",
+   "meal": "식사 후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:56",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

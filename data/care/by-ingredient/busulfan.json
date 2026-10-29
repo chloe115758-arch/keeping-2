@@ -1,0 +1,80 @@
+{
+ "ingredient": "busulfan",
+ "productSeq": "202301532",
+ "itemName": "부설칸주(부설판)",
+ "atc": "L01AB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260220",
+ "ediCode": "627600261",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301532/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301532/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301532/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 임신한 여성에게 투여되었을 때 태아에 유해하게 작용할 수 있다. 이 약은 임신 기간 중에 투여했을 때, 마우스, 랫드 및 토끼의 차산자에 대해 최기형성을 유발하였다. 기형과 이상은 근골격계, 체중, 크기에서 나타났다. 임신 중의 랫드에 있어서 이 약은 암컷 및 수컷의 차산자에서 난소 및 정소에 생식세포가 없는 불임을 유발하였다.",
+   "extractor": "kw-v4",
+   "id": "ed2ee6ddd8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "용매인 DMA는 임신중의 여성에게 투여했을 때 태아 독성을 유발할 수 있다. 랫드에 있어서 400 mg/kg/일(mg/㎡ 기준으로 했을때, 이 약에 함유된 일일 DMA 용량의 약 40%)용량의 DMA를 기관 발생 기간 중에 투여했을 때 심각한 발생 장애를 일으켰다. 가장 현저한 이상으로 전신 부종, 구개열, 척추이상, 늑골이상 및 심장혈관의 중증 이상을 일으켰다.",
+   "extractor": "kw-v4",
+   "id": "0df8be5c18",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약이나 DMA 모두에 대하여 임신한 여성에 대한 적절하고 잘 조절된 연구는 없었다. 임신 중에 이 약을 투여하는 도중 임신하게 되었을 경우에는 환자에게 태아가 위험에 노출된 것을 알려야 한다. 임신이 가능한 여성에게는 임신을 피하도록 충고하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "ab25360cef",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 모유로 배출되는지는 알려져 있지 않다. 그러나 많은 약제가 모유로 배설된다는 점과 인체와 동물의 종양 유발성을 고려하면, 투약시 모체에 미치는 중요성을 감안하여 수유 중단이나 투약 중단을 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ead5789ed2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에서 투여된 61명의 환자중 5명이 55세 이상(57~64세)이었다. 모든 환자에서 골수 억제 및 생착이 성공하였다.",
+   "extractor": "kw-v4",
+   "id": "62d8f7368e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:32",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

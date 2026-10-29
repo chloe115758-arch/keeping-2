@@ -1,0 +1,80 @@
+{
+ "ingredient": "alogliptin benzoate + pioglitazone hydrochloride",
+ "productSeq": "202303455",
+ "itemName": "네시나액트정25/15밀리그램(알로글립틴벤조산염,피오글리타존염산염)",
+ "atc": "A10BD09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20241030",
+ "ediCode": "693903820",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303455/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303455/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303455/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "cceeee388c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 또는 이약의 주성분에 대한 임부을 대상으로 한 적절한 임상시험은 없다. 따라서 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "cfd041b540",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "925862a859",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약으로 실시한 임상시험은 없다. 각각의 주성분으로 실시한 시험에서 알로글립틴과 피오글리타존은 모두 수유 중인 랫드의 유즙으로 이행됩니다. 알로글립틴 및 피오글리타존이 모유로 이행되는지 여부는 알려지지 않았다. 다수의 약물들이 모유로 이행되고, 이 약이 수유 받는 영아에서 중대한 이상반응을 일으킬 가능성이 있으므로, 이 약을 수유부에게 사용해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "37a76028ea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에 참여한 총 환자(N=1533) 중 248명이(16.2%) 65세 이상이었고, 15명(1%)이 75세 이상이었다. 고령자와 젊은 환자 군 간에 안전성 및 유효성에서 전반적인 차이가 관찰되지 않았다. 위 자료와 기타 보고된 임상에서 고령 환자와 젊은 환자 간 반응의 차이가 관찰되지 않았으나 일부 고령자에서 감수성이 증가할 수 있음을 배제할 수는 없다",
+   "extractor": "kw-v4",
+   "id": "a910433008",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:07",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

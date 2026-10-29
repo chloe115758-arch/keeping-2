@@ -1,205 +1,209 @@
 {
-  "ingredient": "bupropion hydrochloride",
-  "productSeq": "200801900",
-  "itemName": "니코피온서방정150밀리그램(부프로피온염산염)",
-  "atc": "N06AX12",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260526",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200801900/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200801900/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200801900/NB"
-  },
-  "rules": [
+ "ingredient": "bupropion hydrochloride",
+ "productSeq": "200801900",
+ "itemName": "니코피온서방정150밀리그램(부프로피온염산염)",
+ "atc": "N06AX12",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260526",
+ "ediCode": "643504100",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200801900/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200801900/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200801900/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 ④",
+   "subject": "표 1.",
+   "excerpt": "환자들에게 알코올 또는 벤조디아제핀류를 포함한 진정제의 과용 또는 갑작스런 중단이 발작 역치를 변화시킬 수 있음을 주지시켜야 한다. 몇몇 환자들에서 이 약 투여 중 더 낮은 알코올 내성이 보고된 바 있다. 알코올 섭취량을 최소로 하거나 금주하도록 환자에게 조언해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f4f566ede0",
+   "kind": "note",
+   "matched": [
     {
-      "id": "2f12144693",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 ④",
-      "subject": "9) 심혈관계에 대한 영향",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "환자들에게 알코올 또는 벤조디아제핀류를 포함한 진정제의 과용 또는 갑작스런 중단이 발작 역치를 변화시킬 수 있음을 주지시켜야 한다. 몇몇 환자들에서 이 약 투여 중 더 낮은 알코올 내성이 보고된 바 있다. 알코올 섭취량을 최소로 하거나 금주하도록 환자에게 조언해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "eb25c89f34",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 11)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올 : 임상자료에서 부프로피온과 알코올 사이의 약물동력학적 상호작용이 확인되지 않았지만 시판 후 조사에서, 이 약에 의한 치료 중 알코올을 섭취한 환자에서 신경정신계 이상반응이나 알코올 내성 감소가 드물게 보고되었다. 이 약으로 치료하는 기간 동안 알코올의 섭취는 최소로 하거나 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b9464f68bd",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 12)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "St John"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "분명한 증거는 없지만, 부프로피온과 생약인 St John's Wort(hypericum perforatum) 사이에서 상호작용이 나타날 가능성이 있고 이상반응이 증가 할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f50bc3ab0e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약을 임부에게 사용했을 때의 안전성은 확립되지 않았다. 임신한 여성은 약물치료 없이 금연하도록 해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5d24fee605",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "사람의 수태능에 대한 자료는 없다. 랫드에 대한 생식독성시험에서 수태장애에 대한 증거는 나타나지 않았다(‘14. 기타’항 참조).",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "503f326878",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 초기 3개월에서 이 약의 노출 후 임부에 대한 일부 역학연구에서, 선천성 심혈관계 기형의 위험이 증가되는 것으로 보고되었다. 이러한 발견이 일관성은 없었으나, 의사는 임산부 또는 임신을 계획하고 있는 여성에게 투여시 대체치료법과 비교 검토하여, 기대되는 유익성이 잠재된 위험성을 상회할 때에만 이 약을 투여해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4ca5ea7b30",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "국제 임신 등록(Pregnancy Registry)에서 임신 초기 3개월에서 이 약의 태아 노출 시 선천성 심혈관계 기형의 비율이 1.3%(9/675)로 전향적으로 관찰되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "24ad2a6f6f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부에 대한 투여 5)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "진료소 기록자료 후향 연구(7,005명의 영아)에서 임신 초기 3개월에서 이 약의 노출(1,213명의 영아)과 관련된 선천성 기형(2.3%) 또는 심혈관계 기형(1.1%)은 초기 3개월에 다른 항우울제 투여(4,743명의 영아 선천성기형 2.3%, 심혈관계 기형 1.1%) 또는 초기 3개월 이후의 이 약의 투여(1,049명의 영아 선천성기형 2.2%, 심혈관계 기형 1.0%)와 비교할 때 더…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fab073c1fb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부에 대한 투여 6)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "증례-대조군 후향 분석(National Birth Defects Prevention Study)에서, 12,382례 영아 및 5,869 대조 영아가 포함되었다. 임신 초기 이 약의 사용(자가보고)과 영아의 좌심유출로기형의 통계적으로 유의한 연관성이 관찰되었다(n=10; 조정된 OR=2.6; 95% CI 1.2, 5.7). 하지만, 임신시 이 약의 사용과 어떠한 종류의 심장 기형 또는 심장 복…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e96ff30a48",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부에 대한 투여 7)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "추가 증례-대조군 분석(Slone Epidemiology Center Birth Defects Study)에서, 7,913례의 영아 심장 기형 및 8,611 대조 영아가 포함되었다. 임신시 이 약의 사용으로 인한 영아 좌심유출로기형의 통계적으로 유의한 증가는 발견되지 않았다(n=2; 조정된 OR=0.4; 95% CI 0.1, 1.6). 하지만 임신 초기 3개월 동안 이 약의 단독 사용과 영아…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9f76af7d17",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "9. 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "부프로피온과 그 대사체는 모유 중으로 이행하므로 이 약을 투여하는 중에는 수유하지 않도록 한다. 환자에 대한 약물 복용의 중요성을 고려하여, 수유 중단 혹은 약물 중단을 결정하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ba9ae329f2",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "11. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "부프로피온 서방정의 임상시험(항우울제 및 금연 보조제 임상)에 참가했던 약 6,000명의 환자 중에서 275명이 65세 이상이었고 47명이 75세 이상이었다. 또한, 65세 이상의 노인 수백명이 부프로피온 일반정을 투여한 임상시험(항우울제 시험)에 참가하였다. 안전성 또는 유효성에서 고령자와 젊은 환자 사이에 전반적인 차이는 없었고, 보고된 다른 임상경험에서도 고령자와 젊은 환자 사이의 반응…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f00ab359c2",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "11. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "단회투여 약물동태 시험에서 고령의 피험자에서의 부프로피온과 그 대사체의 약물동태는 젊은 피험자에서와 비슷하였으나, 단회 및 반복 투여한 다른 약물동태 시험에서는 부프로피온과 그 대사체가 고령자에서 축적될 위험성이 더 높음을 시사하였다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9acd73e1dd",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "11. 고령자에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "부프로피온은 간에서 광범위하게 활성대사체로 대사된 다음, 신장에서 더 대사된 후 배설된다. 이 약물에 대한 독성 반응의 위험성은 신기능이 손상된 환자에서 더 클 수 있다. 고령의 환자는 신기능이 감소되어 있을 가능성이 더 높으므로 투여횟수 및 투여량의 감소가 요구될 수 있다. 따라서 용량 설정시에 주의해야 하고 신기능 모니터링이 유용할 수도 있다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:17:02"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 11)",
+   "subject": "",
+   "excerpt": "알코올 : 임상자료에서 부프로피온과 알코올 사이의 약물동력학적 상호작용이 확인되지 않았지만 시판 후 조사에서, 이 약에 의한 치료 중 알코올을 섭취한 환자에서 신경정신계 이상반응이나 알코올 내성 감소가 드물게 보고되었다. 이 약으로 치료하는 기간 동안 알코올의 섭취는 최소로 하거나 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d587fec18e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 12)",
+   "subject": "",
+   "excerpt": "분명한 증거는 없지만, 부프로피온과 생약인 St John's Wort(hypericum perforatum) 사이에서 상호작용이 나타날 가능성이 있고 이상반응이 증가 할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "97e0e0e6b6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약을 임부에게 사용했을 때의 안전성은 확립되지 않았다. 임신한 여성은 약물치료 없이 금연하도록 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "cefc19697c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "사람의 수태능에 대한 자료는 없다. 랫드에 대한 생식독성시험에서 수태장애에 대한 증거는 나타나지 않았다(‘14. 기타’항 참조).",
+   "extractor": "kw-v4",
+   "id": "bf22241db2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신 초기 3개월에서 이 약의 노출 후 임부에 대한 일부 역학연구에서, 선천성 심혈관계 기형의 위험이 증가되는 것으로 보고되었다. 이러한 발견이 일관성은 없었으나, 의사는 임산부 또는 임신을 계획하고 있는 여성에게 투여시 대체치료법과 비교 검토하여, 기대되는 유익성이 잠재된 위험성을 상회할 때에만 이 약을 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "2b56d53fd9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "국제 임신 등록(Pregnancy Registry)에서 임신 초기 3개월에서 이 약의 태아 노출 시 선천성 심혈관계 기형의 비율이 1.3%(9/675)로 전향적으로 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "dd28ff5387",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "진료소 기록자료 후향 연구(7,005명의 영아)에서 임신 초기 3개월에서 이 약의 노출(1,213명의 영아)과 관련된 선천성 기형(2.3%) 또는 심혈관계 기형(1.1%)은 초기 3개월에 다른 항우울제 투여(4,743명의 영아 선천성기형 2.3%, 심혈관계 기형 1.1%) 또는 초기 3개월 이후의 이 약의 투여(1,049명의 영아 선천성기형 2.2%, 심혈관계 기형 1.0%)와 비교할 때 더…",
+   "extractor": "kw-v4",
+   "id": "adf852969e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "증례-대조군 후향 분석(National Birth Defects Prevention Study)에서, 12,382례 영아 및 5,869 대조 영아가 포함되었다. 임신 초기 이 약의 사용(자가보고)과 영아의 좌심유출로기형의 통계적으로 유의한 연관성이 관찰되었다(n=10; 조정된 OR=2.6; 95% CI 1.2, 5.7). 하지만, 임신시 이 약의 사용과 어떠한 종류의 심장 기형 또는 심장 복…",
+   "extractor": "kw-v4",
+   "id": "6791a9b6ff",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부에 대한 투여 7)",
+   "subject": "",
+   "excerpt": "추가 증례-대조군 분석(Slone Epidemiology Center Birth Defects Study)에서, 7,913례의 영아 심장 기형 및 8,611 대조 영아가 포함되었다. 임신시 이 약의 사용으로 인한 영아 좌심유출로기형의 통계적으로 유의한 증가는 발견되지 않았다(n=2; 조정된 OR=0.4; 95% CI 0.1, 1.6). 하지만 임신 초기 3개월 동안 이 약의 단독 사용과 영아…",
+   "extractor": "kw-v4",
+   "id": "724a39185a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "9. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "부프로피온과 그 대사체는 모유 중으로 이행하므로 이 약을 투여하는 중에는 수유하지 않도록 한다. 환자에 대한 약물 복용의 중요성을 고려하여, 수유 중단 혹은 약물 중단을 결정하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "5cb46e82eb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "11. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "부프로피온 서방정의 임상시험(항우울제 및 금연 보조제 임상)에 참가했던 약 6,000명의 환자 중에서 275명이 65세 이상이었고 47명이 75세 이상이었다. 또한, 65세 이상의 노인 수백명이 부프로피온 일반정을 투여한 임상시험(항우울제 시험)에 참가하였다. 안전성 또는 유효성에서 고령자와 젊은 환자 사이에 전반적인 차이는 없었고, 보고된 다른 임상경험에서도 고령자와 젊은 환자 사이의 반응…",
+   "extractor": "kw-v4",
+   "id": "5e1b693ffc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "11. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "단회투여 약물동태 시험에서 고령의 피험자에서의 부프로피온과 그 대사체의 약물동태는 젊은 피험자에서와 비슷하였으나, 단회 및 반복 투여한 다른 약물동태 시험에서는 부프로피온과 그 대사체가 고령자에서 축적될 위험성이 더 높음을 시사하였다.",
+   "extractor": "kw-v4",
+   "id": "31312414ef",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "11. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "부프로피온은 간에서 광범위하게 활성대사체로 대사된 다음, 신장에서 더 대사된 후 배설된다. 이 약물에 대한 독성 반응의 위험성은 신기능이 손상된 환자에서 더 클 수 있다. 고령의 환자는 신기능이 감소되어 있을 가능성이 더 높으므로 투여횟수 및 투여량의 감소가 요구될 수 있다. 따라서 용량 설정시에 주의해야 하고 신기능 모니터링이 유용할 수도 있다.",
+   "extractor": "kw-v4",
+   "id": "30af898726",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

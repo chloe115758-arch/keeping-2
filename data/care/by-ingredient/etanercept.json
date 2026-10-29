@@ -1,143 +1,190 @@
 {
-  "ingredient": "etanercept",
-  "productSeq": "201506388",
-  "itemName": "에톨로체50밀리그램프리필드시린지(에타너셉트)",
-  "atc": "L04AB01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260714",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506388/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506388/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506388/NB"
-  },
-  "rules": [
+ "ingredient": "etanercept",
+ "productSeq": "201506388",
+ "itemName": "에톨로체50밀리그램프리필드시린지(에타너셉트)",
+ "atc": "L04AB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260714",
+ "ediCode": "051500011",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506388/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506388/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506388/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 10)",
+   "subject": "",
+   "excerpt": "알코올성 간염",
+   "extractor": "kw-v4",
+   "id": "1f6a61ced8",
+   "kind": "note",
+   "matched": [
     {
-      "id": "7ba638a6a4",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "10) 알코올성 간염",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "48명의 중등도 내지 중증의 알코올성 간염[mean Model of End-stage Liver Disease(MELD) score = 25] 입원 환자를 대상으로 에타너셉트 또는 위약을 투여한 임상시험에서, 에타너셉트는 유효성을 나타내지 못하였으며 에타너셉트를 투여받은 환자에서 6개월 후 사망률이 유의하게 높았다. 알코올성 간염을 치료하기 위해 에타너셉트를 사용하는 것은 권장되지 않는다.…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c30219dc02",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "에타너셉트는 태아모체에 대한 잠재적 유익성이 태아에 대한 잠재적 위험성을 상회하는 경우에만 임부에 사용해야 한다. 이 약의 영향(the effects of etanercept on pregnancy outcome)은 2건의 관찰 코호트시험을 통해 연구되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f4d779ef46",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "에타너셉트의 첫 번째 임신 등록 연구(pregnancy registry)에서는 임신 초기 3개월 내 이 약에 노출된 류마티스성 질환이나 건선 환자인 임부가 출산한 영아(n = 319)와 임신 중 에타너셉트에 노출되지 않은 임부가 출산한 영아(n = 144)의 주요 선천성 결함비율을 비교했다. 주요 선천성 결함을 모두 포함한 보정된 오즈비(odds ratio)는 2.77 (95% 신뢰구간(CI…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "295000c932",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "두번째 관찰, 다국가 등록 시험에서는 이 약에 노출된 여성(n=522)과 비-생물의약품에 노출된 여성(n=3,508)간 임신 중 이상 위험(the risk of adverse pregnancy outcome)을 비교하였고, 주요 선천성결함 위험의 증가가 관찰되지 않았다(보정된 오즈비 0.96, 95% CI: 0.58-1.60). 또한, 이 시험에서는 임신 중 이 약에 노출된 임부가 출산한 영…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "72dc571bea",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "쥐와 토끼에서 AUC 기준 이 약의 전신노출은 사람에 대한 상용량인 주 1회 50 mg의 21배에서 25배 고용량으로, 건선의 경우 사람 최대 권장용량인 주 2회 50 mg의 10배에서 13배의 고용량으로 발생독성시험을 실시하였으며, 태자 또는 신생아에 대한 에타너셉트의 유해성은 나타나지 않았다. 동물에서의 생식독성시험의 결과가 항상 사람에서의 반응의 전조가 되는 것은 아니다. 에타너셉트의…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6f4d4755a9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "에타너셉트는 태반을 통과하며, 임신 중 에타너셉트로 치료 받은 여성에게서 태어난 영아의 혈청에서 검출되었다. 이로 인한 임상적 영향은 알려져 있지 않지만, 영아들의 감염 위험이 증가될 수 있다. 일반적으로 산모가 에타너셉트를 마지막으로 투여받은 후 16주 동안은 영아에 대한 생백신 접종이 권장되지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b54a73f77e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유 중인 랫드에 피하주사 후, 에타너셉트가 유즙으로 분비되었고, 새끼의 혈청에서 검출되었다. 발표된 문헌의 제한된 정보에 따르면 에타너셉트는 사람 모유에서 낮은 농도로 검출되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c49b4364da",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "모유 수유 중 에타너셉트의 사용을 고려할 때 모체에 대한 에타너셉트의 이점과 모유수유가 영아에게 미치는 건강상의 이점이 고려되어야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "406eca3701",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "에타너셉트는 위장관에서 대부분 분해되기 때문에 모유수유한 영아의 전신노출은 낮을 것으로 예상되지만, 모유수유한 영아에서의 전신노출에 대한 자료는 제한적이다. 따라서 엄마가 에타너셉트를 투여하고 있을 경우, 모유수유한 영아에게 생백신 (예: BCG) 투여는 수유 중단 16주 이후(또는 영아에서 이 약의 혈청수치가 검출되지 않을 경우 더 이른 시점)에 고려될 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "dbf6b7611e",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "유효성 및 안전성에서 성인과 차이는 없었으며 용법ㆍ용량은 성인 환자의 경우와 동일하다. 그러나 일부 고령자에서 과민성의 증가 가능성은 배제할 수 없다. 일반적으로 고령자에서 감염 발생률이 더 높으므로 고령자의 치료 시 특히 주의해야 한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:18:47"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "48명의 중등도 내지 중증의 알코올성 간염[mean Model of End-stage Liver Disease(MELD) score = 25] 입원 환자를 대상으로 에타너셉트 또는 위약을 투여한 임상시험에서, 에타너셉트는 유효성을 나타내지 못하였으며 에타너셉트를 투여받은 환자에서 6개월 후 사망률이 유의하게 높았다. 알코올성 간염을 치료하기 위해 에타너셉트를 사용하는 것은 권장되지 않는다.…",
+   "extractor": "kw-v4",
+   "id": "34c21e0089",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "3954ce1aba",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "에타너셉트는 태아모체에 대한 잠재적 유익성이 태아에 대한 잠재적 위험성을 상회하는 경우에만 임부에 사용해야 한다. 이 약의 영향(the effects of etanercept on pregnancy outcome)은 2건의 관찰 코호트시험을 통해 연구되었다.",
+   "extractor": "kw-v4",
+   "id": "30ee232503",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "에타너셉트의 첫 번째 임신 등록 연구(pregnancy registry)에서는 임신 초기 3개월 내 이 약에 노출된 류마티스성 질환이나 건선 환자인 임부가 출산한 영아(n = 319)와 임신 중 에타너셉트에 노출되지 않은 임부가 출산한 영아(n = 144)의 주요 선천성 결함비율을 비교했다. 주요 선천성 결함을 모두 포함한 보정된 오즈비(odds ratio)는 2.77 (95% 신뢰구간(CI…",
+   "extractor": "kw-v4",
+   "id": "e6e537c041",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "두번째 관찰, 다국가 등록 시험에서는 이 약에 노출된 여성(n=522)과 비-생물의약품에 노출된 여성(n=3,508)간 임신 중 이상 위험(the risk of adverse pregnancy outcome)을 비교하였고, 주요 선천성결함 위험의 증가가 관찰되지 않았다(보정된 오즈비 0.96, 95% CI: 0.58-1.60). 또한, 이 시험에서는 임신 중 이 약에 노출된 임부가 출산한 영…",
+   "extractor": "kw-v4",
+   "id": "a3e83f28f0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "쥐와 토끼에서 AUC 기준 이 약의 전신노출은 사람에 대한 상용량인 주 1회 50 mg의 21배에서 25배 고용량으로, 건선의 경우 사람 최대 권장용량인 주 2회 50 mg의 10배에서 13배의 고용량으로 발생독성시험을 실시하였으며, 태자 또는 신생아에 대한 에타너셉트의 유해성은 나타나지 않았다. 동물에서의 생식독성시험의 결과가 항상 사람에서의 반응의 전조가 되는 것은 아니다. 에타너셉트의…",
+   "extractor": "kw-v4",
+   "id": "2b4649f6b3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "에타너셉트는 태반을 통과하며, 임신 중 에타너셉트로 치료 받은 여성에게서 태어난 영아의 혈청에서 검출되었다. 이로 인한 임상적 영향은 알려져 있지 않지만, 영아들의 감염 위험이 증가될 수 있다. 일반적으로 산모가 에타너셉트를 마지막으로 투여받은 후 16주 동안은 영아에 대한 생백신 접종이 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "28dab7ef30",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "3cecbd881f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유 중인 랫드에 피하주사 후, 에타너셉트가 유즙으로 분비되었고, 새끼의 혈청에서 검출되었다. 발표된 문헌의 제한된 정보에 따르면 에타너셉트는 사람 모유에서 낮은 농도로 검출되었다.",
+   "extractor": "kw-v4",
+   "id": "1029aa2718",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "모유 수유 중 에타너셉트의 사용을 고려할 때 모체에 대한 에타너셉트의 이점과 모유수유가 영아에게 미치는 건강상의 이점이 고려되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "d797a3d1d6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "에타너셉트는 위장관에서 대부분 분해되기 때문에 모유수유한 영아의 전신노출은 낮을 것으로 예상되지만, 모유수유한 영아에서의 전신노출에 대한 자료는 제한적이다. 따라서 엄마가 에타너셉트를 투여하고 있을 경우, 모유수유한 영아에게 생백신 (예: BCG) 투여는 수유 중단 16주 이후(또는 영아에서 이 약의 혈청수치가 검출되지 않을 경우 더 이른 시점)에 고려될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "6bfdb79001",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "유효성 및 안전성에서 성인과 차이는 없었으며 용법ㆍ용량은 성인 환자의 경우와 동일하다. 그러나 일부 고령자에서 과민성의 증가 가능성은 배제할 수 없다. 일반적으로 고령자에서 감염 발생률이 더 높으므로 고령자의 치료 시 특히 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e063a4f859",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

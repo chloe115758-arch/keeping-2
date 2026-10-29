@@ -1,0 +1,44 @@
+{
+ "ingredient": "amino acids",
+ "productSeq": "199201368",
+ "itemName": "이노엔10%후라바솔주",
+ "atc": "B05BA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200327",
+ "ediCode": "640001151",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199201368/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199201368/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199201368/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 투여에 대한 안전성이 확립되어 있지 않으므로 임부에 대한 아미노산 수액제 투여는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "b88af4bd91",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 투여속도를 천천히 하며 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "685ff3f186",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:29:47",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

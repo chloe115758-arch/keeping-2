@@ -1,0 +1,44 @@
+{
+ "ingredient": "levofloxacin",
+ "productSeq": "201708129",
+ "itemName": "레보아점안액0.5%(레보플록사신수화물)",
+ "atc": "S01AE05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210624",
+ "ediCode": "052400571",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201708129/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201708129/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201708129/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 관한 안전성이 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "43a5292ea7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 투여할 경우에는 수유를 중단하거나 이 약의 투여를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "a125cade9b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:29:12",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

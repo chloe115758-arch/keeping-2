@@ -1,0 +1,56 @@
+{
+ "ingredient": "ciclesonide(/회)",
+ "productSeq": "200704588",
+ "itemName": "알베스코흡입제160(시클레소니드)",
+ "atc": "R03BA08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260407",
+ "ediCode": "644704891",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704588/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704588/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704588/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부를 대상으로 한 정립된 임상시험 결과는 없다. 이 약은 다른 글루코코르티코이드와 마찬가지로, 모체에 대한 치료의 유익성이 태아에 대한 가능한 위험성을 상회한다고 판단되는 경우에 한해서 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "407f4f04d7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신기간 동안 코르티코스테로이드를 투여 받은 모체에서 태어난 영아는 부신저하증이 나타날 수 있으므로 주의깊게 관찰해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f6fb7fc62b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "흡입한 시클레소니드가 모유로 분비되는지에 대해서는 알려진 바 없다. 수유랫드의 유즙에서 이 약이 검출가능한 최소의 농도로 발견되었다.",
+   "extractor": "kw-v4",
+   "id": "9721aa4998",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:51",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,197 @@
+{
+ "ingredient": "bosutinib monohydrate",
+ "productSeq": "202300245",
+ "itemName": "보술리프정400밀리그램(보수티닙일수화물)",
+ "atc": "L01EA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260707",
+ "ediCode": "648903780",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300245/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300245/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202300245/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (3)",
+   "subject": "",
+   "excerpt": "양성자펌프 억제제(PPI)",
+   "extractor": "kw-v4",
+   "id": "0eec9669d7",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "PPI"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "PPI와의 병용투여시 이 약 단독투여에 비해 이 약의 Cmax 및 AUC를 감소시켜 유효성을 감소시킬 수 있다. PPI 대신 속효성 제산제 또는 H2 차단제를 사용하고 이 약 투여와 2시간 이상의 간격을 두고 투여한다.",
+   "extractor": "kw-v4",
+   "id": "2a438265e4",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "PPI"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": {
+    "minHours": 2.0,
+    "maxHours": null,
+    "qualifier": "",
+    "text": "2시간 이상의 간격",
+    "actionable": true
+   },
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "이 약은 in vitro에서 pH 의존적 수성 용해도를 나타낸다. 경구 단회용량의 이 약 400 mg을 단독으로 또는 음식물없이 란소프라졸 60 mg을 다회 경구투여 후 투여했다. 란소프라졸은 이 약의 Cmax를 46%, AUC를 26% 감소시켰다.",
+   "extractor": "kw-v4",
+   "id": "16b205f825",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "란소프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "af8e271523",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험결과와 이 약의 작용기전에 따르면, 이 약은 임부에 투여 시 태아에게 유해할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "43b855c3b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "약물관련 위험을 알 수 있는 임부에 대한 자료는 없다. 랫드와 토끼의 동물생식시험에서 기관형성기간 중 이 약의 경구투여는, 낮게는 500 mg/day 에서의 사람노출 기준으로 1.2배에 해당하는 모체노출(AUC)에서 구조적이상, 배태자 사망 및 성장변화를 포함한 이상발달 결과가 나타났다. 태아에 대한 잠재적위해성을 임부에게 알려야 한다. 해당집단에 대한 주요 선천적결함 및 유산의 기저위험성은…",
+   "extractor": "kw-v4",
+   "id": "161d30c490",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "ef86d0d378",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 또는 그 대사체의 인체 모유에 존재여부, 수유 중인 유아 또는 모유생성에 미치는 영향에 대한 자료는 없다. 그러나 이 약은 수유 중인 랫드의 모유에 존재했다. 수유 중인 유아에서 중대한 이상반응의 가능성이 있으므로, 이 약을 투여하는 동안과 마지막 투여 후 최소 2주 동안은 수유가 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "dbe6a81dc7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "가임여성 및 남성",
+   "extractor": "kw-v4",
+   "id": "3935290b5b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "피임: 가임여성에게 이 약을 투여하는 동안과 마지막 투여 후 최소 2주 동안 효과적인 피임법(임신율이 1% 미만인 방법)을 사용하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "1b834cc200",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "불임: 가임여성 또는 남성에서의 불임 위험성은 사람에서 연구되지 않았다. 동물시험 결과에 따르면 이 약은 암컷 및 수컷의 수태능을 감소시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "398f5b1176",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "Ph+ CML 환자에서 이전에 이 약에 내성 또는 불내약성을 보인 CML 환자에 대한 단일군시험에서 20%는 만 65세 이상, 4%는 만 75세 이상이었다. 새로 진단된 CML에 대한 임상시험에서 이 약을 투여 받은 268명의 환자 중 20%가 65세 이상이었고, 5%가 75세 이상이었다. 이 환자들과 젊은 환자들 사이에 안전성 및 유효성에 전반적 차이는 관찰되지 않았고, 다른 보고된 임상경…",
+   "extractor": "kw-v4",
+   "id": "ea5461672f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:23",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

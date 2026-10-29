@@ -1,0 +1,44 @@
+{
+ "ingredient": "calcium gluconate",
+ "productSeq": "198400093",
+ "itemName": "제이더블유중외제약글루콘산칼슘주사액",
+ "atc": "A12AA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220808",
+ "ediCode": "644902341",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198400093/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198400093/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198400093/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부의 투여에 대해 알려진 것이 없으므로, 반드시 필요할 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "e736348bf9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "9df2ee7455",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:10",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

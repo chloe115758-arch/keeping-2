@@ -1,0 +1,32 @@
+{
+ "ingredient": "chlorhexidine gluconate solution 50μL",
+ "productSeq": "200004840",
+ "itemName": "그린클로르헥시딘크림(클로르헥시딘글루콘산염액)",
+ "atc": "D08AC02",
+ "etcOtc": "일반의약품",
+ "changeDate": "20260213",
+ "ediCode": "648300150",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200004840/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200004840/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200004840/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임부에 대한 동물실험이나 임상시험이 전혀 실시되지 않았으므로 임부 또는 임신하고 있을 가능성이 있는 부인 또는 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "a35df23079",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:35",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,128 @@
+{
+ "ingredient": "erdafitinib",
+ "productSeq": "202204247",
+ "itemName": "발베사정3밀리그램(얼다피티닙)",
+ "atc": "L01EN01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250422",
+ "ediCode": "646902710",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204247/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204247/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204247/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "894f400aad",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물 생식 연구결과에 따르면 얼다피티닙은 임신 여성에게 투여 시 태아에게 유해할 수 있다. 랫드를 대상으로 한 배태자 독성 연구에서, 얼다피티닙은 연구된 모든 용량에서 인간 노출보다 적은 노출에서 배아독성 및 기형 유발을 나타냈다 (용법용량 참조). 태아독성은 손/발 결손 및 대동맥과 같은 일부 주요 혈관의 기형을 특징으로 한다. 임신 중에 이 약을 사용하거나 이 약을 복용하는 동안 환자가…",
+   "extractor": "kw-v4",
+   "id": "9adbf58060",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "e10ae5723b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "모유 중 얼다피티닙의 존재 여부 또는 모유 수유 중인 영아 또는 모유 생산에 미치는 이 약의 영향에 대한 자료는 없다. 모유 수유 중인 영아에게 이 약의 중대한 이상 반응이 발생할 가능성이 있으므로, 이 약으로 치료하는 동안 및 이 약의 마지막 투여 후 1개월 동안 모유 수유하지 않도록 조언하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "4a58af4982",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신 테스트",
+   "extractor": "kw-v4",
+   "id": "515c371ac1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임 여성의 경우 이 약의 투여를 시작하기 전에 매우 민감한 검사를 통한 임신 테스트를 권장한다.",
+   "extractor": "kw-v4",
+   "id": "7bf95513a4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "피임",
+   "extractor": "kw-v4",
+   "id": "7b6436b4e9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임신 여성에게 투여 시 태아에게 유해할 수 있다. 여성 환자에게 치료 전과 치료 중 그리고 이 약의 마지막 투여 후 1개월 동안 매우 효과적인 피임법을 사용하도록 조언하여야 한다. 남성 환자도 효과적인 피임법(예, 콘돔)을 사용하여야 하며 치료 중 및 이 약의 마지막 투여 후 1개월 동안 정액을 기증하거나 보관해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "db00769a5d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자와 젊은 성인 환자 사이에 안전성과 유효성의 전반적인 차이는 관찰되지 않았다. 고령자에서 별도의 용량 조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "3728fa4186",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:01",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

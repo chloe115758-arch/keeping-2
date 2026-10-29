@@ -1,28 +1,32 @@
 {
-  "ingredient": "tiropramide hydrochloride",
-  "productSeq": "201907931",
-  "itemName": "타이로정(티로프라미드염산염)",
-  "atc": "A03AC05",
-  "etcOtc": "전문의약품",
-  "changeDate": "20221214",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907931/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907931/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907931/NB"
-  },
-  "rules": [
-    {
-      "id": "c2b40b3863",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 임부나 태아에 대한 이상반응을 나타내지는 않았으나 임부에의 사용은 필요성이 인정되는 경우로 제한하고 의사의 감독하에 투여한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:05:08"
+ "ingredient": "tiropramide hydrochloride",
+ "productSeq": "201907931",
+ "itemName": "타이로정(티로프라미드염산염)",
+ "atc": "A03AC05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221214",
+ "ediCode": "059000260",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907931/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907931/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907931/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험에서 임부나 태아에 대한 이상반응을 나타내지는 않았으나 임부에의 사용은 필요성이 인정되는 경우로 제한하고 의사의 감독하에 투여한다.",
+   "extractor": "kw-v4",
+   "id": "358a46c4b2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

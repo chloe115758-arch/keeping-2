@@ -1,52 +1,56 @@
 {
-  "ingredient": "pranlukast hydrate",
-  "productSeq": "202601092",
-  "itemName": "건투스정50밀리그램(프란루카스트수화물)",
-  "atc": "R03DC02",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601092/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601092/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601092/NB"
+ "ingredient": "pranlukast hydrate",
+ "productSeq": "202601092",
+ "itemName": "건투스정50밀리그램(프란루카스트수화물)",
+ "atc": "R03DC02",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "073001750",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601092/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601092/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601092/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성에게는, 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 투여한다(임신중의 투여에 관한 안전성은 확립되어 있지 않다.).",
+   "extractor": "kw-v4",
+   "id": "fc5fda10ca",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "129d1b7877",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성에게는, 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 투여한다(임신중의 투여에 관한 안전성은 확립되어 있지 않다.).",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7735b4354e",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량(예를 들어, 1회 성인 용량의 1/2을 1일 2회)하는 등 주의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "165c8ff55a",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "성인 : 프란루카스트수화물로서 1회 50mg을 1일 2회 아침, 저녁 식후 경구투여한다.",
-      "meal": "식후",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:07:47"
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량(예를 들어, 1회 성인 용량의 1/2을 1일 2회)하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "4c8c0929ad",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "165c8ff55a",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 프란루카스트수화물로서 1회 50mg을 1일 2회 아침, 저녁 식후 경구투여한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

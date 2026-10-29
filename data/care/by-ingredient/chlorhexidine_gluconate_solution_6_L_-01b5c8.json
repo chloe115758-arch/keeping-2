@@ -1,0 +1,44 @@
+{
+ "ingredient": "chlorhexidine gluconate solution(6μL)",
+ "productSeq": "202003209",
+ "itemName": "오스템클로르헥시딘액0.12%(클로르헥시딘글루콘산염액)",
+ "atc": "R02AA05",
+ "etcOtc": "일반의약품",
+ "changeDate": "20260213",
+ "ediCode": "053500191",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003209/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003209/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003209/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에는 치료상의 유익성이 위험성을 상회하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "772dd66782",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유로 이 약물이 이행되는지는 알려지지 않았으나, 많은 약물이 모유로 분비되므로 수유부에는 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "33b559e136",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:32:25",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

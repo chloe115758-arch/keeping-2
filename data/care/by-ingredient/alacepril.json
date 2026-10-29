@@ -1,0 +1,56 @@
+{
+ "ingredient": "alacepril",
+ "productSeq": "199701740",
+ "itemName": "세타프릴정25밀리그램(알라세프릴)",
+ "atc": "C09AA",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250228",
+ "ediCode": "642201140",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701740/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701740/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701740/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 2 ∼ 3기 사이에 ACE억제제(레닌-안지오텐신-알도스테론계(RAAS)에 작용하는 특정 약물군)에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적인 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아 손상과 연관성이 있었다. 태아 신기능 감소 때문인 것으로 추측된 양수과소증이 보고 되었고, 양수…",
+   "extractor": "kw-v4",
+   "id": "d82fe1cc41",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 유즙 중으로 분비한다는 것이 확인되었으므로 수유중인 여성에게 투여하는 것을 피하고, 부득이하게 투여하는 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "8d09dc9b71",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 일반적으로 과도한 강압은 좋지 않은 것으로 되어 있으므로(뇌경색 등이 일어날 우려가 있다.) 저용량으로 시작하여 환자의 증상을 관찰하면서 신중하게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "5e37878b96",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:59",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

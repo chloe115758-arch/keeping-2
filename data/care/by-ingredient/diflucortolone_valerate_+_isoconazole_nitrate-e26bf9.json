@@ -1,0 +1,56 @@
+{
+ "ingredient": "diflucortolone valerate + isoconazole nitrate",
+ "productSeq": "200608043",
+ "itemName": "트라보코트크림(디플루코르톨론/이소코나졸)",
+ "atc": "D01AC",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260908",
+ "ediCode": "626700131",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200608043/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200608043/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200608043/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다. 특히 임신 첫 3개월동안은 이 약 사용을 하지 않으며 장기간 광범위한 부위에 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "fa50e769f0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "국소적으로 투여한 코르티코이드가 모유로 이행되는지 여부는 알려져 있지 않으나 장기간 또는 광범위하게 사용하는 경우 모유 중으로 이행하므로 수유부에 투여시 주의한다.",
+   "extractor": "kw-v4",
+   "id": "12b7c43075",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부는 가슴부위에 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "d2d522710e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:44",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,99 @@
+{
+ "ingredient": "metoclopramide hydrochloride",
+ "productSeq": "198800560",
+ "itemName": "맥페란주사액2밀리리터(메토클로프라미드염산염수화물)",
+ "atc": "A03FA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220331",
+ "ediCode": "642701341",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800560/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800560/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800560/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "위장관 운동에 대한 이 약의 효과는 항콜린제 및 마약성 진통제에 의해 길항된다. 이 약을 알코올, 중추신경계저하제 (모르핀 유도체, 항불안제, 진정작용 H1 항히스타민제, 진정작용 항우울제, 바르비탈계 약물, 클로니딘 및 관련 약물)와 병용시 진정효과가 증가된다.",
+   "extractor": "kw-v4",
+   "id": "d4b633656d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "91224123b2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 대규모자료(1,000명 이상 노출결과)에서 최기형성 또는 발생독성이 나타나지 않았다. 임상적으로 필요하다면 임신 중에 메토클로프라미드를 사용할 수 있다. 다른 신경이완제와 같이 약리학적 특성 때문에 임신 말기에 메토클로프라미드를 투여하는 경우 신생아 추체외로증후군을 배제할 수 없다. 메토클로프라미드는 임신 말기에 피해야 하며, 만약 투여해야 한다면 신생아에 대한 모니터링을 수행해…",
+   "extractor": "kw-v4",
+   "id": "6ed7ffc075",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "27852384ac",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "메토클로프라미드는 낮은 농도로 모유로 분비된다. 모유로 수유하는 아기들에게 이상반응을 배제할 수 없으므로, 메토클로프라미드는 수유 중에 권장되지 않는다. 수유부에게 메토클로프라미드 중단을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ea1d5f1c63",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "대부분 신장으로 배설되기 때문에, 신기능이 저하되기 쉬운 고령자의 경우 높은 혈중농도가 지속될 수 있으므로 부작용(추체외로증상)의 발현에 주의하고 용량 및 투여간격에 유의하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "eb923e270e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:47",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

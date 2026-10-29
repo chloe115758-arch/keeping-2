@@ -1,0 +1,273 @@
+{
+ "ingredient": "clonazepam",
+ "productSeq": "200610884",
+ "itemName": "리보트릴정(클로나제팜)",
+ "atc": "N03AE01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20191206",
+ "ediCode": "643308800",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200610884/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200610884/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200610884/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 2)",
+   "subject": "",
+   "excerpt": "알코올/중추신경억제제와의 병용투여",
+   "extractor": "kw-v4",
+   "id": "1413666210",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "이 약은 알코올/중추신경억제제와의 병용투여를 피해야 한다. 이러한 병용투여로 인하여 심한 진정작용, 임상적으로 유의한 호흡기계 및/또는 심혈관계 억제를 포함하는 이 약의 임상효과가 증강될 수 있고, 혼수 또는 사망에 이를 수도 있다.",
+   "extractor": "kw-v4",
+   "id": "9393dc4f07",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "이 약은 알코올/중추신경억제제 급성 중독의 경우에 특별한 주의가 필요하다.",
+   "extractor": "kw-v4",
+   "id": "8749be4b0d",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 5)",
+   "subject": "",
+   "excerpt": "지시된 용법·용량에 따라 투여하더라도 반응지연에 의해 자동차운전 또는 기계조작 능력에 장애(졸음, 주의력, 집중력, 반사운동능력 등의 저하)가 올 수 있으며 이 효과는 알코올 병용에 의해 더 증강된다. 따라서 치료도중 계속 또는 최소한 치료초기의 수 일 동안에는 운전 기계조작 및 다른 위험한 활동을 피해야 한다. 이러한 주의기간은 치료에 대한 반응 및 용량을 고려하여 환자 개인별로 결정되야…",
+   "extractor": "kw-v4",
+   "id": "71b173ef2b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 8)",
+   "subject": "",
+   "excerpt": "알코올 또는 약물 남용의 병력이 있는 환자의 경우에는 이 약을 매우 신중하게 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "a92d693e73",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "다음 약물과의 병용 또는 음주에 의해서 이 약의 작용이 증강되는 경우가 있으므로 투여하지 않는 것이 바람직하지만 부득이하게 투여하는 경우에는 신중히 투여한다. : MAO저해제, 다른 항간질약, 마취제, 최면진정제, 항정신병약, 진통제, 근이완제.",
+   "extractor": "kw-v4",
+   "id": "c8492c71e8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 9)",
+   "subject": "",
+   "excerpt": "알코올을 포함하는 다른 중추작용억제제와 이 약을 병용하는 경우에는 심한 진정작용, 호흡기계 및/또는 심혈관계 억제에 대한 부작용이 증강될 수 있다. 이 약을 복용하는 환자는 알코올 섭취를 삼가야 한다.",
+   "extractor": "kw-v4",
+   "id": "33f5f574ca",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대해서 다음과 같은 보고가 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성(모체의 간질발작 빈발을 방지하고 태아를 저산소상태로부터 보호)이 위험성을 상회한다고 판단되는 경우에만 투여할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "4d491114d9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 ①",
+   "subject": "",
+   "excerpt": "임신 중에 다른 벤조디아제핀계 약물을 투여받은 환자 중에 기형아 등의 장애아를 출산한 예가 대조군에 비교하여 유의하게 많다는 역학적 조사가 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "bd1d55b3dd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 ②",
+   "subject": "",
+   "excerpt": "신생아의 무호흡, 기면, 근긴장저하, 체온저하, 저혈압, 완화한 호흡억제, 포유곤란을 일으키는 경우가 있고 또한 다른 벤조디아제핀계 약물에서 신생아의 황달 증강 등의 증상을 일으키는 경우가 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "5802e68817",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 ③",
+   "subject": "",
+   "excerpt": "분만 전에 연용한 경우, 출산 후 신생아에서 금단증상(신경과민, 진전, 과긴증 등)이 나타난 경우가 다른 벤조디아제핀계 화합물에서 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "21bd238e7d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 ④",
+   "subject": "",
+   "excerpt": "임신 마지막 3개월 또는 분만 중에 고용량을 복용하는 것은 태아의 심박수 불규칙성, 체온저하, 근육긴장저하, 경증의 호흡억제 및 신생아 영양 저하를 유발 할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f69a41f03e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 ⑤",
+   "subject": "",
+   "excerpt": "임신자체 및 갑작스런 투여중단이 간질을 악화시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f0a0fe7a3b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유 중으로 이행되므로 수유 중에는 투여하지 않는다. 또한 신생아의 황달을 증강할 가능성이 있으므로 부득이 투여할 경우에는 수유를 중단해야 한다. 모유 중으로 이행하여 신생아에 무호흡을 일으키는 경우가 있으며, 다른 벤조디아제핀계 화합물에서 신생아에 기면, 체중감소 등을 일으키는 경우가 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "075489004b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 공황장애 환자에 대한 이 약의 안전성 및 유효성이 확립되지 않았다. 일반적으로, 고령자의 경우 저용량으로 투여를 시작하고 면밀히 관찰한다.",
+   "extractor": "kw-v4",
+   "id": "6f4df3b573",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "벤조디아제핀계 약물학적 효과는 혈중 벤조디아제핀계 약물 농도가 비슷하더라도 젊은 사람들보다 고령 환자에서 더 크게 나타났다. 이는 약물-수용체 상호작용 등 연령과 관련된 변화로 인한 것이다.",
+   "extractor": "kw-v4",
+   "id": "b5049e86e9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "908ff454a9",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "초회량으로 1일 0.5mg을 2회 분할 투여한다. 대부분의 환자에서 3일 후에 목표 용량인 1일 1mg으로 증량할 수 있다. 권장 용량인 1일 1mg은 고정 용량 연구의 최적 효과를 근거로 한다. 하지만 필요한 경우, 공황장애가 조절되거나 부작용으로 인해 증량이 어려운 시점까지 3일 간격으로 0.25~0.5mg씩 증량하여 1일 최대 4mg까지 2회 분할 투여할 수 있다. 졸음 문제를 줄이기…",
+   "meal": "취침 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:58",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,118 @@
+{
+ "ingredient": "cefotetan disodium",
+ "productSeq": "200800664",
+ "itemName": "종근당세포테탄주1그램",
+ "atc": "J01DC05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20170916",
+ "ediCode": "643304561",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200800664/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200800664/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200800664/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 4)",
+   "subject": "",
+   "excerpt": "음주에 의해 안면홍조, 심계항진, 두통, 구역 등이 나타날 수 있으므로 투여기간 중 및 투여 후 적어도 1주일간 음주를 피한다.",
+   "extractor": "kw-v4",
+   "id": "ccc21d470b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 7)",
+   "subject": "",
+   "excerpt": "다른 광범위 항생물질들과 같이 이 약도 프로트롬빈저하 출혈과 관계가 있다. 이는 신ㆍ간ㆍ담즙 장애 환자나 영양결핍상태, 고령자, 암환자의 경우 더 큰 위험을 초래할 수 있으므로 프로트롬빈시간을 모니터 해야 하며 비타민 K를 복용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "c90af36456",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "718ecf4c55",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유로의 소량이행이 보고되어 있으므로 수유부에 투여할 경우 주의한다.",
+   "extractor": "kw-v4",
+   "id": "4459eec1f8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에는 다음 사항에 주의하고 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c87ff69f93",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 주로 신장으로 배설되지만 고령자의 경우 신기능이 저하되어 있는 경우가 많기 때문에 높은 혈중농도가 지속될 위험이 있다.",
+   "extractor": "kw-v4",
+   "id": "6565f153ce",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K 결핍에 의한 출혈경향이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "be2c4bb722",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:51",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

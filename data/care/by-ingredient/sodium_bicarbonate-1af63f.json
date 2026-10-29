@@ -1,64 +1,68 @@
 {
-  "ingredient": "sodium bicarbonate",
-  "productSeq": "201702627",
-  "itemName": "보령헤모시스비액(탄산수소나트륨)",
-  "atc": "B05ZA",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702627/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702627/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702627/NB"
+ "ingredient": "sodium bicarbonate",
+ "productSeq": "201702627",
+ "itemName": "보령헤모시스비액(탄산수소나트륨)",
+ "atc": "B05ZA",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "641906652",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702627/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702627/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702627/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중의 사용에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성의 경우에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 사용한다.",
+   "extractor": "kw-v4",
+   "id": "62cd21a4ee",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "56f8b92157",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "4. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중의 사용에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성의 경우에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 사용한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "08548d684d",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "6. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "사용에 있어서는 다른 환자와 같이 이 제제의 특성을 충분히 유의하고, 장기 사용하는 경우에는 골합병증이 나타날 수 있으므로 정기적인 임상검사(생화학검사, X선검사 등)를 실시하거나, 활성형 비타민 D3 제제를 투여하는 등의 적절한 처치를 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "56f8b92157",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "4. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중의 사용에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성의 경우에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 사용한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "08548d684d",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "6. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "사용에 있어서는 다른 환자와 같이 이 제제의 특성을 충분히 유의하고, 장기 사용하는 경우에는 골합병증이 나타날 수 있으므로 정기적인 임상검사(생화학검사, X선검사 등)를 실시하거나, 활성형 비타민 D3 제제를 투여하는 등의 적절한 처치를 한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:08:31"
+  {
+   "section": "elderly",
+   "where": "6. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "사용에 있어서는 다른 환자와 같이 이 제제의 특성을 충분히 유의하고, 장기 사용하는 경우에는 골합병증이 나타날 수 있으므로 정기적인 임상검사(생화학검사, X선검사 등)를 실시하거나, 활성형 비타민 D3 제제를 투여하는 등의 적절한 처치를 한다.",
+   "extractor": "kw-v4",
+   "id": "86b3b01992",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "4. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중의 사용에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성의 경우에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 사용한다.",
+   "extractor": "kw-v4",
+   "id": "62cd21a4ee",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "6. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "사용에 있어서는 다른 환자와 같이 이 제제의 특성을 충분히 유의하고, 장기 사용하는 경우에는 골합병증이 나타날 수 있으므로 정기적인 임상검사(생화학검사, X선검사 등)를 실시하거나, 활성형 비타민 D3 제제를 투여하는 등의 적절한 처치를 한다.",
+   "extractor": "kw-v4",
+   "id": "86b3b01992",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

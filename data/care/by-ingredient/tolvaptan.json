@@ -1,0 +1,204 @@
+{
+ "ingredient": "tolvaptan",
+ "productSeq": "202004774",
+ "itemName": "명인톨밥탄정15밀리그램",
+ "atc": "C03XA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220616",
+ "ediCode": "651904970",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202004774/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202004774/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202004774/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 (2)",
+   "subject": "",
+   "excerpt": "저나트륨혈증의 갑작스러운 교정 시 (예. >12 mEq/L/24시간) 삼투압성 탈수초 증후군(Osmotic demyelination syndrome)을 초래할 수 있으며, 결과적으로 조음곤란증, 무언증, 삼킴곤란, 졸음증, 정동변화, 사지불완전마비, 발작, 혼수상태 또는 사망을 유발할 수 있다. 저산소증, 심각한 영양실조, 알코올중독 또는 진행된 간질환 환자 등과 같이 민감한 환자에서는 교정…",
+   "extractor": "kw-v4",
+   "id": "d764292b1f",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용 (3)",
+   "subject": "",
+   "excerpt": "자몽 주스",
+   "extractor": "kw-v4",
+   "id": "a2102404a9",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용",
+   "subject": "",
+   "excerpt": "자몽 주스와 이 약의 병용 투여 시 톨밥탄의 Cmax가 1.9배, AUC가 1.6배 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "7765dfb59c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용",
+   "subject": "",
+   "excerpt": "리팜핀은 CYP 3A 및 P-gp 유도제이다. 리팜핀과 이 약의 병용 시 톨밥탄의 노출은 85%가 감소한다. 따라서 리팜핀 및 다른 유도제(예. 리파부틴, 리파펜틴, 바르비탈류, 페니토인, 카르바마제핀 및 세인트 존스 워트 (St. John’s Wort))를 병용 시 이 약의 일반적인 용량 수준에서 임상적인 효과가 나타나지 않을 것으로 예상된다.",
+   "extractor": "kw-v4",
+   "id": "967b0faf46",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스 워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 및 가임여성에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "00a76b899e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 분류 (Pregnancy Category) C에 해당하는 약물로, 이 약을 임신한 여성에게 사용한 적절한 비교임상시험은 없다. 동물시험에서, 구개열, 소지증, 소안구증, 골격 기형, 태아 체중 감소, 태아 골화 지연, 배&#x2219;태자 사망이 나타났다. 따라서, 이 약은 임신기간 동안 복용하지 않아야 한다. 가임기 여성의 경우 이 약의 투여기간 동안 반드시 적절한 피임조치를 하여야…",
+   "extractor": "kw-v4",
+   "id": "d834074fcf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "0ff6ca1a14",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람의 유즙으로 분비되는 지는 알려져 있지 않다. 톨밥탄은 랫드의 유즙으로 분비된다. 많은 약물들이 사람의 유즙으로 분비되고, 수유 받는 영아에게 잠재적인 중대한 이상사례를 야기할 수 있으므로, 수유부에게는 이 약 투여의 중요성을 고려하여 수유 또는 이 약의 투여 중단을 결정하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "5c3f1710c9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "분만에 미치는 영향",
+   "extractor": "kw-v4",
+   "id": "7c2c69685b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 사람에서 분만에 미치는 영향은 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "2f6890729e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상 시험에서 이 약을 투여 받은 저나트륨혈증 환자 전체 중, 42%는 65세 이상이었고, 19%는 75세 이상이었다. 고령자와 보다 젊은 연령의 환자 간 전반적인 안전성 및 유효성의 차이는 없었으며, 보고된 다른 임상적 경험에서 또한 고령자와 젊은 연령의 환자 간 반응의 차이는 나타나지 않았다. 그러나 일부 고령의 환자에게서 민감성이 더 컸던 것은 고려되어야 한다. 연령 증가가 톨밥탄의 혈…",
+   "extractor": "kw-v4",
+   "id": "2d1481f2fb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세를 초과하는 ADPKD환자에 대한 톨밥탄의 안전성 및 유효성은 확립되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "79a12389bc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "cdbd1bd258",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약의 초기용량은 1일 60mg으로, 아침 식전 45mg, 8시간 이후 15mg으로 1일 2회 분할 투여하도록 한다. 이후 내약성을 고려하면서 최소한 1주일 이상의 간격을 두고 1일 90mg(60mg+30mg)으로 증량하며, 이후 목표 투여용량인 1일 120mg(90mg+30mg)까지 증량한다. 급격한 증량으로 인하여 내약성이 떨어지지 않도록 증량은 신중하게 진행되어야 한다. 환자의 내약성…",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:51",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

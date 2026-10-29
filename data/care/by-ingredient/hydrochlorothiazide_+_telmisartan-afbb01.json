@@ -1,163 +1,179 @@
 {
-  "ingredient": "hydrochlorothiazide + telmisartan",
-  "productSeq": "202003085",
-  "itemName": "메가텔미클정80/12.5밀리그램",
-  "atc": "C09DA07",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260212",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003085/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003085/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003085/NB"
-  },
-  "rules": [
+ "ingredient": "hydrochlorothiazide + telmisartan",
+ "productSeq": "202003085",
+ "itemName": "메가텔미클정80/12.5밀리그램",
+ "atc": "C09DA07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "060500480",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003085/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003085/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003085/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (1)",
+   "subject": "",
+   "excerpt": "알코올, 바르비탈 유도체, 마약류 또는 항우울제류: 기립성 저혈압이 더 심해질 수 있다.",
+   "extractor": "kw-v4",
+   "id": "66b60702f2",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "b611d7da88",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올, 바르비탈 유도체, 마약류 또는 항우울제류: 기립성 저혈압이 더 심해질 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fc487865d6",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (4)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "콜레스티라민과 콜레스티폴 수지류: 음이온 교환 수지의 존재시 히드로클로로티아지드의 흡수가 방해된다. 그러나 음이온 교환 수지과 히드로클로로티아지드의 시간차 투여로 상호작용을 최소화 할 수 있으므로, 히드로클로로티아지드는 최소 음이온 교환 수지 투여 4시간 전이나 4-6시간 이후에 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "dc83ae16c4",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (9)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "calcium",
-          "kind": "supplement",
-          "ko": "칼슘제제",
-          "surface": "칼슘보충제"
-        },
-        {
-          "key": "vitaminD",
-          "kind": "supplement",
-          "ko": "비타민 D",
-          "surface": "비타민 D"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "칼슘염류: 티아지드계 이뇨제는 칼슘의 배설을 감소시키므로 혈청 칼슘치를 상승시킬 수 있다. 만약, 칼슘보충제(예: 비타민 D 제제)를 처방해야만 한다면 혈청 칼슘치를 모니터링해야하고 이에 따라 칼슘 용량을 조절해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5d4b557654",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "생식능: 이 약은 사람 및 동물에서 수태능에 미치는 영향이 연구되지 않았다. 암컷 및 수컷 랫트를 이용한 비임상시험에서 텔미사르탄 및 히드로클로로티아지드의 수태능에 대한 영향은 관찰되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3c057f880d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 ①",
-      "subject": "2) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "텔미사르탄: 임신기간 중에 안지오텐신 II 수용체 길항제 투여를 시작해서는 안 되며, 안지오텐신 II 수용체 길항제의 사용은 임신 1기 3개월 동안은 권장되지 않는다. 임신 2기 및 3기 동안 이 약의 사용은 금지된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4b96c3ecc9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "2) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신이 진단된 경우에는 가능한 빨리 안지오텐신 II 수용체 길항제의 치료를 중단해야 하며, 만약 적절하다면, 다른 치료제로 치료를 시작해야 한다. 만약 안지오텐신 II 수용체 길항제의 지속적 치료가 필수적이지 않다면, 임신을 계획 중인 환자는 임부의 사용에 대해 안전성 프로파일이 확립된 다른 고혈압 치료제로 대체하여야 한다. 이 약을 임부에게 투여한 적절한 자료는 없다. 텔미사르탄을 투여한…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b6e84185c2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "2) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "만약 임신 2기 3개월 이후로 안지오텐신 II 수용체 길항제에 노출된 경우, 신장 기능과 두개골 초음파 검사가 권장된다. 안지오텐신 II 수용체 길항제를 복용했던 임부의 영아는 반드시 저혈압, 빈뇨, 고칼륨혈증 등의 발현 가능성을 긴밀한 관찰하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "42ae9626bd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 ②",
-      "subject": "2) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "히드로클로로티아지드: 임신 중, 특히 임신 1기에서 히드로클로로티아지드를 사용한 제한적 경험이 있다. 히드로클로로티아지드는 태반벽을 통과하고 탯줄의 혈액에서 검출된다. 히드로클로로티아지드를 임신 2기 및 3기 동안 투여할 경우 태아태반관류저하, 태아 및 신생아에서 황달, 전해질불균형 및 혈소판감소증 등을 유발할 수 있다. 혈장량 저하 및 태반관류저하 등의 위험이 있는 임신성 부종, 임신성고혈…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "84c83524cf",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "2) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부: 텔미사르탄이 사람의 모유 중으로 이행되는지의 여부가 알려지지 않았기 때문에, 이 약은 수유중에 투여해서는 안 된다. 동물실험에서는 유즙으로 분비되는 것이 확인되었다. 그러므로 수유하는 동안에는 이 약을 투여하지 않아야 한다. 티아지드계 이뇨제는 모유에서 검출되며 수유를 방해할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1c68633a40",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "10. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에게 일반적으로 과도한 혈압강하는 바람직하지 않다고 되어있다(뇌경색 등이 일어날 우려가 있다.). 고령자에 투여하는 경우에는 환자의 상태를 관찰하면서 신중히 투여한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:04:34"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (4)",
+   "subject": "",
+   "excerpt": "콜레스티라민과 콜레스티폴 수지류: 음이온 교환 수지의 존재시 히드로클로로티아지드의 흡수가 방해된다. 그러나 음이온 교환 수지과 히드로클로로티아지드의 시간차 투여로 상호작용을 최소화 할 수 있으므로, 히드로클로로티아지드는 최소 음이온 교환 수지 투여 4시간 전이나 4-6시간 이후에 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d3397340a1",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (9)",
+   "subject": "",
+   "excerpt": "칼슘염류: 티아지드계 이뇨제는 칼슘의 배설을 감소시키므로 혈청 칼슘치를 상승시킬 수 있다. 만약, 칼슘보충제(예: 비타민 D 제제)를 처방해야만 한다면 혈청 칼슘치를 모니터링해야하고 이에 따라 칼슘 용량을 조절해야 한다.",
+   "extractor": "kw-v4",
+   "id": "dd489e3232",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘보충제"
+    },
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "생식능: 이 약은 사람 및 동물에서 수태능에 미치는 영향이 연구되지 않았다. 암컷 및 수컷 랫트를 이용한 비임상시험에서 텔미사르탄 및 히드로클로로티아지드의 수태능에 대한 영향은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "4b810b5265",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부:",
+   "extractor": "kw-v4",
+   "id": "ecde464d18",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 ①",
+   "subject": "",
+   "excerpt": "텔미사르탄: 임신기간 중에 안지오텐신 II 수용체 길항제 투여를 시작해서는 안 되며, 안지오텐신 II 수용체 길항제의 사용은 임신 1기 3개월 동안은 권장되지 않는다. 임신 2기 및 3기 동안 이 약의 사용은 금지된다.",
+   "extractor": "kw-v4",
+   "id": "583b381817",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신이 진단된 경우에는 가능한 빨리 안지오텐신 II 수용체 길항제의 치료를 중단해야 하며, 만약 적절하다면, 다른 치료제로 치료를 시작해야 한다. 만약 안지오텐신 II 수용체 길항제의 지속적 치료가 필수적이지 않다면, 임신을 계획 중인 환자는 임부의 사용에 대해 안전성 프로파일이 확립된 다른 고혈압 치료제로 대체하여야 한다. 이 약을 임부에게 투여한 적절한 자료는 없다. 텔미사르탄을 투여한…",
+   "extractor": "kw-v4",
+   "id": "e20ffb1740",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "만약 임신 2기 3개월 이후로 안지오텐신 II 수용체 길항제에 노출된 경우, 신장 기능과 두개골 초음파 검사가 권장된다. 안지오텐신 II 수용체 길항제를 복용했던 임부의 영아는 반드시 저혈압, 빈뇨, 고칼륨혈증 등의 발현 가능성을 긴밀한 관찰하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "33d455b085",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 ②",
+   "subject": "",
+   "excerpt": "히드로클로로티아지드: 임신 중, 특히 임신 1기에서 히드로클로로티아지드를 사용한 제한적 경험이 있다. 히드로클로로티아지드는 태반벽을 통과하고 탯줄의 혈액에서 검출된다. 히드로클로로티아지드를 임신 2기 및 3기 동안 투여할 경우 태아태반관류저하, 태아 및 신생아에서 황달, 전해질불균형 및 혈소판감소증 등을 유발할 수 있다. 혈장량 저하 및 태반관류저하 등의 위험이 있는 임신성 부종, 임신성고혈…",
+   "extractor": "kw-v4",
+   "id": "6028aad63c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부: 텔미사르탄이 사람의 모유 중으로 이행되는지의 여부가 알려지지 않았기 때문에, 이 약은 수유중에 투여해서는 안 된다. 동물실험에서는 유즙으로 분비되는 것이 확인되었다. 그러므로 수유하는 동안에는 이 약을 투여하지 않아야 한다. 티아지드계 이뇨제는 모유에서 검출되며 수유를 방해할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "e31748fad3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에게 일반적으로 과도한 혈압강하는 바람직하지 않다고 되어있다(뇌경색 등이 일어날 우려가 있다.). 고령자에 투여하는 경우에는 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "0c5feaca8a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

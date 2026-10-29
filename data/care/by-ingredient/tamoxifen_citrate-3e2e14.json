@@ -1,0 +1,68 @@
+{
+ "ingredient": "tamoxifen citrate",
+ "productSeq": "199203344",
+ "itemName": "타모프렉스정10밀리그램(타목시펜시트르산염)",
+ "atc": "L02BA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260909",
+ "ediCode": "626900280",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203344/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203344/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203344/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 임신기간에 투여되어서는 안된다. 인과관계가 입증되지는 않았으나 여성이 이 약을 복용한 후 자연유산, 출생 결함, 태아사망이 소수 보고되었다. 영장류에게 사람의 최대권장용량의 2배를 투여했을 때 자연유산이 발생하였다. 랫트, 토끼, 원숭이에 대한 생식독성 연구 결과, 잠재적인 기형 발생이 보여지지 않았다. 몇몇의 임신한 마모셋원숭이에게 기관형성기 동안 또는 임신 하반기 동안 10mg/…",
+   "extractor": "kw-v4",
+   "id": "6174e731bb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "설치류를 이용한 태자 생식기 발육시험에서 이 약은 에스트라디올, 에치닐에스트라디올, 클로미펜 및 디에칠스틸베스트롤에 의한 변화와 유사한 관련이 있다. 이들 변화의 임상적 타당성은 알려지지 않았으나 이중 몇몇의 변화 특히, 질의 선증(adenosis)은 디에칠스틸베스트롤에 자궁이 노출되어 질이나 자궁경부의 투명세포암 발생 위험이 0.1%인 젊은 여성에게서 보여지는 것과 유사하다. 극소수의 임신…",
+   "extractor": "kw-v4",
+   "id": "9e8b4b032d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약을 복용 중에는 임신을 피하도록 권고되어야 하며 임신 가능한 경우 장벽적 피임법 혹은 기타 비호르몬성 피임법을 사용하여야 한다. 폐경 전 여성은 임신을 피할 수 있도록 치료 전 신중히 관찰되어야만 한다. 여성은 이 약을 복용 중이거나 투약 종료 후 2달 안에 임신을 하게 되면, 태아에 잠재적인 위험이 있다는 것을 알아야 한다.",
+   "extractor": "kw-v4",
+   "id": "50908c0949",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수유 중 투여에 대한 안전성이 확립되어 있지 않으므로 수유부에 대한 투여는 피하고, 부득이하게 투여할 경우에는 수유를 중지시킨다.",
+   "extractor": "kw-v4",
+   "id": "712e75cbe6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:08:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

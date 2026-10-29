@@ -1,0 +1,56 @@
+{
+ "ingredient": "naftifine hydrochloride",
+ "productSeq": "198800330",
+ "itemName": "일동엑소데릴크림(나프티핀염산염)",
+ "atc": "D01AE22",
+ "etcOtc": "일반의약품",
+ "changeDate": "20111117",
+ "ediCode": "642901782",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800330/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800330/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198800330/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "랫트와 토끼를 대상으로 한 동물실험에서 사람에 대한 투여량의 150배 또는 그 이상의 용량을 경구투여한 경우에 이 약으로 인한 임신장애 또는 태자독성에 대한 뚜렷한 증거가 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "12b2aa2bbe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대한 적절한 임상 연구가 수행되지 않았으며 동물실험결과가 사람에게도 항상 똑같이 적용되는 것은 아니므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 이 약을 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c62f27528a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약의 모유로의 이행 여부에 대해 알려진 바 없으나 많은 약물들이 모유로 배출되므로 수유부에 이 약 투여시 특히 주의한다.",
+   "extractor": "kw-v4",
+   "id": "a05e46fd11",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

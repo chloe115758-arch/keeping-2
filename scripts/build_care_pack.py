@@ -31,7 +31,7 @@ def main(argv):
             skipped.append(os.path.basename(f)); continue
         if name in entries and len(entries[name]['rules']) >= len(d['rules']):
             skipped.append(os.path.basename(f) + '(같은 키가 이미 있음)'); continue
-        entries[name] = {k: d.get(k) for k in ('ingredient', 'productSeq', 'itemName', 'atc', 'etcOtc', 'changeDate', 'docUrls', 'fetchedAt')}
+        entries[name] = {k: d.get(k) for k in ('ingredient', 'productSeq', 'itemName', 'atc', 'etcOtc', 'route', 'ediCode', 'changeDate', 'docUrls', 'fetchedAt')}
         entries[name]['rules'] = d['rules']
     kinds = collections.Counter(r['kind'] for e in entries.values() for r in e['rules'])
     pack = {'meta': {'source': '식품의약품안전처 허가정보 API(공공데이터포털) 허가사항, 규칙 기반 추출(scripts/care_extract.py)',

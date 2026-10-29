@@ -1,0 +1,161 @@
+{
+ "ingredient": "chlorthalidone",
+ "productSeq": "200302309",
+ "itemName": "하이그로톤정25밀리그램(클로르탈리돈)",
+ "atc": "C03BA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200331",
+ "ediCode": "645302230",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302309/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302309/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302309/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 7)",
+   "subject": "",
+   "excerpt": "비이온성교환수지(콜레스티라민 등) : 티아지드계 이뇨제의 흡수를 제한하여 약물학적 효과를 감소시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "1d3f09dc89",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 9)",
+   "subject": "",
+   "excerpt": "칼슘염 및 비타민D : 티아지드계 이뇨제와 병용시 임상수치가 유의성 있게 증가한다. 결과적으로 나타나는 고칼슘혈증은 통상적으로 일시적이만, 부갑상샘항진증 환자에 있어 지속되거나 증상(쇠약, 피로, 식욕감퇴)을 수반할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "69aab3d0c8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 12)",
+   "subject": "",
+   "excerpt": "알코올 : 기립저혈압이 증강될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "7b767468bc",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부의 고혈압이나 부종의 치료에 있어서 이뇨제를 사용하는 것은 저혈량증이나 혈액점도증가, 태반환류를 감소시킬 수 있으므로 사용을 금하여야 한다. 티아지드계 이뇨제의 사용이 태아의 골수억제와 혈소판감소증 및 태아 및 신생아의 황달과 관련되어 있음이 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "6982c11501",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유중으로 이행되므로 이 약을 복용중인 수유부는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "2ed53a58cb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에게는 다음 사항에 주의하고, 소량부터 시작하여 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "902bee5a3a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자에서 급격한 이뇨는 혈장량의 감소를 초래하고, 탈수, 저혈압 등에 의한 기립시 어지럼, 실신 등을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "e1405b0366",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "특히 심질환 등에서 부종이 있는 고령자에서는 급격한 이뇨는 급속한 혈장량의 감소와 혈액 농축을 초래하고, 뇌경색 등의 혈전색전증을 유발할 우려가 있다.",
+   "extractor": "kw-v4",
+   "id": "bf90fb62f5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "고령자에서 보통 과도한 혈압저하는 바람직하지 않다(뇌경색 등이 일어날 우려가 있다.).",
+   "extractor": "kw-v4",
+   "id": "85199904ef",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "고령자에서 저나트륨혈증, 저칼륨혈증이 나타나기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "88a4120d47",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

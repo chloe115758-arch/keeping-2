@@ -1,52 +1,56 @@
 {
-  "ingredient": "rebamipide",
-  "productSeq": "201804588",
-  "itemName": "레오핀정(레바미피드)",
-  "atc": "A02BX14",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804588/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804588/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804588/NB"
+ "ingredient": "rebamipide",
+ "productSeq": "201804588",
+ "itemName": "레오핀정(레바미피드)",
+ "atc": "A02BX14",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "052400860",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804588/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804588/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201804588/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "3. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 관한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "232c2a3387",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "3ccb3660fe",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "3. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신중의 투여에 관한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "64b1eb007a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "3. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 모유중으로 이행하는 것이 보고되어 있으므로 수유부에게 투여하는 경우에는 수유를 피한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c2879b70c9",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "5. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에 있어서 확인된 이상반응 종류 및 이상반응 발현율은 비고령자와 비교시 차이가 없으나, 일반적으로 고령자는 생리기능이 저하되어 있으므로 소화기 증상 등의 이상반응에 주의한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:03:21"
+  {
+   "section": "pregnancy",
+   "where": "3. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험에서 모유중으로 이행하는 것이 보고되어 있으므로 수유부에게 투여하는 경우에는 수유를 피한다.",
+   "extractor": "kw-v4",
+   "id": "0d2a8bdeff",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "5. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 있어서 확인된 이상반응 종류 및 이상반응 발현율은 비고령자와 비교시 차이가 없으나, 일반적으로 고령자는 생리기능이 저하되어 있으므로 소화기 증상 등의 이상반응에 주의한다.",
+   "extractor": "kw-v4",
+   "id": "5758f9006c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

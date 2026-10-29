@@ -1,0 +1,56 @@
+{
+ "ingredient": "loperamide hydrochloride",
+ "productSeq": "197800212",
+ "itemName": "로파인캡슐(로페라미드염산염)",
+ "atc": "A07DA03",
+ "etcOtc": "일반의약품",
+ "changeDate": "20260918",
+ "ediCode": "644800520",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197800212/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197800212/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197800212/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험에서 이 약이 기형발생을 나타내지 않았으나 임신중 특히 임신 첫 3개월 이내의 임부에 대하여는 치료상의 유익성이 위험성을 상회하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "3cf56f4ed4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 투여한 수유부의 경우 이 약의 소량이 모유중으로 분비될 수 있으므로 이 약은 수유중에는 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "79ae6bea68",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 용량에 주의하는 등 주의해서 투여한다.",
+   "extractor": "kw-v4",
+   "id": "495820dd71",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:06",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,64 +1,111 @@
 {
-  "ingredient": "zoledronic acid",
-  "productSeq": "202001397",
-  "itemName": "대웅졸레드론산주사액5밀리그램/100밀리리터(졸레드론산일수화물)",
-  "atc": "M05BA08",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250115",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001397/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001397/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001397/NB"
-  },
-  "rules": [
+ "ingredient": "zoledronic acid",
+ "productSeq": "202001397",
+ "itemName": "대웅졸레드론산주사액5밀리그램/100밀리리터(졸레드론산일수화물)",
+ "atc": "M05BA08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250115",
+ "ediCode": "641607231",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001397/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001397/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001397/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것 1)",
+   "subject": "",
+   "excerpt": "저칼슘혈증의 병력이 있는 환자의 경우는 이 약으로 치료를 시작하기 전에 충분히 칼슘과 비타민 D를 섭취하도록 한다. 다른 미네랄 대사 관련 이상을 지닌 환자들 역시 이 약 투여 전에 그 상태를 조절하도록 한다. (예, 부갑상선 예비력 감소, 장 칼슘 흡수장애) 의사는 이러한 환자에게 임상 모니터링을 고려해야한다.)",
+   "extractor": "kw-v4",
+   "id": "d2c5c64441",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "effc482dcd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부 및 가임기 여성에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 : 동물시험 결과 기형발생을 포함한 생식 독성이 관찰되었다. 임부에 대한 이 졸레드론산의 사용경험이 없으며 사람에 대한 잠재적인 위험성은 알려져 있지 않으므로 임부에게 이 약을 사용하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "faa27fc001",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부 및 가임기 여성에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부 : 이 약을 사용하지 않는다. 모유 중으로 이 약이 이행되는지 알려져 있지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0b161755f5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부 및 가임기 여성에 대한 투여",
-      "subject": "3) 가임기 여성",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "가임기 여성은 이 약을 투여받는 동안 임신을 피해야 한다. 비스포스포네이트 치료를 받는 도중 여성이 임신할 경우 태아에 해로운 영향(골격 및 그 외의 기형)을 끼칠 수 있는 이론적 위험성이 있다. 비스포스포네이트 치료를 중단하고 피임할 때까지의 시간, 사용한 특정 비스포스포네이트, 투여 경로와 같은 변수가 이러한 위험성에 끼치는 영향은 확립되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6c662cc318",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부 및 가임기 여성에 대한 투여",
-      "subject": "4) 수태능",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "졸레드론산을 0.1mg/kg/day로 쥐에 피하주사하였을 때 수태능은 감소하였으나 사람에 대해 적용할 자료는 없다.",
-      "extractor": "kw-v1"
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:15:05"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 가임기 여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 동물시험 결과 기형발생을 포함한 생식 독성이 관찰되었다. 임부에 대한 이 졸레드론산의 사용경험이 없으며 사람에 대한 잠재적인 위험성은 알려져 있지 않으므로 임부에게 이 약을 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "1a31f8b9f3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 가임기 여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 이 약을 사용하지 않는다. 모유 중으로 이 약이 이행되는지 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "899605622f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 가임기 여성에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "가임기 여성",
+   "extractor": "kw-v4",
+   "id": "4215859911",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 가임기 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "가임기 여성은 이 약을 투여받는 동안 임신을 피해야 한다. 비스포스포네이트 치료를 받는 도중 여성이 임신할 경우 태아에 해로운 영향(골격 및 그 외의 기형)을 끼칠 수 있는 이론적 위험성이 있다. 비스포스포네이트 치료를 중단하고 피임할 때까지의 시간, 사용한 특정 비스포스포네이트, 투여 경로와 같은 변수가 이러한 위험성에 끼치는 영향은 확립되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "67f09472b7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 가임기 여성에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "d96ab7bfa6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 가임기 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "졸레드론산을 0.1mg/kg/day로 쥐에 피하주사하였을 때 수태능은 감소하였으나 사람에 대해 적용할 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "bf9d4859a7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

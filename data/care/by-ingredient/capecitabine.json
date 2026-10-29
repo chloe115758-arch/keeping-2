@@ -1,0 +1,135 @@
+{
+ "ingredient": "capecitabine",
+ "productSeq": "200008796",
+ "itemName": "젤로다정150밀리그램(카페시타빈)",
+ "atc": "L01BC06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260622",
+ "ediCode": "641908100",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200008796/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200008796/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200008796/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 약물 상호작용 2)",
+   "subject": "",
+   "excerpt": "제산제 : 수산화알루미늄 및 수산화마그네슘 배합 제산제가 이 약의 체내동태에 미치는 영향을 조사하였다. 이 약과 대사체 5'-DFCR의 혈중농도가 약간 증가하는 한편, 3종의 주요 대사체 5'-DFUR, 5-FU 및 a-fluoro-ß-alanine(FBAL)에는 영향이 없었다.",
+   "extractor": "kw-v4",
+   "id": "1aca22ee92",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약의 임부에 대한 안전성은 확립되지 않았다. 동물을 대상으로 한 생식독성연구에서는 카페시타빈 투여가 태자치사 및 최기형성과 연관성이 있었다. 이런 결과는 불화피리미딘계 유도체의 경우에 예상되는 것이다. 임신기간 동안 이 약을 사용하면 태아에 손상을 줄 수도 있으므로 카페시타빈은 사람에서 최기형성 유발 가능물질로 간주되어야 한다. 따라서 임신 중 이 약의 사용을 금한다. 임신기간 중에 이…",
+   "extractor": "kw-v4",
+   "id": "ae107772e1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "가임기의 여성에 대해 이 약의 치료기간 동안 임신을 피해야 한다. 여성 환자는 이 약 투여 중 및 마지막 복용 후 6개월 간 효과적인 피임법을 통해 피임해야 한다. 유전독성 연구 결과에 근거하여 남성 환자는 이 약 투여 중 및 마지막 복용 후 3개월 간 효과적인 피임법을 통해 피임하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "8d1ad7e52f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "동물연구 결과에 따르면 이 약은 여성 및 남성의 생식 능력을 손상시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "649c7155b9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "이 약이 모유 중으로 분비되는지는 알려지지 않았다. 이 약이 모유 생성에 미치는 영향 또는 사람 모유 중 약물의 존재 여부를 평가한 연구는 없다. 마우스에 이 약을 단회투여한 시험에서 유즙 중 카페시타빈 대사체가 다량 검출되었다. 모유 수유를 받는 유아에 대한 위해 가능성이 알려져 있지 않으므로, 이 약 투여 중과 마지막 복용 후 2주간 수유를 중단하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "8182dfa3cd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자의 경우(>65세) 젊은 환자들에 비해 이 약의 이상반응이 보다 현저하게 나타나므로 주의깊게 모니터하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "36e5bf1b7a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "나이가 카페시타빈 및 그 대사체의 약물동력학에 미치는 영향에 대한 별도 연구는 실시되지 않았다. 80세이상의 환자들은 3급 또는 4급 위장관계 이상반응을 더 많이 겪을 수 있다.",
+   "extractor": "kw-v4",
+   "id": "1bf8e62d7e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "53215efed5",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 식후 30분 이내에 물과 함께 통째로 삼켜야 한다. 이 약을 자르거나 분쇄해서는 안 된다. 만약 환자가 이 약을 통째로 삼킬 수 없고 정제를 자르거나 분쇄해야 한다면, 세포독성 약물을 안전하게 다루도록 훈련받은 전문가가 하도록 한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:49",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

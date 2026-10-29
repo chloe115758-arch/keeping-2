@@ -1,52 +1,56 @@
 {
-  "ingredient": "magnesium chloride + potassium chloride + sodium acetate + sodium chloride + sodium gluconate",
-  "productSeq": "201302424",
-  "itemName": "플라스마라이트148주",
-  "atc": "B05BB04",
-  "etcOtc": "전문의약품",
-  "changeDate": "20210407",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201302424/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201302424/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201302424/NB"
+ "ingredient": "magnesium chloride + potassium chloride + sodium acetate + sodium chloride + sodium gluconate",
+ "productSeq": "201302424",
+ "itemName": "플라스마라이트148주",
+ "atc": "B05BB04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210407",
+ "ediCode": "078200110",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201302424/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201302424/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201302424/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "a6323c207e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "583e4551ff",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b11e945bf2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "사람에서 모유로 이행되는지는 알려져 있지 않으므로 수유 중 투여는 주의하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "86928e1e81",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로, 고령자는 간. 신장, 심장의 기능저하와 동반질환 또는 병용약물의 빈도가 더 높다는 점을 고려하여, 용량 선택 시 신중하여야 한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:19:56"
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "사람에서 모유로 이행되는지는 알려져 있지 않으므로 수유 중 투여는 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "028f94c2dd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로, 고령자는 간. 신장, 심장의 기능저하와 동반질환 또는 병용약물의 빈도가 더 높다는 점을 고려하여, 용량 선택 시 신중하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "50788630cf",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

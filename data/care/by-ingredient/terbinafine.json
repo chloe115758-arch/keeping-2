@@ -1,40 +1,44 @@
 {
-  "ingredient": "terbinafine",
-  "productSeq": "200705880",
-  "itemName": "로나실덤겔(테르비나핀)",
-  "atc": "D01AE15",
-  "etcOtc": "일반의약품",
-  "changeDate": "20211130",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200705880/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200705880/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200705880/NB"
+ "ingredient": "terbinafine",
+ "productSeq": "200705880",
+ "itemName": "로나실덤겔(테르비나핀)",
+ "atc": "D01AE15",
+ "etcOtc": "일반의약품",
+ "changeDate": "20211130",
+ "ediCode": "643100191",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200705880/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200705880/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200705880/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "3. 임부, 수유부에 대한 사용 1)",
+   "subject": "",
+   "excerpt": "동물에 대한 생식독성시험에서 태자독성의 위험성이 보고되지는 않았지만, 임부에 투여하는 경우에는 치료상의 유익성이 위험성을 상회(웃돎)하는 경우에만 투여할 것.",
+   "extractor": "kw-v4",
+   "id": "b9ddcd7892",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "b39a0d1f60",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "3. 임부, 수유부에 대한 사용 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물에 대한 생식독성시험에서 태자독성의 위험성이 보고되지는 않았지만, 임부에 투여하는 경우에는 치료상의 유익성이 위험성을 상회(웃돎)하는 경우에만 투여할 것.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "95728c0871",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "3. 임부, 수유부에 대한 사용 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 모유 중에 분비되므로, 이 약을 투여 중인 수유부는 수유를 중지할 것.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:16:40"
+  {
+   "section": "pregnancy",
+   "where": "3. 임부, 수유부에 대한 사용 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유 중에 분비되므로, 이 약을 투여 중인 수유부는 수유를 중지할 것.",
+   "extractor": "kw-v4",
+   "id": "628cc33386",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

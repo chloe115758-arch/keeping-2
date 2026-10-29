@@ -1,0 +1,44 @@
+{
+ "ingredient": "phloroglucinol",
+ "productSeq": "200102089",
+ "itemName": "후로스판액(플로로글루시놀수화물)",
+ "atc": "A03AX12",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251023",
+ "ediCode": "645602241",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200102089/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200102089/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200102089/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 태자독성 및 기형발생은 나타나지 않았으나 임부 또는 임신하고 있을 가능성이 있는 부인(특히 초기 3개월)에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "a35015568d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유중에는 투여하지 않는 것이 바람직하다",
+   "extractor": "kw-v4",
+   "id": "2ad5f7f2e5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:59",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

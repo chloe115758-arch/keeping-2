@@ -1,0 +1,80 @@
+{
+ "ingredient": "arsenic trioxide",
+ "productSeq": "201507055",
+ "itemName": "아시트리주(삼산화비소)",
+ "atc": "L01XX27",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190710",
+ "ediCode": "052900081",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507055/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507055/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507055/NB"
+ },
+ "rules": [
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 생리기능이 저하되어 있는 일이 많고 이상반응이 나타나기 쉬우므로, 환자의 상황을 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "ff86b4142f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부, 산부, 수유부 등에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 최기형작용이 보고되고 있으므로, 임신 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.[동물실험에서 무기비소는 태반을 통과하므로 배 흡수의 증가, 신경관이상, 무안구증, 소안구증이 인정된다.]",
+   "extractor": "kw-v4",
+   "id": "d97379fec1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부, 산부, 수유부 등에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신할 가능성이 있는 부인에서는 투여하지 않는 것을 원칙으로 하지만 부득이 투여하는 경우에는 치료상의 유익성이 위험성을 상회하는 것으로 판단되는 경우에 만 투여한다. 환자에게 태아의 독성 가능성에 대해 충분히 설명하여 이해시키고 피임을 철저히 지도한다. 미국에서의 투여 중에 임신했던 1예에서 유산의 보고가 있다.」",
+   "extractor": "kw-v4",
+   "id": "e0ab7e6775",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부, 산부, 수유부 등에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부에 투여하는 경우에는 수유를 중지시킨다.",
+   "extractor": "kw-v4",
+   "id": "fa70a9b3d4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부, 산부, 수유부 등에 대한 투여",
+   "subject": "",
+   "excerpt": "[비소는 유즙 중에 이행하기 때문에 수유 중 유아에 대한 심각한 이상반응을 야기할 가능성이 있다.]",
+   "extractor": "kw-v4",
+   "id": "0d9416b800",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:55",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

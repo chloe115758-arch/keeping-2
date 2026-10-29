@@ -1,0 +1,56 @@
+{
+ "ingredient": "fluorometholone",
+ "productSeq": "201707502",
+ "itemName": "플루아이점안액0.1%(플루오로메톨론)",
+ "atc": "S01BA07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190817",
+ "ediCode": "052400551",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707502/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707502/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707502/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 장기·빈번 사용을 피한다.",
+   "extractor": "kw-v4",
+   "id": "749ead85a2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유로의 이행여부는 알려지지 않았으나 수유부에 투여하는 경우 영아에 대한 안전성이 확립되어 있지 않으므로 수유부에는 투여하지 말고 부득이 투여하는 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "1805077d22",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 특히 주의한다.",
+   "extractor": "kw-v4",
+   "id": "1ea28fc569",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:29:40",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

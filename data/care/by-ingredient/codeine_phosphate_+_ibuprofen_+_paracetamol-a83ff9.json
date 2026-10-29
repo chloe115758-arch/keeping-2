@@ -1,0 +1,211 @@
+{
+ "ingredient": "codeine phosphate + ibuprofen + paracetamol",
+ "productSeq": "199907257",
+ "itemName": "코노펜캡슐",
+ "atc": "N02AJ09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260428",
+ "ediCode": "657801830",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199907257/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199907257/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199907257/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 2)",
+   "subject": "",
+   "excerpt": "매일 세잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열 진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 간손상 및 위장출혈이 유발될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "8f290d123c",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고 6)",
+   "subject": "",
+   "excerpt": "마약류와 벤조디아제핀계 약물 또는 알코올을 포함하는 중추신경계억제제의 병용투여는 깊은 진정, 호흡억제, 혼수 및 사망을 초래할 수 있다. 이러한 위험성 때문에, 마약류와 벤조디아제핀계 약물의 병용투여는 적절한 대체 치료방법이 없는 환자의 경우에 한하여 처방하도록 한다. 이 약과 마약류의 병용투여가 결정되면 최저 유효용량으로 최단기간 처방하도록 하고 호흡억제 및 진정의 징후와 증상에 대해 환자…",
+   "extractor": "kw-v4",
+   "id": "53fbcccea4",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 3)",
+   "subject": "",
+   "excerpt": "이 약의 반복적인 사용은 내성, 신체적/정신적 의존성, 아편유사제 사용 장애(Opioid Use Disorder, OUD)를 일으킬 수 있다. 이 약의 남용이나 의도적인 오용은 과량투여나 사망을 초래할 수 있다. 이 약의 투여 중단 시 안절부절 및 자극 과민성과 같은 금단증상이 발생할 수 있다. 아편유사제 용량이 높고, 치료기간이 길수록 아편유사제 사용 장애 발생 위험이 증가할 수 있다. 본…",
+   "extractor": "kw-v4",
+   "id": "b2fbdc5f92",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약과 가바펜티노이드 계열 제제(가바펜틴 및 프레가발린), 벤조디아제핀계 약물, 다른 마약성 진통제, 전신마취제, 페노티아진계 약물, 신경안정제, 수면제, 삼환계 항우울제, 신경근육차단제, 또는 알코올을 포함한 다른 중추신경억제제를 병용투여하면 추가적인 중추신경억제작용이 유발되고, 호흡억제, 저혈압, 깊은 진정, 또는 혼수, 사망과 같은 중추신경억제작용이 증가될 수 있다. 따라서 이러한 약…",
+   "extractor": "kw-v4",
+   "id": "327c3d61b9",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "아세트아미노펜 : 바르비탈계 약물, 삼환계 항우울제, 알코올을 투여한 환자는 다량의 아세트아미노펜을 대사시키는 능력이 감소되어 아세트아미노펜의 혈장 반감기를 증가시킬 수 있다. 알코올은 아세트아미노펜 과량투여의 간독성을 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "cac9ae5cc8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "마우스를 이용한 비임상시험에서 기형발생 작용이 보고되었으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "04129f73e1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되지 않았으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "9f91f1aad3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신 약 20주 이후 이 약을 포함한 비스테로이드성 소염제(NSAIDs)의 사용은 태아 신기능 이상을 일으켜 양수 과소증을 유발할 수 있으며 경우에 따라서는 신생아 신장애를 일으킬 수 있다. 비스테로이드성 소염제(NSAIDs) 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되었지만 이러한 부작용은 평균적으로 투여 후 수일에서 수주 사이에 나타난다. 양수 과소증은 보통 투여 중단 시…",
+   "extractor": "kw-v4",
+   "id": "4b4ffcd23c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "마약성 진통제는 태아순환계로 쉽게 이행되어 신생아 호흡억제를 유발할 수 있으므로, 만약 산모가 분만 시 마약성 진통제를 투여받았다면 신생아 호흡억제의 여부를 면밀히 관찰해야 하고, 특히 조산아가 예상되는 경우에는 사용해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "aee1736725",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "출산 전 마약제를 규칙적으로 복용하던 임부에서 태어난 신생아는 육체적인 마약의존성이 나타날 수 있다. 출산 후 신생아에게 신경과민, 과도한 움직임, 울음, 불면, 떨림, 발열 등의 마약 금단증상이 나타날 수 있는데, 이러한 증상의 강도는 임부의 마약제 사용량에 꼭 비례하는 것은 아니다. 이러한 신생아 마약 금단증상에 대해 정해진 치료방법은 없으며, 대증요법과 함께 필요 시 진정제나 페노바르비…",
+   "extractor": "kw-v4",
+   "id": "b4e8fa3982",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 모유로 이행되므로 수유부에게 이 약을 투여할 때는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "0340ecb284",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "코데인은 모유로 분비된다. 정상적인 코데인 대사(정상적인 CYP2D6 활성)를 하는 여성에서 모유로 분비된 코데인의 양은 적고 복용량에 의존적이다. 그러나 일부 여성은 코데인에 대해 초고속 대사자이다. 이들 여성은 코데인의 활성 대사물질인 모르핀의 예상 혈중 농도보다 높아 모유 내 모르핀을 예상 보다 높은 수준으로 유도하고, 모유수유 유아에서 잠재적 위험이 높은 고농도의 혈중 모르핀 수준을…",
+   "extractor": "kw-v4",
+   "id": "5a248a3a0d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자 및 쇠약자는 생리기능이 저하되어 있고, 이상반응이 나타나기 쉬우므로 투여 시 환자의 상태를 관찰하면서 필요한 최소량을 투여하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "4287d3be00",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:28:00",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

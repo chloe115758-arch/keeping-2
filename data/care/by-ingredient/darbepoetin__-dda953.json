@@ -1,0 +1,56 @@
+{
+ "ingredient": "darbepoetin α",
+ "productSeq": "201404129",
+ "itemName": "네스프 프리필드시린지주 120(다베포에틴알파)\r\n",
+ "atc": "B03XA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260227",
+ "ediCode": "055500241",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201404129/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201404129/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201404129/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약물은 동물실험에서 최기형성이 나타나지 않았으나, 임신한 여성을 대상으로 한 적절한 연구가 없으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 태아에 대한 위험성을 상회한다고 판단되는 경우에만 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "0405a0e8b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 수유부에 투여한 경험은 없으므로 수유부에 투여해서는 안된다. 이 약의 투여가 필수적인 여성의 경우 수유를 중지해야 한다.",
+   "extractor": "kw-v4",
+   "id": "a4a93cca94",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 생리기능이 저하되고 또한 고혈압 등 순환기계 질환이 합병되는 경우가 많으므로, 이 약의 투여시에는 혈압 및 헤모글로빈 농도 또는 헤마토크리트 수치 등을 여러 번 측정하여 투여량 및 투여 회수를 적절히 조절한다.",
+   "extractor": "kw-v4",
+   "id": "53413c3432",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:31:40",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

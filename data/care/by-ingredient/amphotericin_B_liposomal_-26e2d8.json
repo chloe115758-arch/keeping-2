@@ -1,0 +1,44 @@
+{
+ "ingredient": "amphotericin B(liposomal)",
+ "productSeq": "199704225",
+ "itemName": "암비솜주사(주사용리포좀화한암포테리신B)",
+ "atc": "J02AA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251202",
+ "ediCode": "625900031",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199704225/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199704225/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199704225/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "쥐와 토끼에서 기형발생 연구결과 이 약은 두 종에서의 기형발생은 없었다. 이 약에 대한 수태 및 독성시험에 대한 연구는 진행되지 않았다. 임부에 대한 이 약의 안전성은 확립되지 않았다. 임신 중 이 약은 산모와 태아에 대한 이득이 잠재적 위험을 상회하는 경우에만 사용되어야 한다. 기존의 암포테리신 B 제제로 태아에 미치는 명확한 영향 없이 임부 환자의 전신 진균성 감염이 치료된 사례가 있으나…",
+   "extractor": "kw-v4",
+   "id": "9262adfd63",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약의 모유로의 이행여부는 알려져 있지 않다. 이 약은 임신과 수유기 동안에는 치료의 유익성이 잠재적인 위험성을 상회한다고 판단되는 경우에 한하여 투여되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "819bcbb475",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:38",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

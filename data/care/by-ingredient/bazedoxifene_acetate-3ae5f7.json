@@ -1,0 +1,99 @@
+{
+ "ingredient": "bazedoxifene acetate",
+ "productSeq": "202002843",
+ "itemName": "바제탑정20밀리그램(바제독시펜아세테이트)",
+ "atc": "G03XC02",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "648104460",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002843/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002843/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002843/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "이 약과 다음의 약물과는 유의한 약동학적 상호작용이 관찰되지 않았다; 이부프로펜, 아지트로마이신, 알루미늄과 수산화 마그네슘을 함유한 제산제.",
+   "extractor": "kw-v4",
+   "id": "ef92409555",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 오직 폐경후 여성에만 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "698ccbf01f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부: 임부 및 가임기 여성은 이 약을 복용해서는 안 된다. 임신한 여성에서 이 약의 사용에 관한 자료는 없다. 동물을 대상으로 한 시험에서 생식독성이 관찰되었으며, 태아에게 유해한 영향을 미칠 수 있는 것으로 나타났다. 사람에서의 잠재적 위험에 대해서는 알려진 바 없다. 만약 약물투여 기간에 임신한 경우에는 태아에 미칠수 있는 잠재적인 위해를 환자에게 알려야 하며, 이 약의 복용을 즉시 중…",
+   "extractor": "kw-v4",
+   "id": "b044ebc2de",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부: 이 약이 사람의 모유로 배설되는지에 대해서는 알려진 바 없다. 이 약은 수유 중인 여성에게는 사용되어서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "b05c804410",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수태능: 암컷 랫드에 대한 연구에서는 발정주기와 수태능의 이상반응이 관찰되었다 .",
+   "extractor": "kw-v4",
+   "id": "7480f696c7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "연령에 따른 용량 조절은 필요하지 않다. 26명의 건강한 폐경기 여성을 대상으로 한 시험에서, 바제독시펜 20 mg 단회 투여의 약동학을 평가하였다. 평균적으로, 51-64세의 여성(n=8명)에 비해 65-74세 여성(n=8명)에서 AUC가 1.5배 증가하는 것으로 나타났으며, 75세 이상 여성(n=8명)에서는 AUC가 2.3배 증가하였다. 이러한 AUC의 증가는 연령 증가에 따른 간기능의…",
+   "extractor": "kw-v4",
+   "id": "3a861f26b7",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:35",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

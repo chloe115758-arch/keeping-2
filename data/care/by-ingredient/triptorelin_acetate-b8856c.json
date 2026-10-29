@@ -1,0 +1,56 @@
+{
+ "ingredient": "triptorelin acetate",
+ "productSeq": "199604919",
+ "itemName": "데카펩틸-데포(트립토렐린아세트산염)",
+ "atc": "L02AE04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251028",
+ "ediCode": "652500021",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199604919/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199604919/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199604919/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 기형발생은 발견되지 않았으나 사람에서 임부와 수유부에 대한 사용 경험이 충분하지 않으므로 투여하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "c5d9dcc6dc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 인체의 모유로 배설되는 지는 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "218163f473",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신 가능한 여성은 보조생식술을 시술할 때를 제외하고 비호르몬적 피임법을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b6b65a3917",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:10",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

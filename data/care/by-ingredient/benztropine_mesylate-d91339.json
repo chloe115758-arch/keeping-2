@@ -1,0 +1,44 @@
+{
+ "ingredient": "benztropine mesylate",
+ "productSeq": "198600614",
+ "itemName": "명인벤즈트로핀메실산염정1밀리그램",
+ "atc": "N04AC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20100107",
+ "ediCode": "651900600",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600614/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600614/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600614/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것. 4)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "05ca80ee83",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부의 투여에 관한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인, 수유부에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "0ab7363731",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:48",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

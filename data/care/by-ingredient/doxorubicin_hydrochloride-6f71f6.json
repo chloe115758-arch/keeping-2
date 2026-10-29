@@ -1,0 +1,80 @@
+{
+ "ingredient": "doxorubicin hydrochloride",
+ "productSeq": "199203366",
+ "itemName": "독소루빈주사0.2%(독소루비신염산염)",
+ "atc": "L01DB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210304",
+ "ediCode": "626900131",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203366/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203366/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203366/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 소화기계, 비뇨기계 및 심혈관계에 기형발생이 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "e574e38ce4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유중의 투여에 대한 안전성은 확립되어 있지 않으므로 수유부에 투여하는 경우에는 수유를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "a2e56d9dfd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 기형발생이 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다. 임신하고 있을 가능성이 있는 여성이나 배우자가 이 약을 투여중인 경우 투여 중단 6개월 이내에는 임신을 피하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "46cd59f930",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유중의 투여에 대한 안전성은 확립되어 있지 않으므로 수유부에 투여하는 경우에는 수유를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "a2e56d9dfd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에게 있어서 약물동태의 현저한 변화를 보이지 않는다.",
+   "extractor": "kw-v4",
+   "id": "6b283612c2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:32:22",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

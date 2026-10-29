@@ -1,181 +1,185 @@
 {
-  "ingredient": "leflunomide",
-  "productSeq": "200711110",
-  "itemName": "키마라정20밀리그램(레플루노미드)",
-  "atc": "L04AK01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260914",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711110/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711110/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711110/NB"
-  },
-  "rules": [
+ "ingredient": "leflunomide",
+ "productSeq": "200711110",
+ "itemName": "키마라정20밀리그램(레플루노미드)",
+ "atc": "L04AK01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260914",
+ "ediCode": "059600040",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711110/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711110/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711110/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "간독성제제(예, 알코올), 혈액독성제제, 혹은 면역억제제의 최근 혹은 병용투여 시 이상반응 발생이 증가할 수 있고, 이 약 투여 후 상기 제제들을 사용할 경우에도 그러하므로 약물 제거과정을 거쳐야 한다.",
+   "extractor": "kw-v4",
+   "id": "4ced1f0e3e",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "6da324ac4e",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "간독성제제(예, 알코올), 혈액독성제제, 혹은 면역억제제의 최근 혹은 병용투여 시 이상반응 발생이 증가할 수 있고, 이 약 투여 후 상기 제제들을 사용할 경우에도 그러하므로 약물 제거과정을 거쳐야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8c6a0f456a",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ③",
-      "subject": "5) 다른 약물이 이 약에 미치는 영향",
-      "matched": [
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "콜레스티라민(cholestyramine) 및 약용탄(medicinal carbon)을 투여할 경우 이 약의 활성대사체(A771726)의 혈중 농도는 빠르게 감소된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2c761f5dd8",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ②",
-      "subject": "6) 이 약이 다른 약물에 미치는 영향",
-      "matched": [
-        {
-          "key": "caffeine",
-          "kind": "food",
-          "ko": "카페인·커피",
-          "surface": "카페인"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "카페인에 대한 영향 (CYP1A2 기질): A771726의 반복 투여로 카페인 (CYP1A2 기질)의 평균 Cmax와 AUC가 각각 18% 및 55%가 감소하였으며, A771726가 체내에서 CYP1A2의 약한 유도제가 될 수 있다. CYP1A2에 의해 대사되는 약물 (둘록세틴, 알로세트론, 테오필린 및 티자니딘 등)의 약효가 감소할 수 있기 때문에 병용 치료 시에 주의 깊게 사용되어야 한다…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "36d34e19e9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중이거나 임신 가능성이 있는 여성에게는 투여해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1cf9c425f2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "가임 여성에 대한 사용 : 임부에 대한 임상시험은 실시되지 않았으나, 동물실험 결과 태아의 사망 혹은 최기형성 효과를 유발할 위험이 증가될 수 있으므로 가임여성은 치료기간동안 임신이 배제되거나 확실한 피임법 사용이 확인되지 않은 경우, 이 약의 활성대사체인 A771726의 혈중농도가 0.02mg/L이상이면 투여하지 않도록 한다. 또한, 투여를 시작하기 전에 태아에 심각한 위험을 끼칠 가능성에…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "54d636022c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "만약 월경이 지연되거나 임신을 의심할 만한 다른 증상이 있는 경우에는 즉시 의사에게 알리고 임신일 경우 의사와 충분히 상담하도록 한다. 월경이 처음 지연될 때 약물제거 과정을 실시하여 활성대사체의 혈중농도를 빠르게 감소시켜 태아에 대한 위험을 감소시킬 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9319ac7227",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약을 투여하는 중 임신을 원하는 경우에는 투여를 중단하고 약물 제거과정을 거쳐야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "87f2f89135",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "적어도 14일 이상의 간격을 두고 두 번의 시험을 실시하여 활성대사체의 혈중 농도가 0.02mg/L 미만임을 확인해야 한다. 동물실험에서의 결과에 근거하여 인체에서의 활성대사체의 혈중농도가 0.02mg/L(0.02㎍/mL) 미만인 경우에 위험을 최소화할 수 있을 것으로 예상된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9e23f87ac4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "약물 제거과정을 거치지 않는 경우 약물 청소율에 대한 개인차에 따라 활성 대사체의 혈중 농도가 0.02mg/L 이하로 도달하는데 2년까지 걸릴 수 있다. 만약 약 2년간 확실한 피임을 보장할 수 없다면, 약물 제거과정을 거치는 것이 좋다. 약물 제거과정 중에는 3상 경구 피임제의 효과가 보장되지 않으므로 피임법을 바꿀 것이 권장된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "528c17edd8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부에게는 이 약을 투여해서는 안 된다. 이 약 또는 이 약의 활성체가 모유로 이행되는지 여부는 알려져 있지 않으나 많은 약물들이 모유로 이행되고 수유한 유아에게 심각한 이상반응을 일으킬 가능성이 있으므로 모체에 대한 약물의 유익성과 위험성을 고려하여 투여를 결정해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f85d87e28f",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 소아 및 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "소아에 대한 이 약의 유효성 및 안전성 연구는 실시되지 않았으므로 18세 미만의 소아 환자에 대한 투여는 바람직하지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0811b30182",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 소아 및 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "65세 이상의 노인 환자일 경우 용량을 조절할 필요는 없다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:10:38"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ③",
+   "subject": "",
+   "excerpt": "콜레스티라민(cholestyramine) 및 약용탄(medicinal carbon)을 투여할 경우 이 약의 활성대사체(A771726)의 혈중 농도는 빠르게 감소된다.",
+   "extractor": "kw-v4",
+   "id": "3b0857063a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ②",
+   "subject": "",
+   "excerpt": "카페인에 대한 영향 (CYP1A2 기질): A771726의 반복 투여로 카페인 (CYP1A2 기질)의 평균 Cmax와 AUC가 각각 18% 및 55%가 감소하였으며, A771726가 체내에서 CYP1A2의 약한 유도제가 될 수 있다. CYP1A2에 의해 대사되는 약물 (둘록세틴, 알로세트론, 테오필린 및 티자니딘 등)의 약효가 감소할 수 있기 때문에 병용 치료 시에 주의 깊게 사용되어야 한다…",
+   "extractor": "kw-v4",
+   "id": "346973f6b2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중이거나 임신 가능성이 있는 여성에게는 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "a75edb3ed0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "가임 여성에 대한 사용 : 임부에 대한 임상시험은 실시되지 않았으나, 동물실험 결과 태아의 사망 혹은 최기형성 효과를 유발할 위험이 증가될 수 있으므로 가임여성은 치료기간동안 임신이 배제되거나 확실한 피임법 사용이 확인되지 않은 경우, 이 약의 활성대사체인 A771726의 혈중농도가 0.02mg/L이상이면 투여하지 않도록 한다. 또한, 투여를 시작하기 전에 태아에 심각한 위험을 끼칠 가능성에…",
+   "extractor": "kw-v4",
+   "id": "368464acb3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "만약 월경이 지연되거나 임신을 의심할 만한 다른 증상이 있는 경우에는 즉시 의사에게 알리고 임신일 경우 의사와 충분히 상담하도록 한다. 월경이 처음 지연될 때 약물제거 과정을 실시하여 활성대사체의 혈중농도를 빠르게 감소시켜 태아에 대한 위험을 감소시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "9583be5b36",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 투여하는 중 임신을 원하는 경우에는 투여를 중단하고 약물 제거과정을 거쳐야 한다.",
+   "extractor": "kw-v4",
+   "id": "ed7586c39e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "적어도 14일 이상의 간격을 두고 두 번의 시험을 실시하여 활성대사체의 혈중 농도가 0.02mg/L 미만임을 확인해야 한다. 동물실험에서의 결과에 근거하여 인체에서의 활성대사체의 혈중농도가 0.02mg/L(0.02㎍/mL) 미만인 경우에 위험을 최소화할 수 있을 것으로 예상된다.",
+   "extractor": "kw-v4",
+   "id": "e27746001f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "약물 제거과정을 거치지 않는 경우 약물 청소율에 대한 개인차에 따라 활성 대사체의 혈중 농도가 0.02mg/L 이하로 도달하는데 2년까지 걸릴 수 있다. 만약 약 2년간 확실한 피임을 보장할 수 없다면, 약물 제거과정을 거치는 것이 좋다. 약물 제거과정 중에는 3상 경구 피임제의 효과가 보장되지 않으므로 피임법을 바꿀 것이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "ebd9ba7a7a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부에게는 이 약을 투여해서는 안 된다. 이 약 또는 이 약의 활성체가 모유로 이행되는지 여부는 알려져 있지 않으나 많은 약물들이 모유로 이행되고 수유한 유아에게 심각한 이상반응을 일으킬 가능성이 있으므로 모체에 대한 약물의 유익성과 위험성을 고려하여 투여를 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "36086f7706",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 소아 및 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "소아에 대한 이 약의 유효성 및 안전성 연구는 실시되지 않았으므로 18세 미만의 소아 환자에 대한 투여는 바람직하지 않다.",
+   "extractor": "kw-v4",
+   "id": "9557d7858f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 소아 및 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "65세 이상의 노인 환자일 경우 용량을 조절할 필요는 없다.",
+   "extractor": "kw-v4",
+   "id": "ae443c899f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

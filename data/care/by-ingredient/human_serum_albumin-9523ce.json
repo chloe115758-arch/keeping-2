@@ -1,0 +1,44 @@
+{
+ "ingredient": "human serum albumin",
+ "productSeq": "197000114",
+ "itemName": "에스케이알부민5%주(사람혈청알부민)(수출명:Solbumin5%,Albumin5%,SKAlbumin5%inj)",
+ "atc": "B05AA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230224",
+ "ediCode": "050800151",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197000114/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197000114/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197000114/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대한 안전성이 확립되어 있지 않다. 이 약의 투여에 의해서 사람 파르보바이러스 B19의 감염 가능성을 부정할 수 없다. 감염된 경우에는 태아에 장애(유산, 태아 부종, 태아사망)가 생길 가능성을 부정할 수 없으므로 임부 또는 임신하고 있을 가능성이 있는 여성의 경우에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "ddde37310a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "22c26b7816",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:32:33",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

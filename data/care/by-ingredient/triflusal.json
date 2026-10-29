@@ -1,0 +1,56 @@
+{
+ "ingredient": "triflusal",
+ "productSeq": "199901534",
+ "itemName": "플루런트캡슐(트리플루살)",
+ "atc": "B01AC18",
+ "etcOtc": "전문의약품",
+ "changeDate": "20241123",
+ "ediCode": "647802640",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199901534/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199901534/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199901534/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 기형발생에 대한 영향의 증거는 없지만 임신 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "d99dcab91a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "78dc82859d",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 트리플루살로서 1일 600 mg ∼ 900 mg을 식사 중 또는 식후에 분할경구투여한다.",
+   "meal": "식사 중",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "50c2f5418d",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 가급적이면 식사와 함께 투여하도록 한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:05",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

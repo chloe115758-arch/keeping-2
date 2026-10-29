@@ -1,76 +1,80 @@
 {
-  "ingredient": "betamethasone dipropionate + clotrimazole + gentamicin sulfate",
-  "productSeq": "198701400",
-  "itemName": "파나덤크림",
-  "atc": "D07CC01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20251224",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701400/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701400/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701400/NB"
+ "ingredient": "betamethasone dipropionate + clotrimazole + gentamicin sulfate",
+ "productSeq": "198701400",
+ "itemName": "파나덤크림",
+ "atc": "D07CC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251224",
+ "ediCode": "644100801",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701400/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701400/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701400/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 이 약의 국소도포로 인해 기형발생이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "3a3da1466b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "50030c6c5e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 이 약의 국소도포로 인해 기형발생이 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "59ca6dbe6a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 안전성이 확립되지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 사용하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ed804f5ee3",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "관찰연구는 임신 중 강하거나(potent) 매우 강한(very potent) 국소용 코르티코스테로이드를 300g 이상 사용 시 저체중아 출산 위험성이 증가함을 제시하였다. 임부에게 이 약으로 인해 저체중아 출산의 위험성이 증가할 수 있고, 가능한 피부의 작은 부위에 짧은 기간 동안 이 약을 사용하도록 조언한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1ab9eced52",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "국소적으로 투여된 코르티코이드가 모유로 이행되는지 여부는 알려져 있지 않으나 전신적으로 투여된 코르티코이드가 모유중으로 이행되므로 수유부에 투여시 주의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0f5c5efe02",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 5)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다량의 베타메타손디프로피오네이트를 국소적으로 투여하는 경우 모유에 검출 가능할 만큼 충분한 전신 흡수가 초래될 수 있다. 모유수유의 발달상 및 건강상의 이점과 이 약에 대한 모체의 임상적 필요를 고려해야 하며, 이 약이 수유 영아에 미치는 잠재적인 부작용과 모체의 건강 상태가 수유 영아에 미치는 잠재적인 부작용을 고려해야 한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:10:08"
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 확립되지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "f6c19ffa84",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "관찰연구는 임신 중 강하거나(potent) 매우 강한(very potent) 국소용 코르티코스테로이드를 300g 이상 사용 시 저체중아 출산 위험성이 증가함을 제시하였다. 임부에게 이 약으로 인해 저체중아 출산의 위험성이 증가할 수 있고, 가능한 피부의 작은 부위에 짧은 기간 동안 이 약을 사용하도록 조언한다.",
+   "extractor": "kw-v4",
+   "id": "7a3fcbdf23",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "국소적으로 투여된 코르티코이드가 모유로 이행되는지 여부는 알려져 있지 않으나 전신적으로 투여된 코르티코이드가 모유중으로 이행되므로 수유부에 투여시 주의한다.",
+   "extractor": "kw-v4",
+   "id": "4728b82d32",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "다량의 베타메타손디프로피오네이트를 국소적으로 투여하는 경우 모유에 검출 가능할 만큼 충분한 전신 흡수가 초래될 수 있다. 모유수유의 발달상 및 건강상의 이점과 이 약에 대한 모체의 임상적 필요를 고려해야 하며, 이 약이 수유 영아에 미치는 잠재적인 부작용과 모체의 건강 상태가 수유 영아에 미치는 잠재적인 부작용을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "4873ac9801",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

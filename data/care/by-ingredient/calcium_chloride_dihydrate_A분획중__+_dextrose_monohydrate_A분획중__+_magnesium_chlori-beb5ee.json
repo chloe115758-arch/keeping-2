@@ -1,0 +1,57 @@
+{
+ "ingredient": "calcium chloride dihydrate(A분획중) + dextrose monohydrate(A분획중) + magnesium chloride hexahydrate(A분획중) + potassium chloride(B분획중) + S-lactic acid(A분획중) + sodium bicarbonate(B분획중) + sodium chloride(B분획중)",
+ "productSeq": "201702025",
+ "itemName": "프리즈마졸2칼륨액",
+ "atc": "B05ZB",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200707",
+ "ediCode": "646601711",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702025/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702025/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702025/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "4. 상호작용 5)",
+   "subject": "",
+   "excerpt": "비타민 D 및 비타민 D 유사체, 칼슘이 함유된 약물 (예: 구연산염 항응고요법을 받는 지속적 신대체요법 환자에서 칼슘 항상성 유지를 위해 사용되는 염화칼슘 또는 글루콘산칼슘 및 인산염 결합제로서 탄산칼슘)은 고칼슘혈증의 위험성이 증가될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "667003ad0d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "탄산칼슘"
+    },
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부에 대하여 이 약을 사용한 임상 자료는 없다. 임부 및 수유부에게 이 약을 투여하기 전에 유익성/위험성의 관계를 검토해야 한다.",
+   "extractor": "kw-v4",
+   "id": "8580adf740",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

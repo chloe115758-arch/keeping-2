@@ -1,95 +1,147 @@
 {
-  "ingredient": "nintedanib esilate",
-  "productSeq": "202500124",
-  "itemName": "오필드정100밀리그램(닌테다닙에실산염)",
-  "atc": "L01EX09",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250910",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500124/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500124/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500124/NB"
-  },
-  "rules": [
+ "ingredient": "nintedanib esilate",
+ "productSeq": "202500124",
+ "itemName": "오필드정100밀리그램(닌테다닙에실산염)",
+ "atc": "L01EX09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250910",
+ "ediCode": "641608240",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500124/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500124/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500124/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "이 약을 강력한 P-gp 유도체들(리팜피신, 카르바마제핀, 페니토인 및 St. John’s Wort 등)과 병용투여하였을 경우 이 약의 노출도를 감소시킬 수 있다. P-gp를 유도하지 않거나 최소한으로 유도하는 다른 약물과의 병용투여를 고려하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "81457215d6",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "ae46262d10",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용",
-      "subject": "1) P-glycoprotein(P-gp)",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "St. John"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약을 강력한 P-gp 유도체들(리팜피신, 카르바마제핀, 페니토인 및 St. John’s Wort 등)과 병용투여하였을 경우 이 약의 노출도를 감소시킬 수 있다. P-gp를 유도하지 않거나 최소한으로 유도하는 다른 약물과의 병용투여를 고려하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "134f2dd969",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "1) 수태능",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "비임상시험을 바탕으로 남성의 수태능 장애에 대한 증거는 없다. 아만성 및 만성독성 연구에서 사람 최대 권장용량(MRHD)인 150mg을 1일 2회 투여하였을 때와 동일한 전신 노출도에서 암컷 랫드의 수태능에 이상을 나타내지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d9cf2e54fc",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "2) 피임",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "닌테다닙의 비임상시험 및 작용기전에 근거하여 임부에게 투여 시 태아에게 유해할 수 있다. 닌테다닙은 랫드, 토끼 모체에 각각 2.5, 15mg/kg/일(AUC 기준으로 성인 최대 권장용량 보다 랫드는 적게, 토끼는 약 5배 용량)을 경구투여했을 때, 배태자 사망과 기형발생이 나타났다. 가임기의 여성은 이 약을 투여하는 기간 중에 임신을 피하고 투여시작 시, 투여기간 및 마지막 투여 이후 최소…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3300348303",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "3) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "닌테다닙을 임부에게 투여한 경험은 없으나 동물에 대한 비임상시험에서 생식독성이 나타났다. 이 약은 인간에 대해서도 태아에 유해성을 나타낼 수 있으므로 임부에게 투여되어서는 안 되며 (다음 환자에는 투여하지 말 것 참조) 이 약을 투여하기 전과 투여하는 동안 적절하게 임신검사를 실시하여야 한다. 여성 환자들은 투여기간 중 임신하였을 경우 의사나 약사에게 알리도록 한다. 이 약 투여기간 중 임신…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1fb16c89f5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "4) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "닌테다닙이나 그 대사체들이 모유로 이행된다는 정보는 없다. 비임상시험에서 수유기의 랫드에서 소량의 닌테다닙 및 그 대사체들(투여용량의 0.5% 이하)이 모유를 통해 분비되었다. 신생아/유아에 대한 위험성을 배제할 수 없으므로 이 약의 투여 시에는 수유를 중단하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c97f54d152",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "- 성인 1일 2회, 1회 150mg을 12시간 간격으로 투여하는 것을 권장한다. 식사 후 즉시 복용하며 투여 시 씹지 말고 물과 함께 정제 전체를 복용한다. 정제를 분쇄하지 않는다.",
-      "meal": "식사 후",
-      "extractor": "kw-v1"
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:15:43"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "11fda1d430",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "비임상시험을 바탕으로 남성의 수태능 장애에 대한 증거는 없다. 아만성 및 만성독성 연구에서 사람 최대 권장용량(MRHD)인 150mg을 1일 2회 투여하였을 때와 동일한 전신 노출도에서 암컷 랫드의 수태능에 이상을 나타내지 않았다.",
+   "extractor": "kw-v4",
+   "id": "31e64a54c0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "피임",
+   "extractor": "kw-v4",
+   "id": "48b24ee8c7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "닌테다닙의 비임상시험 및 작용기전에 근거하여 임부에게 투여 시 태아에게 유해할 수 있다. 닌테다닙은 랫드, 토끼 모체에 각각 2.5, 15mg/kg/일(AUC 기준으로 성인 최대 권장용량 보다 랫드는 적게, 토끼는 약 5배 용량)을 경구투여했을 때, 배태자 사망과 기형발생이 나타났다. 가임기의 여성은 이 약을 투여하는 기간 중에 임신을 피하고 투여시작 시, 투여기간 및 마지막 투여 이후 최소…",
+   "extractor": "kw-v4",
+   "id": "dce4730aca",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "75315e9e23",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "닌테다닙을 임부에게 투여한 경험은 없으나 동물에 대한 비임상시험에서 생식독성이 나타났다. 이 약은 인간에 대해서도 태아에 유해성을 나타낼 수 있으므로 임부에게 투여되어서는 안 되며 (다음 환자에는 투여하지 말 것 참조) 이 약을 투여하기 전과 투여하는 동안 적절하게 임신검사를 실시하여야 한다. 여성 환자들은 투여기간 중 임신하였을 경우 의사나 약사에게 알리도록 한다. 이 약 투여기간 중 임신…",
+   "extractor": "kw-v4",
+   "id": "497947c734",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "000385665f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "닌테다닙이나 그 대사체들이 모유로 이행된다는 정보는 없다. 비임상시험에서 수유기의 랫드에서 소량의 닌테다닙 및 그 대사체들(투여용량의 0.5% 이하)이 모유를 통해 분비되었다. 신생아/유아에 대한 위험성을 배제할 수 없으므로 이 약의 투여 시에는 수유를 중단하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "045fcf29b3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "c97f54d152",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "- 성인 1일 2회, 1회 150mg을 12시간 간격으로 투여하는 것을 권장한다. 식사 후 즉시 복용하며 투여 시 씹지 말고 물과 함께 정제 전체를 복용한다. 정제를 분쇄하지 않는다.",
+   "meal": "식사 후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

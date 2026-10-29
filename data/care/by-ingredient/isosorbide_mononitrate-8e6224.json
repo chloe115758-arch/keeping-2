@@ -1,0 +1,63 @@
+{
+ "ingredient": "isosorbide mononitrate",
+ "productSeq": "202301088",
+ "itemName": "엘탄서방정60밀리그램(묽은이소소르비드일질산염)",
+ "atc": "C01DA14",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "620500450",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301088/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301088/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301088/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "다른 혈관확장제, 칼슘길항제, 혈압강하제, 삼환계 항우울제 및 알코올과의 병용에 의해 혈압강하작용이 증강되어 기계조작 등에 지장을 초래할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "b05b5170aa",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 대량투여에 의해 태자 및 출생자의 체중증가억제, 출생자 생존률 저하, 발육분화의 지연이 보고되었으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 사용한다.",
+   "extractor": "kw-v4",
+   "id": "5175a2e4e4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 모유중으로의 이행이 보고되었으므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "f30456e5f4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:32",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

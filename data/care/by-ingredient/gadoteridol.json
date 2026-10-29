@@ -1,0 +1,80 @@
+{
+ "ingredient": "gadoteridol",
+ "productSeq": "201103761",
+ "itemName": "프로핸스주프리필드시린지(가도테리돌)",
+ "atc": "V08CA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240826",
+ "ediCode": "621400011",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103761/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103761/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103761/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "34282a8325",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "랫트를 이용한 동물실험에서 랫트의 임신 기간 중 이 약을 12일 동안 10 mmol/kg/day의 양으로 (0.3 mmol/kg인 사람의 권장 최대 투여량의 33배 또는 mmol/m2를 기준으로 한 사람의 투여량의 6배) 투여하였을 때, 착상 후 유실 발생빈도를 2배로 증가시켰으며, 12일 동안 6.0 또는 10 mmol/kg/day의 양으로 투여받게 되는 경우에는 새끼의 자발운동량(spon…",
+   "extractor": "kw-v4",
+   "id": "c9f9886279",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대한 임상 자료가 충분하지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 진단상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "ad5dbaecc7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약물이 모유 중으로 이행되는지 알려지지는 않았으나, 많은 약물이 모유를 통해 분비되므로 이 약을 수유중인 여성에게 투여할 경우에 주의해야 한다. 이 약을 수유중인 여성에게 투여할 경우에는 이 약 투여 후 적어도 24시간 동안 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "84578f766f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 주로 신장으로 배설되는데, 일반적으로 고령자는 신기능이 저하된 경우가 많아 높은 혈중농도가 지속될 위험이 있고 이상반응이 나타나기 쉬우므로, 용량 및 투여간격에 유의하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "88000ff8f0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:33",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

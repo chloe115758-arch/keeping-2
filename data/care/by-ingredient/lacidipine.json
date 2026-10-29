@@ -1,0 +1,75 @@
+{
+ "ingredient": "lacidipine",
+ "productSeq": "200511002",
+ "itemName": "박사르정6밀리그램(라시디핀)",
+ "atc": "C08CA09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20140819",
+ "ediCode": "650000380",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511002/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511002/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511002/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 5)",
+   "subject": "",
+   "excerpt": "다른 디히드로피리딘계 약물과 마찬가지로 생체내 이용률을 변화시킬 수 있으므로, 자몽쥬스와 함께 복용해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "70b0987e69",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다른 디히드로피리딘계 약물에 대한 동물실험에서 최기형성이 발견된 바 있으나, 이 약의 랫트 및 토끼에 대한 실험에서 최기형성 유발에 대한 증거는 없다. 고용량의 동물 실험에서 이 약은 모체에의 독성으로 착상전후의 유실이나 골화를 지연시킨다는 증거가 있다. 동물 실험에서 이 약은 임신기간을 연장시켰으며 자궁근육을 이완시켜 분만을 어렵게 하는 결과를 나타냈다. 이러한 동물실험 결과로 볼 때 이…",
+   "extractor": "kw-v4",
+   "id": "eaadb5170c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "또한 동물 실험의 결과, 라시디핀(또는 그 대사체)이 유즙으로 분비될 수 있는 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "924bc94db1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "그러나 임부 또는 수유부에 대한 이 약의 임상적 경험은 없다. 따라서 이 약은 임부 또는 수유부에게 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "92b19894fa",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:55",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

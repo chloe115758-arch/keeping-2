@@ -1,119 +1,147 @@
 {
-  "ingredient": "fluconazole",
-  "productSeq": "201908156",
-  "itemName": "아이나졸캡슐(플루코나졸)",
-  "atc": "J02AC01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230105",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908156/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908156/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908156/NB"
-  },
-  "rules": [
+ "ingredient": "fluconazole",
+ "productSeq": "201908156",
+ "itemName": "아이나졸캡슐(플루코나졸)",
+ "atc": "J02AC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230105",
+ "ediCode": "052401580",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908156/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908156/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908156/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "플루코나졸이 다른 약물에 미치는 영향",
+   "excerpt": "상호작용시험은 이 약의 경구제와 음식, 시메티딘, 제산제, 골수이식에 대한 전신방사선요법과의 병용 시 임상적으로 유의할만한 이 약의 흡수장애가 일어나지 않음을 보였다.",
+   "extractor": "kw-v4",
+   "id": "3b8eeeafd9",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "b2a1495cc9",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용",
-      "subject": "플루코나졸이 다른 약물에 미치는 영향",
-      "matched": [
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "상호작용시험은 이 약의 경구제와 음식, 시메티딘, 제산제, 골수이식에 대한 전신방사선요법과의 병용 시 임상적으로 유의할만한 이 약의 흡수장애가 일어나지 않음을 보였다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4c9b98929b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "가임 여성은 효과적인 피임법을 고려해야 하며, 이 약 투여기간 및 마지막 용량 투여 후 약 1개월간은 피임해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b778e922c1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 첫 3개월안에 이 약 150 mg을 단회 또는 반복 투여한 임부에서 자연유산 및 영아의 선천성이상이 보고되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "33944a8fd7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "콕시디오이데스진균증에 대해 3개월 또는 그 이상의 기간 동안 고용량의 플루코나졸(1일 400-800 mg)을 투여 받은 임산부의 경우, 영아에서 다발성 선천성 기형이 보고 되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b23fbf4083",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "플루코나졸의 사용과 이러한 부작용 발생 사이의 상관성은 명확하지 않다. 동물에서는 모체에 독성이 나타날 정도의 고용량에서만 태자에 대한 부작용이 확인되었다. 5 mg/kg 또는 10 mg/kg의 용량은 태자에 영향을 끼치지 않았다.; 25 mg/kg, 50 mg/kg 및 그 이상의 용량에서 태자의 해부학적인 변형(과잉늑골, 신우확장) 증가 및 골화 지연이 관찰되었다. 80 mg/kg(사람 권…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "41a98933ae",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "증례보고는 임신 첫 3개월(1st trimester)의 모든 또는 대부분의 기간 동안 고용량의 플루코나졸(1일 400 - 800 mg)을 투여 받은 임산부의 영아에서 두드러지고 드문 형태의 출생기형(birth defects)이 나타남을 기술하고 있다. 이러한 영아에서 발견되는 특징은 다음을 포함한다.; 납작머리증, 비정상적 얼굴, 비정상적 머리덮개뼈 발달, 구개열, 대퇴부 휨(femoral…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f356e06bfb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 이 약의 투여는 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2cb93b4846",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 혈장과 비슷한 농도로 모유에서 발견되었다. 따라서 수유부에 대해 이 약을 투여하지 않는다",
-      "extractor": "kw-v1"
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:03:23"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "e73feb8724",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임 여성은 효과적인 피임법을 고려해야 하며, 이 약 투여기간 및 마지막 용량 투여 후 약 1개월간은 피임해야 한다.",
+   "extractor": "kw-v4",
+   "id": "9b6f29ee98",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 첫 3개월안에 이 약 150 mg을 단회 또는 반복 투여한 임부에서 자연유산 및 영아의 선천성이상이 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "93cebaf76b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "콕시디오이데스진균증에 대해 3개월 또는 그 이상의 기간 동안 고용량의 플루코나졸(1일 400-800 mg)을 투여 받은 임산부의 경우, 영아에서 다발성 선천성 기형이 보고 되었다.",
+   "extractor": "kw-v4",
+   "id": "638b7e39a6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "플루코나졸의 사용과 이러한 부작용 발생 사이의 상관성은 명확하지 않다. 동물에서는 모체에 독성이 나타날 정도의 고용량에서만 태자에 대한 부작용이 확인되었다. 5 mg/kg 또는 10 mg/kg의 용량은 태자에 영향을 끼치지 않았다.; 25 mg/kg, 50 mg/kg 및 그 이상의 용량에서 태자의 해부학적인 변형(과잉늑골, 신우확장) 증가 및 골화 지연이 관찰되었다. 80 mg/kg(사람 권…",
+   "extractor": "kw-v4",
+   "id": "dc959462c3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "증례보고는 임신 첫 3개월(1st trimester)의 모든 또는 대부분의 기간 동안 고용량의 플루코나졸(1일 400 - 800 mg)을 투여 받은 임산부의 영아에서 두드러지고 드문 형태의 출생기형(birth defects)이 나타남을 기술하고 있다. 이러한 영아에서 발견되는 특징은 다음을 포함한다.; 납작머리증, 비정상적 얼굴, 비정상적 머리덮개뼈 발달, 구개열, 대퇴부 휨(femoral…",
+   "extractor": "kw-v4",
+   "id": "340995fa9a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 이 약의 투여는 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ade6a082bf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "e96d027232",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 혈장과 비슷한 농도로 모유에서 발견되었다. 따라서 수유부에 대해 이 약을 투여하지 않는다",
+   "extractor": "kw-v4",
+   "id": "033f3ad61f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

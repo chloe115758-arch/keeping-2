@@ -1,0 +1,19 @@
+{
+ "ingredient": "urea",
+ "productSeq": "198501225",
+ "itemName": "한미유리아크림200밀리그램(우레아)",
+ "atc": "D02AE01",
+ "etcOtc": "일반의약품",
+ "changeDate": "20240226",
+ "ediCode": "643503743",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198501225/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198501225/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198501225/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-30T00:13:12",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

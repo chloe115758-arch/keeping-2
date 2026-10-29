@@ -1,0 +1,80 @@
+{
+ "ingredient": "cefadroxil",
+ "productSeq": "198200301",
+ "itemName": "보령듀리세프건조시럽125밀리그램/5밀리리터 (세파드록실수화물)",
+ "atc": "J01DB05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240527",
+ "ediCode": "641901092",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198200301/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198200301/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198200301/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "aa9ecddee4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 투여할 경우에는 주의한다.",
+   "extractor": "kw-v4",
+   "id": "e95d88026d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에게는 다음과 같은 점에 유의하여 용량과 투여간격에 유의하는 등 환자의 상태를 관찰해서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d46561359b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "생리기능이 저하되어 있는 경우가 많으므로 이상반응이 발현되기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "f8b80e5fc6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K 결핍으로 출혈경향이 나타나기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "f38dbc77be",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:50",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

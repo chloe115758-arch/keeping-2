@@ -1,40 +1,44 @@
 {
-  "ingredient": "BDDE bridged sodium hyaluronate gel )",
-  "productSeq": "202501315",
-  "itemName": "시노빈엘프리필드주사(BDDE가교히알루론산나트륨겔)",
-  "atc": "M09AX01",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501315/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501315/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501315/NB"
+ "ingredient": "BDDE bridged sodium hyaluronate gel )",
+ "productSeq": "202501315",
+ "itemName": "시노빈엘프리필드주사(BDDE가교히알루론산나트륨겔)",
+ "atc": "M09AX01",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "054801621",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501315/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501315/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501315/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부에 대한 이 약의 안전성 및 유효성은 확립되지 않았으므로, 이 약의 투여는 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "d336267c26",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "c79d3fed9e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 및 수유부에 대한 이 약의 안전성 및 유효성은 확립되지 않았으므로, 이 약의 투여는 권장되지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a586e328b4",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 이 약 투여 시 주의한다. 2건의 임상시험에서 이 약을 투여한 만 65세 이상의 고령자는 총 시험대상자의 26.0% (120/461명)로 충분하게 포함되지 않았으나, 고령자와 비고령자에서의 약물에 대한 반응의 차이는 나타나지 않았다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:17:52"
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 이 약 투여 시 주의한다. 2건의 임상시험에서 이 약을 투여한 만 65세 이상의 고령자는 총 시험대상자의 26.0% (120/461명)로 충분하게 포함되지 않았으나, 고령자와 비고령자에서의 약물에 대한 반응의 차이는 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "dff8517785",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

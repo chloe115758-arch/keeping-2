@@ -1,0 +1,104 @@
+{
+ "ingredient": "cilastatin sodium + imipenem hydrate",
+ "productSeq": "202007456",
+ "itemName": "이펨큐주500밀리그램",
+ "atc": "J01DH51",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231115",
+ "ediCode": "059400031",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007456/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007456/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007456/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "랫트에 대한 생식독성실험에서 인간의 최대정맥 주사 용량[체표면적 근거(mg/m2)]에 해당하는 양(정맥투여로 80mg/kg/day 및 피하주사로 320mg/kg/day)을 투여한 결과 고농도에서 제한적으로 태아체중감소가 나타났다. 수태율, 생식행위, 태아 생존률, 생후 발달 및 성장율에 대해서는 다른 이상이 나타나지 않았다. 임신말기 랫트에 투여 시 태아나 수유에 영향을 미치지는 않았다.",
+   "extractor": "kw-v4",
+   "id": "de2cdb662c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 중인 토끼에 대해 인간투여용량과 동등한 양 또는 그 이상을 투여 시 체중감소, 설사, 모체사망의 원인이 된다는 결과가 나타났다. 그러나 비임신 토끼를 대상으로 한 동일 실험에서도 유사한 결과를 나타냈다. 이러한 결과는 다른 베타락탐계 항생물질의 결과와 다르지 않으며 장내세균총의 변화에 기인한 것으로 생각된다.",
+   "extractor": "kw-v4",
+   "id": "78f8790358",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신상태의 사이노몰거스 원숭이에 40mg/kg/day(bolus injection 형태), 160mg/kg/day(피하주사형태) 투여 시 구토, 식욕감퇴, 체중감소, 설사, 유산, 드물게 사망에 이르는 모체독성이 나타났다. 이와 반대로 비임신상태의 원숭이에게 180mg/kg/day(피하주사형태) 투여 시는 아무런 독성이 나타나지 않았다. 임신상태의 사이노몰거스 원숭이에 인간 1일 최대 투여…",
+   "extractor": "kw-v4",
+   "id": "64db4900d5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 관한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "8c11256c45",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "투여 중에는 수유를 피한다(정맥투여 시 이 약의 성분이 모유로 이행된다는 보고가 있다.).",
+   "extractor": "kw-v4",
+   "id": "1dac09a645",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 주로 신장으로 배설되므로 생리기능이 저하되어 있는 고령자에는 이상반응이 나타나기 쉬우므로, 환자의 상태를 관찰하면서 신중하게 투여하고 이상반응이 나타나는 경우에는 투여를 중지하고 적절한 처치를 한다.",
+   "extractor": "kw-v4",
+   "id": "d81178ad91",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "다른 항생물질(세펨계, 아미노글리코사이드 등)을 투여 받는 고령자에서는 비타민 K 결핍에 의한 출혈경향이 나타난다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "5b5fae4ec8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:50",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

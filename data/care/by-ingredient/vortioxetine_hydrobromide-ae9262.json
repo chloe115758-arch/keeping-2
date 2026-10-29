@@ -1,0 +1,346 @@
+{
+ "ingredient": "vortioxetine hydrobromide",
+ "productSeq": "201403836",
+ "itemName": "브린텔릭스정10밀리그램(보티옥세틴브롬화수소산염)",
+ "atc": "N06AX26",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260206",
+ "ediCode": "668000110",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403836/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403836/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403836/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "다른 세로토닌성 약물(아편계(펜타닐 등), 트립탄계, 삼환계 항우울제, 펜타닐, 리튬, 트라마돌, 트립토판, 부스피론 및 성요한풀(St. John's Wort) 포함), 세로토닌 대사를 저해하는 약물(특히, 정신계 질환 치료 또는 리네졸리드, 정맥주사용 메틸렌블루와 같은 그 외의 약물을 포함한 MAO 억제제 포함), 항정신병약, 기타 도파민 억제제를 병용 투여할 때 세로토닌 증후군이나 신경이…",
+   "extractor": "kw-v4",
+   "id": "005c6ad5fe",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "이 약과 트립탄계, 삼환계 항우울제, 아편계(펜타닐 등), 리튬, 트라마돌, 부스피론, 트립토판 및 성요한풀(St. John's Wort)를 포함한 기타 세로토닌성 약물과의 병용 투여가 임상적으로 필요한 경우, 특히 투여 개시 및 용량 증가시에 세로토닌 증후군에 대한 위험이 증가될 수 있음을 환자에게 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "36f53ed616",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (3)",
+   "subject": "",
+   "excerpt": "St. John's Wort (성요한의 풀)",
+   "extractor": "kw-v4",
+   "id": "c35ccf5689",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "세로토닌성 작용이 있는 항우울제와 성요한풀(St. John's Wort(Hypericum perforatum))을 함유한 생약제제를 병용 투여하는 경우, 세로토닌 증후군을 포함하는 이상반응의 발생이 증가할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "21e4a608cd",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ③",
+   "subject": "",
+   "excerpt": "CYP2C19 저해제: 건강한 피험자에게 이 약을 반복투여하였을 때의 약동학에서 오메프라졸(CYP2C19 저해제) 40mg 단회투여로 인한 영향은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "412b3e9447",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (8)",
+   "subject": "",
+   "excerpt": "알코올",
+   "extractor": "kw-v4",
+   "id": "5947a9f89f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "건강한 피험자에게 에탄올 0.6g/kg과 이 약 20mg 또는 40mg의 단회 병용투여시, 위약에 비해 이 약 또는 알코올의 약물동태학적 영향이나 인지 기능의 유의한 손상이 관찰되지 않았다. 하지만, 항우울제 투여기간 중 알코올 섭취는 바람직하지 않다.",
+   "extractor": "kw-v4",
+   "id": "140f4dc313",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ②",
+   "subject": "",
+   "excerpt": "건강한 피험자에게 이 약의 반복 투여 후 CYP450의 기질인 약물을 투여하였을 때, CYP2C19(오메프라졸, 디아제팜), CYP3A4/5(에치닐에스트라디올, 미다졸람), CYP2B6(부프로피온), CYP2C9(톨부타미드, S-와파린), CYP1A2(카페인), CYP2D6(덱스트로메토르판)에 대한 유의한 작용은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "b31083b215",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "fd19c06407",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 임부에게 사용한 자료는 제한적이다.",
+   "extractor": "kw-v4",
+   "id": "6aca602848",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험에서 최기형성은 나타나지 않았으나, 태아 체중에 대한 영향 및 골형성 지연이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "ace8f919df",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 후기에 세로토닌성 약물을 사용한 임부의 신생아에서 다음과 같은 증상이 나타날 수 있다: 호흡곤란, 청색증, 무호흡, 발작, 체온 불안정, 수유곤란, 구토, 저혈당증, 근육긴장항진, 근육긴장저하, 과다반사, 떨림, 초조, 과민성, 기면증, 지속적인 울음, 졸림, 수면곤란. 이러한 증상은 과도한 세로토닌성 작용 또는 금단 작용으로 인한 것일 수 있다. 대부분의 경우 이는 출산 직후 또는 2…",
+   "extractor": "kw-v4",
+   "id": "8558a74961",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "역학조사에서 임신 중에, 특히 임신 후기에 임부에게 선택적 세로토닌 재흡수 억제제(SSRIs)를 투여하는 것은 신생아지속성폐동맥고혈압(PPHN)의 위험성을 증가시키는 것으로 나타났다. 이 약과 신생아지속성폐동맥고혈압(PPHN)의 상관관계에 대한 시험은 실시되지 않았지만, 세로토닌의 농도를 증가시키는 이 약의 작용기전을 고려할 때 위험성을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "dafbecb9f7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부의 경우에는 임상적 유의성이 태아에 대한 위험성을 상위하는 경우에 한하여 이 약을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f7b491d44f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "관찰연구 데이터는 출산 전 한달 이내에 SSRI 또는 SNRI 노출에 따른 산후출혈의 위험성 증가(2배 미만)에 대한 근거를 제시하였다. 이 약의 치료와 산후출혈 간의 연관성을 조사한 연구는 없지만, 이 약의 작용기전을 고려할 때 위험성을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "d8ee80b9b0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "b48909835e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험 자료에서 이 약과 이 약의 대사체가 모유로 이행되었다. 이 약은 사람의 모유로도 이행되므로, 수유를 받는 유아에서의 위험성을 배제할 수 없다. 문헌에 따르면, 상대적 영아 노출량 (relative infant dose, RID)은 2% 미만이었다.",
+   "extractor": "kw-v4",
+   "id": "9553ccd4f9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "영유아에서 수유의 유익성과 산모에 대한 치료의 유익성을 고려하여 수유 중단 또는 이 약의 투여 중단을 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "1117e25e10",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "ce07d89fc9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수컷 및 암컷 랫트의 수태능 시험에서 이 약은 수태능, 정자의 질 또는 교미기능에 영향을 미치지 않았다.",
+   "extractor": "kw-v4",
+   "id": "ade2fe4d24",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "유사계열의 항우울제(SSRI)가 가역적으로 정자의 질에 영향을 주었다는 사례보고가 있으나, 현재까지 사람의 수태능에 미치는 영향은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "dc7d222449",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 이 약의 안전성 및 유효성 자료는 제한적이다. 따라서 65세 이상의 고령자에서 이 약을 1일 10mg 이상 투여할 경우는 주의해야 하고, 주의 깊은 모니터링이 요구된다.",
+   "extractor": "kw-v4",
+   "id": "2cb45a65df",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:26",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,104 @@
+{
+ "ingredient": "clostridium botulinum toxin type A",
+ "productSeq": "201605990",
+ "itemName": "리즈톡스주100단위(클로스트리디움보툴리눔독소A형)(수출명:휴톡스주100단위)",
+ "atc": "M03AX01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260428",
+ "ediCode": "054600012",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201605990/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201605990/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201605990/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부, 수유부에서 이 약을 사용할 때의 안전성은 확립되어 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "0e5b87d69b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 대한 임신한 랫드와 토끼를 대상으로 한 연구에서 랫드는 1 U/kg/일 투여 시 투여군 모체에서 임신체중의 증가억제와 투여부위의 근위축이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "260635f2c4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "토끼의 경우 0.2 U/kg/일 투여 시 투여군 모체에서 사망 및 유산이 관찰되었고, 태자에서는 현저한 체중의 감소, 골격 기형 발생률의 증가, 앞발허리뼈의 골화점 수 감소가 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "259570fd7d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약물 투여 후 임신 시, 환자에게 토끼에서 관찰된 독성을 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "af037195be",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "보툴리눔독소가 유즙 중에 분비되는지는 알려지지 않았다. 많은 약물이 유즙 중에 분비되므로 수유부에 투여 시 세심히 관찰해야 한다.",
+   "extractor": "kw-v4",
+   "id": "3355c5571b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 또는 수유 중에는 이 약의 사용이 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "fc41efc709",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 미간주름 및 외안각주름 개선 임상에서 66세 이상의 고령자에 대한 안전성 및 유효성이 확인되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "2e521a8f41",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:56",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

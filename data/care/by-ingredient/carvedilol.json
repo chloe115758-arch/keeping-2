@@ -1,140 +1,144 @@
 {
-  "ingredient": "carvedilol",
-  "productSeq": "201603873",
-  "itemName": "뉴카르벨로정25밀리그램(카르베딜롤)",
-  "atc": "C07AG02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230703",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603873/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603873/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603873/NB"
-  },
-  "rules": [
+ "ingredient": "carvedilol",
+ "productSeq": "201603873",
+ "itemName": "뉴카르벨로정25밀리그램(카르베딜롤)",
+ "atc": "C07AG02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230703",
+ "ediCode": "053600060",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603873/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603873/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603873/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 18)",
+   "subject": "",
+   "excerpt": "환자에 따라 어지럼, 졸음 등이 나타날 수 있으며 각성상태에 영향을 미치므로 운전, 기계조작 등에 주의하며, 특히 이약의 투여시작, 용량변화, 치료변화, 알코올복용 시 주의한다.",
+   "extractor": "kw-v4",
+   "id": "f48c3c04e3",
+   "kind": "note",
+   "matched": [
     {
-      "id": "8f2dd9bba0",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의 18)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "환자에 따라 어지럼, 졸음 등이 나타날 수 있으며 각성상태에 영향을 미치므로 운전, 기계조작 등에 주의하며, 특히 이약의 투여시작, 용량변화, 치료변화, 알코올복용 시 주의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9a25b453c1",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 3)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "다른 혈압강하작용이 있는 약물이나 이상반응 중 혈압강하가 있는 약물(예, 바르비투르산염, 페노티아진 등의 진정제, 항우울제, 혈관확장제, 알코올 등)의 작용이 증가될 수 있으며, 레세르핀, 구아네티딘, 메틸도파, 클로니딘, 구안파신, MAO억제제 등과 병용시 심박수가 더욱 감소, 중증의 서맥이 나타날 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "badce5950b",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 20)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올은 급성 혈압강하 효과가 있으므로 이 약과의 병용 섭취는 혈압강하작용을 증가시킬 수 있다. 알코올은 이 약의 용해도를 증가시켜 장 흡수 속도 및/또는 흡수량에 영향을 미칠 수 있다. 또한, 이 약은 알코올에 의해 유도 및 억제되는 CYP2E1 효소에 일부 대사된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7066e3ad82",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 21)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "자몽 주스와 병용시 이 약의 혈중 농도가 소폭 상승할 수 있으므로 안정적인 용량-반응 관계가 확립될 때까지는 병용 섭취를 피한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b1a5229291",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 및 임신하고 있을 가능성이 있는 여성에게는 안전성이 확립되어 있지 않기 때문에 투여하지 않는다. 베타차단제는 태반관류를 막아서 태아의 자궁 내 사망 혹은 기형아 출산, 조기 출산이 일어날 수 있다. 또한 신생아에게도 저혈당증, 서맥, 호흡저하, 그리고 고열 등을 일으킬 수 있다. 또한 급성폐부종 혹은 입원을 필요로 하는 심부전까지 나타날 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3ae03db080",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 대사물은 모유로 이행되므로, 이 약 복용 시 수유하지 않는다. 수유하는 여성에게는 이 약을 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d7aef4f127",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 주로 간에서 대사되는 약물이며, 중증 간장애 환자에서 혈중 농도 상승이 보고된 바 있다. 일반적으로 고령자는 간기능이 저하되어 있는 경우가 많기 때문에 혈중 농도가 상승할 우려가 있으며, 고령자에게서 과도한 혈압강하는 뇌경색 등이 일어날 우려가 있어 바람직하지 않다. 따라서 고령자에게 투여시 낮은 용량에서 투여를 시작하는 등 환자의 상태를 충분히 관찰하며 신중히 투여할 것이 권장된다…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d224befc40",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "4) 흡수속도를 조절하기 위해 아침, 저녁에 식사와 함께 복용할 것이 권장된다. 식사와 함께 복용 시 흡수 속도 느리게 하여 기립저혈압 빈도를 줄일 수 있다.",
-      "meal": "식사와 함께",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:04:39"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 3)",
+   "subject": "",
+   "excerpt": "다른 혈압강하작용이 있는 약물이나 이상반응 중 혈압강하가 있는 약물(예, 바르비투르산염, 페노티아진 등의 진정제, 항우울제, 혈관확장제, 알코올 등)의 작용이 증가될 수 있으며, 레세르핀, 구아네티딘, 메틸도파, 클로니딘, 구안파신, MAO억제제 등과 병용시 심박수가 더욱 감소, 중증의 서맥이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "8f8ef2d6ed",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 20)",
+   "subject": "",
+   "excerpt": "알코올은 급성 혈압강하 효과가 있으므로 이 약과의 병용 섭취는 혈압강하작용을 증가시킬 수 있다. 알코올은 이 약의 용해도를 증가시켜 장 흡수 속도 및/또는 흡수량에 영향을 미칠 수 있다. 또한, 이 약은 알코올에 의해 유도 및 억제되는 CYP2E1 효소에 일부 대사된다.",
+   "extractor": "kw-v4",
+   "id": "a78a8096c4",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 21)",
+   "subject": "",
+   "excerpt": "자몽 주스와 병용시 이 약의 혈중 농도가 소폭 상승할 수 있으므로 안정적인 용량-반응 관계가 확립될 때까지는 병용 섭취를 피한다.",
+   "extractor": "kw-v4",
+   "id": "635f084d40",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 및 임신하고 있을 가능성이 있는 여성에게는 안전성이 확립되어 있지 않기 때문에 투여하지 않는다. 베타차단제는 태반관류를 막아서 태아의 자궁 내 사망 혹은 기형아 출산, 조기 출산이 일어날 수 있다. 또한 신생아에게도 저혈당증, 서맥, 호흡저하, 그리고 고열 등을 일으킬 수 있다. 또한 급성폐부종 혹은 입원을 필요로 하는 심부전까지 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "be26e18ed9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약의 대사물은 모유로 이행되므로, 이 약 복용 시 수유하지 않는다. 수유하는 여성에게는 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "094af18958",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 주로 간에서 대사되는 약물이며, 중증 간장애 환자에서 혈중 농도 상승이 보고된 바 있다. 일반적으로 고령자는 간기능이 저하되어 있는 경우가 많기 때문에 혈중 농도가 상승할 우려가 있으며, 고령자에게서 과도한 혈압강하는 뇌경색 등이 일어날 우려가 있어 바람직하지 않다. 따라서 고령자에게 투여시 낮은 용량에서 투여를 시작하는 등 환자의 상태를 충분히 관찰하며 신중히 투여할 것이 권장된다…",
+   "extractor": "kw-v4",
+   "id": "84b534db05",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "d224befc40",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "4) 흡수속도를 조절하기 위해 아침, 저녁에 식사와 함께 복용할 것이 권장된다. 식사와 함께 복용 시 흡수 속도 느리게 하여 기립저혈압 빈도를 줄일 수 있다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

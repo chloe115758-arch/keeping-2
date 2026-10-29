@@ -1,0 +1,276 @@
+{
+ "ingredient": "fenofibric acid + pravastatin sodium",
+ "productSeq": "202601574",
+ "itemName": "프라바펜캡슐(프라바스타틴, 페노피브릭산)",
+ "atc": "C10BA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260903",
+ "ediCode": "642707950",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601574/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601574/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601574/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "따라서, 이 약의 잠재적인 이익/위험 비율은 치료 시작 전에 면밀히 평가되어야 하며 근육 독성의 어떠한 증상이라도 나타날 경우에 환자를 모니터링하여야 한다. 70세 이상의 연령, 신장애, 간장애, 갑상선 기능저하증, 스타틴계 또는 피브레이트계 약물에 의해 근육 독성의 병력, 유전적 근육 장애의 병력 또는 가족력이 있거나 알코올 남용과 같은 확실한 악화인자를 가진 환자들은 근육독성의 위험이 증…",
+   "extractor": "kw-v4",
+   "id": "b0b4dc0aed",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "이 약은 간질환의 병력이 있거나 과도한 알코올 복용 환자에게 투여 시에는 주의하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "0c8ffff277",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "프라바스타틴은 콜레스티라민 투여 1시간 전 또는 4시간 후에 투여하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "c12c9db5ec",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (5)",
+   "subject": "",
+   "excerpt": "프라바스타틴의 생체내 이용률은 이 약 투여 1시간 전에 투여된 제산제나 시메티딘에 의해 영향을 받지 않는다. 따라서 제산제를 복용 시에는 프라바스타틴나트륨 투여 1시간 전에 복용하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "56d21338cc",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "ba257ad818",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "프라바스타틴과 페노피브레이트의 복합제에 대해 임신한 여성을 대상으로 한 임상데이터는 없다. 이 약에 대한 생식독성 연구는 수행되지 않았으며, 사람에 대한 잠재적 위험성은 알려져 있지 않다. 그러므로 이 약은 프라바스타틴과 마찬가지로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "d4041b6e16",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "프라바스타틴나트륨",
+   "extractor": "kw-v4",
+   "id": "90a8d328c7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "프라바스타틴과 같은 HMG-CoA 환원효소저해제는 태아발육에 필수적인 콜레스테롤의 생합성을 감소시켜 태아에게 심각한 영향을 미칠 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 투여하지 않는다. 프라바스타틴 투여 중 임신이 되었을 경우에는 즉시 투여를 중지하고 태아에 대한 총체적 위험을 고려한다.",
+   "extractor": "kw-v4",
+   "id": "e50f72f58b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "페노피브릭산",
+   "extractor": "kw-v4",
+   "id": "fdbd9d2560",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신중 (특히 임신 3개월 이후)에 투여시 태아에 축적되어 태아독성을 유발할 위험성이 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "ced0127a56",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "5c26680a38",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약으로 수유동물에 대한 연구는 수행되지 않았다. 그러므로, 수유 중 프라바스타틴의 금기사항을 고려하여, 수유부에게는 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "4c9a259d15",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "프라바스타틴나트륨",
+   "extractor": "kw-v4",
+   "id": "90a8d328c7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "프라바스타틴은 사람의 모유 중으로 적은 양이 이행되므로 수유부에서는 투여하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "cba1680b26",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "페노피브릭산",
+   "extractor": "kw-v4",
+   "id": "fdbd9d2560",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "모유중으로의 이행이 알려진 바 없으므로 수유중에는 투여를 피한다(랫드에서 유즙으로 이행되었다는 보고가 있다.).",
+   "extractor": "kw-v4",
+   "id": "13f54adf81",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "생식",
+   "extractor": "kw-v4",
+   "id": "bd1fdf8688",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "두 성분의 복합제에 대한 생식독성에 대한 데이터는 없다.",
+   "extractor": "kw-v4",
+   "id": "a57d1681a1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 고령자는 치료 개시전 신기능이 확인되어야 한다. 이 약은 75세 이상의 고령자에서의 안전성은 확립되어 있지 않으므로 주의하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "d5068770cd",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:16",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

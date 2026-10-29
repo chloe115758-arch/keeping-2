@@ -1,0 +1,92 @@
+{
+ "ingredient": "pemirolast potassium",
+ "productSeq": "201802179",
+ "itemName": "페미로살정5밀리그램(페미로라스트칼륨)",
+ "atc": "R06AX",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "642004190",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802179/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802179/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802179/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부등에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다(랫드를 이용한 생식ㆍ발생독성시험 중 배ㆍ태자발생시험에서 고용량(400mg/kg/day, 임상용량의 약1200배) 부여군에서 유의성 있는 태자발육지연이 보고되었다).",
+   "extractor": "kw-v4",
+   "id": "c96eab18e6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부등에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유중의 여성에는 이 약 투여중에는 수유를 피하도록 한다.(동물실험(랫드)에서 유즙으로의 이행이 보고되었다).",
+   "extractor": "kw-v4",
+   "id": "67e5947eb9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 이상반응이 나타난 경우에는 감량(예를 들면 반으로 양을 줄임)또는 휴약하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "c6817e9b18",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "badbbb79a5",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "11세 이상 소아 및 성인에게는 보통 페미로라스트칼륨으로서 1회 10밀리그람을 1일 2회 아침식사 후 및 저녁식사 후(또는 취침전)에 경구투여한다.",
+   "meal": "식사 후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "e49a17394b",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "5세이상 11세미만 소아에게는 보통 페미로라스트칼륨으로서 1회 5밀리그람을 1일 2회 아침식사 후 및 저녁식사 후(또는 취침전)에 경구투여한다.",
+   "meal": "식사 후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "040bf79016",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인에게는 보통 페미로라스트칼륨으로서 1회 5밀리그램을 1일 2회, 아침식사 후 및 저녁식사 후(또는 취침전)에 경구투여한다. 연령, 증상에 따라 적절히 증감한다.",
+   "meal": "식사 후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:03",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

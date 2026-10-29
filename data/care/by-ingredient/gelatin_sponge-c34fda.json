@@ -1,0 +1,32 @@
+{
+ "ingredient": "gelatin sponge",
+ "productSeq": "200706581",
+ "itemName": "큐탄플라스트스폰지(정제된특수처치젤라틴)",
+ "atc": "B02BC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221215",
+ "ediCode": "697200020",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200706581/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200706581/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200706581/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "안전성 및 유효성이 확립되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "6be8ff7a5b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:37",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

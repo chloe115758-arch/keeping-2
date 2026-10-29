@@ -1,71 +1,75 @@
 {
-  "ingredient": "epinastine hydrochloride",
-  "productSeq": "201901456",
-  "itemName": "에피나온정20밀리그램(에피나스틴염산염)",
-  "atc": "R06AX24",
-  "etcOtc": "전문의약품",
-  "changeDate": "20240416",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901456/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901456/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901456/NB"
-  },
-  "rules": [
+ "ingredient": "epinastine hydrochloride",
+ "productSeq": "201901456",
+ "itemName": "에피나온정20밀리그램(에피나스틴염산염)",
+ "atc": "R06AX24",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240416",
+ "ediCode": "057000160",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901456/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901456/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901456/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "전임상결과에 비추어 볼 때, 이 약이 수면제, 항히스타민제 또는 알코올의 진정작용을 강화시키지는 않을 것으로 보인다. 그러나 이러한 약물과 병용투여한 임상적 경험은 없다.",
+   "extractor": "kw-v4",
+   "id": "381d472d81",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "3382213c36",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "전임상결과에 비추어 볼 때, 이 약이 수면제, 항히스타민제 또는 알코올의 진정작용을 강화시키지는 않을 것으로 보인다. 그러나 이러한 약물과 병용투여한 임상적 경험은 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "dd81c3bd01",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중의 투여에 관한 안전성은 확립되지 않았으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에 한하여 투여한다(임신전 또는 임신초기시험(랫트)에서는 수태율의 저하가 있었고, 기관형성기시험(토끼)에서는 태자치사작용은 모두 고용량에서 확인되었다.).",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "98e55cd736",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫트)에서 모유중으로 이행한다는 보고가 있으므로 수유중인 여성에게는 투여를 피하고 부득이하게 투여해야 하는 경우에는 수유를 중지한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8217bbcbda",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에서는 간, 신기능이 저하된 경우가 많고 흡수된 이 약은 주로 신장에서 배설되므로 정기적으로 이상반응, 임상증상(발진, 구갈, 위부불쾌감 등)의 관찰을 충분히 하고 이상반응이 나타난 경우 감량(10 mg/일) 또는 휴약하는 등의 적절한 처치를 한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:05:42"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 관한 안전성은 확립되지 않았으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에 한하여 투여한다(임신전 또는 임신초기시험(랫트)에서는 수태율의 저하가 있었고, 기관형성기시험(토끼)에서는 태자치사작용은 모두 고용량에서 확인되었다.).",
+   "extractor": "kw-v4",
+   "id": "4d628c6320",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 모유중으로 이행한다는 보고가 있으므로 수유중인 여성에게는 투여를 피하고 부득이하게 투여해야 하는 경우에는 수유를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "f614bbb58e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 간, 신기능이 저하된 경우가 많고 흡수된 이 약은 주로 신장에서 배설되므로 정기적으로 이상반응, 임상증상(발진, 구갈, 위부불쾌감 등)의 관찰을 충분히 하고 이상반응이 나타난 경우 감량(10 mg/일) 또는 휴약하는 등의 적절한 처치를 한다.",
+   "extractor": "kw-v4",
+   "id": "fbfacc13f8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

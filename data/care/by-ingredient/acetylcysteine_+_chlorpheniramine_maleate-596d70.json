@@ -1,0 +1,87 @@
+{
+ "ingredient": "acetylcysteine + chlorpheniramine maleate",
+ "productSeq": "200302278",
+ "itemName": "세브론에이시럽",
+ "atc": "R05CB10",
+ "etcOtc": "일반의약품",
+ "changeDate": "20221220",
+ "ediCode": "652900921",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302278/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302278/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302278/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "알코올, 중추신경억제제 병용시 졸음을 유발할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "5916a55157",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 적절한 연구가 없으므로 반드시 필요한 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "0f113078db",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부 및 임신하고 있을 가능성이 있는 부인에 대한 안전성이 확립되어 있지 않으므로 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d2622b886f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 모유로 분비되는지는 알려지지 않았으나 많은 약들이 모유로 분비되므로 수유부에 투여할 경우에는 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "de02939db1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 환자의 상태를 관찰하여 신중히 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f05c81cfef",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:50",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

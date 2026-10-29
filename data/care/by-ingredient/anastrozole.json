@@ -1,0 +1,56 @@
+{
+ "ingredient": "anastrozole",
+ "productSeq": "200806188",
+ "itemName": "테바아나스트로졸정1밀리그램 ",
+ "atc": "L02BG03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20141106",
+ "ediCode": "626900220",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200806188/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200806188/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200806188/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 임부에게는 투여하지 않는다. 이 약은 임부에게 투여되었을 때 태아에 해를 끼칠 수 있다. 임부에게 아미리덱스를 사용한 시험은 없었다. 만약 임신중 이 약이 사용되었거나 이 약 투여중 환자가 임신했다면 태아독성이나 임신손실을 고려해야 한다(동물실험(랫트)에서 태자의 발육 지연이 인정되고 있다. 또한 동물실험(랫트 및 토끼)에서 태자로의 이행이 인정되고 있다.).",
+   "extractor": "kw-v4",
+   "id": "ea94c5ec62",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 이 약이 인간의 모유로의 이행여부는 알려져 있지 않다. 수유부에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "4b1afc4002",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일부 임상시험에서 50 %의 환자가 65세 이상이었는데, 이때의 유효율 및 질병진전이 65세 이상 및 이하의 환자에서와 유사했다.",
+   "extractor": "kw-v4",
+   "id": "06931ccab5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:29",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

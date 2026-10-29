@@ -1,0 +1,56 @@
+{
+ "ingredient": "tranexamic acid",
+ "productSeq": "197200091",
+ "itemName": "도란사민캡슐(트라넥삼산)(수출명:트라민캡슐)",
+ "atc": "B02AA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230104",
+ "ediCode": "645400120",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197200091/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197200091/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197200091/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험을 통한 기형발생 등의 증거는 없지만, 이 약이 태반을 통과하므로 임부에게는 신중하게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "bde726643a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모체혈중농도의 약 1%의 농도로 모유로 이행되나 영아에게 항섬유소용해등의 영향을 줄것으로 생각되지는 않는다.",
+   "extractor": "kw-v4",
+   "id": "466a6de9cd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "f8240f1601",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

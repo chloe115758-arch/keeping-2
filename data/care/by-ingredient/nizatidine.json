@@ -1,64 +1,92 @@
 {
-  "ingredient": "nizatidine",
-  "productSeq": "201403769",
-  "itemName": "니자딘엠캡슐(니자티딘)",
-  "atc": "A02BA04",
-  "etcOtc": "전문의약품",
-  "changeDate": "20241007",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403769/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403769/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403769/NB"
+ "ingredient": "nizatidine",
+ "productSeq": "201403769",
+ "itemName": "니자딘엠캡슐(니자티딘)",
+ "atc": "A02BA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20241007",
+ "ediCode": "622801940",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403769/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403769/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403769/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 및 수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "609f76bdfc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "d9cb9da66a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자에 대한 투여 ①",
-      "subject": "1) 임부 및 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0f9f9b0b6e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자에 대한 투여 ②",
-      "subject": "1) 임부 및 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 이 약이 유즙중에 분비되므로 수유부에는 치료가 절대적으로 필요하다고 인정되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8368098e42",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자에 대한 투여 ①",
-      "subject": "2) 소아 및 고령자에 대한 사용",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "소아에 대한 안전성 및 유효성을 확립되어 있지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8c6f02cdc5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자에 대한 투여 ②",
-      "subject": "2) 소아 및 고령자에 대한 사용",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "외국에서 이 약으로 임상을 실시한 대상 955명 중 337명(35.3%)가 65세 이상이었으며 고령자군과 비고령자군 간의 안전성ㆍ유효성 전반에 대한 차이는 발견되지 않았다. 기타 보고된 임상경험에서도 고령자군과 비고령자군 간의 반응율에는 차이가 확인되지 않았으나, 일부 고령자에 있어서 감수성이 더 크게 나타날 가능성은 배제할 수 없다. 이 약은 상당 부분이 신장을 통해 배설되므로 신장 기능이…",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:07:13"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자에 대한 투여 ①",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "a74cb70123",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자에 대한 투여 ②",
+   "subject": "",
+   "excerpt": "동물실험에서 이 약이 유즙중에 분비되므로 수유부에는 치료가 절대적으로 필요하다고 인정되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "bd186c5825",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "소아 및 고령자에 대한 사용",
+   "extractor": "kw-v4",
+   "id": "62a5fff044",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자에 대한 투여 ①",
+   "subject": "",
+   "excerpt": "소아에 대한 안전성 및 유효성을 확립되어 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "6a669e2854",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자에 대한 투여 ②",
+   "subject": "",
+   "excerpt": "외국에서 이 약으로 임상을 실시한 대상 955명 중 337명(35.3%)가 65세 이상이었으며 고령자군과 비고령자군 간의 안전성ㆍ유효성 전반에 대한 차이는 발견되지 않았다. 기타 보고된 임상경험에서도 고령자군과 비고령자군 간의 반응율에는 차이가 확인되지 않았으나, 일부 고령자에 있어서 감수성이 더 크게 나타날 가능성은 배제할 수 없다. 이 약은 상당 부분이 신장을 통해 배설되므로 신장 기능이…",
+   "extractor": "kw-v4",
+   "id": "0866b7c36a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

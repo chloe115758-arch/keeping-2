@@ -1,0 +1,75 @@
+{
+ "ingredient": "nicorandil",
+ "productSeq": "198901319",
+ "itemName": "바딜정(니코란딜)",
+ "atc": "C01DX16",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200214",
+ "ediCode": "644301270",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198901319/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198901319/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198901319/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약은 다른 혈관 확장제, 삼환계 항우울제 및 알코올의 혈압강하작용을 증강시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "5ed200b1d5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성은 확립되어 있지 않았으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "0ad96e41b7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유중으로의 이행이 보고된 바 없으나 치료 중에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "3744e86fc9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 이상반응이 나타나기 쉬우므로, 저용량에서 투여를 시작하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "696a3ba3a1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:35",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

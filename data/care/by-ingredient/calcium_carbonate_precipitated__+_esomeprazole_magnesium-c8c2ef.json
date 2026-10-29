@@ -1,0 +1,397 @@
+{
+ "ingredient": "calcium carbonate(precipitated) + esomeprazole magnesium",
+ "productSeq": "202101154",
+ "itemName": "에소피드정20/600밀리그램",
+ "atc": "A02BC",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260203",
+ "ediCode": "642105670",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101154/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101154/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101154/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것. 2)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "31f71a54f9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "에스오메프라졸",
+   "extractor": "kw-v4",
+   "id": "d98e709be5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (1)",
+   "subject": "",
+   "excerpt": "이 약 투여 중 위내 산도 감소로 인해 위 산도에 의해 흡수 기전이 영향을 받는 약물의 흡수가 증가 또는 감소될 수 있다. 다른 산 분비 억제제나 제산제와 마찬가지로 이 약 투여 중에는 케토코나졸과 이트라코나졸 및 엘로티닙의 흡수가 감소될 수 있고 디곡신의 흡수가 증가할수 있다. 건강한 지원자들에서 오메프라졸(하루에 20 mg)과 디곡신의 동시투여는 디곡신의 생체이용률을 10 %정도 증가시켰…",
+   "extractor": "kw-v4",
+   "id": "3bb4f57374",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "에스오메프라졸은 CYP2C19과 CYP3A4에 의해 대사된다. 그리고 에스오메프라졸은 이 약의 주 대사효소인 CYP2C19을 저해한다. 디아제팜, 시탈로프람, 이미프라민, 클로미프라민, 페니토인, 와르파린 등과 같이 CYP2C19에 의해 대사되는 약물과 병용시 이들 약물의 혈장 농도가 증가될 수 있으므로 이들 약물의 감량이 필요할 수 있다. CYP2C19 기질인 디아제팜과 에스오메프라졸 30…",
+   "extractor": "kw-v4",
+   "id": "47d13a2078",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "임상시험에서 와파린을 투여하고 있는 환자에게 에스오메프라졸 40 mg을 병용 투여하였을 때 응고 시간은 정상 범위에 포함되었다. 그러나 시판 후 조사에서 두 약물을 병용투여하는 동안 임상적으로 유의한 INR과 프로트롬빈 시간의 상승이 몇 건 보고되었으며 이는 비정상적출혈과 심지어 사망까지 초래할 수 있다. 그러므로 와파린 또는 다른 쿠마린 유도체와 이 약과의 병용투여를 시작하거나 중단할 때…",
+   "extractor": "kw-v4",
+   "id": "0fb7eadd61",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (3)",
+   "subject": "",
+   "excerpt": "에스오메프라졸은 CYP2C19과 CYP3A4에 의해 대사된다. 에스오메프라졸과 CYP3A4 저해제인 클래리트로마이신(500 mg 1일 2회 투여)을 동시에 투여하면 이 약의 AUC가 2배로 증가된다. 이 약과 CYP2C19, CYP3A4 저해제와의 병용투여는 이 약의 노출을 두 배 이상 증가시킬 수 있다. CYP2C19, CYP3A4 억제제인 보리코나졸은 오메프라졸의 AUCτ를 280 %까지…",
+   "extractor": "kw-v4",
+   "id": "432fdc6b47",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (4)",
+   "subject": "",
+   "excerpt": "CYP2C19나 CYP3A4 혹은 두가지 모두를(예, 리팜피신과 세인트존스워트) 유도한다고 알려진 약물들은 에스오메프라졸 대사를 증가시킴으로써 에스오메프라졸 혈청 농도를 감소시킬 수도 있다. 이 약과 리팜피신 또는 세인트존스워트의 병용투여를 피한다.",
+   "extractor": "kw-v4",
+   "id": "19b1e126db",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (5)",
+   "subject": "",
+   "excerpt": "에스오메프라졸 뿐만 아니라, 오메프라졸도 CYP2C19의 억제제로써 작용한다. 교차연구에서 건강한 지원자에게 40 mg의 오메프라졸을 투여한 경우 실로스타졸의 Cmax와 AUC가 각각 18 %와 26 % 증가하였고 실로스타졸의 활성 대사체 중 하나의 Cmax와 AUC는 각각 29 %와 69 % 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "b35e19fe76",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (6)",
+   "subject": "",
+   "excerpt": "건강한 지원자에게 오메프라졸(40 mg 1일 1회 투여)과 아타자나비르 300 mg/리토나비르 100 mg을 병용투여했을때 아타자나비르의 노출이 감소했다(AUC, Cmax, Cmin이 약 75 % 감소). 아타자나비르 400 mg 1일 4회 투여는 오메프라졸의 아타자나비르 노출에 대한 영향을 상쇄시킬 수 없다. 이 약을 포함한 프로톤펌프억제제들은 아타자나비르와 병용투여할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "872ddaaa7b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (7)",
+   "subject": "",
+   "excerpt": "오메프라졸은 몇 개의 항 바이러스제제와 상호작용이 있는 것으로 보고되었다. 이 보고된 상호작용 외 임상적 중요성과 기전은 밝혀지지 않았다. 오메프라졸 투여시의 위내 산도 감소는 항 바이러스제제의 흡수를 변화시킬 수 있다. 가능한 상호작용의 또 다른 기전은 CYP2C19이며, 아타자나비르 및 넬피나비르와 같은 항바이러스 제제에서는 오메프라졸과 병용 투여시 혈청수치 감소가 보고되었으며 병용투여는…",
+   "extractor": "kw-v4",
+   "id": "8cf0b0bdfa",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (8)",
+   "subject": "",
+   "excerpt": "건강한 지원자에게 시사프리드와 에스오메프라졸 40 mg을 병용투여했을 때 시사프리드의 AUC가 32 % 증가되고 배설 반감기가 31 % 연장되었으나, 최고 혈장 농도의 유의한 증가는 없었다. 이러한 상호작용으로 심장 전기생리에 대한 시사프리드의 영향이 변경되지 않았다. 즉, 시사프리드 단독 투여에 의한 QTc 간격의 근소한 연장 외에 이 약과 시사프리드의 병용투여에 의해 더 이상 QTc 간격…",
+   "extractor": "kw-v4",
+   "id": "9d3cd34704",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (9)",
+   "subject": "",
+   "excerpt": "에스오메프라졸은 아목시실린 또는 퀴니딘의 약물동력학에 임상적으로 유의한 영향을 미치지 않았다.",
+   "extractor": "kw-v4",
+   "id": "3a31ccfd9a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (10)",
+   "subject": "",
+   "excerpt": "에스오메프라졸과 나프록센 또는 로페콕시브의 병용 투여를 단기간 평가한 시험에 의하면 임상적으로 연관있는 약동학적 상호작용이 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "24eaceb518",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (11)",
+   "subject": "",
+   "excerpt": "건강한 지원자로부터의 연구결과로부터 클로피도그렐(초기용량 300 mg/ 유지용량1일 75 mg)과 에스오메프라졸(경구투여 1일 40 mg)은 약동학/약력학적인 상호작용이 있는 것으로 보여졌으며, 이것은 평균 14 % 정도 혈소판 응집을 감소시키는 것으로 보여졌으며 클로피도그렐의 활성 대사체의 노출을 평균 40 % 정도 감소시키는 것으로 나타났다. 이 결과에 근거하여 에스오메프라졸과 클로피도그…",
+   "extractor": "kw-v4",
+   "id": "99571b3245",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (12)",
+   "subject": "",
+   "excerpt": "이상반응 사례 보고, 집단약동학 연구(population pharmacokinetic studies) 및 후향적 연구 등에서 메토트렉세이트(주로 고용량을 사용하는 경우, 메토트렉세이트의 사용상의 주의사항 참조)와 프로톤펌프억제제를 병용하는 경우 메토트렉세이트 그리고/또는 그 대사체인 히드록시메토트렉세이트의 혈청 농도가 상승 및 유지되어 메토트렉세이트의 독성이 나타날 수 있다고 보고되었다. 그…",
+   "extractor": "kw-v4",
+   "id": "f630c49cd0",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "침강탄산칼슘",
+   "extractor": "kw-v4",
+   "id": "d6fe411c93",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "탄산칼슘"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "다량의 우유와 병용시 우유 알카리 증후군(고칼슘혈증, 고질소혈증, 알카리증 등)이 나타날 수 있으므로 충분히 관찰하고 이러한 증상이 나타나는 경우에는 투여를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "2f6aba6abf",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (4)",
+   "subject": "",
+   "excerpt": "비타민D, 치아짓계 이뇨계와 병용투여시 고칼슘혈증이 나타나기 쉬우므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "8a2261d11a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "에스오메프라졸의 임신 중 노출에 대한 데이터는 제한되어 있다. 동물실험 결과 배/태자 발달과 관련하여 직ㆍ간접의 유해작용은 나타나지 않았다. 라세미체 혼합물의 동물실험 결과 임신, 분만 또는 분만후 발달에 대한 직ㆍ간접의 유해작용도 나타나지 않았다. 그러나 이 약을 임부에 처방시 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "92a36a26e7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "에스오메프라졸이 사람의 모유 중으로 이행하는지 여부는 알려져 있지 않다. 수유부를 대상으로 한 시험은 실시되지 않았으므로, 이 약을 수유 중 투여해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "7bd9ef40d6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "9dc27ea01e",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 식사하기 적어도 1시간 전 공복에 복용한다.",
+   "meal": "식사하기 적어도 1시간 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:23",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

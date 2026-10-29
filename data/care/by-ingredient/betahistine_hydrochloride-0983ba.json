@@ -1,0 +1,56 @@
+{
+ "ingredient": "betahistine hydrochloride",
+ "productSeq": "201705499",
+ "itemName": "유턴정24mg(베타히스틴염산염)",
+ "atc": "N07CA01",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "651904560",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201705499/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201705499/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201705499/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신중 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "aba0fb095d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 용량을 감소하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "7ebc4eaffd",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "4e59821f92",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 초기 용량으로 1회 베타히스틴염산염으로서 16 mg, 1일 3회 식사와 함께 경구투여한다. 유지 용량으로 보통 1일 베타히스틴염산염으로서 24 ~ 48 mg을 투여한다",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:52",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

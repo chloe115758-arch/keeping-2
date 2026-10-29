@@ -1,0 +1,44 @@
+{
+ "ingredient": "nafronyl oxalate",
+ "productSeq": "201004086",
+ "itemName": "나푸롤정(나프로닐옥살산염)",
+ "atc": "C04AX21",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200820",
+ "ediCode": "642903910",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201004086/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201004086/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201004086/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "71f2520d55",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유 중으로의 이행이 보고되었으므로 수유 중에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "74eaf6c097",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:28",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,118 @@
+{
+ "ingredient": "insulin lispro 300I.U(100I.U)",
+ "productSeq": "200606924",
+ "itemName": "휴마로그퀵펜주100단위/밀리리터(인슐린라이스프로,유전자재조합)",
+ "atc": "A10AB04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230214",
+ "ediCode": "670800384",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606924/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606924/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200606924/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음의 환자에는 신중히 투여할 것. ⑤",
+   "subject": "",
+   "excerpt": "과도한 알코올 섭취 환자",
+   "extractor": "kw-v4",
+   "id": "bfbcc318f8",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "혈당강하 작용을 증강시킬 수 있는 약물 : 비구아니드계(메트폴민 등), 설폰아미드계 및 설폰요소계, 나테글리니드, 피오글리타존, MAO 저해제, 선택적 세로토닌 재흡수 억제제, 삼환계 항우울제, 살리실산 유도체, 항종양제(시클로포스파미드), β-차단제(프로프라놀롤 등), 쿠마린계, 클로람페니콜, α-글리코시다제 저해제, 안지오텐신전환효소 억제제(캡토프릴, 에날라프릴), 안지오텐신II 수용체…",
+   "extractor": "kw-v4",
+   "id": "cea7ee1143",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부(FDA Pregnancy Category B): 이 약에 노출된 많은 수의 임부에 대한 자료는 인슐린 라이스프로가 임신 또는 태아/신생아의 건강에 어떠한 이상사례도 나타내지 않음을 보여 준다.",
+   "extractor": "kw-v4",
+   "id": "b84c630d91",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 전 기간에 걸쳐 인슐린 치료를 받는 환자(인슐린 의존성 또는 임신성 당뇨병)를 잘 관리하는 것이 필수적이다. 일반적으로 인슐린 요구량은 임신초기에는 떨어지고 중기 및 후기에는 증가한다. 당뇨병이 있는 환자가 임신하거나 또는 임신을 계획하고 있다면 담당의사에게 알리기를 권고한다. 당뇨병이 있는 임부 환자에서는 일반적인 건강 뿐 아니라 혈당 조절에 대한 주의 깊은 모니터링이 필수적이다.",
+   "extractor": "kw-v4",
+   "id": "c97586d342",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유중인 당뇨병 환자는 인슐린 용량, 식사, 혹은 양자에 있어 조절을 필요로 할 수도 있다. 이 약의 유효량이 유즙으로 분비되는지 여부는 알려지지 않았으나 휴먼 인슐린을 포함한 많은 약물이 인체의 유즙으로 분비되므로 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d7c4e9fb2b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되기 쉬우며, 저혈당이 일어나기 쉽기 때문에 용량에 유의하여 정기적으로 검사를 실시하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "fc2b686d05",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "67a00ef5f2",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 기존의 속효성 인슐린(regular insulin)에 비해 작용 발현이 투여 후 약 15분으로 신속하고 작용 지속 시간이 2~5시간으로 짧으므로 식전 15분 이내에 피하 주사하거나, 필요한 경우 식사 후 바로 주사할 수 있다. 이후 증상 및 검사 소견에 따라 투여량을 증감할 수 있다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:05",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,120 +1,130 @@
 {
-  "ingredient": "candesartan cilexetil + rosuvastatin calcium",
-  "productSeq": "202107115",
-  "itemName": "로수칸데정10/16밀리그램 ",
-  "atc": "C10BX",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260212",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107115/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107115/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107115/NB"
-  },
-  "rules": [
+ "ingredient": "candesartan cilexetil + rosuvastatin calcium",
+ "productSeq": "202107115",
+ "itemName": "로수칸데정10/16밀리그램 ",
+ "atc": "C10BX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "073000710",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107115/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107115/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107115/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "기타 약물의 영향",
+   "excerpt": "- 제산제 : 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 이 약을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 이 약 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "e9068acbcd",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "2e85ef0efc",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "기타 약물의 영향",
-      "matched": [
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "산화마그네슘"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "- 제산제 : 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 이 약을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 이 약 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
-      "extractor": "kw-v1"
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
     },
     {
-      "id": "56dd0ba292",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "2) 이 약이 다른 약물에 미치는 영향",
-      "matched": [
-        {
-          "key": "vitaminK",
-          "kind": "supplement",
-          "ko": "비타민 K",
-          "surface": "비타민K"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "- 와파린 : 이 약과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 HMG-CoA 환원효소 저해제와 마찬가지로, 이 약과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 이 약의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
-      "extractor": "kw-v1"
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
     },
     {
-      "id": "5ff453a486",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "○ 칸데사르탄실렉세틸",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "안지오텐신Ⅱ수용체 길항제의 작용기전을 고려할 때, 태아에 대한 위험을 무시할 수 없다. 임신 2 ∼ 3기 사이에 레닌-안지오텐신-알도스테론계에 작용하는 특정 약물군에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적인 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아 손상과 연관성이 있었다. 태아 신…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "82c9ce6bd3",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "○ 칸데사르탄실렉세틸",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 모유 중에 이행되는 지의 여부는 밝혀지지 않았으나 랫트에 대한 실험에서 유즙 중에 이 약의 분비가 확인되었으므로 수유부가 이 약을 사용하는 것은 바람직하지 않다. 수유중인 여성에게 이 약의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "50928e7b03",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "○ 로수바스타틴칼슘",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 및 수유부에 대한 이 약의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a3f1b59013",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "○ 로수바스타틴칼슘",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증거가 있다. 이 약을 사용하는 동안 임신을 할 경우 즉시 복용을 중단해야 한다. 로수바스타틴은 랫드의 모유로 이행된다.…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f6e9ca4daa",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자에게 과도한 혈압강하는 바람직하지 않다 (심근경색, 뇌졸중 또는 신기능 손상의 악화 등이 일어날 우려가 있다.). 따라서 고령자에게 투여 시 신중히 투여한다.",
-      "extractor": "kw-v1"
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:07:06"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "기타 약물의 영향",
+   "excerpt": "- 와파린 : 이 약과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 HMG-CoA 환원효소 저해제와 마찬가지로, 이 약과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 이 약의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "bfe5af9407",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "○ 칸데사르탄실렉세틸",
+   "excerpt": "안지오텐신Ⅱ수용체 길항제의 작용기전을 고려할 때, 태아에 대한 위험을 무시할 수 없다. 임신 2 ∼ 3기 사이에 레닌-안지오텐신-알도스테론계에 작용하는 특정 약물군에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적인 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아 손상과 연관성이 있었다. 태아 신…",
+   "extractor": "kw-v4",
+   "id": "001d67c147",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○ 칸데사르탄실렉세틸",
+   "excerpt": "이 약이 모유 중에 이행되는 지의 여부는 밝혀지지 않았으나 랫트에 대한 실험에서 유즙 중에 이 약의 분비가 확인되었으므로 수유부가 이 약을 사용하는 것은 바람직하지 않다. 수유중인 여성에게 이 약의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "47cb3023bc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로수바스타틴칼슘",
+   "excerpt": "임신 및 수유부에 대한 이 약의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
+   "extractor": "kw-v4",
+   "id": "d8c8b52f1d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로수바스타틴칼슘",
+   "excerpt": "임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증거가 있다. 이 약을 사용하는 동안 임신을 할 경우 즉시 복용을 중단해야 한다. 로수바스타틴은 랫드의 모유로 이행된다.…",
+   "extractor": "kw-v4",
+   "id": "2cf7dddc0c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에게 과도한 혈압강하는 바람직하지 않다 (심근경색, 뇌졸중 또는 신기능 손상의 악화 등이 일어날 우려가 있다.). 따라서 고령자에게 투여 시 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "bda7cfedd2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

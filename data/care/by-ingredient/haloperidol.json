@@ -1,0 +1,143 @@
+{
+ "ingredient": "haloperidol",
+ "productSeq": "198500618",
+ "itemName": "명인할로페리돌정1.5밀리그램",
+ "atc": "N05AD01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231113",
+ "ediCode": "651900970",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500618/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500618/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500618/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 2)",
+   "subject": "",
+   "excerpt": "이 약에 의해 발작이 야기될 수 있는 것으로 보고되었으므로 뇌전증, 경련의 소인(예 : 알코올금단 증상, 뇌손상 등)이 있는 환자의 경우 주의한다.",
+   "extractor": "kw-v4",
+   "id": "9edc8d60ec",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 9)",
+   "subject": "-기타 의약품(베프리딜, 메타돈 등)",
+   "excerpt": "이 약은 제산제, 카페인에 의해 흡수가 저하되어 치료효과가 감소될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "d0df63f2f6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 11)",
+   "subject": "-기타 : 부스피론",
+   "excerpt": "할로페리돌 혈장 농도를 감소시키는 약물 : 할로페리돌과 CYP3A4 유도제의 병용투여는 할로페리돌 혈중 농도를 점진적으로 감소시킨다. 다음의 약물이 포함된다. : 카바마제핀, 페노바르비탈, 페니토인, 리팜피신, 세인트존스워트(이외 다수).",
+   "extractor": "kw-v4",
+   "id": "9992973565",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "기형발생이 의심되는 증례보고가 있고, 동물실험에서 기형발생, 태자흡수 등의 태자독성이 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "4c8b6576ff",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신말기 또는 분만 중에 항정신병약을 투여한 임부에서 태어난 신생아엔 기면, 진전, 과흥분성이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "42a8512e1e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 3기에 항정신병약을 복용한 임부로부터 출생한 신생아는 추체외로장애 및/또는 금단 증상이 나타날 위험성이 있다. 이러한 신생아에게 초조, 근육긴장항진, 근육긴장저하, 진전, 졸음, 호흡곤란, 섭식장애가 보고되었으며, 이러한 증상은 그 중증도에 있어서 다양했다. 일부 경우 이러한 증상들은 스스로 조절되었으나 다른 경우의 신생아들은 장기 입원 및 중환자실에서의 치료를 요하였다.",
+   "extractor": "kw-v4",
+   "id": "89e34ae11f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "모유 중으로 이행하므로 투여 중에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "47bffc6347",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여.",
+   "subject": "",
+   "excerpt": "기립성 저혈압, 추제외로증상, 운동실조, 배실장애 등이 나타나기 쉬우므로 감량하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "57b0099b46",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:31:13",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

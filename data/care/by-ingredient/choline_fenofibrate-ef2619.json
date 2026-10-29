@@ -1,0 +1,68 @@
+{
+ "ingredient": "choline fenofibrate",
+ "productSeq": "201802531",
+ "itemName": "페노코린캡슐(페노피브레이트콜린)",
+ "atc": "C10AB11",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190511",
+ "ediCode": "653006210",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802531/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802531/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802531/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 임신 중(특히 임신 3개월 이후)에 투여시 태아에 축적되어 태아독성을 유발할 위험성이 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다. 임신한 여성의 페노피브레이트 투여에 대한 적절한 자료는 없다. 동물시험에서는 모체 독성 범위 내에서 배아 독성 효과가 나타났다. 사람에 대한 잠재적 위험은 알려지지 않았다. 그러므로 임부에게 페노피브레이트를 투여하고자 할 때…",
+   "extractor": "kw-v4",
+   "id": "a773771283",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 페노피브레이트 그리고/또는 그 대사체가 사람 유즙으로 분비되는지 여부는 알려지지 않았으므로 수유부에게 이 약을 투여하지 않는다(랫드에서 유즙으로 이행되었다는 보고가 있다.).",
+   "extractor": "kw-v4",
+   "id": "beaec1a63c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 간ㆍ신기능이 저하되어 있는 경우가 많고, 체중이 적은 경향이 있는 등 이상반응 발현이 쉬우므로 투여 시 주의하여 투여한다. 특히 이 약은 피노피브릭산 및 페노피브릭산 글루쿠로나이드로써 신장을 통해 배설되며, 이 약의 이상반응의 위험은 신기능부전환자에서 더 높을 수 있다. 신기능에 대해서는 투여 중 혈청크레아티닌 수치를 정기적으로 확인해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f53b3a9477",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "고령자에서 설포닐요소계 혈당강하제(글리벤클라미드 등)와의 병용에 의해 저혈당증(식은땀, 강한 공복감, 심계항진 등)이 나타났다는 보고가 있으므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "c1dadb6a7f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:49",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

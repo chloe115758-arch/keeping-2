@@ -1,0 +1,147 @@
+{
+ "ingredient": "dimethyl fumarate",
+ "productSeq": "201600419",
+ "itemName": "텍피데라캡슐240밀리그램(디메틸푸마르산염)",
+ "atc": "L04AX07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260119",
+ "ediCode": "621100230",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600419/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600419/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600419/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호 작용 (3)",
+   "subject": "",
+   "excerpt": "적정량의 음주(포도주 125mL)는 이 약에 대한 노출을 변화시키거나 이상반응을 증가시키지는 않았으나 희석되지 않은 강한 알코올성 음료(30 v/v% 이상)의 다량 섭취는 피해야 하며, 알코올은 이 약의 용출율을 증가시킬 수 있으며, 이로 인하여 위장관계 이상반응의 발생 빈도가 증가될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "e4c9b725aa",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "e0ff6fe5c1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "임부 레지스트리(독일, 미국, 캐나다 등)와 시판 후 자발 보고에 기반한, 임신한 여성에게 디메틸푸마르산염을 사용한 데이터가 다소 존재한다(약 1,300 임신 결과). 이 약의 임부 레지스트리에서, 이 약에 노출된 다발성 경화증 환자에서 289건의 임신 결과가 전향적으로 수집되었다. 이 약에 노출된 기간의 중앙값은 임신 주수 4.6주 였다(임신 주수 6주 이후의 제한적 노출로 인한 44건의…",
+   "extractor": "kw-v4",
+   "id": "ada473126b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "동물시험 결과 생식독성이 나타났으므로, 예방 조치로 이 약을 임부 및 임신을 계획하는 여성에게 투여하는 것을 피하는 것이 바람직하다. 이 약이 명백히 필요하고 잠재적 유익성이 태아에 대한 잠재적 위험성을 상회하는 경우에만 임부에게 투여하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "c54d5eceda",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "생식발생독성시험 결과를 혈중농도곡선하면적(AUC)에 근거하여 살펴보면, 이 약을 사람에 대한 권장용량의 4배 및 7배를 랫드 및 토끼에게 투여하였을 때 태자에 영향이 없는 모체독성을 나타내었다. 랫드에게 사람에 대한 권장용량의 11배를 투여하였을 때 태자무게 감소 및 골화지연이 관찰되었고, 토끼에게 사람에 대한 권장용량의 16배를 투여하였을 때 유산 증가가 관찰되었다. 임신한 랫드에게 사람에…",
+   "extractor": "kw-v4",
+   "id": "5bfa5b3b94",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "c5f18baa93",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "디메틸푸마르산염 또는 그 대사체가 유즙으로 분비되는지 여부는 확인되지 않았으므로, 신생아/유아에 대한 위험성을 배제할 수 없다. 수유부에게 이 약을 투여하고자 하는 경우에는 아이에게 수유하는 이점과 수유부에 대한 치료의 유익성을 고려하여 수유중단 또는 이 약의 투여중단 여부를 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "a81abea8b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "0081ae3784",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람의 수태능에 미치는 영향에 대한 자료는 없다. 비임상시험 결과에서는 디메틸푸마르산염이 수태능 감소의 위험성 증가와 관련이 있음을 시사하지는 않았다.",
+   "extractor": "kw-v4",
+   "id": "b40547cc42",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 대한 임상시험에서 만 55세 이상의 환자에 대한 투여는 제한적이었으며, 만 65세 이상의 환자가 충분히 포함되지 않아 이 약이 젊은 환자에 비하여 고령자에서 다르게 반응하는지 판단할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "dec968a8c5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:48",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,203 @@
+{
+ "ingredient": "abrocitinib",
+ "productSeq": "202107593",
+ "itemName": "시빈코정50밀리그램(아브로시티닙)",
+ "atc": "D11AH08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260213",
+ "ediCode": "648903630",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107593/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107593/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107593/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "H2-수용체 길항제인 파모티딘 40 mg과 이 약 200 mg을 병용투여 시, 이 약 활성성분의 Cmax 및 AUCinf는 각각 약 82% 및 20% 감소했다. 제산제 또는 프로톤펌프 억제제(오메프라졸)에 의한 위 pH 증가가 이 약의 약동학에 미치는 영향은 연구되지 않았고, 파모티딘에서 관찰된 것과 유사하게 이 약의 흡수를 감소시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "3875f28061",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "경구 피임약(예: 에티닐 에스트라디올/레보노르게스트렐) 또는 BCRP 및 OAT3 (예: 로수바스타틴), MATE1/2K (예: 메트포르민), CYP3A4 (예: 미다졸람), CYP1A2(예: 카페인) 및 CYP2B6(예: 에파비렌즈)의 기질과의 약물-상호작용 시험에서 임상적으로 유의한 이 약의 영향은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "942025e31e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "시험관 내에서, 이 약은 CYP2C19 효소의 억제제이다. 오메프라졸 10 mg 단회용량과 이 약 200 mg 1일 1회를 병용투여시, 오메프라졸의 AUCinf 및 Cmax가 각각 약 189% 및 134% 증가했고, 이는 이 약이 CYP2C19 효소의 중등도 억제제임을 나타낸다. 주로 CYP2C19 효소에 의해 대사되는 좁은 치료역의 약물(예: S-메페니토인, 클로피도그렐)과 이 약을 병용투…",
+   "extractor": "kw-v4",
+   "id": "ad01b552fb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "7691c8aae3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 이 약의 사용은 금기이다. 임부에 대한 이 약의 자료는 없거나 제한적이다. 동물시험에서 생식독성이 나타났다. 이 약은 임신한 랫드와 토끼의 태자에서 골격변형을 일으키고, 랫드의 분만 및 출생 전/후 발달에 영향을 미치는 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "f82989cdf9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "ed8d853708",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "신생아/영아에 대한 위험성을 배제할 수 없으며, 모유수유 중 이 약의 사용은 금기이다. 모유내 이 약의 존재, 모유수유한 영아에 미치는 영향 또는 모유생성에 미치는 영향에 대한 자료는 없다. 이 약은 수유 중인 랫드의 모유로 분비되었다.",
+   "extractor": "kw-v4",
+   "id": "65b0a7c872",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "가임여성 및 수태능",
+   "extractor": "kw-v4",
+   "id": "207a878296",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임여성은 이 약 투여 중 그리고 최종투여 후 1개월간 효과적인 피임법을 사용해야 한다. 가임여성에서 임신 계획 및 예방을 권장한다.",
+   "extractor": "kw-v4",
+   "id": "b683addb5b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "랫드 연구결과에 따르면, 이 약의 경구투여는 암컷의 수태능을 일시적으로 감소시킬 수 있다. 암컷 랫드 수태능에 대한 이러한 영향은 이 약의 경구투여 중단 1개월 후 가역적이었다.",
+   "extractor": "kw-v4",
+   "id": "d932e93278",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "만 65세 이상 환자의 권장 시작용량은 1일 1회 100mg이다.",
+   "extractor": "kw-v4",
+   "id": "f44fe97d91",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "만 65세 이상 총 176명의 환자가 이 약의 임상시험에 등록되었다. 고령자에서 관찰된 안전성프로파일은 다음을 제외하고 성인 모집단과 유사했다: 젊은 환자 대비 만 65세이상의 환자에서 임상시험중단 비율이 더 높았고, 중대한 이상반응이 더 있었다. 만 65세이상 환자에서 낮은 혈소판 및 ALC 값이 발생할 가능성이 더 높았고, 젊은 환자보다 대상포진 발생률이 더 높았다. 만 75세이상 환자에…",
+   "extractor": "kw-v4",
+   "id": "0bb37df0c4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "<만 65세 이상 환자에서의 사용>",
+   "excerpt": "토파시티닙(다른 JAK 억제제)의 대규모 무작위 연구에서 관찰된 바와 같이, 만 65세 이상 환자에서 주요 심혈관계 이상반응, 악성종양, 중대한 감염 및 모든 원인으로 인한 사망의 위험증가를 고려하여, 기존 치료제에 적절히 반응하지 않거나 내약성이 없는 경우에 한하여 주의해서 사용하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "62dec83b7f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:33",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

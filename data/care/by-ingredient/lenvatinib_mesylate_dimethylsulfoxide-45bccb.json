@@ -1,0 +1,140 @@
+{
+ "ingredient": "lenvatinib mesylate dimethylsulfoxide",
+ "productSeq": "202500247",
+ "itemName": "렌바닙캡슐4밀리그램(렌바티닙메실산염디메틸설폭시드)",
+ "atc": "L01EX08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260824",
+ "ediCode": "641908570",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500247/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500247/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500247/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 수정능력에 대한 영향 1)",
+   "subject": "",
+   "excerpt": "임신가능성이 있는 여성",
+   "extractor": "kw-v4",
+   "id": "191faf348a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 수정능력에 대한 영향",
+   "subject": "",
+   "excerpt": "임신가능성이 있는 여성은 임신을 피해야 하며, 이 약을 투여받는 동안 및 이 약의 치료를 중단한 최소 한 달까지 매우 효율적인 피임방법을 사용하여야 한다. 아직까지 이 약이 호르몬성 피임약의 효능을 감소시키는지는 알려진 바가 없으며, 경구용 호르몬성 피임약을 사용하는 여성은 장벽 방식을 추가하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "b4c55a2c20",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 수정능력에 대한 영향 2)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "a7f028c988",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 수정능력에 대한 영향",
+   "subject": "",
+   "excerpt": "임부에서 이 약의 투여에 대한 정보가 불충분하다. 이 약을 투여한 랫드 및 토끼에서 배아독성 및 최기형성을 보였다.",
+   "extractor": "kw-v4",
+   "id": "ceef3383d6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 수정능력에 대한 영향",
+   "subject": "",
+   "excerpt": "이 약은 태아에 미치는 위험성과 임산부에서의 필요성에 대한 신중한 검토 후 반드시 필요하지 않는 한 임산부에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "fbbb5b90b5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 수정능력에 대한 영향 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "f068b8cdca",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 수정능력에 대한 영향",
+   "subject": "",
+   "excerpt": "이 약이 모유를 통해 이행되는지 여부는 밝혀지지 않았다. 이 약 및 이 약의 대사체가 랫드의 모유를 통해 분비되었다. 영유아에 대한 위험성을 배제할 수 없기 때문에, 이 약 투여 중 그리고 마지막 투여 후 최소 1주일 동안 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "47ee23ebc9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 수정능력에 대한 영향 4)",
+   "subject": "",
+   "excerpt": "수정 능력",
+   "extractor": "kw-v4",
+   "id": "ded4834e9a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부 및 수정능력에 대한 영향",
+   "subject": "",
+   "excerpt": "사람에 대한 영향은 밝혀지지 않았다. 그러나 랫드, 개 및 원숭이에서 고환 및 난소에 대한 독성이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "936b9c7910",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "연령에 따른 초회 용량 조절은 필요하지 않다. 75세 이상 환자에서의 이용 가능한 자료는 제한적이다.",
+   "extractor": "kw-v4",
+   "id": "012fd2a375",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:22",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,292 @@
+{
+ "ingredient": "anagliptin + metformin hydrochloride",
+ "productSeq": "201600170",
+ "itemName": "가드메트정100/1000밀리그램(아나글립틴, 메트포르민)",
+ "atc": "A10BD",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260324",
+ "ediCode": "644914120",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600170/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600170/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600170/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에는 투여하지 말 것 10)",
+   "subject": "",
+   "excerpt": "간기능 장애(손상된 간 기능은 유산산증의 몇몇 경우와 관련이 있기 때문에, 일반적으로 임상적 또는 실험실적으로 간 질환의 증거가 있는 환자에게는 이 약의 투여를 피해야 한다.), 폐경색, 중증의 폐기능장애 환자 및 기타 저산소혈증을 수반하기 쉬운 상태, 과도한 알코올 섭취자, 탈수증, 설사, 구토 등의 위장장애 환자",
+   "extractor": "kw-v4",
+   "id": "9303dee494",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "덧붙여 메트포르민염산염은 저산소증, 탈수, 패혈증과 관계된 증상이 나타날 경우 즉각 투여를 중지해야 한다. 간기능이 손상된 경우 젖산 배설능력이 유의적으로 저하될 수 있으므로, 일반적으로 간질환의 임상적 또는 실험실적 소견이 있는 환자의 경우 메트포르민염산염을 투여하지 않는다. 알코올은 메트포르민염산염이 젖산대사에 영향을 미치게 할 가능성이 있으므로, 메트포르민염산염을 투여 받는 동안 급&#…",
+   "extractor": "kw-v4",
+   "id": "edbc472133",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 5)",
+   "subject": "",
+   "excerpt": "알코올 섭취",
+   "extractor": "kw-v4",
+   "id": "c922df7526",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "알코올은 젖산 대사에 대해 메트포르민염산염이 미치는 영향을 증대시킨다고 알려져 있다. 따라서 이 약을 투여하는 동안 급성 또는 만성적인 알코올의 과량섭취는 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "6d5645f2ce",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "메트포르민염산염",
+   "excerpt": "저혈당은 일반적인 사용 환경 하에서 메트포르민을 단독 투여한 환자에서는 나타나지 않으나, 열량 섭취가 불충분한 경우, 격렬한 운동이 열량 섭취로 보충되지 못한 경우나 다른 혈당강하제(설폰요소, 인슐린 등) 또는 알코올을 병용 투여하는 경우에 발생한다. 특히, 고령자, 쇠약하거나 영양 불균형인 환자, 부신이나 뇌하수체 부전 환자 또는 알코올 중독자인 경우 저혈당이 나타나기 쉽다. 저혈당은 고령…",
+   "extractor": "kw-v4",
+   "id": "299417654d",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "메트포르민염산염",
+   "excerpt": "환자에게 이 약을 투여하는 동안 급성이든 만성이든 과다한 알코올 섭취의 위험에 대해 조언해야 한다.",
+   "extractor": "kw-v4",
+   "id": "6c4a114cc6",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "- 혈당강하 작용을 감약시키는 약제",
+   "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
+   "extractor": "kw-v4",
+   "id": "6983612887",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "- 간장애",
+   "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "5aa33407e7",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "67f55ae144",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약물 또는 각 성분에 대해 임부를 대상으로 한 비교 임상시험은 수행되지 않았다. 동물 생식독성 실험으로 사람에서의 반응을 예측할 수 없다. 따라서 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "fea3da3c95",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "아나글립틴",
+   "excerpt": "임부를 대상으로 한 적절한 임상시험 결과는 없으므로 임부에서의 사용은 권장되지 않는다. 임신이 확인되면, 이 약의 투여를 중단해야 한다(동물시험(랫드)에서, 태아에 대한 이행이 보고되어 있다.).",
+   "extractor": "kw-v4",
+   "id": "029a7b1350",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "메트포르민염산염",
+   "excerpt": "메트포르민은 최대 600mg/kg/day의 용량으로 랫드 및 토끼에게 투여 시 최기형성이 없었다. 이는 각각 랫드 및 토끼에서 체표면적 비교에 근거하면 2000mg인 최대 권장 사람 용량의 약 2 배 및 6배의 노출을 나타낸다. 태자에서 물질 농도 측정으로 메트포르민에 대한 부분적 태반 통과를 확인하였다.",
+   "extractor": "kw-v4",
+   "id": "d3ef7c301b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "메트포르민염산염",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "adf8e6e98b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "메트포르민염산염",
+   "excerpt": "이 약 복합제로서 수유 중인 동물에게 수행한 시험은 없다. 아나글립틴 또는 메트포르민이 사람 모유로 분비되는지는 알려지지 않았다. 동물실험(랫드)에서 유즙으로 분비되는 것으로 보고되었으므로 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "83eae63abe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "메트포르민은 주로 신장을 통해 배설되며, 고령자에게서는 신기능이 저하되는 경향이 있으므로 이 약을 복용하는 고령자는 신기능을 주기적으로 모니터링해야 한다.",
+   "extractor": "kw-v4",
+   "id": "2dcac3aca5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "아나글립틴",
+   "excerpt": "국내에서 아나글립틴의 제2상 및 제3상 임상시험에 참여한 환자(총 143명) 중 65세 이상인 고령자는 25명(17.48%)이였다. 이 연구에서 고령자에서의 투여에 대해서는 충분히 연구되지 않았다. 일본 제2상 시험에서는 총 272명 중 만 65세 이상의 고령자는 66명(24.26%)이었다. 아나글립틴 및 주대사체의 Cmax 및 AUC0-2h에서는 연령에 의한 큰 차이는 확인되지 않았다. 그…",
+   "extractor": "kw-v4",
+   "id": "764da0b9e2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "메트포르민염산염",
+   "excerpt": "메트포르민은 실질적으로 신장을 통해 배설되는 것으로 알려져 있다. 메트포르민의 유산산증 위험이 신장애 환자에서 크기 때문에, 이 약은 정상 신기능 환자에서만 투여되어야 한다. 고령자에서 신기능 감소의 가능성 때문에 환자의 신기능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 한다. 고령자는 정기적으로 신기능을 모니터링 해야 하고, 일반적으로 고령자에게는 최대용량을 투여하지 않는…",
+   "extractor": "kw-v4",
+   "id": "aeabec897d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "c1ec2df3ff",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 메트포르민 사용과 관련한 위장관계 부작용을 줄이기 위해서 식사와 함께 1일 2회 복용하고, 용량 증가가 서서히 진행되어야 한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

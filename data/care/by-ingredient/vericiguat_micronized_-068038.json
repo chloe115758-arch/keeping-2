@@ -1,0 +1,104 @@
+{
+ "ingredient": "vericiguat(micronized)",
+ "productSeq": "202107707",
+ "itemName": "베르쿠보정5밀리그램(베리시구앗(미분화))",
+ "atc": "C01DX22",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221201",
+ "ediCode": "641106150",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107707/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107707/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107707/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "6e395b2729",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물 생식 독성시험에 근거하여 이 약을 임부에게 투여시 태아에게 해로울 수 있으므로, 이 약은 임신 중에는 금기이다. 이 약을 임신한 여성에서 투여한 자료는 없다. 임신 토끼에게 기관형성 기간 동안 베리시구앗을 경구 투여한 생식 독성시험에서 최대 임상 권장용량(maximum recommended human dose, MRHD)인 10mg의 사람에서 노출(total AUC)의 약 4배에서 유산…",
+   "extractor": "kw-v4",
+   "id": "7b65ae9b05",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "랫트에게 착상부터 이유까지 베리시구앗을 경구투여한 출생 전/후 독성 시험에서 모체독성이 나타났다. 이유 전 기간동안 새끼의 체중 증가량 감소(MRHD의 사람에서 노출 ≥10배) 및 새끼 치사율 증가(MRHD의 사람에서 노출의 ≥24배) 가 나타났다.",
+   "extractor": "kw-v4",
+   "id": "1443ad5064",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "acce4e4eb9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "베리시구앗이 사람의 모유에 존재하는지, 수유 중인 신생아/영아에 미치는 영향 또는 모유 생산에 미치는 영향에 대한 자료는 없다. 베리시구앗은 수유 중인 랫트의 유즙에서 확인되었다. 모유 수유를 받는 영아에 대한 중대한 이상반응이 나타날 가능성이 있기 때문에, 이 약은 투여받는 동안 수유를 하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "b95895d64f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 이 약의 용량 조절은 필요하지 않다. 임상시험(VICTORIA)에서, 이 약으로 치료받은 총 1,596명(63%)의 환자가 65세 이상이었고, 이 약으로 치료받은 환자 783명(31%)은 75세 이상이었다. 65세 이상 환자와 65세 미만 환자 사이에 이 약의 안전성 또는 유효성의 전반적인 차이가 관찰되지 않았지만, 더 나이가 많은 일부 환자에서 더 높은 민감도를 배제할 수 없다.…",
+   "extractor": "kw-v4",
+   "id": "d574c69274",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "035f1d713d",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약의 권장 초기 용량은 1일 1회, 1회 2.5mg이다. 식사와 함께 복용한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:21",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

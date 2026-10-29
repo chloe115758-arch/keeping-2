@@ -1,28 +1,32 @@
 {
-  "ingredient": "kallidinogenase 50I.U",
-  "productSeq": "201402865",
-  "itemName": "칼리신정50단위(칼리디노게나제)",
-  "atc": "C04AF01",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402865/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402865/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402865/NB"
-  },
-  "rules": [
-    {
-      "id": "707dfc4a3f",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "3. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:07:24"
+ "ingredient": "kallidinogenase 50I.U",
+ "productSeq": "201402865",
+ "itemName": "칼리신정50단위(칼리디노게나제)",
+ "atc": "C04AF01",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "052700160",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402865/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402865/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402865/NB"
+ },
+ "rules": [
+  {
+   "section": "elderly",
+   "where": "3. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "b1b233e315",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

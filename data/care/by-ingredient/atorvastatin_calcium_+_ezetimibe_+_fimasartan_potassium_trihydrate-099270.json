@@ -1,0 +1,403 @@
+{
+ "ingredient": "atorvastatin calcium + ezetimibe + fimasartan potassium trihydrate",
+ "productSeq": "202600605",
+ "itemName": "카나브젯정60/20/10밀리그램(피마사르탄칼륨,아토르바스타틴,에제티미브)",
+ "atc": "C10BX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260820",
+ "ediCode": "641908820",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600605/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600605/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600605/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 (5)",
+   "subject": "",
+   "excerpt": "간질환의 병력 또는 상당량의 알코올을 섭취하는 경우",
+   "extractor": "kw-v4",
+   "id": "0907af6db7",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "○ 에제티미브",
+   "excerpt": "이 약을 알코올 과다 복용 환자 그리고/또는 간질환의 병력이 있는 환자에게 투여 시 주의해야 한다. 활성 간질환 또는 원인이 밝혀지지 않는 혈청 트랜스아미나제의 지속적 상승이 있는 환자에게는 이 약을 투여하지 않는다(‘2. 다음 환자에는 투여하지 말 것’ 항 참조).",
+   "extractor": "kw-v4",
+   "id": "f430ba11b6",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (11)",
+   "subject": "<피마사르탄이 다른 약물들에 미치는 영향>",
+   "excerpt": "제산제 : 아토르바스타틴과 수산화마그네슘 그리고 수산화알루미늄을 함유하는 경구용 제산제(antacid) 현탁액과 병용투여 시 아토르바스타틴 혈장농도가 약 35% 정도 감소하였다. 그러나 LDL-콜레스테롤의 감소에는 영향이 없었다.",
+   "extractor": "kw-v4",
+   "id": "ba5d4402db",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (19)",
+   "subject": "<피마사르탄이 다른 약물들에 미치는 영향>",
+   "excerpt": "자몽주스 : 자몽주스는 하나 이상의 CYP3A4를 억제하는 성분을 함유하고 있으며, 이는 자몽주스 섭취량이 지나칠 경우(하루 1.2 L이상) 아토르바스타틴의 혈장 농도를 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "e80ced043e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (1)",
+   "subject": "<피마사르탄이 다른 약물들에 미치는 영향>",
+   "excerpt": "콜레스티라민: 에제티미브와 콜레스티라민 병용투여 시 총 에제티미브의 평균 AUC가 약 55% 감소하였다. 이러한 상호작용에 의하여 콜레스티라민과 에제티미브 병용투여로 기대되는 LDL-C 저하에 대한 병합작용이 감소할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "6b90c85b8b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부에 대한 이 약의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안 된다. 개별성분에 대한 정보는 다음과 같다.",
+   "extractor": "kw-v4",
+   "id": "2c0fe27931",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "피마사르탄칼륨",
+   "extractor": "kw-v4",
+   "id": "2da29268f6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "ab2c0da582",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약과 같이 레닌-안지오텐신계에 직접적으로 작용하는 약물을 임부에 투여시 태아 또는 신생아에게 병적 상태 및 사망을 일으킬 수 있다. 특히 임신 2, 3기에 레닌-안지오텐신계에 직접 작용하는 약물 투여시, 태아 및 신생아에 저혈압, 신생아 두개골 형성저하증, 무뇨증, 가역적 또는 비가역적 신부전을 포함한 손상 및 사망까지도 유발되었다. 태아의 신기능의 저하가 원인일 것으로 추정되는 양수과소…",
+   "extractor": "kw-v4",
+   "id": "33df76eed5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "f30bb5b9ab",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "피마사르탄이 사람의 모유로 이행되는지 여부는 알려져 있지 않으나, 랫드에 대한 시험에서 모유 중에 이 약의 분비가 확인되었으므로, 수유부에게 이 약을 투여하는 것은 바람직하지 않다. 따라서 수유부에 대한 이 약의 필요성을 고려하여 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "22ed987209",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "아토르바스타틴",
+   "extractor": "kw-v4",
+   "id": "207efaff72",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "아토르바스타틴은 임부 또는 임신하고 있을 가능성이 있는 여성에게 투여 금기이다. 그러므로 가임여성은 적절한 피임방법을 강구해야 한다. 아토르바스타틴은 임신할 가능성이 없는 경우와 태아에 대한 잠재적 위험성을 알려준 후에만 가임 연령의 여성에게 투여할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "29bd894693",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "아토르바스타틴의 수유 중 투여는 금기이다. 아토르바스타틴이 모유 중으로 분비되는지에 대해서는 알려져 있지 않다. 수유 중인 유아에게 이상반응이 나타날 수 있으므로, 아토르바스타틴을 복용중인 여성은 수유를 해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "ad2bdaca4b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "에제티미브",
+   "extractor": "kw-v4",
+   "id": "06c1359924",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "에제티미브를 임부에게 투여한 임상 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "89cb9cfe0e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 한 경구 배ㆍ태자 발생시험의 시험 용량(250, 500, 1000 mg/kg/day)에서 배자치사 효과가 관찰되지 않았다. 에제티미브 1000 mg/kg/day(총 에제티미브의 AUC0-24hr에 근거하였을 때 1일 10 mg으로 투여 시 사람에 대한 노출의 10배)를 투여한 랫트에서 일반적인 태자 골격이상(늑골 추가형성, 경추 중심부 골화부전, 늑골 축…",
+   "extractor": "kw-v4",
+   "id": "a120eadef1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "모든 HMG-CoA 환원효소 억제제 및 페노피브레이트는 임부 및 수유부에 대한 투여가 금지되어 있다. 에제티미브를 출산 가능성이 있는 여성에게 HMG-CoA 환원효소 억제제 또는 페노피브레이트와 함께 투여할 때에는, 해당 HMG-CoA 환원효소 억제제 또는 페노피브레이트의 제품설명서를 참조한다.",
+   "extractor": "kw-v4",
+   "id": "606631397e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 에제티미브와 HMG-CoA 환원효소 억제제(스타틴계 약물)를 병용투여한 반복투여시험에서는 에제티미브 및 HMG-CoA 환원효소 억제제에 대한 노출 정도가 높았다. 단독투여에 비해 병용투여시 보다 낮은 용량에서 생식능 이상이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "bbab3193e5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (5)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 에제티미브는 유즙으로 분비되었다. 랫트를 대상으로 한 실험에서 수유 중인 새끼의 총 에제티미브에 대한 노출은 모체 혈장에서 관찰되는 값의 절반에 이르렀다. 에제티미브가 사람의 모유로 분비되는지 여부는 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "80559e1c7d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령(만 65세 이상)은 근육병증에 걸리기 쉬운 요인 중 하나이므로 이 약을 고령자에게 투여 시 주의를 기울여야 한다. 고령자에서 이 약의 용량 조절은 필요하지 않으나, 일부 고령자에서 민감한 반응이 나타날 수 있음을 배제할 수 없다. 개별성분에 대한 정보는 다음과 같다.",
+   "extractor": "kw-v4",
+   "id": "b9eeb2f0bf",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "피마사르탄칼륨",
+   "extractor": "kw-v4",
+   "id": "69d802eb04",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 건강한 고령자를 대상으로 한 피마사르탄의 약동학 평가결과, 피마사르탄에 대한 고령자의 체내 노출(AUC)이 젊은 건강한 성인에 비하여 약 69% 증가하였다. 그러나, 3상 임상시험에서 피마사르탄칼륨을 투여 받은 환자 226명 중 21명의 65세 이상인 환자(9.3%)에 대해 유효성 및 안전성을 비교한 결과, 고령자들과 젊은 성인 환자들 사이에 전반적인 차이는 없었다. 따라서,…",
+   "extractor": "kw-v4",
+   "id": "25a5f3f875",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "아토르바스타틴",
+   "extractor": "kw-v4",
+   "id": "04f6e9c07a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 건강한 노인의 경우 아토르바스타틴의 혈장농도는 젊은 성인군에 비해 더 높게 나타났으나(Cmax 40 % 증가, AUC 30 % 증가), LDL-콜레스테롤 저하효과는 젊은 성인군과 유사하였다.",
+   "extractor": "kw-v4",
+   "id": "3082425cfb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 아토르바스타틴 관련 근육병 및 횡문근 융해의 위험 인자이다. 고령 환자 대상 용량 선택 시 간, 신장, 심장 기능 저하 빈도가 더 높으며, 기저 질환 또는 기타 약물 치료의 빈도가 높으며, 근병증 위험성이 더 높다는 사실을 인지하여 신중해야 한다. 약을 투여 중인 고령 환자를 대상으로 근병증 위험성 증가를 관찰해야 한다.",
+   "extractor": "kw-v4",
+   "id": "11a6980d7f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "에제티미브",
+   "extractor": "kw-v4",
+   "id": "33bbacb6a9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상시험에서 에제티미브를 투여받은 환자 중 65세 이상의 고령자는 948명(75세 이상의 고령자 206명 포함)이었다. 에제티미브의 유효성과 안전성은 고령 환자와 젊은 환자간에 유사하였으나, 일부 고령자에서 보다 민감한 반응이 나타날 수 있음을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "3e5b4465f7",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:38",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

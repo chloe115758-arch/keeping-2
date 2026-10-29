@@ -1,88 +1,92 @@
 {
-  "ingredient": "azathioprine",
-  "productSeq": "201702557",
-  "itemName": "테바아자티오프린정",
-  "atc": "L04AX01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260323",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702557/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702557/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702557/NB"
+ "ingredient": "azathioprine",
+ "productSeq": "201702557",
+ "itemName": "테바아자티오프린정",
+ "atc": "L04AX01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260323",
+ "ediCode": "626900870",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702557/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702557/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702557/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 1일 체중 당 이 약 5~15mg/kg 투여했을 때 골격기형, 내장이상 등의 기형발생이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "17ad4bae51",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "83cb3a2f73",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 1일 체중 당 이 약 5~15mg/kg 투여했을 때 골격기형, 내장이상 등의 기형발생이 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d364843b70",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약 150mg과 프레드니손 30mg을 투여했을 때 태아에게 림프구감소증, IgG 및 IgM의 감소, CMV 감염, 흉선 음영의 감소가 나타났다. 이 약 125mg과 프레드니손 12.5mg을 임부에게 매일 투여했을 때 범혈구 감소증과 중증의 면역결핍이 보고되었다. 이 약 200mg과 프레드니손 20mg을 격일로 임신기간 내내 투여했을 때 축전방에 정형 이상이 있는 기형아가 태어났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1d0f6cd32a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "부친이 장기간 이 약을 투여한 경우, 자녀가 상요부에 거대한 척수수막류, 엉덩이 위치이상, 양측 만족(彎足) 첨내반족으로 태어났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "55e107ad30",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4f2b67f01f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 5)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약 또는 대사물이 소량 태반이나 유즙으로 이행되므로 수유중에는 이 약의 투여를 중지하고, 부득이하게 투여할 경우에는 수유를 중단한다(수유부의 투여에 대한 안전성이 확립되어 있지 않다).",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "39b4a0fcce",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자의 생리기능이 저하되어 있으므로 신장 및 간기능 부전을 관찰하고, 이러한 증상이 발생할 경우 용량 축소를 고려할 것을 권장한다",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:16:04"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약 150mg과 프레드니손 30mg을 투여했을 때 태아에게 림프구감소증, IgG 및 IgM의 감소, CMV 감염, 흉선 음영의 감소가 나타났다. 이 약 125mg과 프레드니손 12.5mg을 임부에게 매일 투여했을 때 범혈구 감소증과 중증의 면역결핍이 보고되었다. 이 약 200mg과 프레드니손 20mg을 격일로 임신기간 내내 투여했을 때 축전방에 정형 이상이 있는 기형아가 태어났다.",
+   "extractor": "kw-v4",
+   "id": "64741948e9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "부친이 장기간 이 약을 투여한 경우, 자녀가 상요부에 거대한 척수수막류, 엉덩이 위치이상, 양측 만족(彎足) 첨내반족으로 태어났다.",
+   "extractor": "kw-v4",
+   "id": "dee30419f6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "a4139b6b2e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "이 약 또는 대사물이 소량 태반이나 유즙으로 이행되므로 수유중에는 이 약의 투여를 중지하고, 부득이하게 투여할 경우에는 수유를 중단한다(수유부의 투여에 대한 안전성이 확립되어 있지 않다).",
+   "extractor": "kw-v4",
+   "id": "c55ddc16a7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자의 생리기능이 저하되어 있으므로 신장 및 간기능 부전을 관찰하고, 이러한 증상이 발생할 경우 용량 축소를 고려할 것을 권장한다",
+   "extractor": "kw-v4",
+   "id": "99d6efe2a4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

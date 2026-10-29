@@ -1,0 +1,68 @@
+{
+ "ingredient": "lanreotide acetate",
+ "productSeq": "200210139",
+ "itemName": "소마툴린오토젤120밀리그램주사(프리필드)(란레오티드아세테이트)",
+ "atc": "H01CB03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240726",
+ "ediCode": "681400051",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200210139/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200210139/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200210139/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 동물 연구에서 기관형성기 동안 란레오티드와 관련된 기형유발작용은 나타나지 않았다. 란레오티드에 노출된 임신 사례는 매우 제한적이다. 따라서, 란레오티드는 명백히 필요한 경우에만 임부에게 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "49b68a8ad9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 모유를 통한 이 약의 분비에 대한 정보는 없다. 많은 약물이 사람의 모유로 이행되므로, 수유 중 란레오티드를 투여할 경우, 주의를 기울여야 한다.",
+   "extractor": "kw-v4",
+   "id": "cf2f013056",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "기타 : 사람의 치료 용량을 초과하는 용량에서 암컷 랫트에게 성장 호르몬 분비의 저해로 인한 생식능 감소가 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "1265e25e27",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자에서 반감기와 평균 체류시간이 건강한 청년에 비해 증가됨을 보이나 이 약의 혈청농도는 건강한 사람에서 안전하게 견딜 수 있는 혈청농도의 범위내로 기대되므로 용량조절은 필요하지 않다.2) 65~85세인 122명을 포함하는 위.장.췌장계 신경내분비종양 환자에 관한 집단 약동학 분석에서 연령이 란레오티드 청소율 및 분포용적에 영향을 주지 않았다.",
+   "extractor": "kw-v4",
+   "id": "8d87c82bac",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:18",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

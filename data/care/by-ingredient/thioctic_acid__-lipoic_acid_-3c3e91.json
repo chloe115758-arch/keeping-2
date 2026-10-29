@@ -1,102 +1,106 @@
 {
-  "ingredient": "thioctic acid(α-lipoic acid)",
-  "productSeq": "202002333",
-  "itemName": "티옥타에이치알정(티옥트산)",
-  "atc": "A16AX01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20231013",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002333/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002333/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002333/NB"
-  },
-  "rules": [
+ "ingredient": "thioctic acid(α-lipoic acid)",
+ "productSeq": "202002333",
+ "itemName": "티옥타에이치알정(티옥트산)",
+ "atc": "A16AX01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231013",
+ "ediCode": "073000370",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002333/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002333/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002333/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "3. 일반적 주의",
+   "subject": "",
+   "excerpt": "알콜의 상습적인 복용은 신경병적 임상 증상의 발생과 진전에 중대한 위험인자로 관찰되었으므로 이 약의 치료 효과를 방해할 수 있다. 따라서 당뇨병성 다발성신경병증 환자는 가능한 한 알콜 섭취를 피해야 하며 이것은 휴약 기간에도 적용된다.",
+   "extractor": "kw-v4",
+   "id": "491286b760",
+   "kind": "note",
+   "matched": [
     {
-      "id": "282fa2b3d0",
-      "kind": "note",
-      "section": "general",
-      "where": "3. 일반적 주의",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알콜"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알콜의 상습적인 복용은 신경병적 임상 증상의 발생과 진전에 중대한 위험인자로 관찰되었으므로 이 약의 치료 효과를 방해할 수 있다. 따라서 당뇨병성 다발성신경병증 환자는 가능한 한 알콜 섭취를 피해야 하며 이것은 휴약 기간에도 적용된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4db37e7012",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "4. 상호작용 2)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "calcium",
-          "kind": "supplement",
-          "ko": "칼슘제제",
-          "surface": "칼슘함유"
-        },
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "마그네슘제제"
-        },
-        {
-          "key": "dairy",
-          "kind": "food",
-          "ko": "우유·유제품",
-          "surface": "우유"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "α- lipoic acid는 금속화합물(철ㆍ마그네슘을 포함하는 제제, 우유(칼슘함유)등)과 동시에 복용했을 때 체내에서 불용성 착체를 형성하므로 동시 복용하지 않는다. 만약, 이약을 아침식사 30분 전에 복용하였다면, 철과 마그네슘제제는 점심이나 저녁에 복용한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "15b4d06f4a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "생식 독성 연구 결과 수정률이나 초기 태아 발달에 이 약이 영향을 끼친다는 증거는 없었으며, 태아 독성에 관하여 명확하게 알려진바 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "22b6d4a58e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "α- lipoic acid가 모유중으로 분비되는지에 대해선 알려진 바 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5d706b26c3",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 및 수유부에 대해서는 약물의 유익성과 위험성을 평가한 후 투여해야 하며, 의사가 긴급히 처방한 경우에 사용한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:06:07"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "4. 상호작용 2)",
+   "subject": "",
+   "excerpt": "α- lipoic acid는 금속화합물(철ㆍ마그네슘을 포함하는 제제, 우유(칼슘함유)등)과 동시에 복용했을 때 체내에서 불용성 착체를 형성하므로 동시 복용하지 않는다. 만약, 이약을 아침식사 30분 전에 복용하였다면, 철과 마그네슘제제는 점심이나 저녁에 복용한다.",
+   "extractor": "kw-v4",
+   "id": "f160a234ac",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘함유"
+    },
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "마그네슘제제"
+    },
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "생식 독성 연구 결과 수정률이나 초기 태아 발달에 이 약이 영향을 끼친다는 증거는 없었으며, 태아 독성에 관하여 명확하게 알려진바 없다.",
+   "extractor": "kw-v4",
+   "id": "9fab5aa9e3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "α- lipoic acid가 모유중으로 분비되는지에 대해선 알려진 바 없다.",
+   "extractor": "kw-v4",
+   "id": "cc83a325cb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임부 및 수유부에 대해서는 약물의 유익성과 위험성을 평가한 후 투여해야 하며, 의사가 긴급히 처방한 경우에 사용한다.",
+   "extractor": "kw-v4",
+   "id": "65641a5bce",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

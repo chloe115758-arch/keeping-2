@@ -1,186 +1,281 @@
 {
-  "ingredient": "perampanel",
-  "productSeq": "201504769",
-  "itemName": "파이콤파필름코팅정2밀리그램(페람파넬)",
-  "atc": "N03AX22",
-  "etcOtc": "전문의약품",
-  "changeDate": "20240530",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504769/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504769/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504769/NB"
-  },
-  "rules": [
+ "ingredient": "perampanel",
+ "productSeq": "201504769",
+ "itemName": "파이콤파필름코팅정2밀리그램(페람파넬)",
+ "atc": "N03AX22",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240530",
+ "ediCode": "621100060",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504769/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504769/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504769/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "리팜피신, 성요한풀(St. John's wort)과 같은 강력한 cytochrome P450 유도제는 이 약의 농도를 감소시킬 수 있으므로 유의한다.",
+   "extractor": "kw-v4",
+   "id": "1091dfbc1e",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "cddf29a342",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "3) 이 약이 CYP3A 기질에 미치는 영향",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "St. John"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "리팜피신, 성요한풀(St. John's wort)과 같은 강력한 cytochrome P450 유도제는 이 약의 농도를 감소시킬 수 있으므로 유의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "492d7b1f3c",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "7) 알코올",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "건강한 성인을 대상으로 하는 약력학적 상호작용시험에서 이 약이 운전 능력과 같은 각성 및 주의가 필요한 작업에 미치는 영향이 알코올 자체의 영향에 부가적 또는 상가적으로 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5527d365cd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부, 가임여성에 대한 투여",
-      "subject": "1) 가임여성",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "명백하게 필요하지 않는 한 피임하지 않는 가임여성에게 이 약의 투여는 권장되지 않는다. 이 약은 프로게스테론을 함유한 호르몬성 피임제의 효과를 감소시킬 수 있다. 따라서, 추가적인 비호르몬성 형태의 피임법이 권고된다.(‘5. 일반적 주의’ 및 ‘6. 상호작용’항 참조)",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8c9081ab54",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부, 가임여성에 대한 투여",
-      "subject": "2) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중 이 약을 복용하는 것은 권장되지 않는다. 비임상시험에서 최기형성은 나타나지 않았으나 랫트의 모체 독성 용량에서 배아독성이 관찰되었으며, 임부에게 이 약을 투여한 사례는 제한적이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c3c28131ef",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부, 가임여성에 대한 투여",
-      "subject": "3) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유 중인 랫트에 대한 연구에서 이 약 및/또는 그 대사체가 유즙으로 분비되었다. 이 약이 사람에서도 모유로 분비되는지 여부는 확인되지 않았으나, 신생아 및 영아에 대한 위험을 배제할 수 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "923a491e68",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부, 가임여성에 대한 투여",
-      "subject": "3) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "따라서, 수유가 신생아 및 영아에게 주는 유익성과 이 약 치료가 수유부에게 주는 유익성을 고려하여, 수유 중단 또는 이 약 치료 중단 여부를 결정해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f661ae8c3e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부, 가임여성에 대한 투여",
-      "subject": "4) 생식능력",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 사람의 생식능력에 영향을 미치는지 여부는 확인되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9f11a5d106",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부, 가임여성에 대한 투여",
-      "subject": "4) 생식능력",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트에 대한 생식능력 연구에서 암컷의 경우 고용량(30mg/kg)에서 발정주기가 연장되거나 불규칙함이 관찰되었다. 그러나 이러한 변화는 생식능력과 초기 배아발생에 영향을 미치지 않았다. 수컷의 생식능력에는 영향을 미치지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f1c7dc5298",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자 및 소아에 대한 투여",
-      "subject": "1) 고령자",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "뇌전증에 대한 이 약의 임상시험에서 만 65세 이상의 시험대상자가 충분히 포함되지 않아, 고령자에서의 반응이 만 65세 미만의 성인과 유사한지 여부를 판단할 수 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8713b76b5a",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자 및 소아에 대한 투여",
-      "subject": "1) 고령자",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "뇌전증이 아닌 다른 적응증에 대한 이중눈가림 임상시험에서 이 약을 투여받은 만 65세 이상의 시험대상자 905명에 대한 안전성 정보를 분석한 결과, 이 약의 안전성 프로파일에는 연령으로 인한 차이가 없는 것으로 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "34d934376c",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자 및 소아에 대한 투여",
-      "subject": "1) 고령자",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자의 경우 여러 종류의 약을 투여받을 가능성이 높으므로, 약물 상호작용을 고려하여 신중하게 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6f50c57324",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자 및 소아에 대한 투여",
-      "subject": "2) 소아",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "부분발작 치료요법에 대해서 만 4세 미만의 소아에서 이 약의 안전성 및 유효성은 입증되지 않았다. 특발성 전신성 뇌전증 환자의 일차성 전신 강직-간대발작의 부가요법에 대해서 만 7세 미만의 소아에 대한 이 약의 안전성 및 유효성은 입증되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8bfbcdbe2d",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 음식과 관계없이 1일 1회 취침 전에 복용하며, 씹거나, 부수거나, 분할하지 않고 충분한 물과 함께 통째로 삼킨다.",
-      "meal": "취침 전",
-      "extractor": "kw-v1"
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:11:32"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 7)",
+   "subject": "",
+   "excerpt": "알코올",
+   "extractor": "kw-v4",
+   "id": "2715b619da",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "건강한 성인을 대상으로 하는 약력학적 상호작용시험에서 이 약이 운전 능력과 같은 각성 및 주의가 필요한 작업에 미치는 영향이 알코올 자체의 영향에 부가적 또는 상가적으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "a4887a920d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 가임여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "가임여성",
+   "extractor": "kw-v4",
+   "id": "8d24d25d83",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "명백하게 필요하지 않는 한 피임하지 않는 가임여성에게 이 약의 투여는 권장되지 않는다. 이 약은 프로게스테론을 함유한 호르몬성 피임제의 효과를 감소시킬 수 있다. 따라서, 추가적인 비호르몬성 형태의 피임법이 권고된다.(‘5. 일반적 주의’ 및 ‘6. 상호작용’항 참조)",
+   "extractor": "kw-v4",
+   "id": "925e690d63",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 가임여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "97e3266287",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 이 약을 복용하는 것은 권장되지 않는다. 비임상시험에서 최기형성은 나타나지 않았으나 랫트의 모체 독성 용량에서 배아독성이 관찰되었으며, 임부에게 이 약을 투여한 사례는 제한적이다.",
+   "extractor": "kw-v4",
+   "id": "37bac30f1a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 가임여성에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "61de08a009",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "수유 중인 랫트에 대한 연구에서 이 약 및/또는 그 대사체가 유즙으로 분비되었다. 이 약이 사람에서도 모유로 분비되는지 여부는 확인되지 않았으나, 신생아 및 영아에 대한 위험을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "00287a52f7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "따라서, 수유가 신생아 및 영아에게 주는 유익성과 이 약 치료가 수유부에게 주는 유익성을 고려하여, 수유 중단 또는 이 약 치료 중단 여부를 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "c7f80aa6cb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 가임여성에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "생식능력",
+   "extractor": "kw-v4",
+   "id": "840aa07025",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람의 생식능력에 영향을 미치는지 여부는 확인되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "23f057d094",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "랫트에 대한 생식능력 연구에서 암컷의 경우 고용량(30mg/kg)에서 발정주기가 연장되거나 불규칙함이 관찰되었다. 그러나 이러한 변화는 생식능력과 초기 배아발생에 영향을 미치지 않았다. 수컷의 생식능력에는 영향을 미치지 않았다.",
+   "extractor": "kw-v4",
+   "id": "df5841fd87",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자 및 소아에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "a81981b314",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "뇌전증에 대한 이 약의 임상시험에서 만 65세 이상의 시험대상자가 충분히 포함되지 않아, 고령자에서의 반응이 만 65세 미만의 성인과 유사한지 여부를 판단할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "3d66ba2e6b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "뇌전증이 아닌 다른 적응증에 대한 이중눈가림 임상시험에서 이 약을 투여받은 만 65세 이상의 시험대상자 905명에 대한 안전성 정보를 분석한 결과, 이 약의 안전성 프로파일에는 연령으로 인한 차이가 없는 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "808e7a2900",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자의 경우 여러 종류의 약을 투여받을 가능성이 높으므로, 약물 상호작용을 고려하여 신중하게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c156483481",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자 및 소아에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "소아",
+   "extractor": "kw-v4",
+   "id": "c3e7dde461",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "부분발작 치료요법에 대해서 만 4세 미만의 소아에서 이 약의 안전성 및 유효성은 입증되지 않았다. 특발성 전신성 뇌전증 환자의 일차성 전신 강직-간대발작의 부가요법에 대해서 만 7세 미만의 소아에 대한 이 약의 안전성 및 유효성은 입증되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "7f61b8a7f2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "8bfbcdbe2d",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 음식과 관계없이 1일 1회 취침 전에 복용하며, 씹거나, 부수거나, 분할하지 않고 충분한 물과 함께 통째로 삼킨다.",
+   "meal": "취침 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

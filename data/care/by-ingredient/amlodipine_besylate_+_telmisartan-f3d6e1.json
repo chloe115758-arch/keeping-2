@@ -1,0 +1,135 @@
+{
+ "ingredient": "amlodipine besylate + telmisartan",
+ "productSeq": "201700618",
+ "itemName": "에이티스타정40/5밀리그램",
+ "atc": "C09DB04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "052701050",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201700618/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201700618/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201700618/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ②",
+   "subject": "",
+   "excerpt": "자몽 쥬스: 암로디핀은 자몽이나 자몽쥬스와 병용시 일부 환자에서 생체이용률 증가로 인한 혈압강하효과의 증가가 나타날 수 있으므로, 병용투여를 권장하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "b2a6052106",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 텔미사르탄과 같은 안지오텐신 II 수용체 길항제의 사용은 임신 1기 3개월 동안은 권장되지 않으며, 2기 및 3기 3개월 동안은 금지된다. 이 약을 임신중인 여성에 투여한 적절한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "b89d0609f2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "비임상자료에서 기형 발생은 나타나지 않았으나 태자독성은 나타났다. 임신 2기 및 3기 3개월 동안, 안지오텐신 II 수용체 길항제의 노출은 인체 태자독성 (신장기능 감소, 양수감소증, 두개골 골화 지연)과 신생아독성(신부전, 저혈압, 고칼륨혈증)을 유발한다.",
+   "extractor": "kw-v4",
+   "id": "c4cc3c9ab4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 기간 중에 안지오텐신 II 수용체 길항제 투여를 시작해서는 안 된다. 만약 안지오텐신 II 수용체 길항제의 지속적 치료가 필수적이지 않다면, 임신을 계획중인 환자는 임부의 사용에 대해 안전성 프로파일이 확립된 다른 고혈압 치료제로 대체하여야 한다. 임신이 진단된 경우에는 가능한 빨리 안지오텐신 II 수용체 길항제의 치료를 중단해야 하며, 만약 적절하다면, 다른 치료제로 치료를 시작해야…",
+   "extractor": "kw-v4",
+   "id": "c2eadb2a37",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "안지오텐신 II 수용체 길항제를 복용했던 임부의 영아는 반드시 저혈압, 빈뇨, 고칼륨혈증 등의 발현 가능성을 긴밀하게 관찰하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "7732fdbde1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "암로디핀의 임부에 대한 안전성은 확립되지 않았다. 인체에 대한 최대 권장 용량의 50배에 해당하는 용량의 암로디핀을 투여한 랫드에서 분만지연 및 연장이 나타났다. 동물실험에서는 암로디핀 고용량에서 생식독성이 관찰된 바 있다.",
+   "extractor": "kw-v4",
+   "id": "43ff374423",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 사람에 대한 투여 경험에서 암로디핀이 사람 모유중으로 이행된다고 보고된 바 있다. 텔미사르탄이 사람의 모유 중으로 이행되는지의 여부가 알려져 있지 않으나 동물실험에서는 텔미사르탄이 유즙으로 분비되는 것이 확인되었다. 그러므로 수유하는 동안에는 이 약을 투여하지 않아야 한다. (‘2. 다음 환자에는 투여하지 말 것’항 참조)",
+   "extractor": "kw-v4",
+   "id": "212e2f9a57",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "생식능 : 사람에서 이 약 및 개별 주성분의 생식능은 연구된 바 없다. 텔미사르탄 및 암로디핀의 병용투여한 별도의 생식독성시험은 실시되지 않았다. 비임상시험에서 암컷 및 수컷의 수태능에 대한 텔미사르탄의 영향은 관찰되지 않았다. 칼슘채널차단제를 투여 받은 일부 환자에서 정자머리 부분의 가역적인 생화학적 변화가 보고되었다. 암로디핀이 생식능에 미치는 잠재적인 영향에 관한 임상 자료는 충분하지…",
+   "extractor": "kw-v4",
+   "id": "cc6ff3c087",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 고령자에 투여시 용량 조절이 필요하지 않으나, 일부 고령자에서 보다 민감한 반응이 나타날 수 있음을 배제할 수 없으므로 주의하여 투여한다. 75세 이상의 고령자인 경우, 암로디핀의 청소율이 감소되어 있으므로, 낮은 용량으로 치료를 시작하며, 용량을 서서히 증량한다.",
+   "extractor": "kw-v4",
+   "id": "1fa8e9ef6b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:29:05",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

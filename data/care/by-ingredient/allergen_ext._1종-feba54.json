@@ -1,0 +1,32 @@
+{
+ "ingredient": "allergen ext. 1종",
+ "productSeq": "199403191",
+ "itemName": "다이아그노스틱알러젠익스트렉트",
+ "atc": "V04CL",
+ "etcOtc": "전문의약품",
+ "changeDate": "20000106",
+ "ediCode": "656800010",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199403191/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199403191/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199403191/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음 환자에는 투여하지 말 것. 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "c574e8f582",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:01",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

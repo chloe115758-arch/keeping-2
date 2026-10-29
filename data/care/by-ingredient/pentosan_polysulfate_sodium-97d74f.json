@@ -1,0 +1,56 @@
+{
+ "ingredient": "pentosan polysulfate sodium",
+ "productSeq": "201305404",
+ "itemName": "젤미론캡슐(펜토산폴리설페이트나트륨)",
+ "atc": "G04BX15",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200406",
+ "ediCode": "052900110",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201305404/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201305404/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201305404/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "마우스와 랫트에 15mg/kg/day, 토끼에 7.5mg/kg/day을 정맥 투여했을 때 이 약으로 인한 불임이 나 태아독성은 나타나지 않았다. 이 용량은 체표면적에 대해 표준화하면 각각 인간 경구투여량의 0.42배와 0.14배이다. 마우스의 태아 배양조에 펜토산폴리설페이트나트륨을 1mg/ml의 농도로 투입 했을 때 가역적인 사지아 비정상을 유발될 수 있다. 동물시험결과가 항상 사람에 적용되…",
+   "extractor": "kw-v4",
+   "id": "f75c6198cc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 모유 중으로 분비되는지는 알려져 있지 않다. 그러나 많은 약물들이 모유 중으로 분비 되 므로 수유부에 투여할 경우에는 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "d339578b0d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "4cc461732c",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "1일 3회, 1회 100mg씩 식사 1시간 전 또는 식사 2시간 후에 복용한다.",
+   "meal": "식사 1시간 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:57",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

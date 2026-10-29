@@ -1,0 +1,56 @@
+{
+ "ingredient": "carbidopa hydrate + levodopa",
+ "productSeq": "199201045",
+ "itemName": "퍼킨정25-100밀리그램(카르비도파,레보도파)",
+ "atc": "N04BA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230413",
+ "ediCode": "651902260",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199201045/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199201045/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199201045/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 내장, 골격기형발생 등이 보고된 바 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "832644d6b0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유중인 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "091bcccfb8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 환자의 증상을 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "79f513a33a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:48",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,58 @@
+{
+ "ingredient": "calcium carbonate",
+ "productSeq": "202107520",
+ "itemName": "이탄칼정(침강탄산칼슘)",
+ "atc": "A02AC01",
+ "etcOtc": "일반의약품",
+ "changeDate": "20221209",
+ "ediCode": "628902050",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107520/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107520/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107520/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "다량의 우유와 병용시 우유 알카리 증후군(고칼슘혈증, 고질소혈증, 알카리증",
+   "extractor": "kw-v4",
+   "id": "12debe4fa9",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "비타민D, 치아짓계 이뇨계와 병용투여시 고칼슘혈증이 나타나기 쉬우므로 주의",
+   "extractor": "kw-v4",
+   "id": "5aa259236f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:42",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

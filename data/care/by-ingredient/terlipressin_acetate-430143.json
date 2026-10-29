@@ -1,0 +1,56 @@
+{
+ "ingredient": "terlipressin acetate",
+ "productSeq": "200302307",
+ "itemName": "테리핀주(테를리프레신아세트산염)",
+ "atc": "H01BA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20140620",
+ "ediCode": "645301861",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302307/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302307/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200302307/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것. 3)",
+   "subject": "",
+   "excerpt": "70세 이상 노인 환자",
+   "extractor": "kw-v4",
+   "id": "90b87b3a31",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "자궁평활근 수축으로 임신 4개월 전에는 낙태를 유발할 수 있으며, 자궁의 혈액공급장애로 태아에 손상을 일으킬 수 있다. 토끼에게 글라이프레신 투여 후 자연유산과 태아기형이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "164970b3f0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부의 치명적 식도정맥류 출혈시에는 이 약 사용의 유익성이 위험성을 상회한다고 판단될 경우에만 투여한다. 모체의 유즙으로의 이행에 대한 정보는 충분하지 않지만, 환자의 임상적 상황을 고려해 볼 때 수유할 가능성은 매우 낮다.",
+   "extractor": "kw-v4",
+   "id": "8fe5333e59",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:44",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

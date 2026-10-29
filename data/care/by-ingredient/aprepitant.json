@@ -1,0 +1,68 @@
+{
+ "ingredient": "aprepitant",
+ "productSeq": "202200037",
+ "itemName": "아탄트캡슐80밀리그램(아프레피탄트)",
+ "atc": "A04AD12",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "052500030",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202200037/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202200037/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202200037/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 소아, 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 이 약을 랫트에 1000 mg/kg 1일 2회 경구 투여 (혈장 AUC0-24hr = 31.3 mcg·hr/mL, 인체권장용량의 약 1.6배) 하고, 토끼에 25 mg/kg/day 경구 투여 (혈장 AUC0-24hr = 26.9 mcg·hr/mL, 인체권장용량의 약 1.4배) 한 최기형성 시험에서 이 약에 의한 생식능이나 태자에 영향은 관찰되지 않았다. 그러나, 임부를 대상으로 한 임…",
+   "extractor": "kw-v4",
+   "id": "2f05f1cbdb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 소아, 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 이 약은 랫트의 유즙으로 분비된다. 이 약이 인체의 유즙에도 분비되는지는 명확하지 않다. 대부분의 약물이 유즙으로 분비되고 영아에 중대한 이상반응이 나타날 수 있으며, 설치류 발암성 시험에서 발암 가능성이 나타났으므로 수유부에 이 약을 투여할 필요가 있을 때에는 이 약 복용 중에는 수유를 중단하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "743e0c4a2d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 소아, 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "소아: 소아에 대한 이 약의 안전성과 유효성은 확립되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "4f170f7b65",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 소아, 고령자에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "고령자: 2건의 항암 화학요법에 의한 구역과 구토에 대한 대조임상시험에서 이 약을 투여받은 전체환자(N=544)중 65세 이상인 환자는 31%였고 75세 이상인 환자는 5%였다. 수술 후 구역과 구토에 대한 대조임상시험에서 이 약을 투여 받은 전체 환자(N=1120) 중 65세 이상인 환자는 7%였고, 75세 이상인 환자는 2%였다. 이 환자군과 젊은 환자군 사이에 안전성이나 유효성에 차이가…",
+   "extractor": "kw-v4",
+   "id": "28add0aec6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:32",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,63 @@
+{
+ "ingredient": "medium chain triglyceride + purified fish oil + purified olive oil + purified soybean oil",
+ "productSeq": "200604122",
+ "itemName": "스모프리피드20%주",
+ "atc": "B05BA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20211014",
+ "ediCode": "650900340",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200604122/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200604122/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200604122/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "대두유는 비타민 K1을 포함하지만, 본제에 함유된 양은 극히 적으므로, 쿠마린 유도체를 투여받는 환자들의 혈액응고 기전에 유의한 영향을 줄 것으로 기대되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "66d122c456",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 또는 수유부에게 이 약을 투여한 임상자료는 없다. 동물의 생식독성 시험은 이루어지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "50e7d8aad7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부 및 수유부에 대한 안전성은 확립되어 있지 않으므로 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 사용한다.",
+   "extractor": "kw-v4",
+   "id": "f2f05858a1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:36",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

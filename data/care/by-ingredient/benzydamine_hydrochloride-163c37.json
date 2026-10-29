@@ -1,0 +1,39 @@
+{
+ "ingredient": "benzydamine hydrochloride",
+ "productSeq": "198300389",
+ "itemName": "삼아탄툼액(벤지다민염산염)",
+ "atc": "A01AD02",
+ "etcOtc": "일반의약품",
+ "changeDate": "20090220",
+ "ediCode": "645700791",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198300389/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198300389/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198300389/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "매일 세잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 위장출혈이 유발될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "dc2a71382b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:50",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

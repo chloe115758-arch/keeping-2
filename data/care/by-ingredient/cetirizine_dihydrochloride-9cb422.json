@@ -1,15 +1,104 @@
 {
-  "ingredient": "cetirizine dihydrochloride",
-  "productSeq": "200905403",
-  "itemName": "알세진정10밀리그램(세티리진염산염)",
-  "atc": "R06AE07",
-  "etcOtc": "일반의약품",
-  "changeDate": "20250729",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905403/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905403/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905403/NB"
+ "ingredient": "cetirizine dihydrochloride",
+ "productSeq": "200905403",
+ "itemName": "알세진정10밀리그램(세티리진염산염)",
+ "atc": "R06AE07",
+ "etcOtc": "일반의약품",
+ "changeDate": "20250729",
+ "ediCode": "052700530",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905403/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905403/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905403/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것 3)",
+   "subject": "",
+   "excerpt": "노인(높은 혈중 농도가 지속될 수 있다)",
+   "extractor": "kw-v4",
+   "id": "d9d4283fdd",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:09:04"
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것",
+   "subject": "",
+   "excerpt": "이 약은 주로 신장을 통해 배설되므로 일반적으로 신기능이 저하되어 있는 노인에서는 혈중 농도 과다상태가 지속될 수 있으므로 저용량으로 신중히 투여를 시작하고 이상이 인정될 경우에는 감량하거나 복용중지하고 적절한 처치를 한다.",
+   "extractor": "kw-v4",
+   "id": "ecf8e3608e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것 6)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "e41cb69c1c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것",
+   "subject": "",
+   "excerpt": "임부를 대상으로 수집한 약 700건의 전향적인 자료에서 세티리진의 기형 또는 태아/신생아 독성에 대한 명확한 근거는 보고되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "081b7c5fe4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것",
+   "subject": "",
+   "excerpt": "동물 시험에서 임신, 배아/태아 발달, 분만 또는 출생 후 발달과 관련하여 직간접적으로 유해한 영향을 나타내지 않았다. 그럼에도 불구하고 임부 투여 시 주의가 필요하다.",
+   "extractor": "kw-v4",
+   "id": "842425fdf6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것 7)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "fea632440c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것",
+   "subject": "",
+   "excerpt": "이 약은 투여 후 샘플링 시간에 따라 혈장에서 측정된 농도의 25% ~ 90%가 모유로 분비된다. 이 약과 연관된 이상반응이 모유를 먹는 영아에서 관찰될 수 있으므로, 모유 수유 중인 여성이 이 약을 복용 시 주의가 필요하다.",
+   "extractor": "kw-v4",
+   "id": "d5a4bacd53",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

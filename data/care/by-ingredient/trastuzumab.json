@@ -1,0 +1,68 @@
+{
+ "ingredient": "trastuzumab",
+ "productSeq": "201707851",
+ "itemName": "삼페넷주150밀리그램(트라스투주맙)",
+ "atc": "L01FD01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221129",
+ "ediCode": "051500031",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707851/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707851/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707851/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "생식독성시험은 트라스투주맙의 사람 유지용량인 주 2㎎/㎏에 25배 용량을 암컷 cynomolgus 원숭이에 투여하여 실시하였으며 수태능력의 손상 또는 태자에 대한 악영향은 나타나지 않았다. 태자발달 초기(임신 20-50일째) 및 말기(임신 120-150일째) 중 트라스투주맙의 태반이행이 나타났다. 임신 여성에 투여 시 트라스투주맙이 태아독성을 유발하거나 수태능력에 영향을 미치는지는 알려진 바…",
+   "extractor": "kw-v4",
+   "id": "9336d64530",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "시판 후 조사에서 트라스투주맙을 투여 받은 임부에서 태아의 치명적인 폐형성저하증을 초래하는 양수과소증과 관련 있는 태아의 신장 발달과/혹은 기능 장애가 보고되었다. 임신할 가능성이 있는 여성은 트라스투주맙 치료기간 중 및 치료 종료 후 7개월 동안 효과적인 피임이 요구된다. 임신한 여성, 트라스투주맙 투여 중에 임신하거나 마지막 트라스투주맙 투여 후 7개월 이내에 임신한 환자에게는 태아에 대…",
+   "extractor": "kw-v4",
+   "id": "fd475d3a50",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "Cynomolgus 원숭이를 대상으로 트라스투주맙의 사람유지용량인 주 2㎎/㎏의 25배 용량을 임신 100일차부터 150일차까지 투여하여 실시한 시험에서 트라스투주맙은 출산 후 모유 중으로 이행되는 것으로 입증되었다. 자궁 내에서의 트라스투주맙 노출과 신생원숭이의 혈청 중 트라스투주맙의 존재가 출생에서 1개월 령에 이르기까지 이들의 성장 및 발생에 어떠한 부정적 영향을 미치지는 않았다. 트라…",
+   "extractor": "kw-v4",
+   "id": "bb7bddd910",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자 및 신장애 환자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상자료에서 트라스투주맙의 분포는 연령 또는 혈청 크레아티닌에 따라 변하지 않는 것으로 나타났다. 임상시험에서 만65세이상 환자에게 트라스투주맙을 감량투여하지 않았다. 고령자 및 신, 간장애 환자만을 대상으로 한 약물동태 연구는 실시되지 않았으나, 이 환자군에 대한 약물동태 분석에 따르면 연령 및 신장애는 트라스투주맙의 분포에 영향을 미치지 않는 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "c09cc421c5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:01",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

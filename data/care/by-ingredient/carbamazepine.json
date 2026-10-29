@@ -1,265 +1,300 @@
 {
-  "ingredient": "carbamazepine",
-  "productSeq": "199801575",
-  "itemName": "부광티모닐서방정300밀리그램(카르바마제핀)",
-  "atc": "N03AF01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250818",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801575/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801575/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801575/NB"
+ "ingredient": "carbamazepine",
+ "productSeq": "199801575",
+ "itemName": "부광티모닐서방정300밀리그램(카르바마제핀)",
+ "atc": "N03AF01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250818",
+ "ediCode": "642201050",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801575/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801575/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801575/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 3)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "d3fef83528",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ⑬",
+   "subject": "",
+   "excerpt": "위장관계약물 : 시메티딘, 오메프라졸",
+   "extractor": "kw-v4",
+   "id": "93c3ad8528",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "3feedc05ca",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "⑮ 혈전용해제 : 티클로피딘",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "&#x246f; 기타 : 자몽쥬스, 니코틴아미드(성인, 고용량)",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c560e99fb7",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ⑥",
-      "subject": "③ 항결핵제 : 리팜피신",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "St John"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "기타 : 성요한풀(St John's wort) 함유 생약제제",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "aa174bd522",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ⑥",
-      "subject": "&#x2472; 항구토제 : 아프레피탄트",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약은 다른 정신작용약물처럼 알코올 내성을 감소시킬 수 있다. 따라서 환자에게 금주를 권장한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8b39b32099",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(마우스, 랫트, 토끼)에서 기관형성기에 카르바마제핀을 경구투여한 경우 모체 독성을 유발할 수 있는 1일 용량(1일 200mg/kg 이상, 즉 일반 성인 용량의 10-20배)에서 태아 사망률이 증가했다. 랫트를 대상으로 실시한 실험에서 1일 300mg/kg 투여 시에도 이로 인해 몇 경우에는 유산이 일어났다. 모체 독성 용량을 사용한 경우에도 곧 랫트의 태아에서 성장지연이 나타났다.…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f345b34ce9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "뇌전증 여성의 자녀인 경우, 기형을 포함하는 발달 장애가 더 쉽게 일어나기 쉬운 것으로 알려져 있다. 비록 조절된 카르바마제핀 단독요법 임상시험에서 얻어진 확정적 증거는 없지만 다른 항뇌전증약과 마찬가지로 카르바마제핀이 그러한 위험성을 더 증가시킬 수 있는 가능성이 보고된 바가 있다. 척추 갈림증 및 기타 선천성기형(예, 두개안면 결함, 심혈관 기형, 요도하열, 소두증 및 각종 신체기관의 이…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "336161c5f8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "북아메리카 임부 레지스트리 자료에 따르면 생후 12주 이내에 진단된 주요 선천성 기형(수술적, 의학적 또는 미용적으로 중요한 구조적 이상으로 정의됨)의 유병률은 모체가 임신 1분기에 이 약의 단독 투여에 노출된 경우 3.0%(95% CI 2.1-4.2%), 항뇌전증 약물에 노출되지 않은 경우 1.1%(95% CI 0.35-2.5%)로, 카르바마제핀을 복용한 임부에서 선천성 기형의 상대위험도(…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5fc0f4e56d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "EURAP(European and International Registry of Antiepileptic Drugs and Pregnancy) 레지스트리 자료에 따르면 생후 1년 이내에 진단된 주요 선천성 기형의 유병률은 임신 중 이 약의 단독 투여에 노출된 태아에서 5.4%(95% CI 4.5-6.4)로 보고되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "46f12aab2f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "북유럽의 인구 기반 코호트 연구 데이터에 따르면 임신 중 이 약을 포함한 항뇌전증 약물을 복용한 임부에서 약물에 노출되지 않은 뇌전증이 있는 임부보다 임신 연령보다 작은 영아(small for gestational age, SGA) 출생의 위험이 높아진다. 임신 중 카르바마제핀 단독 또는 다른 항뇌전증 약물과 병용하여 치료받은 뇌전증 여성의 자녀에서 신경 발달 장애(예, 전반적 발달 지연,…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7bd58e6e00",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "뇌전증이 있는 임산부는 특별히 주의하여 투여해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d6b54105cb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 5)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약을 사용하고 있는 중에 임신을 하거나 임신을 계획 중인 경우, 임신 중에 이 약 치료를 시작할 때 문제가 야기된 경우, 특히 임신 초기 3개월간에는 이 약의 치료 상의 유익성과 위험성을 충분히 고려해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "87e1874864",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 6)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "자식에게서 나타나는 선천성 이상이 항뇌전증 약물을 단독으로 사용하는 임산부에서 보다 병용하는 임산부에서 더욱 높기 때문에 가임기 여성의 경우 이 약은 단독요법으로 사용해야 한다. 이 약과 다른 약물을 병용하여 투여했을 때 기형 발생의 위험은 함께 투여된 약물에 따라 다양하며 발프로에이트를 포함한 다약제 병용 투여에서 그 위험이 더 높을 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "af73ffa8bc",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 7)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "최소유효 용량을 처방하고 혈중 농도를 측정하는 것이 권장된다. 혈중 농도는 치료범위인 4-12 μg/mL 에서 발작이 조절되는 낮은 범위에서 유지되어야 한다. 이 약에 의한 기형의 발생이 용량 의존적임(즉, 1일 400mg 미만의 용량)을 시사하는 근거가 있으며 이 약을 고용량 투여했을 때의 기형 발생률이 더 높았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5333825cdb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 8)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "환자는 기형의 위험성 증가의 가능성에 대한 충분한 설명을 받아야 하며, 출생 전 스크리닝 검사를 받아야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8144417354",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 9)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 기간 중 병증의 악화는 임산부와 태아 모두에게 해로우므로 효과적인 치료가 중단되어서는 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fe5efb6cd8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 10)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중에는 엽산 결핍이 일어난다고 알려져 있다. 항뇌전증 약물은 엽산 결핍을 더 악화시키며, 이러한 결핍은 뇌전증치료를 받은 여성의 자식의 선천적 결함의 위험도를 더 증가 시킬 수 있다. 따라서 임신 전과 임신 기간 동안에 엽산 보충이 권장된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4cd7447aaf",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 11)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "신생아뿐만 아니라 임신 마지막 주 동안 임부가 복용하는 비타민 K1은 신생아의 출혈 장애를 방지하기 위해 권장 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "293a4bbd54",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 12)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임산부의 이 약과 다른 항뇌전증 약물의 병용 투여로 인한 신생아 발작 및/또는 호흡 저하가 몇 건 보도되었다. 또한 임산부의 이 약 투여로 인한 신생아 구토, 설사 및/또는 섭취 저하가 몇 건 보고되었다. 이 반응을 신생아 금단증상이라고 할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6418f5cca1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부에 대한 투여 13)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "피임 : 가임기 여성의 경우 이 약의 복용기간 및 이 약의 마지막 복용일로부터 2주간 효과적인 피임법을 사용해야 한다. 이 약의 효소유도작용으로 인해 에스트로겐이나 프로게스테론을 함유하는 호르몬성 피임약의 피임 효과가 감소되어 피임의 실패를 초래할 수 있다. 따라서 이 약의 복용기간 중에는 비호르몬성 피임법을 사용하도록 해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c4f61660e6",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "카르바마제핀은 유즙으로 분비된다(혈장 중 농도의 약 25-60%). 모유의 장점과 신생아에게 일어날 수 있는 만일의 이상반응의 가능성(예, 과도한 졸음, 피부 알레르기 반응)은 충분히 고려되어야 하며 일어날 수 있는 이상반응에 대한 관찰이 요구된다. 이 약에 출산 전 또는 수유 기간 동안 노출되었던 신생아에서 담즙정체성 간염이 보고되었다. 따라서 이 약을 투여중인 여성의 수유중인 영아는 간담…",
-      "extractor": "kw-v1"
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:16:11"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "&#x246f; 기타 : 자몽쥬스, 니코틴아미드(성인, 고용량)",
+   "extractor": "kw-v4",
+   "id": "1d55b61777",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ⑥",
+   "subject": "",
+   "excerpt": "기타 : 성요한풀(St John's wort) 함유 생약제제",
+   "extractor": "kw-v4",
+   "id": "18b4c9189a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ⑥",
+   "subject": "&#x2472; 항구토제 : 아프레피탄트",
+   "excerpt": "이 약은 다른 정신작용약물처럼 알코올 내성을 감소시킬 수 있다. 따라서 환자에게 금주를 권장한다.",
+   "extractor": "kw-v4",
+   "id": "900fd2726c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험(마우스, 랫트, 토끼)에서 기관형성기에 카르바마제핀을 경구투여한 경우 모체 독성을 유발할 수 있는 1일 용량(1일 200mg/kg 이상, 즉 일반 성인 용량의 10-20배)에서 태아 사망률이 증가했다. 랫트를 대상으로 실시한 실험에서 1일 300mg/kg 투여 시에도 이로 인해 몇 경우에는 유산이 일어났다. 모체 독성 용량을 사용한 경우에도 곧 랫트의 태아에서 성장지연이 나타났다.…",
+   "extractor": "kw-v4",
+   "id": "6bf5f7bb34",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "뇌전증 여성의 자녀인 경우, 기형을 포함하는 발달 장애가 더 쉽게 일어나기 쉬운 것으로 알려져 있다. 비록 조절된 카르바마제핀 단독요법 임상시험에서 얻어진 확정적 증거는 없지만 다른 항뇌전증약과 마찬가지로 카르바마제핀이 그러한 위험성을 더 증가시킬 수 있는 가능성이 보고된 바가 있다. 척추 갈림증 및 기타 선천성기형(예, 두개안면 결함, 심혈관 기형, 요도하열, 소두증 및 각종 신체기관의 이…",
+   "extractor": "kw-v4",
+   "id": "2ba33a337e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "북아메리카 임부 레지스트리 자료에 따르면 생후 12주 이내에 진단된 주요 선천성 기형(수술적, 의학적 또는 미용적으로 중요한 구조적 이상으로 정의됨)의 유병률은 모체가 임신 1분기에 이 약의 단독 투여에 노출된 경우 3.0%(95% CI 2.1-4.2%), 항뇌전증 약물에 노출되지 않은 경우 1.1%(95% CI 0.35-2.5%)로, 카르바마제핀을 복용한 임부에서 선천성 기형의 상대위험도(…",
+   "extractor": "kw-v4",
+   "id": "72ccc1e9db",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "EURAP(European and International Registry of Antiepileptic Drugs and Pregnancy) 레지스트리 자료에 따르면 생후 1년 이내에 진단된 주요 선천성 기형의 유병률은 임신 중 이 약의 단독 투여에 노출된 태아에서 5.4%(95% CI 4.5-6.4)로 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "7cdafcc620",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "북유럽의 인구 기반 코호트 연구 데이터에 따르면 임신 중 이 약을 포함한 항뇌전증 약물을 복용한 임부에서 약물에 노출되지 않은 뇌전증이 있는 임부보다 임신 연령보다 작은 영아(small for gestational age, SGA) 출생의 위험이 높아진다. 임신 중 카르바마제핀 단독 또는 다른 항뇌전증 약물과 병용하여 치료받은 뇌전증 여성의 자녀에서 신경 발달 장애(예, 전반적 발달 지연,…",
+   "extractor": "kw-v4",
+   "id": "c08de3675d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "뇌전증이 있는 임산부는 특별히 주의하여 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "89293733f2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "이 약을 사용하고 있는 중에 임신을 하거나 임신을 계획 중인 경우, 임신 중에 이 약 치료를 시작할 때 문제가 야기된 경우, 특히 임신 초기 3개월간에는 이 약의 치료 상의 유익성과 위험성을 충분히 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "7add5596ed",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "자식에게서 나타나는 선천성 이상이 항뇌전증 약물을 단독으로 사용하는 임산부에서 보다 병용하는 임산부에서 더욱 높기 때문에 가임기 여성의 경우 이 약은 단독요법으로 사용해야 한다. 이 약과 다른 약물을 병용하여 투여했을 때 기형 발생의 위험은 함께 투여된 약물에 따라 다양하며 발프로에이트를 포함한 다약제 병용 투여에서 그 위험이 더 높을 수 있다.",
+   "extractor": "kw-v4",
+   "id": "c82ba2110d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 7)",
+   "subject": "",
+   "excerpt": "최소유효 용량을 처방하고 혈중 농도를 측정하는 것이 권장된다. 혈중 농도는 치료범위인 4-12 μg/mL 에서 발작이 조절되는 낮은 범위에서 유지되어야 한다. 이 약에 의한 기형의 발생이 용량 의존적임(즉, 1일 400mg 미만의 용량)을 시사하는 근거가 있으며 이 약을 고용량 투여했을 때의 기형 발생률이 더 높았다.",
+   "extractor": "kw-v4",
+   "id": "79e7e748c2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 8)",
+   "subject": "",
+   "excerpt": "환자는 기형의 위험성 증가의 가능성에 대한 충분한 설명을 받아야 하며, 출생 전 스크리닝 검사를 받아야 한다.",
+   "extractor": "kw-v4",
+   "id": "387c1f8d05",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 9)",
+   "subject": "",
+   "excerpt": "임신 기간 중 병증의 악화는 임산부와 태아 모두에게 해로우므로 효과적인 치료가 중단되어서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "282b22739b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 10)",
+   "subject": "",
+   "excerpt": "임신 중에는 엽산 결핍이 일어난다고 알려져 있다. 항뇌전증 약물은 엽산 결핍을 더 악화시키며, 이러한 결핍은 뇌전증치료를 받은 여성의 자식의 선천적 결함의 위험도를 더 증가 시킬 수 있다. 따라서 임신 전과 임신 기간 동안에 엽산 보충이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "8e482b7cdd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 11)",
+   "subject": "",
+   "excerpt": "신생아뿐만 아니라 임신 마지막 주 동안 임부가 복용하는 비타민 K1은 신생아의 출혈 장애를 방지하기 위해 권장 된다.",
+   "extractor": "kw-v4",
+   "id": "b11135f2c4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 12)",
+   "subject": "",
+   "excerpt": "임산부의 이 약과 다른 항뇌전증 약물의 병용 투여로 인한 신생아 발작 및/또는 호흡 저하가 몇 건 보도되었다. 또한 임산부의 이 약 투여로 인한 신생아 구토, 설사 및/또는 섭취 저하가 몇 건 보고되었다. 이 반응을 신생아 금단증상이라고 할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "a8c6519d79",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 13)",
+   "subject": "",
+   "excerpt": "피임 : 가임기 여성의 경우 이 약의 복용기간 및 이 약의 마지막 복용일로부터 2주간 효과적인 피임법을 사용해야 한다. 이 약의 효소유도작용으로 인해 에스트로겐이나 프로게스테론을 함유하는 호르몬성 피임약의 피임 효과가 감소되어 피임의 실패를 초래할 수 있다. 따라서 이 약의 복용기간 중에는 비호르몬성 피임법을 사용하도록 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e32b95be2f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "카르바마제핀은 유즙으로 분비된다(혈장 중 농도의 약 25-60%). 모유의 장점과 신생아에게 일어날 수 있는 만일의 이상반응의 가능성(예, 과도한 졸음, 피부 알레르기 반응)은 충분히 고려되어야 하며 일어날 수 있는 이상반응에 대한 관찰이 요구된다. 이 약에 출산 전 또는 수유 기간 동안 노출되었던 신생아에서 담즙정체성 간염이 보고되었다. 따라서 이 약을 투여중인 여성의 수유중인 영아는 간담…",
+   "extractor": "kw-v4",
+   "id": "c17ae673cb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

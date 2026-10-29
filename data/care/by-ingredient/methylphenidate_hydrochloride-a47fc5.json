@@ -1,71 +1,75 @@
 {
-  "ingredient": "methylphenidate hydrochloride",
-  "productSeq": "201501271",
-  "itemName": "콘서타OROS서방정36밀리그램(메틸페니데이트염산염)",
-  "atc": "N06BA04",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260806",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501271/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501271/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501271/NB"
-  },
-  "rules": [
+ "ingredient": "methylphenidate hydrochloride",
+ "productSeq": "201501271",
+ "itemName": "콘서타OROS서방정36밀리그램(메틸페니데이트염산염)",
+ "atc": "N06BA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260806",
+ "ediCode": "646902060",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501271/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501271/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201501271/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 8)",
+   "subject": "성인",
+   "excerpt": "약물 의존 또는 알코올 중독의 병력을 가진 환자들과 같이 가정적으로 불안한 환자들은 스스로 약물의 용량을 증가시킬 수 있으므로 이 약 투여시 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "5b611dad3c",
+   "kind": "note",
+   "matched": [
     {
-      "id": "6246621ee7",
-      "kind": "note",
-      "section": "warning",
-      "where": "1. 경고 8)",
-      "subject": "④ 공격",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "약물 의존 또는 알코올 중독의 병력을 가진 환자들과 같이 가정적으로 불안한 환자들은 스스로 약물의 용량을 증가시킬 수 있으므로 이 약 투여시 주의해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "99ca02595d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중 투여에 대한 안전성이 확립되어 있지 않으며, 임부를 대상으로 한 임상시험도 실시된 바 없다. 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 임부에게 이 약을 투여하도록 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "62cc10418e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "메틸페니데이트가 모유로 이행된다는 보고가 있으므로 이 약을 수유부에게 투여시 주의하도록 한다",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c9cfc7b694",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "66세 이상의 고령자에 대한 이 약의 사용은 대조임상시험에서 연구되지 않았다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:13:47"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대한 안전성이 확립되어 있지 않으며, 임부를 대상으로 한 임상시험도 실시된 바 없다. 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 임부에게 이 약을 투여하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "5e314a82d7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "메틸페니데이트가 모유로 이행된다는 보고가 있으므로 이 약을 수유부에게 투여시 주의하도록 한다",
+   "extractor": "kw-v4",
+   "id": "c09e0cfd67",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "66세 이상의 고령자에 대한 이 약의 사용은 대조임상시험에서 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "da143b0e01",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

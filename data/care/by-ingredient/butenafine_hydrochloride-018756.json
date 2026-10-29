@@ -1,0 +1,44 @@
+{
+ "ingredient": "butenafine hydrochloride",
+ "productSeq": "199400709",
+ "itemName": "영진멘탁스크림(부테나핀염산염)",
+ "atc": "D01AE23",
+ "etcOtc": "일반의약품",
+ "changeDate": "20140422",
+ "ediCode": "642400731",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199400709/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199400709/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199400709/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 사용에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d4808db416",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약의 모유로의 이행 여부에 대해 알려진 바 없으나 많은 약물들이 모유로 이행하므로 수유부에 이 약 투여시 주의한다.",
+   "extractor": "kw-v4",
+   "id": "627674eb29",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:40",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

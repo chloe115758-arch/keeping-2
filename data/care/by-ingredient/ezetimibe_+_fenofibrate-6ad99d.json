@@ -1,0 +1,219 @@
+{
+ "ingredient": "ezetimibe + fenofibrate",
+ "productSeq": "202106924",
+ "itemName": "에제페노정",
+ "atc": "C10BA",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220808",
+ "ediCode": "642004870",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106924/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106924/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202106924/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "○ 에제티미브",
+   "excerpt": "콜레스티라민: 에제티미브와 콜레스티라민을 병용투여시 총 에제티미브의 평균 AUC가 약 55% 감소하였다. 이러한 상호작용에 의하여 콜레스티라민과 에제티미브의 병용투여로 기대되는 LDL-C 저하에 대한 병합작용이 감소될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "fbf98c5404",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임부 및 수유부에 투여해서는 안된다. 에제티미브와 페노피브레이트 각 단일제 임부 및 수유부에 대한 투여항을 참고한다.",
+   "extractor": "kw-v4",
+   "id": "45b11ded6f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "○ 에제티미브",
+   "excerpt": "에제티미브를 임부에게 투여한 임상 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "2e6a6a3fcb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○ 에제티미브",
+   "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 한 경구 배ㆍ태자 발생시험의 시험 용량(250, 500, 1000mg/kg/day)에서 배자치사 효과가 관찰되지 않았다. 에제티미브 1000mg/kg/day(총 에제티미브의 AUC0-24hr에 근거하였을 때 1일 10 mg으로 투여시 사람에 대한 노출의 10배)를 투여한 랫트에서 일반적인 태자 골격이상(늑골 추가형성, 경추 중심부 골화부전, 늑골 축소)…",
+   "extractor": "kw-v4",
+   "id": "996dc92b8d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "○ 에제티미브",
+   "excerpt": "모든 HMG-CoA 환원효소 억제제 및 페노피브레이트는 임부 및 수유부에 대한 투여가 금지되어 있다. 에제티미브를 출산 가능성이 있는 여성에게 HMG-CoA 환원효소 억제제 또는 페노피브레이트와 함께 투여할 때에는, 해당 HMG-CoA 환원효소 억제제의 제품설명서를 참조한다. (1. 다음 환자에는 투여하지 말 것 참조)",
+   "extractor": "kw-v4",
+   "id": "4112ba54a8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "○ 에제티미브",
+   "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 에제티미브와 HMG-CoA 환원효소 억제제(스타틴계 약물)를 병용투여한 반복투여시험에서는 에제티미브 및 HMG-CoA 환원효소 억제제에 대한 노출 정도가 높았다. 단독투여에 비해 병용투여시 보다 낮은 용량에서 생식능 이상이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "14354b7858",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 5)",
+   "subject": "○ 에제티미브",
+   "excerpt": "동물실험(랫트)에서 에제티미브는 유즙으로 분비되었다. 랫트를 대상으로 한 실험에서 수유 중인 새끼의 총 에제티미브에 대한 노출은 모체 혈장에서 관찰되는 값의 절반에 이르렀다.",
+   "extractor": "kw-v4",
+   "id": "a71ee720af",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "○ 에제티미브",
+   "excerpt": "에제티미브가 사람의 모유로 분비되는지 여부는 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "2c44328e48",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "○ 페노피브레이트",
+   "excerpt": "임신중(특히 임신 3개월 이후)에 투여시 태아에 축적되어 태아독성을 유발할 위험성이 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "58894fb2dc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○ 페노피브레이트",
+   "excerpt": "모유중으로의 이행이 알려진 바 없으므로 수유중에는 투여를 피한다(랫트에서 유즙으로 이행되었다는 보고가 있다.).",
+   "extractor": "kw-v4",
+   "id": "da3b3225b1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약으로 고령자에 대한 연구는 수행되지 않았다. 이 약은 에제티미브와 페노피브레이트로 각 단일제 고령자에 대한 투여항을 참고한다.",
+   "extractor": "kw-v4",
+   "id": "dd7e97a4cf",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "○ 에제티미브",
+   "excerpt": "임상시험에서 에제티미브를 투여받은 환자 중 65세 이상의 고령자는 948명(75세 이상의 고령자 206명 포함)이었다. 에제티미브의 유효성과 안전성은 고령 환자와 젊은 환자간에 유사하였으나, 일부 고령자에서 보다 민감한 반응이 나타날 수 있음을 배제할 수 없다. (3. 이상반응 참조)",
+   "extractor": "kw-v4",
+   "id": "08a9d9bdb4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "○ 페노피브레이트",
+   "excerpt": "일반적으로 고령자는 간·신기능이 저하되어 있는 경우가 많고, 체중이 적은 경향이 있는 등 이상반응 발현이 쉬우므로 투여 시 주의하여 투여한다. 특히 신기능에 대해서는 투여 중 혈청크레아티닌치를 정기적으로 확인해야 한다.",
+   "extractor": "kw-v4",
+   "id": "a986dd3e7a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "○ 페노피브레이트",
+   "excerpt": "고령자에서 설포닐요소계 혈당강하제(글리벤클라미드 등)와의 병용에 의해 저혈당증(식은땀, 강한 공복감, 심계항진 등)이 나타났다는 보고가 있으므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "24864b98c5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "75dc7e83cc",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 이 약은 1일 1회 1정을 식후 즉시 복용한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "acf42975ea",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 반드시 식이요법과 병행하여 투여한다. 이 약 성분 중 페노피브레이트는 빈속에 흡수가 덜 될 수 있으므로 반드시 식후 즉시 투여한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:06",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

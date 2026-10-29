@@ -1,0 +1,56 @@
+{
+ "ingredient": "follitropin delta",
+ "productSeq": "201908661",
+ "itemName": "레코벨프리필드펜(폴리트로핀델타)(유전자재조합)",
+ "atc": "G03GA10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250604",
+ "ediCode": "652500421",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908661/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908661/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908661/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 임신 중에 사용하지 않는다. 성선자극호르몬과 함께 임상에서 사용했을 때 과배란 유도 후 기형 발생 위험이 보고되지 않았다. 임신 여성이 이 약에 의도치 않게 노출된 경우에 대한 임상 자료가 없으므로, 최기형성을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "ee6d01fae5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 수유기간에 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "57c603f44e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 소아 및 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "소아 및 고령자에 대한 이 약의 사용경험은 없다.",
+   "extractor": "kw-v4",
+   "id": "705e159bc1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:29",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

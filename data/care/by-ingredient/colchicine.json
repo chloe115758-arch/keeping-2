@@ -1,0 +1,75 @@
+{
+ "ingredient": "colchicine",
+ "productSeq": "198801219",
+ "itemName": "콜킨정(콜키신)",
+ "atc": "M04AC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250520",
+ "ediCode": "644304080",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198801219/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198801219/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198801219/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 3)",
+   "subject": "",
+   "excerpt": "치료 기간 중 자몽이나 자몽쥬스 섭취를 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "07b4668f8b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 기형발생작용이 나타났고 사람에서 태아염색체손상의 위험이 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "c7b3955c97",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유로 배설될 수 있으므로 세포독성효과의 위험 때문에 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "2a51d64afb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일본에서 고령자를 대상으로 한 약물동태실험에서 높은 혈중농도가 유지되는 경향이 인정되었으므로 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "5891608dda",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:28:02",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

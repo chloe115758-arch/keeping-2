@@ -1,64 +1,68 @@
 {
-  "ingredient": "propiverine hydrochloride",
-  "productSeq": "201802565",
-  "itemName": "유피베린정(프로피베린염산염)",
-  "atc": "G04BD06",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802565/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802565/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802565/NB"
+ "ingredient": "propiverine hydrochloride",
+ "productSeq": "201802565",
+ "itemName": "유피베린정(프로피베린염산염)",
+ "atc": "G04BD06",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "622803180",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802565/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802565/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802565/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 여성에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "4b095ec3e2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "b830e85892",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 여성에는 투여하지 않는 것이 바람직하다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8e71f807bf",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫트)에서 유즙으로의 분비가 보고되어 있으므로 수유중인 여성은 수유를 중지하는 것이 바람직하다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c19035b385",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자는 간기능, 신기능이 저하되어 있는 경우가 많으므로 안전성을 고려하여 10 mg/일로 투여를 개시하는 등 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3e788b737e",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "성인 : 프로피베린염산염으로서 1일 1회 20 mg을 식후 경구투여 한다.",
-      "meal": "식후",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:08:27"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 유즙으로의 분비가 보고되어 있으므로 수유중인 여성은 수유를 중지하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "53dc9c445b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 간기능, 신기능이 저하되어 있는 경우가 많으므로 안전성을 고려하여 10 mg/일로 투여를 개시하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "860c8417c6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "3e788b737e",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 프로피베린염산염으로서 1일 1회 20 mg을 식후 경구투여 한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

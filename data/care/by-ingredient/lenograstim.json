@@ -1,0 +1,44 @@
+{
+ "ingredient": "lenograstim",
+ "productSeq": "199300331",
+ "itemName": "뉴트로진주250마이크로그램(레노그라스팀)(유전자재조합)",
+ "atc": "L03AA10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20241226",
+ "ediCode": "644902361",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300331/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300331/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300331/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신중 투여에 관한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "910ccf17b7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있는 경우가 많으므로 이 약의 투여 시에는 호중구 수(백혈구 수)의 측정을 자주 실시하고, 과잉증가(기준으로서 호중구수 5,000/㎣ 이상)를 피할 수 있도록 필요에 따라 투여기간을 적절히 조절하는 등 신중을 기한다.",
+   "extractor": "kw-v4",
+   "id": "7d83d3db0f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:20",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

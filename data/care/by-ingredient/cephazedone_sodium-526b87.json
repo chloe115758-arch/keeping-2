@@ -1,28 +1,44 @@
 {
-  "ingredient": "cephazedone sodium",
-  "productSeq": "200000528",
-  "itemName": "국제세파제돈주1그람(수출명:세파제국주1그람)",
-  "atc": "J01DB06",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250113",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000528/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000528/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000528/NB"
+ "ingredient": "cephazedone sodium",
+ "productSeq": "200000528",
+ "itemName": "국제세파제돈주1그람(수출명:세파제국주1그람)",
+ "atc": "J01DB06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250113",
+ "ediCode": "643700271",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000528/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000528/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000528/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것. 5)",
+   "subject": "",
+   "excerpt": "경구섭취가 불량한 환자 또는 비경구영양 환자, 고령자, 전신상태가 나쁜 환자(비타민 K결핍증상이 나타날 수 있으므로 충분히 관찰한다.)",
+   "extractor": "kw-v4",
+   "id": "3d0201803b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "edcfd7ae3b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "모유로의 소량 이행이 보고되어 있으므로 신중히 투여한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:11:38"
+  {
+   "section": "pregnancy",
+   "where": "6. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "모유로의 소량 이행이 보고되어 있으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "0f08694f3c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

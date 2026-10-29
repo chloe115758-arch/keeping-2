@@ -1,0 +1,159 @@
+{
+ "ingredient": "rufinamide",
+ "productSeq": "200905915",
+ "itemName": "이노베론필름코팅정400mg (루피나미드)",
+ "atc": "N03AF03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20191008",
+ "ediCode": "652105310",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905915/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905915/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200905915/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ⑥",
+   "subject": "",
+   "excerpt": "루피나미드와 알코올의 상호작용에 대한 데이터는 없다.",
+   "extractor": "kw-v4",
+   "id": "8463b8ceb7",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "뇌전증과 항뇌전증약과 관련된 일반적인 위험성",
+   "extractor": "kw-v4",
+   "id": "6b991a99b7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "기형의 유병율이 일반군에서는 약 3%인 것에 비해, 뇌전증 여성의 자손에서는 2~3배 더 큰 것으로 나타났다. 치료군에서는 기형의 증가가 복합치료(polytherapy)에서 나타났으나, 어떤 치료 및/또는 어떤 질병이 어느 정도의 원인이 있는지에 대해서는 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "d571929d89",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "또한, 질병의 악화는 산모와 태아 모두에게 해롭기 때문에 항뇌전증 치료가 유효한 경우 중단하지 않는다. 임신 기간 동안의 항뇌전증약 치료는 담당의와 주의 깊게 논의되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "bec11ed637",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "루피나미드와 관련된 위험성",
+   "extractor": "kw-v4",
+   "id": "764fd392f7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물 시험에서 최기형성 효과는 없으나, 모체 독성이 있는 경우 태아 독성이 있는 것으로 나타났다. 사람에게 잠재된 위험성은 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "c400f6a95c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "루피나미드는 임산부에 노출 시의 임상 데이터는 없다. 이러한 데이터를 고려하여 루피나미드는 피임법을 사용하지 않는 연령의 가임여성과 분명히 필요한 경우가 아니면 임부에게는 사용하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "c5ae0d9bc3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임 여성은 이 약으로 치료 시에 피임법을 반드시 사용하여야 한다. 의사는 적절한 피임법을 사용하고 있음을 확실히 하고, 개별 환자의 임상적 상황에 근거하여 해당 경구용 피임제 또는 경구용 피임제 성분의 용량이 적절한지를 평가하여 임상적 판단을 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "dc85c78184",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "루피나미드로 치료 중인 환자가 임신 계획이 있는 경우 이 약의 효과를 주의 깊게 평가하여야 한다. 임신 중에 질병의 악화는 산모와 태아 모두에게 해롭기 때문에 항뇌전증약인 루피나미드 치료가 유효한 경우 중단하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "3b61b42b70",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "루피나미드가 사람 유즙으로 배설되는지는 알려져 있지 않다. 모유 수유하는 영·유아에는 잠재적인 유해 효과로 인해 산모가 루피나미드로 치료 시 수유는 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "43ea00372f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 가임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약으로 치료 시 수태능에 미치는 영향과 관련해서 이용 가능한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "8af0afc873",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:29",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

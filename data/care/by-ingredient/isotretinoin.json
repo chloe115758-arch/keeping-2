@@ -1,109 +1,125 @@
 {
-  "ingredient": "isotretinoin",
-  "productSeq": "199801972",
-  "itemName": "핀플연질캡슐(이소트레티노인)",
-  "atc": "D10BA01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230203",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801972/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801972/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801972/NB"
-  },
-  "rules": [
+ "ingredient": "isotretinoin",
+ "productSeq": "199801972",
+ "itemName": "핀플연질캡슐(이소트레티노인)",
+ "atc": "D10BA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230203",
+ "ediCode": "057001580",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801972/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801972/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801972/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 9)",
+   "subject": "",
+   "excerpt": "당뇨, 비만, 알콜중독 또는 지질대사 장애가 있는 환자와 같은 고위험 환자는 더 빈번하게 혈중 지질 및 혈당수치를 모니터링해야 한다.",
+   "extractor": "kw-v4",
+   "id": "effc2d90f1",
+   "kind": "note",
+   "matched": [
     {
-      "id": "9a672f1ffc",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 9)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알콜"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "당뇨, 비만, 알콜중독 또는 지질대사 장애가 있는 환자와 같은 고위험 환자는 더 빈번하게 혈중 지질 및 혈당수치를 모니터링해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a005675adc",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 16)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 관련된 고중성지방혈증의 심혈관계 영향은 알려져 있지 않으나 환자의 위험상태는 악화될 수 있다. 따라서 현저한 중성지방 수치의 상승이 확인된 경우에는 조절되어야 한다. 일부환자는 치료를 계속하는 동안 체중감량, 식이지방 및 알코올의 제한, 투여량의 감소로 중성지방의 상승을 조절할 수 있었다. 고도 비만인 대리어병(Darier's disease) 남성환자는 중성지방의 상승 후에 발진성…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e7cbc5c43d",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 6)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "St. John"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "호르몬 피임제와 상호작용의 가능성이 있으므로 St. John's wort 허브 보급제로 자가 치료하지 않도록 주의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7af0d9641b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "1) 경고항 참고",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "이 약은 지방친화력이 매우 강하여 모유중으로 이행되므로 수유부에는 금기이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4262f267e0",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자의 경우 성인과 특별히 다르지는 않으나 약물유발성 관절통의 위험이 증가될 수 있으므로 주의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "180ecf000c",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "저용량의 경우는 1일 1회, 고용량의 경우는 1일 2회 분할하여 식사와 함께 복용한다.",
-      "meal": "식사와 함께",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:13:41"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 16)",
+   "subject": "",
+   "excerpt": "이 약과 관련된 고중성지방혈증의 심혈관계 영향은 알려져 있지 않으나 환자의 위험상태는 악화될 수 있다. 따라서 현저한 중성지방 수치의 상승이 확인된 경우에는 조절되어야 한다. 일부환자는 치료를 계속하는 동안 체중감량, 식이지방 및 알코올의 제한, 투여량의 감소로 중성지방의 상승을 조절할 수 있었다. 고도 비만인 대리어병(Darier's disease) 남성환자는 중성지방의 상승 후에 발진성…",
+   "extractor": "kw-v4",
+   "id": "e026e4c87a",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 6)",
+   "subject": "",
+   "excerpt": "호르몬 피임제와 상호작용의 가능성이 있으므로 St. John's wort 허브 보급제로 자가 치료하지 않도록 주의한다.",
+   "extractor": "kw-v4",
+   "id": "1ada7ab7da",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "경고항 참고",
+   "extractor": "kw-v4",
+   "id": "0536bb06ec",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 지방친화력이 매우 강하여 모유중으로 이행되므로 수유부에는 금기이다.",
+   "extractor": "kw-v4",
+   "id": "ecfde8b1b2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자의 경우 성인과 특별히 다르지는 않으나 약물유발성 관절통의 위험이 증가될 수 있으므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "4ae6f56903",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "180ecf000c",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "저용량의 경우는 1일 1회, 고용량의 경우는 1일 2회 분할하여 식사와 함께 복용한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -178,6 +178,7 @@
 - **`js/care.js`**: `KeepingCare.create({pack, dur, groups}).analyze(items, {meals, states})` → 위 출력 형식. 시험 `tests/care.test.js`(14개).
 - 항목 형식: 약 `{id, kind:'drug', productCode, name, display, times:['07:00']}`, 영양제 `{id, kind:'supp', ingredientKeys:['calcium'], times:[…]}`. 영양제 키는 `datapack.js`의 `supplementKeyList` + **`data/care/supplement-keys-extra.json`**(비오틴·비타민 K·세인트존스워트·은행잎)을 합쳐서 쓴다.
 - 엔진은 ① 병용금기(DUR) ② 허가사항 규칙(간격·음식·약 분류·임신/고령자 상태·복용 시점)을 계산한다. 근거가 없는 약은 `uncovered`로 알린다.
+- **투여 경로**: 같은 성분도 내복·주사·외용은 허가사항이 다르다. 묶음 항목에 `route`가 있고 제품의 경로(products.json의 투여 구분)와 다르면 규칙을 붙이지 않고 `uncovered(route_mismatch)`로 알린다. 수집 스크립트가 대표 제품의 `route`와 `ediCode`를 저장해야 한다(이미 받은 항목은 raw 응답과 products.json으로 채운다).
 
 ### 5-4. 이번에 쓰는 DUR 추가 데이터 (사용자가 내려받아야 한다)
 한국의약품안전관리원이 공공데이터포털에 파일로 개방한 **임부금기약물, 노인주의약물, 효능군중복주의약물**(병용금기약물과 같은 기관). 공공데이터포털에서 파일 이름으로 검색하거나, 병용금기 파일 페이지의 "한국의약품안전관리원" 링크에서 같은 기관의 파일을 모아 본다. **항목과 이용 조건은 아직 확인하지 못했다.** 받으면 `scripts/build_packs.py`와 같은 방식으로 변환한다. 우선순위: **임부금기 → 효능군중복 → 노인주의**.

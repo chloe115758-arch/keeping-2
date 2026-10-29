@@ -1,0 +1,63 @@
+{
+ "ingredient": "adenosine",
+ "productSeq": "200603927",
+ "itemName": "아데노코주사(아데노신)",
+ "atc": "C01EB10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231121",
+ "ediCode": "652000271",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200603927/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200603927/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200603927/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "이 약은 카페인과 아미노필린, 테오필린과 같은 잔틴류에 의해 길항되므로, 아데노신 투여24시간 전에 이러한 약물은 사용하지 않도록 한다. 또한, 잔틴류를 함유한 음식이나 음료(차, 커피, 초콜렛, 콜라음료)을 아데노신 투여 최소 12시간 전부터 섭취하지 않도록 한다.",
+   "extractor": "kw-v4",
+   "id": "d2fc7e7eab",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약의 태아에 대한 안전성에 대한 증거가 없으므로 의사는 이 약으로 인한 이익이 위험성보다 높다고 판단하는 경우를 제외하고 임부에게 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "a64779bfb2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 수유중인 동물에 대한 실험을 실시한 바 없으며, 이 약의 대사체가 모유로 이행되는지 알려지지 않았으므로 이 약은 수유부에게 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "ccd40f863a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

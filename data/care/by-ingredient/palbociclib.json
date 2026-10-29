@@ -1,0 +1,322 @@
+{
+ "ingredient": "palbociclib",
+ "productSeq": "201605163",
+ "itemName": "입랜스캡슐100mg(팔보시클립)",
+ "atc": "L01EF01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260309",
+ "ediCode": "648902920",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201605163/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201605163/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201605163/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "강력한 CYP3A 저해제(이트라코나졸)과의 병용투여는 건강한 시험대상자에서 이 약의 혈장노출을 87%까지 증가시켰다. 강력한 CYP3A 저해제(예: 클래리트로마이신, 인디나비르, 이트라코나졸, 케토코나졸, 로피나비르/리토나비르, 네파조돈, 넬피나비르, 포사코나졸, 리토나비르, 사퀴나비르, 텔라프레비르, 텔리스로마이신 및 보리코나졸)와의 병용투여를 피한다. 이 약 투여 기간에는 자몽 또는 자몽…",
+   "extractor": "kw-v4",
+   "id": "6ed0627a86",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "강력한 CYP3A 유도제(리팜핀)와의 병용투여는 건강한 시험대상자에서 이 약의 혈장노출을 85%까지 감소시켰다. 강력한 CYP3A 유도제(예: 페니토인, 리팜핀, 카바마제핀, 엔잘루타마이드 및 세인트존스워트(St John’s Wort))와의 병용투여를 피한다.",
+   "extractor": "kw-v4",
+   "id": "96bcd75bc0",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "0c14dd11be",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "동물시험 및 이 약의 작용기전에 근거할 때, 이 약은 임부에 투여 시 태아에게 유해할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "46d43d3b14",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 피임을 하지 않는 가임여성에서 이 약 투여는 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "c3faf8b5a9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에서의 약물관련 위험성에 대한 자료는 없다. 동물의 생식독성시험에서, 임신한 랫드 및 토끼의 기관형성기에 AUC근거, 사람 임상노출의 4배농도의 모체노출정도로 이 약을 투여 시, 배태자 독성이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "25c884cd18",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "태아에 대한 잠재적 위험성을 임부에게 알린다.",
+   "extractor": "kw-v4",
+   "id": "d7b11c2f3f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "해당 군(indicated population)에서 주요 선천성기형과 유산의 배경 위험성(background risk)에 대해서는 알려져 있지 않다. 그러나 미국 일반 모집단에서 주요 선천성기형의 배경 위험성 및 유산의 배경 위험성은 임상적으로 인지된 임부의 2%-4% 및 15%-20%이다.",
+   "extractor": "kw-v4",
+   "id": "beae32538d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "동물 자료: 발달 독성",
+   "extractor": "kw-v4",
+   "id": "b2696cb28d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "암컷 랫드를 대상으로한 수태능 및 조기 배아 발달 시험에서, 교미 전부터 임신 7일차까지 15일간 이 약을 경구 투여했다. 권장 투여용량에서의 사람 노출(AUC)기준으로 약 4배에 해당하는 노출인 최대 300 mg/kg/day까지의 용량으로 모체가 전신 노출되었을 때, 배아독성을 일으키지 않았다.",
+   "extractor": "kw-v4",
+   "id": "755c7430b5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "랫드 및 토끼에 대한 배아-태아 발달 시험에서 임신한 동물에게 기관형성 기간 동안 각각 이 약 최대 300 mg/kg/day 및 20 mg/kg/day을 경구 투여했다. 랫드의 모체독성 용량인 300 mg/kg/day에서 태자독성이 나타났으며, 태자의 체중감소를 가져왔다. 랫드에 ≥100 mg/kg/day의 용량 투여 시, 골격 변형 발생빈도가 증가했다(제7 경추의 늑골에서 발생률 증가).",
+   "extractor": "kw-v4",
+   "id": "b5a156e99c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "토끼의 모체 독성 용량인 20 mg/kg/day에서 골격변형(앞다리에서의 작은 발가락뼈 등)의 발생률이 증가했다. 랫드에서 300 mg/kg/day, 토끼에서 20 mg/kg/day의 모체 전신노출은 권장투여 용량에서 사람노출(AUC) 수준의 각각 약 4배 및 9배였다. 실제 태아에서의 노출 및 태반통과에 대해서는 평가되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "2424938148",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "CDK4/6 더블 녹아웃(double knockout) 마우스가 태아 발달 후기(임신 14.5일차부터 출산까지)에 중증의 빈혈로 인해 사망했다고 보고되었다. 그러나 표적억제 정도의 차이로 인해 녹아웃 마우스 자료로는 사람에게 미치는 영향을 예측할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "11cd20572b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "5d087d3e35",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람 모유에서의 이 약의 존재 여부, 이 약이 모유생성 또는 수유한 유아에 미치는 영향에 대한 자료는 없다. 이 약으로 인해 수유중인 유아에서 중대한 이상반응의 가능성이 있으므로, 수유부에서 이 약의 투여기간 및 마지막 용량 투여 후 3주동안은 수유를 중단하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "72ec020593",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "가임 여성 및 남성",
+   "extractor": "kw-v4",
+   "id": "ea238c7f90",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "피임(여성)",
+   "extractor": "kw-v4",
+   "id": "6eef4aa1b5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임부에 투여 시 태아에 유해한 영향을 미칠 수 있다.",
+   "extractor": "kw-v4",
+   "id": "c7b35424dd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임 여성에게 이 약을 투여하는 동안과 마지막 용량 투여 후 최소 3주 (21 일) 동안은 효과적인 피임법을 사용하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "6597d58592",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "피임(남성)",
+   "extractor": "kw-v4",
+   "id": "9d70737158",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "유전독성의 잠재적 가능성 때문에, 가임여성과 관계하는 남성의 경우, 이 약을 투여하는 동안 및 마지막 용량 투여 후 3개월 (97 일)동안은 효과적인 피임법을 사용하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "aa6edb633f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "수태능(남성)",
+   "extractor": "kw-v4",
+   "id": "50ab089b48",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수컷 생식기조직에 대한 비임상 안전성자료에 근거하면, 이 약의 투여가 남성의 수태능을 약화시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "80aa9fe029",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상시험 2에서 이 약을 투여받은 444명의 환자 중 181명의 환자(41%)가 만 65세 이상, 48명의 환자(11%)가 만 75세 이상이었다. 임상시험 3에서 이 약을 투여받은 347명의 환자 중 86명의 환자(25%)가 만 65세 이상, 27명의 환자(8%)가 만 75세 이상이었다. 이 약의 안전성 및 유효성에서 고령자와 젊은 환자 간 차이는 전반적으로 없었다.",
+   "extractor": "kw-v4",
+   "id": "e01d50d96f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:41",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

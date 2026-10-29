@@ -1,210 +1,340 @@
 {
-  "ingredient": "calcium carbonate(precipitated) + rabeprazole sodium",
-  "productSeq": "202301789",
-  "itemName": "라베가드정20/600밀리그램(라베프라졸나트륨,침강탄산칼슘)",
-  "atc": "A02BC54",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250522",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301789/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301789/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301789/NB"
-  },
-  "rules": [
+ "ingredient": "calcium carbonate(precipitated) + rabeprazole sodium",
+ "productSeq": "202301789",
+ "itemName": "라베가드정20/600밀리그램(라베프라졸나트륨,침강탄산칼슘)",
+ "atc": "A02BC54",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250522",
+ "ediCode": "641608130",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301789/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301789/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301789/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "라베프라졸",
+   "extractor": "kw-v4",
+   "id": "f4b49b406c",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "bba43ec637",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 (1)",
-      "subject": "1) 라베프라졸",
-      "matched": [
-        {
-          "key": "ppi",
-          "kind": "drug_group",
-          "ko": "프로톤 펌프 억제제",
-          "surface": "프로톤펌프"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "다른 프로톤펌프억제제 계열 약물과 마찬가지로, 라베프라졸은 간대사계인 CYP-450계를 통해 대사된다. 건강한 성인을 대상으로 실시한 시험에서 라베프라졸나트륨은 아목시실린 또는 CYP-450계에 의해 대사되는 와르파린, 페니토인, 테오필린, 디아제팜 등과 같은 약물과 임상적으로 유의한 상호작용을 나타내지 않았다(다른 PPI 계열 약물인 오메프라졸의 경우에는 페니토인의 대사, 배설을 지연시켰다…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f8fe5a1315",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용",
-      "subject": "1) 라베프라졸",
-      "matched": [
-        {
-          "key": "ppi",
-          "kind": "drug_group",
-          "ko": "프로톤 펌프 억제제",
-          "surface": "프로톤펌프"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "라베프라졸을 포함한 프로톤펌프억제제와 와르파린을 병용투여한 환자들에게서 INR과 프로트롬빈 시간이 증가하였다는 보고가 있었다. INR과 프로트롬빈 시간의 증가는 비정상적출혈과 심지어 사망까지 초래할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "cace68d001",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 (3)",
-      "subject": "1) 라베프라졸",
-      "matched": [
-        {
-          "key": "ppi",
-          "kind": "drug_group",
-          "ko": "프로톤 펌프 억제제",
-          "surface": "프로톤펌프"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "아타자나비르 - 건강한 자원자에 아타자나비르 300 mg/리토나비르 100 mg과 오메프라졸(40 mg 1일 1회) 또는 아타자나비르 400 mg과 란소프라졸(60 mg 1일 1회)의 병용투여시 아타자나비르 노출도가 실질적으로 감소하였다. 아타자나비르 흡수는 pH 의존적이다. 라베프라졸과의 병용투여는 연구되지 않았으나 기타 프로톤펌프억제제에서와 유사한 결과가 예상된다. 따라서 라베프라졸을 포…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5721c451e2",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 (5)",
-      "subject": "1) 라베프라졸",
-      "matched": [
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "마그네슘 함유"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "임상시험에서 제산제와 라베프라졸 병용시 제산제와의 상호작용을 확인하기 위해 실시된 시험에서 액제형 제산제와 상호작용이 관찰되지 않았다. 수산화알루미늄겔, 수산화마그네슘 함유 제산제와 라베프라졸을 동시에 병용 투여한 경우와 제산제 투여 1시 간 후에 복용한 경우 평균 혈중농도곡선하면적이 각각 8 %, 6 % 저하되었다는 보고가 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "eb060f9a0b",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 (7)",
-      "subject": "1) 라베프라졸",
-      "matched": [
-        {
-          "key": "ppi",
-          "kind": "drug_group",
-          "ko": "프로톤 펌프 억제제",
-          "surface": "프로톤펌프"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이상반응 사례 보고, 집단약동학 연구(population pharmacokinetic studies) 및 후향적 연구 등에서 메토트렉세이트(주로 고용량을 사용하는 경우, 메토트렉세이트의 사용상의 주의사항 참조)와 프로톤펌프억제제를 병용하는 경우 메토트렉세이트 그리고/또는 그 대사체인 히드록시메토트렉세이트의 혈청 농도가 상승 및 유지되어 메토트렉세이트의 독성이 나타날 수 있다고 보고되었다. 그…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f65f61a08d",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 (2)",
-      "subject": "2) 침강탄산칼슘",
-      "matched": [
-        {
-          "key": "calcium",
-          "kind": "supplement",
-          "ko": "칼슘제제",
-          "surface": "탄산칼슘"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "침강탄산칼슘의 흡착작용 또는 소화관내·체액의 pH상승에 의해 병용약물의 흡수·배설에 영향을 줄 수 있으므로 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c609779cc6",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 (3)",
-      "subject": "2) 침강탄산칼슘",
-      "matched": [
-        {
-          "key": "dairy",
-          "kind": "food",
-          "ko": "우유·유제품",
-          "surface": "우유"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "다량의 우유와 병용시 우유 알카리 증후군(고칼슘혈증, 고질소혈증, 알카리증 등)이 나타날 수 있으므로 충분히 관찰하고 이러한 증상이 나타나는 경우에는 투여를 중지한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "69449e5d76",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 (4)",
-      "subject": "2) 침강탄산칼슘",
-      "matched": [
-        {
-          "key": "vitaminD",
-          "kind": "supplement",
-          "ko": "비타민 D",
-          "surface": "비타민D"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "비타민D, 치아짓계 이뇨계와 병용투여시 고칼슘혈증이 나타나기 쉬우므로 주의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4d9d6ba33d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "사람의 임신에서 라베프라졸의 안전성에 대한 데이터는 없다. 라베프라졸은 임신중에 금기이다(동물실험에서 임신 랫트의 기관형성기에 경구투여시(400 mg/kg/day) 태자의 골화지연, 분만시 착상수, 생존자수와 분만율의 감소, 출생자의 체중증가량 저하와 open-field test에서 시행횟수와 구획이행수의 감소가 관찰되었으며, 분만전ㆍ후에 정맥투여시(30 mg/kg/day) 출생자의 지속적인…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "682262af3a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "라베프라졸이 사람의 모유로 이행되는지는 알려져 있지 않다. 수유부에서 어떠한 연구도 행해지지 않았다. 따라서 라베프라졸을 수유중에 사용해서는 안 된다(동물실험에서 유즙중으로 분비되는 것이 보고되었고, 랫트의 분만전ㆍ후에 정맥투여(30 mg/kg/day) 출생자의 체중저하가 관찰되었다.).",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f87919f7f9",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "라베프라졸은 주로 간장에서 대사되지만 고령자는 간기능이 저하되어 있는 경우가 많고 이상반응이 나타날 수 있으므로 소화기증상등의 이상반응(이상반응항 참조)이 나타난 경우에는 휴약하는 등 신중히 투여한다.",
-      "extractor": "kw-v1"
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "라베프라졸"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:18:18"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (1)",
+   "subject": "",
+   "excerpt": "다른 프로톤펌프억제제 계열 약물과 마찬가지로, 라베프라졸은 간대사계인 CYP-450계를 통해 대사된다. 건강한 성인을 대상으로 실시한 시험에서 라베프라졸나트륨은 아목시실린 또는 CYP-450계에 의해 대사되는 와르파린, 페니토인, 테오필린, 디아제팜 등과 같은 약물과 임상적으로 유의한 상호작용을 나타내지 않았다(다른 PPI 계열 약물인 오메프라졸의 경우에는 페니토인의 대사, 배설을 지연시켰다…",
+   "extractor": "kw-v4",
+   "id": "787463a1fb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "라베프라졸을 포함한 프로톤펌프억제제와 와르파린을 병용투여한 환자들에게서 INR과 프로트롬빈 시간이 증가하였다는 보고가 있었다. INR과 프로트롬빈 시간의 증가는 비정상적출혈과 심지어 사망까지 초래할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "c83ef8b6c9",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "인체 간 마이크로솜과의 in vitro 시험에서 라베프라졸은 CYP-450(CYP2C19와 CYP3A4)계 효소에 의해 대사되었다. 이러한 시험에서 인체 내 라베프라졸의 혈중농도는 CYP3A4를 저해하거나 유도하지 않았다. 인체 간 마이크로솜과의 in vitro 시험에서 라베프라졸은 시클로스포린의 대사를 저해하였으며, 이때 IC50은 62 μM이었으며, 이 농도는 건강한 자원자가 20 mg씩…",
+   "extractor": "kw-v4",
+   "id": "a72935ef0c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (3)",
+   "subject": "",
+   "excerpt": "아타자나비르 - 건강한 자원자에 아타자나비르 300 mg/리토나비르 100 mg과 오메프라졸(40 mg 1일 1회) 또는 아타자나비르 400 mg과 란소프라졸(60 mg 1일 1회)의 병용투여시 아타자나비르 노출도가 실질적으로 감소하였다. 아타자나비르 흡수는 pH 의존적이다. 라베프라졸과의 병용투여는 연구되지 않았으나 기타 프로톤펌프억제제에서와 유사한 결과가 예상된다. 따라서 라베프라졸을 포…",
+   "extractor": "kw-v4",
+   "id": "d0a0505180",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (4)",
+   "subject": "",
+   "excerpt": "라베프라졸은 위산분비를 뛰어나게 또한 장기간 지속적으로 저해한다. 위산농도에 따라 흡수에 차이가 있는 약물과는 상호작용이 있을 수 있다. 라베프라졸과 병용투여시 정상인에서 케토코나졸의 혈중농도는 약 30 % 감소, 디곡신의 최저혈중농도는 22 %가 증가하였다. 또한 이 약과 이트라코나졸, 게피티닙을 병용투여시 이들 약물의 혈중 농도가 저하될 우려가 있다. 따라서 이러한 약물과 이 약을 병용투…",
+   "extractor": "kw-v4",
+   "id": "92c2a0da9a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "라베프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (5)",
+   "subject": "",
+   "excerpt": "임상시험에서 제산제와 라베프라졸 병용시 제산제와의 상호작용을 확인하기 위해 실시된 시험에서 액제형 제산제와 상호작용이 관찰되지 않았다. 수산화알루미늄겔, 수산화마그네슘 함유 제산제와 라베프라졸을 동시에 병용 투여한 경우와 제산제 투여 1시 간 후에 복용한 경우 평균 혈중농도곡선하면적이 각각 8 %, 6 % 저하되었다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "f7e7689357",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "마그네슘 함유"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "라베프라졸"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (6)",
+   "subject": "",
+   "excerpt": "저지방 식이를 섭취한 일본의 임상시험에서 음식과도 임상적으로 상관성 있는 상호작용이 없었다. 고지방 식이와 함께 라베프라졸을 투여시 라베프라졸의 흡수가 4시간 이상까지 지연될 수 있지만 흡수 정도(AUC)와 최고 혈중농도는 변화 없다.",
+   "extractor": "kw-v4",
+   "id": "b842c160b8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "라베프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (7)",
+   "subject": "",
+   "excerpt": "이상반응 사례 보고, 집단약동학 연구(population pharmacokinetic studies) 및 후향적 연구 등에서 메토트렉세이트(주로 고용량을 사용하는 경우, 메토트렉세이트의 사용상의 주의사항 참조)와 프로톤펌프억제제를 병용하는 경우 메토트렉세이트 그리고/또는 그 대사체인 히드록시메토트렉세이트의 혈청 농도가 상승 및 유지되어 메토트렉세이트의 독성이 나타날 수 있다고 보고되었다. 그…",
+   "extractor": "kw-v4",
+   "id": "53699c5e4a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (8)",
+   "subject": "",
+   "excerpt": "라베프라졸과 릴피비린의 병용 시 릴피비린의 혈장농도가 감소할 수 있으므로(위장 pH 증가) 병용 투여해서는 안된다. 이는 릴피비린의 치료효과를 저하시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "a2e7b5047f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "라베프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "침강탄산칼슘",
+   "extractor": "kw-v4",
+   "id": "c894bd20d0",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "탄산칼슘"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "침강탄산칼슘의 흡착작용 또는 소화관내·체액의 pH상승에 의해 병용약물의 흡수·배설에 영향을 줄 수 있으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "dee15b44ec",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "탄산칼슘"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (3)",
+   "subject": "",
+   "excerpt": "다량의 우유와 병용시 우유 알카리 증후군(고칼슘혈증, 고질소혈증, 알카리증 등)이 나타날 수 있으므로 충분히 관찰하고 이러한 증상이 나타나는 경우에는 투여를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "0b3dec934e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (4)",
+   "subject": "",
+   "excerpt": "비타민D, 치아짓계 이뇨계와 병용투여시 고칼슘혈증이 나타나기 쉬우므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "3b59abe4b8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "사람의 임신에서 라베프라졸의 안전성에 대한 데이터는 없다. 라베프라졸은 임신중에 금기이다(동물실험에서 임신 랫트의 기관형성기에 경구투여시(400 mg/kg/day) 태자의 골화지연, 분만시 착상수, 생존자수와 분만율의 감소, 출생자의 체중증가량 저하와 open-field test에서 시행횟수와 구획이행수의 감소가 관찰되었으며, 분만전ㆍ후에 정맥투여시(30 mg/kg/day) 출생자의 지속적인…",
+   "extractor": "kw-v4",
+   "id": "e225740410",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "라베프라졸이 사람의 모유로 이행되는지는 알려져 있지 않다. 수유부에서 어떠한 연구도 행해지지 않았다. 따라서 라베프라졸을 수유중에 사용해서는 안 된다(동물실험에서 유즙중으로 분비되는 것이 보고되었고, 랫트의 분만전ㆍ후에 정맥투여(30 mg/kg/day) 출생자의 체중저하가 관찰되었다.).",
+   "extractor": "kw-v4",
+   "id": "8515994deb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "라베프라졸은 주로 간장에서 대사되지만 고령자는 간기능이 저하되어 있는 경우가 많고 이상반응이 나타날 수 있으므로 소화기증상등의 이상반응(이상반응항 참조)이 나타난 경우에는 휴약하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c4b5e770e6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

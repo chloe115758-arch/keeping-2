@@ -1,242 +1,271 @@
 {
-  "ingredient": "atorvastatin calcium + ezetimibe",
-  "productSeq": "202101490",
-  "itemName": "인토젯정10/20밀리그램",
-  "atc": "C10BA05",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260303",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101490/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101490/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101490/NB"
-  },
-  "rules": [
+ "ingredient": "atorvastatin calcium + ezetimibe",
+ "productSeq": "202101490",
+ "itemName": "인토젯정10/20밀리그램",
+ "atc": "C10BA05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260303",
+ "ediCode": "052402030",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101490/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101490/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202101490/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 (5)",
+   "subject": "",
+   "excerpt": "간질환의 병력 또는 상당량의 알코올을 섭취하는 경우",
+   "extractor": "kw-v4",
+   "id": "a7c0fce04f",
+   "kind": "note",
+   "matched": [
     {
-      "id": "3eae00ae6a",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "3) 간 효소",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "이 약을 알코올 과다 복용 환자 그리고/또는 간질환의 병력이 있는 환자에게 투여 시 주의해야 한다. 활성 간질환 또는 원인이 밝혀지지 않는 혈청 트랜스아미나제의 지속적 상승이 있는 환자에게는 이 약을 투여하지 않는다. (‘2. 다음 환자에는 투여하지 말 것’항 참조)",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d2b5a97b9e",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 11)",
-      "subject": "○ 아토르바스타틴",
-      "matched": [
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "산화마그네슘"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "제산제 : 아토르바스타틴과 수산화마그네슘 그리고 수산화알루미늄을 함유하는 경구용 제산제(antacid) 현탁액과 병용투여 시 아토르바스타틴 혈장농도가 약 35 % 정도 감소하였다. 그러나 LDL-콜레스테롤의 감소에는 영향이 없었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "87021c84b3",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 19)",
-      "subject": "○ 아토르바스타틴",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "자몽주스 : 자몽주스는 하나 이상의 CYP3A4를 억제하는 성분을 함유하고 있으며, 이는 자몽주스 섭취량이 지나칠 경우(하루 1.2 L이상) 아토르바스타틴의 혈장 농도를 증가시킬 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "65c4dd8734",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 1)",
-      "subject": "○ 에제티미브",
-      "matched": [
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "콜레스티라민: 에제티미브와 콜레스티라민 병용투여 시 총 에제티미브의 평균 AUC가 약 55% 감소하였다. 이러한 상호작용에 의하여 콜레스티라민과 에제티미브 병용투여로 기대되는 LDL-C 저하에 대한 병합작용이 감소할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c7b6f3789d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동맥경화증은 만성질환이며, 임신 중 지질저하제 투여를 중지해도 원발성 고콜레스테롤혈증의 장기 치료 결과에 영향을 주지 않는다. 또한 콜레스테롤과 콜레스테롤 생합성경로의 다른 생성물은 스테로이드, 세포막 합성 등의 태아발달에 필수적인 성분이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e3b44f966d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "아토르바스타틴을 포함한 HMG-CoA 환원효소저해제가 콜레스테롤 합성 및 콜레스테롤 생합성경로의 다른 생성물을 감소시킬 우려가 있으므로 임부 또는 수유부에게 이 약을 투여해서는 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "99fe080291",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 이 약의 안전성은 확립되어 있지 않기 때문에 임신이 확인되면 즉시 투여를 중지하고 환자에게 태아에 대한 잠재적 위험성을 알려야 한다. 가임 여성에게는 임신 가능성이 거의 없는 경우, 태아에 미칠 수 있는 잠재적 위험성 및 임신 중 투여를 지속하여도 임상적 유익성이 없다는 점을 알려준 후에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0a9e85ad05",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 구성성분이 모유로 분비되는지 여부는 확인되지 않았으므로, 이 약으로 인한 잠재적 유익성이 유아에 대한 잠재적 위험성을 상회하지 않는 한 이 약을 수유부에게 투여해서는 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "336d0efa9d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "○ 아토르바스타틴",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "아토르바스타틴은 임부 또는 임신하고 있을 가능성이 있는 여성에게 투여 금기이다. 그러므로 가임여성은 적절한 피임방법을 강구해야 한다. 아토르바스타틴은 임신할 가능성이 없는 경우와 태아에 대한 잠재적 위험성을 알려준 후에만 가임 연령의 여성에게 투여할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c98c0b2a79",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "○ 아토르바스타틴",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "아토르바스타틴의 수유 중 투여는 금기이다. 아토르바스타틴이 모유 중으로 분비되는지에 대해서는 알려져 있지 않다. 수유 중인 유아에게 이상반응이 나타날 수 있으므로, 아토르바스타틴을 복용중인 여성은 수유를 해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "69416c283f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "○에제티미브",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "에제티미브를 임부에게 투여한 임상 자료는 없다. 에제티미브로 인한 잠재적 유익성이 유아에 대한 잠재적 위험성을 상회할 때에 한하여 임부에게 사용해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "79e33da9e9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "○에제티미브",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 한 경구 배ㆍ태자 발생시험의 시험 용량(250, 500, 1000mg/kg/day)에서 배자치사 효과가 관찰되지 않았다. 에제티미브 1000mg/kg/day(총 에제티미브의 AUC0-24hr에 근거하였을 때 1일 10 mg으로 투여 시 사람에 대한 노출의 10배)를 투여한 랫트에서 일반적인 태자 골격이상(늑골 추가형성, 경추 중심부 골화부전, 늑골 축소)…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e65f60e84f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "○에제티미브",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "모든 HMG-CoA 환원효소 억제제 및 페노피브레이트는 임부 및 수유부에 대한 투여가 금지되어 있다. 에제티미브를 출산 가능성이 있는 여성에게 HMG-CoA 환원효소 억제제 또는 페노피브레이트와 함께 투여할 때에는, 해당 HMG-CoA 환원효소 억제제 또는 페노피브레이트의 제품설명서를 참조한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ee1caa4df1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 4)",
-      "subject": "○에제티미브",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 에제티미브와 HMG-CoA 환원효소 억제제(스타틴계 약물)를 병용투여한 반복투여시험에서는 에제티미브 및 HMG-CoA 환원효소 억제제에 대한 노출 정도가 높았다. 단독투여에 비해 병용투여시 보다 낮은 용량에서 생식능 이상이 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "405f197308",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 5)",
-      "subject": "○에제티미브",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫트)에서 에제티미브는 유즙으로 분비되었다. 랫트를 대상으로 한 실험에서 수유 중인 새끼의 총 에제티미브에 대한 노출은 모체 혈장에서 관찰되는 값의 절반에 이르렀다. 에제티미브가 사람의 모유로 분비되는지 여부는 알려지지 않았다. 따라서 에제티미브로 인한 잠재적 유익성이 유아에 대한 잠재적 위험성을 상회하지 않는 한 에제티미브를 수유부에게 투여해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1af97cb647",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령(만 65세 이상)은 근육병증에 걸리기 쉬운 요인 중 하나이므로 이 약을 고령자에게 투여 시 주의를 기울여야 한다. 고령자에서 이 약의 용량 조절은 필요하지 않다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:00:56"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "○ 에제티미브",
+   "excerpt": "이 약을 알코올 과다 복용 환자 그리고/또는 간질환의 병력이 있는 환자에게 투여 시 주의해야 한다. 활성 간질환 또는 원인이 밝혀지지 않는 혈청 트랜스아미나제의 지속적 상승이 있는 환자에게는 이 약을 투여하지 않는다. (‘2. 다음 환자에는 투여하지 말 것’항 참조)",
+   "extractor": "kw-v4",
+   "id": "4fca60809e",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 11)",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "제산제 : 아토르바스타틴과 수산화마그네슘 그리고 수산화알루미늄을 함유하는 경구용 제산제(antacid) 현탁액과 병용투여 시 아토르바스타틴 혈장농도가 약 35 % 정도 감소하였다. 그러나 LDL-콜레스테롤의 감소에는 영향이 없었다.",
+   "extractor": "kw-v4",
+   "id": "85e0e80f99",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 19)",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "자몽주스 : 자몽주스는 하나 이상의 CYP3A4를 억제하는 성분을 함유하고 있으며, 이는 자몽주스 섭취량이 지나칠 경우(하루 1.2 L이상) 아토르바스타틴의 혈장 농도를 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "459459e314",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "○ 에제티미브",
+   "excerpt": "콜레스티라민: 에제티미브와 콜레스티라민 병용투여 시 총 에제티미브의 평균 AUC가 약 55% 감소하였다. 이러한 상호작용에 의하여 콜레스티라민과 에제티미브 병용투여로 기대되는 LDL-C 저하에 대한 병합작용이 감소할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "25914ad59e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동맥경화증은 만성질환이며, 임신 중 지질저하제 투여를 중지해도 원발성 고콜레스테롤혈증의 장기 치료 결과에 영향을 주지 않는다. 또한 콜레스테롤과 콜레스테롤 생합성경로의 다른 생성물은 스테로이드, 세포막 합성 등의 태아발달에 필수적인 성분이다.",
+   "extractor": "kw-v4",
+   "id": "62a651a41a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "아토르바스타틴을 포함한 HMG-CoA 환원효소저해제가 콜레스테롤 합성 및 콜레스테롤 생합성경로의 다른 생성물을 감소시킬 우려가 있으므로 임부 또는 수유부에게 이 약을 투여해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "42f3f68e42",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 이 약의 안전성은 확립되어 있지 않기 때문에 임신이 확인되면 즉시 투여를 중지하고 환자에게 태아에 대한 잠재적 위험성을 알려야 한다. 가임 여성에게는 임신 가능성이 거의 없는 경우, 태아에 미칠 수 있는 잠재적 위험성 및 임신 중 투여를 지속하여도 임상적 유익성이 없다는 점을 알려준 후에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "36f48d090c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약의 구성성분이 모유로 분비되는지 여부는 확인되지 않았으므로, 이 약으로 인한 잠재적 유익성이 유아에 대한 잠재적 위험성을 상회하지 않는 한 이 약을 수유부에게 투여해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "4d2d1db805",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "아토르바스타틴은 임부 또는 임신하고 있을 가능성이 있는 여성에게 투여 금기이다. 그러므로 가임여성은 적절한 피임방법을 강구해야 한다. 아토르바스타틴은 임신할 가능성이 없는 경우와 태아에 대한 잠재적 위험성을 알려준 후에만 가임 연령의 여성에게 투여할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "c35be46aad",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "아토르바스타틴의 수유 중 투여는 금기이다. 아토르바스타틴이 모유 중으로 분비되는지에 대해서는 알려져 있지 않다. 수유 중인 유아에게 이상반응이 나타날 수 있으므로, 아토르바스타틴을 복용중인 여성은 수유를 해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "58cf14c87c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "○에제티미브",
+   "excerpt": "에제티미브를 임부에게 투여한 임상 자료는 없다. 에제티미브로 인한 잠재적 유익성이 유아에 대한 잠재적 위험성을 상회할 때에 한하여 임부에게 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "73dc1ac06f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○에제티미브",
+   "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 한 경구 배ㆍ태자 발생시험의 시험 용량(250, 500, 1000mg/kg/day)에서 배자치사 효과가 관찰되지 않았다. 에제티미브 1000mg/kg/day(총 에제티미브의 AUC0-24hr에 근거하였을 때 1일 10 mg으로 투여 시 사람에 대한 노출의 10배)를 투여한 랫트에서 일반적인 태자 골격이상(늑골 추가형성, 경추 중심부 골화부전, 늑골 축소)…",
+   "extractor": "kw-v4",
+   "id": "76047a358a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "○에제티미브",
+   "excerpt": "모든 HMG-CoA 환원효소 억제제 및 페노피브레이트는 임부 및 수유부에 대한 투여가 금지되어 있다. 에제티미브를 출산 가능성이 있는 여성에게 HMG-CoA 환원효소 억제제 또는 페노피브레이트와 함께 투여할 때에는, 해당 HMG-CoA 환원효소 억제제 또는 페노피브레이트의 제품설명서를 참조한다.",
+   "extractor": "kw-v4",
+   "id": "e307a2f42d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "○에제티미브",
+   "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 에제티미브와 HMG-CoA 환원효소 억제제(스타틴계 약물)를 병용투여한 반복투여시험에서는 에제티미브 및 HMG-CoA 환원효소 억제제에 대한 노출 정도가 높았다. 단독투여에 비해 병용투여시 보다 낮은 용량에서 생식능 이상이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "10cd6b0dff",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "○에제티미브",
+   "excerpt": "동물실험(랫트)에서 에제티미브는 유즙으로 분비되었다. 랫트를 대상으로 한 실험에서 수유 중인 새끼의 총 에제티미브에 대한 노출은 모체 혈장에서 관찰되는 값의 절반에 이르렀다. 에제티미브가 사람의 모유로 분비되는지 여부는 알려지지 않았다. 따라서 에제티미브로 인한 잠재적 유익성이 유아에 대한 잠재적 위험성을 상회하지 않는 한 에제티미브를 수유부에게 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "2f50872ff0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령(만 65세 이상)은 근육병증에 걸리기 쉬운 요인 중 하나이므로 이 약을 고령자에게 투여 시 주의를 기울여야 한다. 고령자에서 이 약의 용량 조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "72788f1295",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

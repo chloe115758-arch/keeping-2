@@ -1,0 +1,111 @@
+{
+ "ingredient": "medroxyprogesterone acetate",
+ "productSeq": "199203279",
+ "itemName": "파루탈정(메드록시프로게스테론아세테이트)",
+ "atc": "L02AB02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260309",
+ "ediCode": "648901090",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203279/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203279/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199203279/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "항경련제(예: 페노바르비탈, 페니토인, 카르바마제핀, 프리미돈 등), 항감염제(예: 리팜피신, 리파부틴 등) 등의 약물대사효소 유도제 또는 St. John’s wort 제제와 병용 시 이 약의 대사가 증가될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "35cb8250d7",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약에 의한 기형유발이 보고된 바 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "85c78dfdfd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신초기 황체호르몬제의 자궁내 노출과 태아(여아 및 남아)의 생식기이상 발생 사이에 관련성이 보고된 바 있다.",
+   "extractor": "kw-v4",
+   "id": "a2773ddf21",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신초기 황체호르몬제를 복용한 임부군에서 심장, 수족 등의 선천성 기형아 출산율이 복용하지 않은 임부군에 비해 유의성이 높다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "11d8952cf9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임신기간 중 이 약에 노출된 경우 또는 이 약을 투여하는 동안 임신이 된 경우에는 환자에게 태아에 대한 잠재적인 위험성에 대해 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "c0059b4f2f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "이 약 및 그 대사체는 모유로 이행된다. 모유를 먹는 영아에 대한 위험성이 제시된 자료는 없으나, 수유부에게 투여할 경우에는 수유를 중지시킨다.",
+   "extractor": "kw-v4",
+   "id": "697d4a1d8d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "3dc46f5575",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:38",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

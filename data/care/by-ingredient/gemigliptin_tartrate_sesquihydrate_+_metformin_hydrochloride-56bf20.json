@@ -1,0 +1,249 @@
+{
+ "ingredient": "gemigliptin tartrate sesquihydrate + metformin hydrochloride",
+ "productSeq": "201405223",
+ "itemName": "제미메트서방정50/1000밀리그램",
+ "atc": "A10BD18",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230629",
+ "ediCode": "668902910",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201405223/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201405223/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201405223/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에는 투여하지 말 것 11)",
+   "subject": "",
+   "excerpt": "간기능 장애(손상된 간 기능은 유산산증의 몇몇 경우와 관련이 있기 때문에, 일반적으로 임상적 또는 실험실적으로 간 질환의 증거가 있는 환자에게는 이 약의 투여를 피해야 한다.), 폐경색, 중증의 폐기능장애 환자 및 기타 저산소혈증을 수반하기 쉬운 상태, 과도한 알코올 섭취자, 탈수증, 설사, 구토 등의 위장장애 환자",
+   "extractor": "kw-v4",
+   "id": "20ebbf1af0",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "또한 메트포르민은 저산소혈증, 탈수 또는 패혈증과 관련된 어떠한 상태가 있는 경우에 즉시 중단하도록 한다. 간기증 부전은 유산 제거 능력을 유의하게 제한할 수 있으므로, 메트포르민은 간질환의 임상적 또는 실험실적 근거가 있는 환자에게 일반적으로 투여를 피하도록 한다. 알코올이 메트포르민의 유산 대사에 대한 영향을 강화시키므로 메트포르민을 복용 중일 때는 과도한 알코올 섭취를 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "62c46181ea",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 5)",
+   "subject": "",
+   "excerpt": "알코올 섭취",
+   "extractor": "kw-v4",
+   "id": "83cf74cd7f",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "알코올은 메트포르민의 유산 대사에 대한 영향을 강화시키므로 이 약을 복용하는 동안 과한 알코올 섭취를 하지 않도록 한다.",
+   "extractor": "kw-v4",
+   "id": "b6b200d87f",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "메트포르민염산염",
+   "excerpt": "저혈당은 통상적 사용 환경하에서는 메트포르민 단독 투여 환자에서는 발생하지 않으나, 칼로리 섭취가 부족하거나, 격렬한 운동 후 칼로리 보충을 하지 않은 경우 및 다른 혈당저하제 (설포닐우레아 및 인슐린 등) 또는 에탄올과 병용하는 동안 발생할 수 있다. 노인, 쇠약자, 또는 영양 부족 환자 및 부신 또는 뇌하수체 부전, 알코올 중독이 있는 환자는 저혈당에 특히 취약하다. 저혈당은 노인 및 베…",
+   "extractor": "kw-v4",
+   "id": "6d028a4409",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "- 혈당강하 작용을 감약시키는 약제",
+   "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
+   "extractor": "kw-v4",
+   "id": "4afaad795c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "- 간장애",
+   "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "a3aff6984e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "cbc5172798",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "이 약",
+   "excerpt": "이 약물 또는 각 성분에 대해 임부를 대상으로 한 비교 임상시험은 수행되지 않았다. 임신한 랫드에서 이 약물로 실시한 비임상 생식독성 연구는 없다. 이 약은 다른 항당뇨 약물과 마찬가지로 명백하게 필요할 경우에만 임부에서 사용되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "dd4f80be45",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "제미글립틴",
+   "excerpt": "동물시험 결과, 제미글립틴은 임신한 랫드에 투여 후 2시간에 최대 48.1%, 토끼에서는 투여 후 2시간에 최대 1.6%가 태반을 통과하여 양수에서 검출되었으므로 임부에서의 사용은 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "4e392d09b0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "메트포르민염산염",
+   "excerpt": "메트포르민은 최대 600mg/kg/day의 용량으로 랫드 및 토끼에게 투여 시 최기형성이 없었다. 이는 각각 랫드 및 토끼에서 체표면적 비교에 근거하면 2000mg인 최대 권장 사람 용량의 약 2 배 및 6배의 노출을 나타낸다. 태자에서 물질 농도 측정으로 메트포르민에 대한 부분적 태반 통과를 확인하였다.",
+   "extractor": "kw-v4",
+   "id": "4609cdf0b3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "메트포르민염산염",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "7a7e99f8e0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여",
+   "subject": "메트포르민염산염",
+   "excerpt": "이 약 복합제로서 수유 중인 동물에게 수행한 시험은 없다. 동물시험에서 제미글립틴은 랫드에서 혈장과 유즙에서 1: 4~10비율로 분비되는 것으로 보고되었으므로 이 약을 수유부에는 투여하지 않는다. 제미글립틴 또는 메트포르민이 사람 유즙으로 분비되는 지는 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "0c1ed81d76",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 일반적으로 간장, 신장 기능 등 생리기능이 저하되어 있으므로, 환자의 상태를 관찰하여 신중히 투여하여야 한다. 메트포르민은 신장애 환자에서 금기이기 때문에, 연령이 증가함에 따라 노인에서 신기능은 주의깊게 모니터 해야 하며 이 약은 주의하여 투여한다.",
+   "extractor": "kw-v4",
+   "id": "8f2b5d4c92",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "id": "d9752f0bf7",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약의 용량은 환자의 현 치료법, 유효성 및 내약성에 근거하여 개별화하여야 한다. 이 약은 일반적으로 저녁식사와 함께 투여 하며, 메트포르민과 관련된 위장관계 부작용을 줄이기 위해 단계적으로 용량을 증량한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:40",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

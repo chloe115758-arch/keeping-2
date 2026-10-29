@@ -1,114 +1,154 @@
 {
-  "ingredient": "empagliflozin + linagliptin",
-  "productSeq": "202500417",
-  "itemName": "엠파비아정25/5밀리그램(엠파글리플로진, 리나글립틴)",
-  "atc": "A10BD19",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260323",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500417/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500417/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500417/NB"
-  },
-  "rules": [
+ "ingredient": "empagliflozin + linagliptin",
+ "productSeq": "202500417",
+ "itemName": "엠파비아정25/5밀리그램(엠파글리플로진, 리나글립틴)",
+ "atc": "A10BD19",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260323",
+ "ediCode": "645211050",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500417/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500417/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500417/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의",
+   "subject": "",
+   "excerpt": "케톤산증의 증상과 징후는 탈수 및 중증의 대사성 산증과 일치하고 오심, 구토, 식욕감소, 복통, 권태, 호흡곤란 등을 포함한다. 일부 보고에서 케톤산증을 일으키기 쉬운 요인으로 인슐린 용량 감소, 급성 열성질환, 질병 또는 수술로 인한 칼로리 섭취 제한, 케톤 생성 식이요법, 인슐린 결핍을 일으키는 췌장장애(예: 제1형 및 2형 당뇨병, 췌장염 또는 췌장 수술 병력), 그리고 알코올 남용이…",
+   "extractor": "kw-v4",
+   "id": "62ea969518",
+   "kind": "note",
+   "matched": [
     {
-      "id": "6c36cb9e03",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의",
-      "subject": "1) 케톤산증",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "케톤산증의 증상과 징후는 탈수 및 중증의 대사성 산증과 일치하고 오심, 구토, 식욕감소, 복통, 권태, 호흡곤란 등을 포함한다. 일부 보고에서 케톤산증을 일으키기 쉬운 요인으로 인슐린 용량 감소, 급성 열성질환, 질병 또는 수술로 인한 칼로리 섭취 제한, 케톤 생성 식이요법, 인슐린 결핍을 일으키는 췌장장애(예: 제1형 및 2형 당뇨병, 췌장염 또는 췌장 수술 병력), 그리고 알코올 남용이…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7a6667ca45",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의",
-      "subject": "1) 케톤산증",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약의 투여를 시작하기 전 인슐린 분비 감소, 칼로리 제한, 알코올 남용을 포함한 케톤산증을 일으키기 쉬운 요인이 있는지 고려해야 한다. 일부 환자에서 이 약의 투여를 중단한 후에도 케톤산증 및 당뇨(glucosuria)가 지속될 수 있다. 즉, 엠파글리플로진의 혈장 반감기의 5배로 예상한 것 보다 더 길게 지속될 수 있다. 이 약으로 치료받는 환자에서 케톤산증이 발생하는지 모니터링하고,…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "77fdb16b46",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에서의 이 약의 개별 주성분의 사용에 대한 자료는 제한적이다. 비임상시험들에서 초기배발생과 관련하여 직간적접으로 유해한 영향은 보이지 않았다. 그러나, 엠파글리플로진의 동물시험에서 출생 후 발달에 대한 유해한 영향을 나타내었다. 예방적 조치로, 명백하게 필요한 경우를 제외하고 임신 기간 동안 이 약을 투여하지 않는 것이 권장된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b8b39254b8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수태한 랫드와 토끼에 경구 투여했을 때 리나글립틴은 태반을 거쳐 태자로 전달되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2dd213cf04",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 개별 주성분이 사람 모유로 분비되는지에 대한 자료는 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8c2d27d4cd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물시험에서 엠파글리플로진 및 리나글립틴은 모유를 통해 분비되었다. 신생아/영아에 대한 위험성을 배제할 수 없다. 따라서 이 약으로 치료하는 동안에는 수유를 중단하는 것을 권장한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2320489b1d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "3) 생식능",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약 및 이 약의 개별 주성분의 인간의 생식능에 대한 영향은 연구된 바 없다. 개별 주성분의 동물시험에서 수태능과 관련하여 직간접적으로 유해한 영향은 보이지 않았다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:12:02"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "4. 일반적 주의",
+   "subject": "",
+   "excerpt": "이 약의 투여를 시작하기 전 인슐린 분비 감소, 칼로리 제한, 알코올 남용을 포함한 케톤산증을 일으키기 쉬운 요인이 있는지 고려해야 한다. 일부 환자에서 이 약의 투여를 중단한 후에도 케톤산증 및 당뇨(glucosuria)가 지속될 수 있다. 즉, 엠파글리플로진의 혈장 반감기의 5배로 예상한 것 보다 더 길게 지속될 수 있다. 이 약으로 치료받는 환자에서 케톤산증이 발생하는지 모니터링하고,…",
+   "extractor": "kw-v4",
+   "id": "22134f79f9",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "271a5e7706",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에서의 이 약의 개별 주성분의 사용에 대한 자료는 제한적이다. 비임상시험들에서 초기배발생과 관련하여 직간적접으로 유해한 영향은 보이지 않았다. 그러나, 엠파글리플로진의 동물시험에서 출생 후 발달에 대한 유해한 영향을 나타내었다. 예방적 조치로, 명백하게 필요한 경우를 제외하고 임신 기간 동안 이 약을 투여하지 않는 것이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "760131fa04",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수태한 랫드와 토끼에 경구 투여했을 때 리나글립틴은 태반을 거쳐 태자로 전달되었다.",
+   "extractor": "kw-v4",
+   "id": "ce01d33b96",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "d07ddbafca",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 개별 주성분이 사람 모유로 분비되는지에 대한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "514e00951b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험에서 엠파글리플로진 및 리나글립틴은 모유를 통해 분비되었다. 신생아/영아에 대한 위험성을 배제할 수 없다. 따라서 이 약으로 치료하는 동안에는 수유를 중단하는 것을 권장한다.",
+   "extractor": "kw-v4",
+   "id": "01309d18e6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "생식능",
+   "extractor": "kw-v4",
+   "id": "acf21aea78",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 및 이 약의 개별 주성분의 인간의 생식능에 대한 영향은 연구된 바 없다. 개별 주성분의 동물시험에서 수태능과 관련하여 직간접적으로 유해한 영향은 보이지 않았다.",
+   "extractor": "kw-v4",
+   "id": "4ad3e567f1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

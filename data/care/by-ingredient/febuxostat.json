@@ -1,89 +1,99 @@
 {
-  "ingredient": "febuxostat",
-  "productSeq": "201603150",
-  "itemName": "페북손정40밀리그램(페북소스타트)",
-  "atc": "M04AA03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230102",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603150/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603150/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603150/NB"
-  },
-  "rules": [
+ "ingredient": "febuxostat",
+ "productSeq": "201603150",
+ "itemName": "페북손정40밀리그램(페북소스타트)",
+ "atc": "M04AA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230102",
+ "ediCode": "059600020",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603150/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603150/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201603150/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 8)",
+   "subject": "",
+   "excerpt": "제산제 : 수산화마그네슘과 수산화알루미늄 함유 제산제와의 병용투여로 이 약의 흡수가 약 1시간 지연되었고 Cmax가 32% 감소되었으나 AUC의 유의성 있는 변화는 없었다. 그러므로 이 약은 제산제의 사용과 관계없이 투여할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "966e2ff085",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "165a2e8ed9",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 8)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "산화마그네슘"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "제산제 : 수산화마그네슘과 수산화알루미늄 함유 제산제와의 병용투여로 이 약의 흡수가 약 1시간 지연되었고 Cmax가 32% 감소되었으나 AUC의 유의성 있는 변화는 없었다. 그러므로 이 약은 제산제의 사용과 관계없이 투여할 수 있다.",
-      "extractor": "kw-v1"
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
     },
     {
-      "id": "cff7ffd42d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "매우 제한적인 수의 임부에 대한 결과에서 이 약이 임부 또는 태아 및 신생아의 건강에 어떤 유해한 영향을 나타내지 않았다. 비임상시험 자료에 의하면 임신, 태아발생과 출산에 직ㆍ간접적으로 유해한 영향을 주지 않았다. 사람에 대한 잠재적인 위험성은 알려지지 않았다. 이 약은 임신 중에 복용하지 않는다.",
-      "extractor": "kw-v1"
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "알루미늄 함유 제산제"
     },
     {
-      "id": "9228beaf65",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 사람의 모유 중에 분비되는지 알려지지 않았다. 비임상시험에서 이 약은 모유로 분비되었고 젖먹이 동물의 발달 장애가 있었다. 수유아에 대한 위험성을 배재할 수 없으므로 이 약은 수유 중에 복용하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c5cefd9267",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 소아 및 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "18세 미만의 소아와 청소년에 대한 임상경험이 없으므로 이 약을 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d262b598a8",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 소아 및 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에게 특별히 용량조절이 필요하지 않다. 이 약의 임상시험에 참여한 총 환자중 65세 이상이 16%, 75세 이상이 4%였다. 다른 연령군과의 비교시 안전성 및 유효성에서 임상적으로 유의한 차이는 없었으나, 일부 고령 환자에서의 높은 민감도는 배제할 수 없다.",
-      "extractor": "kw-v1"
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:07:56"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "매우 제한적인 수의 임부에 대한 결과에서 이 약이 임부 또는 태아 및 신생아의 건강에 어떤 유해한 영향을 나타내지 않았다. 비임상시험 자료에 의하면 임신, 태아발생과 출산에 직ㆍ간접적으로 유해한 영향을 주지 않았다. 사람에 대한 잠재적인 위험성은 알려지지 않았다. 이 약은 임신 중에 복용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "59713a21ff",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 사람의 모유 중에 분비되는지 알려지지 않았다. 비임상시험에서 이 약은 모유로 분비되었고 젖먹이 동물의 발달 장애가 있었다. 수유아에 대한 위험성을 배재할 수 없으므로 이 약은 수유 중에 복용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "e2d320018f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 소아 및 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "18세 미만의 소아와 청소년에 대한 임상경험이 없으므로 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "2f7d6a1d17",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 소아 및 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "고령자에게 특별히 용량조절이 필요하지 않다. 이 약의 임상시험에 참여한 총 환자중 65세 이상이 16%, 75세 이상이 4%였다. 다른 연령군과의 비교시 안전성 및 유효성에서 임상적으로 유의한 차이는 없었으나, 일부 고령 환자에서의 높은 민감도는 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "da8b1e945d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

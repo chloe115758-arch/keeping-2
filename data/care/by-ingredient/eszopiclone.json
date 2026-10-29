@@ -1,0 +1,199 @@
+{
+ "ingredient": "eszopiclone",
+ "productSeq": "202002178",
+ "itemName": "조스정1밀리그램(에스조피클론)",
+ "atc": "N05CF04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230412",
+ "ediCode": "651904900",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002178/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002178/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002178/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "다른 중추신경계 억제제(예: 벤조디아제핀계 약물, 아편양제제(opioides), 삼환계 항우울제, 알코올)와의 병용투여 시 상가적인 억제 효과(depressant effects)를 발생할 수 있다. 이 약 및 수반되는 중추신경계 억제제는 용량의 감량 조절을 고려해야 한다(용법용량 참조).",
+   "extractor": "kw-v4",
+   "id": "649d639403",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "CNS억제제와 함께 복용했을 경우",
+   "excerpt": "다양한 비정상적인 사고 및 행동 변화들이 진정제/수면제 사용과 관련하여 발생하는 것이 보고되었다. 이러한 변화들 중 몇몇은 억제 감소(예, 비정상적인 공격성 및 외향성)로 특징지워질 수 있으며 알코올 및 기타 중추신경계 억제제에 의한 효과와 유사하다. 그 외 보고된 행동 변화들에는 괴기한 행동, 초조, 환각, 이인증(depersonalization)이 있었다.",
+   "extractor": "kw-v4",
+   "id": "bb2282d101",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "CNS억제제와 함께 복용했을 경우",
+   "excerpt": "수면보행, 수면 운전(즉, 수면진정제 복용 후 완전히 깨지 않은 상태에서 운전하며 환자는 이를 기억하지 못함) 그리고 완전히 깨지 않은 상태에서의 다른 행위를 포함한 복합 수면 행동이 나타날 수 있다. 환자는 복합 수면 행동 중에 심각한 부상을 입거나 다른 사람에게 부상을 입힐 수 있다. 이러한 부상은 치명적인 결과를 초래할 수 있다. 이러한 이상반응은 수면진정제를 처음 복용한 환자 뿐 아니…",
+   "extractor": "kw-v4",
+   "id": "fef05ad5a9",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "CNS억제제와 함께 복용했을 경우",
+   "excerpt": "이와 같이 보고된 이상반응은 2% 이하로 발생되었다, 벤조디아제핀 및 이와 유사한 제제의 사용은 신체적 및 심리적인 의존성을 유발할 수 있다. 남용과 의존의 위험성은 치료 용량과 지속기간 및 다른 정신병 약물의 사용과 함께 증가한다. 알코올이나 약물 남용이나 정신병 병력이 있는 환자의 경우 위험도가 더욱 크다. 이러한 환자의 경우 이 약이나 다른 수면제를 처방받을 때 신중한 감시를 받아야 한…",
+   "extractor": "kw-v4",
+   "id": "caaca592d8",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "- 알코올 : 에스조피클론과 알코올의 병용투여에서 정신운동수행에 대한 부가적인 효과가 나타났다.",
+   "extractor": "kw-v4",
+   "id": "cc1ffa7652",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "에스조피클론이 임산부에게 사용된 후 보고된 부작용 모니터링 자료는 주요 선천적 결손(birth defect), 유산 또는 산모 또는 태아 이상 반응의 약물 관련 위험을 확인하기에 충분하지 않았다. 임신한 쥐(랫트)와 토끼의 기관형성을 통해 수행된 동물 생식 연구에서, 기형발생의 증거는 없었다. 임신과 수유기간 동안 랫트에게 에스조피클론을 투여한 경우 모든 용량에서 자손 독성(offspring…",
+   "extractor": "kw-v4",
+   "id": "2de05c738b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "표본 집단에 대한 주요 선천적 결손 및 유산이 예상되는 배경에 대한 위험은 알려져 있지 않다. 모든 임신은 선천적 결손, 손실 또는 기타 이상반응에 대한 배경 위험을 가지고 있다. 미국의 일반적 인구에서 임상적으로 인정된 임신의 주요 선천적 결손 및 유산에 대해 추측되는 배경 위험은 각각 2-4% 및 15-20%이었다.",
+   "extractor": "kw-v4",
+   "id": "4a283bd4de",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "사람 또는 동물의 수유부에 미치는 영향",
+   "extractor": "kw-v4",
+   "id": "0f3b90ca9e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람 또는 동물의 모유에서의 에스조피클론의 잔류 여부, 모유를 먹는 유아에 미치는 영향 또는 수유부의 모유 생산에 미치는 영향에 대한 데이터는 부재하다. 이 약으로부터의 유아에게서 중대한 이상 반응의 잠재성 때문에 유아에게 발생학적 및 건강상의 유익성은 수유부의 이 약에 대한 임상적 필요성과 함께 고려되어야 하고, 모유를 먹는 아이 또는 근본적인 수유부의 상황으로부터의 잠재적인 부정적 영향이…",
+   "extractor": "kw-v4",
+   "id": "3fd72ce33e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "총 287명의 65세 이상(65 ~ 85세)의 노인을 대상으로 이 약 2mg 과 위약을 비교하는 이중맹검, 병용군, 2주간의 임상시험이 실시되었다. 취침 전에 이 약 및 위약을 투여했을 때 노인 대상자(평균연령 71세)의 이상반응의 전체적인 양상은 성인에서 나타나는 것과 다르지 않았다.(이상반응 참조)",
+   "extractor": "kw-v4",
+   "id": "156d40e506",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 2mg는 노인 대상자의 수면잠복기의 현저한 감소를 보였고, 수면 유지를 향상시켰다. 성인과 비교하였을 때, 65세 이상의 대상자들은 이 약의 배출이 지연되었고, 더 높은 노출이 나타났다. 그러므로 노인 환자의 경우 용량 조절이 필요하다.(용법용량 참조)",
+   "extractor": "kw-v4",
+   "id": "fdf57d2aea",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "a970932ad0",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "고지방/고열량 식사와 함께 혹은 식사 직후의 복용할 경우 이 약의 흡수가 느려지고 수면잠복기에 미치는 이 약의 효과를 감소시킬 것으로 예상된다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:23",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

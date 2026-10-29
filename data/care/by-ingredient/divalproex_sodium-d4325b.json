@@ -1,0 +1,692 @@
+{
+ "ingredient": "divalproex sodium",
+ "productSeq": "200511051",
+ "itemName": "데파코트서방정250밀리그램(디발프로엑스나트륨)",
+ "atc": "N03AG01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260305",
+ "ediCode": "644200080",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511051/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511051/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200511051/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 15)",
+   "subject": "의료전문가 및 환자용 안내서",
+   "excerpt": "이 약은 중추신경 억제 작용(졸음)을 나타낼 수 있으며 특히 다른 중추신경 억제제(알코올, 벤조디아제핀계 약물 등), 다른 항경련요법제와 병용 투여한 경우에 나타날 수 있으므로 자동차 운전 등 위험이 수반되는 기계조작을 하지 않도록 주의한다.",
+   "extractor": "kw-v4",
+   "id": "19494079d7",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 ③",
+   "subject": "의료전문가 및 환자용 안내서",
+   "excerpt": "이 약은 중추신경억제 작용을 나타낼 수 있으며 특히 다른 중추신경억제제(예, 알코올)와 병용 투여한 경우 나타날 수 있으므로 이 약으로 인해 졸음이 나타나지 않는다고 판단될 때까지 자동차운전 또는 위험한 기기의 작동과 같이 위험이 수반되는 기계조작을 하지 않도록 주의한다.",
+   "extractor": "kw-v4",
+   "id": "26c3312933",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (8)",
+   "subject": "",
+   "excerpt": "콜레스티라민 : 콜레스티라민과 병용 투여시 발프로산의 혈중농도가 감소할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "c4e1673b8c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (10)",
+   "subject": "",
+   "excerpt": "제산제 : 발프로산 500mg과 일반적으로 투여되는 제산제(알루미늄ㆍ마그네슘ㆍ시메치콘 복합제, 삼규산마그네슘제와 탄산칼슘제)의 병용투여 시험시 발프로산 흡수에 대해 아무 영향을 주지 않았다.",
+   "extractor": "kw-v4",
+   "id": "ab651f5c9c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "탄산칼슘"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (24)",
+   "subject": "",
+   "excerpt": "발프로산은 알코올의 중추신경계 억제작용을 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "19abb04289",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (25)",
+   "subject": "",
+   "excerpt": "알코올을 포함하여 간독성 가능성이 있는 약물과 병용 시 간독성이 악화될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "9853c2c0c8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "간질(뇌전증)의 치료 : 이 약은 적절한 다른 치료 요법이 없는 경우를 제외하면 임신 중에는 금기이며, 임신 예방 프로그램의 요건이 충족되지 않는 한 가임기 여성에게는 금기이다.",
+   "extractor": "kw-v4",
+   "id": "1aed394a5a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "조증의 치료 및 편두통 예방 : 이 약은 임신 중에는 금기이며, 임신 예방 프로그램의 요건이 충족되지 않는 한 가임기 여성에게는 금기이다.",
+   "extractor": "kw-v4",
+   "id": "7a72b3a4b1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "일반적으로 항뇌전증약 투여로 인한 기형 발생율은 투여하지 않는 경우(약 3%)보다 2～3배 높은 것으로 나타났다. 발프로산 제제 단독요법 및 복합요법 모두 기형의 위험성이 있다. 연구 자료에서는 간질(뇌전증)에 있어 발프로산 제제에 노출되지 않은 인구에 비해 발프로산 제제 단독 요법 및 복합 요법(다른 항전간제와 병용) 모두에서 주요 선천성 기형 및 신경 발달 장애의 위험이 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "3b97e25233",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "대부분의 기형은 구순구개열과 심혈관계의 기형, 신경관 결함이었다. 간질(뇌전증)이 있는 산모에게서 태어난 어린아이의 경우 매우 드물게 성장지연이 보고되었다. 그러나, 그 원인이 유전적, 사회적, 환경적 요인에 의한 것인지, 산모의 간질(뇌전증) 혹은 항뇌전증약의 투여에 의한 것인지 규명하는 것은 불가능하다. 그럼에도 불구하고, 항뇌전증 치료를 갑자기 중지할 경우에 임부의 질환을 악화시키고 그…",
+   "extractor": "kw-v4",
+   "id": "b6c45b2287",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "선천성 기형",
+   "extractor": "kw-v4",
+   "id": "94b915a8e4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람에서는 임신 첫 3개월 이내에 이 약을 투여 받은 임부에서의 기형 발생률은 다른 항뇌전증약에서 보고된 것보다 높지 않았다. 발프로산을 투여 받은, 간질(뇌전증)을 가진 산모에서 태어난 자손에서 신경관 결함(척추갈림증, 척추수막류)과 남자아이에서 요도하열과 같은 다른 중간선(midline) 결함, 골격계 변형(안면 형태 이상 - 또한 정신지체, 사지기형을 동반한 경우) 그리고 심혈관계 기형…",
+   "extractor": "kw-v4",
+   "id": "cccd2c108c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "메타분석결과(등록자료 및 코호트 연구 포함)에서, 임신 중 발프로산제제 단독투여에 노출된 임부의 자손에서 주요한 선천적 기형의 발생률은 11%이다. 이것은 주요한 기형의 위험이 약 2~3%인 일반적 인구집단에 비해 크다. 자궁 내 노출된 소아의 주요 선천성 기형의 위험은 발프로산 제제를 포함하는 항전간제 복합요법이 발프로산 제제를 포함하지 않는 항전간제 복합요법보다 더 높다. 이러한 위험은…",
+   "extractor": "kw-v4",
+   "id": "80055c557b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "양측 요골무형성은 드물게 나타나나 발프로산 함유제제의 특이효과이다. 일부 자료는 발프로산의 자궁내 노출과 성장지연(흔히 두개안면부 이상과 관련이 있다)의 위험성, 특히 언어지능지수에 대한 관련성을 보여주고 있다. 이 약으로 인한 신경관 이상(척수수막류, 척추갈림증 등) 발생 빈도는 약 1～2%이다. 기형 발생의 조기 탐지를 위해 산전 진단(초음파, 알파태아단백 검사법)이 권장된다. 또한 모체…",
+   "extractor": "kw-v4",
+   "id": "4bd3db59bc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "발프로산의 자궁 내 노출은 태아의 청각 장애/손실을 야기할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "5969cd046a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "편측 및 양측 난청 또는 청각 장애 사례가 보고된 바 있다. 내이 독성의 증상과 징후 관찰이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "a9951e2a70",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "발프로산의 자궁 내 노출은 눈 기형(결손, 소안구증 포함)을 야기할 수 있다. 이들은 다른 선천성 기형과 함께 보고되었다. 이러한 눈 기형은 시력에 영향을 줄 수 있다.",
+   "extractor": "kw-v4",
+   "id": "22cdaa23d5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "발프로산을 투여받은 환자는 응고 이상이 발생할 수 있다. 예외적인 출혈증상이 이 약을 투여받고 있는 임부의 신생아에서 보고되었다. 이 출혈 증상은 저섬유소원혈증(저피브리노겐혈증)과 관련이 있다. 낮은 섬유소원(피브리노겐)을 가진 환자가 발프로산을 포함한 항뇌전증약을 반복투여시, 출혈로 인해 사망하는 무섬유소원혈증을 가진 신생아를 출생한다. 이 출혈증상은 발프로산염의 경우 비타민 K 결여와 관…",
+   "extractor": "kw-v4",
+   "id": "def56c0246",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "임신 중 발프로산 사용 후 투여로 신생아 및 유아의 사망을 초래하는 간부전이 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "5173b560f9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 7)",
+   "subject": "",
+   "excerpt": "동물실험에서 발프로산-유도성 최기형성이 발생했다. 마우스, 랫트, 토끼와 원숭이에서 산전에 발프로산에 노출 후 자궁내 성장지연과 사망 뿐만 아니라 기형 빈도 증가가 관찰되었다. 실험동물에서 골격계 기형이 가장 빈번한 구조적 이상이었고 마우스에서는 배 발생기의 민감한 기간 동안 모태내 혈장 발프로산 농도가 230㎍/mL(사람의 간질(뇌전증)에 대한 치료농도 상한의 2.3배)를 초과시 신경관 폐…",
+   "extractor": "kw-v4",
+   "id": "6892392947",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 8)",
+   "subject": "",
+   "excerpt": "임신을 계획하는 여성",
+   "extractor": "kw-v4",
+   "id": "74b2556e7d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "간질(뇌전증)의 치료 시: 환자가 임신을 계획 중인 경우 간질(뇌전증)의 치료경험이 있는 전문가가 반드시 발프로산 치료를 재평가하며 다른 치료 요법을 고려해야 한다. 전문가는 환자가 임신하기 전 및 피임 요법을 중단 하기 전에, 다른 치료 요법으로 전환할 수 있도록 모든 노력을 기울여야 한다. 만약 다른 치료요법으로의 전환이 불가능할 경우, 환자는 태아에 대한 이약의 위험성과 관련하여 환자의…",
+   "extractor": "kw-v4",
+   "id": "1080553992",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "조증의 치료 또는 편두통 예방 시: 환자가 임신을 계획 중인 경우 조증의 치료 또는 편두통 예방에 대한 경험이 있는 전문가의 상담을 받아야 한다. 이 약의 치료는 수정 전, 피임 요법을 중단하기 전 중단하여야 한다. 필요 시 다른 치료 요법을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "6ee4026133",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중인 여성 : 임신 기간 중 조증의 치료 또는 편두통 예방을 위해 이 약을 투여하는 것은 금기이다. 임신 기간 중 간질(뇌전증)의 치료를 위해 이 약을 투여하는 것은 적절한 다른 치료 요법이 없는 경우를 제외하면 금기이다.",
+   "extractor": "kw-v4",
+   "id": "dba72e6973",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약으로 치료를 받고 있는 여성이 임신한 경우, 곧바로 처방의에게 상담을 받아야 하며 다른 치료 요법을 고려해야한다. 임신 동안 산모의 저산소증을 동반한 강직간대발작 및 경련중첩은 산모와 태아에게 사망 위험을 가져올 수 있다.",
+   "extractor": "kw-v4",
+   "id": "fe391cd08c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "만약 임신 중 이 약의 투여의 위험성과 다른 치료 요법의 고려에도 불구하고 간질(뇌전증)의 치료에 반드시 발프로산 제제를 써야 한다면 최저 치료 용량으로 분할 투여하는 것이 권장된다. 높은 혈중농도를 막기 위해 서방형 제제의 사용이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "7e34d5e2a4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "발프로산 제제에 노출된 임신을 한 환자와 그의 파트너는 기형학/태아 의학의 전문가에게 진단과 상담을 받아야 한다.",
+   "extractor": "kw-v4",
+   "id": "f3e92b06b0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "신경관 결함 또는 기타 기형의 발생 가능성을 알아보기 위하여 전문적인 출산 전 모니터링을 실시해야 한다. 또한, 적절하다면 신경관 결함(neural tube defect)의 위험을 최소화 하기 위해 임신 전에 적절한 용량(5mg/일)으로 엽산 보조요법을 시작하여야 한다. 그러나 이러한 보조요법이 발프로산의 노출로 인한 선천적 결함이나 기형을 예방한다는 근거자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "1ee592552c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 9)",
+   "subject": "",
+   "excerpt": "발프로산은 사람의 태반을 통과하며, 모체보다 태아의 혈장농도가 더 높았다. 기형 유발은 1일 총 투여량 및 단회 투여량과 관련이 있다. 투여량 증가시(특히 1,000mg/일 이상) 신경관 결함 발생율도 증가한다. 임신 중 이 약을 투여할 수 밖에 없다면 최소한의 효과적인 1일 용량을 여러 번 분할하여 투여하고(특히 첫 3개월 동안) 서방형 제제의 사용을 권장한다. 투여량을 일정하게 유지하더라…",
+   "extractor": "kw-v4",
+   "id": "ddbb5c6e01",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 10)",
+   "subject": "",
+   "excerpt": "이 약을 투여 받은 임부에서 태어난 신생아에서 금단증상(예, 특히 초조, 과민성, 과잉흥분, 안절부절못함, 운동과다증, 긴장성(tonicity) 이상, 떨림, 경련 및 섭식장애)이 보고되었다. 임신 3기에 발프로산을 복용한 임부의 신생아에서 저혈당이 보고되었다. 임신 중 발프로산을 복용한 임부의 신생아에서 갑상선기능저하증이 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "1992b59bc1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 11)",
+   "subject": "",
+   "excerpt": "발프로산은 유즙으로 분비된다. 유즙에 포함되는 발프로산의 농도는 매우 낮아서 총 모체 혈청농도의 1～10% 정도이다. 발프로산 치료를 받은 수유부의 신생아에서 혈액학적 이상이 발견되었다. 이 약을 투여중단하거나 수유를 중단하는 결정은 반드시 수유의 유익함과 복용 중인 여성의 유익함에 대한 평가를 통해 이루어져야 한다.",
+   "extractor": "kw-v4",
+   "id": "d18dbd106b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 12)",
+   "subject": "",
+   "excerpt": "선천적 결손 : 이 약은 임산부에게 복용했을 때 치명적인 위해를 일으킬 수 있다. 임부에게 이 약을 사용하면 신경관결손 및 다른 구조적 장애를 일으킬 수 있다는 것을 임신 등록 자료에서 나타났다.(예, 두개안면 결손, 심혈관계 기형 및 여러 신체기관과 연관된 기형) 동 제제를 투여 받은 산모에서 태어난 아이들 사이의 선천적 기형률은 다른 항뇌전증약을 단독 투여 받고 간질(뇌전증)이 있는 산모…",
+   "extractor": "kw-v4",
+   "id": "c82fc1abdd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 13)",
+   "subject": "",
+   "excerpt": "자궁 내 노출에 따른 IQ 저하 : 발프로산은 자궁 내 노출에 따른 IQ 점수 저하를 일으킬 수 있다. 역학 연구들에서 자궁 내 발프로산에 노출되었던 어린이의 경우 다른 항뇌전증약에 노출되었거나 항뇌전증약에 노출된 적이 없는 어린이에 비해 낮은 인지 검사 점수를 보였다. 이 연구 중 가장 큰 규모의 연구는 미국 및 영국에서 수행된 전향적 코호트 연구로써(n=62), 출생 전 발프로산에 노출된…",
+   "extractor": "kw-v4",
+   "id": "de67a01781",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 14)",
+   "subject": "",
+   "excerpt": "가임기여성에 대한 사용 : 임신 거의 초반에 나타날 수 있는, 태아의 IQ저하 및 중요한 선천성 기형(신경관 결손 포함) 위험성 때문에 가임기여성의 경우 의학적 상태를 관리하는데 이 약이 꼭 필요한 경우 외에는 발프로산을 투여해서는 안된다. 이는 일반적으로 영구적인 손상 또는 사망과 관련되지 않은 상태(예, 편두통)에서 발프로산 투여를 고려할 때 특히 중요하다. 여성들은 발프로산 투여 시 효…",
+   "extractor": "kw-v4",
+   "id": "81221fdb7c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 15)",
+   "subject": "",
+   "excerpt": "신경발달장애",
+   "extractor": "kw-v4",
+   "id": "3b415231a8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "자궁 내 발프로산 노출은 노출된 어린이의 정신적&#x2022;육체적 발달에 부정적 영향을 미칠 수 있음을 보여주는 자료가 있다. 발프로산 제제를 단일요법으로 사용할 때 신경 발달 장애(자폐증 포함)의 위험은 용량 의존적으로 나타났으나 영향을 미치지 않는 용량은 알 수 없다. 임신 중 발프로산제제를 다른 항전간제와 병용투여 시, 일반적 인구 집단의 소아 또는 치료받지 않은 뇌전증 산모에게서 태…",
+   "extractor": "kw-v4",
+   "id": "c53ad23dde",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "발프로산제제를 단독요법으로 투여할 때, 자궁에서 발프로산에 노출된 미취학 아동을 대상으로 한 몇몇 연구에서 대화(talking) 및 걷기의 지연, 지적 능력의 저하, 언어 능력(말하기(speaking), 이해하기)의 부족, 기억 장애와 같은 초기 발달의 지연이 최대 30-40%까지 나타났다.",
+   "extractor": "kw-v4",
+   "id": "c1ca0f0bec",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "제한된 자료이긴 하나 자궁에서 발프로산에 노출된 어린이에 대한 장기추적 관찰결과에 따르면 일반적 인구집단과 비교시 자폐범주형장애(약 3배)와 소아기자폐증(약 5배)의 위험이 높게 나타났다.",
+   "extractor": "kw-v4",
+   "id": "cfef4ab18f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "일부 자료는 모체의 자궁으로부터 발프로산에 노출된 어린이에서 일반적 인구집단과 비교 시 주의력 결핍/과잉 행동 장애(ADHD)의 위험이 증가한다고 제시하였다.",
+   "extractor": "kw-v4",
+   "id": "e99fc06e7c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "자궁 내 노출로 인한 임신 주수 대비 저체중 출산: 자궁 내 발프로산 노출로 인하여 임신 주수 대비 출생 시 저체중이 나타날 수 있다. 전임상 연구에서 자궁 내 발프로산에 노출된 동물은 노출되지 않은 동물에 비해 용량 의존적으로 태아 체중 감소를 보였다(‘13. 기타’ 항 참조). 역학 연구에 따르면 자궁 내 발프로산에 노출된 어린이는 발프로산에 노출되지 않았거나 라모트리진에 노출된 어린이에…",
+   "extractor": "kw-v4",
+   "id": "ba5f5c0439",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 16)",
+   "subject": "",
+   "excerpt": "생식능력",
+   "extractor": "kw-v4",
+   "id": "a87f4f0624",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "무월경, 다낭성난소, 테스토스테론 수치 증가는 발프로산을 투여 받는 여성에게서 보고되었다. 발프로산의 투여는 남성에게서 생식능력의 손상을 유발할 수 있다(‘4. 이상반응’ 항 참조).",
+   "extractor": "kw-v4",
+   "id": "47c67fd690",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "남성의 생식능력 손상은 일부 사례에서 발프로산 중단 후 최소 3개월 이후에 가역적이었다. 제한된 수의 사례보고는 현저한 용량 감소 시 생식능력이 개선될 수 있음을 시사하였다. 하지만 일부 사례에서 남성 불임의 가역성은 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "de0629ccb3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 17)",
+   "subject": "",
+   "excerpt": "발프로산으로 치료받은 남성에서 태어난 소아에서의 위험 :",
+   "extractor": "kw-v4",
+   "id": "c812fce1f4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "북유럽 3개국의 전자의무기록에 기반한 후향적 관찰 연구에 따르면, 임신 전 3개월 이내에 발프로산으로 치료받은 남성에서 태어난 소아(0~11세)가 라모트리진 또는 레비티라세탐으로 치료를 받은 남성에서 태어난 소아에 비해 신경발달장애(Neurodevelopmental disorders: NDDs) 위험이 증가한 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "dcfd745188",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "신경발달장애의 보정된 누적 위험 범위는 발프로산 단독 요법군에서 4.0~5.6%인 반면, 라모트리진 또는 레비티라세탐 단독요법군에서는 2.3~3.2%였다. 데이터 세트의 메타 분석에서 얻은 전체 신경발달장애에 대한 통합된 보정 위험 비율(Hazard ratio: HR)은 1.50(95% 신뢰구간: 1.09, 2.07)였다.",
+   "extractor": "kw-v4",
+   "id": "2555eecb68",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "연구의 한계로 인해 연구된 신경발달장애의 하위 유형(자폐 스펙트럼 장애, 지적 장애, 의사소통 장애, 주의력 결핍/과잉 행동 장애, 운동 장애) 중 어떤 것이 신경발달장애의 전반적인 위험 증가에 기여하는지 판단하는 것은 불가능하다.",
+   "extractor": "kw-v4",
+   "id": "e7ebc2509b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "처방의는 발프로산으로 치료하는 동안과 치료 중단 후 3개월 동안 다른 치료 요법과 효과적인 피임의 필요성에 대해 적어도 1년에 한 번 가임 남성 환자와 정기적으로 논의해야 한다. ('1. 경고' 및 ‘5. 일반적 주의’항 참조)",
+   "extractor": "kw-v4",
+   "id": "0680525374",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 혈장 알부민과의 결합성이 강하나 고령자에는 혈장 알부민이 감소되어 유리된 약물의 혈중농도가 높아질 수 있으므로 용량에 유의하여 신중히 투여한다. 또한 연용 중에 투여량을 급격히 감량하여 투여를 중지하면 간질중첩 상태가 나타나기 쉬우므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "1e2454a8f1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "양극성 질환과 관련된 조증에 대한 디발프로엑스나트륨 장용정의 이중-맹검 전향적 임상시험에서 65세 이상의 환자는 등록되지 않았다. 583명의 환자 사례 검토시 72명(12%)이 65세 이상이었다. 65세 이상 환자에서 더 높은 우발적 손상, 감염, 통증, 졸림 및 진전 발생율이 보고되었다. 발프로산의 중단은 졸림 및 진전과 때때로 관련이 있었다. 이러한 이상반응이 추가적인 위험을 암시하는지…",
+   "extractor": "kw-v4",
+   "id": "a778fa7628",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "치매 노인환자에 대한 임상시험에서 약물과 관련된 졸림과 졸림으로 인한 시험 중단이 밝혀졌다. 이러한 환자에서는 시작용량을 줄여야 하며 과도한 졸림을 보이는 환자에서는 용량을 줄이거나 투여를 중단해야 한다. 임상시험에서 이 약을 투여받은 65세 초과 환자 21명에서 특이한 안전성 상의 우려가 확인되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "fafa931f0a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 65세 이상 환자의 편두통 예방에 대한 안전성과 유효성은 확립되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "e6262fefae",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:52",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

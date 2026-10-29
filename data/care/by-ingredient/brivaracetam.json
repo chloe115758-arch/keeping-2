@@ -1,131 +1,190 @@
 {
-  "ingredient": "brivaracetam",
-  "productSeq": "202502407",
-  "itemName": "브리바탑정50밀리그램(브리바라세탐)",
-  "atc": "N03AX23",
-  "etcOtc": "전문의약품",
-  "changeDate": "20251202",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502407/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502407/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502407/NB"
-  },
-  "rules": [
+ "ingredient": "brivaracetam",
+ "productSeq": "202502407",
+ "itemName": "브리바탑정50밀리그램(브리바라세탐)",
+ "atc": "N03AX23",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251202",
+ "ediCode": "641608420",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502407/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502407/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502407/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ②",
+   "subject": "",
+   "excerpt": "알코올",
+   "extractor": "kw-v4",
+   "id": "644dddb0a4",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "98bfcbfd8b",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "② 알코올",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약은 건강한 시험대상자에 대한 약동학 및 약력학 상호작용 시험에서 정신운동기능, 주의력 및 기억에 대한 알코올 영향을 증가시켰다. 약동학적 상호작용은 없었다. 이 약 복용시 알코올 섭취는 권장되지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "61730a5c2b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 적절한 자료가 없다. 이 약은 임상시험에서 부가요법으로 사용되었고, 카르바마제핀과 병용투여시 활성 대사체인 카르바마제핀-에폭시드 농도 증가와 관련된 용량관련 증가를 유도하였다 (6.상호작용 참조). 임부 복용 시 이 상호작용의 임상적 유의성을 결정하기에는 자료가 충분하지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7d3eef3dec",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "인체 태반 이행에 대한 자료는 없으나 랫트에서 태반으로 이행이 나타났다. 사람에 대한 잠재적인 위험은 알려져 있지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "883782d405",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "주의 조치로, 이 약은 임상적으로 필요한 경우(모체에 대한 유익성이 태아에 대한 잠재적 위해성을 명백하게 상회하는 경우)를 제외하고 임신 중에는 투여해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b401be9bc8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "항뇌전증약물 중단으로 질병 악화가 발생할 수 있고 그에 따라 모체 및 태아에게 유해한 영향을 미칠 수 있다. 여성이 임신하기로 결정한 경우, 이 약 투여에 대해 신중한 재평가가 필요하다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "92ea129f04",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물 시험에서 랫트 또는 토끼에서 이 약의 최기형성 가능성은 확인되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7dd3f7989f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 사람의 모유로 분비된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6806ccf24e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유 중단 또는 이 약 중단 여부는 모체에 대한 약물의 유익성을 고려하여 결정해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "689acda119",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
-      "subject": "3) 가임여성",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "처방의는 이 약을 복용하는 가임여성에게 가족계획 및 피임에 대해 논의하여야 한다(임부에 대한 투여 참조).",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:08:09"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "이 약은 건강한 시험대상자에 대한 약동학 및 약력학 상호작용 시험에서 정신운동기능, 주의력 및 기억에 대한 알코올 영향을 증가시켰다. 약동학적 상호작용은 없었다. 이 약 복용시 알코올 섭취는 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "93f16d598b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "a18afba796",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 적절한 자료가 없다. 이 약은 임상시험에서 부가요법으로 사용되었고, 카르바마제핀과 병용투여시 활성 대사체인 카르바마제핀-에폭시드 농도 증가와 관련된 용량관련 증가를 유도하였다 (6.상호작용 참조). 임부 복용 시 이 상호작용의 임상적 유의성을 결정하기에는 자료가 충분하지 않다.",
+   "extractor": "kw-v4",
+   "id": "fddb9ae8af",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "인체 태반 이행에 대한 자료는 없으나 랫트에서 태반으로 이행이 나타났다. 사람에 대한 잠재적인 위험은 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "be00eae970",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "주의 조치로, 이 약은 임상적으로 필요한 경우(모체에 대한 유익성이 태아에 대한 잠재적 위해성을 명백하게 상회하는 경우)를 제외하고 임신 중에는 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "a89c1c10f5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "항뇌전증약물 중단으로 질병 악화가 발생할 수 있고 그에 따라 모체 및 태아에게 유해한 영향을 미칠 수 있다. 여성이 임신하기로 결정한 경우, 이 약 투여에 대해 신중한 재평가가 필요하다.",
+   "extractor": "kw-v4",
+   "id": "656ed7aab8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "동물 시험에서 랫트 또는 토끼에서 이 약의 최기형성 가능성은 확인되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "3f83c25622",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "443ce0a96a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 사람의 모유로 분비된다.",
+   "extractor": "kw-v4",
+   "id": "39892b004e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "수유 중단 또는 이 약 중단 여부는 모체에 대한 약물의 유익성을 고려하여 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "c2a04e92f2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "가임여성",
+   "extractor": "kw-v4",
+   "id": "6539fccd5e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7.&nbsp;임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "처방의는 이 약을 복용하는 가임여성에게 가족계획 및 피임에 대해 논의하여야 한다(임부에 대한 투여 참조).",
+   "extractor": "kw-v4",
+   "id": "5b6252fa22",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

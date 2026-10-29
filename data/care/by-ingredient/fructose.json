@@ -1,0 +1,32 @@
+{
+ "ingredient": "fructose",
+ "productSeq": "199101338",
+ "itemName": "이노엔5%과당주사액",
+ "atc": "B05BA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200413",
+ "ediCode": "640001261",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101338/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101338/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101338/NB"
+ },
+ "rules": [
+  {
+   "section": "elderly",
+   "where": "5. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "9b4f659c68",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:35",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

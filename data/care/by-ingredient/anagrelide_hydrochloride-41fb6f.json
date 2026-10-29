@@ -1,0 +1,154 @@
+{
+ "ingredient": "anagrelide hydrochloride",
+ "productSeq": "201602615",
+ "itemName": "아나그레캡슐0.5밀리그램(아나그렐리드염산염)",
+ "atc": "L01XX35",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240112",
+ "ediCode": "642104860",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201602615/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201602615/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201602615/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 6)",
+   "subject": "",
+   "excerpt": "CYP1A2 유도제: CYP1A2 유도제는 이 약에의 노출을 감소시킬수 있다. CYP1A2 유도제(예: 오메프라졸)를 함께 복용하는 환자는 이 약에의 노출 감소를 보상하기 위해 투여량을 적정(titration)하여야 할 필요가 있을 수 있다.",
+   "extractor": "kw-v4",
+   "id": "1020dd9e89",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "CYP1A2 유도제인 오메프라졸이 이 약의 약물동태학(PK)에 미치는 영향을 확인하기 위한 연구가 수행되었다. 20명의 건강한 성인을 대상으로 오메프라졸 1일 1회 40mg을 반복 투약한 결과, 오메프라졸의 혈중농도 하에서 이 약의 AUC0-∞, AUC0-t 및 Cmax가 각각 27%, 26% 및 36% 감소하였으며, 이 약의 활성대사산물인 3-hydroxy-anagrelide는 각각 13%…",
+   "extractor": "kw-v4",
+   "id": "59e20299f7",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 임신하였거나 임신가능성이 있는 여성에게는 투여하지 않는다. 만약 임신 중에 이 약이 투여되었거나 혹은 이 약 투여 중에 임신이 된 경우에는 태아에게 잠재된 위험이 있을 수 있다는 사실을 환자에게 알려야 한다. 임신 가능성이 있는 여성에게는 이 약을 투여하는 동안에는 피임하여 임신을 피하도록 주의시킨다. 이 약을 임신한 여성에게 투여시 태아에게 해를 끼칠 수 있다.",
+   "extractor": "kw-v4",
+   "id": "fef47c7d3b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신한 여성을 대상으로 한 적절하고, 잘 관리된 연구는 없다. 이 약은 임신기간 중에는 치료상의 유익성이 위험성을 상회한다고 판단할 때만 사용한다. 이 약 1～4mg/day를 투여받는 중에 5명의 여자가 임신하였다. 임신을 확인한 후 즉시 투여를 중지하였으며, 신생아는 건강하였다.",
+   "extractor": "kw-v4",
+   "id": "af24d2452a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약을 경구로 임신한 랫트에 900mg/kg/day(5,400mg/m2/day, 체표면적에 근거한 최대 사람용량의 730배)까지 그리고 임신한 토끼에 20mg/kg/day(240mg/m2/day, 체표면적에 근거한 최대 사람용량의 32배)까지 경구 투여한 최기형성 시험에서 이 약으로 인한 생식능력의 손상 또는 태자로의 유해성에 대한 증거는 보이지 않았다.",
+   "extractor": "kw-v4",
+   "id": "53aff2ae72",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수태능: 사람을 대상으로 한 이 약의 수태능에 대한 이용가능한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "0f5cfcd9c4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 ①",
+   "subject": "",
+   "excerpt": "암컷 랫트로 실시한 수태능 및 생식·발생독성시험에서 이 약을 경구로 60mg/kg/day (360mg /m2/day, 체표면적에 근거한 최대 사람용량의 49배) 또는 그 이상 투여하였을 때 착상을 억제하였으며, 배/태자의 생존에 유해한 영향을 미쳤다.",
+   "extractor": "kw-v4",
+   "id": "78d3016dde",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 ②",
+   "subject": "",
+   "excerpt": "수컷 랫트에 이 약 240mg/kg/day(1,440mg/m2/day, 체표면적에 근거한 최대 사람 용량의 195배)까지 경구투여하여도 수태능 및 생식능에 영향을 미치지 않았다.",
+   "extractor": "kw-v4",
+   "id": "1c25181b10",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "암컷 랫트로 실시한 출생 전·후 발생독성시험에서 이 약을 경구로 60mg/kg/day (360mg/m2/day, 체표면적에 근거한 최대 사람용량의 49배) 또는 그 이상 투여하였을 때 분만을 지연시키거나 억제하였고, 분만하지 않은 임신한 모체와 발달된 태자가 사망하였으며, 분만된 새끼의 사망률을 증가시켰다.",
+   "extractor": "kw-v4",
+   "id": "6d68907bbd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람에서 아나그렐리드가 유즙으로 분비되는지는 알려지지 않았다. 랫트에서 아나그렐리드와 대사산물이 유즙으로 분비되었다. 아나그렐리드는 수유기의 아기에게 이상반응을 일으킬 수 있는 가능성이 있으므로 수유부의 상태를 고려하여 약물 투여를 중단하거나 혹은 수유를 중단 해야한다.",
+   "extractor": "kw-v4",
+   "id": "b7f9ab2f7f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:21",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

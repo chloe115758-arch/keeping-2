@@ -1,0 +1,87 @@
+{
+ "ingredient": "sevoflurane",
+ "productSeq": "200704662",
+ "itemName": "박스터세보플루란흡입액",
+ "atc": "N01AB08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251201",
+ "ediCode": "078200051",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704662/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704662/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704662/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 10)",
+   "subject": "",
+   "excerpt": "CYP2E1 유도제: 이소니아지드나 알콜과 같이 CYP450 동종효소 CYP2E1의 활성을 증가시키는 물질은 이 약의 대사를 증가시켜 혈중 불소 농도를 유의하게 증가를 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "cfe96859c5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 또는 이 약의 대사체가 모유 중으로의 이행여부가 밝혀져 있지 않다. 입증된 경험이 없기 때문에, 이 약의 투여 후 48시간은 동안은 수유를 중지하고, 이 기간에 만들어진 모유는 버리도록 한다.",
+   "extractor": "kw-v4",
+   "id": "b4ad92378d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자에서는 수술 후 일시적인 임상검사치 이상이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "6a475fe812",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있는 경우가 많고 이상반응이 나타나기 쉬우므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "b7d8ab9843",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "연령증가에 따라 최소폐포내농도가 감소한다. 80세에서 최소폐포내농도를 달성하기 위한 이 약의 평균 농도는 20세에서 필요한 농도의 약 50%이다.",
+   "extractor": "kw-v4",
+   "id": "4372d4f555",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:23",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

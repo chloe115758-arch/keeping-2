@@ -1,0 +1,207 @@
+{
+ "ingredient": "carbimazole",
+ "productSeq": "200401526",
+ "itemName": "카멘정10밀리그람(카르비마졸)",
+ "atc": "H03BB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200202",
+ "ediCode": "664600850",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401526/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401526/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200401526/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "이 약은 비타민 K 길항제로서 항응고 효과가 강화될 수 있으므로 무과립구증을 유발할 수 있는 제제와 병용투여 시 특히 주의하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "2dc89cb5a6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "900586f426",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "이 약은 태반을 통과하나, 모체의 용량이 표준용량 범위이고, 모체의 갑상샘 상태가 치료되면, 태아의 갑상샘 이상에 대한 증거가 없다.",
+   "extractor": "kw-v4",
+   "id": "659a3e2933",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "이 약의 용량은 환자의 임상상태를 고려한다. 가능한 한 최소용량을 사용하며 고 임신말기 3개월에 1일 15 mg을 초과하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "87a2ca98bf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "태아의 합병증의 위험을 줄이기 위하여 출산전 3∼4주간 치료를 중단할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "feb140a2a1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "극히 소량의 티록신이 임신 말기 6개월에 태반을 통과하므로 임신기간 중에 치환차단 요법을 피한다.",
+   "extractor": "kw-v4",
+   "id": "b75ae41c44",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (5)",
+   "subject": "",
+   "excerpt": "임부의 갑상선기능항진증은 임부 및 태아의 심각한 합병증 발생 예방을 위해 적절히 치료해야 한다.",
+   "extractor": "kw-v4",
+   "id": "9d4c430853",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "역학 연구 및 자발 보고에 따르면 카르비마졸은 임신기간 동안 특히 임신 초기(14주) 및 고용량 투여 시 선천성 기형 유발이 의심된다.",
+   "extractor": "kw-v4",
+   "id": "2b98b05096",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "보고된 기형은 선천성 피부 무형성, 두개안면 기형(후비공 폐쇄; 안면기형), 배꼽탈장, 식도폐쇄증, 배꼽창자간막관 기형, 심실사이막결손이 포함된다.",
+   "extractor": "kw-v4",
+   "id": "30b71c3769",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "카르비마졸은 임신기간 동안 개인적인 유익성-위해성 평가 후에 추가적인 갑상선호르몬 투여 없이 최소 유효 용량으로 투여해야 한다. 만약 임신기간 동안 카르비마졸을 사용해야 한다면 임부, 태아 및 신생아의 면밀한 관찰이 요구된다.(‘4. 일반적 주의’항 참조)",
+   "extractor": "kw-v4",
+   "id": "3d9e3e7d9e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "e883d246ad",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "이 약은 모유 중으로 이행 되어 심각한 이상반응을 초래 할 수 있어 신생아의 갑상샘기능저하증의 위험 때문에 수유 또는 처방을 중단하는 것을 고려하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "cb62f4b8ba",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신 가능성이 있는 여성에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "9042477eee",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "임신 가능성이 있는 여성은 치료기간 동안 효과적으로 피임해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b8a09ed191",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "특별한 투약 처방이 필요하진 않지만, 고령자에게 중성구질환의 치명적 결과 위험도가 더 높으므로 특히 주의한다.",
+   "extractor": "kw-v4",
+   "id": "b01d9155c2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:14",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

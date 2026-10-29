@@ -1,0 +1,56 @@
+{
+ "ingredient": "bendamustine hydrochloride",
+ "productSeq": "202009132",
+ "itemName": "벤다리드주100밀리그램(벤다무스틴염산염수화물)",
+ "atc": "L01AA09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210630",
+ "ediCode": "622701141",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202009132/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202009132/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202009132/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "○ 임부",
+   "excerpt": "임부에 있어 벤다무스틴염산염 투여에 대한 데이터는 불충분하다. 비임상시험에서 벤다무스틴염산염은 배아/태아 독성, 최기형성 및 유전독성을 나타냈다. 임신 기간동안 명백한 필요성 없이는 이 약을 투여하여선 안되며 태아 독성에 대한 정보가 임부에게 제공되어야 한다. 임신 기간 중 이 약의 투여가 절대적으로 필요하거나 이 약 투여 기간 내 임신하였을 경우, 환자에게 태아에 대한 위험 요소를 알려야…",
+   "extractor": "kw-v4",
+   "id": "75fd0b16b6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "○ 수유부",
+   "excerpt": "벤다무스틴의 유즙을 통한 분비는 알려진 바 없으나 수유 기간에는 투여하지 않는다. 이 약 투여 기간 내에는 수유를 중단하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "9f297e5375",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "노인 환자에 있어 용량 조절의 필요성에 대한 근거는 없다.",
+   "extractor": "kw-v4",
+   "id": "87b865dfe6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:46",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

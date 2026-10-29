@@ -1,133 +1,173 @@
 {
-  "ingredient": "deferasirox",
-  "productSeq": "201607128",
-  "itemName": "엑스자이드필름코팅정180밀리그램(데페라시록스)",
-  "atc": "V03AC03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20200131",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607128/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607128/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607128/NB"
+ "ingredient": "deferasirox",
+ "productSeq": "201607128",
+ "itemName": "엑스자이드필름코팅정180밀리그램(데페라시록스)",
+ "atc": "V03AC03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200131",
+ "ediCode": "653602910",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607128/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607128/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607128/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 6)",
+   "subject": "",
+   "excerpt": "고령자 (65세 이상)",
+   "extractor": "kw-v4",
+   "id": "96fe679032",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 9)",
+   "subject": "",
+   "excerpt": "데페라시록스 확산정과 비타민 C와의 병용투여는 공식적으로 시험된 적은 없다. 1일 200mg까지의 비타민 C의 용량은 부정적 결과를 일으키지 않았다.",
+   "extractor": "kw-v4",
+   "id": "d88241da9e",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "7ba51f4e9b",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 9)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "vitaminC",
-          "kind": "supplement",
-          "ko": "비타민 C",
-          "surface": "비타민 C"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "데페라시록스 확산정과 비타민 C와의 병용투여는 공식적으로 시험된 적은 없다. 1일 200mg까지의 비타민 C의 용량은 부정적 결과를 일으키지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9f71d1aa0a",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 10)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "데페라시록스 확산정과 알루미늄&#x2010;함유 제산제의 병용투여는 공식적으로 시험된 적이 없다. 데페라시록스가 철에 대해서보다 알루미늄에 대해 더 낮은 결합친화력을 가지고 있음에도 불구하고 이 약은 알루미늄&#x2010;함유 제산제와 함께 복용해서는 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "433e66a42b",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 13)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 콜레스티라민의 병용투여는 이 약의 효능을 저하시킬 수 있다. 건강한 지원자를 대상으로 한 시험에서, 데페라시록스 확산정 단회 투여 후 데페라시록스의 노출이 45% 감소되었다. 이 약과 콜레스티라민의 병용 투여를 피하고, 병용투여가 필요할 경우에는 치료에 대한 임상반응에 근거하여 이 약의 증량을 고려하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ee0db0fbc4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 가임여성 및 수유부에 대한 투여",
-      "subject": "1) 임부 및 가임여성",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "데페라시록스가 임부에 노출된 임상자료는 없다. 동물시험결과 모체의 독성용량에서 일부 생식독성을 보였다. 사람에 대한 잠재적 위험은 알려져 있지 않다. 따라서 이 약이 명백하게 필요한 경우가 아니라면 임부에게 투여하지 말 것을 추천한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "cdf20a2a61",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 가임여성 및 수유부에 대한 투여",
-      "subject": "1) 임부 및 가임여성",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트와 토끼를 이용한 동물시험에서 데페라시록스로 인한 최기형성은 나타나지 않았으나, 랫트에 비-철분축적 모체에 중증의 독성을 일으키는 고용량을 투여했을 때 골격변이와 사산의 발생 빈도 수가 증가되었다. 데페라시록스는 수태능 또는 생식능에 다른 영향을 일으키지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0e2591897d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 가임여성 및 수유부에 대한 투여",
-      "subject": "1) 임부 및 가임여성",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "CYP3A4에 의한 대사로 인해 호르몬성 피임제의 효능이 감소할 수 있으므로, 데페라시록스를 호르몬성 피임제와 병용 투여할 때는 주의하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9b22061c6b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 가임여성 및 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물시험에서 데페라시록스는 모유로 신속하고 광범위하게 배설되는 것으로 밝혀졌다. 모체의 비-독성 데페라시록스 용량에서 자손에 대한 영향은 나타나지 않았다. 데페라시록스가 사람의 모유로 배설되는지는 알려진 바 없다. 많은 약물이 사람의 모유로 배설되고, 젖먹이 유아에 대한 데페라시록스와 그 대사체의 중대한 이상반응의 가능성이 있기 때문에, 수유부에게 이 약을 투여할 때, 약물의 중요성을 고려하…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a59fdf7431",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 가능하면 매일 동일한 시간에, 음식물섭취 적어도 30분 이전에 공복상태에, 또는 가벼운 식사와 함께 1일 1회 복용해야 한다. 이 약은 물과 함께 통째로 삼켜야 한다. 정제를 삼키기 어려운 환자는 이 약을 부수어 요거트나 사과 퓨레 같은 부드러운 음식에 뿌려 전체를 복용해야 한다. 이 약은 부순 즉시 완전히 복용해야 하며, 추후 복용을 위해 보관해서는 안된다.",
-      "meal": "공복",
-      "extractor": "kw-v1"
+     "key": "vitaminC",
+     "kind": "supplement",
+     "ko": "비타민 C",
+     "surface": "비타민 C"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:18:29"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 10)",
+   "subject": "",
+   "excerpt": "데페라시록스 확산정과 알루미늄&#x2010;함유 제산제의 병용투여는 공식적으로 시험된 적이 없다. 데페라시록스가 철에 대해서보다 알루미늄에 대해 더 낮은 결합친화력을 가지고 있음에도 불구하고 이 약은 알루미늄&#x2010;함유 제산제와 함께 복용해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "973c64b51b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 13)",
+   "subject": "",
+   "excerpt": "이 약과 콜레스티라민의 병용투여는 이 약의 효능을 저하시킬 수 있다. 건강한 지원자를 대상으로 한 시험에서, 데페라시록스 확산정 단회 투여 후 데페라시록스의 노출이 45% 감소되었다. 이 약과 콜레스티라민의 병용 투여를 피하고, 병용투여가 필요할 경우에는 치료에 대한 임상반응에 근거하여 이 약의 증량을 고려하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "12cbe3a96d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 가임여성 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 및 가임여성",
+   "extractor": "kw-v4",
+   "id": "8b4b39d892",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 가임여성 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "데페라시록스가 임부에 노출된 임상자료는 없다. 동물시험결과 모체의 독성용량에서 일부 생식독성을 보였다. 사람에 대한 잠재적 위험은 알려져 있지 않다. 따라서 이 약이 명백하게 필요한 경우가 아니라면 임부에게 투여하지 말 것을 추천한다.",
+   "extractor": "kw-v4",
+   "id": "51584f42c7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 가임여성 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "랫트와 토끼를 이용한 동물시험에서 데페라시록스로 인한 최기형성은 나타나지 않았으나, 랫트에 비-철분축적 모체에 중증의 독성을 일으키는 고용량을 투여했을 때 골격변이와 사산의 발생 빈도 수가 증가되었다. 데페라시록스는 수태능 또는 생식능에 다른 영향을 일으키지 않았다.",
+   "extractor": "kw-v4",
+   "id": "2fc847c5c2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 가임여성 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "CYP3A4에 의한 대사로 인해 호르몬성 피임제의 효능이 감소할 수 있으므로, 데페라시록스를 호르몬성 피임제와 병용 투여할 때는 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "3e87ff2f50",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 가임여성 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "eb3efa61c2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 가임여성 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험에서 데페라시록스는 모유로 신속하고 광범위하게 배설되는 것으로 밝혀졌다. 모체의 비-독성 데페라시록스 용량에서 자손에 대한 영향은 나타나지 않았다. 데페라시록스가 사람의 모유로 배설되는지는 알려진 바 없다. 많은 약물이 사람의 모유로 배설되고, 젖먹이 유아에 대한 데페라시록스와 그 대사체의 중대한 이상반응의 가능성이 있기 때문에, 수유부에게 이 약을 투여할 때, 약물의 중요성을 고려하…",
+   "extractor": "kw-v4",
+   "id": "a2eff453d9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "a59fdf7431",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 가능하면 매일 동일한 시간에, 음식물섭취 적어도 30분 이전에 공복상태에, 또는 가벼운 식사와 함께 1일 1회 복용해야 한다. 이 약은 물과 함께 통째로 삼켜야 한다. 정제를 삼키기 어려운 환자는 이 약을 부수어 요거트나 사과 퓨레 같은 부드러운 음식에 뿌려 전체를 복용해야 한다. 이 약은 부순 즉시 완전히 복용해야 하며, 추후 복용을 위해 보관해서는 안된다.",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

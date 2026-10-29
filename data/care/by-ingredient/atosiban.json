@@ -1,0 +1,68 @@
+{
+ "ingredient": "atosiban",
+ "productSeq": "201506826",
+ "itemName": "트랙시반주(아토시반아세트산염)",
+ "atc": "G02CX01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20160403",
+ "ediCode": "645305191",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506826/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506826/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506826/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "아토시반은 임신 24주부터 33주 사이에 조산으로 진단받은 환자에게만 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d91a80eb41",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에서 수유에 대한 영향은 없는 것으로 관찰되었다. 이 약은 수유부에서 소량이 혈장으로부터 유즙으로 이행되는 것이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "bd57ed244b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "태아독성 연구에서 아토시반의 독성작용은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "5c5200613b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "수태능 및 초기배발생에 관한 연구는 수행되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "e4cdc82330",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:09",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

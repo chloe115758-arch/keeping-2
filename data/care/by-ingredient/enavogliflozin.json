@@ -1,0 +1,123 @@
+{
+ "ingredient": "enavogliflozin",
+ "productSeq": "202204314",
+ "itemName": "엔블로정0.3밀리그램(이나보글리플로진)",
+ "atc": "A10BK09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260319",
+ "ediCode": "641607780",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204314/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204314/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202204314/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것",
+   "subject": "",
+   "excerpt": "- 과도한 알코올 섭취자",
+   "extractor": "kw-v4",
+   "id": "c3729e6b8b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "57bc920cbf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부를 대상으로 한 적절하고 잘 통제된 임상시험 결과는 없다. 임부에서의 이 약의 사용은 권장되지 않는다. 임신이 확인되면, 이 약의 투여를 중단해야 한다. 랫드 동물 시험에서 초기배 발생과 관련하여 유해한 영향은 보이지 않았다.랫드와 토끼의 배태자 발생시험 결과, 모체의 체중 증체량이 감소하였으나, 배태자의 발생에 미치는 영향은 없었다(이 약에 대한 동물 시험 중 랫드에서 태아로의 이행이…",
+   "extractor": "kw-v4",
+   "id": "34660cf9cf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "030bdd5f2c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람 모유를 통해 분비되는지에 대한 자료는 없다. 동물 시험 중 랫드에서 이 약이 유즙으로 분비되는 것으로 알려졌기 때문에 이 약을 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "cac013e657",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자는 일반적으로 생리적 기능이 저하된 상태이다. 이 약은 환자의 상태를 면밀하게 모니터링하면서 주의하여 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "eec7ea5029",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "고령 환자는 신장애를 가지고 있거나 안지오텐신 전환 효소 저해제(ACE-I) 및 제1형 안지오텐신II 수용체 저해제(ARB)와 같은 신기능 변화를 일으킬 수 있는 항고혈압제를 투여하고 있을 가능성이 높다. 고령자의 경우 탈수 증상(갈증 포함)이 뒤늦게 인지될 수 있으므로 주의를 기울여야 한다. 고령자들은 체액량 감소의 위험이 더 높을 수 있고, 이뇨제를 투여하고 있을 가능성이 더 높다.",
+   "extractor": "kw-v4",
+   "id": "e3ea7b29f6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "80세 이상의 환자에 대한 치료 경험이 제한적이므로, 이 약물 요법의 시작을 권장하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "390578f7ff",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:55",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,40 +1,44 @@
 {
-  "ingredient": "povidone iodine",
-  "productSeq": "201308657",
-  "itemName": "한창멸균포비돈스왑스틱",
-  "atc": "D08AG02",
-  "etcOtc": "일반의약품",
-  "changeDate": "20241004",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308657/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308657/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308657/NB"
+ "ingredient": "povidone iodine",
+ "productSeq": "201308657",
+ "itemName": "한창멸균포비돈스왑스틱",
+ "atc": "D08AG02",
+ "etcOtc": "일반의약품",
+ "changeDate": "20241004",
+ "ediCode": "629300015",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308657/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308657/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308657/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 부인 및 수유부에게 규칙적, 장기간 또는 광범위하게 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "49eb413182",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "e3354f4e52",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 또는 임신하고 있을 가능성이 있는 부인 및 수유부에게 규칙적, 장기간 또는 광범위하게 사용하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c3e642eae7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "흡수된 요오드는 태반 장벽을 통해 유즙으로 이행한다. 흡수된 요오드는 태아나 신생아의 갑상선기능에 영향을 미치거나 갑상선종을 일으킬 수 있다. 따라서 신생아 또는 영아의 경우 갑상선기능을 점검하는 것이 권장된다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:11:49"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "흡수된 요오드는 태반 장벽을 통해 유즙으로 이행한다. 흡수된 요오드는 태아나 신생아의 갑상선기능에 영향을 미치거나 갑상선종을 일으킬 수 있다. 따라서 신생아 또는 영아의 경우 갑상선기능을 점검하는 것이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "b562e825de",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,71 +1,75 @@
 {
-  "ingredient": "methocarbamol",
-  "productSeq": "198501428",
-  "itemName": "명문메토카르바몰정(수출명:디베파닐정(Dibefaniltablet))",
-  "atc": "M03BA03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20221102",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198501428/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198501428/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198501428/NB"
-  },
-  "rules": [
+ "ingredient": "methocarbamol",
+ "productSeq": "198501428",
+ "itemName": "명문메토카르바몰정(수출명:디베파닐정(Dibefaniltablet))",
+ "atc": "M03BA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221102",
+ "ediCode": "649800960",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198501428/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198501428/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198501428/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "다음 약물과의 병용 또는 음주에 의하여 상호작용이 증강될 수 있으므로 단독투여하는 것이 바람직하나 부득이하게 병용하는 경우에는 감량하는 등 주의한다. : 페노치아 진계약물(클로르프로마진 등), 바르비탈계 약물등의 중추신경억제제, MAO 저해제",
+   "extractor": "kw-v4",
+   "id": "b926f23816",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "fe95f0da66",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "음주"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "다음 약물과의 병용 또는 음주에 의하여 상호작용이 증강될 수 있으므로 단독투여하는 것이 바람직하나 부득이하게 병용하는 경우에는 감량하는 등 주의한다. : 페노치아 진계약물(클로르프로마진 등), 바르비탈계 약물등의 중추신경억제제, MAO 저해제",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1e496c77f1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신중의 투여에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능 성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 투여한 다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1865d1ee3f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부에는 투여하지 않는 것이 바람직하다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b9cafa87bf",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자에서는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:19:01"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능 성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 투여한 다.",
+   "extractor": "kw-v4",
+   "id": "f71933b7e6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "80a2b777d0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "46ebbf118b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

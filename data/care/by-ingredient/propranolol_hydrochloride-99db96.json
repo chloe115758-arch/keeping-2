@@ -1,0 +1,111 @@
+{
+ "ingredient": "propranolol hydrochloride",
+ "productSeq": "197400040",
+ "itemName": "인데놀정10mg(프로프라놀롤염산염)",
+ "atc": "C07AA05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251031",
+ "ediCode": "645902470",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197400040/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197400040/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197400040/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 13)",
+   "subject": "",
+   "excerpt": "시메티딘 또는 히드라라진과의 병용투여는 이 약의 혈장농도를 증가시키나 알코올과의 병용투여는 혈장농도를 감소시킨다.",
+   "extractor": "kw-v4",
+   "id": "b13db39ab1",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안정성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "b322e7765c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유 중으로의 이행이 보고되어 있으므로 수유 중에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "204240a5e4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약이 기형을 유발하는 증거는 없으나, 베타차단제는 태반의 관류를 저하시키며, 이는 자궁 내 사산, 유산을 일으킬 수 있다. 특히 신생아의 저혈당과 서맥, 태아의 서맥의 이상반응이 나타날 수 있다. 출산 후 신생아에게서 심·폐합병증의 위험이 증가한다.",
+   "extractor": "kw-v4",
+   "id": "cce6ea7028",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에는 다음 사항을 주의하여 저용량에서 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "0c133b1c55",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자는 일반적으로 과도한 혈압강하, 현저한 서맥이 일어날 경우에는 뇌경색 등이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f7d6b25d69",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "휴약이 필요한 경우에는 천천히 감량한다.",
+   "extractor": "kw-v4",
+   "id": "15f81ce0e6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:19",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

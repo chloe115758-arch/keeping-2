@@ -1,114 +1,118 @@
 {
-  "ingredient": "baclofen",
-  "productSeq": "200000452",
-  "itemName": "삼성바클로펜정",
-  "atc": "M03BX01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260203",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000452/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000452/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000452/NB"
-  },
-  "rules": [
+ "ingredient": "baclofen",
+ "productSeq": "200000452",
+ "itemName": "삼성바클로펜정",
+ "atc": "M03BX01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260203",
+ "ediCode": "642301360",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000452/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000452/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200000452/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 5)",
+   "subject": "",
+   "excerpt": "이 약으로 치료받은 환자에서 자살 및 자살관련 사례가 보고되었다. 대부분의 사례에서 환자에서 알코올 사용 질환, 우울증 및 이전에 자살 시도 이력을 포함한 자살의 위험성증가와 관련된다. 이 약 치료시 자살에 대한 추가 위험 요인이 있는 환자에 대해 면밀한 감독이 동반되어야 한다. 환자의 가족이나 보호자 또한 환자의 임상적 악화, 자살행동/생각 또는 비정상적인 기분과 행동의 변화에 대해 주의…",
+   "extractor": "kw-v4",
+   "id": "f1cc495a85",
+   "kind": "note",
+   "matched": [
     {
-      "id": "d93fdf03bc",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의 5)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약으로 치료받은 환자에서 자살 및 자살관련 사례가 보고되었다. 대부분의 사례에서 환자에서 알코올 사용 질환, 우울증 및 이전에 자살 시도 이력을 포함한 자살의 위험성증가와 관련된다. 이 약 치료시 자살에 대한 추가 위험 요인이 있는 환자에 대해 면밀한 감독이 동반되어야 한다. 환자의 가족이나 보호자 또한 환자의 임상적 악화, 자살행동/생각 또는 비정상적인 기분과 행동의 변화에 대해 주의…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "99fa0a94c4",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약을 중추신경계에 작용하는 약물, 합성 아편류, 알코올 등과 병용하면 중추신경억제작용(진정작용 등)이 증강될 수 있다. 또 호흡억제의 의험성도 증가되므로 심폐질환이 있는 환자 또는 호흡근이 약화되어 있는 환자에서 특히 호흡기 및 심혈관 기능에 대하여 충분히 관찰한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f4b383fb61",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "사람에 대한 이 약의 최대 경구투여량(mg/kg)의 13배를 투여한 랫트의 태자에서 배꼴탈장(ventral hernias)의 발생빈도를 증가시키는 것으로 보고되어 있으나 마우스와 토끼에서는 이와 같은 이상이 나타나지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a1654b5e68",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대하여 확립되어있는 연구가 없고 이 약은 태반을 통과하므로 치료상의 유익성이 태아에 대한 잠재적 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "654bd3a230",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 치료용량에서 유즙으로 활성성분이 매우 소량 분비되므로 유아에서의 이상반응은 없을 것으로 예상된다. 그러나 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9d110702c0",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에서는 생리기능이 저하되어 있는 경우가 많고 비교적 저용량으로 근력저하, 권태감 등의 증상이 나타날 수 있으므로 저용량부터 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c0c5a84640",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 소량의 물과 함께 식사중 투여한다",
-      "meal": "식사중",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:11:57"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약을 중추신경계에 작용하는 약물, 합성 아편류, 알코올 등과 병용하면 중추신경억제작용(진정작용 등)이 증강될 수 있다. 또 호흡억제의 의험성도 증가되므로 심폐질환이 있는 환자 또는 호흡근이 약화되어 있는 환자에서 특히 호흡기 및 심혈관 기능에 대하여 충분히 관찰한다.",
+   "extractor": "kw-v4",
+   "id": "a917ac6438",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "사람에 대한 이 약의 최대 경구투여량(mg/kg)의 13배를 투여한 랫트의 태자에서 배꼴탈장(ventral hernias)의 발생빈도를 증가시키는 것으로 보고되어 있으나 마우스와 토끼에서는 이와 같은 이상이 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "35550bdc99",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대하여 확립되어있는 연구가 없고 이 약은 태반을 통과하므로 치료상의 유익성이 태아에 대한 잠재적 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "01cd0c96f1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약의 치료용량에서 유즙으로 활성성분이 매우 소량 분비되므로 유아에서의 이상반응은 없을 것으로 예상된다. 그러나 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "7ba33a6fee",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 생리기능이 저하되어 있는 경우가 많고 비교적 저용량으로 근력저하, 권태감 등의 증상이 나타날 수 있으므로 저용량부터 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "bd5b16202a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "c0c5a84640",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 소량의 물과 함께 식사중 투여한다",
+   "meal": "식사중",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

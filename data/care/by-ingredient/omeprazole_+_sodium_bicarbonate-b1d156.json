@@ -1,0 +1,437 @@
+{
+ "ingredient": "omeprazole + sodium bicarbonate",
+ "productSeq": "201504045",
+ "itemName": "가나플럭스정40/1100밀리그램(오메프라졸,탄산수소나트륨)",
+ "atc": "A02BC51",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240327",
+ "ediCode": "644206410",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504045/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504045/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504045/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것. 2)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "ce6b0e177a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "오메프라졸",
+   "extractor": "kw-v4",
+   "id": "aa4f6e414a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (1)",
+   "subject": "",
+   "excerpt": "오메프라졸이 다른 약물에 미치는 영향",
+   "extractor": "kw-v4",
+   "id": "2432f0bdb4",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ①",
+   "subject": "",
+   "excerpt": "위산의 pH가 생체내이용율의 중요한 결정 요인이 되는 약물(케토코나졸, 이트라코나졸, 아타자나비어, 철염, 암피실린에스테르, 엘로티닙, 미코페놀레이트모페틸 등)인 경우에는 오메프라졸에 의한 장기적인 위산분비억제작용 때문에 이론적으로 약물의 흡수가 저해될 수 있다. 다른 산 분비 억제제나 제산제와 마찬가지로 오메프라졸 투여 중에는 케토코나졸과 이트라코나졸, 아타자나비어, 철염, 암피실린에스테르…",
+   "extractor": "kw-v4",
+   "id": "28db7f5e6a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ②",
+   "subject": "",
+   "excerpt": "오메프라졸은 간에서 주로 CYP2C19에 의해 대사된다. 디아제팜, 페니토인, R-와파린 또는 다른 비타민 K 길항제, 실로스타졸과 같이 CYP2C19에 의해 대사되는 약물과 병용시 이들 약물의 대사가 지연될 수 있다. 페니토인과 병용투여 시에는 환자에 대한 모니터링을 하는 것이 권장되며, 페니토인의 감량이 필요할 수 있다. 그러나 페니토인으로 지속적인 치료를 받은 환자에게 오메프라졸 20m…",
+   "extractor": "kw-v4",
+   "id": "b5da750b78",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ③",
+   "subject": "",
+   "excerpt": "디설페람, 벤조디아제핀 등 Cytochrome P450 효소계를 통해 대사되는 약물과 상호작용이 보고된 바 있다. 오메프라졸은 이들 약물과 병용투여시 환자를 주의깊게 모니터링하고 필요시 이들 약물의 용량을 조정한다.",
+   "extractor": "kw-v4",
+   "id": "016d343ba3",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ④",
+   "subject": "",
+   "excerpt": "오메프라졸은 부분적으로 CYP3A4에 의해서도 대사되지만, CYP3A4와의 결합력이 매우 약하기 때문에 이 효소에 의한 다른 기질의 대사를 방해할 가능성은 없다. 그러므로, 오메프라졸은 시클로스포린, 리도카인, 퀴니딘, 에스트라다이올, 에리스로마이신, 부데소니드와 같이 CYP3A4에 의해 대사되는 약물의 대사에 영향을 끼치지 않는다. 약물 대사에 있어서 기타의 CYP 효소계와 관련된 약물 및…",
+   "extractor": "kw-v4",
+   "id": "2b8320eddc",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ⑤",
+   "subject": "",
+   "excerpt": "오메프라졸을 클래리스로마이신과 병용투여 시 두 약물의 혈중농도가 증가하였다. 그러나 오메프라졸은 메트로니다졸이나 아목시실린과는 상호작용을 나타내지 않았다. 이들 약물은 오메프라졸과 함께 Helicobacter pylori 박멸요법에 사용되는 항생제이다.",
+   "extractor": "kw-v4",
+   "id": "32c3577281",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ⑥",
+   "subject": "",
+   "excerpt": "오메프라졸은 일부 항레트로바이러스 치료제와 상호작용을 일으키는 것으로 보고되었다. 보고된 상호작용 외 임상적 중요성과 작용기전은 밝혀지지 않았다. 오메프라졸 투여시 증가된 위내 pH가 항레트로바이러스 치료제의 흡수에 변화를 가져올 수 있다. 가능한 상호작용의 또 다른 기전은 CYP2C19이며, 아타자나비어 및 넬피나비어와 같은 항레트로바이러스는 오메프라졸과 병용투여 시 혈장농도가 감소했으며,…",
+   "extractor": "kw-v4",
+   "id": "9cc3405c6b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ⑦",
+   "subject": "",
+   "excerpt": "오메프라졸과 타크로리무스의 병용투여는 타크로리무스의 혈청 농도를 높일 수 있다. 이 약을 투여하기 시작하거나 중단할 때 타크로리무스의 혈장 농도를 모니터링하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "b4dc3380d7",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ⑧",
+   "subject": "",
+   "excerpt": "클로피도그렐(초기용량 300 mg 이후에 1일 용량 75 mg) 및 오메프라졸(1일 80 mg 경구투여, 권장용량의 4배)의 병용투여 시, 클로피도그렐의 활성대사물로의 노출은 평균 46% 감소되었고, 최대혈소판응집억제반응(ADP induced)은 평균 16% 감소했다. 그러나 이러한 클로프도그렐과 오메프라졸의 약력학적/약동학적 상호작용이 주요 심혈관계 반응에 미치는 임상적 영향에 대한 연구…",
+   "extractor": "kw-v4",
+   "id": "64d0dbf151",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ⑨",
+   "subject": "",
+   "excerpt": "부작용 사례 보고, 집단약동학 연구(population pharmacokinetic studies) 및 후향적 연구 등에서 메토트렉세이트(주로 고용량을 사용하는 경우, 메토트렉세이트의 &#xff62;사용상의 주의사항&#xff63; 참조)와 프로톤펌프 억제제를 병용하는 경우 메토트렉세이트 그리고/또는 그 대사체인 히드록시메토트렉세이트의 혈청 농도가 상승 및 유지되어 메토트렉세이트의 독성이 나타…",
+   "extractor": "kw-v4",
+   "id": "ca264f2f0b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "다른 약이 오메프라졸에 미치는 영향",
+   "extractor": "kw-v4",
+   "id": "ea12b9d27c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ①",
+   "subject": "",
+   "excerpt": "오메프라졸이 CYP2C19 및 CYP3A4에 의해 대사되기 때문에, 이 두 효소에 대한 저해제(클래리트로마이신, 보리코나졸)와 오메프라졸의 병용투여는 오메프라졸의 대사를 지연시켜, 혈장농도를 증가시킬 수 있다. 보리코나졸과의 병용투여는 오메프라졸의 노출을 두 배 이상 증가시킬 수 있다. 고농도의 오메프라졸은 내약성이 좋기 때문에, 일시적인 병용요법에서 오메프라졸의 용량을 조절할 필요는 없다.…",
+   "extractor": "kw-v4",
+   "id": "76d2627b2f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ②",
+   "subject": "",
+   "excerpt": "오메프라졸을 제산제와 병용투여한 경우 상호작용은 발견되지 않았다. 오메프라졸의 흡수는 알콜 또는 음식에 의해 영향을 받지 않는다.",
+   "extractor": "kw-v4",
+   "id": "7ab80532f2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "다량의 우유, 칼슘제제와 병용시 우유 알칼리 증후군(고칼슘혈증, 고질소혈증, 알카리증 등)이 나타날 수 있으므로 충분히 관찰하고 이러한 증상이 나타나는 경우에는 투여를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "3823cc334d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘제제"
+    },
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "ef4aa0b8ef",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "동물실험 (토끼 : 오메프라졸 138mg/kg 경구투여)에서 태자독성이 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "fd245d9800",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "전향적 역학 연구(3건)의 결과, 임부 또는 태아 및 신생아에 대한 오메프라졸의 부작용이 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "5f13567c6c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "임신 중에는 이 약이 명백히 필요한 경우에만 복용하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "82f9d73dd1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "4dcd3fc5f5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "오메프라졸은 모유 중으로 이행되는 것이 보고되었다. 오메프라졸 20mg을 경구투여한 여성의 모유에서 오메프라졸의 농도가 측정되었다. 모유 중 오메프라졸의 농도는 혈장 농도의 7% 미만이었으며, 이 농도는 모유 200ml 중 0.004mg의 오메프라졸에 상응한다. 오메프라졸이 유즙으로 이행되고, 유아에게 중대한 이상반응을 일으킬 가능성이 있고 랫드에 대한 발암성 시험에서 오메프라졸으로 인한 종…",
+   "extractor": "kw-v4",
+   "id": "acf75be794",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "8ec921c203",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 식사하기 적어도 1시간 전 공복에 복용한다.",
+   "meal": "식사하기 적어도 1시간 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:51",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

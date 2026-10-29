@@ -1,0 +1,44 @@
+{
+ "ingredient": "ivy leaf ethanol dried ext.(5~7.5→1)",
+ "productSeq": "202302178",
+ "itemName": "헤데릴시럽(아이비엽30%에탄올건조엑스(5∼7.5→1))",
+ "atc": "R05CA12",
+ "etcOtc": "일반의약품",
+ "changeDate": null,
+ "ediCode": "073001571",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302178/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302178/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202302178/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음과 같은 사람은 이 약을 복용하지 말 것. 3)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성(임부에의 투여에 관한 안전성이 확립되어 있지 않다.)",
+   "extractor": "kw-v4",
+   "id": "da5f7c5e89",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "contra",
+   "where": "1. 다음과 같은 사람은 이 약을 복용하지 말 것. 4)",
+   "subject": "",
+   "excerpt": "수유부(수유부에의 투여에 관한 안전성이 확립되어 있지 않다.)",
+   "extractor": "kw-v4",
+   "id": "5980de892a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:30:22",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

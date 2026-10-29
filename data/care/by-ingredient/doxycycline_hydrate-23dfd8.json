@@ -1,162 +1,167 @@
 {
-  "ingredient": "doxycycline hydrate",
-  "productSeq": "201908023",
-  "itemName": "독시메디정(독시사이클린수화물)",
-  "atc": "J01AA02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20251211",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908023/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908023/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908023/NB"
-  },
-  "rules": [
+ "ingredient": "doxycycline hydrate",
+ "productSeq": "201908023",
+ "itemName": "독시메디정(독시사이클린수화물)",
+ "atc": "J01AA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251211",
+ "ediCode": "057000370",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908023/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908023/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908023/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "칼슘, 마그네슘, 알루미늄을 함유하는 제산제 또는 이들 양이온을 함유하는 다른 약물들, 철·아연을 함유하고 있는 제제와 약용탄, 카올린, 펙틴 또는 비스무트(bismuth)염 제제에 의해 테트라사이클린계 약물의 흡수가 저하되어 효과가 저하될 수 있다. 양이온 함유 약물과 병용투여 하는 경우에는 테트라사이클린계 약물의 흡수가 저하되므로 2시간 이상의 간격을 두고 투여한다.",
+   "extractor": "kw-v4",
+   "id": "f74e62c476",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "3edb52987c",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 3)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": {
-        "minHours": 2.0,
-        "maxHours": null,
-        "qualifier": "",
-        "text": "2시간 이상의 간격"
-      },
-      "tone": "caution",
-      "excerpt": "칼슘, 마그네슘, 알루미늄을 함유하는 제산제 또는 이들 양이온을 함유하는 다른 약물들, 철·아연을 함유하고 있는 제제와 약용탄, 카올린, 펙틴 또는 비스무트(bismuth)염 제제에 의해 테트라사이클린계 약물의 흡수가 저하되어 효과가 저하될 수 있다. 양이온 함유 약물과 병용투여 하는 경우에는 테트라사이클린계 약물의 흡수가 저하되므로 2시간 이상의 간격을 두고 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8824201231",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 4)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올, 바르비탈계, 카르바마제핀, 페니토인, 리팜피신, 프리미돈은 독시사이클린의 반감기를 감소시킨다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bc1771b50d",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 15)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "콜레스티라민과의 병용투여시 테트라사이클린류의 흡수를 감소시킨다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "28208eae3c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에 대해 연구되지 않았다. 의사의 판단하에, 잠재적 유익성이 위험성을 초과하지 않으면, 임부 또는 임신하고 있을 가능성이 있는 여성에 사용되어서는 안 된다. 동물실험 결과 테트라사이클린계 약물은 태반을 통과하여 태자의 조직에서 검출되며 발달 단계에 있는 태자에 대해 독성(주로 골격발달 지연과 관련)을 나타낼 수 있으며, 임신 초기에 약물이…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a7e38ec222",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 후반기 투여로 인해 태아에 일과성 골발육 부전, 치아 착색·에나멜질 형성 부전을 일으킬 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e994e9e5a4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약을 포함한 테트라사이클린계 약물이 모유 중으로 이행되므로 수유부에게 투여할 경우 수유를 중지하거나 이 약을 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d8805facb5",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에는 다음과 같은 점을 유의하면서 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "83c87e2d27",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 생리기능이 저하되어 있으므로 이상반응 발현이 나타나기 쉽다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2081d76fb1",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "비타민 K 결핍에 의한 출혈 경향이 나타날 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "57ee64135d",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "저용량으로 투여를 시작하고 간장, 신장, 심장의 저하된 기능 및 다른 질병이나 치료약물 등을 고려하여 용량 선택 시 주의해야 한다. 고령자는 신기능이 저하되어 있는 경우가 많으므로 신기능을 주의 깊게 관찰하고 용량 및 투여간격에 주의한다.",
-      "extractor": "kw-v1"
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:18:36"
+   ],
+   "interval": {
+    "minHours": 2.0,
+    "maxHours": null,
+    "qualifier": "",
+    "text": "2시간 이상의 간격",
+    "actionable": true
+   },
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "알코올, 바르비탈계, 카르바마제핀, 페니토인, 리팜피신, 프리미돈은 독시사이클린의 반감기를 감소시킨다.",
+   "extractor": "kw-v4",
+   "id": "e05bae63b0",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 15)",
+   "subject": "",
+   "excerpt": "콜레스티라민과의 병용투여시 테트라사이클린류의 흡수를 감소시킨다.",
+   "extractor": "kw-v4",
+   "id": "2bb81d9b42",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 임부 또는 임신하고 있을 가능성이 있는 여성에 대해 연구되지 않았다. 의사의 판단하에, 잠재적 유익성이 위험성을 초과하지 않으면, 임부 또는 임신하고 있을 가능성이 있는 여성에 사용되어서는 안 된다. 동물실험 결과 테트라사이클린계 약물은 태반을 통과하여 태자의 조직에서 검출되며 발달 단계에 있는 태자에 대해 독성(주로 골격발달 지연과 관련)을 나타낼 수 있으며, 임신 초기에 약물이…",
+   "extractor": "kw-v4",
+   "id": "1b875ade6d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 후반기 투여로 인해 태아에 일과성 골발육 부전, 치아 착색·에나멜질 형성 부전을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "38b1aa1fdd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약을 포함한 테트라사이클린계 약물이 모유 중으로 이행되므로 수유부에게 투여할 경우 수유를 중지하거나 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "7db00cbcb5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에는 다음과 같은 점을 유의하면서 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "20787ca1ea",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "일반적으로 생리기능이 저하되어 있으므로 이상반응 발현이 나타나기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "6b689e21d5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K 결핍에 의한 출혈 경향이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "3fd58127ee",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "저용량으로 투여를 시작하고 간장, 신장, 심장의 저하된 기능 및 다른 질병이나 치료약물 등을 고려하여 용량 선택 시 주의해야 한다. 고령자는 신기능이 저하되어 있는 경우가 많으므로 신기능을 주의 깊게 관찰하고 용량 및 투여간격에 주의한다.",
+   "extractor": "kw-v4",
+   "id": "8a8f0cc609",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

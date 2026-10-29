@@ -1,126 +1,130 @@
 {
-  "ingredient": "topiramate",
-  "productSeq": "201907073",
-  "itemName": "아토맥정100밀리그램(토피라메이트)",
-  "atc": "N03AX11",
-  "etcOtc": "전문의약품",
-  "changeDate": "20231113",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907073/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907073/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907073/NB"
-  },
-  "rules": [
+ "ingredient": "topiramate",
+ "productSeq": "201907073",
+ "itemName": "아토맥정100밀리그램(토피라메이트)",
+ "atc": "N03AX11",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231113",
+ "ediCode": "058200370",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907073/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907073/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201907073/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ②",
+   "subject": "↓ : 혈장농도 저하",
+   "excerpt": "중추신경억제제 : 임상연구에서 이 약 및 알코올 또는 기타 중추신경억제제와의 병용투여에 대해서는 평가 분석되지 않았다. 이 약은 알코올 또는 다른 중추신경억제제와는 병용투여하지 않도록 한다.",
+   "extractor": "kw-v4",
+   "id": "01016cd0bd",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "fcd90d8e0e",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ②",
-      "subject": "3) 기타 다른 약물과의 상호작용",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "중추신경억제제 : 임상연구에서 이 약 및 알코올 또는 기타 중추신경억제제와의 병용투여에 대해서는 평가 분석되지 않았다. 이 약은 알코올 또는 다른 중추신경억제제와는 병용투여하지 않도록 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5f82deab7f",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ④",
-      "subject": "4) 기타 형태의 상호작용",
-      "matched": [
-        {
-          "key": "vitaminK",
-          "kind": "supplement",
-          "ko": "비타민 K",
-          "surface": "비타민 K"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "비타민 K-길항 항응고제: 비타민 K-길항 항응고제와 토피라메이트를 병용투여한 후에 프로트롬빈시간(PT) 및/또는 국제정상화비율(INR)의 감소가 보고되었다. 비타민 K-길항 항응고제와 토피라메이트 치료를 병행하는 동안에는 INR을 면밀히 모니터링 하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0336ad2b56",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 동물실험(마우스, 랫트, 토끼)에서 최기형성을 보였다. 랫트에서 이 약은 태반관문을 통과한다. 사람에서 이 약은 태반을 통과하고, 제대혈과 모체 혈액에서 유사한 농도가 보고되었다. 임부에 대한 이 약의 적절하고, 잘 관리된 연구는 없다. 이 약은 임부가 복용했을 때 태아 손상을 야기할 수 있다. 임신등록기구(Pregnancy registeries)의 자료분석결과, 자궁 내에서 토피라…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "864adec470",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "뇌전증 치료시:가임기 여성의 경우 대체 치료 요법을 고려하는 것이 권장된다. 이 약을 가임기 여성에게 사용하는 경우 매우 효과적인 피임법을 사용하는 것이 권장되며 ( ‘ 6. 상호작용’ 항목 참조), 조절되지 않는 뇌전증의 임신에 대한 위험성 및 태아에 대한 이 약의 잠재적 위험성을 환자에게 충분히 알려야 한다. 여성이 임신을 계획하는 경우 이 치료를 재평가하고 다른 치료 요법을 고려하기 위…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "38ecb94ddb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "편두통 예방시 :이 약은 임부 및 매우 효과적인 피임법을 사용하고 있지 않는 가임기 여성에게 편두통 예방 목적으로 투여하지 않는다. (‘2. 다음 환자에는 투여하지 말 것’ 항목 참조)",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c7b170edbd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적인 뇌전증 및 항뇌전증약 관련 위험 :가임기 여성은 전문가의 조언을 받아야 한다. 항뇌전증약 투여 필요성은 임신 계획 시 검토되어야 한다. 모체 및 태아에게 심각한 결과를 초래할 수 있는 돌발성 발작 우려가 있으므로, 뇌전증 치료를 받는 여성에게 항뇌전증약 투여를 갑작스럽게 중단하는 것은 피해야 한다. 관련 항뇌전증약에 따라 여러 항뇌전증약 투여는 단독요법 보다 선천성 기형의 위험이 더…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "753f85f5e1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "임신 중에는 이 약 치료시의 유익성이 태아에 대한 잠재적인 위험성을 상회한다고 판단되는 경우에만 투여해야 한다 (‘2. 다음환자에는 투여하지 말 것’ 항목 참조). 임신할 가능성이 있는 여성은 적절한 피임을 하도록 권장한다. 임신할 가능성이 있는 여성을 치료 및 상담할 때는 위험성에 대비한 유익성을 숙고하여야 하고, 대체가능한 치료 방법을 고려해야 한다. 임신 중에 이 약을 사용하거나 이 약…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "37908af089",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "토피라메이트는 랫트의 유즙으로 분비된다. 토피라메이트의 사람의 모유중으로의 분비에 대해서는 대조 연구되지 않았으며, 모유 중으로 이 약이 상당히 분비됨을 암시하는 제한된 관찰이 있었다. 토피라메이트 치료를 받는 모체로부터 수유를 받는 신생아/영아에서 설사와 졸림이 보고되었다. 따라서 수유시 아이에 대한 유익성과 약물 투여시 모체에 대한 유익성을 고려하여 수유를 중단할지 약물을 중단할지를 결정…",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:06:05"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ④",
+   "subject": "↓ : 혈장농도 저하",
+   "excerpt": "비타민 K-길항 항응고제: 비타민 K-길항 항응고제와 토피라메이트를 병용투여한 후에 프로트롬빈시간(PT) 및/또는 국제정상화비율(INR)의 감소가 보고되었다. 비타민 K-길항 항응고제와 토피라메이트 치료를 병행하는 동안에는 INR을 면밀히 모니터링 하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "83aeb3c001",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 동물실험(마우스, 랫트, 토끼)에서 최기형성을 보였다. 랫트에서 이 약은 태반관문을 통과한다. 사람에서 이 약은 태반을 통과하고, 제대혈과 모체 혈액에서 유사한 농도가 보고되었다. 임부에 대한 이 약의 적절하고, 잘 관리된 연구는 없다. 이 약은 임부가 복용했을 때 태아 손상을 야기할 수 있다. 임신등록기구(Pregnancy registeries)의 자료분석결과, 자궁 내에서 토피라…",
+   "extractor": "kw-v4",
+   "id": "2a4e91a890",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "뇌전증 치료시:가임기 여성의 경우 대체 치료 요법을 고려하는 것이 권장된다. 이 약을 가임기 여성에게 사용하는 경우 매우 효과적인 피임법을 사용하는 것이 권장되며 ( ‘ 6. 상호작용’ 항목 참조), 조절되지 않는 뇌전증의 임신에 대한 위험성 및 태아에 대한 이 약의 잠재적 위험성을 환자에게 충분히 알려야 한다. 여성이 임신을 계획하는 경우 이 치료를 재평가하고 다른 치료 요법을 고려하기 위…",
+   "extractor": "kw-v4",
+   "id": "7bc222b07b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "편두통 예방시 :이 약은 임부 및 매우 효과적인 피임법을 사용하고 있지 않는 가임기 여성에게 편두통 예방 목적으로 투여하지 않는다. (‘2. 다음 환자에는 투여하지 말 것’ 항목 참조)",
+   "extractor": "kw-v4",
+   "id": "4574a2f077",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적인 뇌전증 및 항뇌전증약 관련 위험 :가임기 여성은 전문가의 조언을 받아야 한다. 항뇌전증약 투여 필요성은 임신 계획 시 검토되어야 한다. 모체 및 태아에게 심각한 결과를 초래할 수 있는 돌발성 발작 우려가 있으므로, 뇌전증 치료를 받는 여성에게 항뇌전증약 투여를 갑작스럽게 중단하는 것은 피해야 한다. 관련 항뇌전증약에 따라 여러 항뇌전증약 투여는 단독요법 보다 선천성 기형의 위험이 더…",
+   "extractor": "kw-v4",
+   "id": "7482b210c9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중에는 이 약 치료시의 유익성이 태아에 대한 잠재적인 위험성을 상회한다고 판단되는 경우에만 투여해야 한다 (‘2. 다음환자에는 투여하지 말 것’ 항목 참조). 임신할 가능성이 있는 여성은 적절한 피임을 하도록 권장한다. 임신할 가능성이 있는 여성을 치료 및 상담할 때는 위험성에 대비한 유익성을 숙고하여야 하고, 대체가능한 치료 방법을 고려해야 한다. 임신 중에 이 약을 사용하거나 이 약…",
+   "extractor": "kw-v4",
+   "id": "7bc8fca700",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "토피라메이트는 랫트의 유즙으로 분비된다. 토피라메이트의 사람의 모유중으로의 분비에 대해서는 대조 연구되지 않았으며, 모유 중으로 이 약이 상당히 분비됨을 암시하는 제한된 관찰이 있었다. 토피라메이트 치료를 받는 모체로부터 수유를 받는 신생아/영아에서 설사와 졸림이 보고되었다. 따라서 수유시 아이에 대한 유익성과 약물 투여시 모체에 대한 유익성을 고려하여 수유를 중단할지 약물을 중단할지를 결정…",
+   "extractor": "kw-v4",
+   "id": "eedf33f67a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

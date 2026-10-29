@@ -1,0 +1,156 @@
+{
+ "ingredient": "acamprosate",
+ "productSeq": "201900645",
+ "itemName": "명인아캄프로세이트정333mg(아캄프로세이트칼슘)",
+ "atc": "N07BB03",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "651904740",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201900645/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201900645/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201900645/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "이 약을 알코올 해독기간 중에 사용하지 말 것.",
+   "extractor": "kw-v4",
+   "id": "db15c4163d",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 2)",
+   "subject": "",
+   "excerpt": "임상시험에서 자살성향(자살관념, 자살시도, 자살)은 위약 투여군보다 이 약의 투여군에서 더 일반적인 현상이었다(6개월 또는 그 이하의 시험에서 각각 1.4%와 0.5% ; 1년 이상의 시험에서 2.4%와 0.8%). 자살은 모든 아캄프로세이트 시험군에서 2,272명 중 3명(0.13%), 위약 투여군에서 1,962명 중 2명(0.10%)에서 나타났다. 우울증 역시 비슷한 비율로 나타났다. 많…",
+   "extractor": "kw-v4",
+   "id": "1195256a4d",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 5)",
+   "subject": "",
+   "excerpt": "이 약은 지속적인 알코올 남용의 유해효과를 예방하지 않는다. 지속적인 알코올 남용은 치료효과를 무효화하므로 이 약의 치료는 금주 및 금주치료 후 시작해야만 한다.",
+   "extractor": "kw-v4",
+   "id": "608cbadec8",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약과 알코올과의 동시 복용시 이 약과 알코올 개개의 약물동태에는 영향을 미치지 않는다.",
+   "extractor": "kw-v4",
+   "id": "02d5752357",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 태자독성 또는 기형발생이 보고된 바 없으나, 임부에 대한 안전성이 확립되어 있지 않으므로 임부에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "44e954fefb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "아캄프로세이트는 랫트에서 사람 투여용량과 당량을 투여하고, 토끼에서 사람 투여용량의 3배에 해당하는 당량을 투여했을 때 기형발생 작용이 있음이 나타났다. 아캄프로세이트칼슘은 300 mg/kg/day(체표면적당 용량으로 환산시 최대인체투여용량과 당량) 이상을 경구투여했을 때 태자의 형성장애가 용량의존적으로 나타났다. 형성장애에는 수신증, 홍채형성이상, 망막형성이상, 식도뒤 쇄골하동맥을 포함한다…",
+   "extractor": "kw-v4",
+   "id": "ebcd1022a6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "비최기형성 작용 : 임신한 마우스에 아캄프로세이트 칼슘을 임신 15일부터 출산 후 28일(수유가 끝날 때)까지 960 mg/kg/day(체표면적당 용량으로 환산시 최대 인체투여용량의 2배)를 투여했을 때 사산아가 증가했다. 320 mg/kg/day(체표면적당 용량으로 환산시 최대 인체투여용량의 1.5배)를 투여시 아무 영향이 없었다.",
+   "extractor": "kw-v4",
+   "id": "6f76b9ab72",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "동물실험에서 이 약은 모유중으로 이행되었다. 사람의 모유중으로의 이행에 대한 연구가 행해진 바 없으나 많은 약물이 사람의 모유로 분비되므로 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "022183c6df",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 환자에 대한 안전성 및 유효성이 확립되지 않았다. 연령이 높아질수록 신장기능이 저하되어 이 약이 축적될 수 있으므로 고령자에게 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "9de8abe4ad",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:43",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

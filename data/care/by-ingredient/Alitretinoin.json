@@ -1,119 +1,123 @@
 {
-  "ingredient": "Alitretinoin",
-  "productSeq": "202100496",
-  "itemName": "아리톡연질캡슐10밀리그램(알리트레티노인)",
-  "atc": "D11AH04",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250924",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100496/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100496/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100496/NB"
-  },
-  "rules": [
+ "ingredient": "Alitretinoin",
+ "productSeq": "202100496",
+ "itemName": "아리톡연질캡슐10밀리그램(알리트레티노인)",
+ "atc": "D11AH04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250924",
+ "ediCode": "057001570",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100496/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100496/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100496/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (1)",
+   "subject": "라. 호르몬 피임제와의 상호작용",
+   "excerpt": "피임 효과가 줄어들 수 있으므로, 호르몬 피임제를 복용하는 여성은 이 약과 강력한 대사 유도제로 알려진 약물을 병용하지 않아야 한다. 호르몬 피임제와 St. John's wort를 병용시 임신이 보고된 바 있다.",
+   "extractor": "kw-v4",
+   "id": "508834ba2d",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "1fc2cd62e2",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (1)",
-      "subject": "라. 호르몬 피임제와의 상호작용",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "St. John"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "피임 효과가 줄어들 수 있으므로, 호르몬 피임제를 복용하는 여성은 이 약과 강력한 대사 유도제로 알려진 약물을 병용하지 않아야 한다. 호르몬 피임제와 St. John's wort를 병용시 임신이 보고된 바 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f92b7b4d56",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부 및 소아에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "임신부 및 임신 가능성이 있는 여성에게 금기이다.('경고'항 참조)",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5e84384013",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부 및 소아에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "가. 만약 임신예방프로그램에도 불구하고 이 약의 치료도중 및 치료중단 1개월 이내에 임신이 될 경우, 태아에게 매우 중증의 심각한 기형이 생길 위험이 높다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1f6dc6470a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부 및 소아에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "나. 이 약은 레티노이드에 해당하므로 강력한 기형유발인자이다. 레티노이드 노출과 관련된 태아 기형에는 중추신경계 이상(수두증, 소뇌 기형/이상, 소두증), 안면이형증, 구개열, 외이 이상(외이결여, 소외이도 또는 무외이도), 안구 이상(소안구증), 심혈관계 이상(팔로4징후(Tetralogy of Fallot), 대혈관전위, 심중격결손과 같은 뿔줄기(Conotruncal) 기형), 흉선 이상…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8c6b1a431b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부 및 소아에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다. 이 약으로 치료 받는 여성이 임신할 경우, 치료를 중단하고 기형학 전문의 또는 경험이 있는 의사의 평가 및 조언을 받아야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2ee6cde236",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부 및 소아에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "이 약은 지질친화성이 강하여 모유로 이행될 가능성이 매우 높다. 어린이에게 노출될 잠재적 위험이 있어 수유부에 금기이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a285573757",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부 및 소아에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "만 18세 미만에는 복용을 제한한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ec48957b6f",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "- 1일 1회 10~30mg을 식사와 함께 또는 식사 직후 복용한다. 매일 같은 시간에 복용하는 것이 바람직하다.",
-      "meal": "식사와 함께",
-      "extractor": "kw-v1"
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:12:20"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 소아에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신부 및 임신 가능성이 있는 여성에게 금기이다.('경고'항 참조)",
+   "extractor": "kw-v4",
+   "id": "593860aba3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "가. 만약 임신예방프로그램에도 불구하고 이 약의 치료도중 및 치료중단 1개월 이내에 임신이 될 경우, 태아에게 매우 중증의 심각한 기형이 생길 위험이 높다.",
+   "extractor": "kw-v4",
+   "id": "86fce9476a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "나. 이 약은 레티노이드에 해당하므로 강력한 기형유발인자이다. 레티노이드 노출과 관련된 태아 기형에는 중추신경계 이상(수두증, 소뇌 기형/이상, 소두증), 안면이형증, 구개열, 외이 이상(외이결여, 소외이도 또는 무외이도), 안구 이상(소안구증), 심혈관계 이상(팔로4징후(Tetralogy of Fallot), 대혈관전위, 심중격결손과 같은 뿔줄기(Conotruncal) 기형), 흉선 이상…",
+   "extractor": "kw-v4",
+   "id": "f657196fd0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "다. 이 약으로 치료 받는 여성이 임신할 경우, 치료를 중단하고 기형학 전문의 또는 경험이 있는 의사의 평가 및 조언을 받아야 한다.",
+   "extractor": "kw-v4",
+   "id": "baa45b6ec2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 소아에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 지질친화성이 강하여 모유로 이행될 가능성이 매우 높다. 어린이에게 노출될 잠재적 위험이 있어 수유부에 금기이다.",
+   "extractor": "kw-v4",
+   "id": "586865158e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 소아에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "만 18세 미만에는 복용을 제한한다.",
+   "extractor": "kw-v4",
+   "id": "63dfa7c18f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "ec48957b6f",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "- 1일 1회 10~30mg을 식사와 함께 또는 식사 직후 복용한다. 매일 같은 시간에 복용하는 것이 바람직하다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

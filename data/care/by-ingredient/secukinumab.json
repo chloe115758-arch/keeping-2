@@ -1,0 +1,140 @@
+{
+ "ingredient": "secukinumab",
+ "productSeq": "201506755",
+ "itemName": "코센틱스센소레디펜(세쿠키누맙,유전자재조합)",
+ "atc": "L04AC10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250605",
+ "ediCode": "653602641",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506755/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506755/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506755/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "edd653d740",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 여성에서 이 약의 사용에 대한 적절한 자료는 존재하지 않는다. 동물시험에서는 임신, 배자/태자 발생, 분만, 또는 출생 후 발달에 대해 직접 또는 간접적인 유해 영향을 보여 주지 않는다. 동물에서의 생식발생독성시험이 항상 인간 반응을 예측하는 것은 아니기 때문에 예방적인 차원에서 임부에서는 이 약의 사용을 피하는 것이 낫다.",
+   "extractor": "kw-v4",
+   "id": "ca7d74a3e9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "- 동물 연구",
+   "excerpt": "사이노몰거스 원숭이에 대한 태아 발달 연구에서, 세쿠키누맙을 기관형성기와 후기 임신기에 투여했을 때 모체독성, 태아독성 또는 최기형성을 보이지 않았다.",
+   "extractor": "kw-v4",
+   "id": "1e551ed888",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "- 동물 연구",
+   "excerpt": "마우스에 대한 출생 전/후 발달 연구에서 항뮤린 IL-17A 항체의 바람직하지 않은 영향은 관찰되지 않았다. 이 연구에서 사용된 높은 용량은 IL-17A 억제 및 활동 측면에서 최대 유효 용량을 초과하였다.",
+   "extractor": "kw-v4",
+   "id": "7d0e1ae832",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 2)",
+   "subject": "- 동물 연구",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "2f2db11886",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "- 동물 연구",
+   "excerpt": "이 약이 모유로 이행되는지 여부는 알려져 있지 않다. 면역글로불린은 모유로 분비되고 이 약이 모유 섭취 후 전신적으로 흡수되는지 여부는 알려져 있지 않다. 영아에 대한 이 약의 이상사례의 잠재적인 가능성이 있기 때문에 이 약을 투여하는 도중이나 이 약 투여 20주 후까지는 수유를 중단할지 또는 이 약의 투여를 중단할지 여부를 수유의 유익성과 모체에 대한 이 약 투여에 대한 유익성을 고려하여…",
+   "extractor": "kw-v4",
+   "id": "868c11f59b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 3)",
+   "subject": "- 동물 연구",
+   "excerpt": "가임 여성에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "a6ef8189de",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "- 동물 연구",
+   "excerpt": "가임 여성은 이 약을 투여하는 동안과 투여 후 20주 이상 효과적인 피임 방법을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b0a8b334bd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 4)",
+   "subject": "- 동물 연구",
+   "excerpt": "생식능력",
+   "extractor": "kw-v4",
+   "id": "07fee5c2a3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "- 동물 연구",
+   "excerpt": "이 약의 인간의 생식능력에 미치는 영향은 평가된 바 없다. 동물 시험은 생식능력 측면에서 직접 또는 간접적인 유해 영향을 보여 주지 않았다.",
+   "extractor": "kw-v4",
+   "id": "0fab8cacfa",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:34",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

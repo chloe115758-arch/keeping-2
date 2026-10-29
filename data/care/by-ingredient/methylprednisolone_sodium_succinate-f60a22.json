@@ -1,0 +1,226 @@
+{
+ "ingredient": "methylprednisolone sodium succinate",
+ "productSeq": "198500517",
+ "itemName": "메치솔주125밀리그램(메틸프레드니솔론숙시네이트나트륨)",
+ "atc": "H02AB04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260309",
+ "ediCode": "652600741",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500517/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500517/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500517/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 3)",
+   "subject": "",
+   "excerpt": "벤질알코올은 조숙아에게서 치명적인 가쁜 호흡증상과 연관이 있는 것으로 보고되었다.(벤질알코올을 함유하고 있는 제제에 한한다)(8. 소아에 대한 투여 5) 참조).",
+   "extractor": "kw-v4",
+   "id": "618d6f5588",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "약물군(class) 또는 유형 - 약물 또는 기질 상호작용/효과 항균제 -이소니아지드 CYP3A4 억제제. 덧붙여, 메틸프레드니솔론은 이소니아지드의 acetylation 속도와 청소율의 증가에 영향을 줄 수 있다. (병용투여 시 이소니아지드의 혈중농도가 감소할 수 있으므로 용량조절이 필요하다). 항생제, 항결핵제 -리팜핀 -리파부틴 CYP3A4 유도제 항응고제(경구) 경구용 항응고제에 대한…",
+   "extractor": "kw-v4",
+   "id": "8af8249b02",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "2fdb859d5d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "코르티코이드의 동물시험에서 수태능장애가 나타났다.",
+   "extractor": "kw-v4",
+   "id": "890c56026b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "722c359b5e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "코르티코이드계 약물마다 태반을 통과하는 정도가 다르지만, 이 약은 태반을 통과한다. 코르티코이드를 투여한 동물실험에서 태아의 성장지체, 언청이의 위험 등의 증가, 태아의 뇌성장 및 발달에 영향을 포함한 기형발생이 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "3ed6b9c111",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람에서, 임신 중 코르티코이드를 반복적으로 투여시, 태아발달 지연(출생시 체중, 신장, 머리둘레 감소 등)의 위험성이 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "e36977f827",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신기간 동안 코르티코이드를 장기간 투여받은 산모에서 태어난 영아에게서 백내장이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "132606873a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "자궁내에서 코르티코이드에 노출된 영아에게 신생아 부신기능부전이 나타날 가능성이 있으므로, 임신 중 상당량의 코르티코이드를 투여받은 산모에게서 태어난 영아는 부신기능부전 징후에 대해 주의깊게 관찰되고 평가되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "2a0ee0b2a0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "코르티코이드가 출산과 분만에 미치는 영향은 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "559e589a59",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "메틸프레드니솔론숙시네이트나트륨은 사람을 대상으로 충분한 생식독성시험이 수행되지 않았으므로, 이 약을 임부 또는 임신하고 있을 가능성이 있는 부인에게 사용할 때는 치료상의 유익성이 산모 및 배아 또는 태아에 대한 잠재적인 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "243d2b1f7b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "벤질알코올은 태반을 통과할 수 있다. (벤질알코올을 함유하고 있는 제제에 한한다.)(8. 소아에 대한 투여 참조)",
+   "extractor": "kw-v4",
+   "id": "1293cdb128",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "a7176e42bb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "코르티코이드는 모유로 배설되므로 이 약 투여 중에는 수유를 중단한다. 모유에 이행된 코르티코이드는 수유영아의 성장을 억제하고 내인성 글루코코르티코이드 생성을 방해할 수 있다. 이 약은 수유부와 영아에 대한 유익성 및 위험성의 신중한 평가 후에만 수유부에게 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f0cbc67ba0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 장기 투여한 경우, 감염증의 유발, 당뇨병, 골다공증, 고혈압, 후낭하 백내장, 녹내장 등의 부작용이 나타나기 쉬우므로 충분히 관찰하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "6486b70f4b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "a04d83d695",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "5. 수일간 투여한 경우에는 점차적으로 투여량을 줄이거나 투여를 중지해야 하며, 만성 상태에 있어서 한동안 자연적인 차도가 나타나는 경우에는 투여를 중지한다. 장기간 투여하는 경우에는 일정 간격을 두고서 요분석, 식사 2시간후의 혈당검사, 혈압측정, 체중검사, 흉부X선 검사 등을 해야 하며, 궤양의 병력이 있거나 소화불량증이 확실한 환자인 경우에는 상부위장의 X선 검사를 하는 것이 바람직하다…",
+   "meal": "식사 2시간후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

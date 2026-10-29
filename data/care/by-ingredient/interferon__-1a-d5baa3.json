@@ -1,0 +1,159 @@
+{
+ "ingredient": "interferon β-1a",
+ "productSeq": "201203016",
+ "itemName": "아보넥스펜주(인터페론베타-1a, 유전자재조합)",
+ "atc": "L03AB07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231221",
+ "ediCode": "621100191",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201203016/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201203016/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201203016/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 2)",
+   "subject": "",
+   "excerpt": "간손상: 혈장 간효소 증가, 간염, 자가면역 간염, 간부전을 포함한 간손상이 인터페론베타의 시판후 조사에서 보고되었다. 몇몇의 경우 이러한 이상사례는 간손상과 관련이 있는 다른 약물과 병용시 일어났다. 다제약물 사용 또는 기타 간독성 물질 (예: 알코올)로 인한 상가작용의 가능성은 확정되지 않았다. 간손상의 징후는 주기적으로 모니터링 되어야하며, 기타 간손상과 관련이 있는 의약품과 인터페론을…",
+   "extractor": "kw-v4",
+   "id": "b3fe152bc4",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신",
+   "extractor": "kw-v4",
+   "id": "3450bb281d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "유럽의 레지스트리 및 시판 후 경험으로부터 얻어진 대규모 자료(1,000건 이상의 임신 결과)를 분석한 결과, 대부분의 환자들이 임신 전 또는 임신 1기 중 노출이 되었다. 인터페론 베타의 임신 중 투여가 금기일 때 수집되었고, 임신을 알게 되었거나 확인된 경우 치료가 중지되었을 수 있기 때문에, 임신 1기 동안의 노출 기간은 확실하지 않다. 임신 2기 및 3기 동안의 노출 경험은 매우 제한…",
+   "extractor": "kw-v4",
+   "id": "df280f0816",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다발성 경화증 여성을 대상으로 인터페론 베타의 노출에 의한 위험도를 평가한 결과, 인터페론 베타에 노출되지 않은 경우와 비교시 선천성 기형, 자연유산율, 사산 등의 위험이 증가하지 않았다.",
+   "extractor": "kw-v4",
+   "id": "38a2dda81d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "비임상 안전성 시험 결과에 근거하면, 고농도의 인터페론에 노출되어있을 경우 자연유산에 대한 위험이 증가될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "3ea38ec0bf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 치료적 유익성이 약물 사용시 잠재적 위해성을 상회하거나 명확한 임상적 사유가 있어야 임신 중에 사용할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "99e28e6e9f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유",
+   "extractor": "kw-v4",
+   "id": "eb84391b13",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "인터페론 베타-1a의 유즙 이행에 대한 정보는 제한적이나, 이 약의 특성을 고려하였을 때 인터페론 베타-1a가 유즙으로 이행되는 양은 매우 적을 것이다.",
+   "extractor": "kw-v4",
+   "id": "1d47b1846a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "유아에 대한 잠재적 위해성 및 모체에 대한 치료적 유익성을 고려하여 수유 중단 또는 인터페론 베타-1a 치료 중지 여부를 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "82fea7f533",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "만 65세 이상의 고령자와 낮은 연령의 환자들 비교시, 약물에 대해서 다르게 반응하는지를 결정할 정도의 투여 경험은 충분하지 않다. 하지만 활성 성분의 청소율에 근거하여, 고령자에 대해서 용량조절이 필요하다는 이론적 근거는 없다.",
+   "extractor": "kw-v4",
+   "id": "c15a1be47c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "현재까지 치료기간에 대해서는 알려진 바 없다. 이 약으로 치료를 시작한 2년후 환자를 평가하고 장기간 치료 여부는 담당 의사에 의해 개인별로 결정되어야 한다. 만성 진행성 다발성 경화증이 발생한 환자는 이 약의 투여를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "8f08f20e32",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:23",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,142 @@
+{
+ "ingredient": "aceclofenac + eperisone hydrochloride",
+ "productSeq": "202203691",
+ "itemName": "아세리손정",
+ "atc": "M03BX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240522",
+ "ediCode": "622804890",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203691/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203691/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202203691/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 1)",
+   "subject": "",
+   "excerpt": "매일 세잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 위장출혈이 유발될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "bd53065834",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 2)",
+   "subject": "",
+   "excerpt": "위장관계 이상반응 : 이 약을 포함한 비스테로이드성 소염진통제를 궤양성 질환 또는 위장관 출혈의 병력이 있는 환자에게 처방시 극심한 주의를 기울여야 한다. 소화성 궤양 질환 및/또는 위장관 출혈의 병력이 있는 환자의 경우 이러한 위험인자가 없는 환자에 비해 비스테로이드성 소염진통제 투여 시 위장관 출혈의 발생 위험이 10배 이상 증가하였다. 위장관계 출혈을 증가시키는 다른 위험인자로는 경구용…",
+   "extractor": "kw-v4",
+   "id": "ea18cfb49e",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약을 임부에게 투여한 임상자료는 없다. 다른 비스테로이드성 소염진통제와 마찬가지로 임신 말기에 이 약을 투여 시 태아의 동맥관을 조기 폐쇄시킬 수 있으므로 임신을 계획하는 여성이나 임신 초기 및 중기의 임부에게 용량 및 사용기간을 최소한으로 신중히 투여하고, 임신말기(마지막 3분기)의 임부에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "f71ec78339",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 약 20주 이후 이 약을 포함한 비스테로이드성 소염제(NSAIDs)의 사용은 태아 신기능 이상을 일으켜 양수 과소증을 유발할 수 있으며 경우에 따라서는 신생아 신장애를 일으킬 수 있다. 비스테로이드성 소염제(NSAIDs) 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되었지만 이러한 부작용은 평균적으로 투여 후 수일에서 수주 사이에 나타난다. 양수 과소증은 보통 투여 중단 시…",
+   "extractor": "kw-v4",
+   "id": "16012d7f73",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "현재까지 알려진 자료로는 임부에 대한 안전성은 충분히 확립되어 있지 않다. 랫트에 대한 실험에서 비스테로이드성 소염진통제는 프로스타글란딘 합성을 저해하는 다른 약물과 마찬가지로 난산의 발생 빈도를 증가시키고, 분만을 지연시키며 태자의 생존율을 감소시켰다.",
+   "extractor": "kw-v4",
+   "id": "010ceac43a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "현재까지 알려진 자료로는 수유부에 대한 안전성은 충분히 확립되어 있지 않으며, 이 약이 사람의 모유로 분비되는지는 알려져 있지 않다. 그러나 많은 약물들이 모유 중으로 이행될 뿐만 아니라 이행될 경우 영아에서 심각한 이상반응의 발생이 우려되므로, 수유부에 대한 약물 투여의 중요성을 고려하여 수유를 중단하거나 약물 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "9b62971c3f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 생리기능이 저하되어 있으므로 에페리손염산염 단일제의 경우 감량하는 등 주의하여 투여한다. 이 약은 감량하여 투여할 수 없으므로 투여 용량의 감량이 필요한 고령자의 경우에는 이 약의 투여가 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "413d43dbac",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 비스테로이드성 소염진통제에 대한 이상반응 특히, 위장관 출혈과 천공 발생 빈도가 증가한다. 그러므로, 다른 비스테로이드성 소염진통제와 마찬가지로 고령자에게 이 약을 투여 시 주의한다.",
+   "extractor": "kw-v4",
+   "id": "9cf5190aba",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "dbe0ecd561",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "○ 성인 : 1일 2회, 1회 1정 식후 경구 투여한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:08:50",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

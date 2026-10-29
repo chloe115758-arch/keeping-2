@@ -1,0 +1,68 @@
+{
+ "ingredient": "decitabine",
+ "productSeq": "201803088",
+ "itemName": "데시리드주40밀리그램(데시타빈)",
+ "atc": "L01BC08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231127",
+ "ediCode": "622701061",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803088/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803088/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803088/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "a230a18350",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 임신중에 투여하였을 경우 태아에 기형을 유발할 수 있다. 데시타빈이 임신 8,9,10 또는 11일에 단회 복강 내 투여(0, 0.9 및 3.0mg/m2, 각각 임상적으로 일일 권장 용량의 약 2% 및 7%)된 마우스에서 발육독성이 관찰되었다. 모체에 독성은 관찰되지 않았으나 3mg/m2용량에서 태자 생존이 감소되었고, 모든 용량에서 태자의 체중감소가 관찰되었다. 3mg/m2용량은 매…",
+   "extractor": "kw-v4",
+   "id": "56dedcbfbd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "fca5a06f99",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "데시타빈 또는 그 대사체가 사람의 모유로 분비되는지 알려져 있지 않다. 많은 약물들이 모유로 분비되고 유아에 대한 이 약의 잠재적 중대한 이상반응 때문에 모체에 대한 이 약의 중요성을 고려하여 이 약을 중단할 지에 대한 결정을 내려야 한다.",
+   "extractor": "kw-v4",
+   "id": "d973d57157",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:37",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

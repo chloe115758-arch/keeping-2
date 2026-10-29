@@ -1,52 +1,56 @@
 {
-  "ingredient": "prednisolone valeroacetate",
-  "productSeq": "199500820",
-  "itemName": "베로아크림(프레드니솔론발레로아세테이트)",
-  "atc": "D07AA03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20210304",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500820/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500820/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500820/NB"
+ "ingredient": "prednisolone valeroacetate",
+ "productSeq": "199500820",
+ "itemName": "베로아크림(프레드니솔론발레로아세테이트)",
+ "atc": "D07AA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210304",
+ "ediCode": "644800931",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500820/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500820/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199500820/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 대량 또는 장기간에 걸친 광범위한 사용을 피하고 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "5539fed0b2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "1c974d3677",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 대량 또는 장기간에 걸친 광범위한 사용을 피하고 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0b2a965629",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "국소적으로 투여된 코르티코이드가 모유로 이행되는지 여부는 알려져 있지 않으나 전신적으로 투여된 코르티코이드가 모유 중으로 이행되므로 수유부에 투여시 주의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "76dba80cee",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자에서는 부작용이 나타나기 쉬우므로 대량, 장기간, 광범위하게(특히 밀봉요법) 사용할 경우 충분히 관찰하는 등 주의한다. 일반적으로 고령자의 생리기능은 저하 되어 있다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:17:41"
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "국소적으로 투여된 코르티코이드가 모유로 이행되는지 여부는 알려져 있지 않으나 전신적으로 투여된 코르티코이드가 모유 중으로 이행되므로 수유부에 투여시 주의한다.",
+   "extractor": "kw-v4",
+   "id": "2e21d98054",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 부작용이 나타나기 쉬우므로 대량, 장기간, 광범위하게(특히 밀봉요법) 사용할 경우 충분히 관찰하는 등 주의한다. 일반적으로 고령자의 생리기능은 저하 되어 있다.",
+   "extractor": "kw-v4",
+   "id": "3fdca188fe",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

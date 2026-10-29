@@ -1,0 +1,216 @@
+{
+ "ingredient": "amlodipine besylate + irbesartan",
+ "productSeq": "202303233",
+ "itemName": "아프로바스크정150/5밀리그램(이르베사르탄,암로디핀베실산염)",
+ "atc": "C09DA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "652105910",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303233/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303233/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303233/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (3)",
+   "subject": "○ 암로디핀",
+   "excerpt": "자몽쥬스 : 20명의 건강한 지원자에서 240 mL의 자몽쥬스와 암로디핀 10 mg의 단회병용투여는 암로디핀의 약동학에 유의한 영향을 미치지 않았다. 이 시험에서 암로디핀의 주 대사경로인 CYP3A4에서의 유전적 다형성 (genetic polymorphism)에 대한 영향평가는 이루어지지 않았다. 따라서, 암로디핀은 자몽이나 자몽쥬스와 병용시 일부 환자에서 생체이용률 증가로 인한 혈압강하 효…",
+   "extractor": "kw-v4",
+   "id": "81cb451e50",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "○ 암로디핀",
+   "excerpt": "- 알루미늄/마그네슘 (제산제) : 알루미늄/마그네슘 제산제와 단회용량의 암로디핀과 병용투여 시 암로디핀의 약동학에 유의적인 영향이 없었다.",
+   "extractor": "kw-v4",
+   "id": "ec330d7db8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "○ 암로디핀",
+   "excerpt": "- CYP3A4 유도제 : CYP3A4 유도제 (예, 리팜피신, 세인트 존스 워트 (hypericum perforatum))와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "208c656801",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스 워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "○ 암로디핀",
+   "excerpt": "- 에탄올 (알코올): 10 mg 암로디핀의 단회 및 반복투여시 에탄올의 약동학에 유의적인 변화가 없었다.",
+   "extractor": "kw-v4",
+   "id": "f3df0f3737",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임부 및 수유부에서 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "d596dadfcf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "d13ec75eb0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 이르베사르탄",
+   "excerpt": "임부에 대해서 이르베사르탄은 투여금기이다. 이르베사르탄으로 치료받는 중에 임신한 경우에는 될 수 있는 대로 빨리 투여를 중지하도록 한다. 이르베사르탄을 임부에게 투여한 경험은 없으나, 임신 2기 또는 3기의 여성에게 ACE억제제를 투여시 자궁막을 통과하여 태아에게 해를 주고 태아 사망의 원인이 되었다는 보고가 있다. 그러므로 레닌-안지오텐신-알도스테론계에 영향을 주는 이르베사르탄은 임부에게…",
+   "extractor": "kw-v4",
+   "id": "4b4da40615",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "○ 이르베사르탄",
+   "excerpt": "임신 1기 : 사람을 대상으로 하여 실시한 대조 연구는 존재하지 않지만 이르베사르탄을 이용해 쥐와 같은 동물을 대상으로 하여 실시한 연구 결과 쥐의 태자에 독성(신우 확대, 물요관증 또는 피하 부종)을 나타내었고, 이 같은 작용은 가역적인 것이며 출산 후 사라졌다. 임신 기간 중 첫 번째 3 개월에 있어서 ACE억제제에 노출될 경우 기형 유발 위험에 관한 역학적 증거는 결정적인 것으로 볼 수…",
+   "extractor": "kw-v4",
+   "id": "5522c29f6a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "○ 이르베사르탄",
+   "excerpt": "임신 2기 및 3기 : 안지오텐신Ⅱ수용체 길항제의 작용기전 때문에 태아에 대한 위험을 무시할 수 없다. 임신 2 ∼ 3기 사이에 ACE억제제(레닌-안지오텐신-알도스테론계에 작용하는 특정 약물군)에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적인 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아 손…",
+   "extractor": "kw-v4",
+   "id": "d7535cc4e5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 암로디핀",
+   "excerpt": "인체에 대한 최대 권장 용량의 50배에 해당하는 용량의 암로디핀을 투여한 랫드에서 분만지연 및 연장이 나타난 것외에 동물에 있어서 생식독성은 증명되지 않았다. 암로디핀을 투여한 랫드에서 수태능에 대한 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "c239c360c6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○ 암로디핀",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "445cdcd42c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 암로디핀",
+   "excerpt": "이르베사르탄이 모유 중에 이행되는 지의 여부는 밝혀지지 않았으나 랫드에 대한 실험에서 유즙 중에 이르베사르탄의 분비가 확인되었으며, 사람에 대한 투여 경험에서 암로디핀이 사람 모유 중으로 이행된다고 보고된 바 있다. 수유중인 여성에게 이 약의 투여를 피하고, 부득이 투여하는 경우에는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "c5b802f0fe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "75세 이상의 고령자의 경우에는 초회량으로서 이르베사르탄 75 mg을 고려하므로, 이 약을 초기 치료시 투여하는 것은 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "c1a286d8f9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 일반적으로 과도한 혈압강하는 뇌경색 등을 일으킬 우려가 있어 바람직하지 않으므로, 저용량에서 치료를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "dc4281d53c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:44",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

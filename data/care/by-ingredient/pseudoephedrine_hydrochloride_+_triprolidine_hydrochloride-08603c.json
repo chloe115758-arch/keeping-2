@@ -1,0 +1,87 @@
+{
+ "ingredient": "pseudoephedrine hydrochloride + triprolidine hydrochloride",
+ "productSeq": "200003107",
+ "itemName": "코스펜에이시럽",
+ "atc": "R01BA52",
+ "etcOtc": "일반의약품",
+ "changeDate": "20250102",
+ "ediCode": "643502466",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200003107/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200003107/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200003107/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음과 같은 사람은 이 약을 복용하지 말 것. 6)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성, 수유부",
+   "extractor": "kw-v4",
+   "id": "b3ba1729bf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "interaction",
+   "where": "3. 이 약을 복용하는 동안 다음의 약을 복용하지 말 것. 1)",
+   "subject": "",
+   "excerpt": "혈압강하제, 알코올, 중추신경억제제(수면제, 진정제, 안정제), MAO 억제제, 교감신경흥분제, 삼환계 항우울약, 구아네티딘, 브레틸리움, 베타나이드, 데브리소퀸, 메칠도파, 교감신경성약(충혈제거제, 식욕억제제, 암페타민류의 신경자극제), α 및 β 아드레날린 저해제(억제제)와 병용(함께 복용)투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "13c91c40bf",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "id": "d68ebccf3a",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "1일 3회 식후에 복용한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "d68ebccf3a",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "1일 3회 식후에 복용한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "d68ebccf3a",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "1일 3회 식후에 복용한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:00",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

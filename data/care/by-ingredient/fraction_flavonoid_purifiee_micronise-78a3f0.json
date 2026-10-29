@@ -1,0 +1,44 @@
+{
+ "ingredient": "fraction flavonoid purifiee micronise",
+ "productSeq": "202501475",
+ "itemName": "베니플라정(미세정제플라보노이드분획물)",
+ "atc": "C05CA53",
+ "etcOtc": "일반의약품",
+ "changeDate": "20250624",
+ "ediCode": "628902510",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501475/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501475/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501475/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것. 상담시 가능한 한 이 첨부문서를 소지할 것 1)",
+   "subject": "",
+   "excerpt": "임산부에게 미세정제플라보노이드분획물을 사용한 연구는 없거나 제한적이다. 동물시험에서 생식독성은 나타나지 않았다. 예방 차원에서 임신 중에 사용을 피하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "689ed6de6e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음과 같은 사람은 이 약을 복용(사용)하기 전에 의사, 치과의사, 약사와 상의할 것. 상담시 가능한 한 이 첨부문서를 소지할 것 2)",
+   "subject": "",
+   "excerpt": "가임력 : 동물을 이용한 생식독성 시험에서 수태농(임신능력)에의 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "385e07a413",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:28",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

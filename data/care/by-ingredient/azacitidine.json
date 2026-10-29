@@ -1,0 +1,207 @@
+{
+ "ingredient": "azacitidine",
+ "productSeq": "202201162",
+ "itemName": "오뉴렉정300밀리그램(아자시티딘)",
+ "atc": "L01BC07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260604",
+ "ediCode": "658700710",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202201162/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202201162/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202201162/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "프로톤 펌프 억제제(오메프라졸)와 병용 투여 시 이 약의 노출에 대한 영향은 경미하였다. 따라서 이 약을 프로톤 펌프 억제제 또는 다른 pH 조절제와 병용 투여하는 경우, 용량 조절이 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "6d7cce0c74",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤 펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 가능성이 있는 여성/남성 및 여성의 피임",
+   "extractor": "kw-v4",
+   "id": "09b6768d9c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 가능성이 있는 여성은 투여 기간 및 투여 후 6개월까지 효과적인 피임법을 사용해야 한다. 남성은 투여 받는 동안 파트너를 임신시키지 않고 투여 기간 및 투여 후 3개월까지 효과적인 피임법을 사용해야 한다(‘5. 일반적 주의’ 및 ‘15. 전문가를 위한 정보’ 참조).",
+   "extractor": "kw-v4",
+   "id": "16439e934c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임산부",
+   "extractor": "kw-v4",
+   "id": "aa7c24a854",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임산부에서 이 약의 사용에 관한 적절한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "e333813466",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "마우스와 랫트를 대상으로 한 시험에서 생식 및 발달 독성이 나타났다(‘15. 전문가를 위한 정보’ 참조). 인간에서 잠재적 위험은 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "027190ecfc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물 시험 결과와 그 작용 기전에 근거하여, 이 약물은 임신 중(특히 임신 1삼분기에는, 명확히 필요한 경우 제외) 그리고 피임법을 사용하지 않는 임신 가능성이 있는 여성에서 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "bc1568c8d1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "투약의 유익성은 모든 개별 증례에서 태아에 대한 가능한 위험과 비교 검토해야 한다. 환자 또는 파트너가 이 약물을 복용하는 동안 임신하게 되는 경우, 태아에 대한 잠재적 위험을 환자에게 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "0efbc8ddc5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "62e3d971ec",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "아자시티딘 또는 그 대사물질이 모유로 분비되는지 여부는 알려져 있지 않다. 모유 수유를 받는 소아에서의 잠재적인 중대한 약물 이상 반응으로 인해, 이 약물 요법 동안 모유 수유는 금기이다(‘2. 다음 환자에게 투여하지 말 것’ 참조).",
+   "extractor": "kw-v4",
+   "id": "e5a5b4ffc4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "ddc8ee3aa5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "아자시티딘이 수태능에 미치는 영향에 대한 인체 데이터는 없다.",
+   "extractor": "kw-v4",
+   "id": "b246b461cd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물에서 아자시티딘이 수컷 수태능에 영향을 미치는 이상반응이 확인되었다(‘15. 전문가를 위한 정보’ 참조).",
+   "extractor": "kw-v4",
+   "id": "39103ff0a8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "아이를 임신하고자 하는 환자에게는 이 약물 투여를 시작하기 전에 난자 또는 정자의 생식능력 상담 및 냉동보존을 모색하도록 조언해야 한다.",
+   "extractor": "kw-v4",
+   "id": "dc42374a76",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 고령자에서의 용량조절은 요구되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "d87c10baa4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:11",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

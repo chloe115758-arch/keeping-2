@@ -1,0 +1,56 @@
+{
+ "ingredient": "pseudoephedrine hydrochloride",
+ "productSeq": "197900575",
+ "itemName": "슈다페드정(슈도에페드린염산염)",
+ "atc": "R01BA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250102",
+ "ediCode": "643900710",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900575/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900575/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197900575/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "5408a00b69",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유로의 이행이 보고되어 있으므로 수유중에는 투여를 피하고 부득이한 경우에 는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "4ac0b65148",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 특히 이 약에 의한 이상반응이 나타나기 쉽고 과량투여시 환각, 경련, 중추신경계 억제 및 사망을 일으킬 수 있으므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "9addc1474d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:10",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

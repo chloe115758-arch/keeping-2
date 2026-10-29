@@ -1,0 +1,432 @@
+{
+ "ingredient": "atorvastatin calcium + omega-3-acid ethyl esters90",
+ "productSeq": "202100664",
+ "itemName": "아트맥콤비젤연질캡슐10/1000밀리그램(아토르바스타틴,오메가-3-산에틸에스테르90)",
+ "atc": "C10BA08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260401",
+ "ediCode": "644309630",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100664/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100664/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202100664/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것. (5)",
+   "subject": "",
+   "excerpt": "간질환의 병력 또는 상당량의 알코올을 섭취하는 경우",
+   "extractor": "kw-v4",
+   "id": "1ecb17b538",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 3)",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "간부전 : 아토르바스타틴의 혈장농도는 만성 알콜성간질환(Child-Pugh Class B) 환자의 경우 현저하게(Cmax가 약 16배, AUC가 약11배) 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "d3966a5601",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "아토르바스타틴은 알코올남용자(과다복용자) 또는 간질환의 병력이 있는 사람의 경우 신중하게 투여하여야 한다. 활동성 간질환 환자 또는 설명되지 않는 혈청트랜스 아미나제치의 상승이 지속되는 환자에는 아토르바스타틴을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "c0a9213583",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "ㆍ 초기 치료",
+   "excerpt": "일반적으로 임상지침에 따라 과체중 및 알코올 과다섭위는 고트리글리세라이드혈증의 주요인자가 될 수 있으므로 약물요법을 시작하기 전에 적절한 식이요법과 운동을 병행하고, 과체중 환자의 경우에는 체중 감량을 실시한다.",
+   "extractor": "kw-v4",
+   "id": "af296538be",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "이 약과 다른 약물들과 아토르바스타틴/오메가-3-산에틸에스테르 복합제와의 약물상호작용에 대한 연구는 없으나, 아토르바스타틴과 오메가-3-산에틸에스테르 개개 성분에 대한 연구는 아래와 같이 수행되었다.",
+   "extractor": "kw-v4",
+   "id": "372d278de5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "omega3",
+     "kind": "supplement",
+     "ko": "오메가-3",
+     "surface": "오메가-3"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 10)",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "제산제 : 아토르바스타틴과 수산화마그네슘 그리고 수산화알루미늄을 함유하는 경구용 제산제(antacid) 현탁액과 병용투여시 아토르바스타틴 혈장농도가 약 35 % 정도 감소하였다. 그러나 LDL-콜레스테롤의 감소에는 영향이 없었다.",
+   "extractor": "kw-v4",
+   "id": "bdc0a1cf76",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 18)",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "자몽주스 : 자몽주스는 하나이상의 CYP3A4를 억제하는 성분을 함유하고 있으며, 이는 자몽쥬스 섭취량이 지나칠 경우(하루 1.2 L이상) 아토르바스타틴의 혈중 농도를 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "5929208803",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "병용약물이 아토르바스타틴의 약동학에 미치는 영향 병용약물 및 투여용량 아토르바스타틴 용량 (mg) AUC 비율& Cmax 비율& #시클로스포린 5.2 mg/kg/day, 안정적인 용량 10 mg 1일 1회를 28일간 투여 8.7 10.7 #티프라나비르 500 mg 1일 2회/리토나비르 200 mg 1일 2회, 7일간 투여 10 mg 단회투여 9.4 8.6 #글레카프레비르 400 mg 1일 1…",
+   "extractor": "kw-v4",
+   "id": "fb26958d3d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "○ 오메가-3-산에틸에스테르",
+   "excerpt": "항응고제 : 오메가-3-산에틸에스테르와 항응고제 및 아세틸살리실산을 병용할 경우 출혈시간의 증가가 관찰되었다. 이는 출혈시간에 미치는 부가적인 효과에서 비롯된 결과일 수 있으나, 출혈성 합병증은 기록된 바가 없다.",
+   "extractor": "kw-v4",
+   "id": "e08b13db17",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "omega3",
+     "kind": "supplement",
+     "ko": "오메가-3",
+     "surface": "오메가-3"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "○ 오메가-3-산에틸에스테르",
+   "excerpt": "시토크롬 P450 의존성 모노옥시게나아제 활성 : 오메가-3 지방산 함유제품은 랫트에서 간내 시토크롬 P450 농도 및 활성을 증가시킨다. 사람에서의 P450 활성 유도에 대한 오메가-3-산에틸에스테르의 가능성에 대해서는 아직 연구된 바 없다.",
+   "extractor": "kw-v4",
+   "id": "5f50bf6245",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "omega3",
+     "kind": "supplement",
+     "ko": "오메가-3",
+     "surface": "오메가-3"
+    },
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "유제품"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "c1187b93fd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 대하여 임신한 여성에서 실시한 임상시험은 없으므로, 아토르바스타틴과 마찬가지로 이 약은 임부에게 투여해서는 안되며 임신 가능성이 있는 여성의 경우에는 적절한 피임법을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "3ea3e40984",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "아토르바스타틴",
+   "extractor": "kw-v4",
+   "id": "12a29bf109",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 사용은 금기이다. 가임여성은 적절한 피임방법을 강구하여야 한다. 이 약은 임신할 가능성이 없는 경우 및 태아에 대한 잠재적 위험성을 알려준 후에만 가임 연령의 여성에게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d1dafe0c34",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "오메가-3-산에틸에스테르",
+   "extractor": "kw-v4",
+   "id": "e6fd114516",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 여성에서 실시한 임상시험은 없다. 오메가-3-산에틸에스테르를 임신한 여성에게 투여시 태아에 해를 유발하는지 또는 생식능력에 영향을 주는지에 대해서는 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "03e92c7ab2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "f7a5a9b130",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 모유 중으로 분비되는지에 대해서는 알려져 있지 않으므로, 수유중에는 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "1980b2bbe1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "아토르바스타틴",
+   "extractor": "kw-v4",
+   "id": "12a29bf109",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유 중 사용은 금기이다. 이 약이 모유 중으로 분비되는지에 대해서는 알려져 있지 않다. 수유중인 유아에 이상반응이 나타날 수 있으므로, 아토르바스타틴을 복용중인 여성은 수유를 해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "31b86f49f0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "오메가-3-산에틸에스테르",
+   "extractor": "kw-v4",
+   "id": "e6fd114516",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "오메가-3-산에틸에스테르가 모유로 유출되는 지는 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "af7640f7a0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에는 충분한 수의 고령자(65세 이상)가 포함되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "dfaca6f5f0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "65세 이상의 건강한 노인의 경우 아토르바스타틴의 혈장농도는 젊은 성인군에 비해 더 높게 나타났으나(Cmax 40 %증가, AUC 30 %증가), LDL-콜레스테롤 저하효과는 젊은 성인군과 유사하였다.",
+   "extractor": "kw-v4",
+   "id": "d00e353382",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "○ 아토르바스타틴",
+   "excerpt": "고령자는 심근병증에 취약하므로, 이 약은 고령자에게 주의하여 처방해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d7db930db0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "○ 오메가-3-산에틸에스테르",
+   "excerpt": "65세 이상 환자는 제한된 수만이 임상시험에 포함되었다. 임상시험을 종합하여 분석한 결과 60세 이상 환자(연구집단의 약 25%)에 대한 안전성과 유효성은 60세 미만 환자의 결과와 다르지 않은 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "62abd9bd65",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "ea2ed9eb60",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 성인에 한하여 투여하며, 위장장애를 피하기 위하여 식사와 함께 1일 1회 2~4캡슐을 투여한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:33",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

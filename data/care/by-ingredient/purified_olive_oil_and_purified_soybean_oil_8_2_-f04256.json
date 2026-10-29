@@ -1,0 +1,51 @@
+{
+ "ingredient": "purified olive oil and purified soybean oil(8:2)",
+ "productSeq": "200307893",
+ "itemName": "클리노레익20%주사(플라스틱백)",
+ "atc": "B05BA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260605",
+ "ediCode": "078200121",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200307893/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200307893/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200307893/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "배합 금기에 대한 완전한 정보는 없으며 상호작용에 대한 연구는 실시된 바 없다. 이 약에 직접 다른 약제나 전해질을 추가하지 않아야 한다. 만일 혼합할 필요가 있을 때에는 배합금기 여부를 확인하고 투여하기 전에는 충분히 혼화한다. 같은 주입구로 동시에 투여해야 하는 용액의 경우 배합금기여부를 확인하여야 한다. 이 약은 지질유제에 자연적으로 존재하는 비타민 K를 함유하고 있다. 이 약의 복용량…",
+   "extractor": "kw-v4",
+   "id": "96aa02e1d2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임신 중과 수유 중 투여에 대한 안전성은 확립되지 않았으므로 특별한 경우를 제외하고는 사용되어서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "4fc6682ebe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:23",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

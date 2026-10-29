@@ -1,0 +1,118 @@
+{
+ "ingredient": "levomepromazine maleate",
+ "productSeq": "200001456",
+ "itemName": "티세르신정100밀리그램(레보메프로마진말레산염)",
+ "atc": "N05AA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20160330",
+ "ediCode": "651902180",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001456/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001456/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001456/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 6)",
+   "subject": "",
+   "excerpt": "이 약을 투여하는 동안과 이 약이 작용하는 동안에는 알코올을 섭취해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "03d3977a0f",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (3)",
+   "subject": "",
+   "excerpt": "알코올 : 졸음, 정신운동기능저하 등을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "576d33d7c1",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다. 동물실험(설치류)에서, 대량투여로 태자사망, 유산, 조산 등의 태자독성이 보고되었다. 또, 다른 페노티아진계(클로르프로마진)의 임부 투여에서 신생아 진전 등이 나타났다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "8564127d60",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 3기에 항정신병약을 복용한 임부로부터 출생한 신생아는 추체외로장애 및/또는 금단 증상이 나타날 위험성이 있다. 이러한 신생아에게 초조, 근육긴장항진, 근육긴장저하, 진전, 졸음, 호흡곤란, 섭식장애가 보고되었으며, 이러한 증상은 그 중증도에 있어서 다양했다. 일부 경우 이러한 증상들은 스스로 조절되었으나 다른 경우의 신생아들은 장기 입원 및 중환자실에서의 치료를 요하였다.",
+   "extractor": "kw-v4",
+   "id": "846a1899da",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "모유중으로 이행하므로 이 약을 투여 받는 환자는 수유를 중지하거나 약물 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "84e5b88548",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 기립성저혈압, 추체외로증상, 탈력감, 운동실조, 배설장애 등이 일어나기 쉽고 항콜린성 및 진정작용 작용에 민감하기 쉽기 때문에 낮은 용량으로 시작하여 서서히 증량하고 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "7a46ae9e16",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "414f1b6bdb",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약으로서 10∼25 mg을 1일 1회 취침전 투여한다.",
+   "meal": "취침전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:29",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

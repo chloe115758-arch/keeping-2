@@ -1,0 +1,113 @@
+{
+ "ingredient": "bosentan hydrate",
+ "productSeq": "202003657",
+ "itemName": "카나보센정62.5밀리그램(보센탄수화물(미분화))",
+ "atc": "C02KX01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260323",
+ "ediCode": "627600230",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003657/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003657/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003657/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6.2. 병용시 주의를 요하는 것 7)",
+   "subject": "",
+   "excerpt": "자몽주스 : 자몽주스에 함유된 성분의 CYP3A4 저해작용에 의해, 이 약의 혈중농도가 상승하여 이상반응이 발현하기 쉬워질 우려가 있으므로, 이 약 투여시는 자몽주스를 섭취하지 않도록 한다.",
+   "extractor": "kw-v4",
+   "id": "3c2e8a63ab",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6.2. 병용시 주의를 요하는 것 8)",
+   "subject": "",
+   "excerpt": "세인트 존스 워트(St. John's Wort) 함유식품 : 세인트 존스 워트에 함유된 성분의 CYP3A4 유도작용에 의해, 이 약의 혈중농도가 저하할 가능성이 있으므로, 이 약 투여 시는 세인트 존스 워트 함유식품을 섭취하지 않도록 한다.",
+   "extractor": "kw-v4",
+   "id": "c26daef9c7",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스 워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6.2. 병용시 주의를 요하는 것 13)",
+   "subject": "",
+   "excerpt": "리팜피신 : CYP2C9 및 CYP3A4 잠재적 유도제인 리팜피신과 트라클리어 125mg을 1일 2회 건강한 성인에게 투여시 보센탄의 AUC가 58% 감소하였고 90% 감소한 경우도 있었다. 리팜피신과 병용투여시 보센탄의 효과가 유의하게 감소될 수 있다. CYP3A4의 다른 유도제, 즉 carbamazepine, phenobarbital, phenytoin 및 세인트 존스 워트에 대한 자료는…",
+   "extractor": "kw-v4",
+   "id": "7a2dd1fbd4",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스 워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부등에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 생식독성이 보고되었다. 이 약을 임부에게 투여한 신뢰할만한 자료는 없다. 사람에게 잠재적 위험은 알려진 바 없다. 이 약을 임부에게 투여해서는 안된다. 이 약은 적절한 피임법을 사용하고 임신 검사가 음성이지 않는 한, 임신 가능성이 있는 여성에게 시작되어서는 안된다. 가임기 여성은 이 약을 시작하기 전에 임신 검사를 실시하여 음성임을 확인하여야 한다. 신뢰할 수 있는 적절한 피임…",
+   "extractor": "kw-v4",
+   "id": "13296ee58b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부등에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "사람 모유에서 보센탄 성분이 발견된 사례가 보고되었다. 따라서, 수유중인 여성에게는 투여하지 않는 것이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "288cd45cd1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 생리기능이 저하하는 일이 많으므로, 신중히 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f0392a0a50",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:21",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

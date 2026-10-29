@@ -1,0 +1,44 @@
+{
+ "ingredient": "ciclopirox",
+ "productSeq": "200200774",
+ "itemName": "로푸록스겔(시클로피록스)",
+ "atc": "D01AE14",
+ "etcOtc": "일반의약품",
+ "changeDate": "20110520",
+ "ediCode": "652100261",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200200774/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200200774/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200200774/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "시클로피록스를 다양한 종의 동물에 경구 및 국소로 투여했을 때 태자독성은 관찰되지 않았다. 그러나, 이 약을 임부에 적용했을 때의 임상경험이 충분하지 않으므로, 기대되는 이익이 태자에 미칠 수 있는 위험성을 상회(웃돌다)한다고 판단될 때에만 임부에게 적용하며, 광범위한 부위에 적용해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "01e95bad92",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 유즙으로 배설되는지에 대해서는 알려진 바 없으므로, 이 약을 바르는 환자는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ddf6ff18b2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

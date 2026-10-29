@@ -1,88 +1,142 @@
 {
-  "ingredient": "irinotecan hydrochloride",
-  "productSeq": "200101326",
-  "itemName": "캄토프주(이리노테칸염산염)",
-  "atc": "L01CE02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20220708",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200101326/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200101326/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200101326/NB"
-  },
-  "rules": [
+ "ingredient": "irinotecan hydrochloride",
+ "productSeq": "200101326",
+ "itemName": "캄토프주(이리노테칸염산염)",
+ "atc": "L01CE02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220708",
+ "ediCode": "640003402",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200101326/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200101326/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200101326/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (6)",
+   "subject": "",
+   "excerpt": "자몽주스",
+   "extractor": "kw-v4",
+   "id": "5e7423bbad",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "252cf9c768",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 기형발생이 보고되어 있기 때문에 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f1124fff78",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 연구는 수행되지 않았으나 임신기간 동안 투여하였거나 이 약을 투여 받는 동안 임신이 되었다면 태아에 잠재적인 위험이 있다는 것을 알려야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7c31843417",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 유즙으로 분비되는 것이 보고(수유중인 쥐의 유즙에서 14C-이리노테칸이 검출되었음)되어 있으므로 이 약을 투여 받는 경우에는 수유를 하지 말아야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d046c38ed7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여 (1)",
-      "subject": "4) 기타",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 : 이 약은 임부에게 투여될 경우 태아에게 위해를 줄 수 있다. 14C-이리노테칸은 10 mg/kg/day의 용량(환자에게 125 mg/m2을 투여한 경우 각각 3배와 0.5배의 이리노테칸 Cmax와 AUC를 나타내는 용량)을 정맥내로 흰쥐에게 투여하였을 경우 태반을 통과한다. 기관형성기 동안 흰쥐와 토끼에게 6 mg/kg/day를 정맥내로 투여할 경우(흰쥐의 경우, 환자에게 125 m…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3f365e49c7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부에 대한 투여 (2)",
-      "subject": "4) 기타",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수태능 손상 : 이 약 6 mg/kg/day까지의 용량으로 흰쥐와 토끼에게 정맥내로 투약했을 경우 수태능과 일반 생식능에 대한 유의성 있는 이상반응은 관찰되지 않았다. 그러나 설치류에 20 mg/kg(환자에게 125 mg/m2을 투여한 경우 각각 5배와 1배의 이리노테칸 Cmax와 AUC를 나타내는 용량)과 개에 0.4 mg/kg(환자에게 125 mg/㎡을 투여한 경우 각각 1/2배와 1/1…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "196b9a9166",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리상태가 저하되고 배설이 늦기 때문에 골수기능 억제, 설사 등의 이상반응에 주의하고 이상반응이 나타나는 경우에는 회복을 충분히 확인한 후에 투여를 행하는 등 투여간격에 유의한다.",
-      "extractor": "kw-v1"
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:12:37"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (5)",
+   "subject": "",
+   "excerpt": "세인트존스워트 함유제제",
+   "extractor": "kw-v4",
+   "id": "d273bb97e7",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 기형발생이 보고되어 있기 때문에 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "f123bc6d26",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대한 연구는 수행되지 않았으나 임신기간 동안 투여하였거나 이 약을 투여 받는 동안 임신이 되었다면 태아에 잠재적인 위험이 있다는 것을 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "89bec61189",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "동물실험에서 유즙으로 분비되는 것이 보고(수유중인 쥐의 유즙에서 14C-이리노테칸이 검출되었음)되어 있으므로 이 약을 투여 받는 경우에는 수유를 하지 말아야 한다.",
+   "extractor": "kw-v4",
+   "id": "06017fa68a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "기타",
+   "extractor": "kw-v4",
+   "id": "17d12b2ac8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "임신 : 이 약은 임부에게 투여될 경우 태아에게 위해를 줄 수 있다. 14C-이리노테칸은 10 mg/kg/day의 용량(환자에게 125 mg/m2을 투여한 경우 각각 3배와 0.5배의 이리노테칸 Cmax와 AUC를 나타내는 용량)을 정맥내로 흰쥐에게 투여하였을 경우 태반을 통과한다. 기관형성기 동안 흰쥐와 토끼에게 6 mg/kg/day를 정맥내로 투여할 경우(흰쥐의 경우, 환자에게 125 m…",
+   "extractor": "kw-v4",
+   "id": "6bd0afd445",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "수태능 손상 : 이 약 6 mg/kg/day까지의 용량으로 흰쥐와 토끼에게 정맥내로 투약했을 경우 수태능과 일반 생식능에 대한 유의성 있는 이상반응은 관찰되지 않았다. 그러나 설치류에 20 mg/kg(환자에게 125 mg/m2을 투여한 경우 각각 5배와 1배의 이리노테칸 Cmax와 AUC를 나타내는 용량)과 개에 0.4 mg/kg(환자에게 125 mg/㎡을 투여한 경우 각각 1/2배와 1/1…",
+   "extractor": "kw-v4",
+   "id": "6105224347",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리상태가 저하되고 배설이 늦기 때문에 골수기능 억제, 설사 등의 이상반응에 주의하고 이상반응이 나타나는 경우에는 회복을 충분히 확인한 후에 투여를 행하는 등 투여간격에 유의한다.",
+   "extractor": "kw-v4",
+   "id": "2113d591a3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,183 @@
+{
+ "ingredient": "asciminib hydrochloride",
+ "productSeq": "202202386",
+ "itemName": "셈블릭스정40밀리그램(애시미닙염산염)",
+ "atc": "L01EA06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260630",
+ "ediCode": "653603510",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202202386/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202202386/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202202386/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "[강력한 CYP3A4유도제]",
+   "excerpt": "카르바마제핀, 페노바르비탈, 페니토인 또는 성요한초(St. John’s wort; Hypericum perforatum) 등 강력한 CYP3A4유도제와 이 약을 병용투여하는 경우 주의를 기울여야 한다. 이 약의 용량 조절은 요구되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "6604b41c8c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "02b4c2ee22",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "동물시험 결과에 근거하였을 때, 이 약은 임부에 투여하는 경우 태아에게 위해를 유발할 수 있다. 이 약에 대해 임부를 대상으로 수행한 적절하고 잘 통제된 시험은 없다.",
+   "extractor": "kw-v4",
+   "id": "470963e20f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 랫드 및 토끼를 대상으로 한 동물 생식독성시험에서 기관형성기 동안 애시미닙을 경구투여한 결과 배자독성, 태자독성 및 최기형성을 유발하였다.",
+   "extractor": "kw-v4",
+   "id": "f355b72b01",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 가임여성에게 임신 중 이 약을 사용하거나 환자가 이 약을 복용하는 동안 임신을 하게 되는 경우 태아에 대한 잠재적 위해성이 있음을 조언해야 한다.",
+   "extractor": "kw-v4",
+   "id": "9cfc7726e4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "81c35c5e86",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 투여 후 애시미닙이 모유로 전달되는지 여부는 알려지지 않았다. 모유 수유아 또는 모유 생성에 애시미닙이 미치는 영향에 대한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "43d769196f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "모유 수유아에서 중대한 약물이상반응 가능성으로 인해, 이 약 투여기간 및 마지막 투여 후 최소 1주 동안은 모유 수유를 권장하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "7b51f48dee",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "가임여성",
+   "extractor": "kw-v4",
+   "id": "6f998ed997",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "임신검사: 이 약으로 치료를 시작하기 전에 가임여성의 임신 상태를 확인해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ffa09a07c5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "피임: 성생활을 하는 가임여성은 이 약 투여기간 및 마지막 투여 후 최소 1주 동안은 효과적인 피임법(임신율 1% 미만을 초래하는 방법)을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "bfe2b6d190",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임여성에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "수태능: 이 약이 사람의 수태능에 미치는 영향에 대한 자료는 없다. 랫드 수태능시험에서 애시미닙은 200mg/kg/day 용량에서 수컷의 정자 활동성과 정자 수에 대한 영향과 배자 치사에 대한 영향이 관찰되었으며, AUC 노출은 40mg 1일 2회, 80mg 1일1회 투여 환자에서 도달된 노출보다 각각 19배, 13배 높았다.",
+   "extractor": "kw-v4",
+   "id": "b96c126be0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "4700691de4",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 공복에 복용해야 한다. 이 약 복용 최소 2시간 전과 복용 후 1시간까지는 음식 섭취를 피해야 한다.",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:43",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

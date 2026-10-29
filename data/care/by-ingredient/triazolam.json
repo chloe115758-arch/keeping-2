@@ -1,0 +1,275 @@
+{
+ "ingredient": "triazolam",
+ "productSeq": "198902801",
+ "itemName": "졸민정0.125밀리그램(트리아졸람)",
+ "atc": "N05CD05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230619",
+ "ediCode": "651901770",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198902801/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198902801/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198902801/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 1)",
+   "subject": "",
+   "excerpt": "수면 운전 (즉, 수면진정제 복용 후 완전히 깨지 않은 상태에서 운전하며 환자는 이를 기억하지 못함)과 같은 복합 행동이 보고되었다. 이러한 이상반응은 수면진정제를 처음 복용한 환자 뿐 아니라 복용을 한 경험이 있는 환자에서도 나타났다. 비록 치료 농도에서 이 약을 단독으로 투여하였을 때도 수면운전과 같은 행동이 나타날 수 있지만, 알코올이나 다른 중추신경 억제제와 함께 복용했을 때나 권장용…",
+   "extractor": "kw-v4",
+   "id": "02a2fb693f",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고 (2)",
+   "subject": "",
+   "excerpt": "이 약을 포함한 벤조디아제핀계 수면제의 사용과 관련하여 다양한 이상한 사고 및 행동의 변화가 나타났다고 보고된 바 있다. 이러한 변화 중 일부는 알코올이나 다른 중추신경계 억제제(예를 들어, 진정/수면제)에서 관찰되는 증상과 유사하게 과도한 공격성과 외향성을 나타내며 자제력이 감소하는 특징을 보인다. 그 밖에 다른 행동변화로는 이상한 행동, 초조, 환각, 이인증이 보고되었다. 벤조디아제핀계…",
+   "extractor": "kw-v4",
+   "id": "3c4c7f667b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고 (4)",
+   "subject": "",
+   "excerpt": "이 약의 중추신경계 억제효과 때문에 이 약을 복용하는 환자들은 졸음 또는 어지러움이 없어질 때까지, 운전이나 기계 조작과 같이 완전한 정신적 민첩성을 요구하는 위험한 직업에 종사하지 않도록 주의해야 한다. 같은 이유로, 이 약을 복용하는 동안에는 알코올이나 다른 중추신경계 억제제를 병용하는 것에 대해 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e129968363",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "트리아졸람 및 다른 벤조디아제핀계 약물의 오남용 및 중독에 대한 위험이 알려져 있으므로, 트리아졸람을 투여 중인 환자를 적절히 모니터링 하여야 한다. 벤조디아제핀계 약물은 유용(diversion)될 수 있다. 마약류, 기타 벤조디아제핀계 약물, 알코올 및/또는 불법 약물과 같은 중추신경계억제제와 함께 이 약이 오남용 되었을 때, 과량투여 관련 사망이 보고되었다. 트리아졸람을 처방 또는 조제…",
+   "extractor": "kw-v4",
+   "id": "754b648111",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적주의",
+   "subject": "",
+   "excerpt": "수면진정제 복용 후 완전히 깨지 않은 채로 침대에서 일어나 운전을 하는 사례가 보고되었으며, 그러한 행동에 대해서는 주로 기억을 하지 못했다. 수면운전은 위험할 수 있으므로 발생 즉시 의사에게 알려야한다. 이러한 행동은 알코올이나 다른 중추신경억제제와 병용 시 발생할 가능성이 증가될 수 있다.(경고항 참조) 수면 진정제 복용 후 완전히 깨지 않은 환자에서의 음식준비나 먹기, 전화하기, 성관계…",
+   "extractor": "kw-v4",
+   "id": "2e3bf1cd35",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적주의 6)",
+   "subject": "",
+   "excerpt": "음주여부와 현재 투여중인 약물(매약 포함)에 관하여 의사에게 알려주어야 하며, 수면제를 투여중에는 가급적 음주를 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "549a0a9e3b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적주의 12)",
+   "subject": "",
+   "excerpt": "비행기 여행과 같은 여행 중 수면을 유도하기 위해 이 약을 투여한 환자에서 ‘여행자 건망증’이 보고되었다. 이들 중 일부는 업무 시작 전 기상 시까지 충분한 수면시간이 허용되지 않았으며 일부는 알코올을 병용 사용한 것이 한 요인일 수 있었다.",
+   "extractor": "kw-v4",
+   "id": "2db4398ad9",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "다음 약물과의 병용 또는 음주에 의해 이 약의 작용이 증가할 수 있으므로 이러한 경우에는 투여를 중지하는 것이 바람직하나 부득이하게 투여할 경우에는 신중히 투여한다: 다른 향정신성 의약품, 진경제, 항히스타민제 등의 중추신경억제제",
+   "extractor": "kw-v4",
+   "id": "4adee3864d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (6)",
+   "subject": "",
+   "excerpt": "이 약을 자몽쥬스와 함께 투여시 트리아졸람의 생체이용률이 증가하는 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "634aba3a76",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "벤조디아제핀계 약물 투여시 기형발생과, 출생 후 발달 및 행동에 대한 영향의 연구 자료는 일치하지 않는다. 임신중에 다른 벤조디아제핀계 약물을 투여한 환자에서 기형아 등의 장애아를 출산한 예가 대조군에 비해 유의성있게 높다는 역학조사보고가 있으므로 임부에게 투여해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "9b6c1ff9c2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 후기에 다른 벤조디아제핀계 약물(디아제팜, 니트라제팜)을 연용한 환자에서 신생아에게 포유곤란, 근긴장저하, 졸음, 황달 증가 등의 증상이 발현되었다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "3b9b2ad1db",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "분만전에 연용한 경우에 출산 후 신생아에게 금단증상(신경과민, 진전, 과다긴장 등)이 나타난 것이 다른 벤조디아제핀계 약물(디아제팜)에서 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "3cafc8d9d8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "모유중으로 이행되어 신생아에게 졸음, 체중감소 등을 일으킴이 다른 벤조디아제핀계 약물(디아제팜)에서 보고되었으므로 수유부에는 투여를 피하는 것이 바람직하며 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "a6cac90360",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "환자가 이 약을 투여하는 중 임신 가능성이 있다면 태아에 대한 위험성을 알려주어야 하며 임신전에 투약을 중단하도록 알려주어야 한다. 가임 여성이 치료를 시작할 때에는 임신 가능성을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "961ea7ea2a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 과다진정, 어지러움, 운동실조 등의 부작용이 나타나기 쉬우므로 가능하면 저용량에서부터 투여하는 등 신중히 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e6d9066e15",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "2b88224d6f",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "환자에 따라 트리아졸람으로서 0.125 ~ 0.25 mg을 취침전에 경구투여한다. 이상반응이 용량의존적으로 증가하므로 0.25 mg을 초과하는 용량은 투여가 권장되지 않는다.",
+   "meal": "취침전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:00",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

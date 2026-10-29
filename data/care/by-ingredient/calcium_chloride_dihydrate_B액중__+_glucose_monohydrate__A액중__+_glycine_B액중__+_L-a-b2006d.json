@@ -1,0 +1,51 @@
+{
+ "ingredient": "calcium chloride dihydrate(B액중) + glucose monohydrate (A액중) + glycine(B액중) + L-alanine(B액중) + L-arginine(B액중) + L-histidine(B액중) + L-isoleucine(B액중) + L-leucine (B액중) + L-lysine HCL(B액중) + L-methionine(B액중) + L-phenylalanine(B액중) + L-proline(B액중) + L-serine(B액중) + L-threonine(B액중) + L-tryptophan(B액중) + L-tyrosine(B액중) + L-valine(B액중) + magnesium sulfate heptahydrate(B액중) + medium-chain triglycerides(C액중) + potassium chloride(B액중) + purified fish oil(C액중) + purified olive oil(C액중) + refined soybean oil(C액중) + sodium acetate trihydrate(B액중) + sodium glycerophosphate(B액중) + zinc sulfate heptahydrate(B액중)",
+ "productSeq": "202301977",
+ "itemName": "위너프에이플러스주",
+ "atc": "B05BA10",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "678901321",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301977/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301977/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301977/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "대두유는 비타민 K1를 포함하고 있지만 이 약에 함유된 양은 극히 적으므로, 쿠마린 유도체를 투여 받는 환자들의 혈액응고기전에 유의한 영향을 줄 것으로 기대되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "15bcd42310",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부에서의 이 약 사용에 대한 데이터는 없다. 동물의 생식독성 시험은 이루어지지 않았다. 임신 중과 수유 중의 투여는 안전성이 확립되어 있지 않으므로 이 약의 투여는 치료 상의 유익성이 위험성을 상회하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "678583b4fa",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:01",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

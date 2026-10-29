@@ -1,0 +1,80 @@
+{
+ "ingredient": "ethyl esters of the iodised fatty acids of poppyseed oil",
+ "productSeq": "202000798",
+ "itemName": "패티오돌주사(아이오다이즈드오일)",
+ "atc": "V08AD01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20211001",
+ "ediCode": "653404481",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000798/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000798/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000798/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 이 약의 안전성이 확립되어 있지 않고, 이 약을 투여한 후에 X선을 조사하게 되므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 진단상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d8b05be8d0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 중 이 약의 사용은 요오드 전달을 야기하여 태아의 갑상샘 기능에 영향을 미칠 수 있다. 비록 이것이 일시적이라 할지라도, 뇌손상이나 영구적인 갑상샘기능저하증의 위험이 있으므로, 신생아에 대한 갑상샘 기능 감독 및 주의 깊은 모니터링이 필요하다. 따라서 이 약은 전문가의 엄격한 감독 하에 반드시 필요한 경우에만 임부에게 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "18884e4f81",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성에게는 이 약을 자궁난관조영에 사용해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "72d02f8ef9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "이 약은 모유 중으로 이행되므로 수유 시 요오드가 유아의 소화관을 거쳐 혈관상을 통과하는 것으로 나타났으며, 이것이 갑상샘 기능에 영향을 미칠 수 있다. 따라서 이 약을 투여할 경우, 수유를 중단하거나 신생아의 갑상샘 기능을 더욱 자주 검사해야 한다.",
+   "extractor": "kw-v4",
+   "id": "826dfe3d56",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어있는 경우가 많으므로, 투여 시 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "96f79b0f42",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:09",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

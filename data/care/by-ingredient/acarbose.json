@@ -1,0 +1,99 @@
+{
+ "ingredient": "acarbose",
+ "productSeq": "199900925",
+ "itemName": "글루코바이정50밀리그람(아카보즈)",
+ "atc": "A10BF01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220610",
+ "ediCode": "652100050",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900925/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900925/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900925/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 3)",
+   "subject": "",
+   "excerpt": "콜레스티라민, 약용탄 등의 장관 흡착제 및 탄수화물 소화효소를 포함한 소화효소제제(디아스타제 등)는 이 약의 작용에 영향을 미칠 수 있으므로 이 약과 병용해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "dc19dda9cd",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신 하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "a6277aab40",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 유즙 중으로 이행이 보고되어 있고 모유 중에 함유된 이 약의 유아에 대한 영향을 배제할 수 없으므로 수유중인 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "b5e2129962",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자 등 내용성의 저하가 염려되는 환자에 대해서는 저용량(1회 50mg)부터 시작하여 경과를 충분히 관찰하면서 신중히 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "bffa49a656",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "ce94a31beb",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "초기 : 성인-아카보즈로서 1회 50mg 1일 3회 식전에 경구투여 한다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "13cdb55885",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "다음 단계 : 이 약으로서 1회 100mg 1일 3회 식전에 투여하고 용량은 4-8주 후 증량할 수 있으며, 더 이후 단계에서도 환자의 임상적 반응이 불충분하다면 증량할 수 있다. 만일 식사요법을 충실히 지킴에도 불구하고 부작용이 심해지면 용량을 증량해서는 안되며 필요시에는 감량해야 한다. 성인 1일 평균용량은 300mg이다. 필요하다고 판단되는 경우에는 이 약으로서 1회 200mg 최대 1…",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:46",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

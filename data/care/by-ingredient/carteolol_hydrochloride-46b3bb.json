@@ -1,0 +1,68 @@
+{
+ "ingredient": "carteolol hydrochloride",
+ "productSeq": "198902563",
+ "itemName": "미케란정(카르테올롤염산염)",
+ "atc": "C07AA15",
+ "etcOtc": "전문의약품",
+ "changeDate": "20130904",
+ "ediCode": "649900100",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198902563/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198902563/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198902563/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "1fd5547837",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험에서 모유중으로의 이행이 보고되어 있으므로 수유중의 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "129ef0caef",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 과도한 혈압강하가 바람직하지 않다(뇌색전 등이 일어날 수 있다.).",
+   "extractor": "kw-v4",
+   "id": "ef272e9e32",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "휴약이 필요할 경우에는 천천히 감량한다.",
+   "extractor": "kw-v4",
+   "id": "ca1d9772e5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:07",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

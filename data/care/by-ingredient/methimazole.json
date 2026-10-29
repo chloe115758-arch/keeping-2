@@ -1,0 +1,147 @@
+{
+ "ingredient": "methimazole",
+ "productSeq": "197800303",
+ "itemName": "부광메티마졸정5밀리그램",
+ "atc": "H03BB02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251224",
+ "ediCode": "642200680",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197800303/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197800303/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197800303/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "이 약은 항비타민K 작용이 있으므로 항응고제와 병용투여시 항응고제의 효력이 증가할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "b90aecd870",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중 투여에 대한 안전성이 확립되어 있지 않으므로, 이 약 투여 중에는 임신하지 않도록 주의하며 부득이 임부 또는 임신하고 있을 가능성이 있는 부인에게 투여시 용법, 용량에 주의하고 가능한 소량을 투여한다.",
+   "extractor": "kw-v4",
+   "id": "849d1ffb49",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 가능성이 있는 여성은 치료기간 동안 효과적으로 피임해야 한다.",
+   "extractor": "kw-v4",
+   "id": "66815cd628",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "태아에 갑상선종, 갑상선기능억제를 일으킬 수 있고 임신중 이 약을 투여 받은 여성에서 태어난 영아에서 드물게 두피결손을 비롯한 피부 무형성증이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "db02e82813",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "신생아에서 출생 후 일시적인 갑상선기능억제 또는 그 후 갑상선기능항진이 나타날 수 있으므로 충분히 관찰한다.",
+   "extractor": "kw-v4",
+   "id": "56d0e7b5b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임부의 갑상선기능항진증은 임부 및 태아의 심각한 합병증 발생 예방을 위해 적절히 치료해야 한다.",
+   "extractor": "kw-v4",
+   "id": "c7a6fa3c8a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "역학 연구 및 자발 보고에 따르면 메티마졸은 임신기간 동안 특히 임신 초기(14주) 및 고용량 투여 시 선천성 기형 유발이 의심된다.",
+   "extractor": "kw-v4",
+   "id": "f6ea05ff52",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "보고된 기형은 선천성 피부 무형성, 두개안면 기형(후비공 폐쇄; 안면기형), 배꼽탈장, 식도폐쇄증, 배꼽창자간막관 기형, 심실사이막결손이 포함된다.",
+   "extractor": "kw-v4",
+   "id": "9fc06caa1b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "메티마졸은 임신기간 동안 개인적인 유익성-위해성 평가 후에 추가적인 갑상선호르몬 투여 없이 최소 유효 용량으로 투여해야 한다. 만약 임신기간 동안 메티마졸을 사용해야 한다면 임부, 태아 및 신생아의 면밀한 관찰이 요구된다.(‘4. 일반적 주의’항 참조)",
+   "extractor": "kw-v4",
+   "id": "fd460e482c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "이 약은 유즙으로 이행되어 영아의 갑상선 기능에 영향을 줄 수 있으므로 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "748dc1bfee",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:15",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

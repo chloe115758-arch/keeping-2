@@ -1,52 +1,56 @@
 {
-  "ingredient": "afloqualone",
-  "productSeq": "200204322",
-  "itemName": "폴라콘정(아플로쿠알론)",
-  "atc": "M03BX",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250103",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200204322/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200204322/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200204322/NB"
+ "ingredient": "afloqualone",
+ "productSeq": "200204322",
+ "itemName": "폴라콘정(아플로쿠알론)",
+ "atc": "M03BX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250103",
+ "ediCode": "052700210",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200204322/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200204322/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200204322/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안정성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "a44b987ea1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "b9c74e72e3",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "4. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신중의 투여에 대한 안정성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2a81d4b777",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "4. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유중의 투여에 대한 안정성이 확립되어 있지 않으므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7e8ca13fc2",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "6. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:16:49"
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유중의 투여에 대한 안정성이 확립되어 있지 않으므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "f1ab550995",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "6. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "a3648f2a0c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

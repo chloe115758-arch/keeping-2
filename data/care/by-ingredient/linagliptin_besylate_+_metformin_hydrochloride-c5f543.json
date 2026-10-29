@@ -1,0 +1,202 @@
+{
+ "ingredient": "linagliptin besylate + metformin hydrochloride",
+ "productSeq": "202401055",
+ "itemName": "트립엠듀오정2.5/500밀리그램(리나글립틴,메트포르민)",
+ "atc": "A10BD11",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260211",
+ "ediCode": "622805280",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401055/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401055/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202401055/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "젖산 산증을 피하기 위해 혈당조절불량, 케톤증, 장시간 공복, 과도한 알코올 섭취, 간기능 부전 및 저산소증과 관련된 여타 상황(비대상성 심장부전, 급성심근경색) 등의 기타 관련된 위험인자를 고려하여야 한다 (2. 다음 환자에는 투여하지 말 것 참조).",
+   "extractor": "kw-v4",
+   "id": "ddb4792f11",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "약물상호작용의 생체 내 평가",
+   "excerpt": "이 약물의 활성성분 중 하나인 메트포르민으로 인해 급성 알코올 중독인 경우(특히 공복, 영양실조 또는 간장애 시에) 젖산 산증의 위험이 증가되었다. 알코올 및 알코올 함유 약물의 복용을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ddd0ca73b3",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신: 이 약물 또는 각 주성분으로 임산부에서 실시한 잘 통제된 적절한 연구는 없다. 임신한 랫드에서 이 약물로 실시한 비임상 생식독성시험에서는 리나글립틴과 메트포르민 혼합투여에 의한 최기형성은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "17cf21c5c8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임산부에서 리나글립틴을 사용한 자료는 제한적이다. 비임상 연구에서는 생식독성과 관련된 직간접적인 독성효과는 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "4fae11b20c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임산부에서 메트포르민을 사용한 자료는 제한적이다. 메트포르민은 사람에 대한 투여량의 4배 정도인 200 mg/kg/일의 용량으로 랫드에 투여한 경우 최기형성을 나타내지 않았다. 보다 고용량인 500 mg/kg/일과 1000 mg/kg/일(사람에의 투여량의 11배 및 23배 정도에 해당)을 랫드에 투여하였을 때 메트포르민의 최기형성이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "80a1e4dcd7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "예방조치로 이 약물은 임신 중에는 사용을 피하는 것이 좋다.",
+   "extractor": "kw-v4",
+   "id": "8586473f45",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "환자가 임신 계획이 있거나 임신 중인 경우, 이 약물 투여를 금하고 이상혈당수치와 관련된 태아기형의 위험을 낮추기 위해 인슐린을 투여하여 가급적 정상수치와 가까운 정도까지 혈당을 유지하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "9986cc842d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수태한 랫드와 토끼에 경구 투여했을 때 리나글립틴은 태반을 거쳐 태자로 전달되었다.",
+   "extractor": "kw-v4",
+   "id": "c145bb9156",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유",
+   "extractor": "kw-v4",
+   "id": "c034ef0d59",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유동물에서 메트포르민과 리나글립틴을 혼합 투여한 연구는 수행되지 않았다. 동물실험에서 리나글립틴 및 대사체가 모유를 통해 배출되는 것이 관찰되었다. 메트포르민은 사람의 유즙으로 분비되며 리나글립틴이 사람 유즙을 통해 분비되는지는 알려지지 않았다. 따라서 이 약물은 수유 중에는 사용하지 않도록 한다.",
+   "extractor": "kw-v4",
+   "id": "83204c274f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "생식",
+   "extractor": "kw-v4",
+   "id": "93f47606d3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임신, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약물로 사람의 생식능에 대한 영향을 조사하는 연구는 수행되지 않았으나 사람에서의 투여량의 900배를 넘는 240 mg/kg/day의 최고 투여용량까지 실시한 비임상연구에서 생식능에 대한 리나글립틴의 독성반응은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "9e5eb0b525",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9.&nbsp;고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "메트포르민은 주로 신장을 통해 배설되며, 고령자에 있어 노화는 신기능 저하와 관련이 있기 때문에 환자의 신기능에 근거하여 적절한 혈당 조절 효과를 얻는 최소용량을 설정해야 한다. 고령자는 정기적으로 신기능을 모니터링 해야 하고, 일반적으로 고령자에게는 최대용량을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "67fe0a52b5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "a0a335a1c6",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 식사와 함께 1일 2회 투여한다. 메트포르민 사용과 관련한 위장관계 부작용을 줄이기 위해서는 용량 증가가 서서히 진행되어야 한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:30:34",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

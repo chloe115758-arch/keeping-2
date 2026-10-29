@@ -1,109 +1,113 @@
 {
-  "ingredient": "metronidazole",
-  "productSeq": "196500004",
-  "itemName": "후라시닐정(메트로니다졸)",
-  "atc": "P01AB01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250115",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196500004/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196500004/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196500004/NB"
-  },
-  "rules": [
+ "ingredient": "metronidazole",
+ "productSeq": "196500004",
+ "itemName": "후라시닐정(메트로니다졸)",
+ "atc": "P01AB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250115",
+ "ediCode": "640002760",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196500004/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196500004/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196500004/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약은 알코올과 병용 시 복부경련, 구역, 구토, 두통, 홍조, 어지럼과 같은 디설피람 유사반응을 일으킬 수 있으므로 투여기간 중 및 투여 후 3일간은 알코올의 섭취를 피한다.",
+   "extractor": "kw-v4",
+   "id": "3cffda55cb",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "73e59544e0",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약은 알코올과 병용 시 복부경련, 구역, 구토, 두통, 홍조, 어지럼과 같은 디설피람 유사반응을 일으킬 수 있으므로 투여기간 중 및 투여 후 3일간은 알코올의 섭취를 피한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5e4d2476b1",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 2)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 디설피람을 병용하는 알코올 중독 환자에게서 정신병적 반응이 보고되었다. 2주 이내에 디설피람을 복용한 환자에 이 약을 투여해서는 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9d5ba2f760",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 9)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "콜레스티라민의 생체이용율을 감소시킨다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "28e72dd29b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트를 이용한 동물실험에서는 사람 투여량의 5배의 용량에서도 생식능력 및 태자에 나쁜 영향은 없었다. 마우스를 이용한 실험에서도 태자독성은 관찰되지 않았으나 복강내 투여를 시행한 한 연구에서는 일부의 자궁내사망이 관찰되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3c6e613cf1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 태반장벽을 통과하여 태아순환계로 빠르게 들어간다. 임신 중 투여에 대한 안전성은 확립되지 않았으므로 임신 3개월 이내의 임부에게는 투여하지 않으며(태내의 암 형성, 유전자 변형 위험), 3개월 초과의 임부에게는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "654b97a1ae",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 성분은 모유로 이행되므로 치료 중에는 수유를 중단한다(투여 이후 24시간 이상 수유 중단).",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:19:05"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "이 약과 디설피람을 병용하는 알코올 중독 환자에게서 정신병적 반응이 보고되었다. 2주 이내에 디설피람을 복용한 환자에 이 약을 투여해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "0288cee3ad",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 9)",
+   "subject": "",
+   "excerpt": "콜레스티라민의 생체이용율을 감소시킨다.",
+   "extractor": "kw-v4",
+   "id": "52c65a1bcd",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "랫트를 이용한 동물실험에서는 사람 투여량의 5배의 용량에서도 생식능력 및 태자에 나쁜 영향은 없었다. 마우스를 이용한 실험에서도 태자독성은 관찰되지 않았으나 복강내 투여를 시행한 한 연구에서는 일부의 자궁내사망이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "26e569be92",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 태반장벽을 통과하여 태아순환계로 빠르게 들어간다. 임신 중 투여에 대한 안전성은 확립되지 않았으므로 임신 3개월 이내의 임부에게는 투여하지 않으며(태내의 암 형성, 유전자 변형 위험), 3개월 초과의 임부에게는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "e9fb200145",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약의 성분은 모유로 이행되므로 치료 중에는 수유를 중단한다(투여 이후 24시간 이상 수유 중단).",
+   "extractor": "kw-v4",
+   "id": "99373efdb4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

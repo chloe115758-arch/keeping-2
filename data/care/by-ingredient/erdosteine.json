@@ -1,28 +1,32 @@
 {
-  "ingredient": "erdosteine",
-  "productSeq": "199900508",
-  "itemName": "엘도스시럽(에르도스테인)",
-  "atc": "R05CB15",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250402",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900508/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900508/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900508/NB"
-  },
-  "rules": [
-    {
-      "id": "ad29bd0a40",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 수태, 태자의 배자발육과 또는 산후 발육에 대해서 어떤 직ㆍ간접적 유독성은 발견되지 않았으나 임신 중 또는 수유중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성, 수유부에는 투여하지 않는 것이 바람직하다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:04:03"
+ "ingredient": "erdosteine",
+ "productSeq": "199900508",
+ "itemName": "엘도스시럽(에르도스테인)",
+ "atc": "R05CB15",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250402",
+ "ediCode": "641601951",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900508/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900508/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900508/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험에서 수태, 태자의 배자발육과 또는 산후 발육에 대해서 어떤 직ㆍ간접적 유독성은 발견되지 않았으나 임신 중 또는 수유중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성, 수유부에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "8902db5025",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

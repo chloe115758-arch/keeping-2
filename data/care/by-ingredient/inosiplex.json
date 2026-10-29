@@ -1,0 +1,44 @@
+{
+ "ingredient": "inosiplex",
+ "productSeq": "198600073",
+ "itemName": "푸리노신시럽(이노시플렉스)",
+ "atc": "J05AX05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20150918",
+ "ediCode": "643304081",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600073/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600073/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600073/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 기형발생은 보고되지 않았으나, 임신 중 투여에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다. 그리고 임신 초기 3개월까지는 이 약을 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "2ce16ee9ee",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 동물실험(랫트)에서 유즙 중으로 이행되므로 투여기간에는 수유를 중단하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "e4da507e3f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:18",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

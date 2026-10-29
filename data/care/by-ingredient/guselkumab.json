@@ -1,0 +1,117 @@
+{
+ "ingredient": "guselkumab",
+ "productSeq": "201801604",
+ "itemName": "트렘피어프리필드시린지주(구셀쿠맙,유전자재조합)",
+ "atc": "L04AC16",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250821",
+ "ediCode": "646902261",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801604/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801604/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801604/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "4. 상호작용",
+   "subject": "",
+   "excerpt": "중등도에서 중증의 판상 건선 환자를 대상으로 한 1상 임상시험에서, 이 약의 단회 투여 후 미다졸람, S-와파린, 오메프라졸, 덱스트로메토르판 및 카페인의 전신 노출(Cmax 와 AUCinf) 변화는 임상적으로 관련 있지 않았고, 이는 이 약과 여러 CYP 효소(CYP3A4, CYP2C9, CYP2C19, CYP2D6, CYP1A2) 기질 간 상호작용의 가능성이 낮음을 나타낸다. 이 약과 C…",
+   "extractor": "kw-v4",
+   "id": "b78b92efa3",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "e3e7ed28f9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임부를 대상으로 연구되지 않았으며, 임신에 대한 이 약의 영향은 알려진 바 없다. 원숭이(Cynomolgus monkey)에 이 약을 투여하였을 때 이 약과 연관된 모체, 배아 또는 태아 독성은 관찰되지 않았다. 다른 IgG 항체처럼, 이 약은 태반을 통과하며 갓 태어난 원숭이의 혈청 샘플에서 검출된 바 있다.",
+   "extractor": "kw-v4",
+   "id": "c1d94e0e09",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 이익이 위험을 명백히 상회하는 경우에만 임부에게 투여할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "3b7a988f87",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "ed7f30dc99",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 사람 유즙으로 분비여부, 수유중인 영아 또는 유즙생산에 미치는 영향에 관한 정보는 없다. 이 약은 수유 중인 원숭이의 유즙에서 검출되지 않았다. 사람 IgG는 모유에 존재하는 것으로 알려져 있다. 모유수유의 발달 및 건강상의 이익과 함께 수유부에서 이 약의 임상적 필요성, 이 약 또는 기저의 모체 상태가 모유수유 중인 영아에게 미치는 잠재적 유해 영향을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "daa0db1073",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "2상 및 3상 임상시험에서 이 약을 투여 받은 5,926 명의 판상 건선, 건선성 관절염, 궤양성 대장염, 크론병 환자 중 339명의 환자가 65세 이상이었고, 그 중 34명은 75세 이상이었다. 고령자와 그렇지 않은 환자에서 안전성 및 유효성에 전반적인 차이는 관찰되지 않았지만, 65세 이상의 환자와 그렇지 않은 환자가 다르게 반응하는지 여부를 판단하기에는 65세 이상 환자수가 충분하지 않…",
+   "extractor": "kw-v4",
+   "id": "ff0adc4c76",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:45",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,274 +1,363 @@
 {
-  "ingredient": "cholecalciferol concentrated powder + sodium alendronate",
-  "productSeq": "200711426",
-  "itemName": "포사맥스플러스디정",
-  "atc": "M05BB03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20231108",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711426/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711426/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711426/NB"
-  },
-  "rules": [
+ "ingredient": "cholecalciferol concentrated powder + sodium alendronate",
+ "productSeq": "200711426",
+ "itemName": "포사맥스플러스디정",
+ "atc": "M05BB03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231108",
+ "ediCode": "073100280",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711426/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711426/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711426/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 (6)",
+   "subject": "알렌드론산나트륨",
+   "excerpt": "장기간 (일반적으로 3년 이상) 비스포스포네이트 투여 환자 중 일부에서 전자하(subtrochanteric), 근위 대퇴골체(proximal femoral shaft) 및 기타 뼈의 저강도 골절(low-energy fracture)이 보고되었다. 일부는 뚜렷한 외상 없이 혹은 약한 외력으로 유도되어 발생한 긴장성 골절〔(stress fracture); 이 중 일부는 불충분한 골절(insuff…",
+   "extractor": "kw-v4",
+   "id": "7c808f9d2a",
+   "kind": "note",
+   "matched": [
     {
-      "id": "ad2d1b0a62",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의 (6)",
-      "subject": "알렌드론산나트륨",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "장기간 (일반적으로 3년 이상) 비스포스포네이트 투여 환자 중 일부에서 전자하(subtrochanteric), 근위 대퇴골체(proximal femoral shaft) 및 기타 뼈의 저강도 골절(low-energy fracture)이 보고되었다. 일부는 뚜렷한 외상 없이 혹은 약한 외력으로 유도되어 발생한 긴장성 골절〔(stress fracture); 이 중 일부는 불충분한 골절(insuff…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "70323cbdfc",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의 (1)",
-      "subject": "2) 환자에게 제공되어야 할 정보",
-      "matched": [
-        {
-          "key": "caffeine",
-          "kind": "food",
-          "ko": "카페인·커피",
-          "surface": "커피"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "환자에게 반드시 아침에 기상하여 섭취하게 되는 최초 음식물, 음료 또는 약물을 먹기 최소 30분전에 물과 함께 이 약을 복용해야 기대 효과를 얻을 수 있음을 지시해야 한다. 오렌지 쥬스나 커피와 함께 복용했을 경우에도 알렌드로네이트의 흡수가 현저히 감소됨이 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "46628b9945",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의 (4)",
-      "subject": "2) 환자에게 제공되어야 할 정보",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "음주"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "환자가 칼슘 섭취가 불충분할 경우 보충제를 복용해야 한다. 비타민 D 결핍 위험이 큰 환자 (예. 70세 초과 환자, 요양소에 있는 환자, 만성 질환자)는 추가로 비타민 D 보충제를 복용해야 한다. 위장관 흡수장애 증후군이 있는 환자에게는 추가적으로 비타민 D 보충제가 필요할 수 있음을 알려주어야 한다. 체중부하 운동은 흡연 및/또는 지나친 음주와 같은 특정 습관 요인의 변화와 더불어 고려되…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ac5cf0dbdb",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용",
-      "subject": "2) 칼슘보충제/제산제",
-      "matched": [
-        {
-          "key": "calcium",
-          "kind": "supplement",
-          "ko": "칼슘제제",
-          "surface": "칼슘보충제"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "칼슘보충제나 제산제 및 일부 경구용 약물들은 알렌드로네이트의 흡수를 방해하는 것으로 알려져 있다. 그러므로 이 약 복용 후 적어도 30분의 간격을 두고 다른 약물을 복용해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "06d5fb500a",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용",
-      "subject": "콜레칼시페롤",
-      "matched": [
-        {
-          "key": "vitaminD",
-          "kind": "supplement",
-          "ko": "비타민 D",
-          "surface": "비타민 D"
-        },
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "얼레스트라(Olestra), 광물성 기름, 오르리스타트(orlistat), 담즙산 제거약(예. 콜레스티라민, 콜레스티폴)은 비타민 D의 흡수를 저해할 수 있다. 비타민 D의 추가적인 보충을 고려하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "582b3b1fe0",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용",
-      "subject": "콜레칼시페롤",
-      "matched": [
-        {
-          "key": "vitaminD",
-          "kind": "supplement",
-          "ko": "비타민 D",
-          "surface": "비타민 D"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "항경련제, 시메티딘, 치아자이드는 비타민 D의 이화작용을 증진시킬 수 있다. 비타민 D의 추가적인 보충을 고려하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ce4f29857a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 시험은 행해지지 않았으므로 이 약을 임부에 투여시에는 모체나 태아에 대한 잠재적 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "39595db2e0",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 (1)",
-      "subject": "알렌드론산나트륨",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트에서의 생식시험 결과, 2 mg/kg/day의 용량에서 착상 후 생존율이 감소되었고, 1 mg/kg/day 용량에서 신생자의 체중 증가가 감소하였다. 랫트에 10 mg/kg/day 이상을 투여시 태자의 척추(경추, 흉추 및 요추), 두개골 및 흉골분절에서 불완전 골화된 부분이 통계적으로 유의하게 증가하였다. 이 용량은 체표면적당 용량(mg/m2)으로 환산시 인체 1일 투여용량(10 mg)…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1fb4181411",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 (2)",
-      "subject": "알렌드론산나트륨",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신한 랫트에 15 mg/kg/day(체표면적당 용량(mg/m2)으로 환산시 인체 1일 투여용량인 10 mg의 13배)를 투여시 총칼슘 및 이온화된 칼슘의 농도가 감소하여 분만 지연과 분만 실패가 초래되었다. 랫트에 교미 전부터 임신할 때까지 계속해서 0.5 mg/kg/day(체표면적당 용량(mg/m2)으로 환산시 인체 1일 투여용량인 10 mg의 0.5배)를 투여시에는 모체의 저칼슘혈증으로…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4899a562fd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 (1)",
-      "subject": "콜레칼시페롤",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "콜레칼시페롤(비타민 D3)에 대한 자료는 없다. 에르고칼시페롤(비타민 D2)을 임신한 토끼에 고용량으로(이틀에 한번 10,000 IU 이상) 투여한 결과, 유산율과 태자의 대동맥 협착증 발생률이 증가하였다. 비타민 D2를 임신한 랫트에 일일 40,000 IU를 투여한 결과 신생자 사망, 태자 체중 감소, 출생 후 장골의 골형성 손상이 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "600a3a4c1a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "콜레칼시페롤과 이 활성대사체는 모유로 이행된다. 알렌드로네이트가 모유 중으로 이행되는지는 알려지지 않았다. 많은 약물들이 모유 중으로 이행되므로 이 약을 수유부에 투여할 경우에는 주의해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6b2b36fc94",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
-      "subject": "3) 소아에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 어린이에게 적용되지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "535ebaebd1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
-      "subject": "3) 소아에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "알렌드로네이트의 유효성 및 안전성이 중증의 불완전 골형성증이 있는 4-18세의 소아 환자 139명에 대하여 무작위 배정, 이중 맹검, 위약 대조, 2년 동안의 시험에서 실시되었다. 109명이 알렌드로네이트 1일 5 mg(체중 40kg 미만) 또는 10 mg(체중 40kg 이상)에 무작위 배정되었고 30명은 위약을 투여받았다. 환자들의 평균 기저치 요추 BMD Z-score는 -4.5였다. 기…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "439b210122",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
-      "subject": "4) 고령자에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에게 용량 조절은 필요치 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d4191196a0",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
-      "subject": "4) 고령자에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "골절 임상시험(FIT)에서 포사맥스®를 복용한 환자의 71 %(2,302명)가 65세 이상이었고, 17 %(550명)가 75세 이상의 고령자였다. 미국 및 여러나라에서 실시한 여성 골다공증 임상시험 및 남성 골다공증 임상시험에서 포사맥스®를 복용한 환자의 각각 45 %, 54 %가 65세 이상의 고령자였다. 안전성 및 유효성은 이들 고령 환자와 젊은 환자 사이에 차이를 보이지 않았으나 일부…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "449175a74c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
-      "subject": "5) 신장애 환자에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "경증 내지 중등도의 신부전 환자(크레아티닌 청소율이 35∼60 mL/min)에 대해서는 용량조절이 필요하지 않으나, 중증의 신부전 환자(크레아티닌 청소율이 35 mL/min 미만)에 대해서는 충분한 임상경험이 없으므로 이 약 투여가 권장되지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bb3c4764c0",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "광천수, 보리차를 포함한 다른 음료나 음식, 약물은 알렌드로네이트의 흡수를 저하시킬 수 있다(‘상호작용’항 참조). 이 약을 복용한 후 30분 이내 혹은 동시에 음식물을 섭취하면 알렌드로네이트의 체내흡수가 저하되어 효과가 감소할 수 있다. 이 약은 아침에 일어나자마자 복용하여야 하며 약물을 위로 신속히 도달시켜 식도자극 가능성을 감소시키기 위해 충분한 양의 물(170∼230 mL)로 삼켜야…",
-      "meal": "취침전",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:08:33"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 (1)",
+   "subject": "근골격계 통증",
+   "excerpt": "환자에게 반드시 아침에 기상하여 섭취하게 되는 최초 음식물, 음료 또는 약물을 먹기 최소 30분전에 물과 함께 이 약을 복용해야 기대 효과를 얻을 수 있음을 지시해야 한다. 오렌지 쥬스나 커피와 함께 복용했을 경우에도 알렌드로네이트의 흡수가 현저히 감소됨이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "1f077f444b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "커피"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 (4)",
+   "subject": "근골격계 통증",
+   "excerpt": "환자가 칼슘 섭취가 불충분할 경우 보충제를 복용해야 한다. 비타민 D 결핍 위험이 큰 환자 (예. 70세 초과 환자, 요양소에 있는 환자, 만성 질환자)는 추가로 비타민 D 보충제를 복용해야 한다. 위장관 흡수장애 증후군이 있는 환자에게는 추가적으로 비타민 D 보충제가 필요할 수 있음을 알려주어야 한다. 체중부하 운동은 흡연 및/또는 지나친 음주와 같은 특정 습관 요인의 변화와 더불어 고려되…",
+   "extractor": "kw-v4",
+   "id": "2d68f46add",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "알렌드론산나트륨",
+   "excerpt": "칼슘보충제/제산제",
+   "extractor": "kw-v4",
+   "id": "17edbd53c0",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘보충제"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "알렌드론산나트륨",
+   "excerpt": "칼슘보충제나 제산제 및 일부 경구용 약물들은 알렌드로네이트의 흡수를 방해하는 것으로 알려져 있다. 그러므로 이 약 복용 후 적어도 30분의 간격을 두고 다른 약물을 복용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "85c105fa18",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘보충제"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "콜레칼시페롤",
+   "excerpt": "얼레스트라(Olestra), 광물성 기름, 오르리스타트(orlistat), 담즙산 제거약(예. 콜레스티라민, 콜레스티폴)은 비타민 D의 흡수를 저해할 수 있다. 비타민 D의 추가적인 보충을 고려하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "9bbb75c267",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    },
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "콜레칼시페롤",
+   "excerpt": "항경련제, 시메티딘, 치아자이드는 비타민 D의 이화작용을 증진시킬 수 있다. 비타민 D의 추가적인 보충을 고려하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "814852fecc",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "206cda77fb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 시험은 행해지지 않았으므로 이 약을 임부에 투여시에는 모체나 태아에 대한 잠재적 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "566196be8f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 (1)",
+   "subject": "알렌드론산나트륨",
+   "excerpt": "랫트에서의 생식시험 결과, 2 mg/kg/day의 용량에서 착상 후 생존율이 감소되었고, 1 mg/kg/day 용량에서 신생자의 체중 증가가 감소하였다. 랫트에 10 mg/kg/day 이상을 투여시 태자의 척추(경추, 흉추 및 요추), 두개골 및 흉골분절에서 불완전 골화된 부분이 통계적으로 유의하게 증가하였다. 이 용량은 체표면적당 용량(mg/m2)으로 환산시 인체 1일 투여용량(10 mg)…",
+   "extractor": "kw-v4",
+   "id": "90a02d1655",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 (2)",
+   "subject": "알렌드론산나트륨",
+   "excerpt": "임신한 랫트에 15 mg/kg/day(체표면적당 용량(mg/m2)으로 환산시 인체 1일 투여용량인 10 mg의 13배)를 투여시 총칼슘 및 이온화된 칼슘의 농도가 감소하여 분만 지연과 분만 실패가 초래되었다. 랫트에 교미 전부터 임신할 때까지 계속해서 0.5 mg/kg/day(체표면적당 용량(mg/m2)으로 환산시 인체 1일 투여용량인 10 mg의 0.5배)를 투여시에는 모체의 저칼슘혈증으로…",
+   "extractor": "kw-v4",
+   "id": "fcd44cb080",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 (1)",
+   "subject": "콜레칼시페롤",
+   "excerpt": "콜레칼시페롤(비타민 D3)에 대한 자료는 없다. 에르고칼시페롤(비타민 D2)을 임신한 토끼에 고용량으로(이틀에 한번 10,000 IU 이상) 투여한 결과, 유산율과 태자의 대동맥 협착증 발생률이 증가하였다. 비타민 D2를 임신한 랫트에 일일 40,000 IU를 투여한 결과 신생자 사망, 태자 체중 감소, 출생 후 장골의 골형성 손상이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "b62d7b3357",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 2)",
+   "subject": "콜레칼시페롤",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "603d712957",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
+   "subject": "콜레칼시페롤",
+   "excerpt": "콜레칼시페롤과 이 활성대사체는 모유로 이행된다. 알렌드로네이트가 모유 중으로 이행되는지는 알려지지 않았다. 많은 약물들이 모유 중으로 이행되므로 이 약을 수유부에 투여할 경우에는 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "9dc68ca90c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 3)",
+   "subject": "콜레칼시페롤",
+   "excerpt": "소아에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "9a1cc532d0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
+   "subject": "콜레칼시페롤",
+   "excerpt": "이 약은 어린이에게 적용되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "c108ad2b7e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
+   "subject": "콜레칼시페롤",
+   "excerpt": "알렌드로네이트의 유효성 및 안전성이 중증의 불완전 골형성증이 있는 4-18세의 소아 환자 139명에 대하여 무작위 배정, 이중 맹검, 위약 대조, 2년 동안의 시험에서 실시되었다. 109명이 알렌드로네이트 1일 5 mg(체중 40kg 미만) 또는 10 mg(체중 40kg 이상)에 무작위 배정되었고 30명은 위약을 투여받았다. 환자들의 평균 기저치 요추 BMD Z-score는 -4.5였다. 기…",
+   "extractor": "kw-v4",
+   "id": "6ca567f156",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 4)",
+   "subject": "콜레칼시페롤",
+   "excerpt": "고령자에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "06e0883dfc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
+   "subject": "콜레칼시페롤",
+   "excerpt": "고령자에게 용량 조절은 필요치 않다.",
+   "extractor": "kw-v4",
+   "id": "49ca3aeb6e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
+   "subject": "콜레칼시페롤",
+   "excerpt": "골절 임상시험(FIT)에서 포사맥스®를 복용한 환자의 71 %(2,302명)가 65세 이상이었고, 17 %(550명)가 75세 이상의 고령자였다. 미국 및 여러나라에서 실시한 여성 골다공증 임상시험 및 남성 골다공증 임상시험에서 포사맥스®를 복용한 환자의 각각 45 %, 54 %가 65세 이상의 고령자였다. 안전성 및 유효성은 이들 고령 환자와 젊은 환자 사이에 차이를 보이지 않았으나 일부…",
+   "extractor": "kw-v4",
+   "id": "5aef20581b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여 5)",
+   "subject": "콜레칼시페롤",
+   "excerpt": "신장애 환자에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "e7f5e70e27",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 소아, 고령자 및 신장애 환자에 대한 투여",
+   "subject": "콜레칼시페롤",
+   "excerpt": "경증 내지 중등도의 신부전 환자(크레아티닌 청소율이 35∼60 mL/min)에 대해서는 용량조절이 필요하지 않으나, 중증의 신부전 환자(크레아티닌 청소율이 35 mL/min 미만)에 대해서는 충분한 임상경험이 없으므로 이 약 투여가 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "ea61728c3b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "bb3c4764c0",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "광천수, 보리차를 포함한 다른 음료나 음식, 약물은 알렌드로네이트의 흡수를 저하시킬 수 있다(‘상호작용’항 참조). 이 약을 복용한 후 30분 이내 혹은 동시에 음식물을 섭취하면 알렌드로네이트의 체내흡수가 저하되어 효과가 감소할 수 있다. 이 약은 아침에 일어나자마자 복용하여야 하며 약물을 위로 신속히 도달시켜 식도자극 가능성을 감소시키기 위해 충분한 양의 물(170∼230 mL)로 삼켜야…",
+   "meal": "취침전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

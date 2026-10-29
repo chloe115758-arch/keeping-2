@@ -168,25 +168,37 @@ def api_error(j):
     return None
 
 
-def find_seq(api, code, v):
-    """목록 API에서 EDI_CODE가 제품코드와 같은 항목의 ITEM_SEQ. (itemSeq, 사유)"""
-    names = [v[0]]
-    base = re.sub(r'\([^)]*\)', '', v[0]).strip()
-    if base and base != v[0]:
-        names.append(base)
-    tried = []
-    for nm in names:
-        j = api.get(LIST_OP, **{LIST_NAME_PARAM: nm})
-        err = api_error(j)
-        if err:
-            return None, 'error:목록 호출 실패 — ' + err
-        its = items_of(j)
-        tried.append('%s→%d건' % (nm, len(its)))
-        for it in its:
-            edis = [e.zfill(9) for e in re.split(r'[,;\s]+', str(it.get('EDI_CODE') or '')) if e]
-            if code in edis:
-                return it.get('ITEM_SEQ'), None
-    return None, '미해결: 목록(%s)에 EDI_CODE %s 없음' % (', '.join(tried), code)
+def name_variants(full):
+    """제품 이름으로 검색할 이름들: 전체 → 괄호 앞까지 → 앞 6글자 → 앞 4글자 (중복 제거)"""
+    out = []
+    base = re.sub(r'\(.*$', '', full).strip()
+    for label, nm in (('전체 이름', full), ('괄호 앞까지', base), ('앞 6글자', base[:6]), ('앞 4글자', base[:4])):
+        if len(nm) >= 4 and nm not in [x[1] for x in out]:
+            out.append((label, nm))
+    return out
+
+
+def find_seq(api, cands, max_cands=3):
+    """후보 제품(대표 선정 순서)을 최대 max_cands개, 이름 변형을 차례로 시도한다.
+    EDI_CODE가 그 후보의 제품코드와 같은 항목만 채택. → (ITEM_SEQ, 제품코드, 제품이름, 방법, 사유)"""
+    log_lines, errs = [], 0
+    for ci, (code, v) in enumerate(cands[:max_cands]):
+        for label, nm in name_variants(v[0]):
+            j = api.get(LIST_OP, **{LIST_NAME_PARAM: nm})
+            err = api_error(j)
+            if err:
+                errs += 1
+                log_lines.append('후보%d %s「%s」→오류(%s)' % (ci + 1, label, nm[:20], err[:40]))
+                continue
+            its = items_of(j)
+            log_lines.append('후보%d %s「%s」→%d건' % (ci + 1, label, nm[:20], len(its)))
+            for it in its:
+                edis = [e.zfill(9) for e in re.split(r'[,;\s]+', str(it.get('EDI_CODE') or '')) if e]
+                if code in edis:
+                    return it.get('ITEM_SEQ'), code, v[0], '후보%d · %s' % (ci + 1, label), None
+    code, v = cands[0]
+    kind = '오류' if errs and all('오류' in x for x in log_lines) else '미해결'
+    return None, code, v[0], None, '%s: %s' % (kind, ' / '.join(log_lines))
 
 
 def _read(p, default):
@@ -208,6 +220,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--limit', type=int, default=500)
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--retry', action='store_true', help='미해결·오류 성분만 새 방식(후보 3개 × 이름 변형)으로 다시 시도한다')
     ap.add_argument('--reextract', action='store_true', help='호출 없이 data/care/raw로 규칙만 다시 뽑는다')
     a = ap.parse_args()
 
@@ -231,17 +244,20 @@ def main():
     try:
         for i, name in enumerate(order, 1):
             st = prog.get(name)
-            if st and st['status'] in ('ok', 'unresolved'):
+            if st and (st['status'] == 'ok' or (st['status'] == 'unresolved' and not a.retry)):
                 continue
-            code, v = pick_representative(groups[name])
-            rec = {'status': 'error', 'reason': '', 'productCode': code, 'productName': v[0]}
+            if a.retry and not (st and st['status'] in ('unresolved', 'error')):
+                continue
+            cands = sorted(groups[name], key=lambda cv: (cv[1][4] != 0, cv[1][5] != '내복', cv[0]))
+            rec = {'status': 'error', 'reason': '', 'productCode': cands[0][0], 'productName': cands[0][1][0]}
             prog[name] = rec
-            seq, why = find_seq(api, code, v)
+            seq, code, pname, method, why = find_seq(api, cands)
             if not seq:
-                rec['status'], rec['reason'] = ('unresolved', why) if why.startswith('미해결') else ('error', why[6:])
-                log('[%d/%d] %s — %s' % (i, len(order), name, rec['reason']))
+                rec['status'], rec['reason'] = ('unresolved', why) if why.startswith('미해결') else ('error', why)
+                log('[%d/%d] %s — %s' % (i, len(order), name, rec['reason'][:160]))
                 _write(PROGRESS, dict(prog, _calls={'date': api.today, 'count': api.day_calls}))
                 continue
+            rec.update(productCode=code, productName=pname, method=method)
             rec['itemSeq'] = seq
             rawp = os.path.join(RAW, '%s.json' % seq)
             j = _read(rawp, None)
@@ -299,11 +315,27 @@ def reextract(order):
     summarize([n for n in prog if not n.startswith('_')], prog, _NoApi)
 
 
+_PRODUCTS = {}
+
+
+def product_route(edi_raw):
+    """응답의 EDI_CODE → (제품코드, 투여 구분). products.json에서 찾지 못하면 (첫 코드 또는 None, None)"""
+    if not _PRODUCTS:
+        _PRODUCTS.update(json.load(open(os.path.join(DATA, 'dur', 'products.json'), encoding='utf-8'))['products'])
+    codes = [e.zfill(9) for e in re.split(r'[,;\s]+', str(edi_raw or '')) if e]
+    for c in codes:
+        if c in _PRODUCTS:
+            return c, _PRODUCTS[c][5]
+    return (codes[0] if codes else None), None
+
+
 def build_record(name, seq, it):
+    edi, route = product_route(it.get('EDI_CODE'))
     rules = extract_rules(it.get('NB_DOC_DATA'), it.get('UD_DOC_DATA'), it.get('ITEM_SEQ', seq))
     return {
         'ingredient': name, 'productSeq': seq, 'itemName': it.get('ITEM_NAME'),
         'atc': it.get('ATC_CODE'), 'etcOtc': it.get('ETC_OTC_CODE'), 'changeDate': it.get('CHANGE_DATE'),
+        'ediCode': edi, 'route': route,
         'docUrls': {'ee': it.get('EE_DOC_ID'), 'ud': it.get('UD_DOC_ID'), 'nb': it.get('NB_DOC_ID')},
         'rules': rules, 'fetchedAt': datetime.datetime.now().isoformat(timespec='seconds')}
 

@@ -1,0 +1,185 @@
+{
+ "ingredient": "fenofibrate + pitavastatin calcium",
+ "productSeq": "202503295",
+ "itemName": "유한피타바노정2/145밀리그램(피타바스타틴칼슘, 페노피브레이트)",
+ "atc": "C10BA14",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260630",
+ "ediCode": "642106410",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202503295/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202503295/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202503295/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "이 약은 과도한 알코올 복용 환자에게 투여 시 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d355294d30",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ④",
+   "subject": "",
+   "excerpt": "콜레스티라민",
+   "extractor": "kw-v4",
+   "id": "4f794810e2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "콜레스티라민과 병용에 의해 피타바스타틴의 흡수가 저해되어 혈중 농도가 저하할 가능성이 있기 때문에 콜레스티라민의 투여 후 충분한 간격을 두고 이 약을 투여하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "1d7e18dca2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "71c2338902",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 피타바스타틴칼슘을 함유하고 있으며 피타바스타틴칼슘은 임부에게 투여금기이다. 따라서 이 약은 임부에게 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "51fbc41296",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "피타바스타틴칼슘",
+   "excerpt": "피타바스타틴칼슘은 임부에게 투여 금기이다. 임부에서의 안전성은 확립되지 않았다. 피타바스타틴칼슘을 모체에 투여하는 것은 태아에서 콜레스테롤 합성의 전구체인 메발론산염의 수준을 감소시킬 수 있다. 이러한 이유로 임부, 임신을 계획중인 여성 또는 임신이 의심되는 여성에게 피타바스타틴칼슘을 투여해서는 안된다. 임신 기간 동안 또는 임신이 아니라고 판명될 때까지 피타바스타틴칼슘 투여를 반드시 중단해…",
+   "extractor": "kw-v4",
+   "id": "5864066575",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "페노피브레이트",
+   "excerpt": "임신한 여성의 페노피브레이트 투여에 대한 적절한 자료는 없다. 임신중(특히 임신 3개월 이후)에 투여시 태아에 축적되어 태아독성을 유발할 위험성이 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다",
+   "extractor": "kw-v4",
+   "id": "14bd826c50",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "페노피브레이트",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "cd8dfd43c0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "페노피브레이트",
+   "excerpt": "동물실험(암컷 쥐)에서 페노피브레이트의 모유로의 이행이 보고되었다. 페노피브레이트, 피타바스타틴칼슘 그리고/또는 그 대사체가 사람 유즙으로 분비되는지 여부는 알려지지 않았으므로 수유부에게 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "dd04d0375f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "페노피브레이트",
+   "excerpt": "생식",
+   "extractor": "kw-v4",
+   "id": "fd48dc1d0e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "페노피브레이트",
+   "excerpt": "이 약이 생식에 미치는 영향에 대한 임상적 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "21107ba756",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 이 약의 용량 조절은 필요하지 않다. 그러나 신기능이 감소하여 추정사구체여과율이 60mL/min/1.73m2 미만인 환자에게는 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "433b2ea3e9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:15",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,135 @@
+{
+ "ingredient": "captopril",
+ "productSeq": "198600630",
+ "itemName": "카프릴정12.5밀리그람(캅토프릴)수출명;Captolongtablet12.5mg(captopril)",
+ "atc": "C09AA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20201229",
+ "ediCode": "641903500",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600630/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600630/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600630/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 10)",
+   "subject": "",
+   "excerpt": "알코올과 병용투여하는 경우에는 알코올 작용이 상승할 수 있으므로 주의한다.",
+   "extractor": "kw-v4",
+   "id": "465cb26bd5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 제2 및 3기에 ACE저해제를 투여할 경우 태아 및 신생아에 저혈압, 신생아 두개형성부전, 무뇨, 고칼륨혈증, 가역성 또는 비가역성 신부전 및 사망을 일으킬 수 있다. 또한 태아의 신기능감소에 의한 양수과소증으로 태아사지경축, 두개안면변형, 폐발육형성부전 등이 나타날 수 있다. ACE저해제의 투여와의 상관성은 확립되지 않았으나 조숙, 자궁내 성장지연, 동맥관개존증(Patent ductu…",
+   "extractor": "kw-v4",
+   "id": "ad066d1300",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유중으로의 이행이 보고되어 있으므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "9cd75d0b6c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에는 다음 사항을 주의하여 저용량에서 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "b30caa860d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자에서의 급격한 이뇨는 혈장량의 감소를 초래하므로 탈수, 저혈압 등에 의한 기립성 조절장애, 어지러움, 실신 등이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "4561f5610b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "특히 심질환 환자 중 부종이 있는 고령자에서의 급격한 이뇨는 급속한 혈장량 감소·혈액농축을 초래하여 뇌경색 등의 혈전색전증이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "0cf6e48efb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서의 과도한 혈압강하는 바람직하지 않다(뇌경색이 나타날 수 있다.).",
+   "extractor": "kw-v4",
+   "id": "feb04d2e30",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "고령자에서는 저나트륨혈증, 저칼륨혈증이 나타나기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "7a166c66de",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "18944c24ce",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 투여전에 최근에 환자가 받은 혈압강하요법, 혈압상승 정도, 염분제한 및 기타 임상적 상태를 고려하고 가능하면 이 약 치료 1주일전에 이전의 요법을 중단하도록 한다. 캅토프릴로서 초회량으로 1회 25㎎ 1일 2회 또는 1일 1회 50㎎을 식사 1시간전에 경구투여한다. 2-4주후 충분한 효과가 나타나지 않는 경우에는 1회 50㎎ 1일 2회 또는 1일 1회 100㎎을 투여하고 추가 2주후…",
+   "meal": "식사 1시간전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:45",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

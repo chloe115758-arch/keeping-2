@@ -1,0 +1,99 @@
+{
+ "ingredient": "atomoxetine hydrochloride",
+ "productSeq": "201307635",
+ "itemName": "아토목신캡슐40밀리그램(아토목세틴염산염)",
+ "atc": "N06BA09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260511",
+ "ediCode": "651903860",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307635/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307635/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307635/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호 작용",
+   "subject": "○ 고혈압치료제 및 혈압상승제",
+   "excerpt": "○ 위의 pH에 영향을 미치는 약물 : 위의 pH를 상승시키는 약물(수산화마그네슘/수산화알루미늄, 오메프라졸)은 이 약의 생체이용률에 영향을 미치지 않았다.",
+   "extractor": "kw-v4",
+   "id": "4376761a97",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약의 임부에 대한 적절하고 잘 관리된 연구는 없었다. 이 약은 잠재적인 이득이 태아에 대한 잠재적 위험성을 상회하지 않는 한 임신 기간 동안 사용해서는 안된다. 동물 시험에서는 일반적으로 임신, 배아/태아 발달, 분만 또는 출산 후 발달과 관련하여 직접적 또는 간접적 유해 작용을 나타내지 않았다.",
+   "extractor": "kw-v4",
+   "id": "3fa39c29d7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "랫트에서 이 약 및/또는 그 대사물은 유즙으로 분비되었다. 이 약이 사람의 유즙으로 분비되는지 여부는 알려지지 않았다. 이 약의 투여는 수유기간 동안에는 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f87ea025b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 대한 이 약의 안전성과 효능은 확립되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "780279381f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "27b4d9b04e",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 공복 혹은 음식물과 함께 복용 할 수 있다.",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:30:19",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

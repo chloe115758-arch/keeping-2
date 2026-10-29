@@ -1,64 +1,68 @@
 {
-  "ingredient": "linagliptin",
-  "productSeq": "202003187",
-  "itemName": "글레린정5밀리그램(리나글립틴)",
-  "atc": "A10BH05",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250512",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003187/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003187/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003187/NB"
+ "ingredient": "linagliptin",
+ "productSeq": "202003187",
+ "itemName": "글레린정5밀리그램(리나글립틴)",
+ "atc": "A10BH05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250512",
+ "ediCode": "628901910",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003187/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003187/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003187/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 임부를 대상으로 한 대조시험 결과는 없으므로 임부에서의 사용은 권장되지 않는다. 동물실험에서 최고 투여용량인 240 mg/kg/day (AUC 비교에 의하면 인체 노출도의 약 943배)을 투여하였을 때 생식력에 이상반응은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "f1894fe8cd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "fc2e8aad46",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 : 임부를 대상으로 한 대조시험 결과는 없으므로 임부에서의 사용은 권장되지 않는다. 동물실험에서 최고 투여용량인 240 mg/kg/day (AUC 비교에 의하면 인체 노출도의 약 943배)을 투여하였을 때 생식력에 이상반응은 관찰되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "00607bdbcb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수태한 랫드와 토끼에 경구 투여했을 때 리나글립틴은 태반을 거쳐 태자로 전달되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a0e74e3b7a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부, 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부 : 동물실험에서 리나글립틴 및 대사체가 모유를 통해 배출되는 것이 관찰되었다. 이 약이 사람 유즙으로 분비되는지는 알려지지 않았다. 이 약을 수유부에게 투여할 때 주의해야한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "87d91b699f",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 임상시험에 참여한 환자(총 4040명) 중 65세 이상 환자는 1085명, 75세 이상 환자가 131명이었다. 고령자에서의 안전성 유효성은 젊은 환자와 차이가 없었다. 고령자에서의 용법용량 조절이 필요하지 않다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:08:16"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수태한 랫드와 토끼에 경구 투여했을 때 리나글립틴은 태반을 거쳐 태자로 전달되었다.",
+   "extractor": "kw-v4",
+   "id": "4405dd7657",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 동물실험에서 리나글립틴 및 대사체가 모유를 통해 배출되는 것이 관찰되었다. 이 약이 사람 유즙으로 분비되는지는 알려지지 않았다. 이 약을 수유부에게 투여할 때 주의해야한다.",
+   "extractor": "kw-v4",
+   "id": "ec314a85cf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에 참여한 환자(총 4040명) 중 65세 이상 환자는 1085명, 75세 이상 환자가 131명이었다. 고령자에서의 안전성 유효성은 젊은 환자와 차이가 없었다. 고령자에서의 용법용량 조절이 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "9fb1625d2e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

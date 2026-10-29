@@ -76,6 +76,9 @@ t('음식 주의(알코올)는 상대 없이 약 자체에 붙고, 복용 시점
   const m = care.analyze([drug('metf', '메토폴정', ['19:00'])], {});
   const item = m.slots[0].items[0];
   assert.ok(item.flags.some((f) => f.kind === 'food' && /알코올/.test(f.short)), JSON.stringify(item.flags));
+  assert.ok(item.foods.some((x) => /알코올/.test(x.ko)), JSON.stringify(item.foods));
+  assert.strictEqual(m.summary.cautionCount, 0, '음식 주의는 주의 개수에 세지 않는다');
+  assert.ok(m.summary.foodNoteCount >= 1 && m.slots[0].summary.cautionCount === 0 && m.slots[0].summary.foodNoteCount >= 1);
   assert.ok(item.mealRelation && /식사와 함께/.test(item.mealRelation.label), JSON.stringify(item.mealRelation));
 });
 t('병용금기(DUR)는 ① 공식 지정으로 양쪽에 붙는다', () => {
@@ -107,5 +110,28 @@ t('같은 규칙이 한 약에 중복으로 붙지 않는다', () => {
   const items = base(); items.push(supp('ca2', ['calcium'], ['09:30'], '칼슘 2'));
   const ids = flagsOf(care.analyze(items, {}), 'levo').map((f) => f.id);
   assert.strictEqual(new Set(ids).size, ids.length);
+});
+t('투여 경로가 다른 제품에는 규칙을 붙이지 않는다(route_mismatch)', () => {
+  const wrong = Care.create({ pack: { entries: { [key('씬지로이드정0.075')]: Object.assign({}, E.levothyroxine, { route: '주사' }) } }, dur, groups });
+  const m = wrong.analyze([drug('levo', '씬지로이드정0.075', ['07:00']), supp('ca', ['calcium'], ['07:30'])], {});
+  assert.deepStrictEqual(m.uncovered, [{ itemId: 'levo', reason: 'route_mismatch' }]);
+  assert.deepStrictEqual(flagsOf(m, 'levo'), []);
+  const same = Care.create({ pack: { entries: { [key('씬지로이드정0.075')]: Object.assign({}, E.levothyroxine, { route: '내복' }) } }, dur, groups });
+  assert.ok(flagsOf(same.analyze([drug('levo', '씬지로이드정0.075', ['07:00']), supp('ca', ['calcium'], ['07:30'])], {}), 'levo').length > 0);
+});
+t('안내가 아닌 간격(actionable=false)은 시간 제안·간격 문구에 쓰지 않는다(clopidogrel 사례)', () => {
+  const rule = Object.assign({}, E.levothyroxine.rules.find((r) => r.interval && r.interval.minHours === 4), { interval: { minHours: 12, maxHours: null, qualifier: '', text: '12시간 간격', actionable: false } });
+  const c2 = Care.create({ pack: { entries: { [key('씬지로이드정0.075')]: Object.assign({}, E.levothyroxine, { rules: [rule] }) } }, dur, groups });
+  const m = c2.analyze([drug('levo', '씬지로이드정0.075', ['07:00']), supp('ca', ['calcium'], ['08:00'])], {});
+  const f = flagsOf(m, 'levo')[0];
+  assert.ok(f && /병용 주의 안내/.test(f.short) && !/12시간/.test(f.short), JSON.stringify(f));
+  assert.deepStrictEqual(m.suggestions, []);
+});
+t('actionable이 없는 옛 규칙은 안내로 취급한다(호환)', () => {
+  const rule = Object.assign({}, E.levothyroxine.rules.find((r) => r.interval && r.interval.minHours === 4));
+  delete rule.interval.actionable;
+  const c2 = Care.create({ pack: { entries: { [key('씬지로이드정0.075')]: Object.assign({}, E.levothyroxine, { rules: [rule] }) } }, dur, groups });
+  const m = c2.analyze([drug('levo', '씬지로이드정0.075', ['07:00']), supp('ca', ['calcium'], ['09:00'])], {});
+  assert.ok(m.suggestions.some((s) => s.suggestTime === '11:00'));
 });
 console.log('\n' + n + '개 통과');

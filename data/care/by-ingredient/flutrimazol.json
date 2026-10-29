@@ -1,40 +1,44 @@
 {
-  "ingredient": "flutrimazol",
-  "productSeq": "201600380",
-  "itemName": "루마졸크림(플루트리마졸)",
-  "atc": "D01AC16",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600380/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600380/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600380/NB"
+ "ingredient": "flutrimazol",
+ "productSeq": "201600380",
+ "itemName": "루마졸크림(플루트리마졸)",
+ "atc": "D01AC16",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "622802642",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600380/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600380/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201600380/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물에 경피투여시 생식독성은 알려져 있지 않다. 임부에 대한 임상경험이 없으므로 임부는 위험성에 비해 유익성이 상회한다고 판단되는 경우에 한해서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "1590627510",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "56de1372bf",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물에 경피투여시 생식독성은 알려져 있지 않다. 임부에 대한 임상경험이 없으므로 임부는 위험성에 비해 유익성이 상회한다고 판단되는 경우에 한해서 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fc6691d12e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 모유중으로 이행되는지의 여부가 밝혀지지 않았으므로 수유부에는 엄격한 지도하에 신중히 투여한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:18:52"
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 모유중으로 이행되는지의 여부가 밝혀지지 않았으므로 수유부에는 엄격한 지도하에 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "6c8df0ac27",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

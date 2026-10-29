@@ -1,0 +1,44 @@
+{
+ "ingredient": "sobrerol",
+ "productSeq": "198701672",
+ "itemName": "지엘소브레롤캡슐",
+ "atc": "R05CB07",
+ "etcOtc": "일반의약품",
+ "changeDate": "20190325",
+ "ediCode": "649700660",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701672/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701672/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701672/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음과 같은 사람은 이약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 1)",
+   "subject": "",
+   "excerpt": "임부 : 기형발생은 없으나 임부 또는 임신하고 있을 가능성이 있는 여성에 투여할 경우에는 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "f8289f726a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "2. 다음과 같은 사람은 이약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "a35221f424",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:42",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

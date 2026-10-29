@@ -1,0 +1,137 @@
+{
+ "ingredient": "carfilzomib",
+ "productSeq": "201701541",
+ "itemName": "키프롤리스주30밀리그램(카르필조밉)",
+ "atc": "L01XG02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260107",
+ "ediCode": "052300071",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201701541/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201701541/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201701541/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "1) 임부",
+   "subject": "위험성요약",
+   "excerpt": "이 약은 동물시험결과와 이 약의 작용기전에 근거하여 투여 시 태아독성을 야기할 수 있다. 이 약을 임산부에 사용한 통제된 임상시험 결과는 없다.",
+   "extractor": "kw-v4",
+   "id": "ae47a0399d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "1) 임부",
+   "subject": "위험성요약",
+   "excerpt": "가임 여성은 이 약을 투여받는 동안 임신을 피해야 한다. 남성은 이 약을 투여받는 동안 배우자가 임신하는 것을 피해야 한다. 이 약을 임산부에 처방 시 이 약의 이익/위험과 태아에 가해질 수 있는 위험성을 고려해야 한다. 이 약을 임신 중 사용하거나 환자가 이 약을 투여 중에 임신하게 된다면, 환자에게 태아에 위험이 있음을 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "bafe35b6e7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "1) 임부",
+   "subject": "동물시험결과",
+   "excerpt": "이 약을 임신한 랫트와 토끼의 기관형성기 동안 랫트에는 2 mg/kg/일 용량, 토끼에는 0.8 mg/kg/일 용량까지 정맥투여 하였을 때 모든 시험용량에서 기형발생을 나타내지 않았다. 토끼에서는 0.4 mg/kg/일 용량 이상에서 착상 전 소실 증가가 일어났으며 0.8 mg/kg/일의 모계 독성 용량에서는 조기 흡수 및 착상 후 소실 증가와 태아 체중 감소가 관찰되었다. 토끼에서의 0.4…",
+   "extractor": "kw-v4",
+   "id": "d1a97a20a4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "2) 수유부",
+   "subject": "위험성요약",
+   "excerpt": "이 약의 모유 중 존재 여부, 수유받은 신생아 및 영아에 대한 영향, 및 모유 생성에 대한 영향은 알려져 있지 않다. 모유수유 영아에 중대한 이상반응 발생 가능성 때문에 이 약의 치료 기간 동안과 치료 후 2주 동안은 산모에게 모유수유를 하지 말 것을 권고한다.",
+   "extractor": "kw-v4",
+   "id": "22c2d22c8c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에 참여한 2,387명의 환자 중 51%는 65세 이상이었고 14%는 75세 이상이었다. 중대한 이상반응의 발생률은 65세 미만 환자에서 49%, 65~74세 환자에서 58%, 75세 이상 환자에서 63%였다. 이 약(주 2회 20/56 mg/m2 용량)과 다라투무맙(정맥내 주입) 및 덱사메타손의 병용요법으로 치료한 308명의 환자 중 47%는 65세 이상이었고 9%는 75세…",
+   "extractor": "kw-v4",
+   "id": "d0d7567946",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "2.1) 재발 또는 불응성 다발성골수종에 대한 레날리도마이드와 덱사메타손과의 병용요법(Study 1)",
+   "subject": "",
+   "excerpt": "KRd 군에서 이 약 20 mg/m2의 시작 용량으로, 첫 주기, 8일 및 그 이후에 27 mg/m2로 증량하여 이 약을 평가하였다. 이 약은 첫 번째 주기에서 12주기까지 각 28일 주기의 1, 2, 8, 9, 15 및 16일에 10분 동안 투여되었다. 이 약은 13주기에서 18주기까지 각 28일 주기의 1, 2, 15 및 16일에 투여되었다. 덱사메타손 40 mg을 각 주기의 1, 8,…",
+   "extractor": "kw-v4",
+   "id": "ff6beeadee",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "2.2) 재발 또는 불응성 다발성골수종에 대한 덱사메타손과의 병용요법(Study 2 및 Study 3)",
+   "subject": "",
+   "excerpt": "이 시험은 20 mg/m2의 초기 용량, 이후 첫 번째 주기, 8일째에 56 mg/m2으로 증량하여 이 약을 평가하였다. 이 약은 각 28일 주기의 1, 2, 8, 9, 15, 16일에 30분 동안 투여로 매주 2회 투여되었다. 덱사메타손 20 mg은 각 주기의 1, 2, 8, 9, 15, 16, 22, 23일에 경구 또는 정맥으로 투여되었다. Vd 군에서 보르테조밉 1.3 mg/m2이 21…",
+   "extractor": "kw-v4",
+   "id": "a1fead01d5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤 펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "2.2) 재발 또는 불응성 다발성골수종에 대한 덱사메타손과의 병용요법(Study 2 및 Study 3)",
+   "subject": "",
+   "excerpt": "이 시험의 1군에서는 20 mg/m2의 초기 용량, 이후 첫 번째 주기, 8일부터 70 mg/m2으로 증량하여 이 약을 평가하였다. 1군에서 이 약은 각 28일 주기의 1, 8 및 15일에 30분 주입으로 주 1회 투여되었다. 이 시험의 2군에서는 20 mg/m2의 초기 용량, 이후 첫 번째 주기, 8일부터 27 mg/m2으로 증량하여 이 약을 평가하였다. 2군에서 이 약은 각 28일 주기의…",
+   "extractor": "kw-v4",
+   "id": "60032eb0c8",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤 펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:17",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

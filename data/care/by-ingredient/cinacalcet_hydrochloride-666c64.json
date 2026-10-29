@@ -1,71 +1,75 @@
 {
-  "ingredient": "cinacalcet hydrochloride",
-  "productSeq": "201803170",
-  "itemName": "베네프정(시나칼세트염산염)",
-  "atc": "H05BX01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20251024",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803170/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803170/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803170/NB"
-  },
-  "rules": [
+ "ingredient": "cinacalcet hydrochloride",
+ "productSeq": "201803170",
+ "itemName": "베네프정(시나칼세트염산염)",
+ "atc": "H05BX01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251024",
+ "ediCode": "644502600",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803170/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803170/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803170/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "주의를 요하는 병용 투여",
+   "excerpt": "약제명등 임상 증상ㆍ조치 방법 기전ㆍ위험 인자 아졸계항진균류제 - 이트라코나졸 등 마크로라이드계 항생 물질 - 에리트로마이신 - 클래리트로마이신 등 염산 아미오다론 자몽 쥬스 이약의 혈중농도가 상승하여, 작용이 증강될 우려가 있다. 이약과 케토코나졸을 병용 했을 때, 이약의 AUC가 약 2 배 증가한다. 이약의 대사에는 주로 CYP3A4가 관여하고 있기 때문에, 왼쪽의 CYP3A4 저해제등과…",
+   "extractor": "kw-v4",
+   "id": "1bc540bb5e",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "130ba08862",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "주의를 요하는 병용 투여",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "약제명등 임상 증상ㆍ조치 방법 기전ㆍ위험 인자 아졸계항진균류제 - 이트라코나졸 등 마크로라이드계 항생 물질 - 에리트로마이신 - 클래리트로마이신 등 염산 아미오다론 자몽 쥬스 이약의 혈중농도가 상승하여, 작용이 증강될 우려가 있다. 이약과 케토코나졸을 병용 했을 때, 이약의 AUC가 약 2 배 증가한다. 이약의 대사에는 주로 CYP3A4가 관여하고 있기 때문에, 왼쪽의 CYP3A4 저해제등과…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6cf0eb88e8",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "65세 이상의 환자에 있어서의 부작용(특히 QT연장)의 발현 빈도는 65세 미만의 환자와 비교하여 높은 경향이 확인되었기 때문에, 부작용이 발현했을 경우에는 감량하는 등 주의할 것.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "407e75ca0c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "가. 임산부 또는 임신하고 있을 가능성이 있는 부인에게는 투여하지 않는 것이 바람직하지만, 부득이하게 투여하는 경우에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우만 투여할 것［임신중의 투여에 관한 안전성은 확립되어 있지 않다. 동물 실험(랫드 및 토끼)에서 어미 동물의 저칼슘혈증, 체중 증가 억제 및 섭이량 감소, 태아 중량의 감소가 관찰되었다. 또, 동물 실험(랫드 및 토끼)으로…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "49d1165c7c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "8. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "나. 수유중의 부인에게 투여하는 것을 피하고 부득이하게 투여하는 경우에는 수유를 중지할 것 ［동물 실험(랫드)에서 유즙중으로 이행하는 것이 보고되었고 수유기 신생아의 체중 증가 억제가 확인되었다］.",
-      "extractor": "kw-v1"
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:17:09"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 환자에 있어서의 부작용(특히 QT연장)의 발현 빈도는 65세 미만의 환자와 비교하여 높은 경향이 확인되었기 때문에, 부작용이 발현했을 경우에는 감량하는 등 주의할 것.",
+   "extractor": "kw-v4",
+   "id": "bfcea1df1d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가. 임산부 또는 임신하고 있을 가능성이 있는 부인에게는 투여하지 않는 것이 바람직하지만, 부득이하게 투여하는 경우에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우만 투여할 것［임신중의 투여에 관한 안전성은 확립되어 있지 않다. 동물 실험(랫드 및 토끼)에서 어미 동물의 저칼슘혈증, 체중 증가 억제 및 섭이량 감소, 태아 중량의 감소가 관찰되었다. 또, 동물 실험(랫드 및 토끼)으로…",
+   "extractor": "kw-v4",
+   "id": "de3eaf31cb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "나. 수유중의 부인에게 투여하는 것을 피하고 부득이하게 투여하는 경우에는 수유를 중지할 것 ［동물 실험(랫드)에서 유즙중으로 이행하는 것이 보고되었고 수유기 신생아의 체중 증가 억제가 확인되었다］.",
+   "extractor": "kw-v4",
+   "id": "f4c1937926",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

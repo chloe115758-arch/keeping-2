@@ -1,0 +1,137 @@
+{
+ "ingredient": "isosorbide dinitrate",
+ "productSeq": "200308344",
+ "itemName": "이소켓서방캡슐120밀리그램(묽은이소소르비드이질산염)",
+ "atc": "C01DA08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240422",
+ "ediCode": "620500210",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308344/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308344/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200308344/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 3)",
+   "subject": "",
+   "excerpt": "운전이나 기계조작의 반응성에 영향을 미칠 수 있으므로 주의를 기울여야 한다. 이러한 영향은 알코올과의 병용투여시 증가될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "07db5a6833",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 4)",
+   "subject": "",
+   "excerpt": "혈압 강하 효과가 증강될 수 있으므로 이 약 복용 중에는 알코올 병용을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "5f13dc1f9c",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "혈관확장제, 칼슘길항제, β차단약, ACE 저해제 등과 같은 혈압강하제, MAO 억제제(Monoamine Oxidase Inhibitor, MAOI), 삼환계 항우울제, 신경이완제 및 알코올과의 병용에 의해 혈압강하작용이 증강될 수 있다. ACE 저해제를 복용하는 환자에서 순환 허탈 증상이 나타날 수 있다. 이 약과 ACE 저해제 또는 동맥 혈관확장제의 병용투여에 의해 항고혈압 효과가 과도하…",
+   "extractor": "kw-v4",
+   "id": "4ab216ca27",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에의 투여 1)",
+   "subject": "",
+   "excerpt": "이 약이 사람의 생식능에 미치는 영향은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "54c185802b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에의 투여 2)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다(의사의 지시가 없는 한 임신초기 3개월간은 투여하지 않는다.).",
+   "extractor": "kw-v4",
+   "id": "3f4af2f41c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에의 투여 3)",
+   "subject": "",
+   "excerpt": "수유 중 투여에 대한 유아의 위험에 대해서 사용 가능한 근거는 불확실하거나 부적합하다. 질산염 제제가 모유 중으로 이행한다는 자료가 있으며 이는 유아에게 메트헤모글로빈혈증을 유발할 수 있다. 이소소르비드이질산염의 배설의 정도 및 이의 대사체의 모유 중으로의 이행은 밝혀지지 않았으므로 의사의 지시에 의해 필수적인 경우를 제외하고는 수유 중에는 투여를 피한다.",
+   "extractor": "kw-v4",
+   "id": "94777905b5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 간기능이 저하되어 있는 경우가 많아 높은 혈중농도가 지속될 수 있으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "0194f1e7f9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "18c7dc1dd7",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 이소소르비드이질산염으로서 1일 1회 120㎎을 아침식사 후 경구투여 한다.",
+   "meal": "식사 후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:07",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

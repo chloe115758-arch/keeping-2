@@ -1,0 +1,157 @@
+{
+ "ingredient": "calcitriol",
+ "productSeq": "199602290",
+ "itemName": "칼시오연질캡슐0.25마이크로그램(칼시트리올)",
+ "atc": "A11CC04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220127",
+ "ediCode": "643502430",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199602290/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199602290/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199602290/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "이 약은 비타민 D3의 가장 효과적인 활성 대사체로 비타민 D 및 그 유도체와의 병용에 의해 상가 작용 및 고칼슘혈증이 나타날 수 있으므로 병용하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "5c1da6d111",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "식이 지침, 특히 칼슘제제에 관한 지침을 준수하도록 하며, 칼슘 함유제제를 무절제하게 복용하지 않도록 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "2f58c6d065",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘제제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 5)",
+   "subject": "",
+   "excerpt": "칼슘 흡수를 촉진하는 비타민 D 유도체와 칼슘 흡수를 억제하는 코르티코스테로이드는 기능적 길항관계이다.",
+   "extractor": "kw-v4",
+   "id": "3683c0e807",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 6)",
+   "subject": "",
+   "excerpt": "장기 신장투석 환자의 경우 마그네슘 함유제제(제산제, 사하제)와의 병용에 의해 고마그네슘혈증이 나타날 수 있으므로, 이 약의 투여기간 동안에는 병용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "300d49bd7a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "마그네슘 함유"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 9)",
+   "subject": "",
+   "excerpt": "콜레스티라민 및 세벨라머를 포함하는 담즙산 결합수지나 사하제인 미네랄 오일에 의해 이 약의 장관 흡수가 저하될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "4c61f67f05",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 기형 유발 작용이 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성의 경우 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "f4275ec965",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "외인성의 칼시트리올은 모유를 통해 이행된다고 추정된다. 모체의 고칼슘혈증과 수유받는 영아에서 이 약에 기인한 이상반응의 가능성을 고려하여, 모체와 영아의 혈청 칼슘 수치를 모니터링 한다면, 이 약을 복용하는 동안 수유할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "930c292717",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8.고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 용량을 신중히 결정하여야 한다. 보통 용량범위의 최저치부터 투여를 시작하고 간·신장·심장의 기능저하, 합병증, 다른 약물치료에 대한 사항을 자주 관찰하여 반영해야 한다.",
+   "extractor": "kw-v4",
+   "id": "92806e4fdf",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:21",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,87 @@
+{
+ "ingredient": "nimodipine",
+ "productSeq": "199301653",
+ "itemName": "삼진니모디핀정",
+ "atc": "C08CA06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200131",
+ "ediCode": "647800720",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199301653/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199301653/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199301653/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 6)",
+   "subject": "",
+   "excerpt": "약물-음식물 상호작용: 자몽주스는 시토크롬 P450 3A4 시스템을 억제한다. 디하이드로피리딘계 칼슘 길항제와 자몽주스를 함께 투여할 경우 이 약의 초화통과대사의 감소 또는 청소율 감소로 인해 이 약의 혈중농도 증가 및 연장된 활성을 초래할 수 있다. 결과적으로 혈압 강하 효과가 증가될 수 있다. 자몽주스를 섭취한 후 이러한 효과는 최종 자몽주스 섭취 후 최소 4일 동안 유지될 수 있다. 따…",
+   "extractor": "kw-v4",
+   "id": "06b272dddb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에서 이 약에 대해 실시된 적절한 임상시험은 없다.",
+   "extractor": "kw-v4",
+   "id": "0039f5fddc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약 및 이 약의 대사산물은 모체 혈장 농도와 일치하는 정도의 농도로 모유에서 발견된다. 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "b998565073",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "in vitro 수정능: 단일의 in vitro 수정능시험에서, 칼슘 길항제는 정자 머리부분의 가역적인 생화학적 변화를 유발하여 정자의 기능을 저해할 수도 있다.",
+   "extractor": "kw-v4",
+   "id": "eee1066e92",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "중증의 신기능장애(사구체여과율 < 20 mL/min) 또는 중증의 심혈관기능장애를 가진 고령자의 뇌기능장애에 사용한 경우에는 이 약으로 치료할 지 여부는 신중히 고려해야 하며 정기적으로 추적조사를 하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "f8bfdf3089",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

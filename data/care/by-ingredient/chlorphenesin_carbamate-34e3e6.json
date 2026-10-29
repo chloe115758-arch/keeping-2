@@ -1,0 +1,75 @@
+{
+ "ingredient": "chlorphenesin carbamate",
+ "productSeq": "199302402",
+ "itemName": "카민산250밀리그램정(클로르페네신카르바메이트)",
+ "atc": "M03BX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200914",
+ "ediCode": "621801820",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302402/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302402/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302402/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "다음 약물과의 병용 또는 음주에 의하여 상호작용이 증강될 수 있으므로 이러한 경우에는 투여하지않는 것이 바람직하지만 부득이하게 병용하는 경우에는 감량하는 등 신중히 투여한다. : 페노치아진계 약물(클로르프로마진 등), 중추신경억제제(바르비탈계 약물 등), MAO저해제",
+   "extractor": "kw-v4",
+   "id": "1733c14a46",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상 유익성이 위험성을 상회한다고 판단된 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "674a72e416",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "defb523078",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "a2bc384379",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

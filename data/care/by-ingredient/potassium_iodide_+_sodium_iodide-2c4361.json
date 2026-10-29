@@ -1,0 +1,32 @@
+{
+ "ingredient": "potassium iodide + sodium iodide",
+ "productSeq": "199600635",
+ "itemName": "큐아렌점안액",
+ "atc": "S01XA",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230824",
+ "ediCode": "643901511",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199600635/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199600635/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199600635/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음 환자에는 투여하지 말 것. 3)",
+   "subject": "",
+   "excerpt": "임부 및 수유부, 소아",
+   "extractor": "kw-v4",
+   "id": "88293f90f9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:04",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

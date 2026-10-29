@@ -1,90 +1,118 @@
 {
-  "ingredient": "rasagiline mesylate",
-  "productSeq": "201908145",
-  "itemName": "이지렉트정0.5밀리그램(라사길린메실산염)",
-  "atc": "N04BD02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20200628",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908145/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908145/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908145/NB"
-  },
-  "rules": [
+ "ingredient": "rasagiline mesylate",
+ "productSeq": "201908145",
+ "itemName": "이지렉트정0.5밀리그램(라사길린메실산염)",
+ "atc": "N04BD02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200628",
+ "ediCode": "622804150",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908145/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908145/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908145/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "3. 일반적 주의 8)",
+   "subject": "",
+   "excerpt": "이 약은 운전 및 기계 조작 능력에 영향을 미칠 수 있다. 환자는 이 약이 운전 및 기계 조작에 부정적인 영향을 끼치지 않는다는 것이 확인될 때까지, 자동차를 포함한 위험한 기계를 다룰 때 주의해야 한다. 이 약을 복용하면서 졸음이나 갑작스런 수면을 경험했거나, 복용 전에 그러한 경험이 있는 환자는 운전, 기계 조작, 또는 높은 지점에서의 활동 등 주의력이 저하될 경우 본인이나 타인에게 부상…",
+   "extractor": "kw-v4",
+   "id": "d81a1783c3",
+   "kind": "note",
+   "matched": [
     {
-      "id": "8eca655aad",
-      "kind": "note",
-      "section": "general",
-      "where": "3. 일반적 주의 8)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "음주"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약은 운전 및 기계 조작 능력에 영향을 미칠 수 있다. 환자는 이 약이 운전 및 기계 조작에 부정적인 영향을 끼치지 않는다는 것이 확인될 때까지, 자동차를 포함한 위험한 기계를 다룰 때 주의해야 한다. 이 약을 복용하면서 졸음이나 갑작스런 수면을 경험했거나, 복용 전에 그러한 경험이 있는 환자는 운전, 기계 조작, 또는 높은 지점에서의 활동 등 주의력이 저하될 경우 본인이나 타인에게 부상…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7ea0d69bb2",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "4. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "St. John"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "고혈압 위기를 유발할 수 있는 비선택적 MAO 억제의 위험 증가 때문에 다른 MAO 억제제(처방 없이 복용 가능한 천연 의약품(예, St. John’s Wort) 포함)와 병용 투여해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7f95622adb",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약을 임부에게 사용한 임상자료는 없다. 동물시험에서는 수태능, 배태자발생, 출산 또는 출생 후 발생에 대해 직접 또는 간접적으로 해로운 영향을 미치지 않았다. 이 약을 임부에게 투여할 때는 주의해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0feb5e85ba",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 프로락틴 분비를 저해하여 수유를 방해할 수 있다는 시험결과가 있다. 이 약이 사람에서 모유로 이행되는지는 알려지지 않았다. 이 약을 수유부에게 투여할 때는 주의해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "47d44fc8bd",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "65세 이상 고령자에 대한 용량조절은 요구되지 않는다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:09:16"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "4. 상호작용 1)",
+   "subject": "",
+   "excerpt": "고혈압 위기를 유발할 수 있는 비선택적 MAO 억제의 위험 증가 때문에 다른 MAO 억제제(처방 없이 복용 가능한 천연 의약품(예, St. John’s Wort) 포함)와 병용 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "a4534c86c5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "9338fa6e9f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 임부에게 사용한 임상자료는 없다. 동물시험에서는 수태능, 배태자발생, 출산 또는 출생 후 발생에 대해 직접 또는 간접적으로 해로운 영향을 미치지 않았다. 이 약을 임부에게 투여할 때는 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e4991d7d37",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "9cf2143e1a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 프로락틴 분비를 저해하여 수유를 방해할 수 있다는 시험결과가 있다. 이 약이 사람에서 모유로 이행되는지는 알려지지 않았다. 이 약을 수유부에게 투여할 때는 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "5594334f49",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상 고령자에 대한 용량조절은 요구되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "f191d8e82e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

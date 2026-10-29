@@ -1,40 +1,44 @@
 {
-  "ingredient": "budesonide(micronized)",
-  "productSeq": "202600221",
-  "itemName": "풀미코푸분무용현탁액(미분화부데소니드)",
-  "atc": "R03BA02",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600221/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600221/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600221/NB"
+ "ingredient": "budesonide(micronized)",
+ "productSeq": "202600221",
+ "itemName": "풀미코푸분무용현탁액(미분화부데소니드)",
+ "atc": "R03BA02",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "057001861",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600221/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600221/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600221/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 임신 중 이 약을 투여함으로써 얻게 되는 천식 조절의 잇점이 잠재적 위험성을 상회한다. 대규모 전향적 역학조사 및 전세계적인 시판후 조사 결과에 의하면 임신 기간동안 흡입 부데소니드는 태아나 신생아의 건강에 해로운 효과가 없었다. 유사 폐 반응을 유발하는 양을 기준으로 할 때 흡입스테로이드는 경구 스테로이드보다 전신효과가 낮기 때문에 먼저 사용을 고려하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "47fc044382",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "e6d8224ded",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부: 임신 중 이 약을 투여함으로써 얻게 되는 천식 조절의 잇점이 잠재적 위험성을 상회한다. 대규모 전향적 역학조사 및 전세계적인 시판후 조사 결과에 의하면 임신 기간동안 흡입 부데소니드는 태아나 신생아의 건강에 해로운 효과가 없었다. 유사 폐 반응을 유발하는 양을 기준으로 할 때 흡입스테로이드는 경구 스테로이드보다 전신효과가 낮기 때문에 먼저 사용을 고려하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f892b9a41b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부: 수유를 통한 부데소니드의 이행여부에 관한 정보는 없으나 흡입을 통한 양은 상대적으로 낮으므로 모유에 존재한다 하더라도 그 양은 적을 것이다. 치료상 이익이 위험성을 상회할 경우에는 수유를 고려할 수 있다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:17:00"
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 수유를 통한 부데소니드의 이행여부에 관한 정보는 없으나 흡입을 통한 양은 상대적으로 낮으므로 모유에 존재한다 하더라도 그 양은 적을 것이다. 치료상 이익이 위험성을 상회할 경우에는 수유를 고려할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "b8cb1cc793",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,93 @@
+{
+ "ingredient": "calcium chloride(A분획중) + dextrose monohydrate(A분획중) + magnesium chloride hexahydrate(A분획중) + potassium chloride(A분획중) + sodium bicarbonate(B분획중) + sodium chloride(B분획중)",
+ "productSeq": "201103797",
+ "itemName": "멀티빅2칼륨액5L",
+ "atc": "B05ZB",
+ "etcOtc": "전문의약품",
+ "changeDate": "20211103",
+ "ediCode": "664300581",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103797/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103797/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103797/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "4. 상호작용 4)",
+   "subject": "",
+   "excerpt": "비타민D 제제나 칼슘함유 제제는 고칼슘혈증을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "5a0f841189",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘함유"
+    },
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임산부",
+   "extractor": "kw-v4",
+   "id": "2488ba2529",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 임신한 여성에게 투여한 자료는 없다. 임부에게 독성이 나타나는지에 대한 동물연구는 불충분하기 때문에, 임부의 상태가 지속적 신대체요법이 필요한 경우를 제외하고는 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "63ee6045d7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "dce609707d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 유즙분비에 대한 정보는 충분하지 않다. 이 약을 투여하는 경우에는 수유는 권장하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "2eb4c02fdd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:27:03",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

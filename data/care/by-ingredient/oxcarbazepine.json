@@ -1,0 +1,238 @@
+{
+ "ingredient": "oxcarbazepine",
+ "productSeq": "201309501",
+ "itemName": "옥사제핀정300밀리그램(옥스카르바제핀)",
+ "atc": "N03AF02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240311",
+ "ediCode": "651903880",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309501/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309501/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309501/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것. 8)",
+   "subject": "",
+   "excerpt": "고령자, 특히 신장 기능 장애가 있는 고령의 환자",
+   "extractor": "kw-v4",
+   "id": "83bd2bf37f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 7)",
+   "subject": "",
+   "excerpt": "알코올",
+   "extractor": "kw-v4",
+   "id": "a658efac31",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "이 약으로 치료 중 알코올 섭취는 상가적인 진정작용을 일으킬 수 있으므로 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "28cd1b2751",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "뇌전증 및 항뇌전증약과 관련된 일반적 위험",
+   "extractor": "kw-v4",
+   "id": "9ae4d3f1f8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "뇌전증을 겪는 여성 자녀의 기형율은 총 인구의 3%에 비해 2∼3배 가량 높은 것으로 나타났다. 치료 받는 여성에서 기형의 증가는 주로 부가요법으로 치료받는 군에서 나타났다. 특정 치료와/또는 질병과의 인과관계의 범위를 결정하는 것은 불가능했다. 질병 악화가 임부와 태아에 해를 끼칠 수 있기 때문에 효과적인 약물치료는 중단되어서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "2f6d4a33fd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "옥스카르바제핀과 관련된 위험 :",
+   "extractor": "kw-v4",
+   "id": "a982f76c77",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 투여에 대한 자료는 한정되어있다. 이 약의 치료와 관련하여 관찰되는 가장 빈번한 선천성 기형은 심실중격결손, 방실중격결손, 구순구개열, 다운증후군, 이형성 엉덩이(편측 및 양측 모두), 결절성 경화증 및 귀의 선천성 기형이다. North American AED pregnancy registry(NAAPR) 및 EURAP registry (European and International…",
+   "extractor": "kw-v4",
+   "id": "89ef50c5c9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 복용중인 여성이 임신을 하였거나, 임신하기를 원하는 경우 또는 임신 중 이 약의 투여를 개시할 필요가 있을 경우 이 약의 치료상의 유익성과 기형발생 가능성 등 위험성을 주의깊게 비교, 평가 하여야 한다. 특히 임신 초기 3개월 동안에 중요하다. 최소 유효용량이 투여되어야 한다. 항뇌전증약을 단독요법으로 치료받은 여성보다 병용요법으로 치료받은 여성의 자식에게서 선천성 이상이 나타날 가…",
+   "extractor": "kw-v4",
+   "id": "b69f70b823",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "환자들에게 기형유발 위험성 증가의 가능성에 대해 충분히 설명해야 하며, 출산 전 검사의 기회가 주어져야 한다. 질병 악화가 임부와 태아에 해를 끼칠 수 있기 때문에 이 약의 효과적인 약물치료는 중단되어서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "f6e8ee5ef9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "모니터링 및 예방",
+   "extractor": "kw-v4",
+   "id": "2bc822d7de",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 기간 동안 엽산결핍이 나타날 수 있고 항뇌전증약은 이런 상태를 악화시키는 것으로 보고되었다. 엽산결핍은 태아 기형의 발생율을 증가시킬 수 있다. 임신 전과 임신 기간 동안에 엽산보충제의 공급을 권고한다. 비타민 B의 결핍은 피하거나 치료해야한다. 임신 기간 동안 생리학적 변화로 인해 옥스카르바제핀의 활성 대사체(MHD)의 혈장농도가 점차적으로 감소할 수 있다. 임부가 이 약을 투여받을…",
+   "extractor": "kw-v4",
+   "id": "d4553fdb71",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "신생아 : 항뇌전증약은 신생아의 응고작용을 방해하는 것으로 보고되었다. 이에 대한 예방처치로서 임신 마지막 몇 주와 신생아에게 비타민 K을 투여하도록 한다. 드문 경우에, 약물요법은 인산칼슘 대사와 골 무기질 침착에 어려움을 일으키는 신생아 저칼슘혈증과 관련되어있다.",
+   "extractor": "kw-v4",
+   "id": "5534c2c94f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "가임기 여성 및 피임방법 : 가임기 여성은 이 약의 치료기간 동안 매우 효과적인 피임방법(비호르몬성방법이 바람직하다; 예, 자궁 내 피임기구)을 사용하는 것이 권장된다. 이 약은 경구 피임제인 에치닐에스트라디올(Ethinylestradiol) 및 레보노게스트렐(Levonorgestrel)의 치료 효과 실패를 야기할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "383c364a9b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "수유부 : 옥스카르바제핀과 그 활성 대사체(MHD)는 모유로 분비된다.",
+   "extractor": "kw-v4",
+   "id": "98ffadbdb6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "제한된 자료에서 수유 중인 영아는 MHD 혈중 농도가 0.2~0.8 &micro;g/ml(모체의 MHD 혈중 농도의 최대 5%에 해당)으로 나타났다. 비록 노출량이 적게 보여질 수 있으나, 영아에게 위해성이 배제될 수 없다. 그러므로 이 약을 사용하는 동안 수유 여부에 대한 결정은 모유 수유의 유익성과 영아에게 부작용의 잠재적인 위해성을 모두 고려해야 한다. 만약 모유 수유를 하는 경우, 영…",
+   "extractor": "kw-v4",
+   "id": "29eaa96889",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 7)",
+   "subject": "",
+   "excerpt": "수태능 : 사람에서의 수태능에 대한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "93051b1920",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "쥐에서 옥스카르바제핀 및 MHD를 150mg/kg/day 및 450mg/kg/day 까지 각각 경구 투여 시, 암수 모두에서 수태능에 대한 영향은 없었다. 그러나 MHD 최고용량 투여군의 암컷에서 발정주기 중단, 황체수 감소, 착상 감소, 생존태자 감소가 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "1894281e9f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:32:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

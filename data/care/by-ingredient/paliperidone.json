@@ -1,0 +1,183 @@
+{
+ "ingredient": "paliperidone",
+ "productSeq": "202000410",
+ "itemName": "인베가서방정3밀리그램(팔리페리돈)",
+ "atc": "N05AX13",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221026",
+ "ediCode": "646902290",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000410/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000410/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000410/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 8)",
+   "subject": "",
+   "excerpt": "발작 위험이 있는 노인 치매 환자",
+   "extractor": "kw-v4",
+   "id": "08cbdcd781",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "이 약의 일차 중추신경계 영향을 고려하여, 이 약은 다른 중추신경계에 작용하는 약물 및 알코올과 병용시 주의해야 한다. 이 약은 레보도파와 기타 도파민 수용체의 영향을 길항할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "6f8e039e20",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "6a40b171a2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람에서 임신 중 사용에 대한 이 약의 안전성은 확립되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "75e82b24ea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "미국의 청구 데이터베이스 (claims database)를 근거로 실시한 후향적 관찰 코호트연구에서 임신 1기에 항정신병 약물 투여군과 미투여군에 대한 신생아의 선천적 기형 위험도를 비교하였다. 리스페리돈의 활성대사체인 팔리페리돈은 이 연구에서 명확하게 평가되지 않았다. 임상 데이터의 교란변수를 조정하였을 때, 리스페리돈에 대한 선천적 기형 위험도는 항정신병 약물을 투여하지 않은 대조군에 비…",
+   "extractor": "kw-v4",
+   "id": "227e855c12",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "고용량의 팔리페리돈을 투여한 실험실적 동물에서 태자 사망이 약간 증가한 것으로 나타났다. 이러한 고용량은 모체에 독성이 있었다. 최대 사람 노출량의 20-34배 노출에서 자손은 영향을 받지 않았다.",
+   "extractor": "kw-v4",
+   "id": "6a81d49594",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 3기에 항정신병 약물(이 약을 포함)에 노출되었던 신생아는 분만 후 추체외로 증후군 및/또는 금단 증후군의 위험이 있다. 증상으로는 초조, 과다근육긴장, 근육긴장저하, 떨림, 졸음, 호흡곤란 또는 신생아 섭식장애가 나타날 수 있는데 자기제어(self-limiting)가 가능한 증상부터 집중관리 및 입원의 연장이 필요한 경우까지 다양한 중증도를 나타낸다.",
+   "extractor": "kw-v4",
+   "id": "4fbf230a79",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 이익이 위험을 상회할 경우에만 임신 중 사용해야 한다. 사람에서 분만 및 출산에 대한 이 약의 영향은 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "f0e881e7db",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "2de785b13b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "팔리페리돈의 동물 시험과 리스페리돈의 인체 시험에서 팔리페리돈은 유즙으로 분비되었다. 따라서 이 약을 투여중인 여성은 수유해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "3a4092950f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "2975f713fa",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 팔리페리돈으로서 6mg을 1일 1회 아침에 경구투여한다. 이 약은 음식과 함께 투여 또는 공복에 투 여를 일관되게 하고 바꾸어 투여하지 않는다. 초기 용량 조절은 필요하지 않다. 일부 환자는 1일 1회 팔리페 리돈으로서 3-12mg의 용량범위에서 저용량 또는 고용량이 유익할 수 있다. 용량 조정은 임상 재평가 후에 만 실시해야 한다. 용량 증량이 필요한 경우 최소 5일 간격으로 1일…",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "fd72c27e22",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 팔리페리돈으로서 3mg을 1일 1회 아침에 경구투여한다. 이 약은 음식과 함께 투여 또는 공복에 투 여를 일관되게 하고 바꾸어 투여하지 않는다. 초기 용량 조절은 필요하지 않다. 일부 환자는 1일 1회 팔리페 리돈으로서 6-12mg의 용량범위에서 고용량이 유익할 수 있다. 용량 조정은 임상 재평가 후에만 실시해야 한 다. 용량 증량이 필요한 경우 최소 5일 간격으로 1일 3mg씩 증…",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "2975f713fa",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 팔리페리돈으로서 6mg을 1일 1회 아침에 경구투여한다. 이 약은 음식과 함께 투여 또는 공복에 투 여를 일관되게 하고 바꾸어 투여하지 않는다. 초기 용량 조절은 필요하지 않다. 일부 환자는 1일 1회 팔리페리돈으로서 3-12mg의 용량범위에서 저용량 또는 고용량이 유익할 수 있다. 용량 조정은 임상 재평가 후에 만 실시해야 한다. 용량 증량이 필요한 경우 최소 4일 간격으로 1일…",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:43",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

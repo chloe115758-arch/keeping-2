@@ -1,71 +1,75 @@
 {
-  "ingredient": "benserazide hydrochloride + levodopa",
-  "productSeq": "202502529",
-  "itemName": "원도파정50/200밀리그램(벤세라지드, 레보도파)",
-  "atc": "N04BA02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260831",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502529/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502529/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502529/NB"
-  },
-  "rules": [
+ "ingredient": "benserazide hydrochloride + levodopa",
+ "productSeq": "202502529",
+ "itemName": "원도파정50/200밀리그램(벤세라지드, 레보도파)",
+ "atc": "N04BA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260831",
+ "ediCode": "643904210",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502529/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502529/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502529/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 8)",
+   "subject": "",
+   "excerpt": "제산제와 동시 투여시 레보도파의 흡수율이 감소한다. 마도파 HBS의 경우 제산제와 동시 투여시 흡수율이 32% 감소하였다.",
+   "extractor": "kw-v4",
+   "id": "27d76fd633",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "0c3c2ff8b2",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 8)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "제산제와 동시 투여시 레보도파의 흡수율이 감소한다. 마도파 HBS의 경우 제산제와 동시 투여시 흡수율이 32% 감소하였다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e65273e68c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(토끼)에서 임부에 유해한 작용이 나타났고 랫트에 서 벤세라짓에 의해 골격기형이 나타났다는 보고가 있으므로 임부 또는 적절한 피임을 하고 있지 않은 가임 여성에는 투여하지 않는다. 임신 가능성을 배제하기 위해 이 약 투여 전 임신검사가 권고되며 치료 중 임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 이 약 투여 중 임신이 되면 이 약을 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b37f8100f9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유중에는 이 약을 투여하지 않는다. 수유 중 이 약의 사용에 대한 안전성은 확립되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9dba95e5f4",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "○ 이 약을 사용한 치료는 일반적인 레보도파 치료시와 마찬가지로 가능한 한 저용량으로 치료를 개시하여 천천히 증량한다. 질환이 어느 단계이든 용법·용량은 개인별로 결정되어야 한다. 레보도파에 대한 식이단백질의 경쟁효과를 방지하고 보다 신속한 작용발현을 촉진하기 위해 가능하다면 식전 30분 또는 식후 1시간에 이 약을 복용하는 것이 권고된다. 치료 초기에 위장관계 이상반응이 발생할 수 있으나,…",
-      "meal": "식전",
-      "extractor": "kw-v1"
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:18:08"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험(토끼)에서 임부에 유해한 작용이 나타났고 랫트에 서 벤세라짓에 의해 골격기형이 나타났다는 보고가 있으므로 임부 또는 적절한 피임을 하고 있지 않은 가임 여성에는 투여하지 않는다. 임신 가능성을 배제하기 위해 이 약 투여 전 임신검사가 권고되며 치료 중 임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 이 약 투여 중 임신이 되면 이 약을 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "d48bdb56c3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유중에는 이 약을 투여하지 않는다. 수유 중 이 약의 사용에 대한 안전성은 확립되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "1c974dbd01",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "9dba95e5f4",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "○ 이 약을 사용한 치료는 일반적인 레보도파 치료시와 마찬가지로 가능한 한 저용량으로 치료를 개시하여 천천히 증량한다. 질환이 어느 단계이든 용법·용량은 개인별로 결정되어야 한다. 레보도파에 대한 식이단백질의 경쟁효과를 방지하고 보다 신속한 작용발현을 촉진하기 위해 가능하다면 식전 30분 또는 식후 1시간에 이 약을 복용하는 것이 권고된다. 치료 초기에 위장관계 이상반응이 발생할 수 있으나,…",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,32 @@
+{
+ "ingredient": "bacillus licheniformis + calcium pantothenate",
+ "productSeq": "202501965",
+ "itemName": "바실루비산",
+ "atc": "A07FA51",
+ "etcOtc": "일반의약품",
+ "changeDate": null,
+ "ediCode": "073001701",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501965/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501965/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501965/NB"
+ },
+ "rules": [
+  {
+   "id": "0d4c74c606",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "식사 전 복용한다.",
+   "meal": "식사 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:04",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

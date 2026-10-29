@@ -1,151 +1,179 @@
 {
-  "ingredient": "hydrochlorothiazide + irbesartan",
-  "productSeq": "201005699",
-  "itemName": "이노엔아벨탄플러스정150/12.5밀리그램",
-  "atc": "C09DA04",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260212",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005699/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005699/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005699/NB"
-  },
-  "rules": [
+ "ingredient": "hydrochlorothiazide + irbesartan",
+ "productSeq": "201005699",
+ "itemName": "이노엔아벨탄플러스정150/12.5밀리그램",
+ "atc": "C09DA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "640005850",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005699/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005699/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005699/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "알코올, 바르비탈계 약물 또는 마약류 : 티아지드 이뇨제에 의한 기립저혈압이 심화될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "0d9d68fe22",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "119a77463f",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (2)",
-      "subject": "6) 이르베사르탄의 상호작용에 관한 정보",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올, 바르비탈계 약물 또는 마약류 : 티아지드 이뇨제에 의한 기립저혈압이 심화될 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "21232fb69b",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (4)",
-      "subject": "6) 이르베사르탄의 상호작용에 관한 정보",
-      "matched": [
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "콜레스티라민과 콜레스티폴 수지 : 음이온 교환수지의 존재하에 히드로클로로티아지드의 흡수가 감소되거나 지연될 수 있다. 따라서, 이 약은 적어도 이러한 약물들의 투여 1시간 이전 또는 투여 4시간 이후에 투여하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "188531f31c",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (11)",
-      "subject": "6) 이르베사르탄의 상호작용에 관한 정보",
-      "matched": [
-        {
-          "key": "calcium",
-          "kind": "supplement",
-          "ko": "칼슘제제",
-          "surface": "칼슘제제"
-        },
-        {
-          "key": "vitaminD",
-          "kind": "supplement",
-          "ko": "비타민 D",
-          "surface": "비타민 D"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "칼슘염 : 티아지드계 이뇨제는 칼슘염의 배출을 감소시키기 때문에 혈청 칼슘치를 증가시킬 수 있다. 만약 칼슘제제 또는 칼슘 보존 제제(예, 비타민 D)가 처방되어야 한다면, 혈청칼슘치를 주의 깊게 모니터링하여야 하며, 이에 따라 칼슘용량을 조절하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8310872f3c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (1)",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에게 이 약을 투여한 경험은 없으나, 임신 2 ～ 3기 동안 레닌-안지오텐신계에 직접 작용하는 약물을 투여하는 경우 태아 또는 신생아의 신부전, 태아의 두개골 형성부전, 저혈압, 무뇨증, 태아사망을 유발할 수 있으므로 이 약은 임신중에 사용되어서는 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "efde293ef8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (2)",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "티아지드계 이뇨제는 태반장벽(placenta barrier)를 통과하여 제대혈(cord blood)에서 발견된다. 이로 인하여 태반 관류의 감소, 태아 전해질 장애가 초래될 수 있으며, 성인에게서 나타나는 다른 이상반응들도 나타날 수 있다. 임산부에게 티아지드계 이뇨제를 투여한 경우 신생아 혈소판 감소증 및 태아 또는 신생아 황달이 보고된 바 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d07da09fc2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (3)",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 2 ～ 3기 동안 이 약의 태아에 대한 노출과 관련된 위험을 피하기 위해, 임신을 계획하기 전에 적당한 다른 대체 치료제로 변경하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5b88de35ba",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (4)",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "만약 이 약으로 치료하는 중 임신이 확인되면, 가능한 한 빨리 이 약의 투여를 중지하여야 한다. 만약 장기간 이 약을 투여했다면 초음파검사를 통해 두개골 형성부전 및 신부전을 확인하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4c4e405b83",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "모유를 먹는 아이에 대한 잠재적 이상반응의 위험 때문에 이 약은 수유중에는 금기이다. 이르베사르탄 또는 그 대사체는 수유중인 쥐의 유즙으로 배출되었으나 인간의 모유중으로 분비되는 지는 알려져 있지 않다. 티아지드계 이뇨제는 인간의 유즙으로 분비되며, 수유를 방해할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2bc8a823bc",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임상시험에서 이 약을 투여받은 환자들 중에서, 65세 이상의 노인 환자들과 65세 미만 환자들 사이에 유효성과 안전성은 전반적으로 차이가 없었지만, 일부 고령 환자에서 이 약에 대한 감수성이 크게 나타날 수 있다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:12:10"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (4)",
+   "subject": "",
+   "excerpt": "콜레스티라민과 콜레스티폴 수지 : 음이온 교환수지의 존재하에 히드로클로로티아지드의 흡수가 감소되거나 지연될 수 있다. 따라서, 이 약은 적어도 이러한 약물들의 투여 1시간 이전 또는 투여 4시간 이후에 투여하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "b983c04010",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (11)",
+   "subject": "",
+   "excerpt": "칼슘염 : 티아지드계 이뇨제는 칼슘염의 배출을 감소시키기 때문에 혈청 칼슘치를 증가시킬 수 있다. 만약 칼슘제제 또는 칼슘 보존 제제(예, 비타민 D)가 처방되어야 한다면, 혈청칼슘치를 주의 깊게 모니터링하여야 하며, 이에 따라 칼슘용량을 조절하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "54ac3f1ec6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘제제"
+    },
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "32f1beca28",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "임부에게 이 약을 투여한 경험은 없으나, 임신 2 ～ 3기 동안 레닌-안지오텐신계에 직접 작용하는 약물을 투여하는 경우 태아 또는 신생아의 신부전, 태아의 두개골 형성부전, 저혈압, 무뇨증, 태아사망을 유발할 수 있으므로 이 약은 임신중에 사용되어서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "8d8358c1a1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "티아지드계 이뇨제는 태반장벽(placenta barrier)를 통과하여 제대혈(cord blood)에서 발견된다. 이로 인하여 태반 관류의 감소, 태아 전해질 장애가 초래될 수 있으며, 성인에게서 나타나는 다른 이상반응들도 나타날 수 있다. 임산부에게 티아지드계 이뇨제를 투여한 경우 신생아 혈소판 감소증 및 태아 또는 신생아 황달이 보고된 바 있다.",
+   "extractor": "kw-v4",
+   "id": "2daaee57ce",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "임신 2 ～ 3기 동안 이 약의 태아에 대한 노출과 관련된 위험을 피하기 위해, 임신을 계획하기 전에 적당한 다른 대체 치료제로 변경하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "9129f25b96",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "만약 이 약으로 치료하는 중 임신이 확인되면, 가능한 한 빨리 이 약의 투여를 중지하여야 한다. 만약 장기간 이 약을 투여했다면 초음파검사를 통해 두개골 형성부전 및 신부전을 확인하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "9efb5c139f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "529dff8ca7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "모유를 먹는 아이에 대한 잠재적 이상반응의 위험 때문에 이 약은 수유중에는 금기이다. 이르베사르탄 또는 그 대사체는 수유중인 쥐의 유즙으로 배출되었으나 인간의 모유중으로 분비되는 지는 알려져 있지 않다. 티아지드계 이뇨제는 인간의 유즙으로 분비되며, 수유를 방해할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "fcbbba2322",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상시험에서 이 약을 투여받은 환자들 중에서, 65세 이상의 노인 환자들과 65세 미만 환자들 사이에 유효성과 안전성은 전반적으로 차이가 없었지만, 일부 고령 환자에서 이 약에 대한 감수성이 크게 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "e29de946fd",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

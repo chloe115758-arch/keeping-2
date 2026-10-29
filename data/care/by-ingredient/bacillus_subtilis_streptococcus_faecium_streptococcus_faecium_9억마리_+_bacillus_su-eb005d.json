@@ -1,0 +1,19 @@
+{
+ "ingredient": "bacillus subtilis·streptococcus faecium(streptococcus faecium 9억마리 + bacillus subtilis 1억마리)",
+ "productSeq": "200400118",
+ "itemName": "락토웰장용캡슐(바실루스서브틸리스균·엔테로코쿠스페슘균배양물)",
+ "atc": "A07FA01",
+ "etcOtc": "일반의약품",
+ "changeDate": "20210426",
+ "ediCode": "643300440",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400118/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400118/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200400118/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-30T00:26:06",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

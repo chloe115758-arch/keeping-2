@@ -1,15 +1,19 @@
 {
-  "ingredient": "ibuprofen",
-  "productSeq": "201103928",
-  "itemName": "페데아주(이부프로펜)",
-  "atc": "C01EB16",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260113",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103928/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103928/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103928/NB"
-  },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:08:53"
+ "ingredient": "ibuprofen",
+ "productSeq": "201103928",
+ "itemName": "페데아주(이부프로펜)",
+ "atc": "C01EB16",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260113",
+ "ediCode": "659700881",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103928/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103928/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201103928/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

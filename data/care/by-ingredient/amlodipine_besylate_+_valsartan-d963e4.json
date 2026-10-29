@@ -1,127 +1,131 @@
 {
-  "ingredient": "amlodipine besylate + valsartan",
-  "productSeq": "201706190",
-  "itemName": "에이바스타정10/160밀리그램",
-  "atc": "C09DB01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260212",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706190/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706190/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706190/NB"
-  },
-  "rules": [
+ "ingredient": "amlodipine besylate + valsartan",
+ "productSeq": "201706190",
+ "itemName": "에이바스타정10/160밀리그램",
+ "atc": "C09DB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "052701160",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706190/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706190/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201706190/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ③",
+   "subject": "",
+   "excerpt": "CYP3A4 유도제: CYP3A4 유도제(예, 리팜피신, 세인트 존스 워트)와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "1737fbc8d0",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "c51f299ba5",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ③",
-      "subject": "2) 암로디핀",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "세인트 존스 워트"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "CYP3A4 유도제: CYP3A4 유도제(예, 리팜피신, 세인트 존스 워트)와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f45ef71314",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ④",
-      "subject": "2) 암로디핀",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "기타 : 암로디핀 단독투여시, 티아지드계 이뇨제, 알파-차단제, 베타-차단제, 안지오텐신 전환 효소 저해제 (Angiotensin converting enzyme inhibitor), 작용시간이 긴 질산염제제, 니트로글리세린 설하정, 디곡신, 와파린, 아토로바스타틴, 실데나필, 알루미늄/마그네슘(제산제), 시메티딘, 비스테로이드성 소염제, 항생제, 경구 혈당강하제, 에탄올(알코올), 사이클로…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6aec4760e3",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 ⑤",
-      "subject": "2) 암로디핀",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "자몽주스: 20명의 건강한 지원자에 240 mL의 자몽쥬스와 암로디핀 10mg의 단회 경구투여시 암로딘의 약동학에 유의적인 영향이 없었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "28bd89a6e8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "안지오텐신 II 길항제의 작용기전 때문에 태아에 대한 위험을 배제 할 수 없다. 안지오텐신 전환효소 저해제(레닌-안지오텐신-알로스테론 체계(RAAS)에 작용하는 특수한 약물군)를 임신 2기 및 3기에 복용한 임부에게서 발달중인 태자에 대한 손상과 사망이 보고된 바 있다. 그리고 임신 1기에 ACE 저해제의 사용은 태아 기형의 잠재적 위험성과 관련이 있다. 발사르탄을 우발적으로 복용한 임부에서…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "29dad88f49",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "사람에서 발사르탄 및/또는 암로디핀의 유즙 분비 여부는 알려지지 않았으나, 쥐에서는 발사르탄이 유즙으로 분비되었다. 따라서 수유중인 여성이 이 약을 사용하는 것은 권장하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "56c311b107",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약 및 각각의 단일제에서 생식능에 대한 임상연구는 없었다. 이 약에 대한 생식능에 대한 비임상자료는 없지만, 발사르탄 및 암로디핀 각각의 성분으로 실시한 비임상시험에서 생식능에 대한 영향을 나타내지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5764be2c43",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "성인 및 고령자에서 유사한 용량을 사용하였을 때 이 약의 두 성분에 대하여 모두 우수한 내약성을 나타냈으므로 정상 용량을 권장한다.",
-      "extractor": "kw-v1"
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스 워트"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:00:56"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ④",
+   "subject": "",
+   "excerpt": "기타 : 암로디핀 단독투여시, 티아지드계 이뇨제, 알파-차단제, 베타-차단제, 안지오텐신 전환 효소 저해제 (Angiotensin converting enzyme inhibitor), 작용시간이 긴 질산염제제, 니트로글리세린 설하정, 디곡신, 와파린, 아토로바스타틴, 실데나필, 알루미늄/마그네슘(제산제), 시메티딘, 비스테로이드성 소염제, 항생제, 경구 혈당강하제, 에탄올(알코올), 사이클로…",
+   "extractor": "kw-v4",
+   "id": "248cbd312a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ⑤",
+   "subject": "",
+   "excerpt": "자몽주스: 20명의 건강한 지원자에 240 mL의 자몽쥬스와 암로디핀 10mg의 단회 경구투여시 암로딘의 약동학에 유의적인 영향이 없었다.",
+   "extractor": "kw-v4",
+   "id": "96d61a6712",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "안지오텐신 II 길항제의 작용기전 때문에 태아에 대한 위험을 배제 할 수 없다. 안지오텐신 전환효소 저해제(레닌-안지오텐신-알로스테론 체계(RAAS)에 작용하는 특수한 약물군)를 임신 2기 및 3기에 복용한 임부에게서 발달중인 태자에 대한 손상과 사망이 보고된 바 있다. 그리고 임신 1기에 ACE 저해제의 사용은 태아 기형의 잠재적 위험성과 관련이 있다. 발사르탄을 우발적으로 복용한 임부에서…",
+   "extractor": "kw-v4",
+   "id": "783bfe0fd5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "사람에서 발사르탄 및/또는 암로디핀의 유즙 분비 여부는 알려지지 않았으나, 쥐에서는 발사르탄이 유즙으로 분비되었다. 따라서 수유중인 여성이 이 약을 사용하는 것은 권장하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "67c1c9f988",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약 및 각각의 단일제에서 생식능에 대한 임상연구는 없었다. 이 약에 대한 생식능에 대한 비임상자료는 없지만, 발사르탄 및 암로디핀 각각의 성분으로 실시한 비임상시험에서 생식능에 대한 영향을 나타내지 않았다.",
+   "extractor": "kw-v4",
+   "id": "6b5084afd5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "성인 및 고령자에서 유사한 용량을 사용하였을 때 이 약의 두 성분에 대하여 모두 우수한 내약성을 나타냈으므로 정상 용량을 권장한다.",
+   "extractor": "kw-v4",
+   "id": "7f65b9179b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

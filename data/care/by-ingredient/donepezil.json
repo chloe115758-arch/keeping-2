@@ -1,0 +1,82 @@
+{
+ "ingredient": "donepezil",
+ "productSeq": "202107340",
+ "itemName": "도네리온패취87.5밀리그램(도네페질)",
+ "atc": "N06DA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250523",
+ "ediCode": "623800130",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107340/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107340/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107340/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 : (6)",
+   "subject": "",
+   "excerpt": "간기능 장애: 10명의 안정적 알코올성 간경화 환자 연구에서 도네페질 정제의 청소율은 성별 및 연령을 감안한 10명의 건강한 대상자에 비해 20%가 감소하였다.",
+   "extractor": "kw-v4",
+   "id": "7f47757fc8",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 : (2)",
+   "subject": "",
+   "excerpt": "CYP3A4 및 CYP2D6 유도제(예: 리팜피신, 페니토인, 카르바마제핀, 덱사메타손, 페노바르비탈, 알코올)는 도네페질의 대사를 증가하고 약효를 감소시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "ab9e449615",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 : 1)",
+   "subject": "",
+   "excerpt": "임부: 임신한 여성에 대한 이 약의 임상 자료가 없으므로 꼭 필요한 경우가 아니라면 임신 중 이 약을 사용해서는 안 된다. 동물실험에서 기형발생을 일으키지 않았지만 어린 새끼의 생존율과 사산율에 영향을 주었다. 임부에 대한 잠재적인 위험은 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "c76e53e8c7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 : 2)",
+   "subject": "",
+   "excerpt": "수유부: 도네페질 정제는 랫트의 모유에 이행되었다. 이 약의 모유로의 이행여부는 알려져 있지 않다. 수유기 여성에 대한 연구 결과는 없으므로 수유부에게 이 약을 사용해서는 안 되며, 반드시 투여되어야 할 경우에는 수유를 치료기 동안 중단하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "80af2d81f4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:57",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

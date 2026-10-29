@@ -1,0 +1,92 @@
+{
+ "ingredient": "vincristine sulfate",
+ "productSeq": "200109317",
+ "itemName": "화이자빈크리스틴황산염주1mg/mL",
+ "atc": "L01CA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230320",
+ "ediCode": "648902981",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109317/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109317/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200109317/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 임부에게 투여 시 치명적인 해를 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "b9641decb0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 중의 쥐와 햄스터에게 이 약의 용량을 투여했을 때, 태자중의 23～85%의 흡수가 일어났으며, 생존된 예들 중에서 태자기형이 발생되었다.",
+   "extractor": "kw-v4",
+   "id": "a6ea544871",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "5마리의 원숭이에게 임신 27～34일 사이에 이 약의 단독용량을 투여했을 때, 태자중의 3마리가 출산 후 정상이었고, 출산된 2마리의 태자가 외견상 명백한 기형화를 나타냈다.",
+   "extractor": "kw-v4",
+   "id": "9853dbfd4f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "여러 동물 중에 있어서 이 약은 임신한 동물에 독성을 나타내지 않는 용량으로도 기형의 효과뿐 아니라 태자치사를 유발할 수 있다. 임신한 여성에 대해 적절히 잘 비교된 연구는 없다. 이 약이 임신 중에 사용되었거나 환자가 이 약 투여 중에 임신이 되었다면, 환자에게 태아에 대한 위험가능성을 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "e387b82176",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "이 약이 인체의 모유로 배설되는 지는 알려진 바 없으나, 많은 약물이 인체에서 모유로 분비되며 수유기 영아에게 있어 이 약이 중증 이상반응을 나타낼 수 있다는 가능성 때문에 수유부에게 약물 투여 시 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "10deff2aab",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 일반적으로 생리기능(골수기능, 간기능, 신기능 등)이 저하되어 있으므로 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "6f036dd618",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:24",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

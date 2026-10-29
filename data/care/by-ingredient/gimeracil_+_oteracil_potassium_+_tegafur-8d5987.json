@@ -1,0 +1,68 @@
+{
+ "ingredient": "gimeracil + oteracil potassium + tegafur",
+ "productSeq": "200300393",
+ "itemName": "티에스원캡슐20,25",
+ "atc": "L01BC53",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260601",
+ "ediCode": "645401930",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200300393/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200300393/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200300393/NB"
+ },
+ "rules": [
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 생리기능이 저하되어 있는 경우가 많으므로, 환자의 상태를 관찰하며 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "5c4320bf55",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부, 산부, 수유부 등에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 및 임신할 가능성이 있는 부인에게는 투여하지 않는다. [테가푸르·우라실이 투여된 부인에게서 기형을 출산했다는 보고가 있다. 또한 임신 랫트 및 토끼(테가푸르 상당량 7mg/kg, 1.5mg/kg)의 연일 경구투여에서 태아의 내장 이상, 골격 이상, 화골 지연 등이 보고되었다.]",
+   "extractor": "kw-v4",
+   "id": "5cef6c44d0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부, 산부, 수유부 등에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 투여한 경우에는 수유를 중지한다. [사용경험이 없음. 동물실험(랫트)에서 유즙중 이행이 보고되었다.]",
+   "extractor": "kw-v4",
+   "id": "a90bea69d6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "fb393e20d8",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "1. 절제 가능한 국소 진행성 위암의 수술 전 보조요법을 제외하고, 보통, 성인에게 초회 투여량 (1회량)을 체표면적 기준으로, 1일 2회 아침, 저녁 식사 후 28일간 연일 경구투여하고 그 이후 14일간 휴약한다. 이것을 1 사이클로 하여 반복투여한다. 다만, 이 약의 투여에 의한 것으로 판단되는 임상 검사치 이상 (혈액검사, 간·신기능 검사) 및 소화기 증상이 발현하지 않아, 안전성에 문…",
+   "meal": "식사 후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:43",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

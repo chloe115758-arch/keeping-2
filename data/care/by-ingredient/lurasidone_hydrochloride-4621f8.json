@@ -1,0 +1,185 @@
+{
+ "ingredient": "lurasidone hydrochloride",
+ "productSeq": "202303204",
+ "itemName": "라투다정120밀리그램(루라시돈염산염)",
+ "atc": "N05AE05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251128",
+ "ediCode": "642204770",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303204/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303204/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303204/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "자몽 및 자몽주스",
+   "extractor": "kw-v4",
+   "id": "80c59d876f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "자몽 및 자몽주스는 CYP3A4를 억제하여 이 약의 혈중 농도에 영향을 줄 수 있으므로 이 약을 투여하는 환자는 섭취를 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "3c3f227ae2",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "이 약은 강력한 CYP3A4 유도제(예: 리팜피신, 아바시미베, 세인트 존스 워트, 페니토인, 카르바마제핀 등)와 병용투여 해서는 안된다. 이 약과 강력한 CYP3A4 유도제 병용투여는 이 약 단독투여 보다 이 약의 노출을 감소시켰다.",
+   "extractor": "kw-v4",
+   "id": "393edc447e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스 워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 3기 동안 항정신병 약물에 노출된 신생아는 출산 후 추체외로 및/또는 금단 증상 발생의 위험성이 있다. 임산부에서의 이 약 사용에 대한 연구는 없다. 제한적인 이용 가능한 데이터는 약물 관련 선천적 결손 또는 유산의 위험성에 대한 정보를 제공하기에 충분하지 않다. 동물 생식시험에서 기관 형성 기간 동안 체표면적 mg/m2 을 기준으로 사람에서의 최대 권장 투여량(MRHD)인 160 mg…",
+   "extractor": "kw-v4",
+   "id": "387f6fe082",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 3기 동안 항정신병 약물에 노출된 신생아에서 초조, 근긴장 항진증, 근긴장 저하증, 진전, 졸림, 호흡 곤란, 섭식 장애와 같은 증상을 포함한 추체외로 및/또는 금단 증상이 보고되었다. 이러한 증상의 중증도는 다양하였다. 일부 신생아는 특별한 치료 없이 몇 시간 또는 며칠 이내에 회복하였고, 다른 신생아들은 장기간의 입원이 필요하였다. 신생아에서 추체외로 및/또는 금단 증상을 모니터링하…",
+   "extractor": "kw-v4",
+   "id": "b67d7c6496",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신한 랫드에게 기관 형성 기간 동안 이 약 3, 10, 25 mg/kg/일 용량을 경구로 투여하였다. 동 용량은 체표면적 mg/m2 을 기준으로 사람에서의 최대 권장 투여량(MRHD)인 160 mg/일의 0.2배, 0.6배 및 1.5배에 해당하는 용량이다. 체표면적 mg/m2 을 기준으로 사람에서의 최대 권장 투여량(MRHD)인 160 mg/일의 1.5배에 해당하는 용량까지 기형 유발 또는…",
+   "extractor": "kw-v4",
+   "id": "b3bbe71692",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 토끼에게 기관 형성 기간 동안 이 약 2, 10, 50 mg/kg/일 용량을 경구로 투여하였다. 동 용량은 체표면적 mg/m2 을 기준으로 사람에서의 최대 권장 투여량(MRHD)인 160 mg/일의 0.2배, 1.2배 및 6배에 해당하는 용량이다. 동 용량은 체표면적 mg/m2 을 기준으로 사람에서의 최대 권장 투여량(MRHD)인 160 mg/일의 6배에 해당하는 용량까지 기형 유발…",
+   "extractor": "kw-v4",
+   "id": "2ef1878d50",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 랫드에게 기관 형성 기간 및 수유 기간 동안 이 약 0.4, 2, 10 mg/kg/일 용량을 경구로 투여하였다. 동 용량은 체표면적 mg/m2 을 기준으로 사람 최대임상권장용량(160 mg/일)의 0.02배, 0.1배 및 0.6배에 해당하는 용량이다. 동 용량은 체표면적 mg/m2 기준으로 사람에서의 최대 권장 투여량(MRHD)인 160 mg/일의 0.6배에 해당하는 용량까지 출생 전…",
+   "extractor": "kw-v4",
+   "id": "ae488b43f5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람 모유로 이행하는지 여부, 수유 중인 유아에 대한 영향, 모유 생산에 대한 영향을 평가하기 위한 시험은 수행되지 않았다. 이 약은 랫드에서 모유로 이행된다. 모유 수유로 인한 발달 및 건강상의 유익성은 수유부에서의 이 약의 임상적 필요성과 수유 받는 유아에서 이 약 또는 수유부의 기저상태로 인한 잠재적인 부작용과 함께 고려되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "d63cef03ae",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 대한 임상시험에서 만 65세 이상의 고령 환자가 젊은 환자와 다르게 반응하는지 여부를 결정할 수 있는 충분한 수의 고령 환자가 포함되지 않았다. 이 약 20 mg/일 투여 시 정신병을 가진 만 65 ∼ 85세 고령 환자와 젊은 시험대상자 간에 이 약의 혈중 농도는 유사하였다. 연령만을 고려했을 때 용량 조절이 필요한지 여부는 알 수 없다.",
+   "extractor": "kw-v4",
+   "id": "c5a7f6bfd5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약으로 치료 받은 치매 관련 정신병을 가진 고령 환자는 위약군에 비해 사망 위험이 높다. 이 약은 치매 관련 정신병 환자 치료제로 허가되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "68e6a38248",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "2cc5caa0d5",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "식사와 함께 투여 시 흡수가 증가되므로 이 약은 식사와 함께 또는 식후에 투여한다. 이 약의 치료 용량은 전문의 판단 및 환자의 임상적 반응에 따라 조절되어져야 하며, 가능한 최소 유효량을 투여해야 한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:32",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

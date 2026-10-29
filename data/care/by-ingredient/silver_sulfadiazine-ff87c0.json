@@ -1,0 +1,32 @@
+{
+ "ingredient": "silver sulfadiazine",
+ "productSeq": "197500187",
+ "itemName": "실마진1%크림(설파디아진은)(수출명 : Emzin Cream Silver Sulfadiazine 1%)",
+ "atc": "D06BA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20211224",
+ "ediCode": "642702131",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197500187/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197500187/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197500187/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 이 약 투여에 관한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 화상부위가 20%이상이거나 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "6fc9b128fb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:27",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

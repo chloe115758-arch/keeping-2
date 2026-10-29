@@ -1,0 +1,68 @@
+{
+ "ingredient": "4:1 w/w mixed hydrogel of sodium hyaluronate gel crosslinked by divinyl sulfone and sodium hyaluronate )",
+ "productSeq": "202007475",
+ "itemName": "히알식스주(디비닐설폰으로 가교결합된 히알루론산나트륨겔과 히알루론산나트륨액의 4:1 w/w 혼합겔)",
+ "atc": "M09AX01",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "641807001",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007475/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007475/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007475/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부에 대한 이 약의 안전성 및 유효성은 확립되지 않았으므로, 이 약의 투여는 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "40de96209e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 이 약 투여 시 주의한다. 2 건의 임상시험에서",
+   "extractor": "kw-v4",
+   "id": "3e39391647",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 투여한 만 65 세 이상의 고령자는 총 시험대상자의 55.4% (118/213 명)로 고령자와",
+   "extractor": "kw-v4",
+   "id": "682b659b9d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "비고령자에서의 약물에 대한 반응의 차이는 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "38fd811f13",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:11:12",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

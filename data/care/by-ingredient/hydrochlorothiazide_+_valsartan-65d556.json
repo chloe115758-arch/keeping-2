@@ -1,169 +1,173 @@
 {
-  "ingredient": "hydrochlorothiazide + valsartan",
-  "productSeq": "200807618",
-  "itemName": "발사르텔플러스정80/12.5밀리그램",
-  "atc": "C09DA03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260219",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807618/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807618/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807618/NB"
-  },
-  "rules": [
+ "ingredient": "hydrochlorothiazide + valsartan",
+ "productSeq": "200807618",
+ "itemName": "발사르텔플러스정80/12.5밀리그램",
+ "atc": "C09DA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260219",
+ "ediCode": "053301090",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807618/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807618/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200807618/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (3)",
+   "subject": "",
+   "excerpt": "이온교환수지 : 히드로클로로티아지드를 포함한 티아지드계 이뇨제의 흡수는 콜레스티라민 및 콜레스티폴로 인해 감소된다.",
+   "extractor": "kw-v4",
+   "id": "9600c7f015",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "b3fef26184",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (3)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이온교환수지 : 히드로클로로티아지드를 포함한 티아지드계 이뇨제의 흡수는 콜레스티라민 및 콜레스티폴로 인해 감소된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0f26d066c2",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (9)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "vitaminD",
-          "kind": "supplement",
-          "ko": "비타민 D",
-          "surface": "비타민 D"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "비타민 D : 티아지드계 이뇨제를 비타민 D 또는 칼슘염과 병용시 혈청 칼슘 수치를 증가시킬 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9596fb3d73",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (11)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올, 바르비트레이트 또는 마약 : 알코올, 바르비트레이트 또는 마약과의 병용 투여는 기립저혈압의 발생을 증가시킬 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "99faa640dc",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "안지오텐신II수용체 길항제의 작용기전 때문에 태아에 대한 위험을 무시할 수 없다. 임신 2 ～ 3기 사이에 ACE억제제(레닌-안지오텐신-알도스테론계(RAAS)에 작용하는 특정 약물군)에 노출된 임부에서 태아발달손상 및 사망을 일으킨다는 보고가 있다. 또한 후향적 자료에 의하면, 임신 1기에 ACE억제제를 사용하는 것은 출생결함의 잠재적 위험과 연관 있었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6a42366c7f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "태아의 신장관류는 임신 2기에 형성되며, 레닌 안지오텐신 시스템의 영향을 받기 때문에 임신 2, 3기에 발사르탄을 복용하면 위험이 증가한다. 임신 2 ～ 3기 동안 레닌-안지오텐신계에 직접 작용하는 약물의 사용은 저혈압, 신생아 두개골 저형성증, 무뇨증, 가역적 또는 비가역적 신부전, 및 사망을 포함한 태아 및 신생아의 손상과 관련이 있는 것으로 나타났다. 양수과소증이 보고된 바 있으며, 양…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "66defefb2e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "히드로클로로티아지드를 포함한 티아지드계 이뇨제의 자궁 노출 시 태아 또는 신생아의 황달, 혈소판감소증이 유발될 수 있고 성인에서 나타나는 다른 이상반응도 일어날 수 있다. 임부가 우발적으로 발사르탄을 복용했을 때 자연 유산, 양수과소증, 신생아 신기능 이상이 나타났다는 보고가 있었다. 자궁 내에서 약물에 노출되었던 모든 신생아에 대해서는 배뇨작용, 고칼륨혈증, 그리고 혈압을 검사한다. 필요한…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c5e1ac6fe9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "양수과소증이 관찰되면 임부의 생명을 구하기 위한 것을 제외하고는 이 약을 중단하여야 한다. 임신 주수에 따라 수축 자극 검사(Contraction stress testing : CST), 무자극검사(nonstress test : NST), 또는 생물이학적 프로파일(biophysical profiling : BPP) 검사가 적절할 수 있다. 그러나 환자와 의사는 태아가 이미 비가역적인 손상이…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "04c0d0db6a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "자궁속에서 안지오텐신II수용체 길항제에 노출된 적이 있는 유아는 저혈압, 핍뇨, 및 고칼륨혈증이 있는지 면밀히 관찰되어야 한다. 핍뇨가 있다면, 혈압 및 신장관류 유지에 주의를 기울여야 한다. 저혈압을 회복시키고 신기능을 대신하기 위해 교환수혈이나 투석이 필요할 수도 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "79fea91120",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "발사르탄이 사람에서 모유 중에 이행되는지의 여부는 밝혀지지 않았으나 랫트에 대한 시험에서 모유 중에 발사르탄의 분비가 확인되었다. 히드로클로로티아지드는 태반을 통과하고 사람에서도 모유로 이행된다. 따라서 수유부가 이 약을 사용하는 것은 바람직하지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "63ab0d191f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "사람의 생식능에 대한 발사르탄 또는 히드로클로로티아지드의 효과에 대한 정보는 없다. 이 약에서 생식능에 대한 정보는 없지만, 발사르탄 및 히드로클로로티아지드 각각의 성분으로 수행한 비임상시험에서 생식능에 대한 영향은 나타나지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "265211a3e4",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 비교 임상시험에서 고령군과 비고령군 사이에 발사르탄-히드로클로로티아지드의 유효성 및 안전성에 대한 전반적인 차이는 관찰되지 않았다.",
-      "extractor": "kw-v1"
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:05:02"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (9)",
+   "subject": "",
+   "excerpt": "비타민 D : 티아지드계 이뇨제를 비타민 D 또는 칼슘염과 병용시 혈청 칼슘 수치를 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "d8769223dc",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (11)",
+   "subject": "",
+   "excerpt": "알코올, 바르비트레이트 또는 마약 : 알코올, 바르비트레이트 또는 마약과의 병용 투여는 기립저혈압의 발생을 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "9958ff229e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "안지오텐신II수용체 길항제의 작용기전 때문에 태아에 대한 위험을 무시할 수 없다. 임신 2 ～ 3기 사이에 ACE억제제(레닌-안지오텐신-알도스테론계(RAAS)에 작용하는 특정 약물군)에 노출된 임부에서 태아발달손상 및 사망을 일으킨다는 보고가 있다. 또한 후향적 자료에 의하면, 임신 1기에 ACE억제제를 사용하는 것은 출생결함의 잠재적 위험과 연관 있었다.",
+   "extractor": "kw-v4",
+   "id": "7dda6a05a5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "태아의 신장관류는 임신 2기에 형성되며, 레닌 안지오텐신 시스템의 영향을 받기 때문에 임신 2, 3기에 발사르탄을 복용하면 위험이 증가한다. 임신 2 ～ 3기 동안 레닌-안지오텐신계에 직접 작용하는 약물의 사용은 저혈압, 신생아 두개골 저형성증, 무뇨증, 가역적 또는 비가역적 신부전, 및 사망을 포함한 태아 및 신생아의 손상과 관련이 있는 것으로 나타났다. 양수과소증이 보고된 바 있으며, 양…",
+   "extractor": "kw-v4",
+   "id": "fa623f553b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "히드로클로로티아지드를 포함한 티아지드계 이뇨제의 자궁 노출 시 태아 또는 신생아의 황달, 혈소판감소증이 유발될 수 있고 성인에서 나타나는 다른 이상반응도 일어날 수 있다. 임부가 우발적으로 발사르탄을 복용했을 때 자연 유산, 양수과소증, 신생아 신기능 이상이 나타났다는 보고가 있었다. 자궁 내에서 약물에 노출되었던 모든 신생아에 대해서는 배뇨작용, 고칼륨혈증, 그리고 혈압을 검사한다. 필요한…",
+   "extractor": "kw-v4",
+   "id": "8b04325199",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "양수과소증이 관찰되면 임부의 생명을 구하기 위한 것을 제외하고는 이 약을 중단하여야 한다. 임신 주수에 따라 수축 자극 검사(Contraction stress testing : CST), 무자극검사(nonstress test : NST), 또는 생물이학적 프로파일(biophysical profiling : BPP) 검사가 적절할 수 있다. 그러나 환자와 의사는 태아가 이미 비가역적인 손상이…",
+   "extractor": "kw-v4",
+   "id": "33c7258c53",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "자궁속에서 안지오텐신II수용체 길항제에 노출된 적이 있는 유아는 저혈압, 핍뇨, 및 고칼륨혈증이 있는지 면밀히 관찰되어야 한다. 핍뇨가 있다면, 혈압 및 신장관류 유지에 주의를 기울여야 한다. 저혈압을 회복시키고 신기능을 대신하기 위해 교환수혈이나 투석이 필요할 수도 있다.",
+   "extractor": "kw-v4",
+   "id": "d5d0ab1ffe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "발사르탄이 사람에서 모유 중에 이행되는지의 여부는 밝혀지지 않았으나 랫트에 대한 시험에서 모유 중에 발사르탄의 분비가 확인되었다. 히드로클로로티아지드는 태반을 통과하고 사람에서도 모유로 이행된다. 따라서 수유부가 이 약을 사용하는 것은 바람직하지 않다.",
+   "extractor": "kw-v4",
+   "id": "2501b08e46",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "사람의 생식능에 대한 발사르탄 또는 히드로클로로티아지드의 효과에 대한 정보는 없다. 이 약에서 생식능에 대한 정보는 없지만, 발사르탄 및 히드로클로로티아지드 각각의 성분으로 수행한 비임상시험에서 생식능에 대한 영향은 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "0b34e03eca",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 비교 임상시험에서 고령군과 비고령군 사이에 발사르탄-히드로클로로티아지드의 유효성 및 안전성에 대한 전반적인 차이는 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "0c22d2107a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

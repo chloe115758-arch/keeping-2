@@ -1,0 +1,68 @@
+{
+ "ingredient": "dextrose + dopamine hydrochloride",
+ "productSeq": "200201226",
+ "itemName": "이노엔도파믹스주200",
+ "atc": "C01CA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210406",
+ "ediCode": "640001560",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201226/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201226/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201226/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "최기형성 효과 : 기관형성기에 랫트와 토끼에게 도파민염산염을 6mg/kg/day 용량까지 정맥투여한 최기형성 시험에서 사망률, 체중증가 감소, 약물독성의 징후 등의 모체 독성이 랫트에서 관찰되었음에도 불구하고 검출가능한 최기형성 또는 배아독성 효과는 나타나지 않았다. 출판된 시험에서 도파민염산염 10mg/kg을 암컷 랫트에게 30일 동안 피하투여시에 발정후기를 뚜렷이 연장시켰고 평균 뇌하수체…",
+   "extractor": "kw-v4",
+   "id": "68ef17335d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유 중으로의 이행은 알려진 바 없으나 여러 약물들이 모유 중으로 이행되므로 수유중에는 투여를 피하고 부득이한 경우에는 수유를 중단하는 등 도파민염산염을 수유부에게 투여시에는 주의를 기울여야 한다.",
+   "extractor": "kw-v4",
+   "id": "c670207daf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "산부인과에서 혈관수축약물을 저혈압을 교정하는데 사용하거나 국소 마취용액과 함께 사용시 자궁수축 약물과 상호작용하여 심각한 고혈압을 유발할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "606979157a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "도파민 주사의 임상시험은 65세 이상의 피험자들이 젊은 피험자들과 다르게 반응하는지를 판단하기 위한 충분한 피험자수가 포함되어 있지 않았다. 기타 보고된 임상적 경험에서는 고령 환자들과 젊은 환자들간의 반응성의 차이가 확인되지 않았다. 일반적으로 노령 환자의 경우 간기능, 신기능 또는 심기능의 감소, 동반 질병 또는 기타 약물 투여가 빈번한 것을 고려하여 보통 용량 범위의 최저 수준에서 시작…",
+   "extractor": "kw-v4",
+   "id": "4268e2690c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:42",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

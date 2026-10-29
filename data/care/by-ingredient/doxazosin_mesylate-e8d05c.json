@@ -1,0 +1,56 @@
+{
+ "ingredient": "doxazosin mesylate",
+ "productSeq": "200612573",
+ "itemName": "카두라엑스엘서방정4mg(독사조신메실산염)",
+ "atc": "C02CA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20170410",
+ "ediCode": "073400060",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200612573/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200612573/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200612573/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여 임부를 대상으로 진행된 적절하고 잘 통제된 연구가 없으므로 임부에 대한 이 약의 안전성은 확립되지 않았다. 따라서 임신 중에는 의사의 판단으로 치료의 유익성이 위험을 상회하는 경우에 한하여 사용하여야 한다. 동물실험에서 태자에 영향은 없었으나 사람의 권장용량의 약 300배 용량에서 태자생존율이 감소되었다.",
+   "extractor": "kw-v4",
+   "id": "54fc318801",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여 동물실험에서 독사조신의 모유 중으로 이행이 관찰되었다. 따라서 수유 중에는 독사조신의 투여를 금하며, 필요에 따라 독사조신을 투여할 경우에는 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ee48b07a8a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "임상연구에 의하면 이상반응으로서 보고된 저혈압 발생률이 70세 미만의 환자와 비교했을 때 70세 이상의 환자에게서 높게 나타났다. 70세 이상의 환자에게서 저혈압 발생률이 증가하는 이유는 독사조신에 대한 전신노출 증가, 기립성 저혈압 증가 경향 또는 혈관확장제에 대한 민감성 증가 때문인 것으로 보인다.",
+   "extractor": "kw-v4",
+   "id": "1582b78894",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:07",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

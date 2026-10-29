@@ -1,0 +1,68 @@
+{
+ "ingredient": "trimetazidine hydrochloride",
+ "productSeq": "199701304",
+ "itemName": "트리진정(트리메타지딘염산염)(수출명: VASZIDINETAB)",
+ "atc": "C01EB15",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250318",
+ "ediCode": "641903680",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701304/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701304/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199701304/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "임부:",
+   "excerpt": "임부에서 이 약의 사용에 대한 적절한 자료는 없다. 동물시험에서 직접적 또는 간접적인 생식 독성은 나타나지 않았다. 예방적인 차원에서, 이 약의 임신 중 복용은 피하는 것이 좋다.",
+   "extractor": "kw-v4",
+   "id": "31b3a59569",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "수유부:",
+   "excerpt": "이 약이 모유로 배설되는지는 알려지지 않았으나, 수유중 복용은 피하는 것이 좋다.",
+   "extractor": "kw-v4",
+   "id": "a0d77e7dcb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 소아 및 고령자에 대한 투여",
+   "subject": "소아:",
+   "excerpt": "만 18세 이하의 소아에 대한 안전성ㆍ유효성이 확립되어 있지 않으므로 이 약의 투여가 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "60326ce839",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 소아 및 고령자에 대한 투여",
+   "subject": "고령자:",
+   "excerpt": "고령자는 신기능 감소로 인해 이 약에 대한 노출이 증가할 수 있으므로 적절히 감량한다. 용량 증가 시 주의를 기울여야 한다.",
+   "extractor": "kw-v4",
+   "id": "f407c05773",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:09",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

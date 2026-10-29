@@ -1,15 +1,63 @@
 {
-  "ingredient": "ursodeoxycholic acid",
-  "productSeq": "198900463",
-  "itemName": "우루사정200밀리그램(우르소데옥시콜산)",
-  "atc": "A05AA02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230109",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900463/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900463/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900463/NB"
+ "ingredient": "ursodeoxycholic acid",
+ "productSeq": "198900463",
+ "itemName": "우루사정200밀리그램(우르소데옥시콜산)",
+ "atc": "A05AA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230109",
+ "ediCode": "641602060",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900463/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900463/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900463/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음과 같은 사람은 이 약을 복용하지 말 것 7)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성 및 수유부",
+   "extractor": "kw-v4",
+   "id": "ad824664eb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
   },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:16:45"
+  {
+   "section": "interaction",
+   "where": "2. 이 약을 복용하는 동안 다음의 약을 복용하지 말 것 2)",
+   "subject": "",
+   "excerpt": "콜레스티라민, 콜레스티폴, 약용탄, 마그네슘 및 수산화알루미늄을 함유하는 제산제 : 다음의 약물은 이 약의 흡수를 방해한다.",
+   "extractor": "kw-v4",
+   "id": "37c6539d82",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    },
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

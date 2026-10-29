@@ -1,0 +1,213 @@
+{
+ "ingredient": "dupilumab",
+ "productSeq": "201801406",
+ "itemName": "듀피젠트프리필드주300밀리그램(두필루맙,유전자재조합)",
+ "atc": "D11AH05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260727",
+ "ediCode": "652001091",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801406/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801406/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801406/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "4. 상호작용",
+   "subject": "CYP450 기질과의 상호작용",
+   "excerpt": "미다졸람(CYP3A4에 의해 대사), 와파린(CYP2C9에 의해 대사), 오메프라졸(CYP2C19에 의해 대사), 메토프롤롤(CYP2D6에 의해 대사) 및 카페인(CYP1A2에 의해 대사)의 약동학에 대한 이 약의 영향은 아토피 피부염 시험대상자 12-13명를 대상으로 한 연구에서 평가되었다(초회 용량 600 mg 피하투여 후 6주동안 매주 300 mg 피하투여). 임상적으로 의미있는 AUC…",
+   "extractor": "kw-v4",
+   "id": "e08625a55f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "2e6a2f711a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 대한 임산부에서의 증례 보고 및 증례 연구에서 이 약과 연관된 주요 선천적 결손, 유산, 산모 혹은 태아의 부정적인 결과에 대한 위험은 밝혀진바 없다.",
+   "extractor": "kw-v4",
+   "id": "a88ef5d6d8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "사람 면역글로불린G(IgG)는 태반 장벽을 통과하는 것으로 알려져 있다. 그러므로 이 약은 모체에서 태아로 전달될 수 있다. 임신 중 천식과 관련된 모체 및 태아에 대한 유해영향이 있다. 임신한 원숭이들에게 IL-4Rα에 대한 동종 항체를 최고권장인체용량(maximum recommended human dose, MRHD)의 10배까지의 용량으로 기관 발생기부터 출산까지 매주 피하투여한 강화된…",
+   "extractor": "kw-v4",
+   "id": "5fb6cea334",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "질병 관련 모체 및/또는 배아-태아 위험도",
+   "excerpt": "제대로 조절되지 않거나 중등도로 조절되는 천식동반 여성의 경우, 산모에서의 자간전증, 신생아에서의 임신주수 보다 작거나, 조숙증, 저체중의 위험이 증가한다는 근거가 있다. 천식 조절 정도는 임산부에서 면밀히 관찰되어야 하며, 필요 시 최선의 조절을 유지하기 위해 치료를 조정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "1d0cc33988",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "동물시험 결과",
+   "excerpt": "강화된 출생 전/후 발달 독성 연구에서, 임신한 사이노몰구스 원숭이들에게 기관 형성 시작부터 분만 때까지 매주 피하로 MRHD의 10배까지(100mg/kg/주 기준) 투여하였다. 출생부터 생후 6개월까지의 영아에서 태아 독성이나 기형, 혹은 형태학적, 기능적 또는 면역학적 발달에 대한 치료 관련 유해 영향이 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "29d74e6759",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여 2)",
+   "subject": "동물시험 결과",
+   "excerpt": "수유",
+   "extractor": "kw-v4",
+   "id": "330e91664b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "동물시험 결과",
+   "excerpt": "이 약이 모유 중 존재하는 지 여부, 모유수유 영아에 미치는 영향 또는 모유 생산에 미치는 영향에 대한 정보는 없다. 산모의 IgG는 모유에 존재하는 것으로 알려져 있다. 모유수유 영아에서의 국소 위장관계 영향 및 이 약에 의한 제한적인 전신 노출의 영향은 알려져 있지 않다. 모유수유의 발달 및 건강상의 이익과 함께 수유부에서 이 약의 임상적 필요성, 이 약 또는 기저의 모체 상태가 모유수유…",
+   "extractor": "kw-v4",
+   "id": "76909ef604",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "용량탐색 시험 및 위약 대조시험에서 이 약에 노출된 아토피성 손발 피부염을 포함한 아토피 피부염 시험대상자 1,539명 중, 71명이 65세 이상이었다. 고령자와 젊은 시험대상자 사이에 안전성 또는 유효성의 차이는 관찰되지 않았으나, 65세 이상의 고령자가 젊은 시험대상자와 다르게 반응하는지 여부를 판단하기에는 65세 이상 시험대상자의 수가 충분하지 않았다.(12. 전문가를 위한 정보 2)…",
+   "extractor": "kw-v4",
+   "id": "ea02e466af",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 노출된 천식 시험 대상자 1,977명 중, 240명이 65세 이상이었다. 65세 이상 고령자군에서의 안전성 및 유효성은 전체 시험군과 유사하였다.",
+   "extractor": "kw-v4",
+   "id": "be206ae594",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 노출된 비용종을 동반한 만성 비부비동염 시험대상자 440명 중, 79명이 65세 이상이었다. 이 연령군에서의 유효성 및 안전성은 전체 시험 모집단과 유사하였다.",
+   "extractor": "kw-v4",
+   "id": "fcfa79df67",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 노출된 결절성 가려움 발진 (양진) 시험대상자 152명 중, 37명이 65세 이상이었다. 이 연령군에서의 유효성 및 안전성은 전체 시험 모집단과 유사하였다. 8명의 환자가 75세 이상이었다.",
+   "extractor": "kw-v4",
+   "id": "66ade6cbc0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 노출된 만성폐쇄성폐질환 시험대상자 1872명 중, 75세 이상 244명을 포함하여 총 1071명이 65세 이상이었다. 이 연령군에서의 유효성 및 안전성은 전체 시험 모집단과 유사하였다.",
+   "extractor": "kw-v4",
+   "id": "3f3aae6f14",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 노출된 만성 특발성 두드러기 시험대상자 198명 중, 75세 이상의 환자 7명을 포함하여 총 30명이 65세 이상이었다. 이 연령군에서의 유효성 및 안전성은 전체 시험 모집단과 유사했다.",
+   "extractor": "kw-v4",
+   "id": "ae0bff5592",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 노출된 수포성 유사 천포창 시험대상자 53명 중, 75세 이상의 환자 22명을 포함하여 총 40명이 65세 이상이었다. 이 연령군의 유효성 및 안전성은 전체 시험 모집단과 유사했다.",
+   "extractor": "kw-v4",
+   "id": "e92cd620a4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:03",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

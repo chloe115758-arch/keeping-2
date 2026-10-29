@@ -1,0 +1,81 @@
+{
+ "ingredient": "digoxin",
+ "productSeq": "196300001",
+ "itemName": "디고신정(디곡신)",
+ "atc": "C01AA05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190607",
+ "ediCode": "640000090",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196300001/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196300001/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196300001/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "다음 약과 병용투여시 이 약의 흡수를 지연 또는 감소시킬 수 있으므로 이 약의 흡수 저해를 피하기 위하여 가능한 투여간격을 늘이는 등 신중히 투여한다. : 콜레스티라민, 황산프라디오마이신, 제산제, 카올린-펙틴, 설파살라진, 네오마이신, 메토클로프라미드, 디페녹실레이트, 리팜피신, 페니토인, 페니실라민",
+   "extractor": "kw-v4",
+   "id": "32ef79ce2d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    },
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성은 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "19758449d9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유중으로 이행하므로 수유중인 부인에 투여할 경우에는 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "f8ce9f7c67",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 투여할 경우에는 부작용이 나타나기 쉬우므로 관찰을 충분히 하고 신중히 투여량을 결정한다.",
+   "extractor": "kw-v4",
+   "id": "377b43c3d3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:49",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

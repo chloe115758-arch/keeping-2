@@ -1,28 +1,32 @@
 {
-  "ingredient": "sodium alginate",
-  "productSeq": "201505017",
-  "itemName": "알지에액(알긴산나트륨)",
-  "atc": "A02BX13",
-  "etcOtc": "전문의약품",
-  "changeDate": "20220412",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505017/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505017/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505017/NB"
-  },
-  "rules": [
-    {
-      "id": "08f6e4955e",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "알긴산나트륨으로서 보통 1회 1～3g(이 약 20～60mL)을 1일 3～4회 공복에 경구투여한다. 경구 투여가 불가능한 경우에는 코 존데(sonde)를 이용한 경비투여를 한다.",
-      "meal": "공복",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:08:40"
+ "ingredient": "sodium alginate",
+ "productSeq": "201505017",
+ "itemName": "알지에액(알긴산나트륨)",
+ "atc": "A02BX13",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220412",
+ "ediCode": "622805411",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505017/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505017/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505017/NB"
+ },
+ "rules": [
+  {
+   "id": "08f6e4955e",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "알긴산나트륨으로서 보통 1회 1～3g(이 약 20～60mL)을 1일 3～4회 공복에 경구투여한다. 경구 투여가 불가능한 경우에는 코 존데(sonde)를 이용한 경비투여를 한다.",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

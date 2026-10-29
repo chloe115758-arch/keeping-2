@@ -1,0 +1,140 @@
+{
+ "ingredient": "infliximab",
+ "productSeq": "201508122",
+ "itemName": "레마로체주100밀리그램(인플릭시맵)(단클론항체,유전자재조합)",
+ "atc": "L04AB02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250820",
+ "ediCode": "051500021",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201508122/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201508122/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201508122/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "ffb1e5484f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "인플릭시맵에 노출된 임부와 관련되어 가능한 여러 관찰연구에 비생물학적제제에 노출된 임부와 비교하였을 때 생존 출산 중 주요 기형의 위험이 증가하지 않는 것으로 나타났다. 그러나 이러한 결과는 다른 출산관련 연구들에서 일관되지 않았다. 북미 염증성 장질환 (Inflammatory bowel disease, IBD) 임부 레지스트리에서 수행된 한 연구에서 인플릭시맵의 노출은 비생물학적제제에 노출…",
+   "extractor": "kw-v4",
+   "id": "66696cd14c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "인플릭시맵은 인간과 침팬지 이외의 종에서 TNFα와 교차 반응하지 않기 때문에 인플릭시맵을 사용한 동물 생식 연구는 수행되지 않았다. 생쥐 TNFα의 기능적 활성을 선택적으로 억제하는 유사한 항체를 사용하여 생쥐에서 수행된 발달 독성 연구에서 모체 독성, 배아 독성 또는 최기형성의 증거는 관찰되지 않았다. 항-TNF 유사 항체를 사용한 약력학적 동물 모델에서 10~15 mg/kg의 용량은 최…",
+   "extractor": "kw-v4",
+   "id": "5cd5ca26f1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "인플릭시맵은 다른 IgG 항체와 같이 태반을 통과하며 임신 중에 인플릭시맵을 투여 받은 환자에게서 태어난 영아의 혈중에서 12개월까지 측정되었다. 인플릭시맵이 혈중에 소량 잔류할 경우 영아의 면역 상태에 끼치는 임상적 영향은 알려져 있지 않다. 자궁 내에서 인플릭시맵에 노출된 영아는 치명적일 수 있는 파종성 감염을 포함한 감염의 위험이 증가할 수 있으며 무과립구증의 발생 사례도 보고되었다.…",
+   "extractor": "kw-v4",
+   "id": "effc4e3e40",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "가임 여성",
+   "extractor": "kw-v4",
+   "id": "38e23d3204",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임 여성은 임신을 예방하기 위하여 적절한 피임을 시행하고 인플릭시맵으로 치료 후 최소 6개월까지 피임해야 한다.",
+   "extractor": "kw-v4",
+   "id": "f89a4aa850",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "be4a10a415",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "인플릭시맵은 모유와 모유 수유 영아의 혈중에서 낮은 수준으로 검출되었다. 인플릭시맵은 대체로 위장관에서 분해되기 때문에 모유수유아의 전신 노출은 낮을 것으로 예상되지만, 산모가 인플릭시맵을 투여 받는 동안 모유 수유 영아에게 생백신을 접종하는 것은 영아의 혈중에서 인플릭시맵이 검출되지 않는 경우가 아니라면 권장되지 않는다. 발표된 문헌의 제한된 자료에 따르면 모유를 통해 인플릭시맵에 노출된…",
+   "extractor": "kw-v4",
+   "id": "02319b30e9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령의 환자에서의 인플릭시맵의 약물동력학은 연구되지 않았다. 간 또는 신장 질환 환자에서의 연구는 수행되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "c0c6cce855",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "류머티스성 관절염과 판상 건선 임상시험에서, 인플릭시맵을 투여 받은 65세 이상의 류머티스성 관절염 환자 181명과 판상 건선 환자 75명을 더 젊은 환자들과 비교할 때 유효성과 안전성에 있어서 전반적으로 차이가 관찰되지 않았다. 그러나 인플릭시맵 투여군과 위약군에서 모두 65세 이상의 환자에서의 중대한 이상사례의 발현율은 더 젊은 환자보다 높았다. 크론병, 궤양성 대장염, 강직성 척추염,…",
+   "extractor": "kw-v4",
+   "id": "9b32dd556b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:16",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

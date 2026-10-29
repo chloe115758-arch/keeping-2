@@ -1,0 +1,44 @@
+{
+ "ingredient": "abciximab",
+ "productSeq": "200611394",
+ "itemName": "클로티냅주(압식시맙)",
+ "atc": "B01AC13",
+ "etcOtc": "전문의약품",
+ "changeDate": "20071030",
+ "ediCode": "668500011",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200611394/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200611394/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200611394/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약에 대하여 동물 생식독성 시험은 실시되지 않았으며 임신부에 투여되었을 때 이 약이 태자 독성을 일으킬 수 있을지 또는 생식 능력에 영향을 미칠 수 있는지는 알려지지 않았다. 따라서, 임부에 대해서는 그 필요성이 확실하다고 판단되는 경우에만 신중이 투여해야 한다. 동물 또는 인체의 모유로 이행되는지 알려지지 않았으므로 수유부에 투여 시 수유를 금해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b8a5abfb05",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "80세 이상의 고령자에 대해서는 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "0fb0ef34a1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:41",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

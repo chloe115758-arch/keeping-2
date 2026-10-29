@@ -1,0 +1,63 @@
+{
+ "ingredient": "ascorbic acid + biotin + calcium citrate + calcium pantothenate + corn starch + cyanocobalamin powder + ferrous sulfate + folic acid + low lactose protein + magnesium carbonate + maltodextrine + nicotinamide + potassium citrate + pyridoxine hydrochloride + riboflavin + sodium chloride + soya oil + soybean hull dietary fiber powder + thiamine hydrochloride + tocopherol acetate powder + vegetable protein + vitamine A powder + whey protein + white sugar",
+ "productSeq": "201007457",
+ "itemName": "하모닐란액",
+ "atc": "V06DB",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260730",
+ "ediCode": "667400852",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201007457/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201007457/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201007457/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에는 투여하지 말 것 2)",
+   "subject": "",
+   "excerpt": "우유에 과민하거나 알레르기병력이 있는 환자 (우유 단백질이 함유되어 있어, 쇽, 아나필락시스 증상을 일으킬 수 있다.)",
+   "extractor": "kw-v4",
+   "id": "66e943bed9",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "외국에서 임신 전 3개월부터 임신 초기 3개월까지 비타민A를 1일 10,000I.U./일 이상 섭취한 여성으로부터 태어난 아이에서 능형뇌(hindbrain) 등을 중심으로 하는 기형발현 증가가 추정된다는 역학조사 결과가 있으므로, 임신 3개월 이내 또는 임신하고 있을 가능성이 있는 여성에게 투여할 경우에는 용법ㆍ용량에 주의하고 이 약에 의한 비타민A의 투여는 1일 5,000I.U./일 미만으…",
+   "extractor": "kw-v4",
+   "id": "fd6d27a066",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 소화기 증상이 발생하기 쉬우므로, 이와 같은 증상이 나타난 경우에는 관찰을 충분히 하고 감량하거나, 주입속도 또는 농도를 낮추거나, 휴약하는 등의 적절한 조치를 취한다.",
+   "extractor": "kw-v4",
+   "id": "002f3e03f9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:45",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

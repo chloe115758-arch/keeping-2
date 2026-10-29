@@ -1,0 +1,70 @@
+{
+ "ingredient": "calcium chloride dihydrate(C액중) + glucose monohydrate(C액중) + glycine(B액중) + L-alanine(B액중) + L-arginine(B액중) + L-aspartic acid(B액중) + L-glutamic acid(B액중) + L-histidine(B액중) + L-isoleucine(B액중) + L-leucine(B액중) + L-lysine acetate(B액중) + L-methionine(B액중) + L-phenylalanine(B액중) + L-proline(B액중) + L-serine(B액중) + L-threonine(B액중) + L-tryptophan(B액중) + L-tyrosine(B액중) + L-valine(B액중) + magnesium chloride hexahydrate(B액중) + potassium chloride(B액중) + purified olive oil and purified soybean oil(8:2)(A액 중) + sodium acetate trihydrate(B액중) + sodium glycerophosphate hydrate(B액중)",
+ "productSeq": "201205378",
+ "itemName": "올리멜엔9이주",
+ "atc": "B05BA10",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220511",
+ "ediCode": "078200061",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201205378/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201205378/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201205378/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "다른 칼슘 함유 제품과 마찬가지로 세프트리악손과 이 약의 병용 투여는 신생아(≤28일)의 혈액에 치명적인 세프트리악손 칼슘 염의 침전 위험이 있다(28일 초과 환자(성인 포함)의 경우 경고항 참조).",
+   "extractor": "kw-v4",
+   "id": "9a397504f5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘 함유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 5)",
+   "subject": "",
+   "excerpt": "이 약은 지방 용액에 자연적으로 존재하는 비타민 K를 함유하고 있다. 이 약의 권장 용량에 함유된 비타민 K의 양은 쿠마린 유도체의 효과에 영향을 줄 것으로 예상되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "5080cdb56c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부와 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부와 수유부에 이 약을 사용한 임상 자료는 없다. 임부 및 수유부에 대한 투여는 안전성이 확립되어 있지 않으므로 치료상의 유익성이 위험성을 상회하는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "88a4e66e2e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:03",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

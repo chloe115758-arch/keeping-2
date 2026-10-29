@@ -67,4 +67,36 @@ r7 = rules_for('6. 상호작용', '(1) 다른 산 분비 억제제나 제산제�
 t('"…제산제와 마찬가지로"는 같은 부류와의 비교라서 제산제 병용으로 잡지 않는다', 'antacid' not in {m['key'] for r in r7 for m in r['matched']}, r7)
 r8 = rules_for('6. 상호작용', '(1) 제산제와 병용투여시 이 약의 흡수가 감소될 수 있다.', '(2) 알루미늄 함유 제산제와 병용투여시 흡수가 지연될 수 있다.')
 t('일반 "제산제"와 "알루미늄 함유 제산제"를 구분해서 잡는다', [[m['key'] for m in r['matched']] for r in r8] == [['antacid'], ['aluminumAntacid']], r8)
+r9 = rules_for('5. 일반적주의', '(1) 매일 세 잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용할 때는 주의한다.')
+t('"술을 마시는 사람"(낱말 술)은 알코올로 잡는다', len(r9) == 1 and r9[0]['matched'][0]['key'] == 'alcohol', r9)
+r10 = rules_for('6. 상호작용', '(1) 수술 전후와 기술적 문제로 투여를 중지한다. 마취기술도 포함한다.')
+t('"수술", "기술"처럼 다른 낱말 속의 "술"은 알코올로 잡지 않는다', r10 == [], r10)
+print('의약품 첨부문서(소비자용) 형식 — almagate가 규칙 0개였던 원인')
+# 앞부분은 almagate(알마인정) 허가사항 화면에서 읽은 문장이고, 잘려 보이지 않던 뒤쪽 "…간격을 두고 복용할 것."은 시험을 위해 내가 이어 붙인 것이다
+OTC = ('<DOC><SECTION>'
+  '<ARTICLE title="1. 다음과 같은 사람은 이 약을 복용하지 말 것."><PARAGRAPH><![CDATA[(1) 임신 3개월 이내의 임부]]></PARAGRAPH></ARTICLE>'
+  '<ARTICLE title="2. 이 약을 복용하는 동안 다음의 약을 복용하지 말 것."><PARAGRAPH><![CDATA[다른 제산제]]></PARAGRAPH></ARTICLE>'
+  '<ARTICLE title="3. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것.">'
+  '<PARAGRAPH><![CDATA[(1) 비스테로이드소염진통제(NSAID), 궤양 치료제, 디기탈리스 제제, 클로르프로마진, 란소프라졸, 프레드니솔론, 페니실린, 퀴놀론, 철(Fe)염 제제 : 흡수를 감소시킬 수 있으므로 2~3시간 간격을 두고 복용할 것.]]></PARAGRAPH>'
+  '<PARAGRAPH><![CDATA[(2) 알코올 중독 환자]]></PARAGRAPH></ARTICLE>'
+  '</SECTION></DOC>')
+RO = C.extract_rules(OTC, None, 'otc')
+inter = [r for r in RO if r['kind'] == 'interaction' and r['where'].startswith('3.')]
+t('"상의할 것" 항목의 약 이름 나열 문장에서 철(Fe)염·란소프라졸과 2~3시간 간격을 읽는다', len(inter) == 1 and {'iron', 'ppi'} <= {m['key'] for m in inter[0]['matched']} and inter[0]['interval']['minHours'] == 2 and inter[0]['interval']['maxHours'] == 3, inter)
+t('"복용하는 동안 … 복용하지 말 것" 항목은 상호작용으로 읽는다(다른 제산제)', any(r['kind'] == 'interaction' and 'antacid' in {m['key'] for m in r['matched']} for r in RO), RO)
+t('전용 임부 항목이 없는 문서는 "복용하지 말 것" 항목에서 임신 문장을 찾고 tone이 avoid다', any(r['kind'] == 'state_pregnancy' and r['tone'] == 'avoid' and '임신 3개월' in r['excerpt'] for r in RO), RO)
+t('"알코올 중독 환자"는 알코올 음식 안내로 잡지 않는다', not any('alcohol' in {m['key'] for m in r['matched']} for r in RO), RO)
+t('전용 임부 항목이 있는 문서(레보티록신)는 첨부문서 방식으로 임신 규칙이 더 생기지 않는다', len([r for r in R if r['kind'] == 'state_pregnancy']) == 2, [r['where'] for r in R if r['kind'] == 'state_pregnancy'])
+t('규칙 id가 중복되지 않는다', len({r['id'] for r in RO}) == len(RO))
+print('간격 문장의 의미 구분 (clopidogrel 사례)')
+for txt, lo, hi in [('2~3시간 간격', 2, 3), ('2∼3시간 간격', 2, 3), ('2～3시간 간격', 2, 3), ('2-3시간의 간격', 2, 3), ('2 ~ 3 시간 간격', 2, 3), ('최소 4시간 간격', 4, None), ('3시간 이상 간격', 3, None)]:
+    iv = C._interval(txt)
+    t('간격 읽기: "%s"' % txt, iv and iv['minHours'] == lo and iv['maxHours'] == hi, iv)
+CLOPI = '오메프라졸 1일 1회 80 mg을 동시 또는 12시간 간격으로 이 약과 투여하였을 때 활성 대사체 45 %(부하용량) 그리고 …'
+t('연구 결과 설명 문장(clopidogrel)의 12시간 간격은 안내가 아니다(actionable=false)', C._interval(CLOPI)['actionable'] is False, C._interval(CLOPI))
+for txt in ['철제제는 적어도 2-3시간의 간격을 두고 복용한다.', '제산제와의 복용은 4시간 간격을 둔다.', '가능하면 2시간 이상의 간격을 두고 복용한다.', '부득이 함께 복용할 경우에 3시간 이상 간격을 둔다.', '투여간격에 주의하여 신중히 투여한다.(최소 4시간 간격)']:
+    t('안내 문장은 actionable=true: ' + txt[:20], C._interval(txt)['actionable'] is True, C._interval(txt))
+print('첨부문서 형식의 음식 안내')
+r11 = C.extract_rules('<ARTICLE title="3. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것."><PARAGRAPH><![CDATA[(1) 매일 세 잔 이상 정기적으로 술을 마시는 사람]]></PARAGRAPH><PARAGRAPH><![CDATA[(2) 알코올 중독 환자]]></PARAGRAPH><PARAGRAPH><![CDATA[(3) 자몽주스와 함께 복용하는 사람]]></PARAGRAPH></ARTICLE>')
+t('"술을 마시는 사람"과 "자몽주스"는 잡고 "알코올 중독 환자"는 잡지 않는다', sorted(m['key'] for r in r11 for m in r['matched']) == ['alcohol', 'grapefruit'] and len(r11) == 2, r11)
 print('\n%d개 통과' % n)

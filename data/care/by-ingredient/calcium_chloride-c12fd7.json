@@ -1,0 +1,44 @@
+{
+ "ingredient": "calcium chloride",
+ "productSeq": "197300090",
+ "itemName": "염카루 주 3% (염화칼슘수화물)",
+ "atc": "B05XA07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260831",
+ "ediCode": "650500243",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197300090/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197300090/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197300090/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부의 투여에 대해 알려진 것이 없으므로, 반드시 필요한 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "4d08ab310c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "4256b5dcda",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:50",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

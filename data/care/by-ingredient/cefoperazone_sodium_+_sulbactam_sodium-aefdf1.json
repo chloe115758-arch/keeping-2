@@ -1,0 +1,130 @@
+{
+ "ingredient": "cefoperazone sodium + sulbactam sodium",
+ "productSeq": "199700538",
+ "itemName": "페라탐주(설박탐나트륨ㆍ세포페라존나트륨)(수출명:오큐팔주,비센세프주)",
+ "atc": "J01DD62",
+ "etcOtc": "전문의약품",
+ "changeDate": "20140918",
+ "ediCode": "643702430",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199700538/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199700538/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199700538/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 4)",
+   "subject": "",
+   "excerpt": "음주로 인하여 홍조, 발한, 구역, 두통, 빠른맥(빈맥) 등의 증상이 나타날 수 있으므로 투여기간 중 또는 투여 후 최소한 1주일간은 음주, 에탄올 섭취를 삼가한다. 테트라졸티오메틸기가 간에서 에탄올 분해를 저해하여, 혈중 아세트알데히드 축적이 발생하여 홍조, 구역, 빠른맥(빈맥), 다한, 두통 등이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "cd575ebb20",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 7)",
+   "subject": "",
+   "excerpt": "기타 항생물질과 마찬가지로 세포페라존 복용 환자에게서 비타민 K 결핍증이 발생하였다. 이 비타민의 합성을 담당하는 장내 세균총 변화에 기인하는 것으로 보인다. 영양결핍, 흡수불량(예를 들면 낭포성섬유증), 장기간 혈관을 통해 영양을 주입 받는 경우에는 이러한 위험이 더 커진다. 이러한 범주에 속하는 환자와 항응고 치료를 받는 환자, 외부로부터 비타민 K를 투여 받는 환자들은프로트롬빈 시간을…",
+   "extractor": "kw-v4",
+   "id": "5f92fdfed0",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 관하여 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "9f071f9bc6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 소량이 모유로 이행되므로 수유부의 경우 이 약 투여 중에는 수유를 피하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "3687f6c7d8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자인 경우에는 다음과 같은 점에 주의하여 용량 및 투여간격에 주의하는 등 환자의 상태를 관찰하고 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "18abc253d4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "일반적으로 생리기능이 저하되어 있으므로 많은 이상반응이 발현하기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "0aeb11c0bd",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "두드러기, 구내염, 백혈구감소, 혈소판증가, 헤모글로빈 감소, 간기능 장애(AST, ALT 상승), 혈청크레아티닌 상승, 단백뇨, 혈청나트륨치 상승 등이 보고 되었다.",
+   "extractor": "kw-v4",
+   "id": "9994b3bbe0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K 결핍으로 출혈경향이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "46bf149fea",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:37",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

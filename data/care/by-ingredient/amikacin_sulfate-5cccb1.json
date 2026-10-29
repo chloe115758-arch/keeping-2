@@ -1,76 +1,80 @@
 {
-  "ingredient": "amikacin sulfate",
-  "productSeq": "201403256",
-  "itemName": "아스카신주(아미카신황산염)",
-  "atc": "J01GB06",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230913",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403256/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403256/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403256/NB"
+ "ingredient": "amikacin sulfate",
+ "productSeq": "201403256",
+ "itemName": "아스카신주(아미카신황산염)",
+ "atc": "J01GB06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230913",
+ "ediCode": "629700051",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403256/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403256/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201403256/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 의해 신생아에 제8뇌신경장애를 일으킬 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "683c3ed50e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "a9cbd55aec",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중의 투여에 의해 신생아에 제8뇌신경장애를 일으킬 수 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "19d9a84db5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부의 경우에는 수유를 중단하거나 약물 투여를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fb3f5aef74",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에는 다음 사항에 주의하고 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f92e83e3d5",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 주로 신장으로 배설되지만 고령자의 경우 신기능이 저하되어 있는 경우가 많기 때문에 높은 혈중농도가 지속될 수 있고, 제8뇌신경장애, 신장애 등의 이상반응이 나타나기 쉽다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "943783d9df",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "비타민 K결핍증상에 의한 출혈경향이 나타날 수 있다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:17:58"
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부의 경우에는 수유를 중단하거나 약물 투여를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "60b8ada78b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에는 다음 사항에 주의하고 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "e1b9796787",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 주로 신장으로 배설되지만 고령자의 경우 신기능이 저하되어 있는 경우가 많기 때문에 높은 혈중농도가 지속될 수 있고, 제8뇌신경장애, 신장애 등의 이상반응이 나타나기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "03d17feea2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K결핍증상에 의한 출혈경향이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "df92aef7e9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,57 @@
+{
+ "ingredient": "magnesium oxide",
+ "productSeq": "201606577",
+ "itemName": "대화산화마그네슘정",
+ "atc": "A02AA02",
+ "etcOtc": "일반의약품",
+ "changeDate": "20190924",
+ "ediCode": "645604820",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201606577/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201606577/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201606577/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것 3)",
+   "subject": "",
+   "excerpt": "고령자(만 65세 이상)",
+   "extractor": "kw-v4",
+   "id": "8deecccc67",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "다량의 우유, 칼슘제제와 병용시 우유 알칼리 증후군(고칼슘혈증, 고질소혈증, 알카리증 등)이 나타날 수 있으므로 충분히 관찰하고 이러한 증상이 나타나는 경우에는 투여를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "6fab7ec96a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘제제"
+    },
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:34",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

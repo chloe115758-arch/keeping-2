@@ -1,15 +1,151 @@
 {
-  "ingredient": "alfacalcidol",
-  "productSeq": "202600559",
-  "itemName": "알파인정1마이크로그램(알파칼시돌)",
-  "atc": "A11CC03",
-  "etcOtc": "일반의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600559/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600559/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600559/NB"
+ "ingredient": "alfacalcidol",
+ "productSeq": "202600559",
+ "itemName": "알파인정1마이크로그램(알파칼시돌)",
+ "atc": "A11CC03",
+ "etcOtc": "일반의약품",
+ "changeDate": null,
+ "ediCode": "052402390",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600559/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600559/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600559/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음과 같은 사람은 이 약을 복용하지 말 것. 5)",
+   "subject": "",
+   "excerpt": "혈액 pH ＞ 7.44의 알칼리혈증(우유 알칼리 증후군, Burnett 증후군) 환자",
+   "extractor": "kw-v4",
+   "id": "cd7d76e9bb",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
   },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:06:48"
+  {
+   "section": "interaction",
+   "where": "2. 이 약을 복용하는 동안 다음의 약을 복용하지 말 것. 1)",
+   "subject": "",
+   "excerpt": "마그네슘 함유제제(고마그네슘혈증이 나타날 수 있다.)",
+   "extractor": "kw-v4",
+   "id": "20d927e762",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "마그네슘 함유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "2. 이 약을 복용하는 동안 다음의 약을 복용하지 말 것. 2)",
+   "subject": "",
+   "excerpt": "비타민 D와 그 유도체(상가작용 및 고칼슘혈증이 나타날 수 있다.)",
+   "extractor": "kw-v4",
+   "id": "aaa7d37833",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminD",
+     "kind": "supplement",
+     "ko": "비타민 D",
+     "surface": "비타민 D"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "2. 이 약을 복용하는 동안 다음의 약을 복용하지 말 것. 3)",
+   "subject": "",
+   "excerpt": "칼슘 함유제제 또는 치아지드계 이뇨제(고칼슘혈증의 위험이 증가한다.)",
+   "extractor": "kw-v4",
+   "id": "943478dfbb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘 함유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 1)",
+   "subject": "",
+   "excerpt": "과량복용시 태아독성의 위험(육체적·정신적 발달지체, 대동맥 협착)이 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성은 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 복용할 것.",
+   "extractor": "kw-v4",
+   "id": "8b67ceed8a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 3)",
+   "subject": "",
+   "excerpt": "고령자(일반적으로 생리기능이 저하되어 있으므로 용량에 주의할 것.)",
+   "extractor": "kw-v4",
+   "id": "295e4402d6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 5)",
+   "subject": "",
+   "excerpt": "콜레스티라민 같은 수지나 사하제인 미네랄 오일을 복용 중인 환자(이 약의 장관흡수가 저하될 수 있다.)",
+   "extractor": "kw-v4",
+   "id": "540ac2c7a3",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "consult",
+   "where": "5. 다음과 같은 경우 이 약의 복용을 즉각 중지하고 의사, 치과의사, 약사와 상의할 것. 상담시 가능한 한 이 첨부문서를 소지할 것. (2)",
+   "subject": "",
+   "excerpt": "정신신경계 : 때때로 다리근육 경축, 두통, 머리무거움, 불면, 초조감, 무력감, 권태감, 드물게 어지러움, 저림, 졸음, 가슴쓰림, 어깨결림, 노인성 난청, 이명, 기억력·기명력의 감퇴, 현성 정신병, 기타 의식장애, 등통증",
+   "extractor": "kw-v4",
+   "id": "da7a278d9e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,182 @@
+{
+ "ingredient": "omeprazole",
+ "productSeq": "199200236",
+ "itemName": "오엠피정20밀리그램(오메프라졸)",
+ "atc": "A02BC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240327",
+ "ediCode": "643302040",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199200236/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199200236/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199200236/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것. 2)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "f8c0feb8d8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 2)",
+   "subject": "",
+   "excerpt": "이 약은 간에서 주로 CYP2C19에 의해 대사된다. 디아제팜, 페니토인, 와파린 및 다른 비타민 K 길항제 등과 같이 CYP2C19에 의해 대사되는 약물과 병용시 이들 약물의 배설을 지연시켜 혈장 농도를 증가시킬 수 있다. 이들 약물(특히 페니토인 및 와파린)과 병용투여시에는 환자에 대한 모니터링을 하는 것이 권장되며, 이들 약물의 감량이 필요할 수 있다. 그러나 페니토인으로 지속적인 치료…",
+   "extractor": "kw-v4",
+   "id": "55e90e0ec9",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 6)",
+   "subject": "",
+   "excerpt": "이 약을 페나세틴, 테오필린, 카페인, 프로프라놀올, 메토프롤올, 사이클로스포린, 리도카인, 퀴니딘, 에스트라디올, 피록시캄, 디클로페낙, 나프록센 또는 제산제와 병용투여한 경우 상호작용은 발견되지 않았다. 이 약의 흡수는 알콜 또는 음식에 의해 영향을 받지 않는다.",
+   "extractor": "kw-v4",
+   "id": "8869f93d3e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
+    },
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 7)",
+   "subject": "",
+   "excerpt": "건강한 지원자에게 오메프라졸(20mg 1일 1회 투여)과 아타자나비어 300mg/리토나비어 100mg을 병용투여했을 때 아타자나비어의 노출이 감소했다(AUC, Cmax, Cmin이 약 75% 감소). 아타자나비어 400mg 1일 4회 투여는 오메프라졸의 아타나자비어 노출에 대한 영향을 상쇄시킬 수 없다. 이 약을 포함한 프로톤 펌프 저해제들은 아타자나비어와 병용투여할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "1c22a23d4a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤 펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 8)",
+   "subject": "",
+   "excerpt": "오메프라졸과 타크로리무스의 병용투여는 타크로리무스의 혈청 농도를 높일 수 있다. 이 약을 투여하기 시작하거나 중단할 때 타크로리무스의 혈장 농도를 모니터링하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "727eb6cc1b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 9)",
+   "subject": "",
+   "excerpt": "오메프라졸과 CYP2C19, CYP3A4 저해제인 보리코나졸과의 병용 투여는 이 약의 노출을 두 배 이상 증가시킬 수 있다. 오메프라졸(1일 1회 40mg 투여)은 보리코나졸(CYP2C19 기질)의 Cmax 와 AUC를 각각 15% 및 41%로 증가시켰다. 이 때문에 이 약의 용량을 조절할 필요는 없다. 그러나, 중증의 간기능 장애환자와 장기간의 치료가 필요한 환자에서는 용량 조절을 고려하여…",
+   "extractor": "kw-v4",
+   "id": "9d4ea32375",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 10)",
+   "subject": "",
+   "excerpt": "부작용 사례 보고, 집단약동학 연구(population pharmacokinetic studies) 및 후향적 연구 등에서 메토트렉세이트(주로 고용량을 사용하는 경우, 메토트렉세이트의 사용상의 주의사항 참조)와 프로톤펌프 억제제를 병용하는 경우 메토트렉세이트 그리고/또는 그 대사체인 히드록시메토트렉세이트의 혈청 농도가 상승 및 유지되어 메토트렉세이트의 독성이 나타날 수 있다고 보고되었다. 그…",
+   "extractor": "kw-v4",
+   "id": "59a009479a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험 (토끼 : 138mg/kg 경구투여)에서 태자독성이 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "39fa49070b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 모유중으로의 이행 여부는 알려지지 않았으나 수유부에는 투여하지 않는 것이 바람직하다. 또한 부득이하게 투여하는 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "3f251f5805",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:48",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

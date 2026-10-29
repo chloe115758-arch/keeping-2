@@ -1,0 +1,44 @@
+{
+ "ingredient": "bethanechol chloride",
+ "productSeq": "201903597",
+ "itemName": "오스네콜정(베타네콜염화물)",
+ "atc": "N07AB02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220525",
+ "ediCode": "629701790",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903597/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903597/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201903597/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에는 투여하지 말 것 14)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "378df606ce",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "id": "32d380c00c",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "식사 직후 이 약을 복용할 경우 메스꺼움, 구토 등의 증상이 발생할 수 있으므로 공복에 복용하는 것을 권장한다.",
+   "meal": "식사 직후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:13",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

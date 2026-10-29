@@ -1,0 +1,75 @@
+{
+ "ingredient": "deflazacort",
+ "productSeq": "200502873",
+ "itemName": "데플라정(데프라자코르트)",
+ "atc": "H02AB13",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260520",
+ "ediCode": "645300220",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200502873/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200502873/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200502873/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 9)",
+   "subject": "",
+   "excerpt": "제산제는 당질코르티코이드의 위장관 흡수를 방해하므로 투여간격을 2시간 이상으로 한다.",
+   "extractor": "kw-v4",
+   "id": "94c8cf9237",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험(랫트와 토끼)에서 용량 의존적인 기형 발생 작용이 보고되어 있으며 임신 중에 코르티코이드를 투여한 모체에서 태어난 신생아의 경우 부신부전증을 일으킬 수 있으며, 태아의 성장지체, 언청이의 위험성 등이 증가, 태아의 뇌 성장 및 발달에도 영향을 끼칠수 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다. 임신기간중…",
+   "extractor": "kw-v4",
+   "id": "42165543be",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "코르티코이드는 모유 중으로 이행될 수 있으므로 이 약 투여중에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "a7285e0595",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 장기투여한 경우, 감염증의 유발, 당뇨병, 골다공증, 고혈압, 후낭하 백내장, 녹내장 등의 부작용이 나타나기 쉬우므로 충분히 관찰하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "093e907c13",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:40",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

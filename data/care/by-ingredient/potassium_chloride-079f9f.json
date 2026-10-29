@@ -1,0 +1,56 @@
+{
+ "ingredient": "potassium chloride",
+ "productSeq": "200001783",
+ "itemName": "케이콘틴서방정(염화칼륨)",
+ "atc": "A12BA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20160428",
+ "ediCode": "645905140",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001783/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001783/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001783/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 6)",
+   "subject": "",
+   "excerpt": "임부(소화관 운동이 저하되거나 소화관점막 자극작용이 나타나기 쉬우므로 임부에 대한 투여시 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.)",
+   "extractor": "kw-v4",
+   "id": "cf225d4997",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "4. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 8)",
+   "subject": "",
+   "excerpt": "고령자(일반적으로 생리기능이 저하되어 있으므로 감량하는 등 주의한다.)",
+   "extractor": "kw-v4",
+   "id": "6b799f918a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "966f8065e0",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "식사직후에 복용하되 씹거나 부수어 복용하지 않도록 한다.",
+   "meal": "식사직후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:52",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

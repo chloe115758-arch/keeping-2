@@ -1,0 +1,177 @@
+{
+ "ingredient": "letermovir",
+ "productSeq": "201805300",
+ "itemName": "프레비미스정240밀리그램(레테르모비르)",
+ "atc": "J05AX18",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251208",
+ "ediCode": "655502030",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201805300/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201805300/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201805300/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "4. 상호작용",
+   "subject": "",
+   "excerpt": "병용약물 분류 및/또는 제거 경로: 약물명 농도에 미치는 영향† 임상적 의견 항부정맥제 아미오다론 ↑아미오다론 이 약을 아미오다론과 병용투여했을 때, 아미오다론의 혈장 농도가 증가한다. 병용투여 시, 아미오다론과 관련된 이상사례에 대한 면밀한 임상 모니터링이 권장된다. 아미오다론 농도를 자주 모니터링한다. 항생제 나프실린 ↓레테르모비르 이 약을 나프실린과 병용투여했을 때, 레테르모비르의 혈장…",
+   "extractor": "kw-v4",
+   "id": "e27bb415cf",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    },
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤 펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "f1751d6339",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 임신 결과에 위험을 초래하는지 여부를 확인하기 위하여 사람에서 실시된 적절한 연구 자료는 없다. 랫드 및 토끼에서 배·태자 독성이 관찰되었다. 이 때 모체에서의 독성 전신 노출도는 사람에 대한 권장용량(RHD)에서의 노출도의 약 11배(랫드) 및 2배(토끼)였다. 랫드에서는 이 노출도에서 태자 기형이 관찰되었다. 랫드에서의 출생 전·후 발생시험(경구 투여)에서 사람에 대한 권장용량(…",
+   "extractor": "kw-v4",
+   "id": "90a7e0a8f2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "해당 집단에 대한 주요 선천적 장애 및 유산의 기저 위험은 알려져 있지 않다. 인간에 대한 잠재적인 위험 또한 알려진 바 없다.",
+   "extractor": "kw-v4",
+   "id": "b9cfb0b7ae",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "b142d94dd9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "레테르모비르가 사람의 모유로 분비되는지, 모유 생성에 영향을 주는지, 또는 모유 수유 중인 유아에게 영향이 있는지는 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "f0aec00c69",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "수유 중인 랫드에게 투여했을 때, 레테르모비르는 모유로 분비되었다.",
+   "extractor": "kw-v4",
+   "id": "0a5086ff98",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "수유부의 이 약에 대한 임상적 필요성 및 이 약 또는 산모의 기저 상태가 수유 중인 유아에게 미칠 잠재적인 부정적 영향과 함께 모유 수유가 발달 및 건강에 미치는 유익성을 고려하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "ce37def657",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "235cd56927",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "사람에서의 수태능 영향에 대한 자료는 없다. 랫드에서의 수태능 시험에서 암컷 랫드의 수태능에는 영향이 없었으나 수컷 랫드에서 사람에 대한 권장용량에서의 노출도의 약 3배 이상 노출도에서 고환 독성에 따른 수태능 감소가 관찰되었다. 원숭이에서는 이러한 영향이 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "6c125129c3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "수컷 마우스 대상 13주 반복투여 독성시험에서 사람에 대한 권장용량에서의 노출도의 약 3.5배 이상 노출도에서 생식기관 독성은 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "c5b69a32ba",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "동종조혈모세포이식을 받은 환자들을 대상으로 실시된 P001 시험에서 만 65세 이상 고령자는 56명(15%)이 포함되었다. 조혈모세포이식을 받은 환자들을 대상으로 실시된 P040 시험에서 만 65세 이상 고령자는 32명(22%)이었다. 신장이식을 받은 환자들을 대상으로 실시된 P002 시험에서 만 65세 이상 고령자는 48명(16%)이었다. 각각의 임상시험에서 만 65세 이상의 고령자와 젊은…",
+   "extractor": "kw-v4",
+   "id": "4f6959caf6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:57",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

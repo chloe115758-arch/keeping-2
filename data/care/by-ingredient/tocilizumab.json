@@ -1,15 +1,19 @@
 {
-  "ingredient": "tocilizumab",
-  "productSeq": "202403038",
-  "itemName": "앱토즈마주(토실리주맙)(유전자재조합)",
-  "atc": "L04AC07",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260609",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202403038/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202403038/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202403038/NB"
-  },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:17:50"
+ "ingredient": "tocilizumab",
+ "productSeq": "202403038",
+ "itemName": "앱토즈마주(토실리주맙)(유전자재조합)",
+ "atc": "L04AC07",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260609",
+ "ediCode": "623800341",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202403038/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202403038/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202403038/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,32 @@
+{
+ "ingredient": "erythropoietin 4KI.U(10KI.U)",
+ "productSeq": "201908143",
+ "itemName": "팬포틴프리필드시린지주4000IU(에포에틴알파)",
+ "atc": "B03XA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250131",
+ "ediCode": "055900041",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908143/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908143/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908143/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람의 임신 및 수유기에 에포에틴 알파를 투여한 적절한 임상경험은 없다. 임신 기간 동안 적혈구형성-자극제제는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다. 에포에틴 알파가 유즙으로 배출되는지는 알려져 있지 않다. 모유수유를 계속 또는 중단할 것인지, 또는 에포에틴 알파로 치료를 계속 또는 중단할 것인지 결정은 모유수유의 이점과 에포에틴 알파의 치료의 유익성을 고려하여…",
+   "extractor": "kw-v4",
+   "id": "d149a71be0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:18",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

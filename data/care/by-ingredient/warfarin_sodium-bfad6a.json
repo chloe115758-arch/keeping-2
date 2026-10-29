@@ -1,0 +1,81 @@
+{
+ "ingredient": "warfarin sodium",
+ "productSeq": "198601052",
+ "itemName": "대화와르파린나트륨정2밀리그램",
+ "atc": "B01AA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230228",
+ "ediCode": "645600390",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198601052/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198601052/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198601052/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 5)",
+   "subject": "[표 1] 유전형별 와파린 유지용량",
+   "excerpt": "다음 인자에 의해 이 약의 항응고 작용이 변화될 수 있다. : 비타민 K, 지방, 야채류 섭취, 신생아의 비타민 K 결핍, 비타민 C 결핍, 발열, 알코올 중독, X선 치료, 설사로 인한 비타민 K의 큰 손실 및 장에서의 소량 흡수",
+   "extractor": "kw-v4",
+   "id": "281799a00d",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    },
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 경구투여시 태반 통과로 태아의 출혈 또는 자궁내 사망, 형성부전 및 점상 연골 발육부전 등 선천성 기형을 초래한다는 보고가 있으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "4d1b5b53bd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유를 통해 영아에게 전달되며 예기치 않은 출혈을 일으킬 수 있으므로 충분히 관찰해야 한다.",
+   "extractor": "kw-v4",
+   "id": "4b15002676",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "60세 이상 환자에서 이 약의 항응고 효과에 대해 PT/INR 반응이 예상보다 더 크게 나타날 수 있으므로 고령자에 투여시 특히 주의한다.",
+   "extractor": "kw-v4",
+   "id": "d608c403b1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:18",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

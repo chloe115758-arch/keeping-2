@@ -1,0 +1,123 @@
+{
+ "ingredient": "treprostinil",
+ "productSeq": "201001269",
+ "itemName": "레모둘린주사1mg/mL(트레프로스티닐), 레모둘린주사2.5mg/mL(트레프로스티닐), 레모둘린주사5mg/mL(트레프로스티닐), 레모둘린주사10mg/mL(트레프로스티닐)",
+ "atc": "B01AC21",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250624",
+ "ediCode": "672000031",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201001269/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201001269/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201001269/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "건강한 사람을 대상으로 이 약(피하 주입 또는 트레프로스티닐 디올아민으로서 경구)과 아세트아미노펜(4g/day), 에스오메프라졸(40mg/day), 보센탄(250mg/day), 실데나필(60mg/day), 그리고 와파린(25mg/day)과의 약물상호작용을 평가한 결과, 트레프로스티닐의 약동학에 임상적으로 유의한 영향이 없었다. 또한, 트레프로스티닐(10 ng/kg/min의 속도로 피하 주입)…",
+   "extractor": "kw-v4",
+   "id": "90acafc0f0",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "에스오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "79ec7b1867",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 랫트에서, 기관형성기 및 임신후기(late gestational development)동안 900ng/kg/min의 빠른 속도(ng/m2에 근거하여 사람에서의 주입시작속도의 약 117배, 임상시험에서 평균속도의 약 16배)로 이 약을 지속적으로 피하투여한 결과 태아에게 유해하다는 어떠한 증거도 관찰되지 않았다. 임신한 토끼에서 기관형성기 동안 이 약의 지속적인 피하 투여시 태아 골격변…",
+   "extractor": "kw-v4",
+   "id": "dbcbdf1b8b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "분만",
+   "extractor": "kw-v4",
+   "id": "4a3a98cbf6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "분만시 이약의 투여와 관련된 어떠한 영향도 동물시험에서 나타나지 않았다. 이 약이 사람의 분만에 미치는 영향은 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "2cd7ae6f2d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "fe0358cabe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람의 모유로 분비되는지 또는 섭취 후에 전신으로 흡수되는지는 알려져 있지 않다. 많은 약물들이 사람의 모유로 분비되므로 이 약을 수유부에게 투여하는 경우 주의하여야 하다.",
+   "extractor": "kw-v4",
+   "id": "14c3726f5a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 환자에 대한 임상 연구가 충분하지 않다. 일반적으로 고령 환자는 간, 신장, 혹은 심장 기능 감소 및 동반질환 또는 다른 약물 투여 등의 높은 발현빈도로 인하여, 용량 선택시 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "bd0cf84efc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:07",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

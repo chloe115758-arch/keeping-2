@@ -1,0 +1,166 @@
+{
+ "ingredient": "insulin glargine )",
+ "productSeq": "201801065",
+ "itemName": "글라지아프리필드펜(인슐린글라진,유전자재조합)",
+ "atc": "A10AE04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230217",
+ "ediCode": "643605551",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801065/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801065/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201801065/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것",
+   "subject": "",
+   "excerpt": "- 알코올 섭취",
+   "extractor": "kw-v4",
+   "id": "7d34259ada",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "- 인슐린의 혈당강하작용을 증가시키거나 감소시킬 수 있는 다음의 약물 : 베타차단제, 클로니딘, 리튬염, 알코올",
+   "extractor": "kw-v4",
+   "id": "4cbbcba9de",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및&nbsp;수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부를 대상으로 실시한 무작위배정 대조 임상시험(randomized controlled clinical studies)은 없으므로 임부에게 처방 시에는 주의해야 한다. 시판 후 사용조사에서 인슐린글라진을 투여 받는 동안 임신을 하게 된 1,000건 이상의 대규모 사례를 전향적 및 후향적으로 조사한 결과, 임신이나 태자 및 신생아의 건강과 관련된 특정한 이상사례는 보고되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "29480863c0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및&nbsp;수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물 실험에서 임신이나 배, 태자의 발달, 분만, 출생 후의 발달에 대해 직접적으로 유해한 영향을 미친다는 증거는 없다.",
+   "extractor": "kw-v4",
+   "id": "1dfba22905",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및&nbsp;수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "기존에 당뇨병을 가지고 있거나 임신성 당뇨병 환자의 경우 고혈당과 관련된 부작용을 예방하기 위하여 임신기간 동안 적절한 혈당조절상태를 유지하는 것이 중요하다.",
+   "extractor": "kw-v4",
+   "id": "64d2f2075e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및&nbsp;수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임신기간을 3기로 나누어 볼 때, 일반적으로 첫 1기 동안에는 인슐린 요구량이 감소하며, 그 이후 2, 3기에는 증가한다. 분만직후에 인슐린 요구량은 급격히 감소하므로(저혈당증의 발생위험성이 높아진다) 이 시기동안 혈당조절에 대한 주의 깊은 관찰이 요구된다.",
+   "extractor": "kw-v4",
+   "id": "e6f89257d4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및&nbsp;수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "당뇨병 환자가 임신하였거나 임신을 계획하고 있다면 반드시 의사에게 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "aacc1a0f58",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및&nbsp;수유부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "수유부는 인슐린 용량과 식사 조절이 필요할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "63366efbc3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8.&nbsp;고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "제 1형 및 제 2형 당뇨병환자에 대한 인슐린 글라진과 NPH인슐린 비교임상시험에서 총 3,890명 중 65세 이상 고령자 593명을 하위분석한 결과 투여군(Insulin glargine, NPH insulin) 모두에서 고령자군이 전체군에 비해 심혈관계사건이 예견된 것처럼 높은 빈도로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "ae989b627e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8.&nbsp;고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 저혈당의 증상을 인지하기 어려우므로 용량증가 및 유지시 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "1beaa57ccf",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "39df5da8bd",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "기저 인슐린요법으로서 기존에 NPH 인슐린을 하루 두 번 투여하던 환자들이 이 약을 하루 한 번 투여하는 것으로 용법을 바꾸는 경우 야간 또는 이른 아침 저혈당의 위험을 줄이기 위하여 치료 첫 주 동안 1일 투여 용량을 약 20-30% 정도 감량 투여한다. 치료 첫 주 동안 이와 같이 감소시킨 인슐린글라진의 용량은 식후혈당을 조절하기 위해 투여하는 인슐린의 용량을 증가시킴으로써 보충하고, 이…",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:20",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

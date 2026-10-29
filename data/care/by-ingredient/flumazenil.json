@@ -1,71 +1,94 @@
 {
-  "ingredient": "flumazenil",
-  "productSeq": "200201484",
-  "itemName": "플루닐주사(플루마제닐)",
-  "atc": "V03AB25",
-  "etcOtc": "전문의약품",
-  "changeDate": "20141024",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201484/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201484/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201484/NB"
-  },
-  "rules": [
+ "ingredient": "flumazenil",
+ "productSeq": "200201484",
+ "itemName": "플루닐주사(플루마제닐)",
+ "atc": "V03AB25",
+ "etcOtc": "전문의약품",
+ "changeDate": "20141024",
+ "ediCode": "642202351",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201484/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201484/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200201484/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 1)",
+   "subject": "",
+   "excerpt": "외래환자의 운전 및 다른 정신운동성 작업에 미치는 영향 : 이 약 정맥투여 후 환자가 비록 각성되어 있고 의식이 있더라도, 전에 복용 또는 투여한 벤조디아제핀의 효과가 다시 나타날 수 있으므로, 투여 후 첫 24시간 동안에는 위험한 기계작동이나 자동차 운전과 같은 완전한 정신적 경각심이 요구되는 위험한 작업에 종사하지 않도록 한다. 또한 벤조디아제핀의 효과가 가라앉을 때까지 비처방약이나 술을…",
+   "extractor": "kw-v4",
+   "id": "877407d9b5",
+   "kind": "note",
+   "matched": [
     {
-      "id": "14edcfcc32",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 4)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 알코올과의 상호작용은 알려진 바 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7ba9f24645",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신중의 투여에 관하여 안전성이 확립되어있지 않으므로 임부 및 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b50d7c3b5a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험에서 모유로 분비된다는 보고가 있으므로 투여 중에 수유를 피하도록 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3e480bf202",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "투여 전에 환자의 상태를 충분히 관찰하여 신중히 투여한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:12:08"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "이 약과 알코올과의 상호작용은 알려진 바 없다.",
+   "extractor": "kw-v4",
+   "id": "e4ff918145",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 관하여 안전성이 확립되어있지 않으므로 임부 및 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "52f81d2e15",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험에서 모유로 분비된다는 보고가 있으므로 투여 중에 수유를 피하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "98d3d1e978",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "투여 전에 환자의 상태를 충분히 관찰하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "b3e40c361f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

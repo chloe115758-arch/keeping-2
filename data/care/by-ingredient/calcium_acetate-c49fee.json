@@ -1,0 +1,68 @@
+{
+ "ingredient": "calcium acetate",
+ "productSeq": "199801011",
+ "itemName": "네프로정(아세트산칼슘)",
+ "atc": "V03AE",
+ "etcOtc": "전문의약품",
+ "changeDate": "20121024",
+ "ediCode": "652600510",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801011/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801011/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199801011/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5.임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약을 투여하여 실시한 동물시험에서는 최기형성이 나타나지 않았으나, 임부에게 투여할 경우에는 유익성이 위험성을 상회할 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "dacc3b07b5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5.임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "소아에 대한 안전성과 유효성이 아직 확립되어 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "ea693b7799",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "367314e409",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "1)초기 용량 : 매 식사 중 2정씩 경구로 복용한다.",
+   "meal": "식사 중",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "dffb58aa33",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "통상 식사중 3-4정을 경구 복용한다.",
+   "meal": "식사중",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:41",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

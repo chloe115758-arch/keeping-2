@@ -1,15 +1,82 @@
 {
-  "ingredient": "acetaminophen(encapsulated)",
-  "productSeq": "202006755",
-  "itemName": "엘앤씨메가펜정(아세트아미노펜제피세립)",
-  "atc": "N02BE01",
-  "etcOtc": "일반의약품",
-  "changeDate": "20251110",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006755/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006755/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006755/NB"
+ "ingredient": "acetaminophen(encapsulated)",
+ "productSeq": "202006755",
+ "itemName": "엘앤씨메가펜정(아세트아미노펜제피세립)",
+ "atc": "N02BE01",
+ "etcOtc": "일반의약품",
+ "changeDate": "20251110",
+ "ediCode": "060500030",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006755/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006755/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006755/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 1)",
+   "subject": "",
+   "excerpt": "매일 세잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 간손상이 유발될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "be8c782e84",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
   },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:07:52"
+  {
+   "section": "contra",
+   "where": "2. 다음과 같은 사람은 이 약을 복용하지 말 것 9)",
+   "subject": "",
+   "excerpt": "알코올을 복용한 사람",
+   "extractor": "kw-v4",
+   "id": "d253a778bb",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음과 같은 사람은 이약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것 9)",
+   "subject": "",
+   "excerpt": "고령자(노인)",
+   "extractor": "kw-v4",
+   "id": "ad20e20f7f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음과 같은 사람은 이약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것 10)",
+   "subject": "",
+   "excerpt": "임부 또는 수유부",
+   "extractor": "kw-v4",
+   "id": "dcda4bbbbf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,360 @@
+{
+ "ingredient": "desvenlafaxine",
+ "productSeq": "202002453",
+ "itemName": "데팍신서방정50밀리그램(데스벤라팍신)",
+ "atc": "N06AX23",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240328",
+ "ediCode": "657203560",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002453/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002453/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202002453/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "다른 세로토닌성 약물과 마찬가지로, 데스벤라팍신을 포함한 세로토닌-노르에피네프린재흡수억제제(SNRIs) 및 세로토닌 선택적 재흡수억제제(SSRIs)를 투여했을 때 생명을 위협할 수 있는 세로토닌증후군이 발생할 수 있다. 특히 세로토닌성 신경전달물질 시스템에 영향을 주는 다른 물질 (트립탄, 삼환계 항우울제, 리튬, 시부트라민, 아편유사제(opioids)(예, 펜타닐과 그 유사체, 덱스트로메토…",
+   "extractor": "kw-v4",
+   "id": "5a38135d3a",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고",
+   "subject": "",
+   "excerpt": "데스벤라팍신과 트립탄, 삼환계 항우울제, 펜타닐, 리튬, 트라마돌, 부스피론, 암페타민류, 트립토판 및 세인트존스워트(St. John’s Wort)를 포함한 기타 세로토닌성 약물과의 병용 투여가 임상적으로 필요한 경우, 특히 투여 개시시 및 용량 증가시에 세로토닌 증후군에 대한 위험이 증가될 수 있음을 환자에게 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "c867791384",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 6)",
+   "subject": "",
+   "excerpt": "알코올",
+   "extractor": "kw-v4",
+   "id": "eed3d98340",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "한 건의 임상시험에서, 데스벤라팍신이 에탄올에 의해 유발된 정신 및 운동 능력의 손상을 증가시키지 않는다는 것이 나타났다. 그러나 모든 중추신경계 활성약물과 마찬가지로, 환자들에게 데스벤라팍신을 복용하는 동안 알코올 섭취를 피하도록 주지시켜야 한다.",
+   "extractor": "kw-v4",
+   "id": "227d53d1f5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "c38d458a6e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "위험 요약",
+   "extractor": "kw-v4",
+   "id": "178e2e55c1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에서 데스벤라팍신에 대한 적절한 대조임상시험은 수행되지 않았다. 데스벤라팍신에 대해 랫드와 토끼를 대상으로 한 생식 발달 연구 결과, 체표면적당 용량(mg/m2)기준으로 랫드에게는 사람에게 100 mg/일 투여시의 30배까지 그리고 토끼에게는 사람에게 100mg/일 투여시의 15배까지 투여된 어떤 용량에서도 최기형성에 대한 증거는 관찰되지 않았다. 랫드의 경우, 사람의 1일 용량인 100…",
+   "extractor": "kw-v4",
+   "id": "1fc86976c5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임상시험에서 데스벤라팍신은 사람의 태반을 통과한다는 문헌 보고가 있다. 데스벤라팍신은 잠재적인 유익성이 태자에 대한 잠재적 위험성을 상회하는 경우에만 임신 중에 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e2f550030c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "임상적 고찰",
+   "extractor": "kw-v4",
+   "id": "aa9f3969cd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "질병관련 위험 : 임신 시작 시점에 기분이 정상 상태였던 주요 우울증 이력을 가진 201명의 여성에 대한 전향적인 종적 연구 결과, 임신 중 항우울제를 중단한 여성이 항우울제를 계속 복용한 여성보다 주요 우울증의 재발을 더 많이 경험한 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "f30e524172",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중기-후기에 SNRI의 노출은 자간전증의 위험을 높일 수 있으며, 분만 직전의 SNRI의 노출은 분만후 출혈의 위험을 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "2211e4e306",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 이상반응 : 임신 중기에서 후기에 SNRI에 노출되면 자간전증의 위험이 증가 할 수 있고, 출산과 가까운 시기에 SNRI에 노출되면 산후출혈의 위험이 증가할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "39bd883de2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "태아 및 신생아 이상반응 : 임신 후기에 SNRI 또는 SSRI에 노출된 신생아는 입원기간 연장, 호흡보조 및 경관식이법을 요하는 합병증이 나타났다. 임신 마지막 삼분기에 데스벤라팍신에 노출된 신생아는 금단증후군이 나타날 수 있으므로 모니터링해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ab50bf27f1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "임상자료",
+   "extractor": "kw-v4",
+   "id": "28d56ab89b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 마지막 3개월에 세로토닌-노르에피네프린재흡수저해제(SNRI) 또는 세로토닌선택적재흡수저해제(SSRI)에 노출된 신생아는 입원기간 연장, 호흡보조 및 경관식이법을 요하는 합병증을 나타냈다. 이러한 합병증은 출산 즉시 나타날 수 있다. 보고된 임상연구 결과로는 호흡곤란, 청색증, 무호흡증, 발작, 체온불안정, 수유곤란, 구토, 저혈당증, 근긴장저하증, 근긴장과다증, 반사항진, 진전, 사지떨…",
+   "extractor": "kw-v4",
+   "id": "1dec6792c0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "56명 임부대상 전향적 관찰연구에서, 대조군(18명)과 비교 시 임신 중 SSRI(27명) 및 벤라팍신(11명)을 투여받은 산모의 태아 재태기간이 더 짧았고(중앙값[사분범위] 39[38-40]주 vs 대조군 40[39-40]주, p<0.05), 출생 시 신생아의 키는 더 작았다(중앙값[사분범위] 49[47-51]cm vs 대조군 51[49-51.6]cm, p<0.05). 또한 출생 후 브레즐…",
+   "extractor": "kw-v4",
+   "id": "58e2ec8579",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "데스벤라팍신의 부모 화합물인 벤라팍신에 노출된 임산부에 대한 역학연구 결과에서 주요 선천적 결손증이나 유산과의 명확한 연관성이 보고되지는 않았다. 이러한 관찰 연구는 가능한 노출 및 결과의 오분류, 적절한 통제 부족, 혼합에 대한 조정 및 확인 연구와 같은 방법론적 한계를 포함한다. 그러므로 이러한 연구는 임신 중에 약물 관련 위험을 입증하거나 배제 할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "88cdc7e301",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "데이터를 근거한 회귀 코호트 연구에서 임신 중에 항우울제를 복용하지 않은 우울증 여성과 비교하여 벤라팍신의 사용과 자간전증 사이의 연관성이 제시되었다. 두 번째 삼분기 또는 마지막 삼분기의 첫 반기에 벤라팍신의 노출과 자간전증에 관한 연구에서, 벤라팍신에 노출되지 않은 우울증 여성(adj RR 1.57, 95 % CI 1.29-1.91)에 비해 자간전증의 위험이 증가하였다. 자간전증은 벤라팍…",
+   "extractor": "kw-v4",
+   "id": "8d7188886c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "데이터에 근거한 회귀 코호트 연구에서 분만 근처 또는 분만 시 산후 출혈과 벤라팍신의 사용 사이의 연관성이 제시되었다. 벤라팍신에 노출되지 않은 여성과 비교하였을 때, 분만 시 벤라팍신에 대한 노출된 여성은 산후 출혈의 위험이 증가하였다(adj RR 2.24 (95 % CI 1.69-2.97)). 임신 초기에 벤라팍신에 노출된 여성에서는 산후 출혈의 위험이 증가하지 않았다. 이 연구는 우울증…",
+   "extractor": "kw-v4",
+   "id": "a3f919f9de",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "비임상자료",
+   "extractor": "kw-v4",
+   "id": "7ccf9fd651",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "데스벤라팍신을 임신한 랫드와 토끼에게 기관형성 기간 동안 각각 최대 300 mg/kg/day 용량과 75 mg/kg/day 용량으로 경구 투여하였을 때, 최기형성은 관찰되지 않았다. 이들 용량은 체표면적당 용량(mg/m2)을 기준으로 산출하였을 때 랫드에서는 사람에게 100mg/일 투여시의 19배이고 토끼에서는 사람에게 100mg/일 투여시의 0.5배이다. 그러나 랫드에서 체표면적당 용량(m…",
+   "extractor": "kw-v4",
+   "id": "9cbc55635b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 랫드에게 데스벤라팍신을 임신기부터 수유기까지 경구 투여하였을 때, 최대 용량인 300 mg/kg/day 용량에서 처음 수유 4일 동안 새끼의 체중이 감소하고 사망률이 증가하였으나, 그 사망의 원인은 알려지지 않았다. 새끼 랫드에서의 NOAEL은 체표면적당 용량(mg/m2)을 기준으로 산출하였을 때 사람에게 100 mg/일 투여시의 4.5배 용량이었다. 자손의 이유기 후 성장 및 생식능…",
+   "extractor": "kw-v4",
+   "id": "f046334502",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "0b5446339c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "O-데스메틸벤라팍신(O-desmethylvenlafaxine)은 모유로 배출된다. 데스벤라팍신이 수유 유아에게 심각한 이상반응을 일으킬 수도 있으므로, 수유부에 대한 데스벤라팍신의 중요성을 고려하여 수유 중단 또는 데스벤라팍신의 복용중단을 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "9ee055e166",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "데스벤라팍신을 사용한 임상시험에 참여한 4,158명의 환자 중 6%가 65세 이상의 고령자였다. 전반적으로 고령자와 젊은 환자 사이에 유효성과 안전성에 대한 차이가 나타나지 않았으나, 단기 위약대조 임상시험에서 데스벤라팍신을 투여받은 65세 미만의 환자보다 65세 이상의 환자에서 수축기 기립성 저혈압의 발생빈도가 높았다. 고령자에서 데스벤라팍신의 용량을 결정할 때에는 이약의 신청소율 감소 가…",
+   "extractor": "kw-v4",
+   "id": "435b5b04dc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "데스벤라팍신을 포함한 SSRI 및 SNRI는 고령자에서 임상적으로 유의한 저나트륨혈증 증례와 관련이 있었으며, 이러한 이상반응은 고령자에게 더 위험할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f27f35612c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

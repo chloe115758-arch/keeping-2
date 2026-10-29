@@ -1,0 +1,112 @@
+{
+ "ingredient": "allopurinol",
+ "productSeq": "197000050",
+ "itemName": "자이로릭정(알로푸리놀)",
+ "atc": "M04AA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260629",
+ "ediCode": "643901390",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197000050/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197000050/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197000050/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "동물실험에서 철분제제와 병용하는 경우 이 약의 다량투여에 의하여 간에 철분 축적이 증가했다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "a1d8068b61",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "iron",
+     "kind": "supplement",
+     "ko": "철분제제",
+     "surface": "철분제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 12)",
+   "subject": "",
+   "excerpt": "수산화알루미늄과 병용하는 경우 알로푸리놀의 효과가 약화될 수 있다. 두 가지 약물은 최소 3시간 간격을 두고 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e041980775",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    }
+   ],
+   "interval": {
+    "minHours": 3.0,
+    "maxHours": null,
+    "qualifier": "최소",
+    "text": "최소 3시간 간격",
+    "actionable": true
+   },
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 기형발생이 보고되었으므로 임부 및 임신하고 있을 가능성이 있는 여성에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "75567a11f2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약 또는 그 대사산물이 모유로 배설되므로 수유중인 부인에는 투여하지 않는 것이 바람직하나 부득이 투여하는 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "ca9d00ba61",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 신기능이 저하되어 높은 혈중농도를 유지할 수 있으므로 용량에 유의하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "d19c8a9edb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "1689f09c46",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "일반적으로 알로푸리놀로서 성인 경증 통풍에는 1일 100 ∼ 300 mg, 중간정도의 결절통풍에는 1일 300 ∼ 600 mg, 중증 결절통풍에는 1일 600 ∼ 800 mg을 1 ∼ 3회 분할(최대 1회 300 mg을 초과하지 않도록)하여 식후에 경구투여한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:25:03",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,68 @@
+{
+ "ingredient": "epinephrine hydrochloride",
+ "productSeq": "196900031",
+ "itemName": "대한에피네프린주사액",
+ "atc": "C01CA24",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260220",
+ "ediCode": "645100741",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900031/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900031/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900031/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "태아의 산소결핍을 초래할 수 있으므로 임부 및 임신하고 있을 가능성이 있는 부인에게는 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "c2260c0af9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "에피네프린은 자연 자궁수축 또는 옥시토신 유도 자궁수축을 억제하여 분만 제2기를 연장시킬 수 있다. 분만 제2기에 에피네프린 사용을 피한다. 자궁 수축이 감소할 정도로 투여하면 출혈을 동반한 자궁근육무력증 기간이 연장될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "c96b4589b7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "모유로 이행되므로 수유 중에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "6ac5449732",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 이 약물에 대해 감수성이 높으므로 개시용량은 소량으로 하고 증상을 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "f441041bcc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:59",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

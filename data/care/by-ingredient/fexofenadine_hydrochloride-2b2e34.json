@@ -1,132 +1,142 @@
 {
-  "ingredient": "fexofenadine hydrochloride",
-  "productSeq": "202502752",
-  "itemName": "펙소논정180밀리그램(펙소페나딘염산염)",
-  "atc": "R06AX26",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260310",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502752/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502752/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502752/NB"
-  },
-  "rules": [
+ "ingredient": "fexofenadine hydrochloride",
+ "productSeq": "202502752",
+ "itemName": "펙소논정180밀리그램(펙소페나딘염산염)",
+ "atc": "R06AX26",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260310",
+ "ediCode": "057001830",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502752/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502752/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202502752/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 4)",
+   "subject": "",
+   "excerpt": "제산제 : 오메프라졸과의 상호작용은 나타나지 않았다. 그러나 알루미늄, 수산화마그네슘을 함유한 제산제를 이 약 투여 15분 전에 투여하면 생체이용률이 감소되는데 이는 제산제 성분이 위장관에 부착되기 때문인 것으로 보여진다. 따라서 알루미늄, 수산화마그네슘을 함유한 제산제와는 2시간 정도의 간격을 두고 이 약을 투여하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "874b4f300c",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "447730e3cb",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 4)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "산화마그네슘"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "제산제 : 오메프라졸과의 상호작용은 나타나지 않았다. 그러나 알루미늄, 수산화마그네슘을 함유한 제산제를 이 약 투여 15분 전에 투여하면 생체이용률이 감소되는데 이는 제산제 성분이 위장관에 부착되기 때문인 것으로 보여진다. 따라서 알루미늄, 수산화마그네슘을 함유한 제산제와는 2시간 정도의 간격을 두고 이 약을 투여하는 것이 바람직하다.",
-      "extractor": "kw-v1"
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
     },
     {
-      "id": "ce9d022c11",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 5)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "과일주스 : 자몽주스, 오렌지 및 사과주스와 같은 과일주스는 생체이용률과 노출량을 감소시킬 수 있다. 히스타민으로 유도한 피부 두드러기 및 발적에 대해 임상시험한 결과, 이 약을 물과 복용하였을 때보다 자몽주스나 오렌지주스와 함께 복용하였을때 두드러기와 발적의 크기가 유의하게 컸다. 문헌보고에 의하면 사과주스와 같은 과일주스에서도 같은 결과가 추정된다. 이러한 결과의 임상적 유의성은 알려진…",
-      "extractor": "kw-v1"
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
     },
     {
-      "id": "3f00f99471",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "펙소페나딘은 테르페나딘의 약물학적으로 유용한 생체 내 대사물이다. 테르페나딘을 300 mg/kg까지 랫트와 토끼에 경구로 투여했을 때(성인에서의 경구 최대 용량 투여에 의한 노출의 각각 4배, 30배의 노출을 나타내는 용량) 기형발생의 증거가 없었다. 펙소페나딘염산염을 3,730 mg/kg까지 임신 중인 마우스에 경구로 투여했을 때(성인에서의 경구 최대 용량 투여에 의한 15배의 노출을 나타…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d8f10da63f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유중인 여성에 이 약을 투여할 경우 수유를 피해야 한다. 동물실험(랫트)에서 이 약이 유즙으로 이행되었다고 보고되었다. 한편 테르페나딘을 수유부에게 투여하였을 때 펙소페나딘이 모유로 이행된다고 보고되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "01650d982b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "테르페나딘을 150 mg/kg 경구로 랫트에 투여했을때(펙소페나딘염산염의 AUC 비교에 근거한 성인 최대 용량의 3배) 용량 의존적으로 태자의 체중 감소와 생존률 감소가 관찰되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "13e364e921",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "65세 이상의 고령자에 대한 임상시험의 경우 이 약 정제 및 캡슐에 대한 반응이 젊은 환자들에 대한 반응과 다르지 않다고 입증할 만한 충분한 임상예수를 확보하지 못하였다. 보고된 임상경험에서 고령자와 젊은 환자사이에 이 약에 대한 반응이 다르다는 것이 확인된 것은 아니다. 이 약은 신장에 의해 주로 배설되는 것으로 알려져 있으므로 신부전환자의 경우 이 약에 대한 독성반응의 위험성이 높을 수…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "19dbdeb2d2",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "○ 성인 및 12세 이상 청소년 : 펙소페나딘염산염으로서 1일 1회 180 mg을 식사전 물과 함께 경구 투여한다.",
-      "meal": "식사전",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "79d10d0916",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "○ 신부전 환자는 시작용량으로서 1일 1회 60 mg을 식사전 물과 함께 경구 투여한다.",
-      "meal": "식사전",
-      "extractor": "kw-v1"
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:09:39"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 5)",
+   "subject": "",
+   "excerpt": "과일주스 : 자몽주스, 오렌지 및 사과주스와 같은 과일주스는 생체이용률과 노출량을 감소시킬 수 있다. 히스타민으로 유도한 피부 두드러기 및 발적에 대해 임상시험한 결과, 이 약을 물과 복용하였을 때보다 자몽주스나 오렌지주스와 함께 복용하였을때 두드러기와 발적의 크기가 유의하게 컸다. 문헌보고에 의하면 사과주스와 같은 과일주스에서도 같은 결과가 추정된다. 이러한 결과의 임상적 유의성은 알려진…",
+   "extractor": "kw-v4",
+   "id": "316ccb90c6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "펙소페나딘은 테르페나딘의 약물학적으로 유용한 생체 내 대사물이다. 테르페나딘을 300 mg/kg까지 랫트와 토끼에 경구로 투여했을 때(성인에서의 경구 최대 용량 투여에 의한 노출의 각각 4배, 30배의 노출을 나타내는 용량) 기형발생의 증거가 없었다. 펙소페나딘염산염을 3,730 mg/kg까지 임신 중인 마우스에 경구로 투여했을 때(성인에서의 경구 최대 용량 투여에 의한 15배의 노출을 나타…",
+   "extractor": "kw-v4",
+   "id": "0e09ba41b6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유중인 여성에 이 약을 투여할 경우 수유를 피해야 한다. 동물실험(랫트)에서 이 약이 유즙으로 이행되었다고 보고되었다. 한편 테르페나딘을 수유부에게 투여하였을 때 펙소페나딘이 모유로 이행된다고 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "daa57fd4fe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "테르페나딘을 150 mg/kg 경구로 랫트에 투여했을때(펙소페나딘염산염의 AUC 비교에 근거한 성인 최대 용량의 3배) 용량 의존적으로 태자의 체중 감소와 생존률 감소가 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "f16e0715a7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 고령자에 대한 임상시험의 경우 이 약 정제 및 캡슐에 대한 반응이 젊은 환자들에 대한 반응과 다르지 않다고 입증할 만한 충분한 임상예수를 확보하지 못하였다. 보고된 임상경험에서 고령자와 젊은 환자사이에 이 약에 대한 반응이 다르다는 것이 확인된 것은 아니다. 이 약은 신장에 의해 주로 배설되는 것으로 알려져 있으므로 신부전환자의 경우 이 약에 대한 독성반응의 위험성이 높을 수…",
+   "extractor": "kw-v4",
+   "id": "0dd1559d93",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "19dbdeb2d2",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "○ 성인 및 12세 이상 청소년 : 펙소페나딘염산염으로서 1일 1회 180 mg을 식사전 물과 함께 경구 투여한다.",
+   "meal": "식사전",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "79d10d0916",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "○ 신부전 환자는 시작용량으로서 1일 1회 60 mg을 식사전 물과 함께 경구 투여한다.",
+   "meal": "식사전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

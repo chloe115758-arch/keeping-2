@@ -1,90 +1,94 @@
 {
-  "ingredient": "donepezil hydrochloride",
-  "productSeq": "202501294",
-  "itemName": "도네팩토오디프스산5밀리그램(도네페질염산염수화물), 도네팩토오디프스산10밀리그램(도네페질염산염수화물)",
-  "atc": "N06DA02",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501294/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501294/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501294/NB"
-  },
-  "rules": [
+ "ingredient": "donepezil hydrochloride",
+ "productSeq": "202501294",
+ "itemName": "도네팩토오디프스산5밀리그램(도네페질염산염수화물), 도네팩토오디프스산10밀리그램(도네페질염산염수화물)",
+ "atc": "N06DA02",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "051700071",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501294/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501294/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202501294/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 (6)",
+   "subject": "",
+   "excerpt": "간기능 장애 : 10 명의 안정적 알코올성 간경화 환자 연구에서 도네페질 청소율은 성별 및 연령을 감안한 10 명의 건강한 대상자에 비해 20%가 감소하였다.",
+   "extractor": "kw-v4",
+   "id": "1617b7d3d5",
+   "kind": "note",
+   "matched": [
     {
-      "id": "d5595a5afb",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의 (6)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "간기능 장애 : 10 명의 안정적 알코올성 간경화 환자 연구에서 도네페질 청소율은 성별 및 연령을 감안한 10 명의 건강한 대상자에 비해 20%가 감소하였다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9b8ee3b578",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 (2)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "CYP3A4 및 CYP2D6 유도제(예 : 리팜피신, 페니토인, 카르바마제핀, 덱사메타손, 페노바르비탈, 알코올)는 도네페질의 대사를 증가하고 약효를 감소시킬 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d8f703838c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 : 임신한 여성에 대한 도네페질의 임상 자료가 없으므로 꼭 필요한 경우가 아니라면 임신 중 이 약을 사용해서는 안된다. 동물실험에서 기형발생을 일으키지 않았지만 어린 새끼의 생존율과 사산율에 영향을 주었다. 임부에 대한 잠재적인 위험은 알려지지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "cc2d09b2f1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부 : 도네페질은 랫트의 모유에 이행되었다. 도네페질의 모유로의 이행여부는 알려져 있지 않다. 수유기 여성에 대한 연구 결과는 없으므로 수유부에게 이 약을 사용해서는 안되며, 반드시 투여되어야 할 경우에는 수유를 치료기 동안 중단하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "23f2adc871",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "○ 성인 : 도네페질염산염으로서 1일 1회 1포 (도네페질염산염으로서 5 mg) 씩 취침 전 투여한다. 이상한 꿈, 악몽, 또는 불면 등의 수면 교란이 발생할 경우, 이 약의 아침 복용을 고려할 수 있다. 도네페질의 농도가 투여 15 일 후 정상상태에 도달하고 이상반응의 빈도가 증량 속도에 의해 영향 을 받을 수 있으므로, 4-6 주간은 1포 (도네페질염산염으로서 5 mg) 용량을 투여하도록…",
-      "meal": "취침 전",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:00:56"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "CYP3A4 및 CYP2D6 유도제(예 : 리팜피신, 페니토인, 카르바마제핀, 덱사메타손, 페노바르비탈, 알코올)는 도네페질의 대사를 증가하고 약효를 감소시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "2e31a41594",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 임신한 여성에 대한 도네페질의 임상 자료가 없으므로 꼭 필요한 경우가 아니라면 임신 중 이 약을 사용해서는 안된다. 동물실험에서 기형발생을 일으키지 않았지만 어린 새끼의 생존율과 사산율에 영향을 주었다. 임부에 대한 잠재적인 위험은 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "9d9912ae3a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 도네페질은 랫트의 모유에 이행되었다. 도네페질의 모유로의 이행여부는 알려져 있지 않다. 수유기 여성에 대한 연구 결과는 없으므로 수유부에게 이 약을 사용해서는 안되며, 반드시 투여되어야 할 경우에는 수유를 치료기 동안 중단하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "ade493493d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "23f2adc871",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "○ 성인 : 도네페질염산염으로서 1일 1회 1포 (도네페질염산염으로서 5 mg) 씩 취침 전 투여한다. 이상한 꿈, 악몽, 또는 불면 등의 수면 교란이 발생할 경우, 이 약의 아침 복용을 고려할 수 있다. 도네페질의 농도가 투여 15 일 후 정상상태에 도달하고 이상반응의 빈도가 증량 속도에 의해 영향 을 받을 수 있으므로, 4-6 주간은 1포 (도네페질염산염으로서 5 mg) 용량을 투여하도록…",
+   "meal": "취침 전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

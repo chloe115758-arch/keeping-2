@@ -65,10 +65,17 @@
       var code = item.productCode || (item.itemSeq && dur.codeOf && dur.codeOf(item.itemSeq));
       return code ? dur.get(code) : null;
     }
-    function entryOf(item) {
+    /* 제품 → 성분 이름으로 규칙 묶음을 찾는다. 같은 성분이라도 투여 경로(내복·주사·외용)가 다르면 허가사항이 달라서,
+       묶음에 경로(route)가 적혀 있고 제품의 경로와 다르면 쓰지 않는다(말을 지어내지 않는다). */
+    function lookup(item) {
       var p = productOf(item);
-      return p ? (pack.entries[String(p.ingrName || '').toLowerCase()] || null) : null;
+      if (!p) return { entry: null, reason: 'care_missing' };
+      var e = pack.entries[String(p.ingrName || '').toLowerCase()] || null;
+      if (!e) return { entry: null, reason: 'care_missing' };
+      if (e.route && p.route && e.route !== p.route) return { entry: null, reason: 'route_mismatch' };
+      return { entry: e, reason: null };
     }
+    function entryOf(item) { return lookup(item).entry; }
     function inGroup(item, key) {
       var e = entryOf(item), p = productOf(item);
       var atc = (e && e.atc) || '';
@@ -84,7 +91,7 @@
       var drugs = items.filter(function (i) { return i.kind === 'drug'; });
       var supps = items.filter(function (i) { return i.kind === 'supp'; });
       var perItem = {}, evidence = {}, suggestions = [], uncovered = [], okList = [];
-      items.forEach(function (i) { perItem[i.id] = { flags: [], meal: null }; });
+      items.forEach(function (i) { perItem[i.id] = { flags: [], meal: null, foods: [] }; });
 
       function addFlag(ownerId, flag, ev) {
         var list = perItem[ownerId].flags;
@@ -112,8 +119,8 @@
 
       /* ② 허가사항 근거: 약마다 추출된 규칙을 본다 */
       drugs.forEach(function (owner) {
-        var e = entryOf(owner);
-        if (!e) { uncovered.push({ itemId: owner.id, reason: 'care_missing' }); return; }
+        var lk = lookup(owner), e = lk.entry;
+        if (!e) { uncovered.push({ itemId: owner.id, reason: lk.reason }); return; }
         if (!(e.rules || []).length) uncovered.push({ itemId: owner.id, reason: 'no_rules' });
         var src = { label: SOURCE_LABEL, url: (e.docUrls && e.docUrls.nb) || null, checkedAt: e.fetchedAt || null };
         var stateRules = { pregnant: [], elderly: [] };
@@ -128,6 +135,8 @@
           if (r.kind === 'state_elderly') { stateRules.elderly.push(r); return; }
 
           // interaction / note: 걸린 키마다 상대를 찾는다
+          // 간격이 연구 결과 설명인 문장(actionable=false)은 간격 판정·시간 제안에 쓰지 않고 "병용 주의 안내"로만 보여준다
+          var iv = (r.interval && r.interval.actionable !== false) ? r.interval : null;
           var withIds = [], foodKos = [], wholeOk = true, gapInfo = null;
           (r.matched || []).forEach(function (m) {
             if (m.kind === 'food') { foodKos.push(m.ko); return; }
@@ -136,10 +145,10 @@
               : drugs.filter(function (d) { return d.id !== owner.id && inGroup(d, m.key); });
             others.forEach(function (o) {
               if (withIds.indexOf(o.id) < 0) withIds.push(o.id);
-              if (r.interval && r.interval.minHours) {
+              if (iv && iv.minHours) {
                 var g = minGap(owner.times, o.times);
                 if (g) {
-                  if (g.minutes < r.interval.minHours * 60) {
+                  if (g.minutes < iv.minHours * 60) {
                     gapInfo = gapInfo && gapInfo.minutes <= g.minutes ? gapInfo : { minutes: g.minutes, ownerMin: g.a, otherMin: g.b, other: o };
                   } else { okList.push({ ruleId: r.id, itemIds: [owner.id, o.id], gapHours: Math.round(g.minutes / 6) / 10 }); wholeOk = true; }
                 }
@@ -149,24 +158,29 @@
 
           var hasPair = withIds.length > 0, hasFood = foodKos.length > 0;
           if (!hasPair && !hasFood) return;
-          var intervalOk = r.interval && r.interval.minHours && hasPair && !gapInfo &&
+          var intervalOk = iv && iv.minHours && hasPair && !gapInfo &&
             withIds.every(function (id) { var o = items.filter(function (x) { return x.id === id; })[0]; return minGap(owner.times, o.times); });
           if (hasPair && intervalOk && !hasFood) return;   // 안내된 간격 이상으로 떨어져 있으면 경고하지 않는다
 
           var who = withIds.map(function (id) { return nameOf(items.filter(function (x) { return x.id === id; })[0]); });
           var short;
-          if (hasPair && r.interval) short = who.slice(0, 2).join('·') + '와 ' + ivText(r.interval) + ' 안내';
+          if (hasPair && iv) short = who.slice(0, 2).join('·') + '와 ' + ivText(iv) + ' 안내';
           else if (hasPair) short = who.slice(0, 2).join('·') + ': 병용 주의 안내';
           else short = foodKos.join('·') + ': 주의 안내';
           if (gapInfo) short += ' · 지금 ' + (Math.round(gapInfo.minutes / 6) / 10) + '시간';
           addFlag(owner.id, { id: r.id, grade: 'label', severity: 'caution', kind: hasPair ? 'interaction' : 'food',
             short: short, withItemIds: withIds },
             { grade: 'label', headline: short, detail: r.subject || '', excerpt: r.excerpt, where: r.where, source: src });
+          if (!hasPair && hasFood) {   // 음식·음주 안내: 약마다 흔해서 따로 모은다(주의 개수에 세지 않는다)
+            foodKos.forEach(function (ko) {
+              if (!perItem[owner.id].foods.some(function (x) { return x.ko === ko; })) perItem[owner.id].foods.push({ ko: ko, flagId: r.id });
+            });
+          }
 
-          if (gapInfo && r.interval && r.interval.minHours) {   // 시간 제안: 상대(영양제·다른 약)를 안내된 간격 뒤로
-            var want = gapInfo.ownerMin + Math.ceil(r.interval.minHours * 2) * 30;
+          if (gapInfo && iv && iv.minHours) {   // 시간 제안: 상대(영양제·다른 약)를 안내된 간격 뒤로
+            var want = gapInfo.ownerMin + Math.ceil(iv.minHours * 2) * 30;
             if (want < 1440) suggestions.push({ ruleId: r.id, itemId: gapInfo.other.id, suggestTime: toHHMM(want), grade: 'label',
-              message: nameOf(gapInfo.other) + ' 시간을 ' + toHHMM(want) + ' 이후로 옮기면 안내된 간격(' + ivText(r.interval) + ') 이상이에요' });
+              message: nameOf(gapInfo.other) + ' 시간을 ' + toHHMM(want) + ' 이후로 옮기면 안내된 간격(' + ivText(iv) + ') 이상이에요' });
           }
         });
 
@@ -175,7 +189,7 @@
           if (states.indexOf(st[0]) < 0 || !stateRules[st[0]].length) return;
           var first = stateRules[st[0]][0];
           addFlag(owner.id, { id: 'state-' + st[0] + '-' + (owner.id), grade: 'label', severity: 'caution', kind: 'state', short: st[1], withItemIds: [] },
-            { grade: 'label', headline: st[1], detail: first.subject || '', excerpt: stateRules[st[0]].map(function (x) { return x.excerpt; }).join(' '),
+            { grade: 'label', headline: st[1], detail: first.subject || '', excerpt: stateRules[st[0]].slice(0, 3).map(function (x) { return x.excerpt; }).join(' ') + (stateRules[st[0]].length > 3 ? ' …' : ''),
               where: first.where, source: src });
         });
       });
@@ -190,19 +204,21 @@
           var s = slotMap[b.id] = slotMap[b.id] || { id: b.id, label: b.label, time: t, items: [] };
           if (toMin(t) < toMin(s.time) && b.id !== 'bedtime') s.time = t;
           s.items.push({ itemId: it.id, kind: it.kind, name: it.name, display: nameOf(it), time: t,
-            mealRelation: perItem[it.id].meal, flags: perItem[it.id].flags });
+            mealRelation: perItem[it.id].meal, flags: perItem[it.id].flags, foods: perItem[it.id].foods });
         });
       });
       var slots = BANDS.map(function (b) { return slotMap[b.id]; }).filter(Boolean);
       slots.forEach(function (s) {
         s.items.sort(function (a, b) { return toMin(a.time) - toMin(b.time); });
-        var ids = {}; s.items.forEach(function (x) { x.flags.forEach(function (f) { ids[f.id] = 1; }); });
-        s.summary = { itemCount: s.items.length, cautionCount: Object.keys(ids).length };
+        var ids = {}, fids = {};
+        s.items.forEach(function (x) { x.flags.forEach(function (f) { (f.kind === 'food' ? fids : ids)[f.id] = 1; }); });
+        s.summary = { itemCount: s.items.length, cautionCount: Object.keys(ids).length, foodNoteCount: Object.keys(fids).length };
         var meals = ctx.meals || {}; var key = { morning: 'breakfast', lunch: 'lunch', dinner: 'dinner' }[s.id];
         if (key && meals[key]) s.meal = { label: { breakfast: '아침 식사', lunch: '점심 식사', dinner: '저녁 식사' }[key], time: meals[key] };
       });
-      var all = {}; Object.keys(perItem).forEach(function (k) { perItem[k].flags.forEach(function (f) { all[f.id] = 1; }); });
-      return { summary: { cautionCount: Object.keys(all).length, itemCount: items.length }, slots: slots, suggestions: suggestions,
+      var all = {}, allFood = {};
+      Object.keys(perItem).forEach(function (k) { perItem[k].flags.forEach(function (f) { (f.kind === 'food' ? allFood : all)[f.id] = 1; }); });
+      return { summary: { cautionCount: Object.keys(all).length, foodNoteCount: Object.keys(allFood).length, itemCount: items.length }, slots: slots, suggestions: suggestions,
                evidence: evidence, uncovered: uncovered, unscheduled: unscheduled, ok: okList };
     }
 

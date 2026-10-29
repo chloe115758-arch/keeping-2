@@ -1,0 +1,87 @@
+{
+ "ingredient": "methylprednisolone aceponate",
+ "productSeq": "200608045",
+ "itemName": "아드반탄크림(메틸프레드니솔론아세포네이트(미분화))",
+ "atc": "D07AC14",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230428",
+ "ediCode": "626700161",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200608045/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200608045/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200608045/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적주의 11)",
+   "subject": "",
+   "excerpt": "이 약에 포함된 세토스테아릴알코올과 디부틸히드록시톨루엔은 국소 피부 반응(예: 접촉 피부염)을 일으킬 수 있다. 또한 디부틸히드록시톨루엔은 눈과 점막에 자극을 일으킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "a536439389",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 일반적으로 임신 후 처음 3개월동안에는 코르티코이드를 포함한 국소 제제의 사용을 피해야 한다. 특히 임부 또는 임신하고 있을 가능성이 있는 부인에 대해서는 대량 또는 장기간(3주 이상)에 걸친 광범위한 사용과 밀봉 붕대법 사용을 피하고 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "41b5712650",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 모유 중으로 이행한다는 보고는 없으나 수유부에 투여시 주의한다.",
+   "extractor": "kw-v4",
+   "id": "fab55631c8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유시 가슴부위에 이 약을 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "58baeafc4c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 이상반응이 나타나기 쉬우므로 대량, 장기간, 광범위하게(특히 밀봉붕대법) 사용할 경우 충분히 관찰하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "07fa6adffa",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:12:37",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

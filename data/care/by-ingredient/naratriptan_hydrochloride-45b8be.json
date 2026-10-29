@@ -1,0 +1,87 @@
+{
+ "ingredient": "naratriptan hydrochloride",
+ "productSeq": "202402970",
+ "itemName": "나라탄구강붕해정2.5밀리그램(나라트립탄염산염)",
+ "atc": "N02CC02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250805",
+ "ediCode": "628902450",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202402970/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202402970/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202402970/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "나라트립탄은 베타차단제, 삼환계 항우울제, 선택적 세로토닌 재흡수 저해제, 알코올 또는 음식과의 약동학적 상호작용이 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "ebdb9489e7",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성",
+   "extractor": "kw-v4",
+   "id": "2df85b8ff9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물 연구에서는 생식 독성을 나타내지 않았다. 나라트립탄은 동물실험에서 직접적인 기형발생이나 출생전·후 발달 과정에 유해한 영향을 미치지 않는 것으로 평가되었다. 전향적 임신 등록(Registry) 프로그램으로부터 얻은 나라트립탄의 시판후 조사 결과는 나라트립탄에 노출된 여성에서의 임신 결과를 보여주었다. 그러나 표본의 크기가 작기 때문에, 나라트립탄에 노출된 이후 출생 결함의 위험성에 대한…",
+   "extractor": "kw-v4",
+   "id": "c104cf766c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "27b84bd225",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "나라트립탄 및 관련 대사물이 랫트의 유즙으로 분비되므로 수유부에게 이 약을 투여할 때에는 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b01b1970bd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:36",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

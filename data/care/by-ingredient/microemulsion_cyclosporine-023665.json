@@ -1,174 +1,178 @@
 {
-  "ingredient": "microemulsion cyclosporine",
-  "productSeq": "199900119",
-  "itemName": "사이폴-엔내복액(사이클로스포린)(수출명:데나스포내복액,사이클로랄내복액)",
-  "atc": "L04AD01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230602",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900119/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900119/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900119/NB"
-  },
-  "rules": [
+ "ingredient": "microemulsion cyclosporine",
+ "productSeq": "199900119",
+ "itemName": "사이폴-엔내복액(사이클로스포린)(수출명:데나스포내복액,사이클로랄내복액)",
+ "atc": "L04AD01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230602",
+ "ediCode": "643301091",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900119/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900119/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199900119/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적주의 20)",
+   "subject": "",
+   "excerpt": "특수 부형제 에탄올: 임산부나 수유부, 간질환이나 뇌전증 환자, 알콜중독환자, 또는 어린이에게 이 약을 투여할 때는 이 약에 에탄올 성분이 들어있음을 고려해야한다.",
+   "extractor": "kw-v4",
+   "id": "164f567d09",
+   "kind": "note",
+   "matched": [
     {
-      "id": "41363636ab",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적주의 20)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알콜"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "특수 부형제 에탄올: 임산부나 수유부, 간질환이나 뇌전증 환자, 알콜중독환자, 또는 어린이에게 이 약을 투여할 때는 이 약에 에탄올 성분이 들어있음을 고려해야한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "292f5c419b",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 14)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "고지방 식이 또는 자몽(grapefruit)주스를 함께 복용한 후, 생체이용률 증가가 보고되었다.(경구제에 한함).",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "dceaccf96e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "토끼와 랫트에서의 배태자 발생시험에서 체표면적(BSA) 기반 최대인체권장용량(MRHD) 미만의 용량 수준에서 배태자 독성이 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d36d4d8096",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 이 약의 적절하거나 잘 통제된 임상 연구는 없다. 출판된 문헌을 포함하여 시판 후 경험에서 임부에서 사이클로스포린 사용에 대한 데이터가 있다. 이식 후 사이클로스포린과 사이클로스포린을 포함한 면역억제제를 투여 받은 임신부는 37주 미만의 조산의 위험이 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b33611266d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약에 노출된 소아에 대한 최대 7세까지 제한된 관찰결과 이 소아환자들에게서 신기능 및 혈압은 정상이었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "31b452cd3e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에게 기대되는 이익이 태아에 대한 잠재적 위험을 상회하지 않는다면 임신 중에는 사이클로스포린을 사용하지 않아야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7d74057c95",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 5)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 모유 중에 분비되므로 이 약을 투여 중인 여성은 수유를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d3cfac94e5",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에 대한 투여경험은 제한적이나 추천용량으로 투여 시 특별한 문제는 보고되지",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "454bf35e59",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bc261264b4",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "류마티스성 관절염 임상시험에서 65세 이상의 환자들에서 수축기 고혈압이 더 많이 발생하였고, 치료 3～4개월이 지난 시점에서 기저치보다 혈청크레아티닌 수치가 50%이상 증가한 경우가 더 많이 보고되었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f7775724a2",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "대체로 노인환자의 투여용량은 간기능, 신기능, 심장기능 저하 및 병용질환 혹은 병용투약의 빈도가 보다 빈번함을 고려하여 투여량을 최저용량에서 시작하여 조심스럽게 설정하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "49c90c3978",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "건선 및 아토피성피부염에 대해, 고령자는 반드시 병리적 장애(disabling pathology)가 있는 경우에만 이 약으로 치료되어야 한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:16:33"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 14)",
+   "subject": "",
+   "excerpt": "고지방 식이 또는 자몽(grapefruit)주스를 함께 복용한 후, 생체이용률 증가가 보고되었다.(경구제에 한함).",
+   "extractor": "kw-v4",
+   "id": "ebfb261a30",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "토끼와 랫트에서의 배태자 발생시험에서 체표면적(BSA) 기반 최대인체권장용량(MRHD) 미만의 용량 수준에서 배태자 독성이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "c3c52c6436",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대한 이 약의 적절하거나 잘 통제된 임상 연구는 없다. 출판된 문헌을 포함하여 시판 후 경험에서 임부에서 사이클로스포린 사용에 대한 데이터가 있다. 이식 후 사이클로스포린과 사이클로스포린을 포함한 면역억제제를 투여 받은 임신부는 37주 미만의 조산의 위험이 있다.",
+   "extractor": "kw-v4",
+   "id": "039f99b55a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약에 노출된 소아에 대한 최대 7세까지 제한된 관찰결과 이 소아환자들에게서 신기능 및 혈압은 정상이었다.",
+   "extractor": "kw-v4",
+   "id": "5c4cd415c5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임부에게 기대되는 이익이 태아에 대한 잠재적 위험을 상회하지 않는다면 임신 중에는 사이클로스포린을 사용하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "17bb36e512",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "이 약은 모유 중에 분비되므로 이 약을 투여 중인 여성은 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "b26d41efe7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자에 대한 투여경험은 제한적이나 추천용량으로 투여 시 특별한 문제는 보고되지",
+   "extractor": "kw-v4",
+   "id": "6e23f1a6ae",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "않았다.",
+   "extractor": "kw-v4",
+   "id": "18d9055161",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "류마티스성 관절염 임상시험에서 65세 이상의 환자들에서 수축기 고혈압이 더 많이 발생하였고, 치료 3～4개월이 지난 시점에서 기저치보다 혈청크레아티닌 수치가 50%이상 증가한 경우가 더 많이 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "d85fc928bd",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "대체로 노인환자의 투여용량은 간기능, 신기능, 심장기능 저하 및 병용질환 혹은 병용투약의 빈도가 보다 빈번함을 고려하여 투여량을 최저용량에서 시작하여 조심스럽게 설정하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "5650e5cea4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "건선 및 아토피성피부염에 대해, 고령자는 반드시 병리적 장애(disabling pathology)가 있는 경우에만 이 약으로 치료되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "495f0ef726",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

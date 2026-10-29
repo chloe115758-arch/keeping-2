@@ -1,0 +1,104 @@
+{
+ "ingredient": "belimumab",
+ "productSeq": "201307773",
+ "itemName": "벤리스타주400밀리그램(벨리무맙)(단클론항체, 유전자재조합)",
+ "atc": "L04AA26",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260210",
+ "ediCode": "650002891",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307773/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307773/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307773/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "ff8715e4e5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에서 이 약의 사용경험은 제한적이다. 전향적 임신 레지스트리를 사용한 시판 후 조사 연구에서 이 약에 노출된 여성의 임신과 관련된 정보가 수집되었지만, 표본 크기가 작아 본 레지스트리 연구에서는 이 약에 노출된 이후의 선천성 결손과 관련된 잠재적 위해성에 대한 확정적인 결론을 내릴 수 없었다.",
+   "extractor": "kw-v4",
+   "id": "cbfc1f9e1c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 포함하여 면역글로불린G(IgG) 항체는 태반을 통과할 수 있다. 동물 생식발생독성시험이 사람에서의 반응을 항상 예측할 수는 없기 때문에, 임신 기간 동안 이 약은 잠재적 유익성이 태아에 대한 잠재적 위험성을 상회하는 경우에만 투여해야 한다. 임신의 가능성이 있는 여성은 이 약의 투여 기간 및 최종 투여 후 최소 4개월 동안 적절한 피임을 시행해야 한다.",
+   "extractor": "kw-v4",
+   "id": "2be08203f0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 사이노몰거스 원숭이에게 임신 20일부터 150일까지 매 2주 마다 이 약 0 mg/kg, 5 mg/kg, 150 mg/kg의 용량(고용량은 예측된 최대 사람 노출의 약 9배 용량)을 정맥 내 연속주입으로 투여한 비임상 생식발생독성시험이 수행되었다. 이 약은 태반을 통과하는 것으로 나타났다. 시험된 조건하에서 이 약은 직접적 또는 간접적인 모체독성, 임신, 배태자 발생에 대한 유해한 영…",
+   "extractor": "kw-v4",
+   "id": "f428e0c5cf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "f278ec25c5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유 중 이 약 사용에 대한 안전성은 확립되지 않았다. 이 약이 모유로 분비되는지 또는 섭취 후 전신으로 흡수되는지 여부는 알려져 있지 않다. 그러나 이 약은 사이노몰거스 원숭이에서 유즙으로 분비되었다. 수유부에서 이 약의 치료에 대한 결정은 유아에 대한 모유 수유의 중요성, 수유부에 대한 약물의 중요성 및 벨리무맙 또는 모체의 기저 상태에 의한 수유 중인 소아에 대한 잠재적 유해 영향을 고…",
+   "extractor": "kw-v4",
+   "id": "e1d3585687",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에 포함된 65세 이상인 환자의 수가 충분치 않아서 고령자에 대한 반응 차이를 평가할 수 없었다. 고령자에게 이 약을 투여 시 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "7c6a21994e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:13",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

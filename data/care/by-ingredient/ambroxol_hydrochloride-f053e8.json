@@ -1,52 +1,56 @@
 {
-  "ingredient": "ambroxol hydrochloride",
-  "productSeq": "201604659",
-  "itemName": "오코솔주(암브록솔염산염)",
-  "atc": "R05CB06",
-  "etcOtc": "전문의약품",
-  "changeDate": "20201119",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201604659/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201604659/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201604659/NB"
+ "ingredient": "ambroxol hydrochloride",
+ "productSeq": "201604659",
+ "itemName": "오코솔주(암브록솔염산염)",
+ "atc": "R05CB06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20201119",
+ "ediCode": "629701141",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201604659/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201604659/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201604659/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 태반장벽을 통과한다. 전임상시험 뿐만 아니라 임신 28주후의 임상 경험에서도 임신중에 악영향의 증거는 보이지 않았으나 이 약은 임신중에 투여가 권장되지 않는다(특히, 임신 초기 3개월 이내에는 투여하지 않는다).",
+   "extractor": "kw-v4",
+   "id": "9d8ce524e9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "08e0ad6f23",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 태반장벽을 통과한다. 전임상시험 뿐만 아니라 임신 28주후의 임상 경험에서도 임신중에 악영향의 증거는 보이지 않았으나 이 약은 임신중에 투여가 권장되지 않는다(특히, 임신 초기 3개월 이내에는 투여하지 않는다).",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bfadbf35ff",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 모유로 이행하므로 수유중인 여성은 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7d9c94fe7e",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:07:54"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유로 이행하므로 수유중인 여성은 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "9df3c07325",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "5b887378b5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

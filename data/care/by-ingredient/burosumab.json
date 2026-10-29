@@ -1,0 +1,44 @@
+{
+ "ingredient": "burosumab",
+ "productSeq": "202006465",
+ "itemName": "크리스비타주사액30밀리그램(부로수맙,유전자재조합)",
+ "atc": "M05BX05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20261022",
+ "ediCode": "666300371",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006465/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006465/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202006465/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임 여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 또는 임신이 의심되는 여성에게는 이 약의 치료 상의 이익이 예상되는 위험성보다 크다고 생각되는 경우에만 투여해야 한다. 원숭이를 이용한 생식 및 발달 독성 연구 결과, 임상 최대 노출 용량의 3.7 배에 해당하는 용량에서 조기 분만율의 증가, 임상 최대 노출 용량의 32배에 해당하는 용량에서 태반의 무게와 미네랄 축적의 증가, 유산율 및 배태아 사망률의 증가가 확인되었다.",
+   "extractor": "kw-v4",
+   "id": "1f107b806b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부, 가임 여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유 수유의 지속 또는 중단은 이 약의 치료 상의 이익과 모유 수유의 이익을 고려하여 판단하여야 한다. 이 약이 모유로 이행되는지에 대해서는 아직 밝혀지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "0cae75984e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:19:32",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,83 +1,112 @@
 {
-  "ingredient": "cilostazol",
-  "productSeq": "202001142",
-  "itemName": "실렌타서방캡슐100밀리그램(실로스타졸) ",
-  "atc": "B01AC23",
-  "etcOtc": "전문의약품",
-  "changeDate": "20220707",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001142/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001142/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001142/NB"
-  },
-  "rules": [
+ "ingredient": "cilostazol",
+ "productSeq": "202001142",
+ "itemName": "실렌타서방캡슐100밀리그램(실로스타졸) ",
+ "atc": "B01AC23",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220707",
+ "ediCode": "054800720",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001142/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001142/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202001142/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "CYP3A4저해제나 CYP2C19저해제(시메티딘, 딜티아젬, 에리스로마이신, 케토코나졸, 란소프라졸, 이트라코나졸, 미코나졸, 오메프라졸, HIV-1 단백분해효소 저해제 등)와의 병용에 의해 이 약의 혈중 농도가 상승하여 작용이 증가할 우려가 있다. 병용하는 경우에는 감량, 또는 저용량부터 시작하는 등 주의해야 하며, 또한 자몽주스와 동시 복용하지 않도록 주의한다.",
+   "extractor": "kw-v4",
+   "id": "9f3935db7a",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "33a9b7a48d",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 3)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "CYP3A4저해제나 CYP2C19저해제(시메티딘, 딜티아젬, 에리스로마이신, 케토코나졸, 란소프라졸, 이트라코나졸, 미코나졸, 오메프라졸, HIV-1 단백분해효소 저해제 등)와의 병용에 의해 이 약의 혈중 농도가 상승하여 작용이 증가할 우려가 있다. 병용하는 경우에는 감량, 또는 저용량부터 시작하는 등 주의해야 하며, 또한 자몽주스와 동시 복용하지 않도록 주의한다.",
-      "extractor": "kw-v1"
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
     },
     {
-      "id": "2deb8c55aa",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫트)에서 이상태자의 증가 및 출생시의 저체중, 사망의 증가가 보고되었으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e721cf5219",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫트)에서 유즙중으로의 이행이 보고되었으므로 투여 중에는 수유를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fb80378989",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d9783db1f4",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 식사를 피하여 공복 상태에서 복용한다. (사용상 주의사항 중 ‘5. 일반적 주의 6)항’ 참조)",
-      "meal": "공복",
-      "extractor": "kw-v1"
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:04:30"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 7)",
+   "subject": "",
+   "excerpt": "케토코나졸, 에리스로마이신, 오메프라졸 : CYP3A4 저해제인 케토코나졸 400mg과 병용투여시 Cmax는 94%, AUC는 117% 증가하였고, 에리스로마이신 500mg과 병용투여시 Cmax는 47%, AUC는 73% 증가되었다. CYP2C19 저해제인 오메프라졸과 병용투여시 대사체인 3,4-dehydro-cilostazole이 69% 증가하였다.)",
+   "extractor": "kw-v4",
+   "id": "422bc35cd0",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 이상태자의 증가 및 출생시의 저체중, 사망의 증가가 보고되었으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "a05d5f6a92",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 유즙중으로의 이행이 보고되었으므로 투여 중에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "0f5e0857b3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "f3e0c318a6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "d9783db1f4",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 식사를 피하여 공복 상태에서 복용한다. (사용상 주의사항 중 ‘5. 일반적 주의 6)항’ 참조)",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

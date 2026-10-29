@@ -1,0 +1,19 @@
+{
+ "ingredient": "ivy leaf ethanol fluid ext.",
+ "productSeq": "201707591",
+ "itemName": "아이브로시럽(아이비엽70%에탄올유동엑스)",
+ "atc": "R05CA12",
+ "etcOtc": "일반의약품",
+ "changeDate": "20231011",
+ "ediCode": "622803041",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707591/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707591/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201707591/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-29T21:30:25",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

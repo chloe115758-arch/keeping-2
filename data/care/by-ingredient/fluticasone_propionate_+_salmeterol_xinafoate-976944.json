@@ -1,0 +1,171 @@
+{
+ "ingredient": "fluticasone propionate + salmeterol xinafoate",
+ "productSeq": "201400305",
+ "itemName": "플루테롤흡입용캡슐500/50(플루티카손프로피오네이트,살메테롤)",
+ "atc": "R03AK06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251118",
+ "ediCode": "643506771",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201400305/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201400305/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201400305/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에는 투여하지 말 것. 6)",
+   "subject": "",
+   "excerpt": "유당 또는 우유에 과민반응을 일으키는 환자",
+   "extractor": "kw-v4",
+   "id": "fcc944f0d0",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "916e727870",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람에 대한 자료는 제한적이다. 동물 실험에서는 살메테롤 및 플루티카손프로피오네이트는 수태능에 어떠한 영향도 미치지 않았다.",
+   "extractor": "kw-v4",
+   "id": "44966732fe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신",
+   "extractor": "kw-v4",
+   "id": "8a1124771b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "임부에 대한 자료에서 살메테롤과 플루티카손이 기형 또는 태아/신생아 독성을 나타내지 않았다고 나타났다. 동물실험에서는 베타2-효능약 및 글루코코르티코스테르 투여 후 생식 독성이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "61c0e248b0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "임부에 대한 이 약의 투여는 치료상의 유익성이 태아에 대한 위험성을 상회한다고 판단되는 경우에 한하여 천식을 적절하게 조절하는데 필요한 플루티카손프로피오네이트의 최소 유효량으로 이 약을 사용되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "6e603900b1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "β-효능제가 자궁수축을 방해할 가능성이 있으므로 분만 중 이 약의 투여를 제한하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "fedb6f8330",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "플루티카손프로피오네이트 흡입제 투여 후, 플루티카손프로피오네이트가 분만 후 신생아의 제대혈에서 확인되었다.",
+   "extractor": "kw-v4",
+   "id": "0010c08160",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유",
+   "extractor": "kw-v4",
+   "id": "0b3efc681e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유중인 여성에 대해서는 이 약의 사용 경험이 적기 때문에, 환자에게 이 약의 중요성을 고려하여 수유를 중단하거나 이 약의 투여를 중지한다(랫트에게 살메테롤지나포산염을 대량(1 mg/kg) 정맥 주사, 살메테롤 10,000 μg/kg을 경구투여 또는 플루티카손프로피오네이트 10 μg/kg을 피하주사 투여 시 유즙으로의 분비가 보고 되어있다.). 사람의 모유에 대한 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "53a74cf036",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "다른 베타2-효능약과 마찬가지로, 다른 심혈관계 질환이 있는 고령자에게 살메테롤을 투여할 경우 이상반응이 나타날 수 있으므로 특별히 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "590666a83e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "고령자에서 살메테롤의 투여량을 조절할 필요는 없지만, 일반적으로 고령자는 생리 기능이 저하되어 있으므로 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "80db172311",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:30",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

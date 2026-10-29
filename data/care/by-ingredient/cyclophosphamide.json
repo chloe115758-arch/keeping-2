@@ -1,0 +1,180 @@
+{
+ "ingredient": "cyclophosphamide",
+ "productSeq": "197600065",
+ "itemName": "알키록산정(시클로포스파미드정)",
+ "atc": "L01AA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250701",
+ "ediCode": "644901400",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197600065/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197600065/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197600065/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 2)",
+   "subject": "",
+   "excerpt": "치료 전 기존의 간장애 환자에게 이 약물을 사용하는 경우에는 환자 개개의 경우에 대한 평가가 필요하고 이러한 환자들에 대한 면밀한 모니터링을 실시해야 한다. 알코올 오ㆍ남용은 간장애 유발의 위험성을 증가시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f8d4c2fb03",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 8)",
+   "subject": "",
+   "excerpt": "진토제는 구역과 구토의 빈도와 심각성을 감소시키기 위하여 정해진 시간에 투여되어야 한다. 알코올은 이 약에 의해 유도된 구토와 구역을 증가시킬 수 있다. 따라서 알코올 섭취는 이 약을 투여 받는 환자에서는 재고되어야 한다. 구내염을 감소시키기 위하여 철저한 구강위생에 대한 주의가 필요하다.",
+   "extractor": "kw-v4",
+   "id": "9ea81b9247",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 11)",
+   "subject": "",
+   "excerpt": "시토크롬 CYP3A4의 억제제를 포함하여 자몽과 자몽주스는 이 약의 대사활성을 감소시킬 수 있으므로 이 약의 투여 동안에는 섭취를 하지 말아야 한다.",
+   "extractor": "kw-v4",
+   "id": "71b362af09",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 12)",
+   "subject": "",
+   "excerpt": "감소된 항종양 활성이 알코올을 섭취하는 동안 그리고 경구로, 저용량으로 이 약을 함께 투여하는 동안 종양동물에서 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "f63491aad1",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험결과 이 약 치료는 임부에게 투여할 경우 유전독성을 나타낼 수 있고 태아손상을 유발할 수 있는 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "38337b033d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약의 임부(특히 임신 초기)에의 적용은 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 사용할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "789c18573d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신 초기 3개월 동안 vital indication에서 낙태와 관련한 의료적 상담이 절대적으로 필요하다.",
+   "extractor": "kw-v4",
+   "id": "228389d9ea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "임신 초기 3개월 이후에 치료가 지연될 수 없다면 기형유발 작용의 위험성 및 태아에 대한 잠재적인 위험성에 대한 정보를 제공한 후에 실시되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "8ff1a2f7b6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "모체태반을 통한 이 약에 대한 태아의 노출이 고려되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "5f20e7c636",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 6)",
+   "subject": "",
+   "excerpt": "이 약은 모유를 통해 배설되므로 수유 중인 경우는 이 약 투여에 앞서 수유를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "cf5fb3d976",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 생리기능이 저하되어 있는 경우가 많으며, 이상반응이 나타나기 쉬우므로 용량 및 투여간격에 유의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "901aab8400",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:28:09",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

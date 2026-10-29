@@ -1,0 +1,149 @@
+{
+ "ingredient": "mycophenolate sodium",
+ "productSeq": "201606254",
+ "itemName": "마이렙틱엔장용정180밀리그램(미코페놀레이트나트륨)",
+ "atc": "L04AA06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260904",
+ "ediCode": "643307600",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201606254/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201606254/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201606254/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (1)",
+   "subject": "",
+   "excerpt": "수산화마그네슘/알루미늄 함유 제산제 : 제산제에 의하여 이 약의 흡수가 감소된다. 이 약과 수산화마그네슘 또는 수산화알루미늄 함유 제산제를 병용투여시, 이 약의 전신노출은 37%, 최고농도는 25%가 감소하므로 동시에 투여하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "8259892177",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "알루미늄 함유 제산제"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (2)",
+   "subject": "",
+   "excerpt": "프로톤펌프 억제제(proton pump inhibitor) : 건강한 지원자에게 미코페놀레이트모페틸 1000 mg과 판토프라졸 40 mg을 1일 2회 병용투여 하였을 때 MPA의 AUC가 27% 감소되었고, Cmax가 57% 감소되었다. 그러나 같은 연구에서 이 약과 판토프라졸을 병용 투여한 후 MPA의 약동학에는 어떠한 변화도 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "48aabddbdb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "콜레스티라민과 장간순환을 방해하는 약물 : 콜레스티라민이나 약용탄은 담즙에 결합하여 다른 약물의 장간순환을 차단하는 작용으로, MPA의 생체이용률을 감소시킬 수 있다. 이 약의 유효성 저하를 일으킬 수 있으므로 콜레스티라민 계통의 장간순환을 방해하는 약물과 병용투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "3d26a485b6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 이 약의 투여는 선천성 기형 발생의 위험성 증가와 관련이 있다. 이 약을 가지고 임부에 대한 적절하고 잘 조절된 임상시험이 수행되지 않았으나, US National Transplant Pregnancy Registry(NTPR)의 자료에 따르면 NTPR에 등록된 이식환자 중 면역억제제를 투여한 임부에서는 일반적으로 4-5%의 기형이 나타난 반면 미코페놀산모페틸과 다른 면역억제제를 투…",
+   "extractor": "kw-v4",
+   "id": "6451832158",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "랫트와 마우스를 대상으로 여러차례의 실험 결과 MPA가 유즙을 통해 이행된다는 사실이 밝혀졌다. 제한적인 자료에서 미코페놀산이 사람 모유로 이행될 수 있음이 확인되었다. 이 약은 모유 수유 중에 복용해서는 안된다. 많은 약이 모유 중에 분비되고 수유 영아에서 이 약으로 인한 심각한 이상반응의 가능성이 존재하므로, 모체에 대한 이 약의 중요성을 고려하여, 치료 중 또는 치료 후 6주까지는 약물…",
+   "extractor": "kw-v4",
+   "id": "749d36a2b3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "남성의 경우 이 약의 치료 중 및 마지막 복용 이후 13주 동안 피임기구를 사용하도록 권고된다. 또한 이 약을 복용하는 남성의 상대 여성들의 경우 이 약의 치료 중 및 마지막 복용 이후 13주 동안 강력한 피임제를 사용하도록 권고된다.",
+   "extractor": "kw-v4",
+   "id": "75eb36709c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 일반적으로 면역억제로 인한 약물 이상반응 위험이 더 클 수 있다. 면역억제 병용요법의 일부로 노인환자에게 이 약을 투여한 임상시험결과 젊은 사람과 비교하여 약물 이상반응 위험이 증가되지 않았다. 일반적으로 고령자의 용량은 높은 빈도의 감소된 간장, 신장, 또는 심장 기능, 공존질환 또는 다른 약물 치료를 반영하여 신중히 결정하여야한다.",
+   "extractor": "kw-v4",
+   "id": "754e03a380",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "a72807a41e",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 음식과 상관없이 투여할 수 있으나, 공복(식전 1시간 전) 또는 식후 2시간을 선택하여 투약하며, 선택한 복용시간을 계속 유지하여야 한다.",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:26",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

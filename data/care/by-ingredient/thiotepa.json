@@ -1,76 +1,128 @@
 {
-  "ingredient": "thiotepa",
-  "productSeq": "202301718",
-  "itemName": "아테파주15밀리그램(티오테파)",
-  "atc": "L01AC01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20240124",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301718/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301718/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301718/NB"
+ "ingredient": "thiotepa",
+ "productSeq": "202301718",
+ "itemName": "아테파주15밀리그램(티오테파)",
+ "atc": "L01AC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240124",
+ "ediCode": "052500051",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301718/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301718/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202301718/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "345adc50f7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "da9224f204",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "임신 기간 동안 티오테파 사용에 대한 데이터는 없다. 비임상 연구에서 대부분의 알킬화제와 같이 티오테파는 배태자 치사율 및 최기형성을 유발하는 것으로 나타났다. 따라서 이 약은 임신 중에 금기이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bfc90b8782",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "티오테파가 모유를 통해 분비되는지 여부에 대해서는 알려지지 않았다. 티오테파의 약물학적 특성과 모유 수유를 받는 신생아/유아에 대한 잠재적인 독성으로 인해 이 약의 치료기간 동안 모유 수유는 금기이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6da6e2f76e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여",
-      "subject": "3) 수태능",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "대부분의 알킬화제와 같이 티오테파는 남성과 여성의 생식 능력을 손상시킬 수 있다. 남성 환자는 치료 시작 전에 정자 냉동 보존을 고려해야 하며, 치료 기간 동안 및 치료 중단 후 1년 동안 아이를 가지면 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a786805e95",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여",
-      "subject": "4) 가임기 여성에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "가임기 여성은 치료기간 동안 효과적인 피임 방법을 사용해야 하며, 치료를 시작하기 전 임신 확인 검사를 해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b4d931269c",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "티오테파는 고령의 환자들에게 특별히 연구되지 않았다. 그러나 임상 연구에서 65세 이상의 환자 중 일부는 다른 성인 환자와 동일한 누적 용량을 투여받았다. 용량 조정이 필요하지 않은 것으로 간주되었다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:17:48"
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 기간 동안 티오테파 사용에 대한 데이터는 없다. 비임상 연구에서 대부분의 알킬화제와 같이 티오테파는 배태자 치사율 및 최기형성을 유발하는 것으로 나타났다. 따라서 이 약은 임신 중에 금기이다.",
+   "extractor": "kw-v4",
+   "id": "172dbea1d4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "98025243e0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "티오테파가 모유를 통해 분비되는지 여부에 대해서는 알려지지 않았다. 티오테파의 약물학적 특성과 모유 수유를 받는 신생아/유아에 대한 잠재적인 독성으로 인해 이 약의 치료기간 동안 모유 수유는 금기이다.",
+   "extractor": "kw-v4",
+   "id": "133e4bb68b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "990182b865",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "대부분의 알킬화제와 같이 티오테파는 남성과 여성의 생식 능력을 손상시킬 수 있다. 남성 환자는 치료 시작 전에 정자 냉동 보존을 고려해야 하며, 치료 기간 동안 및 치료 중단 후 1년 동안 아이를 가지면 안 된다.",
+   "extractor": "kw-v4",
+   "id": "066871b5b1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "가임기 여성에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "89b4d1f1d8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부 및 가임기 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "가임기 여성은 치료기간 동안 효과적인 피임 방법을 사용해야 하며, 치료를 시작하기 전 임신 확인 검사를 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "cd649d0d12",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "티오테파는 고령의 환자들에게 특별히 연구되지 않았다. 그러나 임상 연구에서 65세 이상의 환자 중 일부는 다른 성인 환자와 동일한 누적 용량을 투여받았다. 용량 조정이 필요하지 않은 것으로 간주되었다.",
+   "extractor": "kw-v4",
+   "id": "b7dca3086a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,135 @@
+{
+ "ingredient": "cladribine",
+ "productSeq": "201904640",
+ "itemName": "마벤클라드정(클라드리빈) ",
+ "atc": "L04AA40",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260907",
+ "ediCode": "661700730",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904640/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904640/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201904640/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "방출 수송체 BCRP와 P-당단백질(P-gp)의 강력한 유도제가 클라드리빈의 생체이용률과 기질에 미치는 영향에 대해서 공식적으로 연구된 바 없다. 강력한 BCRP (예, 코르티코스테로이드) 또는 P-gp (예, 리팜피신, St. John’s Wort) 수송체 유도제가 함께 투여되는 경우, 클라드리빈 노출의 감소 가능성이 고려되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "f2cc1aeebe",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 및 수태능 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "f3284d02b2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 및 수태능",
+   "subject": "",
+   "excerpt": "DNA 합성을 억제하는 다른 제제를 인간에 사용한 경험에 비추어, 클라드리빈은 임신 중 복용하였을 때, 선천성 기형을 일으킬 수도 있다. 동물시험에서 생식독성이 관찰되었다. 이 약은 임신한 여성에게 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "7e029fc1db",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 및 수태능 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "343a8efb85",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 및 수태능",
+   "subject": "",
+   "excerpt": "증례 보고의 제한된 자료에 의하면 클라드리빈이 모유로 분비되는 것으로 나타났다. 수유 중인 신생아/영아에서 중대한 이상반응이 발생할 가능성이 있으므로, 이 약으로 치료하는 동안 및 각 치료 년에서 마지막 복용 후 1 주일동안 모유 수유 하면 안된다.",
+   "extractor": "kw-v4",
+   "id": "08ad10dfc7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 및 수태능 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "3e2b4eafc8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 및 수태능",
+   "subject": "",
+   "excerpt": "이 약이 사람의 수태능에 미치는 영향에 대한 자료는 없다. 비임상 결과(마우스, 원숭이)에서 고환에 대한 영향이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "cee8b20d9f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "클라드리빈 경구제로 시험한 임상시험에서 65세가 넘는 환자가 포함되지 않았으므로, 젊은 환자와 다르게 반응하는지 여부는 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "d40516deb2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 간기능 또는 신기능 감소, 동반 질환 및 다른 약물 치료의 빈도가 잠재적으로 더 높을 수 있다는 사실을 고려하여 고령자에게 이 약을 투여할 때는 주의가 요구된다.",
+   "extractor": "kw-v4",
+   "id": "68c09434d8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:14",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

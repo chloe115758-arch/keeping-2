@@ -1,0 +1,105 @@
+{
+ "ingredient": "betaxolol hydrochloride",
+ "productSeq": "198600903",
+ "itemName": "부광켈론정(베탁솔롤염산염)",
+ "atc": "C07AB05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20180921",
+ "ediCode": "642201020",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600903/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600903/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198600903/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 11)",
+   "subject": "",
+   "excerpt": "수산화마그네슘, 수산화알루미늄은 이 약을 포함한 β-차단제의 흡수를 감소시키므로 다른 시간에 투여한다.",
+   "extractor": "kw-v4",
+   "id": "a36598e5f6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "신생아 : 이 약을 투여한 임부의 신생아는 β-차단 작용이 출생이후 며칠동안 지속된다. 출생 후에 신생아에서 심장 및 폐 관련 합병증의 위험이 증가된다. 만약 심부전이 나타나면 신생아의 ICU(집중치료부)로의 입원이 요구되며 급성폐부종의 위험 때문에 혈장확장제(plasma expanders)의 사용은 피해야 한다. 추가로 서맥, 호흡부전, 저혈당증이 보고된 적이 있었으므로 특별하게 세팅된 환…",
+   "extractor": "kw-v4",
+   "id": "83eaa6aa7f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험에서 배, 태자의 사망이 증가하였다는 보고가 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "e61aa2a916",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "최기형성: 동물에서 어떠한 최기형성 효과도 나타나지 않았다. 지금까지 사람에서 어떠한 최기형성 도 보고된 바 없다. β-차단제는 태반관류를 감소시키고 이는 자궁내 태아사망, 미성숙 및 조산을 초래 할 수 있다. 게다가 특히, 저혈당 및 서맥과 같은 이상반응이 태아에서 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "ed1dc290b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수유: 이 약은 유즙으로 분비된다. 저혈당증과 서맥의 발생 위험에 대해 평가한 적이 없으므로 예방 차원에서 이 약을 투여하는 동안 수유는 권장하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "37c2b0f1b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서의 과도한 강압은 바람직하지 않으므로(서맥이 더 많이 나타난다.) 저용량(고혈압의 경우 2.5mg, 협심증의 경우 5mg)에서 투여를 시작하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "a82b08f413",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:22",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

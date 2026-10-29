@@ -1,15 +1,19 @@
 {
-  "ingredient": "clotrimazole",
-  "productSeq": "200008589",
-  "itemName": "카네스텐1질정(클로트리마졸)",
-  "atc": "G01AF02",
-  "etcOtc": "일반의약품",
-  "changeDate": "20231213",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200008589/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200008589/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200008589/NB"
-  },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:16:16"
+ "ingredient": "clotrimazole",
+ "productSeq": "200008589",
+ "itemName": "카네스텐1질정(클로트리마졸)",
+ "atc": "G01AF02",
+ "etcOtc": "일반의약품",
+ "changeDate": "20231213",
+ "ediCode": "641100300",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200008589/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200008589/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200008589/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

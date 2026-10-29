@@ -1,0 +1,159 @@
+{
+ "ingredient": "momelotinib hydrochloride hydrate",
+ "productSeq": "202402299",
+ "itemName": "옴짜라정100밀리그램(모멜로티닙염산염수화물)",
+ "atc": "L01EJ04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260604",
+ "ediCode": "650003280",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202402299/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202402299/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202402299/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "4. 상호작용",
+   "subject": "",
+   "excerpt": "강력한 CYP3A4 유도제를 병용 투여하면 모멜로티닙 노출이 감소하여 결과적으로 유효성 감소의 위험이 발생할 수 있다. 따라서 이 약과 강력한 CYP3A4 유도제(카르바마제핀, 페노바르비탈, 페니토인 및 St John’s wort[Hypericum perforatum]를 포함하되 이에 국한되지 않음)를 병용 투여할 경우 추가적 모니터링이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "ba4d2d1003",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "가임 여성 및 피임",
+   "extractor": "kw-v4",
+   "id": "65044c2a10",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "가임 여성은 이 약으로 치료받는 동안 임신을 피해야 한다. 이 약은 전신 작용 호르몬 피임제의 유효성을 감소시킬 수 있으므로 치료를 받는 동안과 마지막 투약 이후 적어도 1주일 동안은 호르몬 피임제와 함께 추가적인 피임법을 사용하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "8bdade9743",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "4f09255149",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "모멜로티닙이 사람의 임신에 미치는 영향에 관한 자료는 없다. 동물 실험 자료에 따르면 이 약은 배아-태아 독성을 유발할 수 있다. 랫트와 토끼의 경우, 모체 독성의 유무와 관계없이 매일 200mg의 임상 용량에 해당하는 노출에서 유산, 배아 사망 및 태아 기형이 관찰되었다('12.4. 비임상 정보’ 참고).",
+   "extractor": "kw-v4",
+   "id": "e8141eec63",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 임부에 대해 예상되는 유익성이 태아에 대한 잠재적인 위해성보다 클 경우에만 임신 중에 사용해야 한다. 임신 상태가 아닌 가임 여성은 투여 중 및 이 약의 마지막 투여 후 최소 1주일 동안 매우 효과적인 피임법을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ced09030b8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "4334a3127d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "모멜로티닙이 모유로 배출되는지에 관한 자료는 없다. 모멜로티닙을 투여한 어미에게 수유받은 새끼 랫트에서 이 약이 확인되었으며 새끼에게 부작용이 관찰되었다('12.4. 비임상 정보’ 참고). 모유 수유를 받는 유아에 대한 위해성을 배제할 수 없다. 환자는 이 약을 투여 받는 중 및 이 약의 마지막 투여 후 최소 1주일 동안 모유 수유를 하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "fcd6a4849b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "8e16c472c6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부 및 가임 여성에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람의 남성 및 여성의 수태능에 미치는 영향에 관한 자료는 없다. 동물 연구에서 이 약은 랫트의 수태능을 손상시켰다('12.4. 비임상 정보’ 참고).",
+   "extractor": "kw-v4",
+   "id": "486a664135",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상의 고령 환자에서의 용량 조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "926135f0d9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:52",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

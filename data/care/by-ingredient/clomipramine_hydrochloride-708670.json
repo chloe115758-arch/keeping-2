@@ -1,0 +1,125 @@
+{
+ "ingredient": "clomipramine hydrochloride",
+ "productSeq": "198900901",
+ "itemName": "그로민캡슐10밀리그램(클로미프라민염산염)",
+ "atc": "N06AA04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221102",
+ "ediCode": "651900060",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900901/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900901/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198900901/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 2)",
+   "subject": "",
+   "excerpt": "삼환계 항우울약은 경련역치를 낮추는 것으로 알려져 있으므로 간질환자에게 투여할 때에나 다양한 병인에 의한 뇌손상, 항정신병약 병용, 알코올이나 항경련성 약물의 투여중지 등 특정 유발요인이 있는 환자에게 투여할 경우에는 특히 주의한다. 간질 발현은 용량의존성이 있으므로 이 약의 1일 추천용량을 초과하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "75d04c1023",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 18)",
+   "subject": "표 1.",
+   "excerpt": "졸음, 시각장애, 기타 중추신경계 증상이 나타날 수 있으므로 이 약을 투여중인 환자는 자동차운전 등 위험을 수반하는 기계조작을 하지 않도록 주의한다. 또한 알코올이나 다른 약물에 의해 이러한 효과가 증강될 수 있음을 환자에게 주지시킨다.",
+   "extractor": "kw-v4",
+   "id": "83b76b7cde",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "중추신경흥분약 : 삼환계 항우울약은 알코올이나 다른 중추신경억제제(바르비탈계 약물, 벤조디아제핀계 약물, 전신마취제 등)의 효과를 증강시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f392773165",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "드물게 삼환계 항우울약이 태아에 영향(발육이상 등)을 주었다는 보고가 있고 또한 임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "f24f8b5a33",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "출산까지 삼환계 항우울약을 투여한 산모의 태아에서 출산 후 수시간 내지 수일동안 호흡곤란, 수면, 산통, 자극과민, 저ㆍ고혈압, 진전ㆍ경축 등의 금단증상이 보고되어 있으므로 최소한 출산예정일로부터 7주전에는 이 약의 투여를 천천히 중지한다.",
+   "extractor": "kw-v4",
+   "id": "391f10c75b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약의 활성성분은 모유로 분비되므로 수유부는 이 약의 투여를 천천히 중지하거나 수유를 피한다.",
+   "extractor": "kw-v4",
+   "id": "b34aa7b0f3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 특히 항콜린성 이상반응이나 신경정신과적 또는 심혈관계 이상반응에 민감하고 약물의 대사, 배설능력이 감소되어 있어 치료용량의 투여로도 혈장농도가 상승되는 위험을 초래할 수 있으므로 심기능 및 EEG를 계속적으로 모니터하면서 신중히 투여한다",
+   "extractor": "kw-v4",
+   "id": "19d184008c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:20",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

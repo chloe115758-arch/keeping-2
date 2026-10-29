@@ -1,0 +1,116 @@
+{
+ "ingredient": "cyclosporin",
+ "productSeq": "201906144",
+ "itemName": "사이프리엠점안액0.05%(사이클로스포린)(1회용)",
+ "atc": "S01XA18",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "622804011",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906144/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906144/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201906144/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부와 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "기형발생 작용",
+   "extractor": "kw-v4",
+   "id": "06de6cec16",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부와 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "기관발생 동안 사이클로스포린을 300mg/kg/day에 이르는 양까지 경구투여한 랫트와 토끼에 서 기형 발생 증거가 관찰되지 않았다. 랫트와 토끼에 있어 이러한 투여량은 투여량이 모두 흡수된다고 가정할 때 60kg의 사람에 이 약을 각각의 눈에 한 방울(28μL)씩 투여한 사람의 일일투여량 (0.001mg/kg/day)에 비해 대략 300,000배 더 많은 수준이다.",
+   "extractor": "kw-v4",
+   "id": "f8a554ff5f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부와 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비기형발생 작용",
+   "extractor": "kw-v4",
+   "id": "ac1027317e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부와 수유부에 대한 투여 ①",
+   "subject": "",
+   "excerpt": "랫트와 토끼의 생식독성시험에서 모체에 독성이 있는 투여량에서만 이상반응이 관찰되었 다. 독성 용량(랫트의 경우 30mg/kg/day, 토끼의 경우 100mg/kg/ day)의 사이클로스포린 경구 용액(USP)은 관련된 골격형성 지연과 함께 태자의 체중감소와 출생전후 태자의 사망률 증가를 보였으며 발달 초기와 태자에 독성을 나타내었다. 이러한 용량은 투여량이 모두 흡수 된다고 가정할 때 60k…",
+   "extractor": "kw-v4",
+   "id": "8531efd93e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부와 수유부에 대한 투여 ②",
+   "subject": "",
+   "excerpt": "기관발생 동안 각각 17mg/kg/day 또는 30mg/kg/day에 이르는 경구투여량에서 사이클로 스포린을 투여받은 랫트와 토끼에서 태자독성의 증거는 관찰되지 않았다. 랫트와 토끼에서 이 러한 용량은 사람의 일일투여량에 비해 각각 대략 17,000배와 30,000배 더 많은 수준이다.",
+   "extractor": "kw-v4",
+   "id": "c20f3f0846",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부와 수유부에 대한 투여 ③",
+   "subject": "",
+   "excerpt": "임신 15일부터 출산 후 21일까지 사이클로스포린을 모체에 독성을 나타내는 수준인 45mg/kg/day으로 경구투여받은 랫트에서 출산 후 태자의 사망률이 증가되었다. 이러한 용량 은 투여량이 모두 흡수된다고 가정할 때 사람의 일일 투여량(0.001mg/kg/day)에 비해 45,000배 더 많은 수준이다.",
+   "extractor": "kw-v4",
+   "id": "5d1fb85f46",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부와 수유부에 대한 투여 ④",
+   "subject": "",
+   "excerpt": "임부에 대한 임상시험 데이터는 아직 없다. 이 약은 명확하게 필요한 경우에만 신중히 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "90fb6f83c7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부와 수유부에 대한 투여 ⑤",
+   "subject": "",
+   "excerpt": "사이클로스포린은 전신 투여 후 모유로 분비된다고 알려져 있으나 국소 투여 후 모유로 분비되는지에 대하여는 연구되지 않았다. 비록 국소 투여 후 혈중농도는 관찰되지 않았지만 이 약을 수유부에 투여 시에는 주의하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "e73bafd379",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:30:03",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

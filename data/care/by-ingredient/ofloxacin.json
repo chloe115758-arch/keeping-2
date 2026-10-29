@@ -1,95 +1,99 @@
 {
-  "ingredient": "ofloxacin",
-  "productSeq": "201506769",
-  "itemName": "오록사신정100밀리그램(오플록사신)",
-  "atc": "J01MA01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260323",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506769/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506769/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506769/NB"
-  },
-  "rules": [
+ "ingredient": "ofloxacin",
+ "productSeq": "201506769",
+ "itemName": "오록사신정100밀리그램(오플록사신)",
+ "atc": "J01MA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260323",
+ "ediCode": "628800670",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506769/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506769/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201506769/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 11)",
+   "subject": "",
+   "excerpt": "수크랄페이트, 알루미늄 또는 마그네슘 함유 제산제, 철분 함유 제제, 칼슘 함유 제제, 아연 또는 철분이 함유된 종합비타민제제와의 병용에 의해 흡수가 저하되어 효과가 저하되는 경우가 있으므로 이 약 투여 전후 2시간 이내에는 병용하지 않는 것이 바람직하다(단, 경구제에 한함).",
+   "extractor": "kw-v4",
+   "id": "d04af700c4",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "39270eaf92",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 11)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "calcium",
-          "kind": "supplement",
-          "ko": "칼슘제제",
-          "surface": "칼슘 함유"
-        },
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "마그네슘 함유"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "수크랄페이트, 알루미늄 또는 마그네슘 함유 제산제, 철분 함유 제제, 칼슘 함유 제제, 아연 또는 철분이 함유된 종합비타민제제와의 병용에 의해 흡수가 저하되어 효과가 저하되는 경우가 있으므로 이 약 투여 전후 2시간 이내에는 병용하지 않는 것이 바람직하다(단, 경구제에 한함).",
-      "extractor": "kw-v1"
+     "key": "calcium",
+     "kind": "supplement",
+     "ko": "칼슘제제",
+     "surface": "칼슘 함유"
     },
     {
-      "id": "915ff8afdc",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중 투여에 대한 안전성은 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
-      "extractor": "kw-v1"
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "마그네슘 함유"
     },
     {
-      "id": "9997f1105e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 모유 중으로 이행되므로 이 약 투여 중에는 수유를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "da39303856",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 주로 신장으로 배설되는데, 고령자는 신기능이 저하된 경우가 많아 높은 혈중농도가 지속될 위험이 있고 이상반응이 발현하기 쉬우므로, 용량 및 투여간격에 유의하여 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b6e3b262b6",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "역학연구에 따르면 플루오로퀴놀론계 항균제 사용 후 2개월 이내에, 특히 고령자에서 대동맥류 또는 대동맥 박리 발생률이 증가하였다.",
-      "extractor": "kw-v1"
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:04:52"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대한 안전성은 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "75d73a8865",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유 중으로 이행되므로 이 약 투여 중에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "35987129cb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 주로 신장으로 배설되는데, 고령자는 신기능이 저하된 경우가 많아 높은 혈중농도가 지속될 위험이 있고 이상반응이 발현하기 쉬우므로, 용량 및 투여간격에 유의하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "e5c3a310cc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "역학연구에 따르면 플루오로퀴놀론계 항균제 사용 후 2개월 이내에, 특히 고령자에서 대동맥류 또는 대동맥 박리 발생률이 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "278aa6a35a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

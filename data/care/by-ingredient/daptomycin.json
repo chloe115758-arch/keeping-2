@@ -1,0 +1,68 @@
+{
+ "ingredient": "daptomycin",
+ "productSeq": "202007028",
+ "itemName": "답토주350밀리그램(답토마이신)",
+ "atc": "J01XX09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221125",
+ "ediCode": "642404861",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007028/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007028/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202007028/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신한 여성을 대상으로 한 적절한 임상 연구가 없고, 동물에서의 생식에 관련된 연구가 항상 사람에서의 반응을 예측할 수 있는 것은 아니므로 이 약을 임산부에게 투여할 경우, 반드시 치료상의 잠재적 유익성이 위험성을 상회한다고 판단되는 경우에 한하여 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "fe01ad6f57",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 사람투여량 (6mg/kg)의 2배 또는 4배 용량인 최고 75 mg/kg/일의 용량으로 랫트나 토끼를 대상으로 실시한 생식 및 기형시험에서 태아에 영향을 준다는 증거가 관찰되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "97b6dbb76d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약이 사람의 모유로 이행되는지의 여부는 알려져 있지 않다. 그러나 많은 약물이 모유로 분비되므로 수유부에게는 투여를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "097d67d63c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "복합성 피부 및 피부 구조 감염 3상 임상시험에서 이 약으로 치료 받은 534명의 성인 환자 중 65세 이상은 27%였고 12%는 75세 이상이었다. S. aureus 균혈증/심내막염의 3상 임상 시험에서 이 약으로 치료 받은 120명의 성인 환자 중 65세 이상은 25%였고 16%는 75세 이상이었다. 복합성 피부 및 피부 구조 감염 및 S. aureus 균혈증/심내막염의 3상 성인 임상시…",
+   "extractor": "kw-v4",
+   "id": "33d93734a9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:32",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

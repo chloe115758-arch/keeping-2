@@ -1,0 +1,68 @@
+{
+ "ingredient": "afatinib dimaleate",
+ "productSeq": "201400441",
+ "itemName": "지오트립정20밀리그램(아파티닙이말레산염)",
+ "atc": "L01EB03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210419",
+ "ediCode": "653501430",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201400441/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201400441/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201400441/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 비임상 연구에서 모체치사용량까지 투여한 결과 최기형성 증후를 보이지 않았다. 이상반응은 명백한 독성용량 수준에서만 발생했다. 이 약을 임부에서 사용한 연구결과는 없으며, 임부에서의 잠재적인 위험에 대해서는 알려진 바 없다. 임신할 가능성이 있는 여성의 경우 이 약 투여 중 임신하지 않도록 권고되어야 하며 이 약 투여 중, 그리고 마지막 투여 후 최소 2주간은 적절한 피임법을 병행해야…",
+   "extractor": "kw-v4",
+   "id": "d385bae0ee",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 비임상 연구결과, 수유부에 사용될 경우 이 약은 유즙으로 분비될 것으로 판단되므로 모유를 먹는 유아에 대한 위험을 배제할 수 없다. 따라서 이 약 투여 중 수유하지 않도록 해야 한다.",
+   "extractor": "kw-v4",
+   "id": "0902aabdd0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능: 이 약에 대해 사람의 수태능을 연구한 바 없으나, 비임상연구결과 고용량에서 생식기에 대한 영향이 있는 것으로 나타났다. 따라서, 사람 수태능에 대한 이 약의 영향을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "e763160731",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "dc197b71d8",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 1일 1회 40mg을 식전 최소 1시간이나 식후 최소 3시간에 경구복용한다. 이 약은 음식물 없이 투여해야 하며(상호작용 항 참조), 정제를 물과 함께 통째로 삼켜 복용하도록 한다. 이 약은 질병의 진행이나 허용할 수 없는 독성이 발생할 때까지 계속 투여할 수 있다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:18:36",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,28 +1,32 @@
 {
-  "ingredient": "bromfenac sodium sesquihydrate",
-  "productSeq": "202600427",
-  "itemName": "브롬페닉스점안액(브롬페낙나트륨수화물)(1회용)",
-  "atc": "S01BC11",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600427/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600427/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600427/NB"
-  },
-  "rules": [
-    {
-      "id": "c25f5223ec",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임산부, 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임산부 및 수유부에서의 투여에 대한 안전성이 확립되어 있지 않으므로, 수유부 및 임신 1, 2기의 임산부에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다. 특히, 임신 3기에 프로스타글란딘 합성억제는 태아에 있어 심폐독성 (동맥관의 조기봉합 및 폐동맥 고혈압), 양수 부족증 및 신부전에 이를 수 있는 신기능 장애를 유발할 수 있고, 임신 말기에 때때로 산모와 태아의 출혈…",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:10:10"
+ "ingredient": "bromfenac sodium sesquihydrate",
+ "productSeq": "202600427",
+ "itemName": "브롬페닉스점안액(브롬페낙나트륨수화물)(1회용)",
+ "atc": "S01BC11",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "641807501",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600427/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600427/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600427/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임산부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임산부 및 수유부에서의 투여에 대한 안전성이 확립되어 있지 않으므로, 수유부 및 임신 1, 2기의 임산부에게는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다. 특히, 임신 3기에 프로스타글란딘 합성억제는 태아에 있어 심폐독성 (동맥관의 조기봉합 및 폐동맥 고혈압), 양수 부족증 및 신부전에 이를 수 있는 신기능 장애를 유발할 수 있고, 임신 말기에 때때로 산모와 태아의 출혈…",
+   "extractor": "kw-v4",
+   "id": "a832c10f0f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

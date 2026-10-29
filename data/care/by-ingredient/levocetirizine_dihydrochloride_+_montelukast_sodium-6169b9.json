@@ -1,169 +1,173 @@
 {
-  "ingredient": "levocetirizine dihydrochloride + montelukast sodium",
-  "productSeq": "202303129",
-  "itemName": "몬테레진정(몬테루카스트나트륨,레보세티리진염산염)",
-  "atc": "R03DC53",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250225",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303129/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303129/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303129/NB"
-  },
-  "rules": [
+ "ingredient": "levocetirizine dihydrochloride + montelukast sodium",
+ "productSeq": "202303129",
+ "itemName": "몬테레진정(몬테루카스트나트륨,레보세티리진염산염)",
+ "atc": "R03DC53",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250225",
+ "ediCode": "055102870",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303129/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303129/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202303129/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적주의 (2)",
+   "subject": "○ 레보세티리진",
+   "excerpt": "기민함을 감소시키거나 중추신경계 작용을 추가로 떨어뜨릴 수 있으므로 레보세티리진과 알코올, 항우울제와 같이 복용하는 것은 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "effd9e967d",
+   "kind": "note",
+   "matched": [
     {
-      "id": "5bacd44827",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적주의 (2)",
-      "subject": "○ 레보세티리진",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "기민함을 감소시키거나 중추신경계 작용을 추가로 떨어뜨릴 수 있으므로 레보세티리진과 알코올, 항우울제와 같이 복용하는 것은 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "799648c69d",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (1)",
-      "subject": "○ 레보세티리진",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "다른 항히스타민제와 마찬가지로 과량의 알코올과 병용투여 하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bc4cb8781e",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (2)",
-      "subject": "○ 레보세티리진",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "라세미체(광학이성질체)인 세티리진의 경우에는 알코올의 영향을 증가시키지 않을 것으로 보여지나(0.5 g/L 혈액 수준), 레보세티리진과 알코올 또는 기타 CNS 억제제를 병용투여하는 경우 경계심이 추가로 감소될 수 있고 수행 장애를 야기할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6d152c3687",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부, 가임여성에 대한 투여 (1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "몬테루카스트를 랫트에게 400 mg/kg/day 용량(성인의 최대 1일 경구 투여량 AUC의 100배 노출에 해당)까지 경구투여할 때, 토끼에게 300 mg/kg/day 용량(성인의 최대 1일 경구 투여량 AUC의 110배 노출에 해당)까지 경구투여 할 때, 기형발생을 관찰할 수 없었다. 몬테루카스트는 랫트 및 토끼에서 경구투여후 태반을 통과하는 것으로 보고되었다. 그러나 임부를 대상으로 한…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5b56f0b6a5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부, 가임여성에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "또한 레보세티리진의 동물 실험결과 기형발생이 보고된 바 없으나, 아직 충분한 연구가 없으므로 이 약을 임부에는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ee1aea7f47",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부, 가임여성에 대한 투여 (2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 반드시 필요한 경우에만 임신 중에 사용해야한다. 전향적 및 후향적인 코호트 연구로부터 얻은 데이터는 몬테루카스트를 사용하는 임부에서의 주요 선천적인 결손에 대한 약물 관련 위험성을 확립하지 못했다. 이러한 연구들은 작은 표본 크기, 경우에 따라서 후향적으로 수집된 자료와 동일하지 않은 대조군 사용 등 방법론적인 제한점이 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "96826481fd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부, 가임여성에 대한 투여 (3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "레보세티리진은 수태능에 미치는 영향에 관한 동물시험은 실시되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "45de3c857c",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부, 가임여성에 대한 투여 (4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트에서 몬테루카스트는 유즙으로 이행되는 것으로 관찰되었다. 몬테루카스트가 사람의 모유로 분비되는지는 알려져 있지 않으나, 많은 약이 모유중으로 이행되므로 이 약을 수유부에게 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "88a926d812",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "아래에 명시된 정보는 몬테루카스트와 레보세티리진 개개의 성분에 대한 연구에서 나타난 결과를 근거로 한 것이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "451a759953",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "○ 몬테루카스트",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "몬테루카스트의 전체 임상시험 대상자중 65세 이상의 노인은 3.5%였으며 75세 이상의 노인은 0.4%였다. 고령자군과 젊은 환자군간에 안전성 또는 유효성의 전체적인 차이는 관찰되지 않았으며 다른 임상적 차이도 보고되지 않았다. 그러나 고령자에서 몬테루카스트에 대한 반응성이 증가될 가능성은 배제할 수 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "98256db823",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "○ 레보세티리진",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "레보세티리진은 주로 신장을 통해 배설되므로 일반적으로 신기능이 저하되어 있는 고령자에서는 혈중 농도 과다 상태가 지속될 수 있으므로 저용량으로 신중히 투여를 시작하고 이상이 인정될 경우에는 감량하거나 휴약하고 적절한 처치를 한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:09:53"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (1)",
+   "subject": "○ 레보세티리진",
+   "excerpt": "다른 항히스타민제와 마찬가지로 과량의 알코올과 병용투여 하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "e2d1d9a603",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (2)",
+   "subject": "○ 레보세티리진",
+   "excerpt": "라세미체(광학이성질체)인 세티리진의 경우에는 알코올의 영향을 증가시키지 않을 것으로 보여지나(0.5 g/L 혈액 수준), 레보세티리진과 알코올 또는 기타 CNS 억제제를 병용투여하는 경우 경계심이 추가로 감소될 수 있고 수행 장애를 야기할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "bc1f99d93b",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부, 가임여성에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "몬테루카스트를 랫트에게 400 mg/kg/day 용량(성인의 최대 1일 경구 투여량 AUC의 100배 노출에 해당)까지 경구투여할 때, 토끼에게 300 mg/kg/day 용량(성인의 최대 1일 경구 투여량 AUC의 110배 노출에 해당)까지 경구투여 할 때, 기형발생을 관찰할 수 없었다. 몬테루카스트는 랫트 및 토끼에서 경구투여후 태반을 통과하는 것으로 보고되었다. 그러나 임부를 대상으로 한…",
+   "extractor": "kw-v4",
+   "id": "37d6f759fc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "또한 레보세티리진의 동물 실험결과 기형발생이 보고된 바 없으나, 아직 충분한 연구가 없으므로 이 약을 임부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "8bc10d482a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부, 가임여성에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "이 약은 반드시 필요한 경우에만 임신 중에 사용해야한다. 전향적 및 후향적인 코호트 연구로부터 얻은 데이터는 몬테루카스트를 사용하는 임부에서의 주요 선천적인 결손에 대한 약물 관련 위험성을 확립하지 못했다. 이러한 연구들은 작은 표본 크기, 경우에 따라서 후향적으로 수집된 자료와 동일하지 않은 대조군 사용 등 방법론적인 제한점이 있다.",
+   "extractor": "kw-v4",
+   "id": "bbaefab7ec",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부, 가임여성에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "레보세티리진은 수태능에 미치는 영향에 관한 동물시험은 실시되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "a9fa475706",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부, 가임여성에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "랫트에서 몬테루카스트는 유즙으로 이행되는 것으로 관찰되었다. 몬테루카스트가 사람의 모유로 분비되는지는 알려져 있지 않으나, 많은 약이 모유중으로 이행되므로 이 약을 수유부에게 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "74ae690474",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "아래에 명시된 정보는 몬테루카스트와 레보세티리진 개개의 성분에 대한 연구에서 나타난 결과를 근거로 한 것이다.",
+   "extractor": "kw-v4",
+   "id": "eb9e940e3f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "○ 몬테루카스트",
+   "excerpt": "몬테루카스트의 전체 임상시험 대상자중 65세 이상의 노인은 3.5%였으며 75세 이상의 노인은 0.4%였다. 고령자군과 젊은 환자군간에 안전성 또는 유효성의 전체적인 차이는 관찰되지 않았으며 다른 임상적 차이도 보고되지 않았다. 그러나 고령자에서 몬테루카스트에 대한 반응성이 증가될 가능성은 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "e083dd19f7",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "○ 레보세티리진",
+   "excerpt": "레보세티리진은 주로 신장을 통해 배설되므로 일반적으로 신기능이 저하되어 있는 고령자에서는 혈중 농도 과다 상태가 지속될 수 있으므로 저용량으로 신중히 투여를 시작하고 이상이 인정될 경우에는 감량하거나 휴약하고 적절한 처치를 한다.",
+   "extractor": "kw-v4",
+   "id": "dba7db3d78",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

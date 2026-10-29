@@ -1,0 +1,123 @@
+{
+ "ingredient": "spironolactone",
+ "productSeq": "200409929",
+ "itemName": "알닥톤필름코팅정25밀리그람(스피로노락톤)",
+ "atc": "C03DA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251127",
+ "ediCode": "648900610",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200409929/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200409929/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200409929/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 9)",
+   "subject": "",
+   "excerpt": "알코올, 바르비탈계 약물, 마약과 병용투여시 기립성 저혈압의 증가가 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "26f5b6e87d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 동물실험에서 기형발생 가능성이 보고되어 있으며 사람에서의 실험은 실시되지 않았 으나 이 약 또는 그 대사물은 태반을 통과하여 임신기간 중 바람직하지 않은 호르몬 특이성 효과가 나타날 수 있으므로 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "7c5ebc24bf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 이 약 또는 그 대사물인 칸레논이 모유중으로 이행되므로 이 약의 투여중에는 수유를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "9a8f9e5958",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에는 다음의 사항을 주의하여 저용량에서 투여를 시작하여 최상의 효과를 나타내는 용량까지 증량 조정하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "4e1fd83263",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자에서의 급격한 이뇨는 혈장량의 감소를 초래하므로 탈수, 저혈압 등에 의한 기립성 조절장애, 어지러움, 실신 등이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "47dbb88c3f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "특히 심질환 환자 중 부종이 있는 고령자에서의 급격한 이뇨는 급속한 혈장량 감소, 혈액 농축을 초래하여 뇌경색 등의 혈전색전증이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "732f1f63b3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서의 과도한 혈압강하는 바람직하지 않다 (뇌경색이 나타날 수 있다).",
+   "extractor": "kw-v4",
+   "id": "0b93227d20",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "고령자에서는 저나트륨혈증, 저칼륨혈증이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "71681b1aa8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:46",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

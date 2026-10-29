@@ -1,0 +1,63 @@
+{
+ "ingredient": "armodafinil",
+ "productSeq": "201702284",
+ "itemName": "누비질정150밀리그램(아모다피닐)",
+ "atc": "N06BA13",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220502",
+ "ediCode": "626900850",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702284/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702284/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201702284/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 8)",
+   "subject": "",
+   "excerpt": "Cytochrome P450 isozyme 및 다른 간 효소를 억제, 유도하거나 대사되는 약물과의 상호작용 가능성 : 디아제팜, 프로프라놀롤 및 오메프라졸과 같이 CYP2C19 대사에 의해 주로 소실되는 물질들은 모다피닐과 함께 투여되면 청소율이 감소될 수 있으므로 용량 감소가 요구된다. 덧붙여, in vitro 연구에서 사람 간세포에서 관찰된 CYP1A2, CYP2B6, CYP3A4/5 활…",
+   "extractor": "kw-v4",
+   "id": "9f69287feb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 레지스트리 및 자발보고에서 얻은 제한된 사용경험에 따르면 이 약을 임신 중에 투여했을 때 선천성 기형을 유발하는 것으로 추정된다. 동물시험에서는 생식독성을 보였다. 임신 중에 이 약을 투여하지 않는다. 임신 가능성이 있는 여성의 경우 효과적인 피임 방법을 사용해야 한다. 이 약 또는 모다피닐은 경구 피임의 효과를 감소시킬 수 있으므로, 피임에 대한 대체 부가요법이 요구된다. 이용 가능한…",
+   "extractor": "kw-v4",
+   "id": "9bb4c344dd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자의 신기능 및 간기능 저하에 따른 이 약의 용량 감소가 고려되어져야 한다. 65세 이상의 환자에 대한 안전성 및 유효성은 확립되지 않으므로 사용하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "d2d7dad39f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:34",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

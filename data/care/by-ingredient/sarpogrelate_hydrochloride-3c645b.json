@@ -1,52 +1,68 @@
 {
-  "ingredient": "sarpogrelate hydrochloride",
-  "productSeq": "202003678",
-  "itemName": "포레이서방정300밀리그램(사르포그렐레이트염산염)",
-  "atc": "B01AC",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003678/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003678/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003678/NB"
+ "ingredient": "sarpogrelate hydrochloride",
+ "productSeq": "202003678",
+ "itemName": "포레이서방정300밀리그램(사르포그렐레이트염산염)",
+ "atc": "B01AC",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "054801120",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003678/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003678/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003678/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것 5)",
+   "subject": "",
+   "excerpt": "고령자",
+   "extractor": "kw-v4",
+   "id": "85ff28c0e0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "e996097950",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫드)에서 태자 사망률 증가 및 신생자 생존율 저하가 보고되었으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "df70b3178a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫드)에서 유즙으로의 분비가 보고되었으므로 수유중인 여성에게는 투여하지 않는 것이 바람직하나 부득이 투여할 경우에는 수유를 피한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9b68e65619",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "성인: 사르포그렐레이트염산염 서방정 300mg을 1일 1회 식후 경구 투여한다. 이 약은 씹거나 부수지 말고 그대로 복용하여야 한다.",
-      "meal": "식후",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:03:42"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험(랫드)에서 태자 사망률 증가 및 신생자 생존율 저하가 보고되었으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "b1758432c9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(랫드)에서 유즙으로의 분비가 보고되었으므로 수유중인 여성에게는 투여하지 않는 것이 바람직하나 부득이 투여할 경우에는 수유를 피한다.",
+   "extractor": "kw-v4",
+   "id": "61f16f08d3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "9b68e65619",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인: 사르포그렐레이트염산염 서방정 300mg을 1일 1회 식후 경구 투여한다. 이 약은 씹거나 부수지 말고 그대로 복용하여야 한다.",
+   "meal": "식후",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

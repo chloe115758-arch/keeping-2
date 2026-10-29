@@ -1,0 +1,19 @@
+{
+ "ingredient": "amorolfine hydrochloride",
+ "productSeq": "200210173",
+ "itemName": "로세릴크림(아모롤핀염산염)",
+ "atc": "D01AE16",
+ "etcOtc": "일반의약품",
+ "changeDate": "20260622",
+ "ediCode": "655700111",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200210173/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200210173/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200210173/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-30T00:25:34",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

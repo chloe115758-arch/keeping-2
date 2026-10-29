@@ -1,76 +1,81 @@
 {
-  "ingredient": "carbidopa monohydrate + entacapone + levodopa",
-  "productSeq": "201504270",
-  "itemName": "트리도파정100/25/200밀리그램",
-  "atc": "N04BA03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20191024",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504270/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504270/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504270/NB"
-  },
-  "rules": [
+ "ingredient": "carbidopa monohydrate + entacapone + levodopa",
+ "productSeq": "201504270",
+ "itemName": "트리도파정100/25/200밀리그램",
+ "atc": "N04BA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20191024",
+ "ediCode": "645404480",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504270/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504270/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201504270/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "레보도파와 엔타카폰은 위장관에서 철과 킬레이트를 형성할 수 있다. 그러므로 이 약과 철제제는 적어도 2-3시간의 간격을 두고 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "9fe02bb86a",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "e5622d4eac",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "",
-      "matched": [
-        {
-          "key": "iron",
-          "kind": "supplement",
-          "ko": "철분제제",
-          "surface": "철제제"
-        }
-      ],
-      "interval": {
-        "minHours": 2.0,
-        "maxHours": 3.0,
-        "qualifier": "적어도",
-        "text": "적어도 2-3시간의 간격"
-      },
-      "tone": "caution",
-      "excerpt": "레보도파와 엔타카폰은 위장관에서 철과 킬레이트를 형성할 수 있다. 그러므로 이 약과 철제제는 적어도 2-3시간의 간격을 두고 투여해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b455d4f651",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 : 레보도파/카르비도파/엔타카폰 병용 투여가 임부에 미치는 영향은 알려진 바 없으나, 레보도파 및 레보도파/카르비도파는 토끼에서 장기 및 골격 기형을 유발하였다. 따라서 이 약은 임신 중 사용하면 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ae63c47ecd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부 : 레보도파는 사람의 모유를 통해 분비된다. 레보도파 투여 기간에 모유 분비가 억제되었다. 동물시험에서 카르비도파와 엔타카폰은 모유로 분비되었으나 사람에서는 알려지지 않았다. 신생아에 대한 레보도파, 카르비도파, 엔타카폰의 안전성은 알려지지 않았으므로 이 약 투여 중 수유를 해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "67535733d1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수태능 : 엔타카폰, 카르비도파 또는 레보도파 단독 비임상연구에서 수태능과 관련된 이상 반응은 관찰되지 않았다. 엔타카폰, 레보도파 및 카르비도파를 병용 투여한 동물의 수태능 연구는 수행되지 않았다.",
-      "extractor": "kw-v1"
+     "key": "iron",
+     "kind": "supplement",
+     "ko": "철분제제",
+     "surface": "철제제"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:11:06"
+   ],
+   "interval": {
+    "minHours": 2.0,
+    "maxHours": 3.0,
+    "qualifier": "적어도",
+    "text": "적어도 2-3시간의 간격",
+    "actionable": true
+   },
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 레보도파/카르비도파/엔타카폰 병용 투여가 임부에 미치는 영향은 알려진 바 없으나, 레보도파 및 레보도파/카르비도파는 토끼에서 장기 및 골격 기형을 유발하였다. 따라서 이 약은 임신 중 사용하면 안 된다.",
+   "extractor": "kw-v4",
+   "id": "a661e03464",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 레보도파는 사람의 모유를 통해 분비된다. 레보도파 투여 기간에 모유 분비가 억제되었다. 동물시험에서 카르비도파와 엔타카폰은 모유로 분비되었으나 사람에서는 알려지지 않았다. 신생아에 대한 레보도파, 카르비도파, 엔타카폰의 안전성은 알려지지 않았으므로 이 약 투여 중 수유를 해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "b5327d6f52",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능 : 엔타카폰, 카르비도파 또는 레보도파 단독 비임상연구에서 수태능과 관련된 이상 반응은 관찰되지 않았다. 엔타카폰, 레보도파 및 카르비도파를 병용 투여한 동물의 수태능 연구는 수행되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "0d23f850c1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

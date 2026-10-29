@@ -1,0 +1,143 @@
+{
+ "ingredient": "gefitinib",
+ "productSeq": "201503506",
+ "itemName": "이레티닙정250밀리그램(게피티니브)",
+ "atc": "L01EB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220425",
+ "ediCode": "643306980",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201503506/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201503506/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201503506/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 3)",
+   "subject": "",
+   "excerpt": "CYP3A4 저해제(이트라코나졸, 케토코나졸, 포사코나졸, 보리코나졸 등 아졸계 진균제, 에리스로마이신, 텔리스로마이신 등 마크로라이드 항생제, 리토나비어, 인디나비르 등 단백분해효소억제제, 딜티아젬 및 베라파밀 등, 자몽 쥬스)와의 병용 투여에 의해 게피티니브의 혈중 농도가 증가되어 약물이상반응의 빈도와 중증도가 증가할 수 있다. CYP2D6 poor metaboliser 환자에서 이 약의…",
+   "extractor": "kw-v4",
+   "id": "cf15c6f0a6",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "이 약을 CYP3A4 유도제(페니토인, 카바마제핀, 리팜피신, 바르비튜레이트 및 St. John's Wort(Hypericum perforatum) 등)와 병용투여시 게피티니브의 혈중 농도가 감소되어 이 약의 효과가 감소할 수 있다. 따라서 이 약은 CYP3A4 유도제와 병용하지 않도록 한다. 건강한 자원자에서 리팜피신(강력한 CYP3A4 유도제)과 병용 투여시 이 약의 평균 AUC가 83%…",
+   "extractor": "kw-v4",
+   "id": "16f60ba604",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 7)",
+   "subject": "",
+   "excerpt": "프로톤 펌프 저해제(오메프라졸 등) 및 H2 차단제(라니티딘 등)와 병용: 이 약의 용해성이 pH에 의존적이므로 위내 pH를 지속적으로 상승시킬 경우 이 약의 혈중 농도가 감소될 수 있다. 고용량의 단기작용 제산제를 이 약 투여 시간과 근접하게 정기적으로 복용시 유사한 영향이 있을 수 있다. 건강한 자원자에서 이 약과 위내 pH를 5 이상으로 지속적으로 높이는 용량의 라니티딘을 병용투여시 이…",
+   "extractor": "kw-v4",
+   "id": "5486cdf583",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤 펌프"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 또는 임신이 의심되는 여성의 경우 이 약 투여로 인한 이익이 위험성을 상회할 경우에만 사용되어야 한다. 이 경우, 이 약 투여를 시작하기 전 환자에게 충분히 위험성에 대해 설명해야 한다. (임부 또는 수유부에 이 약을 투여한 임상 경험은 없다. 동물실험 결과, 태자 체중 감소(토끼에서), 생존 태자 수 감소(랫드에서), 출생자의 조기 사망(랫드에서) 보고가 있다.)",
+   "extractor": "kw-v4",
+   "id": "c81b464246",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유 중 이 약 사용은 피해야 한다. 다른 치료방법이 없어 이 약을 투여해야 할 경우 수유를 중단해야 한다. (동물실험 결과 이 약은 모유로 이행된다.(랫드))",
+   "extractor": "kw-v4",
+   "id": "8fa583214d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "여성의 경우 이 약 투여 중 임신을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "9d44127bab",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임상 연구 결과, 65세 이상 환자와 65세 미만 환자 간에 이 약으로 인한 이상반응의 발생률 및 중증도에 차이는 없었다. 고령자에서 용량 조절은 필요하지 않으나, 이 약을 생리 기능이 빈번히 저하되는 고령자에게 투여 시 신중한 관찰이 요구된다.",
+   "extractor": "kw-v4",
+   "id": "34cae746e2",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "다수의 일본인 고령자에서 무산증이 보고된 바 있으므로, 식후에 이 약을 투여하는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "c3e07efe72",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:38",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

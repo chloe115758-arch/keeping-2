@@ -1,115 +1,125 @@
 {
-  "ingredient": "olmesartan medoxomil + rosuvastatin calcium",
-  "productSeq": "201308278",
-  "itemName": "올로스타정20/10밀리그램(올메사르탄메독소밀, 로수바스타틴)",
-  "atc": "C10BX",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260212",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308278/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308278/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308278/NB"
-  },
-  "rules": [
+ "ingredient": "olmesartan medoxomil + rosuvastatin calcium",
+ "productSeq": "201308278",
+ "itemName": "올로스타정20/10밀리그램(올메사르탄메독소밀, 로수바스타틴)",
+ "atc": "C10BX",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "641605690",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308278/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308278/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201308278/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용",
+   "subject": "○ 올메사르탄메독소밀",
+   "excerpt": "이 약을 건강한 지원자에게 디곡신 또는 와파린과 병용투여 했을 때 심각한 약물 상호작용은 보고되지 않았다. 이 약의 생체내 이용률은 제산제[AI(OH)3/Mg(OH)2]와 병용 투여시 크게 변화하지 않았다. 이 약은 cytochrome P450 시스템에 의해 대사되지 않으며 P450 효소에도 영향을 주지 않는다. 따라서 이 효소에 의해 억제되거나, 유도 또는 대사되는 약물들과의 상호작용은 예…",
+   "extractor": "kw-v4",
+   "id": "eaf55e315d",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "7bab37f7a6",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 약물상호작용",
-      "subject": "6) 기타",
-      "matched": [
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약을 건강한 지원자에게 디곡신 또는 와파린과 병용투여 했을 때 심각한 약물 상호작용은 보고되지 않았다. 이 약의 생체내 이용률은 제산제[AI(OH)3/Mg(OH)2]와 병용 투여시 크게 변화하지 않았다. 이 약은 cytochrome P450 시스템에 의해 대사되지 않으며 P450 효소에도 영향을 주지 않는다. 따라서 이 효소에 의해 억제되거나, 유도 또는 대사되는 약물들과의 상호작용은 예…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "82cce03184",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 약물상호작용",
-      "subject": "기타 약물의 영향",
-      "matched": [
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "산화마그네슘"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "- 제산제 : 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 이 약을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 이 약 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b682b5ae0c",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 약물상호작용",
-      "subject": "2) 이 약이 다른 약물에 미치는 영향",
-      "matched": [
-        {
-          "key": "vitaminK",
-          "kind": "supplement",
-          "ko": "비타민 K",
-          "surface": "비타민K"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "- 와파린 : 이 약과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 HMG-CoA 환원효소 저해제와 마찬가지로, 이 약과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 이 약의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b75f11f981",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "○ 올메사르탄메독소밀",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "태아/신생아 이환율 및 사망률 : 임부에게 레닌&#x2010;안지오텐신 시스템에 직접적으로 작용하는 약물을 투여하면 태아나 신생아의 손상 및 사망이 발생할 수 있으며, 이러한 사례는 안지오텐신 전환 효소(ACE: angiotensin converting enzyme) 저해제를 복용한 환자에서도 세계적으로 수십 례가 보고된 바 있다. 따라서 임신한 사실을 알게 되면, 본제의 복용을 되도록 빨리…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2796a33ca2",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "○ 로수바스타틴",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 로수바스타틴 성분은 임신 및 수유부에 대한 안전성이 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다. 임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c6ed681ea6",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약의 올메사르탄메독소밀 성분은 고혈압 환자 중 젊은 환자에 비해 65세 이상의 고령 환자에서 항정상태(steady state)에서 AUC가 33% 증가하였고, 75세 이상의 고령 환자에서 44%가 증가하였다.",
-      "extractor": "kw-v1"
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:14:45"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용",
+   "subject": "기타 약물의 영향",
+   "excerpt": "- 제산제 : 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 이 약을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 이 약 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "f79841be80",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용",
+   "subject": "기타 약물의 영향",
+   "excerpt": "- 와파린 : 이 약과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 HMG-CoA 환원효소 저해제와 마찬가지로, 이 약과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 이 약의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "b0030b3321",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 올메사르탄메독소밀",
+   "excerpt": "태아/신생아 이환율 및 사망률 : 임부에게 레닌&#x2010;안지오텐신 시스템에 직접적으로 작용하는 약물을 투여하면 태아나 신생아의 손상 및 사망이 발생할 수 있으며, 이러한 사례는 안지오텐신 전환 효소(ACE: angiotensin converting enzyme) 저해제를 복용한 환자에서도 세계적으로 수십 례가 보고된 바 있다. 따라서 임신한 사실을 알게 되면, 본제의 복용을 되도록 빨리…",
+   "extractor": "kw-v4",
+   "id": "f97fb0cc81",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로수바스타틴",
+   "excerpt": "이 약의 로수바스타틴 성분은 임신 및 수유부에 대한 안전성이 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다. 임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증…",
+   "extractor": "kw-v4",
+   "id": "282b669be0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 올메사르탄메독소밀 성분은 고혈압 환자 중 젊은 환자에 비해 65세 이상의 고령 환자에서 항정상태(steady state)에서 AUC가 33% 증가하였고, 75세 이상의 고령 환자에서 44%가 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "dd40869bf0",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

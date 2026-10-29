@@ -1,0 +1,32 @@
+{
+ "ingredient": "pramoxine hydrochloride",
+ "productSeq": "201402679",
+ "itemName": "광동프라목신크림(프라목신염산염)",
+ "atc": "C05AD07",
+ "etcOtc": "일반의약품",
+ "changeDate": "20190708",
+ "ediCode": "641805621",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402679/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402679/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201402679/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음과 같은 사람은 이 약을 사용하기 전에 의사, 치과의사, 약사와 상의할 것. 1)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성",
+   "extractor": "kw-v4",
+   "id": "e837bade58",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:06",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,384 +1,431 @@
 {
-  "ingredient": "dapagliflozin propanediol hydrate + metformin hydrochloride + sitagliptin hydrochloride hydrate",
-  "productSeq": "202500059",
-  "itemName": "트루디에스엠서방정10/100/1000밀리그램(다파글리플로진,시타글립틴,메트포르민)",
-  "atc": "A10BD31",
-  "etcOtc": "전문의약품",
-  "changeDate": "20251029",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500059/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500059/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500059/NB"
-  },
-  "rules": [
+ "ingredient": "dapagliflozin propanediol hydrate + metformin hydrochloride + sitagliptin hydrochloride hydrate",
+ "productSeq": "202500059",
+ "itemName": "트루디에스엠서방정10/100/1000밀리그램(다파글리플로진,시타글립틴,메트포르민)",
+ "atc": "A10BD31",
+ "etcOtc": "전문의약품",
+ "changeDate": "20251029",
+ "ediCode": "641908560",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500059/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500059/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202500059/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에는 투여하지 말 것 10)",
+   "subject": "",
+   "excerpt": "간기능 장애(손상된 간 기능은 유산산증의 몇몇 경우와 관련이 있기 때문에, 일반적으로 임상적 또는 실험실적으로 간 질환의 증거가 있는 환자에게는 이 약의 투여를 피해야 한다.), 호흡기 부전, 급성 심근경색, 쇼크와 같이 조직 저산소증을 유발할 수 있는 급성 또는 만성질환, 과도한 알코올 섭취자, 탈수증, 설사, 구토 등의 위장장애 환자",
+   "extractor": "kw-v4",
+   "id": "f345b841b4",
+   "kind": "note",
+   "matched": [
     {
-      "id": "3bcee266a4",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "1) 유산산증",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "덧붙여 메트포르민은 저산소증, 탈수, 패혈증과 관계된 증상이 나타날 경우 즉각 투여를 중지해야 한다. 간기능이 손상된 경우 젖산 배설능력이 유의적으로 저하될 수 있으므로, 일반적으로 간질환의 임상적 또는 실험실적 소견이 있는 환자의 경우 이 약을 투여하지 않는다. 알코올은 메트포르민이 젖산대사에 영향을 미치게 할 가능성이 있으므로, 이 약을 투여 받는 동안 급ㆍ만성적인 알코올의 과량섭취는 피…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f8d77bed17",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "5) 케톤산증",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "많은 시판 후 보고에서, 특히 제1형 당뇨병 환자에서, 케톤산증의 유무는 즉시 확인되지 않았고, 치료의 도입이 지연되었는데, 이는 나타난 혈당 수치가 당뇨병성 케톤산증에서 일반적으로 예측되는 수치(대부분 250mg/dL 미만)보다 낮았기 때문이다. 당뇨 및 케톤산증은 일반적으로 기대되는 기간보다 오래 지속될 수 있으며 요당 분비는 투여를 중단한 후 3일간 지속될 수 있다. 그러나 당뇨 및 케…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ab77cb1079",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "5) 케톤산증",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "다파글리플로진의 투여를 시작하기 전 인슐린 분비 감소, 칼로리 제한, 알코올 남용을 포함한 케톤산증을 일으키기 쉬운 요인이 있는지 고려해야 한다. 다파글리플로진으로 치료받는 환자에서 케톤산증이 발생하는지 모니터링하고, 케톤산증을 일으키기 쉬운 임상적 상황(예: 급성 질환 또는 수술로 인한 장기적인 단식)이 발생할 경우 다파글리플로진의 투여를 일시적으로 중단하는 것을 고려한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "09fb2b38b6",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 16)",
-      "subject": "13) 수포성 유사천포창",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올 섭취 : 알코올은 젖산 대사에 대해 메트포르민이 미치는 영향을 증대시킨다고 알려져 있다. 따라서 이 약을 투여하는 동안 급성 또는 만성적인 알코올의 과량섭취는 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b35613d733",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의 18)",
-      "subject": "13) 수포성 유사천포창",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "저혈당 : 저혈당은 일반적인 사용 환경 하에서 메트포르민을 단독 투여한 환자에서는 나타나지 않으나, 열량 섭취가 불충분한 경우, 격렬한 운동이 열량 섭취로 보충되지 못한 경우나 다른 혈당강하제(설포닐우레아, 인슐린, 메글리티나이드계 등) 또는 알코올을 병용 투여하는 경우에 발생한다. 특히 고령자, 쇠약하거나 영양 불균형인 환자, 부신이나 뇌하수체 부전 환자 또는 알코올 중독자인 경우 저혈당이…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bd92fb68b7",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "(5) 기타 상호작용",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "흡연, 식이, 천연물 의약품 및 알코올이 다파글리플로진의 약동학에 미치는 영향은 연구되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b7bde71704",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (2)",
-      "subject": "- 혈당강하 작용을 감약시키는 약제",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "08e79b49f5",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "- 간장애",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d2b53cbcc0",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 및 수유부를 대상으로 이 약으로 한 적절한 임상시험 결과는 없으므로 임신 또는 수유 중 이 약의 사용은 권장되지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ea786d66df",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "개별 성분에 대한 정보는 다음과 같다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "cf1f8097b7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (1)",
-      "subject": "1) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다파글리플로진 : 임신한 여성을 대상으로 다파글리플로진을 투여한 자료는 없다. 랫트에 대한 연구 결과 사람의 임신 2기와 3기에 해당하는 기간에 신장 발달에 대한 독성을 나타내었다. 임부에서의 다파글리플로진의 사용은 권장되지 않는다. 임신이 확인되면, 다파글리플로진의 투여를 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4b5d07fa39",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다파글리플로진이 사람의 생식능에 미치는 영향은 연구되지 않았다. 수컷과 암컷 랫트에서 다파글리플로진은 연구된 어떤 용량에서도 생식능에 영향을 나타내지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7e67b576b8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (2)",
-      "subject": "1) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "시타글립틴 : 임신한 여성을 대상으로 한 대조시험 결과가 없으므로 임부에서의 사용은 권장되지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a452acb07a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (3)",
-      "subject": "1) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "메트포르민 : 임신 전후기(periconceptional phase)와 임신 중 조절되지 않은 고혈당은 선천성 이상, 유산, 임신으로 인한 고혈압, 자간전증 및 주산기 사망률 증가의 위험과 관련이 있다. 임신 중 고혈당과 관련된 위험을 줄이기 위해 임신 기간 동안 혈당 수치를 가능한 한 정상에 가깝게 유지하는 것이 중요하다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "79e27cefc8",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "메트포르민은 태반을 통과하며 태반 통과 수준은 모체에서의 농도만큼 높을 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1a7e5499e9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신전후기(periconceptional phase) 및 임신 중 메트포르민 사용에 대한 다양한 연구(임상연구, 레지스터 기반 코호트 연구, 메타 분석 등)로부터 확인된 데이터(1000건 이상의 노출 결과)에 따르면, 임신 전후기(periconceptional phase) 및/또는 임신 중 메트포르민 노출로 인한 선천성 이상 및/또는 태아/신생아 독성 위험 증가는 확인되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "efecf6de6d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "자궁 내 메트포르민에 노출된 출생아는 재태 연령에 비해 작을 수 있다. 출생아의 장기적 체중 결과에 및 대사합병증에 미치는 메트포르민의 영향에 대한 증거는 제한적이다. 최대 4세까지의 운동-사회성 발달에는 영향을 미치지 않는 것으로 보이나, 4세 이후에 대한 결과는 제한적이다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e6c345a88a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 예정이거나 임신 중 혈당조절을 목적으로 임상적으로 필요한 경우 인슐린에 추가 또는 대안으로서 메트포르민의 사용을 고려할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "85dce35e15",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부:",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "그러나, 태반 기능 부전, 자간전증, 자궁 내 성장지연의 위험도가 있는 임부의 경우 메트포르민으로 치료를 시작하지 않는다. 출생 체중 감소를 방지하기 위해 태아 발달을 면밀히 모니터링 해야 하며, 만약 태아의 성장 지연이 확인되면 메트포르민의 투여를 중단한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2493fe26f6",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (1)",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다파글리플로진 : 다파글리플로진 및 그 대사체가 인체 유즙으로 이행되는지 여부는 알려져 있지 않다. 동물에 대한 약력학/독성학 자료에 따르면 유즙으로 다파글리플로진/대사체가 분비되며, 수유를 받는 새끼에서 약리학적으로 매개된 영향도 나타났다. 신생아/영아에 대한 위험성을 배제할 수 없다. 다파글리플로진은 수유 중 사용해서는 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9d90b3c835",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (2)",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "시타글립틴 : 시타글립틴은 랫드에서 유즙과 혈장에 4:1의 비율로 분비되는 것으로 보고되었으므로 수유부에는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "74b243cd1b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (3)",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "메트포르민 : 메트포르민은 모유로 분비되며 메트포르민에 대한 신생아/유아에서의 이상반응은 보고되지 않았다. 그러나 보고된 연구결과가 제한적이므로, 메트포르민으로 치료 중 수유는 권장되지 않는다. 수유의 유익성, 수유부에 대한 약물의 중요성 및 유아에서의 이상반응의 잠재적 위험성을 고려하여, 수유를 중단할 것인지 약물 치료를 중단할 것인지 결정하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4af53f46bc",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자는 일반적으로 노화로 인해 간장, 신장 기능 등 생리기능이 저하되어 있으며 신기능 변화를 일으킬 가능성이 높은 약물(예. 안지오텐신 전환 효소 저해제(ACE-I) 및 안지오텐신II 수용체 저해제(ARB)와 같은 신기능 변화를 일으킬 수 있는 항고혈압제)을 복용하고 있을 가능성이 높다. 고령 환자들은 체액량 감소의 위험이 더 높을 수 있고, 이뇨제를 투여하고 있을 가능성이 더 높다. 고령…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "dcc518a7d4",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약 중 시타글립틴은 대체로 신장으로 배설되므로, 고령자에서 용량 선정 시 주의가 필요하다. 메트포르민의 용량은 환자의 신기능에 근거하여 적절한 혈당조절 효과를 얻을 수 있는 최소 용량으로 설정되어야 하며(용법·용량 중 신장애 환자 항 참조), 일반적으로 고령자에게는 최대 용량을 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "218d0b16ef",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에서 이 약 투여 전 및 투여 후 신장기능 및 체액량 상태를 평가하는 것이 권장된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "35034f8a60",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 메트포르민염산염으로 인한 위장관계 이상반응을 줄이기 위해서 식사와 함께 1일 1회 되도록 저녁 시간에 복용하며, 메트포르민염산염의 용량 조절이 필요한 경우 단계적으로 용량을 조절한다.",
-      "meal": "식사와 함께",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:18:24"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "덧붙여 메트포르민은 저산소증, 탈수, 패혈증과 관계된 증상이 나타날 경우 즉각 투여를 중지해야 한다. 간기능이 손상된 경우 젖산 배설능력이 유의적으로 저하될 수 있으므로, 일반적으로 간질환의 임상적 또는 실험실적 소견이 있는 환자의 경우 이 약을 투여하지 않는다. 알코올은 메트포르민이 젖산대사에 영향을 미치게 할 가능성이 있으므로, 이 약을 투여 받는 동안 급ㆍ만성적인 알코올의 과량섭취는 피…",
+   "extractor": "kw-v4",
+   "id": "2d596a412e",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "많은 시판 후 보고에서, 특히 제1형 당뇨병 환자에서, 케톤산증의 유무는 즉시 확인되지 않았고, 치료의 도입이 지연되었는데, 이는 나타난 혈당 수치가 당뇨병성 케톤산증에서 일반적으로 예측되는 수치(대부분 250mg/dL 미만)보다 낮았기 때문이다. 당뇨 및 케톤산증은 일반적으로 기대되는 기간보다 오래 지속될 수 있으며 요당 분비는 투여를 중단한 후 3일간 지속될 수 있다. 그러나 당뇨 및 케…",
+   "extractor": "kw-v4",
+   "id": "840e72eb2b",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "",
+   "excerpt": "다파글리플로진의 투여를 시작하기 전 인슐린 분비 감소, 칼로리 제한, 알코올 남용을 포함한 케톤산증을 일으키기 쉬운 요인이 있는지 고려해야 한다. 다파글리플로진으로 치료받는 환자에서 케톤산증이 발생하는지 모니터링하고, 케톤산증을 일으키기 쉬운 임상적 상황(예: 급성 질환 또는 수술로 인한 장기적인 단식)이 발생할 경우 다파글리플로진의 투여를 일시적으로 중단하는 것을 고려한다.",
+   "extractor": "kw-v4",
+   "id": "33636f3bbd",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 16)",
+   "subject": "",
+   "excerpt": "알코올 섭취 : 알코올은 젖산 대사에 대해 메트포르민이 미치는 영향을 증대시킨다고 알려져 있다. 따라서 이 약을 투여하는 동안 급성 또는 만성적인 알코올의 과량섭취는 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "fb7f082b18",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 18)",
+   "subject": "",
+   "excerpt": "저혈당 : 저혈당은 일반적인 사용 환경 하에서 메트포르민을 단독 투여한 환자에서는 나타나지 않으나, 열량 섭취가 불충분한 경우, 격렬한 운동이 열량 섭취로 보충되지 못한 경우나 다른 혈당강하제(설포닐우레아, 인슐린, 메글리티나이드계 등) 또는 알코올을 병용 투여하는 경우에 발생한다. 특히 고령자, 쇠약하거나 영양 불균형인 환자, 부신이나 뇌하수체 부전 환자 또는 알코올 중독자인 경우 저혈당이…",
+   "extractor": "kw-v4",
+   "id": "e9a3d098e0",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "흡연, 식이, 천연물 의약품 및 알코올이 다파글리플로진의 약동학에 미치는 영향은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "ab8e18c62d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (2)",
+   "subject": "- 혈당강하 작용을 감약시키는 약제",
+   "excerpt": "알코올: 특히 다음과 같은 환경에서 급성 알코올 중독기에 유산산증의 위험성이 증가된다.",
+   "extractor": "kw-v4",
+   "id": "23f124b4b5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "- 간장애",
+   "excerpt": "음주 및 알코올이 포함되어 있는 약물의 복용을 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "83c1074d1e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부 및 수유부를 대상으로 이 약으로 한 적절한 임상시험 결과는 없으므로 임신 또는 수유 중 이 약의 사용은 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "60f6f54232",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "개별 성분에 대한 정보는 다음과 같다.",
+   "extractor": "kw-v4",
+   "id": "545ab20305",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부:",
+   "extractor": "kw-v4",
+   "id": "d5a0916226",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "다파글리플로진 : 임신한 여성을 대상으로 다파글리플로진을 투여한 자료는 없다. 랫트에 대한 연구 결과 사람의 임신 2기와 3기에 해당하는 기간에 신장 발달에 대한 독성을 나타내었다. 임부에서의 다파글리플로진의 사용은 권장되지 않는다. 임신이 확인되면, 다파글리플로진의 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "903cd88cd5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다파글리플로진이 사람의 생식능에 미치는 영향은 연구되지 않았다. 수컷과 암컷 랫트에서 다파글리플로진은 연구된 어떤 용량에서도 생식능에 영향을 나타내지 않았다.",
+   "extractor": "kw-v4",
+   "id": "ab528efbf1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "시타글립틴 : 임신한 여성을 대상으로 한 대조시험 결과가 없으므로 임부에서의 사용은 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "081879c410",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "메트포르민 : 임신 전후기(periconceptional phase)와 임신 중 조절되지 않은 고혈당은 선천성 이상, 유산, 임신으로 인한 고혈압, 자간전증 및 주산기 사망률 증가의 위험과 관련이 있다. 임신 중 고혈당과 관련된 위험을 줄이기 위해 임신 기간 동안 혈당 수치를 가능한 한 정상에 가깝게 유지하는 것이 중요하다.",
+   "extractor": "kw-v4",
+   "id": "6a892f9ffc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "메트포르민은 태반을 통과하며 태반 통과 수준은 모체에서의 농도만큼 높을 수 있다.",
+   "extractor": "kw-v4",
+   "id": "5f33a66824",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신전후기(periconceptional phase) 및 임신 중 메트포르민 사용에 대한 다양한 연구(임상연구, 레지스터 기반 코호트 연구, 메타 분석 등)로부터 확인된 데이터(1000건 이상의 노출 결과)에 따르면, 임신 전후기(periconceptional phase) 및/또는 임신 중 메트포르민 노출로 인한 선천성 이상 및/또는 태아/신생아 독성 위험 증가는 확인되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "22639ffc30",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "자궁 내 메트포르민에 노출된 출생아는 재태 연령에 비해 작을 수 있다. 출생아의 장기적 체중 결과에 및 대사합병증에 미치는 메트포르민의 영향에 대한 증거는 제한적이다. 최대 4세까지의 운동-사회성 발달에는 영향을 미치지 않는 것으로 보이나, 4세 이후에 대한 결과는 제한적이다.",
+   "extractor": "kw-v4",
+   "id": "323ea3ca2f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 예정이거나 임신 중 혈당조절을 목적으로 임상적으로 필요한 경우 인슐린에 추가 또는 대안으로서 메트포르민의 사용을 고려할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "8ed70ce243",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "그러나, 태반 기능 부전, 자간전증, 자궁 내 성장지연의 위험도가 있는 임부의 경우 메트포르민으로 치료를 시작하지 않는다. 출생 체중 감소를 방지하기 위해 태아 발달을 면밀히 모니터링 해야 하며, 만약 태아의 성장 지연이 확인되면 메트포르민의 투여를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "81cb359d8a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "0b81e82934",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "다파글리플로진 : 다파글리플로진 및 그 대사체가 인체 유즙으로 이행되는지 여부는 알려져 있지 않다. 동물에 대한 약력학/독성학 자료에 따르면 유즙으로 다파글리플로진/대사체가 분비되며, 수유를 받는 새끼에서 약리학적으로 매개된 영향도 나타났다. 신생아/영아에 대한 위험성을 배제할 수 없다. 다파글리플로진은 수유 중 사용해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "a7873c70b0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "시타글립틴 : 시타글립틴은 랫드에서 유즙과 혈장에 4:1의 비율로 분비되는 것으로 보고되었으므로 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "06bcc41e95",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "메트포르민 : 메트포르민은 모유로 분비되며 메트포르민에 대한 신생아/유아에서의 이상반응은 보고되지 않았다. 그러나 보고된 연구결과가 제한적이므로, 메트포르민으로 치료 중 수유는 권장되지 않는다. 수유의 유익성, 수유부에 대한 약물의 중요성 및 유아에서의 이상반응의 잠재적 위험성을 고려하여, 수유를 중단할 것인지 약물 치료를 중단할 것인지 결정하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "bc34570344",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 일반적으로 노화로 인해 간장, 신장 기능 등 생리기능이 저하되어 있으며 신기능 변화를 일으킬 가능성이 높은 약물(예. 안지오텐신 전환 효소 저해제(ACE-I) 및 안지오텐신II 수용체 저해제(ARB)와 같은 신기능 변화를 일으킬 수 있는 항고혈압제)을 복용하고 있을 가능성이 높다. 고령 환자들은 체액량 감소의 위험이 더 높을 수 있고, 이뇨제를 투여하고 있을 가능성이 더 높다. 고령…",
+   "extractor": "kw-v4",
+   "id": "436e082a86",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 중 시타글립틴은 대체로 신장으로 배설되므로, 고령자에서 용량 선정 시 주의가 필요하다. 메트포르민의 용량은 환자의 신기능에 근거하여 적절한 혈당조절 효과를 얻을 수 있는 최소 용량으로 설정되어야 하며(용법·용량 중 신장애 환자 항 참조), 일반적으로 고령자에게는 최대 용량을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "fce09178fd",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 이 약 투여 전 및 투여 후 신장기능 및 체액량 상태를 평가하는 것이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "802f2bc2c8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "35034f8a60",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 메트포르민염산염으로 인한 위장관계 이상반응을 줄이기 위해서 식사와 함께 1일 1회 되도록 저녁 시간에 복용하며, 메트포르민염산염의 용량 조절이 필요한 경우 단계적으로 용량을 조절한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

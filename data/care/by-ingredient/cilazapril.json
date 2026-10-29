@@ -1,0 +1,75 @@
+{
+ "ingredient": "cilazapril",
+ "productSeq": "199300655",
+ "itemName": "제일실라자프릴정0.5밀리그램(실라자프릴수화물)",
+ "atc": "C09AA08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250304",
+ "ediCode": "645401360",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300655/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300655/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199300655/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 13)",
+   "subject": "",
+   "excerpt": "드물게 혈압강하가 증상적으로 나타날 수 있다. 특히 치료 시작시 혹은 용량 증가시 졸음과 피로, 어지럼이 나타날 수 있다. 따라서 이 약물 투여시, 특히 약물 투여 초기 또는 다른 약물로 전환할 경우, 또는 알코올과 병용할 경우, 운전, 도로횡단, 기계조작 능력 등이 영향을 받을 수 있다.",
+   "extractor": "kw-v4",
+   "id": "d6d114dd95",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 2 ∼ 3기 사이에 ACE억제제(레닌-안지오텐신-알도스테론계(RAAS)에 작용하는 특정 약물군)에 노출된 임부에서 태아 및 신생아의 저혈압, 고칼륨혈증, 신생아 두개골 발육부전, 요감소 그리고/혹은 무뇨증, 가역적 또는 비가역적인 신부전, 자궁내 성장 지체 및 사망을 포함하여 태아 및 신생아 손상과 연관성이 있었다. 태아 신기능 감소 때문인 것으로 추측된 양수과소증이 보고 되었고, 양수…",
+   "extractor": "kw-v4",
+   "id": "c289d9cf11",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "다른 ACE억제제의 동물실험에서 유즙 중으로 분비하는 경우가 인정되므로 수유중의 여성에게는 투여를 피하는 것이 바람직하지만, 부득이하게 투여하는 경우에는 수유를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "cc25e9eabe",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에 사용하는 경우에는 저용량부터 시작하고, 관찰을 충분히 하는 등 신중히 투여하는 것이 바람직하다. 고령자는 치료 시작 전에 신기능 검사 및 혈중 칼륨 농도 검사를 실시한다. 환자의 혈압 변화 및 약물 반응 상태에 따라 용량을 조절하며, 혈중 나트륨 저하 증상을 보일 경우 급격한 혈압강하를 방지하기 위해 특별히 신중을 기하여 용량을 조절한다.",
+   "extractor": "kw-v4",
+   "id": "471b59a0c3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:10",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,95 +1,149 @@
 {
-  "ingredient": "enzalutamide",
-  "productSeq": "202600792",
-  "itemName": "엔자론연질캡슐40밀리그램(엔잘루타마이드)",
-  "atc": "L02BB04",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600792/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600792/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600792/NB"
-  },
-  "rules": [
+ "ingredient": "enzalutamide",
+ "productSeq": "202600792",
+ "itemName": "엔자론연질캡슐40밀리그램(엔잘루타마이드)",
+ "atc": "L02BB04",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "643509100",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600792/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600792/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600792/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "다른 약물들에 대한 이 약의 영향: 이 약은 사람에게 CYP3A4의 강력한 유도제이며 CYP2C9 및 CYP2C19의 중등도 유도제이다. 정상 상태에서 이 약은 미다졸람(CYP3A4의 기질), 와파린(CYP2C9의 기질) 및 오메프라졸(CYP2C19의 기질)의 혈중 노출을 감소시킨다. 이 약은 CYP3A4, CYP2C9, CYP2C19로 대사되는 치료 영역이 좁은 약물들의 노출을 감소시킬 수…",
+   "extractor": "kw-v4",
+   "id": "02b904b2cb",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "0193bcad7c",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 5)",
-      "subject": "&#x2022; 강심 배당체 (예: 디곡신)",
-      "matched": [
-        {
-          "key": "caffeine",
-          "kind": "food",
-          "ko": "카페인·커피",
-          "surface": "카페인"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "CYP1A2 및 CYP2C8의 기질: 이 약은 카페인(CYP1A2의 기질) 및 피오글리타존(CYP2C8의 기질)의 혈중 농도에 임상적으로 의미 있는 변화를 일으키지 않았다. 피오글리타존의 AUC가 20% 증가한 반면, Cmax는 18% 감소하였다. 카페인의 AUC와 Cmax는 각각 11%와 4%만큼 감소하였다. CYP1A2 또는 CYP2C8 기질이 이 약과 병용 투여될 때는 용량 조절이 필요…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "dc7628d837",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부: 이 약은 복용 시 태아에 유해하거나 유산을 초래할 가능성이 있다. 이 약은 여성에게 투여하지 않는다. 동물 시험에서 기관 형성(organogenesis) 시기 동안 임신 중인 마우스를 대상으로 이 약을 경구 투여했을 때 사람에 대한 투여 용량보다 낮은 용량에서 발달 장애가 발생하였다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "00124a2341",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부: 이 약은 여성에게 투여하지 않는다. 이 약이 사람의 모유로 분비되는지 여부는 알려져 있지 않다. 이 약 및 그 약의 대사체는 랫드의 모유를 통해 배출된다. 수유부에게는 이 약을 사용하지 않는다. 수유 중인 랫드의 모유에는 이 약 및 그 대사산물이 존재하였다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b035a5964d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 ①",
-      "subject": "3) 생식",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "남성 피임: 동물 생식 연구의 결과에 따라 가임 여성 파트너가 있는 남성 환자들에게 이 약의 치료기간과 최종 투약 후 3개월 동안 효과적인 피임법을 사용하여 피임해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "789ba017d7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 ②",
-      "subject": "3) 생식",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "남성 불임: 동물 연구에 따르면, 이 약은 남성의 수태능을 손상시킬 수 있다",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fbbe3cc62d",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에서 용량 조절은 필요하지 않다. 통제된 임상 시험에서 이 약을 투여 받은 5,110명의 환자 중, 3,998명(78%)는 65세 이상이었으며, 1,703명(33%)는 75세 이상이었다. 이러한 환자들과 젊은 환자들 사이에 전반적인 안전성과 유효성의 차이는 확인되지 않았다.",
-      "extractor": "kw-v1"
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:14:28"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "&#x2022; 강심 배당체 (예: 디곡신)",
+   "excerpt": "&#x2022; 양성자 펌프 억제제 (예: 오메프라졸)",
+   "extractor": "kw-v4",
+   "id": "03a9a7177a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 5)",
+   "subject": "&#x2022; 강심 배당체 (예: 디곡신)",
+   "excerpt": "CYP1A2 및 CYP2C8의 기질: 이 약은 카페인(CYP1A2의 기질) 및 피오글리타존(CYP2C8의 기질)의 혈중 농도에 임상적으로 의미 있는 변화를 일으키지 않았다. 피오글리타존의 AUC가 20% 증가한 반면, Cmax는 18% 감소하였다. 카페인의 AUC와 Cmax는 각각 11%와 4%만큼 감소하였다. CYP1A2 또는 CYP2C8 기질이 이 약과 병용 투여될 때는 용량 조절이 필요…",
+   "extractor": "kw-v4",
+   "id": "5f53abf8d3",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부: 이 약은 복용 시 태아에 유해하거나 유산을 초래할 가능성이 있다. 이 약은 여성에게 투여하지 않는다. 동물 시험에서 기관 형성(organogenesis) 시기 동안 임신 중인 마우스를 대상으로 이 약을 경구 투여했을 때 사람에 대한 투여 용량보다 낮은 용량에서 발달 장애가 발생하였다.",
+   "extractor": "kw-v4",
+   "id": "6ea385a4fa",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부: 이 약은 여성에게 투여하지 않는다. 이 약이 사람의 모유로 분비되는지 여부는 알려져 있지 않다. 이 약 및 그 약의 대사체는 랫드의 모유를 통해 배출된다. 수유부에게는 이 약을 사용하지 않는다. 수유 중인 랫드의 모유에는 이 약 및 그 대사산물이 존재하였다.",
+   "extractor": "kw-v4",
+   "id": "79fae227ad",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "생식",
+   "extractor": "kw-v4",
+   "id": "be9c4584b7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 ①",
+   "subject": "",
+   "excerpt": "남성 피임: 동물 생식 연구의 결과에 따라 가임 여성 파트너가 있는 남성 환자들에게 이 약의 치료기간과 최종 투약 후 3개월 동안 효과적인 피임법을 사용하여 피임해야 한다.",
+   "extractor": "kw-v4",
+   "id": "3d55eaae1d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 ②",
+   "subject": "",
+   "excerpt": "남성 불임: 동물 연구에 따르면, 이 약은 남성의 수태능을 손상시킬 수 있다",
+   "extractor": "kw-v4",
+   "id": "14f0644c5a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 용량 조절은 필요하지 않다. 통제된 임상 시험에서 이 약을 투여 받은 5,110명의 환자 중, 3,998명(78%)는 65세 이상이었으며, 1,703명(33%)는 75세 이상이었다. 이러한 환자들과 젊은 환자들 사이에 전반적인 안전성과 유효성의 차이는 확인되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "da990f0de8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

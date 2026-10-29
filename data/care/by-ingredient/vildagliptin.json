@@ -1,76 +1,140 @@
 {
-  "ingredient": "vildagliptin",
-  "productSeq": "201908042",
-  "itemName": "빌다틴정50밀리그램(빌다글립틴)",
-  "atc": "A10BH02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20241001",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908042/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908042/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908042/NB"
+ "ingredient": "vildagliptin",
+ "productSeq": "201908042",
+ "itemName": "빌다틴정50밀리그램(빌다글립틴)",
+ "atc": "A10BH02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20241001",
+ "ediCode": "053601510",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908042/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908042/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201908042/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "a8220993d6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "5e59e5c054",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여",
-      "subject": "1) 임부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 적절한 연구 결과가 없다. 동물시험 결과, 고용량에서 생식독성을 나타내었다. 사람에서의 잠재적 위험은 알려진 바가 없다. 사람에서의 결과가 부족하기 때문에 이 약을 임산부에 사용해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "870d300bc7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여",
-      "subject": "2) 수유부에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "빌다글립틴이 사람 모유에 분비되는지 알려지지 않았다. 동물시험에서 빌다글립틴이 유즙으로 분비되는 것으로 알려졌기 때문에 이 약을 수유부에게 사용해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7ef159ca31",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여",
-      "subject": "3) 수태능",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 인간 수태능에 미치는 영향에 대한 연구는 진행되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0c1debfd30",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여",
-      "subject": "4) 고령자(65세 이상)에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에서 용량 조절은 필요하지 않다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6f066e32ce",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여",
-      "subject": "5) 소아에 대한 투여",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 18세 미만의 소아 및 청소년에서의 안전성 및 유효성이 확립되어있지 않으므로, 이 약의 사용은 권장되지 않는다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:15:57"
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 적절한 연구 결과가 없다. 동물시험 결과, 고용량에서 생식독성을 나타내었다. 사람에서의 잠재적 위험은 알려진 바가 없다. 사람에서의 결과가 부족하기 때문에 이 약을 임산부에 사용해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "bc2e763333",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "c83166a9ad",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "빌다글립틴이 사람 모유에 분비되는지 알려지지 않았다. 동물시험에서 빌다글립틴이 유즙으로 분비되는 것으로 알려졌기 때문에 이 약을 수유부에게 사용해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "0cfe5f0f73",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "892a1d7b37",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 인간 수태능에 미치는 영향에 대한 연구는 진행되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "5da1086e96",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "고령자(65세 이상)에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "0fd922bd2f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 용량 조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "c4517d8012",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "소아에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "893a31eda4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부, 수유부, 고령자 및 소아에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약은 18세 미만의 소아 및 청소년에서의 안전성 및 유효성이 확립되어있지 않으므로, 이 약의 사용은 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "f552e9e1c9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

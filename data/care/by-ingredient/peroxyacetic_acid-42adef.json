@@ -1,0 +1,19 @@
+{
+ "ingredient": "peroxyacetic acid",
+ "productSeq": "202107876",
+ "itemName": "페라스텔멀티샷액(과아세트산4%)",
+ "atc": "V07AV",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240130",
+ "ediCode": "056900040",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107876/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107876/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202107876/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-30T00:23:08",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

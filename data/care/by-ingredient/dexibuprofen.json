@@ -1,0 +1,75 @@
+{
+ "ingredient": "dexibuprofen",
+ "productSeq": "201404202",
+ "itemName": "덱스론정400밀리그램(덱시부프로펜 디.씨.)",
+ "atc": "M01AE14",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260102",
+ "ediCode": "628900160",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201404202/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201404202/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201404202/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 1)",
+   "subject": "",
+   "excerpt": "매일 3잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 위장출혈이 유발될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "d0f14daabe",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "consult",
+   "where": "5. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 9)",
+   "subject": "",
+   "excerpt": "고령자(이상반응이 나타나기 쉬우므로 소량부터 투여를 개시하고 필요한 최소량으로 투여하며, 이상반응의 발현에 특히 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.)",
+   "extractor": "kw-v4",
+   "id": "e6d1c6202f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "6. 다음과 같은 경우 이 약의 복용을 즉시 중지하고 의사, 치과의사, 약사와 상의할 것. 상담시 가능한한 이 첨부문서를 소지할 것. 12)",
+   "subject": "",
+   "excerpt": "심혈관계 : 말초부종이 나타날 수 있고, 심부전이 있는 환자의 경우 급성 폐부종의 위험이 증가할 수 있다. 또한 고혈압이나 신부전 환자는 체액저류가 나타날 수 있다. 특히 고령자에게서 고혈압이나 심부전이 나타날 수 있다. 빈도 불명의 코니스 증후군이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "8662d721e9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 약 20주 이후 이 약을 포함한 비스테로이드성 소염제(NSAIDs)의 사용은 태아 신기능 이상을 일으켜 양수 과소증을 유발할 수 있으며 경우에 따라서는 신생아 신장애를 일으킬 수 있다. 비스테로이드성 소염제(NSAIDs) 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되었지만 이러한 부작용은 평균적으로 투여 후 수일에서 수주 사이에 나타난다. 양수 과소증은 보통 투여 중단 시…",
+   "extractor": "kw-v4",
+   "id": "2c01673e60",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:29:16",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

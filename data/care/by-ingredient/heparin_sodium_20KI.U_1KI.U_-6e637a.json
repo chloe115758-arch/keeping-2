@@ -1,0 +1,106 @@
+{
+ "ingredient": "heparin sodium 20KI.U(1KI.U)",
+ "productSeq": "198500112",
+ "itemName": "중외헤파린나트륨주사액1000아이유",
+ "atc": "B01AB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20221221",
+ "ediCode": "644903601",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500112/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500112/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198500112/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 3)",
+   "subject": "",
+   "excerpt": "벤질알콜은 조숙아에게서 치명적인 가쁜 호흡증상과 연관이 있는 것으로 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "f4becb89c3",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에는 투여하지 말 것. 4)",
+   "subject": "",
+   "excerpt": "출혈 가능성이 있는 환자 : 내장 종양, 소화관 게실염, 대장염, 아급성세균성심내막염, 중증 고혈압증, 활성화된 결핵, 중증 당뇨병, 동맥경화증, 음주 과다, 모세관의 투과성증가, 황달 환자 등",
+   "extractor": "kw-v4",
+   "id": "a07f45fb14",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대한 안전성이 확립되어 있지 않다. 임부 및 임신하고 있을 가능성이 있는 여성에게 이 약을 투여할 때에는 자궁과 태반의 출혈위험 때문에 특히 출산 시에는 특별한 주의가 필요하다. 경막외 마취가 고려된다면 헤파린투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "037c0788c8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "헤파린은 모유로 분비되지 않고 소화관장벽도 통과하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "2a98da3091",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약은 벤질알콜을 함유하고 있다. 벤질알콜은 태반을 통과할 수 있고, 모유로 이동할 수 있으므로 임부 및 수유부에게 투여를 주의한다.",
+   "extractor": "kw-v4",
+   "id": "610add8acc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 출혈의 위험이 높을 수 있으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "0b184920ea",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:48",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

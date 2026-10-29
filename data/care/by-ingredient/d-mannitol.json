@@ -1,0 +1,56 @@
+{
+ "ingredient": "d-mannitol",
+ "productSeq": "199101335",
+ "itemName": "이노엔15%만니톨주사액",
+ "atc": "B05BC01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200403",
+ "ediCode": "640001181",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101335/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101335/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101335/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "e49965ee21",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "만니톨이 사람의 유즙으로 분비되는지 여부는 알려져 있지 않다. 많은 약물이 사람의 유즙으로 배설되므로 이약을 수유부에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "59a2aab65a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "만니톨은 신장에 의해 배설되는 것으로 알려져 있으며, 이 약물에 대한 부작용의 위험은 신기능이 손상된 고령환자에서 더 클 수 있다. 이 약을 투여하기 전에 환자의 신장, 심장 및 폐 상태 및 정확한 체액 및 전해질 불균형을 평가한다.",
+   "extractor": "kw-v4",
+   "id": "6c360c39dc",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:30:49",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

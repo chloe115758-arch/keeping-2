@@ -1,52 +1,56 @@
 {
-  "ingredient": "limaprost α-cyclodextrin",
-  "productSeq": "202003349",
-  "itemName": "리마케어정(리마프로스트알파덱스)",
-  "atc": "B01AC28",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003349/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003349/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003349/NB"
+ "ingredient": "limaprost α-cyclodextrin",
+ "productSeq": "202003349",
+ "itemName": "리마케어정(리마프로스트알파덱스)",
+ "atc": "B01AC28",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "057600720",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003349/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003349/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003349/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "d6ef1608c3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "50ee5ea07f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "50e359ee8b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(임신한 원숭이ㆍ랫트에 정맥주사)에서 자궁수축작용이 보고되어 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2ff79e2a37",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "7. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:05:17"
+  {
+   "section": "pregnancy",
+   "where": "5. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험(임신한 원숭이ㆍ랫트에 정맥주사)에서 자궁수축작용이 보고되어 있다.",
+   "extractor": "kw-v4",
+   "id": "6fc3990912",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "6309bd90f4",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

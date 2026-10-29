@@ -1,131 +1,216 @@
 {
-  "ingredient": "aspirin + clopidogrel bisulfate",
-  "productSeq": "201111149",
-  "itemName": "클로스원캡슐",
-  "atc": "B01AC30",
-  "etcOtc": "전문의약품",
-  "changeDate": "20230908",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201111149/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201111149/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201111149/NB"
-  },
-  "rules": [
+ "ingredient": "aspirin + clopidogrel bisulfate",
+ "productSeq": "201111149",
+ "itemName": "클로스원캡슐",
+ "atc": "B01AC30",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230908",
+ "ediCode": "640006170",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201111149/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201111149/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201111149/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 4)",
+   "subject": "",
+   "excerpt": "매일 세잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 위장출혈이 유발될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "716920a940",
+   "kind": "note",
+   "matched": [
     {
-      "id": "26d64a67ec",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (10)",
-      "subject": "2) 아스피린",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "알코올: 아스피린과 병용 투여 시 위장관 점막 손상이 증가하고, 살리실산과 알코올의 상승효과로 인해 출혈시간이 연장된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5936abd821",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "임부 : 이 약의 임부에의 노출에 대한 임상적인 자료는 없다. 임신 제3기에는 이 약을 투여해서는 안된다. (2. 다음 환자에는 투여하지 말 것 항 참조) 임신 1기, 2기에는 의사의 판단에 의거하여 치료상의 유익성이 위험성을 상회하는 경우에만 투여한다. (3. 다음 환자에는 신중히 투여할 것 항 참조)",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d86df28c1a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "양수 과소증의 위험 때문에 임신 약 20주~30주 사이에 이 약이 필요한 경우, 의료 감독하에 관리해야 하며 이 약의 사용을 가능한 가장 최소 유효 용량과 최단 기간으로 제한해야 한다. 양수의 초음파 모니터링을 고려한다. 양수 과소증이 발생하면 이 약을 중단하고 진료 지침에 따라 추적관찰한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "85ce81c41f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "(1) 클로피도그렐",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "랫트와 토끼에게 이 약을 500 및 300mg/kg/day 용량까지(각각 인체 치료용량의 65배, 78배) 투여한 생식독성시험에서 수태능 이상 또는 태자 독성은 나타나지 않았다. 임부에 클로피도그렐 사용 관련 문헌 또는 시판 후 사례보고 자료에서 주요 출생결함이나 유산 관련 위험은 확인되지 않았다. 심근경색과 뇌졸중은 응급질환이므로 태아에 대한 잠재적 영향을 고려하여 치료를 유보해서는 안 된…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "52cd5a70a5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "(1) 클로피도그렐",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "분만 중 클로피도그렐의 사용은 임산부의 출혈 위험을 높일 수 있다. 척추혈종의 위험이 있으므로 클로피도그렐 사용 중 신경축 차단을 피해야 한다. 가능할 경우 분만 또는 신경축 차단 5~7일 전에 클로피도그렐의 투여를 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "bed9672aa5",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "(2) 아스피린",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "가. 동물 실험에서 기형 발생이, 사람에는 임신 말기에 투여한 환자와 신생아에서 출혈 이상이 나타났다는 보고가 있으므로 임부(12주 이내 또는 임신 말기) 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "749eb394f3",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "(2) 아스피린",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "나. 임신 말기의 랫트에 투여한 실험에서 태자의 동맥관 수축이 보고되어 있다.다. 양수 과소증/신생아 신장애(renal impairment)임신 약 20주 또는 임신 후반에서 이 약을 포함한 NSAIDs의 사용은 태아 신기능 이상을 일으켜 양 수 과소증을 유발할 수 있으며, 경우에 따라서는 신생아 신장애를 일으킬 수 있다. NSAID 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f90a45e5f9",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "(2) 아스피린",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부 : 클로피도그렐이 인체의 모유로 분비되는 지에 대해서는 알려진 바 없지만 랫트를 대상으로 한 시험에서 클로피도그렐 및/또는 그 대사체는 모두 랫트의 유즙으로 분비되었고, 아스피린은 유즙으로의 이행이 일어나므로 이 약을 수유부에게 투여해서는 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "111524bf78",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "10. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에는 이상반응이 나타나기 쉬우므로 환자의 상태를 관찰하면서 투여한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "술"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:15:16"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 15)",
+   "subject": "",
+   "excerpt": "음주: 아스피린 복용 시 알콜은 위장관 손상의 위험을 증가시킬 수 있으므로 주의해야 한다. 이 약을 복용하는 동안에 장기적으로 심한 음주와 관련된 출혈 위험이 있음을 주지시켜야 한다.",
+   "extractor": "kw-v4",
+   "id": "5bea8cbe66",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "나. CYP2C19 저해제: 클로피도그렐은 부분적으로 CYP2C19를 통해 활성 대사체로 대사되므로, CYP2C19의 활성을 저해하는 약물과 병용 투여할 경우 클로피도그렐의 활성 대사체의 약물 농도가 낮아질 수 있다. 이러한 상호작용의 임상적 관련성은 확실하지 않다. 이 약을 CYP2C19 저해제와 병용하는 것은 권장되지 않는다. (CYP2C19 저해제 예: 오메프라졸, 에스오메프라졸, 플루…",
+   "extractor": "kw-v4",
+   "id": "4642a5b822",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (10)",
+   "subject": "",
+   "excerpt": "알코올: 아스피린과 병용 투여 시 위장관 점막 손상이 증가하고, 살리실산과 알코올의 상승효과로 인해 출혈시간이 연장된다.",
+   "extractor": "kw-v4",
+   "id": "9eb974cec5",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 이 약의 임부에의 노출에 대한 임상적인 자료는 없다. 임신 제3기에는 이 약을 투여해서는 안된다. (2. 다음 환자에는 투여하지 말 것 항 참조) 임신 1기, 2기에는 의사의 판단에 의거하여 치료상의 유익성이 위험성을 상회하는 경우에만 투여한다. (3. 다음 환자에는 신중히 투여할 것 항 참조)",
+   "extractor": "kw-v4",
+   "id": "0b00c84a89",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "양수 과소증의 위험 때문에 임신 약 20주~30주 사이에 이 약이 필요한 경우, 의료 감독하에 관리해야 하며 이 약의 사용을 가능한 가장 최소 유효 용량과 최단 기간으로 제한해야 한다. 양수의 초음파 모니터링을 고려한다. 양수 과소증이 발생하면 이 약을 중단하고 진료 지침에 따라 추적관찰한다.",
+   "extractor": "kw-v4",
+   "id": "dd818c7c54",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "클로피도그렐",
+   "extractor": "kw-v4",
+   "id": "10acf73a89",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "랫트와 토끼에게 이 약을 500 및 300mg/kg/day 용량까지(각각 인체 치료용량의 65배, 78배) 투여한 생식독성시험에서 수태능 이상 또는 태자 독성은 나타나지 않았다. 임부에 클로피도그렐 사용 관련 문헌 또는 시판 후 사례보고 자료에서 주요 출생결함이나 유산 관련 위험은 확인되지 않았다. 심근경색과 뇌졸중은 응급질환이므로 태아에 대한 잠재적 영향을 고려하여 치료를 유보해서는 안 된…",
+   "extractor": "kw-v4",
+   "id": "f6357455ec",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "분만 중 클로피도그렐의 사용은 임산부의 출혈 위험을 높일 수 있다. 척추혈종의 위험이 있으므로 클로피도그렐 사용 중 신경축 차단을 피해야 한다. 가능할 경우 분만 또는 신경축 차단 5~7일 전에 클로피도그렐의 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "8483524042",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "아스피린",
+   "extractor": "kw-v4",
+   "id": "97ea9166bc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가. 동물 실험에서 기형 발생이, 사람에는 임신 말기에 투여한 환자와 신생아에서 출혈 이상이 나타났다는 보고가 있으므로 임부(12주 이내 또는 임신 말기) 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우 투여한다.",
+   "extractor": "kw-v4",
+   "id": "6380512a83",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "나. 임신 말기의 랫트에 투여한 실험에서 태자의 동맥관 수축이 보고되어 있다.다. 양수 과소증/신생아 신장애(renal impairment)임신 약 20주 또는 임신 후반에서 이 약을 포함한 NSAIDs의 사용은 태아 신기능 이상을 일으켜 양 수 과소증을 유발할 수 있으며, 경우에 따라서는 신생아 신장애를 일으킬 수 있다. NSAID 개시 후 48시간 이내에 양수 과소증이 흔하지 않게 보고되…",
+   "extractor": "kw-v4",
+   "id": "ba9835dedc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 클로피도그렐이 인체의 모유로 분비되는 지에 대해서는 알려진 바 없지만 랫트를 대상으로 한 시험에서 클로피도그렐 및/또는 그 대사체는 모두 랫트의 유즙으로 분비되었고, 아스피린은 유즙으로의 이행이 일어나므로 이 약을 수유부에게 투여해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "71adad0192",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에는 이상반응이 나타나기 쉬우므로 환자의 상태를 관찰하면서 투여한다.",
+   "extractor": "kw-v4",
+   "id": "f9f641eab7",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

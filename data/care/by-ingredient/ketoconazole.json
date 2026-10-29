@@ -1,0 +1,56 @@
+{
+ "ingredient": "ketoconazole",
+ "productSeq": "199301086",
+ "itemName": "태극케토코나졸크림",
+ "atc": "D01AC08",
+ "etcOtc": "일반의약품",
+ "changeDate": "20200528",
+ "ediCode": "644802391",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199301086/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199301086/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199301086/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "랫트를 대상으로 한 생식실험에서 임신전, 임신초기, 태자의 기관형성기, 출산전후 및 수유기에 1일 10, 20, 40, 80mg/kg을 경구투여한 경우 40mg/kg이상에서 투여군의 교미율과 수태율의 저하, 구개열, 절치개존 등의 기형발생작용, 신생자 사망등이 인정되었다. 이 실험에서 무독한 최대용량은 10mg/kg으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "68b72804ea",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험에서 경구투여한 경우 기형발생작용이 보고되었으나 피부로 거의 흡수되지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인 및 수유부에는 치료상의 유익성이 위험성보다 크다고 판단되는 경우에만 이 약을 투여한다.",
+   "extractor": "kw-v4",
+   "id": "7b10401076",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임부 또는 수유부에 대하여 적절한 잘 관리된 연구는 없다. 임부 및 수유부에서 이 약의 사용과 관련된 위험성은 알려진 바 없다.",
+   "extractor": "kw-v4",
+   "id": "3f676dd6ae",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:14",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

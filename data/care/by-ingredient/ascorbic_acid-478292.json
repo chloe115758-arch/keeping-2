@@ -1,108 +1,112 @@
 {
-  "ingredient": "ascorbic acid",
-  "productSeq": "196900028",
-  "itemName": "대한아스코르브산주사액",
-  "atc": "A11GA01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20220314",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900028/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900028/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900028/NB"
-  },
-  "rules": [
+ "ingredient": "ascorbic acid",
+ "productSeq": "196900028",
+ "itemName": "대한아스코르브산주사액",
+ "atc": "A11GA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220314",
+ "ediCode": "645100733",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900028/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900028/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/196900028/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "살리실산염은 비타민 C의 백혈구와 혈소판으로의 흡수를 저해한다.",
+   "extractor": "kw-v4",
+   "id": "7f64c61110",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "660860067e",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "vitaminC",
-          "kind": "supplement",
-          "ko": "비타민 C",
-          "surface": "비타민 C"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "살리실산염은 비타민 C의 백혈구와 혈소판으로의 흡수를 저해한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "12d7a223d2",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 2)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "iron",
-          "kind": "supplement",
-          "ko": "철분제제",
-          "surface": "철분제"
-        },
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "아스피린, 흡연을 통한 니코틴, 알코올, 일부 식욕저해제, 철분제, 페니토인 및 일부 항전간제, 에스트로겐이 포함된 경구용 피임약, 테트라싸이클린계 항생제와의 병용은 이 약의 조직 탈포화작용(tissue desaturation)을 유도할 수 있으므로 병용을 피한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e1d2c9233b",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 투여 시 태아에 대한 위해성이나 생식능에 대한 효과는 밝혀지지 않았으므로 이 약의 투여로 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7e94d1097f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고용량 투여에 대한 태아의 영향이 밝혀지지 않았으므로 임신 중 이 약을 1 g 이상 복용하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9b9be8119f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중, 고용량을 투여할 경우, 신생아에게 괴혈병을 초래할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ddb5a25d07",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 유즙으로 이행되나 1일 상용량 투여 시, 영아에의 위험성에 대한 증거는 없다.",
-      "extractor": "kw-v1"
+     "key": "vitaminC",
+     "kind": "supplement",
+     "ko": "비타민 C",
+     "surface": "비타민 C"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:19:25"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "아스피린, 흡연을 통한 니코틴, 알코올, 일부 식욕저해제, 철분제, 페니토인 및 일부 항전간제, 에스트로겐이 포함된 경구용 피임약, 테트라싸이클린계 항생제와의 병용은 이 약의 조직 탈포화작용(tissue desaturation)을 유도할 수 있으므로 병용을 피한다.",
+   "extractor": "kw-v4",
+   "id": "8873efb12a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "iron",
+     "kind": "supplement",
+     "ko": "철분제제",
+     "surface": "철분제"
+    },
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 투여 시 태아에 대한 위해성이나 생식능에 대한 효과는 밝혀지지 않았으므로 이 약의 투여로 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "529071b1ca",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "고용량 투여에 대한 태아의 영향이 밝혀지지 않았으므로 임신 중 이 약을 1 g 이상 복용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "6bce35a17e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신 중, 고용량을 투여할 경우, 신생아에게 괴혈병을 초래할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "d041369366",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "이 약은 유즙으로 이행되나 1일 상용량 투여 시, 영아에의 위험성에 대한 증거는 없다.",
+   "extractor": "kw-v4",
+   "id": "9e20fe7174",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

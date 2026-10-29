@@ -1,0 +1,108 @@
+{
+ "ingredient": "ferric hydroxide polymaltose complex )",
+ "productSeq": "199901190",
+ "itemName": "헤모콤액(폴리말토오스수산화제이철착염)",
+ "atc": "B03AB05",
+ "etcOtc": "일반의약품",
+ "changeDate": "20160412",
+ "ediCode": "641702661",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199901190/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199901190/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199901190/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "3. 이 약을 복용하는 동안 다음의 약을 복용하지 말 것. 3)",
+   "subject": "",
+   "excerpt": "제산제",
+   "extractor": "kw-v4",
+   "id": "ecc40e3bdb",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "4. 이 약을 복용하는 동안 다음의 행위를 하지 말 것.",
+   "subject": "",
+   "excerpt": "녹차, 홍차 등 탄닌을 함유하는 차 및 우유ㆍ유제품은 복용중, 복용전후에는 피할 것.",
+   "extractor": "kw-v4",
+   "id": "8e27dc521d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "consult",
+   "where": "5. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사, 약사와 상의할 것. 12)",
+   "subject": "",
+   "excerpt": "철분 제제와 디포스폰산 염류, 티록신, 세프디니르 제제를 동시 복용하는 사람(이 제제들의 흡수가 감소되므로 일정한 시간 간격(2～3시간 이상)을 두고 복용할 것.)",
+   "extractor": "kw-v4",
+   "id": "cd93ba6d97",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "iron",
+     "kind": "supplement",
+     "ko": "철분제제",
+     "surface": "철분 제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "consult",
+   "where": "6. 다음과 같은 경우 이 약의 복용을 즉각 중지하고 의사, 치과의사, 약사와 상의할 것. 상담시 가능한 이 첨부문서를 소지할 것. 9)",
+   "subject": "",
+   "excerpt": "과량 투여로 인한 위장관 장애와 순환 부전을 수반한 허탈의 경우에는 구토를 시킨 후 탄산염과 우유를 복용시켜 위세척을 할 것.",
+   "extractor": "kw-v4",
+   "id": "89515e5409",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "우유"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "id": "f8ac84d066",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "◎ 식전, 식사 중 또는 식후에 복용한다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:20",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,92 @@
+{
+ "ingredient": "erythropoietin 8KI.U(10KI.U)",
+ "productSeq": "200702454",
+ "itemName": "에포카인프리필드주10000유니트/밀리리터(재조합인에리스로포이에틴)",
+ "atc": "B03XA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260519",
+ "ediCode": "640003001",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200702454/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200702454/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200702454/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "랫트를 대상으로 한 동물실험에서 1주일 용량으로 사람의 1주 용량의 20배를 투여했을 때 태자 체중의 감소, 골화 지연 및 사망률의 증가가 나타났다.",
+   "extractor": "kw-v4",
+   "id": "9022af662a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "토끼를 대상으로 한 동물실험에서 임신 6 ～ 18일 사이에 500 단위/kg의 높은 용량을 투여했을 때 이상반응이 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "d79cb1190b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로, 임부 또는 임신하고 있을 가능성이 있는 여성에게 투여하지 않는 것이 바람직하다. 그러나 투여해야만 할 경우에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "e60cad3630",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "이 약의 유즙으로의 이행여부가 확실하지 않으므로 수유부에 투여하지 않는 것이 바람직하다.",
+   "extractor": "kw-v4",
+   "id": "571b5f4fe3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "사람의 임신 및 수유기에 이 약을 투여한 적절한 임상경험은 없다.",
+   "extractor": "kw-v4",
+   "id": "47ecad5acb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 생리기능이 저하되어 있고 고혈압 등 순환기계 질환이 합병되는 경우가 많으므로 이 약 투여시 혈압 및 헤모글로빈 농도 또는 헤마토크리트치 등을 수회 측정하여 투여량 및 투여횟수를 적절히 조절한다.",
+   "extractor": "kw-v4",
+   "id": "9bd7823238",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:09",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

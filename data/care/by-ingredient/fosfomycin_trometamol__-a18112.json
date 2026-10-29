@@ -1,0 +1,75 @@
+{
+ "ingredient": "fosfomycin trometamol )",
+ "productSeq": "201803344",
+ "itemName": "마이포신산(포스포마이신트로메탐올)",
+ "atc": "J01XX01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220308",
+ "ediCode": "622803241",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803344/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803344/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201803344/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "제산제, 칼슘염의 병용투여 시에는 이 약의 치료효과와 혈장 및 요중의 농도가 저하될 수 있다.",
+   "extractor": "kw-v4",
+   "id": "77f7557330",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험 및 임부 대상 실험에서 기형발생은 나타나지 않았으나 요로감염이 있는 임부에게 투여할 때는 신중히 사용하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "35b0333dbc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유로 소량이 배설된다. 영아에 대한 정확한 연구 자료는 없지만 신중한 대책으로서 수유기에는 가능한 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "914bdabcc1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "a16303864f",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약 3g(역가)을 물 반 컵 또는 비알콜성 음료에 용해 후 공복 시(식사 전 2~3시간)복용하며, 가능하면 취침 전 방광이 빈 상태에서 복용한다.",
+   "meal": "공복",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:31",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,92 @@
+{
+ "ingredient": "magnesium sulfate",
+ "productSeq": "200100339",
+ "itemName": "대한황산마그네슘주사액10%",
+ "atc": "A12CC02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210930",
+ "ediCode": "645101091",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200100339/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200100339/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200100339/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "임부",
+   "excerpt": "자간증은 임부와 태아의 생명을 위협할 수 있으므로 자간증인 임부에 황산마그네슘을 투여한다.",
+   "extractor": "kw-v4",
+   "id": "522761d13f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "임부",
+   "excerpt": "마그네슘은 태반을 통과해 태아의 근육긴장저하증, 반사저하, 저혈압을 유발할 수 있다. 분만 중에 투여하면 신생아의 호흡저하를 유발할 수 있다. 임부에게 사용할 때는 태아의 심박수를 모니터링해야하며 분만 후 2시간 이내에는 사용하지 않아야 한다.",
+   "extractor": "kw-v4",
+   "id": "e663319355",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "임부",
+   "excerpt": "후향적 역학 연구 및 사례보고에서 황산마그네슘을 5~7일 이상 임부에 투여했을 때 태아의 저칼슘혈증, 골격탈회, 뼈감소증 및 기타 골격 부작용을 포함하는 태아 부작용이 보고되었다. 관찰된 부작용의 임상적 중요성은 알려져 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "6e23cc42a0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "임부",
+   "excerpt": "임신 중 황산마그네슘을 장기간 또는 반복적으로 투여한 경우 신생아에 대하여 비정상적인 칼슘 또는 마그네슘 수치를 모니터링하고 골격 부작용을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "7814b474b9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "수유부",
+   "excerpt": "수유 중 안전성이 확립되지 않았으므로 황산마그네슘이 필수적이지 않는 한 투여는 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "c76aeb35b3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "7. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 투여속도를 천천히 하고 감량하는 등 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "0c3b47b06d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:32:35",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

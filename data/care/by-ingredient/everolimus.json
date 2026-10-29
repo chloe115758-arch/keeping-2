@@ -1,181 +1,185 @@
 {
-  "ingredient": "everolimus",
-  "productSeq": "202004977",
-  "itemName": "에베로즈정2.5밀리그램(에베로리무스)",
-  "atc": "L01EG02",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260116",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202004977/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202004977/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202004977/NB"
-  },
-  "rules": [
+ "ingredient": "everolimus",
+ "productSeq": "202004977",
+ "itemName": "에베로즈정2.5밀리그램(에베로리무스)",
+ "atc": "L01EG02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260116",
+ "ediCode": "622701100",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202004977/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202004977/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202004977/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 4)",
+   "subject": "",
+   "excerpt": "구내염 : 구강 궤양과 구강 점막염을 포함하는 구내염은 이 약을 투여받은 환자들에서 가장 흔하게 보고되는 이상반응이다. (3. 이상반응 항 참조) 구내염은 대개 이 약의 투여 후 8주 이내에 발생한다. 구내염이 발생한 경우에 국소 치료가 권장되나, 알코올 또는 과산화수소, 요오드, 타임 함유 제품은 증세를 악화시킬 수 있으므로 사용을 피해야 한다(용법용량 3. 용량조정 항 참조). 진균 감염…",
+   "extractor": "kw-v4",
+   "id": "4632793a9e",
+   "kind": "note",
+   "matched": [
     {
-      "id": "97b66a6537",
-      "kind": "note",
-      "section": "warning",
-      "where": "1. 경고 4)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "구내염 : 구강 궤양과 구강 점막염을 포함하는 구내염은 이 약을 투여받은 환자들에서 가장 흔하게 보고되는 이상반응이다. (3. 이상반응 항 참조) 구내염은 대개 이 약의 투여 후 8주 이내에 발생한다. 구내염이 발생한 경우에 국소 치료가 권장되나, 알코올 또는 과산화수소, 요오드, 타임 함유 제품은 증세를 악화시킬 수 있으므로 사용을 피해야 한다(용법용량 3. 용량조정 항 참조). 진균 감염…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "26d3c2287e",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "4. 상호작용 ⑧",
-      "subject": "",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "자몽, 자몽 주스, 스타프루트, 세빌오렌지 및 cytochrome P450과 PgP 활성에 영향을 미치는 것으로 알려진 일부 다른 음식물은 이 약의 투여기간 중 피해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8bf3480bb9",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "4. 상호작용 ④",
-      "subject": "",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "St. John"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "에베로리무스의 대사를 증가시켜 혈중 농도를 감소시킬 수 있는 다른 강력한 CYP3A4 유도제로는 St. John's wort (Hypericum perforatum), 항전간제 (예: 카르바마제핀, 페노바르비탈, 페니토인), 항 HIV 제제 (예: 에파비렌즈, 네비라핀)이 있다. St. John's Wort (Hypericum perforatum)는 이 약의 노출을 예측할 수 없게 감소시키므…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "46d837f8c4",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부, 가임여성에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 : 임신 여성에서 이 약 사용에 대한 적절한 자료는 없다. 동물시험에서 배아독성과 태아독성을 포함한 생식독성이 나타났으나, 사람에 대한 잠재적 위험은 알려진 바 없다. 이 약의 투여시 잠재적 유익성이 태아에 대한 잠재적 위험성을 상회하지 않는다면 이 약은 임신여성에게 투여되어서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f68d4b17db",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부, 가임여성에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "에베로리무스는 태반을 통과하여 수태물에 독성을 나타냈다. 랫드에서, 에베로리무스는 치료적 수치 이하의 전신 노출에서 배자/태자 독성을 유발했다. 이는 사망률과 태자 체중 감소로 입증되었다. 골격근 변화와 기형 (예: 흉골열)의 발생률은 0.3 mg/kg과 0.9 mg/kg에서 증가하였다. 토끼에서, 배자독성은 후기 흡수에서의 증가가 명백하였다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3e21b98b2f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부, 가임여성에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부 : 에베로리무스가 사람의 모유 중으로 배출되는지 여부는 알려진 바 없다. 수유 중인 사람에서 에베로리무스에 노출된 것으로 보고된 사례는 없었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "aa6ac9abbd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부, 가임여성에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "그러나 동물시험에서 에베로리무스 그리고/또는 이의 대사체는 수유 랫드의 모유 중으로 쉽게 배출 되었으며 약물의 농도가 혈장보다 3.5배 높게 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "417850e7e1",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부, 가임여성에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "따라서 이 약을 복용하는 여성은 치료 기간 및 마지막 투여 후 2 주간 수유해서는 안 된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e13022102a",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부, 가임여성에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "피임 : 임신 가능성이 있는 여성은 이 약을 투여받는 동안 그리고 투약 종료 후 8주간 매우 효과적인 피임법(올바르게 사용하였을 때에 연 임신율 <1%인 방법)을 사용하도록 조언하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "cf85456137",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부, 가임여성에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "생식능력 : 남성 및 여성의 수태능은 에베로리무스 투여로 인해 영향을 받을 수 있다. 비임상 결과에 근거할 때, 수컷과 암컷의 수태능은 이 약 투여로 인해 영향을 받았다. 에베로리무스를 투여받는 여성환자에서 월경이상(이차성 무월경증)과 황체형성호르몬(LH)/난포자극호르몬(FSH)의 불균형이 관찰되었다. 에베로리무스를 투여받는 남성환자에서 혈중 FSH, LH의 증가 및 혈중 테스토스테론의 감소…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "63e0a9a34e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "5. 임부 및 수유부, 가임여성에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수컷 랫드에서, 고환 형태는 0.5 mg/kg 및 그 이상에서 영향을 받았으며, 정자의 운동성, 정자 수, 혈청 테스토스테론 수치는 치료적 노출 범위 내인 5 mg/kg에서 감소하였으며, 이것은 수컷의 수태능 감소를 유발하였다. 이는 가역성을 보였다. 랫드의 암컷 수태능에서, 0.1 mg/kg 이상 (환자에서 1일 10 mg 복용시 노출량의 약 4%) 경구 투여시 착상전 소실이 증가하였다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3ce5470fcf",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 1일 1회 매일 일정한 시간에 복용하며, 계속해서 식사와 함께 복용하거나 또는 계속해서 공복 시에 복용한다. 이 약은 물 한 컵과 함께 통째로 삼켜야 하며, 씹거나 부수지 말아야 한다. 약을 삼키기 어려운 경우, 이 약을 물(약 30 mL)에 넣고 잘 저어 완전히 분산시킨 후(약 7분), 즉시 마신다. 마신 후, 컵에 같은 양의 물을 넣어 헹구고, 그 물을 다 마셔 약을 완전히 복용…",
-      "meal": "식사와 함께",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:12:04"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "4. 상호작용 ⑧",
+   "subject": "",
+   "excerpt": "자몽, 자몽 주스, 스타프루트, 세빌오렌지 및 cytochrome P450과 PgP 활성에 영향을 미치는 것으로 알려진 일부 다른 음식물은 이 약의 투여기간 중 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "a51601994a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "4. 상호작용 ④",
+   "subject": "",
+   "excerpt": "에베로리무스의 대사를 증가시켜 혈중 농도를 감소시킬 수 있는 다른 강력한 CYP3A4 유도제로는 St. John's wort (Hypericum perforatum), 항전간제 (예: 카르바마제핀, 페노바르비탈, 페니토인), 항 HIV 제제 (예: 에파비렌즈, 네비라핀)이 있다. St. John's Wort (Hypericum perforatum)는 이 약의 노출을 예측할 수 없게 감소시키므…",
+   "extractor": "kw-v4",
+   "id": "634a5f658a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부, 가임여성에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 임신 여성에서 이 약 사용에 대한 적절한 자료는 없다. 동물시험에서 배아독성과 태아독성을 포함한 생식독성이 나타났으나, 사람에 대한 잠재적 위험은 알려진 바 없다. 이 약의 투여시 잠재적 유익성이 태아에 대한 잠재적 위험성을 상회하지 않는다면 이 약은 임신여성에게 투여되어서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "a11f6cec84",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "에베로리무스는 태반을 통과하여 수태물에 독성을 나타냈다. 랫드에서, 에베로리무스는 치료적 수치 이하의 전신 노출에서 배자/태자 독성을 유발했다. 이는 사망률과 태자 체중 감소로 입증되었다. 골격근 변화와 기형 (예: 흉골열)의 발생률은 0.3 mg/kg과 0.9 mg/kg에서 증가하였다. 토끼에서, 배자독성은 후기 흡수에서의 증가가 명백하였다.",
+   "extractor": "kw-v4",
+   "id": "443259530a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부, 가임여성에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 에베로리무스가 사람의 모유 중으로 배출되는지 여부는 알려진 바 없다. 수유 중인 사람에서 에베로리무스에 노출된 것으로 보고된 사례는 없었다.",
+   "extractor": "kw-v4",
+   "id": "4fe4957239",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "그러나 동물시험에서 에베로리무스 그리고/또는 이의 대사체는 수유 랫드의 모유 중으로 쉽게 배출 되었으며 약물의 농도가 혈장보다 3.5배 높게 나타났다.",
+   "extractor": "kw-v4",
+   "id": "0044b33cde",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "따라서 이 약을 복용하는 여성은 치료 기간 및 마지막 투여 후 2 주간 수유해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "834edf3096",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부, 가임여성에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "피임 : 임신 가능성이 있는 여성은 이 약을 투여받는 동안 그리고 투약 종료 후 8주간 매우 효과적인 피임법(올바르게 사용하였을 때에 연 임신율 <1%인 방법)을 사용하도록 조언하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "d5e3c7793b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부, 가임여성에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "생식능력 : 남성 및 여성의 수태능은 에베로리무스 투여로 인해 영향을 받을 수 있다. 비임상 결과에 근거할 때, 수컷과 암컷의 수태능은 이 약 투여로 인해 영향을 받았다. 에베로리무스를 투여받는 여성환자에서 월경이상(이차성 무월경증)과 황체형성호르몬(LH)/난포자극호르몬(FSH)의 불균형이 관찰되었다. 에베로리무스를 투여받는 남성환자에서 혈중 FSH, LH의 증가 및 혈중 테스토스테론의 감소…",
+   "extractor": "kw-v4",
+   "id": "10d6afe9cc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "5. 임부 및 수유부, 가임여성에 대한 투여",
+   "subject": "",
+   "excerpt": "수컷 랫드에서, 고환 형태는 0.5 mg/kg 및 그 이상에서 영향을 받았으며, 정자의 운동성, 정자 수, 혈청 테스토스테론 수치는 치료적 노출 범위 내인 5 mg/kg에서 감소하였으며, 이것은 수컷의 수태능 감소를 유발하였다. 이는 가역성을 보였다. 랫드의 암컷 수태능에서, 0.1 mg/kg 이상 (환자에서 1일 10 mg 복용시 노출량의 약 4%) 경구 투여시 착상전 소실이 증가하였다.",
+   "extractor": "kw-v4",
+   "id": "9ff4a3d60f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "3ce5470fcf",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "이 약은 1일 1회 매일 일정한 시간에 복용하며, 계속해서 식사와 함께 복용하거나 또는 계속해서 공복 시에 복용한다. 이 약은 물 한 컵과 함께 통째로 삼켜야 하며, 씹거나 부수지 말아야 한다. 약을 삼키기 어려운 경우, 이 약을 물(약 30 mL)에 넣고 잘 저어 완전히 분산시킨 후(약 7분), 즉시 마신다. 마신 후, 컵에 같은 양의 물을 넣어 헹구고, 그 물을 다 마셔 약을 완전히 복용…",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

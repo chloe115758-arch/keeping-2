@@ -1,0 +1,92 @@
+{
+ "ingredient": "brinzolamide + timolol maleate )",
+ "productSeq": "202600113",
+ "itemName": "엘라프리점안현탁액(브린졸라미드,티몰롤말레산염)(1회용)",
+ "atc": "S01ED51",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260810",
+ "ediCode": "643904251",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600113/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600113/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202600113/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "855df2e4d4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 또는 이 약의 개별 성분의 점안 투여와 관련하여 임부를 대상으로 한 적절하고 잘 통제된 연구는 없다. 베타차단제의 전신적 투여에 대한 잘 조절된 역학 연구에서 베타-차단제를 경구 경로로 투여할 경우 기형 효과는 나타나지 않았지만, 자궁 내 성장 지체의 위험이 나타났다. 또한, 출산 시까지 임부에게 전신적 베타-차단제를 투여한 신생아에서 베타 차단의 징후 및 증상 (예: 서맥, 저혈압,…",
+   "extractor": "kw-v4",
+   "id": "b88ef17caf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "4a9f42dabb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "수유부에서 이 약의 사용과 관련한 적절한 데이터는 없다.브린졸라미드가 국소 점안 투여 후 모유로 이행되는지 여부는 알려져 있지 않다. 수유 중인 랫드에 14C-브린졸라미드를 경구 투여하였을 때, 방사능은 혈액 및 혈장에서보다 유즙에서 낮았다. 티몰롤은 점안 투여 후 모유로 전달된다. 수유 중인 신생아/영아에게 중대한 이상반응을 유발할 가능성이 있으므로 모유 수유의 이점과 수유부의 치료적 유익…",
+   "extractor": "kw-v4",
+   "id": "414a7738a4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "19b0ea3a56",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 국소 점안 투여가 사람의 수태능에 미치는 영향을 평가한 연구는 없다. 랫드를 대상으로 한 수태능 시험에서 경구 최대 18mg/kg/day(체표면적 기준 MROHD의 91배, 체중 기준 563배) 용량까지 수컷 또는 암컷의 수태능 또는 생식 능력에 대한 브린졸라미드의 부작용은 관찰되지 않았다. 티몰롤의 경우, 랫드 수태능 시험에서 최대 150mg/kg/day(체표면적 기준 MROHD의…",
+   "extractor": "kw-v4",
+   "id": "44b13ff0b4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:26",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

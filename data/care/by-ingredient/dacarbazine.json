@@ -1,0 +1,68 @@
+{
+ "ingredient": "dacarbazine",
+ "productSeq": "199601509",
+ "itemName": "디티아이주(다카르바진)(수출명:DTIC-VHBforinjection100mg)",
+ "atc": "L01AX04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250808",
+ "ediCode": "644300661",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199601509/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199601509/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199601509/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 기형유발이 보고되었으므로 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "91dfd2934a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유 중 투여에 대한 안전성이 확립되어 있지 않으므로 수유부에게 투여할 경우에는 수유를 중지시킨다.",
+   "extractor": "kw-v4",
+   "id": "81417ca969",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "다카르바진의 유전독성 가능성으로 인해 환자는 이 약의 치료를 시작하기 전에 생식능력 보존에 대하여 상담 받는 것이 권장되며, 이 약으로 치료한 후 임신을 계획중인 환자는 유전 관련 상담을 받는 것이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "1305006b8b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 특히, 골수기능억제가 나타나기 쉽고 지속화 될 우려가 있으므로 저용량으로 투여를 시작하는 등 환자의 상태를 관찰하여 신중히 투여한다. 또한 간기능장애의 발현에도 유의한다.",
+   "extractor": "kw-v4",
+   "id": "baf9eca5e9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:28:18",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

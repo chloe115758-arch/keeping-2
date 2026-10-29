@@ -1,28 +1,68 @@
 {
-  "ingredient": "vitis vinifera leaf ext.",
-  "productSeq": "200704324",
-  "itemName": "비스비캡슐(포도엽건조엑스)",
-  "atc": "C05CX",
-  "etcOtc": "일반의약품",
-  "changeDate": "20250416",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704324/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704324/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704324/NB"
+ "ingredient": "vitis vinifera leaf ext.",
+ "productSeq": "200704324",
+ "itemName": "비스비캡슐(포도엽건조엑스)",
+ "atc": "C05CX",
+ "etcOtc": "일반의약품",
+ "changeDate": "20250416",
+ "ediCode": "621802140",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704324/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704324/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200704324/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음과 같은 사람은 이 약을 복용하지 말 것. 4)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성 : 임부에 대한 적절한 연구가 없으므로 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "a72686aaf7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
   },
-  "rules": [
-    {
-      "id": "0f8648a603",
-      "kind": "timing",
-      "section": "usage",
-      "where": "용법·용량",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "성인 : 포도엽건조엑스로서 1일 1회 360 mg을 아침 식전에 물과 함께 복용한다.",
-      "meal": "식전",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:10:03"
+  {
+   "section": "contra",
+   "where": "1. 다음과 같은 사람은 이 약을 복용하지 말 것. 5)",
+   "subject": "",
+   "excerpt": "수유부 : 이 약이 모유로 이행되는지의 여부는 알려져 있지 없으므로 수유부에게는 투여하지 않거나 이 약으로의 치료 중 수유는 권장되지 않는다.",
+   "extractor": "kw-v4",
+   "id": "340640812c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "consult",
+   "where": "2. 다음과 같은 사람은 이 약을 복용하기 전에 의사, 치과의사 약사와 상의할 것. 1)",
+   "subject": "",
+   "excerpt": "임신 가능성이 있는 여성 : 임신 가능성이 있는 여성에 대한 연구가 없다.",
+   "extractor": "kw-v4",
+   "id": "8944ad0448",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "0f8648a603",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 : 포도엽건조엑스로서 1일 1회 360 mg을 아침 식전에 물과 함께 복용한다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

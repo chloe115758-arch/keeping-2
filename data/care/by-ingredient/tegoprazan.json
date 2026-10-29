@@ -1,0 +1,80 @@
+{
+ "ingredient": "tegoprazan",
+ "productSeq": "201802815",
+ "itemName": "케이캡정50밀리그램(테고프라잔)",
+ "atc": "A02BC",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260722",
+ "ediCode": "640007270",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802815/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802815/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201802815/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "0a213a5067",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "사람에서 이 약의 임신 중 노출에 대한 안전성 자료는 없다. 배태자 발생시험 결과, 랫드에서 짧은 과잉목갈비뼈가 증가하였다. 그러므로 안전상 이유로 임신 중 이 약의 사용을 금한다.",
+   "extractor": "kw-v4",
+   "id": "a2468e1f50",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "b3c24882b7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약이 사람 모유로 이행되는지는 밝혀지지 않았으므로 이 약을 복용하는 경우에는 모유를 수유하지 않도록 한다. 이 약의 동물실험 결과, 랫드에 투여 시 유즙 중으로 분비되는 것이 관찰되었다.",
+   "extractor": "kw-v4",
+   "id": "6a4e4a627e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 간기능 또는 신기능과 같은 생리기능이 저하되므로 신중하게 투여해야 한다.",
+   "extractor": "kw-v4",
+   "id": "29e4e6a38a",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:37",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

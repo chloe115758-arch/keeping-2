@@ -1,0 +1,75 @@
+{
+ "ingredient": "beclomethasone dipropionate(/회) + formoterol fumarate dihydrate(/회)",
+ "productSeq": "200808088",
+ "itemName": "포스터100/6에이치에프에이",
+ "atc": "R03AK08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200406",
+ "ediCode": "670302181",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200808088/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200808088/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200808088/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 4)",
+   "subject": "",
+   "excerpt": "L-도파, L-티록신, 옥시토신, 알코올은 β2-교감신경작용약에 대한 심장 내성을 손상시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "0d569c266d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 1)",
+   "subject": "",
+   "excerpt": "임신부에게 이 약을 사용한 임상시험자료는 없다. 베클로메타손 디프로피오네이트와 포르모테롤 병용요법의 동물실험 결과, 고용량으로 전신에 노출되었을 때 생식독성이 관찰되었다. β2-교감신경작용약의 자궁수축작용에 의해 출산이 앞당겨질 수 있다. 포르모테롤은 임신부, 특히 임신말기 또는 분만 동안에는 추천되어지지 않는다. 이 약은 임신부에게 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 투여…",
+   "extractor": "kw-v4",
+   "id": "029e24f59e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에의 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 수유부에 대한 임상자료는 없다. 동물실험자료는 없지만, 다른 코르티코스테로이드 제제처럼 베클로메타손 디프로피오네이트도 유즙으로 분비될 것으로 추정된다. 이 약은 수유부에게 치료상의 유익성이 위험성을 상회한다고 판단될 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "26eceb8f4c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리적 기능이 저하되어 있으므로 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "3687ca2f04",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:13:43",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

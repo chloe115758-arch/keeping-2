@@ -1,0 +1,68 @@
+{
+ "ingredient": "econazole nitrate + triamcinolone acetonide",
+ "productSeq": "198000453",
+ "itemName": "에코론크림(에코나졸,트리암시놀론아세토니드)",
+ "atc": "D01A",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240517",
+ "ediCode": "643501875",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198000453/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198000453/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198000453/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "질산에코나졸을 사람의 피부적용량의 10～40배를 랫트에 경구투여한 연구에서 배자독성 또는 태자독성이 나타났으며, 사람의 피부적용량의 40 또는 80배를 마우스, 토끼, 랫트에 경구투여한 다른 연구에서도 유사한 결과가 나타났다.",
+   "extractor": "kw-v4",
+   "id": "c95e010730",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에 대해서는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다. 특히 임신 3개월 이내에는 이 약을 사용하지 않으며 대량, 장기간, 광범위하게 사용하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "709f48db48",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약이 모유로 이행한다는 보고는 없으나 전신적으로 흡수된 코르티코이드가 모유 중으로 이행되므로 수유부에 투여시 주의한다.",
+   "extractor": "kw-v4",
+   "id": "1f738650b6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "에코나졸질산염 크림에 대한 임상연구에는 고령층과 젊은층의 반응차를 판단하기에 충분한 수의 65세 이상 피험자가 포함되지 않았다. 다른 임상 사례에서 고령층과 젊은층 환자 간 반응 차는 확인되지 않았다. 일반적으로 고령자에 대한 용량설정은 주의가 필요하며, 설정된 용량 범위에서 가장 낮은 용량으로 시작하고 간장, 신장 또는 심장기능 저하 및 동반질환이나 병용약물을 고려하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "0d93cb1fb5",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:05",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,35 +1,51 @@
 {
-  "ingredient": "chlorpheniramine maleate + phenylephrine hydrochloride",
-  "productSeq": "200703086",
-  "itemName": "콜민-에이시럽",
-  "atc": "R01BA53",
-  "etcOtc": "일반의약품",
-  "changeDate": "20210222",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200703086/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200703086/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200703086/NB"
+ "ingredient": "chlorpheniramine maleate + phenylephrine hydrochloride",
+ "productSeq": "200703086",
+ "itemName": "콜민-에이시럽",
+ "atc": "R01BA53",
+ "etcOtc": "일반의약품",
+ "changeDate": "20210222",
+ "ediCode": "642401362",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200703086/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200703086/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200703086/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "1. 다음 환자는 복용하지 말 것 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "97c02361c3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
   },
-  "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의 2)",
+   "subject": "",
+   "excerpt": "이 약의 복용 중에는 알코올성 음료를 피할 것",
+   "extractor": "kw-v4",
+   "id": "e3b5e7fb29",
+   "kind": "note",
+   "matched": [
     {
-      "id": "d335d5ba94",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의 2)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약의 복용 중에는 알코올성 음료를 피할 것",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:17:06"
+   ],
+   "interval": null,
+   "tone": "caution"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,75 @@
+{
+ "ingredient": "furosemide",
+ "productSeq": "197200160",
+ "itemName": "후릭스정(푸로세미드)",
+ "atc": "C03CA01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230526",
+ "ediCode": "641702750",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197200160/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197200160/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/197200160/NB"
+ },
+ "rules": [
+  {
+   "section": "contra",
+   "where": "2. 다음 환자에는 투여하지 말 것 9)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "2de165f0d0",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것 4)",
+   "subject": "",
+   "excerpt": "치매 노인에 대한 리스페리돈의 위약-대조 임상시험에서, 리스페리돈 단독투여 시 (3.1%;평균 84세, 70-96세) 혹은, 푸로세미드 단독투여 시(4.1%;평균 80세, 67-90세)보다 푸로세미드와 리스페리돈을 병용투여 했을 때 사망률이 높게 나타났다.(7.3%;평균 89세, 75-97세) 리스페리돈과 다른 이뇨제(주로 저용량의 티아지드계 이뇨제)의 병용에서는 유사한 결과가 나타나지 않았…",
+   "extractor": "kw-v4",
+   "id": "f84a6736f1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것",
+   "subject": "",
+   "excerpt": "이를 설명하는 병리학적 기전은 확인되지 않았고 사망의 원인도 일관되게 나타나지 않았다. 그럼에도 주의를 기울여야 하고 이런 병용요법을 실시하기 전에 위험성 대비 유익성이 고려되어야 한다. 다른 이뇨제와 리스페리돈 병용 시에는 사망률이 증가하지 않았다. 치료와 상관없이, 탈수는 노인 환자에서 전반적인 사망의 위험 요인이므로, 치매 노인 환자의 경우 투여를 피해야 한다.",
+   "extractor": "kw-v4",
+   "id": "474d95cb17",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ⑮",
+   "subject": "6.2 약물",
+   "excerpt": "제산제(인산알루미늄)와 병용투여하는 경우에는 이뇨제의 흡수가 감소될 수 있으므로 이뇨제와 투여간격을 두고 제산제를 복용한다.",
+   "extractor": "kw-v4",
+   "id": "c58ce567bd",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:31",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

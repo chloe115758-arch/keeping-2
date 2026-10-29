@@ -1,52 +1,56 @@
 {
-  "ingredient": "moxifloxacin hydrochloride )",
-  "productSeq": "201607265",
-  "itemName": "목시탄점안액(목시플록사신염산염)",
-  "atc": "S01AE07",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607265/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607265/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607265/NB"
+ "ingredient": "moxifloxacin hydrochloride )",
+ "productSeq": "201607265",
+ "itemName": "목시탄점안액(목시플록사신염산염)",
+ "atc": "S01AE07",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "080900021",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607265/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607265/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201607265/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신한 여성을 대상으로 한 최기형성 시험이 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 부인 혹은 수유부에게는 치료상의 유익성이 태아에 대한 위험성을 상회한다고 판단되는 경우에만 투여하십시오.",
+   "extractor": "kw-v4",
+   "id": "96038e98ec",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "fe2733ae98",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신한 여성을 대상으로 한 최기형성 시험이 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 부인 혹은 수유부에게는 치료상의 유익성이 태아에 대한 위험성을 상회한다고 판단되는 경우에만 투여하십시오.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "11f3636cee",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "모유로의 이행여부는 알려져 있지 않으므로 수유부에 투여하는 경우에는 주의를 요합니다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fa53306399",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자와 젊은 사람 사이에 안전성과 유효성의 차이는 관찰되지 않았습니다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:09:29"
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "모유로의 이행여부는 알려져 있지 않으므로 수유부에 투여하는 경우에는 주의를 요합니다.",
+   "extractor": "kw-v4",
+   "id": "68d0caeb06",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자와 젊은 사람 사이에 안전성과 유효성의 차이는 관찰되지 않았습니다.",
+   "extractor": "kw-v4",
+   "id": "23387d7af9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

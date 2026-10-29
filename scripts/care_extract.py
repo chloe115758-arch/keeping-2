@@ -35,12 +35,12 @@ SUPP_KEYS = {
 }
 FOOD_KEYS = {
     'grapefruit': ('자몽',            [r'자몽']),
-    'alcohol':    ('알코올·음주',     [r'알코올', r'알콜', r'음주']),   # 낱글자 '술'은 '수술'에도 걸려서 쓰지 않는다
+    'alcohol':    ('알코올·음주',     [r'알코올', r'알콜', r'음주', r'(?<![가-힣])술(?![가-힣])', r'(?<![가-힣])술(?=[을이은과와도])']),   # 낱말 '술'만: '수술'·'기술'처럼 한글 뒤에 붙은 '술'은 제외
     'caffeine':   ('카페인·커피',     [r'카페인', r'커피']),
     'dairy':      ('우유·유제품',     [r'우유', r'유제품']),
 }
 DRUG_GROUPS = {
-    'ppi':            ('프로톤 펌프 억제제', [r'프로톤\s*펌프', r'\bPPI\b']),
+    'ppi':            ('프로톤 펌프 억제제', [r'프로톤\s*펌프', r'\bPPI\b', r'(?:에스)?오메프라졸', r'란소프라졸', r'판토프라졸', r'라베프라졸', r'일라프라졸']),
     'aluminumAntacid': ('알루미늄 함유 제산제', [r'알루미늄\s*함유\s*제산제', r'수산화알루미늄']),
     'antacid':        ('제산제',            [r'(?<!알루미늄 함유 )(?<!알루미늄함유)제산제']),   # '알루미늄 함유 제산제'는 위 키로만 잡는다
     'cholestyramine': ('콜레스티라민',      [r'콜레스티라민']),
@@ -51,7 +51,17 @@ ALL_KEYS = {**{k: ('supplement',) + v for k, v in SUPP_KEYS.items()},
 
 NOTE_KEYS = {'biotin', 'alcohol', 'grapefruit', 'caffeine', 'vitaminK', 'stJohnsWort', 'ginseng', 'ginkgo'}   # 일반적 주의·경고에서는 이 키만 규칙으로 만든다
 
-INTERVAL_RE = re.compile(r'(최소|적어도|약)?\s*(\d+(?:\.\d+)?)\s*(?:~|-|–)?\s*(\d+(?:\.\d+)?)?\s*시간\s*(이상|이내)?\s*(?:의\s*)?간격')
+INTERPLAY_RE = re.compile(r'흡수|병용|함께|동시|간격|복용\s*시간')
+PREG_RE = re.compile(r'임부|임신|수유')
+ELDER_RE = re.compile(r'고령자|65세\s*이상|노인')
+
+TILDE = r'(?:~|∼|～|〜|–|—|-)'
+INTERVAL_RE = re.compile(r'(최소|적어도|약)?\s*(\d+(?:\.\d+)?)\s*(?:' + TILDE + r')?\s*(\d+(?:\.\d+)?)?\s*시간\s*(이상|이내)?\s*(?:의\s*)?간격')
+# 간격이 "그렇게 하라"는 안내인지, "그렇게 투여했을 때 이런 결과가 나왔다"는 연구 설명인지 가른다.
+#   예) 클로피도그렐: "오메프라졸 80mg을 동시 또는 12시간 간격으로 이 약과 투여하였을 때 활성 대사체 45% 감소" → 간격을 둬도 소용없다는 뜻이다.
+INSTR_RE = re.compile(r'간격을?\s*(?:[두둔둘둡]|유지|가지|준수|조정)|(?:이상|이후)의?\s*간격|간격에\s*주의|투여간격|간격\s*(?:으로|을)\s*(?:두고|두어)')
+DESCR_RE = re.compile(r'하였을\s*때|했을\s*때|결과|\d+\s*%|감소하였|증가하였|보고되|연구')
+DRINK_RE = re.compile(r'술을?\s*마시|음주|알코올\s*(?:섭취|음료)|알코올을\s*(?:섭취|마시|복용)|주류')   # "알코올 중독 환자"와 구분
 MEAL_RE = re.compile(r'(식사\s*(?:하기)?\s*(?:적어도\s*)?(?:\d+\s*(?:시간|분)\s*)?(?:전|후|중|직전|직후)|식전|식후|식간|공복|취침\s*전|식사와\s*함께|식사\s*중)')
 TONE_AVOID = re.compile(r'투여하지\s*말|투여하지\s*마|금기|복용하지\s*말')
 ITEM_NO = re.compile(r'^\s*(?:\(\d+\)|\d+\)|[①-⑳])\s*')
@@ -96,7 +106,8 @@ def _interval(text):
     if not m:
         return None
     lo = float(m.group(2)); hi = float(m.group(3)) if m.group(3) else None
-    return {'minHours': lo, 'maxHours': hi, 'qualifier': m.group(1) or '', 'text': _clean(m.group(0))}
+    return {'minHours': lo, 'maxHours': hi, 'qualifier': m.group(1) or '', 'text': _clean(m.group(0)),
+            'actionable': bool(INSTR_RE.search(text)) and not DESCR_RE.search(text)}
 
 def _is_heading(p):
     """소제목 한 줄: 짧고 문장으로 끝나지 않는다(예: '임부에 대한 투여', '시타글립틴')."""
@@ -115,45 +126,69 @@ def _section(title):
     if '임부' in t or '수유' in t: return 'pregnancy'
     if '고령자' in t: return 'elderly'
     if '경고' in t: return 'warning'
+    # 의약품 첨부문서(소비자용) 형식: 제목에 '상호작용'이 없다.
+    #   "2. 이 약을 복용하는 동안 다음의 약을 복용하지 말 것." / "3. …의사, 치과의사, 약사와 상의할 것." / "1. …복용하지 말 것."
+    if re.search(r'(?:복용|투여|사용)하는동안|병용', t): return 'interaction'
+    if '상의할것' in t or '신중히투여할것' in t: return 'consult'
+    if '복용하지말것' in t or '투여하지말것' in t: return 'contra'
     return None
 
 def extract_rules(nb_xml, ud_xml=None, item_seq=''):
     rules = []
-    for title, paras in parse_doc(nb_xml):
-        sec = _section(title)
+    arts = [(t, ps, _section(t)) for t, ps in parse_doc(nb_xml)]
+    has_preg = any(x[2] == 'pregnancy' for x in arts)     # 전용 항목("임부 및 수유부에 대한 투여")이 있으면 그것만 읽는다
+    has_old = any(x[2] == 'elderly' for x in arts)
+    for title, paras, sec in arts:
         if not sec:
             continue
         subject = ''
+        otc_style = bool(re.search(r'(복용|투여|사용)하는동안|병용|상의할것|신중히투여할것|복용하지말것|투여하지말것', title.replace(' ', '')))
         for p in paras:
-            if _is_heading(p):
+            # 번호가 붙은 단락과 첨부문서 형식의 항목("다른 제산제", "임신 3개월 이내의 임부")은 짧은 명사구여도 소제목이 아니다
+            if not ITEM_NO.match(p) and not otc_style and _is_heading(p):
                 subject = p            # 복합제는 성분별 소제목이 있다. 뒤따르는 문장의 subject로 남긴다
                 continue
             no_m = ITEM_NO.match(p)
             no = no_m.group(0).strip() if no_m else ''
             body = ITEM_NO.sub('', p)
             where = (title + (' ' + no if no else '')).strip()
+            base = {'section': sec, 'where': where, 'subject': subject, 'excerpt': _short(body), 'extractor': 'kw-v4'}
             if sec in ('interaction', 'general', 'warning'):
                 hits = _keys_in(body)
                 if sec != 'interaction':
                     hits = [h for h in hits if h['key'] in NOTE_KEYS]
                 if not hits:
                     continue
-                rules.append({
-                    'id': _rid(item_seq, where, body[:40]), 'kind': 'interaction' if sec == 'interaction' else 'note',
-                    'section': sec, 'where': where, 'subject': subject, 'matched': hits, 'interval': _interval(body),
-                    'tone': 'avoid' if TONE_AVOID.search(body) else 'caution', 'excerpt': _short(body), 'extractor': 'kw-v2'})
+                rules.append(dict(base, id=_rid(item_seq, where + '|i', body[:40]), kind='interaction' if sec == 'interaction' else 'note',
+                                  matched=hits, interval=_interval(body), tone='avoid' if TONE_AVOID.search(body) else 'caution'))
             elif sec in ('pregnancy', 'elderly'):
-                rules.append({
-                    'id': _rid(item_seq, where, body[:40]), 'kind': 'state_' + sec, 'section': sec, 'where': where,
-                    'subject': subject, 'matched': [], 'interval': None,
-                    'tone': 'avoid' if TONE_AVOID.search(body) else 'info', 'excerpt': _short(body), 'extractor': 'kw-v2'})
+                rules.append(dict(base, id=_rid(item_seq, where + '|s', body[:40]), kind='state_' + sec, matched=[], interval=None,
+                                  tone='avoid' if TONE_AVOID.search(body) else 'info'))
+            elif sec in ('consult', 'contra'):
+                # 첨부문서 형식: "…상의할 것" 항목에 약 이름 나열 + 흡수 감소·간격 안내가 들어 있다(예: 알마게이트의 철(Fe)염 제제 2~3시간 간격).
+                # 음식 키(알코올 등)는 "알코올 중독 환자"처럼 다른 뜻이 많아 여기서는 읽지 않는다.
+                allk = _keys_in(body)
+                hits = [h for h in allk if h['kind'] != 'food']
+                foods = [h for h in allk if h['kind'] == 'food' and (h['key'] != 'alcohol' or DRINK_RE.search(body))]   # "알코올 중독 환자"는 음주 안내가 아니다
+                if sec == 'consult' and hits and INTERPLAY_RE.search(body):
+                    rules.append(dict(base, id=_rid(item_seq, where + '|i', body[:40]), kind='interaction', matched=hits + foods,
+                                      interval=_interval(body), tone='caution'))
+                elif foods:
+                    rules.append(dict(base, id=_rid(item_seq, where + '|f', body[:40]), kind='note', matched=foods, interval=None, tone='caution'))
+                avoid = sec == 'contra' or bool(TONE_AVOID.search(body))
+                if not has_preg and PREG_RE.search(body):
+                    rules.append(dict(base, id=_rid(item_seq, where + '|p', body[:40]), kind='state_pregnancy', matched=[], interval=None,
+                                      tone='avoid' if avoid else 'info'))
+                if not has_old and ELDER_RE.search(body):
+                    rules.append(dict(base, id=_rid(item_seq, where + '|e', body[:40]), kind='state_elderly', matched=[], interval=None,
+                                      tone='avoid' if avoid else 'info'))
     for title, paras in parse_doc(ud_xml or ''):
         for p in paras:
             if MEAL_RE.search(p):
                 rules.append({
                     'id': _rid(item_seq, 'UD', p[:40]), 'kind': 'timing', 'section': 'usage', 'where': '용법·용량',
                     'matched': [], 'interval': None, 'tone': 'info', 'excerpt': _short(_clean(p)),
-                    'meal': MEAL_RE.search(p).group(0), 'extractor': 'kw-v2'})
+                    'meal': MEAL_RE.search(p).group(0), 'extractor': 'kw-v4'})
     return rules
 
 def main(argv):

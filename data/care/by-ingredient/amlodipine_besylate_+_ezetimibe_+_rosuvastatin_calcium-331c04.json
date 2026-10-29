@@ -1,306 +1,371 @@
 {
-  "ingredient": "amlodipine besylate + ezetimibe + rosuvastatin calcium",
-  "productSeq": "202601246",
-  "itemName": "로제핀정5/5/10밀리그램(암로디핀,로수바스타틴,에제티미브)",
-  "atc": "C10BX",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601246/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601246/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601246/NB"
-  },
-  "rules": [
+ "ingredient": "amlodipine besylate + ezetimibe + rosuvastatin calcium",
+ "productSeq": "202601246",
+ "itemName": "로제핀정5/5/10밀리그램(암로디핀,로수바스타틴,에제티미브)",
+ "atc": "C10BX",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "643607160",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601246/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601246/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202601246/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음의 환자에는 신중히 투여할 것. (5)",
+   "subject": "",
+   "excerpt": "간질환의 병력 또는 상당량의 알코올을 섭취하는 경우",
+   "extractor": "kw-v4",
+   "id": "e3eafc57ac",
+   "kind": "note",
+   "matched": [
     {
-      "id": "f56d78a02e",
-      "kind": "note",
-      "section": "general",
-      "where": "5. 일반적 주의",
-      "subject": "(3) 간 효소",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "avoid",
-      "excerpt": "이 약을 알코올 과다 복용 환자 그리고/또는 간질환의 병력이 있는 환자에게 투여 시 주의해야 한다. 활성 간질환 또는 원인이 밝혀지지 않는 혈청 트랜스아미나제의 지속적 상승이 있는 환자에게는 이 약을 투여하지 않는다. (‘2. 다음 환자에는 투여하지 말 것 항 참조)",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "fa7f57c13d",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (3)",
-      "subject": "1) 암로디핀",
-      "matched": [
-        {
-          "key": "grapefruit",
-          "kind": "food",
-          "ko": "자몽",
-          "surface": "자몽"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "자몽쥬스: 20명의 건강한 지원자에서 240 mL의 자몽쥬스와 암로디핀 10 mg의 단회병용투여는 암로디핀의 약동학에 유의한 영향을 미치지 않았다. 이 시험에서 암로디핀의 주 대사경로인 CYP3A4에서의 유전적 다형성 (genetic polymorphism) 에 대한 영향평가는 이루어지지 않았다. 따라서, 암로디핀은 자몽이나 자몽쥬스와 병용시 일부 환자에서 생체이용률 증가로 인한 혈압강하 효…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7fc0736696",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "(7) 다른 약물들이 암로디핀에 미치는 영향",
-      "matched": [
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "-알루미늄/마그네슘 (제산제): 알루미늄/마그네슘 제산제와 단회용량의 암로디핀과 병용투여 시 암로디핀의 약동학에 유의적인 영향이 없었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "82e266d6fa",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "(7) 다른 약물들이 암로디핀에 미치는 영향",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "세인트 존스 워트"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "- CYP3A4 유도제: CYP3A4 유도제 (예, 리팜피신, 세인트 존스 워트 (hypericum perforatum))와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0699911be4",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "(8) 암로디핀이 다른 약물들에 미치는 영향",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "- 에탄올 (알코올): 10 mg 암로디핀의 단회 및 반복투여시 에탄올의 약동학에 유의적인 변화가 없었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c074e77581",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "기타 약물의 영향",
-      "matched": [
-        {
-          "key": "magnesium",
-          "kind": "supplement",
-          "ko": "마그네슘제제",
-          "surface": "산화마그네슘"
-        },
-        {
-          "key": "antacid",
-          "kind": "drug_group",
-          "ko": "제산제",
-          "surface": "제산제"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "-제산제: 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 로수바스타틴을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 로수바스타틴 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c10948876c",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "기타 약물의 영향",
-      "matched": [
-        {
-          "key": "vitaminK",
-          "kind": "supplement",
-          "ko": "비타민 K",
-          "surface": "비타민K"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "-와파린: 로수바스타틴과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 스타틴계 약물과 마찬가지로, 로수바스타틴과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 로수바스타틴의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7875daadf7",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 (1)",
-      "subject": "3) 에제티미브",
-      "matched": [
-        {
-          "key": "cholestyramine",
-          "kind": "drug_group",
-          "ko": "콜레스티라민",
-          "surface": "콜레스티라민"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "콜레스티라민: 에제티미브와 콜레스티라민 병용투여 시 총 에제티미브의 평균 AUC가 약 55% 감소하였다. 이러한 상호작용에 의하여 콜레스티라민과 에제티미브 병용투여로 기대되는 LDL-C 저하에 대한 병합작용이 감소할 수 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c12423b46e",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 및 수유부에 대한 이 약의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다. 개별성분에 대한 정보는 다음과 같다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7c9c41d0bd",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (1)",
-      "subject": "1) 암로디핀",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "암로디핀의 임부에 대한 안전성은 확립되지 않았다. 인체에 대한 최대 권장 용량의 50배에 해당하는 용량의 암로디핀을 투여한 랫드에서 분만지연 및 연장이 나타난 것외에 동물에 있어서 생식독성은 증명되지 않았으나, 다른 디히드로피리딘계 약물에서는 동물실험에서 기형발생이 보고된 바 있다. 암로디핀을 투여한 랫드에서 수태능에 대한 영향은 없었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "601d4e86bc",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (2)",
-      "subject": "1) 암로디핀",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "암로디핀의 수유부에 대한 안전성은 확립되지 않았다. 따라서, 암로디핀을 투여하는 동안에는 수유를 중단하는 것이 권장된다. 사람에 대한 투여 경험에서 암로디핀이 사람 모유 중으로 이행된다고 보고된 바 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a98e623165",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "2) 로수바스타틴",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 및 수유부에 대한 로수바스타틴의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d1c9343009",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "2) 로수바스타틴",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증거가 있다. 로수바스타틴을 사용하는 동안 임신을 할 경우 즉시 복용을 중단해야 한다. 로수바스타틴은 랫드의 모유로 이행…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "69f40ac173",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (1)",
-      "subject": "3) 에제티미브",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "에제티미브를 임부에게 투여한 임상 자료는 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3fdce8a2ab",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (2)",
-      "subject": "3) 에제티미브",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 한 경구 배ㆍ태자 발생시험의 시험 용량(250, 500, 1000mg/kg/day)에서 배자치사 효과가 관찰되지 않았다. 에제티미브 1000mg/kg/day(총 에제티미브의 AUC0-24hr에 근거하였을 때 1일 10 mg으로 투여 시 사람에 대한 노출의 10배)를 투여한 랫트에서 일반적인 태자 골격이상(늑골 추가형성, 경추 중심부 골화부전, 늑골 축소)…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "5596f00e33",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (3)",
-      "subject": "3) 에제티미브",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "모든 HMG-CoA 환원효소 억제제 및 페노피브레이트는 임부 및 수유부에 대한 투여가 금지되어 있다. 에제티미브를 출산 가능성이 있는 여성에게 HMG-CoA 환원효소 억제제 또는 페노피브레이트와 함께 투여할 때에는, 해당 HMG-CoA 환원효소 억제제 또는 페노피브레이트의 제품설명서를 참조한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "a582f8fecc",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (4)",
-      "subject": "3) 에제티미브",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 에제티미브와 HMG-CoA 환원효소 억제제(스타틴계 약물)를 병용투여한 반복투여시험에서는 에제티미브 및 HMG-CoA 환원효소 억제제에 대한 노출 정도가 높았다. 단독투여에 비해 병용투여시 보다 낮은 용량에서 생식능 이상이 나타났다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "db8e89a5ce",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 (5)",
-      "subject": "3) 에제티미브",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물실험(랫트)에서 에제티미브는 유즙으로 분비되었다. 랫트를 대상으로 한 실험에서 수유 중인 새끼의 총 에제티미브에 대한 노출은 모체 혈장에서 관찰되는 값의 절반에 이르렀다. 에제티미브가 사람의 모유로 분비되는지 여부는 알려지지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ec467c2b66",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령(만 65세 이상)은 근육병증에 걸리기 쉬운 요인 중 하나이므로 이 약을 고령자에게 투여 시 주의를 기울여야 한다. 고령자에서 이 약의 용량 조절은 필요하지 않다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:19:23"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의",
+   "subject": "○ 에제티미브",
+   "excerpt": "이 약을 알코올 과다 복용 환자 그리고/또는 간질환의 병력이 있는 환자에게 투여 시 주의해야 한다. 활성 간질환 또는 원인이 밝혀지지 않는 혈청 트랜스아미나제의 지속적 상승이 있는 환자에게는 이 약을 투여하지 않는다. (‘2. 다음 환자에는 투여하지 말 것 항 참조)",
+   "extractor": "kw-v4",
+   "id": "8b9bd47e07",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "avoid"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (3)",
+   "subject": "",
+   "excerpt": "자몽쥬스: 20명의 건강한 지원자에서 240 mL의 자몽쥬스와 암로디핀 10 mg의 단회병용투여는 암로디핀의 약동학에 유의한 영향을 미치지 않았다. 이 시험에서 암로디핀의 주 대사경로인 CYP3A4에서의 유전적 다형성 (genetic polymorphism) 에 대한 영향평가는 이루어지지 않았다. 따라서, 암로디핀은 자몽이나 자몽쥬스와 병용시 일부 환자에서 생체이용률 증가로 인한 혈압강하 효…",
+   "extractor": "kw-v4",
+   "id": "8f5ba2ae8e",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "-알루미늄/마그네슘 (제산제): 알루미늄/마그네슘 제산제와 단회용량의 암로디핀과 병용투여 시 암로디핀의 약동학에 유의적인 영향이 없었다.",
+   "extractor": "kw-v4",
+   "id": "6a8a965a84",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "- CYP3A4 유도제: CYP3A4 유도제 (예, 리팜피신, 세인트 존스 워트 (hypericum perforatum))와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "47c0606f9a",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스 워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "- 에탄올 (알코올): 10 mg 암로디핀의 단회 및 반복투여시 에탄올의 약동학에 유의적인 변화가 없었다.",
+   "extractor": "kw-v4",
+   "id": "4d3ede8e83",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "기타 약물의 영향",
+   "excerpt": "-제산제: 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 로수바스타틴을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 로수바스타틴 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "9fc51298cc",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "기타 약물의 영향",
+   "excerpt": "-와파린: 로수바스타틴과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 스타틴계 약물과 마찬가지로, 로수바스타틴과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 로수바스타틴의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "1ccb0f27e7",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 (1)",
+   "subject": "기타 약물의 영향",
+   "excerpt": "콜레스티라민: 에제티미브와 콜레스티라민 병용투여 시 총 에제티미브의 평균 AUC가 약 55% 감소하였다. 이러한 상호작용에 의하여 콜레스티라민과 에제티미브 병용투여로 기대되는 LDL-C 저하에 대한 병합작용이 감소할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "a1125245ee",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "cholestyramine",
+     "kind": "drug_group",
+     "ko": "콜레스티라민",
+     "surface": "콜레스티라민"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 및 수유부에 대한 이 약의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다. 개별성분에 대한 정보는 다음과 같다.",
+   "extractor": "kw-v4",
+   "id": "5d5261f528",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "암로디핀",
+   "extractor": "kw-v4",
+   "id": "f129d99345",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "암로디핀의 임부에 대한 안전성은 확립되지 않았다. 인체에 대한 최대 권장 용량의 50배에 해당하는 용량의 암로디핀을 투여한 랫드에서 분만지연 및 연장이 나타난 것외에 동물에 있어서 생식독성은 증명되지 않았으나, 다른 디히드로피리딘계 약물에서는 동물실험에서 기형발생이 보고된 바 있다. 암로디핀을 투여한 랫드에서 수태능에 대한 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "a838d28d6a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "암로디핀의 수유부에 대한 안전성은 확립되지 않았다. 따라서, 암로디핀을 투여하는 동안에는 수유를 중단하는 것이 권장된다. 사람에 대한 투여 경험에서 암로디핀이 사람 모유 중으로 이행된다고 보고된 바 있다.",
+   "extractor": "kw-v4",
+   "id": "11ac027f1c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "로수바스타틴",
+   "extractor": "kw-v4",
+   "id": "04442ebea6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 및 수유부에 대한 로수바스타틴의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
+   "extractor": "kw-v4",
+   "id": "d786958912",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증거가 있다. 로수바스타틴을 사용하는 동안 임신을 할 경우 즉시 복용을 중단해야 한다. 로수바스타틴은 랫드의 모유로 이행…",
+   "extractor": "kw-v4",
+   "id": "ad261e5b1a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "에제티미브",
+   "extractor": "kw-v4",
+   "id": "c07d554d10",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "에제티미브를 임부에게 투여한 임상 자료는 없다.",
+   "extractor": "kw-v4",
+   "id": "4f16ff76fb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 한 경구 배ㆍ태자 발생시험의 시험 용량(250, 500, 1000mg/kg/day)에서 배자치사 효과가 관찰되지 않았다. 에제티미브 1000mg/kg/day(총 에제티미브의 AUC0-24hr에 근거하였을 때 1일 10 mg으로 투여 시 사람에 대한 노출의 10배)를 투여한 랫트에서 일반적인 태자 골격이상(늑골 추가형성, 경추 중심부 골화부전, 늑골 축소)…",
+   "extractor": "kw-v4",
+   "id": "e328533e6f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (3)",
+   "subject": "",
+   "excerpt": "모든 HMG-CoA 환원효소 억제제 및 페노피브레이트는 임부 및 수유부에 대한 투여가 금지되어 있다. 에제티미브를 출산 가능성이 있는 여성에게 HMG-CoA 환원효소 억제제 또는 페노피브레이트와 함께 투여할 때에는, 해당 HMG-CoA 환원효소 억제제 또는 페노피브레이트의 제품설명서를 참조한다.",
+   "extractor": "kw-v4",
+   "id": "c033df2f47",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (4)",
+   "subject": "",
+   "excerpt": "기관형성기의 랫트 및 토끼를 대상으로 에제티미브와 HMG-CoA 환원효소 억제제(스타틴계 약물)를 병용투여한 반복투여시험에서는 에제티미브 및 HMG-CoA 환원효소 억제제에 대한 노출 정도가 높았다. 단독투여에 비해 병용투여시 보다 낮은 용량에서 생식능 이상이 나타났다.",
+   "extractor": "kw-v4",
+   "id": "b0c7a25dba",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 (5)",
+   "subject": "",
+   "excerpt": "동물실험(랫트)에서 에제티미브는 유즙으로 분비되었다. 랫트를 대상으로 한 실험에서 수유 중인 새끼의 총 에제티미브에 대한 노출은 모체 혈장에서 관찰되는 값의 절반에 이르렀다. 에제티미브가 사람의 모유로 분비되는지 여부는 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "ab641abcb2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령(만 65세 이상)은 근육병증에 걸리기 쉬운 요인 중 하나이므로 이 약을 고령자에게 투여 시 주의를 기울여야 한다. 고령자에서 이 약의 용량 조절은 필요하지 않다.",
+   "extractor": "kw-v4",
+   "id": "d06f907932",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

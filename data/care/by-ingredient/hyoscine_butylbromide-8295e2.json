@@ -1,0 +1,56 @@
+{
+ "ingredient": "hyoscine butylbromide",
+ "productSeq": "200100633",
+ "itemName": "프리판주(부틸스코폴라민브롬화물)",
+ "atc": "A03BB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20080926",
+ "ediCode": "650500991",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200100633/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200100633/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200100633/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "3e0cd7cc1f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 안전성이 확립되어 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "b33f3e0627",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에는 전립선비대를 수반하는 경우가 많으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "4c1f24fb76",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:56",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

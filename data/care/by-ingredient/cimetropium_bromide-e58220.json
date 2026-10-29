@@ -1,0 +1,32 @@
+{
+ "ingredient": "cimetropium bromide",
+ "productSeq": "200500776",
+ "itemName": "알피움정(시메트로퓸브롬화물)",
+ "atc": "A03BB05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20170112",
+ "ediCode": "642702410",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200500776/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200500776/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200500776/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험에서 기형발생이 보고되지 않았으나, 임부에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "82b4f6c77f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:14:24",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

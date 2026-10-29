@@ -1,95 +1,99 @@
 {
-  "ingredient": "cefixime hydrate",
-  "productSeq": "202003172",
-  "itemName": "슈프릭캡슐(세픽심수화물)",
-  "atc": "J01DD08",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260916",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003172/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003172/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003172/NB"
-  },
-  "rules": [
+ "ingredient": "cefixime hydrate",
+ "productSeq": "202003172",
+ "itemName": "슈프릭캡슐(세픽심수화물)",
+ "atc": "J01DD08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260916",
+ "ediCode": "059000780",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003172/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003172/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003172/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 1)",
+   "subject": "",
+   "excerpt": "와파린과 병용투여 시 주의한다(이 약은 장내세균에 의한 비타민 K의 생산을 억제할 수 있으므로 와파린의 작용이 증가될 수 있다.).",
+   "extractor": "kw-v4",
+   "id": "7ae173b5cb",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "5ef8ee8214",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 1)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "vitaminK",
-          "kind": "supplement",
-          "ko": "비타민 K",
-          "surface": "비타민 K"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "와파린과 병용투여 시 주의한다(이 약은 장내세균에 의한 비타민 K의 생산을 억제할 수 있으므로 와파린의 작용이 증가될 수 있다.).",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0596f9e0f0",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9b6e72d56d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약 투여 기간 동안은 수유를 피한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b95246968f",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자에서는 다음 사항에 주의하여 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1163b69f65",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "생리기능이 저하되어 있는 경우가 많으므로 이상반응이 발현되기 쉽다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "63d7c99332",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "비타민 K 결핍에 의한 출혈경향이 나타날 수 있다.",
-      "extractor": "kw-v1"
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:08:47"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "eb208265c4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약 투여 기간 동안은 수유를 피한다.",
+   "extractor": "kw-v4",
+   "id": "1aacd60394",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서는 다음 사항에 주의하여 용량 및 투여간격에 유의하는 등 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "ce31cbdd78",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "생리기능이 저하되어 있는 경우가 많으므로 이상반응이 발현되기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "1991e45570",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K 결핍에 의한 출혈경향이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "83e4806e7e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

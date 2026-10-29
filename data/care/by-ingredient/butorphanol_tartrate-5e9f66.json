@@ -1,0 +1,240 @@
+{
+ "ingredient": "butorphanol tartrate",
+ "productSeq": "199604964",
+ "itemName": "부토판주사1밀리그람/밀리리터(부토르파놀타르타르산염)",
+ "atc": "N02AF01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20180320",
+ "ediCode": "649801911",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199604964/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199604964/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199604964/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고 2)",
+   "subject": "",
+   "excerpt": "마약류와 벤조디아제핀계 약물 또는 알코올을 포함하는 중추신경계억제제의 병용투여는 깊은 진정, 호흡억제, 혼수 및 사망을 초래할 수 있다. 이러한 위험성 때문에, 마약류와 벤조디아제핀계 약물의 병용투여는 적절한 대체 치료방법이 없는 환자의 경우에 한하여 처방하도록 한다. 이 약과 마약류의 병용투여가 결정되면 최저 유효용량으로 최단기간 처방하도록 하고 호흡억제 및 진정의 징후와 증상에 대해 환자…",
+   "extractor": "kw-v4",
+   "id": "130c692149",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적주의 2)",
+   "subject": "",
+   "excerpt": "이 약을 투여받는 환자는 알코올섭취를 금하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "63e4361572",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "알코올, 바르비탈류, 진정제, 항히스타민제 등 중추신경계에 작용하는 약물과 이 약의 동시투여시 졸음, 어지러움, 정신기능장애 등 중추신경 억제효과가 나타날 수 있다. 이 러한 약물과 병용시에 이 약은 이 약의 효과를 나타낼 수 있는 최소의 양을 사용하여야 하며 아편류약물의 작용을 증가시키는 약물과 병용투여 시에도 투여의 빈도를 최대한 줄여야 한다. 이 약의 효과가 약물의 간 대사에 영향을 끼…",
+   "extractor": "kw-v4",
+   "id": "a16eccfaa0",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "이 약과 벤조디아제핀계 약물, 다른 마약성 진통제, 전신마취제, 페노티아진계 약물, 신경안정제, 수면제, 삼환계 항우울제, 신경근육차단제, 또는 알코올을 포함한 다른 중추신경억제제를 병용투여하면 추가적인 중추신경억제작용이 유발되고, 호흡억제, 저혈압, 깊은 진정, 또는 혼수, 사망과 같은 중추신경억제작용이 증가될 수 있다. 따라서 이러한 약물과 병용투여하는 경우에는 2가지 약물 중 하나, 또…",
+   "extractor": "kw-v4",
+   "id": "c88d39a698",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "6e27e40c67",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여 (1)",
+   "subject": "",
+   "excerpt": "기관발생기의 마우스, 랫트, 토끼를 대상으로 실시한 생식시험에서 어떠한 최기형성 도 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "a2e9358e8a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "그러나 1mg/kg(5.9mg/평방미터)의 피하주사를 한 임신한 랫트의 사산(死産) 빈도 는 대조군보다 높았다. 30mg/kg(5.1mg/평방미터)와 60mg/kg(10.2mg/평방미터)의 경구투여를 한 토끼의 경우에서는 착상 후 사망의 빈도가 높았다. 37주가 지나지 않은 임신부(사람)에 대하여 제대로 실시된 시험은 없으므로 이 약의 유익성이 태 아에 대한 위험성을 상회하는 경우에 한하여…",
+   "extractor": "kw-v4",
+   "id": "d5fe842bf6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여 (2)",
+   "subject": "",
+   "excerpt": "분만과 출산",
+   "extractor": "kw-v4",
+   "id": "1745eb5a7d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "분만 중 이 약의 투여에 따르는 태아의 호흡곤란 또는 무호흡에 관하여 드물게 보 고되었지만, 임상시험에서 사용된 바에 의하면 이 약의 부작용이라고 할 수는 없 다. 태아의 호흡곤란 또는 무호흡에 관한 보고는 분만 전 2시간 내의 투여, 반복 투여 그리고 추가의 진통제 또는 진경제를 사용하였을 때 나타난 것이었으며 임신 전 투여의 경우도 포함되었다. 분만 중 이 약 1mg의 정맥주사는 119명…",
+   "extractor": "kw-v4",
+   "id": "d551681d56",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "비정상적인 태아 심박출률 양상이 나타날 때에는 이 약의 투여에 주의를 기울여야 한다.",
+   "extractor": "kw-v4",
+   "id": "fa78743007",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "1c05c13694",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약을 투여받은 수유부의 유즙을 통하여 분비되기는 하지만 임상적으로 유아에게 큰 영향을 미치지는 않는다(2mg을 1일 4회 투여받는 수유부의 유즙에는 약 4마이크 로그람/리터가 함유되어 있다.).",
+   "extractor": "kw-v4",
+   "id": "0477072773",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "고령자에 대한 투여",
+   "extractor": "kw-v4",
+   "id": "063a7a62a8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "청소율의 변화로 인하여 65세 이상의 환자에서의 이 약의 평균 반감기는 25% 증가 한다(6시간 이상). 노인환자는 이 약의 부작용에 더욱 민감할 것이다.",
+   "extractor": "kw-v4",
+   "id": "abc7fff032",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "기타",
+   "extractor": "kw-v4",
+   "id": "a600ec78d6",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부, 수유부, 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "18세 이하의 환자에는 안전성과 유효성이 확립되어 있지 않으므로 투여하지 말 것.",
+   "extractor": "kw-v4",
+   "id": "0cf0bf23eb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "avoid"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:26:35",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

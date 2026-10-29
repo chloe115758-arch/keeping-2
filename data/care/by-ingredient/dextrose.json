@@ -1,0 +1,56 @@
+{
+ "ingredient": "dextrose",
+ "productSeq": "199101312",
+ "itemName": "이노엔10%포도당주사액",
+ "atc": "B05BA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260323",
+ "ediCode": "640001121",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101312/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101312/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199101312/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신 중 투여에 대한 안전성이 확립되지 않았으므로 치료상의 유익성이 태아에 대한 잠재적 위해성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "7efbc55c84",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "분만 중에 포도당을 함유한 용액을 정맥 투여할 경우, 산모에게 고혈당증을 초래할 수 있으며, 신생아의 반동저혈당증 뿐만 아니라, 태아의 고혈당증 및 대사성 산증을 일으킬 수 있다. 태아의 고혈당증은 태아의 인슐린 수치를 증가시킬 수 있으며, 이는 출산 후 신생아 저혈당증을 초래할 수 있다. 해당 약물을 투여하기 전에 환자에 대한 유익성과 위해성을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "606242ec31",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "651f3c1842",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:29:37",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,116 @@
+{
+ "ingredient": "salbutamol sulfate",
+ "productSeq": "200607690",
+ "itemName": "살부톨흡입액(살부타몰황산염)",
+ "atc": "R03AC02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240911",
+ "ediCode": "645101701",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200607690/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200607690/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200607690/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "수태능",
+   "extractor": "kw-v4",
+   "id": "a69f82c796",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "살부타몰이 사람의 수태능에 미치는 영향에 관한 정보는 없다. 동물에서 수태능에 미치는 유해한 영향은 없었다.",
+   "extractor": "kw-v4",
+   "id": "13801505bf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "fa630e8eab",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "동물실험(마우스)에서 기형발생이 보고되어 있으므로 임부 또는 임신하고 있을 가능성이 있는 부인에게는 치료상의 유익성이 태아에 대한 위험성 상회한다고 판단되는 경우에만 투여한다. 또한 이 약은 자궁수축을 저해하여 (조기)분만을 지연시키는 효과 등이 있으므로 기관지경련 완화의 목적으로 임부에 투여시에는 자궁수축저해의 위험성을 고려해 신중히 투여한다. 자연유산 후 다량의 자궁출혈이 이 약 투여 후…",
+   "extractor": "kw-v4",
+   "id": "653ace00bf",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "전세계적인 판매 경험 동안 살부타몰로 치료 받은 환자의 후손에서 구개열 및 사지 결함을 포함하는 다양한 선천성 기형이 드물게 보고되었다. 일부 환자들은 임신 기간 동안 여러 가지 약물을 함께 복용하고 있었다. 이러한 결함에 대하여 일정한 경향을 보이지 않았고, 선천성 기형에 대한 기저 발생률이 2~3%이므로 이 약과의 연관성은 확립할 수 없었다.",
+   "extractor": "kw-v4",
+   "id": "6ea4c52c0e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "eaa51d204e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "살부타몰은 모유로 이행될 수 있으므로 치료상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여하고, 투여중에는 수유를 중지한다. 모유 중의 살부타몰이 신생아에게 해로운 영향을 미치는지에 대해서는 알려지지 않았다.",
+   "extractor": "kw-v4",
+   "id": "a7c73cec16",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 환자의 상태를 관찰하면서 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "bd95765272",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:17:19",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

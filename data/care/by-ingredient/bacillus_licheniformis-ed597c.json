@@ -1,15 +1,19 @@
 {
-  "ingredient": "bacillus licheniformis",
-  "productSeq": "201507631",
-  "itemName": "락토셀캡슐(바실루스리케니포르미스균)",
-  "atc": "A07FA01",
-  "etcOtc": "일반의약품",
-  "changeDate": "20210813",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507631/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507631/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507631/NB"
-  },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:07:10"
+ "ingredient": "bacillus licheniformis",
+ "productSeq": "201507631",
+ "itemName": "락토셀캡슐(바실루스리케니포르미스균)",
+ "atc": "A07FA01",
+ "etcOtc": "일반의약품",
+ "changeDate": "20210813",
+ "ediCode": "053300090",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507631/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507631/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507631/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

@@ -1,0 +1,51 @@
+{
+ "ingredient": "glucose",
+ "productSeq": "200711320",
+ "itemName": "글루오렌지100액(포도당)",
+ "atc": "V04CA02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20140312",
+ "ediCode": "641500011",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711320/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711320/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200711320/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의사항 2)",
+   "subject": "",
+   "excerpt": "시험전날에는 의약품등의 투여를 중지하고 폭음, 폭식 및 음주를 금한다.",
+   "extractor": "kw-v4",
+   "id": "48fb570037",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "음주"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "elderly",
+   "where": "6. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 감량하는 등 주의하여 사용한다.",
+   "extractor": "kw-v4",
+   "id": "065f9e9ed9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:21:43",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

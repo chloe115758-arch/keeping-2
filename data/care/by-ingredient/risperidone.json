@@ -1,95 +1,118 @@
 {
-  "ingredient": "risperidone",
-  "productSeq": "201404258",
-  "itemName": "피엠에스리스페리돈정1밀리그램(리스페리돈)",
-  "atc": "N05AX08",
-  "etcOtc": "전문의약품",
-  "changeDate": "20231129",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201404258/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201404258/UD",
-    "nb": ""
-  },
-  "rules": [
+ "ingredient": "risperidone",
+ "productSeq": "201404258",
+ "itemName": "피엠에스리스페리돈정1밀리그램(리스페리돈)",
+ "atc": "N05AX08",
+ "etcOtc": "전문의약품",
+ "changeDate": "20231129",
+ "ediCode": "627600020",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201404258/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201404258/UD",
+  "nb": ""
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "약력학적 상호작용",
+   "excerpt": "중추신경계 작용 약물과 알코올",
+   "extractor": "kw-v4",
+   "id": "d11e5368bf",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "f6f5efb823",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용",
-      "subject": "1) 중추신경계 작용 약물과 알코올",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약의 내인성 중추신경계 효과를 고려할 때, 다른 중추신경계 작용 약물로 인해 유발된 중추신경계 억제 현상을 심화시킬 가능성 등이 있으므로 이 약을 이러한 약물과 병용하는 경우에는 주의해야 한다. 이러한 약물로는 알코올이나 중추신경계 효과가 있는 약물 즉 아편, 진정형 항히스타민제, 벤조디아제핀계, 삼환계 항우울제 등이 있다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "626a7fa56f",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부를 대상으로 한 적절한 시험자료는 없다. 이 약이 임부에게 투여시 태아에게 해로운 결과를 끼칠지 또는 생식능력에 영향을 미칠지에 대해 알려진 바 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "0b18c36311",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 3기에 항정신병약을 복용한 임부로부터 출생한 신생아는 추체외로장애 및/또는 금단 증상이 나타날 위험성이 있다. 이러한 신생아에게 초조, 근육긴장항진, 근육긴장저하, 진전, 졸음, 호흡곤란, 섭식장애가 보고되었으며, 이러한 증상은 그 중증도에 있어서 다양했다. 일부 경우 이러한 증상들은 스스로 조절되었으나 다른 경우의 신생아들은 장기 입원 및 중환자실에서의 치료를 요하였다. 그러므로 임부…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "288870fd23",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물 실험에서 이 약은 직접적인 생식 독성을 나타내지 않았으나, 프로락틴 분비 증가와 중추신경계 억제 효과에 의해 생식 능력과 태자의 생존율 감소를 보였다. 시판 후 사용 경험에서 임신 말기 3개월 동안 이 약 사용 후 신생아에서 가역적인 추체외로 증상이 관찰되었다. 어떤 연구에서도 기형 유발 작용은 보고된 바가 없다. 임상적으로 이 약의 임부에 대한 안전성은 확립되어 있지 않으므로 치료의…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6b498325b7",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 4)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "동물 실험에서 이 약과 그 대사산물(9-하이드록시 리스페리돈)이 유즙으로 분비되었고 임상적으로 모유로도 이 약과 그 대사산물이 이행되는 것으로 확인되었다. 그러므로 이 약을 투여받는 환자는 수유를 중지한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "83d8ac7adf",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자는 신기능이 저하될 가능성이 높으므로, 용량 선정 및 조정에 대해 주의를 기울여야 한다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:07:26"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "약력학적 상호작용",
+   "excerpt": "이 약의 내인성 중추신경계 효과를 고려할 때, 다른 중추신경계 작용 약물로 인해 유발된 중추신경계 억제 현상을 심화시킬 가능성 등이 있으므로 이 약을 이러한 약물과 병용하는 경우에는 주의해야 한다. 이러한 약물로는 알코올이나 중추신경계 효과가 있는 약물 즉 아편, 진정형 항히스타민제, 벤조디아제핀계, 삼환계 항우울제 등이 있다.",
+   "extractor": "kw-v4",
+   "id": "d65ae699c1",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부를 대상으로 한 적절한 시험자료는 없다. 이 약이 임부에게 투여시 태아에게 해로운 결과를 끼칠지 또는 생식능력에 영향을 미칠지에 대해 알려진 바 없다.",
+   "extractor": "kw-v4",
+   "id": "fd2bdf09aa",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 3기에 항정신병약을 복용한 임부로부터 출생한 신생아는 추체외로장애 및/또는 금단 증상이 나타날 위험성이 있다. 이러한 신생아에게 초조, 근육긴장항진, 근육긴장저하, 진전, 졸음, 호흡곤란, 섭식장애가 보고되었으며, 이러한 증상은 그 중증도에 있어서 다양했다. 일부 경우 이러한 증상들은 스스로 조절되었으나 다른 경우의 신생아들은 장기 입원 및 중환자실에서의 치료를 요하였다. 그러므로 임부…",
+   "extractor": "kw-v4",
+   "id": "3b55ac4ab1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "동물 실험에서 이 약은 직접적인 생식 독성을 나타내지 않았으나, 프로락틴 분비 증가와 중추신경계 억제 효과에 의해 생식 능력과 태자의 생존율 감소를 보였다. 시판 후 사용 경험에서 임신 말기 3개월 동안 이 약 사용 후 신생아에서 가역적인 추체외로 증상이 관찰되었다. 어떤 연구에서도 기형 유발 작용은 보고된 바가 없다. 임상적으로 이 약의 임부에 대한 안전성은 확립되어 있지 않으므로 치료의…",
+   "extractor": "kw-v4",
+   "id": "eea83845d4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "동물 실험에서 이 약과 그 대사산물(9-하이드록시 리스페리돈)이 유즙으로 분비되었고 임상적으로 모유로도 이 약과 그 대사산물이 이행되는 것으로 확인되었다. 그러므로 이 약을 투여받는 환자는 수유를 중지한다.",
+   "extractor": "kw-v4",
+   "id": "4310d85af8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자는 신기능이 저하될 가능성이 높으므로, 용량 선정 및 조정에 대해 주의를 기울여야 한다.",
+   "extractor": "kw-v4",
+   "id": "57873e47a6",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

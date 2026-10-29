@@ -1,100 +1,123 @@
 {
-  "ingredient": "pioglitazone hydrochloride",
-  "productSeq": "201901271",
-  "itemName": "피오투정(피오글리타존염산염)",
-  "atc": "A10BG03",
-  "etcOtc": "전문의약품",
-  "changeDate": null,
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901271/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901271/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901271/NB"
-  },
-  "rules": [
+ "ingredient": "pioglitazone hydrochloride",
+ "productSeq": "201901271",
+ "itemName": "피오투정(피오글리타존염산염)",
+ "atc": "A10BG03",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "055100860",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901271/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901271/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901271/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자(경우)에는 신중히 투여할 것. 9)",
+   "subject": "",
+   "excerpt": "과도한 알코올 섭취자(저혈당을 일으킬 우려가 있다.)",
+   "extractor": "kw-v4",
+   "id": "25025ac3ed",
+   "kind": "note",
+   "matched": [
     {
-      "id": "58010c2d33",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "피오글리타존은 기관형성기 동안 랫트에서 80 mg/kg까지 경구 투여량에서 또는 토끼에 160 mg/kg까지 투여했을 때 기형발생이 없었다(mg/m2을 근거로 한 인체 최대권장 경구용량의 각각 약 17 배 및 40 배). 분만 지연 및 배자독성(착상후 손실 증가, 발생 지연, 태자 체중 감소)이 경구 투여량 40 mg/kg/day(mg/m2을 근거로 한 인체 최대권장 경구용량의 약 10 배)…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "15327252da",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 여성에 대한 적절하고 잘 대조된 임상시험은 없다. 동물실험에서 최대 사람 권장 용량의 10배~40배 용량에서 착상 후 손실률 증가, 발생 지연, 태자 체중 감소 및 분만 지연이 나타났다. 잠재적 유익성이 태자에 대한 잠재적 위험을 정당화하는 경우에만 임신 중에 이 약을 사용하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "37add06054",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중 비정상적인 혈당치는 신생아 유병률 및 사망률의 증가뿐만 아니라, 선천성 기형의 높은 발생빈도와 관련이 있다. 임신중에 혈당치를 가능한 한 정상에 가깝게 유지하기 위하여 인슐린을 사용할 것을 권장한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "2ad1baf288",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약이 인체의 모유로 이행되는지 여부는 알려져 있지 않다. 피오글리타존은 수유 중인 랫트의 유즙으로 분비된다. 많은 약물이 인체의 유즙으로 이행되고 이 약이 수유 중인 영아에서 중대한 이상반응을 유발할 가능성이 있으므로, 수유부에 대한 이 약 투여의 중요성을 고려하여, 수유를 중단할 지 또는 이 약을 중단할 지를 결정하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6567d95eff",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "16 ～ 26주 이중 눈가림, 위약대조, 단독요법 임상시험 3건을 통합하였을 때, 이 약을 투여 받은 환자 총 92명(15.2 %)이 65세 이상이었고, 2명(0.3 %)이 75세 이상이었다. 설포닐우레아에 병용 투여한 16 ～ 24주 임상시험 2건을 통합하였을 때, 이 약을 투여 받은 201명(18.7 %)의 환자가 65세 이상이었고, 19명(1.8 %)이 75세 이상이었다. 메트포르민에…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "8a2c16bb2f",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "PROactive 임상시험에서는 이 약을 투여 받은 1,068명(41.0 %)의 환자가 65세 이상이었고, 42명(1.6 %)이 75세 이상이었다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e6af4159e2",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "피오글리타존에 대한 약동학 시험에서 노인 환자와 젊은 환자 간에 약동학 변수 면에서 유의한 차이는 관찰되지 않았다. 75세 이상 환자에 대한 표본 수가 작아 결론이 제한되긴 하지만, 이러한 임상 경험에서 고령 환자(65세 이상)와 젊은 환자 간에 안전성과 유효성 면에서의 차이는 확인되지 않았다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:04:32"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "피오글리타존은 기관형성기 동안 랫트에서 80 mg/kg까지 경구 투여량에서 또는 토끼에 160 mg/kg까지 투여했을 때 기형발생이 없었다(mg/m2을 근거로 한 인체 최대권장 경구용량의 각각 약 17 배 및 40 배). 분만 지연 및 배자독성(착상후 손실 증가, 발생 지연, 태자 체중 감소)이 경구 투여량 40 mg/kg/day(mg/m2을 근거로 한 인체 최대권장 경구용량의 약 10 배)…",
+   "extractor": "kw-v4",
+   "id": "204dc70303",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 여성에 대한 적절하고 잘 대조된 임상시험은 없다. 동물실험에서 최대 사람 권장 용량의 10배~40배 용량에서 착상 후 손실률 증가, 발생 지연, 태자 체중 감소 및 분만 지연이 나타났다. 잠재적 유익성이 태자에 대한 잠재적 위험을 정당화하는 경우에만 임신 중에 이 약을 사용하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "2cefc01562",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 비정상적인 혈당치는 신생아 유병률 및 사망률의 증가뿐만 아니라, 선천성 기형의 높은 발생빈도와 관련이 있다. 임신중에 혈당치를 가능한 한 정상에 가깝게 유지하기 위하여 인슐린을 사용할 것을 권장한다.",
+   "extractor": "kw-v4",
+   "id": "ecaadc2b6c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약이 인체의 모유로 이행되는지 여부는 알려져 있지 않다. 피오글리타존은 수유 중인 랫트의 유즙으로 분비된다. 많은 약물이 인체의 유즙으로 이행되고 이 약이 수유 중인 영아에서 중대한 이상반응을 유발할 가능성이 있으므로, 수유부에 대한 이 약 투여의 중요성을 고려하여, 수유를 중단할 지 또는 이 약을 중단할 지를 결정하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "a3a4216851",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "16 ～ 26주 이중 눈가림, 위약대조, 단독요법 임상시험 3건을 통합하였을 때, 이 약을 투여 받은 환자 총 92명(15.2 %)이 65세 이상이었고, 2명(0.3 %)이 75세 이상이었다. 설포닐우레아에 병용 투여한 16 ～ 24주 임상시험 2건을 통합하였을 때, 이 약을 투여 받은 201명(18.7 %)의 환자가 65세 이상이었고, 19명(1.8 %)이 75세 이상이었다. 메트포르민에…",
+   "extractor": "kw-v4",
+   "id": "29382bb770",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "PROactive 임상시험에서는 이 약을 투여 받은 1,068명(41.0 %)의 환자가 65세 이상이었고, 42명(1.6 %)이 75세 이상이었다.",
+   "extractor": "kw-v4",
+   "id": "0bd38b3644",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "피오글리타존에 대한 약동학 시험에서 노인 환자와 젊은 환자 간에 약동학 변수 면에서 유의한 차이는 관찰되지 않았다. 75세 이상 환자에 대한 표본 수가 작아 결론이 제한되긴 하지만, 이러한 임상 경험에서 고령 환자(65세 이상)와 젊은 환자 간에 안전성과 유효성 면에서의 차이는 확인되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "1b532a04fe",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

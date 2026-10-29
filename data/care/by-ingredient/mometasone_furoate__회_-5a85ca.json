@@ -1,52 +1,56 @@
 {
-  "ingredient": "mometasone furoate(/회)",
-  "productSeq": "201005237",
-  "itemName": "나조맥스나잘스프레이(모메타손푸로에이트)",
-  "atc": "R01AD09",
-  "etcOtc": "전문의약품",
-  "changeDate": "20260120",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005237/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005237/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005237/NB"
+ "ingredient": "mometasone furoate(/회)",
+ "productSeq": "201005237",
+ "itemName": "나조맥스나잘스프레이(모메타손푸로에이트)",
+ "atc": "R01AD09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260120",
+ "ediCode": "057001851",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005237/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005237/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201005237/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임신한 여성에게서의 적절한 연구는 없다. 다른 비강용 코르티코스테로이드류에서와 같이 이 약은 모체에 대한 잠재적인 유익성이 모체, 태아 및 영아에 대한 잠재적인 위험성을 상회한다고 판단되는 경우에만 임부 또는 수유부에게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "7ac48b9ff3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "656d9a4990",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신한 여성에게서의 적절한 연구는 없다. 다른 비강용 코르티코스테로이드류에서와 같이 이 약은 모체에 대한 잠재적인 유익성이 모체, 태아 및 영아에 대한 잠재적인 위험성을 상회한다고 판단되는 경우에만 임부 또는 수유부에게 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "c1a3b53101",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중 코르티코스테로이드류를 투여 받은 어머니에게서 태어난 영아는 세심하게 부신기능부전을 관찰하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "f1b42905ba",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 환자의 상태를 관찰하며 신중히 투여한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:05:54"
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 중 코르티코스테로이드류를 투여 받은 어머니에게서 태어난 영아는 세심하게 부신기능부전을 관찰하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "04514537e5",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 있으므로 환자의 상태를 관찰하며 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "b539370402",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

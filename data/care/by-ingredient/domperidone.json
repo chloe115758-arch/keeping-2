@@ -1,0 +1,99 @@
+{
+ "ingredient": "domperidone",
+ "productSeq": "199501299",
+ "itemName": "부광돔페리돈정10밀리그램",
+ "atc": "A03FA03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20200605",
+ "ediCode": "642200630",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199501299/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199501299/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199501299/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 7)",
+   "subject": "",
+   "excerpt": "제산제, 위산분비억제제는 이 약의 경구 생체이용률을 낮출 수 있으므로 이 약과 동시에 투여해서는 안 된다. 병용투여시에는 음식을 섭취 전 이 약을 복용하고 음식을 섭취한 후 제산제 또는 위산분비억제제를 복용한다.",
+   "extractor": "kw-v4",
+   "id": "449e677b9f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에의 이 약의 사용에 대한 시판 후 자료는 제한적이다. 랫트를 사용한 동물실험에서 모체에 독성을 나타내는 정도의 고용량에서 생식 독성이 관찰되었다(골격, 내장 이상 등의 기형 보고). 사람에 대한 잠재적인 위험은 알려져 있지 않다. 따라서 임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "0e43e1765f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 랫트를 사용한 동물실험에서 모유중으로 이행됨이 관찰되었다(주로 대사산물로서 배설 : 2.5mg/kg 용량을 경구 및 정맥투여한 후 각각 모유중으로 배설된 최고 농도치가 40ng/ml, 800ng/mL로 나타났다.). 인체 모유 중의 돔페리돈의 농도는 혈장 농도의 10~50%정도이며 10ng/mL를 넘지 않을 것으로 예상된다.",
+   "extractor": "kw-v4",
+   "id": "5a276ece87",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "돔페리돈은 모유를 통하여 분비되며 신생아들은 산모의 몸무게에 맞게 조절된 용량의 0.1% 미만을 수유 받는다. 모유수유를 통한 노출 후에는 부작용 특히 심장 문제가 발생할 수도 있다. 모유수유가 아이에게 주는 이익과 산모가 치료를 통하여 받는 이익을 고려하여 둘 중 하나를 중단하는 조치를 취하여야 한다. 모유수유를 받은 신생아들은 QTc 연장 위험 요소에 대하여 경계하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "09eecd0768",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리 기능이 저하되어 있으므로 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "162e019b29",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "8082f19e99",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "성인 및 청소년(12세 이상, 35kg 이상): 돔페리돈으로서 1회 10mg(레보도파 투여시 5mg)을 1일 3회 식전에 경구투여한다. 1일 최대 복용량은 30mg이다.",
+   "meal": "식전",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

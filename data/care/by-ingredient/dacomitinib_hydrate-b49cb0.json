@@ -1,0 +1,154 @@
+{
+ "ingredient": "dacomitinib hydrate",
+ "productSeq": "202000971",
+ "itemName": "비짐프로정15밀리그램(다코미티닙수화물)",
+ "atc": "L01XE47",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210812",
+ "ediCode": "648903460",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000971/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000971/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202000971/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "이 약의 물에 대한 용해도는 pH 의존적이며, 낮은 pH(산성)에서 용해도가 더 높다. 24명의 건강한 피험자에 대한 자료에 따르면, 이 약 45 mg 단회투여와 7일간 프로톤펌프 억제제 라베프라졸 1일 1회 40 mg의 병용은 이 약 45 mg 단회/단독 투여와 비교하여, 이 약의 Cmax 및 AUC0-96h(0-96시간까지의 혈중농도곡선하면적), AUCinf (0-∞의 혈중농도곡선하면적)…",
+   "extractor": "kw-v4",
+   "id": "5ad09d2893",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "프로톤펌프"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용",
+   "subject": "",
+   "excerpt": "임상시험 A7471001의 환자 8명에서 관찰된 자료에 따르면, 국소제산제 투여가 이 약의 Cmax 및 AUCinf에 미치는 뚜렷한 영향은 없었다. 통합자료에 기반하면, H2-수용체 길항제가 이 약의 항정상태 최저농도에 미치는 명백한 영향은 없었다(기하평균비 86%(90% CI: 73; 101). 국소제산제와 H2-수용체 길항제는 필요에 따라 사용될 수 있다. 이 약은 H2-수용체 길항제 투…",
+   "extractor": "kw-v4",
+   "id": "9f2cbd38ad",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "가임여성/피임",
+   "extractor": "kw-v4",
+   "id": "a50e7736f8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "가임여성은 이 약을 투여하는 동안 임신을 피해야 한다. 이 약을 투여 중인 가임여성은 투여 중 및 투여 완료 후 적어도 17일 동안(5회의 반감기) 적절한 피임법을 사용해야 한다.",
+   "extractor": "kw-v4",
+   "id": "8d13ab3091",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "7bc781fde2",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임부에 대한 이 약의 자료는 없다. 동물시험에서 생식독성에 제한적인 영향을 보였다(랫드와 토끼에서 모체 체중증가량과 음식섭취량 감소, 랫드에서만 태자 체중감소 및 높은 중족골 골화부전 발생률). 이 약의 작용기전에 근거하면, 이 약은 임부에 투여시 태아에게 위해할 수 있다. 임신 중에 이 약을 투여해서는 안 된다.",
+   "extractor": "kw-v4",
+   "id": "ba791db2d8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중 이 약을 복용하거나 이 약 투여 중에 임신이 된 여성 환자에게, 태아에 대한 잠재적 위험성을 알려야 한다.",
+   "extractor": "kw-v4",
+   "id": "4c5a5ca32a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "f00cbdde6e",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부, 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약 및 그 대사체가 모유로 이행되는지는 알려져 있지 않다. 많은 약물이 모유로 분비되고, 모유로 이 약에 노출된 영유아에게 중대한 이상반응의 가능성이 있으므로, 이 약을 복용하는 동안 모유수유를 하지 않도록 주의시켜야 한다.",
+   "extractor": "kw-v4",
+   "id": "d6a868d678",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자(만 65세 이상)에서 이 약의 시작용량 조절은 필요치 않다.",
+   "extractor": "kw-v4",
+   "id": "031a75e87e",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:20:27",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

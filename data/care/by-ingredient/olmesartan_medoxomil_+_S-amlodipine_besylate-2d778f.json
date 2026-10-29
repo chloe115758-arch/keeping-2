@@ -1,0 +1,235 @@
+{
+ "ingredient": "olmesartan medoxomil + S-amlodipine besylate",
+ "productSeq": "201405840",
+ "itemName": "레보모스정 2.5/40밀리그램",
+ "atc": "C09DB02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "650204240",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201405840/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201405840/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201405840/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용 ③",
+   "subject": "",
+   "excerpt": "자몽쥬스 : 암로디핀은 자몽이나 자몽쥬스와 병용시 일부 환자에서 생체이용률 증가로 인한 혈압강하효과의 증가가 나타날 수 있으므로, 병용투여를 권장하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "861af3da02",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "grapefruit",
+     "kind": "food",
+     "ko": "자몽",
+     "surface": "자몽"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용",
+   "subject": "",
+   "excerpt": "- 알루미늄/마그네슘(제산제): 알루미늄/마그네슘 제산제와 단회용량의 암로디핀과 병용투여 시 암로디핀의 약동학에 유의적인 영향이 없었다.",
+   "extractor": "kw-v4",
+   "id": "a5e433181d",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용",
+   "subject": "",
+   "excerpt": "- CYP3A4 유도제: CYP3A4 유도제(예, 리팜피신, 세인트 존스 워트(hypericum perforatum))와의 병용투여는 암로디핀의 혈장농도를 변화시킬 수 있다. 그러므로 특히 강력한 CYP3A4 유도제와 병용투여하는 기간 및 그 이후에 혈압을 모니터링하고 용량 조절을 고려해야 한다.",
+   "extractor": "kw-v4",
+   "id": "bb9ac0e476",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트 존스 워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용",
+   "subject": "",
+   "excerpt": "- 에탄올(알코올): 10 mg 암로디핀의 단회 및 반복투여시 에탄올의 약동학에 유의적인 변화가 없었다.",
+   "extractor": "kw-v4",
+   "id": "a69517a872",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 약물상호작용 ⑥",
+   "subject": "",
+   "excerpt": "기타 : 올메사탄 메독소밀을 건강한 지원자에게 디곡신 또는 와파린과 병용투여 했을 때 심각한 약물 상호작용은 보고되지 않았다. 올메사탄 메독소밀의 생체이용률은 제산제 [Al(OH)3/Mg(OH)2]와 병용 투여시 크게 변화하지 않았다. 이 약은 cytochrome P450 시스템에 의해 대사되지 않으며 P450 효소에도 영향을 주지 않는다. 따라서 이 효소에 의해 억제되거나, 유도 또는 대사…",
+   "extractor": "kw-v4",
+   "id": "a409b4ea94",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "올메사탄 메독소밀: 레닌-안지오텐신 계에 직접적으로 작용하는 약물은 임부에게 투여된 경우 태아 및 신생아의 손상 및 사망을 유발할 수 있다. 안지오텐신 전환효소(ACE) 저해제를 복용했던 환자의 경우에서 수십 건의 사례가 보고되었다. 임신으로 밝혀진 경우 가능한 빨리 이 약의 복용을 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "ea625066db",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "레닌-안지오텐신 계에 직접 작용하는 약을 임신 2기와 3기에 투여되면 저혈압, 신생아의 두개골 미성숙, 무뇨증, 가역적 또는 비가역적 신부전, 사망 등을 포함하는 태아의 손상을 일으킬 수 있다. 태아의 신장 기능 저하에 의한 것으로 생각되는 양수과소증이 보고되었다. 이 경우 양수과소증은 태아의 사지구축, 두개안면 미형성, 폐형성부전과 관련이 있다. 이 약에 의한 것인지는 확실하지는 않지만,…",
+   "extractor": "kw-v4",
+   "id": "97988a2f15",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "드문 경우지만 (0.1%보다 낮은 비율) 레닌-안지오텐신 계에 작용하는 약을 대체할치료법이 없을 수 있다. 이러한 경우 산모는 태아에게 가해질 수 있는 잠재적인 위험을 잘 알고 있어야 하며, 반복적인 초음파 검사를 통해 양수내의 상태를 파악하고 있어야 한다.",
+   "extractor": "kw-v4",
+   "id": "26e06dcb1f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "만약 양수과소증이 관찰되었을 경우, 이 약은 산모의 생명유지를 위해 꼭 필요한 경우가 아니라면 중지되어야 한다. 임신주수에 따라 자궁수축검사 (Contraction stress testing(CST)) 또는 Nonstress test(NST) 또는 생이화학적 프로파일링(Biophysical profiling(BPP)) 등이 적절히 실시되어야 한다. 환자와 의사는 태아가비가역적 손상을 받은 후…",
+   "extractor": "kw-v4",
+   "id": "01b7fc5312",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "올메사탄 메독소밀을 임신한 래트에 1,000mg/kg/day (mg/m2의 기준으로 볼 때 사람에서의 최대 권장 투여량 (MRHD: maximum recommended human dose)의 240배)까지 경구로 투여했을 때 또는 임신한 토끼에 1 mg/kg/day(사람 최대 투여 권장량의 절반 ; 더 높은 용량은 토끼에서는 치사량이므로 태아발육에 대한 영향을 평가할 수 없었음)까지 투여했을…",
+   "extractor": "kw-v4",
+   "id": "3c25b8bf06",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "암로디핀: 임신한 래트나 토끼에 각각의 주요 기관형성동안에 암로디핀 말레인산염을 10mg/kg/day(mg/m2의 기준으로 10mg 암로디핀의 사람 최대 투여 권장량의 각각 10배 및 20배)까지 경구 투여했을 때 최기형성 또는 기타 배/태아 독성은 없었다. (60kg체중 환자 기준으로 계산) 그러나 교배 전 14일 동안 그리고 교배 및 임신기간 동안에 10mg/kg/day와 동등한 용량의…",
+   "extractor": "kw-v4",
+   "id": "d199abff6b",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "8. 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "암로디핀 또는 올메사탄 메독소밀이 모유로 이행되는지의 여부는 알려져 있지 않다. 그러나 쥐에서 올메사탄은 낮은 농도로 이행되었다. 영아에게 이상반응이 나타날 가능성이 있으므로, 수유부는 이 약의 중요성을 고려하여서 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "2e20063822",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "이 약의 임상시험에서 65세 이상은 20% (384명/1940명), 75세 이상은 3% (62명/1940명)로 65세 이상 고령자와 젊은 환자 간에 관찰된 안전성 및 유효성에 대한 차이는 없었다. 그러나 일부 고령자에서 보다 민감한 반응이 나타날 수 있음을 배제할 수 없다.",
+   "extractor": "kw-v4",
+   "id": "edafa26592",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "암로디핀을 경구 투여 시, 최고 혈장 농도가 나타나기까지의 시간은 젊은 환자와 노인 환자에서 유사하였다. 노인 환자에서 암로디핀의 클리어런스가 감소하는 경향이 나타나며, 이로 인해 AUC와 제거 반감기가 증가하였다. 울혈성 심부전 환자에서 AUC 및 소실 반감기의 증가는 이 시험에 속한 환자 연령군에 비추어 예상된 것이었다.",
+   "extractor": "kw-v4",
+   "id": "2430c91648",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "10. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고혈압 환자에서 항정 상태에서의 올메사탄 AUC는 젊은 환자에 비해 노인환자 (65 &#x2013; 75 세) 에서 약 35% 증가했으며, 75세 이상에서 약 44% 증가했다. 이는 해당 환자군에서 신기능이 평균적으로 감소한 것과 일부 관련될 수 있다. 일반적으로, 고령자에 대한 용량 선택은 조심스러워야 하며, 보통 투여용량범위의 가장 저용량에서 시작을 하고, 고령자에게 빈발하는 간, 신장…",
+   "extractor": "kw-v4",
+   "id": "d002cc9ff3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:10:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

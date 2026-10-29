@@ -1,0 +1,197 @@
+{
+ "ingredient": "clozapine",
+ "productSeq": "201309789",
+ "itemName": "클자핀정100밀리그램(클로자핀)",
+ "atc": "N05AH02",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250917",
+ "ediCode": "642706230",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309789/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309789/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201309789/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 2)",
+   "subject": "",
+   "excerpt": "이 약은 알코올, MAO 억제제의 중추효과 및 마취제, 항히스타민제, 벤조디아제핀류와 같은 CNS 억제제의 중추에 대한 효과를 증강시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "caa04fe29f",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ②",
+   "subject": "",
+   "excerpt": "1A2의 유도체로 알려진 약물(오메프라졸, 흡연) : 흡연을 갑자기 중단하면, 혈장 중의 이 약물의 농도가 상승할 수 있고, 이로 인하여 이상 반응이 증가할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "f10c5805c3",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 ③",
+   "subject": "",
+   "excerpt": "카페인(1A2) 섭취에 의해 약의 혈장 중 농도가 상승할 수 있고, 연이어 5일간 카페인을 섭취하지 않으면 거의 50%까지는 감소한다. 그러므로 카페인 섭취습관이 바뀌면 이 약의 용량 조절이 필요할 수 있다.",
+   "extractor": "kw-v4",
+   "id": "e997c046aa",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "caffeine",
+     "kind": "food",
+     "ko": "카페인·커피",
+     "surface": "카페인"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "치료 개시시 낮은 용량(제1일에 12.5 mg, 1회)으로 투여하고, 연이은 증량은 1일 25 mg을 초과하지 않는 것이 권고된다.",
+   "extractor": "kw-v4",
+   "id": "2a34dca1cb",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약의 임상시험은 65세 이상에 대해서는, 그들의 약에 대한 반응이 나이가 더 적은 피험자들의 반응과 같은지의 여부를 판단 할 만큼 충분한 수의 피험자 수를 포함하지 않았다.",
+   "extractor": "kw-v4",
+   "id": "1186833c14",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "이 약의 투여로 인해 기립성 저혈압이 나타날 수 있으며, 이 약을 투여 받은 환자 중에는 빈맥도 드물게 보고된 바 있으며 이것은 지속적일 수도 있다. 특히 심혈관계 기능이 손상된 고령자가 이런 영향을 더 쉽게 받을 수 있다.",
+   "extractor": "kw-v4",
+   "id": "6d892c73a8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "고령자에서는 특히 뇨저류나 변비같은 이 약의 항콜린 작용이 쉽게 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "03c69eb02f",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "치매 관련 정신병인 고령 환자에서 이 약의 유효성 및 안전성에 대한 연구를 진행하지 않았다. 관찰 연구에서 항정신병약제로 치료한 치매 관련 정신병 고령 환자에서 사망이 증가하는 것으로 나타났다. 발표된 논문에 따르면 항정신병약제 치료에 따른 진정이 나타나거나, 심장이상(예. 심부정맥) 또는 폐이상(예. 흡인이 있거나 없는 경우의 폐렴)이 있을 때 치료한 경우 이 환자군에서 사망의 위험이 증가…",
+   "extractor": "kw-v4",
+   "id": "dae23b2f02",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "9. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 또는 임신하고 있을 가능성이 있는 여성에게는 투여하지 않는다. 동물실험(설치류)에서, 대량투여로 태자사망, 유산, 조산 등의 태자독성이 보고되었다. 또, 다른 페노티아진계 (클로르프로마진)의 임부 투여에서 신생아 진전 등이 나타났다는 보고가 있다.",
+   "extractor": "kw-v4",
+   "id": "fc43827eb9",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "9. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 3기에 항정신병약을 복용한 임부로부터 출생한 신생아는 추체외로장애 및/또는 금단 증상이 나타날 위험성이 있다. 이러한 신생아에게 초조, 근육긴장항진, 근육긴장저하, 진전, 졸음, 호흡곤란, 섭식장애가 보고되었으며, 이러한 증상은 그 중증도에 있어서 다양했다. 일부 경우 이러한 증상들은 스스로 조절되었으나 다른 경우의 신생아들은 장기 입원 및 중환자실에서의 치료를 요하였다.",
+   "extractor": "kw-v4",
+   "id": "98efcf9cd1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "9. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "동물에 대한 생식 독성 시험에서 이 약은 수태장애 또는 태아에 대한 유해성을 시사하지는 않았다. 그러나 임부에 대한 이 약 사용의 안전성은 확립되어 있지 않으므로, 이 약은 치료상의 유익성이 위험성을 상회하는 경우에만 임부에 투여하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "831eb0164a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "9. 임부 및 수유부에 대한 투여 4)",
+   "subject": "",
+   "excerpt": "클로자핀 외 다른 항정신병 약물로 치료 받고 있는 환자는 무월경이 될 수 있다. 다른 항정신병 약물에서 클로자핀으로 전환할 경우, 정상 월경이 돌아올 수 있다. 그러므로 임신의 가능성이 있는 여성의 경우 적절한 피임 조치를 취해야 한다.",
+   "extractor": "kw-v4",
+   "id": "12a2e23ced",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "9. 임부 및 수유부에 대한 투여 5)",
+   "subject": "",
+   "excerpt": "동물에 대한 시험에서 이 약은 모유를 통해 분비된다는 것이 밝혀졌으므로 이 약 투여 중인 수유부는 수유를 중지해야 한다.",
+   "extractor": "kw-v4",
+   "id": "562b895877",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:09:55",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

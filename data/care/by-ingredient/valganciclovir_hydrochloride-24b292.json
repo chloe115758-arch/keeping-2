@@ -1,0 +1,99 @@
+{
+ "ingredient": "valganciclovir hydrochloride",
+ "productSeq": "201505740",
+ "itemName": "비가비르정450밀리그램\n\n(발간시클로비르염산염)",
+ "atc": "J05AB14",
+ "etcOtc": "전문의약품",
+ "changeDate": "20230810",
+ "ediCode": "052900050",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505740/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505740/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201505740/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 1)",
+   "subject": "",
+   "excerpt": "장관 투과성에 대한 랫트 생체내 모델에서, 발간시클로버는 발아시클로버, 디다노신, 넬피나비르, 싸이클로스포린, 오메프라졸 및 미코페놀레이트 모페틸과 어떠한 상호작용도 없었다.",
+   "extractor": "kw-v4",
+   "id": "5871dec796",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임산부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "발간시클로버는 대부분이 빠르게 간시클로버로 전환되기 때문에 발간시클로버에서 생식독성시험은 따로 수행되지 않았다. 동물에서 간시클로버는 생식능력을 손상시키고 기형을 유발하였다. 임신의 가능성이 있는 여성은 약물투여기간동안 효과적인 피임을 하도록 한다. 남성의 경우는 이 약 투여 중 및 투여 후 최소 90일간 물리적인 피임을 하도록 한다. 임신 중 이 약 사용에 대한 안전성은 조사되지 않았다.…",
+   "extractor": "kw-v4",
+   "id": "76fac3064a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임산부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "주산ㆍ수유기 발달에 대한 발간시클로버 및 간시클로버의 영향은 연구되지 않았다. 그러나, 간시클로버가 모유로 분비되어 수유중인 유아에서 심각한 이상반응을 유발할 가능성을 배제할 수 없다. 그러므로 수유부에 이 약 투여시 가능한 이점을 고려하여 약물 투여 중단이나 수유중단을 결정해야 한다.",
+   "extractor": "kw-v4",
+   "id": "b5f8afaecc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자에서 이 약의 안전성 및 유효성은 확립되어 있지 않다. 고령자는 종종 사구체 여과율이 감소되어있으므로 이 약 투여 전 또는 투여 중에 신기능을 평가하는 등 특별한 주의가 필요하다. 또한, 신기능을 모니터하고 그에 따라 용량을 조절하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "a9b0c910f3",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "f319c48bd6",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "활동성 CMV 망막염 환자에게는 21일간 식사와 함께 1일 2회, 1회 900mg씩 복용한다. 유도요법의 연장은 골수독성의 위험을 증가시킬 수 있다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  },
+  {
+   "id": "9c794b7197",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "유도요법후 또는 비활동성 CMV망막염 환자는 1일 1회, 1회 900mg씩 식사와 함께 복용한다. 망막염이 악화될 경우에는 유도요법을 반복한다.",
+   "meal": "식사와 함께",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:24:13",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

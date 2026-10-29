@@ -1,40 +1,44 @@
 {
-  "ingredient": "bicalutamide",
-  "productSeq": "201507324",
-  "itemName": "테바비칼루타마이드정50밀리그램",
-  "atc": "L02BB03",
-  "etcOtc": "전문의약품",
-  "changeDate": "20181003",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507324/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507324/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507324/NB"
+ "ingredient": "bicalutamide",
+ "productSeq": "201507324",
+ "itemName": "테바비칼루타마이드정50밀리그램",
+ "atc": "L02BB03",
+ "etcOtc": "전문의약품",
+ "changeDate": "20181003",
+ "ediCode": "626900610",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507324/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507324/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507324/NB"
+ },
+ "rules": [
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약 50 mg 용량 및 150 mg 용량에 대해 실시한 2개 임상시험에서 총비칼루타마이드 또는 활성체인 R-이성질체의 혈장 중 정상상태 농도는 연령에 따라 유의한 차이를 나타내지 않았다.",
+   "extractor": "kw-v4",
+   "id": "33ebb9bcf1",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
-    {
-      "id": "2f89cf28a9",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약 50 mg 용량 및 150 mg 용량에 대해 실시한 2개 임상시험에서 총비칼루타마이드 또는 활성체인 R-이성질체의 혈장 중 정상상태 농도는 연령에 따라 유의한 차이를 나타내지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b035bc3d91",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자에서는 심장·순환기계의 기능의 저하가 많으며, 심장·순환기계의 이상반응 발현 빈도가 젊은 층보다 높게 나타날 수 있으므로 고령자에 투여시 환자의 상태를 관찰하면서 신중하게 투여한다.",
-      "extractor": "kw-v1"
-    }
-  ],
-  "fetchedAt": "2026-10-29T19:14:11"
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "일반적으로 고령자에서는 심장·순환기계의 기능의 저하가 많으며, 심장·순환기계의 이상반응 발현 빈도가 젊은 층보다 높게 나타날 수 있으므로 고령자에 투여시 환자의 상태를 관찰하면서 신중하게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "36054b268b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

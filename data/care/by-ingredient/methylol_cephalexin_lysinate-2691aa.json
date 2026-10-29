@@ -1,0 +1,44 @@
+{
+ "ingredient": "methylol cephalexin lysinate",
+ "productSeq": "198701854",
+ "itemName": "메섹신정(메틸올세팔렉신리시네이트)",
+ "atc": "J01DB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240524",
+ "ediCode": "645300530",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701854/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701854/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/198701854/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것. 5)",
+   "subject": "",
+   "excerpt": "경구섭취가 불량한 환자 또는 비경구영양 환자, 고령자, 전신상태가 나쁜 환자(비타민 K결핍증상이 나타날 수 있으므로 충분히 관찰한다.)",
+   "extractor": "kw-v4",
+   "id": "0e6de776e9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 부인에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "1cd0dc00e4",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:16:18",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

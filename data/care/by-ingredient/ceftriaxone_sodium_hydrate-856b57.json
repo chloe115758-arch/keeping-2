@@ -1,126 +1,130 @@
 {
-  "ingredient": "ceftriaxone sodium hydrate",
-  "productSeq": "199302840",
-  "itemName": "중헌세프트리악손나트륨주1그램",
-  "atc": "J01DD04",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250829",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302840/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302840/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302840/NB"
-  },
-  "rules": [
+ "ingredient": "ceftriaxone sodium hydrate",
+ "productSeq": "199302840",
+ "itemName": "중헌세프트리악손나트륨주1그램",
+ "atc": "J01DD04",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250829",
+ "ediCode": "053300401",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302840/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302840/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199302840/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 4)",
+   "subject": "",
+   "excerpt": "이 약은 일부 다른 세팔로스포린계 항생물질 투여 시 나타나는 에탄올에 대한 불내성 및 출혈과 관계되는 N-메칠치오테트라졸기를 갖고 있지 않아 알콜과 병용투여 시 디설피람 유사효과는 나타나지 않았다.",
+   "extractor": "kw-v4",
+   "id": "adab849409",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "fe8c163f9d",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 4)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알콜"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약은 일부 다른 세팔로스포린계 항생물질 투여 시 나타나는 에탄올에 대한 불내성 및 출혈과 관계되는 N-메칠치오테트라졸기를 갖고 있지 않아 알콜과 병용투여 시 디설피람 유사효과는 나타나지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "4e6496e7ae",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "6. 상호작용 8)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "vitaminK",
-          "kind": "supplement",
-          "ko": "비타민 K",
-          "surface": "비타민 K"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약과 비타민 K 길항제 병용 시 출혈 위험이 증가할 수 있다. 응고 인자를 자주 모니터링해야 하며, 이 약 치료 도중 및 치료 후 항응고제의 용량을 적절히 조절해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "940c275770",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 태반관문을 통과한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "458385c3ae",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "e3cf78a78d",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "7. 임부 및 수유부에 대한 투여 3)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "모유로의 이행이 보고되어 있으므로 수유부에는 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "ef16b02e12",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "고령자인 경우에는 다음과 같은 점에 주의하여 용량 및 투여간격에 주의하는 등 환자의 상태를 관찰하고 신중히 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3bf430793c",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 생리기능이 저하되어 있어 이상반응이 발현하기 쉽다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "80a2875a39",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "9. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "비타민 K 결핍으로 출혈경향이 나타날 수 있다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알콜"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:04:16"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용 8)",
+   "subject": "",
+   "excerpt": "이 약과 비타민 K 길항제 병용 시 출혈 위험이 증가할 수 있다. 응고 인자를 자주 모니터링해야 하며, 이 약 치료 도중 및 치료 후 항응고제의 용량을 적절히 조절해야 한다.",
+   "extractor": "kw-v4",
+   "id": "588730ea30",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민 K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 태반관문을 통과한다.",
+   "extractor": "kw-v4",
+   "id": "22f214abef",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 중의 투여에 대한 안전성이 확립되어 있지 않으므로 임부 또는 임신하고 있을 가능성이 있는 여성에는 치료 상의 유익성이 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c1451c3ce8",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "모유로의 이행이 보고되어 있으므로 수유부에는 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "3d7428e85f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "고령자인 경우에는 다음과 같은 점에 주의하여 용량 및 투여간격에 주의하는 등 환자의 상태를 관찰하고 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "e472562a29",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "일반적으로 생리기능이 저하되어 있어 이상반응이 발현하기 쉽다.",
+   "extractor": "kw-v4",
+   "id": "362f74554c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "비타민 K 결핍으로 출혈경향이 나타날 수 있다.",
+   "extractor": "kw-v4",
+   "id": "3225a1ca9d",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

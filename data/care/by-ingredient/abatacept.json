@@ -1,0 +1,19 @@
+{
+ "ingredient": "abatacept",
+ "productSeq": "201002332",
+ "itemName": "오렌시아주250밀리그램(아바타셉트)",
+ "atc": "L04AA24",
+ "etcOtc": "전문의약품",
+ "changeDate": "20191023",
+ "ediCode": "658700481",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201002332/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201002332/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201002332/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-30T00:24:39",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

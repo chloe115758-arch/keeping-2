@@ -1,0 +1,154 @@
+{
+ "ingredient": "fimasartan potassium trihydrate + rosuvastatin calcium",
+ "productSeq": "201605333",
+ "itemName": "투베로정60/10밀리그램(피마사르탄칼륨,로수바스타틴)",
+ "atc": "C10BX16",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260212",
+ "ediCode": "641906530",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201605333/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201605333/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201605333/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "기타 약물의 영향",
+   "excerpt": "- 제산제 : 수산화알루미늄, 수산화마그네슘을 함유하는 제산제와 이 약을 병용 투여한 결과, 로수바스타틴의 혈장 농도가 약 50% 감소되었다. 그러나 이 효과는 제산제를 이 약 투여 2시간 후에 투여했을 때에 완화되었다. 이 상호작용의 임상적 관련성은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "7cc50dcdfc",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "magnesium",
+     "kind": "supplement",
+     "ko": "마그네슘제제",
+     "surface": "산화마그네슘"
+    },
+    {
+     "key": "aluminumAntacid",
+     "kind": "drug_group",
+     "ko": "알루미늄 함유 제산제",
+     "surface": "수산화알루미늄"
+    },
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "기타 약물의 영향",
+   "excerpt": "- 와파린 : 이 약과 병용 시 와파린은 약물동태학적으로 유의한 영향을 받지 않는다. 그러나 다른 HMG-CoA 환원효소 저해제와 마찬가지로, 이 약과 와파린을 병용 투여하면 와파린 단독 투여 시에 비해 INR이 증가될 수 있다. 비타민K 길항제(예:와파린)를 투여받고 있는 환자에서 이 약의 시작, 중단 또는 용량 조절 시 INR 모니터링이 권장된다.",
+   "extractor": "kw-v4",
+   "id": "0b3737d76c",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "vitaminK",
+     "kind": "supplement",
+     "ko": "비타민 K",
+     "surface": "비타민K"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "○ 피마사르탄",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "84a5480885",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 피마사르탄",
+   "excerpt": "피마사르탄과 같이 레닌-안지오텐신계에 직접적으로 작용하는 약물을 임부에 투여시 태아 또는 신생아에게 병적 상태 및 사망을 일으킬 수 있다. 특히 임신 2, 3기에 레닌-안지오텐신계에 직접 작용하는 약물 투여시, 태아 및 신생아에 저혈압, 신생아 두개골 형성저하증, 무뇨증, 가역적 또는 비가역적 신부전을 포함한 손상 및 사망까지도 유발되었다. 태아의 신기능의 저하가 원인일 것으로 추정되는 양수…",
+   "extractor": "kw-v4",
+   "id": "55444080c7",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "○ 피마사르탄",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "6dd0b214cc",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 피마사르탄",
+   "excerpt": "피마사르탄이 사람의 모유로 이행되는지 여부는 알려져 있지 않으나, 랫드에 대한 시험에서 모유 중에 이 약의 분비가 확인되었으므로, 수유부에게 이 약을 투여하는 것은 바람직하지 않다. 따라서 수유부에 대한 이 약의 필요성을 고려하여 수유를 중지하거나 이 약 투여를 중지하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "09e762f26d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로수바스타틴",
+   "excerpt": "임부 및 수유부에 대한 로수바스타틴의 안전성은 확립되지 않았으므로 임신 또는 수유중에 사용하면 안된다.",
+   "extractor": "kw-v4",
+   "id": "8a5c9e6564",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "○ 로수바스타틴",
+   "excerpt": "임신 가능성이 있는 여성은 적절한 피임법을 사용해야 한다. 콜레스테롤 및 콜레스테롤 생합성 산물이 태아의 발달에 있어 필수적이므로 HMG-CoA 환원효소를 저해하여 발생하는 잠재적 위험성이 임신 중 치료하여 얻게 되는 유익성을 상회한다. 동물시험에 의하면 제한된 생식독성의 증거가 있다. 이 약을 사용하는 동안 임신을 할 경우 즉시 복용을 중단해야 한다. 로수바스타틴은 랫드의 모유로 이행된다.…",
+   "extractor": "kw-v4",
+   "id": "1e7ccdbacb",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "피마사르탄은 70세 초과의 고령자에 대한 투여 경험이 없다. 65세 이상의 건강한 고령자를 대상으로 한 피마사르탄의 약동학 평가결과, 피마사르탄에 대한 고령자의 체내 노출(AUC)이 젊은 건강한 성인에 비하여 약 69% 증가하였다. 그러나, 3상 임상시험에서 피마사르탄을 투여 받은 환자 226명 중 21명의 65세 이상인 환자(9.3%)에 대해 유효성 및 안전성을 비교한 결과, 고령자들과 젊…",
+   "extractor": "kw-v4",
+   "id": "e21543b0fa",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:15:22",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,0 +1,156 @@
+{
+ "ingredient": "milnacipran hydrochloride",
+ "productSeq": "200001931",
+ "itemName": "익셀캡슐25밀리그램(밀나시프란염산염)",
+ "atc": "N06AX17",
+ "etcOtc": "전문의약품",
+ "changeDate": "20220921",
+ "ediCode": "642201840",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001931/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001931/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200001931/NB"
+ },
+ "rules": [
+  {
+   "section": "warning",
+   "where": "1. 경고.",
+   "subject": "",
+   "excerpt": "이 약을 포함한 세로토닌 노르에피네프린 재흡수 저해제(SNRIs) 및 선택적 세로토닌 재흡수 저해제(SSRIs)를 단독으로 투여했을 뿐만 아니라 특히 다른 세로토닌 작동성 약물들[트립탄계열약물, 삼환계 항우울제, 아편유사제(opioids)(펜타닐, 부프레노르핀), 리튬, 트라마돌, 트립토판, 부스피론, 암페타민류, 세인트존스워트(St. John's Wort) 포함] 및 세로토닌대사를 저해하는…",
+   "extractor": "kw-v4",
+   "id": "23a7291c13",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "warning",
+   "where": "1. 경고.",
+   "subject": "",
+   "excerpt": "예를 들어 트립탄 계열 약물들, 삼환계 항우울제, 아편유사제(opioids)(펜타닐, 부프레노르핀), 리튬, 트라마돌, 부스피론, 트립토판, 암페타민류 및 세인트존스워트(St. John's Wort)와 같은 다른 세로토닌 작동성 약물들과 이 약을 병용투여하는 것이 임상적으로 유익성이 있다면 환자들은, 특히 치료개시 중 및 용량을 증가할 때, 잠재적으로 증가된 세로토닌 증후군 위험성에 대하여…",
+   "extractor": "kw-v4",
+   "id": "a890c8c304",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "세인트존스워트"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "consult",
+   "where": "3. 다음 환자에는 신중히 투여할 것. 6)",
+   "subject": "",
+   "excerpt": "세로토닌 재흡수 저해제를 투여 받고 있는 환자에게 부적절한 항이뇨 호르몬 배출 증후군으로 인한 저나트륨혈증이 있을 수 있다. 고령자, 이뇨제 또는 저나트륨혈증을 유발한다고 알려진 기타 약물 치료를 받는 환자, 경변 또는 영양실조 환자에게 투여 시 주의해야 한다.",
+   "extractor": "kw-v4",
+   "id": "cf7d714745",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 11)",
+   "subject": "표2",
+   "excerpt": "알코올과의 상호작용은 명확히 밝혀지지는 않았지만 다른 항정신성약과 마찬가지로 음주는 피하도록 한다.",
+   "extractor": "kw-v4",
+   "id": "eda6b61a48",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "5. 일반적 주의 15)",
+   "subject": "표2",
+   "excerpt": "간독성 : 섬유근육통에 대한 위약대조 시험에서 ALT 또는 AST의 경미한 상승(정상상한치의 1～3배)이 밀나시프란을 투여한 환자에서 보고되었다. ALT의 증가는 위약투여군(3%)에 비해 밀나시프란 100 mg/일 투여군(6%), 밀나시프란 200 mg/일 투여군(7%)에서 더 빈번하게 관찰되었다. 밀나시프란 100 mg/일 투여받은 한 환자(0.2%)는 ALT 증가가 정상상한치의 5배이상…",
+   "extractor": "kw-v4",
+   "id": "9280723459",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여. 1)",
+   "subject": "",
+   "excerpt": "동물실험에서 밀나시프란 소량이 태반을 통과한다고 입증되었다. 현재 임신기간동안 이 약의 기형발생 또는 태아기형 작용에 대한 적절한 자료가 없다. 사실 현재까지 2종의 관리가 잘된 동물실험에서 인간에게 기형을 일으킬 수 있는 성분들이 기형발생을 나타낸 적이 있었다. 그러나 밀나시프란을 투여한 동물에서 입증된 기형발생 작용이 없기 때문에 인간에게 기형이 기대되지 않는다. 임신 기간 중 세로토닌…",
+   "extractor": "kw-v4",
+   "id": "145c6dceff",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여. 2)",
+   "subject": "",
+   "excerpt": "밀나시프란 소량이 모유 중으로 이행되므로 이 약 복용 시 수유는 피한다.",
+   "extractor": "kw-v4",
+   "id": "24529c533a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여. 3)",
+   "subject": "",
+   "excerpt": "밀나시프란의 동물실험에서 생식독성이 관찰되었다. 밀나시프란은 안전역 없이 랫드의 수태능에 영향을 미치며 배·태자독성을 일으킨다. 랫드의 임신 3기 및 수유기동안 밀나시프란을 투여할 경우, 모체에서 독성 증상이 나타나며 새끼의 생존력 및 성장·발달에 영향을 미친다. 체중 중량을 감소시키는 용량에서 새끼의 생식 파라미터(암컷의 수태능 장애로 인함)는 영향을 받는다. 출생 전·후 발생 연구에서 인…",
+   "extractor": "kw-v4",
+   "id": "7df906c14f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "bc400623a0",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "1) 밀나시프란염산염으로서 1일 25 mg을 초기 용량으로 점차 증량하여 1회 50 mg을 1일 2회, 아침저녁으로 경구투여 하며, 식사 중에 복용하는 것이 좋다.",
+   "meal": "식사 중",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:22:49",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

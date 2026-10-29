@@ -1,83 +1,144 @@
 {
-  "ingredient": "clarithromycin",
-  "productSeq": "201805354",
-  "itemName": "클로시드정250밀리그램(클래리트로마이신)",
-  "atc": "J01FA09",
-  "etcOtc": "전문의약품",
-  "changeDate": "20240516",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201805354/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201805354/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201805354/NB"
-  },
-  "rules": [
+ "ingredient": "clarithromycin",
+ "productSeq": "201805354",
+ "itemName": "클로시드정250밀리그램(클래리트로마이신)",
+ "atc": "J01FA09",
+ "etcOtc": "전문의약품",
+ "changeDate": "20240516",
+ "ediCode": "055102280",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201805354/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201805354/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201805354/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 3)",
+   "subject": "",
+   "excerpt": "① 시토크롬 P450계로 대사되는 약물(와파린, 맥각알칼로이드, 트리아졸람, 미다졸람, 로바스타틴, 심바스타틴, 아토르바스타틴, 디소피라미드, 페니토인, 사이클로스포린, 헥소바르비탈, 알펜타닐, 브로모크립틴, 발프로에이트, 메칠프레드니솔론, 실데나필, 빈블라스틴, 알프라졸람, 아스테미졸, 카르바마제핀, 실로스타졸, 시사프리드, 오메프라졸, 피모짓, 퀴니딘, 리파부틴, 타크로리무스, 테르페나딘…",
+   "extractor": "kw-v4",
+   "id": "3369434cdc",
+   "kind": "interaction",
+   "matched": [
     {
-      "id": "22ec72fa40",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 상호작용 ③",
-      "subject": "",
-      "matched": [
-        {
-          "key": "stJohnsWort",
-          "kind": "supplement",
-          "ko": "세인트존스워트",
-          "surface": "St. John"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "CYP3A의 유도제가 되는 약물들(예, 리팜피신, 페니토인, 카르바마제핀, 페노바르비탈, St. John's wort)이 이 약의 대사를 유도할 수도 있다. 이는 이 약의 치료농도범위아래 농도(sub-therapeutic level)로 이어져 약효감소가 일어날 수 있다. 또한, 이 약의 CYP3A 억제작용에 기인하여 CYP3A 유도제의 혈장농도가 증가될 수 있으므로 이를 모니터링하는 것이 필…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "dad5d270d0",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "d5a714ec96",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "이 약은 모유 중으로 분비되므로 수유부에는 투여하지 않으며 부득이 투여하는 경우에는 수유를 중지한다. 영아가 시사프리드로 치료 중이고 수유를 하고 있다면 약물상호작용이 있을 수 있으므로 수유부에게 이 약을 투여하지 않는다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "46f83a44ca",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "일반적으로 고령자는 생리기능이 저하되어 높은 혈중 농도가 지속될 수 있으므로 신중하게 투여한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "6d2ecb1018",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "중증 신기능 부전을 가진 고령자에 대해서는 용량조절을 해야만 한다.",
-      "extractor": "kw-v1"
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:00:56"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 ③",
+   "subject": "",
+   "excerpt": "CYP3A의 유도제가 되는 약물들(예, 리팜피신, 페니토인, 카르바마제핀, 페노바르비탈, St. John's wort)이 이 약의 대사를 유도할 수도 있다. 이는 이 약의 치료농도범위아래 농도(sub-therapeutic level)로 이어져 약효감소가 일어날 수 있다. 또한, 이 약의 CYP3A 억제작용에 기인하여 CYP3A 유도제의 혈장농도가 증가될 수 있으므로 이를 모니터링하는 것이 필…",
+   "extractor": "kw-v4",
+   "id": "bab5cb41e3",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "stJohnsWort",
+     "kind": "supplement",
+     "ko": "세인트존스워트",
+     "surface": "St. John"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 8)",
+   "subject": "",
+   "excerpt": "란소프라졸과 병용투여하는 경우에는 혈청 농도가 경미하게 상승한다는 보고가 한 건이 있었으나, 용량 조절 등에 대한 결과를 뒷받침할만한 자료는 없다. 건강한 성인에 대해 8시간마다 클래리트로마이신 500mg과 1일 1회 오메프라졸 40mg을 병용투여 하였을 때 항정상태 오메프라졸의 Cmax, AUC0-24와 T1/2이 각각 30%, 89%, 34% 증가했다. 평균 24시간 내 위장 pH가 오메…",
+   "extractor": "kw-v4",
+   "id": "fbdee21065",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 상호작용 13)",
+   "subject": "",
+   "excerpt": "아목시실린 및(또는) 오메프라졸과 병용투여하는 경우에는 각 약물에 대한 사용상의 주의사항, 약물상호작용 등을 참고한다.",
+   "extractor": "kw-v4",
+   "id": "2ffdfbbf21",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "ppi",
+     "kind": "drug_group",
+     "ko": "프로톤 펌프 억제제",
+     "surface": "오메프라졸"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부에 대한 안전성이 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 여성에는 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "bdcb835ab3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "이 약은 모유 중으로 분비되므로 수유부에는 투여하지 않으며 부득이 투여하는 경우에는 수유를 중지한다. 영아가 시사프리드로 치료 중이고 수유를 하고 있다면 약물상호작용이 있을 수 있으므로 수유부에게 이 약을 투여하지 않는다.",
+   "extractor": "kw-v4",
+   "id": "d2dca834af",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리기능이 저하되어 높은 혈중 농도가 지속될 수 있으므로 신중하게 투여한다.",
+   "extractor": "kw-v4",
+   "id": "9c99d08063",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "중증 신기능 부전을 가진 고령자에 대해서는 용량조절을 해야만 한다.",
+   "extractor": "kw-v4",
+   "id": "9356209f4b",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

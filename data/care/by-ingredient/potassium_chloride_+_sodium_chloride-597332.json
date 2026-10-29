@@ -1,0 +1,44 @@
+{
+ "ingredient": "potassium chloride + sodium chloride",
+ "productSeq": "200100252",
+ "itemName": "엔에이.케이주20",
+ "atc": "B05BB01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20210915",
+ "ediCode": "644913480",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200100252/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200100252/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/200100252/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "7. 임부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신중 투여에 대한 안전성이 확립되어 있지 않으므로 명백히 필요한 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "b1ff008d5a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "고령자는 일반적으로 생리기능이 저하되어 있으므로 투여속도를 천천히 하고 감량하는 등 주의한다.",
+   "extractor": "kw-v4",
+   "id": "7931b4c4b8",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:12",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

@@ -1,96 +1,100 @@
 {
-  "ingredient": "omega-3-acid ethyl esters90",
-  "productSeq": "201901842",
-  "itemName": "로마코연질캡슐(오메가-3-산에틸에스테르90)",
-  "atc": "C10AX06",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250617",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901842/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901842/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901842/NB"
-  },
-  "rules": [
+ "ingredient": "omega-3-acid ethyl esters90",
+ "productSeq": "201901842",
+ "itemName": "로마코연질캡슐(오메가-3-산에틸에스테르90)",
+ "atc": "C10AX06",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250617",
+ "ediCode": "052401270",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901842/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901842/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201901842/NB"
+ },
+ "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의",
+   "subject": "초기 치료",
+   "excerpt": "일반적으로 임상지침에 따라 과체중 및 알코올 과다섭취는 고트리글리세라이드혈증의 주요인자가 될 수 있으므로 약물요법을 시작하기 전에 적절한 식이요법과 운동을 병행하고, 과체중 환자의 경우에는 체중 감량을 실시한다.",
+   "extractor": "kw-v4",
+   "id": "a6ac35ae1f",
+   "kind": "note",
+   "matched": [
     {
-      "id": "3ac8c3c4e9",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의",
-      "subject": "초기 치료",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "일반적으로 임상지침에 따라 과체중 및 알코올 과다섭취는 고트리글리세라이드혈증의 주요인자가 될 수 있으므로 약물요법을 시작하기 전에 적절한 식이요법과 운동을 병행하고, 과체중 환자의 경우에는 체중 감량을 실시한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "9dad1158eb",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 약물상호작용 2)",
-      "subject": "",
-      "matched": [
-        {
-          "key": "omega3",
-          "kind": "supplement",
-          "ko": "오메가-3",
-          "surface": "오메가-3"
-        },
-        {
-          "key": "dairy",
-          "kind": "food",
-          "ko": "우유·유제품",
-          "surface": "유제품"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "시토크롬 P450 의존성 모노옥시게나아제 활성 : 오메가-3 지방산 함유제품은 랫트에서 간내 시토크롬 P450 농도 및 활성을 증가시킨다. 사람에서의 P450 활성 유도에 대한 이 약의 가능성에 대해서는 아직 연구된 바 없다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "259a697bde",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임신, 수유부에 대한 투여 1)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임부 : 임신한 여성에서 실시한 임상시험은 없다. 이 약이 임신한 여성에게 투여시 태아에 해를 유발하는지 또는 생식능력에 영향을 주는지에 대해서는 알려져 있지 않다. 임신중에는 치료상의 유익성이 태아에 대한 위험성을 상회하는 경우에만 사용한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "b2b8b5a014",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임신, 수유부에 대한 투여 2)",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "수유부 : 오메가-3-산에틸에스테르가 모유로 유출되는 지는 알려져 있지 않다. 많은 약물들이 모유로 배출되기 때문에 수유중인 여성에게 투여할 때는 주의를 하여야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "36e04c5752",
-      "kind": "state_elderly",
-      "section": "elderly",
-      "where": "8. 고령자에 대한 투여",
-      "subject": "",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "65세 이상 환자는 제한된 수만이 임상시험에 포함되었다. 임상시험을 종합하여 분석한 결과 60세 이상 환자(연구집단의 약 25%)에 대한 안전성과 유효성은 60세 미만 환자의 결과와 다르지 않은 것으로 나타났다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:06:38"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 약물상호작용 2)",
+   "subject": "",
+   "excerpt": "시토크롬 P450 의존성 모노옥시게나아제 활성 : 오메가-3 지방산 함유제품은 랫트에서 간내 시토크롬 P450 농도 및 활성을 증가시킨다. 사람에서의 P450 활성 유도에 대한 이 약의 가능성에 대해서는 아직 연구된 바 없다.",
+   "extractor": "kw-v4",
+   "id": "6beb7280da",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "omega3",
+     "kind": "supplement",
+     "ko": "오메가-3",
+     "surface": "오메가-3"
+    },
+    {
+     "key": "dairy",
+     "kind": "food",
+     "ko": "우유·유제품",
+     "surface": "유제품"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임신, 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부 : 임신한 여성에서 실시한 임상시험은 없다. 이 약이 임신한 여성에게 투여시 태아에 해를 유발하는지 또는 생식능력에 영향을 주는지에 대해서는 알려져 있지 않다. 임신중에는 치료상의 유익성이 태아에 대한 위험성을 상회하는 경우에만 사용한다.",
+   "extractor": "kw-v4",
+   "id": "af373229fd",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임신, 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부 : 오메가-3-산에틸에스테르가 모유로 유출되는 지는 알려져 있지 않다. 많은 약물들이 모유로 배출되기 때문에 수유중인 여성에게 투여할 때는 주의를 하여야 한다.",
+   "extractor": "kw-v4",
+   "id": "ed1c96886f",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "8. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "65세 이상 환자는 제한된 수만이 임상시험에 포함되었다. 임상시험을 종합하여 분석한 결과 60세 이상 환자(연구집단의 약 25%)에 대한 안전성과 유효성은 60세 미만 환자의 결과와 다르지 않은 것으로 나타났다.",
+   "extractor": "kw-v4",
+   "id": "cfd7d6bd7c",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

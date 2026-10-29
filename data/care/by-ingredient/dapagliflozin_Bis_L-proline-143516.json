@@ -1,109 +1,149 @@
 {
-  "ingredient": "dapagliflozin Bis L-proline",
-  "productSeq": "202003737",
-  "itemName": "트루다파정10밀리그램(다파글리플로진비스L-프롤린)",
-  "atc": "A10BK01",
-  "etcOtc": "전문의약품",
-  "changeDate": "20250829",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003737/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003737/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003737/NB"
+ "ingredient": "dapagliflozin Bis L-proline",
+ "productSeq": "202003737",
+ "itemName": "트루다파정10밀리그램(다파글리플로진비스L-프롤린)",
+ "atc": "A10BK01",
+ "etcOtc": "전문의약품",
+ "changeDate": "20250829",
+ "ediCode": "641907990",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003737/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003737/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/202003737/NB"
+ },
+ "rules": [
+  {
+   "section": "consult",
+   "where": "2. 다음 환자에는 신중히 투여할 것",
+   "subject": "",
+   "excerpt": "이 약은 증상성 저혈압이나 크레아티닌의 급격하고 일시적인 변화로 나타날 수 있는 혈관 내 혈량 저하를 유발할 수 있다. 외국의 시판후 조사에서 이 약을 포함한 SGLT-2 저해제를 투여한 환자에서 급성 신장손상이 보고되었으며, 일부는 입원과 투석을 필요로 하였다. 신기능 장애(eGFR 60mL/min/1.73m2 미만), 고령자, 루프계 이뇨제 등을 사용하고 있는 환자에서 혈량 저하 또는 저…",
+   "extractor": "kw-v4",
+   "id": "de1cc394e9",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
   },
-  "rules": [
+  {
+   "section": "general",
+   "where": "4. 일반적 주의",
+   "subject": "",
+   "excerpt": "많은 시판 후 보고에서, 특히 제 1형 당뇨병 환자에서, 케톤산증의 유무는 즉시 확인되지 않았고, 치료의 도입이 지연되었는데, 이는 나타난 혈당 수치가 당뇨병성 케톤산증에서 일반적으로 예측되는 수치(대부분 250 mg/dL 미만)보다 낮았기 때문이다. 케톤산증의 증상과 징후는 탈수 및 중증의 대사성 산증과 일치하고 오심, 구토, 식욕감소, 복통, 권태, 호흡곤란 등을 포함한다. 일부 보고에서…",
+   "extractor": "kw-v4",
+   "id": "60c9e0ac5d",
+   "kind": "note",
+   "matched": [
     {
-      "id": "062a64ad75",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의",
-      "subject": "3) 케톤산증",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "많은 시판 후 보고에서, 특히 제 1형 당뇨병 환자에서, 케톤산증의 유무는 즉시 확인되지 않았고, 치료의 도입이 지연되었는데, 이는 나타난 혈당 수치가 당뇨병성 케톤산증에서 일반적으로 예측되는 수치(대부분 250 mg/dL 미만)보다 낮았기 때문이다. 케톤산증의 증상과 징후는 탈수 및 중증의 대사성 산증과 일치하고 오심, 구토, 식욕감소, 복통, 권태, 호흡곤란 등을 포함한다. 일부 보고에서…",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "3819d79313",
-      "kind": "note",
-      "section": "general",
-      "where": "4. 일반적 주의",
-      "subject": "3) 케톤산증",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "이 약의 투여를 시작하기 전 인슐린 분비 감소, 칼로리 제한, 알코올 남용을 포함한 케톤산증을 일으키기 쉬운 요인이 있는지 고려해야 한다. 이 약으로 치료받는 환자에서 케톤산증이 발생하는지 모니터링하고, 케톤산증을 일으키기 쉬운 임상적 상황(예: 급성 질환 또는 수술로 인한 장기적인 단식)이 발생할 경우 다파글리플로진의 투여를 일시적으로 중단하는 것을 고려한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "cfdac1f9ba",
-      "kind": "interaction",
-      "section": "interaction",
-      "where": "5. 약물 상호작용",
-      "subject": "5) 기타 상호작용",
-      "matched": [
-        {
-          "key": "alcohol",
-          "kind": "food",
-          "ko": "알코올·음주",
-          "surface": "알코올"
-        }
-      ],
-      "interval": null,
-      "tone": "caution",
-      "excerpt": "흡연, 식이, 천연물 의약품 및 알코올이 다파글리플로진의 약동학에 미치는 영향은 연구되지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "1d841b7261",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "임신한 여성을 대상으로 다파글리플로진을 투여한 자료는 없다. 랫트에 대한 연구 결과 사람의 임신 2기와 3기에 해당하는 기간에 신장 발달에 대한 독성을 나타내었다. 임부에서의 다파글리플로진의 사용은 권장되지 않는다. 임신이 확인되면, 다파글리플로진의 투여를 중단해야 한다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "102ab71736",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "1) 임부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다파글리플로진이 사람의 생식능에 미치는 영향은 연구되지 않았다. 수컷과 암컷 랫트에서 다파글리플로진은 연구된 어떤 용량에서도 생식능에 영향을 나타내지 않았다.",
-      "extractor": "kw-v1"
-    },
-    {
-      "id": "7130965b67",
-      "kind": "state_pregnancy",
-      "section": "pregnancy",
-      "where": "6. 임부 및 수유부에 대한 투여",
-      "subject": "2) 수유부",
-      "matched": [],
-      "interval": null,
-      "tone": "info",
-      "excerpt": "다파글리플로진 및 그 대사체가 인체 유즙으로 이행되는지 여부는 알려져 있지 않다. 동물에 대한 약력학/독성학 자료에 따르면 유즙으로 다파글리플로진/대사체가 분비되며, 수유를 받는 새끼에서 약리학적으로 매개된 영향도 나타났다. 신생아/영아에 대한 위험성을 배제할 수 없다. 다파글리플로진은 수유 중 사용해서는 안된다.",
-      "extractor": "kw-v1"
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
     }
-  ],
-  "fetchedAt": "2026-10-29T19:19:35"
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "general",
+   "where": "4. 일반적 주의",
+   "subject": "",
+   "excerpt": "이 약의 투여를 시작하기 전 인슐린 분비 감소, 칼로리 제한, 알코올 남용을 포함한 케톤산증을 일으키기 쉬운 요인이 있는지 고려해야 한다. 이 약으로 치료받는 환자에서 케톤산증이 발생하는지 모니터링하고, 케톤산증을 일으키기 쉬운 임상적 상황(예: 급성 질환 또는 수술로 인한 장기적인 단식)이 발생할 경우 다파글리플로진의 투여를 일시적으로 중단하는 것을 고려한다.",
+   "extractor": "kw-v4",
+   "id": "0715c6ced2",
+   "kind": "note",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "5. 약물 상호작용",
+   "subject": "",
+   "excerpt": "흡연, 식이, 천연물 의약품 및 알코올이 다파글리플로진의 약동학에 미치는 영향은 연구되지 않았다.",
+   "extractor": "kw-v4",
+   "id": "8b74511808",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "임부",
+   "extractor": "kw-v4",
+   "id": "82cce7b9f1",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "임신한 여성을 대상으로 다파글리플로진을 투여한 자료는 없다. 랫트에 대한 연구 결과 사람의 임신 2기와 3기에 해당하는 기간에 신장 발달에 대한 독성을 나타내었다. 임부에서의 다파글리플로진의 사용은 권장되지 않는다. 임신이 확인되면, 다파글리플로진의 투여를 중단해야 한다.",
+   "extractor": "kw-v4",
+   "id": "3b6b764002",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다파글리플로진이 사람의 생식능에 미치는 영향은 연구되지 않았다. 수컷과 암컷 랫트에서 다파글리플로진은 연구된 어떤 용량에서도 생식능에 영향을 나타내지 않았다.",
+   "extractor": "kw-v4",
+   "id": "a1d99fc19c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "수유부",
+   "extractor": "kw-v4",
+   "id": "46f3cb140a",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "6. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "다파글리플로진 및 그 대사체가 인체 유즙으로 이행되는지 여부는 알려져 있지 않다. 동물에 대한 약력학/독성학 자료에 따르면 유즙으로 다파글리플로진/대사체가 분비되며, 수유를 받는 새끼에서 약리학적으로 매개된 영향도 나타났다. 신생아/영아에 대한 위험성을 배제할 수 없다. 다파글리플로진은 수유 중 사용해서는 안된다.",
+   "extractor": "kw-v4",
+   "id": "b0c7d5a27d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:28:54",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

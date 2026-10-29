@@ -1,0 +1,154 @@
+{
+ "ingredient": "ramipril",
+ "productSeq": "199200884",
+ "itemName": "트리테이스정2.5밀리그람(라미프릴)",
+ "atc": "C09AA05",
+ "etcOtc": "전문의약품",
+ "changeDate": "20260824",
+ "ediCode": "652101420",
+ "route": "내복",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199200884/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199200884/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/199200884/NB"
+ },
+ "rules": [
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "- 이 약은 알코올의 혈관 확장 작용을 증가시키는 등 알코올의 효과를 증강시킬 수 있다.",
+   "extractor": "kw-v4",
+   "id": "107727daa9",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "alcohol",
+     "kind": "food",
+     "ko": "알코올·음주",
+     "surface": "알코올"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "interaction",
+   "where": "6. 상호작용",
+   "subject": "",
+   "excerpt": "- 이 약과 활성 대사체는 음식, 디곡신, 제산제, 퓨로세미드, 시메티딘, 인도메타신 및 심바스타틴과의 상호작용이 보고된 바 없다.",
+   "extractor": "kw-v4",
+   "id": "a108496937",
+   "kind": "interaction",
+   "matched": [
+    {
+     "key": "antacid",
+     "kind": "drug_group",
+     "ko": "제산제",
+     "surface": "제산제"
+    }
+   ],
+   "interval": null,
+   "tone": "caution"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "이 약은 임부 또는 임신하고 있을 가능성이 있는 부인에게 투여해서는 안 된다. (\"1. 경고\" 항 참고)",
+   "extractor": "kw-v4",
+   "id": "d84ffeb747",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "- ACE 저해제를 반드시 투여해야 하는 경우에는 임신해서는 안된다. 이 약의 투여중에 환자가 임신하고자 하면, 반드시 ACE 저해제를 배제한 다른 치료법으로 대체하여야 하며, 투여중에 환자가 임신하였다면, 가능한 빨리 ACE 저해제가 포함되지 않는 치료법으로 대체하여야한다.",
+   "extractor": "kw-v4",
+   "id": "2db7ab78d3",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여",
+   "subject": "",
+   "excerpt": "- 임신 제2기 및 제3기에 ACE 저해제를 투여할 경우 태아 또는 신생아에게 저혈압, 신생아 두골형성부전, 무뇨, 가역성 또는 비가역성 신부전 및 사망을 일으킬 수 있다. 또한 태아의 신기능 감소에 의한 양수과소증으로 태아사지경축, 두개안면변형, 발육형성부전 등이 나타날 수 있다. 미숙, 자궁내 성장지연, 동맥관개존중(patent ductus arteriosus) 이 나타났다는 보고가 있으…",
+   "extractor": "kw-v4",
+   "id": "15b689264d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "동물실험에서 이 약의 사용으로 자궁태반순환이 감소될 수 있음이 알려졌다. 또한, ACE 저해제는 국소 레닌-안지오텐신계에 영향을 주어 태아나 신생아에게 잠재적 위험이 있다. 생후동물을 대상으로 한 실험에서 이 약은 신우확장을 증가시킨 것이 보고되었다.",
+   "extractor": "kw-v4",
+   "id": "268fac39ef",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "7. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "동물실험에서 다른 ACE 저해제의 모유중으로의 이행이 보고되어 있으므로 수유중에는 이 약의 투여를 피하고 부득이한 경우에는 수유를 중단한다.",
+   "extractor": "kw-v4",
+   "id": "5c5c447f1c",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "일부 고령자는 ACE 저해제에 특히 민감하게 반응할 수 있다. 이뇨제를 병용하고 있는 고령자 또는 울혈성심부전, 신부전, 간부전인 고령자에는 주의하여 투여한다. 혈압조절의 필요성에 따라 용량이 조절되어야 한다.",
+   "extractor": "kw-v4",
+   "id": "79bce6b507",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "9. 고령자에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "치료를 시작하기에 앞서 신기능 및 혈중 칼륨농도를 검사한다. 혈압 반응 및 개인적 내성에 따라 갑작스럽게 나타나는 저혈압을 막기 위해, 특히 염류 결핍의 경우 초기용량을 조절한다.",
+   "extractor": "kw-v4",
+   "id": "42244bd064",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "id": "cc8949d598",
+   "kind": "timing",
+   "section": "usage",
+   "where": "용법·용량",
+   "matched": [],
+   "interval": null,
+   "tone": "info",
+   "excerpt": "① 이뇨제를 투여받고 있지 않은 환자 성인 : 라미프릴로서 초회량으로 1일 1회 2.5㎎을 식사중 또는 식사후 다량의 물과 함께 경구투여한다. 단, 환자의 반응에 따라 2&#8208;3주 간격으로 처음에는 1일 5㎎까지, 그 후 1일 최대 10㎎까지 증가시킬 수 있으며 이뇨제를 병용투여할 수 있다.",
+   "meal": "식사중",
+   "extractor": "kw-v4"
+  }
+ ],
+ "fetchedAt": "2026-10-30T00:23:25",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}

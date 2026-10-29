@@ -1,15 +1,19 @@
 {
-  "ingredient": "fluorometholone + tetrahydrozoline hydrochloride",
-  "productSeq": "201307305",
-  "itemName": "플루페스트점안액",
-  "atc": "S01B",
-  "etcOtc": "전문의약품",
-  "changeDate": "20190817",
-  "docUrls": {
-    "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307305/EE",
-    "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307305/UD",
-    "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307305/NB"
-  },
-  "rules": [],
-  "fetchedAt": "2026-10-29T19:09:48"
+ "ingredient": "fluorometholone + tetrahydrozoline hydrochloride",
+ "productSeq": "201307305",
+ "itemName": "플루페스트점안액",
+ "atc": "S01B",
+ "etcOtc": "전문의약품",
+ "changeDate": "20190817",
+ "ediCode": "080900091",
+ "route": "외용",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307305/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307305/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201307305/NB"
+ },
+ "rules": [],
+ "fetchedAt": "2026-10-29T21:28:53",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
 }

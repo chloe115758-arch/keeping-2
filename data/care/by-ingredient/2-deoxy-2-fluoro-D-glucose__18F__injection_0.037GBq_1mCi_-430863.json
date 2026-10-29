@@ -1,0 +1,68 @@
+{
+ "ingredient": "2-deoxy-2-fluoro-D-glucose (18F) injection 0.037GBq(1mCi)",
+ "productSeq": "201507666",
+ "itemName": "카이바이오텍에프디지주사액\n\n(2-데옥시-2-플루오로-D-글루코스(18F)액)",
+ "atc": "V09IX04",
+ "etcOtc": "전문의약품",
+ "changeDate": null,
+ "ediCode": "051800010",
+ "route": "주사",
+ "docUrls": {
+  "ee": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507666/EE",
+  "ud": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507666/UD",
+  "nb": "HTTPS://NEDRUG.MFDS.GO.KR/PBP/CMN/PDFDOWNLOAD/201507666/NB"
+ },
+ "rules": [
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 1)",
+   "subject": "",
+   "excerpt": "동물을 이용한 생식연구는 수행되어 있지 않다.",
+   "extractor": "kw-v4",
+   "id": "d75b02031d",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 2)",
+   "subject": "",
+   "excerpt": "임신 중 이 약 투여에 대한 안전성이 확립되어 있지 않으므로 임부 및 임신하고 있을 가능성이 있는 부인에는 유익성이 임부 및 태아에 대한 위험성을 상회한다고 판단되는 경우에만 투여한다.",
+   "extractor": "kw-v4",
+   "id": "c257ca6b14",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "pregnancy",
+   "where": "4. 임부 및 수유부에 대한 투여 3)",
+   "subject": "",
+   "excerpt": "젖으로의 이행여부는 알려져 있지 않았으나 많은 약물이 젖으로 분비되므로 수유부에게 투여 시 주의한다.",
+   "extractor": "kw-v4",
+   "id": "7e5c41e849",
+   "kind": "state_pregnancy",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  },
+  {
+   "section": "elderly",
+   "where": "6. 고령자에 대한 투여",
+   "subject": "",
+   "excerpt": "일반적으로 고령자는 생리 기능이 저하되어 있으므로, 환자의 상태를 충분히 관찰하여 신중히 투여한다.",
+   "extractor": "kw-v4",
+   "id": "10abb56d54",
+   "kind": "state_elderly",
+   "matched": [],
+   "interval": null,
+   "tone": "info"
+  }
+ ],
+ "fetchedAt": "2026-10-29T21:30:42",
+ "extractor": "kw-v2",
+ "rebuiltAt": "2026-10-30"
+}
