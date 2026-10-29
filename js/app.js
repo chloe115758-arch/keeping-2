@@ -70,8 +70,15 @@
   function topbar(title) {
     return '<div class="topbar"><button type="button" class="back" data-act="back" aria-label="이전 화면으로">' + icon('back', 20) + '<span>이전</span></button>' + (title ? '<span class="top-title">' + esc(title) + '</span>' : '') + '</div>';
   }
-  function stepbar(n) {
-    return '<div class="stepbar" role="img" aria-label="3단계 중 ' + n + '단계">' + [1, 2, 3].map(function (i) { return '<span class="' + (i <= n ? 'on' : '') + '"></span>'; }).join('') + '</div>';
+  /* 온보딩 3단계: 시안의 상단(뒤로 + 진행 막대)과 단계 칩 */
+  function obHead(n) {
+    return '<div class="obhead"><button type="button" class="back" data-act="back" aria-label="이전 화면으로">' + icon('back', 20) + '</button>' +
+      '<div class="stepbar" role="img" aria-label="3단계 중 ' + n + '단계"><i style="width:' + Math.round(n * 100 / 3) + '%"></i></div></div>';
+  }
+  function stepChip(n) { return '<span class="stepchip">' + n + '/3</span><br>'; }
+  function actionBar(inner) { return '<div class="actionbar">' + inner + '</div>'; }
+  function skipBtn(view) {
+    return '<button type="button" class="cta outline skipbtn" data-act="skip" data-view="' + view + '"><span>건너뛰기</span><small>언제든 수정할 수 있어요</small></button>';
   }
   function nav(cur) {
     function b(v, label, ic) {
@@ -267,19 +274,32 @@
     var b = (ui.view === 'add') ? (ui.params.batch || null) : null;
     return state.items.filter(function (it) { return it.kind === kind && (it.batch || null) === b; });
   }
+  function ingredientNames(it) {
+    return (it.ingredientKeys || []).map(function (k) { var o = Pack.supplementKeyList.filter(function (x) { return x.id === k; })[0]; return o ? o.ko : ''; }).filter(Boolean).join(', ');
+  }
+  function pcard(it) {
+    var sub = it.productCode ? [it.ingredientEn, it.category].filter(Boolean).join(' · ') : kindLabel(it);
+    var rows = '';
+    if (it.company) rows += '<div><dt>업체</dt><dd>' + esc(it.company) + '</dd></div>';
+    if (it.kind === 'supp' && ingredientNames(it)) rows += '<div><dt>성분</dt><dd>' + esc(ingredientNames(it)) + '</dd></div>';
+    var t = activeTimes(it);
+    rows += '<div><dt>복용 시간</dt><dd>' + (t.length ? esc(t.join(' · ')) : '아직 정하지 않았어요') + '</dd></div>';
+    return '<li class="pcard"><div class="pc-head"><div class="pc-title"><b>' + esc(nm(it)) + '</b>' + (sub ? '<span class="pc-sub">' + esc(sub) + '</span>' : '') + '</div>' +
+      '<button type="button" class="rm" data-act="remove" data-id="' + it.id + '" aria-label="' + esc(nm(it)) + ' 삭제">' + icon('x') + '</button></div><dl class="kv">' + rows + '</dl></li>';
+  }
   function selectedHtml(kind) {
     var list = selectedItems(kind);
     if (!list.length) return '<p class="muted">아직 고른 것이 없어요.</p>';
-    return '<ul class="sel">' + list.map(function (it) {
-      return '<li><span><b>' + esc(nm(it)) + '</b><small>' + esc(kindLabel(it)) + '</small></span><button type="button" class="rm" data-act="remove" data-id="' + it.id + '" aria-label="' + esc(nm(it)) + ' 삭제">' + icon('x') + '</button></li>';
-    }).join('') + '</ul>';
+    return '<ul class="pcards">' + list.map(pcard).join('') + '</ul>';
   }
   function refreshLists() {
     var kind = currentKind();
     var r = document.getElementById('results'); if (r) r.innerHTML = resultsHtml(kind);
     var s = document.getElementById('selected'); if (s) s.innerHTML = selectedHtml(kind);
     var n = document.getElementById('nextbtn');
-    if (n && ui.view === 'add') n.disabled = selectedItems('drug').length === 0;
+    if (n && (ui.view === 'add' || ui.view === 'onb-drugs')) n.disabled = selectedItems('drug').length === 0;
+    if (n && ui.view === 'onb-supps') n.disabled = selectedItems('supp').length === 0;
+    var c = document.getElementById('selcount'); if (c) c.textContent = selectedItems(kind).length;
   }
   function needsSearch() {
     return ui.view === 'onb-drugs' || ui.view === 'add' || (ui.view === 'onb-supps' && ui.tab === 'domestic');
@@ -301,20 +321,39 @@
   /* ---------- 화면 ---------- */
   var VIEWS = {};
 
+  VIEWS.splash = function () {
+    return '<main class="screen splash" data-act="skipSplash"><p class="splash-tag">내가 먹는 약과 영양제, 겹치는 것만</p><h1 class="splash-logo" data-focus>키핑</h1><p class="splash-hint">화면을 누르면 바로 시작해요</p></main>';
+  };
+
   VIEWS.welcome = function () {
-    return '<main class="screen welcome"><p class="brand">키핑</p><h1 class="h xl" data-focus>내가 먹는 약과 영양제,<br>겹치는 것만 알려드려요</h1><p class="sub">약을 새로 받을 때마다 지금 먹는 것과 겹치는 내용만 골라서 보여드려요. 건강정보는 이 기기에만 저장돼요.</p><div class="stack"><button type="button" class="cta" data-act="start">시작하기</button><button type="button" class="cta ghost" data-act="demo">예시 사용자로 체험하기</button></div><p class="fine">키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드리고, 판단은 약사에게 확인해 주세요.</p></main>';
+    return '<main class="screen welcome has-bar"><p class="brand">키핑</p><h1 class="h xl" data-focus>내가 먹는 약과 영양제,<br>겹치는 것만 알려드려요</h1><p class="sub">약을 새로 받을 때마다 지금 먹는 것과 겹치는 내용만 골라서 보여드려요. 건강정보는 이 기기에만 저장돼요.</p><p class="fine">키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드리고, 판단은 약사에게 확인해 주세요.</p></main>' +
+      actionBar('<div class="stack" style="width:100%;gap:8px"><button type="button" class="cta" data-act="start">시작하기</button></div>') +
+      '<div class="demo-link"><button type="button" class="linkbtn" data-act="demo">예시 사용자로 체험하기</button></div>';
+  };
+
+  /* 약관 동의 자리: 시안의 약관 문구는 가져오지 않고, 이 서비스의 사실만 안내하고 동의를 받는다 */
+  VIEWS.consent = function () {
+    var on = !!ui.agree;
+    return '<main class="screen has-bar">' + topbar() + '<h1 class="h" data-focus>이 기기에만 저장돼요</h1><p class="sub">등록하는 정보는 키핑이 아니라 이 기기 안에 보관돼요.</p>' +
+      '<button type="button" class="agree' + (on ? ' on' : '') + '" role="checkbox" aria-checked="' + on + '" data-act="agree"><span class="box">' + (on ? icon('check', 14) : '') + '</span><span>이해했고 동의해요</span></button>' +
+      '<ul class="facts">' +
+      '<li>' + icon('check', 16) + '<span>등록한 약, 영양제, 복용 시간은 이 기기 안에만 있어요.</span></li>' +
+      '<li>' + icon('check', 16) + '<span>키핑 서버로 보내지 않아요.</span></li>' +
+      '<li>' + icon('check', 16) + '<span>기기를 바꾸거나 브라우저 데이터를 지우면 사라져요.</span></li>' +
+      '<li>' + icon('check', 16) + '<span>키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드려요.</span></li></ul></main>' +
+      actionBar('<button type="button" id="agreenext" class="cta" data-act="agreeNext"' + (on ? '' : ' disabled') + '>다음</button>');
   };
 
   VIEWS['onb-drugs'] = function () {
-    var edit = ui.params.mode === 'edit';
-    return '<main class="screen">' + topbar() + (edit ? '' : stepbar(1)) +
-      '<h1 class="h" data-focus>' + (edit ? '지금 먹는 약' : '지금 먹는 약을 알려주세요') + '</h1><p class="sub">' + (edit ? '먹는 약을 더하거나 뺄 수 있어요.' : '약 이름을 검색해서 골라 주세요. 약 종류와 성분은 자동으로 채워져요.') + '</p>' +
+    var edit = ui.params.mode === 'edit', n = selectedItems('drug').length;
+    return '<main class="screen has-bar">' + (edit ? topbar() : obHead(1) + stepChip(1)) +
+      '<h1 class="h" data-focus>' + (edit ? '지금 먹는 약' : '복용 중인 약을 검색해서 추가해 주세요') + '</h1><p class="sub">' + (edit ? '먹는 약을 더하거나 뺄 수 있어요.' : '약 이름이나 성분명으로 찾을 수 있어요.') + '</p>' +
       searchBlock('drug') +
       '<p class="soon">처방 정보를 자동으로 불러오는 기능은 준비 중이에요.</p>' +
-      '<p class="lbl">고른 약</p><div id="selected">' + selectedHtml('drug') + '</div>' +
-      '<div class="actions">' + (edit
+      '<p class="lbl">고른 약 <span class="count" id="selcount">' + n + '</span></p><div id="selected">' + selectedHtml('drug') + '</div></main>' +
+      actionBar(edit
         ? '<button type="button" class="cta" data-act="nav" data-view="list">완료</button>'
-        : '<button type="button" class="cta" data-act="to" data-view="onb-supps">다음</button>') + '</div></main>';
+        : skipBtn('onb-supps') + '<button type="button" id="nextbtn" class="cta" data-act="to" data-view="onb-supps"' + (n ? '' : ' disabled') + '>다음</button>');
   };
 
   function suppTabs() {
@@ -342,19 +381,20 @@
   }
   VIEWS['onb-supps'] = function () {
     var panel = ui.tab === 'domestic' ? searchBlock('supp') : (ui.tab === 'overseas' ? overseasHtml() : manualHtml());
-    var more = ui.params.mode === 'more';
-    return '<main class="screen">' + topbar() + (more ? '' : stepbar(2)) +
+    var more = ui.params.mode === 'more', n = selectedItems('supp').length;
+    return '<main class="screen has-bar">' + (more ? topbar() : obHead(2) + stepChip(2)) +
       '<h1 class="h" data-focus>같이 먹는 영양제가 있나요?</h1><p class="sub">어떤 영양제든 등록할 수 있어요. 국내 제품은 검색하고, 해외 제품이나 못 찾은 제품은 직접 입력해 주세요.</p>' +
       suppTabs() + panel +
-      '<p class="lbl">고른 영양제</p><div id="selected">' + selectedHtml('supp') + '</div>' +
-      '<div class="actions">' + (more
+      '<p class="lbl">고른 영양제 <span class="count" id="selcount">' + n + '</span></p><div id="selected">' + selectedHtml('supp') + '</div></main>' +
+      actionBar(more
         ? '<button type="button" class="cta" data-act="to" data-view="times" data-all="1">복용 시간 입력하고 마치기</button>'
-        : '<button type="button" class="cta" data-act="to" data-view="times" data-mode="onb">다음</button>') + '</div></main>';
+        : skipBtn('times') .replace('data-view="times"', 'data-view="times" data-mode="onb"') + '<button type="button" id="nextbtn" class="cta" data-act="to" data-view="times" data-mode="onb"' + (n ? '' : ' disabled') + '>다음</button>');
   };
 
   function timeRow(it) {
     var ts = (it.times && it.times.length) ? it.times : [''];
-    return '<li class="trow"><div class="tname"><b>' + esc(nm(it)) + '</b><small>' + esc(kindLabel(it)) + '</small></div><div class="tin">' +
+    var sub = it.productCode ? [it.ingredientEn, it.category].filter(Boolean).join(' · ') : kindLabel(it);
+    return '<li class="pcard"><div class="pc-head"><div class="pc-title"><b>' + esc(nm(it)) + '</b>' + (sub ? '<span class="pc-sub">' + esc(sub) + '</span>' : '') + '</div></div><div class="tin">' + icon('clock', 20) +
       ts.map(function (t, i) { return '<input type="time" class="time" aria-label="' + esc(nm(it)) + ' 복용 시간 ' + (i + 1) + '" data-input="time" data-id="' + it.id + '" data-i="' + i + '" value="' + esc(t) + '">'; }).join('') +
       '<button type="button" class="mini" data-act="addTime" data-id="' + it.id + '" aria-label="' + esc(nm(it)) + ' 시간 추가">' + icon('plus') + '</button></div></li>';
   }
@@ -369,10 +409,10 @@
         '</div><p class="note">음식과 약의 상호작용 확인은 준비 중이에요. 지금은 기록만 해요.</p>';
     }
     var nextLabel = onb ? '끝내고 내 하루 보기' : (p.all ? '저장하고 돌아가기' : '저장하고 결과 보기');
-    return '<main class="screen">' + topbar() + (onb ? stepbar(3) : '') +
+    return '<main class="screen has-bar">' + (onb ? obHead(3) + stepChip(3) : topbar()) +
       '<h1 class="h" data-focus>언제 드시나요?</h1><p class="sub">시간을 입력하면 하루 시간표가 만들어지고, 설명서에 복용 간격이 적힌 약은 간격도 볼 수 있어요. 나중에 입력해도 돼요.</p>' +
-      (list.length ? '<ul class="tlist">' + list.map(timeRow).join('') + '</ul>' : '<p class="muted">등록한 것이 없어요.</p>') + foods +
-      '<div class="actions"><button type="button" class="cta" data-act="timesDone">' + nextLabel + '</button></div></main>';
+      (list.length ? '<ul class="tlist pcards">' + list.map(timeRow).join('') + '</ul>' : '<p class="muted">등록한 것이 없어요.</p>') + foods + '</main>' +
+      actionBar('<button type="button" class="cta" data-act="timesDone">' + nextLabel + '</button>');
   };
 
   function timelineHtml() {
@@ -457,9 +497,9 @@
 
   VIEWS.add = function () {
     var n = selectedItems('drug').length;
-    return '<main class="screen">' + topbar() + '<h1 class="h" data-focus>새로 받은 약을 추가해요</h1><p class="sub">받은 약을 모두 추가하면, 지금 먹는 것과 겹치는 내용만 골라서 보여드려요.</p>' +
-      searchBlock('drug') + '<p class="lbl">이번에 받은 약</p><div id="selected">' + selectedHtml('drug') + '</div>' +
-      '<div class="actions"><button type="button" id="nextbtn" class="cta" data-act="confirmAdd"' + (n ? '' : ' disabled') + '>겹치는 내용 확인하기</button></div></main>';
+    return '<main class="screen has-bar">' + topbar() + '<h1 class="h" data-focus>새로 받은 약을 추가해요</h1><p class="sub">받은 약을 모두 추가하면, 지금 먹는 것과 겹치는 내용만 골라서 보여드려요.</p>' +
+      searchBlock('drug') + '<p class="lbl">이번에 받은 약 <span class="count" id="selcount">' + n + '</span></p><div id="selected">' + selectedHtml('drug') + '</div></main>' +
+      actionBar('<button type="button" id="nextbtn" class="cta" data-act="confirmAdd"' + (n ? '' : ' disabled') + '>겹치는 내용 확인하기</button>');
   };
 
   VIEWS.notify = function () {
@@ -632,10 +672,13 @@
   };
 
   /* ---------- 흐름 ---------- */
+  var splashTimer = null;
   function render(top) {
     var y = window.scrollY;
     var v = (VIEWS[ui.view] || VIEWS.home)();
     root.innerHTML = v;
+    clearTimeout(splashTimer);
+    if (ui.view === 'splash') splashTimer = setTimeout(function () { if (ui.view === 'splash') go('welcome'); }, 1600);
     if (top === false) window.scrollTo(0, y);
     else {
       window.scrollTo(0, 0);
@@ -682,7 +725,16 @@
   }
 
   var Acts = {
-    start: function () { go('onb-drugs'); },
+    start: function () { ui.agree = false; go('consent'); },
+    skipSplash: function () { go('welcome'); },
+    agree: function (t) {
+      ui.agree = !ui.agree;
+      t.classList.toggle('on', ui.agree); t.setAttribute('aria-checked', String(ui.agree));
+      t.querySelector('.box').innerHTML = ui.agree ? icon('check', 14) : '';
+      var n = document.getElementById('agreenext'); if (n) n.disabled = !ui.agree;
+    },
+    agreeNext: function () { if (!ui.agree) return; state.agreedAt = new Date().toISOString(); save(); go('onb-drugs'); },
+    skip: function (t) { Acts.to(t); },
     demo: function () {
       function run() { loadExample(); go('home'); }
       if (ui.dur.status !== 'loading') return run();
@@ -848,6 +900,7 @@
     }
   });
   root.addEventListener('keydown', function (e) {
+    if (ui.view === 'splash' && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); go('welcome'); return; }
     if (e.key !== 'Enter') return;
     var id = e.target.id;
     if (id === 'fq') Acts.addFood();
@@ -856,7 +909,7 @@
     else if (id === 'mname') Acts.manualSupp();
   });
 
-  ui.view = state.items.length ? 'home' : 'welcome';
+  ui.view = state.items.length ? 'home' : 'splash';
   var durReady = bootDur();
   render(true);
   window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, applyOcrText: function (text) { return applyOcrText(text, ui.photoToken); } };
