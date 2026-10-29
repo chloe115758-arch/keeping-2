@@ -11,7 +11,7 @@
   var ui = {
     view: 'welcome', params: {}, prev: null,
     tab: 'domestic', q: '', oq: '', results: null, remote: null, overseas: null,
-    chips: [], manualName: '', searchToken: 0, photo: null, photoToken: 0,
+    chips: [], manualName: '', searchToken: 0,
     dur: { status: 'loading' }
   };
   var searchTimer = null;
@@ -32,7 +32,6 @@
     info: '<circle cx="10" cy="10" r="8"/><path d="M10 9v5"/><path d="M10 6.3h.01"/>',
     clock: '<circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/>',
     list: '<path d="M3 4h10M3 8h10M3 12h10"/>',
-    camera: '<path d="M2 5.5h2.5L5.5 4h5l1 1.5H14v7H2z"/><circle cx="8" cy="9" r="2.2"/>',
     gear: '<circle cx="8" cy="8" r="2.2"/><path d="M8 1.8v2M8 12.2v2M1.8 8h2M12.2 8h2M3.6 3.6l1.4 1.4M11 11l1.4 1.4M12.4 3.6L11 5M5 11l-1.4 1.4"/>'
   };
   function icon(n, size) {
@@ -75,8 +74,8 @@
     return '<div class="obhead"><button type="button" class="back" data-act="back" aria-label="이전 화면으로">' + icon('back', 20) + '</button>' +
       '<div class="stepbar" role="img" aria-label="3단계 중 ' + n + '단계"><i style="width:' + Math.round(n * 100 / 3) + '%"></i></div></div>';
   }
-  function stepChip(n) { return '<span class="stepchip">' + n + '/3</span><br>'; }
-  function actionBar(inner) { return '<div class="actionbar">' + inner + '</div>'; }
+  function stepChip(n) { return '<span class="stepchip">' + n + '/3</span>'; }
+  function actionBar(inner, cls) { return '<div class="actionbar' + (cls ? ' ' + cls : '') + '">' + inner + '</div>'; }
   function skipBtn(view) {
     return '<button type="button" class="cta outline skipbtn" data-act="skip" data-view="' + view + '"><span>건너뛰기</span><small>언제든 수정할 수 있어요</small></button>';
   }
@@ -143,12 +142,12 @@
   }
   function searchBlock(kind) {
     var ph = kind === 'drug' ? '약 이름 (예: 시바스정)' : '제품 이름 (예: 메가도스)';
-    return '<div class="search"><label class="sr" for="q">' + (kind === 'drug' ? '약 이름 검색' : '영양제 이름 검색') + '</label><div class="inp">' + icon('search', 18) + '<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="' + ph + '" value="' + esc(ui.q) + '" data-input="search"></div>' + photoBlock() + (kind === 'drug' ? '<div id="durstat" aria-live="polite">' + durHtml() + '</div>' : '') + '<div id="results" aria-live="polite">' + resultsHtml(kind) + '</div></div>';
+    return '<div class="search"><label class="sr" for="q">' + (kind === 'drug' ? '약 이름 검색' : '영양제 이름 검색') + '</label><div class="inp">' + icon('search', 20) + '<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="' + ph + '" value="' + esc(ui.q) + '" data-input="search"></div>' + (kind === 'drug' ? '<div id="durstat" aria-live="polite">' + durHtml() + '</div>' : '') + '<div id="results" aria-live="polite">' + resultsHtml(kind) + '</div></div>';
   }
   /* ---------- 전체 약 목록(DUR) 불러오기 ----------
      실패해도 기존 데이터 팩 모드로 계속 동작한다. 약 4MB, 처음 한 번만 걸린다. */
   function durHtml() {
-    if (ui.dur.status === 'loading') return '<p class="muted pad">약 목록을 불러오는 중…</p>';
+    if (ui.dur.status === 'loading') return '<p class="muted">약 목록을 불러오는 중…</p>';
     if (ui.dur.status === 'error') return '<p class="note">전체 약 검색을 쓸 수 없어요. 키핑이 근거를 확인하는 약 안에서만 검색돼요. 목록에 없는 약은 이름 그대로 등록할 수 있어요.</p>';
     return '';
   }
@@ -169,107 +168,6 @@
     return bootPromise;
   }
 
-  /* ---------- 사진으로 찾기 (기기 안 글자 인식) ----------
-     사진은 이 기기 안에서만 읽고 저장하지 않는다. 읽은 글자는 검색창을 채울 뿐, 등록은 사용자가 고른다. */
-  var OCR_SRC = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';
-  function photoBlock() {
-    return '<div class="photo"><label class="cta ghost small photobtn" for="photo">' + icon('camera', 18) + '<span>사진으로 찾기</span></label><input id="photo" class="sr" type="file" accept="image/*" data-input="photo"></div>' +
-      '<p class="muted">사진은 이 기기 안에서만 읽고 저장하지 않아요. 글자 인식은 틀릴 수 있어요.</p><div id="photostat" aria-live="polite">' + photoHtml() + '</div>';
-  }
-  function photoHtml() {
-    var p = ui.photo; if (!p) return '';
-    var img = p.url ? '<img class="ocr-img" src="' + p.url + '" alt="고른 사진 미리보기">' : '';
-    if (p.status === 'loading') return '<div class="ocr-box">' + img + '<p class="muted" id="photomsg">' + esc(p.msg || '글자를 읽는 중…') + '</p></div>';
-    if (p.status === 'error') return '<div class="ocr-box"><p class="note">' + esc(p.msg) + '</p></div>';
-    var msg = !p.tokens.length ? '글자를 읽지 못했어요. 글자가 크게 보이게 밝은 곳에서 다시 찍어 보거나, 이름을 직접 입력해 주세요.'
-      : (p.found ? '사진에서 읽은 글자로 검색했어요. 아래 결과에서 맞는 것을 눌러 추가해 주세요. 다르면 다른 글자를 눌러 보세요.'
-        : '사진에서 찾는 이름을 찾지 못했어요. 읽은 글자 중 맞는 것을 눌러 보거나, 이름을 직접 입력해 주세요.');
-    var chips = p.tokens.slice(0, 12).map(function (t) {
-      return '<button type="button" class="chip' + (ui.q === t ? ' on' : '') + '" data-act="photoTok" data-t="' + esc(t) + '">' + esc(t) + '</button>';
-    }).join('');
-    return '<div class="ocr-box">' + img + '<p class="muted">' + msg + '</p>' + (chips ? '<div class="chips">' + chips + '</div>' : '') + '</div>';
-  }
-  function setPhotoStat() { var el = document.getElementById('photostat'); if (el) el.innerHTML = photoHtml(); }
-  function resetPhoto() {
-    ui.photoToken++;
-    if (ui.photo && ui.photo.url) URL.revokeObjectURL(ui.photo.url);
-    ui.photo = null;
-  }
-  function loadOcr() {
-    if (window.Tesseract) return Promise.resolve();
-    return new Promise(function (res, rej) {
-      var sc = document.createElement('script'); sc.src = OCR_SRC; sc.onload = res;
-      sc.onerror = function () { rej(new Error('load')); };
-      document.head.appendChild(sc);
-    });
-  }
-  function shrink(file) {
-    return new Promise(function (res, rej) {
-      var img = new Image(), u = URL.createObjectURL(file);
-      img.onload = function () {
-        var sc = Math.min(1, 1600 / Math.max(img.width, img.height)), c = document.createElement('canvas');
-        c.width = Math.round(img.width * sc); c.height = Math.round(img.height * sc);
-        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
-        URL.revokeObjectURL(u);
-        c.toBlob(function (b) { b ? res(b) : rej(new Error('blob')); }, 'image/jpeg', 0.92);
-      };
-      img.onerror = function () { URL.revokeObjectURL(u); rej(new Error('img')); };
-      img.src = u;
-    });
-  }
-  function extractTokens(text) {
-    var seen = {}, out = [];
-    function add(t) { if (t.length < 2 || /^\d+$/.test(t) || seen[t]) return; seen[t] = 1; out.push(t); }
-    String(text || '').split(/\n/).forEach(function (line) {
-      (line.match(/[가-힣A-Za-z0-9]{2,}/g) || []).forEach(add);
-      (line.replace(/\s+/g, '').match(/[가-힣]{2,}/g) || []).forEach(add); // "시 바 스 정" 처럼 띄어 읽힌 글자
-    });
-    return out.slice(0, 30);
-  }
-  function findMatch(tokens, kind, i) {
-    if (i >= tokens.length || i >= 12) return Promise.resolve(null);
-    return (kind === 'drug' ? Api.searchDrugs : Api.searchSupplements)(tokens[i]).then(function (r) {
-      return r.results.length ? tokens[i] : findMatch(tokens, kind, i + 1);
-    });
-  }
-  function searchFor(q) {
-    ui.q = q; ui.results = null;
-    var inp = document.getElementById('q'); if (inp) inp.value = q;
-    refreshLists(); runSearch();
-  }
-  function applyOcrText(text, tok) {
-    var kind = currentKind(), tokens = extractTokens(text);
-    var byLen = tokens.slice().sort(function (a, b) { return b.length - a.length; }); // 긴 글자가 이름일 가능성이 높다
-    return findMatch(byLen, kind, 0).then(function (found) {
-      if (tok !== ui.photoToken) return;
-      if (ui.photo && ui.photo.url) { URL.revokeObjectURL(ui.photo.url); }
-      ui.photo = { status: 'done', tokens: tokens, found: found, url: null };
-      if (found) searchFor(found);
-      setPhotoStat();
-    });
-  }
-  function readPhoto(file) {
-    resetPhoto();
-    var tok = ui.photoToken;
-    ui.photo = { status: 'loading', msg: '사진을 준비하는 중…', url: URL.createObjectURL(file) };
-    setPhotoStat();
-    function say(m) { if (tok !== ui.photoToken || !ui.photo) return; ui.photo.msg = m; var el = document.getElementById('photomsg'); if (el) el.textContent = m; }
-    shrink(file).then(function (blob) {
-      say('글자 인식 도구를 불러오는 중…');
-      return loadOcr().then(function () {
-        return window.Tesseract.recognize(blob, 'kor', { logger: function (m) {
-          if (m.status === 'loading language traineddata') say('한글 인식 파일을 내려받는 중이에요. 처음 한 번만 받아요.');
-          else if (m.status === 'recognizing text') say('글자를 읽는 중 ' + Math.round(m.progress * 100) + '%');
-        } });
-      });
-    }).then(function (r) { return applyOcrText(r.data.text, tok); })
-      .catch(function () {
-        if (tok !== ui.photoToken) return;
-        if (ui.photo && ui.photo.url) URL.revokeObjectURL(ui.photo.url);
-        ui.photo = { status: 'error', msg: '사진을 읽지 못했어요. 인터넷 연결을 확인하고 다시 해 보거나, 이름을 직접 입력해 주세요.', url: null };
-        setPhotoStat();
-      });
-  }
   function selectedItems(kind) {
     var b = (ui.view === 'add') ? (ui.params.batch || null) : null;
     return state.items.filter(function (it) { return it.kind === kind && (it.batch || null) === b; });
@@ -326,9 +224,8 @@
   };
 
   VIEWS.welcome = function () {
-    return '<main class="screen welcome has-bar"><p class="brand">키핑</p><h1 class="h xl" data-focus>내가 먹는 약과 영양제,<br>겹치는 것만 알려드려요</h1><p class="sub">약을 새로 받을 때마다 지금 먹는 것과 겹치는 내용만 골라서 보여드려요. 건강정보는 이 기기에만 저장돼요.</p><p class="fine">키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드리고, 판단은 약사에게 확인해 주세요.</p></main>' +
-      actionBar('<div class="stack" style="width:100%;gap:8px"><button type="button" class="cta" data-act="start">시작하기</button></div>') +
-      '<div class="demo-link"><button type="button" class="linkbtn" data-act="demo">예시 사용자로 체험하기</button></div>';
+    return '<main class="screen welcome"><p class="brand">키핑</p><h1 class="h xl" data-focus>내가 먹는 약과 영양제,<br>겹치는 것만 알려드려요</h1><p class="sub">약을 새로 받을 때마다 지금 먹는 것과 겹치는 내용만 골라서 보여드려요. 건강정보는 이 기기에만 저장돼요.</p><p class="fine">키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드리고, 판단은 약사에게 확인해 주세요.</p></main>' +
+      actionBar('<button type="button" class="cta" data-act="start">시작하기</button><button type="button" class="linkbtn" data-act="demo">예시 사용자로 체험하기</button>', 'col');
   };
 
   /* 약관 동의 자리: 시안의 약관 문구는 가져오지 않고, 이 서비스의 사실만 안내하고 동의를 받는다 */
@@ -347,9 +244,8 @@
   VIEWS['onb-drugs'] = function () {
     var edit = ui.params.mode === 'edit', n = selectedItems('drug').length;
     return '<main class="screen has-bar">' + (edit ? topbar() : obHead(1) + stepChip(1)) +
-      '<h1 class="h" data-focus>' + (edit ? '지금 먹는 약' : '복용 중인 약을 검색해서 추가해 주세요') + '</h1><p class="sub">' + (edit ? '먹는 약을 더하거나 뺄 수 있어요.' : '약 이름이나 성분명으로 찾을 수 있어요.') + '</p>' +
+      '<h1 class="h' + (edit ? '' : ' ob') + '" data-focus>' + (edit ? '지금 먹는 약' : '복용 중인 약을 검색해서 추가해 주세요') + '</h1><p class="sub' + (edit ? '' : ' ob') + '">' + (edit ? '먹는 약을 더하거나 뺄 수 있어요.' : '약 이름이나 성분명으로 찾을 수 있어요.') + '</p>' +
       searchBlock('drug') +
-      '<p class="soon">처방 정보를 자동으로 불러오는 기능은 준비 중이에요.</p>' +
       '<p class="lbl">고른 약 <span class="count" id="selcount">' + n + '</span></p><div id="selected">' + selectedHtml('drug') + '</div></main>' +
       actionBar(edit
         ? '<button type="button" class="cta" data-act="nav" data-view="list">완료</button>'
@@ -383,7 +279,7 @@
     var panel = ui.tab === 'domestic' ? searchBlock('supp') : (ui.tab === 'overseas' ? overseasHtml() : manualHtml());
     var more = ui.params.mode === 'more', n = selectedItems('supp').length;
     return '<main class="screen has-bar">' + (more ? topbar() : obHead(2) + stepChip(2)) +
-      '<h1 class="h" data-focus>같이 먹는 영양제가 있나요?</h1><p class="sub">어떤 영양제든 등록할 수 있어요. 국내 제품은 검색하고, 해외 제품이나 못 찾은 제품은 직접 입력해 주세요.</p>' +
+      '<h1 class="h' + (more ? '' : ' ob') + '" data-focus>같이 먹는 영양제가 있나요?</h1><p class="sub' + (more ? '' : ' ob') + '">어떤 영양제든 등록할 수 있어요. 국내 제품은 검색하고, 해외 제품이나 못 찾은 제품은 직접 입력해 주세요.</p>' +
       suppTabs() + panel +
       '<p class="lbl">고른 영양제 <span class="count" id="selcount">' + n + '</span></p><div id="selected">' + selectedHtml('supp') + '</div></main>' +
       actionBar(more
@@ -410,7 +306,7 @@
     }
     var nextLabel = onb ? '끝내고 내 하루 보기' : (p.all ? '저장하고 돌아가기' : '저장하고 결과 보기');
     return '<main class="screen has-bar">' + (onb ? obHead(3) + stepChip(3) : topbar()) +
-      '<h1 class="h" data-focus>언제 드시나요?</h1><p class="sub">시간을 입력하면 하루 시간표가 만들어지고, 설명서에 복용 간격이 적힌 약은 간격도 볼 수 있어요. 나중에 입력해도 돼요.</p>' +
+      '<h1 class="h' + (onb ? ' ob' : '') + '" data-focus>언제 드시나요?</h1><p class="sub' + (onb ? ' ob' : '') + '">시간을 입력하면 하루 시간표가 만들어지고, 설명서에 복용 간격이 적힌 약은 간격도 볼 수 있어요. 나중에 입력해도 돼요.</p>' +
       (list.length ? '<ul class="tlist pcards">' + list.map(timeRow).join('') + '</ul>' : '<p class="muted">등록한 것이 없어요.</p>') + foods + '</main>' +
       actionBar('<button type="button" class="cta" data-act="timesDone">' + nextLabel + '</button>');
   };
@@ -689,7 +585,7 @@
   function go(view, params, keepScroll) {
     ui.prev = { view: ui.view, params: ui.params };
     ui.view = view; ui.params = params || {};
-    resetPhoto(); ui.more = false;
+    ui.more = false;
     ui.q = ''; ui.oq = ''; ui.results = null; ui.remote = null; ui.overseas = null; ui.chips = []; ui.manualName = '';
     if (view !== 'onb-supps') ui.tab = 'domestic';
     render(!keepScroll);
@@ -824,7 +720,6 @@
       state.foods.push({ id: Store.uid(), name: v }); save(); render(false);
     },
     rmFood: function (t) { state.foods = state.foods.filter(function (f) { return f.id !== t.dataset.id; }); save(); render(false); },
-    photoTok: function (t) { searchFor(t.dataset.t); setPhotoStat(); },
     tip: function (t) {
       var id = 'tip-' + t.dataset.tip, el = document.getElementById(id); if (!el) return;
       var open = el.hasAttribute('hidden');
@@ -886,9 +781,6 @@
       var it = findItem(t.dataset.id); if (!it) return;
       var i = +t.dataset.i; it.times = it.times && it.times.length ? it.times.slice() : [''];
       it.times[i] = t.value; it.updatedAt = new Date().toISOString(); save();
-    } else if (k === 'photo') {
-      var pf = t.files && t.files[0]; if (!pf) return;
-      readPhoto(pf); t.value = '';
     } else if (k === 'import') {
       var file = t.files && t.files[0]; if (!file) return;
       var fr = new FileReader();
@@ -910,7 +802,12 @@
   });
 
   ui.view = state.items.length ? 'home' : 'splash';
-  var durReady = bootDur();
-  render(true);
-  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, applyOcrText: function (text) { return applyOcrText(text, ui.photoToken); } };
+  var durReady = bootDur();   // 약 목록은 첫 화면과 상관없이 바로 불러오기 시작
+  /* 첫 화면은 글꼴(SUIT)이 도착한 뒤에 그린다(최대 1.2초). 글꼴이 늦게 와서 문단이 다시 줄바꿈되며 화면이 튀는 것을 막는다. */
+  var booted = false;
+  function boot() { if (booted) return; booted = true; render(true); }
+  if (document.fonts && document.fonts.load) {
+    Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + ' 16px SUIT'); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
+  } else boot();
+  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur };
 })();

@@ -1,0 +1,138 @@
+/* 실행: node tests/layout.test.js  — 실제 브라우저(Playwright)로 여러 화면 폭에서 위치를 재서 레이아웃을 점검한다.
+ * 브라우저를 찾지 못하면 "건너뜀"을 크게 알리고 끝낸다(환경 변수 KEEPING_CHROME으로 경로 지정 가능).
+ * 점검: 앱은 가운데의 폰 폭 열 하나 · 하단 영역은 열 안 · 버튼과 링크가 겹치지 않음 · 환영 화면 위계 · 가로 넘침 없음 · 로딩 중 화면이 튀지 않음 */
+'use strict';
+const http = require('http'), fs = require('fs'), path = require('path');
+let chromium;
+try { chromium = require('playwright-core').chromium; } catch (e) { console.log('건너뜀: playwright-core가 없어 레이아웃을 점검하지 못했어요. (npm install)'); process.exit(0); }
+const CANDIDATES = [process.env.KEEPING_CHROME, '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '/usr/bin/google-chrome', '/usr/bin/chromium', '/usr/bin/chromium-browser'].filter(Boolean);
+const chrome = CANDIDATES.find((p) => fs.existsSync(p));
+if (!chrome) { console.log('건너뜀: 크롬을 찾지 못해 레이아웃을 점검하지 못했어요. KEEPING_CHROME에 경로를 지정하세요.'); process.exit(0); }
+
+const root = path.join(__dirname, '..');
+const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json' };
+const server = http.createServer((req, res) => {
+  const f = path.join(root, decodeURIComponent(req.url.split('?')[0]).replace(/^\/+$/, '/index.html'));
+  if (!f.startsWith(root) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { res.writeHead(404); return res.end(); }
+  res.writeHead(200, { 'Content-Type': TYPES[path.extname(f)] || 'application/octet-stream' }); fs.createReadStream(f).pipe(res);
+});
+
+let ok = 0, bad = 0;
+function check(name, cond, extra) { if (cond) { ok++; console.log('  ok  ' + name); } else { bad++; console.log('FAIL  ' + name + (extra ? '\n      ' + extra : '')); } }
+const VIEWPORTS = [[360, 800], [393, 852], [402, 874], [768, 1024], [1280, 800], [1440, 900]];
+
+const RECTS = (sels) => {
+  const out = {};
+  for (const [k, s] of Object.entries(sels)) {
+    const e = document.querySelector(s); if (!e) { out[k] = null; continue; }
+    const r = e.getBoundingClientRect(); out[k] = { x: r.left, y: r.top, r: r.right, b: r.bottom, w: r.width, h: r.height };
+  }
+  out.vw = document.documentElement.clientWidth; out.vh = window.innerHeight; out.scrollW = document.documentElement.scrollWidth;
+  return out;
+};
+const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav', h1: 'h1', brand: '.brand', sub: '.welcome .sub', fine: '.welcome .fine', start: '[data-act="start"]', demo: '[data-act="demo"]' };
+
+(async () => {
+  await new Promise((r) => server.listen(0, r));
+  const base = 'http://localhost:' + server.address().port + '/';
+  const browser = await chromium.launch({ executablePath: chrome });
+  try {
+    for (const [w, h] of VIEWPORTS) {
+      console.log(`\n${w}×${h}`);
+      const ctx = await browser.newContext({ viewport: { width: w, height: h } });
+      const page = await ctx.newPage();
+      const errs = []; page.on('pageerror', (e) => errs.push(e.message));
+      await page.route('**/data/dur/*.json', async (r) => { await new Promise((x) => setTimeout(x, 500)); r.continue(); });   // 로딩 중 상태를 만든다
+      await page.goto(base);
+      const R = () => page.evaluate(RECTS, SELS);
+      const inCol = (r, app, tol = 1) => r && app && r.x >= app.x - tol && r.r <= app.r + tol;
+
+      // ── 스플래시 → 환영 (데이터 로딩과 상관없이 바로 그려진다)
+      await page.waitForSelector('.splash', { timeout: 3000 });
+      check(`${w}: 스플래시는 데이터 로딩 전에 바로 보임`, await page.evaluate(() => KeepingApp.ui.dur.status === 'loading' && !!document.querySelector('.splash')));
+      await page.click('.splash'); await page.waitForSelector('.welcome');
+      const loading = await R();
+      const app = loading.app;
+      check(`${w}: 앱은 폰 폭 열 하나(최대 430px)`, app.w <= 430.5 && app.w >= Math.min(w, 430) - 1, `app.w=${app.w}`);
+      if (w > 431) check(`${w}: 열이 화면 가운데(좌우 여백 같음)`, Math.abs(app.x - (loading.vw - app.r)) <= 1, `좌 ${app.x} / 우 ${loading.vw - app.r}`);
+      check(`${w}: 가로 넘침 없음`, loading.scrollW <= loading.vw, `scrollW=${loading.scrollW} vw=${loading.vw}`);
+
+      // ── 환영 화면 위계 · 하단 영역
+      check(`${w}: 환영 — 하단 영역이 열 안에 꽉 참(폭 같음)`, loading.bar && Math.abs(loading.bar.x - app.x) <= 1 && Math.abs(loading.bar.r - app.r) <= 1, JSON.stringify(loading.bar));
+      check(`${w}: 환영 — 시작하기 버튼 높이 50, 열 좌우 16px 안쪽`, loading.start && Math.abs(loading.start.h - 50) <= 1 && Math.abs(loading.start.x - (app.x + 16)) <= 1 && Math.abs(app.r - 16 - loading.start.r) <= 1, JSON.stringify(loading.start));
+      check(`${w}: 환영 — 링크가 버튼 아래, 겹치지 않음(간격 ≥ 8)`, loading.demo && loading.demo.y >= loading.start.b + 7, `버튼 하단 ${loading.start && loading.start.b} / 링크 상단 ${loading.demo && loading.demo.y}`);
+      check(`${w}: 환영 — 링크 터치 영역 44px 이상, 하단 영역 안`, loading.demo.h >= 44 && loading.demo.y >= loading.bar.y && loading.demo.b <= loading.bar.b, JSON.stringify([loading.demo, loading.bar]));
+      check(`${w}: 환영 — 링크는 텍스트 버튼(민트 700, 밑줄 없음)`, await page.evaluate(() => { const c = getComputedStyle(document.querySelector('[data-act="demo"]')); return c.color === 'rgb(23, 122, 99)' && !c.textDecorationLine.includes('underline') && c.fontWeight === '600' && c.fontSize === '14px'; }));
+      check(`${w}: 환영 — 브랜드 → 제목 → 설명 → 고지 순서, 고지는 설명 아래 16px`, loading.brand.b <= loading.h1.y && loading.h1.b <= loading.sub.y && Math.abs(loading.fine.y - loading.sub.b - 16) <= 1, `설명→고지 ${Math.round(loading.fine.y - loading.sub.b)}px`);
+      if (h >= 700) check(`${w}: 환영 — 제목이 위쪽 1/3 부근에서 시작`, loading.h1.y >= h * 0.25 && loading.h1.y <= h * 0.42, `제목 위 ${Math.round(loading.h1.y)} / 화면 높이 ${h}`);
+      check(`${w}: 환영 — 글자 왼쪽이 열 안쪽 16px에 맞음(제목·설명·고지·버튼)`, [loading.h1, loading.sub, loading.fine, loading.start].every((r) => Math.abs(r.x - (app.x + 16)) <= 1));
+
+      // ── 로딩이 끝나도 환영 화면 위치가 변하지 않는다
+      await page.waitForFunction(() => KeepingApp.ui.dur.status === 'ready'); await page.waitForTimeout(150);
+      const ready = await R();
+      const same = ['h1', 'sub', 'fine', 'start', 'demo', 'bar'].every((k) => ready[k] && Math.abs(ready[k].y - loading[k].y) < 0.5 && Math.abs(ready[k].x - loading[k].x) < 0.5);
+      check(`${w}: 환영 — 데이터 로딩이 끝나도 위치가 안 변함`, same);
+
+      // ── 저장 안내 → 약 검색 → 영양제 → 시간 입력: 하단 영역이 열 안, 요소가 겹치지 않음
+      const barOK = async (label) => {
+        const r = await R();
+        check(`${w}: ${label} — 하단 영역이 열 안(좌우 일치)`, r.bar && Math.abs(r.bar.x - r.app.x) <= 1 && Math.abs(r.bar.r - r.app.r) <= 1, JSON.stringify(r.bar));
+        check(`${w}: ${label} — 가로 넘침 없음`, r.scrollW <= r.vw);
+        const kids = await page.evaluate(() => [...document.querySelectorAll('.actionbar > *')].map((e) => { const r = e.getBoundingClientRect(); return { x: r.left, y: r.top, r: r.right, b: r.bottom }; }));
+        const bar = r.bar;
+        check(`${w}: ${label} — 하단 영역 안의 요소가 영역을 벗어나지 않음`, kids.every((k) => k.y >= bar.y - 0.5 && k.b <= bar.b + 0.5 && k.x >= bar.x - 0.5 && k.r <= bar.r + 0.5));
+        let overlap = false; for (let i = 0; i < kids.length; i++) for (let j = i + 1; j < kids.length; j++) { const a = kids[i], c = kids[j]; if (a.x < c.r - 0.5 && c.x < a.r - 0.5 && a.y < c.b - 0.5 && c.y < a.b - 0.5) overlap = true; }
+        check(`${w}: ${label} — 하단 영역 안의 버튼끼리 겹치지 않음`, !overlap);
+        check(`${w}: ${label} — 제목 왼쪽이 열 안쪽 16px`, !r.h1 || Math.abs(r.h1.x - (r.app.x + 16)) <= 1);
+        return r;
+      };
+      await page.click('[data-act="start"]'); await page.waitForSelector('.agree'); await barOK('저장 안내');
+      await page.click('[data-act="agree"]'); await page.click('#agreenext'); await page.waitForSelector('#nextbtn');
+      const drugs = await barOK('약 검색');
+      check(`${w}: 약 검색 — 건너뛰기와 다음의 폭이 같고 높이 50`, await page.evaluate(() => { const a = document.querySelector('.skipbtn').getBoundingClientRect(), n = document.querySelector('#nextbtn').getBoundingClientRect(); return Math.abs(a.width - n.width) <= 1 && Math.abs(a.height - 50) <= 1 && Math.abs(n.height - 50) <= 1; }));
+      check(`${w}: 약 검색 — 화면에 "건너뛰기"는 한 곳`, await page.evaluate(() => (document.getElementById('app').textContent.match(/건너뛰기/g) || []).length === 1));
+      await page.click('.skipbtn'); await page.waitForSelector('[data-tab]'); await barOK('영양제');
+      await page.click('.skipbtn'); await page.waitForSelector('input.time, .tlist, [data-act="timesDone"]'); await barOK('복용 시간');
+
+      // ── 홈 · 결과 (하단 탭이 열 안)
+      await page.evaluate(() => KeepingApp.go('welcome')); await page.click('[data-act="demo"]'); await page.waitForSelector('.nav');
+      let r = await R();
+      check(`${w}: 홈 — 하단 탭이 열 안`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
+      await page.click('[data-act="demoRx"]'); await page.click('[data-act="demoConfirm"]'); await page.waitForSelector('.row.flag');
+      r = await R();
+      check(`${w}: 결과 — 하단 탭이 열 안, 가로 넘침 없음`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
+      check(`${w}: 오류 없음`, errs.length === 0, errs.join(' | '));
+      await ctx.close();
+    }
+
+    // ── 로딩 중 다시 그려질 때 화면이 튀지 않는다 (누적 레이아웃 이동 CLS)
+    console.log('\n로딩 중 화면 안정성 (402×874)');
+    const ctx = await browser.newContext({ viewport: { width: 402, height: 874 } });
+    const page = await ctx.newPage();
+    await page.route('**/data/dur/*.json', async (r) => { await new Promise((x) => setTimeout(x, 700)); r.continue(); });
+    await page.addInitScript(() => { window.__cls = 0; window.__shifts = []; new PerformanceObserver((l) => { for (const e of l.getEntries()) if (!e.hadRecentInput) { window.__cls += e.value; window.__shifts.push(+e.value.toFixed(4)); } }).observe({ type: 'layout-shift', buffered: true }); });
+    await page.goto(base); await page.evaluate(() => document.fonts.ready);
+    await page.click('.splash'); await page.click('[data-act="start"]'); await page.click('[data-act="agree"]'); await page.click('#agreenext'); await page.waitForSelector('#nextbtn');
+    const y0 = await page.evaluate(() => { window.__cls = 0; window.__shifts = []; return [...document.querySelectorAll('h1, .inp, .count, .lbl')].map((e) => Math.round(e.getBoundingClientRect().top)); });
+    await page.waitForFunction(() => KeepingApp.ui.dur.status === 'ready'); await page.waitForTimeout(300);
+    const y1 = await page.evaluate(() => [...document.querySelectorAll('h1, .inp, .count, .lbl')].map((e) => Math.round(e.getBoundingClientRect().top)));
+    const cls = await page.evaluate(() => ({ v: window.__cls, s: window.__shifts }));
+    check('약 검색: 로딩이 끝나도 제목·검색창·고른 약 위치가 그대로', JSON.stringify(y0) === JSON.stringify(y1), JSON.stringify([y0, y1]));
+    check('약 검색: 로딩이 끝나는 동안 누적 레이아웃 이동 0.01 이하', cls.v <= 0.01, JSON.stringify(cls));
+    await ctx.close();
+
+    // ── 글꼴이 느리게 와도(0.6초 지연) 첫 화면이 나온 뒤 글자 위치가 바뀌지 않는다
+    console.log('\n글꼴이 느릴 때 (360×800, 글꼴 0.6초 지연)');
+    const ctx2 = await browser.newContext({ viewport: { width: 360, height: 800 } });
+    const p2 = await ctx2.newPage();
+    await p2.route('**/*SUIT*', async (r) => { await new Promise((x) => setTimeout(x, 600)); r.continue(); });
+    await p2.goto(base); await p2.waitForSelector('.splash'); await p2.click('.splash'); await p2.waitForSelector('.welcome');
+    const hs = () => p2.evaluate(() => ['h1', '.sub', '.fine'].map((s) => Math.round(document.querySelector(s).getBoundingClientRect().height)).join(','));
+    const early = await hs(); await p2.waitForTimeout(1800); const late = await hs();
+    check('환영 화면: 첫 화면이 보이는 순간과 글꼴이 다 도착한 뒤의 문단 높이가 같음', early === late, early + ' → ' + late);
+    check('글꼴(SUIT)이 첫 화면 전에 로드됨', await p2.evaluate(() => document.fonts.check('600 16px SUIT')));
+    await ctx2.close();
+  } finally { await browser.close(); server.close(); }
+  console.log('\n통과 ' + ok + ' / 실패 ' + bad);
+  process.exit(bad ? 1 : 0);
+})().catch((e) => { console.error('예외:', e); process.exit(2); });
