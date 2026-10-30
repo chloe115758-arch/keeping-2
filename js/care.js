@@ -19,6 +19,7 @@
   'use strict';
 
   var SOURCE_LABEL = '의약품 허가사항 (식품의약품안전처)';
+  var FOOD_LABEL = { alcohol: '알코올', grapefruit: '자몽', caffeine: '카페인', dairy: '우유' };
   var BANDS = [
     { id: 'morning', label: '아침약', from: 240, to: 660 },
     { id: 'lunch', label: '점심약', from: 660, to: 900 },
@@ -109,7 +110,8 @@
             var src = dur.source('pair');
             [[drugs[i], drugs[j]], [drugs[j], drugs[i]]].forEach(function (ab) {
               addFlag(ab[0].id, { id: id, grade: 'official', severity: 'caution', kind: 'pair',
-                short: nameOf(ab[1]) + '와 같이 복용하지 않도록 지정된 조합', withItemIds: [ab[1].id] },
+                short: nameOf(ab[1]) + ' · 같이 복용하지 않도록 지정된 조합', withItemIds: [ab[1].id],
+                parts: { subject: nameOf(ab[1]), message: '같이 복용하지 않도록 지정된 조합', now: null } },
                 { grade: 'official', headline: '병용금기로 지정된 조합', detail: e.note || '', excerpt: e.reason,
                   where: '병용금기 · 고시 ' + e.date, source: { label: src.label, url: src.url, checkedAt: src.checkedAt } });
             });
@@ -139,7 +141,7 @@
           var iv = (r.interval && r.interval.actionable !== false) ? r.interval : null;
           var withIds = [], foodKos = [], wholeOk = true, gapInfo = null;
           (r.matched || []).forEach(function (m) {
-            if (m.kind === 'food') { foodKos.push(m.ko); return; }
+            if (m.kind === 'food') { foodKos.push(FOOD_LABEL[m.key] || m.ko); return; }
             var others = m.kind === 'supplement'
               ? supps.filter(function (s) { return (s.ingredientKeys || []).indexOf(m.key) >= 0; })
               : drugs.filter(function (d) { return d.id !== owner.id && inGroup(d, m.key); });
@@ -163,13 +165,14 @@
           if (hasPair && intervalOk && !hasFood) return;   // 안내된 간격 이상으로 떨어져 있으면 경고하지 않는다
 
           var who = withIds.map(function (id) { return nameOf(items.filter(function (x) { return x.id === id; })[0]); });
-          var short;
-          if (hasPair && iv) short = who.slice(0, 2).join('·') + '와 ' + ivText(iv) + ' 안내';
-          else if (hasPair) short = who.slice(0, 2).join('·') + ': 병용 주의 안내';
-          else short = foodKos.join('·') + ': 주의 안내';
-          if (gapInfo) short += ' · 지금 ' + (Math.round(gapInfo.minutes / 6) / 10) + '시간';
+          var short, parts;
+          var nowTxt = gapInfo ? '지금 ' + (Math.round(gapInfo.minutes / 6) / 10) + '시간' : null;
+          if (hasPair && iv) parts = { subject: who.slice(0, 2).join('·'), message: ivText(iv) + ' 안내', now: nowTxt };
+          else if (hasPair) parts = { subject: who.slice(0, 2).join('·'), message: '병용 주의 안내', now: null };
+          else parts = { subject: foodKos.join('·'), message: '주의 안내', now: null };
+          short = parts.subject + ' · ' + parts.message + (parts.now ? ' · ' + parts.now : '');
           addFlag(owner.id, { id: r.id, grade: 'label', severity: 'caution', kind: hasPair ? 'interaction' : 'food',
-            short: short, withItemIds: withIds },
+            short: short, parts: parts, withItemIds: withIds },
             { grade: 'label', headline: short, detail: r.subject || '', excerpt: r.excerpt, where: r.where, source: src });
           if (!hasPair && hasFood) {   // 음식·음주 안내: 약마다 흔해서 따로 모은다(주의 개수에 세지 않는다)
             foodKos.forEach(function (ko) {

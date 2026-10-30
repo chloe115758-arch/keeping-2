@@ -33,13 +33,17 @@ const BANNED = /안전해요|괜찮|문제없|문제 없|먹어도|안전합니�
   st.items = [levo, calcium]; st.example = false;
   A.go('home');
   check('홈: "오늘 주의 N개"(설명서 근거 간격 1건 이상)', /^오늘 주의 [1-9]\d*개$/.test(q('.sumline').textContent.trim()), q('.sumline').textContent);
-  check('깊이 0: "아침약 · 07:00 · 약 2개 · 주의 N" + 기본 식사 시간', /^아침약 · 07:00 · 약 2개 · 주의 [1-9]/.test(q('.slot-head b').textContent) && T().includes('아침 식사 08:30'), q('.slot-head b').textContent);
+  check('깊이 0: 제목 "아침약" + 아래 줄 "약 2개 · 주의 N"(주의만 빨강), 시간 07:00은 왼쪽 라벨, 식사 문구는 카드 안에 없음', q('.slot-head b').textContent === '아침약' && /^약 2개 · 주의 [1-9]/.test(q('.slot-head small').textContent) && q('.slot-head small .red').textContent.startsWith('주의 ') && q('.slot-row .tllabel').textContent === '07:00' && !/식사/.test(q('.slot').textContent), q('.slot-head small').textContent);
+  check('시간선: 행 [라벨 | 선 | 내용], 식사 줄(빈 점)이 시간 순서로 끼어 있고 "아침 식사"는 07:00 카드 뒤(08:30)', qa('.tlrow').every((e) => e.querySelector('.tllabel') && e.querySelector('.tlcol .tldot')) && q('.meal-row .tldot.hollow') && qa('.tlrow').map((e) => e.querySelector('.tllabel').textContent).join('|') === '07:00|08:30', qa('.tlrow').map((e) => e.querySelector('.tllabel').textContent).join('|'));
   click(q('.slot-head'));
-  const red = qa('.tline.red').map((e) => e.textContent);
-  check('깊이 1: 레보티록신 줄에 "칼슘…최소 4시간 간격 안내" 주의 한 줄(삼각형 아이콘 + 글자)', red.some((t) => t.includes('최소 4시간 간격')) && qa('.tline.red').every((e) => !!e.querySelector('svg')), red.join('|'));
-  check('깊이 1: 식사 관계는 근거가 있을 때만(배지 "설명서 근거")', qa('.tline.meal').length === 0 || qa('.tline.meal .badge').every((b) => b.textContent === '설명서 근거'));
+  const red = qa('.flagblk').map((e) => e.textContent);
+  const fb = qa('.flagblk').find((e) => e.textContent.includes('최소 4시간 간격'));
+  check('깊이 1: 레보티록신 줄에 주의 블록(경고 아이콘 · 이름 + "최소 4시간 간격 안내" · "지금 N시간" 둘째 줄 · 배지 · ›)', !!fb && fb.querySelectorAll('svg').length === 2 && /^지금 \d/.test(fb.querySelector('.fnow').textContent) && fb.querySelector('.fl1 b').textContent.length > 0 && fb.querySelector('.fbadge').textContent === '설명서 근거' && !/[·]\s*$/.test(fb.querySelector('.fl1').textContent), red.join('|'));
+  check('깊이 1: 약 행 = 아이콘 칸 · 이름 · 시간(같은 행)', qa('.titem').every((e) => e.querySelector('.mico') && e.querySelector('.mname b') && /^\d\d:\d\d$/.test(e.querySelector('time').textContent)));
+  check('깊이 1: 식사 관계는 근거가 있을 때만(칩)', qa('.mchip.meal').length === 0 || qa('.mchip.meal').every((b) => b.dataset.act === 'sheet'));
   check('시간 제안 버튼은 없음(개선 방향)', !q('.sugg') && !q('[data-act="applySugg"]'));
-  click(q('.tline.red'));
+  click(fb);
+  check('근거 시트: 원문 아래 읽기 전용 한 줄 "{약} · {시각} 이후에 드시면 안내된 간격 이상이에요"(조사 표기·버튼 없음)', /^칼슘 영양제 · \d\d:\d\d 이후에 드시면 안내된 간격 이상이에요$/.test(q('.evsugg').textContent) && !/\(을\)|\(를\)/.test(T()) && !q('.evsugg').querySelector('button') && q('.evq').nextElementSibling === q('.evsugg'), q('.evsugg') && q('.evsugg').textContent);
   check('깊이 2 근거 시트: 배지 "설명서 근거" · 원문 그대로("최소 4시간") · 위치 · 출처 링크 · 확인일', q('.evcard .badge').textContent === '설명서 근거' && q('.evq p').textContent.includes('최소 4') && q('.evq small').textContent.includes('원문') && /^https?:\/\//i.test(q('.evcard .src a').href) && /확인일 20\d\d-\d\d-\d\d/.test(T()), T().slice(0, 300));
   const fetched = Object.values(A.ui.care.engine.entryOf(levo).fetchedAt ? { x: A.ui.care.engine.entryOf(levo).fetchedAt.slice(0, 10) } : {})[0];
   check('확인일은 care-pack의 fetchedAt 날짜', T().includes('확인일 ' + fetched), fetched);
@@ -48,8 +52,8 @@ const BANNED = /안전해요|괜찮|문제없|문제 없|먹어도|안전합니�
   st.items.find((i) => i.id === 'C1').times = ['12:00']; A.go('home');
   check('시간을 직접 옮기면(칼슘 12:00) 다시 계산돼 주의가 사라짐', /오늘 주의 0개/.test(T()), T().slice(0, 200));
   st.items.find((i) => i.id === 'C1').times = ['08:00'];
-  const pill = (() => { A.go('home'); click(q('.slot-head')); return q('.titem .pillico svg'); })();
-  check('약 앞 이미지 칸: 연한 회색 알약 아이콘 하나(모든 줄 같은 모양)', !!pill && qa('.titem .pillico').every((e) => e.innerHTML === qa('.pillico')[0].innerHTML));
+  const pill = (() => { A.go('home'); click(q('.slot-head')); return q('.titem .mico svg'); })();
+  check('약 앞 이미지 칸: 연한 회색 알약 아이콘 하나(모든 줄 같은 모양)', !!pill && qa('.titem .mico').every((e) => e.innerHTML === qa('.mico')[0].innerHTML));
 
   console.log('3) 근거가 없는 약: 이유별 문구');
   const entries = JSON.parse(fs.readFileSync(path.join(dir, 'data/care/care-pack.json'), 'utf8')).entries;
@@ -61,7 +65,7 @@ const BANNED = /안전해요|괜찮|문제없|문제 없|먹어도|안전합니�
   A.go('home'); click(q('.slot-head'));
   check('규칙이 0개인 약: "설명서에서 복용 시점·상호작용 안내를 찾지 못했어요. 안전하다는 뜻은 아니에요"', T().includes('설명서에서 복용 시점·상호작용 안내를 찾지 못했어요. 안전하다는 뜻은 아니에요'), emptyKey);
   check('직접 입력한 약: "키핑이 확인한 범위 밖이에요"', T().includes('키핑이 확인한 범위 밖이에요'));
-  check('시간을 안 정한 약: "복용 시간을 정해 주세요" 줄', T().includes('복용 시간을 정해 주세요') && T().includes('시간없는약'));
+  check('시간을 안 정한 약: 맨 아래 "시간을 정하지 않은 약" 카드 + "시간 정하기" 버튼', T().includes('시간을 정하지 않은 약') && T().includes('시간없는약') && !!q('.urow .settime'));
   const missKey = Object.keys(entries);
   const cm = dur.search('후로스판')[0] && dur.search('후로스판')[0];
   st.items = [Object.assign(dur.toItem(cm.code), { id: 'X1', times: ['09:00'], batch: null })];
@@ -72,7 +76,7 @@ const BANNED = /안전해요|괜찮|문제없|문제 없|먹어도|안전합니�
   console.log('4) 새 처방 표시');
   st.items = [Object.assign({}, levo, { batch: 'rx-test' }), Object.assign({}, calcium, { batch: null })];
   A.go('home'); click(q('.slot-head'));
-  check('새 처방으로 추가한 약에만 "새 처방" 표시', qa('.badge.newrx').length === 1 && qa('.titem').find((e) => e.textContent.includes('새 처방')).textContent.includes('씬지록신'));
+  check('새 처방으로 추가한 약에만 "새 처방" 표시', qa('.mchip.new').length === 1 && qa('.titem').find((e) => e.textContent.includes('새 처방')).textContent.includes('씬지록신'));
   check('약봉투 화면·시간 제안·루틴 요약은 없음', !/약봉투|새로 생긴 주의|루틴/.test(T()));
 
   console.log('5) 상태(임신 중 / 만 65세 이상) · 판정 문구');

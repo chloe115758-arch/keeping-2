@@ -134,4 +134,17 @@ t('actionable이 없는 옛 규칙은 안내로 취급한다(호환)', () => {
   const m = c2.analyze([drug('levo', '씬지로이드정0.075', ['07:00']), supp('ca', ['calcium'], ['09:00'])], {});
   assert.ok(m.suggestions.some((s) => s.suggestTime === '11:00'));
 });
+t('문구에 받침 조사(와/과)를 쓰지 않는다: "시바스정와" 같은 오류가 없다', () => {
+  const m = care.analyze([drug('s', '시바스정', ['21:00']), drug('i', '이트코나졸캡슐', ['08:30'])], {});
+  const f = flagsOf(m, 's')[0];
+  assert.ok(/ · 같이 복용하지 않도록 지정된 조합$/.test(f.short) && !/[가-힣](와|과) /.test(f.short), f.short);
+  assert.strictEqual(f.parts.message, '같이 복용하지 않도록 지정된 조합');
+  const m2 = care.analyze(base(), {});
+  const g = flagsOf(m2, 'levo').find((y) => y.withItemIds.includes('ca'));
+  assert.deepStrictEqual([g.parts.subject.length > 0, g.parts.message, /^지금 \d/.test(g.parts.now)], [true, '최소 4시간 간격 안내', true]);
+});
+t('음식 이름은 짧게(알코올·자몽), "알코올·음주"처럼 겹치지 않는다', () => {
+  const m = care.analyze([drug('metf', '메토폴정', ['19:00'])], {});
+  assert.ok(m.slots[0].items[0].foods.every((x) => !/음주/.test(x.ko)), JSON.stringify(m.slots[0].items[0].foods));
+});
 console.log('\n' + n + '개 통과');

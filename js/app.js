@@ -363,8 +363,6 @@
   function loadingNow() { return ui.dur.status === 'loading' || ui.care.status === 'loading'; }
   /* 약 앞 이미지 칸: 연한 회색 알약 아이콘 하나로 고정(모양·색에 따라 바꾸지 않는다) */
   var PILL = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5a4.95 4.95 0 0 1-7-7l10-10a4.95 4.95 0 0 1 7 7z"/><path d="M8.5 8.5l7 7"/></svg>';
-  /* 새 처방으로 추가한 약(batch가 있는 항목)에는 "새 처방" 표시만 붙인다 */
-  function newRxBadge(it) { return it && it.batch ? '<span class="badge newrx">새 처방</span>' : ''; }
   function nonFood(flags) { return (flags || []).filter(function (f) { return f.kind !== 'food'; }); }
   function indexModel(m) {
     var ix = { rows: {}, unc: {}, unsched: {} };
@@ -384,33 +382,62 @@
     if (!code) return '키핑이 확인한 범위 밖이에요. 등록은 됐고, 약사에게 확인해 주세요';   // 예전 저장 데이터 중 제품코드로 이어지지 않는 약
     return '설명서 기반 안내를 아직 준비하지 못했어요(병용금기는 확인했어요)';
   }
-  function tline(kind, ic, text, act, data) {
-    return '<button type="button" class="tline ' + kind + '" data-act="' + act + '" ' + data + '>' + icon(ic, 16) + '<span>' + esc(text) + '</span></button>';
+  /* 깊이 1: 약 행. 약 아이콘 | 이름·칩·주의 블록·음식 줄 | 시간 */
+  function flagParts(f) { return f.parts || { subject: '', message: f.short, now: null }; }
+  function flagBlock(f, extra, itemId) {
+    var p = flagParts(f), badgeCls = f.grade === 'official' ? 'official' : 'label';
+    return '<button type="button" class="flagblk" data-act="sheet" data-id="' + esc(f.id) + '" data-item="' + itemId + '">' + icon('tri', 16) +
+      '<span class="fmain"><span class="fl1">' + (p.subject ? '<b>' + esc(p.subject) + '</b> ' : '') + esc(p.message) + '</span>' +
+      (p.now ? '<span class="fnow">' + esc(p.now) + '</span>' : '') +
+      '<span class="frow"><span class="fbadge ' + badgeCls + '">' + (badgeCls === 'official' ? '공식 지정' : '설명서 근거') + '</span>' + (extra ? '<span class="fmore">외 ' + extra + '건</span>' : '') + '</span></span>' +
+      icon('chev', 16) + '</button>';
   }
-  /* 깊이 1: 약별 한 줄 */
   function timelineRow(r, m, ix, shown) {
     var it = findItem(r.itemId); if (!it) return '';
-    var lines = '', nf = nonFood(r.flags);
+    var nf = nonFood(r.flags), chips = '', blocks = '';
+    if (it.kind === 'supp') chips += '<span class="mchip supp">영양제</span>';
+    if (it.batch) chips += '<span class="mchip new">새 처방</span>';
     if (r.mealRelation && m.evidence[r.mealRelation.ruleId]) {
-      lines += '<button type="button" class="tline meal" data-act="sheet" data-id="' + esc(r.mealRelation.ruleId) + '" data-item="' + r.itemId + '" aria-label="식사 관계 ' + esc(r.mealRelation.label) + ' 근거 보기">' + badge('label') + '<span>' + esc(r.mealRelation.label) + '</span></button>';
+      chips += '<button type="button" class="mchip meal" data-act="sheet" data-id="' + esc(r.mealRelation.ruleId) + '" data-item="' + r.itemId + '" aria-label="식사 관계 ' + esc(r.mealRelation.label) + ' 근거 보기">' + esc(r.mealRelation.label) + '</button>';
     }
-    if (nf.length) {
-      lines += '<div class="tline-row">' + tline('red', 'tri', nf[0].short, 'sheet', 'data-id="' + esc(nf[0].id) + '" data-item="' + r.itemId + '"') +
-        (nf.length > 1 ? '<button type="button" class="tmore" data-act="detail" data-id="' + r.itemId + '">외 ' + (nf.length - 1) + '건</button>' : '') + '</div>';
-    }
+    if (nf.length) blocks += flagBlock(nf[0], nf.length - 1, r.itemId);
     if (r.foods && r.foods.length) {
-      lines += tline('info', 'info', '음식: ' + r.foods.map(function (f) { return f.ko; }).join('·') + ' 주의', 'sheet', 'data-id="' + esc(r.foods[0].flagId) + '" data-item="' + r.itemId + '"');
+      blocks += '<button type="button" class="foodline" data-act="sheet" data-id="' + esc(r.foods[0].flagId) + '" data-item="' + r.itemId + '">' + icon('info', 16) + '<span>음식: ' + esc(r.foods.map(function (f) { return f.ko; }).join('·')) + ' 주의</span></button>';
     }
-    if (ix.unc[r.itemId] && !shown['u' + r.itemId]) { shown['u' + r.itemId] = 1; lines += '<p class="tline info plain">' + icon('info', 16) + '<span>' + esc(uncoveredText(it, ix.unc[r.itemId])) + '</span></p>'; }
-    return '<li class="titem"><div class="thead"><span class="tname"><span class="pillico" aria-hidden="true">' + PILL + '</span><b>' + esc(nm(it)) + (it.kind === 'supp' ? '<small>영양제</small>' : '') + '</b>' + newRxBadge(it) + '</span><time>' + esc(r.time) + '</time></div>' + lines + '</li>';
+    if (ix.unc[r.itemId] && !shown['u' + r.itemId]) { shown['u' + r.itemId] = 1; blocks += '<p class="tline info plain">' + icon('info', 16) + '<span>' + esc(uncoveredText(it, ix.unc[r.itemId])) + '</span></p>'; }
+    return '<li class="titem"><span class="mico" aria-hidden="true">' + PILL + '</span><div class="mmid"><div class="mname"><b>' + esc(nm(it)) + '</b>' + chips + '</div>' + blocks + '</div><time>' + esc(r.time) + '</time></li>';
   }
-  /* 깊이 0: 시간대 행 */
+  /* 깊이 0: 시간대 카드. 시간은 왼쪽 라벨로 빼고 제목 아래에 "약 3개 · 주의 2" */
   function slotHtml(s, m, ix, shown) {
     var open = !!ui.open[s.id];
-    var title = s.label + ' · ' + s.time + ' · 약 ' + s.summary.itemCount + '개' + (s.summary.cautionCount ? ' · 주의 ' + s.summary.cautionCount : '');
-    return '<li class="slot' + (open ? ' open' : '') + '"><button type="button" class="slot-head" data-act="toggleSlot" data-id="' + s.id + '" aria-expanded="' + open + '" aria-controls="slot-' + s.id + '"><span class="slot-title"><b>' + esc(title) + '</b>' + (s.meal ? '<small>' + esc(s.meal.label + ' ' + s.meal.time) + '</small>' : '') + '</span>' +
+    var sub = '약 ' + s.summary.itemCount + '개' + (s.summary.cautionCount ? ' · <span class="red">주의 ' + s.summary.cautionCount + '</span>' : '');
+    return '<div class="slot' + (open ? ' open' : '') + '"><button type="button" class="slot-head" data-act="toggleSlot" data-id="' + s.id + '" aria-expanded="' + open + '" aria-controls="slot-' + s.id + '"><span class="slot-title"><b>' + esc(s.label) + '</b><small>' + sub + '</small></span>' +
       '<svg class="ic chev-dn" width="24" height="24" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></button>' +
-      '<ul class="tbody" id="slot-' + s.id + '"' + (open ? '' : ' hidden') + '>' + s.items.map(function (r) { return timelineRow(r, m, ix, shown); }).join('') + '</ul></li>';
+      '<ul class="tbody" id="slot-' + s.id + '"' + (open ? '' : ' hidden') + '>' + s.items.map(function (r) { return timelineRow(r, m, ix, shown); }).join('') + '</ul></div>';
+  }
+  /* 세로 시간선: [시간 라벨 | 선 | 내용]. 시간대 카드와 식사 줄을 시간 순서로 끼워 넣는다 */
+  function minOf(t) { var v = window.KeepingCare.toMin(t); return v < 240 ? v + 1440 : v; }
+  function timelineHtml(m, ix, shown) {
+    var rows = [];
+    m.slots.forEach(function (s) {
+      rows.push({ min: minOf(s.time), time: s.time, dot: '', body: slotHtml(s, m, ix, shown), cls: 'slot-row' });
+      if (s.meal) rows.push({ min: minOf(s.meal.time), time: s.meal.time, dot: ' hollow', body: '<span class="tlmeal">' + esc(s.meal.label) + '</span>', cls: 'meal-row' });
+    });
+    rows.sort(function (a, b) { return a.min - b.min; });
+    return '<ol class="tl">' + rows.map(function (x) {
+      return '<li class="tlrow ' + x.cls + '"><span class="tllabel">' + esc(x.time) + '</span><span class="tlcol"><i class="tldot' + x.dot + '"></i></span>' + x.body + '</li>';
+    }).join('') + '</ol>';
+  }
+  /* 시간을 정하지 않은 약: 목록 맨 아래 카드 하나 */
+  function unscheduledHtml(m, ix, shown) {
+    var rows = m.unscheduled.map(function (id) {
+      var it = findItem(id); if (!it) return '';
+      var u = ix.unc[id], chips = (it.kind === 'supp' ? '<span class="mchip supp">영양제</span>' : '') + (it.batch ? '<span class="mchip new">새 처방</span>' : '');
+      return '<li class="urow"><span class="mico" aria-hidden="true">' + PILL + '</span><div class="mmid"><div class="mname"><b>' + esc(nm(it)) + '</b>' + chips + '</div>' +
+        (u ? '<p class="tline info plain">' + icon('info', 16) + '<span>' + esc(uncoveredText(it, u)) + '</span></p>' : '') + '</div>' +
+        '<button type="button" class="settime" data-act="to" data-view="times" data-all="1" aria-label="' + esc(nm(it)) + ' 복용 시간 정하기">시간 정하기</button></li>';
+    }).join('');
+    return '<section class="slot unsched"><h2 class="utitle">시간을 정하지 않은 약</h2><ul class="tbody">' + rows + '</ul></section>';
   }
   VIEWS.home = function () {
     var m = careModel(), ix = m ? indexModel(m) : null;
@@ -422,15 +449,8 @@
     var body = '';
     if (m && state.items.length) {
       var shown = {};
-      body += m.slots.length ? '<ol class="tl">' + m.slots.map(function (s) { return slotHtml(s, m, ix, shown); }).join('') + '</ol>' : '';
-      if (m.unscheduled.length) {
-        body += '<section class="rsec"><h2>복용 시간을 정해 주세요</h2><ul class="rlist">' + m.unscheduled.map(function (id) {
-          var it = findItem(id); if (!it) return '';
-          var u = ix.unc[id];
-          return '<li class="rcard"><button type="button" class="rmain" data-act="to" data-view="times" data-all="1" style="padding-left:14px"><span class="rhead"><b>' + esc(nm(it)) + '</b>' + newRxBadge(it) + '</span><span class="rline info">' + icon('clock', 16) + '<span>복용 시간을 정해 주세요</span></span>' +
-            (u ? '<span class="rline info">' + icon('info', 16) + '<span>' + esc(uncoveredText(it, u)) + '</span></span>' : '') + '</button></li>';
-        }).join('') + '</ul></section>';
-      }
+      body += m.slots.length ? timelineHtml(m, ix, shown) : '';
+      if (m.unscheduled.length) body += unscheduledHtml(m, ix, shown);
       body += '<p class="fine">병용금기(공식 지정)와 설명서에서 찾은 안내만 보여드려요. 찾지 못했다고 안전하다는 뜻은 아니에요. 키핑은 의료 조언이 아니에요.</p>';
     } else if (state.items.length) {
       body += '<p class="note">설명서 기반 안내를 쓸 수 없어요. 등록한 약과 영양제는 내 약에서 볼 수 있어요.</p>';
@@ -486,11 +506,11 @@
   }
   function dateOf(x) { return x ? String(x).slice(0, 10) : null; }
   /* 근거 카드: 등급 배지 · 헤드라인 · 조건/항목 · 원문 그대로 · 위치 · 출처 · 확인일. 요약하지 않는다. */
-  function evidenceCard(ev) {
+  function evidenceCard(ev, afterQuote) {
     var url = safeUrl(ev.source && ev.source.url), chk = dateOf(ev.source && ev.source.checkedAt);
     return '<article class="evcard">' + badge(ev.grade) + '<h2 class="evh">' + esc(ev.headline) + '</h2>' +
       (ev.detail ? '<p class="evd"><b>' + (ev.grade === 'official' ? '조건' : '항목') + '</b> ' + esc(ev.detail) + '</p>' : '') +
-      (ev.excerpt ? '<blockquote class="evq"><small>원문' + (ev.where ? ' · ' + esc(ev.where) : '') + '</small><p>' + esc(ev.excerpt) + '</p></blockquote>' : '') +
+      (ev.excerpt ? '<blockquote class="evq"><small>원문' + (ev.where ? ' · ' + esc(ev.where) : '') + '</small><p>' + esc(ev.excerpt) + '</p></blockquote>' : '') + (afterQuote || '') +
       '<p class="src"><span>' + esc((ev.source && ev.source.label) || '') + '</span>' + (url ? ' <a href="' + esc(url) + '" target="_blank" rel="noopener">원문 보기</a>' : '') + '<small>확인일 ' + esc(chk || '확인하지 못했어요') + '</small></p></article>';
   }
   var HELP_FOOT = '<p class="evfoot">이상 증상이 있으면 약사·의사에게 물어보세요.</p>';
@@ -501,9 +521,13 @@
     m.slots.forEach(function (s) { s.items.forEach(function (r) { r.flags.forEach(function (f) { if (f.id === ui.params.id && !flag) flag = f; }); }); });
     var owner = findItem(ui.params.item);
     var withNames = flag ? flag.withItemIds.map(function (id) { var x = findItem(id); return x ? nm(x) : ''; }).filter(Boolean) : [];
+    /* 읽기 전용: 이 규칙에 해당하는 시간 제안이 있으면 원문 아래에 한 줄(버튼 없음) */
+    var sugg = ((m.suggestions || []).filter(function (x) { return x.ruleId === ui.params.id && x.itemId !== ui.params.item; })).map(function (x) {
+      var o = findItem(x.itemId); return o ? '<p class="evsugg">' + esc(nm(o) + ' · ' + x.suggestTime + ' 이후에 드시면 안내된 간격 이상이에요') + '</p>' : '';
+    }).join('');
     return '<main class="screen sheet">' + topbar('근거') +
       (owner ? '<p class="evwho">' + esc(nm(owner)) + (withNames.length ? ' · 함께 등록한 것: ' + esc(withNames.join(', ')) : '') + '</p>' : '') +
-      evidenceCard(ev).replace('<h2 class="evh">', '<h1 class="evh" data-focus>').replace('</h2>', '</h1>') + HELP_FOOT + '</main>';
+      evidenceCard(ev, sugg).replace('<h2 class="evh">', '<h1 class="evh" data-focus>').replace('</h2>', '</h1>') + HELP_FOOT + '</main>';
   };
   VIEWS.detail = function () {
     var item = findItem(ui.params.id);
