@@ -470,7 +470,7 @@
     var n = selectedItems('drug').length;
     return '<main class="screen has-bar">' + topbar() + '<h1 class="h" data-focus>새로 받은 약을 추가해요</h1><p class="sub">받은 약을 모두 추가하면, 지금 먹는 것과 겹치는 내용만 골라서 보여드려요.</p>' +
       searchBlock('drug') + '<p class="lbl">이번에 받은 약 <span class="count" id="selcount">' + n + '</span></p><div id="selected">' + selectedHtml('drug') + '</div></main>' +
-      actionBar('<button type="button" id="nextbtn" class="cta" data-act="confirmAdd"' + (n ? '' : ' disabled') + '>겹치는 내용 확인하기</button>');
+      actionBar('<button type="button" id="nextbtn" class="cta" data-act="confirmAdd"' + (n ? '' : ' disabled') + '>추가하기</button>');
   };
 
   VIEWS.notify = function () {
