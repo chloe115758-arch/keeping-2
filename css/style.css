@@ -346,9 +346,6 @@ button{background:none;border:0;cursor:pointer}
 .carestat { margin: 0; min-height: 24px; }
 .carenote { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0; }
 .carenote .mini.txt { flex: none; min-height: 44px; min-width: 44px; }
-.meals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-.mealin { display: grid; gap: 6px; font-size: 14px; font-weight: 500; color: var(--text-2, #4F4F4F); }
-.mealin .time { width: 100%; min-width: 0; }
 
 /* ---------- 타임라인(깊이 0·1) · 근거 시트(깊이 2) ---------- */
 .sumline{font:700 22px/1.3 var(--font);letter-spacing:var(--ls)}
@@ -381,8 +378,6 @@ button{background:none;border:0;cursor:pointer}
 .badge.official{color:var(--error-ink);background:var(--error-soft)}
 .badge.label{color:var(--info-ink);background:#E8F1FD}
 .badge.ref,.badge.none{color:var(--ink-2);background:var(--soft)}
-.sugg{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px;min-height:44px;margin:4px 0;padding:8px 12px;border-radius:12px;background:var(--mint-50);border:1px solid var(--mint-600);color:var(--black-1);text-align:left;font:var(--b3-1)}
-.sugg .ic{flex:none;color:var(--mint-800)}
 .evwho{font:var(--label-1);color:var(--ink-2);margin:0 0 12px}
 .evcard{display:grid;gap:10px;padding:16px;border-radius:12px;background:var(--card-bg);margin-bottom:12px}
 .evcard .badge{justify-self:start}
@@ -395,36 +390,15 @@ button{background:none;border:0;cursor:pointer}
 .evcard .src a{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;color:var(--info-ink);text-decoration:underline}
 .evfoot{margin:16px 0 0;font:var(--b3-1);color:var(--ink-2)}
 
-/* ---------- 새 처방 흐름: 약봉투(연습용) · 새로 생긴 주의 ---------- */
-.envlist{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:8px}
-.envsample{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;background:var(--card-bg)}
-.envsample img{flex:none;width:72px;height:auto;border-radius:6px;border:1px solid var(--line);background:var(--white)}
-.envsample > span:nth-of-type(1){display:grid;gap:2px;flex:1;min-width:0}
-.envsample b{font:var(--label-1);color:var(--ink-strong)}
-.envsample small{font:var(--caption);color:var(--ink-2)}
-.envlinks{display:grid;gap:0}
-.envlinks a{display:inline-flex;align-items:center;justify-content:flex-end;min-height:44px;padding:0 4px;font:var(--label-1);color:var(--info-ink);text-decoration:underline}
-.envimg{position:relative;margin:16px 0 12px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--white)}
-.envimg img{display:block;width:100%;height:auto}
-.hl{position:absolute;border:2px solid var(--mint-700);background:rgba(82,206,176,.3);border-radius:6px;animation:hlIn .35s ease-out}
-@keyframes hlIn{from{opacity:0;transform:scaleX(.6);transform-origin:left}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.hl{animation:none}}
-.envh{font:700 18px/1.4 var(--font);margin:8px 0 4px}
-.envrows{list-style:none;margin:12px 0;padding:0;display:grid;gap:12px}
-.envrow{display:grid;gap:10px;padding:14px 16px;border-radius:12px;background:var(--card-bg)}
-.envrow.off{opacity:1}
-.envrow.off .envhd b{color:var(--ink-2);text-decoration:line-through}
-.envhd{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
-.envhd span{display:grid;gap:2px}
-.envhd b{font:var(--label-1);color:var(--ink-strong)}
-.envhd small{font:var(--caption);color:var(--ink-2)}
-.cands{display:grid;gap:6px}
-.cand{display:grid;gap:2px;min-height:44px;padding:10px 12px;text-align:left;border-radius:10px;background:var(--white);border:1px solid var(--line)}
-.cand.on{border:2px solid var(--mint-700);background:var(--mint-50)}
-.cand b{font:var(--label-1);color:var(--ink-strong);overflow-wrap:anywhere}
-.cand small{font:var(--caption);color:var(--ink-2)}
-.envnote{margin-top:24px}
-.newbox{display:grid;gap:4px;padding:14px 16px;border-radius:12px;background:var(--white);border:2px solid var(--mint-600)}
-.newbox h2{font:700 16px/1.4 var(--font);letter-spacing:var(--ls)}
-.newbox .evd{margin:4px 0}
-.rcard.new{background:var(--mint-50);border-left:4px solid var(--mint-600)}
+/* ---------- 약 앞 알약 아이콘 · 새 처방 표시 · 설정의 상태 토글 ---------- */
+.tname{display:flex;align-items:center;gap:10px;min-width:0;flex-wrap:wrap}
+.pillico{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:var(--soft);color:var(--grey-text)}
+.badge.newrx{color:var(--mint-800);background:var(--mint-50);border-color:var(--mint-700)}
+.switchrow{display:flex;align-items:center;gap:12px;width:100%}
+.switchrow .row-main{flex:1}
+.sw{flex:none;width:44px;height:26px;border-radius:999px;background:var(--grey-4);position:relative;transition:background .15s}
+.sw i{position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:var(--white);transition:left .15s}
+.sw.on{background:var(--mint-700)}
+.sw.on i{left:21px}
+.swtxt{flex:none;min-width:36px;font:var(--label-1);color:var(--ink-2)}
+a.lnk{display:inline-flex;align-items:center;min-height:44px}
