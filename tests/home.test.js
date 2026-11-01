@@ -121,6 +121,29 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   check('일반의약품(약국약) 상세에도 묻지 않는다', !q('.deptq'));
   check('등록 단계(약 추가 화면)에서 처방약을 고르면 같은 칩 줄이 나온다', (() => { st.items.push(Object.assign(mk('시바스', 'S2', '21:00'), { batch: 'rx-t' })); A.go('add', { batch: 'rx-t' }); return !!q('#selected .deptq') && qa('#selected .deptq .chip').length === 7; })());
 
+  console.log('8) 새 처방 칩 · 공식 지정 시트의 조건 줄');
+  st.items = [mk('씬지록신', 'L1', '07:00', '내과')]; delete st.newRx; A.ui.nowMin = 6 * 60 + 40; A.ui.open = {}; A.go('home');
+  check('newItemIds를 안 넘기면 칩이 없다', !qa('.kp-newchip').length);
+  st.items = []; st.example = true; A.go('home'); click('[data-act="demoRx"]'); click('[data-act="demoConfirm"]');
+  const chips = qa('.kp-newchip');
+  check('새 처방 알림 시연 → 등록 → 홈에 "새 처방" 칩(모델의 newLabel)', chips.length >= 1 && chips.every((c) => c.textContent === A.homeModel().rows.filter((r) => r.type === 'slot')[0].groups.find((g) => g.isNew).newLabel), String(chips.length));
+  check('칩은 isNew인 묶음에만, 개수가 모델과 같다', chips.length === A.homeModel().rows.filter((r) => r.type === 'slot').reduce((a, r) => a + r.groups.filter((g) => g.isNew).length, 0) && st.newRx.ids.length === 4);
+  A.ui.open = {}; A.go('home');
+  const off = qa('.kp-notice-first').find((n) => /지정된 조합/.test(n.textContent));
+  if (off) {
+    click(off);
+    check('공식 지정 시트: 헤드라인 바로 아래 조건 줄(noteLine) 또는 조건이 없으면 줄 없음', (() => { const sh = A.homeModel().sheets[off.dataset.flag]; return sh.noteLine ? q('.kp-sheet-h').nextElementSibling.textContent === sh.noteLine : !q('.kp-note'); })());
+    click('.kp-close');
+  }
+  const pair = [mk('픽토민정', 'm1', '08:00'), mk('비지파크주270', 'm2', '09:00')];
+  st.items = pair; st.example = false; A.ui.open = {}; A.go('home'); click(q('.kp-notice-first'));
+  check('조건이 있는 쌍(픽토민정 × 비지파크): "조건 · 48시간 이내 병용금기" 줄이 보임', q('.kp-note') && q('.kp-note').textContent.includes('48시간 이내 병용금기') && q('.kp-sheet-h').nextElementSibling === q('.kp-note'), q('.kp-note') && q('.kp-note').textContent);
+  click('.kp-close');
+  st.items = [mk('씬지록신', 'L1', '07:00'), { id: 'C1', kind: 'supp', source: 'manual', name: '칼슘 영양제', ingredientKeys: ['calcium'], times: ['08:00'], batch: null }];
+  A.ui.open = {}; A.go('home'); click(q('.kp-notice-first'));
+  check('설명서 근거 시트에는 조건 줄이 없다', !q('.kp-note'));
+  click('.kp-close');
+
   check('스크립트 오류 없음', errors.length === 0, errors.join(' | '));
   console.log('\n통과 ' + ok + ' / 실패 ' + bad);
   process.exit(bad ? 1 : 0);

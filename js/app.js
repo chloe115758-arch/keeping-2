@@ -436,8 +436,14 @@
       }
     });
   }
+  /* "새 처방" 칩: 새 약을 등록한 날에만, 그때 등록한 약 id들을 build()에 넘긴다 */
+  function markNewRx(ids) { state.newRx = { day: checksKey().slice(CHECKS_PREFIX.length), ids: ids.slice() }; save(); }
+  function newItemIds() {
+    var n = state.newRx, ids = (n && n.day === checksKey().slice(CHECKS_PREFIX.length)) ? n.ids : [];
+    return ids.filter(function (id) { return !!findItem(id); });
+  }
   function homeModel() {
-    return homeVm().build({ nowMin: nowMin(), nickname: state.nickname || '', items: careItems(), analysis: careModel() || undefined, checks: loadChecks(), meals: mealsOf() });
+    return homeVm().build({ nowMin: nowMin(), newItemIds: newItemIds(), nickname: state.nickname || '', items: careItems(), analysis: careModel() || undefined, checks: loadChecks(), meals: mealsOf() });
   }
 
   /* 아이콘(24칸, 선) */
@@ -461,7 +467,7 @@
   function groupHtml(G) {
     return '<div class="kp-grp' + (G.checked ? ' is-checked' : '') + '">' +
       '<button type="button" class="kp-grp-main" data-act="openBag" data-id="' + esc(G.id) + '"><span class="kp-ico kp-ico--' + esc(G.icon) + '">' + kpIcon(G.icon, 22) + '</span>' +
-      '<span class="kp-grp-txt"><b>' + esc(G.title) + '</b>' + (G.hint ? '<small>' + esc(G.hint) + '</small>' : '') + '</span></button>' +
+      '<span class="kp-grp-txt"><b>' + esc(G.title) + (G.isNew ? '<span class="kp-newchip">' + esc(G.newLabel) + '</span>' : '') + '</b>' + (G.hint ? '<small>' + esc(G.hint) + '</small>' : '') + '</span></button>' +
       '<button type="button" class="kp-check" role="checkbox" aria-checked="' + !!G.checked + '" aria-label="' + esc(G.title) + ' 확인" data-act="toggleCheck" data-id="' + esc(G.id) + '"><span class="kp-box">' + kpIcon('check', 16) + '</span></button></div>';
   }
   /* 주의 블록: 첫 줄 버튼 안에 제목을 넣고(눌러서 근거 시트), 나머지 줄은 각자 버튼. 블록 안에 배지는 넣지 않는다. */
@@ -548,7 +554,7 @@
     var url = safeUrl(s.source && s.source.url), chk = s.source && s.source.checkedAt ? String(s.source.checkedAt).slice(0, 10) : '확인하지 못했어요';
     var official = s.grade === 'official';
     return '<span class="kp-badge ' + (official ? 'is-official' : 'is-label') + '">' + (official ? '공식 지정' : '설명서 근거') + '</span>' +
-      '<h3 class="kp-sheet-h">' + esc(s.headline) + '</h3><p class="kp-intro">' + esc(s.intro) + '</p>' +
+      '<h3 class="kp-sheet-h">' + esc(s.headline) + '</h3>' + (official && s.noteLine ? '<p class="kp-note">' + esc(s.noteLine) + '</p>' : '') + '<p class="kp-intro">' + esc(s.intro) + '</p>' +
       '<blockquote class="kp-quote">' + (s.where ? '<small>' + esc(s.where) + '</small>' : '') + '<p>' + esc(s.excerpt) + '</p></blockquote>' +
       '<section class="kp-rel"><h3>' + esc(s.relatedTitle) + '</h3><ul>' + (s.related || []).map(function (r) { return '<li><b>' + esc(r.label) + '</b>' + esc((r.names || []).join(', ')) + '</li>'; }).join('') + '</ul></section>' +
       (s.hintLine ? '<p class="kp-hintline">' + esc(s.hintLine) + '</p>' : '') +
@@ -796,7 +802,8 @@
     [['시바스', '200403126', '21:00'], ['이텍스시메티딘', '200402420', '09:00'], ['알마겔에프', '199000541', '08:00'], ['후로스판', '198801649', '12:30']].forEach(function (p) {
       state.items.push(demoDrug(p[0], p[1], p[2], { batch: b }));
     });
-    state.lastBatch = b; save();
+    state.lastBatch = b;
+    markNewRx(state.items.filter(function (i) { return i.batch === b; }).map(function (i) { return i.id; }));
     return b;
   }
 
@@ -864,7 +871,8 @@
     demoConfirm: function () { var b = addDemoBatch(); go('home'); },
     confirmAdd: function () {
       if (!selectedItems('drug').length) { toast('추가한 약이 없어요'); return; }
-      state.lastBatch = ui.params.batch; save();
+      state.lastBatch = ui.params.batch;
+      markNewRx(selectedItems('drug').map(function (i) { return i.id; }));
       go('home');
     },
     pick: function (t) {
