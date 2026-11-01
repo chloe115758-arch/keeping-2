@@ -111,13 +111,16 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   const mn = q('#mname'); mn.value = '나우푸드 이노시톨'; mn.dispatchEvent(new w.Event('input', { bubbles: true }));
   click('[data-act="chip"][data-k="inositol"]'); click('[data-act="chip"][data-k="iron"]');
   click('[data-act="manualSupp"]'); await wait(10);
+  check('영양제도 담기 확인을 거침: 진료과 줄 없이 시간 칩 4개, 고르기 전 [담기] 비활성', T().includes('담기 확인') && T().includes('나우푸드 이노시톨') && !q('.hscroll') && qa('[data-act="draftSlot"]').length === 4 && q('[data-act="dock"]').disabled === true);
+  dock([2]); await wait(10);
+  check('담으면 영양제 화면으로 돌아오고(탭 유지) 18:30으로 저장', !!q('[data-tab]') && w.KeepingApp.state().items.find((i) => i.name === '나우푸드 이노시톨').times.join() === '18:30');
   check('해외·직접 입력 영양제 등록', q('#selected').textContent.includes('나우푸드 이노시톨'));
   click('#nextbtn'); snap();
   check('시간 입력 화면 + 음식 입력 + 준비 중 안내', T().includes('언제 드시나요?') && T().includes('음식과 약의 상호작용 확인은 준비 중이에요'));
   const tm = qa('input.time')[0]; tm.value = '08:00'; tm.dispatchEvent(new w.Event('change', { bubbles: true }));
   check('시간 저장', w.KeepingApp.state().items[0].times[0] === '08:00');
   click('[data-act="timesDone"]'); snap();
-  check('홈: 담은 약의 시간대 카드 3개(아침·점심·자기 전), "시간을 정하지 않은 약"은 홈에 없음', qa('.kp-row--slot').length === 3 && !T().includes('시간을 정하지 않은 약') && !T().includes('시간 정하기'), qa('.kp-row--slot').length + '');
+  check('홈: 담은 약의 시간대 카드 4개(아침·점심·저녁·자기 전), "시간을 정하지 않은 약"은 홈에 없음', qa('.kp-row--slot').length === 4 && !T().includes('시간을 정하지 않은 약') && !T().includes('시간 정하기'), qa('.kp-row--slot').length + '');
   click('.nav [data-view="list"]'); snap();
   check('내 목록: 약 2, 영양제 1', T().includes('약 2') && T().includes('영양제 1'));
   click(qa('.mrow').find((r) => r.textContent.includes('없는약이름'))); snap();

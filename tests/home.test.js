@@ -175,6 +175,8 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   A.go('home');
   check('하단 탭 3개(홈·내 약·마이), 뱃지 없음, 스타일은 --kp-* 변수', qa('.nav button').map((b) => b.textContent.trim()).join('|') === '홈|내 약|마이' && !q('.nav [class*="badge"]') && /\.nav\{[^}]*var\(--kp-surface\)[^}]*var\(--kp-border\)/.test(css0) && /\.nav button\{[^}]*var\(--kp-fs-caption\)[^}]*var\(--kp-text-sub\)/.test(css0));
 
+  A.go('home');
+  check('상단바: 벨 아이콘은 없고, 프로필 아이콘을 누르면 마이(설정) 탭으로 간다', !q('[aria-label="알림"]') && !!q('.kp-top [aria-label="마이"]') && (click(q('.kp-top [aria-label="마이"]')), !!q('[data-act="toggleDemo"]')));
   check('스크립트 오류 없음', errors.length === 0, errors.join(' | '));
   console.log('\n통과 ' + ok + ' / 실패 ' + bad);
   process.exit(bad ? 1 : 0);

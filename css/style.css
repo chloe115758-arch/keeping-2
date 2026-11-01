@@ -31,9 +31,9 @@
   --line:var(--grey-5); --dark:var(--black-1);
   --red:var(--error); --red-soft:var(--error-soft); --red-ink:var(--error-ink);
 
-  /* 글꼴 SUIT — 굵기/크기/줄높이.
+  /* 글꼴 Pretendard(--kp-font, css/design-tokens.css) — 굵기/크기/줄높이.
      [시안과 다름] 시안의 줄 높이는 전부 100%라 여러 줄 글에는 좁다. 본문·라벨은 1.4~1.5, 제목은 1.3~1.4로 둔다. 자간은 시안의 -1을 -1%(-0.01em)로 읽었다(단위 확인 못 함). */
-  --font:'SUIT','SUIT Variable','Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+  --font:var(--kp-font);
   --ls:-0.01em;
   --h1:700 28px/1.3 var(--font); --h2:700 22px/1.35 var(--font); --h3:500 18px/1.4 var(--font);
   --body1:400 17px/1.5 var(--font); --body2:400 16px/1.5 var(--font); --body3:400 14px/1.5 var(--font);
@@ -525,3 +525,53 @@ input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;appea
 .lbl .opt{font:var(--caption);font-weight:500;color:var(--ink-2)}
 .pcard .dept-in{display:flex;gap:8px;align-items:center}
 .pcard .dept-in input{flex:1;min-width:0;min-height:var(--tap);padding:0 12px;border:1.5px solid var(--grey-5);border-radius:var(--r-sm);background:var(--white)}
+
+/* ---------- 2단계: 옛 화면(처음 설정·등록·내 약·마이)을 --kp-* 로 통일 ----------
+   글꼴 Pretendard, 주 버튼 검정 둥근 56px, 배경 --kp-bg-page, 카드 --kp-surface + --kp-radius-card. 민트 면은 쓰지 않는다. */
+:root{--font:var(--kp-font)}
+body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp-font)}
+.screen{background:transparent}
+.h,.sub,.muted,.note,.fine,.lbl{font-family:var(--kp-font)}
+.sub,.muted,.note,.fine,.lbl,.sub2{color:var(--kp-text-sub)}
+.h{color:var(--kp-text)}
+.cta{display:flex;align-items:center;justify-content:center;min-height:56px;height:56px;padding:0 16px;border-radius:var(--kp-radius-btn);background:var(--kp-cta-bg);color:var(--kp-cta-text);font:var(--kp-fw-title) 16px/1 var(--kp-font)}
+.cta:hover{background:var(--kp-cta-bg);opacity:.92;transform:none}
+.cta:active{background:var(--kp-cta-bg);opacity:.8}
+.cta:disabled{background:var(--kp-surface-sub);color:var(--kp-text-sub);opacity:1}
+.cta.ghost,.cta.outline{background:var(--kp-surface);color:var(--kp-text);box-shadow:inset 0 0 0 1.5px var(--kp-border)}
+.cta.ghost:hover,.cta.outline:hover{background:var(--kp-surface-sub);opacity:1}
+.cta.small{height:auto;min-height:var(--kp-touch-min);border-radius:var(--kp-radius-chip);padding:10px 14px;font-size:14px}
+.cta.light{background:rgba(255,255,255,.14);color:#fff;box-shadow:none}
+.skipbtn{height:56px;min-height:56px}
+.skipbtn span{color:var(--kp-text-sub)}
+.actionbar{background:var(--kp-bg-page);box-shadow:0 -1px 0 var(--kp-border)}
+.add{background:var(--kp-cta-bg);color:var(--kp-cta-text);border-radius:var(--kp-radius-chip);font-family:var(--kp-font)}
+.chip{background:var(--kp-surface);border-color:var(--kp-border);color:var(--kp-text);font-family:var(--kp-font)}
+.chip.on{background:var(--kp-brand-weak);border-color:var(--kp-brand);color:var(--kp-label-text)}
+.chip.food{background:var(--kp-surface-sub);border-color:var(--kp-surface-sub)}
+.tab.on,.mini.txt.on{background:var(--kp-cta-bg);color:var(--kp-cta-text)}
+.stepbar{background:var(--kp-surface-sub)}
+.stepbar i{background:var(--kp-brand)}
+.stepchip,.count{background:var(--kp-brand-weak);color:var(--kp-label-text)}
+.brand{color:var(--kp-brand-strong)}
+.splash{background:var(--kp-bg-page);color:var(--kp-text)}
+.splash-hint{color:var(--kp-text-sub)}
+.linkbtn{color:var(--kp-brand-strong)}
+.linkbtn:hover{background:var(--kp-surface-sub)}
+.agree{background:var(--kp-surface);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
+.agree.on{background:var(--kp-brand-weak)}
+.agree .box{background:var(--kp-border);color:var(--kp-surface)}
+.agree.on .box{background:var(--kp-brand);color:var(--kp-text)}
+.facts .ic,.res-act,.src a,.lnk{color:var(--kp-brand-strong)}
+.banner{background:var(--kp-surface);color:var(--kp-text-sub)}
+.inp{background:var(--kp-surface);border-color:var(--kp-border);border-radius:var(--kp-radius-card)}
+.inp:focus-within,.ta:focus{border-color:var(--kp-brand)}
+.ta{background:var(--kp-surface);border-color:var(--kp-border)}
+.row,.res,.pcard,.card,.mrow{background:var(--kp-surface);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
+.res.done{background:var(--kp-surface-sub);box-shadow:none}
+.res:hover:not(.done){box-shadow:0 0 0 1.5px var(--kp-brand) inset,var(--kp-shadow-card)}
+.row.ghostrow{background:var(--kp-surface);box-shadow:inset 0 0 0 1.5px var(--kp-border)}
+.kv{background:var(--kp-bg-page);border-radius:var(--kp-radius-chip)}
+.sel li{background:var(--kp-brand-weak);border-radius:var(--kp-radius-chip)}
+.sw.on{background:var(--kp-brand-strong)}
+.badge.newrx{color:var(--kp-label-text);background:var(--kp-brand-weak);border-color:var(--kp-brand-strong)}

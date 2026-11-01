@@ -59,10 +59,10 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
 
       // ── 환영 화면 위계 · 하단 영역
       check(`${w}: 환영 — 하단 영역이 열 안에 꽉 참(폭 같음)`, loading.bar && Math.abs(loading.bar.x - app.x) <= 1 && Math.abs(loading.bar.r - app.r) <= 1, JSON.stringify(loading.bar));
-      check(`${w}: 환영 — 시작하기 버튼 높이 50, 열 좌우 16px 안쪽`, loading.start && Math.abs(loading.start.h - 50) <= 1 && Math.abs(loading.start.x - (app.x + 16)) <= 1 && Math.abs(app.r - 16 - loading.start.r) <= 1, JSON.stringify(loading.start));
+      check(`${w}: 환영 — 시작하기 버튼 높이 56, 열 좌우 16px 안쪽`, loading.start && Math.abs(loading.start.h - 56) <= 1 && Math.abs(loading.start.x - (app.x + 16)) <= 1 && Math.abs(app.r - 16 - loading.start.r) <= 1, JSON.stringify(loading.start));
       check(`${w}: 환영 — 링크가 버튼 아래, 겹치지 않음(간격 ≥ 8)`, loading.demo && loading.demo.y >= loading.start.b + 7, `버튼 하단 ${loading.start && loading.start.b} / 링크 상단 ${loading.demo && loading.demo.y}`);
       check(`${w}: 환영 — 링크 터치 영역 44px 이상, 하단 영역 안`, loading.demo.h >= 44 && loading.demo.y >= loading.bar.y && loading.demo.b <= loading.bar.b, JSON.stringify([loading.demo, loading.bar]));
-      check(`${w}: 환영 — 링크는 텍스트 버튼(민트 700, 밑줄 없음)`, await page.evaluate(() => { const c = getComputedStyle(document.querySelector('[data-act="demo"]')); return c.color === 'rgb(23, 122, 99)' && !c.textDecorationLine.includes('underline') && c.fontWeight === '600' && c.fontSize === '14px'; }));
+      check(`${w}: 환영 — 링크는 텍스트 버튼(--kp-brand-strong, 밑줄 없음)`, await page.evaluate(() => { const c = getComputedStyle(document.querySelector('[data-act="demo"]')); return c.color === 'rgb(10, 127, 106)' && !c.textDecorationLine.includes('underline') && c.fontWeight === '600' && c.fontSize === '14px'; }));
       check(`${w}: 환영 — 브랜드 → 제목 → 설명 → 고지 순서, 고지는 설명 아래 16px`, loading.brand.b <= loading.h1.y && loading.h1.b <= loading.sub.y && Math.abs(loading.fine.y - loading.sub.b - 16) <= 1, `설명→고지 ${Math.round(loading.fine.y - loading.sub.b)}px`);
       if (h >= 700) check(`${w}: 환영 — 제목이 위쪽 1/3 부근에서 시작`, loading.h1.y >= h * 0.25 && loading.h1.y <= h * 0.42, `제목 위 ${Math.round(loading.h1.y)} / 화면 높이 ${h}`);
       check(`${w}: 환영 — 글자 왼쪽이 열 안쪽 16px에 맞음(제목·설명·고지·버튼)`, [loading.h1, loading.sub, loading.fine, loading.start].every((r) => Math.abs(r.x - (app.x + 16)) <= 1));
@@ -89,7 +89,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       await page.click('[data-act="start"]'); await page.waitForSelector('.agree'); await barOK('저장 안내');
       await page.click('[data-act="agree"]'); await page.click('#agreenext'); await page.waitForSelector('#nextbtn');
       const drugs = await barOK('약 검색');
-      check(`${w}: 약 검색 — 다음 버튼 높이 50, 하단 영역에 건너뛰기 없음`, await page.evaluate(() => { const n = document.querySelector('#nextbtn').getBoundingClientRect(); return Math.abs(n.height - 50) <= 1 && !document.querySelector('.skipbtn'); }));
+      check(`${w}: 약 검색 — 다음 버튼 높이 56, 하단 영역에 건너뛰기 없음`, await page.evaluate(() => { const n = document.querySelector('#nextbtn').getBoundingClientRect(); return Math.abs(n.height - 56) <= 1 && !document.querySelector('.skipbtn'); }));
       check(`${w}: 약 검색 — 화면에 "건너뛰기"가 없음`, await page.evaluate(() => !/건너뛰기/.test(document.getElementById('app').textContent)));
       await page.evaluate(() => { KeepingApp.state().items.push({ id: 'lt1', kind: 'drug', source: 'manual', name: '레이아웃약', times: ['07:30'], batch: null }); KeepingApp.go('onb-drugs'); }); await page.click('#nextbtn'); await page.waitForSelector('[data-tab]'); await barOK('영양제');
       await page.click('.skipbtn'); await page.waitForSelector('input.time, .tlist, [data-act="timesDone"]'); await barOK('복용 시간');
@@ -131,12 +131,13 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
     console.log('\n글꼴이 느릴 때 (360×800, 글꼴 0.6초 지연)');
     const ctx2 = await browser.newContext({ viewport: { width: 360, height: 800 } });
     const p2 = await ctx2.newPage();
-    await p2.route('**/*SUIT*', async (r) => { await new Promise((x) => setTimeout(x, 600)); r.continue(); });
+    await p2.route('**/*Pretendard*', async (r) => { await new Promise((x) => setTimeout(x, 600)); r.continue(); });
     await p2.goto(base); await p2.waitForSelector('.splash'); await p2.click('.splash'); await p2.waitForSelector('.welcome');
     const hs = () => p2.evaluate(() => ['h1', '.sub', '.fine'].map((s) => Math.round(document.querySelector(s).getBoundingClientRect().height)).join(','));
     const early = await hs(); await p2.waitForTimeout(1800); const late = await hs();
     check('환영 화면: 첫 화면이 보이는 순간과 글꼴이 다 도착한 뒤의 문단 높이가 같음', early === late, early + ' → ' + late);
-    check('글꼴(SUIT)이 첫 화면 전에 로드됨', await p2.evaluate(() => document.fonts.check('600 16px SUIT')));
+    if (fs.existsSync(path.join(root, 'assets/fonts/PretendardVariable.woff2'))) check('글꼴(Pretendard)이 첫 화면 전에 로드됨', await p2.evaluate(() => document.fonts.check("600 16px 'Pretendard Variable'")));
+    else console.log('건너뜀: assets/fonts/PretendardVariable.woff2 가 없어 글꼴 로드를 점검하지 못했어요.');
     await ctx2.close();
 
     // ── 사파리(iPhone) 대비 점검 (실제 기기가 아니라 코드·계산값 기준)

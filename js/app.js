@@ -455,7 +455,6 @@
     moon: '<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>',
     pill: '<path d="M10.5 20.5a4.95 4.95 0 0 1-7-7l10-10a4.95 4.95 0 0 1 7 7z"/><path d="M8.5 8.5l7 7"/>',
     leaf: '<path d="M20 4C10 4 4 9 4 16a4 4 0 0 0 4 4c7 0 12-6 12-16z"/><path d="M4 20c3-6 7-10 12-13"/>',
-    bell: '<path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 21a2.2 2.2 0 0 0 4 0"/>',
     user: '<circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.8-4 3.8-6 7.5-6s6.7 2 7.5 6"/>',
     warn: '<path d="M12 3.5l9.5 16.5h-19z"/><path d="M12 10v4.5"/><path d="M12 17.4h.01"/>',
     down: '<path d="M6 9l6 6 6-6"/>', right: '<path d="M9 6l6 6-6 6"/>',
@@ -503,7 +502,7 @@
   function topbarHome() {
     var logo = ui.logo ? ui.logo : 'Keeping';
     return '<div class="kp-top"><span class="kp-logo" aria-label="Keeping">' + logo + '</span><div class="kp-top-act">' +
-      '<button type="button" class="kp-icbtn" aria-label="알림">' + kpIcon('bell', 22) + '</button><button type="button" class="kp-icbtn" aria-label="프로필">' + kpIcon('user', 22) + '</button></div></div>';
+      '<button type="button" class="kp-icbtn" data-act="nav" data-view="settings" aria-label="마이">' + kpIcon('user', 22) + '</button></div></div>';
   }
   VIEWS.home = function () {
     if (ui.copy.status === 'loading') return '<main class="screen kp-home">' + topbarHome() + '<p class="kp-stat" aria-live="polite">불러오는 중…</p></main>' + nav('home');
@@ -649,7 +648,7 @@
   /* 담기 확인: 약을 고르면 한 화면에서 (처방약이면) 진료과 한 줄 + "언제 드세요?" 칩을 정하고 [담기]. 시간을 고르기 전에는 담기지 않는다. */
   var SLOT_CHIPS = [['morning', '아침', '07:30'], ['lunch', '점심', '12:30'], ['dinner', '저녁', '18:30'], ['bedtime', '자기 전', '22:00']];
   function startDraft(item) {
-    ui.draft = { item: item, slots: [], dept: '', deptEdit: false, fromView: ui.view, fromParams: ui.params };
+    ui.draft = { item: item, slots: [], dept: '', deptEdit: false, fromView: ui.view, fromParams: ui.params, fromTab: ui.tab };
     go('confirm');
   }
   VIEWS.confirm = function () {
@@ -922,7 +921,7 @@
       state.items.push(it);
       if (add) markNewRx([it.id], true); else save();
       ui.draft = null;
-      if (add) go('home'); else { go(d.fromView, d.fromParams); toast(nm(it) + ' 담았어요'); }
+      if (add) go('home'); else { ui.tab = d.fromTab || 'domestic'; go(d.fromView, d.fromParams); toast(nm(it) + ' 담았어요'); }
     },
     toggleDemo: function () { state.demo = !state.demo; save(); renderKeepingFocus(); },
     pick: function (t) {
@@ -936,9 +935,8 @@
         } else item = newItem({ kind: 'drug', source: x.source, itemSeq: x.itemSeq, name: x.name, ingredientKo: x.ingredientKo || null, type: x.type || null });
         startDraft(item); return;
       }
-      var s = x.supp, b = batchOf();
-      state.items.push(newItem({ kind: 'supp', source: 'domestic', name: s.name, reportNo: s.reportNo, company: s.company, ingredientRaw: s.ingredientRaw, ingredientKeys: (s.ingredientKeys || []).slice(), batch: b }));
-      save(); toast(x.name + ' 추가했어요'); refreshLists();
+      var s = x.supp;
+      startDraft(newItem({ kind: 'supp', source: 'domestic', name: s.name, reportNo: s.reportNo, company: s.company, ingredientRaw: s.ingredientRaw, ingredientKeys: (s.ingredientKeys || []).slice() }));
     },
     manualDrug: function () {
       var name = ui.q.trim(); if (!name) return;
@@ -959,9 +957,7 @@
       var inp = document.getElementById('mname'); var name = (inp ? inp.value : ui.manualName).trim();
       if (!name && !ui.chips.length) { toast('이름이나 성분을 하나 입력해 주세요'); return; }
       if (!name) name = ui.chips.map(function (k) { return Pack.supplementKeyList.filter(function (x) { return x.id === k; })[0].ko; }).join(' · ');
-      state.items.push(newItem({ kind: 'supp', source: 'manual', name: name, ingredientKeys: ui.chips.slice(), batch: batchOf() }));
-      save(); toast(name + ' 등록했어요');
-      ui.chips = []; ui.manualName = ''; render(false);
+      startDraft(newItem({ kind: 'supp', source: 'manual', name: name, ingredientKeys: ui.chips.slice() }));
     },
     searchOverseas: function () {
       var inp = document.getElementById('oq'); var q = (inp ? inp.value : ui.oq).trim();
@@ -973,8 +969,7 @@
     pickOverseas: function (t) {
       var x = ui.overseas && ui.overseas.results[+t.dataset.i]; if (!x) return;
       var keys = []; (x.ingredients || []).forEach(function (n) { var k = E.mapIngredient(n, Pack); if (k && keys.indexOf(k) < 0) keys.push(k); });
-      state.items.push(newItem({ kind: 'supp', source: 'dsld', name: x.name, company: x.brand || '', ingredientKeys: keys, batch: batchOf() }));
-      save(); toast(x.name + ' 추가했어요'); render(false);
+      startDraft(newItem({ kind: 'supp', source: 'dsld', name: x.name, company: x.brand || '', ingredientKeys: keys }));
     },
     addTime: function (t) { var it = findItem(t.dataset.id); if (!it) return; it.times = it.times && it.times.length ? it.times.concat(['']) : ['', '']; save(); render(false); },
     timesDone: function () {
@@ -1113,11 +1108,11 @@
   var careReady = bootCare(); // 설명서 기반 안내 데이터는 약 목록이 온 뒤 읽는다
   var copyReady = bootCopy(); // 홈 문구(data/copy/greeting.json)
   bootLogo();                 // assets/brand/keeping-logo.svg 가 있을 때만 인라인으로 쓴다
-  /* 첫 화면은 글꼴(SUIT)이 도착한 뒤에 그린다(최대 1.2초). 글꼴이 늦게 와서 문단이 다시 줄바꿈되며 화면이 튀는 것을 막는다. */
+  /* 첫 화면은 글꼴(Pretendard)이 도착한 뒤에 그린다(최대 1.2초). 글꼴이 늦게 와서 문단이 다시 줄바꿈되며 화면이 튀는 것을 막는다. */
   var booted = false;
   function boot() { if (booted) return; booted = true; render(true); }
   if (document.fonts && document.fonts.load) {
-    Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + ' 16px SUIT'); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
+    Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + " 16px 'Pretendard Variable'"); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
   } else boot();
   window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, loadChecks: loadChecks, render: render };
 })();
