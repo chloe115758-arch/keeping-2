@@ -85,7 +85,7 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   click(qa('.kp-grp-main')[0]);
   const bagModel = A.homeModel().detail[gid];
   check('묶음 줄을 누르면 약봉투 화면(체크는 바뀌지 않음)', !!q('.kp-bag') && JSON.stringify(store()) === '{}');
-  check('상단 뒤로 가기 + 제목(묶음 이름)', !!q('.back') && q('.top-title').textContent === bagModel.title);
+  check('상단 뒤로 가기 + 제목(묶음 이름)', !!q('.kp-bar2 [data-act="back"]') && q('.kp-bar2-title').textContent === bagModel.title && !q('.top-title') && !/이전/.test(q('.kp-bar2').textContent));
   check('약마다 카드: 이름(display) · 규격·업체 · 구분 칩 · 먹는 시간 · 성분', qa('.kp-bagcard').length === bagModel.items.length && qa('.kp-bagcard').every((c, i) => c.querySelector('.kp-bag-name').textContent === bagModel.items[i].display && !!c.querySelector('.kp-chip') && c.textContent.includes('먹는 시간')));
   check('복용법·용량 칸이 없다', !/복용법|1회|용량|하루 \d/.test(q('.kp-bag-list').textContent));
   check('맨 아래 작은 글씨: scope + footer(모델 값 그대로)', q('.kp-bag-foot').textContent.includes(bagModel.scope) && q('.kp-bag-foot').textContent.includes(bagModel.footer));
@@ -124,7 +124,7 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   console.log('8) 새 처방 칩 · 공식 지정 시트의 조건 줄');
   st.items = [mk('씬지록신', 'L1', '07:00', '내과')]; delete st.newRx; A.ui.nowMin = 6 * 60 + 40; A.ui.open = {}; A.go('home');
   check('newItemIds를 안 넘기면 칩이 없다', !qa('.kp-newchip').length);
-  st.items = []; st.example = true; A.go('home'); click('[data-act="demoRx"]'); click('[data-act="demoConfirm"]');
+  st.items = []; st.example = true; st.demo = true; A.go('settings'); click('[data-act="demoRx"]'); click('[data-act="demoConfirm"]');
   const chips = qa('.kp-newchip');
   check('새 처방 알림 시연 → 등록 → 홈에 "새 처방" 칩(모델의 newLabel)', chips.length >= 1 && chips.every((c) => c.textContent === A.homeModel().rows.filter((r) => r.type === 'slot')[0].groups.find((g) => g.isNew).newLabel), String(chips.length));
   check('칩은 isNew인 묶음에만, 개수가 모델과 같다', chips.length === A.homeModel().rows.filter((r) => r.type === 'slot').reduce((a, r) => a + r.groups.filter((g) => g.isNew).length, 0) && st.newRx.ids.length === 4);
@@ -143,6 +143,25 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   A.ui.open = {}; A.go('home'); click(q('.kp-notice-first'));
   check('설명서 근거 시트에는 조건 줄이 없다', !q('.kp-note'));
   click('.kp-close');
+
+  console.log('9) 시연 칸 · 시간 없는 약 막기 · 하단 탭');
+  st.items = [mk('씬지록신', 'L1', '07:30')]; st.demo = false; st.example = false; A.go('home');
+  check('시연이 꺼져 있으면 시연 띠·시연 버튼이 홈에 없다', !q('.kp-band') && !q('[data-act="demoRx"]'));
+  A.go('settings');
+  check('설정 맨 아래 "시연" 칸: 스위치(꺼짐), 꺼져 있으면 시연 버튼 없음', !!q('[data-act="toggleDemo"][aria-checked="false"]') && !q('[data-act="demoRx"]'));
+  click('[data-act="toggleDemo"]');
+  check('켜면 스위치가 켜지고 "새 처방 알림 시연 보기" 버튼이 나타남(저장됨)', !!q('[data-act="toggleDemo"][aria-checked="true"]') && !!q('[data-act="demoRx"]') && w.KeepingStore.load().demo === true);
+  A.go('home');
+  check('켜면 홈 맨 위에 "시연 데이터예요" 띠', q('.kp-band').textContent === '시연 데이터예요' && q('.kp-band').compareDocumentPosition(q('.kp-top')) & 4);
+  st.demo = false;
+  A.go('list'); click(qa('.mrow')[0]);
+  check('내 약 상세에서 "복용 시간 고치기"로 시간 화면에 갈 수 있다', !!q('[data-act="to"][data-view="times"]'));
+  A.go('times', { all: true });
+  const ti = q('input.time'); ti.value = ''; ti.dispatchEvent(new w.Event('change', { bubbles: true }));
+  check('하나뿐인 복용 시간은 지울 수 없다(시간 없는 약이 만들어지지 않음)', st.items[0].times.join() === '07:30' && ti.value === '07:30');
+  A.go('home');
+  const css = fs.readFileSync(path.join(dir, 'css/style.css'), 'utf8');
+  check('하단 탭 3개(홈·내 약·마이), 뱃지 없음, 스타일은 --kp-* 변수', qa('.nav button').map((b) => b.textContent.trim()).join('|') === '홈|내 약|마이' && !q('.nav [class*="badge"]') && /\.nav\{[^}]*var\(--kp-surface\)[^}]*var\(--kp-border\)/.test(css) && /\.nav button\{[^}]*var\(--kp-fs-caption\)[^}]*var\(--kp-text-sub\)/.test(css));
 
   check('스크립트 오류 없음', errors.length === 0, errors.join(' | '));
   console.log('\n통과 ' + ok + ' / 실패 ' + bad);

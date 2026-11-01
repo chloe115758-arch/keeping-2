@@ -278,9 +278,9 @@ button{background:none;border:0;cursor:pointer}
 .basis .tipwrap{position:static}.basis .tip{left:var(--gutter);top:auto;margin-top:36px;max-width:calc(100% - 2*var(--gutter))}.basis .tip::before{display:none}
 
 /* 하단 탭 */
-.nav{position:sticky;bottom:0;margin-top:auto;display:flex;background:var(--white);border-top:1px solid var(--grey-5);padding-bottom:env(safe-area-inset-bottom);z-index:10}
-.nav button{flex:1;display:grid;justify-items:center;gap:3px;padding:15px 0 14px;min-height:72px;font:var(--caption);font-weight:700;color:var(--ink-2)}
-.nav button.on{color:var(--mint-700)}
+.nav{position:sticky;bottom:0;margin-top:auto;display:flex;background:var(--kp-surface);border-top:1px solid var(--kp-border);padding-bottom:env(safe-area-inset-bottom);z-index:10;font-family:var(--kp-font);letter-spacing:var(--kp-ls)}
+.nav button{flex:1;display:grid;justify-items:center;align-content:center;gap:2px;padding:8px 0;min-height:calc(var(--kp-touch-min) + 20px);font:var(--kp-fw-strong) var(--kp-fs-caption)/1.4 var(--kp-font);color:var(--kp-text-sub)}
+.nav button.on{color:var(--kp-brand-strong)}
 
 /* 알림 시연 */
 .lockscreen{background:linear-gradient(180deg,#2b2d33,#101114);color:var(--white);display:flex;flex-direction:column;padding-top:12vh;padding-top:12dvh}
@@ -363,7 +363,7 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 .kp-ic{flex:none;display:block}
 
 /* 인사 카드 + 오늘의 복약 */
-.kp-hello{margin-top:6px;padding:20px var(--kp-pad-card) 18px;padding-inline:18px;background:var(--kp-surface);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
+.kp-hello{margin-top:24px;padding:20px var(--kp-pad-card) 16px;padding-inline:18px;background:var(--kp-surface);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
 .kp-line1{font:var(--kp-fw-title) var(--kp-fs-title)/1.4 var(--kp-font);letter-spacing:var(--kp-ls)}
 .kp-line2{margin-top:2px;font-size:var(--kp-fs-caption);color:var(--kp-text-sub)}
 .kp-today{display:flex;align-items:center;justify-content:space-between;margin-top:14px}
@@ -373,14 +373,14 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 .kp-count{font:var(--kp-fw-title) 26px/1.2 var(--kp-font);letter-spacing:var(--kp-ls);font-variant-numeric:tabular-nums}
 .kp-bar{height:6px;margin-top:8px;border-radius:999px;background:var(--kp-surface-sub);overflow:hidden}
 .kp-fill{display:block;height:100%;border-radius:999px;background:var(--kp-brand);transition:width .3s ease-out}
-.kp-status{margin-top:14px;font-size:13px;color:var(--kp-text-sub)}
+.kp-status{margin-top:10px;font-size:13px;color:var(--kp-text-sub)}
 
 .kp-stat{margin:14px 0 0;font-size:var(--kp-fs-caption);color:var(--kp-text-sub)}
 .kp-banner{margin:14px 0 0;padding:10px 14px;border-radius:var(--kp-radius-chip);background:var(--kp-surface);font-size:var(--kp-fs-caption);color:var(--kp-text-sub)}
 
 /* 시간선: [시간 라벨 | 선과 노드 | 카드] */
 .kp-tl{list-style:none;margin:30px 0 0;padding:0}
-.kp-row{display:grid;grid-template-columns:calc(var(--kp-time-w) - var(--kp-gap-page)) var(--kp-rail-w) minmax(0,1fr);align-items:stretch}
+.kp-row{display:grid;grid-template-columns:calc(var(--kp-time-w) - var(--kp-gap-page) - 2px) var(--kp-rail-w) minmax(0,1fr);align-items:stretch}
 .kp-row--slot{--c:29px}
 .kp-row--slot .kp-slot{margin-bottom:6px}
 .kp-row--meal{--c:13px;min-height:27px}
@@ -432,12 +432,12 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 
 /* 주의 블록 */
 .kp-notice{display:flex;align-items:flex-start;gap:8px;margin-top:6px;padding:4px 8px 4px 14px;border-radius:14px;background:var(--kp-caution-bg);color:var(--kp-caution-text)}
-.kp-notice>.kp-ic{margin-top:15px}
+.kp-notice>.kp-ic{margin-top:13px}
 .kp-notice-main{flex:1;min-width:0}
-.kp-notice-line,.kp-notice-more,.kp-notice-first{position:relative;display:block;width:100%;text-align:left;min-height:var(--kp-touch-min);padding:8px 26px 8px 0;font-size:13px;line-height:1.5;color:inherit}
+.kp-notice-line,.kp-notice-more,.kp-notice-first{position:relative;display:block;width:100%;text-align:left;min-height:var(--kp-touch-min);padding:4px 26px 4px 0;font-size:13px;line-height:1.5;color:inherit}
 .kp-notice-first b{display:block;font-weight:var(--kp-fw-title);font-size:13px}
 .kp-notice-first span{display:block;font-weight:500}
-.kp-notice-first .kp-ic{position:absolute;right:0;top:12px}
+.kp-notice-first .kp-ic{position:absolute;right:0;top:10px}
 .kp-notice-line,.kp-notice-more{display:flex;align-items:center;font-weight:500}
 .kp-notice-more{font-weight:var(--kp-fw-strong)!important;text-decoration:underline;text-underline-offset:3px}
 
@@ -468,7 +468,8 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 .kp-rel li{font-size:14px;line-height:1.5}
 .kp-rel li b{font-weight:var(--kp-fw-title);margin-right:6px}
 .kp-hintline{font-size:13px;color:var(--kp-text-sub)}
-.kp-src{display:flex;flex-wrap:wrap;align-items:center;gap:0 12px;font-size:var(--kp-fs-caption);color:var(--kp-text-sub)}
+.kp-src{display:grid;gap:0;font-size:var(--kp-fs-caption);color:var(--kp-text-sub)}
+.kp-src-row{display:flex;align-items:center;gap:12px;white-space:nowrap}
 .kp-src a{display:inline-flex;align-items:center;min-height:var(--kp-touch-min);font-weight:var(--kp-fw-strong);color:var(--kp-info-text);text-decoration:underline;text-underline-offset:3px}
 .kp-help{font-size:13px;color:var(--kp-text-sub)}
 .kp-sheet-foot{flex:none;padding:8px 20px calc(16px + env(safe-area-inset-bottom,0px))}
@@ -505,3 +506,14 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 /* 새 처방 칩 · 시트의 조건 줄 */
 .kp-newchip{display:inline-block;margin-left:8px;padding:1px 8px;border-radius:999px;vertical-align:1px;background:var(--kp-brand-weak);color:var(--kp-label-text);font:var(--kp-fw-strong) var(--kp-fs-caption)/1.5 var(--kp-font)}
 .kp-note{margin-top:-6px;font-size:13px;color:var(--kp-text-sub)}
+
+/* 약봉투 상단바: 뒤로 가기 + 제목 (§5) */
+.kp-bar2{display:flex;align-items:center;gap:4px;min-height:var(--kp-touch-min);margin:-4px 0 10px -10px}
+.kp-bar2-title{font:var(--kp-fw-title) 18px/1.3 var(--kp-font);letter-spacing:var(--kp-ls);overflow-wrap:anywhere}
+.deptq .chip{padding:8px 12px;font-size:14px}
+.deptq .chips{gap:6px}
+/* 검색창 지우기(✕): 브라우저 기본 파란색 대신 보조 글자색 */
+input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;width:20px;height:20px;margin-left:8px;cursor:pointer;background:var(--kp-text-sub);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E") center/contain no-repeat}
+
+/* 시연 띠 */
+.kp-band{margin:4px 0 0;padding:8px 14px;border-radius:var(--kp-radius-chip);background:var(--kp-brand-weak);color:var(--kp-label-text);font:var(--kp-fw-strong) var(--kp-fs-caption)/1.5 var(--kp-font);text-align:center}
