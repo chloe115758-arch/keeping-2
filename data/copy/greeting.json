@@ -50,6 +50,8 @@
   "sheet_hint": "{name} · {time} 이후에 드시면 안내된 간격 이상이에요.",
   "foods_title": "같이 조심할 음식",
   "detail_scope": "키핑이 확인한 범위 안의 안내만 보여줘요. 찾지 못했다고 안전하다는 뜻은 아니에요.",
-  "detail_footer": "복용 방법은 처방전·약봉투·약사 안내를 따라 주세요."
+  "detail_footer": "복용 방법은 처방전·약봉투·약사 안내를 따라 주세요.",
+  "sheet_note": "조건 · {note}",
+  "chip_new": "새 처방"
  }
 }

@@ -25,7 +25,7 @@ var model = vm.build({ nowMin: <지금 분>, nickname: <별명 또는 ''>, items
 - `model.rows[]` (시간순) → 두 종류예요.
   - `type:'meal'` → `label`, `time`, `lineDone`
   - `type:'slot'` → `id, label, time, nodeState('done'|'now'|'up'), defaultOpen, lineDone, last, summary.text("약 3개 · 주의 1"), groups[], notice`
-- `slot.groups[]` → `id`(체크 키), `title`, `kind('rx'|'otc'|'other'|'supp')`, `icon('pill'|'leaf')`, `checked`, `hint`(없으면 null)
+- `slot.groups[]` → `id`(체크 키), `title`, `kind('rx'|'otc'|'other'|'supp')`, `icon('pill'|'leaf')`, `checked`, `hint`(없으면 null), `isNew`·`newLabel`("새 처방")
 - `slot.notice` → `title`, `lines[]`(최대 2건: `flagId, text, official`), `more`, `moreText`, `all[]`. 없으면 null
 - `model.sheets[flagId]` → 근거 시트(바텀시트) 내용
 - `model.detail[group.id]` → 약봉투 화면 내용
@@ -46,6 +46,7 @@ var model = vm.build({ nowMin: <지금 분>, nickname: <별명 또는 ''>, items
 4. **시간대 카드**(흰색, 모서리 20px): 머리 = [시간대 아이콘 칸 | 제목 + `summary.text`(주의 숫자만 빨강) | 펼침 화살표]. `defaultOpen`인 카드만 처음에 펼쳐요. 머리를 누르면 접고 펼쳐요.
 5. **펼친 카드 안**: 묶음 줄들 → 맨 아래 주의 블록.
    - **묶음 줄**: [아이콘 칸 40px(`icon`) | `title` (+ `hint`가 있으면 아래에 작은 빨간 글씨) | 체크박스 44px 터치(보이는 상자 26px, 모서리 8px, 체크하면 포인트색 채움 + 체크)]. 체크하면 아이콘·제목이 흐려져요(투명도 .5, 취소선 없음).
+   - **새 처방 칩**: `build()`에 `newItemIds`(이번에 새로 등록한 약 id들)를 넘기면 `isNew`인 묶음 제목 옆에 작은 칩(`newLabel`, 연한 포인트색 배경)을 보여요. 안 넘기면 아무것도 안 나와요. 새 처방 알림 시연 → 등록 → 홈에서 "새 처방"이 보이는 흐름에 써요.
    - **줄을 누르면(체크박스 제외)** 약봉투 화면으로 가요(§5). 체크박스는 체크만 해요. 두 영역이 겹치지 않게 하세요.
    - **주의 블록**: 연한 빨강 배경(`--kp-caution-bg`), 모서리 14px, 왼쪽 경고 아이콘, 제목 `notice.title`(굵게) 아래 `lines[].text`(여러 줄 가능), 오른쪽 `>`. 줄(또는 블록)을 누르면 근거 시트(§4)가 열려요. `more > 0`이면 마지막에 `moreText`를 붙이고 누르면 `all` 전체를 펼쳐요. **블록 안에 배지는 넣지 않아요**(배지는 시트에).
 6. **맨 아래**: 검정 둥근 버튼 "새 약 추가하기"(높이 56px). 화면 하단에 고정하지 않고 내용 끝에 두어요.
@@ -53,7 +54,7 @@ var model = vm.build({ nowMin: <지금 분>, nickname: <별명 또는 ''>, items
 ## 4. 근거 시트 (바텀시트)
 `model.sheets[flagId]`를 그려요. 뒤는 `rgba(0,0,0,.45)` 막, 시트는 위쪽 모서리 `--kp-radius-sheet`, 맨 위 손잡이(40×4), 제목 줄 "근거" + 오른쪽 ✕(44px), 맨 아래 검정 "닫기". 막·✕·닫기 모두 닫아요. 내용 순서:
 1. 배지(`grade === 'official'`이면 "공식 지정", 아니면 "설명서 근거")
-2. `headline`(19px 700)
+2. `headline`(19px 700). 공식 지정이고 `noteLine`이 있으면 바로 아래 작은 글씨 한 줄(예: "조건 · 48시간 이내 병용금기"). 병용금기는 조건이 붙은 경우가 있어서 이 줄을 빼면 안 돼요.
 3. `intro`(작은 글씨, "설명서에 이렇게 나와 있어요") 바로 아래 **원문 인용 블록**(`excerpt` 그대로, 위에 `where`, 왼쪽 포인트색 선)
 4. `relatedTitle` 아래 `related[]`: 줄마다 `label`(굵게) + `names`
 5. `hintLine`이 있으면 한 줄(읽기 전용, 버튼 아님)

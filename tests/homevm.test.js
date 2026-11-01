@@ -150,4 +150,49 @@ t('만든 모든 문장에 판정·지시 표현이 없다(허용 문구 제외)
   Object.keys(m.sheets).forEach((k) => { texts.push(m.sheets[k].intro, m.sheets[k].hintLine); });
   texts.filter(Boolean).forEach((x) => assert.ok(!BAN.test(x), x));
 });
+t('공식 병용금기의 조건(비고)이 근거 시트에 한 줄로 남는다("조건 · 48시간 이내 병용금기")', () => {
+  const items = [{ id: 'a', kind: 'drug', name: '가약', times: ['21:00'] }, { id: 'b', kind: 'drug', name: '나약', times: ['21:00'] }];
+  const flag = { id: 'f1', grade: 'official', severity: 'caution', kind: 'pair', short: 'x', withItemIds: ['b'], ownerId: 'a', interval: null };
+  const analysis = { slots: [{ id: 'bedtime', label: '자기 전', time: '21:00', summary: { itemCount: 2, cautionCount: 1, foodNoteCount: 0 },
+    items: [{ itemId: 'a', kind: 'drug', name: '가약', display: '가약', time: '21:00', flags: [flag], foods: [] }, { itemId: 'b', kind: 'drug', name: '나약', display: '나약', time: '21:00', flags: [], foods: [] }] }],
+    suggestions: [], unscheduled: [], evidence: { f1: { grade: 'official', headline: '병용금기로 지정된 조합', detail: '48시간 이내 병용금기', excerpt: '원문', where: '병용금기 · 고시', source: { label: 'x', url: null, checkedAt: '2026-07-31' } } } };
+  const m = vm.build({ nowMin: 21 * 60 + 10, items, analysis });
+  assert.strictEqual(m.sheets.f1.noteLine, '조건 · 48시간 이내 병용금기');
+  analysis.evidence.f1.detail = '';
+  assert.strictEqual(vm.build({ nowMin: 21 * 60 + 10, items, analysis }).sheets.f1.noteLine, '');
+});
+t('설명서 근거 시트에는 조건 줄을 만들지 않는다(규칙 제목이 조건처럼 보이는 것을 막는다)', () => {
+  const m = run(base());
+  const line = slotRow(m, 'morning').notice.lines.find((l) => /칼슘/.test(l.text));
+  assert.strictEqual(m.sheets[line.flagId].noteLine, '');
+});
+t('새 처방: 앱이 newItemIds를 넘길 때만 묶음에 "새 처방" 칩이 붙는다', () => {
+  const items = base();
+  const plain = slotRow(run(items), 'morning').groups;
+  assert.ok(plain.every((g) => !g.isNew && g.newLabel === ''));
+  const g = slotRow(run(items, { newItemIds: ['metf'] }), 'morning').groups;
+  assert.deepStrictEqual(g.map((x) => [x.title, x.isNew, x.newLabel]), [['내과 처방약', false, ''], ['피부과 처방약', true, '새 처방'], ['칼슘 영양제', false, '']]);
+});
+t('다른 시간대 약이 섞이면 시간대 이름이 앞에 붙는다("자기 전 약국약은 …")', () => {
+  const items = [drug('levo', '씬지로이드정0.075', ['07:00'], '내과'), drug('alma', '알마겔에프', ['21:00'])];
+  const l = slotRow(run(items), 'morning').notice.lines.find((x) => /약국약/.test(x.text));
+  assert.ok(l && /^자기 전 약국약은 내과 처방약과 /.test(l.text), l && l.text);
+  const same = [drug('levo', '씬지로이드정0.075', ['07:00'], '내과'), drug('alma', '알마겔에프', ['08:00'])];
+  const l2 = slotRow(run(same), 'morning').notice.lines.find((x) => /약국약/.test(x.text));
+  assert.ok(l2 && /^약국약은 내과 처방약과 /.test(l2.text), '같은 시간대면 붙이지 않는다: ' + (l2 && l2.text));
+});
+t('약봉투 화면: 약별 카드에는 약 이름으로 말해서 카드마다 같은 문장이 반복되지 않는다', () => {
+  const items = [drug('levo', '씬지로이드정0.075', ['07:00'], '내과'), drug('metf', '메토폴정', ['07:00'], '내과'), supp('ca', ['calcium'], ['09:00'])];
+  const m = run(items);
+  const d = m.detail['morning:rx:내과'];
+  const levo = d.items.find((i) => /씬지로이드/.test(i.display)), metf = d.items.find((i) => /메토폴/.test(i.display));
+  assert.ok(levo.notices.some((n) => /^칼슘 영양제는 씬지로이드/.test(n.text) && /최소 4시간 간격을 두는 것을 권장해요$/.test(n.text)), JSON.stringify(levo.notices));
+  assert.ok(!metf.notices.some((n) => /칼슘/.test(n.text)), '메토폴 카드에는 칼슘 문장이 없다');
+  const homeTexts = slotRow(m, 'morning').notice.all.map((x) => x.text);
+  assert.ok(levo.notices.every((n) => !homeTexts.includes(n.text)), '홈 문장과 같지 않다');
+});
+t('약봉투 화면: 성분은 한글(영문)으로 보인다', () => {
+  const d = run(base()).detail['morning:rx:내과'];
+  assert.strictEqual(d.items[0].ingredient, '레보티록신나트륨수화물 (levothyroxine sodium)');
+});
 console.log('\n' + n + '개 통과');

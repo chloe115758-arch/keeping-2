@@ -13,7 +13,8 @@
  *   var model = vm.build({ nowMin, nickname, items, analysis: care.analyze(items, ctx), checks: { 'morning:rx:내과': true }, meals });
  *   model.header   → KeepingGreeting.state() 결과(line1, line2, card.{count, ratio, status, icon})
  *   model.rows[]   → 시간선 줄(시간대 카드 또는 식사 표시)
- *   model.sheets[flagId] / model.detail[groupId] → 근거 시트 / 약봉투 화면
+ *   model.sheets[flagId] / model.detail[groupId] → 근거 시트(공식 지정이면 noteLine: "조건 · 48시간 이내 병용금기") / 약봉투 화면
+ *   build({ ..., newItemIds: [...] })를 넘기면 그 약이 든 묶음에 isNew·newLabel("새 처방")이 붙는다
  */
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) module.exports = factory(require('./greeting.js'));
@@ -24,6 +25,7 @@
   var MEAL_DEFAULT = { breakfast: '08:30', lunch: '12:30', dinner: '18:30' };
   var MEAL_LABEL = { breakfast: '아침 식사', lunch: '점심 식사', dinner: '저녁 식사' };
   var KIND_RANK = { rx: 0, otc: 1, other: 2, supp: 3 };
+  var SLOT_SHORT = { morning: '아침', lunch: '점심', dinner: '저녁', bedtime: '자기 전' };
   var CATEGORY_LABEL = { rx: '처방약', otc: '약국약', other: '약', supp: '영양제' };
 
   function toMin(hhmm) { return Greeting.toMin(hhmm); }
@@ -67,20 +69,37 @@
       items.forEach(function (it) { byId[it.id] = it; });
       var A = input.analysis || { slots: [], suggestions: [], evidence: {}, unscheduled: [] };
       var checks = input.checks || {};
+      var newIds = input.newItemIds || [];
       var mealTimes = input.meals || {};
 
       function labelOf(id) { var it = byId[id]; return it ? groupOf(it).title : '약'; }
       function displayOf(id) { var it = byId[id]; return it ? nameOf(it) : '약'; }
 
-      var sheets = {}, detail = {}, flagLines = {};   // flagLines: itemId → [line]
+      var itemSlots = {};   // 약 id → 들어 있는 시간대 id들
+      A.slots.forEach(function (slot) { slot.items.forEach(function (x) { var l = itemSlots[x.itemId] = itemSlots[x.itemId] || []; if (l.indexOf(slot.id) < 0) l.push(slot.id); }); });
+      /* 상대 약이 보는 쪽과 다른 시간대에 있으면 "저녁 약국약"처럼 시간대를 앞에 붙인다(다른 시간대 약이 섞여 보이는 혼란을 막는다) */
+      function prefixOf(id, ref) {
+        var mine = itemSlots[id] || [];
+        if (!ref || !mine.length || mine.some(function (sl) { return ref.indexOf(sl) >= 0; })) return '';
+        return SLOT_SHORT[mine[0]] ? SLOT_SHORT[mine[0]] + ' ' : '';
+      }
+      var sheets = {}, detail = {};
       var slotModels = [];
 
-      /* ---- 주의 문장 한 줄 만들기 ---- */
-      function lineOf(flag, ownerId) {
+      /* ---- 주의 문장 한 줄 만들기 ----
+         o.ref   : 보는 쪽이 속한 시간대 id들(상대가 다른 시간대면 시간대 이름을 붙인다)
+         o.names : true면 묶음 이름 대신 약 이름으로 말한다(약봉투 화면의 약별 카드) */
+      function lineOf(flag, ownerId, o) {
+        o = o || {};
         var withIds = flag.withItemIds || [];
-        var ownerLabel = labelOf(ownerId), withLabels = uniq(withIds.map(labelOf));
-        var sameGroup = withLabels.length === 1 && withLabels[0] === ownerLabel;   // 같은 묶음끼리면 약 이름으로 말한다
-        var subject = (sameGroup ? uniq(withIds.map(displayOf)) : withLabels).slice(0, 2).join('·');
+        var ownerLabel = o.names ? displayOf(ownerId) : labelOf(ownerId);
+        var withLabels = uniq(withIds.map(labelOf));
+        var sameGroup = !o.names && withLabels.length === 1 && withLabels[0] === ownerLabel;   // 같은 묶음끼리면 약 이름으로 말한다
+        var parts = o.names
+          ? uniq(withIds.map(function (id) { return prefixOf(id, o.ref) + displayOf(id); }))
+          : sameGroup ? uniq(withIds.map(displayOf))
+          : uniq(withIds.map(function (id) { return prefixOf(id, o.ref) + labelOf(id); }));
+        var subject = parts.slice(0, 2).join('·');
         var object = sameGroup ? displayOf(ownerId) : ownerLabel;
         var text;
         if (flag.kind === 'pair') text = say('notice_official', { subject: subject, object: object });
@@ -107,6 +126,8 @@
         groups.sort(function (a, b) { return (KIND_RANK[a.kind] - KIND_RANK[b.kind]) || (a.title < b.title ? -1 : a.title > b.title ? 1 : 0); });
         groups.forEach(function (G) {
           G.count = G.itemIds.length;
+          G.isNew = G.itemIds.some(function (id) { return newIds.indexOf(id) >= 0; });
+          G.newLabel = G.isNew ? say('chip_new') : '';
           var latest = null;
           (A.suggestions || []).forEach(function (s) { if (G.itemIds.indexOf(s.itemId) >= 0 && (!latest || toMin(s.suggestTime) > toMin(latest))) latest = s.suggestTime; });
           if (latest) G.hint = say('hint_after', { time: korTime(latest), verb: G.kind === 'supp' ? '섭취' : '복용' });
@@ -117,7 +138,7 @@
         slot.items.forEach(function (x) {
           (x.flags || []).forEach(function (f) {
             if (f.kind === 'food' || seen[f.id]) return;
-            var ln = lineOf(f, f.ownerId || x.itemId); if (!ln) return;
+            var ln = lineOf(f, f.ownerId || x.itemId, { ref: [slot.id] }); if (!ln) return;
             if (lines.some(function (l) { return l.text === ln.text; })) return;
             seen[f.id] = 1; lines.push(ln);
           });
@@ -161,6 +182,7 @@
             sheets[f.id] = {
               flagId: f.id, grade: f.grade, intro: say(f.grade === 'official' ? 'sheet_intro_official' : 'sheet_intro'),
               headline: ev.headline, excerpt: ev.excerpt, where: ev.where, source: ev.source,
+              noteLine: (f.grade === 'official' && ev.detail) ? say('sheet_note', { note: ev.detail }) : '',
               relatedTitle: say('sheet_related'), related: related,
               hintLine: sug ? say('sheet_hint', { name: displayOf(sug.itemId), time: korTime(sug.suggestTime) }) : ''
             };
@@ -177,11 +199,11 @@
                 if (f.kind === 'food') return;
                 var owner = f.ownerId || x.itemId;
                 if (owner !== gi.itemId && (f.withItemIds || []).indexOf(gi.itemId) < 0) return;
-                var ln = lineOf(f, owner);
+                var ln = lineOf(f, owner, { names: true, ref: itemSlots[gi.itemId] });
                 if (ln && !notices.some(function (n) { return n.text === ln.text; })) notices.push(ln);
               });
             }); });
-            return { itemId: gi.itemId, name: it.name, display: gi.display, spec: p.spec || '', company: p.company || '', ingredient: p.ingrName || '',
+            return { itemId: gi.itemId, name: it.name, display: gi.display, spec: p.spec || '', company: p.company || '', ingredient: it.ingredientKo ? it.ingredientKo + (p.ingrName ? ' (' + p.ingrName + ')' : '') : (p.ingrName || ''),
                      category: CATEGORY_LABEL[categoryOf(it)], times: (it.times || []).slice(), notices: notices };
           });
           var foods = uniq(foodOrder.filter(function (ko) { return foodMap[ko].itemIds.some(function (id) { return G.itemIds.indexOf(id) >= 0; }); }));

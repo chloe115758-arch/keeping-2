@@ -3,7 +3,7 @@
 import json, os, re, sys
 MD, OUT = 'docs/ux-writing.md', 'data/copy/greeting.json'
 BANNED = re.compile(r'안전|괜찮|문제없|먹어도|드세요|복용하세요|챙겨\s*드|중단하세요|끊으세요|늘리세요|줄이세요|못\s*했어요|안\s*드셨')
-VARS = {'name', 'taken', 'left', 'total', 'missed', 'missedN', 'subject', 'object', 'interval', 'time', 'verb', 'dept', 'text', 'c', 'more', 'n'}
+VARS = {'name', 'taken', 'left', 'total', 'missed', 'missedN', 'subject', 'object', 'interval', 'time', 'verb', 'dept', 'text', 'c', 'more', 'n', 'note'}
 ALLOWED = ['안전하다는 뜻은 아니']   # 부정하는 문장은 허용("안전하다는 뜻은 아니에요")
 def main():
     t = open(MD, encoding='utf-8').read()
