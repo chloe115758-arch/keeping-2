@@ -517,3 +517,11 @@ input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;appea
 
 /* 시연 띠 */
 .kp-band{margin:4px 0 0;padding:8px 14px;border-radius:var(--kp-radius-chip);background:var(--kp-brand-weak);color:var(--kp-label-text);font:var(--kp-fw-strong) var(--kp-fs-caption)/1.5 var(--kp-font);text-align:center}
+
+/* 담기 확인 화면: 진료과 칩은 줄바꿈 없이 가로로 민다 */
+.hscroll{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;margin:0 -16px 6px;padding:2px 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.hscroll::-webkit-scrollbar{display:none}
+.hscroll .chip{flex:none;white-space:nowrap}
+.lbl .opt{font:var(--caption);font-weight:500;color:var(--ink-2)}
+.pcard .dept-in{display:flex;gap:8px;align-items:center}
+.pcard .dept-in input{flex:1;min-width:0;min-height:var(--tap);padding:0 12px;border:1.5px solid var(--grey-5);border-radius:var(--r-sm);background:var(--white)}

@@ -89,9 +89,9 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       await page.click('[data-act="start"]'); await page.waitForSelector('.agree'); await barOK('저장 안내');
       await page.click('[data-act="agree"]'); await page.click('#agreenext'); await page.waitForSelector('#nextbtn');
       const drugs = await barOK('약 검색');
-      check(`${w}: 약 검색 — 건너뛰기와 다음의 폭이 같고 높이 50`, await page.evaluate(() => { const a = document.querySelector('.skipbtn').getBoundingClientRect(), n = document.querySelector('#nextbtn').getBoundingClientRect(); return Math.abs(a.width - n.width) <= 1 && Math.abs(a.height - 50) <= 1 && Math.abs(n.height - 50) <= 1; }));
-      check(`${w}: 약 검색 — 화면에 "건너뛰기"는 한 곳`, await page.evaluate(() => (document.getElementById('app').textContent.match(/건너뛰기/g) || []).length === 1));
-      await page.click('.skipbtn'); await page.waitForSelector('[data-tab]'); await barOK('영양제');
+      check(`${w}: 약 검색 — 다음 버튼 높이 50, 하단 영역에 건너뛰기 없음`, await page.evaluate(() => { const n = document.querySelector('#nextbtn').getBoundingClientRect(); return Math.abs(n.height - 50) <= 1 && !document.querySelector('.skipbtn'); }));
+      check(`${w}: 약 검색 — 화면에 "건너뛰기"가 없음`, await page.evaluate(() => !/건너뛰기/.test(document.getElementById('app').textContent)));
+      await page.evaluate(() => { KeepingApp.state().items.push({ id: 'lt1', kind: 'drug', source: 'manual', name: '레이아웃약', times: ['07:30'], batch: null }); KeepingApp.go('onb-drugs'); }); await page.click('#nextbtn'); await page.waitForSelector('[data-tab]'); await barOK('영양제');
       await page.click('.skipbtn'); await page.waitForSelector('input.time, .tlist, [data-act="timesDone"]'); await barOK('복용 시간');
 
       // ── 홈 · 결과 (하단 탭이 열 안)
@@ -152,7 +152,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
     const inputs = [], fixedEls = [];
     const grab = async (name) => { await p3.waitForTimeout(120); const r = await p3.evaluate(() => ({ i: [...document.querySelectorAll('#app input, #app textarea, #app select')].filter((e) => !['file', 'checkbox', 'radio'].includes(e.type)).map((e) => ({ id: e.id || e.type, fs: parseFloat(getComputedStyle(e).fontSize) })), f: [...document.querySelectorAll('body *')].filter((e) => getComputedStyle(e).position === 'fixed').map((e) => e.className || e.tagName) })); r.i.forEach((x) => inputs.push({ name, ...x })); r.f.forEach((x) => fixedEls.push({ name, x })); };
     await p3.click('.splash'); await p3.click('[data-act="start"]'); await p3.click('[data-act="agree"]'); await p3.click('#agreenext'); await p3.waitForSelector('#q'); await grab('약 검색');
-    await p3.click('.skipbtn'); await p3.waitForSelector('[data-tab]'); await grab('영양제 국내'); await p3.click('[data-tab="overseas"]'); await grab('영양제 해외'); await p3.click('[data-tab="manual"]'); await grab('영양제 직접');
+    await p3.evaluate(() => { KeepingApp.state().items.push({ id: 'lt1', kind: 'drug', source: 'manual', name: '레이아웃약', times: ['07:30'], batch: null }); KeepingApp.go('onb-drugs'); }); await p3.click('#nextbtn'); await p3.waitForSelector('[data-tab]'); await grab('영양제 국내'); await p3.click('[data-tab="overseas"]'); await grab('영양제 해외'); await p3.click('[data-tab="manual"]'); await grab('영양제 직접');
     await p3.evaluate(() => { KeepingApp.state().items.push({ id: 'zz', kind: 'drug', source: 'manual', name: 'x', times: [''] }); KeepingApp.go('times', { all: true }); }); await grab('복용 시간');
     await p3.evaluate(() => KeepingApp.go('questions')); await grab('질문');
     check('입력 칸(' + inputs.length + '개)의 글자가 모두 16px 이상(사파리 자동 확대 방지)', inputs.length >= 6 && inputs.every((i) => i.fs >= 16), JSON.stringify(inputs.filter((i) => i.fs < 16)));

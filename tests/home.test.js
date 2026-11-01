@@ -17,6 +17,7 @@ const q = (s) => d.querySelector(s), qa = (s) => [...d.querySelectorAll(s)];
 const click = (s) => { const el = typeof s === 'string' ? q(s) : s; if (!el) throw new Error('없음: ' + s); el.dispatchEvent(new w.MouseEvent('click', { bubbles: true })); };
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 function check(name, cond, extra) { if (cond) { ok++; console.log('  ok  ' + name); } else { bad++; console.log('FAIL  ' + name + (extra ? '\n      ' + extra : '')); } }
+const css0 = fs.readFileSync(path.join(dir, 'css/style.css'), 'utf8');
 const today = () => { const t = new Date(); return t.getFullYear() + '-' + String(t.getMonth() + 1).padStart(2, '0') + '-' + String(t.getDate()).padStart(2, '0'); };
 const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) || '{}');
 
@@ -104,12 +105,12 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
 
   console.log('7) 진료과 한 줄');
   A.go('detail', { id: 'L1' });
-  check('처방약 상세: 칩 [내과][피부과][이비인후과][정형외과][소아과][직접 입력][건너뛰기]', qa('.deptq .chip').map((c) => c.textContent).join('|') === '내과|피부과|이비인후과|정형외과|소아과|직접 입력|건너뛰기', qa('.deptq .chip').map((c) => c.textContent).join('|'));
+  check('처방약 상세: 칩 [내과][피부과][이비인후과][정형외과][소아과][직접 입력], 건너뛰기 없음', qa('.deptq .chip').map((c) => c.textContent).join('|') === '내과|피부과|이비인후과|정형외과|소아과|직접 입력', qa('.deptq .chip').map((c) => c.textContent).join('|'));
   check('현재 진료과(내과)가 선택 표시', qa('.deptq .chip.on').map((c) => c.textContent).join() === '내과');
   click(qa('.deptq .chip').find((c) => c.textContent === '정형외과'));
   check('칩을 고르면 item.dept에 저장', st.items.find((i) => i.id === 'L1').dept === '정형외과' && w.KeepingStore.load().items.find((i) => i.id === 'L1').dept === '정형외과');
-  click(qa('.deptq .chip').find((c) => c.textContent === '건너뛰기'));
-  check('건너뛰기는 dept 없이 둔다', !('dept' in st.items.find((i) => i.id === 'L1')));
+  click(qa('.deptq .chip').find((c) => c.textContent === '정형외과'));
+  check('선택한 칩을 다시 누르면 해제(dept 없이 둠)', !('dept' in st.items.find((i) => i.id === 'L1')));
   click(qa('.deptq .chip').find((c) => c.textContent === '직접 입력'));
   q('#deptin').value = '신경과'; click('[data-act="deptSave"]');
   check('직접 입력한 진료과 저장 + 칩에 표시', st.items.find((i) => i.id === 'L1').dept === '신경과' && qa('.deptq .chip.on').map((c) => c.textContent).join() === '신경과');
@@ -119,7 +120,19 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   check('영양제 상세에는 진료과를 묻지 않는다', !q('.deptq'));
   A.go('detail', { id: 'A1' });
   check('일반의약품(약국약) 상세에도 묻지 않는다', !q('.deptq'));
-  check('등록 단계(약 추가 화면)에서 처방약을 고르면 같은 칩 줄이 나온다', (() => { st.items.push(Object.assign(mk('시바스', 'S2', '21:00'), { batch: 'rx-t' })); A.go('add', { batch: 'rx-t' }); return !!q('#selected .deptq') && qa('#selected .deptq .chip').length === 7; })());
+  // 담기 확인 화면
+  A.go('add', { batch: 'rx-t' }); st.items = []; delete st.newRx;
+  const rxItem = Object.assign(dur.toItem(dur.search('시바스')[0].code), { id: 'D1' });
+  A.ui.draft = { item: rxItem, slots: [], dept: '', deptEdit: false, fromView: 'add', fromParams: { batch: 'rx-t' } }; A.go('confirm');
+  check('담기 확인(처방약): 약 이름 + 진료과 칩 한 줄(가로 밀기, 줄바꿈 없음, 건너뛰기 없음) + 시간 칩 4개', T().includes('담기 확인') && T().includes('시바스정') && qa('.hscroll .chip').map((c) => c.textContent).join('|') === '내과|피부과|이비인후과|정형외과|소아과|직접 입력' && /\.hscroll\{[^}]*flex-wrap:nowrap[^}]*overflow-x:auto/.test(css0) && !/건너뛰기/.test(T()) && qa('[data-act="draftSlot"]').length === 4);
+  check('시간을 고르기 전에는 [담기]가 비활성, 눌러도 담기지 않음', q('[data-act="dock"]').disabled === true && (click('[data-act="dock"]'), st.items.length === 0));
+  click(qa('[data-act="draftDept"]')[0]); click(qa('[data-act="draftDept"]')[0]);
+  check('진료과 칩은 선택 사항: 다시 누르면 해제(아무것도 안 고르면 dept 없음)', !qa('[data-act="draftDept"].on').length);
+  click(qa('[data-act="draftDept"]')[1]); click(qa('[data-act="draftSlot"]')[1]); click(qa('[data-act="draftSlot"]')[3]);
+  click('[data-act="dock"]');
+  const docked = st.items.find((i) => i.id === 'D1');
+  check('[담기] → 홈: 시간(12:30·22:00)·진료과(피부과) 저장, 홈에 "피부과 처방약" 묶음과 "새 처방" 칩', !!q('.kp-hello') && docked.times.join() === '12:30,22:00' && docked.dept === '피부과' && qa('.kp-grp-txt b').some((b) => b.textContent.startsWith('피부과 처방약') && b.querySelector('.kp-newchip')) && st.newRx.ids.join() === 'D1', JSON.stringify(docked));
+  check('일반의약품·직접 이름 약은 진료과 줄이 없다', (() => { A.ui.draft = { item: { id: 'D2', kind: 'drug', source: 'manual', name: '내약', times: [] }, slots: [], dept: '', deptEdit: false, fromView: 'add', fromParams: {} }; A.go('confirm'); return !q('.hscroll'); })());
 
   console.log('8) 새 처방 칩 · 공식 지정 시트의 조건 줄');
   st.items = [mk('씬지록신', 'L1', '07:00', '내과')]; delete st.newRx; A.ui.nowMin = 6 * 60 + 40; A.ui.open = {}; A.go('home');
@@ -160,8 +173,7 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   const ti = q('input.time'); ti.value = ''; ti.dispatchEvent(new w.Event('change', { bubbles: true }));
   check('하나뿐인 복용 시간은 지울 수 없다(시간 없는 약이 만들어지지 않음)', st.items[0].times.join() === '07:30' && ti.value === '07:30');
   A.go('home');
-  const css = fs.readFileSync(path.join(dir, 'css/style.css'), 'utf8');
-  check('하단 탭 3개(홈·내 약·마이), 뱃지 없음, 스타일은 --kp-* 변수', qa('.nav button').map((b) => b.textContent.trim()).join('|') === '홈|내 약|마이' && !q('.nav [class*="badge"]') && /\.nav\{[^}]*var\(--kp-surface\)[^}]*var\(--kp-border\)/.test(css) && /\.nav button\{[^}]*var\(--kp-fs-caption\)[^}]*var\(--kp-text-sub\)/.test(css));
+  check('하단 탭 3개(홈·내 약·마이), 뱃지 없음, 스타일은 --kp-* 변수', qa('.nav button').map((b) => b.textContent.trim()).join('|') === '홈|내 약|마이' && !q('.nav [class*="badge"]') && /\.nav\{[^}]*var\(--kp-surface\)[^}]*var\(--kp-border\)/.test(css0) && /\.nav button\{[^}]*var\(--kp-fs-caption\)[^}]*var\(--kp-text-sub\)/.test(css0));
 
   check('스크립트 오류 없음', errors.length === 0, errors.join(' | '));
   console.log('\n통과 ' + ok + ' / 실패 ' + bad);
