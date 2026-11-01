@@ -30,7 +30,7 @@ const RECTS = (sels) => {
   out.vw = document.documentElement.clientWidth; out.vh = window.innerHeight; out.scrollW = document.documentElement.scrollWidth;
   return out;
 };
-const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav', h1: 'h1', brand: '.brand', sub: '.welcome .sub', fine: '.welcome .fine', start: '[data-act="start"]', demo: '[data-act="demo"]' };
+const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav', h1: 'h1', brand: '.brand', sub: '.welcome .sub', fine: '.welcome .fine', start: '[data-act="start"]' };
 
 (async () => {
   await new Promise((r) => server.listen(0, r));
@@ -60,9 +60,6 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       // ── 환영 화면 위계 · 하단 영역
       check(`${w}: 환영 — 하단 영역이 열 안에 꽉 참(폭 같음)`, loading.bar && Math.abs(loading.bar.x - app.x) <= 1 && Math.abs(loading.bar.r - app.r) <= 1, JSON.stringify(loading.bar));
       check(`${w}: 환영 — 시작하기 버튼 높이 56, 열 좌우 16px 안쪽`, loading.start && Math.abs(loading.start.h - 56) <= 1 && Math.abs(loading.start.x - (app.x + 16)) <= 1 && Math.abs(app.r - 16 - loading.start.r) <= 1, JSON.stringify(loading.start));
-      check(`${w}: 환영 — 링크가 버튼 아래, 겹치지 않음(간격 ≥ 8)`, loading.demo && loading.demo.y >= loading.start.b + 7, `버튼 하단 ${loading.start && loading.start.b} / 링크 상단 ${loading.demo && loading.demo.y}`);
-      check(`${w}: 환영 — 링크 터치 영역 44px 이상, 하단 영역 안`, loading.demo.h >= 44 && loading.demo.y >= loading.bar.y && loading.demo.b <= loading.bar.b, JSON.stringify([loading.demo, loading.bar]));
-      check(`${w}: 환영 — 링크는 텍스트 버튼(--kp-brand-strong, 밑줄 없음)`, await page.evaluate(() => { const c = getComputedStyle(document.querySelector('[data-act="demo"]')); return c.color === 'rgb(10, 127, 106)' && !c.textDecorationLine.includes('underline') && c.fontWeight === '600' && c.fontSize === '14px'; }));
       check(`${w}: 환영 — 브랜드 → 제목 → 설명 → 고지 순서, 고지는 설명 아래 16px`, loading.brand.b <= loading.h1.y && loading.h1.b <= loading.sub.y && Math.abs(loading.fine.y - loading.sub.b - 16) <= 1, `설명→고지 ${Math.round(loading.fine.y - loading.sub.b)}px`);
       if (h >= 700) check(`${w}: 환영 — 제목이 위쪽 1/3 부근에서 시작`, loading.h1.y >= h * 0.25 && loading.h1.y <= h * 0.42, `제목 위 ${Math.round(loading.h1.y)} / 화면 높이 ${h}`);
       check(`${w}: 환영 — 글자 왼쪽이 열 안쪽 16px에 맞음(제목·설명·고지·버튼)`, [loading.h1, loading.sub, loading.fine, loading.start].every((r) => Math.abs(r.x - (app.x + 16)) <= 1));
@@ -70,7 +67,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       // ── 로딩이 끝나도 환영 화면 위치가 변하지 않는다
       await page.waitForFunction(() => KeepingApp.ui.dur.status === 'ready'); await page.waitForTimeout(150);
       const ready = await R();
-      const same = ['h1', 'sub', 'fine', 'start', 'demo', 'bar'].every((k) => ready[k] && Math.abs(ready[k].y - loading[k].y) < 0.5 && Math.abs(ready[k].x - loading[k].x) < 0.5);
+      const same = ['h1', 'sub', 'fine', 'start', 'bar'].every((k) => ready[k] && Math.abs(ready[k].y - loading[k].y) < 0.5 && Math.abs(ready[k].x - loading[k].x) < 0.5);
       check(`${w}: 환영 — 데이터 로딩이 끝나도 위치가 안 변함`, same);
 
       // ── 저장 안내 → 약 검색 → 영양제 → 시간 입력: 하단 영역이 열 안, 요소가 겹치지 않음
@@ -95,7 +92,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       await page.click('.skipbtn'); await page.waitForSelector('input.time, .tlist, [data-act="timesDone"]'); await barOK('복용 시간');
 
       // ── 홈 · 결과 (하단 탭이 열 안)
-      await page.evaluate(() => KeepingApp.go('welcome')); await page.click('[data-act="demo"]'); await page.waitForSelector('.nav');
+      await page.evaluate(() => KeepingApp.go('welcome')); await page.evaluate(() => { KeepingApp.seedExample(); KeepingApp.go('home'); }); await page.waitForSelector('.nav');
       let r = await R();
       check(`${w}: 홈 — 하단 탭이 열 안`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
       const home = await page.evaluate(() => { const rc = (e) => { const r = e.getBoundingClientRect(); return { x: r.left, r: r.right, w: r.width, h: r.height, y: r.top }; }; return { card: rc(document.querySelector('.kp-hello')), bar: rc(document.querySelector('.kp-top')), cards: [...document.querySelectorAll('.kp-row--slot .kp-slot')].map(rc), chks: [...document.querySelectorAll('.kp-slot-head')].map(rc), boxes: [...document.querySelectorAll('.kp-check')].map(rc).filter((b) => b.w > 0), btn: rc(document.querySelector('.kp-add')), tabs: [...document.querySelectorAll('.nav button')].map(rc) }; });
@@ -158,7 +155,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
     await p3.evaluate(() => KeepingApp.go('questions')); await grab('질문');
     check('입력 칸(' + inputs.length + '개)의 글자가 모두 16px 이상(사파리 자동 확대 방지)', inputs.length >= 6 && inputs.every((i) => i.fs >= 16), JSON.stringify(inputs.filter((i) => i.fs < 16)));
     check('화면 아래에 고정(fixed)된 요소가 없음(키보드에 가려지지 않음). 토스트만 위쪽 고정', fixedEls.every((f) => !/actionbar|nav/.test(String(f.x))));
-    await p3.evaluate(() => KeepingApp.go('welcome')); await p3.click('[data-act="demo"]'); await p3.waitForSelector('.nav');
+    await p3.evaluate(() => KeepingApp.go('welcome')); await p3.evaluate(() => { KeepingApp.seedExample(); KeepingApp.go('home'); }); await p3.waitForSelector('.nav');
     const toastTop = await p3.evaluate(() => { const d = document.createElement('div'); d.className = 'toast'; d.textContent = 't'; document.body.appendChild(d); const r = d.getBoundingClientRect(); d.remove(); return r.top; });
     check('토스트가 화면 위쪽에 뜸(키보드가 열려도 보임)', toastTop < 100, 'top=' + toastTop);
     await ctx3.close();

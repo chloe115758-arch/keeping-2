@@ -106,6 +106,7 @@ button{background:none;border:0;cursor:pointer}
 /* 하단 고정 액션 버튼 영역 (높이 108px) — 2단계 온보딩에서 사용 */
 .actionbar{display:flex;gap:8px;align-items:flex-start;position:sticky;bottom:0;margin-top:auto;min-height:var(--actionbar-h);padding:var(--sp-4) var(--pad-x) calc(var(--sp-5) + env(safe-area-inset-bottom));background:var(--white);box-shadow:0 -4px 16px rgba(17,17,17,.05);z-index:10}
 .actionbar.col{flex-direction:column;align-items:stretch}
+.actionbar.col .cta{flex:none}
 .actionbar .cta{margin:0;flex:1;padding-left:8px;padding-right:8px}
 .cta.outline{background:var(--white);box-shadow:0 0 0 1.5px var(--grey-5) inset;color:var(--ink-strong)}
 .cta.outline:hover{background:var(--grey-6)}

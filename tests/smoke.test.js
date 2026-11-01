@@ -30,7 +30,7 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   check('앱을 처음 열면 스플래시(키핑 + 문구, 판정·광고 문구 없음)', !!q('.splash') && T().includes('키핑') && T().includes('겹치는 것만') && !/처방전 해석|건강 관리까지/.test(T()));
   click('.splash'); snap();
   check('스플래시를 누르면 환영 화면', T().includes('겹치는 것만 알려드려요') && !!q('[data-act="start"]') && !!q('.actionbar'));
-  click('[data-act="demo"]'); snap();
+  w.KeepingApp.seedExample(); w.KeepingApp.go('home'); snap();
   check('홈: 인사 카드(인사말·보조 문장) + 오늘의 복약 + 큰 숫자 + 진행 바 — 건강 관리·이름 자리 문구 없음', !!q('.kp-top') && !!q('.kp-hello') && q('.kp-line1').textContent.length > 0 && q('.kp-line2').textContent.length > 0 && /^\d+\/\d+$/.test(q('.kp-count').textContent) && q('.kp-bar').getAttribute('role') === 'progressbar' && !/OO님|\{name\}/.test(T()), q('.kp-line1') && q('.kp-line1').textContent);
   check('시연 띠 "시연 데이터예요"(홈 맨 위) — 홈에 "새 처방 알림 시연" 버튼은 없음', T().includes('시연 데이터예요') && !!q('.kp-band') && !q('[data-act="demoRx"]'));
   check('설명서 데이터를 못 읽는 환경: "설명서 기반 안내를 불러오지 못했어요" 한 번 + 닫기', T().includes('설명서 기반 안내를 불러오지 못했어요') && !!q('[data-act="closeCareNote"]'));
@@ -156,7 +156,7 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   check('설정에도 처음부터 다시 설정하기', T().includes('처음부터 다시 설정하기'));
 
   console.log('6-3a) 홈: 시간 미정 · 시간대 행');
-  w.KeepingApp.go('welcome'); click('[data-act="demo"]'); snap();
+  w.KeepingApp.go('welcome'); w.KeepingApp.seedExample(); w.KeepingApp.go('home'); snap();
   const wasOpen = qa('.kp-slot-head')[0].getAttribute('aria-expanded') === 'true';
   click(qa('.kp-slot-head')[0]); click(qa('.kp-slot-head')[0]);
   check('머리를 두 번 누르면 원래대로(펼침/접힘 토글)', (qa('.kp-slot-head')[0].getAttribute('aria-expanded') === 'true') === wasOpen && qa('.kp-slot-body')[0].hasAttribute('hidden') === !wasOpen);
@@ -253,7 +253,7 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   w.KeepingApp.go('welcome');
   console.log('6-6) 시연 데이터(제품코드)');
   check('전체 약 목록이 연결된 상태', w.KeepingApp.ui.dur.status === 'ready' && !!w.KEEPING_DATA.dur);
-  w.KeepingApp.go('welcome'); click('[data-act="demo"]'); snap();
+  w.KeepingApp.go('welcome'); w.KeepingApp.seedExample(); w.KeepingApp.go('home'); snap();
   const ex = w.KeepingApp.state().items;
   check('시연 홈이 열리고 시연 띠 표시', !!q('.kp-hello') && T().includes('시연 데이터예요'));
   check('예시 사용자의 약은 이트코나졸캡슐(제품코드), 코니트라캡슐 아님', ex.some((i) => i.productCode && i.name === '이트코나졸캡슐' && i.times[0] === '08:30') && !ex.some((i) => /코니트라/.test(i.name)));
@@ -265,13 +265,10 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   const official = rows6.filter((r) => r.flags.some((f) => f.grade === 'official')).map((r) => r.display);
   check('병용금기(공식 지정) 줄이 있는 약: 시바스정 · 이트코나졸캡슐, 후로스판정은 아님', official.some((n) => n.includes('시바스정')) && official.some((n) => n.includes('이트코나졸캡슐')) && !official.some((n) => n.includes('후로스판정')), JSON.stringify(official));
   check('홈: 시연 처방 약이 묶음 줄로 보임(약 이름이 아니라 묶음 이름)', qa('.kp-grp').length >= 4 && !qa('.mchip').length);
-  console.log('6-7) 로딩 중에 "예시 사용자로 체험하기"');
-  w.fetch = durFetch(400);
-  const pend2 = w.KeepingApp.bootDur();
-  w.KeepingApp.go('welcome'); click('[data-act="demo"]');
-  check('로딩 중이면 바로 시작하지 않고 기다림(토스트 안내)', !q('.kp-hello') && !!q('.toast'));
-  await pend2; await wait(30);
-  check('로딩이 끝나면 자동으로 시연 홈 + 제품코드 항목', !!q('.kp-hello') && w.KeepingApp.state().items.some((i) => i.productCode && i.name === '이트코나졸캡슐'));
+  console.log('6-7) 첫 화면에 체험 버튼 없음 · 처음 열면 빈 상태');
+  w.KeepingApp.state().items.length = 0; w.KeepingApp.state().demo = false; w.KeepingApp.go('welcome');
+  check('환영 화면에 "예시 사용자로 체험하기"와 demo 버튼이 없음', !T().includes('예시 사용자') && !q('[data-act="demo"]') && !!q('[data-act="start"]'));
+  check('처음 상태에는 미리 채워진 약이 없음', w.KeepingApp.state().items.length === 0 && !w.KeepingApp.state().demo);
   w.KeepingApp.go('welcome');
 
   console.log('6-8) 설정 화면 (전체 약 목록 연결됨)');

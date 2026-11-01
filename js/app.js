@@ -270,7 +270,7 @@
 
   VIEWS.welcome = function () {
     return '<main class="screen welcome"><p class="brand">키핑</p><h1 class="h xl" data-focus>내가 먹는 약과 영양제,<br>겹치는 것만 알려드려요</h1><p class="sub">약을 새로 받을 때마다 지금 먹는 것과 겹치는 내용만 골라서 보여드려요. 건강정보는 이 기기에만 저장돼요.</p><p class="fine">키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드리고, 판단은 약사에게 확인해 주세요.</p></main>' +
-      actionBar('<button type="button" class="cta" data-act="start">시작하기</button><button type="button" class="linkbtn" data-act="demo">예시 사용자로 체험하기</button>', 'col');
+      actionBar('<button type="button" class="cta" data-act="start">시작하기</button>', 'col');
   };
 
   /* 약관 동의 자리: 시안의 약관 문구는 가져오지 않고, 이 서비스의 사실만 안내하고 동의를 받는다 */
@@ -818,7 +818,7 @@
     return newItem(Object.assign({ kind: 'drug', source: 'pack', itemSeq: seq, name: r.display || r.name, times: [time] }, extra || {}));
   }
   function loadExample() {
-    state = Store.fresh(); state.example = true; state.demo = true;
+    state = Store.fresh(); state.example = true;
     var itra = demoDrug('이트코나졸캡슐', '200000913', '08:30');   // 수출용 코니트라캡슐 대신 급여목록 제품(전체 약 목록이 없을 때만 코니트라캡슐)
     var s = Pack.supplements[0];
     var vitc = newItem({ kind: 'supp', source: 'domestic', name: s.name, reportNo: s.reportNo, company: s.company, ingredientRaw: s.ingredientRaw, ingredientKeys: s.ingredientKeys.slice(), times: ['13:30'] });
@@ -875,12 +875,6 @@
       var i = document.getElementById('deptin'), v = i ? i.value.trim().slice(0, 20) : '';
       ui.deptEdit = null;
       if (v) setDept(t.dataset.id, { dept: v }); else redrawDept();
-    },
-    demo: function () {
-      function run() { loadExample(); go('home'); }
-      if (ui.dur.status !== 'loading') return run();
-      toast('약 목록을 불러오는 중이에요. 끝나면 바로 시작할게요');
-      bootPromise.then(run);
     },
     to: function (t) {
       var v = t.dataset.view, p = {};
@@ -1114,5 +1108,5 @@
   if (document.fonts && document.fonts.load) {
     Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + " 16px 'Pretendard Variable'"); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
   } else boot();
-  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, loadChecks: loadChecks, render: render };
+  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, seedExample: function () { loadExample(); state.demo = true; }, loadChecks: loadChecks, render: render };
 })();
