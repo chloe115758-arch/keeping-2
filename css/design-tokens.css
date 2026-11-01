@@ -1,0 +1,48 @@
+/* 자동 생성: scripts/apply_design.py (docs/design.md의 값). 직접 고치지 마세요. 지금 안: B */
+@font-face{font-family:'Pretendard Variable';font-weight:45 920;font-style:normal;font-display:swap;src:url('../assets/fonts/PretendardVariable.woff2') format('woff2-variations'),url('../assets/fonts/PretendardVariable.woff2') format('woff2');}
+:root {
+  --kp-bg-page: #F7F8FA;
+  --kp-surface: #FFFFFF;
+  --kp-surface-sub: #F3F4F6;
+  --kp-border: #ECEEF1;
+  --kp-brand: #34D1B0;
+  --kp-brand-strong: #0A7F6A;
+  --kp-brand-weak: #E3F8F2;
+  --kp-text: #17191C;
+  --kp-text-sub: #6B7280;
+  --kp-cta-bg: #17191C;
+  --kp-cta-text: #FFFFFF;
+  --kp-caution-text: #C2261D;
+  --kp-caution-bg: #FFF1EF;
+  --kp-info-text: #1D5FD8;
+  --kp-label-text: #08705D;
+  --kp-label-bg: #E3F8F2;
+  --kp-official-text: #C2261D;
+  --kp-official-bg: #FFF1EF;
+  --kp-rail: #E5E8EB;
+  --kp-rail-done: #34D1B0;
+  --kp-dot: #C9CFD6;
+  --kp-font: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --kp-ls: -0.01em;
+  --kp-fs-title: 18px;
+  --kp-fs-section: 17px;
+  --kp-fs-body: 15px;
+  --kp-fs-caption: 12px;
+  --kp-fw-title: 700;
+  --kp-fw-strong: 600;
+  --kp-lh: 1.5;
+  --kp-radius-card: 20px;
+  --kp-radius-sheet: 28px;
+  --kp-radius-chip: 8px;
+  --kp-radius-btn: 999px;
+  --kp-pad-card: 16px;
+  --kp-gap-card: 16px;
+  --kp-gap-page: 18px;
+  --kp-time-w: 52px;
+  --kp-rail-w: 32px;
+  --kp-node-size: 22px;
+  --kp-dot-size: 8px;
+  --kp-line-w: 2px;
+  --kp-shadow-card: 0 2px 12px rgba(23,25,28,0.05);
+  --kp-touch-min: 44px;
+}

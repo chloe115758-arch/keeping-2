@@ -110,7 +110,7 @@
             var src = dur.source('pair');
             [[drugs[i], drugs[j]], [drugs[j], drugs[i]]].forEach(function (ab) {
               addFlag(ab[0].id, { id: id, grade: 'official', severity: 'caution', kind: 'pair',
-                short: nameOf(ab[1]) + ' · 같이 복용하지 않도록 지정된 조합', withItemIds: [ab[1].id],
+                short: nameOf(ab[1]) + ' · 같이 복용하지 않도록 지정된 조합', withItemIds: [ab[1].id], ownerId: ab[0].id, interval: null,
                 parts: { subject: nameOf(ab[1]), message: '같이 복용하지 않도록 지정된 조합', now: null } },
                 { grade: 'official', headline: '병용금기로 지정된 조합', detail: e.note || '', excerpt: e.reason,
                   where: '병용금기 · 고시 ' + e.date, source: { label: src.label, url: src.url, checkedAt: src.checkedAt } });
@@ -172,7 +172,8 @@
           else parts = { subject: foodKos.join('·'), message: '주의 안내', now: null };
           short = parts.subject + ' · ' + parts.message + (parts.now ? ' · ' + parts.now : '');
           addFlag(owner.id, { id: r.id, grade: 'label', severity: 'caution', kind: hasPair ? 'interaction' : 'food',
-            short: short, parts: parts, withItemIds: withIds },
+            short: short, parts: parts, withItemIds: withIds, ownerId: owner.id,
+            interval: (hasPair && iv && iv.minHours) ? { minHours: iv.minHours, maxHours: iv.maxHours || null, qualifier: iv.qualifier || null } : null },
             { grade: 'label', headline: short, detail: r.subject || '', excerpt: r.excerpt, where: r.where, source: src });
           if (!hasPair && hasFood) {   // 음식·음주 안내: 약마다 흔해서 따로 모은다(주의 개수에 세지 않는다)
             foodKos.forEach(function (ko) {
@@ -191,7 +192,7 @@
         [['pregnant', '임신 중 복용에 관한 안내가 있어요'], ['elderly', '고령자 복용에 관한 안내가 있어요']].forEach(function (st) {
           if (states.indexOf(st[0]) < 0 || !stateRules[st[0]].length) return;
           var first = stateRules[st[0]][0];
-          addFlag(owner.id, { id: 'state-' + st[0] + '-' + (owner.id), grade: 'label', severity: 'caution', kind: 'state', short: st[1], withItemIds: [] },
+          addFlag(owner.id, { id: 'state-' + st[0] + '-' + (owner.id), grade: 'label', severity: 'caution', kind: 'state', short: st[1], withItemIds: [], ownerId: owner.id, interval: null },
             { grade: 'label', headline: st[1], detail: first.subject || '', excerpt: stateRules[st[0]].slice(0, 3).map(function (x) { return x.excerpt; }).join(' ') + (stateRules[st[0]].length > 3 ? ' …' : ''),
               where: first.where, source: src });
         });
