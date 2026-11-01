@@ -13,7 +13,9 @@
     tab: 'domestic', q: '', oq: '', results: null, remote: null, overseas: null,
     chips: [], manualName: '', searchToken: 0,
     dur: { status: 'loading' },
-    care: { status: 'loading', engine: null, notice: true }, open: {}
+    care: { status: 'loading', engine: null, notice: true }, open: {},
+    noticeOpen: {}, sheet: null, nowMin: null, prevRatio: null, homeSig: '', logo: '', deptEdit: null, homeScroll: 0,
+    copy: { status: 'loading' }
   };
   var searchTimer = null;
 
@@ -148,7 +150,7 @@
     }).then(function () {
       var el = document.getElementById('durstat'); if (el) el.innerHTML = durHtml();
       if (needsSearch() && currentKind() === 'drug' && ui.q.trim()) runSearch(); // 로딩 중에 입력한 검색을 이어서 실행
-      if (['home', 'list', 'detail', 'sheet', 'settings'].indexOf(ui.view) > -1) render(false); // 확인 결과가 달라질 수 있는 화면만 다시 그린다
+      if (['home', 'bag', 'list', 'detail', 'settings'].indexOf(ui.view) > -1) render(false); // 확인 결과가 달라질 수 있는 화면만 다시 그린다
     });
     return bootPromise;
   }
@@ -171,7 +173,7 @@
   function bootCare() {
     ui.care = { status: 'loading', engine: null, notice: true };
     function fin() {
-      if (['home', 'list', 'detail', 'sheet', 'settings', 'onb-supps', 'times'].indexOf(ui.view) > -1) render(false);
+      if (['home', 'bag', 'list', 'detail', 'settings', 'onb-supps', 'times'].indexOf(ui.view) > -1) render(false);
     }
     function fail() { ui.care = { status: 'error', engine: null, notice: true }; }
     if (typeof fetch !== 'function' || !window.KeepingCare) { fail(); carePromise = Promise.resolve(); return carePromise; }
@@ -202,7 +204,7 @@
   function statesOf() { return (state.states || []).filter(function (x) { return x === 'pregnant' || x === 'elderly'; }); }
   function careItems() {
     return state.items.map(function (it) {
-      if (it.kind === 'drug') return { id: it.id, kind: 'drug', productCode: it.productCode || undefined, itemSeq: it.itemSeq || undefined, name: it.name, display: nm(it), times: activeTimes(it) };
+      if (it.kind === 'drug') return { id: it.id, kind: 'drug', productCode: it.productCode || undefined, itemSeq: it.itemSeq || undefined, name: it.name, display: nm(it), times: activeTimes(it), dept: it.dept || undefined };
       return { id: it.id, kind: 'supp', ingredientKeys: (it.ingredientKeys || []).slice(), name: it.name, display: nm(it), times: activeTimes(it) };
     });
   }
@@ -226,7 +228,7 @@
     var t = activeTimes(it);
     rows += '<div><dt>복용 시간</dt><dd>' + (t.length ? esc(t.join(' · ')) : '아직 정하지 않았어요') + '</dd></div>';
     return '<li class="pcard"><div class="pc-head"><div class="pc-title"><b>' + esc(nm(it)) + '</b>' + (sub ? '<span class="pc-sub">' + esc(sub) + '</span>' : '') + '</div>' +
-      '<button type="button" class="rm" data-act="remove" data-id="' + it.id + '" aria-label="' + esc(nm(it)) + ' 삭제">' + icon('x') + '</button></div><dl class="kv">' + rows + '</dl></li>';
+      '<button type="button" class="rm" data-act="remove" data-id="' + it.id + '" aria-label="' + esc(nm(it)) + ' 삭제">' + icon('x') + '</button></div><dl class="kv">' + rows + '</dl>' + deptHtml(it) + '</li>';
   }
   function selectedHtml(kind) {
     var list = selectedItems(kind);
@@ -354,15 +356,12 @@
       actionBar('<button type="button" class="cta" data-act="timesDone">' + nextLabel + '</button>');
   };
 
-  /* ---------- 홈: 하루 복약 타임라인 (docs/plan-v2.md 3-2) ----------
-     케어 엔진(care.analyze)의 결과만 읽는다. 깊이 0 = 시간대 행, 깊이 1 = 약별 한 줄, 깊이 2 = 근거 시트. */
-  function fmtTime(t) { var m = /^(\d{1,2}):(\d{2})$/.exec(t); return m ? (+m[1]) + ':' + m[2] : t; }
+  /* ---------- 홈 (docs/home-ui-spec.md) ----------
+     묶음·문장·진행률·노드 상태의 계산은 js/homevm.js(KeepingHome.build)가 끝낸다. 여기서는 그 결과만 그린다. */
   var GRADE = { official: ['공식 지정', 'official'], label: ['설명서 근거', 'label'], reference: ['참고', 'ref'] };
   function badge(g) { var x = GRADE[g] || ['확인 못 함', 'none']; return '<span class="badge ' + x[1] + '">' + x[0] + '</span>'; }
   function safeUrl(u) { return /^https?:\/\//i.test(String(u || '')) ? String(u) : null; }
   function loadingNow() { return ui.dur.status === 'loading' || ui.care.status === 'loading'; }
-  /* 약 앞 이미지 칸: 연한 회색 알약 아이콘 하나로 고정(모양·색에 따라 바꾸지 않는다) */
-  var PILL = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5a4.95 4.95 0 0 1-7-7l10-10a4.95 4.95 0 0 1 7 7z"/><path d="M8.5 8.5l7 7"/></svg>';
   function nonFood(flags) { return (flags || []).filter(function (f) { return f.kind !== 'food'; }); }
   function indexModel(m) {
     var ix = { rows: {}, unc: {}, unsched: {} };
@@ -382,89 +381,237 @@
     if (!code) return '키핑이 확인한 범위 밖이에요. 등록은 됐고, 약사에게 확인해 주세요';   // 예전 저장 데이터 중 제품코드로 이어지지 않는 약
     return '설명서 기반 안내를 아직 준비하지 못했어요(병용금기는 확인했어요)';
   }
-  /* 깊이 1: 약 행. 약 아이콘 | 이름·칩·주의 블록·음식 줄 | 시간 */
-  function flagParts(f) { return f.parts || { subject: '', message: f.short, now: null }; }
-  function flagBlock(f, extra, itemId) {
-    var p = flagParts(f), badgeCls = f.grade === 'official' ? 'official' : 'label';
-    return '<button type="button" class="flagblk" data-act="sheet" data-id="' + esc(f.id) + '" data-item="' + itemId + '">' + icon('tri', 16) +
-      '<span class="fmain"><span class="fl1">' + (p.subject ? '<b>' + esc(p.subject) + '</b> ' : '') + esc(p.message) + '</span>' +
-      (p.now ? '<span class="fnow">' + esc(p.now) + '</span>' : '') +
-      '<span class="frow"><span class="fbadge ' + badgeCls + '">' + (badgeCls === 'official' ? '공식 지정' : '설명서 근거') + '</span>' + (extra ? '<span class="fmore">외 ' + extra + '건</span>' : '') + '</span></span>' +
-      icon('chev', 16) + '</button>';
+
+  /* 오늘의 체크: kp:checks:YYYY-MM-DD → { "morning:rx:내과": true }. 체크한 것만 true, 해제하면 키를 지운다. */
+  var CHECKS_PREFIX = 'kp:checks:';
+  var memChecks = {}, checksMemOnly = false;   // localStorage를 쓸 수 없을 때(읽기·쓰기 실패)만 임시 보관본을 쓴다
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function checksKey() { var d = new Date(); return CHECKS_PREFIX + d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
+  function loadChecks() {
+    var key = checksKey(), out = {};
+    if (checksMemOnly) return Object.assign({}, memChecks[key]);
+    try {
+      var raw = window.localStorage.getItem(key);
+      var o = raw ? (JSON.parse(raw) || {}) : {};
+      Object.keys(o).forEach(function (k) { if (o[k] === true) out[k] = true; });
+      return out;
+    } catch (e) { checksMemOnly = true; return Object.assign({}, memChecks[key]); }
   }
-  function timelineRow(r, m, ix, shown) {
-    var it = findItem(r.itemId); if (!it) return '';
-    var nf = nonFood(r.flags), chips = '', blocks = '';
-    if (it.kind === 'supp') chips += '<span class="mchip supp">영양제</span>';
-    if (it.batch) chips += '<span class="mchip new">새 처방</span>';
-    if (r.mealRelation && m.evidence[r.mealRelation.ruleId]) {
-      chips += '<button type="button" class="mchip meal" data-act="sheet" data-id="' + esc(r.mealRelation.ruleId) + '" data-item="' + r.itemId + '" aria-label="식사 관계 ' + esc(r.mealRelation.label) + ' 근거 보기">' + esc(r.mealRelation.label) + '</button>';
-    }
-    if (nf.length) blocks += flagBlock(nf[0], nf.length - 1, r.itemId);
-    if (r.foods && r.foods.length) {
-      blocks += '<button type="button" class="foodline" data-act="sheet" data-id="' + esc(r.foods[0].flagId) + '" data-item="' + r.itemId + '">' + icon('info', 16) + '<span>음식: ' + esc(r.foods.map(function (f) { return f.ko; }).join('·')) + ' 주의</span></button>';
-    }
-    if (ix.unc[r.itemId] && !shown['u' + r.itemId]) { shown['u' + r.itemId] = 1; blocks += '<p class="tline info plain">' + icon('info', 16) + '<span>' + esc(uncoveredText(it, ix.unc[r.itemId])) + '</span></p>'; }
-    return '<li class="titem"><span class="mico" aria-hidden="true">' + PILL + '</span><div class="mmid"><div class="mname"><b>' + esc(nm(it)) + '</b>' + chips + '</div>' + blocks + '</div><time>' + esc(r.time) + '</time></li>';
+  function saveChecks(c) {
+    var key = checksKey();
+    memChecks = {}; memChecks[key] = Object.assign({}, c);
+    if (checksMemOnly) return;
+    try { window.localStorage.setItem(key, JSON.stringify(c)); } catch (e) { checksMemOnly = true; }
   }
-  /* 깊이 0: 시간대 카드. 시간은 왼쪽 라벨로 빼고 제목 아래에 "약 3개 · 주의 2" */
-  function slotHtml(s, m, ix, shown) {
-    var open = !!ui.open[s.id];
-    var sub = '약 ' + s.summary.itemCount + '개' + (s.summary.cautionCount ? ' · <span class="red">주의 ' + s.summary.cautionCount + '</span>' : '');
-    return '<div class="slot' + (open ? ' open' : '') + '"><button type="button" class="slot-head" data-act="toggleSlot" data-id="' + s.id + '" aria-expanded="' + open + '" aria-controls="slot-' + s.id + '"><span class="slot-title"><b>' + esc(s.label) + '</b><small>' + sub + '</small></span>' +
-      '<svg class="ic chev-dn" width="24" height="24" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg></button>' +
-      '<ul class="tbody" id="slot-' + s.id + '"' + (open ? '' : ' hidden') + '>' + s.items.map(function (r) { return timelineRow(r, m, ix, shown); }).join('') + '</ul></div>';
+  function nowMin() {
+    if (ui.nowMin != null) return ui.nowMin;   // 시험·스크린샷용: 지금 시각을 고정할 때만 쓴다
+    var d = new Date(); return d.getHours() * 60 + d.getMinutes();
   }
-  /* 세로 시간선: [시간 라벨 | 선 | 내용]. 시간대 카드와 식사 줄을 시간 순서로 끼워 넣는다 */
-  function minOf(t) { var v = window.KeepingCare.toMin(t); return v < 240 ? v + 1440 : v; }
-  function timelineHtml(m, ix, shown) {
-    var rows = [];
-    m.slots.forEach(function (s) {
-      rows.push({ min: minOf(s.time), time: s.time, dot: '', body: slotHtml(s, m, ix, shown), cls: 'slot-row' });
-      if (s.meal) rows.push({ min: minOf(s.meal.time), time: s.meal.time, dot: ' hollow', body: '<span class="tlmeal">' + esc(s.meal.label) + '</span>', cls: 'meal-row' });
+
+  /* 홈 문구(data/copy/greeting.json)와 로고는 첫 화면과 상관없이 따로 읽는다 */
+  function bootCopy() {
+    ui.copy = { status: 'loading' };
+    if (typeof fetch !== 'function') { ui.copy = { status: 'error' }; return Promise.resolve(); }
+    return fetch('data/copy/greeting.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (j) { ui.copy = { status: 'ready', json: j }; }, function () { ui.copy = { status: 'error' }; })
+      .then(function () { if (ui.view === 'home' || ui.view === 'bag') render(false); });
+  }
+  function bootLogo() {
+    if (typeof fetch !== 'function') return Promise.resolve();
+    return fetch('assets/brand/keeping-logo.svg').then(function (r) { return r.ok ? r.text() : ''; })
+      .then(function (t) {
+        if (!/^\s*(<\?xml[^>]*>\s*)?<svg[\s>]/i.test(t) || /<script|on\w+\s*=/i.test(t)) return;
+        ui.logo = t.replace(/^\s*<\?xml[^>]*>\s*/, '');
+        if (ui.view === 'home') render(false);
+      }, function () {});
+  }
+  function homeVm() {
+    var json = ui.copy.status === 'ready' ? ui.copy.json : { copy: {} };
+    return window.KeepingHome.create({
+      greeting: window.KeepingGreeting.create(json),
+      productOf: function (item) {
+        if (!Pack.dur) return null;
+        var c = item.productCode || (item.itemSeq && Pack.dur.codeOf(item.itemSeq));
+        return c ? Pack.dur.get(c) : null;
+      }
     });
-    rows.sort(function (a, b) { return a.min - b.min; });
-    return '<ol class="tl">' + rows.map(function (x) {
-      return '<li class="tlrow ' + x.cls + '"><span class="tllabel">' + esc(x.time) + '</span><span class="tlcol"><i class="tldot' + x.dot + '"></i></span>' + x.body + '</li>';
-    }).join('') + '</ol>';
   }
-  /* 시간을 정하지 않은 약: 목록 맨 아래 카드 하나 */
-  function unscheduledHtml(m, ix, shown) {
-    var rows = m.unscheduled.map(function (id) {
-      var it = findItem(id); if (!it) return '';
-      var u = ix.unc[id], chips = (it.kind === 'supp' ? '<span class="mchip supp">영양제</span>' : '') + (it.batch ? '<span class="mchip new">새 처방</span>' : '');
-      return '<li class="urow"><span class="mico" aria-hidden="true">' + PILL + '</span><div class="mmid"><div class="mname"><b>' + esc(nm(it)) + '</b>' + chips + '</div>' +
-        (u ? '<p class="tline info plain">' + icon('info', 16) + '<span>' + esc(uncoveredText(it, u)) + '</span></p>' : '') + '</div>' +
-        '<button type="button" class="settime" data-act="to" data-view="times" data-all="1" aria-label="' + esc(nm(it)) + ' 복용 시간 정하기">시간 정하기</button></li>';
+  function homeModel() {
+    return homeVm().build({ nowMin: nowMin(), nickname: state.nickname || '', items: careItems(), analysis: careModel() || undefined, checks: loadChecks(), meals: mealsOf() });
+  }
+
+  /* 아이콘(24칸, 선) */
+  var KP_ICONS = {
+    sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8"/>',
+    moon: '<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>',
+    pill: '<path d="M10.5 20.5a4.95 4.95 0 0 1-7-7l10-10a4.95 4.95 0 0 1 7 7z"/><path d="M8.5 8.5l7 7"/>',
+    leaf: '<path d="M20 4C10 4 4 9 4 16a4 4 0 0 0 4 4c7 0 12-6 12-16z"/><path d="M4 20c3-6 7-10 12-13"/>',
+    bell: '<path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 21a2.2 2.2 0 0 0 4 0"/>',
+    user: '<circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.8-4 3.8-6 7.5-6s6.7 2 7.5 6"/>',
+    warn: '<path d="M12 3.5l9.5 16.5h-19z"/><path d="M12 10v4.5"/><path d="M12 17.4h.01"/>',
+    down: '<path d="M6 9l6 6 6-6"/>', right: '<path d="M9 6l6 6-6 6"/>',
+    check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>', x: '<path d="M6 6l12 12M18 6L6 18"/>'
+  };
+  function kpIcon(n, size, cls) {
+    return '<svg class="kp-ic' + (cls ? ' ' + cls : '') + '" width="' + size + '" height="' + size + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' + KP_ICONS[n] + '</svg>';
+  }
+  function pct(r) { return (Math.max(0, Math.min(1, r)) * 100).toFixed(2).replace(/\.?0+$/, '') + '%'; }
+
+  function slotOpen(S) { return ui.open[S.id] != null ? !!ui.open[S.id] : !!S.defaultOpen; }
+  function groupHtml(G) {
+    return '<div class="kp-grp' + (G.checked ? ' is-checked' : '') + '">' +
+      '<button type="button" class="kp-grp-main" data-act="openBag" data-id="' + esc(G.id) + '"><span class="kp-ico kp-ico--' + esc(G.icon) + '">' + kpIcon(G.icon, 22) + '</span>' +
+      '<span class="kp-grp-txt"><b>' + esc(G.title) + '</b>' + (G.hint ? '<small>' + esc(G.hint) + '</small>' : '') + '</span></button>' +
+      '<button type="button" class="kp-check" role="checkbox" aria-checked="' + !!G.checked + '" aria-label="' + esc(G.title) + ' 확인" data-act="toggleCheck" data-id="' + esc(G.id) + '"><span class="kp-box">' + kpIcon('check', 16) + '</span></button></div>';
+  }
+  /* 주의 블록: 첫 줄 버튼 안에 제목을 넣고(눌러서 근거 시트), 나머지 줄은 각자 버튼. 블록 안에 배지는 넣지 않는다. */
+  function noticeHtml(S) {
+    var n = S.notice, open = !!ui.noticeOpen[S.id], lines = open ? n.all : n.lines;
+    var html = lines.map(function (l, i) {
+      var attrs = ' type="button" data-act="openSheet" data-flag="' + esc(l.flagId) + '"';
+      return i === 0
+        ? '<button class="kp-notice-first"' + attrs + '><b>' + esc(n.title) + '</b><span>' + esc(l.text) + '</span>' + kpIcon('right', 18) + '</button>'
+        : '<button class="kp-notice-line"' + attrs + '>' + esc(l.text) + '</button>';
     }).join('');
-    return '<section class="slot unsched"><h2 class="utitle">시간을 정하지 않은 약</h2><ul class="tbody">' + rows + '</ul></section>';
+    if (n.more > 0 && !open) html += '<button type="button" class="kp-notice-more" data-act="toggleNotice" data-id="' + esc(S.id) + '" aria-expanded="false">' + esc(n.moreText) + '</button>';
+    return '<div class="kp-notice">' + kpIcon('warn', 20) + '<div class="kp-notice-main">' + html + '</div></div>';
+  }
+  function slotRowHtml(S) {
+    var open = slotOpen(S), id = esc(S.id), parts = S.summary.text.split(' · ');
+    var sum = esc(parts[0]) + (S.summary.cautionCount > 0 && parts.length > 1 ? ' · <span class="kp-red">' + esc(parts.slice(1).join(' · ')) + '</span>' : '');
+    var ic = S.id === 'bedtime' ? 'moon' : 'sun';
+    return '<li class="kp-row kp-row--slot' + (S.lineDone ? ' is-line-done' : '') + (S.last ? ' is-last' : '') + '" data-slot="' + id + '" data-node="' + S.nodeState + '">' +
+      '<span class="kp-time">' + esc(S.time) + '</span><span class="kp-rail"><i class="kp-node kp-node--' + S.nodeState + '">' + (S.nodeState === 'done' ? kpIcon('check', 14) : '') + '</i></span>' +
+      '<section class="kp-slot' + (open ? ' is-open' : '') + '">' +
+      '<button type="button" class="kp-slot-head" data-act="toggleSlot" data-id="' + id + '" aria-expanded="' + open + '" aria-controls="kp-slot-' + id + '">' +
+      '<span class="kp-slot-ico kp-slot-ico--' + ic + '">' + kpIcon(ic, 22) + '</span><span class="kp-slot-title"><b>' + esc(S.label) + '</b><small>' + sum + '</small></span>' + kpIcon('down', 22, 'kp-chev') + '</button>' +
+      '<div class="kp-slot-body" id="kp-slot-' + id + '"' + (open ? '' : ' hidden') + '>' + S.groups.map(groupHtml).join('') + (S.notice ? noticeHtml(S) : '') + '</div></section></li>';
+  }
+  function mealRowHtml(R) {
+    return '<li class="kp-row kp-row--meal' + (R.lineDone ? ' is-line-done' : '') + (R.last ? ' is-last' : '') + '"><span class="kp-time">' + esc(R.time) + '</span>' +
+      '<span class="kp-rail"><i class="kp-node kp-node--meal"></i></span><span class="kp-meal-label">' + esc(R.label) + '</span></li>';
+  }
+  function topbarHome() {
+    var logo = ui.logo ? ui.logo : 'Keeping';
+    return '<div class="kp-top"><span class="kp-logo" aria-label="Keeping">' + logo + '</span><div class="kp-top-act">' +
+      '<button type="button" class="kp-icbtn" aria-label="알림">' + kpIcon('bell', 22) + '</button><button type="button" class="kp-icbtn" aria-label="프로필">' + kpIcon('user', 22) + '</button></div></div>';
   }
   VIEWS.home = function () {
-    var m = careModel(), ix = m ? indexModel(m) : null;
-    var d0 = new Date().toLocaleDateString('ko-KR', { month: 'long', day: 'numeric', weekday: 'long' });
-    var sum;
-    if (!state.items.length) sum = '<p class="prog-msg">먹는 약과 영양제를 등록하면 하루 복약 시간표를 만들어 드려요</p>';
-    else if (loadingNow()) sum = '<p class="sumline" aria-live="polite"><b>오늘 주의 확인 중…</b></p>';
-    else sum = '<p class="sumline"><b>오늘 주의 ' + (m ? m.summary.cautionCount : 0) + '개</b></p>';
-    var body = '';
-    if (m && state.items.length) {
-      var shown = {};
-      body += m.slots.length ? timelineHtml(m, ix, shown) : '';
-      if (m.unscheduled.length) body += unscheduledHtml(m, ix, shown);
-      body += '<p class="fine">병용금기(공식 지정)와 설명서에서 찾은 안내만 보여드려요. 찾지 못했다고 안전하다는 뜻은 아니에요. 키핑은 의료 조언이 아니에요.</p>';
-    } else if (state.items.length) {
-      body += '<p class="note">설명서 기반 안내를 쓸 수 없어요. 등록한 약과 영양제는 내 약에서 볼 수 있어요.</p>';
-    }
-    return '<main class="screen home"><div class="home-bar">키핑</div>' +
-      '<div class="home-card"><div><h1 data-focus>안녕하세요</h1><p class="home-date">' + esc(d0) + '</p></div>' + sum + '</div>' +
-      '<div class="home-body">' + careStatHtml() +
-      (state.example ? '<p class="banner">예시 사용자예요. 복용 이력은 가정이고, 약 정보는 실제 공식 자료예요.</p>' : '') +
-      body +
-      '<div class="home-actions">' +
-      (!state.items.length ? '<button type="button" class="cta" data-act="to" data-view="onb-drugs">처음 설정 시작하기</button>' : '') +
-      '<button type="button" class="cta ' + (state.example ? 'ghost' : '') + '" data-act="newRx">새 약 추가하기</button>' +
-      (state.example ? '<button type="button" class="cta" data-act="demoRx">새 처방 알림 시연 보기</button>' : '') + '</div></div></main>' + nav('home');
+    if (ui.copy.status === 'loading') return '<main class="screen kp-home">' + topbarHome() + '<p class="kp-stat" aria-live="polite">불러오는 중…</p></main>' + nav('home');
+    var m = homeModel(), h = m.header, c = h.card, slots = m.rows.filter(function (r) { return r.type === 'slot'; });
+    var from = ui.prevRatio != null ? ui.prevRatio : c.ratio;
+    var hello = '<section class="kp-hello"><h1 class="kp-line1" data-focus>' + esc(h.line1) + '</h1><p class="kp-line2">' + esc(h.line2) + '</p>' +
+      '<div class="kp-today"><span class="kp-today-title">' + esc(c.title) + kpIcon(c.icon, 16, 'kp-ic--' + c.icon) + '</span><span class="kp-count">' + esc(c.count) + '</span></div>' +
+      '<div class="kp-bar" role="progressbar" aria-valuemin="0" aria-valuemax="' + Math.max(c.total, 1) + '" aria-valuenow="' + c.taken + '" aria-label="' + esc(h.aria) + '"><i class="kp-fill" data-ratio="' + c.ratio + '" style="width:' + pct(from) + '"></i></div>' +
+      '<p class="kp-status">' + esc(c.status) + '</p></section>';
+    var body = careStatHtml().replace(/class="(muted )?carestat"/, 'class="kp-stat"');
+    if (state.example) body += '<p class="kp-banner">예시 사용자예요. 복용 이력은 가정이고, 약 정보는 실제 공식 자료예요.</p>';
+    if (slots.length) body += '<ol class="kp-tl">' + m.rows.map(function (r) { return r.type === 'slot' ? slotRowHtml(r) : mealRowHtml(r); }).join('') + '</ol>';
+    var acts = (!state.items.length ? '<button type="button" class="kp-add" data-act="to" data-view="onb-drugs">처음 설정 시작하기</button>' : '') +
+      '<button type="button" class="kp-add' + (!state.items.length ? ' is-ghost' : '') + '" data-act="newRx">새 약 추가하기</button>' +
+      (state.example ? '<button type="button" class="kp-add is-ghost" data-act="demoRx">새 처방 알림 시연 보기</button>' : '');
+    return '<main class="screen kp-home">' + topbarHome() + hello + body + '<div class="kp-add-wrap">' + acts + '</div></main>' + nav('home');
   };
+  /* 다시 그릴 때 진행 바 폭만 빼고 비교한다(바는 그린 뒤에 새 폭으로 움직이므로) */
+  function homeSig(html) { return html.replace(/style="width:[^"]*"/, ''); }
+  function afterHome() {
+    var f = root.querySelector('.kp-fill'); if (!f) return;
+    var r = +f.getAttribute('data-ratio'), want = pct(r);
+    if (f.style.width !== want) { void f.offsetWidth; f.style.width = want; }   // 이전 폭에서 새 폭으로 0.3초 움직인다
+    ui.prevRatio = r;
+  }
+
+  /* ---------- 약봉투 화면: model.detail[group.id] ---------- */
+  function bagNotice(n) {
+    return '<button type="button" class="kp-notice" data-act="openSheet" data-flag="' + esc(n.flagId) + '">' + kpIcon('warn', 20) +
+      '<span class="kp-notice-main"><span class="kp-notice-first" style="display:block;min-height:44px">' + esc(n.text) + kpIcon('right', 18) + '</span></span></button>';
+  }
+  VIEWS.bag = function () {
+    var m = homeModel(), d = m.detail[ui.params.id];
+    if (!d) { ui.view = 'home'; return VIEWS.home(); }
+    var cards = d.items.map(function (it) {
+      var sub = [it.spec, it.company].filter(Boolean).join(' · ');
+      return '<article class="kp-bagcard"><h2 class="kp-bag-name">' + esc(it.display) + '</h2>' + (sub ? '<p class="kp-bag-sub">' + esc(sub) + '</p>' : '') +
+        '<span class="kp-chip">' + esc(it.category) + '</span>' +
+        (it.times && it.times.length ? '<p class="kp-bag-times"><span>먹는 시간</span>' + esc(it.times.join(' · ')) + '</p>' : '') +
+        (it.ingredient ? '<p class="kp-bag-ingr">' + esc(it.ingredient) + '</p>' : '') +
+        (it.notices && it.notices.length ? it.notices.map(bagNotice).join('') : '') + '</article>';
+    }).join('');
+    var foods = d.foods && d.foods.length ? '<section class="kp-foods"><h2>' + esc(d.foodsTitle) + '</h2><div>' + d.foods.map(function (f) { return '<span class="kp-chip">' + esc(f) + '</span>'; }).join('') + '</div></section>' : '';
+    return '<main class="screen kp-bag">' + topbar(d.title) + '<div class="kp-bag-list">' + cards + '</div>' + foods +
+      '<div class="kp-bag-foot"><p>' + esc(d.scope) + '</p><p>' + esc(d.footer) + '</p></div></main>';
+  };
+
+  /* ---------- 근거 시트(바텀시트): model.sheets[flagId] ---------- */
+  var sheetLayer = null, sheetReturn = null;
+  function sheetBody(s) {
+    var url = safeUrl(s.source && s.source.url), chk = s.source && s.source.checkedAt ? String(s.source.checkedAt).slice(0, 10) : '확인하지 못했어요';
+    var official = s.grade === 'official';
+    return '<span class="kp-badge ' + (official ? 'is-official' : 'is-label') + '">' + (official ? '공식 지정' : '설명서 근거') + '</span>' +
+      '<h3 class="kp-sheet-h">' + esc(s.headline) + '</h3><p class="kp-intro">' + esc(s.intro) + '</p>' +
+      '<blockquote class="kp-quote">' + (s.where ? '<small>' + esc(s.where) + '</small>' : '') + '<p>' + esc(s.excerpt) + '</p></blockquote>' +
+      '<section class="kp-rel"><h3>' + esc(s.relatedTitle) + '</h3><ul>' + (s.related || []).map(function (r) { return '<li><b>' + esc(r.label) + '</b>' + esc((r.names || []).join(', ')) + '</li>'; }).join('') + '</ul></section>' +
+      (s.hintLine ? '<p class="kp-hintline">' + esc(s.hintLine) + '</p>' : '') +
+      '<p class="kp-src"><span>' + esc((s.source && s.source.label) || '') + '</span>' + (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener">원문 보기</a>' : '') + '<span>확인일 ' + esc(chk) + '</span></p>' +
+      '<p class="kp-help">이상 증상이 있으면 약사·의사에게 물어보세요.</p>';
+  }
+  function openSheet(flagId, trigger) {
+    var s = homeModel().sheets[flagId];
+    if (!s) { toast('근거를 불러오지 못했어요'); return; }
+    closeSheet(true);
+    sheetReturn = trigger ? { act: trigger.getAttribute('data-act'), flag: trigger.getAttribute('data-flag') } : null;
+    ui.sheet = flagId;
+    sheetLayer = document.createElement('div');
+    sheetLayer.className = 'kp-layer';
+    sheetLayer.innerHTML = '<div class="kp-scrim" data-act="closeSheet"></div>' +
+      '<div class="kp-sheet" role="dialog" aria-modal="true" aria-labelledby="kp-sheet-title" tabindex="-1"><div class="kp-grab" aria-hidden="true"></div>' +
+      '<div class="kp-sheet-bar"><h2 id="kp-sheet-title">근거</h2><button type="button" class="kp-icbtn" data-act="closeSheet" aria-label="닫기">' + kpIcon('x', 22) + '</button></div>' +
+      '<div class="kp-sheet-body">' + sheetBody(s) + '</div><div class="kp-sheet-foot"><button type="button" class="kp-close" data-act="closeSheet">닫기</button></div></div>';
+    document.body.appendChild(sheetLayer);
+    document.body.style.overflow = 'hidden';
+    root.setAttribute('aria-hidden', 'true'); root.setAttribute('inert', '');
+    sheetLayer.addEventListener('click', onActClick);
+    var x = sheetLayer.querySelector('.kp-icbtn'); if (x) x.focus({ preventScroll: true });
+  }
+  function closeSheet(silent) {
+    if (!sheetLayer) return;
+    sheetLayer.remove(); sheetLayer = null; ui.sheet = null;
+    document.body.style.overflow = '';
+    root.removeAttribute('aria-hidden'); root.removeAttribute('inert');
+    var r = sheetReturn; sheetReturn = null;
+    if (silent === true || !r) return;
+    var back = root.querySelector('[data-act="' + r.act + '"]' + (r.flag ? '[data-flag="' + String(r.flag).replace(/["\\]/g, '\\$&') + '"]' : ''));
+    if (back) back.focus({ preventScroll: true });
+  }
+  function sheetKeys(e) {
+    if (!sheetLayer) return;
+    if (e.key === 'Escape') { e.preventDefault(); closeSheet(); return; }
+    if (e.key !== 'Tab') return;
+    var f = [].filter.call(sheetLayer.querySelectorAll('button,a[href]'), function (n) { return !n.disabled; });
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1], a = document.activeElement;
+    if (!sheetLayer.contains(a)) { e.preventDefault(); first.focus(); }
+    else if (e.shiftKey && a === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && a === last) { e.preventDefault(); first.focus(); }
+  }
+
+  /* ---------- 진료과 한 줄 (처방약을 등록하는 단계 · 내 약 상세에서만) ---------- */
+  var DEPTS = ['내과', '피부과', '이비인후과', '정형외과', '소아과'];
+  function isRx(it) { return it.kind === 'drug' && homeVm().categoryOf(it) === 'rx'; }
+  function deptHtml(it) {
+    if (!isRx(it)) return '';
+    var id = esc(it.id), custom = it.dept && DEPTS.indexOf(it.dept) < 0;
+    if (ui.deptEdit === it.id) {
+      return '<div class="deptq"><p class="lbl">어느 과에서 처방받았어요?</p><div class="dept-in"><label class="sr" for="deptin">진료과 직접 입력</label><input id="deptin" maxlength="20" autocomplete="off" placeholder="예: 신경과" value="' + esc(custom ? it.dept : '') + '">' +
+        '<button type="button" class="add" data-act="deptSave" data-id="' + id + '">저장</button></div></div>';
+    }
+    var chips = DEPTS.map(function (d) {
+      return '<button type="button" class="chip' + (it.dept === d ? ' on' : '') + '" aria-pressed="' + (it.dept === d) + '" data-act="deptPick" data-id="' + id + '" data-dept="' + esc(d) + '">' + esc(d) + '</button>';
+    }).join('') +
+      '<button type="button" class="chip' + (custom ? ' on' : '') + '" aria-pressed="' + !!custom + '" data-act="deptOther" data-id="' + id + '">' + (custom ? esc(it.dept) : '직접 입력') + '</button>' +
+      '<button type="button" class="chip' + (it.deptSkip ? ' on' : '') + '" aria-pressed="' + !!it.deptSkip + '" data-act="deptSkip" data-id="' + id + '">건너뛰기</button>';
+    return '<div class="deptq"><p class="lbl">어느 과에서 처방받았어요?</p><div class="chips">' + chips + '</div></div>';
+  }
 
   VIEWS.list = function () {
     function group(label, items) {
@@ -514,27 +661,12 @@
       '<p class="src"><span>' + esc((ev.source && ev.source.label) || '') + '</span>' + (url ? ' <a href="' + esc(url) + '" target="_blank" rel="noopener">원문 보기</a>' : '') + '<small>확인일 ' + esc(chk || '확인하지 못했어요') + '</small></p></article>';
   }
   var HELP_FOOT = '<p class="evfoot">이상 증상이 있으면 약사·의사에게 물어보세요.</p>';
-  VIEWS.sheet = function () {
-    var m = careModel(), ev = m && m.evidence[ui.params.id];
-    if (!ev) return VIEWS.home();
-    var flag = null;
-    m.slots.forEach(function (s) { s.items.forEach(function (r) { r.flags.forEach(function (f) { if (f.id === ui.params.id && !flag) flag = f; }); }); });
-    var owner = findItem(ui.params.item);
-    var withNames = flag ? flag.withItemIds.map(function (id) { var x = findItem(id); return x ? nm(x) : ''; }).filter(Boolean) : [];
-    /* 읽기 전용: 이 규칙에 해당하는 시간 제안이 있으면 원문 아래에 한 줄(버튼 없음) */
-    var sugg = ((m.suggestions || []).filter(function (x) { return x.ruleId === ui.params.id && x.itemId !== ui.params.item; })).map(function (x) {
-      var o = findItem(x.itemId); return o ? '<p class="evsugg">' + esc(nm(o) + ' · ' + x.suggestTime + ' 이후에 드시면 안내된 간격 이상이에요') + '</p>' : '';
-    }).join('');
-    return '<main class="screen sheet">' + topbar('근거') +
-      (owner ? '<p class="evwho">' + esc(nm(owner)) + (withNames.length ? ' · 함께 등록한 것: ' + esc(withNames.join(', ')) : '') + '</p>' : '') +
-      evidenceCard(ev, sugg).replace('<h2 class="evh">', '<h1 class="evh" data-focus>').replace('</h2>', '</h1>') + HELP_FOOT + '</main>';
-  };
   VIEWS.detail = function () {
     var item = findItem(ui.params.id);
     if (!item) return VIEWS.home();
     var m = careModel(), ix = m ? indexModel(m) : null, r = ix && ix.rows[item.id] ? ix.rows[item.id][0] : null;
     var t = activeTimes(item);
-    var html = '<main class="screen">' + topbar() + '<h1 class="h" data-focus>' + esc(nm(item)) + '</h1><p class="sub">' + esc(kindLabel(item)) + ' · ' + esc(t.length ? t.join(' · ') : '시간 미정') + '</p>';
+    var html = '<main class="screen">' + topbar() + '<h1 class="h" data-focus>' + esc(nm(item)) + '</h1><p class="sub">' + esc(kindLabel(item)) + ' · ' + esc(t.length ? t.join(' · ') : '시간 미정') + '</p>' + deptHtml(item);
     if (loadingNow()) {
       html += '<div class="card"><h4>준비 중이에요</h4><p>약 목록과 설명서 기반 안내를 불러오면 여기에 보여드려요.</p></div>';
     } else if (!m) {
@@ -619,6 +751,7 @@
     var y = window.scrollY;
     var v = (VIEWS[ui.view] || VIEWS.home)();
     root.innerHTML = v;
+    if (ui.view === 'home') { ui.homeSig = homeSig(v); afterHome(); }
     clearTimeout(splashTimer);
     if (ui.view === 'splash') splashTimer = setTimeout(function () { if (ui.view === 'splash') go('welcome'); }, 1600);
     if (top === false) window.scrollTo(0, y);
@@ -629,6 +762,7 @@
     }
   }
   function go(view, params, keepScroll) {
+    closeSheet(true);
     ui.prev = { view: ui.view, params: ui.params };
     ui.view = view; ui.params = params || {};
     ui.more = false;
@@ -678,13 +812,33 @@
     agreeNext: function () { if (!ui.agree) return; state.agreedAt = new Date().toISOString(); save(); go('onb-drugs'); },
     skip: function (t) { Acts.to(t); },
     toggleSlot: function (t) {
-      var id = t.dataset.id; ui.open[id] = !ui.open[id];
-      t.setAttribute('aria-expanded', String(!!ui.open[id]));
-      var b = document.getElementById('slot-' + id);
-      if (b) { if (ui.open[id]) b.removeAttribute('hidden'); else b.setAttribute('hidden', ''); }
-      var li = t.closest('.slot'); if (li) li.classList.toggle('open', !!ui.open[id]);
+      var id = t.dataset.id, open = t.getAttribute('aria-expanded') !== 'true';
+      ui.open[id] = open;
+      t.setAttribute('aria-expanded', String(open));
+      var b = document.getElementById('kp-slot-' + id);
+      if (b) { if (open) b.removeAttribute('hidden'); else b.setAttribute('hidden', ''); }
+      var sec = t.closest('.kp-slot'); if (sec) sec.classList.toggle('is-open', open);
+      ui.homeSig = homeSig(VIEWS.home());
     },
-    sheet: function (t) { go('sheet', { id: t.dataset.id, item: t.dataset.item }); },
+    /* 체크: 해제하면 키를 지운다. 체크해도 카드가 갑자기 접히지 않도록 지금 보이는 펼침 상태를 먼저 고정한다. */
+    toggleCheck: function (t) {
+      var id = t.dataset.id, c = loadChecks();
+      [].forEach.call(root.querySelectorAll('.kp-slot-head'), function (h) { ui.open[h.dataset.id] = h.getAttribute('aria-expanded') === 'true'; });
+      if (c[id]) delete c[id]; else c[id] = true;
+      saveChecks(c); renderKeepingFocus();
+    },
+    toggleNotice: function (t) { ui.noticeOpen[t.dataset.id] = !ui.noticeOpen[t.dataset.id]; renderKeepingFocus(); },
+    openBag: function (t) { ui.homeScroll = window.scrollY; go('bag', { id: t.dataset.id }); },
+    openSheet: function (t) { openSheet(t.dataset.flag, t); },
+    closeSheet: function () { closeSheet(); },
+    deptPick: function (t) { setDept(t.dataset.id, { dept: t.dataset.dept }); },
+    deptSkip: function (t) { setDept(t.dataset.id, { skip: true }); },
+    deptOther: function (t) { ui.deptEdit = t.dataset.id; redrawDept(); var i = document.getElementById('deptin'); if (i) i.focus(); },
+    deptSave: function (t) {
+      var i = document.getElementById('deptin'), v = i ? i.value.trim().slice(0, 20) : '';
+      ui.deptEdit = null;
+      if (v) setDept(t.dataset.id, { dept: v }); else redrawDept();
+    },
     demo: function () {
       function run() { loadExample(); go('home'); }
       if (ui.dur.status !== 'loading') return run();
@@ -699,7 +853,11 @@
       go(v, p);
     },
     nav: function (t) { var p = {}; if (t.dataset.scope) p.scope = t.dataset.scope; go(t.dataset.view, p); },
-    back: function () { var p = ui.prev; if (!p || p.view === ui.view) go(state.items.length ? 'home' : 'welcome'); else go(p.view, p.params); },
+    back: function () {
+      var p = ui.prev;
+      if (!p || p.view === ui.view) go(state.items.length ? 'home' : 'welcome'); else go(p.view, p.params);
+      if (ui.view === 'home') window.scrollTo(0, ui.homeScroll || 0);
+    },
     detail: function (t) { go('detail', { id: t.dataset.id }); },
     newRx: function (t) { go('add', { batch: t.dataset.batch || newBatchId() }); },
     demoRx: function () { go('notify'); },
@@ -823,13 +981,41 @@
     [].forEach.call(root.querySelectorAll('.tipbtn'), function (b) { b.setAttribute('aria-expanded', 'false'); });
   }
 
-  root.addEventListener('click', function (e) {
+  function onActClick(e) {
     if (!e.target.closest('.tipwrap')) closeTips();
     var t = e.target.closest('[data-act]');
     if (!t || t.disabled) return;
     var f = Acts[t.getAttribute('data-act')];
     if (f) f(t, e);
-  });
+  }
+  root.addEventListener('click', onActClick);
+
+  /* 다시 그리되(체크·펼침·1분마다 갱신) 포커스가 있던 버튼으로 돌려놓는다 */
+  function renderKeepingFocus() {
+    var a = document.activeElement, sel = null;
+    if (a && root.contains(a) && a.getAttribute && a.getAttribute('data-act')) {
+      var q = function (v) { return String(v).replace(/["\\]/g, '\\$&'); };
+      sel = '[data-act="' + q(a.getAttribute('data-act')) + '"]' + (a.dataset.id ? '[data-id="' + q(a.dataset.id) + '"]' : '') + (a.dataset.flag ? '[data-flag="' + q(a.dataset.flag) + '"]' : '');
+    }
+    render(false);
+    var n = sel && root.querySelector(sel); if (n) n.focus({ preventScroll: true });
+  }
+  /* 앱을 열어 둔 동안 1분마다, 그리고 앱으로 돌아올 때 지금 시각을 다시 넣어 홈을 다시 그린다(달라진 것이 있을 때만) */
+  function tickHome() {
+    if (ui.view !== 'home' || ui.sheet || document.hidden || ui.copy.status === 'loading') return;
+    if (homeSig(VIEWS.home()) !== ui.homeSig) renderKeepingFocus();
+  }
+  setInterval(tickHome, 60000);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) tickHome(); });
+  document.addEventListener('keydown', sheetKeys);
+
+  /* 진료과 저장 */
+  function setDept(id, o) {
+    var it = findItem(id); if (!it) return;
+    if (o.dept) { it.dept = o.dept; delete it.deptSkip; } else { delete it.dept; it.deptSkip = true; }
+    it.updatedAt = new Date().toISOString(); save(); redrawDept();
+  }
+  function redrawDept() { if (document.getElementById('selected')) refreshLists(); else renderKeepingFocus(); }
   root.addEventListener('input', function (e) {
     var t = e.target, k = t.getAttribute && t.getAttribute('data-input');
     if (k === 'search') { ui.q = t.value; clearTimeout(searchTimer); searchTimer = setTimeout(runSearch, 150); }
@@ -860,16 +1046,19 @@
     else if (id === 'cq') Acts.addQ();
     else if (id === 'oq') Acts.searchOverseas();
     else if (id === 'mname') Acts.manualSupp();
+    else if (id === 'deptin' && ui.deptEdit) Acts.deptSave({ dataset: { id: ui.deptEdit } });
   });
 
   ui.view = state.items.length ? 'home' : 'splash';
   var durReady = bootDur();   // 약 목록은 첫 화면과 상관없이 바로 불러오기 시작
   var careReady = bootCare(); // 설명서 기반 안내 데이터는 약 목록이 온 뒤 읽는다
+  var copyReady = bootCopy(); // 홈 문구(data/copy/greeting.json)
+  bootLogo();                 // assets/brand/keeping-logo.svg 가 있을 때만 인라인으로 쓴다
   /* 첫 화면은 글꼴(SUIT)이 도착한 뒤에 그린다(최대 1.2초). 글꼴이 늦게 와서 문단이 다시 줄바꿈되며 화면이 튀는 것을 막는다. */
   var booted = false;
   function boot() { if (booted) return; booted = true; render(true); }
   if (document.fonts && document.fonts.load) {
     Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + ' 16px SUIT'); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
   } else boot();
-  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, careModel: careModel, careItems: careItems };
+  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, loadChecks: loadChecks, render: render };
 })();

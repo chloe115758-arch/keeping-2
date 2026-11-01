@@ -98,12 +98,13 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       await page.evaluate(() => KeepingApp.go('welcome')); await page.click('[data-act="demo"]'); await page.waitForSelector('.nav');
       let r = await R();
       check(`${w}: 홈 — 하단 탭이 열 안`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
-      const home = await page.evaluate(() => { const rc = (e) => { const r = e.getBoundingClientRect(); return { x: r.left, r: r.right, w: r.width, h: r.height, y: r.top }; }; return { card: rc(document.querySelector('.home-card')), bar: rc(document.querySelector('.home-bar')), cards: [...document.querySelectorAll('.slot-row .slot')].map(rc), chks: [...document.querySelectorAll('.slot-head')].map(rc), tabs: [...document.querySelectorAll('.nav button')].map(rc) }; });
-      check(`${w}: 홈 — 민트 상단바·상단 카드가 열 폭 전체`, Math.abs(home.card.w - r.app.w) <= 1 && Math.abs(home.bar.w - r.app.w) <= 1);
-      check(`${w}: 홈 — 시간대 카드: 왼쪽은 시간 라벨 46 + 선 28 뒤(16+74), 오른쪽은 16px`, home.cards.length >= 2 && home.cards.every((c) => Math.abs(c.x - (r.app.x + 16 + 74)) <= 1 && Math.abs(r.app.r - 16 - c.r) <= 1));
+      const home = await page.evaluate(() => { const rc = (e) => { const r = e.getBoundingClientRect(); return { x: r.left, r: r.right, w: r.width, h: r.height, y: r.top }; }; return { card: rc(document.querySelector('.kp-hello')), bar: rc(document.querySelector('.kp-top')), cards: [...document.querySelectorAll('.kp-row--slot .kp-slot')].map(rc), chks: [...document.querySelectorAll('.kp-slot-head')].map(rc), boxes: [...document.querySelectorAll('.kp-check')].map(rc).filter((b) => b.w > 0), btn: rc(document.querySelector('.kp-add')), tabs: [...document.querySelectorAll('.nav button')].map(rc) }; });
+      check(`${w}: 홈 — 인사 카드 좌우 18px, 상단바가 열 안`, Math.abs(home.card.x - (r.app.x + 18)) <= 1 && Math.abs(r.app.r - 18 - home.card.r) <= 1 && home.bar.w <= r.app.w);
+      check(`${w}: 홈 — 시간대 카드: 왼쪽은 시간 라벨+선 뒤(18+34+32), 오른쪽은 18px`, home.cards.length >= 2 && home.cards.every((c) => Math.abs(c.x - (r.app.x + 84)) <= 1 && Math.abs(r.app.r - 18 - c.r) <= 1));
+      check(`${w}: 홈 — 체크 터치 영역 44px 이상, 맨 아래 버튼 높이 56`, home.boxes.length >= 1 && home.boxes.every((b) => b.w >= 44 && b.h >= 44) && Math.abs(home.btn.h - 56) <= 1);
       check(`${w}: 홈 — 시간대 카드 헤더(펼침 버튼) 높이 56px 이상`, home.chks.length >= 2 && home.chks.every((c) => c.w >= 44 && c.h >= 56));
       check(`${w}: 홈 — 하단 탭 3개가 열 폭을 나눠 가짐(터치 영역 44px 이상)`, home.tabs.length === 3 && home.tabs.every((t) => t.w >= 44 && t.h >= 44) && Math.abs(home.tabs[0].x - r.app.x) <= 1 && Math.abs(home.tabs[2].r - r.app.r) <= 1);
-      await page.click('[data-act="demoRx"]'); await page.click('[data-act="demoConfirm"]'); await page.waitForSelector('.mchip.new', { state: 'attached' });
+      await page.click('[data-act="demoRx"]'); await page.click('[data-act="demoConfirm"]'); await page.waitForSelector('.kp-hello', { state: 'attached' });
       r = await R();
       check(`${w}: 새 처방 표시가 붙은 홈 — 하단 탭이 열 안, 가로 넘침 없음`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
       check(`${w}: 오류 없음`, errs.length === 0, errs.join(' | '));
