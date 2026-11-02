@@ -3,6 +3,19 @@
 :root {
   --kp-bg-page: #FFFFFF;
   --kp-bg-outer: #EEF0F3;
+  --kp-splash-bg: #F3FFFC;
+  --kp-logo-splash: #35B89A;
+  --kp-tagline: #57B49F;
+  --kp-brand-ink: #239B80;
+  --kp-text-body: #4F4F4F;
+  --kp-consent-bg: #E8FAF6;
+  --kp-consent-bg-off: #FAFAFB;
+  --kp-disabled-bg: #E0E0E0;
+  --kp-disabled-text: #828282;
+  --kp-field-border: #E0E0E0;
+  --kp-field-focus: #7ADFC3;
+  --kp-link: #4990EF;
+  --kp-warn: #EB5757;
   --kp-surface: #FFFFFF;
   --kp-surface-sub: #F3F4F6;
   --kp-border: #ECEEF1;
@@ -11,8 +24,8 @@
   --kp-brand-weak: #E3F8F2;
   --kp-text: #17191C;
   --kp-text-sub: #6B7280;
-  --kp-cta-bg: #34D1B0;
-  --kp-cta-text: #073D31;
+  --kp-cta-bg: #52CEB0;
+  --kp-cta-text: #FFFFFF;
   --kp-caution-text: #C2261D;
   --kp-caution-bg: #FFF1EF;
   --kp-info-text: #1D5FD8;

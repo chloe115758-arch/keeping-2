@@ -49,6 +49,19 @@ ACTIVE_PRESET: B
 |---|---|---|---|---|---|
 | `--kp-bg-page` | `#E8FAF6` | `#FFFFFF` | | 앱 안쪽 배경 (B: 흰색. 카드는 테두리 선과 그림자로 구분) | ✏ |
 | `--kp-bg-outer` | `#DFE3E6` | `#EEF0F3` | | 데스크톱 브라우저에서 앱 프레임 **바깥** 배경. 프레임이 도드라지게 하는 색 (폭 480px 이하에서는 안 보여요) | ✏ |
+| `--kp-splash-bg` | `#E8FAF6` | `#F3FFFC` | | 스플래시 배경 (시안 01) | ✏ |
+| `--kp-logo-splash` | `#35B89A` | `#35B89A` | | 스플래시의 큰 로고 색 | ✏ |
+| `--kp-tagline` | `#57B49F` | `#57B49F` | | 스플래시 위 한 줄 글자 | ✏ |
+| `--kp-brand-ink` | `#177A63` | `#239B80` | | 환영 화면 작은 로고·강조 글자 | ✏ |
+| `--kp-text-body` | `#6B6D74` | `#4F4F4F` | | 환영·약관의 본문 글자 | ✏ |
+| `--kp-consent-bg` | `#BCF0E4` | `#E8FAF6` | | 동의 줄(체크했을 때)·선택된 결과 줄·진행 바 바탕 | ✏ |
+| `--kp-consent-bg-off` | `#EEF0F0` | `#FAFAFB` | | 동의 줄(체크 전)·주의사항 줄 | ✏ |
+| `--kp-disabled-bg` | `#EEF0F0` | `#E0E0E0` | | 비활성 버튼·체크 전 체크박스 | ✏ |
+| `--kp-disabled-text` | `#6B6D74` | `#828282` | | 비활성 버튼 글자 | ✏ |
+| `--kp-field-border` | `#E6E6E6` | `#E0E0E0` | | 입력칸·보조 버튼·칩 테두리 | ✏ |
+| `--kp-field-focus` | `#52CEB0` | `#7ADFC3` | | 입력 중인 검색창 테두리 | ✏ |
+| `--kp-link` | `#1A64C7` | `#4990EF` | | 약 정보 줄의 파란 글자 | ✏ |
+| `--kp-warn` | `#C62828` | `#EB5757` | | 복용법 입력의 "주의사항" 줄 아이콘·글자 | ✏ |
 | `--kp-surface` | `#FAFAFB` | `#FFFFFF` | | 시간대 카드·시트 | ✏ |
 | `--kp-surface-sub` | `#EEF0F0` | `#F3F4F6` | | 칩·아이콘 칸·인용 블록 | ✏ |
 | `--kp-border` | `#E6E6E6` | `#ECEEF1` | | 구분선·테두리 | ✏ |
@@ -57,8 +70,8 @@ ACTIVE_PRESET: B
 | `--kp-brand-weak` | `#BCF0E4` | `#E3F8F2` | | 연한 포인트 면(새 처방 칩 등) | ✏ |
 | `--kp-text` | `#111111` | `#17191C` | | 제목·본문 | ✏ · 대비 4.5 vs --kp-surface |
 | `--kp-text-sub` | `#6B6D74` | `#6B7280` | | 보조 글씨 | ✏ · 대비 4.5 vs --kp-surface |
-| `--kp-cta-bg` | `#52CEB0` | `#34D1B0` | | 하단 주 버튼 (B: 민트로 통일) | ✏ |
-| `--kp-cta-text` | `#111111` | `#073D31` | | 주 버튼 글씨 | ✏ · 대비 4.5 vs --kp-cta-bg |
+| `--kp-cta-bg` | `#52CEB0` | `#52CEB0` | | 하단 주 버튼 (B: 민트로 통일) | ✏ |
+| `--kp-cta-text` | `#111111` | `#FFFFFF` | | 주 버튼 글씨 (시안: 흰색. 민트 위 흰 글자는 대비가 낮아요(약 1.9)) | ✏ · 대비 4.5 vs --kp-cta-bg |
 | `--kp-caution-text` | `#C62828` | `#C2261D` | | 주의 글씨·아이콘 | ✏ · 대비 4.5 vs --kp-caution-bg |
 | `--kp-caution-bg` | `#FDECEC` | `#FFF1EF` | | 주의 줄 배경 | ✏ |
 | `--kp-info-text` | `#1A64C7` | `#1D5FD8` | | 정보 글씨(음식 줄·링크) | ✏ · 대비 4.5 vs --kp-surface |
