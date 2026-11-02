@@ -692,7 +692,10 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 
 /* ---------- 환영(시안 02) · 내 정보 저장 안내(시안 03·04) ---------- */
 .screen.obwelcome{padding-left:41px;padding-right:24px}
-.obw-logo{margin-top:64px;height:20px;font:700 16px/20px var(--kp-font);letter-spacing:-.02em;color:var(--kp-brand-ink)}
+/* 로고: 인라인·fetch 없이 CSS mask. 같은 요소 하나가 187×52(스플래시)에서 scale(.3155)로 줄어 59×16(환영 자리)이 된다.
+   mask는 파일의 알파만 쓰고 색은 color(currentColor)가 정한다. 주소는 css 파일 기준이라 ../assets. 글자 "Keeping"은 mask가 적용되면 같은 색 위라 보이지 않고, 파일을 못 읽으면(.nologo) 글자로 보인다 */
+.obw-logo{margin-top:64px;margin-bottom:-32px;width:187px;height:52px;transform-origin:0 0;transform:scale(.315508);color:var(--kp-brand-ink);background-color:currentColor;-webkit-mask:url(../assets/brand/keeping-logo.svg) no-repeat center / contain;mask:url(../assets/brand/keeping-logo.svg) no-repeat center / contain}
+.nologo .obw-logo{background:none;-webkit-mask:none;mask:none;font:700 51px/52px var(--kp-font);letter-spacing:-.02em;white-space:nowrap}
 .obw-h{margin-top:8px;font:700 32px/47px var(--kp-font);letter-spacing:-.02em;color:#111}
 .obw-h em{font-style:normal;color:var(--kp-brand-ink)}
 .obw-p{margin-top:21px;font:400 15.5px/26px var(--kp-font);letter-spacing:0;color:var(--kp-text-body)}
@@ -725,7 +728,6 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .app{position:relative}
 .sp-ov{position:absolute;inset:0;z-index:50;background:var(--kp-splash-bg)}
 .sp-tag{position:absolute;left:0;right:0;top:392px;text-align:center;font:400 16px/20px var(--kp-font);letter-spacing:var(--kp-ls);color:var(--kp-tagline)}
-.obw-logo svg{display:block;width:59px;height:auto;fill:currentColor}
-.obwelcome.splashing .obw-logo{position:relative;z-index:60;width:max-content;transform-origin:0 0;will-change:transform;opacity:0}
+.obwelcome.splashing .obw-logo{position:relative;z-index:60;will-change:transform;opacity:0}
 .obwelcome.splashing .obw-h,.obwelcome.splashing .obw-p,.obwelcome.splashing ~ .actionbar{opacity:0}
 .sp-ov ~ *{pointer-events:none}
