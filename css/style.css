@@ -643,7 +643,7 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .dose-photo{flex:none;width:46px;height:46px;display:grid;place-items:center;border:1px solid var(--kp-border);border-radius:12px;color:var(--kp-link)}
 .dose-name{min-width:0;display:grid;gap:2px}
 .dose-name b{font:700 16px/1.4 var(--kp-font);color:var(--kp-text);overflow-wrap:anywhere}
-.dose-name span{font:400 11px/1.4 var(--kp-font);color:var(--kp-link);overflow-wrap:anywhere}
+.dose-name span{font:400 11px/1.4 var(--kp-font);color:var(--kp-link);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .dose-sec{margin-top:36px;padding:0 15px}
 .dose-sec:first-of-type{margin-top:35px}
 .dose-sec:first-of-type h2{font-size:18px;line-height:26px;margin-bottom:13px}

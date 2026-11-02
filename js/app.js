@@ -862,7 +862,7 @@
   /* 횟수를 줄이면 먼저 고른 시각부터 남기고 나머지는 해제 */
   function rxTrim(r) { Object.keys(r.slots).slice(rxMax(r)).forEach(function (id) { delete r.slots[id]; }); }
   function rxReady(r) { return r.count === 'prn' || (rxNeed(r) >= 1 && Object.keys(r.slots).length === rxMax(r)); }
-  function subOf(it) { return it.productCode ? [it.ingredientEn, it.category].filter(Boolean).join(' · ') : kindLabel(it); }
+  function subOf(it) { return it.productCode ? [window.KeepingDrugName.englishName(it.ingredientEn), it.category].filter(Boolean).join(' · ') : kindLabel(it); }
   function doseGroupHtml(g, r) {
     if (g === 'count') {
       return DOSE_COUNTS.map(function (c) {
