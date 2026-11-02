@@ -46,6 +46,10 @@ const start = () => { A().state().items = []; A().go('add', { batch: 'b' }); A()
   const it = A().state().items[0];
   check('저장: times · timesPerDay · meal이 항목에 들어가고 목록에 담김, prn 없음', !!it && it.times.join() === '07:30,19:30' && it.timesPerDay === 2 && it.meal === 'any' && !('prn' in it));
 
+  start(); click(chip('doseCount', '3')); pickSlot('dinner'); pickSlot('morning'); pickSlot('lunch'); click(chip('doseCount', '2'));
+  check('횟수를 줄이면 먼저 고른 시각부터 남고 나머지는 해제(3→2: 저녁·아침 남고 점심 해제)', slot('dinner').getAttribute('aria-checked') === 'true' && slot('morning').getAttribute('aria-checked') === 'true' && slot('lunch').getAttribute('aria-checked') !== 'true' && save().disabled === false);
+  click(chip('doseCount', '1'));
+  check('2→1: 저녁만 남음', slot('dinner').getAttribute('aria-checked') === 'true' && slot('morning').getAttribute('aria-checked') !== 'true');
   start(); click(chip('doseCount', '1')); pickSlot('lunch');
   check('1회: 1개만 고르면 활성, 나머지 칩은 선택 불가', save().disabled === false && slot('morning').getAttribute('aria-disabled') === 'true');
   click(chip('doseCount', 'prn'));

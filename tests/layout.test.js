@@ -84,14 +84,16 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
         check(`${w}: ${label} — 하단 영역 안의 요소가 영역을 벗어나지 않음`, kids.every((k) => k.y >= bar.y - 0.5 && k.b <= bar.b + 0.5 && k.x >= bar.x - 0.5 && k.r <= bar.r + 0.5));
         let overlap = false; for (let i = 0; i < kids.length; i++) for (let j = i + 1; j < kids.length; j++) { const a = kids[i], c = kids[j]; if (a.x < c.r - 0.5 && c.x < a.r - 0.5 && a.y < c.b - 0.5 && c.y < a.b - 0.5) overlap = true; }
         check(`${w}: ${label} — 하단 영역 안의 버튼끼리 겹치지 않음`, !overlap);
-        check(`${w}: ${label} — 제목 왼쪽이 열 안쪽 --kp-gap-page`, !r.h1 || Math.abs(r.h1.x - (r.app.x + GAP)) <= 1);
+        check(`${w}: ${label} — 제목 왼쪽이 열 안쪽 --kp-gap-page`, !r.h1 || Math.abs(r.h1.x - (r.app.x + (label === '약 검색' ? 16 : GAP))) <= 1);   // 시안 화면(약 검색)은 좌우 16px
         return r;
       };
       await page.click('[data-act="start"]'); await page.waitForSelector('.agree'); await barOK('저장 안내');
       await page.click('[data-act="agree"]'); await page.click('#agreenext'); await page.waitForSelector('#nextbtn');
       const drugs = await barOK('약 검색');
-      check(`${w}: 약 검색 — 다음 버튼 높이 56, 하단 영역에 건너뛰기 없음`, await page.evaluate(() => { const n = document.querySelector('#nextbtn').getBoundingClientRect(); return Math.abs(n.height - 56) <= 1 && !document.querySelector('.skipbtn'); }));
-      check(`${w}: 약 검색 — 화면에 "건너뛰기"가 없음`, await page.evaluate(() => !/건너뛰기/.test(document.getElementById('app').textContent)));
+      check(`${w}: 약 검색 — 다음 버튼 높이 50, 하단 영역에 건너뛰기`, await page.evaluate(() => { const n = document.querySelector('#nextbtn').getBoundingClientRect(); return Math.abs(n.height - 50) <= 1 && !!document.querySelector('.skipbtn'); }));
+      check(`${w}: 약 검색 — 위·아래 "건너뛰기" 2개`, await page.evaluate(() => document.querySelectorAll('[data-act="skip"]').length === 2));
+      { const top = () => page.evaluate(() => Math.round(document.querySelector('.obs-field').getBoundingClientRect().top - document.getElementById('app').getBoundingClientRect().top)); const t0 = await top(); await page.fill('#q', '글리메'); await page.waitForTimeout(500); const t1 = await top();
+        check(`${w}: 약 검색 — 검색창 y=289, 입력 전후 같은 자리(화면이 밀리지 않음)`, t0 === 289 && t1 === 289, `${t0}→${t1}`); await page.fill('#q', ''); }
       await page.evaluate(() => { KeepingApp.state().items.push({ id: 'lt1', kind: 'drug', source: 'manual', name: '레이아웃약', times: ['07:30'], batch: null }); KeepingApp.go('onb-drugs'); }); await page.click('#nextbtn'); await page.waitForSelector('.manual-chip'); await barOK('영양제');
       await page.click('.skipbtn'); await page.waitForSelector('.kp-top');
 

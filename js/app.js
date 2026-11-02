@@ -117,8 +117,18 @@
       return it.kind === 'supp' && it.reportNo && x.supp && it.reportNo === x.supp.reportNo;
     });
   }
+  /* 온보딩 약 검색(시안 05~07): 검색어와 같은 앞부분만 민트, 줄 하나만 선택, [다음]에서 복용법 입력으로 */
+  function obDrug() { return ui.view === 'onb-drugs' && ui.params.mode !== 'edit'; }
+  function obResultsHtml(r) {
+    var q = ui.q.trim().toLowerCase();
+    return r.map(function (x, i) {
+      var added = isAdded('drug', x), on = ui.pickI === i, n = x.name, hl = q && n.toLowerCase().indexOf(q) === 0 ? '<em>' + esc(n.slice(0, q.length)) + '</em>' + esc(n.slice(q.length)) : esc(n);
+      return '<button type="button" class="obs-res' + (on ? ' on' : '') + (added ? ' done' : '') + '" aria-pressed="' + on + '" data-act="selRes" data-i="' + i + '"' + (added ? ' disabled' : '') + '>' + hl + '</button>';
+    }).join('');
+  }
   function resultsHtml(kind) {
     var r = ui.results;
+    if (obDrug() && (!ui.q.trim() || ui.dur.status === 'loading' || r === null)) return '';
     if (!ui.q.trim() && kind === 'drug') return '';   // 영양제는 검색창이 비어도 자주 찾는 성분을 보여 준다
     if (kind === 'drug' && ui.dur.status === 'loading') return ''; // 안내는 #durstat에 있고, 로딩이 끝나면 자동으로 다시 찾는다
     if (r === null) return '<p class="muted pad">불러오는 중…</p>';
@@ -132,6 +142,7 @@
       }
       return html;
     }
+    if (obDrug()) return html + obResultsHtml(r);   // 시안 06·07: 이름만 보이는 줄, 힌트·"그대로 등록" 줄 없음
     if (kind === 'drug') html += '<p class="res-hint">함량이 달라도 주의 안내는 같은 성분 기준으로 찾아요</p>';
     html += r.map(function (x, i) {
       var added = isAdded(kind, x);
@@ -253,8 +264,7 @@
     var r = document.getElementById('results'); if (r) r.innerHTML = resultsHtml(kind);
     var s = document.getElementById('selected'); if (s) s.innerHTML = selectedHtml(kind);
     var n = document.getElementById('nextbtn');
-    if (n && (ui.view === 'add' || ui.view === 'onb-drugs')) n.disabled = selectedItems('drug').length === 0;
-    if (n && ui.view === 'onb-supps') n.disabled = selectedItems('supp').length === 0;
+        if (n && ui.view === 'onb-supps') n.disabled = selectedItems('supp').length === 0;
     var c = document.getElementById('selcount'); if (c) c.textContent = selectedItems(kind).length;
   }
   function needsSearch() {
@@ -265,11 +275,11 @@
     var kind = currentKind();
     var token = ++ui.searchToken;
     var q = ui.q.trim();
-    if (!q && kind === 'drug') { ui.results = []; ui.remote = null; ui.more = false; refreshLists(); return; }
+    if (!q && kind === 'drug') { ui.results = []; ui.remote = null; ui.more = false; ui.pickI = -1; refreshLists(); return; }
     if (kind === 'drug' && ui.dur.status === 'loading') return;
     (kind === 'drug' ? Api.searchDrugs(q) : Api.searchSupplements(q)).then(function (res) {
       if (token !== ui.searchToken) return;
-      ui.results = res.results; ui.remote = res.remote; ui.more = !!res.more;
+      ui.results = res.results; ui.remote = res.remote; ui.more = !!res.more; ui.pickI = -1;
       refreshLists();
     });
   }
@@ -299,7 +309,20 @@
       actionBar('<button type="button" id="agreenext" class="cta" data-act="agreeNext"' + (on ? '' : ' disabled') + '>다음</button>');
   };
 
+  var OB_BACK = '<svg width="10" height="18" viewBox="0 0 10 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 1L1.5 9 9 17"/></svg>';
+  var OB_SEARCH = '<svg class="obs-ic" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><circle cx="8.8" cy="8.8" r="6.9"/><path d="M14 14l4.6 4.6"/></svg>';
+  function obSearchView() {
+    return '<main class="screen obscreen obsearch"><div class="obs-top"><button type="button" class="dose-back" data-act="back" aria-label="이전 화면으로">' + OB_BACK + '</button>' +
+      '<div class="obs-bar" role="img" aria-label="진행 60%"><i></i></div><button type="button" class="obs-skip" data-act="skip" data-view="onb-supps">건너뛰기</button></div>' +
+      '<h1 class="obs-h" data-focus>복용 중인 처방약을<br>검색해서 추가해주세요.</h1><p class="obs-sub">약 이름이나 성분명으로 찾을 수 있어요.</p>' +
+      '<div class="obs-field' + (ui.q ? ' has-q' : '') + '"><label class="sr" for="q">약 이름 및 성분 검색</label>' + OB_SEARCH +
+      '<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="약 이름 및 성분 검색 (예: 메타포르민정)" value="' + esc(ui.q) + '" data-input="search">' +
+      '<button type="button" class="obs-x" data-act="clearQ" aria-label="검색어 지우기">' + '<svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M1 1l8 8M9 1L1 9"/></svg></button></div>' +
+      '<div id="durstat" aria-live="polite">' + durHtml() + '</div><div id="results" class="obs-list" aria-live="polite">' + resultsHtml('drug') + '</div></main>' +
+      actionBar(skipBtn('onb-supps') + '<button type="button" id="nextbtn" class="cta" data-act="obNext">다음</button>', 'ob');
+  }
   VIEWS['onb-drugs'] = function () {
+    if (obDrug()) return obSearchView();
     var edit = ui.params.mode === 'edit', n = selectedItems('drug').length;
     return '<main class="screen has-bar">' + (edit ? topbar() : obHead(1) + stepChip(1)) +
       '<h1 class="h' + (edit ? '' : ' ob') + '" data-focus>' + (edit ? '지금 먹는 약' : '복용 중인 약을 검색해서 추가해 주세요') + '</h1><p class="sub' + (edit ? '' : ' ob') + '">' + (edit ? '먹는 약을 더하거나 뺄 수 있어요.' : '약 이름이나 성분명으로 찾을 수 있어요.') + '</p>' +
@@ -797,6 +820,8 @@
   /* shortcut: "언제" 칩은 3개뿐이라 4회 이상이면 3개를 고르면 저장된다(횟수는 그대로 timesPerDay에), 시안·설명서에 4회 이상 처리 없음 */
   function rxNeed(r) { return r.count === 'custom' ? +r.n : +r.count; }
   function rxMax(r) { var n = rxNeed(r); return n >= 1 ? Math.min(n, 3) : 3; }
+  /* 횟수를 줄이면 먼저 고른 시각부터 남기고 나머지는 해제 */
+  function rxTrim(r) { Object.keys(r.slots).slice(rxMax(r)).forEach(function (id) { delete r.slots[id]; }); }
   function rxReady(r) { return r.count === 'prn' || (rxNeed(r) >= 1 && Object.keys(r.slots).length === rxMax(r)); }
   function subOf(it) { return it.productCode ? [it.ingredientEn, it.category].filter(Boolean).join(' · ') : kindLabel(it); }
   function doseGroupHtml(g, r) {
@@ -974,7 +999,7 @@
     ui.prev = { view: ui.view, params: ui.params };
     ui.view = view; ui.params = params || {};
     ui.more = false;
-    ui.q = ''; ui.results = null; ui.remote = null; ui.chips = []; ui.manualName = ''; ui.manualCompany = ''; ui.manualOpen = false;
+    ui.q = ''; ui.pickI = -1; ui.results = null; ui.remote = null; ui.chips = []; ui.manualName = ''; ui.manualCompany = ''; ui.manualOpen = false;
     render(!keepScroll);
     runSearch();
   }
@@ -1051,6 +1076,14 @@
     if (add) markNewRx([it.id], true); else save();
     ui.draft = null;
     if (add) { go('home'); toast(nm(it) + ' 담았어요'); } else { if (!backOne()) go(d.fromView, d.fromParams); toast(nm(it) + ' 담았어요'); }
+  }
+  function drugItemOf(x) {
+    if (x.source === 'dur') {
+      var di = Pack.dur && Pack.dur.toItem(x.code);
+      if (!di) { toast('이 약을 불러오지 못했어요'); return null; }
+      return newItem(di);
+    }
+    return newItem({ kind: 'drug', source: x.source, itemSeq: x.itemSeq, name: x.name, ingredientKo: x.ingredientKo || null, type: x.type || null });
   }
   var Acts = {
     start: function () { ui.agree = false; go('consent'); },
@@ -1155,7 +1188,7 @@
       r.count = t.dataset.v;
       if (r.count === 'prn') r.slots = {};
       if (r.count === 'custom') r.n = '';
-      syncDose();
+      rxTrim(r); syncDose();
       var f = r.count === 'custom' ? document.getElementById('dcount') : root.querySelector('[data-act="doseCount"][data-v="' + r.count + '"]');
       if (f) f.focus({ preventScroll: true });
     },
@@ -1181,17 +1214,23 @@
       if (!p) return;
       s.onSave(p); closeSheet();
     },
+    selRes: function (t) {
+      var i = +t.dataset.i; ui.pickI = ui.pickI === i ? -1 : i; refreshLists();
+      var b = root.querySelector('[data-act="selRes"][data-i="' + i + '"]'); if (b) b.focus({ preventScroll: true });
+    },
+    obNext: function () {
+      var x = ui.pickI >= 0 && ui.results && ui.results[ui.pickI], item = x && drugItemOf(x);
+      if (!x) { go('onb-supps'); return; }
+      if (item) startDose(item);
+    },
+    clearQ: function () {
+      ui.q = ''; var i = document.getElementById('q'); if (i) { i.value = ''; i.focus(); }
+      var f = root.querySelector('.obs-field'); if (f) f.classList.remove('has-q');
+      runSearch();
+    },
     pick: function (t) {
       var x = ui.results && ui.results[+t.dataset.i]; if (!x) return;
-      if (currentKind() === 'drug') {
-        var item;
-        if (x.source === 'dur') {
-          var di = Pack.dur && Pack.dur.toItem(x.code);
-          if (!di) { toast('이 약을 불러오지 못했어요'); return; }
-          item = newItem(di);
-        } else item = newItem({ kind: 'drug', source: x.source, itemSeq: x.itemSeq, name: x.name, ingredientKo: x.ingredientKo || null, type: x.type || null });
-        startDraft(item); return;
-      }
+      if (currentKind() === 'drug') { var item = drugItemOf(x); if (item) startDraft(item); return; }
       var s = x.supp;   // 제품을 고르면 reportNo·company·ingredientKeys가 함께 들어간다
       startDraft(newItem({ kind: 'supp', source: 'domestic', name: s.name, reportNo: s.reportNo, company: s.company, ingredientRaw: s.ingredientRaw, ingredientKeys: (s.ingredientKeys || []).slice() }));
     },
@@ -1313,11 +1352,11 @@
   function redrawDept() { if (document.getElementById('selected')) refreshLists(); else renderKeepingFocus(); }
   root.addEventListener('input', function (e) {
     var t = e.target, k = t.getAttribute && t.getAttribute('data-input');
-    if (k === 'search') { ui.q = t.value; clearTimeout(searchTimer); searchTimer = setTimeout(runSearch, 150); }
+    if (k === 'search') { ui.q = t.value; var fld = t.closest('.obs-field'); if (fld) fld.classList.toggle('has-q', !!t.value); clearTimeout(searchTimer); searchTimer = setTimeout(runSearch, 150); }
     else if (k === 'mname') ui.manualName = t.value;
     else if (k === 'mcompany') ui.manualCompany = t.value;
     else if (k === 'dcount' && ui.draft) {   // 1~6 한 자리만
-      var v = t.value.replace(/\D/g, '').slice(0, 1); t.value = /[1-6]/.test(v) ? v : ''; ui.draft.rx.n = t.value; syncDose(['slot']);
+      var v = t.value.replace(/\D/g, '').slice(0, 1); t.value = /[1-6]/.test(v) ? v : ''; ui.draft.rx.n = t.value; rxTrim(ui.draft.rx); syncDose(['slot']);
     } else if (k === 'ddose' && ui.draft) ui.draft.dose.amount = t.value;
   });
   /* 입력칸을 벗어나면 "19:30" 꼴로 고쳐 보여 준다 */
