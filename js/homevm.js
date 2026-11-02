@@ -7,6 +7,8 @@
  *  - 주의 문장은 설명서가 말한 것을 전한다. "권장해요"는 간격 숫자가 있을 때만. 숫자가 없으면 "주의가 필요하다고 안내돼 있어요".
  *  - 시간을 정하지 않은 약은 홈에서 뺀다(엔진이 unscheduled로 따로 준다).
  *  - 건너뜀 상태는 없다. 체크했거나(true) 아니거나.
+ *  - 주의가 없을 때도 침묵하지 않는다: slot.statusLine("확인한 범위에서 찾은 주의가 없어요" / 확인 못 한 약뿐이면 "아직 확인하지 못했어요").
+ *    "안전하다"고 말하지 않는다. 못 찾은 것은 없다는 뜻이 아니다.
  *
  * 쓰는 법 (js/josa.js, js/greeting.js를 먼저 불러온다)
  *   var vm = KeepingHome.create({ greeting: KeepingGreeting.create(copyJson), productOf: function (item) { return dur.get(...) } });
@@ -70,6 +72,8 @@
       var A = input.analysis || { slots: [], suggestions: [], evidence: {}, unscheduled: [] };
       var checks = input.checks || {};
       var newIds = input.newItemIds || [];
+      var uncoveredIds = {};   // 엔진이 "아직 확인하지 못한" 약 id
+      (A.uncovered || []).forEach(function (u) { uncoveredIds[u.itemId] = true; });
       var mealTimes = input.meals || {};
 
       function labelOf(id) { var it = byId[id]; return it ? groupOf(it).title : '약'; }
@@ -147,10 +151,20 @@
         var more = Math.max(0, lines.length - 2);
         var notice = lines.length ? { title: say('notice_title'), lines: lines.slice(0, 2), more: more, moreText: more ? say('notice_more', { more: more }) : '', all: lines } : null;
 
+        // 주의가 없을 때도 말해 준다: "확인한 범위에서 찾은 주의가 없어요"(안전하다는 뜻이 아님) / 확인 못 한 약은 따로
+        var slotDrugs = slot.items.filter(function (x) { return x.kind === 'drug'; }), unc = slotDrugs.filter(function (x) { return uncoveredIds[x.itemId]; }).length;
+        var statusLine = null;
+        if (!notice && slotDrugs.length) {
+          statusLine = unc === slotDrugs.length
+            ? { kind: 'unknown', text: say('notice_unknown'), sub: say('notice_unknown_sub') }
+            : { kind: 'none', text: say('notice_none'), sub: say('notice_none_sub') };
+        }
+        var uncoveredNote = (unc > 0 && !(statusLine && statusLine.kind === 'unknown')) ? say('notice_uncovered', { n: unc }) : '';
+
         var taken = groups.filter(function (G) { return G.checked; }).length;
         var cautionCount = (slot.summary && slot.summary.cautionCount) || 0;
         slotModels.push({
-          type: 'slot', id: slot.id, label: slot.label, time: slot.time, groups: groups, notice: notice,
+          type: 'slot', id: slot.id, label: slot.label, time: slot.time, groups: groups, notice: notice, statusLine: statusLine, uncoveredNote: uncoveredNote,
           total: groups.length, taken: taken, complete: groups.length > 0 && taken === groups.length,
           summary: { itemCount: slot.summary ? slot.summary.itemCount : slot.items.length, cautionCount: cautionCount,
                      text: say('slot_summary', { n: slot.summary ? slot.summary.itemCount : slot.items.length }) + (cautionCount ? ' · ' + say('slot_caution', { c: cautionCount }) : '') }

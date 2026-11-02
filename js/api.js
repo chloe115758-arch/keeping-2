@@ -69,10 +69,27 @@
   }
 
   /* ---------- 국내 영양제 ---------- */
+  /* 성분 단위 로컬 검색(js/suppsearch.js). 서버가 없거나 실패해도 이 결과는 항상 먼저 돌려준다.
+     추가 키 파일(supplement-keys-extra.json)은 한 번만 읽고, 못 읽으면 datapack의 키만으로 만든다. */
+  var suppIndex = null;
+  function suppSearcher() {
+    if (suppIndex) return suppIndex;
+    var extra = (typeof fetch === 'function' && root.KeepingSupp)
+      ? fetch('data/care/supplement-keys-extra.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (j) { return j.keys || []; }).catch(function () { return []; })
+      : Promise.resolve([]);
+    suppIndex = extra.then(function (keys) {
+      return root.KeepingSupp ? root.KeepingSupp.create({ keyList: Pack.supplementKeyList, extra: keys, popular: Pack.chipKeys }) : null;
+    });
+    return suppIndex;
+  }
   function searchSupplements(q) {
-    var out = [];
+    return suppSearcher().then(function (S) { return searchSupplementsWith(S, q); });
+  }
+  function searchSupplementsWith(S, q) {
+    var out = S ? S.search(q, { limit: q ? 8 : 12 }) : [];
+    if (!q) return Promise.resolve({ results: out, remote: { status: base ? 'idle' : 'off' } });
     Pack.supplements.forEach(function (s) {
-      if (!q || has(s.name + s.company, q)) {
+      if (has(s.name + s.company, q)) {
         out.push({
           key: 's-' + s.reportNo, source: 'pack', name: s.name,
           sub: s.company + ' · ' + s.reportedAt + ' 신고 · ' + s.reportNo,
@@ -80,7 +97,7 @@
         });
       }
     });
-    if (!base || !q) return Promise.resolve({ results: out, remote: { status: base ? 'idle' : 'off' } });
+    if (!base) return Promise.resolve({ results: out, remote: { status: 'off' } });
     return getJSON(base + '/api/supp?name=' + encodeURIComponent(q)).then(function (j) {
       (j.rows || []).forEach(function (r) {
         if (Pack.supplements.some(function (s) { return s.reportNo === r.reportNo; })) return;

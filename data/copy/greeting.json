@@ -52,6 +52,11 @@
   "detail_scope": "키핑이 확인한 범위 안의 안내만 보여줘요. 찾지 못했다고 안전하다는 뜻은 아니에요.",
   "detail_footer": "복용 방법은 처방전·약봉투·약사 안내를 따라 주세요.",
   "sheet_note": "조건 · {note}",
-  "chip_new": "새 처방"
+  "chip_new": "새 처방",
+  "notice_none": "확인한 범위에서 찾은 주의가 없어요",
+  "notice_none_sub": "공식 자료(병용금기·약 설명서)에서 찾아본 결과예요",
+  "notice_unknown": "이 시간대의 약은 키핑의 확인 범위 밖이에요",
+  "notice_unknown_sub": "함께 먹는 약과의 주의는 약사에게 확인해 주세요",
+  "notice_uncovered": "키핑의 확인 범위 밖인 약이 {n}개 있어요"
  }
 }

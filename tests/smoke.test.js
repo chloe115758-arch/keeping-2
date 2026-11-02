@@ -10,7 +10,7 @@ w.scrollTo = () => {}; w.confirm = () => true;
 w.fetch = (u) => Promise.resolve(u === 'data/copy/greeting.json' ? { ok: true, status: 200, json: async () => JSON.parse(fs.readFileSync(path.join(dir, u), 'utf8')) } : { ok: false, status: 404, json: async () => ({}) });
 const errors = [];
 w.addEventListener('error', (e) => errors.push(e.message));
-['config.js', 'data/datapack.js', 'js/dur.js', 'js/care.js', 'js/josa.js', 'js/greeting.js', 'js/homevm.js', 'js/engine.js', 'js/storage.js', 'js/api.js', 'js/app.js'].forEach((f) => w.eval(fs.readFileSync(path.join(dir, f), 'utf8')));
+['config.js', 'data/datapack.js', 'js/dur.js', 'js/care.js', 'js/josa.js', 'js/greeting.js', 'js/suppsearch.js', 'js/homevm.js', 'js/engine.js', 'js/storage.js', 'js/api.js', 'js/app.js'].forEach((f) => w.eval(fs.readFileSync(path.join(dir, f), 'utf8')));
 
 let ok = 0, bad = 0;
 const T = () => d.getElementById('app').textContent.replace(/\s+/g, ' ');
@@ -22,6 +22,16 @@ function check(name, cond, extra) { if (cond) { ok++; console.log('  ok  ' + nam
 const BANNED = /안전해요|괜찮아요|문제없어요|문제 없어요|안전합니다/;
 const seenTexts = [];
 const snap = () => seenTexts.push(T());
+const seedRx = () => {   // 새 처방 4개(예전 시연 묶음과 같은 약·시간)를 앱 상태에 직접 넣는다
+  const S = w.KeepingApp.state(), P = w.KEEPING_DATA;
+  S.items = S.items.filter((i) => i.batch !== 'rx-demo');
+  [['시바스', '200403126', '21:00'], ['이텍스시메티딘', '200402420', '09:00'], ['알마겔에프', '199000541', '08:00'], ['후로스판', '198801649', '12:30']].forEach((p) => {
+    const hit = P.dur && P.dur.search(p[0], { limit: 1 })[0];
+    const base = hit ? P.dur.toItem(hit.code) : (r => ({ kind: 'drug', source: 'pack', itemSeq: p[1], name: r.display || r.name }))(P.drugs.filter((x) => x.itemSeq === p[1])[0]);
+    S.items.push(Object.assign({}, base, { id: 'rx' + p[1], times: [p[2]], batch: 'rx-demo' }));
+  });
+  w.KeepingStore.save(S);
+};
 const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"]')[i])); click('[data-act="dock"]'); };
 
 (async () => {
@@ -32,7 +42,7 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   check('스플래시를 누르면 환영 화면', T().includes('겹치는 것만 알려드려요') && !!q('[data-act="start"]') && !!q('.actionbar'));
   w.KeepingApp.seedExample(); w.KeepingApp.go('home'); snap();
   check('홈: 인사 카드(인사말·보조 문장) + 오늘의 복약 + 큰 숫자 + 진행 바 — 건강 관리·이름 자리 문구 없음', !!q('.kp-top') && !!q('.kp-hello') && q('.kp-line1').textContent.length > 0 && q('.kp-line2').textContent.length > 0 && /^\d+\/\d+$/.test(q('.kp-count').textContent) && q('.kp-bar').getAttribute('role') === 'progressbar' && !/OO님|\{name\}/.test(T()), q('.kp-line1') && q('.kp-line1').textContent);
-  check('시연 띠 "시연 데이터예요"(홈 맨 위) — 홈에 "새 처방 알림 시연" 버튼은 없음', T().includes('시연 데이터예요') && !!q('.kp-band') && !q('[data-act="demoRx"]'));
+  check('시연 띠·시연 버튼이 홈에 없음', !q('.kp-band') && !q('[data-act="demoRx"]') && !T().includes('시연'));
   check('설명서 데이터를 못 읽는 환경: "설명서 기반 안내를 불러오지 못했어요" 한 번 + 닫기', T().includes('설명서 기반 안내를 불러오지 못했어요') && !!q('[data-act="closeCareNote"]'));
   click('[data-act="closeCareNote"]');
   check('닫으면 다시 나오지 않음', !T().includes('설명서 기반 안내를 불러오지 못했어요'));
@@ -45,13 +55,11 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   check('홈: 혈당·혈압·수치 입력·드래그 없음', !/혈당|혈압|측정|mg\/dL|저혈당|즉시 중단|수치/.test(T()) && !q('[class*="drag"]'));
   check('홈: 판정·단정 문구 없음', !/안전해요|괜찮|문제없|먹어도/.test(T()));
 
-  console.log('2) 새 처방 알림 시연 → 타임라인');
+  console.log('2) 새 처방 4개 → 타임라인');
   w.KeepingApp.go('settings'); snap();
-  check('설정 맨 아래 "시연" 칸: 스위치(켜짐) + "새 처방 알림 시연 보기" 버튼', !!q('[data-act="toggleDemo"][aria-checked="true"]') && !!q('[data-act="demoRx"]') && T().lastIndexOf('시연') > T().lastIndexOf('이 기기에만 저장돼요'));
-  click('[data-act="demoRx"]'); snap();
-  check('N1 알림 화면(시연이라고 밝힘)', T().includes('새 처방약이 등록됐어요') && T().includes('시연 화면이에요'));
-  click('[data-act="demoConfirm"]'); snap();
-  check('홈으로 돌아가고 시연 처방 약이 묶음으로 보임', !!q('.kp-hello') && qa('.kp-grp').length >= 3, String(qa('.kp-grp').length));
+  check('설정에 "시연" 칸·스위치·시연 버튼이 없음', !T().includes('시연') && !q('[data-act="toggleDemo"]') && !q('[data-act="demoRx"]'));
+  seedRx(); w.KeepingApp.go('home'); snap();
+  check('홈에 새 처방 약이 묶음으로 보임', !!q('.kp-hello') && qa('.kp-grp').length >= 3, String(qa('.kp-grp').length));
   check('시간대 카드 3개 이상 (7개 항목)', qa('.kp-row--slot').length >= 3 && w.KeepingApp.careModel().summary.itemCount === 7);
 
   console.log('3) 약 상세(내 약에서)');
@@ -81,12 +89,13 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   click('[data-act="agree"]'); check('다시 누르면 해제 + 다음 비활성', q('#agreenext').disabled === true); click('[data-act="agree"]');
   click('#agreenext'); snap();
   check('동의 시각이 기기 저장소에 기록됨', !!w.KeepingStore.load().agreedAt || !!w.KeepingApp.state().agreedAt);
-  check('온보딩 1/3: 단계 칩 · 진행 막대 · 하단 액션 영역(다음만, 건너뛰기 없음)', T().includes('복용 중인 약을 검색해서 추가해 주세요') && q('.stepchip').textContent === '1/3' && !!q('.stepbar i') && !q('[data-act="skip"]') && !/건너뛰기/.test(T()) && q('#nextbtn').disabled === true);
+  check('온보딩 1/2: 단계 칩 · 진행 막대 · 하단 액션 영역(다음만, 건너뛰기 없음)', T().includes('복용 중인 약을 검색해서 추가해 주세요') && q('.stepchip').textContent === '1/2' && !!q('.stepbar i') && !q('[data-act="skip"]') && !/건너뛰기/.test(T()) && q('#nextbtn').disabled === true);
   await wait(60);
   check('빈 검색이면 결과 칸을 비워 둠(추천 목록 없음)', q('#results').textContent.trim() === '' && qa('.res').length === 0, String(qa('.res').length));
   const inp = q('#q'); inp.value = '시바스'; inp.dispatchEvent(new w.Event('input', { bubbles: true }));
   await wait(260);
   check('"시바스" 검색 결과 1개', qa('.res').length === 1 && T().includes('시바스정'), String(qa('.res').length));
+  check('약 검색 결과 목록 위에 안내 한 줄(작은 회색)', !!q('.res-hint') && q('.res-hint').textContent === '함량이 달라도 주의 안내는 같은 성분 기준으로 찾아요' && !!(q('.res-hint').compareDocumentPosition(q('.res')) & 4) && /\.res-hint\{[^}]*var\(--kp-text-sub\)/.test(fs.readFileSync(path.join(dir, 'css/style.css'), 'utf8')));
   check('사진 인식·준비 중 문구는 화면에 없음(범위 밖·검증 못 한 약속을 넣지 않음)', !q('#photo') && !q('.photobtn') && !/사진으로 찾기|글자 인식|이 기기 안에서만 읽고|자동으로 불러오는 기능은 준비 중/.test(T()));
   inp.value = '시바스'; inp.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(260);
   click('.res'); await wait(10); snap();
@@ -103,6 +112,11 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   check('팩 밖의 약도 등록됨', q('#selected').textContent.includes('없는약이름'));
   click('#nextbtn'); snap();
   check('영양제 단계: 탭 3개', qa('[role="tab"]').length === 3);
+  await wait(30);
+  check('영양제: 검색창이 비어도 자주 찾는 성분이 보임(서버 없이)', qa('.res').length >= 6 && T().includes('칼슘') && !q('.res-hint'), String(qa('.res').length));
+  const sq = q('#q'); sq.value = '칼슘'; sq.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(260);
+  check('영양제 "칼슘" 검색: 서버(404)가 없어도 로컬 결과가 나오고 성분 키가 들어 있음', qa('.res').length >= 1 && T().includes('칼슘') && JSON.stringify(w.KeepingApp.ui.results[0].supp.ingredientKeys) === '["calcium"]', JSON.stringify(w.KeepingApp.ui.results[0]));
+  sq.value = ''; sq.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(260);
   click('[data-tab="overseas"]'); snap();
   check('해외 탭: 연결 전에는 직접 입력으로 안내', (() => { const i = q('#oq'); i.value = 'Now Foods Inositol'; i.dispatchEvent(new w.Event('input', { bubbles: true })); click('[data-act="searchOverseas"]'); return true; })());
   await wait(30);
@@ -116,10 +130,7 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   check('담으면 영양제 화면으로 돌아오고(탭 유지) 18:30으로 저장', !!q('[data-tab]') && w.KeepingApp.state().items.find((i) => i.name === '나우푸드 이노시톨').times.join() === '18:30');
   check('해외·직접 입력 영양제 등록', q('#selected').textContent.includes('나우푸드 이노시톨'));
   click('#nextbtn'); snap();
-  check('시간 입력 화면 + 음식 입력 + 준비 중 안내', T().includes('언제 드시나요?') && T().includes('음식과 약의 상호작용 확인은 준비 중이에요'));
-  const tm = qa('input.time')[0]; tm.value = '08:00'; tm.dispatchEvent(new w.Event('change', { bubbles: true }));
-  check('시간 저장', w.KeepingApp.state().items[0].times[0] === '08:00');
-  click('[data-act="timesDone"]'); snap();
+  check('영양제 다음 → "시간 정하기" 단계 없이 바로 홈(시간은 담기 확인에서 이미 정함)', !T().includes('언제 드시나요?') && !q('input.time') && !!q('.kp-top'));
   check('홈: 담은 약의 시간대 카드 4개(아침·점심·저녁·자기 전), "시간을 정하지 않은 약"은 홈에 없음', qa('.kp-row--slot').length === 4 && !T().includes('시간을 정하지 않은 약') && !T().includes('시간 정하기'), qa('.kp-row--slot').length + '');
   click('.nav [data-view="list"]'); snap();
   check('내 목록: 약 2, 영양제 1', T().includes('약 2') && T().includes('영양제 1'));
@@ -149,7 +160,7 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   click('[data-act="nav"][data-view="list"]'); snap();
   check('완료 → 내 목록으로 복귀', T().includes('내가 먹는 것'));
   click('[data-act="to"][data-view="onb-drugs"]:not([data-mode])'); snap();
-  check('처음부터 다시 설정: 1/3 단계 + 기존 등록 유지', !!q('.stepbar') && q('#selected').textContent.includes('시바스정'));
+  check('처음부터 다시 설정: 1/2 단계 + 기존 등록 유지', !!q('.stepbar') && q('#selected').textContent.includes('시바스정'));
   click('[data-act="back"]'); snap();
   check('이전 → 내 목록', T().includes('내가 먹는 것'));
   click('.nav [data-view="settings"]'); snap();
@@ -251,24 +262,24 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   await pend; await wait(30);
   check('로딩이 끝나면 자동으로 다시 그려 주의 블록이 생김', !!q('.kp-notice'), T().slice(0, 120));
   w.KeepingApp.go('welcome');
-  console.log('6-6) 시연 데이터(제품코드)');
+  console.log('6-6) 예시 사용자 · 새 처방(제품코드)');
   check('전체 약 목록이 연결된 상태', w.KeepingApp.ui.dur.status === 'ready' && !!w.KEEPING_DATA.dur);
   w.KeepingApp.go('welcome'); w.KeepingApp.seedExample(); w.KeepingApp.go('home'); snap();
   const ex = w.KeepingApp.state().items;
-  check('시연 홈이 열리고 시연 띠 표시', !!q('.kp-hello') && T().includes('시연 데이터예요'));
+  check('예시 사용자 홈이 열리고 시연 띠는 없음', !!q('.kp-hello') && !q('.kp-band') && !T().includes('시연 데이터예요'));
   check('예시 사용자의 약은 이트코나졸캡슐(제품코드), 코니트라캡슐 아님', ex.some((i) => i.productCode && i.name === '이트코나졸캡슐' && i.times[0] === '08:30') && !ex.some((i) => /코니트라/.test(i.name)));
-  w.KeepingApp.go('settings'); click('[data-act="demoRx"]'); click('[data-act="demoConfirm"]'); snap();
+  seedRx(); w.KeepingApp.go('home'); snap();
   const batch = w.KeepingApp.state().items.filter((i) => i.batch === 'rx-demo');
-  check('시연 처방 4개가 제품코드 항목', batch.length === 4 && batch.every((i) => i.productCode && i.source === 'dur'), JSON.stringify(batch.map((i) => i.name)));
+  check('새 처방 4개가 제품코드 항목', batch.length === 4 && batch.every((i) => i.productCode && i.source === 'dur'), JSON.stringify(batch.map((i) => i.name)));
   check('저장소에도 productCode로 저장', w.KeepingStore.load().items.filter((i) => i.batch === 'rx-demo' && i.productCode).length === 4);
   const m6 = w.KeepingApp.careModel(), rows6 = m6.slots.reduce((a, s) => a.concat(s.items), []);
   const official = rows6.filter((r) => r.flags.some((f) => f.grade === 'official')).map((r) => r.display);
   check('병용금기(공식 지정) 줄이 있는 약: 시바스정 · 이트코나졸캡슐, 후로스판정은 아님', official.some((n) => n.includes('시바스정')) && official.some((n) => n.includes('이트코나졸캡슐')) && !official.some((n) => n.includes('후로스판정')), JSON.stringify(official));
-  check('홈: 시연 처방 약이 묶음 줄로 보임(약 이름이 아니라 묶음 이름)', qa('.kp-grp').length >= 4 && !qa('.mchip').length);
+  check('홈: 새 처방 약이 묶음 줄로 보임(약 이름이 아니라 묶음 이름)', qa('.kp-grp').length >= 4 && !qa('.mchip').length);
   console.log('6-7) 첫 화면에 체험 버튼 없음 · 처음 열면 빈 상태');
-  w.KeepingApp.state().items.length = 0; w.KeepingApp.state().demo = false; w.KeepingApp.go('welcome');
+  w.KeepingApp.state().items.length = 0; w.KeepingApp.go('welcome');
   check('환영 화면에 "예시 사용자로 체험하기"와 demo 버튼이 없음', !T().includes('예시 사용자') && !q('[data-act="demo"]') && !!q('[data-act="start"]'));
-  check('처음 상태에는 미리 채워진 약이 없음', w.KeepingApp.state().items.length === 0 && !w.KeepingApp.state().demo);
+  check('처음 상태에는 미리 채워진 약이 없음', w.KeepingApp.state().items.length === 0);
   w.KeepingApp.go('welcome');
 
   console.log('6-8) 설정 화면 (전체 약 목록 연결됨)');
@@ -316,8 +327,7 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   w.KeepingApp.state().items.length = 0; w.KeepingApp.go('onb-drugs'); snap();
   check('약 단계에는 건너뛰기가 없고, 약을 담기 전에는 다음이 비활성', q('#nextbtn').disabled === true && !q('.skipbtn') && !/건너뛰기/.test(T()));
   w.KeepingApp.go('onb-supps');
-  check('영양제 단계(선택 입력)는 건너뛰기로 복용 시간 3/3', (click('.skipbtn'), T().includes('언제 드시나요?') && q('.stepchip').textContent === '3/3'));
-  check('복용 시간 단계: 하단 액션 영역에 "끝내고 홈으로 가기"', !!q('.actionbar [data-act="timesDone"]'));
+  check('영양제 단계는 2/2이고, 건너뛰면 "시간 정하기" 단계 없이 바로 홈', q('.stepchip').textContent === '2/2' && (click('.skipbtn'), !T().includes('언제 드시나요?') && !!q('.kp-top')));
   w.KeepingApp.go('splash'); w.dispatchEvent && d.querySelector('#app').dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
   check('스플래시는 키보드(Enter)로도 넘길 수 있음', !q('.splash') && T().includes('겹치는 것만 알려드려요'));
   console.log('7) 문구 점검');

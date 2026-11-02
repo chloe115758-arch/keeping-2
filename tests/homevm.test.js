@@ -195,4 +195,29 @@ t('약봉투 화면: 성분은 한글(영문)으로 보인다', () => {
   const d = run(base()).detail['morning:rx:내과'];
   assert.strictEqual(d.items[0].ingredient, '레보티록신나트륨수화물 (levothyroxine sodium)');
 });
+t('주의가 없어도 침묵하지 않는다: "확인한 범위에서 찾은 주의가 없어요"(안전하다고 말하지 않는다)', () => {
+  const S = slotRow(run([drug('b', '메토폴정', ['12:30'])]), 'lunch');
+  assert.ok(!S.notice && S.statusLine, JSON.stringify(S.statusLine));
+  assert.strictEqual(S.statusLine.kind, 'none');
+  assert.strictEqual(S.statusLine.text, '확인한 범위에서 찾은 주의가 없어요');
+  assert.ok(/공식 자료/.test(S.statusLine.sub) && !/안전/.test(S.statusLine.text + S.statusLine.sub));
+});
+t('주의가 있으면 상태 줄은 없다(두 가지가 같이 나오지 않는다)', () => {
+  const S = slotRow(run(base()), 'morning');
+  assert.ok(S.notice && S.statusLine === null);
+});
+t('엔진이 아직 확인하지 못한 약만 있는 시간대는 "확인 범위 밖이에요"', () => {
+  const S = slotRow(run([drug('x', '시바스정', ['21:00'])], { nowMin: 21 * 60 + 10 }), 'bedtime');   // 시바스는 이 시험의 약 묶음 파일에 없음
+  assert.strictEqual(S.statusLine.kind, 'unknown');
+  assert.ok(/확인 범위 밖이에요$/.test(S.statusLine.text) && /약사에게 확인/.test(S.statusLine.sub));
+});
+t('일부만 범위 밖이면 "확인한 범위…" 아래에 그 개수를 따로 알린다', () => {
+  const S = slotRow(run([drug('b', '메토폴정', ['12:30']), drug('x', '시바스정', ['12:30'])]), 'lunch');
+  assert.strictEqual(S.statusLine.kind, 'none');
+  assert.strictEqual(S.uncoveredNote, '키핑의 확인 범위 밖인 약이 1개 있어요');
+});
+t('영양제만 있는 시간대에는 상태 줄을 만들지 않는다(비교할 약이 없다)', () => {
+  const S = slotRow(run([supp('ca', ['calcium'], ['09:00'])]), 'morning');
+  assert.strictEqual(S.statusLine, null);
+});
 console.log('\n' + n + '개 통과');

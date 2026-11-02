@@ -10,7 +10,7 @@ w.scrollTo = () => {}; w.confirm = () => true;
 const errors = [];
 w.addEventListener('error', (e) => errors.push(e.message));
 w.fetch = (u) => Promise.resolve({ ok: fs.existsSync(path.join(dir, u)), status: 200, json: async () => JSON.parse(fs.readFileSync(path.join(dir, u), 'utf8')) });
-['config.js', 'data/datapack.js', 'js/dur.js', 'js/care.js', 'js/josa.js', 'js/greeting.js', 'js/homevm.js', 'js/engine.js', 'js/storage.js', 'js/api.js', 'js/app.js'].forEach((f) => w.eval(fs.readFileSync(path.join(dir, f), 'utf8')));
+['config.js', 'data/datapack.js', 'js/dur.js', 'js/care.js', 'js/josa.js', 'js/greeting.js', 'js/suppsearch.js', 'js/homevm.js', 'js/engine.js', 'js/storage.js', 'js/api.js', 'js/app.js'].forEach((f) => w.eval(fs.readFileSync(path.join(dir, f), 'utf8')));
 let ok = 0, bad = 0;
 const T = () => d.getElementById('app').textContent.replace(/\s+/g, ' ');
 const q = (s) => d.querySelector(s), qa = (s) => [...d.querySelectorAll(s)];
@@ -137,10 +137,6 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   console.log('8) 새 처방 칩 · 공식 지정 시트의 조건 줄');
   st.items = [mk('씬지록신', 'L1', '07:00', '내과')]; delete st.newRx; A.ui.nowMin = 6 * 60 + 40; A.ui.open = {}; A.go('home');
   check('newItemIds를 안 넘기면 칩이 없다', !qa('.kp-newchip').length);
-  st.items = []; st.example = true; st.demo = true; A.go('settings'); click('[data-act="demoRx"]'); click('[data-act="demoConfirm"]');
-  const chips = qa('.kp-newchip');
-  check('새 처방 알림 시연 → 등록 → 홈에 "새 처방" 칩(모델의 newLabel)', chips.length >= 1 && chips.every((c) => c.textContent === A.homeModel().rows.filter((r) => r.type === 'slot')[0].groups.find((g) => g.isNew).newLabel), String(chips.length));
-  check('칩은 isNew인 묶음에만, 개수가 모델과 같다', chips.length === A.homeModel().rows.filter((r) => r.type === 'slot').reduce((a, r) => a + r.groups.filter((g) => g.isNew).length, 0) && st.newRx.ids.length === 4);
   A.ui.open = {}; A.go('home');
   const off = qa('.kp-notice-first').find((n) => /지정된 조합/.test(n.textContent));
   if (off) {
@@ -157,16 +153,16 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   check('설명서 근거 시트에는 조건 줄이 없다', !q('.kp-note'));
   click('.kp-close');
 
-  console.log('9) 시연 칸 · 시간 없는 약 막기 · 하단 탭');
-  st.items = [mk('씬지록신', 'L1', '07:30')]; st.demo = false; st.example = false; A.go('home');
-  check('시연이 꺼져 있으면 시연 띠·시연 버튼이 홈에 없다', !q('.kp-band') && !q('[data-act="demoRx"]'));
+  console.log('9) 시간 없는 약 막기 · 하단 탭');
+  st.items = [mk('씬지록신', 'L1', '07:30')]; st.example = false; A.go('home');
+  check('홈에 시연 띠·시연 버튼이 없다', !q('.kp-band') && !q('[data-act="demoRx"]'));
+  const SL = A.homeModel().rows.filter((r) => r.type === 'slot')[0];
+  check('주의가 없으면 시간대 카드 맨 아래에 작은 "주의 없음" 블록(모델의 statusLine 문구, 빨강 없음)', !SL.notice && !!q('.kp-slot-body .kp-status-line') && q('.kp-status-line-text').textContent === SL.statusLine.text && !!q('.kp-status-line svg') && !q('.kp-status-line .kp-red') && /\.kp-status-line\{[^}]*var\(--kp-surface-sub\)[^}]*var\(--kp-text-sub\)/.test(css0) && !/\.kp-status-line[^{]*\{[^}]*(caution|red)/.test(css0));
+  st.items = [mk('시바스', 'L2', '07:30'), mk('이트코나졸캡슐', 'L3', '07:30')]; A.go('home');
+  check('주의 블록(notice)이 있으면 "주의 없음" 블록은 없다', !!q('.kp-notice') && !q('.kp-status-line'));
+  st.items = [mk('씬지록신', 'L1', '07:30')]; A.go('home');
   A.go('settings');
-  check('설정 맨 아래 "시연" 칸: 스위치(꺼짐), 꺼져 있으면 시연 버튼 없음', !!q('[data-act="toggleDemo"][aria-checked="false"]') && !q('[data-act="demoRx"]'));
-  click('[data-act="toggleDemo"]');
-  check('켜면 스위치가 켜지고 "새 처방 알림 시연 보기" 버튼이 나타남(저장됨)', !!q('[data-act="toggleDemo"][aria-checked="true"]') && !!q('[data-act="demoRx"]') && w.KeepingStore.load().demo === true);
-  A.go('home');
-  check('켜면 홈 맨 위에 "시연 데이터예요" 띠', q('.kp-band').textContent === '시연 데이터예요' && q('.kp-band').compareDocumentPosition(q('.kp-top')) & 4);
-  st.demo = false;
+  check('설정에 "시연" 칸·스위치·시연 버튼이 없다', !q('[data-act="toggleDemo"]') && !q('[data-act="demoRx"]') && !T().includes('시연'));
   A.go('list'); click(qa('.mrow')[0]);
   check('내 약 상세에서 "복용 시간 고치기"로 시간 화면에 갈 수 있다', !!q('[data-act="to"][data-view="times"]'));
   A.go('times', { all: true });
@@ -176,7 +172,7 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   check('하단 탭 3개(홈·내 약·마이), 뱃지 없음, 스타일은 --kp-* 변수', qa('.nav button').map((b) => b.textContent.trim()).join('|') === '홈|내 약|마이' && !q('.nav [class*="badge"]') && /\.nav\{[^}]*var\(--kp-surface\)[^}]*var\(--kp-border\)/.test(css0) && /\.nav button\{[^}]*var\(--kp-fs-caption\)[^}]*var\(--kp-text-sub\)/.test(css0));
 
   A.go('home');
-  check('상단바: 벨 아이콘은 없고, 프로필 아이콘을 누르면 마이(설정) 탭으로 간다', !q('[aria-label="알림"]') && !!q('.kp-top [aria-label="마이"]') && (click(q('.kp-top [aria-label="마이"]')), !!q('[data-act="toggleDemo"]')));
+  check('상단바: 벨 아이콘은 없고, 프로필 아이콘을 누르면 마이(설정) 탭으로 간다', !q('[aria-label="알림"]') && !!q('.kp-top [aria-label="마이"]') && (click(q('.kp-top [aria-label="마이"]')), T().includes('계정 연결')));
   check('스크립트 오류 없음', errors.length === 0, errors.join(' | '));
   console.log('\n통과 ' + ok + ' / 실패 ' + bad);
   process.exit(bad ? 1 : 0);

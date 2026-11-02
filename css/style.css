@@ -87,7 +87,6 @@ button{background:none;border:0;cursor:pointer}
 .red{color:var(--red-ink)}
 .note{font:var(--body3);color:var(--ink-2);margin:8px 0 12px}
 .fine{font:var(--caption);font-weight:400;line-height:1.6;color:var(--ink-2);margin-top:24px}
-.fine.light{color:#d4d4d4}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--error)}
 
 /* 버튼 — 대표 민트 위 글자는 검정 [A11Y: 흰 글자는 대비 약 2:1] */
@@ -282,17 +281,6 @@ button{background:none;border:0;cursor:pointer}
 .nav{position:sticky;bottom:0;margin-top:auto;display:flex;background:var(--kp-surface);border-top:1px solid var(--kp-border);padding-bottom:env(safe-area-inset-bottom);z-index:10;font-family:var(--kp-font);letter-spacing:var(--kp-ls)}
 .nav button{flex:1;display:grid;justify-items:center;align-content:center;gap:2px;padding:8px 0;min-height:calc(var(--kp-touch-min) + 20px);font:var(--kp-fw-strong) var(--kp-fs-caption)/1.4 var(--kp-font);color:var(--kp-text-sub)}
 .nav button.on{color:var(--kp-brand-strong)}
-
-/* 알림 시연 */
-.lockscreen{background:linear-gradient(180deg,#2b2d33,#101114);color:var(--white);display:flex;flex-direction:column;padding-top:12vh;padding-top:12dvh}
-.clock-date{text-align:center;font:var(--body2);opacity:.85;margin-bottom:48px}
-.push{display:block;width:100%;text-align:left;padding:16px 18px;border-radius:22px;background:rgba(255,255,255,.16);color:var(--white);animation:drop .8s var(--ease) both}
-.push .app{display:flex;align-items:center;gap:8px;font:var(--caption);font-weight:700;opacity:.85;margin-bottom:6px;min-height:0;box-shadow:none;background:none;max-width:none}
-.push .app i{width:18px;height:18px;border-radius:5px;background:var(--mint-400);display:inline-block}
-.push .ptxt{display:block;font:700 15px/1.5 var(--font)}
-.hint{text-align:center;margin-top:18px;font:var(--body3);opacity:.75}
-.cta.light{background:rgba(255,255,255,.14);color:var(--white);margin-top:24px}
-@keyframes drop{from{opacity:0;transform:translateY(-24px)}to{opacity:1;transform:none}}
 
 /* 토스트 */
 .toast{position:fixed;left:50%;top:calc(16px + env(safe-area-inset-top, 0px));transform:translateX(-50%);max-width:min(386px,calc(100% - 44px));padding:12px 18px;border-radius:var(--r-md);background:var(--black-2);color:var(--white);font:600 14px/1.4 var(--font);z-index:50;animation:up .3s var(--ease)}
@@ -516,8 +504,15 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 /* 검색창 지우기(✕): 브라우저 기본 파란색 대신 보조 글자색 */
 input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;width:20px;height:20px;margin-left:8px;cursor:pointer;background:var(--kp-text-sub);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E") center/contain no-repeat}
 
-/* 시연 띠 */
-.kp-band{margin:4px 0 0;padding:8px 14px;border-radius:var(--kp-radius-chip);background:var(--kp-brand-weak);color:var(--kp-label-text);font:var(--kp-fw-strong) var(--kp-fs-caption)/1.5 var(--kp-font);text-align:center}
+/* 주의 없음 블록(시간대 카드 맨 아래) — 빨강 없이 보조색만 */
+.kp-status-line{display:flex;align-items:flex-start;gap:8px;margin-top:8px;padding:10px 12px;border-radius:14px;background:var(--kp-surface-sub);color:var(--kp-text-sub)}
+.kp-status-line>.kp-ic{flex:none;margin-top:1px}
+.kp-status-line p{margin:0;font-size:13px;line-height:1.5}
+.kp-status-line-sub{font-size:var(--kp-fs-caption)!important}
+.kp-uncovered{margin:6px 0 0;padding:0 4px;font-size:var(--kp-fs-caption);line-height:1.5;color:var(--kp-text-sub)}
+
+/* 약 검색 결과 위 안내 */
+.res-hint{margin:8px 0 6px;font:var(--kp-fs-caption)/1.5 var(--kp-font);color:var(--kp-text-sub)}
 
 /* 담기 확인 화면: 진료과 칩은 줄바꿈 없이 가로로 민다 */
 .hscroll{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;margin:0 -16px 6px;padding:2px 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
@@ -542,7 +537,6 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .cta.ghost,.cta.outline{background:var(--kp-surface);color:var(--kp-text);box-shadow:inset 0 0 0 1.5px var(--kp-border)}
 .cta.ghost:hover,.cta.outline:hover{background:var(--kp-surface-sub);opacity:1}
 .cta.small{height:auto;min-height:var(--kp-touch-min);border-radius:var(--kp-radius-chip);padding:10px 14px;font-size:14px}
-.cta.light{background:rgba(255,255,255,.14);color:#fff;box-shadow:none}
 .skipbtn{height:56px;min-height:56px}
 .skipbtn span{color:var(--kp-text-sub)}
 .actionbar{background:var(--kp-bg-page);box-shadow:0 -1px 0 var(--kp-border)}

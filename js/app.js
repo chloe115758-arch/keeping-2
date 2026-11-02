@@ -79,9 +79,9 @@
   /* 온보딩 3단계: 시안의 상단(뒤로 + 진행 막대)과 단계 칩 */
   function obHead(n) {
     return '<div class="obhead"><button type="button" class="back" data-act="back" aria-label="이전 화면으로">' + icon('back', 20) + '</button>' +
-      '<div class="stepbar" role="img" aria-label="3단계 중 ' + n + '단계"><i style="width:' + Math.round(n * 100 / 3) + '%"></i></div></div>';
+      '<div class="stepbar" role="img" aria-label="2단계 중 ' + n + '단계"><i style="width:' + Math.round(n * 100 / 2) + '%"></i></div></div>';
   }
-  function stepChip(n) { return '<span class="stepchip">' + n + '/3</span>'; }
+  function stepChip(n) { return '<span class="stepchip">' + n + '/2</span>'; }
   function actionBar(inner, cls) { return '<div class="actionbar' + (cls ? ' ' + cls : '') + '">' + inner + '</div>'; }
   function skipBtn(view) {
     return '<button type="button" class="cta outline skipbtn" data-act="skip" data-view="' + view + '"><span>건너뛰기</span><small>언제든 수정할 수 있어요</small></button>';
@@ -106,7 +106,7 @@
   }
   function resultsHtml(kind) {
     var r = ui.results;
-    if (!ui.q.trim()) return '';
+    if (!ui.q.trim() && kind === 'drug') return '';   // 영양제는 검색창이 비어도 자주 찾는 성분을 보여 준다
     if (kind === 'drug' && ui.dur.status === 'loading') return ''; // 안내는 #durstat에 있고, 로딩이 끝나면 자동으로 다시 찾는다
     if (r === null) return '<p class="muted pad">불러오는 중…</p>';
     var html = '';
@@ -119,6 +119,7 @@
       }
       return html;
     }
+    if (kind === 'drug') html += '<p class="res-hint">함량이 달라도 주의 안내는 같은 성분 기준으로 찾아요</p>';
     html += r.map(function (x, i) {
       var added = isAdded(kind, x);
       return '<button type="button" class="res' + (added ? ' done' : '') + '" data-act="pick" data-i="' + i + '"' + (added ? ' disabled' : '') + '><span class="res-main"><b>' + esc(x.name) + '</b><span class="muted">' + esc(x.sub) + (x.outside ? ' <span class="pill soft">목록 밖</span>' : '') + '</span></span><span class="res-act">' + (added ? '추가됨' : icon('plus') + '추가') + '</span></button>';
@@ -252,7 +253,7 @@
     var kind = currentKind();
     var token = ++ui.searchToken;
     var q = ui.q.trim();
-    if (!q) { ui.results = []; ui.remote = null; ui.more = false; refreshLists(); return; }
+    if (!q && kind === 'drug') { ui.results = []; ui.remote = null; ui.more = false; refreshLists(); return; }
     if (kind === 'drug' && ui.dur.status === 'loading') return;
     (kind === 'drug' ? Api.searchDrugs(q) : Api.searchSupplements(q)).then(function (res) {
       if (token !== ui.searchToken) return;
@@ -329,7 +330,7 @@
       '<p class="lbl">고른 영양제 <span class="count" id="selcount">' + n + '</span></p><div id="selected">' + selectedHtml('supp') + '</div></main>' +
       actionBar(more
         ? '<button type="button" class="cta" data-act="to" data-view="times" data-all="1">복용 시간 입력하고 마치기</button>'
-        : skipBtn('times') .replace('data-view="times"', 'data-view="times" data-mode="onb"') + '<button type="button" id="nextbtn" class="cta" data-act="to" data-view="times" data-mode="onb"' + (n ? '' : ' disabled') + '>다음</button>');
+        : skipBtn('home') + '<button type="button" id="nextbtn" class="cta" data-act="to" data-view="home"' + (n ? '' : ' disabled') + '>다음</button>');
   };
 
   function timeRow(it) {
@@ -342,16 +343,15 @@
   VIEWS.times = function () {
     var p = ui.params, b = p.batch || null;
     var list = state.items.filter(function (i) { return p.all ? true : (i.batch || null) === b; });
-    var onb = p.mode === 'onb';
     var foods = '';
-    if (onb || p.all) {
+    if (p.all) {
       foods = '<p class="lbl">먹는 음식 (선택)</p><div class="inrow"><label class="sr" for="fq">음식 이름</label><input id="fq" class="ta" autocomplete="off" placeholder="예: 커피, 우유, 자몽"><button type="button" class="add" data-act="addFood">추가</button></div><div class="chips">' +
         state.foods.map(function (f) { return '<span class="chip food">' + esc(f.name) + '<button type="button" data-act="rmFood" data-id="' + f.id + '" aria-label="' + esc(f.name) + ' 삭제">' + icon('x', 12) + '</button></span>'; }).join('') +
         '</div><p class="note">음식과 약의 상호작용 확인은 준비 중이에요. 지금은 기록만 해요.</p>';
     }
-    var nextLabel = onb ? '끝내고 홈으로 가기' : (p.all ? '저장하고 돌아가기' : '저장하고 결과 보기');
-    return '<main class="screen has-bar">' + (onb ? obHead(3) + stepChip(3) : topbar()) +
-      '<h1 class="h' + (onb ? ' ob' : '') + '" data-focus>언제 드시나요?</h1><p class="sub' + (onb ? ' ob' : '') + '">시간을 입력하면 하루 시간표가 만들어지고, 설명서에 복용 간격이 적힌 약은 간격도 볼 수 있어요. 나중에 입력해도 돼요.</p>' +
+    var nextLabel = p.all ? '저장하고 돌아가기' : '저장하고 결과 보기';
+    return '<main class="screen has-bar">' + topbar() +
+      '<h1 class="h" data-focus>언제 드시나요?</h1><p class="sub">시간을 입력하면 하루 시간표가 만들어지고, 설명서에 복용 간격이 적힌 약은 간격도 볼 수 있어요. 나중에 입력해도 돼요.</p>' +
       (list.length ? '<ul class="tlist pcards">' + list.map(timeRow).join('') + '</ul>' : '<p class="muted">등록한 것이 없어요.</p>') + foods + '</main>' +
       actionBar('<button type="button" class="cta" data-act="timesDone">' + nextLabel + '</button>');
   };
@@ -458,7 +458,7 @@
     user: '<circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c.8-4 3.8-6 7.5-6s6.7 2 7.5 6"/>',
     warn: '<path d="M12 3.5l9.5 16.5h-19z"/><path d="M12 10v4.5"/><path d="M12 17.4h.01"/>',
     down: '<path d="M6 9l6 6 6-6"/>', right: '<path d="M9 6l6 6-6 6"/>',
-    left: '<path d="M15 6l-6 6 6 6"/>', check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>', x: '<path d="M6 6l12 12M18 6L6 18"/>'
+    left: '<path d="M15 6l-6 6 6 6"/>', check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>', okcircle: '<circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/>', x: '<path d="M6 6l12 12M18 6L6 18"/>'
   };
   function kpIcon(n, size, cls) {
     return '<svg class="kp-ic' + (cls ? ' ' + cls : '') + '" width="' + size + '" height="' + size + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' + KP_ICONS[n] + '</svg>';
@@ -484,6 +484,11 @@
     if (n.more > 0 && !open) html += '<button type="button" class="kp-notice-more" data-act="toggleNotice" data-id="' + esc(S.id) + '" aria-expanded="false">' + esc(n.moreText) + '</button>';
     return '<div class="kp-notice">' + kpIcon('warn', 20) + '<div class="kp-notice-main">' + html + '</div></div>';
   }
+  /* 주의가 없을 때의 작은 안내 블록(kind 'none'·'unknown' 모두). 빨강은 주의 전용이라 쓰지 않는다. */
+  function statusLineHtml(L) {
+    if (!L) return '';
+    return '<div class="kp-status-line kp-status-line--' + esc(L.kind) + '">' + kpIcon('okcircle', 18) + '<div><p class="kp-status-line-text">' + esc(L.text) + '</p>' + (L.sub ? '<p class="kp-status-line-sub">' + esc(L.sub) + '</p>' : '') + '</div></div>';
+  }
   function slotRowHtml(S) {
     var open = slotOpen(S), id = esc(S.id), parts = S.summary.text.split(' · ');
     var sum = esc(parts[0]) + (S.summary.cautionCount > 0 && parts.length > 1 ? ' · <span class="kp-red">' + esc(parts.slice(1).join(' · ')) + '</span>' : '');
@@ -493,7 +498,7 @@
       '<section class="kp-slot' + (open ? ' is-open' : '') + '">' +
       '<button type="button" class="kp-slot-head" data-act="toggleSlot" data-id="' + id + '" aria-expanded="' + open + '" aria-controls="kp-slot-' + id + '">' +
       '<span class="kp-slot-ico kp-slot-ico--' + ic + '">' + kpIcon(ic, 22) + '</span><span class="kp-slot-title"><b>' + esc(S.label) + '</b><small>' + sum + '</small></span>' + kpIcon('down', 22, 'kp-chev') + '</button>' +
-      '<div class="kp-slot-body" id="kp-slot-' + id + '"' + (open ? '' : ' hidden') + '>' + S.groups.map(groupHtml).join('') + (S.notice ? noticeHtml(S) : '') + '</div></section></li>';
+      '<div class="kp-slot-body" id="kp-slot-' + id + '"' + (open ? '' : ' hidden') + '>' + S.groups.map(groupHtml).join('') + (S.notice ? noticeHtml(S) : statusLineHtml(S.statusLine)) + (S.uncoveredNote ? '<p class="kp-uncovered">' + esc(S.uncoveredNote) + '</p>' : '') + '</div></section></li>';
   }
   function mealRowHtml(R) {
     return '<li class="kp-row kp-row--meal' + (R.lineDone ? ' is-line-done' : '') + (R.last ? ' is-last' : '') + '"><span class="kp-time">' + esc(R.time) + '</span>' +
@@ -516,8 +521,7 @@
     if (slots.length) body += '<ol class="kp-tl">' + m.rows.map(function (r) { return r.type === 'slot' ? slotRowHtml(r) : mealRowHtml(r); }).join('') + '</ol>';
     var acts = (!state.items.length ? '<button type="button" class="kp-add" data-act="to" data-view="onb-drugs">처음 설정 시작하기</button>' : '') +
       '<button type="button" class="kp-add' + (!state.items.length ? ' is-ghost' : '') + '" data-act="newRx">새 약 추가하기</button>';
-    var band = state.demo ? '<p class="kp-band" role="status">시연 데이터예요</p>' : '';
-    return '<main class="screen kp-home">' + band + topbarHome() + hello + body + '<div class="kp-add-wrap">' + acts + '</div></main>' + nav('home');
+    return '<main class="screen kp-home">' + topbarHome() + hello + body + '<div class="kp-add-wrap">' + acts + '</div></main>' + nav('home');
   };
   /* 다시 그릴 때 진행 바 폭만 빼고 비교한다(바는 그린 뒤에 새 폭으로 움직이므로) */
   function homeSig(html) { return html.replace(/style="width:[^"]*"/, ''); }
@@ -672,13 +676,6 @@
       actionBar('<button type="button" id="nextbtn" class="cta" data-act="dock"' + (d.slots.length ? '' : ' disabled') + '>담기</button>');
   };
 
-  VIEWS.notify = function () {
-    return '<main class="screen lockscreen"><p class="clock-date">' + esc(new Date().toLocaleDateString('ko-KR', { month: 'long', day: 'numeric', weekday: 'long' })) + '</p>' +
-      '<button type="button" class="push" data-act="demoConfirm"><span class="app"><i></i>키핑 · 지금</span><span class="ptxt">새 처방약이 등록됐어요.<br>이번에 받은 약 4개를 시간표에 넣어 볼까요?</span></button>' +
-      '<p class="hint">알림을 눌러 보세요</p><p class="fine light">시연 화면이에요. 실제 처방 정보 연동은 구현하지 않았어요.</p>' +
-      '<button type="button" class="cta ghost light" data-act="back">돌아가기</button></main>';
-  };
-
   /* ---------- 깊이 2: 근거 시트 / 약 상세 ---------- */
   function metaRow(label, value, tipHtml) {
     return '<div class="meta"><b>' + esc(label) + '</b><span>' + value + '</span>' + (tipHtml || '') + '</div>';
@@ -738,10 +735,6 @@
     var on = statesOf().indexOf(k) > -1;
     return '<button type="button" class="row switchrow" role="switch" aria-checked="' + on + '" data-act="toggleState" data-k="' + k + '"><span class="row-main"><b>' + label + '</b></span><span class="sw' + (on ? ' on' : '') + '" aria-hidden="true"><i></i></span><span class="swtxt">' + (on ? '켜짐' : '꺼짐') + '</span></button>';
   }
-  function demoSwitch() {
-    var on = !!state.demo;
-    return '<button type="button" class="row switchrow" role="switch" aria-checked="' + on + '" data-act="toggleDemo"><span class="row-main"><b>시연 데이터 보기</b><span class="sub2">켜면 홈 위에 "시연 데이터예요" 띠가 보여요</span></span><span class="sw' + (on ? ' on' : '') + '" aria-hidden="true"><i></i></span><span class="swtxt">' + (on ? '켜짐' : '꺼짐') + '</span></button>';
-  }
   VIEWS.settings = function () {
     var inPack = Pack.drugs.filter(function (d) { return !d.partial; }).length;
     var dur = Pack.dur, st = dur && dur.stats(), care = ui.care;
@@ -779,7 +772,7 @@
       '<div class="meta off"><b>계정 연결</b><span>2차 예정</span></div>' +
       scope + sources +
       '<p class="fine">키핑은 의료 조언이 아니에요. 약과 영양제를 함께 복용해도 되는지는 약사나 의사에게 확인해 주세요. 출처: 식약처 의약품 제품 허가정보, DUR, 의약품안전나라, 식품안전나라.</p>' +
-      '<p class="lbl">시연</p>' + demoSwitch() + (state.demo ? '<button type="button" class="cta ghost" data-act="demoRx">새 처방 알림 시연 보기</button>' : '') + '</main>' + nav('settings');
+      '</main>' + nav('settings');
   };
 
   /* ---------- 흐름 ---------- */
@@ -810,8 +803,8 @@
   }
   function newBatchId() { return 'rx-' + Date.now().toString(36); }
 
-  /* 시연용 약 하나를 만든다. 전체 약 목록이 있으면 dur.search로 찾은 제품코드 항목, 없으면 데이터 팩(itemSeq) 항목. */
-  function demoDrug(query, seq, time, extra) {
+  /* 예시 사용자(시험용 seedExample)의 약 하나를 만든다. 전체 약 목록이 있으면 dur.search로 찾은 제품코드 항목, 없으면 데이터 팩(itemSeq) 항목. */
+  function exampleDrug(query, seq, time, extra) {
     var hit = Pack.dur && Pack.dur.search(query, { limit: 1 })[0];
     if (hit) return newItem(Object.assign(Pack.dur.toItem(hit.code), { times: [time] }, extra || {}));
     var r = Pack.drugs.filter(function (d) { return d.itemSeq === seq; })[0];
@@ -819,7 +812,7 @@
   }
   function loadExample() {
     state = Store.fresh(); state.example = true;
-    var itra = demoDrug('이트코나졸캡슐', '200000913', '08:30');   // 수출용 코니트라캡슐 대신 급여목록 제품(전체 약 목록이 없을 때만 코니트라캡슐)
+    var itra = exampleDrug('이트코나졸캡슐', '200000913', '08:30');   // 수출용 코니트라캡슐 대신 급여목록 제품(전체 약 목록이 없을 때만 코니트라캡슐)
     var s = Pack.supplements[0];
     var vitc = newItem({ kind: 'supp', source: 'domestic', name: s.name, reportNo: s.reportNo, company: s.company, ingredientRaw: s.ingredientRaw, ingredientKeys: s.ingredientKeys.slice(), times: ['13:30'] });
     var iron = newItem({ kind: 'supp', source: 'manual', name: '철분제 (예시)', ingredientKeys: ['iron'], times: ['09:30'] });
@@ -827,17 +820,6 @@
     state.foods = [{ id: Store.uid(), name: '커피' }];
     save();
   }
-  function addDemoBatch() {
-    var b = 'rx-demo';
-    state.items = state.items.filter(function (i) { return i.batch !== b; });
-    [['시바스', '200403126', '21:00'], ['이텍스시메티딘', '200402420', '09:00'], ['알마겔에프', '199000541', '08:00'], ['후로스판', '198801649', '12:30']].forEach(function (p) {
-      state.items.push(demoDrug(p[0], p[1], p[2], { batch: b }));
-    });
-    state.lastBatch = b;
-    markNewRx(state.items.filter(function (i) { return i.batch === b; }).map(function (i) { return i.id; }));
-    return b;
-  }
-
   var Acts = {
     start: function () { ui.agree = false; go('consent'); },
     skipSplash: function () { go('welcome'); },
@@ -891,8 +873,6 @@
     },
     detail: function (t) { go('detail', { id: t.dataset.id }); },
     newRx: function (t) { go('add', { batch: t.dataset.batch || newBatchId() }); },
-    demoRx: function () { go('notify'); },
-    demoConfirm: function () { var b = addDemoBatch(); go('home'); },
     draftSlot: function (t) {
       var d = ui.draft; if (!d) return;
       var i = d.slots.indexOf(t.dataset.slot);
@@ -917,7 +897,6 @@
       ui.draft = null;
       if (add) go('home'); else { ui.tab = d.fromTab || 'domestic'; go(d.fromView, d.fromParams); toast(nm(it) + ' 담았어요'); }
     },
-    toggleDemo: function () { state.demo = !state.demo; save(); renderKeepingFocus(); },
     pick: function (t) {
       var x = ui.results && ui.results[+t.dataset.i]; if (!x) return;
       if (currentKind() === 'drug') {
@@ -967,10 +946,7 @@
     },
     addTime: function (t) { var it = findItem(t.dataset.id); if (!it) return; it.times = it.times && it.times.length ? it.times.concat(['']) : ['', '']; save(); render(false); },
     timesDone: function () {
-      var p = ui.params;
-      if (p.mode === 'onb') go('home');
-      else if (p.all) go('home');
-      else go('home');
+      go('home');
     },
     toggleState: function (t) {
       var k = t.dataset.k, cur = statesOf(), i = cur.indexOf(k);
@@ -1108,5 +1084,5 @@
   if (document.fonts && document.fonts.load) {
     Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + " 16px 'Pretendard Variable'"); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
   } else boot();
-  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, seedExample: function () { loadExample(); state.demo = true; }, loadChecks: loadChecks, render: render };
+  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, seedExample: loadExample, loadChecks: loadChecks, render: render };
 })();

@@ -89,7 +89,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       check(`${w}: 약 검색 — 다음 버튼 높이 56, 하단 영역에 건너뛰기 없음`, await page.evaluate(() => { const n = document.querySelector('#nextbtn').getBoundingClientRect(); return Math.abs(n.height - 56) <= 1 && !document.querySelector('.skipbtn'); }));
       check(`${w}: 약 검색 — 화면에 "건너뛰기"가 없음`, await page.evaluate(() => !/건너뛰기/.test(document.getElementById('app').textContent)));
       await page.evaluate(() => { KeepingApp.state().items.push({ id: 'lt1', kind: 'drug', source: 'manual', name: '레이아웃약', times: ['07:30'], batch: null }); KeepingApp.go('onb-drugs'); }); await page.click('#nextbtn'); await page.waitForSelector('[data-tab]'); await barOK('영양제');
-      await page.click('.skipbtn'); await page.waitForSelector('input.time, .tlist, [data-act="timesDone"]'); await barOK('복용 시간');
+      await page.click('.skipbtn'); await page.waitForSelector('.kp-top');
 
       // ── 홈 · 결과 (하단 탭이 열 안)
       await page.evaluate(() => KeepingApp.go('welcome')); await page.evaluate(() => { KeepingApp.seedExample(); KeepingApp.go('home'); }); await page.waitForSelector('.nav');
@@ -101,9 +101,6 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       check(`${w}: 홈 — 체크 터치 영역 44px 이상, 맨 아래 버튼 높이 56`, home.boxes.length >= 1 && home.boxes.every((b) => b.w >= 44 && b.h >= 44) && Math.abs(home.btn.h - 56) <= 1);
       check(`${w}: 홈 — 시간대 카드 헤더(펼침 버튼) 높이 56px 이상`, home.chks.length >= 2 && home.chks.every((c) => c.w >= 44 && c.h >= 56));
       check(`${w}: 홈 — 하단 탭 3개가 열 폭을 나눠 가짐(터치 영역 44px 이상)`, home.tabs.length === 3 && home.tabs.every((t) => t.w >= 44 && t.h >= 44) && Math.abs(home.tabs[0].x - r.app.x) <= 1 && Math.abs(home.tabs[2].r - r.app.r) <= 1);
-      await page.evaluate(() => KeepingApp.go('settings')); await page.click('[data-act="demoRx"]'); await page.click('[data-act="demoConfirm"]'); await page.waitForSelector('.kp-hello', { state: 'attached' });
-      r = await R();
-      check(`${w}: 새 처방 표시가 붙은 홈 — 하단 탭이 열 안, 가로 넘침 없음`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
       check(`${w}: 오류 없음`, errs.length === 0, errs.join(' | '));
       await ctx.close();
     }
