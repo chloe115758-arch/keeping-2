@@ -290,9 +290,9 @@
   /* 스플래시(시안 01) + 3초 전환: 환영 화면을 미리 그려 두고 그 위에 막(.sp-ov)과 한 줄 글을 덮는다.
      환영의 작은 로고(.obw-logo)가 곧 큰 로고다 — 같은 요소를 크게 키워 가운데에 두었다가(FLIP) 제자리로 줄인다. 끝나면 막을 걷고 ui.view만 welcome으로 바꾼다(history에 넣지 않는다). */
   VIEWS.splash = function () {
-    return VIEWS.welcome().replace('obwelcome"', 'obwelcome splashing"') + '<div class="sp-ov" aria-hidden="true"><p class="sp-tag">처방전 해석부터 건강 관리까지</p></div>';
+    return VIEWS.welcome().replace('obwelcome"', 'obwelcome splashing"') + '<div class="sp-ov" aria-hidden="true"><p class="sp-tag">처방전 해석부터 건강 관리까지</p><i class="sp-slot"></i></div>';
   };
-  var SP = { small: 59 / 187, inkTop: 431,   // 큰 로고 187×52(scale 1) → 환영 자리 폭 59(scale 59/187)
+  var SP = { small: 59 / 187,   // 큰 로고 187×52(scale 1) → 환영 자리 폭 59(scale 59/187). 큰 로고의 자리는 막 가운데의 빈 칸(.sp-slot)
      ease: 'cubic-bezier(0.4, 0, 0.2, 1)' };
   function startSplash() {
     var main = root.querySelector('.obwelcome'), lg = main && main.querySelector('.obw-logo'), ov = root.querySelector('.sp-ov'), tag = root.querySelector('.sp-tag');
@@ -300,18 +300,21 @@
     var items = [main.querySelector('.obw-h'), main.querySelector('.obw-p'), root.querySelector('.actionbar')];
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches, anims = [], done = false, timer = null;
     function finish() {
-      if (done) return; done = true; clearTimeout(timer);
+      if (done) return; done = true; clearTimeout(timer); window.removeEventListener('resize', onResize);
       anims.forEach(function (a) { try { a.cancel(); } catch (e) { /* 이미 끝남 */ } });
       main.classList.remove('splashing'); lg.style.cssText = ''; ov.remove();
       if (ui.view === 'splash') ui.view = 'welcome';
       ui.splashFinish = null;
     }
     ui.splashFinish = finish;
+    /* 환영의 작은 로고 자리(transform 무시한 배치 위치) → 막 가운데 칸(.sp-slot)으로 가는 변환. 가운데 정렬이 끝난 뒤에 잰다 */
+    function fromOf() {
+      var op = lg.offsetParent || root, o = op.getBoundingClientRect(), sl = ov.querySelector('.sp-slot').getBoundingClientRect();
+      return 'translate(' + (sl.left - (o.left + lg.offsetLeft)) + 'px,' + (sl.top - (o.top + lg.offsetTop)) + 'px) scale(1)';
+    }
     function run() {
       if (done) return;
-      var r = lg.getBoundingClientRect(), a = root.getBoundingClientRect();   // r: 환영 자리(줄어든 상태)의 왼쪽 위(transform-origin 0 0)
-      var dx = a.left + (a.width - 187) / 2 - r.left, dy = a.top + SP.inkTop - r.top;
-      var from = 'translate(' + dx + 'px,' + dy + 'px) scale(1)', to = 'translate(0,0) scale(' + SP.small + ')';
+      var from = fromOf(), to = 'translate(0,0) scale(' + SP.small + ')';
       lg.style.opacity = '1'; lg.style.transform = from; lg.style.color = 'var(--kp-logo-splash)';
       if (reduce || !lg.animate) { timer = setTimeout(finish, reduce ? 1000 : 3200); return; }   // 줄어든 모션 설정: 정지 화면 1초 뒤 바로 환영
       var T = function (el, kf, o) { var an = el.animate(kf, Object.assign({ fill: 'both', easing: 'linear' }, o)); anims.push(an); return an; };
@@ -323,6 +326,12 @@
       items.forEach(function (el, i) { if (el) T(el, [{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'translateY(0)' }], { delay: 2400 + i * 80, duration: 600, easing: 'ease-out' }); });
       timer = setTimeout(finish, 3200);
     }
+    function onResize() {   // 창 크기가 바뀌면 큰 로고 자리를 다시 재서 이동 시작점을 고친다
+      if (done || !lg.style.transform) return;
+      var f = fromOf(); lg.style.transform = f;
+      anims.forEach(function (a) { var kf = a.effect && a.effect.getKeyframes && a.effect.getKeyframes(); if (kf && kf.length === 2 && kf[0].transform && kf[0].transform.indexOf('translate(') === 0 && kf[0].transform.indexOf('scale(1)') > 0) { kf[0].transform = f; a.effect.setKeyframes(kf); } });
+    }
+    window.addEventListener('resize', onResize);
     (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(run, run);   // 글자 폭이 정해진 뒤에 재서 어긋나지 않게
   }
 

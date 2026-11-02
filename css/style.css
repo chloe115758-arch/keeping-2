@@ -726,8 +726,9 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 
 /* ---------- 스플래시 + 3초 전환 (시안 01) ---------- */
 .app{position:relative}
-.sp-ov{position:absolute;inset:0;z-index:50;background:var(--kp-splash-bg)}
-.sp-tag{position:absolute;left:0;right:0;top:392px;text-align:center;font:400 16px/20px var(--kp-font);letter-spacing:var(--kp-ls);color:var(--kp-tagline)}
+.sp-ov{position:absolute;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--kp-splash-bg)}
+.sp-slot{display:block;flex:none;width:187px;height:52px;margin-top:19px}   /* 큰 로고가 설 빈 칸: 한 줄 글 + 간격 + 이 칸이 한 묶음으로 가운데에 온다 */
+.sp-tag{margin:0;text-align:center;font:400 16px/20px var(--kp-font);letter-spacing:var(--kp-ls);color:var(--kp-tagline)}
 .obwelcome.splashing .obw-logo{position:relative;z-index:60;will-change:transform;opacity:0}
 .obwelcome.splashing .obw-h,.obwelcome.splashing .obw-p,.obwelcome.splashing ~ .actionbar{opacity:0}
 .sp-ov ~ *{pointer-events:none}
