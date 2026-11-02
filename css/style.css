@@ -720,3 +720,7 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .obc-sub{position:relative;left:1px;top:-1px}
 .obconsent .agree-t{position:relative;left:1px;top:1px}
 .obc-list li span{position:relative;left:1px}
+
+/* 검색 결과: 영역이 넘치면 결과만 스크롤(아래 버튼 띠는 그대로), 마지막 줄이 버튼에 가리지 않게 여백 */
+.obs-list{max-height:calc(100dvh - 359px - var(--kp-ob-bottom) - 18px - 50px - 16px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media (min-width:481px){.obs-list{max-height:calc(100dvh - 48px - 359px - var(--kp-ob-bottom) - 18px - 50px - 16px)}}
