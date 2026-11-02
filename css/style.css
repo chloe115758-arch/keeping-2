@@ -691,3 +691,4 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .actionbar.ob .skipbtn span{color:#828282}
 .actionbar.ob .skipbtn small{color:#BDBDBD}
 .dose-chips{gap:8px}
+.actionbar.ob .cta{padding-left:0;padding-right:0;min-width:0}
