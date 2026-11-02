@@ -32,7 +32,8 @@ const seedRx = () => {   // 새 처방 4개(예전 시연 묶음과 같은 약·
   });
   w.KeepingStore.save(S);
 };
-const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"]')[i])); click('[data-act="dock"]'); };
+const pick = (i) => { click(qa('[data-act="draftSlot"]')[i]); click('[data-act="timeSave"]'); };   // 칩 → 시간 시트 → 저장
+const dock = (idx = [0]) => { idx.forEach(pick); click('[data-act="dock"]'); };
 
 (async () => {
   await w.KeepingApp.bootCopy(); await w.KeepingApp.bootCare(); w.KeepingApp.ui.nowMin = 7 * 60;   // 시각을 아침 7시로 고정
@@ -99,7 +100,7 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   check('사진 인식·준비 중 문구는 화면에 없음(범위 밖·검증 못 한 약속을 넣지 않음)', !q('#photo') && !q('.photobtn') && !/사진으로 찾기|글자 인식|이 기기 안에서만 읽고|자동으로 불러오는 기능은 준비 중/.test(T()));
   inp.value = '시바스'; inp.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(260);
   click('.res'); await wait(10); snap();
-  check('약을 고르면 "담기 확인" 화면: 약 이름 + "언제 드세요?" 칩 4개, 시간 고르기 전에는 [담기] 비활성, 건너뛰기 없음', T().includes('담기 확인') && T().includes('시바스정') && qa('[data-act="draftSlot"]').map((c) => c.textContent).join('|') === '아침|점심|저녁|자기 전' && qa('.tacc').length === 4 && q('[data-act="dock"]').disabled === true && !/건너뛰기|기본 시각은/.test(T()) && !q('.tacc-p') && w.KeepingApp.state().items.length === 0);
+  check('약을 고르면 "담기 확인" 화면: 약 이름 + "언제 드세요?" 칩 4개, 시간 고르기 전에는 [담기] 비활성, 건너뛰기 없음', T().includes('담기 확인') && T().includes('시바스정') && qa('[data-act="draftSlot"]').map((c) => c.textContent).join('|') === '아침|점심|저녁|자기 전' && q('[data-act="dock"]').disabled === true && !/건너뛰기|기본 시각은/.test(T()) && w.KeepingApp.state().items.length === 0);
   click('[data-act="dock"]'); check('시간을 고르지 않고 담기를 눌러도 담기지 않음', w.KeepingApp.state().items.length === 0);
   dock([0, 3]); await wait(10);
   check('담으면 검색 화면으로 돌아오고 기본 시각(07:30·22:00)으로 저장됨', !!q('#selected') && JSON.stringify(w.KeepingApp.state().items[0].times) === '["07:30","22:00"]', JSON.stringify(w.KeepingApp.state().items.map((i) => i.times)));
@@ -157,19 +158,24 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   const q2 = q('#q'); q2.value = '시메티딘'; q2.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(260);
   const first = qa('.res').find((r) => r.textContent.includes('이텍스시메티딘정')); click(first); await wait(10); snap();
   check('고르면 "담기 확인": 약 이름, 시간 칩 4개, [담기] 비활성', T().includes('담기 확인') && T().includes('이텍스시메티딘정') && qa('[data-act="draftSlot"]').length === 4 && q('[data-act="dock"]').disabled === true);
-  click(qa('[data-act="draftSlot"]')[0]); click(qa('[data-act="draftSlot"]')[2]);
-  check('여러 줄 선택(aria-checked) + [담기] 활성', qa('[data-act="draftSlot"][aria-checked="true"]').length === 2 && q('[data-act="dock"]').disabled === false);
+  click(qa('[data-act="draftSlot"]')[0]);
+  check('칩을 누르면 시간 시트: 제목 "아침", 기본 시각 07:30(숫자 키패드), [저장] 활성, 아직 선택되지 않음', !!q('.kp-tsheet') && q('#kp-sheet-title').textContent === '아침' && q('#tsheet-in').value === '07:30' && q('#tsheet-in').getAttribute('inputmode') === 'numeric' && q('[data-act="timeSave"]').disabled === false && qa('[data-act="draftSlot"][aria-checked="true"]').length === 0);
+  click('.kp-scrim');
+  check('어두운 막을 눌러 닫으면 그 칩은 선택하지 않은 상태 그대로', !q('.kp-tsheet') && qa('[data-act="draftSlot"][aria-checked="true"]').length === 0 && q('[data-act="dock"]').disabled === true);
   const fo = (el) => el.dispatchEvent(new w.FocusEvent('focusout', { bubbles: true })), typeIn = (id, v) => { const i = q('#' + id); i.value = v; i.dispatchEvent(new w.Event('input', { bubbles: true })); return i; };
   const css1 = fs.readFileSync(path.join(dir, 'css/style.css'), 'utf8');
-  check('세로 4줄 중 고른 줄 바로 아래에만 시각 입력이 펼쳐짐(체크 · 이름 · 시각 · 화살표, 기본 시각, 숫자 키패드)', qa('.tacc-p').length === 2 && q('.tacc.on [data-slot="morning"]').parentElement.querySelector('#dt-morning') === q('#dt-morning') && q('#tc-morning').textContent === '07:30' && q('#tc-lunch').textContent === '' && !!q('.tacc.on .tacc-box svg') && !!q('.tacc.on .tacc-chev') && q('#dt-morning').value === '07:30' && q('#dt-dinner').value === '18:30' && q('#dt-morning').getAttribute('inputmode') === 'numeric' && !q('#dt-lunch'));
-  let i1 = typeIn('dt-dinner', '오후 7시 반'); fo(i1);
-  check('"오후 7시 반"을 치고 벗어나면 "19:30"으로 바뀌고 칩에도 반영, 같은 시간대라 안내 없음', i1.value === '19:30' && q('#tc-dinner').textContent === '19:30' && q('#tm-dinner').textContent === '');
-  i1 = typeIn('dt-morning', '1330'); fo(i1);
-  check('칩과 다른 시간대면 같은 자리에 time_band_hint(보조색 작은 글씨, 빨강 아님)', i1.value === '13:30' && q('#tm-morning').textContent === '13:30은 점심 시간대로 들어가요' && /\.time-msg\{[^}]*var\(--kp-text-sub\)/.test(css1) && !/\.time-msg[^{]*\{[^}]*(caution|red)/.test(css1));
-  i1 = typeIn('dt-morning', 'abc'); fo(i1);
-  check('읽을 수 없으면 time_invalid 안내 + [담기] 비활성', q('#tm-morning').textContent === '시각을 다시 확인해 주세요 (예: 07:30)' && q('[data-act="dock"]').disabled === true);
-  i1 = typeIn('dt-morning', '730'); fo(i1);
-  check('고쳐 치면 안내가 사라지고 [담기] 활성', i1.value === '07:30' && q('#tm-morning').textContent === '' && q('[data-act="dock"]').disabled === false);
+  const tin = () => q('#tsheet-in'), tblur = () => tin().dispatchEvent(new w.FocusEvent('blur')), tmsg = () => q('#tsheet-msg').textContent;
+  pick(0); click(qa('[data-act="draftSlot"]')[2]);
+  let i1 = tin(); i1.value = '오후 7시 반'; i1.dispatchEvent(new w.Event('input', { bubbles: true })); tblur();
+  check('저녁 시트에 "오후 7시 반"을 치고 벗어나면 "19:30"으로 바뀌고, 같은 시간대라 안내 없음', tin().value === '19:30' && tmsg() === '');
+  i1.value = '1330'; i1.dispatchEvent(new w.Event('input', { bubbles: true })); tblur();
+  check('칩과 다른 시간대면 time_band_hint(보조색 작은 글씨, 빨강 아님)', tin().value === '13:30' && tmsg() === '13:30은 점심 시간대로 들어가요' && /\.time-msg\{[^}]*var\(--kp-text-sub\)/.test(css1) && !/\.time-msg[^{]*\{[^}]*(caution|red)/.test(css1));
+  i1.value = 'abc'; i1.dispatchEvent(new w.Event('input', { bubbles: true })); tblur();
+  check('읽을 수 없으면 time_invalid 안내 + 시트 [저장] 비활성(눌러도 닫히지 않음)', tmsg() === '시각을 다시 확인해 주세요 (예: 07:30)' && q('[data-act="timeSave"]').disabled === true && (click('[data-act="timeSave"]'), !!q('.kp-tsheet')));
+  i1.value = '1930'; i1.dispatchEvent(new w.Event('input', { bubbles: true })); tblur(); click('[data-act="timeSave"]');
+  check('고쳐 치고 저장하면 시트가 닫히고 칩 글자에 시각이 붙음("아침 07:30" · "저녁 19:30") + [담기] 활성', !q('.kp-tsheet') && qa('[data-act="draftSlot"]').map((c) => c.textContent).join('|') === '아침 07:30|점심|저녁 19:30|자기 전' && qa('[data-act="draftSlot"][aria-checked="true"]').length === 2 && q('[data-act="dock"]').disabled === false);
+  click(qa('[data-act="draftSlot"]')[1]); click('.kp-scrim'); click(qa('[data-act="draftSlot"]')[0]);
+  check('선택된 칩을 다시 누르면 시트 없이 해제됨', !q('.kp-tsheet') && qa('[data-act="draftSlot"]')[0].getAttribute('aria-checked') === 'false' && qa('[data-act="draftSlot"]')[0].textContent === '아침'); pick(0);
   check('1회 먹는 양(선택) 입력 칸 + 단위(정·캡슐·포·ml, 기본 정) + 안내 문구', T().includes('1회 먹는 양 (선택)') && q('#ddose').getAttribute('inputmode') === 'decimal' && [...q('#dunit').options].map((o) => o.text).join() === '정,캡슐,포,ml' && q('#dunit').value === '정' && T().includes('내가 적어 두는 값이에요. 키핑은 양을 판단하지 않아요'));
   typeIn('ddose', '2'); q('#dunit').value = '캡슐'; q('#dunit').dispatchEvent(new w.Event('change', { bubbles: true }));
   click('[data-act="dock"]'); snap();

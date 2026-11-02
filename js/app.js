@@ -187,7 +187,7 @@
   function bootCare() {
     ui.care = { status: 'loading', engine: null, notice: true };
     function fin() {
-      if (['home', 'bag', 'list', 'detail', 'settings', 'onb-supps', 'times'].indexOf(ui.view) > -1) render(false);
+      if (['home', 'bag', 'list', 'detail', 'settings', 'onb-supps', 'times', 'dose'].indexOf(ui.view) > -1) render(false);
     }
     function fail() { ui.care = { status: 'error', engine: null, notice: true }; }
     if (typeof fetch !== 'function' || !window.KeepingCare) { fail(); carePromise = Promise.resolve(); return carePromise; }
@@ -216,12 +216,11 @@
   /* 식사 시간은 기본값으로 고정한다(입력 화면 없음) */
   function mealsOf() { return { breakfast: '08:30', lunch: '12:30', dinner: '18:30' }; }
   function statesOf() { return (state.states || []).filter(function (x) { return x === 'pregnant' || x === 'elderly'; }); }
-  function careItems() {
-    return state.items.map(function (it) {
+  function careItemOf(it) {
       if (it.kind === 'drug') return { id: it.id, kind: 'drug', productCode: it.productCode || undefined, itemSeq: it.itemSeq || undefined, name: it.name, display: nm(it), times: activeTimes(it), dept: it.dept || undefined, dose: it.dose || undefined };
       return { id: it.id, kind: 'supp', ingredientKeys: (it.ingredientKeys || []).slice(), name: it.name, display: nm(it), times: activeTimes(it), dose: it.dose || undefined };
-    });
   }
+  function careItems() { return state.items.map(careItemOf); }
   function careModel() {
     var eng = careEngine();
     return eng ? eng.analyze(careItems(), { meals: mealsOf(), states: statesOf() }) : null;
@@ -609,7 +608,7 @@
   };
 
   /* ---------- 근거 시트(바텀시트): model.sheets[flagId] ---------- */
-  var sheetLayer = null, sheetReturn = null;
+  var sheetLayer = null, sheetReturn = null, sheetCleanup = null, sheetOnClose = null;
   function sheetBody(s) {
     var url = safeUrl(s.source && s.source.url), chk = s.source && s.source.checkedAt ? String(s.source.checkedAt).slice(0, 10) : '확인하지 못했어요';
     var official = s.grade === 'official';
@@ -621,29 +620,37 @@
       '<p class="kp-src"><span class="kp-src-label">' + esc((s.source && s.source.label) || '') + '</span><span class="kp-src-row">' + (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener">원문 보기</a>' : '') + '<span>확인일 ' + esc(chk) + '</span></span></p>' +
       '<p class="kp-help">이상 증상이 있으면 약사·의사에게 물어보세요.</p>';
   }
-  function openSheet(flagId, trigger) {
-    var s = homeModel().sheets[flagId];
-    if (!s) { toast('근거를 불러오지 못했어요'); return; }
+  /* 바텀시트 공통 틀: 어두운 막 · 손잡이 · 제목 + ✕ · 내용 · 아래 버튼 */
+  function mountSheet(title, bodyHtml, footHtml, cls) {
     closeSheet(true);
-    sheetReturn = trigger ? { act: trigger.getAttribute('data-act'), flag: trigger.getAttribute('data-flag') } : null;
-    ui.sheet = flagId;
     sheetLayer = document.createElement('div');
     sheetLayer.className = 'kp-layer';
     sheetLayer.innerHTML = '<div class="kp-scrim" data-act="closeSheet"></div>' +
-      '<div class="kp-sheet" role="dialog" aria-modal="true" aria-labelledby="kp-sheet-title" tabindex="-1"><div class="kp-grab" aria-hidden="true"></div>' +
-      '<div class="kp-sheet-bar"><h2 id="kp-sheet-title">근거</h2><button type="button" class="kp-icbtn" data-act="closeSheet" aria-label="닫기">' + kpIcon('x', 22) + '</button></div>' +
-      '<div class="kp-sheet-body">' + sheetBody(s) + '</div><div class="kp-sheet-foot"><button type="button" class="kp-close" data-act="closeSheet">닫기</button></div></div>';
+      '<div class="kp-sheet' + (cls ? ' ' + cls : '') + '" role="dialog" aria-modal="true" aria-labelledby="kp-sheet-title" tabindex="-1"><div class="kp-grab" aria-hidden="true"></div>' +
+      '<div class="kp-sheet-bar"><h2 id="kp-sheet-title">' + esc(title) + '</h2><button type="button" class="kp-icbtn" data-act="closeSheet" aria-label="닫기">' + kpIcon('x', 22) + '</button></div>' +
+      '<div class="kp-sheet-body">' + bodyHtml + '</div><div class="kp-sheet-foot">' + footHtml + '</div></div>';
     document.body.appendChild(sheetLayer);
     document.body.style.overflow = 'hidden';
     root.setAttribute('aria-hidden', 'true'); root.setAttribute('inert', '');
     sheetLayer.addEventListener('click', onActClick);
     var x = sheetLayer.querySelector('.kp-icbtn'); if (x) x.focus({ preventScroll: true });
+    return sheetLayer.querySelector('.kp-sheet');
+  }
+  function openSheet(flagId, trigger) {
+    var s = homeModel().sheets[flagId];
+    if (!s) { toast('근거를 불러오지 못했어요'); return; }
+    mountSheet('근거', sheetBody(s), '<button type="button" class="kp-close" data-act="closeSheet">닫기</button>');
+    sheetReturn = trigger ? { act: trigger.getAttribute('data-act'), flag: trigger.getAttribute('data-flag') } : null;
+    ui.sheet = flagId;
   }
   function closeSheet(silent) {
     if (!sheetLayer) return;
     sheetLayer.remove(); sheetLayer = null; ui.sheet = null;
+    if (sheetCleanup) { sheetCleanup(); sheetCleanup = null; }
     document.body.style.overflow = '';
     root.removeAttribute('aria-hidden'); root.removeAttribute('inert');
+    var cb = sheetOnClose; sheetOnClose = null;
+    if (cb && silent !== true) cb();
     var r = sheetReturn; sheetReturn = null;
     if (silent === true || !r) return;
     var back = root.querySelector('[data-act="' + r.act + '"]' + (r.flag ? '[data-flag="' + String(r.flag).replace(/["\\]/g, '\\$&') + '"]' : ''));
@@ -653,7 +660,7 @@
     if (!sheetLayer) return;
     if (e.key === 'Escape') { e.preventDefault(); closeSheet(); return; }
     if (e.key !== 'Tab') return;
-    var f = [].filter.call(sheetLayer.querySelectorAll('button,a[href]'), function (n) { return !n.disabled; });
+    var f = [].filter.call(sheetLayer.querySelectorAll('button,a[href],input'), function (n) { return !n.disabled; });
     if (!f.length) return;
     var first = f[0], last = f[f.length - 1], a = document.activeElement;
     if (!sheetLayer.contains(a)) { e.preventDefault(); first.focus(); }
@@ -714,25 +721,14 @@
   var DOSE_UNITS = ['정', '캡슐', '포', 'ml'];
   var SLOT_CHIPS = [['morning', '아침'], ['lunch', '점심'], ['dinner', '저녁'], ['bedtime', '자기 전']];
   function startDraft(item) {
-    ui.draft = { item: item, slots: [], times: {}, blurred: {}, dose: { amount: '', unit: '정' }, dept: '', deptEdit: false, fromView: ui.view, fromParams: ui.params };
+    ui.draft = { item: item, slots: [], times: {}, dose: { amount: '', unit: '정' }, dept: '', deptEdit: false, fromView: ui.view, fromParams: ui.params };
     go('confirm');
   }
-  /* 칩에 보이는 시각: 고른 칩은 입력값(읽을 수 있을 때), 아니면 기본 시각 */
-  function chipTime(d, id) { return (d.slots.indexOf(id) > -1 && window.KeepingTime.parse(d.times[id])) || window.KeepingTime.DEFAULTS[id]; }
-  /* 입력칸을 벗어난 뒤에만 보여 준다(치는 중에는 비움). 빨강이 아니라 보조색 작은 글씨. */
-  function timeMsg(d, id) {
-    if (!d.blurred[id]) return '';
-    var p = window.KeepingTime.parse(d.times[id]);
-    if (p === null) return say('time_invalid');
-    var m = window.KeepingTime.mismatch(id, p);
-    return m ? say('time_band_hint', { time: p, band: m.label }) : '';
-  }
-  function draftReady(d) { return d.slots.length > 0 && d.slots.every(function (id) { return window.KeepingTime.parse(d.times[id]) !== null; }); }
+  function draftReady(d) { return d.slots.length > 0; }
   VIEWS.confirm = function () {
     var d = ui.draft;
     if (!d) { ui.view = 'home'; return VIEWS.home(); }
-    d.times = d.times || {}; d.blurred = d.blurred || {}; d.dose = d.dose || { amount: '', unit: '정' };
-    d.slots.forEach(function (id) { if (d.times[id] == null) d.times[id] = window.KeepingTime.DEFAULTS[id]; });
+    d.times = d.times || {}; d.dose = d.dose || { amount: '', unit: '정' };
     var it = d.item, custom = d.dept && DEPTS.indexOf(d.dept) < 0, dept = '';
     if (isRx(it)) {
       var chips = d.deptEdit
@@ -742,16 +738,115 @@
           }).join('') + '<button type="button" class="chip' + (custom ? ' on' : '') + '" aria-pressed="' + !!custom + '" data-act="draftDeptOther">' + (custom ? esc(d.dept) : '직접 입력') + '</button></div>';
       dept = '<p class="lbl">어느 과에서 처방받았어요? <span class="opt">선택</span></p>' + chips;
     }
-    var slots = '<p class="lbl">언제 드세요?</p><div class="tacc-list" role="group" aria-label="먹는 시간">' + SLOT_CHIPS.map(function (c) {
+    var slots = '<p class="lbl">언제 드세요?</p><div class="dchips" role="group" aria-label="먹는 시간">' + SLOT_CHIPS.map(function (c) {
       var a = d.slots.indexOf(c[0]) > -1;
-      return '<div class="tacc' + (a ? ' on' : '') + '"><button type="button" class="tacc-h" role="checkbox" aria-checked="' + a + '" aria-expanded="' + a + '" data-act="draftSlot" data-slot="' + c[0] + '"><span class="tacc-box">' + (a ? kpIcon('check', 16) : '') + '</span><b>' + c[1] + '</b><span class="tacc-time" id="tc-' + c[0] + '">' + (a ? esc(chipTime(d, c[0])) : '') + '</span>' + kpIcon('down', 20, 'tacc-chev') + '</button>' +
-        (a ? '<div class="tacc-p"><label class="tslot-l" for="dt-' + c[0] + '">' + c[1] + ' 시각</label><input id="dt-' + c[0] + '" class="tslot-in" type="text" inputmode="numeric" autocomplete="off" placeholder="07:30" data-input="dtime" data-slot="' + c[0] + '" value="' + esc(d.times[c[0]] || '') + '"><p class="time-msg" id="tm-' + c[0] + '" aria-live="polite">' + esc(timeMsg(d, c[0])) + '</p></div>' : '') + '</div>';
+      return slotChip('draftSlot', c[0], a ? d.times[c[0]] : '', a, false);
     }).join('') + '</div>';
     var dose = '<p class="lbl">' + esc(say('dose_label')) + '</p><div class="dose"><input id="ddose" class="ta" type="text" inputmode="decimal" autocomplete="off" aria-label="' + esc(say('dose_label')) + '" placeholder="1" data-input="ddose" value="' + esc(d.dose.amount) + '"><select id="dunit" class="ta" aria-label="단위" data-input="dunit">' +
       DOSE_UNITS.map(function (u) { return '<option' + (d.dose.unit === u ? ' selected' : '') + '>' + u + '</option>'; }).join('') + '</select></div><p class="time-msg">' + esc(say('dose_hint')) + '</p>';
     return '<main class="screen has-bar">' + topbar() + '<h1 class="h" data-focus>담기 확인</h1>' +
       '<div class="pcard"><div class="pc-head"><div class="pc-title"><b>' + esc(nm(it)) + '</b><span class="pc-sub">' + esc(kindLabel(it)) + '</span></div></div>' + dept + slots + dose + '</div></main>' +
       actionBar('<button type="button" id="nextbtn" class="cta" data-act="dock"' + (draftReady(d) ? '' : ' disabled') + '>담기</button>');
+  };
+
+  /* ---------- 시간 바텀시트: 아침·점심·저녁 칩을 고르면 시각을 정한다 (담기 확인 · 복용법 입력 공통) ---------- */
+  var SLOT_KO = { morning: '아침', lunch: '점심', dinner: '저녁', bedtime: '자기 전' };
+  function slotChip(act, id, time, on, off) {
+    return '<button type="button" class="dchip' + (on ? ' on' : '') + (off ? ' off' : '') + '" role="checkbox" aria-checked="' + on + '"' + (off ? ' aria-disabled="true"' : '') + ' data-act="' + act + '" data-slot="' + id + '">' + SLOT_KO[id] + (on && time ? ' ' + time : '') + '</button>';
+  }
+  var tsheet = null;
+  function timeSheetMsg(v) {
+    var p = window.KeepingTime.parse(v);
+    if (p === null) return v.trim() ? say('time_invalid') : '';
+    var m = window.KeepingTime.mismatch(tsheet.slot, p);
+    return m ? say('time_band_hint', { time: p, band: m.label }) : '';
+  }
+  /* slot: 누른 칩 · initial: 처음 보일 시각 · onSave(시각 "HH:MM") · returnSel: 닫힌 뒤 포커스를 돌려줄 칩 */
+  function openTimeSheet(slot, initial, onSave, returnSel) {
+    var sh = mountSheet(SLOT_KO[slot],
+      '<label class="sr" for="tsheet-in">' + SLOT_KO[slot] + ' 시각</label><input id="tsheet-in" class="tsheet-in" type="text" inputmode="numeric" autocomplete="off" value="' + esc(initial) + '"><p class="time-msg tsheet-msg" id="tsheet-msg" aria-live="polite"></p>',
+      '<button type="button" id="tsheet-save" class="cta" data-act="timeSave">저장</button>', 'kp-tsheet');
+    tsheet = { slot: slot, onSave: onSave };
+    sheetOnClose = function () { var c = returnSel && root.querySelector(returnSel); if (c) c.focus({ preventScroll: true }); };
+    var inp = document.getElementById('tsheet-in'), save = document.getElementById('tsheet-save'), msg = document.getElementById('tsheet-msg');
+    inp.addEventListener('input', function () { save.disabled = window.KeepingTime.parse(inp.value) === null; msg.textContent = ''; });
+    inp.addEventListener('blur', function () { var p = window.KeepingTime.parse(inp.value); if (p) inp.value = p; msg.textContent = timeSheetMsg(inp.value); });
+    inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); Acts.timeSave(); } });
+    inp.focus({ preventScroll: true }); inp.select();
+    /* 키보드가 올라오면 시트를 그만큼 올린다(visualViewport) */
+    var vv = window.visualViewport;
+    function fit() { sh.style.bottom = vv ? Math.max(0, window.innerHeight - vv.height - vv.offsetTop) + 'px' : ''; }
+    if (vv) { vv.addEventListener('resize', fit); vv.addEventListener('scroll', fit); fit(); }
+    /* 손잡이·제목 줄을 아래로 끌면 닫는다 */
+    var y0 = null, dy = 0;
+    function down(e) { if (e.target.closest('.kp-icbtn')) return; y0 = e.clientY; dy = 0; sh.style.animation = 'none'; sh.style.transition = 'none'; }
+    function move(e) { if (y0 == null) return; dy = Math.max(0, e.clientY - y0); sh.style.transform = 'translateY(' + dy + 'px)'; }
+    function up() { if (y0 == null) return; y0 = null; sh.style.transition = 'transform .2s ease-out'; if (dy > 80) closeSheet(); else sh.style.transform = ''; }
+    [].forEach.call(sh.querySelectorAll('.kp-grab,.kp-sheet-bar'), function (h) {
+      h.style.touchAction = 'none';
+      h.addEventListener('pointerdown', down); h.addEventListener('pointermove', move); h.addEventListener('pointerup', up); h.addEventListener('pointercancel', up);
+    });
+    sheetCleanup = function () { tsheet = null; if (vv) { vv.removeEventListener('resize', fit); vv.removeEventListener('scroll', fit); } };
+  }
+
+  /* ---------- 복용법 입력 (시안 08) ----------
+     횟수(하나만) · 언제(횟수만큼, 시각은 시트로) · 식전/식후(선택). 저장하면 times · timesPerDay · meal · prn이 항목에 들어간다. */
+  var DOSE_COUNTS = [['1', '1회'], ['2', '2회'], ['3', '3회'], ['prn', '필요 시'], ['custom', '직접 입력']];
+  var DOSE_MEALS = [['before', '식전'], ['after', '식후'], ['any', '식사무관']];
+  var DOSE_SLOTS = ['morning', 'lunch', 'dinner'];
+  /* shortcut: "언제" 칩은 3개뿐이라 4회 이상이면 3개를 고르면 저장된다(횟수는 그대로 timesPerDay에), 시안·설명서에 4회 이상 처리 없음 */
+  function rxNeed(r) { return r.count === 'custom' ? +r.n : +r.count; }
+  function rxMax(r) { var n = rxNeed(r); return n >= 1 ? Math.min(n, 3) : 3; }
+  function rxReady(r) { return r.count === 'prn' || (rxNeed(r) >= 1 && Object.keys(r.slots).length === rxMax(r)); }
+  function subOf(it) { return it.productCode ? [it.ingredientEn, it.category].filter(Boolean).join(' · ') : kindLabel(it); }
+  function doseGroupHtml(g, r) {
+    if (g === 'count') {
+      return DOSE_COUNTS.map(function (c) {
+        if (c[0] === 'custom' && r.count === 'custom') return '<input id="dcount" class="dchip dchip-in on" type="text" inputmode="numeric" maxlength="1" autocomplete="off" aria-label="하루에 먹는 횟수(1~6)" data-input="dcount" value="' + esc(r.n) + '">';
+        var on = r.count === c[0];
+        return '<button type="button" class="dchip' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-act="doseCount" data-v="' + c[0] + '">' + c[1] + '</button>';
+      }).join('');
+    }
+    if (g === 'slot') {
+      var full = Object.keys(r.slots).length >= rxMax(r);
+      return DOSE_SLOTS.map(function (id) {
+        var on = !!r.slots[id];
+        return slotChip('doseSlot', id, r.slots[id], on, r.count === 'prn' || (!on && full));
+      }).join('');
+    }
+    return DOSE_MEALS.map(function (c) {
+      var on = r.meal === c[0];
+      return '<button type="button" class="dchip' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-act="doseMeal" data-v="' + c[0] + '">' + c[1] + '</button>';
+    }).join('');
+  }
+  function syncDose(groups) {
+    var r = ui.draft && ui.draft.rx; if (!r) return;
+    (groups || ['count', 'slot', 'meal']).forEach(function (g) { var el = document.getElementById('dg-' + g); if (el) el.innerHTML = doseGroupHtml(g, r); });
+    var b = document.getElementById('dosesave'); if (b) b.disabled = !rxReady(r);
+  }
+  function startDose(item) {
+    ui.draft = { item: item, rx: { count: null, n: '', slots: {}, meal: null }, fromView: ui.view, fromParams: ui.params };
+    go('dose');
+  }
+  /* "주의사항": 그 약의 설명서 안내(model.detail의 general). 아직 담기 전이라 임시로 한 줄 넣은 모델에서 꺼낸다. 설명서에 없는 약이면 null(줄을 만들지 않는다). */
+  function doseGeneral(item) {
+    var eng = careEngine(); if (!eng || loadingNow()) return null;
+    var items = careItems().concat([careItemOf(Object.assign({}, item, { id: 'dose-tmp', times: [window.KeepingTime.DEFAULTS.lunch] }))]);
+    var m = homeVm().build({ nowMin: nowMin(), items: items, analysis: eng.analyze(items, { meals: mealsOf(), states: statesOf() }), checks: {}, meals: mealsOf() }), g = null;
+    Object.keys(m.detail).forEach(function (k) { m.detail[k].items.forEach(function (x) { if (x.itemId === 'dose-tmp') g = x.general; }); });
+    return g;
+  }
+  var WARN_ICON = '<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.9l6.5 11.2H1.5z" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 6.2v3.3M8 11.3h.01" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>';
+  VIEWS.dose = function () {
+    var d = ui.draft;
+    if (!d || !d.rx) { ui.view = 'home'; return VIEWS.home(); }
+    var it = d.item, r = d.rx, g = doseGeneral(it);
+    function sec(title, id) { return '<section class="dose-sec"><h2>' + title + '</h2><div class="dose-chips" id="dg-' + id + '">' + doseGroupHtml(id, r) + '</div></section>'; }
+    return '<main class="screen obscreen dosev"><div class="dose-top"><button type="button" class="dose-back" data-act="back" aria-label="이전 화면으로"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 1L1.5 9 9 17"/></svg></button><h1 class="dose-title" data-focus>복용법 입력</h1></div>' +
+      '<div class="dose-card"><span class="dose-photo">' + kpIcon('pill', 24) + '</span><div class="dose-name"><b>' + esc(nm(it)) + '</b><span>' + esc(subOf(it)) + '</span></div></div>' +
+      sec('하루에 몇 번 드시나요?', 'count') + sec('언제 드세요?', 'slot') + sec('식전 / 식후', 'meal') +
+      (g ? '<button type="button" class="dose-warn" data-act="doseWarn">' + WARN_ICON + '<span>주의사항</span></button>' : '') + '</main>' +
+      actionBar('<button type="button" id="dosesave" class="cta" data-act="doseSave"' + (rxReady(r) ? '' : ' disabled') + '>저장</button>', 'ob');
   };
 
   /* ---------- 깊이 2: 근거 시트 / 약 상세 ---------- */
@@ -948,6 +1043,15 @@
     state.foods = [{ id: Store.uid(), name: '커피' }];
     save();
   }
+  /* 담기를 마친 뒤: 항목을 저장하고 새 약 추가에서는 홈, 그 밖에서는 직전 화면(검색)으로 돌아간다 */
+  function finishDock(d) {
+    var it = d.item, add = d.fromView === 'add';
+    if (add) { it.batch = (d.fromParams && d.fromParams.batch) || null; state.lastBatch = it.batch; }
+    state.items.push(it);
+    if (add) markNewRx([it.id], true); else save();
+    ui.draft = null;
+    if (add) { go('home'); toast(nm(it) + ' 담았어요'); } else { if (!backOne()) go(d.fromView, d.fromParams); toast(nm(it) + ' 담았어요'); }
+  }
   var Acts = {
     start: function () { ui.agree = false; go('consent'); },
     skipSplash: function () { go('welcome'); },
@@ -1016,9 +1120,9 @@
     newRx: function (t) { go('add', { batch: t.dataset.batch || newBatchId() }); },
     draftSlot: function (t) {
       var d = ui.draft; if (!d) return;
-      var i = d.slots.indexOf(t.dataset.slot);
-      if (i > -1) d.slots.splice(i, 1); else { d.slots.push(t.dataset.slot); if (d.times[t.dataset.slot] == null) d.times[t.dataset.slot] = window.KeepingTime.DEFAULTS[t.dataset.slot]; }
-      renderKeepingFocus();
+      var id = t.dataset.slot, i = d.slots.indexOf(id), sel = '[data-act="draftSlot"][data-slot="' + id + '"]';
+      if (i > -1) { d.slots.splice(i, 1); delete d.times[id]; renderKeepingFocus(); return; }   // 고른 칩을 다시 누르면 해제(시트는 열리지 않는다)
+      openTimeSheet(id, window.KeepingTime.DEFAULTS[id], function (p) { d.slots.push(id); d.times[id] = p; render(false); }, sel);
     },
     draftDept: function (t) { var d = ui.draft; if (!d) return; d.dept = d.dept === t.dataset.dept ? '' : t.dataset.dept; d.deptEdit = false; renderKeepingFocus(); },
     draftDeptOther: function () { var d = ui.draft; if (!d) return; d.deptEdit = true; render(false); var i = document.getElementById('ddeptin'); if (i) i.focus(); },
@@ -1029,18 +1133,53 @@
     /* 담기: 시간을 하나 이상 골랐을 때만. 새 약 추가에서는 홈으로, 처음 설정·약 수정에서는 검색 화면으로 돌아간다. */
     dock: function () {
       var d = ui.draft; if (!d || !d.slots.length) { toast('먹는 시간을 하나 이상 골라 주세요'); return; }
-      if (!draftReady(d)) { toast(say('time_invalid')); return; }
-      var it = d.item, add = d.fromView === 'add';
-      it.times = SLOT_CHIPS.filter(function (c) { return d.slots.indexOf(c[0]) > -1; }).map(function (c) { return window.KeepingTime.parse(d.times[c[0]]); })
+      var it = d.item;
+      it.times = SLOT_CHIPS.filter(function (c) { return d.slots.indexOf(c[0]) > -1; }).map(function (c) { return d.times[c[0]]; })
         .filter(function (t, i, a) { return a.indexOf(t) === i; });
       var amt = parseFloat(String(d.dose.amount).replace(',', '.'));
       if (amt > 0 && isFinite(amt)) it.dose = { amount: amt, unit: d.dose.unit }; else delete it.dose;   // 비우면 저장하지 않는다
       if (d.dept) it.dept = d.dept; else delete it.dept;
-      if (add) { it.batch = (d.fromParams && d.fromParams.batch) || null; state.lastBatch = it.batch; }
-      state.items.push(it);
-      if (add) markNewRx([it.id], true); else save();
-      ui.draft = null;
-      if (add) { go('home'); toast(nm(it) + ' 담았어요'); } else { if (!backOne()) go(d.fromView, d.fromParams); toast(nm(it) + ' 담았어요'); }
+      finishDock(d);
+    },
+    /* 복용법 입력의 [저장]: 필요 시이면 시각 없이(prn), 아니면 고른 시각들과 횟수 */
+    doseSave: function () {
+      var d = ui.draft, r = d && d.rx; if (!r || !rxReady(r)) return;
+      var it = d.item, prn = r.count === 'prn';
+      it.times = prn ? [] : DOSE_SLOTS.filter(function (id) { return r.slots[id]; }).map(function (id) { return r.slots[id]; }).filter(function (t, i, a) { return a.indexOf(t) === i; });
+      if (prn) { it.prn = true; delete it.timesPerDay; } else { delete it.prn; it.timesPerDay = rxNeed(r); }
+      if (r.meal) it.meal = r.meal; else delete it.meal;
+      finishDock(d);
+    },
+    doseCount: function (t) {
+      var r = ui.draft && ui.draft.rx; if (!r) return;
+      r.count = t.dataset.v;
+      if (r.count === 'prn') r.slots = {};
+      if (r.count === 'custom') r.n = '';
+      syncDose();
+      var f = r.count === 'custom' ? document.getElementById('dcount') : root.querySelector('[data-act="doseCount"][data-v="' + r.count + '"]');
+      if (f) f.focus({ preventScroll: true });
+    },
+    doseSlot: function (t) {
+      var r = ui.draft && ui.draft.rx; if (!r || t.getAttribute('aria-disabled') === 'true') return;
+      var id = t.dataset.slot;
+      if (r.slots[id]) { delete r.slots[id]; syncDose(['slot']); var c = root.querySelector('[data-act="doseSlot"][data-slot="' + id + '"]'); if (c) c.focus({ preventScroll: true }); return; }
+      openTimeSheet(id, window.KeepingTime.DEFAULTS[id], function (p) { r.slots[id] = p; syncDose(['slot']); }, '[data-act="doseSlot"][data-slot="' + id + '"]');
+    },
+    doseMeal: function (t) {
+      var r = ui.draft && ui.draft.rx; if (!r) return;
+      r.meal = r.meal === t.dataset.v ? null : t.dataset.v;   // 선택 사항: 다시 누르면 해제
+      syncDose(['meal']); var c = root.querySelector('[data-act="doseMeal"][data-v="' + t.dataset.v + '"]'); if (c) c.focus({ preventScroll: true });
+    },
+    doseWarn: function () {
+      var g = ui.draft && doseGeneral(ui.draft.item); if (!g) return;
+      mountSheet('주의사항', generalHtml(g), '<button type="button" class="kp-close" data-act="closeSheet">닫기</button>');
+      sheetReturn = { act: 'doseWarn' };
+    },
+    /* 시간 시트의 [저장]: 시각을 읽을 수 있을 때만 */
+    timeSave: function () {
+      var s = tsheet, i = document.getElementById('tsheet-in'), p = s && i && window.KeepingTime.parse(i.value);
+      if (!p) return;
+      s.onSave(p); closeSheet();
     },
     pick: function (t) {
       var x = ui.results && ui.results[+t.dataset.i]; if (!x) return;
@@ -1177,23 +1316,15 @@
     if (k === 'search') { ui.q = t.value; clearTimeout(searchTimer); searchTimer = setTimeout(runSearch, 150); }
     else if (k === 'mname') ui.manualName = t.value;
     else if (k === 'mcompany') ui.manualCompany = t.value;
-    else if (k === 'dtime' && ui.draft) {          // 치는 중에는 값만 기억하고 안내는 비운다. 담기 버튼만 바로 갱신.
-      ui.draft.times[t.dataset.slot] = t.value; ui.draft.blurred[t.dataset.slot] = false;
-      var m = document.getElementById('tm-' + t.dataset.slot); if (m) m.textContent = '';
-      var nb = document.getElementById('nextbtn'); if (nb) nb.disabled = !draftReady(ui.draft);
+    else if (k === 'dcount' && ui.draft) {   // 1~6 한 자리만
+      var v = t.value.replace(/\D/g, '').slice(0, 1); t.value = /[1-6]/.test(v) ? v : ''; ui.draft.rx.n = t.value; syncDose(['slot']);
     } else if (k === 'ddose' && ui.draft) ui.draft.dose.amount = t.value;
   });
   /* 입력칸을 벗어나면 "19:30" 꼴로 고쳐 보여 준다 */
   root.addEventListener('focusout', function (e) {
-    var t = e.target, k = t.getAttribute && t.getAttribute('data-input'), d = ui.draft;
+    var t = e.target, k = t.getAttribute && t.getAttribute('data-input');
     if (k === 'btime') { saveBagTime(t, e.relatedTarget); return; }
-    if (k !== 'dtime' || !d) return;
-    var id = t.dataset.slot, p = window.KeepingTime.parse(t.value);
-    if (p) { t.value = p; d.times[id] = p; } else d.times[id] = t.value;
-    d.blurred[id] = true;
-    var m = document.getElementById('tm-' + id); if (m) m.textContent = timeMsg(d, id);
-    var c = document.getElementById('tc-' + id); if (c) c.textContent = chipTime(d, id);
-    var nb = document.getElementById('nextbtn'); if (nb) nb.disabled = !draftReady(d);
+    if (k === 'dcount' && ui.draft && !t.value) { ui.draft.rx.count = null; syncDose(['count', 'slot']); }   // 비운 채 벗어나면 칩으로 돌아간다
   });
   root.addEventListener('change', function (e) {
     var t = e.target, k = t.getAttribute && t.getAttribute('data-input');
@@ -1222,7 +1353,7 @@
     if (ui.view === 'splash' && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); go('welcome'); return; }
     if (e.key !== 'Enter') return;
     var di = e.target.getAttribute && e.target.getAttribute('data-input');
-    if (di === 'btime' || di === 'dtime') { e.target.blur(); return; }
+    if (di === 'btime' || di === 'dcount') { e.target.blur(); return; }
     var id = e.target.id;
     if (id === 'fq') Acts.addFood();
     else if (id === 'cq') Acts.addQ();
@@ -1243,5 +1374,5 @@
   if (document.fonts && document.fonts.load) {
     Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + " 16px 'Pretendard Variable'"); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
   } else boot();
-  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, seedExample: loadExample, generalHtml: generalHtml, loadChecks: loadChecks, render: render };
+  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, seedExample: loadExample, startDose: startDose, generalHtml: generalHtml, loadChecks: loadChecks, render: render };
 })();

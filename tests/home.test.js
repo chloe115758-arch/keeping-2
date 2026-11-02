@@ -147,7 +147,7 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   check('시간을 고르기 전에는 [담기]가 비활성, 눌러도 담기지 않음', q('[data-act="dock"]').disabled === true && (click('[data-act="dock"]'), st.items.length === 0));
   click(qa('[data-act="draftDept"]')[0]); click(qa('[data-act="draftDept"]')[0]);
   check('진료과 칩은 선택 사항: 다시 누르면 해제(아무것도 안 고르면 dept 없음)', !qa('[data-act="draftDept"].on').length);
-  click(qa('[data-act="draftDept"]')[1]); click(qa('[data-act="draftSlot"]')[1]); click(qa('[data-act="draftSlot"]')[3]);
+  click(qa('[data-act="draftDept"]')[1]); click(qa('[data-act="draftSlot"]')[1]); click('[data-act="timeSave"]'); click(qa('[data-act="draftSlot"]')[3]); click('[data-act="timeSave"]');
   click('[data-act="dock"]');
   const docked = st.items.find((i) => i.id === 'D1');
   check('[담기] → 홈: 시간(12:30·22:00)·진료과(피부과) 저장, 홈에 "피부과 처방약" 묶음과 "새 처방" 칩', !!q('.kp-hello') && docked.times.join() === '12:30,22:00' && docked.dept === '피부과' && qa('.kp-grp-txt b').some((b) => b.textContent.startsWith('피부과 처방약') && b.querySelector('.kp-newchip')) && st.newRx.ids.join() === 'D1', JSON.stringify(docked));
