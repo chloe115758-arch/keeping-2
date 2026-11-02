@@ -267,11 +267,11 @@
   var VIEWS = {};
 
   VIEWS.splash = function () {
-    return '<main class="screen splash" data-act="skipSplash"><p class="splash-tag">내가 먹는 약과 영양제, 겹치는 것만</p><h1 class="splash-logo" data-focus>키핑</h1><p class="splash-hint">화면을 누르면 바로 시작해요</p></main>';
+    return '<main class="screen splash" data-act="skipSplash"><p class="splash-tag">내 하루 복약, 근거 있게 챙겨요</p><h1 class="splash-logo" data-focus>키핑</h1><p class="splash-hint">화면을 누르면 바로 시작해요</p></main>';
   };
 
   VIEWS.welcome = function () {
-    return '<main class="screen welcome"><p class="brand">키핑</p><h1 class="h xl" data-focus>내가 먹는 약과 영양제,<br>겹치는 것만 알려드려요</h1><p class="sub">약을 새로 받을 때마다 지금 먹는 것과 겹치는 내용만 골라서 보여드려요. 건강정보는 이 기기에만 저장돼요.</p><p class="fine">키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드리고, 판단은 약사에게 확인해 주세요.</p></main>' +
+    return '<main class="screen welcome"><p class="brand">키핑</p><h1 class="h xl" data-focus>내 하루 복약,<br>근거 있게 챙겨요</h1><p class="sub">먹는 약과 영양제를 담으면 아침·점심·저녁 타임라인을 만들어요. 공식 자료에서 근거가 확인된 주의만 보여드리고, 건강정보는 이 기기에만 저장돼요.</p><p class="fine">키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드리고, 판단은 약사에게 확인해 주세요.</p></main>' +
       actionBar('<button type="button" class="cta" data-act="start">시작하기</button>', 'col');
   };
 
@@ -646,7 +646,7 @@
   };
 
   VIEWS.add = function () {
-    return '<main class="screen">' + topbar() + '<h1 class="h" data-focus>새로 받은 약을 추가해요</h1><p class="sub">약을 고르면 먹는 시간을 정해서 담아요. 지금 먹는 것과 겹치는 내용만 골라서 보여드려요.</p>' +
+    return '<main class="screen">' + topbar() + '<h1 class="h" data-focus>새로 받은 약을 추가해요</h1><p class="sub">약을 고르면 먹는 시간을 정해서 담아요. 지금 먹는 것과 근거가 확인된 주의만 골라서 보여드려요.</p>' +
       searchBlock('drug') + '</main>';
   };
 

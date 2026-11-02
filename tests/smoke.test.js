@@ -37,9 +37,9 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
 (async () => {
   await w.KeepingApp.bootCopy(); await w.KeepingApp.bootCare(); w.KeepingApp.ui.nowMin = 7 * 60;   // 시각을 아침 7시로 고정
   console.log('1) 환영 → 예시 사용자');
-  check('앱을 처음 열면 스플래시(키핑 + 문구, 판정·광고 문구 없음)', !!q('.splash') && T().includes('키핑') && T().includes('겹치는 것만') && !/처방전 해석|건강 관리까지/.test(T()));
+  check('앱을 처음 열면 스플래시(키핑 + 문구, 판정·광고 문구 없음)', !!q('.splash') && T().includes('키핑') && T().includes('내 하루 복약, 근거 있게 챙겨요') && !/처방전 해석|건강 관리까지/.test(T()));
   click('.splash'); snap();
-  check('스플래시를 누르면 환영 화면', T().includes('겹치는 것만 알려드려요') && !!q('[data-act="start"]') && !!q('.actionbar'));
+  check('스플래시를 누르면 환영 화면(새 제목·설명, 예전 문구 없음)', T().includes('내 하루 복약,근거 있게 챙겨요') && T().includes('아침·점심·저녁 타임라인을 만들어요') && !T().includes('겹치는') && !!q('[data-act="start"]') && !!q('.actionbar'));
   w.KeepingApp.seedExample(); w.KeepingApp.go('home'); snap();
   check('홈: 인사 카드(인사말·보조 문장) + 오늘의 복약 + 큰 숫자 + 진행 바 — 건강 관리·이름 자리 문구 없음', !!q('.kp-top') && !!q('.kp-hello') && q('.kp-line1').textContent.length > 0 && q('.kp-line2').textContent.length > 0 && /^\d+\/\d+$/.test(q('.kp-count').textContent) && q('.kp-bar').getAttribute('role') === 'progressbar' && !/OO님|\{name\}/.test(T()), q('.kp-line1') && q('.kp-line1').textContent);
   check('시연 띠·시연 버튼이 홈에 없음', !q('.kp-band') && !q('[data-act="demoRx"]') && !T().includes('시연'));
@@ -345,7 +345,7 @@ const dock = (idx = [0]) => { idx.forEach((i) => click(qa('[data-act="draftSlot"
   w.KeepingApp.go('onb-supps');
   check('영양제 단계는 2/2이고, 건너뛰면 "시간 정하기" 단계 없이 바로 홈', q('.stepchip').textContent === '2/2' && (click('.skipbtn'), !T().includes('언제 드시나요?') && !!q('.kp-top')));
   w.KeepingApp.go('splash'); w.dispatchEvent && d.querySelector('#app').dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
-  check('스플래시는 키보드(Enter)로도 넘길 수 있음', !q('.splash') && T().includes('겹치는 것만 알려드려요'));
+  check('스플래시는 키보드(Enter)로도 넘길 수 있음', !q('.splash') && T().includes('근거 있게 챙겨요'));
   console.log('7) 문구 점검');
   const all = seenTexts.join(' ');
   check('화면 전체에 "안전해요/괜찮아요/문제없어요" 단정 문구 없음', !BANNED.test(all), (all.match(BANNED) || [''])[0]);
