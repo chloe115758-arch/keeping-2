@@ -56,4 +56,27 @@ t('엔진 연결: 이 결과로 만든 영양제 항목이 약과의 간격 안�
   const A = care.analyze(items, {});
   assert.ok(A.slots[0].items[0].flags.some((f) => f.kind === 'interaction' && f.interval), '칼슘 간격 안내가 생긴다');
 });
+t('제품 목록이 있으면 제품 이름·업체로 찾는다(성분 결과는 앞 3개까지, 그 뒤에 제품)', () => {
+  const rows = [['2004001', '센트룸 멀티비타민', '한국화이자', '비타민C, 칼슘'], ['2004002', '락토핏 골드', '종근당건강', '프로바이오틱스'], ['2004003', '칼슘 마그네슘 D', '뉴트리원', '칼슘, 마그네슘'], ['2004004', '종근당 칼슘 플러스', '종근당건강', '칼슘']];
+  const P = Supp.create({ keyList: w.KEEPING_DATA.supplementKeyList, extra: extra, popular: w.KEEPING_DATA.chipKeys, products: rows, mapKeys: (raw) => (/칼슘/.test(raw) ? 'calcium' : null) });
+  assert.strictEqual(P.productCount, 4);
+  const r = P.searchAll('센트룸');
+  assert.strictEqual(r[0].source, 'catalog'); assert.strictEqual(r[0].supp.reportNo, '2004001'); assert.strictEqual(r[0].sub, '한국화이자 · 2004001');
+  assert.deepStrictEqual(r[0].supp.ingredientKeys, ['calcium']);
+  const k = P.searchAll('칼슘');
+  assert.strictEqual(k[0].source, 'local');   // 성분 결과가 먼저
+  assert.ok(k.slice(1).every((x) => x.source === 'catalog') && k.length >= 3, JSON.stringify(k.map((x) => x.source)));
+  assert.strictEqual(P.searchProducts('종근당')[0].supp.company, '종근당건강');          // 업체 이름으로도
+  assert.deepStrictEqual(P.searchProducts('칼슘').map((x) => x.name)[0], '칼슘 마그네슘 D');   // 이름이 앞부분과 같은 것 먼저
+  assert.deepStrictEqual(P.searchProducts('없는제품xyz'), []);
+});
+t('제품 목록이 없으면 지금처럼 성분 결과만 나온다', () => {
+  assert.deepStrictEqual(S.searchAll('칼슘').map((x) => x.source), ['local']);
+});
+t('제품 5만 건에서도 한 번 찾는 데 0.1초가 안 걸린다', () => {
+  const rows = []; for (let i = 0; i < 50000; i++) rows.push([String(3000000 + i), '제품' + i + (i % 50 === 0 ? ' 칼슘' : ''), '업체' + (i % 300), '원료']);
+  const P = Supp.create({ keyList: w.KEEPING_DATA.supplementKeyList, extra: extra, products: rows });
+  const t0 = Date.now(); const r = P.searchAll('칼슘'); const ms = Date.now() - t0;
+  assert.ok(r.length >= 4 && ms < 100, r.length + '건 ' + ms + 'ms');
+});
 console.log('\n' + n + '개 통과');

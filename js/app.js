@@ -15,7 +15,7 @@
     dur: { status: 'loading' },
     care: { status: 'loading', engine: null, notice: true }, open: {},
     noticeOpen: {}, sheet: null, nowMin: null, prevRatio: null, homeSig: '', logo: '', deptEdit: null, homeScroll: 0,
-    copy: { status: 'loading' }, draft: null
+    copy: { status: 'loading' }, draft: null, supp: { products: 'loading', source: '' }
   };
   var searchTimer = null;
 
@@ -326,7 +326,7 @@
     var panel = ui.tab === 'domestic' ? searchBlock('supp') : (ui.tab === 'overseas' ? overseasHtml() : manualHtml());
     var more = ui.params.mode === 'more', n = selectedItems('supp').length;
     return '<main class="screen has-bar">' + (more ? topbar() : obHead(2) + stepChip(2)) +
-      '<h1 class="h' + (more ? '' : ' ob') + '" data-focus>같이 먹는 영양제가 있나요?</h1><p class="sub' + (more ? '' : ' ob') + '">어떤 영양제든 등록할 수 있어요. 국내 제품은 검색하고, 해외 제품이나 못 찾은 제품은 직접 입력해 주세요.</p>' +
+      '<h1 class="h' + (more ? '' : ' ob') + '" data-focus>같이 먹는 영양제가 있나요?</h1><p class="sub' + (more ? '' : ' ob') + '">' + (ui.supp.products === 'ready' ? '제품 이름이나 성분 이름으로 찾아 보세요. 못 찾은 제품은 직접 입력해 주세요.' : '어떤 영양제든 등록할 수 있어요. 국내 제품은 검색하고, 해외 제품이나 못 찾은 제품은 직접 입력해 주세요.') + '</p>' + (ui.supp.products === 'off' ? '<p class="time-msg">제품 목록은 아직 준비 중이에요</p>' : '') +
       suppTabs() + panel +
       '<p class="lbl">고른 영양제 <span class="count" id="selcount">' + n + '</span></p><div id="selected">' + selectedHtml('supp') + '</div></main>' +
       actionBar(more
@@ -688,12 +688,11 @@
           }).join('') + '<button type="button" class="chip' + (custom ? ' on' : '') + '" aria-pressed="' + !!custom + '" data-act="draftDeptOther">' + (custom ? esc(d.dept) : '직접 입력') + '</button></div>';
       dept = '<p class="lbl">어느 과에서 처방받았어요? <span class="opt">선택</span></p>' + chips;
     }
-    var slots = '<p class="lbl">언제 드세요?</p><div class="chips" role="group" aria-label="먹는 시간">' + SLOT_CHIPS.map(function (c) {
+    var slots = '<p class="lbl">언제 드세요?</p><div class="tacc-list" role="group" aria-label="먹는 시간">' + SLOT_CHIPS.map(function (c) {
       var a = d.slots.indexOf(c[0]) > -1;
-      return '<button type="button" class="chip' + (a ? ' on' : '') + '" aria-pressed="' + a + '" data-act="draftSlot" data-slot="' + c[0] + '">' + c[1] + ' <small id="tc-' + c[0] + '">' + esc(chipTime(d, c[0])) + '</small></button>';
-    }).join('') + '</div>' + SLOT_CHIPS.filter(function (c) { return d.slots.indexOf(c[0]) > -1; }).map(function (c) {
-      return '<div class="tslot"><label class="tslot-l" for="dt-' + c[0] + '">' + c[1] + ' 시각</label><input id="dt-' + c[0] + '" class="tslot-in" type="text" inputmode="numeric" autocomplete="off" placeholder="07:30" data-input="dtime" data-slot="' + c[0] + '" value="' + esc(d.times[c[0]] || '') + '"><p class="time-msg" id="tm-' + c[0] + '" aria-live="polite">' + esc(timeMsg(d, c[0])) + '</p></div>';
-    }).join('');
+      return '<div class="tacc' + (a ? ' on' : '') + '"><button type="button" class="tacc-h" role="checkbox" aria-checked="' + a + '" aria-expanded="' + a + '" data-act="draftSlot" data-slot="' + c[0] + '"><span class="tacc-box">' + (a ? kpIcon('check', 16) : '') + '</span><b>' + c[1] + '</b><span class="tacc-time" id="tc-' + c[0] + '">' + (a ? esc(chipTime(d, c[0])) : '') + '</span>' + kpIcon('down', 20, 'tacc-chev') + '</button>' +
+        (a ? '<div class="tacc-p"><label class="tslot-l" for="dt-' + c[0] + '">' + c[1] + ' 시각</label><input id="dt-' + c[0] + '" class="tslot-in" type="text" inputmode="numeric" autocomplete="off" placeholder="07:30" data-input="dtime" data-slot="' + c[0] + '" value="' + esc(d.times[c[0]] || '') + '"><p class="time-msg" id="tm-' + c[0] + '" aria-live="polite">' + esc(timeMsg(d, c[0])) + '</p></div>' : '') + '</div>';
+    }).join('') + '</div>';
     var dose = '<p class="lbl">' + esc(say('dose_label')) + '</p><div class="dose"><input id="ddose" class="ta" type="text" inputmode="decimal" autocomplete="off" aria-label="' + esc(say('dose_label')) + '" placeholder="1" data-input="ddose" value="' + esc(d.dose.amount) + '"><select id="dunit" class="ta" aria-label="단위" data-input="dunit">' +
       DOSE_UNITS.map(function (u) { return '<option' + (d.dose.unit === u ? ' selected' : '') + '>' + u + '</option>'; }).join('') + '</select></div><p class="time-msg">' + esc(say('dose_hint')) + '</p>';
     return '<main class="screen has-bar">' + topbar() + '<h1 class="h" data-focus>담기 확인</h1>' +
@@ -780,6 +779,7 @@
     } else {
       sources = '<p class="lbl">출처</p><div class="card soft"><h4>전체 약 목록을 불러오지 못했어요</h4><p>지금은 키핑이 근거를 확인한 약 ' + inPack + '개 안에서만 찾아요.</p></div>';
     }
+    if (ui.supp.products === 'ready') sources += '<div class="card soft"><h4>영양제 제품 목록</h4><p>영양제 제품 목록: 식품안전나라 건강기능식품 품목제조신고(원재료)</p></div>';
     var scope = '<p class="lbl">이 서비스가 확인하는 범위</p>' +
       metaRow('병용금기 목록', dur ? '확인함 (제품 목록 기준)' : '데이터 팩의 약 ' + inPack + '개만 확인함') +
       metaRow('설명서 안내', careReady ? '성분 ' + fmt(care.count) + '개의 허가사항에서 찾은 문장만' : '불러오지 못했어요') +
@@ -816,16 +816,45 @@
       if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
     }
   }
-  function go(view, params, keepScroll) {
+  /* 화면 기록(히스토리): go()는 지금 화면을 쌓고 새 화면으로 간다. 홈·내 약·마이·환영은 뿌리 화면이라 기록을 비운다.
+     이전(뒤로 가기)과 브라우저 뒤로 가기 모두 한 단계씩 쌓인 화면으로 돌아간다. 브라우저 기록(pushState)과 개수를 맞춘다. */
+  var ROOT_VIEWS = ['welcome', 'home', 'list', 'settings'];
+  ui.hist = []; ui.depth = 0;   // depth: 브라우저 기록에서 지금 칸의 번호(pushState 상태 {kp})
+  function enter(view, params, tab, keepScroll) {
     closeSheet(true);
     ui.prev = { view: ui.view, params: ui.params };
     ui.view = view; ui.params = params || {};
     ui.more = false;
     ui.q = ''; ui.oq = ''; ui.results = null; ui.remote = null; ui.overseas = null; ui.chips = []; ui.manualName = '';
-    if (view !== 'onb-supps') ui.tab = 'domestic';
+    ui.tab = view === 'onb-supps' ? (tab || ui.tab) : 'domestic';
     render(!keepScroll);
     runSearch();
   }
+  function go(view, params, keepScroll) {
+    if (ROOT_VIEWS.indexOf(view) > -1) ui.hist = [];
+    else { ui.hist.push({ view: ui.view, params: ui.params, tab: ui.tab }); ui.depth++; try { history.pushState({ kp: ui.depth }, ''); } catch (e) { /* 기록을 못 쌓아도 앱은 동작 */ } }
+    enter(view, params, null, keepScroll);
+  }
+  /* 한 단계 뒤로: 쌓인 화면이 없으면 false */
+  function popView() {
+    var p = ui.hist.pop(); if (!p) return false;
+    enter(p.view, p.params, p.tab);
+    if (p.view === 'home') window.scrollTo(0, ui.homeScroll || 0);
+    return true;
+  }
+  function backOne() {
+    if (!popView()) return false;
+    ui.depth--; try { history.back(); } catch (e) { /* 앱 안의 이전은 이미 됐다 */ }   // 브라우저 기록도 한 칸 되돌린다(그때 오는 popstate는 칸 번호가 같아 아무 일도 안 한다)
+    return true;
+  }
+  /* 브라우저 뒤로 가기: 도착한 칸 번호까지 쌓인 화면을 한 단계씩 되돌린다. 앞으로 가기는 화면을 바꾸지 않는다. */
+  window.addEventListener('popstate', function (e) {
+    var d = e.state && e.state.kp ? e.state.kp : 0, n = ui.depth - d;
+    ui.depth = d;
+    if (n <= 0) return;                                      // 앞으로 가기·같은 칸(우리가 되돌린 경우)은 화면 그대로
+    while (n-- > 1 && ui.hist.length > 1) ui.hist.pop();     // 건너뛴 칸은 버리고
+    popView();                                               // 마지막 한 칸만 화면을 바꾼다
+  });
   function newBatchId() { return 'rx-' + Date.now().toString(36); }
 
   /* 예시 사용자(시험용 seedExample)의 약 하나를 만든다. 전체 약 목록이 있으면 dur.search로 찾은 제품코드 항목, 없으면 데이터 팩(itemSeq) 항목. */
@@ -892,9 +921,8 @@
     },
     nav: function (t) { var p = {}; if (t.dataset.scope) p.scope = t.dataset.scope; go(t.dataset.view, p); },
     back: function () {
-      var p = ui.prev;
-      if (!p || p.view === ui.view) go(state.items.length ? 'home' : 'welcome'); else go(p.view, p.params);
-      if (ui.view === 'home') window.scrollTo(0, ui.homeScroll || 0);
+      if (!backOne()) go(state.items.length ? 'home' : 'welcome');
+      else if (ui.view === 'home') window.scrollTo(0, ui.homeScroll || 0);
     },
     detail: function (t) { go('detail', { id: t.dataset.id }); },
     newRx: function (t) { go('add', { batch: t.dataset.batch || newBatchId() }); },
@@ -924,7 +952,7 @@
       state.items.push(it);
       if (add) markNewRx([it.id], true); else save();
       ui.draft = null;
-      if (add) { go('home'); toast(nm(it) + ' 담았어요'); } else { ui.tab = d.fromTab || 'domestic'; go(d.fromView, d.fromParams); toast(nm(it) + ' 담았어요'); }
+      if (add) { go('home'); toast(nm(it) + ' 담았어요'); } else { if (!backOne()) go(d.fromView, d.fromParams); toast(nm(it) + ' 담았어요'); }
     },
     pick: function (t) {
       var x = ui.results && ui.results[+t.dataset.i]; if (!x) return;
@@ -937,7 +965,7 @@
         } else item = newItem({ kind: 'drug', source: x.source, itemSeq: x.itemSeq, name: x.name, ingredientKo: x.ingredientKo || null, type: x.type || null });
         startDraft(item); return;
       }
-      var s = x.supp;
+      var s = x.supp;   // 제품을 고르면 reportNo·company·ingredientKeys가 함께 들어간다
       startDraft(newItem({ kind: 'supp', source: 'domestic', name: s.name, reportNo: s.reportNo, company: s.company, ingredientRaw: s.ingredientRaw, ingredientKeys: (s.ingredientKeys || []).slice() }));
     },
     manualDrug: function () {
@@ -1126,6 +1154,7 @@
   ui.view = state.items.length ? 'home' : 'splash';
   var durReady = bootDur();   // 약 목록은 첫 화면과 상관없이 바로 불러오기 시작
   var careReady = bootCare(); // 설명서 기반 안내 데이터는 약 목록이 온 뒤 읽는다
+  Api.suppInfo().then(function (i) { ui.supp = i; if (ui.view === 'onb-supps' || ui.view === 'settings') render(false); });   // 영양제 제품 목록 유무(없어도 동작)
   var copyReady = bootCopy(); // 홈 문구(data/copy/greeting.json)
   bootLogo();                 // assets/brand/keeping-logo.svg 가 있을 때만 인라인으로 쓴다
   /* 첫 화면은 글꼴(Pretendard)이 도착한 뒤에 그린다(최대 1.2초). 글꼴이 늦게 와서 문단이 다시 줄바꿈되며 화면이 튀는 것을 막는다. */

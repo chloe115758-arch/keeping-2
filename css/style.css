@@ -43,7 +43,7 @@
   --b3-1:500 14px/1.5 var(--font);      /* 홈 보조 줄 */
 
   /* 간격 · 라운드 */
-  --pad-x:16px; --gutter:var(--pad-x); --actionbar-h:108px; --tap:44px;   /* --pad-x: 모든 화면의 좌우 패딩(시안 402폭에 내용 370폭) */
+  --pad-x:var(--kp-gap-page); --gutter:var(--pad-x); --actionbar-h:108px; --tap:44px;   /* --pad-x: 모든 화면의 좌우 패딩(시안 402폭에 내용 370폭) */
   --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:32px;
   --r-sm:12px; --r-md:16px; --r-lg:24px; --r-pill:999px;
   /* 그림자 — 시안 값 */
@@ -67,7 +67,7 @@ button{background:none;border:0;cursor:pointer}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .ic{flex:none;vertical-align:-3px}
 
-.app{display:flex;flex-direction:column;max-width:430px;min-height:100vh;min-height:100dvh;margin:0 auto;background:var(--white);box-shadow:0 0 0 1px var(--grey-5)}
+.app{display:flex;flex-direction:column;max-width:430px;min-height:100vh;min-height:100dvh;margin:0 auto;background:var(--kp-bg-page)}
 .screen{flex:1 0 auto;padding:calc(20px + env(safe-area-inset-top, 0px)) var(--pad-x) 32px}
 .hdr{padding-top:12px;margin-bottom:6px}
 
@@ -288,13 +288,7 @@ button{background:none;border:0;cursor:pointer}
 @keyframes up{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}
 
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-/* ---------- 넓은 화면 ----------
-   모든 폭에서 앱은 가운데의 폰 폭 열(최대 430px) 하나다. 431px 이상에서는 바깥을 연한 배경으로 두고 열에 둥근 모서리를 준다.
-   하단 영역·하단 탭은 열 안에 흐름대로 놓이고(sticky), 높이는 내용에 맞게 늘어난다. */
-@media (min-width:431px){
-  body{padding:24px 0}
-  .app{border-radius:28px;min-height:calc(100vh - 48px);min-height:calc(100dvh - 48px);overflow:clip}
-}
+/* ---------- 앱 틀: 파일 맨 아래 "앱 틀" 블록 참고 ---------- */
 @supports not (overflow:clip){ .app{overflow:visible} }   /* overflow:clip이 없는 브라우저(사파리 15 이하)에서도 하단 영역이 붙어 있도록 */
 
 /* ---------- 설명서 기반 안내 상태 · 식사 시간 ---------- */
@@ -351,7 +345,7 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 .kp-ic{flex:none;display:block}
 
 /* 인사 카드 + 오늘의 복약 */
-.kp-hello{margin-top:24px;padding:20px var(--kp-pad-card) 16px;padding-inline:18px;background:var(--kp-surface);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
+.kp-hello{margin-top:24px;padding:20px var(--kp-pad-card) 16px;padding-inline:18px;background:var(--kp-surface);border:1px solid var(--kp-border);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
 .kp-line1{font:var(--kp-fw-title) var(--kp-fs-title)/1.4 var(--kp-font);letter-spacing:var(--kp-ls)}
 .kp-line2{margin-top:2px;font-size:var(--kp-fs-caption);color:var(--kp-text-sub)}
 .kp-today{display:flex;align-items:center;justify-content:space-between;margin-top:14px}
@@ -372,7 +366,7 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 .kp-row--slot{--c:29px}
 .kp-row--slot .kp-slot{margin-bottom:6px}
 .kp-row--meal{--c:13px;min-height:27px}
-.kp-time{padding-top:calc(var(--c) - 10px);padding-right:1px;margin-left:-12px;font:var(--kp-fw-title) 13px/20px var(--kp-font);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.kp-time{padding-top:calc(var(--c) - 10px);padding-right:1px;margin-left:-24px;font:var(--kp-fw-title) 13px/20px var(--kp-font);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
 .kp-row--meal .kp-time{padding-top:calc(var(--c) - 9px);font:400 12px/18px var(--kp-font);color:var(--kp-text-sub)}
 .kp-row--meal+.kp-row--slot{--c:34px}   /* 카드가 5px 아래에서 시작하므로 노드·라벨도 같이 내린다 */
 .kp-row--meal+.kp-row--slot .kp-slot{margin-top:5px}
@@ -389,7 +383,7 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 .kp-meal-label{padding-top:calc(var(--c) - 9px);font:400 12px/18px var(--kp-font);color:var(--kp-text-sub)}
 
 /* 시간대 카드 */
-.kp-slot{min-width:0;background:var(--kp-surface);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
+.kp-slot{min-width:0;background:var(--kp-surface);border:1px solid var(--kp-border);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
 .kp-slot-head{display:flex;align-items:center;gap:12px;width:100%;min-height:60px;padding:10px 16px;text-align:left;border-radius:var(--kp-radius-card)}
 .kp-slot-ico{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center}
 .kp-slot-ico--sun{color:var(--kp-info-text);background:color-mix(in srgb,var(--kp-info-text) 10%,var(--kp-surface))}
@@ -468,7 +462,7 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 /* 약봉투 화면 */
 .kp-bag .topbar{margin-bottom:10px}
 .kp-bag-list{display:grid;gap:var(--kp-gap-card)}
-.kp-bagcard{display:grid;gap:8px;padding:var(--kp-pad-card);padding-inline:18px;border-radius:var(--kp-radius-card);background:var(--kp-surface);box-shadow:var(--kp-shadow-card)}
+.kp-bagcard{display:grid;gap:8px;padding:var(--kp-pad-card);padding-inline:18px;border:1px solid var(--kp-border);border-radius:var(--kp-radius-card);background:var(--kp-surface);box-shadow:var(--kp-shadow-card)}
 .kp-bag-name{font:var(--kp-fw-title) 19px/1.4 var(--kp-font);letter-spacing:var(--kp-ls);overflow-wrap:anywhere}
 .kp-bag-sub{font-size:13px;color:var(--kp-text-sub)}
 .kp-chip{justify-self:start;display:inline-block;padding:2px 10px;border-radius:var(--kp-radius-chip);background:var(--kp-surface-sub);font:var(--kp-fw-strong) var(--kp-fs-caption)/1.5 var(--kp-font);color:var(--kp-text)}
@@ -552,7 +546,7 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .splash-hint{color:var(--kp-text-sub)}
 .linkbtn{color:var(--kp-brand-strong)}
 .linkbtn:hover{background:var(--kp-surface-sub)}
-.agree{background:var(--kp-surface);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
+.agree{background:var(--kp-surface);border:1px solid var(--kp-border);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
 .agree.on{background:var(--kp-brand-weak)}
 .agree .box{background:var(--kp-border);color:var(--kp-surface)}
 .agree.on .box{background:var(--kp-brand);color:var(--kp-text)}
@@ -561,7 +555,7 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .inp{background:var(--kp-surface);border-color:var(--kp-border);border-radius:var(--kp-radius-card)}
 .inp:focus-within,.ta:focus{border-color:var(--kp-brand)}
 .ta{background:var(--kp-surface);border-color:var(--kp-border)}
-.row,.res,.pcard,.card,.mrow{background:var(--kp-surface);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
+.row,.res,.pcard,.card,.mrow{background:var(--kp-surface);border:1px solid var(--kp-border);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
 .res.done{background:var(--kp-surface-sub);box-shadow:none}
 .res:hover:not(.done){box-shadow:0 0 0 1.5px var(--kp-brand) inset,var(--kp-shadow-card)}
 .row.ghostrow{background:var(--kp-surface);box-shadow:inset 0 0 0 1.5px var(--kp-border)}
@@ -571,8 +565,15 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .badge.newrx{color:var(--kp-label-text);background:var(--kp-brand-weak);border-color:var(--kp-brand-strong)}
 
 /* 담기 확인: 시각 아코디언 · 1회 양 */
-.chip small{font:inherit;font-size:var(--kp-fs-caption);font-variant-numeric:tabular-nums;opacity:.75;margin-left:2px}
-.tslot{margin:8px 0 0;padding:10px 12px;border-radius:var(--kp-radius-chip);background:var(--kp-surface-sub);animation:tslot-in .18s ease-out}
+.tacc-list{border:1px solid var(--kp-border);border-radius:var(--kp-radius-card);overflow:hidden;background:var(--kp-surface)}
+.tacc+.tacc{border-top:1px solid var(--kp-border)}
+.tacc-h{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:0 16px;text-align:left;font:var(--kp-fw-strong) 16px/1.4 var(--kp-font);color:var(--kp-text)}
+.tacc-box{flex:none;width:24px;height:24px;border-radius:8px;border:1.5px solid var(--kp-border);display:grid;place-items:center;background:var(--kp-surface);color:var(--kp-cta-text)}
+.tacc.on .tacc-box{background:var(--kp-cta-bg);border-color:var(--kp-cta-bg)}
+.tacc-time{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--kp-text-sub);font-weight:var(--kp-fw-strong)}
+.tacc-chev{flex:none;color:var(--kp-text-sub);transition:transform .18s}
+.tacc.on .tacc-chev{transform:rotate(180deg)}
+.tacc-p{padding:0 16px 14px 52px;animation:tslot-in .18s ease-out}
 .tslot-l{display:block;font:var(--kp-fw-strong) var(--kp-fs-caption)/1.5 var(--kp-font);color:var(--kp-text-sub)}
 .tslot-in{display:block;width:100%;height:44px;margin-top:4px;padding:0 12px;border:1.5px solid var(--kp-border);border-radius:var(--kp-radius-chip);background:var(--kp-surface);color:var(--kp-text);font:var(--kp-fw-strong) 16px/1 var(--kp-font);font-variant-numeric:tabular-nums}
 .tslot-in:focus{outline:none;border-color:var(--kp-brand)}
@@ -581,3 +582,12 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .dose{display:flex;gap:8px}
 .dose input{flex:1;min-width:0;margin:0}.dose select{flex:none;width:96px;margin:0}
 @keyframes tslot-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+/* ---------- 앱 틀 ----------
+   480px 이하: 틀 없이 전체 화면 흰 배경. 480px 초과: 바깥 --kp-bg-outer 위에 폰 폭(430px) 열 하나를 흰 배경·큰 모서리·그림자(테두리 선 없음)로 놓는다.
+   하단 영역·하단 탭은 열 안에 흐름대로(sticky) 놓인다. */
+@media (max-width:480px){ .app{max-width:none} }
+@media (min-width:481px){
+  body{background:var(--kp-bg-outer);padding:24px 0}
+  .app{max-width:430px;border-radius:32px;box-shadow:var(--kp-shadow-frame);min-height:calc(100vh - 48px);min-height:calc(100dvh - 48px);overflow:clip}
+}

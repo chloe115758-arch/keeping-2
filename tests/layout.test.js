@@ -10,6 +10,7 @@ const chrome = CANDIDATES.find((p) => fs.existsSync(p));
 if (!chrome) { console.log('건너뜀: 크롬을 찾지 못해 레이아웃을 점검하지 못했어요. KEEPING_CHROME에 경로를 지정하세요.'); process.exit(0); }
 
 const root = path.join(__dirname, '..');
+const GAP = +/--kp-gap-page:\s*(\d+)px/.exec(fs.readFileSync(path.join(root, 'css/design-tokens.css'), 'utf8'))[1];   // 모든 화면의 가로 여백(토큰 값)
 const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json' };
 const server = http.createServer((req, res) => {
   const f = path.join(root, decodeURIComponent(req.url.split('?')[0]).replace(/^\/+$/, '/index.html'));
@@ -59,10 +60,13 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
 
       // ── 환영 화면 위계 · 하단 영역
       check(`${w}: 환영 — 하단 영역이 열 안에 꽉 참(폭 같음)`, loading.bar && Math.abs(loading.bar.x - app.x) <= 1 && Math.abs(loading.bar.r - app.r) <= 1, JSON.stringify(loading.bar));
-      check(`${w}: 환영 — 시작하기 버튼 높이 56, 열 좌우 16px 안쪽`, loading.start && Math.abs(loading.start.h - 56) <= 1 && Math.abs(loading.start.x - (app.x + 16)) <= 1 && Math.abs(app.r - 16 - loading.start.r) <= 1, JSON.stringify(loading.start));
+      check(`${w}: 환영 — 시작하기 버튼 높이 56, 열 좌우 --kp-gap-page 안쪽`, loading.start && Math.abs(loading.start.h - 56) <= 1 && Math.abs(loading.start.x - (app.x + GAP)) <= 1 && Math.abs(app.r - GAP - loading.start.r) <= 1, JSON.stringify(loading.start));
       check(`${w}: 환영 — 브랜드 → 제목 → 설명 → 고지 순서, 고지는 설명 아래 16px`, loading.brand.b <= loading.h1.y && loading.h1.b <= loading.sub.y && Math.abs(loading.fine.y - loading.sub.b - 16) <= 1, `설명→고지 ${Math.round(loading.fine.y - loading.sub.b)}px`);
       if (h >= 700) check(`${w}: 환영 — 제목이 위쪽 1/3 부근에서 시작`, loading.h1.y >= h * 0.25 && loading.h1.y <= h * 0.42, `제목 위 ${Math.round(loading.h1.y)} / 화면 높이 ${h}`);
-      check(`${w}: 환영 — 글자 왼쪽이 열 안쪽 16px에 맞음(제목·설명·고지·버튼)`, [loading.h1, loading.sub, loading.fine, loading.start].every((r) => Math.abs(r.x - (app.x + 16)) <= 1));
+      check(`${w}: 환영 — 글자 왼쪽이 열 안쪽 --kp-gap-page에 맞음(제목·설명·고지·버튼)`, [loading.h1, loading.sub, loading.fine, loading.start].every((r) => Math.abs(r.x - (app.x + GAP)) <= 1));
+      const frame = await page.evaluate(() => { const a = document.getElementById('app'), cs = getComputedStyle(a), tk = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim().toLowerCase(), hex = (c) => '#' + c.match(/\d+/g).slice(0, 3).map((x) => (+x).toString(16).padStart(2, '0')).join(''); return { vw: document.documentElement.clientWidth, w: a.getBoundingClientRect().width, shadow: cs.boxShadow, radius: parseFloat(cs.borderTopLeftRadius), bg: hex(cs.backgroundColor), body: hex(getComputedStyle(document.body).backgroundColor), outer: tk('--kp-bg-outer'), page: tk('--kp-bg-page'), frameShadow: tk('--kp-shadow-frame') }; });
+      if (w > 480) check(`${w}: 앱 틀 — 바깥은 --kp-bg-outer, 앱은 흰 배경·큰 모서리·--kp-shadow-frame(테두리 선 없음), 폭 430`, frame.body === frame.outer && frame.bg === frame.page && frame.radius >= 24 && frame.shadow !== 'none' && !/0px 0px 0px 1px/.test(frame.shadow) && Math.abs(frame.w - 430) <= 1, JSON.stringify(frame));
+      else check(`${w}: 앱 틀 — 틀 없이 전체 화면 흰 배경`, frame.shadow === 'none' && frame.radius === 0 && frame.bg === frame.page && frame.page === '#ffffff' && Math.abs(frame.w - frame.vw) <= 1, JSON.stringify(frame));
 
       // ── 로딩이 끝나도 환영 화면 위치가 변하지 않는다
       await page.waitForFunction(() => KeepingApp.ui.dur.status === 'ready'); await page.waitForTimeout(150);
@@ -80,7 +84,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
         check(`${w}: ${label} — 하단 영역 안의 요소가 영역을 벗어나지 않음`, kids.every((k) => k.y >= bar.y - 0.5 && k.b <= bar.b + 0.5 && k.x >= bar.x - 0.5 && k.r <= bar.r + 0.5));
         let overlap = false; for (let i = 0; i < kids.length; i++) for (let j = i + 1; j < kids.length; j++) { const a = kids[i], c = kids[j]; if (a.x < c.r - 0.5 && c.x < a.r - 0.5 && a.y < c.b - 0.5 && c.y < a.b - 0.5) overlap = true; }
         check(`${w}: ${label} — 하단 영역 안의 버튼끼리 겹치지 않음`, !overlap);
-        check(`${w}: ${label} — 제목 왼쪽이 열 안쪽 16px`, !r.h1 || Math.abs(r.h1.x - (r.app.x + 16)) <= 1);
+        check(`${w}: ${label} — 제목 왼쪽이 열 안쪽 --kp-gap-page`, !r.h1 || Math.abs(r.h1.x - (r.app.x + GAP)) <= 1);
         return r;
       };
       await page.click('[data-act="start"]'); await page.waitForSelector('.agree'); await barOK('저장 안내');
@@ -96,8 +100,10 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       let r = await R();
       check(`${w}: 홈 — 하단 탭이 열 안`, r.nav && Math.abs(r.nav.x - r.app.x) <= 1 && Math.abs(r.nav.r - r.app.r) <= 1 && r.scrollW <= r.vw);
       const home = await page.evaluate(() => { const rc = (e) => { const r = e.getBoundingClientRect(); return { x: r.left, r: r.right, w: r.width, h: r.height, y: r.top }; }; return { card: rc(document.querySelector('.kp-hello')), bar: rc(document.querySelector('.kp-top')), cards: [...document.querySelectorAll('.kp-row--slot .kp-slot')].map(rc), chks: [...document.querySelectorAll('.kp-slot-head')].map(rc), boxes: [...document.querySelectorAll('.kp-check')].map(rc).filter((b) => b.w > 0), btn: rc(document.querySelector('.kp-add')), tabs: [...document.querySelectorAll('.nav button')].map(rc) }; });
-      check(`${w}: 홈 — 인사 카드 좌우 18px, 상단바가 열 안`, Math.abs(home.card.x - (r.app.x + 18)) <= 1 && Math.abs(r.app.r - 18 - home.card.r) <= 1 && home.bar.w <= r.app.w);
-      check(`${w}: 홈 — 시간대 카드: 왼쪽은 시간 라벨+선 뒤(18+32+32), 오른쪽은 18px`, home.cards.length >= 2 && home.cards.every((c) => Math.abs(c.x - (r.app.x + 82)) <= 1 && Math.abs(r.app.r - 18 - c.r) <= 1));
+      check(`${w}: 홈 — 인사 카드 좌우 --kp-gap-page, 상단바가 열 안`, Math.abs(home.card.x - (r.app.x + GAP)) <= 1 && Math.abs(r.app.r - GAP - home.card.r) <= 1 && home.bar.w <= r.app.w);
+      check(`${w}: 홈 — 시간대 카드: 왼쪽은 시간 라벨+선 뒤(시간 열 52−2 + 선 32 = 82), 오른쪽은 --kp-gap-page`, home.cards.length >= 2 && home.cards.every((c) => Math.abs(c.x - (r.app.x + 82)) <= 1 && Math.abs(r.app.r - GAP - c.r) <= 1));
+      const tgap = await page.evaluate(() => { const t = document.querySelector('.kp-row--slot .kp-time'), nd = document.querySelector('.kp-row--slot .kp-node'); if (!t || !nd) return null; const rg = document.createRange(); rg.selectNodeContents(t); const tr = rg.getBoundingClientRect(); return { gap: nd.getBoundingClientRect().left - tr.right, left: tr.left }; });
+      check(`${w}: 홈 — 시간 라벨과 원 사이 6px, 라벨이 화면 밖으로 나가지 않음`, tgap && Math.abs(tgap.gap - 6) <= 0.5 && tgap.left >= 0, JSON.stringify(tgap));
       check(`${w}: 홈 — 체크 터치 영역 44px 이상, 맨 아래 버튼 높이 56`, home.boxes.length >= 1 && home.boxes.every((b) => b.w >= 44 && b.h >= 44) && Math.abs(home.btn.h - 56) <= 1);
       check(`${w}: 홈 — 시간대 카드 헤더(펼침 버튼) 높이 56px 이상`, home.chks.length >= 2 && home.chks.every((c) => c.w >= 44 && c.h >= 56));
       check(`${w}: 홈 — 하단 탭 3개가 열 폭을 나눠 가짐(터치 영역 44px 이상)`, home.tabs.length === 3 && home.tabs.every((t) => t.w >= 44 && t.h >= 44) && Math.abs(home.tabs[0].x - r.app.x) <= 1 && Math.abs(home.tabs[2].r - r.app.r) <= 1);

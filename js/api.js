@@ -71,14 +71,20 @@
   /* ---------- 국내 영양제 ---------- */
   /* 성분 단위 로컬 검색(js/suppsearch.js). 서버가 없거나 실패해도 이 결과는 항상 먼저 돌려준다.
      추가 키 파일(supplement-keys-extra.json)은 한 번만 읽고, 못 읽으면 datapack의 키만으로 만든다. */
-  var suppIndex = null;
+  var suppIndex = null, suppInfo = { products: 'loading', source: '' };
+  function loadJson(url, pick, empty) {
+    return (typeof fetch === 'function')
+      ? fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(pick).catch(function () { return empty; })
+      : Promise.resolve(empty);
+  }
   function suppSearcher() {
     if (suppIndex) return suppIndex;
-    var extra = (typeof fetch === 'function' && root.KeepingSupp)
-      ? fetch('data/care/supplement-keys-extra.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (j) { return j.keys || []; }).catch(function () { return []; })
-      : Promise.resolve([]);
-    suppIndex = extra.then(function (keys) {
-      return root.KeepingSupp ? root.KeepingSupp.create({ keyList: Pack.supplementKeyList, extra: keys, popular: Pack.chipKeys }) : null;
+    var extra = root.KeepingSupp ? loadJson('data/care/supplement-keys-extra.json', function (j) { return j.keys || []; }, []) : Promise.resolve([]);
+    /* 제품 목록(data/supp/products.json)은 없어도 된다. 있으면 한 번만 읽어 캐시한다. */
+    var prod = root.KeepingSupp ? loadJson('data/supp/products.json', function (j) { return (j && Array.isArray(j.rows) && j.rows.length) ? j : null; }, null) : Promise.resolve(null);
+    suppIndex = Promise.all([extra, prod]).then(function (r) {
+      suppInfo = { products: r[1] ? 'ready' : 'off', source: (r[1] && r[1].meta && r[1].meta.source) || '' };
+      return root.KeepingSupp ? root.KeepingSupp.create({ keyList: Pack.supplementKeyList, extra: r[0], popular: Pack.chipKeys, products: r[1] ? r[1].rows : [], mapKeys: function (raw) { return E.mapIngredient(raw, Pack); } }) : null;
     });
     return suppIndex;
   }
@@ -86,7 +92,7 @@
     return suppSearcher().then(function (S) { return searchSupplementsWith(S, q); });
   }
   function searchSupplementsWith(S, q) {
-    var out = S ? S.search(q, { limit: q ? 8 : 12 }) : [];
+    var out = S ? (q ? S.searchAll(q, { limit: 12 }) : S.search('', { limit: 12 })) : [];   // 성분 결과가 앞, 제품 결과가 뒤
     if (!q) return Promise.resolve({ results: out, remote: { status: base ? 'idle' : 'off' } });
     Pack.supplements.forEach(function (s) {
       if (has(s.name + s.company, q)) {
@@ -130,6 +136,7 @@
     proxyBase: base,
     searchDrugs: searchDrugs,
     searchSupplements: searchSupplements,
+    suppInfo: function () { return suppSearcher().then(function () { return suppInfo; }); },
     searchOverseas: searchOverseas
   };
 })(window);
