@@ -15,7 +15,7 @@
     dur: { status: 'loading' },
     care: { status: 'loading', engine: null, notice: true }, open: {},
     noticeOpen: {}, sheet: null, nowMin: null, prevRatio: null, homeSig: '', logo: '', deptEdit: null, homeScroll: 0,
-    copy: { status: 'loading' }, draft: null, supp: { products: 'loading', source: '' }
+    copy: { status: 'loading' }, draft: null, bagTime: {}, supp: { products: 'loading', source: '' }
   };
   var searchTimer = null;
 
@@ -68,6 +68,18 @@
     document.body.appendChild(d);
     setTimeout(function () { d.classList.add('out'); }, 1800);
     setTimeout(function () { d.remove(); }, 2300);
+  }
+  /* 알림 + [되돌리기](3초). 하단 탭 위에 뜬다. */
+  function toastUndo(msg, undo) {
+    var old = document.querySelector('.toast'); if (old) old.remove();
+    var d = document.createElement('div'), done = false;
+    d.className = 'toast has-undo'; d.setAttribute('role', 'status');
+    var sp = document.createElement('span'); sp.textContent = msg;
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'toast-undo'; b.textContent = '되돌리기';
+    b.addEventListener('click', function () { if (done) return; done = true; d.remove(); undo(); });
+    d.appendChild(sp); d.appendChild(b); document.body.appendChild(d);
+    setTimeout(function () { d.classList.add('out'); }, 2600);
+    setTimeout(function () { d.remove(); }, 3000);
   }
   function tip(id, text) {
     return '<span class="tipwrap"><button type="button" class="tipbtn" data-act="tip" data-tip="' + id + '" aria-expanded="false" aria-controls="tip-' + id + '" aria-label="설명 보기">' + icon('info', 20) + '</button><span class="tip" id="tip-' + id + '" role="tooltip" hidden>' + esc(text) + '</span></span>';
@@ -436,8 +448,25 @@
     var n = state.newRx, ids = (n && n.day === checksKey().slice(CHECKS_PREFIX.length)) ? n.ids : [];
     return ids.filter(function (id) { return !!findItem(id); });
   }
+  /* "그대로 두기"를 누른 제안: 오늘 날짜 키(kp:dismissed:YYYY-MM-DD)에 suggestionKey들을 저장한다(다음 날엔 다시 나타난다) */
+  var DISMISS_PREFIX = 'kp:dismissed:', memDismissed = [], dismissMemOnly = false;
+  function dismissKey() { return DISMISS_PREFIX + checksKey().slice(CHECKS_PREFIX.length); }
+  function loadDismissed() {
+    if (dismissMemOnly) return memDismissed.slice();
+    try { var v = JSON.parse(window.localStorage.getItem(dismissKey()) || '[]'); return Array.isArray(v) ? v : []; }
+    catch (e) { dismissMemOnly = true; return memDismissed.slice(); }
+  }
+  function saveDismissed(list) {
+    memDismissed = list.slice();
+    if (dismissMemOnly) return;
+    try {
+      var k = dismissKey();
+      Object.keys(window.localStorage).forEach(function (x) { if (x.indexOf(DISMISS_PREFIX) === 0 && x !== k) window.localStorage.removeItem(x); });   // 지난 날 기록은 지운다
+      window.localStorage.setItem(k, JSON.stringify(list));
+    } catch (e) { dismissMemOnly = true; }
+  }
   function homeModel() {
-    return homeVm().build({ nowMin: nowMin(), newItemIds: newItemIds(), nickname: state.nickname || '', items: careItems(), analysis: careModel() || undefined, checks: loadChecks(), meals: mealsOf() });
+    return homeVm().build({ nowMin: nowMin(), newItemIds: newItemIds(), dismissedSuggestions: loadDismissed(), nickname: state.nickname || '', items: careItems(), analysis: careModel() || undefined, checks: loadChecks(), meals: mealsOf() });
   }
 
   /* 아이콘(24칸, 선) */
@@ -464,13 +493,22 @@
       '<button type="button" class="kp-check" role="checkbox" aria-checked="' + !!G.checked + '" aria-label="' + esc(G.title) + ' 확인" data-act="toggleCheck" data-id="' + esc(G.id) + '"><span class="kp-box">' + kpIcon('check', 16) + '</span></button></div>';
   }
   /* 주의 블록: 첫 줄 버튼 안에 제목을 넣고(눌러서 근거 시트), 나머지 줄은 각자 버튼. 블록 안에 배지는 넣지 않는다. */
+  /* "시간을 옮길까요?" 제안 카드. 버튼을 눌렀을 때만 시간이 바뀐다(자동으로 바꾸지 않는다). */
+  var sugStore = {};
+  function sugHtml(sg) {
+    if (!sg) return '';
+    sugStore[sg.key] = sg;
+    return '<div class="kp-sug"><p class="kp-sug-title">' + esc(sg.title) + '</p><p class="kp-sug-body">' + esc(sg.body) + '</p><div class="kp-sug-act">' +
+      '<button type="button" class="kp-sug-yes" data-act="sugYes" data-key="' + esc(sg.key) + '">' + esc(sg.yes) + '</button>' +
+      '<button type="button" class="kp-sug-no" data-act="sugNo" data-key="' + esc(sg.key) + '">' + esc(sg.no) + '</button></div></div>';
+  }
   function noticeHtml(S) {
     var n = S.notice, open = !!ui.noticeOpen[S.id], lines = open ? n.all : n.lines;
     var html = lines.map(function (l, i) {
       var attrs = ' type="button" data-act="openSheet" data-flag="' + esc(l.flagId) + '"';
       return i === 0
-        ? '<button class="kp-notice-first"' + attrs + '><b>' + esc(n.title) + '</b><span>' + esc(l.text) + '</span>' + kpIcon('right', 18) + '</button>'
-        : '<button class="kp-notice-line"' + attrs + '>' + esc(l.text) + '</button>';
+        ? '<button class="kp-notice-first"' + attrs + '><b>' + esc(n.title) + '</b><span>' + esc(l.text) + '</span>' + kpIcon('right', 18) + '</button>' + sugHtml(l.suggestion)
+        : '<button class="kp-notice-line"' + attrs + '>' + esc(l.text) + '</button>' + sugHtml(l.suggestion);
     }).join('');
     if (n.more > 0 && !open) html += '<button type="button" class="kp-notice-more" data-act="toggleNotice" data-id="' + esc(S.id) + '" aria-expanded="false">' + esc(n.moreText) + '</button>';
     return '<div class="kp-notice">' + kpIcon('warn', 20) + '<div class="kp-notice-main">' + html + '</div></div>';
@@ -544,6 +582,15 @@
     }
     return '<details class="kp-gen" open><summary>' + esc(g.title) + kpIcon('down', 18, 'kp-gen-chev') + '</summary>' + body + '</details>';
   }
+  /* 약봉투 카드의 "시간" 줄: 지금 시각들을 보여 주고, 누르면 시각마다 입력 칸이 펼쳐진다(담기 확인과 같은 KeepingTime 규칙). 영양제 카드에도 같다. */
+  function bagTimeHtml(it) {
+    var ts = it.times || []; if (!ts.length) return '';
+    var id = esc(it.itemId), open = !!ui.bagTime[it.itemId];
+    return '<div class="kp-btime"><button type="button" class="kp-btime-h" aria-expanded="' + open + '" aria-controls="bt-p-' + id + '" data-act="toggleBagTime" data-id="' + id + '"><span>시간</span><b>' + esc(ts.join(' · ')) + '</b>' + kpIcon('down', 18, 'kp-btime-chev') + '</button>' +
+      (open ? '<div class="kp-btime-p" id="bt-p-' + id + '">' + ts.map(function (t, i) {
+        return '<label class="tslot-l" for="bt-' + id + '-' + i + '">' + (ts.length > 1 ? (i + 1) + '번째 시각' : '시각') + '</label><input id="bt-' + id + '-' + i + '" class="tslot-in" type="text" inputmode="numeric" autocomplete="off" placeholder="07:30" data-input="btime" data-id="' + id + '" data-from="' + esc(t) + '" data-i="' + i + '" value="' + esc(t) + '"><p class="time-msg" id="bm-' + id + '-' + i + '" aria-live="polite"></p>';
+      }).join('') + '</div>' : '') + '</div>';
+  }
   VIEWS.bag = function () {
     var m = homeModel(), d = m.detail[ui.params.id];
     if (!d) { ui.view = 'home'; return VIEWS.home(); }
@@ -551,7 +598,7 @@
       var sub = [it.spec, it.company].filter(Boolean).join(' · ');
       return '<article class="kp-bagcard"><h2 class="kp-bag-name">' + esc(it.display) + '</h2>' + (sub ? '<p class="kp-bag-sub">' + esc(sub) + '</p>' : '') +
         '<span class="kp-chip">' + esc(it.category) + '</span>' +
-        (it.times && it.times.length ? '<p class="kp-bag-times"><span>먹는 시간</span>' + esc(it.times.join(' · ')) + '</p>' : '') +
+        bagTimeHtml(it) +
         (it.doseText ? '<p class="kp-bag-times"><span>먹는 양</span>' + esc(it.doseText) + '</p>' : '') +
         (it.ingredient ? '<p class="kp-bag-ingr">' + esc(it.ingredient) + '</p>' : '') +
         (it.notices && it.notices.length ? it.notices.map(bagNotice).join('') : '') + generalHtml(it.general) + '</article>';
@@ -567,7 +614,7 @@
     var url = safeUrl(s.source && s.source.url), chk = s.source && s.source.checkedAt ? String(s.source.checkedAt).slice(0, 10) : '확인하지 못했어요';
     var official = s.grade === 'official';
     return '<span class="kp-badge ' + (official ? 'is-official' : 'is-label') + '">' + (official ? '공식 지정' : '설명서 근거') + '</span>' +
-      '<h3 class="kp-sheet-h">' + esc(s.headline) + '</h3>' + (official && s.noteLine ? '<p class="kp-note">' + esc(s.noteLine) + '</p>' : '') + '<p class="kp-intro">' + esc(s.intro) + '</p>' +
+      '<h3 class="kp-sheet-h">' + esc(s.headline) + '</h3>' + sugHtml(s.suggestion) + (official && s.noteLine ? '<p class="kp-note">' + esc(s.noteLine) + '</p>' : '') + '<p class="kp-intro">' + esc(s.intro) + '</p>' +
       '<blockquote class="kp-quote">' + (s.where ? '<small>' + esc(s.where) + '</small>' : '') + '<p>' + esc(s.excerpt) + '</p></blockquote>' +
       '<section class="kp-rel"><h3>' + esc(s.relatedTitle) + '</h3><ul>' + (s.related || []).map(function (r) { return '<li><b>' + esc(r.label) + '</b>' + esc((r.names || []).join(', ')) + '</li>'; }).join('') + '</ul></section>' +
       (s.hintLine ? '<p class="kp-hintline">' + esc(s.hintLine) + '</p>' : '') +
@@ -853,6 +900,27 @@
     ui.depth--; try { history.back(); } catch (e) { /* 앱 안의 이전은 이미 됐다 */ }   // 브라우저 기록도 한 칸 되돌린다(그때 오는 popstate는 칸 번호가 같아 아무 일도 안 한다)
     return true;
   }
+  /* 약봉투에서 시각을 고치고 입력칸을 벗어났을 때: 읽히면 "19:30" 꼴로 고쳐 그 약의 times만 바꾸고 다시 그린다(주의도 다시 계산된다) */
+  var bagSaving = false;
+  function saveBagTime(t, next) {
+    if (bagSaving) return;
+    var it = findItem(t.dataset.id); if (!it) return;
+    var from = t.dataset.from, i = t.dataset.i, msgEl = document.getElementById('bm-' + t.dataset.id + '-' + i), p = window.KeepingTime.parse(t.value);
+    if (p === null) { if (msgEl) msgEl.textContent = say('time_invalid'); return; }
+    t.value = p;
+    var b0 = window.KeepingTime.bandOf(from), m = window.KeepingTime.mismatch(b0 && b0.id, p), hint = m ? say('time_band_hint', { time: p, band: m.label }) : '';
+    if (p === from) { if (msgEl) msgEl.textContent = hint; return; }
+    var ts = (it.times || []).map(function (x) { return x === from ? p : x; });
+    it.times = ts.filter(function (x, j) { return ts.indexOf(x) === j; }).sort(); it.updatedAt = new Date().toISOString(); save();
+    bagSaving = true;
+    try {
+      if (homeModel().detail[ui.params.id]) {
+        render(false);
+        var n = next && next.id && document.getElementById(next.id); if (n) n.focus({ preventScroll: true });
+        var m2 = document.getElementById('bm-' + t.dataset.id + '-' + i); if (m2) m2.textContent = hint;
+      } else { go('home'); toast(hint || '시간을 바꿨어요'); }   // 시간대가 달라지면 이 묶음이 바뀌므로 홈으로 간다
+    } finally { bagSaving = false; }
+  }
   /* 브라우저 뒤로 가기: 도착한 칸 번호까지 쌓인 화면을 한 단계씩 되돌린다. 앞으로 가기는 화면을 바꾸지 않는다. */
   window.addEventListener('popstate', function (e) {
     var d = e.state && e.state.kp ? e.state.kp : 0, n = ui.depth - d;
@@ -901,6 +969,20 @@
       ui.homeSig = homeSig(VIEWS.home());
     },
     /* 체크: 해제하면 키를 지운다. 체크해도 카드가 갑자기 접히지 않도록 지금 보이는 펼침 상태를 먼저 고정한다. */
+    /* [옮기기]: 이전 목록을 보관하고 applyMove로 새 목록을 만들어 저장한 뒤 다시 그린다. [되돌리기]는 보관한 목록으로 복원. */
+    toggleBagTime: function (t) { ui.bagTime[t.dataset.id] = !ui.bagTime[t.dataset.id]; render(false); var h = root.querySelector('[data-act="toggleBagTime"][data-id="' + String(t.dataset.id).replace(/["\\]/g, '\\$&') + '"]'); if (h) h.focus({ preventScroll: true }); },
+    sugYes: function (t) {
+      var sg = sugStore[t.dataset.key]; if (!sg) return;
+      var prev = state.items;
+      state.items = homeVm().applyMove(state.items, sg); save();
+      closeSheet(true); render(false);
+      toastUndo(sg.done, function () { state.items = prev; save(); render(false); });
+    },
+    /* [그대로 두기]: 오늘 하루 그 제안만 숨긴다(주의 문장은 그대로) */
+    sugNo: function (t) {
+      var list = loadDismissed(); if (list.indexOf(t.dataset.key) < 0) list.push(t.dataset.key);
+      saveDismissed(list); closeSheet(true); render(false);
+    },
     toggleCheck: function (t) {
       var id = t.dataset.id, c = loadChecks();
       [].forEach.call(root.querySelectorAll('.kp-slot-head'), function (h) { ui.open[h.dataset.id] = h.getAttribute('aria-expanded') === 'true'; });
@@ -1104,6 +1186,7 @@
   /* 입력칸을 벗어나면 "19:30" 꼴로 고쳐 보여 준다 */
   root.addEventListener('focusout', function (e) {
     var t = e.target, k = t.getAttribute && t.getAttribute('data-input'), d = ui.draft;
+    if (k === 'btime') { saveBagTime(t, e.relatedTarget); return; }
     if (k !== 'dtime' || !d) return;
     var id = t.dataset.slot, p = window.KeepingTime.parse(t.value);
     if (p) { t.value = p; d.times[id] = p; } else d.times[id] = t.value;
@@ -1138,6 +1221,8 @@
   root.addEventListener('keydown', function (e) {
     if (ui.view === 'splash' && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); go('welcome'); return; }
     if (e.key !== 'Enter') return;
+    var di = e.target.getAttribute && e.target.getAttribute('data-input');
+    if (di === 'btime' || di === 'dtime') { e.target.blur(); return; }
     var id = e.target.id;
     if (id === 'fq') Acts.addFood();
     else if (id === 'cq') Acts.addQ();

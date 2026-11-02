@@ -613,3 +613,24 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .kp-gfoot{display:grid;gap:4px;margin-top:12px;font-size:var(--kp-fs-caption);line-height:1.5;color:var(--kp-text-sub)}
 .kp-gfoot a{color:var(--kp-brand-strong);text-decoration:underline;text-underline-offset:3px}
 .kp-gempty{margin-top:8px;font-size:14px;color:var(--kp-text-sub)}
+
+/* "시간을 옮길까요?" 제안 카드(주의 블록 안·근거 시트 위쪽) — 주 버튼은 --kp-cta-bg, 보조는 글자만 */
+.kp-sug{margin:2px 0 8px;padding:12px;border-radius:var(--kp-radius-chip);background:var(--kp-surface-sub);color:var(--kp-text)}
+.kp-sug-title{font:var(--kp-fw-title) 14px/1.4 var(--kp-font)}
+.kp-sug-body{margin-top:2px;font-size:13px;line-height:1.5;color:var(--kp-text-sub)}
+.kp-sug-act{display:flex;align-items:center;gap:8px;margin-top:10px}
+.kp-sug-yes{flex:none;padding:0 14px;white-space:nowrap;min-height:var(--kp-touch-min);border-radius:var(--kp-radius-btn);background:var(--kp-cta-bg);color:var(--kp-cta-text);font:var(--kp-fw-title) 14px/1 var(--kp-font)}
+.kp-sug-no{min-height:var(--kp-touch-min);padding:0 8px;white-space:nowrap;color:var(--kp-text-sub);font:var(--kp-fw-strong) 14px/1 var(--kp-font)}
+.kp-notice .kp-sug{margin-left:0}
+.toast.has-undo{display:flex;align-items:center;gap:14px;width:max-content;padding-right:8px}
+.toast-undo{min-height:var(--kp-touch-min);padding:0 12px;border-radius:var(--kp-radius-chip);color:var(--kp-brand);font:var(--kp-fw-title) 14px/1 var(--kp-font)}
+
+/* 약봉투 "시간" 줄 */
+.kp-btime{margin-top:2px}
+.kp-btime-h{display:flex;align-items:center;gap:10px;width:100%;min-height:var(--kp-touch-min);text-align:left;font-size:14px;color:var(--kp-text)}
+.kp-btime-h span{color:var(--kp-text-sub)}
+.kp-btime-h b{font-weight:var(--kp-fw-strong);font-variant-numeric:tabular-nums}
+.kp-btime-chev{margin-left:auto;color:var(--kp-text-sub);transition:transform .18s}
+.kp-btime-h[aria-expanded="true"] .kp-btime-chev{transform:rotate(180deg)}
+.kp-btime-p{padding:2px 0 8px;animation:tslot-in .18s ease-out}
+.kp-btime-p .tslot-in{margin-bottom:2px}

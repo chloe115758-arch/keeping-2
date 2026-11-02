@@ -183,7 +183,7 @@
 
           if (gapInfo && iv && iv.minHours) {   // 시간 제안: 상대(영양제·다른 약)를 안내된 간격 뒤로
             var want = gapInfo.ownerMin + Math.ceil(iv.minHours * 2) * 30;
-            if (want < 1440) suggestions.push({ ruleId: r.id, itemId: gapInfo.other.id, suggestTime: toHHMM(want), grade: 'label',
+            if (want < 1440) suggestions.push({ ruleId: r.id, itemId: gapInfo.other.id, suggestTime: toHHMM(want), fromTime: toHHMM(gapInfo.otherMin), ownerId: owner.id, ownerTime: toHHMM(gapInfo.ownerMin), intervalText: ivText(iv), grade: 'label',
               message: nameOf(gapInfo.other) + ' 시간을 ' + toHHMM(want) + ' 이후로 옮기면 안내된 간격(' + ivText(iv) + ') 이상이에요' });
           }
         });

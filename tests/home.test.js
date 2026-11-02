@@ -87,7 +87,7 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   const bagModel = A.homeModel().detail[gid];
   check('묶음 줄을 누르면 약봉투 화면(체크는 바뀌지 않음)', !!q('.kp-bag') && JSON.stringify(store()) === '{}');
   check('상단 뒤로 가기 + 제목(묶음 이름)', !!q('.kp-bar2 [data-act="back"]') && q('.kp-bar2-title').textContent === bagModel.title && !q('.top-title') && !/이전/.test(q('.kp-bar2').textContent));
-  check('약마다 카드: 이름(display) · 규격·업체 · 구분 칩 · 먹는 시간 · 성분', qa('.kp-bagcard').length === bagModel.items.length && qa('.kp-bagcard').every((c, i) => c.querySelector('.kp-bag-name').textContent === bagModel.items[i].display && !!c.querySelector('.kp-chip') && c.textContent.includes('먹는 시간')));
+  check('약마다 카드: 이름(display) · 규격·업체 · 구분 칩 · 시간 줄 · 성분', qa('.kp-bagcard').length === bagModel.items.length && qa('.kp-bagcard').every((c, i) => c.querySelector('.kp-bag-name').textContent === bagModel.items[i].display && !!c.querySelector('.kp-chip') && !!c.querySelector('.kp-btime-h') && c.querySelector('.kp-btime-h').textContent.includes('시간')));
   check('복용법·용량 칸이 없다(설명서 원문 문장은 제외)', !/복용법|1회|용량|하루 \d/.test([...qa('.kp-bagcard')].map((c) => { const k = c.cloneNode(true); k.querySelectorAll('.kp-gen').forEach((e) => e.remove()); return k.textContent; }).join(' ')));
   check('맨 아래 작은 글씨: scope + footer(모델 값 그대로)', q('.kp-bag-foot').textContent.includes(bagModel.scope) && q('.kp-bag-foot').textContent.includes(bagModel.footer));
   const nb = q('.kp-bagcard .kp-notice');
@@ -200,6 +200,48 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
 
   A.go('home');
   check('상단바: 벨·프로필 아이콘이 없고, 마이는 하단 탭으로만 간다. 내 약 탭 아이콘은 알약', !q('[aria-label="알림"]') && !q('.kp-top button') && !q('.kp-top [aria-label="마이"]') && q('.nav [data-view="list"] svg path').getAttribute('d').startsWith('M7 13.7') && (click(q('.nav [data-view="settings"]')), T().includes('계정 연결')));
+
+  console.log('10) 시간 옮기기 제안 · 약봉투 시간 줄');
+  const fire = (el, type) => el.dispatchEvent(new w.FocusEvent(type, { bubbles: true }));
+  const typeAt = (el, v) => { el.value = v; el.dispatchEvent(new w.Event('input', { bubbles: true })); fire(el, 'focusout'); };
+  st.items = [mk('씬지록신', 'L1', '07:00', '내과'), { id: 'C1', kind: 'supp', source: 'manual', name: '칼슘', ingredientKeys: ['calcium'], times: ['09:00'], batch: null }];
+  delete st.newRx; w.localStorage.clear(); A.ui.nowMin = 6 * 60 + 40; A.ui.open = { morning: true }; A.go('home');
+  const sg0 = A.homeModel().rows.find((r) => r.type === 'slot').notice.lines[0].suggestion;
+  check('제안이 있으면 주의 문장 바로 아래에 작은 카드(제목·본문·버튼 2개), 자동으로 시간을 바꾸지 않음', !!sg0 && !!q('.kp-notice-first + .kp-sug') && q('.kp-sug-title').textContent === sg0.title && q('.kp-sug-body').textContent === sg0.body && q('.kp-sug-yes').textContent === sg0.yes && q('.kp-sug-no').textContent === sg0.no && st.items[1].times.join() === '09:00', JSON.stringify(sg0));
+  check('카드 스타일: 배경 --kp-surface-sub, 주 버튼 --kp-cta-bg, 보조 버튼은 글자만(배경 없음)', /\.kp-sug\{[^}]*var\(--kp-surface-sub\)/.test(css0) && /\.kp-sug-yes\{[^}]*var\(--kp-cta-bg\)/.test(css0) && !/\.kp-sug-no\{[^}]*background/.test(css0));
+  click(q('.kp-notice-first'));
+  check('근거 시트의 본문(인용) 위에도 같은 제안 카드', !!q('.kp-sheet .kp-sug') && !!(q('.kp-sheet .kp-sug').compareDocumentPosition(q('.kp-sheet .kp-quote')) & 4));
+  click('.kp-close');
+  click('.kp-sug-no');
+  const dk = 'kp:dismissed:' + today();
+  check('[그대로 두기]: 오늘 날짜 키에 suggestionKey 저장, 그 제안만 사라지고 주의 문장은 그대로', JSON.stringify(JSON.parse(w.localStorage.getItem(dk))) === JSON.stringify([sg0.key]) && !q('.kp-sug') && !!q('.kp-notice-first') && st.items[1].times.join() === '09:00');
+  A.go('home');
+  check('다시 그려도(오늘) 제안은 숨은 채', !q('.kp-sug') && !!q('.kp-notice-first'));
+  w.localStorage.clear(); A.go('home');
+  const before = JSON.stringify(st.items);
+  click('.kp-sug-yes');
+  check('[옮기기]: 그 약의 시각만 바뀌고(09:00 → ' + sg0.toTime + ') 저장됨(localStorage)', st.items[1].times.join() === sg0.toTime && st.items[0].times.join() === '07:00' && w.KeepingStore.load().items.find((i) => i.id === 'C1').times.join() === sg0.toTime);
+  const tst = q('.toast.has-undo');
+  check('다시 그려져 아침 카드는 "주의 없음", 칼슘은 다른 시간대 카드로, 알림(done 문구 + 되돌리기)이 뜸', !q('.kp-sug') && !!tst && tst.textContent.includes(sg0.done) && !!tst.querySelector('.toast-undo') && qa('.kp-row--slot').length === 2 && !!q('.kp-row--slot .kp-status-line') && /\.toast\{[^}]*bottom:/.test(css0));
+  click('.toast-undo');
+  check('[되돌리기]: 보관해 둔 목록으로 복원(저장도)', JSON.stringify(st.items) === before && w.KeepingStore.load().items.find((i) => i.id === 'C1').times.join() === '09:00' && !q('.toast.has-undo'));
+  await wait(10);
+
+  A.ui.open = { morning: true }; A.go('home');
+  click(qa('.kp-grp-main')[0]);
+  const rows = qa('.kp-btime-h');
+  check('약봉투 약 카드마다 "시간" 줄(지금 시각들, 영양제 카드에도)', rows.length === qa('.kp-bagcard').length && rows.length >= 1 && rows.every((r) => /\d\d:\d\d/.test(r.textContent)));
+  click(rows[0]);
+  const bi = q('.kp-btime-p input');
+  check('누르면 아코디언이 펼쳐져 시각마다 입력 칸(숫자 키패드)', !!bi && bi.getAttribute('inputmode') === 'numeric' && q('.kp-btime-h').getAttribute('aria-expanded') === 'true');
+  const tid = bi.dataset.id, itm = st.items.find((i) => i.id === tid), t0 = itm.times.join();
+  typeAt(bi, 'abc');
+  check('읽을 수 없으면 time_invalid(보조색 작은 글씨), 저장 안 됨', q('.kp-btime-p .time-msg').textContent === '시각을 다시 확인해 주세요 (예: 07:30)' && itm.times.join() === t0);
+  typeAt(q('.kp-btime-p input'), '오전 8시');
+  check('"오전 8시" → 08:00으로 정규화, 그 약의 times만 바뀜(다른 약은 그대로), 약봉투가 다시 그려져도 펼침 유지', itm.times.join() === '08:00' && q('.kp-btime-p input').value === '08:00' && st.items.filter((i) => i.id !== tid).every((i) => i.times.join() !== '08:00'));
+  typeAt(q('.kp-btime-p input'), '1330');
+  check('시간대가 달라지면(아침 → 점심) 홈으로 가서 다시 그려지고, time_band_hint 안내', itm.times.join() === '13:30' && !!q('.kp-hello') && qa('.toast').pop().textContent === '13:30은 점심 시간대로 들어가요', qa('.toast').map((e) => e.textContent).join('|'));
+  check('저장소에도 반영', w.KeepingStore.load().items.find((i) => i.id === tid).times.join() === '13:30');
   check('스크립트 오류 없음', errors.length === 0, errors.join(' | '));
   console.log('\n통과 ' + ok + ' / 실패 ' + bad);
   process.exit(bad ? 1 : 0);

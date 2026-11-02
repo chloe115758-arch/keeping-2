@@ -70,6 +70,11 @@
   "gen_pregnancy": "임신·수유",
   "gen_elderly": "고령자",
   "gen_timing": "복용 시점",
-  "gen_none": "이 약의 설명서에서 뽑은 안내가 아직 없어요"
+  "gen_none": "이 약의 설명서에서 뽑은 안내가 아직 없어요",
+  "move_ask_title": "시간을 옮길까요?",
+  "move_ask_body": "설명서에 {interval} 안내가 있어요. {name:을/를} {time:으로/로} 옮기면 안내된 간격을 지킬 수 있어요.",
+  "move_yes": "{time:으로/로} 옮기기",
+  "move_no": "그대로 두기",
+  "move_done": "{name:을/를} {time:으로/로} 옮겼어요"
  }
 }

@@ -17,6 +17,8 @@
  *   model.rows[]   → 시간선 줄(시간대 카드 또는 식사 표시)
  *   model.sheets[flagId] / model.detail[groupId] → 근거 시트(공식 지정이면 noteLine: "조건 · 48시간 이내 병용금기") / 약봉투 화면
  *   create({ entryOf: care.entryOf })을 주면 detail.items[].general에 그 약의 설명서 안내(구역별, 내 조합과 무관)가 들어간다
+ *   주의 문장(notice.lines[i].suggestion)과 근거 시트(sheets[id].suggestion)에 "시간을 옮길까요?" 제안이 붙는다: {title, body, yes, no, done, itemId, fromTime, toTime}.
+ *   [옮기기]를 누르면 items = vm.applyMove(items, suggestion)로 새 목록을 만들어 저장하고 다시 build한다. [그대로 두기]는 vm.suggestionKey(suggestion)을 오늘 하루 기억해 build({ dismissedSuggestions })로 넘긴다.
  *   build({ ..., newItemIds: [...] })를 넘기면 그 약이 든 묶음에 isNew·newLabel("새 처방")이 붙는다
  */
 (function (root, factory) {
@@ -44,6 +46,18 @@
     return (iv.qualifier === '최소' ? '최소 ' : '') + h + '시간 간격';
   }
   function uniq(list) { return list.filter(function (x, i) { return list.indexOf(x) === i; }); }
+
+  /* 같은 제안을 가리키는 키(오늘 "그대로 두기"를 기억할 때 쓴다) */
+  function suggestionKey(s) { return [s.ruleId, s.itemId, s.fromTime].join('|'); }
+  /* 항목 목록에서 한 약·영양제의 시각 하나를 바꾼 새 목록을 돌려 준다(원래 목록은 건드리지 않는다). 같은 시각이 이미 있으면 합친다. */
+  function applyMove(items, move) {
+    return items.map(function (it) {
+      if (it.id !== move.itemId) return it;
+      var ts = (it.times || []).map(function (t) { return t === move.fromTime ? move.toTime : t; });
+      var uniqSorted = ts.filter(function (t, i) { return ts.indexOf(t) === i; }).sort();
+      return Object.assign({}, it, { times: uniqSorted });
+    });
+  }
 
   function create(opts) {
     var g = opts.greeting, say = g.say;
@@ -95,6 +109,7 @@
       var A = input.analysis || { slots: [], suggestions: [], evidence: {}, unscheduled: [] };
       var checks = input.checks || {};
       var newIds = input.newItemIds || [];
+      var dismissed = input.dismissedSuggestions || [];   // 오늘 "그대로 두기"를 누른 제안 키(suggestionKey)
       var uncoveredIds = {};   // 엔진이 "아직 확인하지 못한" 약 id
       (A.uncovered || []).forEach(function (u) { uncoveredIds[u.itemId] = true; });
       var mealTimes = input.meals || {};
@@ -112,6 +127,17 @@
       }
       var sheets = {}, detail = {};
       var slotModels = [];
+
+      /* ---- 시간 옮기기 제안: 설명서의 간격 안내를 지키려면 상대 약·영양제를 언제로 옮기면 되는지 ----
+         앱이 시간을 바꾸는 것은 사용자가 [옮기기]를 눌렀을 때뿐이다(자동으로 바꾸지 않는다). */
+      function suggestionFor(flag) {
+        var hit = (A.suggestions || []).filter(function (s) { return s.ruleId === flag.id && (flag.withItemIds || []).indexOf(s.itemId) >= 0; })[0];
+        if (!hit || !hit.fromTime || dismissed.indexOf(suggestionKey(hit)) >= 0) return null;
+        var name = displayOf(hit.itemId);
+        return { key: suggestionKey(hit), ruleId: hit.ruleId, itemId: hit.itemId, name: name, fromTime: hit.fromTime, toTime: hit.suggestTime, toKor: korTime(hit.suggestTime),
+                 title: say('move_ask_title'), body: say('move_ask_body', { interval: hit.intervalText || '', name: name, time: korTime(hit.suggestTime) }),
+                 yes: say('move_yes', { time: hit.suggestTime }), no: say('move_no'), done: say('move_done', { name: name, time: hit.suggestTime }) };
+      }
 
       /* ---- 주의 문장 한 줄 만들기 ----
          o.ref   : 보는 쪽이 속한 시간대 id들(상대가 다른 시간대면 시간대 이름을 붙인다)
@@ -135,7 +161,7 @@
           : say('notice_caution', { subject: subject, object: object });
         else if (flag.kind === 'state') text = say('notice_state', { object: ownerLabel, text: flag.short });
         else return null;
-        return { flagId: flag.id, text: text, grade: flag.grade, official: flag.grade === 'official' };
+        return { flagId: flag.id, text: text, grade: flag.grade, official: flag.grade === 'official', suggestion: o.names ? null : suggestionFor(flag) };
       }
 
       /* ---- 시간대 카드 ---- */
@@ -221,6 +247,7 @@
               headline: ev.headline, excerpt: ev.excerpt, where: ev.where, source: ev.source,
               noteLine: (f.grade === 'official' && ev.detail) ? say('sheet_note', { note: ev.detail }) : '',
               relatedTitle: say('sheet_related'), related: related,
+              suggestion: suggestionFor(f),
               hintLine: sug ? say('sheet_hint', { name: displayOf(sug.itemId), time: korTime(sug.suggestTime) }) : ''
             };
           });
@@ -270,8 +297,8 @@
       return { header: header, rows: rows, foods: { title: say('foods_title'), items: foodsAll }, sheets: sheets, detail: detail,
                totals: { groups: header.card.total, taken: header.card.taken } };
     }
-    return { build: build, categoryOf: categoryOf, groupOf: groupOf, korTime: korTime };
+    return { build: build, categoryOf: categoryOf, groupOf: groupOf, korTime: korTime, applyMove: applyMove, suggestionKey: suggestionKey };
   }
 
-  return { create: create, korTime: korTime };
+  return { create: create, korTime: korTime, applyMove: applyMove, suggestionKey: suggestionKey };
 });

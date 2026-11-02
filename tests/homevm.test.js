@@ -250,4 +250,48 @@ t('약봉투: 설명서 묶음이 없는 약은 general이 null, 영양제도 nu
   assert.strictEqual(d['bedtime:rx:내과'].items[0].general, null);
   assert.strictEqual(d['bedtime:supp:c'].items[0].general, null);
 });
+t('시간 옮기기 제안: 주의 문장에 붙고, 옮길 약·지금 시각·옮길 시각·문구가 들어 있다', () => {
+  const S = slotRow(run(base()), 'morning');   // 씬지로이드 07:00 + 칼슘 09:00
+  const ln = S.notice.lines.find((l) => /칼슘/.test(l.text)), sg = ln.suggestion;
+  assert.ok(sg, '제안이 있다');
+  assert.deepStrictEqual([sg.itemId, sg.fromTime, sg.toTime, sg.toKor], ['ca', '09:00', '11:00', '오전 11시']);
+  assert.strictEqual(sg.title, '시간을 옮길까요?');
+  assert.strictEqual(sg.body, '설명서에 최소 4시간 간격 안내가 있어요. 칼슘 영양제를 오전 11시로 옮기면 안내된 간격을 지킬 수 있어요.');
+  assert.deepStrictEqual([sg.yes, sg.no, sg.done], ['11:00으로 옮기기', '그대로 두기', '칼슘 영양제를 11:00으로 옮겼어요']);
+});
+t('[옮기기]를 누르면(applyMove) 주의가 사라지고 "확인한 범위에서 찾은 주의가 없어요"가 나온다', () => {
+  const items = base(), sg = slotRow(run(items), 'morning').notice.lines.find((l) => l.suggestion).suggestion;
+  const moved = Home.applyMove(items, sg);
+  assert.deepStrictEqual(items[2].times, ['09:00'], '원래 목록은 바뀌지 않는다');
+  assert.deepStrictEqual(moved.find((i) => i.id === 'ca').times, ['11:00']);
+  const m = run(moved, { nowMin: 8 * 60 });
+  const morning = slotRow(m, 'morning'), lunch = slotRow(m, 'lunch');
+  assert.ok(!morning.notice && morning.statusLine && morning.statusLine.kind === 'none', JSON.stringify(morning.statusLine));
+  assert.ok(lunch && lunch.groups[0].title === '칼슘 영양제' && !lunch.notice, '칼슘은 점심 시간대로 옮겨 가고 주의가 없다');
+});
+t('[그대로 두기]를 기억하면(dismissedSuggestions) 그 제안은 다시 나오지 않지만 주의 문장은 그대로 남는다', () => {
+  const items = base(), sg = slotRow(run(items), 'morning').notice.lines.find((l) => l.suggestion).suggestion;
+  const S = slotRow(run(items, { dismissedSuggestions: [Home.suggestionKey(sg)] }), 'morning');
+  assert.ok(S.notice && S.notice.lines.every((l) => !l.suggestion), '제안만 사라진다');
+  assert.ok(/권장해요$/.test(S.notice.lines[0].text));
+});
+t('근거 시트에도 같은 제안이 붙는다', () => {
+  const m = run(base()), ln = slotRow(m, 'morning').notice.lines.find((l) => l.suggestion);
+  assert.strictEqual(m.sheets[ln.flagId].suggestion.toTime, '11:00');
+});
+t('시각이 여러 개인 약은 충돌한 시각만 옮긴다(applyMove)', () => {
+  const items = [{ id: 'x', times: ['07:00', '21:00'] }, { id: 'y', times: ['09:00'] }];
+  const moved = Home.applyMove(items, { itemId: 'x', fromTime: '07:00', toTime: '21:00' });
+  assert.deepStrictEqual(moved[0].times, ['21:00'], '같은 시각은 합친다');
+  assert.deepStrictEqual(Home.applyMove(items, { itemId: 'x', fromTime: '21:00', toTime: '22:00' })[0].times, ['07:00', '22:00']);
+});
+t('간격이 이미 충분하면(12:00) 제안도 없다', () => {
+  const items = base(); items[2].times = ['12:00'];
+  const m = run(items);
+  assert.ok(!slotRow(m, 'morning').notice, '주의 없음');
+});
+t('제안 문구에 복용 지시 표현이 없다("옮기기"는 앱의 시간표를 바꾸는 일)', () => {
+  const sg = slotRow(run(base()), 'morning').notice.lines.find((l) => l.suggestion).suggestion;
+  [sg.title, sg.body, sg.yes, sg.no, sg.done].forEach((x) => assert.ok(!BAN.test(x), x));
+});
 console.log('\n' + n + '개 통과');
