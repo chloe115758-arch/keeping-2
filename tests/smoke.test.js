@@ -340,7 +340,14 @@ const dock = (idx = [0]) => { idx.forEach(pick); click('[data-act="dock"]'); };
     w.KeepingApp.state().items.length = 0; w.KeepingApp.go('onb-drugs'); await wait(30);
     const i0 = q('#q'); i0.value = '시바스'; i0.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(260);
     check(label + ': 결과가 있으면 시안대로 줄만 보임("이름 그대로 등록"은 결과가 없을 때만)', qa('.obs-res').length >= 1 && !q('[data-act="manualDrug"]') && (label !== '전체 약 목록 ON' || qa('.obs-res').every((r) => !/[\d(]/.test(r.textContent))));
-    obAdd();
+    if (label === '전체 약 목록 ON') {
+      click('.obs-res'); click('#nextbtn'); click('[data-act="doseCount"][data-v="1"]'); doseSlot('lunch');
+      check('복용법 입력: "식전 / 식후" 바로 아래·"주의사항" 위에 진료과 구역(제목 + 선택 표시 + 가로 스크롤 칩), 처음엔 아무것도 안 골라져 있음', !!q('.dose-dept .hscroll') && q('.dose-dept h2').textContent === '어느 과에서 처방받았어요? 선택' && qa('.dose-dept .chip.on').length === 0 && q('.dose-dept').previousElementSibling.textContent.startsWith('식전 / 식후'));
+      click('[data-act="draftDept"][data-dept="내과"]'); const d1 = q('[data-act="draftDept"][data-dept="내과"]').getAttribute('aria-pressed') === 'true'; click('[data-act="draftDept"][data-dept="피부과"]');
+      check('진료과는 하나만 선택, 선택한 칩을 다시 누르면 해제, 선택 안 해도 저장 버튼은 시간만 보고 켜짐', d1 && qa('.dose-dept .chip.on').length === 1 && (click('[data-act="draftDept"][data-dept="피부과"]'), qa('.dose-dept .chip.on').length === 0 && q('#dosesave').disabled === false));
+      click('[data-act="draftDept"][data-dept="내과"]'); click('#dosesave');
+      check('저장하면 item.dept에 들어감', w.KeepingApp.state().items[0].dept === '내과');
+    } else obAdd();
     const i1 = q('#q'); i1.value = '내가만든약'; i1.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(260);
     click('[data-act="manualDrug"]'); await wait(30); dock([1]); await wait(30);
     const man = w.KeepingApp.state().items.filter((x) => x.source === 'manual');

@@ -648,6 +648,8 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .dose-sec:first-of-type{margin-top:35px}
 .dose-sec:first-of-type h2{font-size:18px;line-height:26px;margin-bottom:13px}
 .dose-sec h2{font:700 16px/24px var(--kp-font);letter-spacing:var(--kp-ls);color:var(--kp-text);margin-bottom:12px}
+.dose-sec .hscroll{margin:0 -15px;padding:2px 15px 6px}
+.dose-sec .dept-in{margin:0}
 .dose-warn{display:flex;align-items:center;gap:8px;width:100%;height:40px;margin-top:17px;padding:0 12px;border-radius:12px;background:var(--kp-consent-bg-off);color:var(--kp-warn);font:500 15px/1 var(--kp-font);text-align:left}
 /* 시간 바텀시트 */
 .kp-tsheet{max-height:calc(100dvh - var(--kp-safe-top) - 16px)}

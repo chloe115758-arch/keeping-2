@@ -782,6 +782,16 @@
   }
   var DOSE_UNITS = ['정', '캡슐', '포', 'ml'];
   var SLOT_CHIPS = [['morning', '아침'], ['lunch', '점심'], ['dinner', '저녁'], ['bedtime', '자기 전']];
+  /* 담기 확인·복용법 입력이 같이 쓰는 진료과 칩(가로 스크롤, 하나만 선택, 다시 누르면 해제, 직접 입력) */
+  var DEPT_TITLE = '어느 과에서 처방받았어요? <span class="opt">선택</span>';
+  function draftDeptChips(d) {
+    var custom = d.dept && DEPTS.indexOf(d.dept) < 0;
+    return d.deptEdit
+      ? '<div class="dept-in"><label class="sr" for="ddeptin">진료과 직접 입력</label><input id="ddeptin" maxlength="20" autocomplete="off" placeholder="예: 신경과" value="' + esc(custom ? d.dept : '') + '"><button type="button" class="add" data-act="draftDeptSave">저장</button></div>'
+      : '<div class="hscroll" role="group" aria-label="진료과">' + DEPTS.map(function (x) {
+          return '<button type="button" class="chip' + (d.dept === x ? ' on' : '') + '" aria-pressed="' + (d.dept === x) + '" data-act="draftDept" data-dept="' + esc(x) + '">' + esc(x) + '</button>';
+        }).join('') + '<button type="button" class="chip' + (custom ? ' on' : '') + '" aria-pressed="' + !!custom + '" data-act="draftDeptOther">' + (custom ? esc(d.dept) : '직접 입력') + '</button></div>';
+  }
   function startDraft(item) {
     ui.draft = { item: item, slots: [], times: {}, dose: { amount: '', unit: '정' }, dept: '', deptEdit: false, fromView: ui.view, fromParams: ui.params };
     go('confirm');
@@ -791,15 +801,7 @@
     var d = ui.draft;
     if (!d) { ui.view = 'home'; return VIEWS.home(); }
     d.times = d.times || {}; d.dose = d.dose || { amount: '', unit: '정' };
-    var it = d.item, custom = d.dept && DEPTS.indexOf(d.dept) < 0, dept = '';
-    if (isRx(it)) {
-      var chips = d.deptEdit
-        ? '<div class="dept-in"><label class="sr" for="ddeptin">진료과 직접 입력</label><input id="ddeptin" maxlength="20" autocomplete="off" placeholder="예: 신경과" value="' + esc(custom ? d.dept : '') + '"><button type="button" class="add" data-act="draftDeptSave">저장</button></div>'
-        : '<div class="hscroll" role="group" aria-label="진료과">' + DEPTS.map(function (x) {
-            return '<button type="button" class="chip' + (d.dept === x ? ' on' : '') + '" aria-pressed="' + (d.dept === x) + '" data-act="draftDept" data-dept="' + esc(x) + '">' + esc(x) + '</button>';
-          }).join('') + '<button type="button" class="chip' + (custom ? ' on' : '') + '" aria-pressed="' + !!custom + '" data-act="draftDeptOther">' + (custom ? esc(d.dept) : '직접 입력') + '</button></div>';
-      dept = '<p class="lbl">어느 과에서 처방받았어요? <span class="opt">선택</span></p>' + chips;
-    }
+    var it = d.item, dept = isRx(it) ? '<p class="lbl">' + DEPT_TITLE + '</p>' + draftDeptChips(d) : '';
     var slots = '<p class="lbl">언제 드세요?</p><div class="dchips" role="group" aria-label="먹는 시간">' + SLOT_CHIPS.map(function (c) {
       var a = d.slots.indexOf(c[0]) > -1;
       return slotChip('draftSlot', c[0], a ? d.times[c[0]] : '', a, false);
@@ -889,7 +891,7 @@
     var b = document.getElementById('dosesave'); if (b) b.disabled = !rxReady(r);
   }
   function startDose(item) {
-    ui.draft = { item: item, rx: { count: null, n: '', slots: {}, meal: null }, fromView: ui.view, fromParams: ui.params };
+    ui.draft = { item: item, rx: { count: null, n: '', slots: {}, meal: null }, dept: '', deptEdit: false, fromView: ui.view, fromParams: ui.params };
     go('dose');
   }
   /* "주의사항": 그 약의 설명서 안내(model.detail의 general). 아직 담기 전이라 임시로 한 줄 넣은 모델에서 꺼낸다. 설명서에 없는 약이면 null(줄을 만들지 않는다). */
@@ -909,6 +911,7 @@
     return '<main class="screen obscreen dosev"><div class="dose-top"><button type="button" class="dose-back" data-act="back" aria-label="이전 화면으로"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 1L1.5 9 9 17"/></svg></button><h1 class="dose-title" data-focus>복용법 입력</h1></div>' +
       '<div class="dose-card"><span class="dose-photo">' + kpIcon('pill', 24) + '</span><div class="dose-name"><b>' + esc(nm(it)) + '</b><span>' + esc(subOf(it)) + '</span></div></div>' +
       sec('하루에 몇 번 드시나요?', 'count') + sec('언제 드세요?', 'slot') + sec('식전 / 식후', 'meal') +
+      (isRx(it) ? '<section class="dose-sec dose-dept"><h2>' + DEPT_TITLE + '</h2>' + draftDeptChips(d) + '</section>' : '') +
       (g ? '<button type="button" class="dose-warn" data-act="doseWarn">' + WARN_ICON + '<span>주의사항</span></button>' : '') + '</main>' +
       actionBar('<button type="button" id="dosesave" class="cta" data-act="doseSave"' + (rxReady(r) ? '' : ' disabled') + '>저장</button>', 'ob');
   };
@@ -1217,6 +1220,7 @@
       it.times = prn ? [] : DOSE_SLOTS.filter(function (id) { return r.slots[id]; }).map(function (id) { return r.slots[id]; }).filter(function (t, i, a) { return a.indexOf(t) === i; });
       if (prn) { it.prn = true; delete it.timesPerDay; } else { delete it.prn; it.timesPerDay = rxNeed(r); }
       if (r.meal) it.meal = r.meal; else delete it.meal;
+      if (isRx(it) && d.dept) it.dept = d.dept; else delete it.dept;
       finishDock(d);
     },
     doseCount: function (t) {
