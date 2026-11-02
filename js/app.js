@@ -355,7 +355,7 @@
       '<div class="obs-bar" role="img" aria-label="진행 60%"><i></i></div><button type="button" class="obs-skip" data-act="skip" data-view="onb-supps">건너뛰기</button></div>' +
       '<h1 class="obs-h" data-focus>복용 중인 처방약을<br>검색해서 추가해주세요.</h1><p class="obs-sub">약 이름이나 성분명으로 찾을 수 있어요.</p>' +
       '<div class="obs-field' + (ui.q ? ' has-q' : '') + '"><label class="sr" for="q">약 이름 및 성분 검색</label>' + OB_SEARCH +
-      '<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="약 이름 및 성분 검색 (예: 메타포르민정)" value="' + esc(ui.q) + '" data-input="search">' +
+      '<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="약 이름 및 성분 검색 (예: 메트포르민)" value="' + esc(ui.q) + '" data-input="search">' +
       '<button type="button" class="obs-x" data-act="clearQ" aria-label="검색어 지우기">' + '<svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M1 1l8 8M9 1L1 9"/></svg></button></div>' +
       '<div id="durstat" aria-live="polite">' + durHtml() + '</div><div id="results" class="obs-list" aria-live="polite">' + resultsHtml('drug') + '</div></main>' +
       actionBar(skipBtn('onb-supps') + '<button type="button" id="nextbtn" class="cta" data-act="obNext">다음</button>', 'ob');

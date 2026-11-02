@@ -95,7 +95,7 @@ const dock = (idx = [0]) => { idx.forEach(pick); click('[data-act="dock"]'); };
   click('[data-act="agree"]'); check('다시 누르면 해제 + 다음 비활성', q('#agreenext').disabled === true); click('[data-act="agree"]');
   click('#agreenext'); snap();
   check('동의 시각이 기기 저장소에 기록됨', !!w.KeepingStore.load().agreedAt || !!w.KeepingApp.state().agreedAt);
-  check('온보딩 약 검색(시안 05): 제목 · 부제 · 검색창 · 진행 바 60% · 건너뛰기 · [다음] 활성, 단계 칩·고른 약 목록 없음', T().includes('복용 중인 처방약을검색해서 추가해주세요.') && T().includes('약 이름이나 성분명으로 찾을 수 있어요.') && q('#q').placeholder === '약 이름 및 성분 검색 (예: 메타포르민정)' && !!q('.obs-bar i') && !q('.stepchip') && !q('#selected') && qa('[data-act="skip"]').length === 2 && q('#nextbtn').disabled === false);
+  check('온보딩 약 검색(시안 05): 제목 · 부제 · 검색창 · 진행 바 60% · 건너뛰기 · [다음] 활성, 단계 칩·고른 약 목록 없음', T().includes('복용 중인 처방약을검색해서 추가해주세요.') && T().includes('약 이름이나 성분명으로 찾을 수 있어요.') && q('#q').placeholder === '약 이름 및 성분 검색 (예: 메트포르민)' && !!q('.obs-bar i') && !q('.stepchip') && !q('#selected') && qa('[data-act="skip"]').length === 2 && q('#nextbtn').disabled === false);
   await wait(60);
   check('빈 검색이면 결과 칸을 비워 둠(추천 목록 없음)', q('#results').textContent.trim() === '' && qa('.obs-res').length === 0 && !q('.obs-field').classList.contains('has-q'));
   const inp = q('#q'); inp.value = '시바스'; inp.dispatchEvent(new w.Event('input', { bubbles: true }));
