@@ -292,7 +292,7 @@
   VIEWS.splash = function () {
     return VIEWS.welcome().replace('obwelcome"', 'obwelcome splashing"') + '<div class="sp-ov" aria-hidden="true"><p class="sp-tag">처방전 해석부터 건강 관리까지</p></div>';
   };
-  var SP = { scale: 3.25, inkTop: 431, inkOff: 3,   // 배율은 시안 큰 로고 폭(187)·높이(52)에 글자 모양이 가장 가깝게 잰 값
+  var SP = { scale: 187 / 59, inkTop: 431, inkOff: 0,   // 큰 로고 187×52 ÷ 작은 로고 폭 59
      ease: 'cubic-bezier(0.4, 0, 0.2, 1)' };
   function startSplash() {
     var main = root.querySelector('.obwelcome'), lg = main && main.querySelector('.obw-logo'), ov = root.querySelector('.sp-ov'), tag = root.querySelector('.sp-tag');
@@ -327,9 +327,9 @@
   }
 
 
-  /* 환영(시안 02): 글자는 시안 그대로. 로고 파일(assets/brand/keeping-logo.svg)이 아직 없어 글자 "Keeping"으로 임시 대체 */
+  /* 환영(시안 02): 로고는 assets/brand/keeping-logo.svg 를 인라인(bootLogo)으로 쓴다 */
   VIEWS.welcome = function () {
-    return '<main class="screen obscreen obwelcome"><p class="obw-logo" aria-label="Keeping">' + (ui.logo || 'Keeping') + '</p><h1 class="obw-h" data-focus>오늘의 복약,<br><em>키핑이 함께 챙겨요</em></h1>' +
+    return '<main class="screen obscreen obwelcome"><p class="obw-logo" aria-label="Keeping">' + (ui.logo || '') + '</p><h1 class="obw-h" data-focus>오늘의 복약,<br><em>키핑이 함께 챙겨요</em></h1>' +
       '<p class="obw-p">먹는 약과 영양제를 등록해 보세요.<br>하루 복용 일정을 한눈에 보여주고,<br>믿을 수 있는 자료를 바탕으로<br>꼭 알아야 할 정보도 쉽게 알려드려요.</p></main>' +
       actionBar('<button type="button" class="cta" data-act="start">시작하기</button>', 'ob');
   };
@@ -484,7 +484,7 @@
     return fetch('assets/brand/keeping-logo.svg').then(function (r) { return r.ok ? r.text() : ''; })
       .then(function (t) {
         if (!/^\s*(<\?xml[^>]*>\s*)?<svg[\s>]/i.test(t) || /<script|on\w+\s*=/i.test(t)) return;
-        ui.logo = t.replace(/^\s*<\?xml[^>]*>\s*/, '');
+        ui.logo = t.replace(/^\s*<\?xml[^>]*>\s*/, '').replace(/fill="#[0-9a-f]{3,8}"/gi, 'fill="currentColor"');   // 색 전환(currentColor)용. 원본 파일은 그대로
         if (ui.view === 'home') render(false);
       }, function () {});
   }
@@ -1441,12 +1441,12 @@
   var careReady = bootCare(); // 설명서 기반 안내 데이터는 약 목록이 온 뒤 읽는다
   Api.suppInfo().then(function (i) { ui.supp = i; if (ui.view === 'onb-supps' || ui.view === 'settings') render(false); });   // 영양제 제품 목록 유무(없어도 동작)
   var copyReady = bootCopy(); // 홈 문구(data/copy/greeting.json)
-  bootLogo();                 // assets/brand/keeping-logo.svg 가 있을 때만 인라인으로 쓴다
+  var logoReady = bootLogo(); // assets/brand/keeping-logo.svg 가 있을 때만 인라인으로 쓴다
   /* 첫 화면은 글꼴(Pretendard)이 도착한 뒤에 그린다(최대 1.2초). 글꼴이 늦게 와서 문단이 다시 줄바꿈되며 화면이 튀는 것을 막는다. */
   var booted = false;
   function boot() { if (booted) return; booted = true; render(true); }
   if (document.fonts && document.fonts.load) {
-    Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + " 16px 'Pretendard Variable'"); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
+    Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + " 16px 'Pretendard Variable'"); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(function () { return logoReady; }).then(boot, boot);   // 스플래시 로고는 첫 그림 전에 와 있어야 한다
   } else boot();
   window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, seedExample: loadExample, startDose: startDose, generalHtml: generalHtml, loadChecks: loadChecks, render: render, finishSplash: function () { if (ui.splashFinish) ui.splashFinish(); } };
 })();

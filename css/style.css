@@ -690,8 +690,8 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 
 /* ---------- 환영(시안 02) · 내 정보 저장 안내(시안 03·04) ---------- */
 .screen.obwelcome{padding-left:41px;padding-right:24px}
-.obw-logo{margin-top:62px;font:700 16px/20px var(--kp-font);letter-spacing:-.02em;color:var(--kp-brand-ink)}
-.obw-h{margin-top:10px;font:700 32px/47px var(--kp-font);letter-spacing:-.02em;color:#111}
+.obw-logo{margin-top:64px;height:20px;font:700 16px/20px var(--kp-font);letter-spacing:-.02em;color:var(--kp-brand-ink)}
+.obw-h{margin-top:8px;font:700 32px/47px var(--kp-font);letter-spacing:-.02em;color:#111}
 .obw-h em{font-style:normal;color:var(--kp-brand-ink)}
 .obw-p{margin-top:21px;font:400 15.5px/26px var(--kp-font);letter-spacing:0;color:var(--kp-text-body)}
 .obwelcome ~ .actionbar .cta{font-size:15px;letter-spacing:var(--kp-ls)}
@@ -723,7 +723,7 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .app{position:relative}
 .sp-ov{position:absolute;inset:0;z-index:50;background:var(--kp-splash-bg)}
 .sp-tag{position:absolute;left:0;right:0;top:392px;text-align:center;font:400 16px/20px var(--kp-font);letter-spacing:var(--kp-ls);color:var(--kp-tagline)}
-.obw-logo svg{display:block;width:59px;height:16px;fill:currentColor}
+.obw-logo svg{display:block;width:59px;height:auto;fill:currentColor}
 .obwelcome.splashing .obw-logo{position:relative;z-index:60;width:max-content;transform-origin:0 0;will-change:transform;opacity:0}
 .obwelcome.splashing .obw-h,.obwelcome.splashing .obw-p,.obwelcome.splashing ~ .actionbar{opacity:0}
 .sp-ov ~ *{pointer-events:none}

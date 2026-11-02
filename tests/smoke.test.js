@@ -40,7 +40,7 @@ const dock = (idx = [0]) => { idx.forEach(pick); click('[data-act="dock"]'); };
 (async () => {
   await w.KeepingApp.bootCopy(); await w.KeepingApp.bootCare(); w.KeepingApp.ui.nowMin = 7 * 60;   // 시각을 아침 7시로 고정
   console.log('1) 환영 → 예시 사용자');
-  check('앱을 처음 열면 스플래시(시안 01 한 줄 + 로고 "Keeping", 환영 화면을 막이 덮은 상태)', !!q('.sp-ov') && q('.sp-tag').textContent === '처방전 해석부터 건강 관리까지' && q('.obw-logo').textContent === 'Keeping' && w.KeepingApp.ui.view === 'splash');
+  check('앱을 처음 열면 스플래시(시안 01 한 줄 + 로고 "Keeping", 환영 화면을 막이 덮은 상태)', !!q('.sp-ov') && q('.sp-tag').textContent === '처방전 해석부터 건강 관리까지' && q('.obw-logo').getAttribute('aria-label') === 'Keeping' && w.KeepingApp.ui.view === 'splash');
   click('.sp-ov'); w.dispatchEvent && d.querySelector('#app').dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
   check('스플래시 중에는 눌러도 건너뛰지 않음(막이 그대로, 환영으로 안 넘어감)', !!q('.sp-ov') && w.KeepingApp.ui.view === 'splash' && !q('.obconsent'));
   w.KeepingApp.finishSplash(); snap();
