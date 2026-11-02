@@ -35,6 +35,7 @@
     info: '<circle cx="10" cy="10" r="8"/><path d="M10 9v5"/><path d="M10 6.3h.01"/>',
     clock: '<circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/>',
     list: '<path d="M3 4h10M3 8h10M3 12h10"/>',
+    pill: '<path d="M7 13.7a3.3 3.3 0 0 1-4.7-4.7l6.7-6.7a3.3 3.3 0 0 1 4.7 4.7z"/><path d="M5.7 5.7l4.6 4.6"/>',
     home: '<path d="M2.5 7.5L8 2.5l5.5 5V13a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z"/><path d="M6.5 13.5V9.5h3v4"/>',
     user: '<circle cx="8" cy="5.5" r="2.7"/><path d="M2.8 13.5c.6-2.6 2.6-3.8 5.2-3.8s4.6 1.2 5.2 3.8"/>',
     tri: '<path d="M8 2.5l6 10.5H2z"/><path d="M8 6.5v3"/><path d="M8 11.2h.01"/>',
@@ -90,7 +91,7 @@
     function b(v, label, ic, scope) {
       return '<button type="button" data-act="nav" data-view="' + v + '"' + (scope ? ' data-scope="' + scope + '"' : '') + (cur === v ? ' aria-current="page" class="on"' : '') + '>' + icon(ic, 24) + '<span>' + label + '</span></button>';
     }
-    return '<nav class="nav" aria-label="주 메뉴">' + b('home', '홈', 'home') + b('list', '내 약', 'list') + b('settings', '마이', 'user') + '</nav>';
+    return '<nav class="nav" aria-label="주 메뉴">' + b('home', '홈', 'home') + b('list', '내 약', 'pill') + b('settings', '마이', 'user') + '</nav>';
   }
   /* 제품코드로 등록한 약은 전체 약 목록(DUR)이 와야 확인할 수 있다. 오는 중에는 "확인 범위 밖"이 아니라 "불러오는 중". */
   function durPending(it) { return !!(it && it.kind === 'drug' && it.productCode && !Pack.dur && ui.dur.status === 'loading'); }
@@ -205,8 +206,8 @@
   function statesOf() { return (state.states || []).filter(function (x) { return x === 'pregnant' || x === 'elderly'; }); }
   function careItems() {
     return state.items.map(function (it) {
-      if (it.kind === 'drug') return { id: it.id, kind: 'drug', productCode: it.productCode || undefined, itemSeq: it.itemSeq || undefined, name: it.name, display: nm(it), times: activeTimes(it), dept: it.dept || undefined };
-      return { id: it.id, kind: 'supp', ingredientKeys: (it.ingredientKeys || []).slice(), name: it.name, display: nm(it), times: activeTimes(it) };
+      if (it.kind === 'drug') return { id: it.id, kind: 'drug', productCode: it.productCode || undefined, itemSeq: it.itemSeq || undefined, name: it.name, display: nm(it), times: activeTimes(it), dept: it.dept || undefined, dose: it.dose || undefined };
+      return { id: it.id, kind: 'supp', ingredientKeys: (it.ingredientKeys || []).slice(), name: it.name, display: nm(it), times: activeTimes(it), dose: it.dose || undefined };
     });
   }
   function careModel() {
@@ -337,8 +338,8 @@
     var ts = (it.times && it.times.length) ? it.times : [''];
     var sub = it.productCode ? [it.ingredientEn, it.category].filter(Boolean).join(' · ') : kindLabel(it);
     return '<li class="pcard"><div class="pc-head"><div class="pc-title"><b>' + esc(nm(it)) + '</b>' + (sub ? '<span class="pc-sub">' + esc(sub) + '</span>' : '') + '</div></div><div class="tin">' + icon('clock', 20) +
-      ts.map(function (t, i) { return '<input type="time" class="time" aria-label="' + esc(nm(it)) + ' 복용 시간 ' + (i + 1) + '" data-input="time" data-id="' + it.id + '" data-i="' + i + '" value="' + esc(t) + '">'; }).join('') +
-      '<button type="button" class="mini" data-act="addTime" data-id="' + it.id + '" aria-label="' + esc(nm(it)) + ' 시간 추가">' + icon('plus') + '</button></div></li>';
+      ts.map(function (t, i) { return '<input type="text" inputmode="numeric" autocomplete="off" placeholder="07:30" class="time" aria-label="' + esc(nm(it)) + ' 복용 시간 ' + (i + 1) + '" data-input="time" data-id="' + it.id + '" data-i="' + i + '" value="' + esc(t) + '">'; }).join('') +
+      '<button type="button" class="mini" data-act="addTime" data-id="' + it.id + '" aria-label="' + esc(nm(it)) + ' 시간 추가">' + icon('plus') + '</button></div><p class="time-msg" id="tmsg-' + it.id + '" aria-live="polite"></p></li>';
   }
   VIEWS.times = function () {
     var p = ui.params, b = p.batch || null;
@@ -506,8 +507,7 @@
   }
   function topbarHome() {
     var logo = ui.logo ? ui.logo : 'Keeping';
-    return '<div class="kp-top"><span class="kp-logo" aria-label="Keeping">' + logo + '</span><div class="kp-top-act">' +
-      '<button type="button" class="kp-icbtn" data-act="nav" data-view="settings" aria-label="마이">' + kpIcon('user', 22) + '</button></div></div>';
+    return '<div class="kp-top"><span class="kp-logo" aria-label="Keeping">' + logo + '</span></div>';
   }
   VIEWS.home = function () {
     if (ui.copy.status === 'loading') return '<main class="screen kp-home">' + topbarHome() + '<p class="kp-stat" aria-live="polite">불러오는 중…</p></main>' + nav('home');
@@ -545,6 +545,7 @@
       return '<article class="kp-bagcard"><h2 class="kp-bag-name">' + esc(it.display) + '</h2>' + (sub ? '<p class="kp-bag-sub">' + esc(sub) + '</p>' : '') +
         '<span class="kp-chip">' + esc(it.category) + '</span>' +
         (it.times && it.times.length ? '<p class="kp-bag-times"><span>먹는 시간</span>' + esc(it.times.join(' · ')) + '</p>' : '') +
+        (it.doseText ? '<p class="kp-bag-times"><span>먹는 양</span>' + esc(it.doseText) + '</p>' : '') +
         (it.ingredient ? '<p class="kp-bag-ingr">' + esc(it.ingredient) + '</p>' : '') +
         (it.notices && it.notices.length ? it.notices.map(bagNotice).join('') : '') + '</article>';
     }).join('');
@@ -650,14 +651,34 @@
   };
 
   /* 담기 확인: 약을 고르면 한 화면에서 (처방약이면) 진료과 한 줄 + "언제 드세요?" 칩을 정하고 [담기]. 시간을 고르기 전에는 담기지 않는다. */
-  var SLOT_CHIPS = [['morning', '아침', '07:30'], ['lunch', '점심', '12:30'], ['dinner', '저녁', '18:30'], ['bedtime', '자기 전', '22:00']];
+  /* 문구는 data/copy/greeting.json. 못 읽었을 때를 위한 대체 문구는 같은 내용이다. */
+  var COPY_FALLBACK = { time_invalid: '시각을 다시 확인해 주세요 (예: 07:30)', time_band_hint: '{time}은 {band} 시간대로 들어가요', dose_label: '1회 먹는 양 (선택)', dose_hint: '내가 적어 두는 값이에요. 키핑은 양을 판단하지 않아요' };
+  function say(key, vars) {
+    if (ui.copy.status === 'ready' && window.KeepingGreeting) { var t = window.KeepingGreeting.create(ui.copy.json).say(key, vars); if (t) return t; }
+    return String(COPY_FALLBACK[key] || '').replace(/\{(\w+)\}/g, function (m, k) { return vars && vars[k] != null ? vars[k] : m; });
+  }
+  var DOSE_UNITS = ['정', '캡슐', '포', 'ml'];
+  var SLOT_CHIPS = [['morning', '아침'], ['lunch', '점심'], ['dinner', '저녁'], ['bedtime', '자기 전']];
   function startDraft(item) {
-    ui.draft = { item: item, slots: [], dept: '', deptEdit: false, fromView: ui.view, fromParams: ui.params, fromTab: ui.tab };
+    ui.draft = { item: item, slots: [], times: {}, blurred: {}, dose: { amount: '', unit: '정' }, dept: '', deptEdit: false, fromView: ui.view, fromParams: ui.params, fromTab: ui.tab };
     go('confirm');
   }
+  /* 칩에 보이는 시각: 고른 칩은 입력값(읽을 수 있을 때), 아니면 기본 시각 */
+  function chipTime(d, id) { return (d.slots.indexOf(id) > -1 && window.KeepingTime.parse(d.times[id])) || window.KeepingTime.DEFAULTS[id]; }
+  /* 입력칸을 벗어난 뒤에만 보여 준다(치는 중에는 비움). 빨강이 아니라 보조색 작은 글씨. */
+  function timeMsg(d, id) {
+    if (!d.blurred[id]) return '';
+    var p = window.KeepingTime.parse(d.times[id]);
+    if (p === null) return say('time_invalid');
+    var m = window.KeepingTime.mismatch(id, p);
+    return m ? say('time_band_hint', { time: p, band: m.label }) : '';
+  }
+  function draftReady(d) { return d.slots.length > 0 && d.slots.every(function (id) { return window.KeepingTime.parse(d.times[id]) !== null; }); }
   VIEWS.confirm = function () {
     var d = ui.draft;
     if (!d) { ui.view = 'home'; return VIEWS.home(); }
+    d.times = d.times || {}; d.blurred = d.blurred || {}; d.dose = d.dose || { amount: '', unit: '정' };
+    d.slots.forEach(function (id) { if (d.times[id] == null) d.times[id] = window.KeepingTime.DEFAULTS[id]; });
     var it = d.item, custom = d.dept && DEPTS.indexOf(d.dept) < 0, dept = '';
     if (isRx(it)) {
       var chips = d.deptEdit
@@ -669,11 +690,15 @@
     }
     var slots = '<p class="lbl">언제 드세요?</p><div class="chips" role="group" aria-label="먹는 시간">' + SLOT_CHIPS.map(function (c) {
       var a = d.slots.indexOf(c[0]) > -1;
-      return '<button type="button" class="chip' + (a ? ' on' : '') + '" aria-pressed="' + a + '" data-act="draftSlot" data-slot="' + c[0] + '">' + c[1] + '</button>';
-    }).join('') + '</div><p class="note">기본 시각은 ' + SLOT_CHIPS.map(function (c) { return c[1] + ' ' + c[2]; }).join(' · ') + '이에요. 나중에 내 약 탭에서 고칠 수 있어요.</p>';
+      return '<button type="button" class="chip' + (a ? ' on' : '') + '" aria-pressed="' + a + '" data-act="draftSlot" data-slot="' + c[0] + '">' + c[1] + ' <small id="tc-' + c[0] + '">' + esc(chipTime(d, c[0])) + '</small></button>';
+    }).join('') + '</div>' + SLOT_CHIPS.filter(function (c) { return d.slots.indexOf(c[0]) > -1; }).map(function (c) {
+      return '<div class="tslot"><label class="tslot-l" for="dt-' + c[0] + '">' + c[1] + ' 시각</label><input id="dt-' + c[0] + '" class="tslot-in" type="text" inputmode="numeric" autocomplete="off" placeholder="07:30" data-input="dtime" data-slot="' + c[0] + '" value="' + esc(d.times[c[0]] || '') + '"><p class="time-msg" id="tm-' + c[0] + '" aria-live="polite">' + esc(timeMsg(d, c[0])) + '</p></div>';
+    }).join('');
+    var dose = '<p class="lbl">' + esc(say('dose_label')) + '</p><div class="dose"><input id="ddose" class="ta" type="text" inputmode="decimal" autocomplete="off" aria-label="' + esc(say('dose_label')) + '" placeholder="1" data-input="ddose" value="' + esc(d.dose.amount) + '"><select id="dunit" class="ta" aria-label="단위" data-input="dunit">' +
+      DOSE_UNITS.map(function (u) { return '<option' + (d.dose.unit === u ? ' selected' : '') + '>' + u + '</option>'; }).join('') + '</select></div><p class="time-msg">' + esc(say('dose_hint')) + '</p>';
     return '<main class="screen has-bar">' + topbar() + '<h1 class="h" data-focus>담기 확인</h1>' +
-      '<div class="pcard"><div class="pc-head"><div class="pc-title"><b>' + esc(nm(it)) + '</b><span class="pc-sub">' + esc(kindLabel(it)) + '</span></div></div>' + dept + slots + '</div></main>' +
-      actionBar('<button type="button" id="nextbtn" class="cta" data-act="dock"' + (d.slots.length ? '' : ' disabled') + '>담기</button>');
+      '<div class="pcard"><div class="pc-head"><div class="pc-title"><b>' + esc(nm(it)) + '</b><span class="pc-sub">' + esc(kindLabel(it)) + '</span></div></div>' + dept + slots + dose + '</div></main>' +
+      actionBar('<button type="button" id="nextbtn" class="cta" data-act="dock"' + (draftReady(d) ? '' : ' disabled') + '>담기</button>');
   };
 
   /* ---------- 깊이 2: 근거 시트 / 약 상세 ---------- */
@@ -876,7 +901,7 @@
     draftSlot: function (t) {
       var d = ui.draft; if (!d) return;
       var i = d.slots.indexOf(t.dataset.slot);
-      if (i > -1) d.slots.splice(i, 1); else d.slots.push(t.dataset.slot);
+      if (i > -1) d.slots.splice(i, 1); else { d.slots.push(t.dataset.slot); if (d.times[t.dataset.slot] == null) d.times[t.dataset.slot] = window.KeepingTime.DEFAULTS[t.dataset.slot]; }
       renderKeepingFocus();
     },
     draftDept: function (t) { var d = ui.draft; if (!d) return; d.dept = d.dept === t.dataset.dept ? '' : t.dataset.dept; d.deptEdit = false; renderKeepingFocus(); },
@@ -888,14 +913,18 @@
     /* 담기: 시간을 하나 이상 골랐을 때만. 새 약 추가에서는 홈으로, 처음 설정·약 수정에서는 검색 화면으로 돌아간다. */
     dock: function () {
       var d = ui.draft; if (!d || !d.slots.length) { toast('먹는 시간을 하나 이상 골라 주세요'); return; }
+      if (!draftReady(d)) { toast(say('time_invalid')); return; }
       var it = d.item, add = d.fromView === 'add';
-      it.times = SLOT_CHIPS.filter(function (c) { return d.slots.indexOf(c[0]) > -1; }).map(function (c) { return c[2]; });
+      it.times = SLOT_CHIPS.filter(function (c) { return d.slots.indexOf(c[0]) > -1; }).map(function (c) { return window.KeepingTime.parse(d.times[c[0]]); })
+        .filter(function (t, i, a) { return a.indexOf(t) === i; });
+      var amt = parseFloat(String(d.dose.amount).replace(',', '.'));
+      if (amt > 0 && isFinite(amt)) it.dose = { amount: amt, unit: d.dose.unit }; else delete it.dose;   // 비우면 저장하지 않는다
       if (d.dept) it.dept = d.dept; else delete it.dept;
       if (add) { it.batch = (d.fromParams && d.fromParams.batch) || null; state.lastBatch = it.batch; }
       state.items.push(it);
       if (add) markNewRx([it.id], true); else save();
       ui.draft = null;
-      if (add) go('home'); else { ui.tab = d.fromTab || 'domestic'; go(d.fromView, d.fromParams); toast(nm(it) + ' 담았어요'); }
+      if (add) { go('home'); toast(nm(it) + ' 담았어요'); } else { ui.tab = d.fromTab || 'domestic'; go(d.fromView, d.fromParams); toast(nm(it) + ' 담았어요'); }
     },
     pick: function (t) {
       var x = ui.results && ui.results[+t.dataset.i]; if (!x) return;
@@ -1042,13 +1071,34 @@
     if (k === 'search') { ui.q = t.value; clearTimeout(searchTimer); searchTimer = setTimeout(runSearch, 150); }
     else if (k === 'mname') ui.manualName = t.value;
     else if (k === 'oq') ui.oq = t.value;
+    else if (k === 'dtime' && ui.draft) {          // 치는 중에는 값만 기억하고 안내는 비운다. 담기 버튼만 바로 갱신.
+      ui.draft.times[t.dataset.slot] = t.value; ui.draft.blurred[t.dataset.slot] = false;
+      var m = document.getElementById('tm-' + t.dataset.slot); if (m) m.textContent = '';
+      var nb = document.getElementById('nextbtn'); if (nb) nb.disabled = !draftReady(ui.draft);
+    } else if (k === 'ddose' && ui.draft) ui.draft.dose.amount = t.value;
+  });
+  /* 입력칸을 벗어나면 "19:30" 꼴로 고쳐 보여 준다 */
+  root.addEventListener('focusout', function (e) {
+    var t = e.target, k = t.getAttribute && t.getAttribute('data-input'), d = ui.draft;
+    if (k !== 'dtime' || !d) return;
+    var id = t.dataset.slot, p = window.KeepingTime.parse(t.value);
+    if (p) { t.value = p; d.times[id] = p; } else d.times[id] = t.value;
+    d.blurred[id] = true;
+    var m = document.getElementById('tm-' + id); if (m) m.textContent = timeMsg(d, id);
+    var c = document.getElementById('tc-' + id); if (c) c.textContent = chipTime(d, id);
+    var nb = document.getElementById('nextbtn'); if (nb) nb.disabled = !draftReady(d);
   });
   root.addEventListener('change', function (e) {
     var t = e.target, k = t.getAttribute && t.getAttribute('data-input');
-    if (k === 'time') {
+    if (k === 'dunit' && ui.draft) ui.draft.dose.unit = t.value;
+    else if (k === 'time') {
       var it = findItem(t.dataset.id); if (!it) return;
       var i = +t.dataset.i; var prev = it.times && it.times.length ? it.times.slice() : [''];
-      var next = prev.slice(); next[i] = t.value;
+      var next = prev.slice(), pt = window.KeepingTime.parse(t.value);
+      var msg = document.getElementById('tmsg-' + it.id);
+      if (t.value.trim() && pt === null) { t.value = prev[i] || ''; if (msg) msg.textContent = say('time_invalid'); return; }   // 읽을 수 없으면 저장하지 않는다
+      if (msg) msg.textContent = '';
+      t.value = pt || ''; next[i] = pt || '';
       if (!next.some(Boolean) && prev.some(Boolean)) { t.value = prev[i] || ''; toast('복용 시간이 하나는 있어야 해요'); return; }   // 시간이 없는 약은 만들지 않는다
       it.times = next; it.updatedAt = new Date().toISOString(); save();
     } else if (k === 'import') {    } else if (k === 'import') {

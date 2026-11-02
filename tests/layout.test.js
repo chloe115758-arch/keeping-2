@@ -139,7 +139,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
     const css = fs.readFileSync(path.join(root, 'css', 'style.css'), 'utf8'), html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
     check('100vh마다 100dvh 대체값이 있음(주소창이 접혀도 높이가 맞게)', (css.match(/100vh/g) || []).length > 0 && (css.match(/100dvh/g) || []).length >= (css.match(/100vh/g) || []).length);
     check('viewport-fit=cover + 하단 영역·탭에 env(safe-area-inset-bottom)', /viewport-fit=cover/.test(html) && /\.actionbar\{[^}]*safe-area-inset-bottom/.test(css) && /\.nav\{[^}]*safe-area-inset-bottom/.test(css));
-    check('위쪽 안전 영역(env(safe-area-inset-top))을 화면과 토스트가 씀', /\.screen\{[^}]*safe-area-inset-top/.test(css) && /\.toast\{[^}]*safe-area-inset-top/.test(css));
+    check('안전 영역: 화면은 위쪽, 토스트는 아래쪽(env(safe-area-inset-bottom))을 씀', /\.screen\{[^}]*safe-area-inset-top/.test(css) && /\.toast\{[^}]*safe-area-inset-bottom/.test(css));
     check('overflow:clip을 지원하지 않는 브라우저 대체 규칙이 있음(하단 영역 sticky 유지)', /@supports not \(overflow:clip\)/.test(css));
     const ctx3 = await browser.newContext({ viewport: { width: 393, height: 852 } });
     const p3 = await ctx3.newPage();
@@ -153,8 +153,8 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
     check('입력 칸(' + inputs.length + '개)의 글자가 모두 16px 이상(사파리 자동 확대 방지)', inputs.length >= 6 && inputs.every((i) => i.fs >= 16), JSON.stringify(inputs.filter((i) => i.fs < 16)));
     check('화면 아래에 고정(fixed)된 요소가 없음(키보드에 가려지지 않음). 토스트만 위쪽 고정', fixedEls.every((f) => !/actionbar|nav/.test(String(f.x))));
     await p3.evaluate(() => KeepingApp.go('welcome')); await p3.evaluate(() => { KeepingApp.seedExample(); KeepingApp.go('home'); }); await p3.waitForSelector('.nav');
-    const toastTop = await p3.evaluate(() => { const d = document.createElement('div'); d.className = 'toast'; d.textContent = 't'; document.body.appendChild(d); const r = d.getBoundingClientRect(); d.remove(); return r.top; });
-    check('토스트가 화면 위쪽에 뜸(키보드가 열려도 보임)', toastTop < 100, 'top=' + toastTop);
+    const toastBottom = await p3.evaluate(() => { const d = document.createElement('div'); d.className = 'toast'; d.textContent = 't'; document.body.appendChild(d); const r = d.getBoundingClientRect(); const nav = document.querySelector('.nav'); const out = { b: r.bottom, navTop: nav ? nav.getBoundingClientRect().top : innerHeight, vh: innerHeight }; d.remove(); return out; });
+    check('토스트가 하단 탭 바로 위에 뜸(탭에 가리지 않음)', toastBottom.b <= toastBottom.navTop - 8 && toastBottom.b > toastBottom.navTop - 60, JSON.stringify(toastBottom));
     await ctx3.close();
   } finally { await browser.close(); server.close(); }
   console.log('\n통과 ' + ok + ' / 실패 ' + bad);

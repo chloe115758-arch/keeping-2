@@ -90,9 +90,9 @@ button{background:none;border:0;cursor:pointer}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--error)}
 
 /* 버튼 — 대표 민트 위 글자는 검정 [A11Y: 흰 글자는 대비 약 2:1] */
-.cta{display:block;width:100%;min-height:50px;padding:13px 16px;border-radius:30px;background:var(--mint-400);color:var(--black-1);font:700 16px/1.3 var(--font);text-align:center;transition:transform .2s var(--ease),background .2s,opacity .2s}
-.cta:hover{background:var(--mint-300);transform:translateY(-1px)}
-.cta:active{background:var(--mint-500)}
+.cta{display:block;width:100%;min-height:50px;padding:13px 16px;border-radius:30px;background:var(--kp-cta-bg);color:var(--kp-cta-text);font:700 16px/1.3 var(--font);text-align:center;transition:transform .2s var(--ease),background .2s,opacity .2s}
+.cta:hover{background:var(--kp-cta-bg);transform:translateY(-1px)}
+.cta:active{background:var(--kp-cta-bg)}
 .cta:disabled{background:var(--grey-5);color:var(--grey-2);cursor:default;transform:none}
 .cta.ghost{background:var(--soft);color:var(--ink-strong)}
 .cta.ghost:hover{background:var(--grey-5)}
@@ -203,7 +203,7 @@ button{background:none;border:0;cursor:pointer}
 /* 탭 · 칩 */
 .tabs{display:flex;gap:6px;margin-bottom:14px}
 .tab{flex:1;min-height:var(--tap);border-radius:var(--r-sm);background:var(--soft);font:var(--label);font-weight:700;color:var(--ink-2)}
-.tab.on{background:var(--mint-400);color:var(--black-1)}
+.tab.on{background:var(--kp-cta-bg);color:var(--kp-cta-text)}
 .panel{margin-bottom:8px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
 .chip{display:inline-flex;align-items:center;gap:6px;min-height:var(--tap);padding:8px 16px;border-radius:var(--r-pill);border:1.5px solid var(--grey-5);font:600 15px/1.3 var(--font);background:var(--white)}
@@ -211,7 +211,7 @@ button{background:none;border:0;cursor:pointer}
 .chip.food{min-height:36px;padding:4px 6px 4px 14px;font-size:14px;background:var(--soft);border-color:var(--soft)}
 .chip.food button{width:28px;height:28px;display:grid;place-items:center;color:var(--ink-2)}
 .inrow{display:flex;gap:8px;margin-bottom:12px}.inrow .ta{margin:0;flex:1}
-.add{flex:none;padding:0 18px;border-radius:var(--r-md);background:var(--mint-400);color:var(--black-1);font:700 14px/1.3 var(--font);min-height:50px}
+.add{flex:none;padding:0 18px;border-radius:var(--r-md);background:var(--kp-cta-bg);color:var(--kp-cta-text);font:700 14px/1.3 var(--font);min-height:50px}
 
 /* 시간 입력 */
 .tlist{list-style:none;display:grid;gap:10px}
@@ -223,7 +223,7 @@ button{background:none;border:0;cursor:pointer}
 .time{min-height:50px;padding:8px 12px;border:1px solid var(--grey-5);border-radius:10px;font:var(--body2);background:var(--white);color:var(--ink-strong)}
 .mini{width:50px;height:50px;display:grid;place-items:center;border-radius:10px;background:var(--white);box-shadow:0 0 0 1.5px var(--grey-5) inset}
 .mini.txt{width:auto;padding:0 14px;font:var(--label);font-weight:700}
-.mini.txt.on{background:var(--mint-400);color:var(--black-1);box-shadow:none}
+.mini.txt.on{background:var(--kp-cta-bg);color:var(--kp-cta-text);box-shadow:none}
 
 /* 내 목록 */
 .mylist{list-style:none;display:grid;gap:8px}
@@ -283,9 +283,9 @@ button{background:none;border:0;cursor:pointer}
 .nav button.on{color:var(--kp-brand-strong)}
 
 /* 토스트 */
-.toast{position:fixed;left:50%;top:calc(16px + env(safe-area-inset-top, 0px));transform:translateX(-50%);max-width:min(386px,calc(100% - 44px));padding:12px 18px;border-radius:var(--r-md);background:var(--black-2);color:var(--white);font:600 14px/1.4 var(--font);z-index:50;animation:up .3s var(--ease)}
+.toast{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom, 0px));transform:translateX(-50%);max-width:min(386px,calc(100% - 44px));padding:12px 18px;border-radius:var(--r-md);background:var(--black-2);color:var(--white);font:600 14px/1.4 var(--font);z-index:50;animation:up .3s var(--ease)}
 .toast.out{opacity:0;transition:opacity .4s}
-@keyframes up{from{opacity:0;transform:translate(-50%,-10px)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes up{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}
 
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 /* ---------- 넓은 화면 ----------
@@ -346,7 +346,6 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 .kp-top{display:flex;align-items:center;justify-content:space-between;min-height:56px}
 .kp-logo{font:700 20px/1.2 var(--kp-font);letter-spacing:-0.02em;color:var(--kp-text)}
 .kp-logo svg{display:block;height:20px;width:auto;fill:currentColor}
-.kp-top-act{display:flex;align-items:center}
 .kp-icbtn{width:var(--kp-touch-min);height:var(--kp-touch-min);display:grid;place-items:center;border-radius:50%;color:var(--kp-text)}
 .kp-icbtn:hover{background:var(--kp-surface-sub)}
 .kp-ic{flex:none;display:block}
@@ -373,7 +372,7 @@ a.lnk{display:inline-flex;align-items:center;min-height:44px}
 .kp-row--slot{--c:29px}
 .kp-row--slot .kp-slot{margin-bottom:6px}
 .kp-row--meal{--c:13px;min-height:27px}
-.kp-time{padding-top:calc(var(--c) - 10px);font:var(--kp-fw-title) 13px/20px var(--kp-font);text-align:center;white-space:nowrap;font-variant-numeric:tabular-nums}
+.kp-time{padding-top:calc(var(--c) - 10px);padding-right:1px;margin-left:-12px;font:var(--kp-fw-title) 13px/20px var(--kp-font);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
 .kp-row--meal .kp-time{padding-top:calc(var(--c) - 9px);font:400 12px/18px var(--kp-font);color:var(--kp-text-sub)}
 .kp-row--meal+.kp-row--slot{--c:34px}   /* 카드가 5px 아래에서 시작하므로 노드·라벨도 같이 내린다 */
 .kp-row--meal+.kp-row--slot .kp-slot{margin-top:5px}
@@ -523,7 +522,7 @@ input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;appea
 .pcard .dept-in input{flex:1;min-width:0;min-height:var(--tap);padding:0 12px;border:1.5px solid var(--grey-5);border-radius:var(--r-sm);background:var(--white)}
 
 /* ---------- 2단계: 옛 화면(처음 설정·등록·내 약·마이)을 --kp-* 로 통일 ----------
-   글꼴 Pretendard, 주 버튼 검정 둥근 56px, 배경 --kp-bg-page, 카드 --kp-surface + --kp-radius-card. 민트 면은 쓰지 않는다. */
+   글꼴 Pretendard, 주 버튼 --kp-cta-bg(민트) 둥근 56px, 배경 --kp-bg-page, 카드 --kp-surface + --kp-radius-card. 민트 면은 쓰지 않는다. */
 :root{--font:var(--kp-font)}
 body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp-font)}
 .screen{background:transparent}
@@ -570,3 +569,15 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .sel li{background:var(--kp-brand-weak);border-radius:var(--kp-radius-chip)}
 .sw.on{background:var(--kp-brand-strong)}
 .badge.newrx{color:var(--kp-label-text);background:var(--kp-brand-weak);border-color:var(--kp-brand-strong)}
+
+/* 담기 확인: 시각 아코디언 · 1회 양 */
+.chip small{font:inherit;font-size:var(--kp-fs-caption);font-variant-numeric:tabular-nums;opacity:.75;margin-left:2px}
+.tslot{margin:8px 0 0;padding:10px 12px;border-radius:var(--kp-radius-chip);background:var(--kp-surface-sub);animation:tslot-in .18s ease-out}
+.tslot-l{display:block;font:var(--kp-fw-strong) var(--kp-fs-caption)/1.5 var(--kp-font);color:var(--kp-text-sub)}
+.tslot-in{display:block;width:100%;height:44px;margin-top:4px;padding:0 12px;border:1.5px solid var(--kp-border);border-radius:var(--kp-radius-chip);background:var(--kp-surface);color:var(--kp-text);font:var(--kp-fw-strong) 16px/1 var(--kp-font);font-variant-numeric:tabular-nums}
+.tslot-in:focus{outline:none;border-color:var(--kp-brand)}
+.time-msg{margin:4px 0 0;font:var(--kp-fs-caption)/1.5 var(--kp-font);color:var(--kp-text-sub)}
+.time-msg:empty{display:none}
+.dose{display:flex;gap:8px}
+.dose input{flex:1;min-width:0;margin:0}.dose select{flex:none;width:96px;margin:0}
+@keyframes tslot-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}

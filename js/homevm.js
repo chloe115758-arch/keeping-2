@@ -218,7 +218,8 @@
               });
             }); });
             return { itemId: gi.itemId, name: it.name, display: gi.display, spec: p.spec || '', company: p.company || '', ingredient: it.ingredientKo ? it.ingredientKo + (p.ingrName ? ' (' + p.ingrName + ')' : '') : (p.ingrName || ''),
-                     category: CATEGORY_LABEL[categoryOf(it)], times: (it.times || []).slice(), notices: notices };
+                     category: CATEGORY_LABEL[categoryOf(it)], times: (it.times || []).slice(), notices: notices,
+                     doseText: (it.dose && +it.dose.amount > 0) ? say('detail_dose', { amount: it.dose.amount, unit: it.dose.unit || '정' }) : '' };
           });
           var foods = uniq(foodOrder.filter(function (ko) { return foodMap[ko].itemIds.some(function (id) { return G.itemIds.indexOf(id) >= 0; }); }));
           detail[G.id] = { groupId: G.id, title: G.title, kind: G.kind, items: itemsDetail, foodsTitle: say('foods_title'), foods: foods,

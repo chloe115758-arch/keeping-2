@@ -83,7 +83,7 @@ t('두 말투(기본·친근) 문구 전체에 금지 표현·모르는 변수�
   const md = fs.readFileSync(path.join(__dirname, '../docs/ux-writing.md'), 'utf8').split('\n');
   const BAN = /안전|괜찮|문제없|먹어도|드세요|복용하세요|챙겨\s*드|중단하세요|끊으세요|늘리세요|줄이세요|못\s*했어요|안\s*드셨/;
   const ALLOWED = ['안전하다는 뜻은 아니'];
-  const OK = new Set(['name', 'taken', 'left', 'total', 'missed', 'missedN', 'subject', 'object', 'interval', 'time', 'verb', 'dept', 'text', 'c', 'more', 'n', 'note']);
+  const OK = new Set(['name', 'taken', 'left', 'total', 'missed', 'missedN', 'subject', 'object', 'interval', 'time', 'verb', 'dept', 'text', 'c', 'more', 'n', 'note', 'band', 'amount', 'unit']);
   let rows = 0;
   md.forEach((line) => {
     const c = line.split('|').map((x) => x.trim());

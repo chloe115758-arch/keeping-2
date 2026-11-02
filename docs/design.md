@@ -56,8 +56,8 @@ ACTIVE_PRESET: B
 | `--kp-brand-weak` | `#BCF0E4` | `#E3F8F2` | | 연한 포인트 면(새 처방 칩 등) | ✏ |
 | `--kp-text` | `#111111` | `#17191C` | | 제목·본문 | ✏ · 대비 4.5 vs --kp-surface |
 | `--kp-text-sub` | `#6B6D74` | `#6B7280` | | 보조 글씨 | ✏ · 대비 4.5 vs --kp-surface |
-| `--kp-cta-bg` | `#52CEB0` | `#17191C` | | 하단 주 버튼 (B는 인아웃처럼 검정) | ✏ |
-| `--kp-cta-text` | `#111111` | `#FFFFFF` | | 주 버튼 글씨 | ✏ · 대비 4.5 vs --kp-cta-bg |
+| `--kp-cta-bg` | `#52CEB0` | `#34D1B0` | | 하단 주 버튼 (B: 민트로 통일) | ✏ |
+| `--kp-cta-text` | `#111111` | `#073D31` | | 주 버튼 글씨 | ✏ · 대비 4.5 vs --kp-cta-bg |
 | `--kp-caution-text` | `#C62828` | `#C2261D` | | 주의 글씨·아이콘 | ✏ · 대비 4.5 vs --kp-caution-bg |
 | `--kp-caution-bg` | `#FDECEC` | `#FFF1EF` | | 주의 줄 배경 | ✏ |
 | `--kp-info-text` | `#1A64C7` | `#1D5FD8` | | 정보 글씨(음식 줄·링크) | ✏ · 대비 4.5 vs --kp-surface |

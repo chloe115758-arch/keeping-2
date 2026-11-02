@@ -220,4 +220,12 @@ t('영양제만 있는 시간대에는 상태 줄을 만들지 않는다(비교�
   const S = slotRow(run([supp('ca', ['calcium'], ['09:00'])]), 'morning');
   assert.strictEqual(S.statusLine, null);
 });
+t('약봉투: 내가 적은 1회 양이 있으면 "1회 2정 · 내가 적은 값", 없으면 빈 줄', () => {
+  const items = base(); items[0].dose = { amount: 2, unit: '정' };
+  const d = run(items).detail['morning:rx:내과'];
+  assert.strictEqual(d.items[0].doseText, '1회 2정 · 내가 적은 값');
+  assert.strictEqual(run(base()).detail['morning:rx:내과'].items[0].doseText, '');
+  items[0].dose = { amount: 0, unit: '정' };
+  assert.strictEqual(run(items).detail['morning:rx:내과'].items[0].doseText, '', '0 이하는 만들지 않는다');
+});
 console.log('\n' + n + '개 통과');

@@ -57,6 +57,11 @@
   "notice_none_sub": "공식 자료(병용금기·약 설명서)에서 찾아본 결과예요",
   "notice_unknown": "이 시간대의 약은 키핑의 확인 범위 밖이에요",
   "notice_unknown_sub": "함께 먹는 약과의 주의는 약사에게 확인해 주세요",
-  "notice_uncovered": "키핑의 확인 범위 밖인 약이 {n}개 있어요"
+  "notice_uncovered": "키핑의 확인 범위 밖인 약이 {n}개 있어요",
+  "time_band_hint": "{time:은/는} {band} 시간대로 들어가요",
+  "time_invalid": "시각을 다시 확인해 주세요 (예: 07:30)",
+  "dose_label": "1회 먹는 양 (선택)",
+  "dose_hint": "내가 적어 두는 값이에요. 키핑은 양을 판단하지 않아요",
+  "detail_dose": "1회 {amount}{unit} · 내가 적은 값"
  }
 }
