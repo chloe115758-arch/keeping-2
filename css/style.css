@@ -134,10 +134,6 @@ button{background:none;border:0;cursor:pointer}
 .welcome .h.xl{margin-bottom:12px}
 .welcome .sub{font:var(--body2);color:var(--grey-2);margin-bottom:16px}
 .welcome .fine{font:var(--caption);color:var(--grey-text);margin-top:0}
-.splash{background:var(--mint-400);color:var(--black-1);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;cursor:pointer;position:relative}
-.splash-tag{font:var(--body2);font-weight:500}
-.splash-logo{font:700 56px/1.2 var(--font);letter-spacing:-.02em}
-.splash-hint{position:absolute;bottom:40px;font:var(--caption);color:var(--black-3)}
 .linkbtn{display:block;width:100%;min-height:var(--tap);padding:0 16px;font:600 14px/1.4 var(--font);color:var(--mint-700);text-align:center;border-radius:var(--r-sm)}
 .linkbtn:hover{background:var(--mint-50)}
 .agree{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:12px 16px;margin:20px 0 18px;border-radius:var(--r-md);background:var(--card-bg);font:var(--h3);font-weight:600;text-align:left;color:var(--ink-strong)}
@@ -539,8 +535,6 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .stepbar i{background:var(--kp-brand)}
 .stepchip,.count{background:var(--kp-brand-weak);color:var(--kp-label-text)}
 .brand{color:var(--kp-brand-strong)}
-.splash{background:var(--kp-bg-page);color:var(--kp-text)}
-.splash-hint{color:var(--kp-text-sub)}
 .linkbtn{color:var(--kp-brand-strong)}
 .linkbtn:hover{background:var(--kp-surface-sub)}
 .agree{background:var(--kp-surface);border:1px solid var(--kp-border);border-radius:var(--kp-radius-card);box-shadow:var(--kp-shadow-card)}
@@ -724,3 +718,12 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 /* 검색 결과: 영역이 넘치면 결과만 스크롤(아래 버튼 띠는 그대로), 마지막 줄이 버튼에 가리지 않게 여백 */
 .obs-list{max-height:calc(100dvh - 359px - var(--kp-ob-bottom) - 18px - 50px - 16px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 @media (min-width:481px){.obs-list{max-height:calc(100dvh - 48px - 359px - var(--kp-ob-bottom) - 18px - 50px - 16px)}}
+
+/* ---------- 스플래시 + 3초 전환 (시안 01) ---------- */
+.app{position:relative}
+.sp-ov{position:absolute;inset:0;z-index:50;background:var(--kp-splash-bg)}
+.sp-tag{position:absolute;left:0;right:0;top:392px;text-align:center;font:400 16px/20px var(--kp-font);letter-spacing:var(--kp-ls);color:var(--kp-tagline)}
+.obw-logo svg{display:block;width:59px;height:16px;fill:currentColor}
+.obwelcome.splashing .obw-logo{position:relative;z-index:60;width:max-content;transform-origin:0 0;will-change:transform;opacity:0}
+.obwelcome.splashing .obw-h,.obwelcome.splashing .obw-p,.obwelcome.splashing ~ .actionbar{opacity:0}
+.sp-ov ~ *{pointer-events:none}

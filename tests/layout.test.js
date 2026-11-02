@@ -49,9 +49,9 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       const inCol = (r, app, tol = 1) => r && app && r.x >= app.x - tol && r.r <= app.r + tol;
 
       // ── 스플래시 → 환영 (데이터 로딩과 상관없이 바로 그려진다)
-      await page.waitForSelector('.splash', { timeout: 3000 });
-      check(`${w}: 스플래시는 데이터 로딩 전에 바로 보임`, await page.evaluate(() => KeepingApp.ui.dur.status === 'loading' && !!document.querySelector('.splash')));
-      await page.click('.splash'); await page.waitForSelector('.obwelcome');
+      await page.waitForSelector('.sp-ov', { timeout: 3000 });
+      check(`${w}: 스플래시는 데이터 로딩 전에 바로 보임`, await page.evaluate(() => KeepingApp.ui.dur.status === 'loading' && !!document.querySelector('.sp-ov')));
+      await page.waitForSelector('.sp-ov', { state: 'detached', timeout: 6000 }); await page.waitForSelector('.obwelcome');
       const loading = await R();
       const app = loading.app;
       check(`${w}: 앱은 폰 폭 열 하나(최대 430px)`, app.w <= 430.5 && app.w >= Math.min(w, 430) - 1, `app.w=${app.w}`);
@@ -122,7 +122,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
     await page.route('**/data/dur/*.json', async (r) => { await new Promise((x) => setTimeout(x, 700)); r.continue(); });
     await page.addInitScript(() => { window.__cls = 0; window.__shifts = []; new PerformanceObserver((l) => { for (const e of l.getEntries()) if (!e.hadRecentInput) { window.__cls += e.value; window.__shifts.push(+e.value.toFixed(4)); } }).observe({ type: 'layout-shift', buffered: true }); });
     await page.goto(base); await page.evaluate(() => document.fonts.ready);
-    await page.click('.splash'); await page.click('[data-act="start"]'); await page.click('[data-act="agree"]'); await page.click('#agreenext'); await page.waitForSelector('#nextbtn');
+    await page.waitForSelector('.sp-ov', { state: 'detached', timeout: 6000 }); await page.click('[data-act="start"]'); await page.click('[data-act="agree"]'); await page.click('#agreenext'); await page.waitForSelector('#nextbtn');
     const y0 = await page.evaluate(() => { window.__cls = 0; window.__shifts = []; return [...document.querySelectorAll('h1, .inp, .count, .lbl')].map((e) => Math.round(e.getBoundingClientRect().top)); });
     await page.waitForFunction(() => KeepingApp.ui.dur.status === 'ready'); await page.waitForTimeout(300);
     const y1 = await page.evaluate(() => [...document.querySelectorAll('h1, .inp, .count, .lbl')].map((e) => Math.round(e.getBoundingClientRect().top)));
@@ -136,7 +136,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
     const ctx2 = await browser.newContext({ viewport: { width: 360, height: 800 } });
     const p2 = await ctx2.newPage();
     await p2.route('**/*Pretendard*', async (r) => { await new Promise((x) => setTimeout(x, 600)); r.continue(); });
-    await p2.goto(base); await p2.waitForSelector('.splash'); await p2.click('.splash'); await p2.waitForSelector('.obwelcome');
+    await p2.goto(base); await p2.waitForSelector('.sp-ov'); await p2.waitForSelector('.sp-ov', { state: 'detached', timeout: 6000 });
     const hs = () => p2.evaluate(() => ['h1', '.obw-p'].map((s) => Math.round(document.querySelector(s).getBoundingClientRect().height)).join(','));
     const early = await hs(); await p2.waitForTimeout(1800); const late = await hs();
     check('환영 화면: 첫 화면이 보이는 순간과 글꼴이 다 도착한 뒤의 문단 높이가 같음', early === late, early + ' → ' + late);
@@ -156,7 +156,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
     await p3.goto(base); await p3.waitForFunction(() => KeepingApp.ui.dur.status === 'ready' || KeepingApp.ui.dur.status === 'error');
     const inputs = [], fixedEls = [];
     const grab = async (name) => { await p3.waitForTimeout(120); const r = await p3.evaluate(() => ({ i: [...document.querySelectorAll('#app input, #app textarea, #app select')].filter((e) => !['file', 'checkbox', 'radio'].includes(e.type)).map((e) => ({ id: e.id || e.type, fs: parseFloat(getComputedStyle(e).fontSize) })), f: [...document.querySelectorAll('body *')].filter((e) => getComputedStyle(e).position === 'fixed').map((e) => e.className || e.tagName) })); r.i.forEach((x) => inputs.push({ name, ...x })); r.f.forEach((x) => fixedEls.push({ name, x })); };
-    await p3.click('.splash'); await p3.click('[data-act="start"]'); await p3.click('[data-act="agree"]'); await p3.click('#agreenext'); await p3.waitForSelector('#q'); await grab('약 검색');
+    await p3.waitForSelector('.sp-ov', { state: 'detached', timeout: 6000 }); await p3.click('[data-act="start"]'); await p3.click('[data-act="agree"]'); await p3.click('#agreenext'); await p3.waitForSelector('#q'); await grab('약 검색');
     await p3.evaluate(() => { KeepingApp.state().items.push({ id: 'lt1', kind: 'drug', source: 'manual', name: '레이아웃약', times: ['07:30'], batch: null }); KeepingApp.go('onb-drugs'); }); await p3.click('#nextbtn'); await p3.waitForSelector('.manual-chip'); await grab('영양제'); await p3.click('.manual-chip'); await grab('영양제 직접 입력');
     await p3.evaluate(() => { KeepingApp.state().items.push({ id: 'zz', kind: 'drug', source: 'manual', name: 'x', times: [''] }); KeepingApp.go('times', { all: true }); }); await grab('복용 시간');
     await p3.evaluate(() => KeepingApp.go('questions')); await grab('질문');

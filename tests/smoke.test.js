@@ -40,8 +40,11 @@ const dock = (idx = [0]) => { idx.forEach(pick); click('[data-act="dock"]'); };
 (async () => {
   await w.KeepingApp.bootCopy(); await w.KeepingApp.bootCare(); w.KeepingApp.ui.nowMin = 7 * 60;   // 시각을 아침 7시로 고정
   console.log('1) 환영 → 예시 사용자');
-  check('앱을 처음 열면 스플래시(키핑 + 문구, 판정·광고 문구 없음)', !!q('.splash') && T().includes('키핑') && T().includes('내 하루 복약, 근거 있게 챙겨요') && !/처방전 해석|건강 관리까지/.test(T()));
-  click('.splash'); snap();
+  check('앱을 처음 열면 스플래시(시안 01 한 줄 + 로고 "Keeping", 환영 화면을 막이 덮은 상태)', !!q('.sp-ov') && q('.sp-tag').textContent === '처방전 해석부터 건강 관리까지' && q('.obw-logo').textContent === 'Keeping' && w.KeepingApp.ui.view === 'splash');
+  click('.sp-ov'); w.dispatchEvent && d.querySelector('#app').dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
+  check('스플래시 중에는 눌러도 건너뛰지 않음(막이 그대로, 환영으로 안 넘어감)', !!q('.sp-ov') && w.KeepingApp.ui.view === 'splash' && !q('.obconsent'));
+  w.KeepingApp.finishSplash(); snap();
+  check('끝나면 막이 걷히고 환영 화면(같은 로고 요소 그대로), history에는 안 들어감', !q('.sp-ov') && !q('.splashing') && w.KeepingApp.ui.view === 'welcome' && w.KeepingApp.ui.hist.length === 0);
   check('스플래시를 누르면 환영 화면(새 제목·설명, 예전 문구 없음)', T().includes('오늘의 복약,키핑이 함께 챙겨요') && T().includes('먹는 약과 영양제를 등록해 보세요.') && !T().includes('겹치는') && !T().includes('근거 있게') && !!q('[data-act="start"]') && !!q('.actionbar'));
   w.KeepingApp.seedExample(); w.KeepingApp.go('home'); snap();
   check('홈: 인사 카드(인사말·보조 문장) + 오늘의 복약 + 큰 숫자 + 진행 바 — 건강 관리·이름 자리 문구 없음', !!q('.kp-top') && !!q('.kp-hello') && q('.kp-line1').textContent.length > 0 && q('.kp-line2').textContent.length > 0 && /^\d+\/\d+$/.test(q('.kp-count').textContent) && q('.kp-bar').getAttribute('role') === 'progressbar' && !/OO님|\{name\}/.test(T()), q('.kp-line1') && q('.kp-line1').textContent);
@@ -363,8 +366,6 @@ const dock = (idx = [0]) => { idx.forEach(pick); click('[data-act="dock"]'); };
   w.KeepingApp.go('onb-drugs');
   w.KeepingApp.go('onb-supps');
   check('영양제 단계는 2/2이고, 건너뛰면 "시간 정하기" 단계 없이 바로 홈', q('.stepchip').textContent === '2/2' && (click('.skipbtn'), !T().includes('언제 드시나요?') && !!q('.kp-top')));
-  w.KeepingApp.go('splash'); w.dispatchEvent && d.querySelector('#app').dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
-  check('스플래시는 키보드(Enter)로도 넘길 수 있음', !q('.splash') && T().includes('키핑이 함께 챙겨요'));
   console.log('6-2c) 이전 버튼 · 브라우저 뒤로 가기: 한 단계씩, 환영 화면까지');
   w.KeepingApp.state().items.length = 0; await wait(30); w.KeepingApp.go('welcome');
   click('[data-act="start"]'); click('[data-act="agree"]'); click('#agreenext');

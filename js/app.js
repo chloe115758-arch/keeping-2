@@ -287,13 +287,49 @@
   /* ---------- 화면 ---------- */
   var VIEWS = {};
 
+  /* 스플래시(시안 01) + 3초 전환: 환영 화면을 미리 그려 두고 그 위에 막(.sp-ov)과 한 줄 글을 덮는다.
+     환영의 작은 로고(.obw-logo)가 곧 큰 로고다 — 같은 요소를 크게 키워 가운데에 두었다가(FLIP) 제자리로 줄인다. 끝나면 막을 걷고 ui.view만 welcome으로 바꾼다(history에 넣지 않는다). */
   VIEWS.splash = function () {
-    return '<main class="screen splash" data-act="skipSplash"><p class="splash-tag">내 하루 복약, 근거 있게 챙겨요</p><h1 class="splash-logo" data-focus>키핑</h1><p class="splash-hint">화면을 누르면 바로 시작해요</p></main>';
+    return VIEWS.welcome().replace('obwelcome"', 'obwelcome splashing"') + '<div class="sp-ov" aria-hidden="true"><p class="sp-tag">처방전 해석부터 건강 관리까지</p></div>';
   };
+  var SP = { scale: 3.25, inkTop: 431, inkOff: 3,   // 배율은 시안 큰 로고 폭(187)·높이(52)에 글자 모양이 가장 가깝게 잰 값
+     ease: 'cubic-bezier(0.4, 0, 0.2, 1)' };
+  function startSplash() {
+    var main = root.querySelector('.obwelcome'), lg = main && main.querySelector('.obw-logo'), ov = root.querySelector('.sp-ov'), tag = root.querySelector('.sp-tag');
+    if (!lg || !ov) return;
+    var items = [main.querySelector('.obw-h'), main.querySelector('.obw-p'), root.querySelector('.actionbar')];
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches, anims = [], done = false, timer = null;
+    function finish() {
+      if (done) return; done = true; clearTimeout(timer);
+      anims.forEach(function (a) { try { a.cancel(); } catch (e) { /* 이미 끝남 */ } });
+      main.classList.remove('splashing'); lg.style.cssText = ''; ov.remove();
+      if (ui.view === 'splash') ui.view = 'welcome';
+      ui.splashFinish = null;
+    }
+    ui.splashFinish = finish;
+    function run() {
+      if (done) return;
+      var r = lg.getBoundingClientRect(), a = root.getBoundingClientRect(), s = SP.scale;
+      var dx = a.left + (a.width - r.width * s) / 2 - r.left, dy = a.top + SP.inkTop - SP.inkOff * s - r.top;
+      var from = 'translate(' + dx + 'px,' + dy + 'px) scale(' + s + ')';
+      lg.style.opacity = '1'; lg.style.transform = from; lg.style.color = 'var(--kp-logo-splash)';
+      if (reduce || !lg.animate) { timer = setTimeout(finish, reduce ? 1000 : 3200); return; }   // 줄어든 모션 설정: 정지 화면 1초 뒤 바로 환영
+      var T = function (el, kf, o) { var an = el.animate(kf, Object.assign({ fill: 'both', easing: 'linear' }, o)); anims.push(an); return an; };
+      T(lg, [{ opacity: 0 }, { opacity: 1 }], { duration: 400 });
+      T(lg, [{ transform: from }, { transform: 'translate(0,0) scale(1)' }], { delay: 1400, duration: 1000, easing: SP.ease });
+      T(lg, [{ color: 'var(--kp-logo-splash)' }, { color: 'var(--kp-brand-ink)' }], { delay: 1400, duration: 1000, easing: SP.ease });
+      T(tag, [{ opacity: 0, offset: 0 }, { opacity: 1, offset: 400 / 1800 }, { opacity: 1, offset: 1400 / 1800 }, { opacity: 0, offset: 1 }], { duration: 1800 });   // 0~0.4 나타남, 1.4~1.8 사라짐
+      T(ov, [{ opacity: 1 }, { opacity: 0 }], { delay: 1400, duration: 1000, easing: SP.ease });
+      items.forEach(function (el, i) { if (el) T(el, [{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'translateY(0)' }], { delay: 2400 + i * 80, duration: 600, easing: 'ease-out' }); });
+      timer = setTimeout(finish, 3200);
+    }
+    (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(run, run);   // 글자 폭이 정해진 뒤에 재서 어긋나지 않게
+  }
+
 
   /* 환영(시안 02): 글자는 시안 그대로. 로고 파일(assets/brand/keeping-logo.svg)이 아직 없어 글자 "Keeping"으로 임시 대체 */
   VIEWS.welcome = function () {
-    return '<main class="screen obscreen obwelcome"><p class="obw-logo">Keeping</p><h1 class="obw-h" data-focus>오늘의 복약,<br><em>키핑이 함께 챙겨요</em></h1>' +
+    return '<main class="screen obscreen obwelcome"><p class="obw-logo" aria-label="Keeping">' + (ui.logo || 'Keeping') + '</p><h1 class="obw-h" data-focus>오늘의 복약,<br><em>키핑이 함께 챙겨요</em></h1>' +
       '<p class="obw-p">먹는 약과 영양제를 등록해 보세요.<br>하루 복용 일정을 한눈에 보여주고,<br>믿을 수 있는 자료를 바탕으로<br>꼭 알아야 할 정보도 쉽게 알려드려요.</p></main>' +
       actionBar('<button type="button" class="cta" data-act="start">시작하기</button>', 'ob');
   };
@@ -978,14 +1014,12 @@
   };
 
   /* ---------- 흐름 ---------- */
-  var splashTimer = null;
   function render(top) {
     var y = window.scrollY;
     var v = (VIEWS[ui.view] || VIEWS.home)();
     root.innerHTML = v;
     if (ui.view === 'home') { ui.homeSig = homeSig(v); afterHome(); }
-    clearTimeout(splashTimer);
-    if (ui.view === 'splash') splashTimer = setTimeout(function () { if (ui.view === 'splash') go('welcome'); }, 1600);
+    if (ui.view === 'splash') startSplash();
     if (top === false) window.scrollTo(0, y);
     else {
       window.scrollTo(0, 0);
@@ -1090,7 +1124,6 @@
   }
   var Acts = {
     start: function () { ui.agree = false; go('consent'); },
-    skipSplash: function () { go('welcome'); },
     agree: function (t) {
       ui.agree = !ui.agree;
       t.classList.toggle('on', ui.agree); t.setAttribute('aria-checked', String(ui.agree));
@@ -1392,7 +1425,6 @@
     }
   });
   root.addEventListener('keydown', function (e) {
-    if (ui.view === 'splash' && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); go('welcome'); return; }
     if (e.key !== 'Enter') return;
     var di = e.target.getAttribute && e.target.getAttribute('data-input');
     if (di === 'btime' || di === 'dcount') { e.target.blur(); return; }
@@ -1404,7 +1436,7 @@
     else if (id === 'ddeptin') Acts.draftDeptSave();
   });
 
-  ui.view = state.items.length ? 'home' : 'splash';
+  ui.view = (state.items.length || state.agreedAt) ? 'home' : 'splash';   // 스플래시는 처음 열 때만(저장된 약·동의가 없을 때)
   var durReady = bootDur();   // 약 목록은 첫 화면과 상관없이 바로 불러오기 시작
   var careReady = bootCare(); // 설명서 기반 안내 데이터는 약 목록이 온 뒤 읽는다
   Api.suppInfo().then(function (i) { ui.supp = i; if (ui.view === 'onb-supps' || ui.view === 'settings') render(false); });   // 영양제 제품 목록 유무(없어도 동작)
@@ -1416,5 +1448,5 @@
   if (document.fonts && document.fonts.load) {
     Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + " 16px 'Pretendard Variable'"); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
   } else boot();
-  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, seedExample: loadExample, startDose: startDose, generalHtml: generalHtml, loadChecks: loadChecks, render: render };
+  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, seedExample: loadExample, startDose: startDose, generalHtml: generalHtml, loadChecks: loadChecks, render: render, finishSplash: function () { if (ui.splashFinish) ui.splashFinish(); } };
 })();
