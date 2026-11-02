@@ -339,7 +339,7 @@ const dock = (idx = [0]) => { idx.forEach(pick); click('[data-act="dock"]'); };
   async function manualFlow(label) {
     w.KeepingApp.state().items.length = 0; w.KeepingApp.go('onb-drugs'); await wait(30);
     const i0 = q('#q'); i0.value = '시바스'; i0.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(260);
-    check(label + ': 결과가 있으면 시안대로 줄만 보임("이름 그대로 등록"은 결과가 없을 때만)', qa('.obs-res').length >= 1 && !q('[data-act="manualDrug"]') && (label !== '전체 약 목록 ON' || qa('.obs-res').every((r) => !/[\d(]/.test(r.textContent))));
+    check(label + ': 결과가 있으면 줄만 보임(최대 8줄, 전체 이름 그대로, "이름 그대로 등록"은 결과가 없을 때만)', qa('.obs-res').length >= 1 && !q('[data-act="manualDrug"]') && qa('.obs-res').length <= 8 && (label !== '전체 약 목록 ON' || qa('.obs-res').every((r) => /시바스/.test(r.textContent))));
     if (label === '전체 약 목록 ON') {
       click('.obs-res'); click('#nextbtn'); click('[data-act="doseCount"][data-v="1"]'); doseSlot('lunch');
       check('복용법 입력: "식전 / 식후" 바로 아래·"주의사항" 위에 진료과 구역(제목 + 선택 표시 + 가로 스크롤 칩), 처음엔 아무것도 안 골라져 있음', !!q('.dose-dept .hscroll') && q('.dose-dept h2').textContent === '어느 과에서 처방받았어요? 선택' && qa('.dose-dept .chip.on').length === 0 && q('.dose-dept').previousElementSibling.textContent.startsWith('식전 / 식후'));

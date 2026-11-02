@@ -678,7 +678,7 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .obs-x{display:none;flex:none;width:28px;height:28px;margin-right:-4px;place-items:center;color:var(--kp-text)}
 .obs-field.has-q .obs-x{display:grid}
 .obs-list{margin-top:10px}
-.obs-res{display:block;width:100%;height:44px;margin-bottom:10px;padding:0 20px;border-radius:12px;text-align:left;font:400 16px/44px var(--kp-font);letter-spacing:var(--kp-ls);color:var(--kp-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.obs-res{display:block;width:100%;min-height:44px;margin-bottom:10px;padding:12px 20px 10px;border-radius:12px;text-align:left;font:400 16px/22px var(--kp-font);letter-spacing:var(--kp-ls);color:var(--kp-text);overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow-wrap:anywhere}   /* 길면 2줄까지, 말줄임 */
 .obs-res em{font-style:normal;color:var(--kp-cta-bg)}
 .obs-res.on{background:var(--kp-consent-bg)}
 .obs-res.done{opacity:.45;cursor:default}

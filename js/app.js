@@ -4,6 +4,8 @@
  */
 (function () {
   'use strict';
+  /* 온보딩 약 검색 결과: false = 제품 전체 이름(함량·성분 포함)을 한 줄씩(최대 8줄), true = 함량·괄호를 뗀 짧은 이름으로 묶기(js/drugname.js, 6줄) */
+  const GROUP_SEARCH_RESULTS = false;
 
   var Pack = window.KEEPING_DATA, E = window.KeepingEngine, Store = window.KeepingStore, Api = window.KeepingApi;
   var root = document.getElementById('app');
@@ -132,7 +134,7 @@
   function obResultsHtml(r) {
     var q = ui.q.trim().toLowerCase();
     return r.map(function (x, i) {
-      var added = isAdded('drug', x) || (!!x.base && state.items.some(function (it) { return it.kind === 'drug' && it.productCode && window.KeepingDrugName.baseName(it.name) === x.base; })), on = ui.pickI === i, n = x.name, hl = q && n.toLowerCase().indexOf(q) === 0 ? '<em>' + esc(n.slice(0, q.length)) + '</em>' + esc(n.slice(q.length)) : esc(n);
+      var added = isAdded('drug', x) || (GROUP_SEARCH_RESULTS && !!x.base && state.items.some(function (it) { return it.kind === 'drug' && it.productCode && window.KeepingDrugName.baseName(it.name) === x.base; })), on = ui.pickI === i, n = x.name, hl = q && n.toLowerCase().indexOf(q) === 0 ? '<em>' + esc(n.slice(0, q.length)) + '</em>' + esc(n.slice(q.length)) : esc(n);
       return '<button type="button" class="obs-res' + (on ? ' on' : '') + (added ? ' done' : '') + '" aria-pressed="' + on + '" data-act="selRes" data-i="' + i + '"' + (added ? ' disabled' : '') + '>' + hl + '</button>';
     }).join('');
   }
@@ -287,7 +289,7 @@
     var q = ui.q.trim();
     if (!q && kind === 'drug') { ui.results = []; ui.remote = null; ui.more = false; ui.pickI = -1; refreshLists(); return; }
     if (kind === 'drug' && ui.dur.status === 'loading') return;
-    (kind === 'drug' ? Api.searchDrugs(q, { grouped: obDrug() }) : Api.searchSupplements(q)).then(function (res) {
+    (kind === 'drug' ? Api.searchDrugs(q, { grouped: obDrug() && GROUP_SEARCH_RESULTS, limit: obDrug() ? 8 : 0 }) : Api.searchSupplements(q)).then(function (res) {
       if (token !== ui.searchToken) return;
       ui.results = res.results; ui.remote = res.remote; ui.more = !!res.more; ui.pickI = -1;
       refreshLists();

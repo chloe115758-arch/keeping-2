@@ -93,7 +93,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       check(`${w}: 약 검색 — 위·아래 "건너뛰기" 2개`, await page.evaluate(() => document.querySelectorAll('[data-act="skip"]').length === 2));
       { await page.fill('#q', '글리메'); await page.waitForTimeout(500);
         const g = await page.evaluate(() => { const l = document.querySelector('.obs-list'), b = document.querySelector('.actionbar'), rows = l.querySelectorAll('.obs-res'); return { n: rows.length, lb: l.getBoundingClientRect().bottom, bt: b.getBoundingClientRect().top, ov: getComputedStyle(l).overflowY }; });
-        check(`${w}: 약 검색 — 결과 최대 6줄, 결과 영역이 아래 버튼 띠 위에서 끝남(스크롤은 결과만)`, g.n <= 6 && g.n > 0 && g.lb <= g.bt + 0.5 && g.ov === 'auto', JSON.stringify(g)); await page.fill('#q', ''); }
+        check(`${w}: 약 검색 — 결과 최대 8줄, 결과 영역이 아래 버튼 띠 위에서 끝남(스크롤은 결과만)`, g.n <= 8 && g.n > 0 && g.lb <= g.bt + 0.5 && g.ov === 'auto', JSON.stringify(g)); await page.fill('#q', ''); }
       { const top = () => page.evaluate(() => Math.round(document.querySelector('.obs-field').getBoundingClientRect().top - document.getElementById('app').getBoundingClientRect().top)); const t0 = await top(); await page.fill('#q', '글리메'); await page.waitForTimeout(500); const t1 = await top();
         check(`${w}: 약 검색 — 검색창 y=289, 입력 전후 같은 자리(화면이 밀리지 않음)`, t0 === 289 && t1 === 289, `${t0}→${t1}`); await page.fill('#q', ''); }
       await page.evaluate(() => { KeepingApp.state().items.push({ id: 'lt1', kind: 'drug', source: 'manual', name: '레이아웃약', times: ['07:30'], batch: null }); KeepingApp.go('onb-drugs'); }); await page.click('#nextbtn'); await page.waitForSelector('.manual-chip'); await barOK('영양제');
