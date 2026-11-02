@@ -40,7 +40,16 @@
       more: more, remote: { status: 'off' }
     });
   }
-  function searchDrugs(q) {
+  /* 온보딩 검색: 함량·괄호를 뗀 짧은 이름으로 묶어 8줄까지 (js/drugname.js). 고르면 그 묶음의 대표 제품(code)로 담는다. */
+  function searchDrugsGrouped(dur, q) {
+    var g = root.KeepingDrugName.group(dur.search(q, { limit: 40 }), { query: q, limit: 8 });
+    return Promise.resolve({
+      results: g.map(function (x) { return { key: 'd-' + x.rep.code, source: 'dur', code: x.rep.code, name: x.name, base: x.name, variants: x.variants, sub: '', outside: x.rep.kind === 'outside' }; }),
+      more: false, remote: { status: 'off' }
+    });
+  }
+  function searchDrugs(q, opts) {
+    if (Pack.dur && q && opts && opts.grouped && root.KeepingDrugName) return searchDrugsGrouped(Pack.dur, q);
     if (Pack.dur && q) return searchDrugsDur(Pack.dur, q);
     var out = [];
     Pack.drugs.forEach(function (d) {

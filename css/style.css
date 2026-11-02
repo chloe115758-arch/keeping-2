@@ -678,7 +678,7 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .obs-x{display:none;flex:none;width:28px;height:28px;margin-right:-4px;place-items:center;color:var(--kp-text)}
 .obs-field.has-q .obs-x{display:grid}
 .obs-list{margin-top:10px}
-.obs-res{display:block;width:100%;height:44px;margin-bottom:10px;padding:0 20px;border-radius:12px;text-align:left;font:400 15px/44px var(--kp-font);color:var(--kp-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.obs-res{display:block;width:100%;height:44px;margin-bottom:10px;padding:0 20px;border-radius:12px;text-align:left;font:400 16px/44px var(--kp-font);letter-spacing:var(--kp-ls);color:var(--kp-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .obs-res em{font-style:normal;color:var(--kp-cta-bg)}
 .obs-res.on{background:var(--kp-consent-bg)}
 .obs-res.done{opacity:.45;cursor:default}
@@ -691,4 +691,5 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .actionbar.ob .skipbtn span{color:#828282}
 .actionbar.ob .skipbtn small{color:#BDBDBD}
 .dose-chips{gap:8px}
+.dchip{letter-spacing:0}
 .actionbar.ob .cta{padding-left:0;padding-right:0;min-width:0}

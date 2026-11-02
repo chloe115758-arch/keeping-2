@@ -122,7 +122,7 @@
   function obResultsHtml(r) {
     var q = ui.q.trim().toLowerCase();
     return r.map(function (x, i) {
-      var added = isAdded('drug', x), on = ui.pickI === i, n = x.name, hl = q && n.toLowerCase().indexOf(q) === 0 ? '<em>' + esc(n.slice(0, q.length)) + '</em>' + esc(n.slice(q.length)) : esc(n);
+      var added = isAdded('drug', x) || (!!x.base && state.items.some(function (it) { return it.kind === 'drug' && it.productCode && window.KeepingDrugName.baseName(it.name) === x.base; })), on = ui.pickI === i, n = x.name, hl = q && n.toLowerCase().indexOf(q) === 0 ? '<em>' + esc(n.slice(0, q.length)) + '</em>' + esc(n.slice(q.length)) : esc(n);
       return '<button type="button" class="obs-res' + (on ? ' on' : '') + (added ? ' done' : '') + '" aria-pressed="' + on + '" data-act="selRes" data-i="' + i + '"' + (added ? ' disabled' : '') + '>' + hl + '</button>';
     }).join('');
   }
@@ -277,7 +277,7 @@
     var q = ui.q.trim();
     if (!q && kind === 'drug') { ui.results = []; ui.remote = null; ui.more = false; ui.pickI = -1; refreshLists(); return; }
     if (kind === 'drug' && ui.dur.status === 'loading') return;
-    (kind === 'drug' ? Api.searchDrugs(q) : Api.searchSupplements(q)).then(function (res) {
+    (kind === 'drug' ? Api.searchDrugs(q, { grouped: obDrug() }) : Api.searchSupplements(q)).then(function (res) {
       if (token !== ui.searchToken) return;
       ui.results = res.results; ui.remote = res.remote; ui.more = !!res.more; ui.pickI = -1;
       refreshLists();

@@ -7,7 +7,7 @@ const w = new JSDOM(html, { runScripts: 'outside-only', url: 'http://localhost/'
 const d = w.document;
 w.scrollTo = () => {};
 w.fetch = (u) => Promise.resolve(u === 'data/copy/greeting.json' ? { ok: true, status: 200, json: async () => JSON.parse(fs.readFileSync(path.join(dir, u), 'utf8')) } : { ok: false, status: 404, json: async () => ({}) });
-['config.js', 'data/datapack.js', 'js/dur.js', 'js/care.js', 'js/josa.js', 'js/timeinput.js', 'js/greeting.js', 'js/suppsearch.js', 'js/homevm.js', 'js/engine.js', 'js/storage.js', 'js/api.js', 'js/app.js'].forEach((f) => w.eval(fs.readFileSync(path.join(dir, f), 'utf8')));
+['config.js', 'data/datapack.js', 'js/dur.js', 'js/drugname.js', 'js/care.js', 'js/josa.js', 'js/timeinput.js', 'js/greeting.js', 'js/suppsearch.js', 'js/homevm.js', 'js/engine.js', 'js/storage.js', 'js/api.js', 'js/app.js'].forEach((f) => w.eval(fs.readFileSync(path.join(dir, f), 'utf8')));
 let ok = 0, bad = 0;
 const q = (s) => d.querySelector(s), qa = (s) => [...d.querySelectorAll(s)];
 const click = (s) => (typeof s === 'string' ? q(s) : s).dispatchEvent(new w.MouseEvent('click', { bubbles: true }));

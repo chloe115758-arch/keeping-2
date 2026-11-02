@@ -10,7 +10,7 @@ w.scrollTo = () => {}; w.confirm = () => true;
 const errors = [];
 w.addEventListener('error', (e) => errors.push(e.message));
 w.fetch = (u) => Promise.resolve({ ok: fs.existsSync(path.join(dir, u)), status: 200, json: async () => JSON.parse(fs.readFileSync(path.join(dir, u), 'utf8')) });
-['config.js', 'data/datapack.js', 'js/dur.js', 'js/care.js', 'js/josa.js', 'js/timeinput.js', 'js/greeting.js', 'js/suppsearch.js', 'js/homevm.js', 'js/engine.js', 'js/storage.js', 'js/api.js', 'js/app.js'].forEach((f) => w.eval(fs.readFileSync(path.join(dir, f), 'utf8')));
+['config.js', 'data/datapack.js', 'js/dur.js', 'js/drugname.js', 'js/care.js', 'js/josa.js', 'js/timeinput.js', 'js/greeting.js', 'js/suppsearch.js', 'js/homevm.js', 'js/engine.js', 'js/storage.js', 'js/api.js', 'js/app.js'].forEach((f) => w.eval(fs.readFileSync(path.join(dir, f), 'utf8')));
 let ok = 0, bad = 0;
 const T = () => d.getElementById('app').textContent.replace(/\s+/g, ' ');
 const q = (s) => d.querySelector(s), qa = (s) => [...d.querySelectorAll(s)];

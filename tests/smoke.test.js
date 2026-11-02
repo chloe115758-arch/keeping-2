@@ -10,7 +10,7 @@ w.scrollTo = () => {}; w.confirm = () => true;
 w.fetch = (u) => Promise.resolve(u === 'data/copy/greeting.json' ? { ok: true, status: 200, json: async () => JSON.parse(fs.readFileSync(path.join(dir, u), 'utf8')) } : { ok: false, status: 404, json: async () => ({}) });
 const errors = [];
 w.addEventListener('error', (e) => errors.push(e.message));
-['config.js', 'data/datapack.js', 'js/dur.js', 'js/care.js', 'js/josa.js', 'js/timeinput.js', 'js/greeting.js', 'js/suppsearch.js', 'js/homevm.js', 'js/engine.js', 'js/storage.js', 'js/api.js', 'js/app.js'].forEach((f) => w.eval(fs.readFileSync(path.join(dir, f), 'utf8')));
+['config.js', 'data/datapack.js', 'js/dur.js', 'js/drugname.js', 'js/care.js', 'js/josa.js', 'js/timeinput.js', 'js/greeting.js', 'js/suppsearch.js', 'js/homevm.js', 'js/engine.js', 'js/storage.js', 'js/api.js', 'js/app.js'].forEach((f) => w.eval(fs.readFileSync(path.join(dir, f), 'utf8')));
 
 let ok = 0, bad = 0;
 const T = () => d.getElementById('app').textContent.replace(/\s+/g, ' ');
@@ -336,7 +336,7 @@ const dock = (idx = [0]) => { idx.forEach(pick); click('[data-act="dock"]'); };
   async function manualFlow(label) {
     w.KeepingApp.state().items.length = 0; w.KeepingApp.go('onb-drugs'); await wait(30);
     const i0 = q('#q'); i0.value = '시바스'; i0.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(260);
-    check(label + ': 결과가 있으면 시안대로 줄만 보임("이름 그대로 등록"은 결과가 없을 때만)', qa('.obs-res').length >= 1 && !q('[data-act="manualDrug"]'));
+    check(label + ': 결과가 있으면 시안대로 줄만 보임("이름 그대로 등록"은 결과가 없을 때만)', qa('.obs-res').length >= 1 && !q('[data-act="manualDrug"]') && (label !== '전체 약 목록 ON' || qa('.obs-res').every((r) => !/[\d(]/.test(r.textContent))));
     obAdd();
     const i1 = q('#q'); i1.value = '내가만든약'; i1.dispatchEvent(new w.Event('input', { bubbles: true })); await wait(260);
     click('[data-act="manualDrug"]'); await wait(30); dock([1]); await wait(30);
