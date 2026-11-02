@@ -188,7 +188,7 @@
 
     function source(kind) {
       if (kind === 'list' || kind === 'product') {
-        return { label: '약제급여목록 및 급여상한금액표 (공개용)', url: null, checkedAt: listDate() };
+        return { label: '약제급여목록 및 급여상한금액표', url: null, checkedAt: listDate() };
       }
       return { label: '병용금기약물 · 한국의약품안전관리원 (공공데이터포털)', url: PAIR_URL, checkedAt: baseDate() };
     }
