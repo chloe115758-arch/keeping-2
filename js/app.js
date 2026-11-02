@@ -291,23 +291,26 @@
     return '<main class="screen splash" data-act="skipSplash"><p class="splash-tag">내 하루 복약, 근거 있게 챙겨요</p><h1 class="splash-logo" data-focus>키핑</h1><p class="splash-hint">화면을 누르면 바로 시작해요</p></main>';
   };
 
+  /* 환영(시안 02): 글자는 시안 그대로. 로고 파일(assets/brand/keeping-logo.svg)이 아직 없어 글자 "Keeping"으로 임시 대체 */
   VIEWS.welcome = function () {
-    return '<main class="screen welcome"><p class="brand">키핑</p><h1 class="h xl" data-focus>내 하루 복약,<br>근거 있게 챙겨요</h1><p class="sub">먹는 약과 영양제를 담으면 아침·점심·저녁 타임라인을 만들어요. 공식 자료에서 근거가 확인된 주의만 보여드리고, 건강정보는 이 기기에만 저장돼요.</p><p class="fine">키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드리고, 판단은 약사에게 확인해 주세요.</p></main>' +
-      actionBar('<button type="button" class="cta" data-act="start">시작하기</button>', 'col');
+    return '<main class="screen obscreen obwelcome"><p class="obw-logo">Keeping</p><h1 class="obw-h" data-focus>오늘의 복약,<br><em>키핑이 함께 챙겨요</em></h1>' +
+      '<p class="obw-p">먹는 약과 영양제를 등록해 보세요.<br>하루 복용 일정을 한눈에 보여주고,<br>믿을 수 있는 자료를 바탕으로<br>꼭 알아야 할 정보도 쉽게 알려드려요.</p></main>' +
+      actionBar('<button type="button" class="cta" data-act="start">시작하기</button>', 'ob');
   };
 
+
   /* 약관 동의 자리: 시안의 약관 문구는 가져오지 않고, 이 서비스의 사실만 안내하고 동의를 받는다 */
+  /* 내 정보 저장 안내·동의(시안 03·04) */
+  var CONSENT_ITEMS = ['약과 영양제, 복용 시간이 이 기기에 저장돼요.', '기기를 바꾸거나 브라우저 데이터를 삭제하면<br>정보가 사라질 수 있어요.', '키핑은 공식 자료를 바탕으로 정보를 제공하며,<br>의료진의 진단과 치료를 대신하지 않아요.'];
   VIEWS.consent = function () {
     var on = !!ui.agree;
-    return '<main class="screen has-bar">' + topbar() + '<h1 class="h" data-focus>이 기기에만 저장돼요</h1><p class="sub">등록하는 정보는 키핑이 아니라 이 기기 안에 보관돼요.</p>' +
-      '<button type="button" class="agree' + (on ? ' on' : '') + '" role="checkbox" aria-checked="' + on + '" data-act="agree"><span class="box">' + (on ? icon('check', 14) : '') + '</span><span>이해했고 동의해요</span></button>' +
-      '<ul class="facts">' +
-      '<li>' + icon('check', 16) + '<span>등록한 약, 영양제, 복용 시간은 이 기기 안에만 있어요.</span></li>' +
-      '<li>' + icon('check', 16) + '<span>키핑 서버로 보내지 않아요.</span></li>' +
-      '<li>' + icon('check', 16) + '<span>기기를 바꾸거나 브라우저 데이터를 지우면 사라져요.</span></li>' +
-      '<li>' + icon('check', 16) + '<span>키핑은 의료 조언이 아니에요. 공식 자료에서 확인한 범위만 보여드려요.</span></li></ul></main>' +
-      actionBar('<button type="button" id="agreenext" class="cta" data-act="agreeNext"' + (on ? '' : ' disabled') + '>다음</button>');
+    return '<main class="screen obscreen obconsent' + (on ? ' on' : '') + '"><div class="obs-top"><button type="button" class="dose-back" data-act="back" aria-label="이전 화면으로">' + OB_BACK + '</button></div>' +
+      '<h1 class="obc-h" data-focus>내 정보는 이 기기에만 저장돼요</h1><p class="obc-sub">키핑에 등록한 정보는 외부 서버로 보내지 않아요.</p>' +
+      '<button type="button" class="agree' + (on ? ' on' : '') + '" role="checkbox" aria-checked="' + on + '" data-act="agree"><span class="box">' + icon('check', 16) + '</span><span class="agree-t">내용을 확인하고 모두 동의해요</span></button>' +
+      '<ul class="obc-list">' + CONSENT_ITEMS.map(function (t) { return '<li><svg class="ic" width="14" height="10" viewBox="0 0 14 10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 5.2L5 9 13 1"/></svg><span>' + t + '</span></li>'; }).join('') + '</ul></main>' +
+      actionBar('<button type="button" id="agreenext" class="cta" data-act="agreeNext"' + (on ? '' : ' disabled') + '>다음</button>', 'ob');
   };
+
 
   var OB_BACK = '<svg width="10" height="18" viewBox="0 0 10 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 1L1.5 9 9 17"/></svg>';
   var OB_SEARCH = '<svg class="obs-ic" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><circle cx="8.8" cy="8.8" r="6.9"/><path d="M14 14l4.6 4.6"/></svg>';
@@ -1091,7 +1094,7 @@
     agree: function (t) {
       ui.agree = !ui.agree;
       t.classList.toggle('on', ui.agree); t.setAttribute('aria-checked', String(ui.agree));
-      t.querySelector('.box').innerHTML = ui.agree ? icon('check', 14) : '';
+      var c = root.querySelector('.obconsent'); if (c) c.classList.toggle('on', ui.agree);
       var n = document.getElementById('agreenext'); if (n) n.disabled = !ui.agree;
     },
     agreeNext: function () { if (!ui.agree) return; state.agreedAt = new Date().toISOString(); save(); go('onb-drugs'); },

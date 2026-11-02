@@ -693,3 +693,30 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .dose-chips{gap:8px}
 .dchip{letter-spacing:0}
 .actionbar.ob .cta{padding-left:0;padding-right:0;min-width:0}
+
+/* ---------- 환영(시안 02) · 내 정보 저장 안내(시안 03·04) ---------- */
+.screen.obwelcome{padding-left:41px;padding-right:24px}
+.obw-logo{margin-top:62px;font:700 16px/20px var(--kp-font);letter-spacing:-.02em;color:var(--kp-brand-ink)}
+.obw-h{margin-top:10px;font:700 32px/47px var(--kp-font);letter-spacing:-.02em;color:#111}
+.obw-h em{font-style:normal;color:var(--kp-brand-ink)}
+.obw-p{margin-top:21px;font:400 15.5px/26px var(--kp-font);letter-spacing:0;color:var(--kp-text-body)}
+.obwelcome ~ .actionbar .cta{font-size:15px;letter-spacing:var(--kp-ls)}
+.obconsent .obs-top{margin-top:16px}
+.obc-h{margin-top:41px;font:700 22px/27px var(--kp-font);letter-spacing:.005em;color:#111}
+.obc-sub{margin-top:13px;font:400 16px/20px var(--kp-font);letter-spacing:var(--kp-ls);color:#656565}
+.obconsent .agree{display:flex;align-items:center;gap:14px;width:100%;height:54px;min-height:0;margin:34px 0 0;padding:0 14px;border:0;border-radius:16px;box-shadow:none;background:var(--kp-consent-bg-off);text-align:left}
+.obconsent .agree.on{background:var(--kp-consent-bg)}
+.obconsent .agree .box{width:20px;height:20px;border-radius:5px;background:var(--kp-disabled-bg);color:#fff}
+.obconsent .agree.on .box{background:var(--kp-cta-bg);color:#fff}
+.obconsent .agree-t{font:600 16px/1.4 var(--kp-font);color:#111}
+.obc-list{list-style:none;margin:30px 0 0;padding:0 0 0 17px}
+.obc-list li{display:flex;align-items:center;gap:12px;margin-bottom:28px;font:400 15.5px/24px var(--kp-font);letter-spacing:.029em;color:var(--kp-text-body)}
+.obc-list li:first-child{margin-bottom:31px;color:#656565}
+.obc-list .ic{flex:none;color:#BDBDBD}
+.obconsent.on .obc-list li{color:#111}
+.obconsent.on .obc-list li:first-child{color:#2F2F2F}
+.obconsent.on .obc-list .ic{color:var(--kp-cta-bg)}
+/* 시안 글자와 1px 안쪽 위치 맞춤(띠 비교·일치율로 잰 값) */
+.obc-sub{position:relative;left:1px;top:-1px}
+.obconsent .agree-t{position:relative;left:1px;top:1px}
+.obc-list li span{position:relative;left:1px}

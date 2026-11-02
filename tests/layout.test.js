@@ -31,7 +31,7 @@ const RECTS = (sels) => {
   out.vw = document.documentElement.clientWidth; out.vh = window.innerHeight; out.scrollW = document.documentElement.scrollWidth;
   return out;
 };
-const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav', h1: 'h1', brand: '.brand', sub: '.welcome .sub', fine: '.welcome .fine', start: '[data-act="start"]' };
+const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav', h1: 'h1', brand: '.obw-logo', sub: '.obw-p', start: '[data-act="start"]' };
 
 (async () => {
   await new Promise((r) => server.listen(0, r));
@@ -51,7 +51,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       // ── 스플래시 → 환영 (데이터 로딩과 상관없이 바로 그려진다)
       await page.waitForSelector('.splash', { timeout: 3000 });
       check(`${w}: 스플래시는 데이터 로딩 전에 바로 보임`, await page.evaluate(() => KeepingApp.ui.dur.status === 'loading' && !!document.querySelector('.splash')));
-      await page.click('.splash'); await page.waitForSelector('.welcome');
+      await page.click('.splash'); await page.waitForSelector('.obwelcome');
       const loading = await R();
       const app = loading.app;
       check(`${w}: 앱은 폰 폭 열 하나(최대 430px)`, app.w <= 430.5 && app.w >= Math.min(w, 430) - 1, `app.w=${app.w}`);
@@ -60,10 +60,9 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
 
       // ── 환영 화면 위계 · 하단 영역
       check(`${w}: 환영 — 하단 영역이 열 안에 꽉 참(폭 같음)`, loading.bar && Math.abs(loading.bar.x - app.x) <= 1 && Math.abs(loading.bar.r - app.r) <= 1, JSON.stringify(loading.bar));
-      check(`${w}: 환영 — 시작하기 버튼 높이 56, 열 좌우 --kp-gap-page 안쪽`, loading.start && Math.abs(loading.start.h - 56) <= 1 && Math.abs(loading.start.x - (app.x + GAP)) <= 1 && Math.abs(app.r - GAP - loading.start.r) <= 1, JSON.stringify(loading.start));
-      check(`${w}: 환영 — 브랜드 → 제목 → 설명 → 고지 순서, 고지는 설명 아래 16px`, loading.brand.b <= loading.h1.y && loading.h1.b <= loading.sub.y && Math.abs(loading.fine.y - loading.sub.b - 16) <= 1, `설명→고지 ${Math.round(loading.fine.y - loading.sub.b)}px`);
-      if (h >= 700) check(`${w}: 환영 — 제목이 위쪽 1/3 부근에서 시작`, loading.h1.y >= h * 0.25 && loading.h1.y <= h * 0.42, `제목 위 ${Math.round(loading.h1.y)} / 화면 높이 ${h}`);
-      check(`${w}: 환영 — 글자 왼쪽이 열 안쪽 --kp-gap-page에 맞음(제목·설명·고지·버튼)`, [loading.h1, loading.sub, loading.fine, loading.start].every((r) => Math.abs(r.x - (app.x + GAP)) <= 1));
+      check(`${w}: 환영 — 시작하기 버튼 높이 50, 열 좌우 16px 안쪽(시안)`, loading.start && Math.abs(loading.start.h - 50) <= 1 && Math.abs(loading.start.x - (app.x + 16)) <= 1 && Math.abs(app.r - 16 - loading.start.r) <= 1, JSON.stringify(loading.start));
+      check(`${w}: 환영 — 로고 → 제목 → 설명 순서`, loading.brand.b <= loading.h1.y + 1 && loading.h1.b <= loading.sub.y + 1);
+      check(`${w}: 환영 — 제목·설명 왼쪽이 열 안쪽 41px(시안)`, [loading.h1, loading.sub].every((r) => Math.abs(r.x - (app.x + 41)) <= 1));
       const frame = await page.evaluate(() => { const a = document.getElementById('app'), cs = getComputedStyle(a), tk = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim().toLowerCase(), hex = (c) => '#' + c.match(/\d+/g).slice(0, 3).map((x) => (+x).toString(16).padStart(2, '0')).join(''); return { vw: document.documentElement.clientWidth, w: a.getBoundingClientRect().width, shadow: cs.boxShadow, radius: parseFloat(cs.borderTopLeftRadius), bg: hex(cs.backgroundColor), body: hex(getComputedStyle(document.body).backgroundColor), outer: tk('--kp-bg-outer'), page: tk('--kp-bg-page'), frameShadow: tk('--kp-shadow-frame') }; });
       if (w > 480) check(`${w}: 앱 틀 — 바깥은 --kp-bg-outer, 앱은 흰 배경·큰 모서리·--kp-shadow-frame(테두리 선 없음), 폭 430`, frame.body === frame.outer && frame.bg === frame.page && frame.radius >= 24 && frame.shadow !== 'none' && !/0px 0px 0px 1px/.test(frame.shadow) && Math.abs(frame.w - 430) <= 1, JSON.stringify(frame));
       else check(`${w}: 앱 틀 — 틀 없이 전체 화면 흰 배경`, frame.shadow === 'none' && frame.radius === 0 && frame.bg === frame.page && frame.page === '#ffffff' && Math.abs(frame.w - frame.vw) <= 1, JSON.stringify(frame));
@@ -71,7 +70,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
       // ── 로딩이 끝나도 환영 화면 위치가 변하지 않는다
       await page.waitForFunction(() => KeepingApp.ui.dur.status === 'ready'); await page.waitForTimeout(150);
       const ready = await R();
-      const same = ['h1', 'sub', 'fine', 'start', 'bar'].every((k) => ready[k] && Math.abs(ready[k].y - loading[k].y) < 0.5 && Math.abs(ready[k].x - loading[k].x) < 0.5);
+      const same = ['h1', 'sub', 'start', 'bar'].every((k) => ready[k] && Math.abs(ready[k].y - loading[k].y) < 0.5 && Math.abs(ready[k].x - loading[k].x) < 0.5);
       check(`${w}: 환영 — 데이터 로딩이 끝나도 위치가 안 변함`, same);
 
       // ── 저장 안내 → 약 검색 → 영양제 → 시간 입력: 하단 영역이 열 안, 요소가 겹치지 않음
@@ -84,7 +83,7 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
         check(`${w}: ${label} — 하단 영역 안의 요소가 영역을 벗어나지 않음`, kids.every((k) => k.y >= bar.y - 0.5 && k.b <= bar.b + 0.5 && k.x >= bar.x - 0.5 && k.r <= bar.r + 0.5));
         let overlap = false; for (let i = 0; i < kids.length; i++) for (let j = i + 1; j < kids.length; j++) { const a = kids[i], c = kids[j]; if (a.x < c.r - 0.5 && c.x < a.r - 0.5 && a.y < c.b - 0.5 && c.y < a.b - 0.5) overlap = true; }
         check(`${w}: ${label} — 하단 영역 안의 버튼끼리 겹치지 않음`, !overlap);
-        check(`${w}: ${label} — 제목 왼쪽이 열 안쪽 --kp-gap-page`, !r.h1 || Math.abs(r.h1.x - (r.app.x + (label === '약 검색' ? 16 : GAP))) <= 1);   // 시안 화면(약 검색)은 좌우 16px
+        check(`${w}: ${label} — 제목 왼쪽이 열 안쪽 --kp-gap-page`, !r.h1 || Math.abs(r.h1.x - (r.app.x + (label === '약 검색' || label === '저장 안내' ? 16 : GAP))) <= 1);   // 시안 화면(약 검색)은 좌우 16px
         return r;
       };
       await page.click('[data-act="start"]'); await page.waitForSelector('.agree'); await barOK('저장 안내');
@@ -134,8 +133,8 @@ const SELS = { app: '#app', screen: 'main.screen', bar: '.actionbar', nav: '.nav
     const ctx2 = await browser.newContext({ viewport: { width: 360, height: 800 } });
     const p2 = await ctx2.newPage();
     await p2.route('**/*Pretendard*', async (r) => { await new Promise((x) => setTimeout(x, 600)); r.continue(); });
-    await p2.goto(base); await p2.waitForSelector('.splash'); await p2.click('.splash'); await p2.waitForSelector('.welcome');
-    const hs = () => p2.evaluate(() => ['h1', '.sub', '.fine'].map((s) => Math.round(document.querySelector(s).getBoundingClientRect().height)).join(','));
+    await p2.goto(base); await p2.waitForSelector('.splash'); await p2.click('.splash'); await p2.waitForSelector('.obwelcome');
+    const hs = () => p2.evaluate(() => ['h1', '.obw-p'].map((s) => Math.round(document.querySelector(s).getBoundingClientRect().height)).join(','));
     const early = await hs(); await p2.waitForTimeout(1800); const late = await hs();
     check('환영 화면: 첫 화면이 보이는 순간과 글꼴이 다 도착한 뒤의 문단 높이가 같음', early === late, early + ' → ' + late);
     if (fs.existsSync(path.join(root, 'assets/fonts/PretendardVariable.woff2'))) check('글꼴(Pretendard)이 첫 화면 전에 로드됨', await p2.evaluate(() => document.fonts.check("600 16px 'Pretendard Variable'")));
