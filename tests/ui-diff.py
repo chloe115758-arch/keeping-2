@@ -52,7 +52,7 @@ def main():
     ap.add_argument('--ref', required=True); ap.add_argument('--app', required=True); ap.add_argument('--out', default='')
     ap.add_argument('--tol', type=int, default=24, help='한 점의 색 차이가 이 값을 넘으면 "다르다"')
     a = ap.parse_args()
-    r = Image.open(a.ref).convert('RGB'); p = Image.open(a.app).convert('RGB'); r_img, p_img = r, p
+    r = Image.open(a.ref).convert('RGB'); p = Image.open(a.app).convert('RGB')
     if r.size != p.size:
         sys.exit('크기가 달라요: 시안 %s, 앱 %s (둘 다 402×874, 1배로 맞춰 주세요)' % (r.size, p.size))
     R, P = np.asarray(r).astype(int), np.asarray(p).astype(int)
@@ -72,18 +72,18 @@ def main():
     if not bands: print('  다른 곳이 없어요')
     flagged = 0
     print('글자·요소 띠 비교 (시안 → 앱, 어긋남이 큰 것만):')
-    for r, b in compare_bands(r_img, p_img):
-        if b is None:
-            print('  ✗ 시안에만 있음 y %d~%d x %d~%d' % r); flagged += 1; continue
-        dy, dh, dx, dw = b[0] - r[0], (b[1] - b[0]) - (r[1] - r[0]), b[2] - r[2], (b[3] - b[2]) - (r[3] - r[2])
+    for rb, ab in compare_bands(r, p):
+        if ab is None:
+            print('  ✗ 시안에만 있음 y %d~%d x %d~%d' % rb); flagged += 1; continue
+        dy, dh, dx, dw = ab[0] - rb[0], (ab[1] - ab[0]) - (rb[1] - rb[0]), ab[2] - rb[2], (ab[3] - ab[2]) - (rb[3] - rb[2])
         if abs(dy) > 2 or abs(dh) > 2 or abs(dx) > 2 or abs(dw) > 3:
             flagged += 1
-            print('  ✗ 시안 y %d~%d x %d~%d → 위치 y %+d, x %+d / 높이 %+d, 폭 %+d' % (r[0], r[1], r[2], r[3], dy, dx, dh, dw))
+            print('  ✗ 시안 y %d~%d x %d~%d → 위치 y %+d, x %+d / 높이 %+d, 폭 %+d' % (rb[0], rb[1], rb[2], rb[3], dy, dx, dh, dw))
     print('  어긋난 띠 %d곳' % flagged if flagged else '  띠 위치·크기 모두 시안과 같아요(±2px)')
     if a.out:
         vis = np.asarray(p).copy(); vis[diff] = [235, 40, 70]
-        canvas = Image.new('RGB', (r_img.width * 3 + 20, r_img.height), (200, 200, 200))   # r은 위 띠 비교 반복문에서 덮어써져서 r_img를 쓴다
-        canvas.paste(r_img, (0, 0)); canvas.paste(p, (r_img.width + 10, 0)); canvas.paste(Image.fromarray(vis.astype('uint8')), (r_img.width * 2 + 20, 0))
+        canvas = Image.new('RGB', (r.width * 3 + 20, r.height), (200, 200, 200))
+        canvas.paste(r, (0, 0)); canvas.paste(p, (r.width + 10, 0)); canvas.paste(Image.fromarray(vis.astype('uint8')), (r.width * 2 + 20, 0))
         canvas.save(a.out); print('저장:', a.out)
     sys.exit(0 if (bad / total < 0.03 and flagged == 0) else 1)   # 일치율이 높아도 글자·요소 띠가 어긋나면 실패
 

@@ -294,4 +294,18 @@ t('제안 문구에 복용 지시 표현이 없다("옮기기"는 앱의 시간�
   const sg = slotRow(run(base()), 'morning').notice.lines.find((l) => l.suggestion).suggestion;
   [sg.title, sg.body, sg.yes, sg.no, sg.done].forEach((x) => assert.ok(!BAN.test(x), x));
 });
+t('같은 이름이 여러 시간대에 있으면 한 번만 말한다("저녁·자기 전 칼슘", "자기 전 칼슘·저녁 칼슘"이 아니라)', () => {
+  const items = [drug('levo', '씬지로이드정0.075', ['07:30'], '내과'), supp('c1', ['calcium'], ['18:30'], '칼슘'), supp('c2', ['calcium'], ['22:00'], '칼슘'), supp('c3', ['calcium'], ['09:00'], '칼슘')];
+  const m = run(items);
+  const l = slotRow(m, 'morning').notice.lines.find((x) => /칼슘/.test(x.text));
+  assert.ok(/^칼슘은 내과 처방약과 /.test(l.text), '같은 시간대에 있으면 이름만: ' + l.text);
+  const items2 = [drug('levo', '씬지로이드정0.075', ['07:30'], '내과'), supp('c1', ['calcium'], ['09:00'], '마그네슘 칼슘'), supp('c2', ['calcium'], ['18:30'], '칼슘'), supp('c3', ['calcium'], ['22:00'], '칼슘')];
+  const l2 = slotRow(run(items2), 'morning').notice.lines.find((x) => /칼슘/.test(x.text));
+  assert.ok(/저녁·자기 전 칼슘/.test(l2.text) && !/저녁 칼슘·자기 전 칼슘/.test(l2.text), l2.text);
+});
+t('"필요 시" 약(prn)만 있으면 시간을 정하라고 하지 않는다(시간이 없는 게 정상)', () => {
+  const prn = Object.assign(drug('x', '메토폴정', []), { prn: true });
+  assert.strictEqual(run([prn]).header.keys.line2, 'empty_line2');
+  assert.strictEqual(run([prn, drug('y', '시바스정', [])]).header.keys.line2, 'notime_line2', '시간 없는 일반 약이 하나라도 있으면 안내한다');
+});
 console.log('\n' + n + '개 통과');

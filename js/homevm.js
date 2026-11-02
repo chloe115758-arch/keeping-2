@@ -148,10 +148,17 @@
         var ownerLabel = o.names ? displayOf(ownerId) : labelOf(ownerId);
         var withLabels = uniq(withIds.map(labelOf));
         var sameGroup = !o.names && withLabels.length === 1 && withLabels[0] === ownerLabel;   // 같은 묶음끼리면 약 이름으로 말한다
-        var parts = o.names
-          ? uniq(withIds.map(function (id) { return prefixOf(id, o.ref) + displayOf(id); }))
-          : sameGroup ? uniq(withIds.map(displayOf))
-          : uniq(withIds.map(function (id) { return prefixOf(id, o.ref) + labelOf(id); }));
+        /* 같은 이름이 여러 시간대에 있으면 한 번만 말하고 시간대를 모은다: "자기 전 칼슘·저녁 칼슘" → "저녁·자기 전 칼슘" */
+        var byLabel = {}, labelOrder = [];
+        withIds.forEach(function (id) {
+          var lab = (o.names || sameGroup) ? displayOf(id) : labelOf(id), pre = sameGroup ? '' : prefixOf(id, o.ref).trim();
+          if (!byLabel[lab]) { byLabel[lab] = []; labelOrder.push(lab); }
+          if (byLabel[lab].indexOf(pre) < 0) byLabel[lab].push(pre);
+        });
+        var parts = labelOrder.map(function (lab) {
+          var pres = byLabel[lab];
+          return (pres.indexOf('') >= 0 || !pres.length) ? lab : pres.join('·') + ' ' + lab;
+        });
         var subject = parts.slice(0, 2).join('·');
         var object = sameGroup ? displayOf(ownerId) : ownerLabel;
         var text;
@@ -290,7 +297,7 @@
       var firstRow = firstIncomplete < 0 ? rows.length : rows.indexOf(slotModels[firstIncomplete]);
       rows.forEach(function (r, i) { r.lineDone = i < firstRow; r.last = i === rows.length - 1; });
 
-      var header = g.state({ nowMin: input.nowMin, now: input.now, nickname: input.nickname, hasUntimed: (A.unscheduled || []).length > 0 || !!input.hasUntimed,
+      var header = g.state({ nowMin: input.nowMin, now: input.now, nickname: input.nickname, hasUntimed: (A.unscheduled || []).some(function (id) { return !(byId[id] && byId[id].prn); }) || !!input.hasUntimed,   // "필요 시" 약은 시간이 없는 게 정상이라 시간을 정하라고 하지 않는다
         slots: slotModels.map(function (S) { return { id: S.id, time: S.time, total: S.total, taken: S.taken }; }) });
       var foodsAll = foodOrder.map(function (ko) { return { ko: ko, groupTitles: uniq(foodMap[ko].itemIds.map(labelOf)) }; });
 
