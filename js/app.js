@@ -10,7 +10,7 @@
   var state = Store.load();
   var ui = {
     view: 'welcome', params: {}, prev: null,
-    tab: 'domestic', q: '', oq: '', results: null, remote: null, overseas: null,
+    q: '', results: null, remote: null, manualOpen: false, manualCompany: '',
     chips: [], manualName: '', searchToken: 0,
     dur: { status: 'loading' },
     care: { status: 'loading', engine: null, notice: true }, open: {},
@@ -116,7 +116,7 @@
       if (kind === 'drug') {
         html += '<div class="empty"><p><b>"' + esc(ui.q) + '"</b> 검색 결과가 없어요.</p><p class="muted">이름 그대로 등록할 수 있어요. 이 경우 겹침 확인은 되지 않고 "확인 못 함"으로 표시돼요.</p><button type="button" class="cta ghost small" data-act="manualDrug">"' + esc(ui.q) + '" 이름으로 등록</button></div>';
       } else {
-        html += '<div class="empty"><p><b>"' + esc(ui.q) + '"</b> 검색 결과가 없어요.</p><p class="muted">해외 제품이거나 목록에 없는 제품이에요? 아래에서 등록할 수 있어요.</p><div class="row2"><button type="button" class="cta ghost small" data-act="tab" data-tab="overseas">해외 제품 검색</button><button type="button" class="cta ghost small" data-act="tab" data-tab="manual">직접 입력</button></div></div>';
+        html += '<div class="empty"><p><b>"' + esc(ui.q) + '"</b> 검색 결과가 없어요.</p><p class="muted">못 찾은 제품은 직접 입력해 주세요.</p><button type="button" class="cta ghost small" data-act="manualOpen">직접 입력</button></div>';
       }
       return html;
     }
@@ -131,7 +131,7 @@
   }
   function searchBlock(kind) {
     var ph = kind === 'drug' ? '약 이름 (예: 시바스정)' : '제품 이름 (예: 메가도스)';
-    return '<div class="search"><label class="sr" for="q">' + (kind === 'drug' ? '약 이름 검색' : '영양제 이름 검색') + '</label><div class="inp">' + icon('search', 20) + '<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="' + ph + '" value="' + esc(ui.q) + '" data-input="search"></div>' + (kind === 'drug' ? '<div id="durstat" aria-live="polite">' + durHtml() + '</div>' : '') + '<div id="results" aria-live="polite">' + resultsHtml(kind) + '</div></div>';
+    return '<div class="search"><label class="sr" for="q">' + (kind === 'drug' ? '약 이름 검색' : '영양제 이름 검색') + '</label><div class="inp">' + icon('search', 20) + '<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="' + ph + '" value="' + esc(ui.q) + '" data-input="search"></div>' + (kind === 'drug' ? '<div id="durstat" aria-live="polite">' + durHtml() + '</div>' : manualBlock()) + '<div id="results" aria-live="polite">' + resultsHtml(kind) + '</div></div>';
   }
   /* ---------- 전체 약 목록(DUR) 불러오기 ----------
      실패해도 기존 데이터 팩 모드로 계속 동작한다. 약 4MB, 처음 한 번만 걸린다. */
@@ -247,7 +247,7 @@
     var c = document.getElementById('selcount'); if (c) c.textContent = selectedItems(kind).length;
   }
   function needsSearch() {
-    return ui.view === 'onb-drugs' || ui.view === 'add' || (ui.view === 'onb-supps' && ui.tab === 'domestic');
+    return ui.view === 'onb-drugs' || ui.view === 'add' || ui.view === 'onb-supps';
   }
   function runSearch() {
     if (!needsSearch()) return;
@@ -299,35 +299,24 @@
         : '<button type="button" id="nextbtn" class="cta" data-act="to" data-view="onb-supps"' + (n ? '' : ' disabled') + '>다음</button>');
   };
 
-  function suppTabs() {
-    function t(id, label) { return '<button type="button" role="tab" aria-selected="' + (ui.tab === id) + '" class="tab' + (ui.tab === id ? ' on' : '') + '" data-act="tab" data-tab="' + id + '">' + label + '</button>'; }
-    return '<div class="tabs" role="tablist">' + t('domestic', '국내 제품') + t('overseas', '해외 제품') + t('manual', '직접 입력') + '</div>';
-  }
-  function overseasHtml() {
-    var o = ui.overseas, body = '';
-    if (o) {
-      if (o.status === 'loading') body = '<p class="muted pad">검색하는 중…</p>';
-      else if (o.status === 'off') body = '<p class="note">이 버전에서는 해외 제품 검색이 연결돼 있지 않아요. "직접 입력"에서 이름과 성분을 골라 등록해 주세요.</p><button type="button" class="cta ghost small" data-act="tab" data-tab="manual">직접 입력으로 등록</button>';
-      else if (o.status === 'error') body = '<p class="note">해외 제품 검색에 연결하지 못했어요. "직접 입력"으로 등록할 수 있어요.</p><button type="button" class="cta ghost small" data-act="tab" data-tab="manual">직접 입력으로 등록</button>';
-      else if (o.status === 'empty') body = '<p class="note">검색 결과가 없어요. "직접 입력"으로 등록할 수 있어요.</p><button type="button" class="cta ghost small" data-act="tab" data-tab="manual">직접 입력으로 등록</button>';
-      else body = o.results.map(function (x, i) { return '<button type="button" class="res" data-act="pickOverseas" data-i="' + i + '"><span class="res-main"><b>' + esc(x.name) + '</b><span class="muted">' + esc(x.brand || '') + '</span></span><span class="res-act">' + icon('plus') + '추가</span></button>'; }).join('');
-    }
-    return '<div class="panel"><p class="sub small">미국에서 판매되는 제품은 NIH 영양제 라벨 DB에서 찾아볼 수 있어요.</p><div class="inp"><label class="sr" for="oq">해외 제품 이름</label><input id="oq" type="search" autocomplete="off" placeholder="제품 이름 (예: Now Foods Inositol)" value="' + esc(ui.oq) + '" data-input="oq"></div><button type="button" class="cta ghost" data-act="searchOverseas">검색</button><div id="oresults" aria-live="polite">' + body + '</div></div>';
-  }
-  function manualHtml() {
-    var idx = {};
+  /* 검색창 바로 아래의 작은 칩 "+ 직접 입력". 누르면 제품 이름 · 업체 이름 · 들어 있는 성분을 적는 칸이 펼쳐진다. */
+  function manualBlock() {
+    var idx = {}, open = !!ui.manualOpen;
     Pack.supplementKeyList.forEach(function (k) { idx[k.id] = k; });
+    var head = '<button type="button" class="chip small manual-chip' + (open ? ' on' : '') + '" aria-expanded="' + open + '" aria-controls="manualpanel" data-act="manualToggle">' + icon('plus', 14) + '직접 입력</button>';
+    if (!open) return '<div class="manual">' + head + '</div>';
     var chips = Pack.chipKeys.map(function (k) {
       return '<button type="button" class="chip' + (ui.chips.indexOf(k) > -1 ? ' on' : '') + '" aria-pressed="' + (ui.chips.indexOf(k) > -1) + '" data-act="chip" data-k="' + k + '">' + esc(idx[k].ko) + '</button>';
     }).join('');
-    return '<div class="panel"><label class="lbl" for="mname">제품 이름</label><input id="mname" class="ta" autocomplete="off" placeholder="예: 나우푸드 이노시톨" value="' + esc(ui.manualName) + '" data-input="mname"><p class="lbl">들어 있는 성분 (아는 것만 골라 주세요)</p><div class="chips">' + chips + '</div><p class="note">성분을 고르면 설명서와 겹치는지 확인할 수 있어요. 모르면 비워도 등록돼요.</p><button type="button" class="cta" data-act="manualSupp">등록하기</button></div>';
+    return '<div class="manual">' + head + '<div class="panel" id="manualpanel"><label class="lbl" for="mname">제품 이름</label><input id="mname" class="ta" autocomplete="off" placeholder="예: 나우푸드 이노시톨" value="' + esc(ui.manualName) + '" data-input="mname">' +
+      '<label class="lbl" for="mcompany">업체 이름 <span class="opt">선택</span></label><input id="mcompany" class="ta" autocomplete="off" placeholder="예: 나우푸드" value="' + esc(ui.manualCompany) + '" data-input="mcompany">' +
+      '<p class="lbl">들어 있는 성분 (아는 것만 골라 주세요)</p><div class="chips">' + chips + '</div><p class="note">성분을 고르면 설명서와 겹치는지 확인할 수 있어요. 모르면 비워도 등록돼요.</p><button type="button" class="cta" data-act="manualSupp">등록하기</button></div></div>';
   }
   VIEWS['onb-supps'] = function () {
-    var panel = ui.tab === 'domestic' ? searchBlock('supp') : (ui.tab === 'overseas' ? overseasHtml() : manualHtml());
     var more = ui.params.mode === 'more', n = selectedItems('supp').length;
     return '<main class="screen has-bar">' + (more ? topbar() : obHead(2) + stepChip(2)) +
-      '<h1 class="h' + (more ? '' : ' ob') + '" data-focus>같이 먹는 영양제가 있나요?</h1><p class="sub' + (more ? '' : ' ob') + '">' + (ui.supp.products === 'ready' ? '제품 이름이나 성분 이름으로 찾아 보세요. 못 찾은 제품은 직접 입력해 주세요.' : '어떤 영양제든 등록할 수 있어요. 국내 제품은 검색하고, 해외 제품이나 못 찾은 제품은 직접 입력해 주세요.') + '</p>' + (ui.supp.products === 'off' ? '<p class="time-msg">제품 목록은 아직 준비 중이에요</p>' : '') +
-      suppTabs() + panel +
+      '<h1 class="h' + (more ? '' : ' ob') + '" data-focus>같이 먹는 영양제가 있나요?</h1><p class="sub' + (more ? '' : ' ob') + '">' + (ui.supp.products === 'ready' ? '제품 이름이나 성분 이름으로 찾아 보세요. 못 찾은 제품은 직접 입력해 주세요.' : '어떤 영양제든 등록할 수 있어요. 못 찾은 제품은 직접 입력해 주세요.') + '</p>' + (ui.supp.products === 'off' ? '<p class="time-msg">제품 목록은 아직 준비 중이에요</p>' : '') +
+      searchBlock('supp') +
       '<p class="lbl">고른 영양제 <span class="count" id="selcount">' + n + '</span></p><div id="selected">' + selectedHtml('supp') + '</div></main>' +
       actionBar(more
         ? '<button type="button" class="cta" data-act="to" data-view="times" data-all="1">복용 시간 입력하고 마치기</button>'
@@ -430,6 +419,7 @@
     var json = ui.copy.status === 'ready' ? ui.copy.json : { copy: {} };
     return window.KeepingHome.create({
       greeting: window.KeepingGreeting.create(json),
+      entryOf: function (item) { return careEngine().entryOf(item); },   // 약봉투 화면의 "약 설명서 안내"
       productOf: function (item) {
         if (!Pack.dur) return null;
         var c = item.productCode || (item.itemSeq && Pack.dur.codeOf(item.itemSeq));
@@ -537,6 +527,23 @@
     return '<button type="button" class="kp-notice" data-act="openSheet" data-flag="' + esc(n.flagId) + '">' + kpIcon('warn', 20) +
       '<span class="kp-notice-main"><span class="kp-notice-first" style="display:block;min-height:44px">' + esc(n.text) + kpIcon('right', 18) + '</span></span></button>';
   }
+  /* 약 카드 안의 "약 설명서 안내"(model general): 기본 펼침. 설명서에서 자동으로 뽑은 원문 문장이라 출처·확인일을 함께 보여 준다. */
+  function generalHtml(g) {
+    if (!g) return '';
+    var body;
+    if (g.empty) body = '<p class="kp-gempty">' + esc(g.empty) + '</p>';
+    else {
+      var url = safeUrl(g.source && g.source.url), chk = g.source && g.source.checkedAt ? String(g.source.checkedAt).slice(0, 10) : '확인하지 못했어요';
+      body = g.sections.map(function (sec) {
+        return '<section class="kp-gsec"><h4>' + esc(sec.title) + '</h4><ul>' + sec.items.map(function (x) {
+          var chips = (x.interval ? '<span class="kp-chip">' + esc(x.interval) + '</span>' : '') + (x.meal ? '<span class="kp-chip">' + esc(x.meal) + '</span>' : '');
+          return '<li class="kp-gitem">' + (x.where ? '<small class="kp-gwhere">' + esc(x.where) + '</small>' : '') + '<p class="kp-gtext">' + esc(x.text) + '</p>' +
+            (x.kos && x.kos.length ? '<p class="kp-gkos">관련: ' + esc(x.kos.join(' · ')) + '</p>' : '') + (chips ? '<div class="kp-gchips">' + chips + '</div>' : '') + '</li>';
+        }).join('') + '</ul></section>';
+      }).join('') + '<p class="kp-gfoot"><span>' + esc(g.auto) + '</span><span class="kp-src-row">' + (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener">원문 보기</a>' : '') + '<span>확인일 ' + esc(chk) + '</span></span></p>';
+    }
+    return '<details class="kp-gen" open><summary>' + esc(g.title) + kpIcon('down', 18, 'kp-gen-chev') + '</summary>' + body + '</details>';
+  }
   VIEWS.bag = function () {
     var m = homeModel(), d = m.detail[ui.params.id];
     if (!d) { ui.view = 'home'; return VIEWS.home(); }
@@ -547,7 +554,7 @@
         (it.times && it.times.length ? '<p class="kp-bag-times"><span>먹는 시간</span>' + esc(it.times.join(' · ')) + '</p>' : '') +
         (it.doseText ? '<p class="kp-bag-times"><span>먹는 양</span>' + esc(it.doseText) + '</p>' : '') +
         (it.ingredient ? '<p class="kp-bag-ingr">' + esc(it.ingredient) + '</p>' : '') +
-        (it.notices && it.notices.length ? it.notices.map(bagNotice).join('') : '') + '</article>';
+        (it.notices && it.notices.length ? it.notices.map(bagNotice).join('') : '') + generalHtml(it.general) + '</article>';
     }).join('');
     var foods = d.foods && d.foods.length ? '<section class="kp-foods"><h2>' + esc(d.foodsTitle) + '</h2><div>' + d.foods.map(function (f) { return '<span class="kp-chip">' + esc(f) + '</span>'; }).join('') + '</div></section>' : '';
     return '<main class="screen kp-bag"><div class="kp-bar2"><button type="button" class="kp-icbtn" data-act="back" aria-label="뒤로 가기">' + kpIcon('left', 24) + '</button><h1 class="kp-bar2-title" data-focus>' + esc(d.title) + '</h1></div>' + '<div class="kp-bag-list">' + cards + '</div>' + foods +
@@ -660,7 +667,7 @@
   var DOSE_UNITS = ['정', '캡슐', '포', 'ml'];
   var SLOT_CHIPS = [['morning', '아침'], ['lunch', '점심'], ['dinner', '저녁'], ['bedtime', '자기 전']];
   function startDraft(item) {
-    ui.draft = { item: item, slots: [], times: {}, blurred: {}, dose: { amount: '', unit: '정' }, dept: '', deptEdit: false, fromView: ui.view, fromParams: ui.params, fromTab: ui.tab };
+    ui.draft = { item: item, slots: [], times: {}, blurred: {}, dose: { amount: '', unit: '정' }, dept: '', deptEdit: false, fromView: ui.view, fromParams: ui.params };
     go('confirm');
   }
   /* 칩에 보이는 시각: 고른 칩은 입력값(읽을 수 있을 때), 아니면 기본 시각 */
@@ -820,25 +827,24 @@
      이전(뒤로 가기)과 브라우저 뒤로 가기 모두 한 단계씩 쌓인 화면으로 돌아간다. 브라우저 기록(pushState)과 개수를 맞춘다. */
   var ROOT_VIEWS = ['welcome', 'home', 'list', 'settings'];
   ui.hist = []; ui.depth = 0;   // depth: 브라우저 기록에서 지금 칸의 번호(pushState 상태 {kp})
-  function enter(view, params, tab, keepScroll) {
+  function enter(view, params, keepScroll) {
     closeSheet(true);
     ui.prev = { view: ui.view, params: ui.params };
     ui.view = view; ui.params = params || {};
     ui.more = false;
-    ui.q = ''; ui.oq = ''; ui.results = null; ui.remote = null; ui.overseas = null; ui.chips = []; ui.manualName = '';
-    ui.tab = view === 'onb-supps' ? (tab || ui.tab) : 'domestic';
+    ui.q = ''; ui.results = null; ui.remote = null; ui.chips = []; ui.manualName = ''; ui.manualCompany = ''; ui.manualOpen = false;
     render(!keepScroll);
     runSearch();
   }
   function go(view, params, keepScroll) {
     if (ROOT_VIEWS.indexOf(view) > -1) ui.hist = [];
-    else { ui.hist.push({ view: ui.view, params: ui.params, tab: ui.tab }); ui.depth++; try { history.pushState({ kp: ui.depth }, ''); } catch (e) { /* 기록을 못 쌓아도 앱은 동작 */ } }
-    enter(view, params, null, keepScroll);
+    else { ui.hist.push({ view: ui.view, params: ui.params }); ui.depth++; try { history.pushState({ kp: ui.depth }, ''); } catch (e) { /* 기록을 못 쌓아도 앱은 동작 */ } }
+    enter(view, params, keepScroll);
   }
   /* 한 단계 뒤로: 쌓인 화면이 없으면 false */
   function popView() {
     var p = ui.hist.pop(); if (!p) return false;
-    enter(p.view, p.params, p.tab);
+    enter(p.view, p.params);
     if (p.view === 'home') window.scrollTo(0, ui.homeScroll || 0);
     return true;
   }
@@ -977,7 +983,8 @@
       var it = findItem(t.dataset.id); if (!it) return;
       if (window.confirm(nm(it) + '을(를) 목록에서 지울까요?')) { state.items = state.items.filter(function (i) { return i.id !== it.id; }); save(); render(false); }
     },
-    tab: function (t) { ui.tab = t.dataset.tab; ui.results = null; ui.q = ''; render(false); runSearch(); },
+    manualToggle: function () { ui.manualOpen = !ui.manualOpen; render(false); var i = document.getElementById('mname'); if (ui.manualOpen && i) i.focus(); },
+    manualOpen: function () { ui.manualOpen = true; render(false); var i = document.getElementById('mname'); if (i) i.focus(); },
     chip: function (t) {
       var k = t.dataset.k, i = ui.chips.indexOf(k);
       if (i > -1) ui.chips.splice(i, 1); else ui.chips.push(k);
@@ -987,19 +994,8 @@
       var inp = document.getElementById('mname'); var name = (inp ? inp.value : ui.manualName).trim();
       if (!name && !ui.chips.length) { toast('이름이나 성분을 하나 입력해 주세요'); return; }
       if (!name) name = ui.chips.map(function (k) { return Pack.supplementKeyList.filter(function (x) { return x.id === k; })[0].ko; }).join(' · ');
-      startDraft(newItem({ kind: 'supp', source: 'manual', name: name, ingredientKeys: ui.chips.slice() }));
-    },
-    searchOverseas: function () {
-      var inp = document.getElementById('oq'); var q = (inp ? inp.value : ui.oq).trim();
-      if (!q) { toast('제품 이름을 입력해 주세요'); return; }
-      ui.overseas = { status: 'loading', results: [] };
-      render(false);
-      Api.searchOverseas(q).then(function (res) { ui.overseas = res; render(false); });
-    },
-    pickOverseas: function (t) {
-      var x = ui.overseas && ui.overseas.results[+t.dataset.i]; if (!x) return;
-      var keys = []; (x.ingredients || []).forEach(function (n) { var k = E.mapIngredient(n, Pack); if (k && keys.indexOf(k) < 0) keys.push(k); });
-      startDraft(newItem({ kind: 'supp', source: 'dsld', name: x.name, company: x.brand || '', ingredientKeys: keys }));
+      var co = document.getElementById('mcompany'); var company = (co ? co.value : ui.manualCompany).trim();
+      startDraft(newItem({ kind: 'supp', source: 'manual', name: name, company: company, ingredientKeys: ui.chips.slice() }));
     },
     addTime: function (t) { var it = findItem(t.dataset.id); if (!it) return; it.times = it.times && it.times.length ? it.times.concat(['']) : ['', '']; save(); render(false); },
     timesDone: function () {
@@ -1098,7 +1094,7 @@
     var t = e.target, k = t.getAttribute && t.getAttribute('data-input');
     if (k === 'search') { ui.q = t.value; clearTimeout(searchTimer); searchTimer = setTimeout(runSearch, 150); }
     else if (k === 'mname') ui.manualName = t.value;
-    else if (k === 'oq') ui.oq = t.value;
+    else if (k === 'mcompany') ui.manualCompany = t.value;
     else if (k === 'dtime' && ui.draft) {          // 치는 중에는 값만 기억하고 안내는 비운다. 담기 버튼만 바로 갱신.
       ui.draft.times[t.dataset.slot] = t.value; ui.draft.blurred[t.dataset.slot] = false;
       var m = document.getElementById('tm-' + t.dataset.slot); if (m) m.textContent = '';
@@ -1145,8 +1141,7 @@
     var id = e.target.id;
     if (id === 'fq') Acts.addFood();
     else if (id === 'cq') Acts.addQ();
-    else if (id === 'oq') Acts.searchOverseas();
-    else if (id === 'mname') Acts.manualSupp();
+    else if (id === 'mname' || id === 'mcompany') Acts.manualSupp();
     else if (id === 'deptin' && ui.deptEdit) Acts.deptSave({ dataset: { id: ui.deptEdit } });
     else if (id === 'ddeptin') Acts.draftDeptSave();
   });
@@ -1163,5 +1158,5 @@
   if (document.fonts && document.fonts.load) {
     Promise.race([Promise.all([400, 500, 600, 700].map(function (w) { return document.fonts.load(w + " 16px 'Pretendard Variable'"); })), new Promise(function (r) { setTimeout(r, 1200); })]).then(boot, boot);
   } else boot();
-  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, seedExample: loadExample, loadChecks: loadChecks, render: render };
+  window.KeepingApp = { state: function () { return state; }, go: go, ui: ui, bootDur: bootDur, bootCare: bootCare, bootCopy: bootCopy, careModel: careModel, careItems: careItems, homeModel: homeModel, seedExample: loadExample, generalHtml: generalHtml, loadChecks: loadChecks, render: render };
 })();

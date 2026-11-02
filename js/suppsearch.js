@@ -10,7 +10,8 @@
  *   S.get('calcium')  → 같은 모양의 결과 하나
  *
  * 제품(브랜드) 단위 검색: scripts/fetch_supplements.py가 만든 data/supp/products.json의 rows를 넘기면 제품 이름·업체로도 찾는다.
- *   var S = KeepingSupp.create({ ..., products: json.rows, mapKeys: function (raw) { return E.mapIngredient(raw, Pack); } });
+ *   var S = KeepingSupp.create({ ..., products: json.rows });   // 성분 키는 mapKeys가 알아서 찾는다
+ *   S.mapKeys('칼슘, 비타민D3') → ['calcium','vitaminD']  (원재료 글자에서 성분 키를 모두 찾는다. mapKeys 옵션을 주면 그 결과와 합친다)
  *   S.search('센트룸') → 성분 결과(있으면 앞 3개까지) 뒤에 제품 결과: { key:'s-<신고번호>', source:'catalog', name, sub:'업체 · 신고번호', supp:{ reportNo, name, company, ingredientRaw, ingredientKeys } }
  */
 (function (root, factory) {
@@ -36,7 +37,20 @@
     });
     var popular = opts.popular || [];
     var products = (opts.products || []).map(function (r) { return { r: r, n: norm(r[1]), c: norm(r[2]) }; });   // [신고번호, 제품명, 업체, 원재료]
-    var mapKeys = opts.mapKeys || null;
+    var extraMap = opts.mapKeys || null;
+    /* 글자 속에서 성분 이름(별칭)을 찾는다: "칼슘, 비타민D3, 마그네슘" → [calcium, vitaminD, magnesium].
+       한 글자·아주 짧은 영문 별칭은 건너뛰고(철, fe 등), 기초 재료로만 쓰이는 말(대두유 등)은 지우고 본다. */
+    var EXCLUDE = ['대두유', '대두레시틴', '레시틴', '대두왁스'];
+    var matchers = list.map(function (k) {
+      return { id: k.id, as: k.aliases.map(norm).filter(function (a) { return /[가-힣]/.test(a) ? a.length >= 2 : a.length >= 4; }) };
+    });
+    function mapKeys(text) {
+      var t = norm(text); EXCLUDE.forEach(function (x) { t = t.split(norm(x)).join(''); });
+      var out = [];
+      matchers.forEach(function (m) { if (m.as.some(function (a) { return t.indexOf(a) >= 0; })) out.push(m.id); });
+      if (extraMap) { var e = extraMap(text); (Array.isArray(e) ? e : e ? [e] : []).forEach(function (x) { if (out.indexOf(x) < 0) out.push(x); }); }
+      return out;
+    }
 
     function entry(k) {
       return { key: 'k-' + k.id, source: 'local', name: k.ko, sub: '영양제 성분 · 제품 이름은 몰라도 돼요',
@@ -60,9 +74,9 @@
       return hits.slice(0, limit).map(function (h) { return entry(h.k); });
     }
     function productEntry(p) {
-      var r = p.r, k = mapKeys ? mapKeys(r[3]) : null;
+      var r = p.r, k = mapKeys(r[3] + ' ' + r[1]);   // 원재료(앞 60자)와 제품 이름 둘 다 본다
       return { key: 's-' + r[0], source: 'catalog', name: r[1], sub: r[2] + ' · ' + r[0],
-               supp: { reportNo: r[0], name: r[1], company: r[2], reportedAt: '', ingredientRaw: r[3], ingredientKeys: k ? (Array.isArray(k) ? k : [k]) : [] } };
+               supp: { reportNo: r[0], name: r[1], company: r[2], reportedAt: '', ingredientRaw: r[3], ingredientKeys: k } };
     }
     function searchProducts(q, o) {
       var limit = (o && o.limit) || 8, nq = norm(q);
@@ -81,7 +95,7 @@
       return ing.concat(searchProducts(q, { limit: limit - ing.length }));
     }
     function get(id) { return byId[id] ? entry(byId[id]) : null; }
-    return { search: search, searchProducts: searchProducts, searchAll: searchAll, get: get, size: list.length, productCount: products.length };
+    return { search: search, searchProducts: searchProducts, searchAll: searchAll, get: get, mapKeys: mapKeys, size: list.length, productCount: products.length };
   }
   return { create: create, norm: norm };
 });

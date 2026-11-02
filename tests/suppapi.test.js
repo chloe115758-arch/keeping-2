@@ -21,6 +21,10 @@ function load(withProducts) {
     const p = r[first].supp;
     assert.ok(p.reportNo && p.company && Array.isArray(p.ingredientKeys), JSON.stringify(p));
   });
+  await t('제품을 고르면 성분 키가 supp.ingredientKeys에 이미 들어 있다(빈 배열이 아님)', async () => {
+    const p = (await on.KeepingApi.searchSupplements('영양칼슘비타민')).results.find((x) => x.source === 'catalog').supp;
+    assert.ok(p.ingredientKeys.includes('calcium') && p.ingredientKeys.includes('vitaminC'), JSON.stringify(p.ingredientKeys));
+  });
   await t('제품 이름·업체로도 찾는다', async () => {
     const r = (await on.KeepingApi.searchSupplements('영양칼슘비타민')).results.filter((x) => x.source === 'catalog');
     assert.ok(r.length >= 1 && r[0].name.includes('영양칼슘비타민') && r[0].supp.company);

@@ -201,9 +201,6 @@ button{background:none;border:0;cursor:pointer}
 .rm:hover{background:var(--white)}
 
 /* 탭 · 칩 */
-.tabs{display:flex;gap:6px;margin-bottom:14px}
-.tab{flex:1;min-height:var(--tap);border-radius:var(--r-sm);background:var(--soft);font:var(--label);font-weight:700;color:var(--ink-2)}
-.tab.on{background:var(--kp-cta-bg);color:var(--kp-cta-text)}
 .panel{margin-bottom:8px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
 .chip{display:inline-flex;align-items:center;gap:6px;min-height:var(--tap);padding:8px 16px;border-radius:var(--r-pill);border:1.5px solid var(--grey-5);font:600 15px/1.3 var(--font);background:var(--white)}
@@ -537,7 +534,7 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .chip{background:var(--kp-surface);border-color:var(--kp-border);color:var(--kp-text);font-family:var(--kp-font)}
 .chip.on{background:var(--kp-brand-weak);border-color:var(--kp-brand);color:var(--kp-label-text)}
 .chip.food{background:var(--kp-surface-sub);border-color:var(--kp-surface-sub)}
-.tab.on,.mini.txt.on{background:var(--kp-cta-bg);color:var(--kp-cta-text)}
+.mini.txt.on{background:var(--kp-cta-bg);color:var(--kp-cta-text)}
 .stepbar{background:var(--kp-surface-sub)}
 .stepbar i{background:var(--kp-brand)}
 .stepchip,.count{background:var(--kp-brand-weak);color:var(--kp-label-text)}
@@ -591,3 +588,28 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
   body{background:var(--kp-bg-outer);padding:24px 0}
   .app{max-width:430px;border-radius:32px;box-shadow:var(--kp-shadow-frame);min-height:calc(100vh - 48px);min-height:calc(100dvh - 48px);overflow:clip}
 }
+
+/* 영양제: 검색창 아래 "+ 직접 입력" 칩과 펼침 칸 */
+.manual{margin:10px 0 4px}
+.chip.small{min-height:36px;padding:4px 12px;font-size:14px;gap:4px}
+.manual-chip{color:var(--kp-text-sub)}
+.manual-chip.on{color:var(--kp-label-text)}
+.manual .panel{margin-top:10px;padding:14px;border:1px solid var(--kp-border);border-radius:var(--kp-radius-card);background:var(--kp-surface)}
+
+/* 약봉투: 약 설명서 안내(기본 펼침) */
+.kp-gen{margin-top:6px;padding-top:10px;border-top:1px solid var(--kp-border)}
+.kp-gen>summary{display:flex;align-items:center;justify-content:space-between;min-height:var(--kp-touch-min);cursor:pointer;list-style:none;font:var(--kp-fw-title) 15px/1.4 var(--kp-font);color:var(--kp-text)}
+.kp-gen>summary::-webkit-details-marker{display:none}
+.kp-gen-chev{color:var(--kp-text-sub);transition:transform .18s}
+.kp-gen[open] .kp-gen-chev{transform:rotate(180deg)}
+.kp-gsec{margin-top:10px}
+.kp-gsec h4{font:var(--kp-fw-title) 13px/1.4 var(--kp-font);color:var(--kp-text-sub)}
+.kp-gsec ul{list-style:none;display:grid;gap:10px;margin-top:6px}
+.kp-gitem{display:grid;gap:3px;padding:10px 12px;border-radius:var(--kp-radius-chip);background:var(--kp-surface-sub)}
+.kp-gwhere{font-size:var(--kp-fs-caption);color:var(--kp-text-sub)}
+.kp-gtext{font-size:14px;line-height:1.6;color:var(--kp-text)}
+.kp-gkos{font-size:var(--kp-fs-caption);color:var(--kp-text-sub)}
+.kp-gchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.kp-gfoot{display:grid;gap:4px;margin-top:12px;font-size:var(--kp-fs-caption);line-height:1.5;color:var(--kp-text-sub)}
+.kp-gfoot a{color:var(--kp-brand-strong);text-decoration:underline;text-underline-offset:3px}
+.kp-gempty{margin-top:8px;font-size:14px;color:var(--kp-text-sub)}

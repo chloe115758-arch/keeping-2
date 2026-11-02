@@ -19,7 +19,7 @@ const pack = { entries: { [key('씬지로이드정0.075')]: E.levothyroxine, [ke
 const care = Care.create({ pack, dur, groups });
 const supp = (id, keys, times, name) => ({ id, kind: 'supp', name: name || '칼슘 영양제', ingredientKeys: keys, times });
 const productOf = (item) => { const c = item.productCode || (item.itemSeq && dur.codeOf && dur.codeOf(item.itemSeq)); return c ? dur.get(c) : null; };
-const vm = Home.create({ greeting: Greeting.create(copy), productOf });
+const vm = Home.create({ greeting: Greeting.create(copy), productOf, entryOf: (item) => care.entryOf(item) });
 const run = (items, extra) => vm.build(Object.assign({ nowMin: 7 * 60 + 30, nickname: '지수', items, analysis: care.analyze(items, {}) }, extra || {}));
 const slotRow = (m, id) => m.rows.find((r) => r.type === 'slot' && r.id === id);
 const BAN = /안전|괜찮|문제없|먹어도|드세요|복용하세요|챙겨\s*드|중단하세요|끊으세요|늘리세요|줄이세요/;
@@ -227,5 +227,27 @@ t('약봉투: 내가 적은 1회 양이 있으면 "1회 2정 · 내가 적은 �
   assert.strictEqual(run(base()).detail['morning:rx:내과'].items[0].doseText, '');
   items[0].dose = { amount: 0, unit: '정' };
   assert.strictEqual(run(items).detail['morning:rx:내과'].items[0].doseText, '', '0 이하는 만들지 않는다');
+});
+t('약봉투: 내 조합과 상관없이 그 약의 설명서 안내가 구역별로 전부 들어 있다(함께 쓸 때, 일반 주의, 복용 시점…)', () => {
+  const d = run([drug('levo', '씬지로이드정0.075', ['07:00'], '내과')]).detail['morning:rx:내과'];   // 영양제 없이 약 하나만 담아도
+  const g = d.items[0].general;
+  assert.ok(g && g.title === '약 설명서 안내' && /자동으로 뽑은 문장/.test(g.auto), JSON.stringify(g && g.title));
+  const keys = g.sections.map((x) => x.key);
+  assert.ok(keys.includes('interaction') && keys.includes('note'), keys.join());
+  const inter = g.sections.find((x) => x.key === 'interaction').items;
+  assert.ok(inter.some((x) => x.kos.includes('칼슘제제') && x.interval === '최소 4시간 간격'), JSON.stringify(inter.map((x) => x.kos)));
+  assert.ok(inter.every((x) => x.text && x.where), '원문 문장과 위치가 있다');
+  assert.ok(g.source.label === '식품의약품안전처 의약품 허가사항' && g.source.checkedAt, JSON.stringify(g.source));
+});
+t('약봉투: 임신·복용 시점 안내도 상태 토글과 상관없이 보인다', () => {
+  const g = run([drug('m', '메토폴정', ['12:30'], '내과')]).detail['lunch:rx:내과'].items[0].general;
+  const keys = g.sections.map((x) => x.key);
+  assert.ok(keys.includes('state_pregnancy') && keys.includes('timing'), keys.join());
+  assert.ok(g.sections.find((x) => x.key === 'timing').items[0].meal, '식사 관계가 있다');
+});
+t('약봉투: 설명서 묶음이 없는 약은 general이 null, 영양제도 null (빈 칸을 만들지 않는다)', () => {
+  const d = run([drug('x', '시바스정', ['21:00'], '내과'), supp('c', ['calcium'], ['21:00'])], { nowMin: 21 * 60 + 10 }).detail;
+  assert.strictEqual(d['bedtime:rx:내과'].items[0].general, null);
+  assert.strictEqual(d['bedtime:supp:c'].items[0].general, null);
 });
 console.log('\n' + n + '개 통과');

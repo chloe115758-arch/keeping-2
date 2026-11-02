@@ -88,12 +88,31 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   check('묶음 줄을 누르면 약봉투 화면(체크는 바뀌지 않음)', !!q('.kp-bag') && JSON.stringify(store()) === '{}');
   check('상단 뒤로 가기 + 제목(묶음 이름)', !!q('.kp-bar2 [data-act="back"]') && q('.kp-bar2-title').textContent === bagModel.title && !q('.top-title') && !/이전/.test(q('.kp-bar2').textContent));
   check('약마다 카드: 이름(display) · 규격·업체 · 구분 칩 · 먹는 시간 · 성분', qa('.kp-bagcard').length === bagModel.items.length && qa('.kp-bagcard').every((c, i) => c.querySelector('.kp-bag-name').textContent === bagModel.items[i].display && !!c.querySelector('.kp-chip') && c.textContent.includes('먹는 시간')));
-  check('복용법·용량 칸이 없다', !/복용법|1회|용량|하루 \d/.test(q('.kp-bag-list').textContent));
+  check('복용법·용량 칸이 없다(설명서 원문 문장은 제외)', !/복용법|1회|용량|하루 \d/.test([...qa('.kp-bagcard')].map((c) => { const k = c.cloneNode(true); k.querySelectorAll('.kp-gen').forEach((e) => e.remove()); return k.textContent; }).join(' ')));
   check('맨 아래 작은 글씨: scope + footer(모델 값 그대로)', q('.kp-bag-foot').textContent.includes(bagModel.scope) && q('.kp-bag-foot').textContent.includes(bagModel.footer));
   const nb = q('.kp-bagcard .kp-notice');
   check('카드 안 주의 줄을 누르면 근거 시트가 열린다(없으면 칸 자체가 없음)', !nb ? !q('.kp-bagcard .kp-notice') : (click(nb), !!q('.kp-sheet')));
   if (q('.kp-sheet')) click('.kp-close');
   click('[data-act="back"]');
+  {
+    const dm = A.homeModel().detail, gk = Object.keys(dm).find((k) => dm[k].items.some((i) => i.general && i.general.sections.length));
+    check('시험 데이터에 설명서 안내가 있는 약이 있다', !!gk);
+    if (gk) {
+      A.go('bag', { id: gk }); const D = dm[gk];
+      const cards = qa('.kp-bagcard');
+      check('general이 있는 약 카드에만 "약 설명서 안내"(기본 펼침 details open), 없는 약 카드에는 칸이 없음', D.items.every((it, i) => it.general ? (!!cards[i].querySelector('details.kp-gen[open]') && cards[i].querySelector('.kp-gen > summary').textContent === it.general.title) : !cards[i].querySelector('.kp-gen')));
+      const gi = D.items.findIndex((it) => it.general && it.general.sections.length), G = D.items[gi].general, card = cards[gi];
+      check('구역 제목이 sections 순서대로', [...card.querySelectorAll('.kp-gsec > h4')].map((h) => h.textContent).join('|') === G.sections.map((x) => x.title).join('|'));
+      const lis = [...card.querySelectorAll('.kp-gitem')], flat = G.sections.reduce((a2, x) => a2.concat(x.items), []);
+      check('문장마다 where(작은 글씨) → 본문(text 그대로)', lis.length === flat.length && lis.every((li, i) => (flat[i].where ? li.firstElementChild.className === 'kp-gwhere' && li.firstElementChild.textContent === flat[i].where : !li.querySelector('.kp-gwhere')) && li.querySelector('.kp-gtext').textContent === flat[i].text));
+      check('kos가 있으면 "관련: …" 한 줄, interval·meal은 칩', lis.every((li, i) => (flat[i].kos.length ? li.querySelector('.kp-gkos').textContent === '관련: ' + flat[i].kos.join(' · ') : !li.querySelector('.kp-gkos')) && [...li.querySelectorAll('.kp-gchips .kp-chip')].map((c) => c.textContent).join('|') === [flat[i].interval, flat[i].meal].filter(Boolean).join('|')));
+      const ft = card.querySelector('.kp-gfoot'), lk = ft.querySelector('a');
+      check('맨 아래: auto 작은 글씨 + 원문 보기(새 탭) + 확인일', ft.textContent.includes(G.auto) && (G.source.url ? (lk && lk.href.toLowerCase() === G.source.url.toLowerCase() && lk.target === '_blank' && lk.textContent === '원문 보기') : !lk) && /확인일 /.test(ft.textContent), JSON.stringify({ ft: ft.textContent, href: lk && lk.href, url: G.source.url, target: lk && lk.target }));
+      click('[data-act="back"]');
+    }
+    const emp = A.generalHtml({ title: '약 설명서 안내', auto: 'AUTO문구', source: { url: 'https://x.example', checkedAt: '2026-11-01' }, sections: [], empty: '이 약의 설명서에서 뽑은 안내가 아직 없어요' });
+    check('general이 null이면 칸을 만들지 않고, empty가 있으면 그 문장만(자동 문구·원문 보기·확인일 없음)', A.generalHtml(null) === '' && emp.includes('이 약의 설명서에서 뽑은 안내가 아직 없어요') && !emp.includes('AUTO문구') && !emp.includes('원문 보기') && !emp.includes('확인일'));
+  }
   check('뒤로 가면 홈', !!q('.kp-hello'));
 
   console.log('6) 근거 시트 접근성');
@@ -175,7 +194,7 @@ const store = () => JSON.parse(w.localStorage.getItem('kp:checks:' + today()) ||
   ti.value = 'abc'; ev(ti);
   check('읽을 수 없으면 저장하지 않고 이전 값 유지 + 안내(보조색)', ti.value === '20:30' && st.items[0].times.join() === '20:30' && q('.time-msg').textContent === '시각을 다시 확인해 주세요 (예: 07:30)');
   ti.value = '730'; ev(ti); st.items[0].times = ['07:30'];
-  check('주 버튼(.cta · .tab.on · .add · .mini.txt.on · .kp-add · .kp-close)은 --kp-cta-bg/--kp-cta-text만 쓰고 민트·검정 값을 직접 쓰지 않음', ['\\.cta', '\\.tab\\.on', '\\.add', '\\.mini\\.txt\\.on', '\\.kp-add', '\\.kp-close'].every((sel) => { const rules = css0.match(new RegExp('(^|\\n)' + sel + '\\{[^}]*\\}', 'g')) || []; return rules.length > 0 && rules.every((r) => !/(mint-\\d+|black-\\d|#[0-9a-fA-F]{3,6})/.test(r.replace(/box-shadow[^;}]*/g, '')) && /--kp-cta-bg/.test(r)); }));
+  check('주 버튼(.cta · .add · .mini.txt.on · .kp-add · .kp-close)은 --kp-cta-bg/--kp-cta-text만 쓰고 민트·검정 값을 직접 쓰지 않음', ['\\.cta', '\\.add', '\\.mini\\.txt\\.on', '\\.kp-add', '\\.kp-close'].every((sel) => { const rules = css0.match(new RegExp('(^|\\n)' + sel + '\\{[^}]*\\}', 'g')) || []; return rules.length > 0 && rules.every((r) => !/(mint-\\d+|black-\\d|#[0-9a-fA-F]{3,6})/.test(r.replace(/box-shadow[^;}]*/g, '')) && /--kp-cta-bg/.test(r)); }));
   A.go('home');
   check('하단 탭 3개(홈·내 약·마이), 뱃지 없음, 스타일은 --kp-* 변수', qa('.nav button').map((b) => b.textContent.trim()).join('|') === '홈|내 약|마이' && !q('.nav [class*="badge"]') && /\.nav\{[^}]*var\(--kp-surface\)[^}]*var\(--kp-border\)/.test(css0) && /\.nav button\{[^}]*var\(--kp-fs-caption\)[^}]*var\(--kp-text-sub\)/.test(css0));
 

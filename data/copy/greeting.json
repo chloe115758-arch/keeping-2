@@ -62,6 +62,14 @@
   "time_invalid": "시각을 다시 확인해 주세요 (예: 07:30)",
   "dose_label": "1회 먹는 양 (선택)",
   "dose_hint": "내가 적어 두는 값이에요. 키핑은 양을 판단하지 않아요",
-  "detail_dose": "1회 {amount}{unit} · 내가 적은 값"
+  "detail_dose": "1회 {amount}{unit} · 내가 적은 값",
+  "detail_general_title": "약 설명서 안내",
+  "detail_general_auto": "설명서에서 자동으로 뽑은 문장이에요. 전체는 원문 보기에서 확인해 주세요.",
+  "gen_interaction": "함께 쓸 때 주의",
+  "gen_note": "일반 주의",
+  "gen_pregnancy": "임신·수유",
+  "gen_elderly": "고령자",
+  "gen_timing": "복용 시점",
+  "gen_none": "이 약의 설명서에서 뽑은 안내가 아직 없어요"
  }
 }

@@ -62,7 +62,7 @@ t('제품 목록이 있으면 제품 이름·업체로 찾는다(성분 결과�
   assert.strictEqual(P.productCount, 4);
   const r = P.searchAll('센트룸');
   assert.strictEqual(r[0].source, 'catalog'); assert.strictEqual(r[0].supp.reportNo, '2004001'); assert.strictEqual(r[0].sub, '한국화이자 · 2004001');
-  assert.deepStrictEqual(r[0].supp.ingredientKeys, ['calcium']);
+  assert.deepStrictEqual(r[0].supp.ingredientKeys.slice().sort(), ['calcium', 'vitaminC']);   // 원재료 "비타민C, 칼슘"에서 둘 다
   const k = P.searchAll('칼슘');
   assert.strictEqual(k[0].source, 'local');   // 성분 결과가 먼저
   assert.ok(k.slice(1).every((x) => x.source === 'catalog') && k.length >= 3, JSON.stringify(k.map((x) => x.source)));
@@ -78,5 +78,27 @@ t('제품 5만 건에서도 한 번 찾는 데 0.1초가 안 걸린다', () => {
   const P = Supp.create({ keyList: w.KEEPING_DATA.supplementKeyList, extra: extra, products: rows });
   const t0 = Date.now(); const r = P.searchAll('칼슘'); const ms = Date.now() - t0;
   assert.ok(r.length >= 4 && ms < 100, r.length + '건 ' + ms + 'ms');
+});
+t('원재료 글자 목록에서 성분 키를 모두 찾는다(기존 방식은 문장 전체가 별칭과 같아야 해서 목록을 못 찾았다)', () => {
+  const P = Supp.create({ keyList: w.KEEPING_DATA.supplementKeyList, extra: extra });
+  const ks = (x) => P.mapKeys(x).sort();
+  assert.deepStrictEqual(ks('칼슘, 비타민D3, 마그네슘'), ['calcium', 'magnesium', 'vitaminD']);
+  assert.deepStrictEqual(ks('구연산칼슘 / 산화마그네슘'), ['calcium', 'magnesium']);
+  assert.deepStrictEqual(ks('EPA 및 DHA 함유 유지'), ['omega3']);
+  assert.deepStrictEqual(ks('고려인삼'), ['ginseng']);
+});
+t('한 글자 별칭("철")과 기초 재료(대두유)에는 반응하지 않는다', () => {
+  const P = Supp.create({ keyList: w.KEEPING_DATA.supplementKeyList, extra: extra });
+  assert.deepStrictEqual(P.mapKeys('철쭉꽃추출물'), []);
+  assert.deepStrictEqual(P.mapKeys('정제어유, 대두유, 레시틴'), []);
+  assert.deepStrictEqual(P.mapKeys('대두단백'), ['soy']);
+  assert.deepStrictEqual(P.mapKeys(''), []);
+});
+t('제품을 고르면 원재료와 제품 이름에서 성분 키가 들어간다(이전에는 빈 목록이라 주의가 안 떴다)', () => {
+  const rows = [['2004001', '영양칼슘비타민', '고려인삼과학', '탄산칼슘, 비타민D3'], ['2004002', '오메가 골드', '회사', '정제어유'], ['2004003', '칼슘마그네슘D', '회사', '원료']];
+  const P = Supp.create({ keyList: w.KEEPING_DATA.supplementKeyList, extra: extra, products: rows });
+  const by = (no) => P.searchProducts('').concat(P.searchAll('영양칼슘'), P.searchAll('칼슘마그')).find((x) => x.supp.reportNo === no);
+  assert.deepStrictEqual(by('2004001').supp.ingredientKeys.sort(), ['calcium', 'vitaminD']);
+  assert.deepStrictEqual(by('2004003').supp.ingredientKeys.sort(), ['calcium', 'magnesium']);   // 제품 이름의 "칼슘", "마그네슘" ("D" 한 글자는 비타민D로 보지 않는다)
 });
 console.log('\n' + n + '개 통과');

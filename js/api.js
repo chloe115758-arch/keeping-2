@@ -84,7 +84,7 @@
     var prod = root.KeepingSupp ? loadJson('data/supp/products.json', function (j) { return (j && Array.isArray(j.rows) && j.rows.length) ? j : null; }, null) : Promise.resolve(null);
     suppIndex = Promise.all([extra, prod]).then(function (r) {
       suppInfo = { products: r[1] ? 'ready' : 'off', source: (r[1] && r[1].meta && r[1].meta.source) || '' };
-      return root.KeepingSupp ? root.KeepingSupp.create({ keyList: Pack.supplementKeyList, extra: r[0], popular: Pack.chipKeys, products: r[1] ? r[1].rows : [], mapKeys: function (raw) { return E.mapIngredient(raw, Pack); } }) : null;
+      return root.KeepingSupp ? root.KeepingSupp.create({ keyList: Pack.supplementKeyList, extra: r[0], popular: Pack.chipKeys, products: r[1] ? r[1].rows : [] }) : null;
     });
     return suppIndex;
   }
@@ -107,13 +107,13 @@
     return getJSON(base + '/api/supp?name=' + encodeURIComponent(q)).then(function (j) {
       (j.rows || []).forEach(function (r) {
         if (Pack.supplements.some(function (s) { return s.reportNo === r.reportNo; })) return;
-        var key = E.mapIngredient(r.ingredientRaw, Pack);
+        var keys = S ? S.mapKeys(r.ingredientRaw) : [];   // 성분 키는 KeepingSupp가 만든다
         out.push({
           key: 'a-' + r.reportNo, source: 'api', name: r.name,
           sub: r.company + ' · ' + (r.reportedAt || '') + ' 신고 · ' + r.reportNo,
           supp: {
             reportNo: r.reportNo, name: r.name, company: r.company, reportedAt: r.reportedAt,
-            ingredientRaw: r.ingredientRaw, ingredientKeys: key ? [key] : [],
+            ingredientRaw: r.ingredientRaw, ingredientKeys: keys,
             intake: r.intake, functionality: r.functionality, cautions: r.cautions
           }
         });
@@ -124,19 +124,10 @@
     });
   }
 
-  /* ---------- 해외 영양제 (미국 NIH DSLD) ---------- */
-  function searchOverseas(q) {
-    if (!base) return Promise.resolve({ status: 'off', results: [] });
-    return getJSON(base + '/api/dsld?name=' + encodeURIComponent(q)).then(function (j) {
-      return { status: (j.rows && j.rows.length) ? 'ok' : 'empty', results: j.rows || [] };
-    }).catch(function () { return { status: 'error', results: [] }; });
-  }
-
   root.KeepingApi = {
     proxyBase: base,
     searchDrugs: searchDrugs,
     searchSupplements: searchSupplements,
-    suppInfo: function () { return suppSearcher().then(function () { return suppInfo; }); },
-    searchOverseas: searchOverseas
+    suppInfo: function () { return suppSearcher().then(function () { return suppInfo; }); }
   };
 })(window);

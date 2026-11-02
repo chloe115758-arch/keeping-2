@@ -16,6 +16,7 @@
  *   model.header   → KeepingGreeting.state() 결과(line1, line2, card.{count, ratio, status, icon})
  *   model.rows[]   → 시간선 줄(시간대 카드 또는 식사 표시)
  *   model.sheets[flagId] / model.detail[groupId] → 근거 시트(공식 지정이면 noteLine: "조건 · 48시간 이내 병용금기") / 약봉투 화면
+ *   create({ entryOf: care.entryOf })을 주면 detail.items[].general에 그 약의 설명서 안내(구역별, 내 조합과 무관)가 들어간다
  *   build({ ..., newItemIds: [...] })를 넘기면 그 약이 든 묶음에 isNew·newLabel("새 처방")이 붙는다
  */
 (function (root, factory) {
@@ -47,6 +48,8 @@
   function create(opts) {
     var g = opts.greeting, say = g.say;
     var productOf = opts.productOf || function () { return null; };
+    var entryOf = opts.entryOf || function () { return null; };   // care.entryOf: 약의 허가사항 묶음(없으면 null)
+    var GENERAL = [['interaction', 'gen_interaction'], ['note', 'gen_note'], ['state_pregnancy', 'gen_pregnancy'], ['state_elderly', 'gen_elderly'], ['timing', 'gen_timing']];
 
     function categoryOf(item) {
       if (item.kind === 'supp') return 'supp';
@@ -63,6 +66,26 @@
       }
       if (cat === 'otc') return { key: 'otc', kind: 'otc', icon: 'pill', title: say('group_otc') };
       return { key: 'other', kind: 'other', icon: 'pill', title: say('group_other') };
+    }
+
+    /* 그 약의 설명서에서 뽑은 안내를 구역별로 전부(내가 담은 조합과 상관없이). 자동으로 뽑은 문장이라는 점을 함께 알린다 */
+    function generalOf(it) {
+      var e = it && it.kind === 'drug' ? entryOf(it) : null;
+      if (!e) return null;
+      var seen = {}, sections = [];
+      GENERAL.forEach(function (g) {
+        var items = [];
+        (e.rules || []).forEach(function (r) {
+          if (r.kind !== g[0] || !r.excerpt || seen[g[0] + r.excerpt]) return;
+          seen[g[0] + r.excerpt] = 1;
+          items.push({ where: r.where || '', kos: uniq((r.matched || []).map(function (m) { return m.ko; }).filter(Boolean)), text: r.excerpt,
+                       interval: r.interval && r.interval.minHours ? ivText(r.interval) : '', meal: r.meal || '' });
+        });
+        if (items.length) sections.push({ key: g[0], title: say(g[1]), items: items });
+      });
+      return { title: say('detail_general_title'), auto: say('detail_general_auto'),
+               source: { label: '식품의약품안전처 의약품 허가사항', url: (e.docUrls && e.docUrls.nb) || null, checkedAt: e.fetchedAt || null },
+               sections: sections, empty: sections.length ? '' : say('gen_none') };
     }
 
     function build(input) {
@@ -219,6 +242,7 @@
             }); });
             return { itemId: gi.itemId, name: it.name, display: gi.display, spec: p.spec || '', company: p.company || '', ingredient: it.ingredientKo ? it.ingredientKo + (p.ingrName ? ' (' + p.ingrName + ')' : '') : (p.ingrName || ''),
                      category: CATEGORY_LABEL[categoryOf(it)], times: (it.times || []).slice(), notices: notices,
+                     general: generalOf(it),
                      doseText: (it.dose && +it.dose.amount > 0) ? say('detail_dose', { amount: it.dose.amount, unit: it.dose.unit || '정' }) : '' };
           });
           var foods = uniq(foodOrder.filter(function (ko) { return foodMap[ko].itemIds.some(function (id) { return G.itemIds.indexOf(id) >= 0; }); }));
