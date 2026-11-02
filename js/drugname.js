@@ -50,5 +50,12 @@
     });
     return list.slice(0, limit).map(function (g) { return { name: g.name, variants: g.variants, rep: g.rep }; });
   }
-  return { baseName: baseName, group: group };
+  /* 복용법 입력 카드의 "약 원어명" 자리: 영문 성분명만 깨끗하게. 한약 복합제처럼 한글이 섞인 값은 보이지 않는다(빈 글자).
+     "mometasone furoate(/회)" → "Mometasone furoate", "당귀·목과…ethanol soft ext." → "" */
+  function englishName(ingrName) {
+    var s = String(ingrName == null ? '' : ingrName).replace(/\(\s*\/[^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+    if (!s || /[가-힣]/.test(s)) return '';
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+  return { baseName: baseName, group: group, englishName: englishName };
 });

@@ -7,6 +7,16 @@
 
   var Pack = window.KEEPING_DATA, E = window.KeepingEngine, Store = window.KeepingStore, Api = window.KeepingApi;
   var root = document.getElementById('app');
+  /* 주소 끝에 ?fresh=1 이면 이 기기에 저장된 값(kp:…·앱 저장소)과 sessionStorage를 지우고 주소에서 ?fresh=1을 뺀다(새로고침해도 다시 지우지 않음). 그러면 처음 흐름(스플래시)부터 */
+  (function () {
+    try {
+      var u = new URL(location.href);
+      if (u.searchParams.get('fresh') !== '1') return;
+      Object.keys(localStorage).forEach(function (k) { if (k.indexOf('kp:') === 0) localStorage.removeItem(k); });
+      localStorage.removeItem('keeping.v1'); sessionStorage.clear();
+      u.searchParams.delete('fresh'); history.replaceState(history.state, '', u.pathname + u.search + u.hash);
+    } catch (e) { /* 저장소를 못 써도 앱은 동작 */ }
+  })();
   var state = Store.load();
   var ui = {
     view: 'welcome', params: {}, prev: null,
@@ -872,8 +882,14 @@
   function rxMax(r) { var n = rxNeed(r); return n >= 1 ? Math.min(n, 3) : 3; }
   /* 횟수를 줄이면 먼저 고른 시각부터 남기고 나머지는 해제 */
   function rxTrim(r) { Object.keys(r.slots).slice(rxMax(r)).forEach(function (id) { delete r.slots[id]; }); }
-  function rxReady(r) { return r.count === 'prn' || (rxNeed(r) >= 1 && Object.keys(r.slots).length === rxMax(r)); }
-  function subOf(it) { return it.productCode ? [window.KeepingDrugName.englishName(it.ingredientEn), it.category].filter(Boolean).join(' · ') : kindLabel(it); }
+  /* 저장 조건: 필요 시이거나 시간을 1개 이상 골랐을 때. 횟수는 고를 수 있는 최대 개수일 뿐(안 골랐으면 3) */
+  function rxReady(r) { return r.count === 'prn' || Object.keys(r.slots).length >= 1; }
+  /* 약 카드 파란 줄: 영문 성분명(englishName, 길면 말줄임) · 분류(전문/일반의약품, 줄어들지 않음). 영문이 비면 "·" 없이 분류만 */
+  function subHtml(it) {
+    if (!it.productCode) return esc(kindLabel(it));
+    var en = window.KeepingDrugName.englishName(it.ingredientEn), cat = it.category ? '<i class="ds-cat">' + esc(it.category) + '</i>' : '';
+    return (en ? '<i class="ds-en">' + esc(en) + '</i>' + (cat ? '<i class="ds-sep"> · </i>' : '') : '') + cat;
+  }
   function doseGroupHtml(g, r) {
     if (g === 'count') {
       return DOSE_COUNTS.map(function (c) {
@@ -918,7 +934,7 @@
     var it = d.item, r = d.rx, g = doseGeneral(it);
     function sec(title, id) { return '<section class="dose-sec"><h2>' + title + '</h2><div class="dose-chips" id="dg-' + id + '">' + doseGroupHtml(id, r) + '</div></section>'; }
     return '<main class="screen obscreen dosev"><div class="dose-top"><button type="button" class="dose-back" data-act="back" aria-label="이전 화면으로"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 1L1.5 9 9 17"/></svg></button><h1 class="dose-title" data-focus>복용법 입력</h1></div>' +
-      '<div class="dose-card"><span class="dose-photo">' + kpIcon('pill', 24) + '</span><div class="dose-name"><b>' + esc(nm(it)) + '</b><span>' + esc(subOf(it)) + '</span></div></div>' +
+      '<div class="dose-card"><span class="dose-photo">' + kpIcon('pill', 24) + '</span><div class="dose-name"><b>' + esc(nm(it)) + '</b><span class="dose-sub">' + subHtml(it) + '</span></div></div>' +
       sec('하루에 몇 번 드시나요?', 'count') + sec('언제 드세요?', 'slot') + sec('식전 / 식후', 'meal') +
       (isRx(it) ? '<section class="dose-sec dose-dept"><h2>' + DEPT_TITLE + '</h2>' + draftDeptChips(d) + '</section>' : '') +
       (g ? '<button type="button" class="dose-warn" data-act="doseWarn">' + WARN_ICON + '<span>주의사항</span></button>' : '') + '</main>' +
@@ -1227,7 +1243,7 @@
       var d = ui.draft, r = d && d.rx; if (!r || !rxReady(r)) return;
       var it = d.item, prn = r.count === 'prn';
       it.times = prn ? [] : DOSE_SLOTS.filter(function (id) { return r.slots[id]; }).map(function (id) { return r.slots[id]; }).filter(function (t, i, a) { return a.indexOf(t) === i; });
-      if (prn) { it.prn = true; delete it.timesPerDay; } else { delete it.prn; it.timesPerDay = rxNeed(r); }
+      if (prn) { it.prn = true; delete it.timesPerDay; } else { delete it.prn; it.timesPerDay = rxNeed(r) >= 1 ? rxNeed(r) : it.times.length; }
       if (r.meal) it.meal = r.meal; else delete it.meal;
       if (isRx(it) && d.dept) it.dept = d.dept; else delete it.dept;
       finishDock(d);

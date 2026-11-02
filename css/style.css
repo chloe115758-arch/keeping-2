@@ -644,6 +644,10 @@ body,.app{background:var(--kp-bg-page);color:var(--kp-text);font-family:var(--kp
 .dose-name{min-width:0;display:grid;gap:2px}
 .dose-name b{font:700 16px/1.4 var(--kp-font);color:var(--kp-text);overflow-wrap:anywhere}
 .dose-name span{font:400 11px/1.4 var(--kp-font);color:var(--kp-link);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dose-sub{display:flex;min-width:0}
+.dose-sub i{font-style:normal}
+.ds-en{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ds-sep,.ds-cat{flex:none;white-space:pre}
 .dose-sec{margin-top:36px;padding:0 15px}
 .dose-sec:first-of-type{margin-top:35px}
 .dose-sec:first-of-type h2{font-size:18px;line-height:26px;margin-bottom:13px}

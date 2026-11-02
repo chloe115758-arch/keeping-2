@@ -30,13 +30,13 @@ const start = () => { A().state().items = []; A().go('add', { batch: 'b' }); A()
   check('횟수는 하나만 선택(2회)', qa('#dg-count .dchip.on').length === 1 && chip('doseCount', '2').classList.contains('on') && (click(chip('doseCount', '3')), qa('#dg-count .dchip.on').length === 1));
   click(chip('doseCount', '2')); pickSlot('morning');
   check('언제 칩을 누르면 시간 시트(제목 "아침", 기본 07:30), 저장하면 칩이 "아침 07:30"', !q('.kp-tsheet') && slot('morning').textContent === '아침 07:30' && slot('morning').getAttribute('aria-checked') === 'true');
-  check('횟수가 다 찰 때까지는 [저장] 비활성(1/2)', save().disabled === true);
+  check('횟수(2회)를 다 못 채워도 시간이 1개면 [저장] 활성(횟수는 최대 개수일 뿐)', save().disabled === false);
   pickSlot('dinner', '1930');
   check('2/2가 되면 [저장] 활성, 시각 "1930"은 19:30으로', save().disabled === false && slot('dinner').textContent === '저녁 19:30');
   click(slot('lunch'));
   check('횟수만큼 찼으면 남은 칩은 흐려지고 눌러도 시트가 열리지 않음', slot('lunch').getAttribute('aria-disabled') === 'true' && !q('.kp-tsheet'));
   click(slot('morning'));
-  check('선택된 칩을 다시 누르면 시트 없이 해제 → [저장] 비활성', !q('.kp-tsheet') && slot('morning').textContent === '아침' && save().disabled === true);
+  check('선택된 칩을 다시 누르면 시트 없이 해제(저녁이 남아 있어 [저장]은 그대로 활성)', !q('.kp-tsheet') && slot('morning').textContent === '아침' && save().disabled === false);
   pickSlot('morning', '730');
   click(chip('doseMeal', 'after')); click(chip('doseMeal', 'after'));
   check('식전/식후는 선택 사항: 다시 누르면 해제', !chip('doseMeal', 'after').classList.contains('on'));
@@ -65,13 +65,18 @@ const start = () => { A().state().items = []; A().go('add', { batch: 'b' }); A()
   type('0'); check('0도 받지 않음', n().value === '');
   type('2'); pickSlot('morning'); pickSlot('lunch');
   check('2를 치고 2개를 고르면 [저장] 활성', n().value === '2' && save().disabled === false);
-  type('3'); check('횟수를 3으로 바꾸면 다시 2/3이라 비활성', save().disabled === true);
+  type('3'); check('횟수를 3으로 바꿔도 시간 2개로 [저장] 활성', save().disabled === false);
   type('5'); pickSlot('dinner');
   check('5회: 칩이 3개뿐이라 3개를 고르면 활성, timesPerDay는 5', save().disabled === false); click(save());
   check('저장된 timesPerDay 5', A().state().items[0].timesPerDay === 5 && A().state().items[0].times.length === 3);
 
   start(); click(chip('doseCount', 'custom')); n().dispatchEvent(new w.FocusEvent('focusout', { bubbles: true }));
   check('비운 채 벗어나면 다시 "직접 입력" 칩으로', !q('#dcount') && chip('doseCount', 'custom').textContent === '직접 입력' && !chip('doseCount', 'custom').classList.contains('on'));
+
+  start(); click(chip('doseCount', '3')); pickSlot('lunch');
+  check('3회를 골라도 시간 1개만 고르면 [저장] 활성, 저장하면 timesPerDay 3·시간 1개', save().disabled === false && (click(save()), A().state().items.at(-1).timesPerDay === 3 && A().state().items.at(-1).times.length === 1));
+  start(); pickSlot('morning'); pickSlot('lunch');
+  check('횟수를 안 골랐으면 최대 3개까지, 저장하면 timesPerDay는 고른 시간 개수(2)', save().disabled === false && (click(save()), A().state().items.at(-1).timesPerDay === 2));
 
   console.log('시간 바텀시트');
   start(); click(chip('doseCount', '1')); click(slot('lunch'));

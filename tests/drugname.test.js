@@ -47,4 +47,17 @@ t('묶음의 대표로 항목을 만들어도 같은 성분이라 같은 안내�
   const g = N.group(dur.search('씬지로이드', { limit: 30 }), { query: '씬지로이드' }), p = dur.get(g[0].rep.code);
   assert.strictEqual(String(p.ingrName).toLowerCase(), 'levothyroxine sodium');
 });
+t('약 원어명(영문 성분명): 깨끗한 영어만, 단위 흔적은 떼고, 한글이 섞이면 보이지 않는다', () => {
+  const c = [['levothyroxine sodium', 'Levothyroxine sodium'], ['glimepiride', 'Glimepiride'], ['mometasone furoate(/회)', 'Mometasone furoate'],
+    ['acetaminophen(encapsulated)', 'Acetaminophen(encapsulated)'], ['budesonide(micronized)(/회) + formoterol fumarate dihydrate(/회)', 'Budesonide(micronized) + formoterol fumarate dihydrate'],
+    ['당귀·목과·방풍·속단·오가피·우슬·위령선·육계·진교·천궁·천마·홍화 ethanol soft ext.(3.5→1)', ''], ['', ''], [null, ''], [undefined, '']];
+  c.forEach(([a, b]) => assert.strictEqual(N.englishName(a), b, String(a)));
+});
+t('실제 약 23,126개 중 영문 원어명이 비는 것은 2% 미만이고(한약 복합제), 나머지는 모두 영어로만 되어 있다', () => {
+  const raw = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/dur/products.json'), 'utf8'));
+  let n = 0, empty = 0, bad = 0;
+  Object.keys(raw.products).forEach((c) => { const p = dur.get(c); if (!p) return; n++; const e = N.englishName(p.ingrName); if (!e) empty++; else if (/[가-힣]/.test(e) || /\(\s*\//.test(e)) bad++; });
+  assert.strictEqual(bad, 0, '한글이나 단위 흔적이 남은 이름 ' + bad);
+  assert.ok(empty / n < 0.02, '빈 이름 ' + empty + '/' + n);
+});
 console.log('\n' + n + '개 통과');
